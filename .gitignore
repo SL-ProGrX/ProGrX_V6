@@ -1,3 +1,7 @@
 # Ignorar todos los archivos .dll y .lib
 *.dll
+*.DLL
 *.lib
+*.INI
+*.Ini
+*.ini
