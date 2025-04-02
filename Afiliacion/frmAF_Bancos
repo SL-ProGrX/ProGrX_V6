@@ -1,0 +1,866 @@
+VERSION 5.00
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Object = "{8D650141-6025-11D1-BC40-0000C042AEC0}#3.0#0"; "SSDW3B32.OCX"
+Begin VB.Form frmAF_Bancos 
+   BorderStyle     =   1  'Fixed Single
+   Caption         =   "Actualiza Cuentas"
+   ClientHeight    =   4095
+   ClientLeft      =   45
+   ClientTop       =   330
+   ClientWidth     =   6225
+   Icon            =   "AF_Bancos.frx":0000
+   LinkTopic       =   "Form1"
+   MaxButton       =   0   'False
+   MinButton       =   0   'False
+   ScaleHeight     =   4095
+   ScaleWidth      =   6225
+   StartUpPosition =   2  'CenterScreen
+   Begin VB.CheckBox chkPrioridad 
+      Alignment       =   1  'Right Justify
+      Caption         =   "Desea Priorizar esta cuenta en los Depósitos"
+      Height          =   255
+      Left            =   2520
+      TabIndex        =   10
+      Top             =   1560
+      Width           =   3495
+   End
+   Begin VB.Frame fraOpciones 
+      Height          =   1335
+      Left            =   120
+      TabIndex        =   6
+      Top             =   600
+      Width           =   2175
+      Begin VB.OptionButton optTipoTarjeta 
+         Caption         =   "Cuentas Corrientes"
+         Height          =   195
+         Index           =   0
+         Left            =   240
+         TabIndex        =   9
+         Top             =   240
+         Width           =   1695
+      End
+      Begin VB.OptionButton optTipoTarjeta 
+         Caption         =   "Tarjeta de Debito"
+         Height          =   195
+         Index           =   1
+         Left            =   240
+         TabIndex        =   8
+         Top             =   600
+         Width           =   1575
+      End
+      Begin VB.OptionButton optTipoTarjeta 
+         Caption         =   "Tarjeta de Crédito"
+         Height          =   195
+         Index           =   2
+         Left            =   240
+         TabIndex        =   7
+         Top             =   960
+         Width           =   1575
+      End
+   End
+   Begin SSDataWidgets_B.SSDBGrid ssGridBancos 
+      Height          =   1935
+      Left            =   120
+      TabIndex        =   5
+      Top             =   2040
+      Width           =   6075
+      _Version        =   196616
+      DataMode        =   2
+      Col.Count       =   7
+      HeadFont3D      =   1
+      DividerType     =   0
+      SelectTypeRow   =   1
+      ForeColorEven   =   0
+      BackColorOdd    =   16777215
+      RowHeight       =   423
+      Columns.Count   =   7
+      Columns(0).Width=   5106
+      Columns(0).Caption=   "Banco"
+      Columns(0).Name =   "Banco"
+      Columns(0).DataField=   "Column 0"
+      Columns(0).DataType=   8
+      Columns(0).FieldLen=   256
+      Columns(0).Locked=   -1  'True
+      Columns(1).Width=   3200
+      Columns(1).Visible=   0   'False
+      Columns(1).Caption=   "ID_Cuah"
+      Columns(1).Name =   "ID_Cuah"
+      Columns(1).DataField=   "Column 1"
+      Columns(1).DataType=   8
+      Columns(1).FieldLen=   256
+      Columns(2).Width=   3200
+      Columns(2).Visible=   0   'False
+      Columns(2).Caption=   "ID_Banco"
+      Columns(2).Name =   "ID_Banco"
+      Columns(2).DataField=   "Column 2"
+      Columns(2).DataType=   8
+      Columns(2).FieldLen=   256
+      Columns(3).Width=   3200
+      Columns(3).Visible=   0   'False
+      Columns(3).Caption=   "Cedula"
+      Columns(3).Name =   "Cedula"
+      Columns(3).DataField=   "Column 3"
+      Columns(3).DataType=   8
+      Columns(3).FieldLen=   256
+      Columns(4).Width=   2117
+      Columns(4).Caption=   "Cuenta"
+      Columns(4).Name =   "Cuenta"
+      Columns(4).DataField=   "Column 4"
+      Columns(4).DataType=   8
+      Columns(4).FieldLen=   256
+      Columns(4).Locked=   -1  'True
+      Columns(5).Width=   1508
+      Columns(5).Caption=   "Tipo"
+      Columns(5).Name =   "Tipo"
+      Columns(5).DataField=   "Column 5"
+      Columns(5).DataType=   8
+      Columns(5).FieldLen=   256
+      Columns(5).Locked=   -1  'True
+      Columns(6).Width=   953
+      Columns(6).Caption=   "Priori."
+      Columns(6).Name =   "Prioridad"
+      Columns(6).DataField=   "Column 6"
+      Columns(6).DataType=   8
+      Columns(6).FieldLen=   256
+      _ExtentX        =   10716
+      _ExtentY        =   3413
+      _StockProps     =   79
+      Caption         =   "Cuentas Bancarias"
+      BeginProperty PageFooterFont {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      BeginProperty PageHeaderFont {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+   End
+   Begin VB.TextBox txtCuentaAhorros 
+      Height          =   285
+      Left            =   3240
+      MaxLength       =   15
+      TabIndex        =   4
+      Top             =   1200
+      Width           =   2775
+   End
+   Begin VB.ComboBox cboBanco 
+      Height          =   315
+      Left            =   3240
+      TabIndex        =   2
+      Top             =   810
+      Width           =   2775
+   End
+   Begin MSComctlLib.Toolbar TlbPrincipal 
+      Align           =   1  'Align Top
+      Height          =   570
+      Left            =   0
+      TabIndex        =   0
+      Top             =   0
+      Width           =   6225
+      _ExtentX        =   10980
+      _ExtentY        =   1005
+      ButtonWidth     =   1561
+      ButtonHeight    =   953
+      AllowCustomize  =   0   'False
+      Appearance      =   1
+      Style           =   1
+      ImageList       =   "ImageList3"
+      _Version        =   393216
+      BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
+         NumButtons      =   7
+         BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Insertar"
+            Key             =   "insertar"
+            Object.ToolTipText     =   "Inserta (Agrega) un registro nuevo a la Base de Datos"
+            Object.Tag             =   "1"
+            ImageIndex      =   1
+         EndProperty
+         BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Modificar"
+            Key             =   "modificar"
+            Object.ToolTipText     =   "Modifica (Edita) el registro en pantalla"
+            Object.Tag             =   "1"
+            ImageIndex      =   2
+         EndProperty
+         BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Borrar"
+            Key             =   "borrar"
+            Object.ToolTipText     =   "Borra el registro en pantalla de la base de datos"
+            Object.Tag             =   "1"
+            ImageIndex      =   3
+         EndProperty
+         BeginProperty Button4 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Guardar"
+            Key             =   "guardar"
+            Object.ToolTipText     =   "Guarda la información del registro en la base de datos"
+            Object.Tag             =   "1"
+            ImageIndex      =   4
+         EndProperty
+         BeginProperty Button5 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Deshacer"
+            Key             =   "deshacer"
+            Object.ToolTipText     =   "Deshace toda modificación realizada recientemente en el registro actual"
+            Object.Tag             =   "1"
+            ImageIndex      =   5
+         EndProperty
+         BeginProperty Button6 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Ayuda"
+            Key             =   "ayuda"
+            Object.ToolTipText     =   "Ayuda General"
+            Object.Tag             =   "1"
+            ImageIndex      =   8
+         EndProperty
+         BeginProperty Button7 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Cerrar"
+            Key             =   "cerrar"
+            Object.ToolTipText     =   "Sale de esta ventana"
+            Object.Tag             =   "1"
+            ImageIndex      =   9
+         EndProperty
+      EndProperty
+      BorderStyle     =   1
+   End
+   Begin MSComctlLib.ImageList ImageList3 
+      Left            =   0
+      Top             =   0
+      _ExtentX        =   1005
+      _ExtentY        =   1005
+      BackColor       =   -2147483643
+      ImageWidth      =   16
+      ImageHeight     =   16
+      MaskColor       =   12632256
+      _Version        =   393216
+      BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
+         NumListImages   =   9
+         BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "AF_Bancos.frx":030A
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "AF_Bancos.frx":0BE6
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "AF_Bancos.frx":14C2
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "AF_Bancos.frx":17DE
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "AF_Bancos.frx":1AFA
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "AF_Bancos.frx":23D6
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "AF_Bancos.frx":26F2
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage8 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "AF_Bancos.frx":2A0E
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage9 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "AF_Bancos.frx":32EA
+            Key             =   ""
+         EndProperty
+      EndProperty
+   End
+   Begin VB.Label Label2 
+      Caption         =   "# Cuenta"
+      Height          =   255
+      Left            =   2520
+      TabIndex        =   3
+      Top             =   1200
+      Width           =   735
+   End
+   Begin VB.Label Label1 
+      Caption         =   "Banco"
+      Height          =   255
+      Left            =   2520
+      TabIndex        =   1
+      Top             =   840
+      Width           =   735
+   End
+End
+Attribute VB_Name = "frmAF_Bancos"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Explicit
+' Variable cuyo Valor me indicara si estamos en modo de Insercion o
+' en modo de Edicion.
+' (True=Edicion) (False=Insercion)
+Dim mblnEditar As Boolean
+
+'Variable para impedir que el usuario digite texto en el combo
+'Cuando su valor es true
+Dim mblnLimpiaCombo As Boolean
+
+Dim mrecBancos As New ADODB.Recordset
+Dim mblnEOF As Boolean
+Dim mintPrioridad As Integer
+
+Private Type Registro
+  Banco As String
+  Id_Cuah As Long
+  Id_Banco As Long
+  Cedula As String
+  Cuenta As Double
+  Tipo As String
+  Prioridad As Integer
+End Type
+
+Dim Cuenta As Registro
+
+Sub CargaRegistro()
+
+     ssGridBancos.Col = 0
+     Cuenta.Banco = Trim(ssGridBancos.ActiveCell.Text)
+     
+     ssGridBancos.Col = 1
+     Cuenta.Id_Cuah = Trim(ssGridBancos.ActiveCell.Text)
+          
+     ssGridBancos.Col = 2
+     Cuenta.Id_Banco = Trim(ssGridBancos.ActiveCell.Text)
+     
+     ssGridBancos.Col = 3
+     Cuenta.Cedula = Trim(ssGridBancos.ActiveCell.Text)
+     
+     ssGridBancos.Col = 4
+     Cuenta.Cuenta = Trim(ssGridBancos.ActiveCell.Text)
+     
+     ssGridBancos.Col = 5
+     Cuenta.Tipo = Trim(ssGridBancos.ActiveCell.Text)
+     
+     ssGridBancos.Col = 6
+     Cuenta.Prioridad = Trim(ssGridBancos.ActiveCell.Text)
+     
+     ssGridBancos.Col = 0
+End Sub
+
+Sub deshabilita()
+' Este Procedimiento Deshabilita Los Objetos de Entrada de Datos       '
+
+    cboBanco.Enabled = False
+    txtCuentaAhorros.Enabled = False
+    fraOpciones.Enabled = False
+    chkPrioridad.Enabled = False
+End Sub
+
+Sub FormatoGrid()
+' Este Procedimiento se encarga de Filtrar en el Objeto adocuentas    '
+' Los registros que tengan el mismo Id_Banco en las Tablas            '
+' Cuentas_Ahorros y Bancos.
+
+Dim strSQL As String ' Esta Variable Contiene el Query a Ejecutar
+
+strSQL = "SELECT Bancos.Descripcion as Banco,"
+strSQL = strSQL & "Cuentas_Ahorros.ID_CuAh,Cuentas_Ahorros.Id_Banco,"
+strSQL = strSQL & "Cuentas_Ahorros.Cedula,Cuentas_Ahorros.Cuenta,"
+strSQL = strSQL & "Cuentas_Ahorros.Tipo as Tipo,Cuentas_Ahorros.Prioridad"
+strSQL = strSQL & " FROM Cuentas_Ahorros,Bancos"
+strSQL = strSQL & " where Cuentas_Ahorros.Id_Banco = Bancos.Id_Banco"
+strSQL = strSQL & " and Cuentas_Ahorros.Cedula='" & Trim(frmAF_Principal.txtCedula) & "'"
+
+With mrecBancos
+     .Source = strSQL
+     .ActiveConnection = GLOBALES.gConDatos
+     .CursorType = adOpenStatic
+     .Open
+     
+     If .EOF = True Then
+        mblnEOF = True
+     Else
+        mblnEOF = False
+     End If
+
+     ssGridBancos.RemoveAll
+     Do While .EOF = False
+        strSQL = !Banco & vbTab
+        strSQL = strSQL & !Id_Cuah & vbTab
+        strSQL = strSQL & !Id_Banco & vbTab
+        strSQL = strSQL & !Cedula & vbTab
+        strSQL = strSQL & !Cuenta & vbTab
+        
+        Select Case !Tipo
+          Case 0
+           strSQL = strSQL & "Corriente" & vbTab
+          Case 1
+           strSQL = strSQL & "Débito" & vbTab
+          Case 2
+           strSQL = strSQL & "Crédito" & vbTab
+        End Select
+        
+        strSQL = strSQL & !Prioridad
+        
+        ssGridBancos.AddItem strSQL
+        
+        .MoveNext
+     Loop
+     
+     .Close
+End With
+
+If mblnEOF = False Then
+   Call CargaRegistro
+End If
+
+End Sub
+
+Sub GuardaRegistro()
+' Este Procedimiento Verifica que Los Objetos de Entrada de Datos     '
+' Necesarios para Guardar el Registro, contengan los datos respectivos'
+' De ser asi, procedemos a verificar si la variable mblnEditar esta en'
+' Modo de Insercion o en modo de Edicion. Finalmente Guardamos el     '
+' Registro.                                                           '
+
+' Este Procedimiento llama los siguientes Procedimientos:
+' LimpiaObjetos
+' Deshabilita
+' FormatoGrid
+    
+Dim intCBanco As Integer
+Dim intTipo As Integer
+Dim recBancos As New ADODB.Recordset
+Dim lngID_CUAH As Long
+Dim strSQL As String
+Dim intPrioridad As Integer
+
+If optTipoTarjeta(0).Value = False And optTipoTarjeta(1).Value = False _
+    And optTipoTarjeta(2).Enabled = False Then
+    MsgBox "No Se Puede Guardar El Registro", vbExclamation, "Falta el tipo de Cuenta"
+ElseIf Trim(cboBanco) = "" Then
+    MsgBox "No Se Puede Guardar El Registro", vbExclamation, "Falta el nombre del Banco"
+ElseIf Trim(txtCuentaAhorros) = "" Then
+    MsgBox "No Se Puede Guardar El Registro", vbExclamation, "Falta el número de la Cuenta"
+Else
+    recBancos.Source = "Select * from Bancos Where Descripcion='" & Trim(cboBanco) & "' And Aplica_Cheques=1 And Aplica_Afiliacion=1"
+    recBancos.ActiveConnection = GLOBALES.gConDatos
+    recBancos.CursorType = adOpenStatic
+    recBancos.Open
+    
+    If recBancos.EOF = False Then
+       intCBanco = recBancos!Id_Banco
+    Else
+       intCBanco = 0
+    End If
+    recBancos.Close
+
+    Select Case True
+      Case optTipoTarjeta(0).Value
+         intTipo = 0
+      Case optTipoTarjeta(1).Value
+         intTipo = 1
+      Case optTipoTarjeta(2).Value
+         intTipo = 2
+    End Select
+          
+    If chkPrioridad.Value = 1 Then
+       intPrioridad = 1
+       strSQL = "Update Cuentas_Ahorros Set Prioridad=0 where Cedula='"
+       strSQL = strSQL & Trim(frmAF_Principal.txtCedula) & "'"
+       GLOBALES.gConDatos.Execute (strSQL)
+    Else
+       intPrioridad = 0
+       If mblnEOF = True Then
+          intPrioridad = 1
+       End If
+    End If
+      
+    If mblnEditar = False Then
+       strSQL = "Insert into Cuentas_Ahorros(ID_Banco,Cedula,Cuenta,Tipo,Prioridad)"
+       strSQL = strSQL & " Values(" & intCBanco & ",'"
+       strSQL = strSQL & Trim(frmAF_Principal.txtCedula) & "','"
+       strSQL = strSQL & Trim(txtCuentaAhorros) & "'," & intTipo & ","
+       strSQL = strSQL & intPrioridad & ")"
+       GLOBALES.gConDatos.Execute strSQL
+       Call Bitacora("Registra", "Registro La Cuenta " & Trim(txtCuentaAhorros) & ",Socio " & Trim(frmAF_Principal.txtCedula))
+    Else
+       strSQL = "Update Cuentas_Ahorros Set Id_Banco=" & intCBanco & ","
+       strSQL = strSQL & "Cuenta='" & Trim(txtCuentaAhorros) & "',"
+       strSQL = strSQL & "Tipo=" & intTipo & ",Prioridad=" & intPrioridad
+       strSQL = strSQL & " Where Id_Cuah=" & Cuenta.Id_Cuah
+       GLOBALES.gConDatos.Execute strSQL
+       Call Bitacora("Modifica", "Modifico La Cuenta " & Trim(txtCuentaAhorros) & ",Socio " & Trim(frmAF_Principal.txtCedula))
+    End If
+    
+    mintPrioridad = 0
+    Call LimpiaObjetos
+    Call deshabilita
+    Call FormatoGrid
+    
+    ssGridBancos.Enabled = True
+    mblnEditar = False
+    mblnLimpiaCombo = False
+    
+    TlbPrincipal.Buttons.Item(1).Enabled = True
+    TlbPrincipal.Buttons.Item(2).Enabled = True
+    TlbPrincipal.Buttons.Item(3).Enabled = True
+    TlbPrincipal.Buttons.Item(4).Enabled = False
+    TlbPrincipal.Buttons.Item(5).Enabled = False
+    TlbPrincipal.Buttons.Item(6).Enabled = True
+    TlbPrincipal.Buttons.Item(7).Enabled = True
+    
+    Call RefrescaTag
+
+End If
+End Sub
+
+Sub habilita()
+' Este Procedimiento Habilita los Objetos de Entrada de Datos.         '
+
+    cboBanco.Enabled = True
+    txtCuentaAhorros.Enabled = True
+    fraOpciones.Enabled = True
+    chkPrioridad.Enabled = True
+
+End Sub
+
+Sub LimpiaObjetos()
+' Este Procedimiento se encarga de Limpiar los objetos que sirven de '
+' entrada de datos.                                                  '
+
+    cboBanco = ""
+    txtCuentaAhorros = ""
+    optTipoTarjeta(0).Value = False
+    optTipoTarjeta(1).Value = False
+    optTipoTarjeta(2).Value = False
+    chkPrioridad.Value = 0
+
+End Sub
+
+Sub Modificar()
+' Este Procedimiento Habilita Todos los Objetos de Entrada de Datos   '
+' Pone la Variable mblnEditar en True, lo cual Indica que estamos en  '
+' Modo de Edicion o Modificacion. Finalmente desplegamos en pantalla  '
+' Los datos originales del Registro a Modificar.                      '
+
+' Este Procedimiento llama los siguientes Procedimientos:
+' Habilita
+
+ Call habilita
+ 
+ mblnEditar = True
+ TlbPrincipal.Buttons.Item(1).Enabled = False
+ TlbPrincipal.Buttons.Item(2).Enabled = False
+ TlbPrincipal.Buttons.Item(3).Enabled = True
+ TlbPrincipal.Buttons.Item(4).Enabled = True
+ TlbPrincipal.Buttons.Item(5).Enabled = True
+ TlbPrincipal.Buttons.Item(6).Enabled = False
+ TlbPrincipal.Buttons.Item(7).Enabled = False
+ ssGridBancos.Enabled = False
+  
+ Call RefrescaTag
+ 
+ Select Case Cuenta.Tipo
+   Case Is = "Corriente"
+    optTipoTarjeta(0).Value = True
+   Case Is = "Débito"
+    optTipoTarjeta(1).Value = True
+   Case Is = "Crédito"
+    optTipoTarjeta(2).Value = True
+ End Select
+ 
+ cboBanco = Cuenta.Banco
+        
+ txtCuentaAhorros = Cuenta.Cuenta
+ 
+ If Cuenta.Prioridad = 1 Then
+    chkPrioridad.Value = 1
+    mintPrioridad = 1
+ Else
+    mintPrioridad = 0
+ End If
+  
+ mblnLimpiaCombo = True
+End Sub
+
+Sub RefrescaTag()
+    With frmAF_Bancos.TlbPrincipal.Buttons
+         If .Item(1).Tag = 0 Then .Item(1).Enabled = False
+         If .Item(2).Tag = 0 Then .Item(2).Enabled = False
+         If .Item(3).Tag = 0 Then .Item(3).Enabled = False
+         
+         If .Item(1).Tag = 0 And .Item(2).Tag = 0 Then
+            .Item(4).Enabled = False
+            .Item(5).Enabled = False
+         End If
+         
+    End With
+End Sub
+
+Private Sub cboBanco_Change()
+    If mblnLimpiaCombo = True Then
+       cboBanco = ""
+    End If
+End Sub
+
+Private Sub cboBanco_KeyPress(KeyAscii As Integer)
+    If KeyAscii = 13 Then
+       txtCuentaAhorros.SetFocus
+    End If
+End Sub
+
+
+
+
+
+
+
+Private Sub chkPrioridad_Click()
+If mintPrioridad = 1 Then
+   chkPrioridad.Value = 1
+End If
+End Sub
+
+Private Sub Form_Load()
+Dim recBancos As New ADODB.Recordset
+
+On Error GoTo Error
+
+GLOBALES.gstrFormCargado = "frmAF_Bancos"
+Call Formularios
+
+recBancos.Source = "Select Distinct Descripcion from Bancos where Aplica_Cheques=1 And Aplica_Afiliacion=1"
+recBancos.ActiveConnection = GLOBALES.gConDatos
+recBancos.CursorType = adOpenStatic
+recBancos.Open
+
+' Cargo en el Objeto CboCombo los diferentes Nombres de Banco
+If recBancos.EOF = False Then
+    With recBancos
+         Do Until .EOF
+            cboBanco.AddItem Trim(recBancos!Descripcion)
+            recBancos.MoveNext
+         Loop
+    End With
+End If
+recBancos.Close
+
+Call FormatoGrid
+
+If mblnEOF = True Then
+   TlbPrincipal.Buttons.Item(1).Enabled = True
+   TlbPrincipal.Buttons.Item(2).Enabled = False
+   TlbPrincipal.Buttons.Item(3).Enabled = False
+   ssGridBancos.Enabled = False
+End If
+   TlbPrincipal.Buttons.Item(4).Enabled = False
+   TlbPrincipal.Buttons.Item(5).Enabled = False
+
+Call deshabilita
+
+Call RefrescaTag
+
+Exit Sub
+Error:
+    Call ProcedimientoErrores(Me.Name)
+
+End Sub
+
+Private Sub ssGridBancos_Click()
+On Error GoTo Error
+
+Call CargaRegistro
+
+Exit Sub
+Error:
+   Call ProcedimientoErrores(Me.Name)
+End Sub
+
+Private Sub ssGridBancos_DblClick()
+On Error GoTo Error
+
+If Trim(ssGridBancos.ActiveCell.Text) <> "" Then
+   Call Modificar
+End If
+
+Exit Sub
+Error:
+   Call ProcedimientoErrores(Me.Name)
+
+End Sub
+
+Private Sub ssGridBancos_KeyUp(KeyCode As Integer, Shift As Integer)
+On Error GoTo Error
+
+Call CargaRegistro
+
+Exit Sub
+Error:
+  Call ProcedimientoErrores(Me.Name)
+End Sub
+
+Private Sub tlbPrincipal_ButtonClick(ByVal Button As MSComctlLib.Button)
+'Call barra(Me.tlbPrincipal, 1, Button)
+Dim strResp  As String
+Dim lngID_CUAH As Long
+Dim strCuenta As String
+Dim strCedula As String
+Dim strSQL As String
+
+On Error GoTo ErrorTransaccion
+'GLOBALES.gConDatos.BeginTrans
+
+If Button.Key <> "cerrar" Then
+   Me.MousePointer = vbHourglass
+End If
+
+Select Case Button.Key
+    Case "insertar"
+          'Pone la Variable mblnEditar en False, lo que indica que     '
+          'estamos en modo de Insercion. Habilitamos Controles de      '
+          'entrada de Datos.                                           '
+          mblnLimpiaCombo = True
+          mblnEditar = False
+          TlbPrincipal.Buttons.Item(1).Enabled = False
+          TlbPrincipal.Buttons.Item(2).Enabled = False
+          TlbPrincipal.Buttons.Item(3).Enabled = False
+          TlbPrincipal.Buttons.Item(4).Enabled = True
+          TlbPrincipal.Buttons.Item(5).Enabled = True
+          TlbPrincipal.Buttons.Item(6).Enabled = False
+          TlbPrincipal.Buttons.Item(7).Enabled = False
+          
+          ssGridBancos.Enabled = False
+          Call habilita
+          optTipoTarjeta(0).Value = True
+          cboBanco.SetFocus
+          
+    Case "modificar"
+         Call Modificar
+          
+    Case "borrar"
+         'La Variable strResp almacenara un valor que indica si el   '
+         'Registro sera borrado o no. Si el valor de la variable es  '
+         'Vbyes entonces el registro es Eliminado.                   '
+          If Cuenta.Banco <> "" Then
+              strResp = MsgBox("Registro Será Eliminado", vbQuestion + vbYesNo, "Confirma Eliminación?")
+              If strResp = vbYes Then
+                lngID_CUAH = Cuenta.Id_Cuah
+                        
+                strSQL = "Delete from Cuentas_Ahorros"
+                strSQL = strSQL & " Where ID_CUAH=" & lngID_CUAH
+                GLOBALES.gConDatos.Execute (strSQL)
+                
+                strCuenta = Cuenta.Cuenta
+                strCedula = Cuenta.Cedula
+                Call Bitacora("Borra", "Elimino La Cuenta " & strCuenta & " ,Socio " & strCedula)
+                
+                Call LimpiaObjetos
+                Call deshabilita
+                Call FormatoGrid
+                
+                mblnEditar = False
+                mblnLimpiaCombo = False
+                
+                If mblnEOF = True Then
+                   TlbPrincipal.Buttons.Item(1).Enabled = True
+                   TlbPrincipal.Buttons.Item(2).Enabled = False
+                   TlbPrincipal.Buttons.Item(3).Enabled = False
+                   TlbPrincipal.Buttons.Item(4).Enabled = False
+                   TlbPrincipal.Buttons.Item(5).Enabled = False
+                   TlbPrincipal.Buttons.Item(6).Enabled = True
+                   TlbPrincipal.Buttons.Item(7).Enabled = True
+                   ssGridBancos.Enabled = False
+                Else
+                   strSQL = "Update Cuentas_Ahorros set Prioridad=1"
+                   strSQL = strSQL & " Where ID_Cuah=" & Cuenta.Id_Cuah
+                   GLOBALES.gConDatos.Execute strSQL
+                   Call FormatoGrid
+                   TlbPrincipal.Buttons.Item(1).Enabled = True
+                   TlbPrincipal.Buttons.Item(2).Enabled = True
+                   TlbPrincipal.Buttons.Item(3).Enabled = True
+                   TlbPrincipal.Buttons.Item(4).Enabled = False
+                   TlbPrincipal.Buttons.Item(5).Enabled = False
+                   TlbPrincipal.Buttons.Item(6).Enabled = True
+                   TlbPrincipal.Buttons.Item(7).Enabled = True
+                   ssGridBancos.Enabled = True
+                End If
+                Call RefrescaTag
+              End If
+            End If
+          
+    Case "guardar"
+          Call GuardaRegistro
+
+    Case "deshacer"
+          ' Limpiamos Los Objetos que sirven de Entrada de Datos y los '
+          ' Deshabilitamos. Ponemos la Variable mblnEditar en Valor    '
+          ' False.
+          mintPrioridad = 0
+          Call LimpiaObjetos
+          Call deshabilita
+          mblnEditar = False
+                      
+          If mblnEOF = True Then
+            TlbPrincipal.Buttons.Item(2).Enabled = False
+            TlbPrincipal.Buttons.Item(3).Enabled = False
+            ssGridBancos.Enabled = False
+          Else
+            TlbPrincipal.Buttons.Item(2).Enabled = True
+            TlbPrincipal.Buttons.Item(3).Enabled = True
+            ssGridBancos.Enabled = True
+          End If
+          
+          TlbPrincipal.Buttons.Item(1).Enabled = True
+          TlbPrincipal.Buttons.Item(4).Enabled = False
+          TlbPrincipal.Buttons.Item(5).Enabled = False
+          TlbPrincipal.Buttons.Item(6).Enabled = True
+          TlbPrincipal.Buttons.Item(7).Enabled = True
+          
+          mblnLimpiaCombo = False
+          Call RefrescaTag
+    
+    Case "cerrar"
+      Unload Me
+End Select
+
+'GLOBALES.gConDatos.CommitTrans
+If Button.Key <> "cerrar" Then
+   Me.MousePointer = vbDefault
+End If
+
+Exit Sub
+ErrorTransaccion:
+  Me.MousePointer = vbDefault
+'  GLOBALES.gConDatos.RollbackTrans
+  Call ProcedimientoErrores(Me.Name)
+
+End Sub
+
+Private Sub txtCuentaAhorros_KeyPress(KeyAscii As Integer)
+    
+KeyAscii = (Validacion(KeyAscii))
+    
+    If KeyAscii = 13 Then
+       On Error GoTo ErrorTransaccion
+'       GLOBALES.gConDatos.BeginTrans
+       
+       Call GuardaRegistro
+       
+'       GLOBALES.gConDatos.CommitTrans
+       
+       Exit Sub
+ErrorTransaccion:
+'       GLOBALES.gConDatos.RollbackTrans
+       Call ProcedimientoErrores(Me.Name)
+    End If
+End Sub
+
+
