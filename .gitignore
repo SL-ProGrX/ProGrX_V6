@@ -1,0 +1,3 @@
+# Ignorar todos los archivos .dll y .lib
+*.dll
+*.lib
