@@ -1,0 +1,846 @@
+VERSION 5.00
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Object = "{C932BA88-4374-101B-A56C-00AA003668DC}#1.1#0"; "MSMASK32.OCX"
+Begin VB.Form frmCR_CatalogoCreditos 
+   BorderStyle     =   1  'Fixed Single
+   Caption         =   "Catalogo de Créditos"
+   ClientHeight    =   3840
+   ClientLeft      =   45
+   ClientTop       =   330
+   ClientWidth     =   7380
+   Icon            =   "CR_CatalogoCreditos.frx":0000
+   LinkTopic       =   "Form1"
+   MaxButton       =   0   'False
+   MinButton       =   0   'False
+   ScaleHeight     =   3840
+   ScaleWidth      =   7380
+   StartUpPosition =   2  'CenterScreen
+   Begin MSComctlLib.Toolbar tlbPrincipal 
+      Align           =   1  'Align Top
+      Height          =   570
+      Left            =   0
+      TabIndex        =   0
+      Top             =   0
+      Width           =   7380
+      _ExtentX        =   13018
+      _ExtentY        =   1005
+      ButtonWidth     =   1561
+      ButtonHeight    =   953
+      Appearance      =   1
+      Style           =   1
+      ImageList       =   "ImageList3"
+      _Version        =   393216
+      BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
+         NumButtons      =   8
+         BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Insertar"
+            Key             =   "insertar"
+            Object.ToolTipText     =   "Inserta (Agrega) un registro nuevo a la Base de Datos"
+            ImageIndex      =   1
+         EndProperty
+         BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Modificar"
+            Key             =   "modificar"
+            Object.ToolTipText     =   "Modifica (Edita) el registro en pantalla"
+            ImageIndex      =   2
+         EndProperty
+         BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Guardar"
+            Key             =   "guardar"
+            Object.ToolTipText     =   "Guarda la información del registro en la base de datos"
+            ImageIndex      =   4
+         EndProperty
+         BeginProperty Button4 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Deshacer"
+            Key             =   "deshacer"
+            Object.ToolTipText     =   "Deshace toda modificación realizada recientemente en el registro actual"
+            ImageIndex      =   5
+         EndProperty
+         BeginProperty Button5 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Reportes"
+            Key             =   "reportes"
+            Object.ToolTipText     =   "Reportes del catalogo de préstamos"
+            ImageIndex      =   7
+            Style           =   5
+            BeginProperty ButtonMenus {66833FEC-8583-11D1-B16A-00C0F0283628} 
+               NumButtonMenus  =   7
+               BeginProperty ButtonMenu1 {66833FEE-8583-11D1-B16A-00C0F0283628} 
+                  Key             =   "OrdCodigo"
+                  Text            =   "Ordenado por Código"
+               EndProperty
+               BeginProperty ButtonMenu2 {66833FEE-8583-11D1-B16A-00C0F0283628} 
+                  Key             =   "OrdDes"
+                  Text            =   "Ordenado por Descripción"
+               EndProperty
+               BeginProperty ButtonMenu3 {66833FEE-8583-11D1-B16A-00C0F0283628} 
+                  Key             =   "Separador1"
+                  Text            =   "-"
+               EndProperty
+               BeginProperty ButtonMenu4 {66833FEE-8583-11D1-B16A-00C0F0283628} 
+                  Key             =   "DetalladoCod"
+                  Text            =   "Detallado - Ordenado por Código "
+               EndProperty
+               BeginProperty ButtonMenu5 {66833FEE-8583-11D1-B16A-00C0F0283628} 
+                  Key             =   "DetalladoDesc"
+                  Text            =   "Detallado - Ordenado por Descripción"
+               EndProperty
+               BeginProperty ButtonMenu6 {66833FEE-8583-11D1-B16A-00C0F0283628} 
+                  Key             =   "separador2"
+                  Text            =   "-"
+               EndProperty
+               BeginProperty ButtonMenu7 {66833FEE-8583-11D1-B16A-00C0F0283628} 
+                  Key             =   "linea"
+                  Text            =   "Detalle de este línea"
+               EndProperty
+            EndProperty
+         EndProperty
+         BeginProperty Button6 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Consultar"
+            Key             =   "consultar"
+            Object.ToolTipText     =   "Consulta el catalogo de préstamos"
+            ImageIndex      =   6
+         EndProperty
+         BeginProperty Button7 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Ayuda"
+            Key             =   "ayuda"
+            Object.ToolTipText     =   "Ayuda General"
+            ImageIndex      =   8
+         EndProperty
+         BeginProperty Button8 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "&Cerrar"
+            Key             =   "cerrar"
+            Object.ToolTipText     =   "Sale de esta ventana"
+            ImageIndex      =   9
+         EndProperty
+      EndProperty
+      BorderStyle     =   1
+   End
+   Begin MSMask.MaskEdBox medFiadores 
+      Height          =   375
+      Left            =   2760
+      TabIndex        =   7
+      Top             =   1080
+      Width           =   1215
+      _ExtentX        =   2143
+      _ExtentY        =   661
+      _Version        =   393216
+      MaxLength       =   3
+      Format          =   "###"
+      PromptChar      =   "_"
+   End
+   Begin VB.CommandButton cmdCuentas 
+      Caption         =   "Configuración de Cuentas Contables "
+      Height          =   375
+      Left            =   480
+      TabIndex        =   19
+      Top             =   3360
+      Width           =   3135
+   End
+   Begin VB.ComboBox cboComite 
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   360
+      ItemData        =   "CR_CatalogoCreditos.frx":030A
+      Left            =   2280
+      List            =   "CR_CatalogoCreditos.frx":030C
+      Style           =   2  'Dropdown List
+      TabIndex        =   15
+      ToolTipText     =   "Comité que evalua la línea de préstamo"
+      Top             =   2760
+      Width           =   4695
+   End
+   Begin VB.CommandButton cmdTabla 
+      Caption         =   "Rangos de Montos e Intereses"
+      Height          =   375
+      Left            =   3840
+      TabIndex        =   16
+      Top             =   3360
+      Width           =   3135
+   End
+   Begin VB.Frame fraTipoTramite 
+      Caption         =   "Tipo de Trámite"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00C00000&
+      Height          =   1095
+      Left            =   4920
+      TabIndex        =   8
+      Top             =   1560
+      Width           =   2055
+      Begin VB.OptionButton optTipoTramite 
+         Caption         =   "Rápido"
+         Height          =   255
+         Index           =   1
+         Left            =   240
+         TabIndex        =   14
+         Top             =   720
+         Width           =   855
+      End
+      Begin VB.OptionButton optTipoTramite 
+         Caption         =   "Corriente"
+         Height          =   255
+         Index           =   0
+         Left            =   240
+         TabIndex        =   13
+         Top             =   360
+         Value           =   -1  'True
+         Width           =   975
+      End
+   End
+   Begin VB.Frame fraGarantias 
+      Caption         =   "Garantías que aplican a esta línea"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00C00000&
+      Height          =   1095
+      Left            =   480
+      TabIndex        =   9
+      Top             =   1560
+      Width           =   4095
+      Begin VB.CheckBox chkSinGarantia 
+         Caption         =   "Línea Sin Garantía"
+         ForeColor       =   &H8000000D&
+         Height          =   195
+         Left            =   2040
+         TabIndex        =   12
+         Top             =   720
+         Width           =   1695
+      End
+      Begin VB.CheckBox chkHipoteca 
+         Caption         =   "Hipoteca"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   11
+         Top             =   720
+         Width           =   1575
+      End
+      Begin VB.CheckBox chkFiadores 
+         Caption         =   "Con Fiadores"
+         Height          =   195
+         Left            =   2040
+         TabIndex        =   10
+         Top             =   360
+         Width           =   1455
+      End
+      Begin VB.CheckBox chkSobreAhorros 
+         Caption         =   "Sobre Ahorros"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   20
+         Top             =   360
+         Width           =   1455
+      End
+   End
+   Begin VB.TextBox txtDescripcion 
+      Height          =   285
+      Left            =   2760
+      MaxLength       =   35
+      TabIndex        =   4
+      ToolTipText     =   "Descripción del código de la línea"
+      Top             =   720
+      Width           =   4575
+   End
+   Begin VB.TextBox txtCodigoAtraso 
+      Height          =   285
+      Left            =   960
+      MaxLength       =   4
+      TabIndex        =   6
+      ToolTipText     =   "Código Asociado para control de cuotas atrasadas"
+      Top             =   1080
+      Width           =   735
+   End
+   Begin VB.TextBox txtCodigoCorriente 
+      Height          =   285
+      Left            =   960
+      MaxLength       =   4
+      TabIndex        =   2
+      ToolTipText     =   "Código del Préstamo"
+      Top             =   690
+      Width           =   735
+   End
+   Begin MSComctlLib.ImageList ImageList3 
+      Left            =   5760
+      Top             =   0
+      _ExtentX        =   1005
+      _ExtentY        =   1005
+      BackColor       =   -2147483643
+      ImageWidth      =   16
+      ImageHeight     =   16
+      MaskColor       =   12632256
+      _Version        =   393216
+      BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
+         NumListImages   =   9
+         BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "CR_CatalogoCreditos.frx":030E
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "CR_CatalogoCreditos.frx":0BEA
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "CR_CatalogoCreditos.frx":14C6
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "CR_CatalogoCreditos.frx":17E2
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "CR_CatalogoCreditos.frx":1AFE
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "CR_CatalogoCreditos.frx":23DA
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "CR_CatalogoCreditos.frx":26F6
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage8 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "CR_CatalogoCreditos.frx":2A12
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage9 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "CR_CatalogoCreditos.frx":32EE
+            Key             =   ""
+         EndProperty
+      EndProperty
+   End
+   Begin VB.Line Line1 
+      BorderColor     =   &H80000011&
+      X1              =   0
+      X2              =   7320
+      Y1              =   3240
+      Y2              =   3240
+   End
+   Begin VB.Label Label4 
+      Caption         =   "Comité evaluador"
+      Height          =   255
+      Left            =   600
+      TabIndex        =   18
+      Top             =   2760
+      Width           =   1335
+   End
+   Begin VB.Label Label7 
+      Caption         =   "Premio"
+      Height          =   255
+      Left            =   1800
+      TabIndex        =   17
+      Top             =   1080
+      Width           =   855
+   End
+   Begin VB.Label Label3 
+      Caption         =   "Descripción"
+      Height          =   255
+      Left            =   1800
+      TabIndex        =   5
+      Top             =   720
+      Width           =   855
+   End
+   Begin VB.Label Label2 
+      Caption         =   "Cuotas Atrasadas"
+      Height          =   375
+      Left            =   120
+      TabIndex        =   3
+      Top             =   1080
+      Width           =   735
+   End
+   Begin VB.Label Label1 
+      Caption         =   "Código"
+      Height          =   255
+      Left            =   120
+      TabIndex        =   1
+      Top             =   720
+      Width           =   615
+   End
+End
+Attribute VB_Name = "frmCR_CatalogoCreditos"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Explicit
+Dim strConsulta As String
+Dim rsCatalogo As New ADODB.Recordset
+Dim intEdita As Integer 'Indica si está modificando
+Dim txtBox As TextBox
+Function Valida() As Boolean
+
+Valida = True
+
+Select Case ""
+    Case Trim(txtCodigoCorriente)
+     Valida = False
+    Case Trim(txtCodigoAtraso)
+     Valida = False
+    Case Trim(txtDescripcion)
+     Valida = False
+    Case Trim(medFiadores.Text)
+     Valida = False
+    Case Trim(cboComite.Text)
+     Valida = False
+End Select
+
+If chkHipoteca.Value = 0 And chkfiadores.Value = 0 _
+    And chkSobreAhorros.Value = 0 And chkSinGarantia.Value = 0 Then Valida = False
+
+End Function
+Private Sub cmdCuentas_Click()
+   frmCR_CtaCatalogo.Show vbModal
+End Sub
+Private Sub cmdTabla_Click()
+    frmCR_TablaIntereses.Show vbModal
+End Sub
+Private Sub Form_Load()
+
+ On Error GoTo CapturaError
+ 
+ GLOBALES.gstrFormCargado = Me.Name
+ Call Formularios    'Carga los tags de los controles, utiliza la variable global de arriba
+                                 
+ '0 = Inserta ,1 = Edita, 2 = Consulta
+ intEdita = 2
+ Dim rsComite As New ADODB.Recordset
+  
+ With rsComite
+  .Source = "select descripcion from comites" 'Corregir el Comite por Comites
+  .CursorType = adOpenStatic
+  .ActiveConnection = GLOBALES.gConDatos
+  .Open
+  If .EOF = True And .BOF = True Then
+    MsgBox "No existen Comités creados...(Debe Crearlos)", vbCritical
+    Else
+    Do While .EOF = False
+      cboComite.AddItem !Descripcion
+      .MoveNext
+    Loop
+  End If
+  .Close
+ End With
+  
+ With tlbPrincipal.Buttons
+    .Item(1).Enabled = True 'insertar
+    .Item(2).Enabled = False 'modificar
+    .Item(3).Enabled = False  'guardar
+    .Item(4).Enabled = False  'deshacer
+    .Item(6).Enabled = True 'consultas
+    .Item(7).Enabled = True 'Ayuda
+    .Item(8).Enabled = True 'cerrar
+    cmdTabla.Enabled = False
+    cmdCuentas.Enabled = False
+ End With
+
+ Call RefrescaTags 'Apaga los botones a los que el usuario no tiene derechos
+
+
+Exit Sub
+CapturaError:
+Call ProcedimientoErrores(Me.Name)
+
+End Sub
+
+
+
+Private Sub medFiadores_KeyPress(KeyAscii As Integer)
+ If KeyAscii = 13 Then chkSobreAhorros.SetFocus
+ Call Module6.Valida(KeyAscii)
+End Sub
+Private Sub tlbPrincipal_ButtonClick(ByVal Button As MSComctlLib.Button)
+
+On Error GoTo CapturaError
+Me.MousePointer = vbHourglass
+Select Case Button.Key
+    Case "insertar"
+       intEdita = 0
+       LimpiaPantalla
+       
+       tlbPrincipal.Buttons.Item(1).Enabled = False 'insertar
+       tlbPrincipal.Buttons.Item(2).Enabled = False 'modificar
+       tlbPrincipal.Buttons.Item(3).Enabled = True  'guardar
+       tlbPrincipal.Buttons.Item(4).Enabled = True  'deshacer
+       tlbPrincipal.Buttons.Item(6).Enabled = False 'consultas
+       tlbPrincipal.Buttons.Item(7).Enabled = False 'Ayuda
+       tlbPrincipal.Buttons.Item(8).Enabled = True 'cerrar
+       
+       cmdTabla.Enabled = False
+       cmdCuentas.Enabled = False
+        
+        
+    Case "modificar"
+         
+         If Trim(txtCodigoCorriente) = "" Then
+           MsgBox "Consulte el código que desea modificar y luego selecciones esta opción", vbOKOnly
+           Exit Sub
+         Else
+            intEdita = 1
+            
+            tlbPrincipal.Buttons.Item(1).Enabled = False 'insertar
+            tlbPrincipal.Buttons.Item(2).Enabled = False 'modificar
+            tlbPrincipal.Buttons.Item(3).Enabled = True  'guardar
+            tlbPrincipal.Buttons.Item(4).Enabled = True  'deshacer
+            tlbPrincipal.Buttons.Item(6).Enabled = False 'consultas
+            tlbPrincipal.Buttons.Item(7).Enabled = False 'Ayuda
+            tlbPrincipal.Buttons.Item(8).Enabled = True 'Cerrar
+            
+            cmdTabla.Enabled = True
+            cmdCuentas.Enabled = True
+            'Aqui llamar al procedimiento de Seguridad de refrescamiento
+         End If
+    
+    Case "borrar"
+      
+      If txtCodigoCorriente <> "" Then
+        If MsgBox("Está seguro que desea borrar este código", vbYesNo) = vbYes Then
+          GLOBALES.gConDatos.Execute "Delete catalogo where codigo = '" _
+             & txtCodigoCorriente.Text & "'"
+         
+         'Restaurar la ventana
+         
+        End If
+      End If
+    
+    Case "deshacer"
+        intEdita = 2
+        LimpiaPantalla
+        tlbPrincipal.Buttons.Item(1).Enabled = True  'insertar
+        tlbPrincipal.Buttons.Item(2).Enabled = True  'modificar
+        tlbPrincipal.Buttons.Item(3).Enabled = False 'guardar
+        tlbPrincipal.Buttons.Item(4).Enabled = False 'deshacer
+        tlbPrincipal.Buttons.Item(6).Enabled = True  'consultar
+        tlbPrincipal.Buttons.Item(7).Enabled = True 'Ayuda
+        tlbPrincipal.Buttons.Item(8).Enabled = True 'Cerrar
+        'Aqui llamar al procedimiento de Seguridad de refrecamiento
+        RefrescaTags
+    
+    Case "guardar"
+        If Valida Then     'existen todos los datos de la pantalla
+
+         tlbPrincipal.Buttons.Item(1).Enabled = True  'insertar
+         tlbPrincipal.Buttons.Item(2).Enabled = True  'modificar
+         tlbPrincipal.Buttons.Item(3).Enabled = False 'guardar
+         tlbPrincipal.Buttons.Item(4).Enabled = False 'deshacer
+         tlbPrincipal.Buttons.Item(6).Enabled = True  'consultar
+         tlbPrincipal.Buttons.Item(7).Enabled = True  'Ayuda
+         tlbPrincipal.Buttons.Item(8).Enabled = True  'cerrar
+         
+         GuardarLinea
+         
+         cmdTabla.Enabled = True
+         cmdCuentas.Enabled = True
+         
+         'Aqui llamar al procedimiento de Seguridad de refrecamiento
+         RefrescaTags
+         Else
+         
+         If (MsgBox("Faltan datos, desea limpiar la información", vbYesNo)) = vbYes Then
+            tlbPrincipal.Buttons.Item(1).Enabled = True  'insertar
+            tlbPrincipal.Buttons.Item(2).Enabled = True  'modificar
+            tlbPrincipal.Buttons.Item(3).Enabled = False 'guardar
+            tlbPrincipal.Buttons.Item(4).Enabled = False 'deshacer
+            tlbPrincipal.Buttons.Item(6).Enabled = True  'consultar
+            tlbPrincipal.Buttons.Item(7).Enabled = True  'Ayuda
+            tlbPrincipal.Buttons.Item(8).Enabled = True  'cerrar
+            LimpiaPantalla
+            RefrescaTags
+         End If
+       End If
+    
+    Case "consultar"
+        
+        LimpiaPantalla
+        intEdita = 2
+        Select Case strConsulta
+          Case "codigo"
+                GLOBALES.gSQLOrden = "codigo"
+          Case "codigoa"
+                GLOBALES.gSQLOrden = "codigoa"
+          Case "descripcion"
+                GLOBALES.gSQLOrden = "descripcion"
+          Case Else
+                GLOBALES.gSQLOrden = "codigo"
+        End Select
+        
+         GLOBALES.gSQLConsulta = "select codigo,descripcion,codigoa from catalogo"
+         GLOBALES.gSQLColumna = "codigo"
+         GLOBALES.gSQLResulta = ""
+         
+         Call br(frmCR_CatalogoCreditos, 0)
+         
+        txtCodigoCorriente = GLOBALES.gSQLResulta
+                
+        txtCodigoCorriente.SetFocus
+        
+    Case "cerrar"
+        Unload Me
+End Select
+
+Me.MousePointer = vbDefault
+Exit Sub
+CapturaError:
+Me.MousePointer = vbDefault
+Call ProcedimientoErrores(Me.Name)
+
+End Sub
+Private Sub tlbPrincipal_ButtonMenuClick(ByVal ButtonMenu As MSComctlLib.ButtonMenu)
+With frmCC_MenuPrincipal.Crt
+   .Reset
+   .WindowShowGroupTree = True
+   .WindowShowPrintSetupBtn = True
+   .WindowShowRefreshBtn = True
+   .WindowShowSearchBtn = True
+   .WindowState = crptMaximized
+   .WindowTitle = "Reportes del Módulo de Crédito"
+
+Select Case ButtonMenu.Key
+    Case "OrdCodigo"
+     .ReportFileName = App.Path + "\credito\reportes\CatalogoDeCreditosResumen.rpt"
+     .Formulas(0) = "Fecha = '" & Format(FecServidor, "dd/mm/yyyy") & "'"
+     .Formulas(1) = "Empresa = '" & GLOBALES.gstrNombreEmpresa & "'"
+     .SortFields(0) = "+{Catalogo.Codigo}"
+   
+    
+    Case "OrdDes"
+     .ReportFileName = App.Path + "\credito\reportes\CatalogoDeCreditosResumen.rpt"
+     .Formulas(0) = "fecha = '" & Format(FecServidor, "dd/mm/yyyy") & "'"
+     .Formulas(1) = "empresa = '" & GLOBALES.gstrNombreEmpresa & "'"
+     .SortFields(0) = "+{Catalogo.Descripcion}"
+    
+    Case "DetalladoCod"
+     .ReportFileName = App.Path + "\credito\reportes\CatalogoDeCreditosDetalle.rpt"
+     .Formulas(0) = "fecha = '" & Format(FecServidor, "dd/mm/yyyy") & "'"
+     .Formulas(1) = "empresa = '" & GLOBALES.gstrNombreEmpresa & "'"
+     .SortFields(0) = "+{Catalogo.Codigo}"
+    
+    Case "DetalladoDesc"
+     .ReportFileName = App.Path + "\credito\reportes\CatalogoDeCreditosDetalle.rpt"
+     .Formulas(0) = "fecha = '" & Format(FecServidor, "dd/mm/yyyy") & "'"
+     .Formulas(1) = "empresa = '" & GLOBALES.gstrNombreEmpresa & "'"
+     .SortFields(0) = "+{Catalogo.Descripcion}"
+
+    Case "linea"
+     If txtCodigoCorriente.Text <> "" Then
+      .ReportFileName = App.Path + "\credito\reportes\CatalogoDeCreditosDetalle.rpt"
+      .Formulas(0) = "fecha = '" & Format(FecServidor, "dd/mm/yyyy") & "'"
+      .Formulas(1) = "empresa = '" & GLOBALES.gstrNombreEmpresa & "'"
+      .SelectionFormula = "{Catalogo.codigo} = '" & txtCodigoCorriente.Text & "'"
+    End If
+End Select
+ 
+ .PrintReport
+
+End With
+End Sub
+
+Private Sub txtCodigoAtraso_GotFocus()
+ strConsulta = "codigoa"
+End Sub
+
+Private Sub txtCodigoAtraso_KeyPress(KeyAscii As Integer)
+ If KeyAscii = 13 Then medFiadores.SetFocus
+ Call ValidaCodigo(KeyAscii)
+End Sub
+Private Sub txtCodigoAtraso_LostFocus()
+ txtCodigoAtraso.Text = UCase(txtCodigoAtraso.Text)
+End Sub
+
+Private Sub txtCodigoCorriente_GotFocus()
+ strConsulta = "codigo"
+End Sub
+
+Private Sub txtCodigoCorriente_KeyPress(KeyAscii As Integer)
+ If KeyAscii = 13 Then txtDescripcion.SetFocus
+ Call ValidaCodigo(KeyAscii)
+End Sub
+Private Sub txtCodigoCorriente_LostFocus()
+Dim rsComites As New ADODB.Recordset
+
+On Error GoTo CapturaError
+txtCodigoCorriente.Text = UCase(txtCodigoCorriente.Text)
+
+If Trim(txtCodigoCorriente.Text) <> "" And intEdita = 2 Then
+  
+  rsCatalogo.ActiveConnection = GLOBALES.gConDatos
+  rsCatalogo.Source = "Select * from catalogo where codigo='" & txtCodigoCorriente.Text & "'"
+  rsCatalogo.CursorType = adOpenStatic
+  rsCatalogo.Open
+Else
+  If intEdita = 2 Then MsgBox "Digite código de crédito a consultar ...", vbInformation
+  Exit Sub
+End If
+
+With rsCatalogo
+    If .EOF = False And .BOF = False Then
+     txtCodigoAtraso.Text = Trim(!codigoa)
+     txtDescripcion.Text = Trim(!Descripcion)
+     txtCodigoCorriente.Text = Trim(!codigo)
+     medFiadores.Text = Format(CInt(!premio), "###")
+     
+     chkHipoteca.Value = IIf((!gar_hipoteca = "S"), 1, 0)
+     chkfiadores.Value = IIf((!gar_fiadores = "S"), 1, 0)
+     chkSinGarantia.Value = IIf((!gar_no = "S"), 1, 0)
+     chkSobreAhorros.Value = IIf((!gar_sobreahorros = "S"), 1, 0)
+     
+     'Carga Comites
+     With rsComites
+      .Source = "select descripcion from comites where id_comite = " & rsCatalogo!id_comite & ""
+      .CursorType = adOpenStatic
+      .ActiveConnection = GLOBALES.gConDatos
+      .Open
+      If rsComites.EOF = True And rsComites.BOF = True Then
+       Else
+        cboComite.Text = rsComites!Descripcion
+      End If
+      .Close
+     End With
+     
+    'Carga tramites
+    optTipoTramite(0).Value = IIf((!Tramite = "C"), True, False)
+    optTipoTramite(1).Value = IIf((!Tramite = "R"), True, False)
+    
+    'Carga botones
+    tlbPrincipal.Buttons.Item(1).Enabled = True  'insertar
+    tlbPrincipal.Buttons.Item(2).Enabled = True  'modificar
+    tlbPrincipal.Buttons.Item(3).Enabled = False 'guardar
+    tlbPrincipal.Buttons.Item(4).Enabled = False 'deshacer
+    tlbPrincipal.Buttons.Item(6).Enabled = True  'consultar
+    tlbPrincipal.Buttons.Item(7).Enabled = True 'Ayuda
+    tlbPrincipal.Buttons.Item(8).Enabled = True 'Cerrar
+    cmdCuentas.Enabled = True
+    cmdTabla.Enabled = True
+    
+    
+    'Aqui llamar al procedimiento de Seguridad de refrecamiento
+    
+    Else
+     MsgBox "Código no existe en la Base de Datos", vbOKOnly
+    End If
+    .Close
+End With
+
+Exit Sub
+CapturaError:
+Call ProcedimientoErrores(Me.Name)
+End Sub
+Sub LimpiaPantalla()
+ 
+ txtCodigoCorriente.Text = ""
+ txtCodigoAtraso.Text = ""
+ txtDescripcion.Text = ""
+ medFiadores.Text = "0"
+ 
+ chkSobreAhorros.Value = 0
+ chkfiadores.Value = 0
+ chkSinGarantia.Value = 0
+ chkHipoteca.Value = 0
+ 
+ cmdTabla.Enabled = False
+ cmdCuentas.Enabled = False
+End Sub
+Sub RefrescaTags()
+Dim i As Integer
+
+On Error Resume Next
+
+With tlbPrincipal.Buttons
+  For i = 1 To .Count
+    .Item(i).Enabled = IIf((.Item(i).Tag = 0), False, (.Item(i).Enabled))
+  Next i
+End With
+
+ cmdTabla.Enabled = IIf((cmdTabla.Tag = 0), False, cmdTabla.Enabled)
+ cmdCuentas.Enabled = IIf((cmdCuentas.Tag = 0), False, cmdCuentas.Enabled)
+
+End Sub
+Sub GuardarLinea()
+
+Dim strSQL As String, i As Integer, strTramite As String
+Dim rsComite As New ADODB.Recordset
+
+On Error GoTo CapturaError
+
+txtDescripcion.Text = UCase(txtDescripcion.Text)
+txtCodigoCorriente.Text = UCase(txtCodigoCorriente.Text)
+txtCodigoAtraso.Text = UCase(txtCodigoAtraso.Text)
+
+strSQL = ""
+With rsComite
+ .Source = "select id_comite from comites where descripcion = '" & cboComite.Text & "'"
+ .ActiveConnection = GLOBALES.gConDatos
+ .CursorType = adOpenStatic
+ .Open
+ 
+ i = !id_comite
+ 
+ .Close
+End With
+
+Select Case True
+  Case optTipoTramite(0).Value
+    strTramite = "C"
+  Case optTipoTramite(1).Value
+    strTramite = "R"
+End Select
+
+Select Case intEdita
+ Case 0 'Inserta
+    strSQL = "insert into catalogo(codigo,codigoa,descripcion,id_comite,tramite," _
+            & "premio,gar_sobreahorros,gar_fiadores,gar_hipoteca,gar_no) values('" _
+            & txtCodigoCorriente.Text & "','" & txtCodigoAtraso.Text & "','" _
+            & txtDescripcion & "'," & i & ",'" & strTramite & "'," & Abs(Val(medFiadores.Text)) & ",'" _
+            & IIf((chkSobreAhorros.Value = 1), "S", "N") & "','" & IIf((chkfiadores.Value = 1), "S", "N") _
+            & "','" & IIf((chkHipoteca.Value = 1), "S", "N") & "','" & IIf((chkSinGarantia.Value = 1), "S", "N") & "')"
+    GLOBALES.gConDatos.Execute strSQL
+  
+  Case 1 'Edita
+    strSQL = "update catalogo set descripcion = '" & txtDescripcion.Text & "', id_comite =" & i _
+             & ", tramite = '" & strTramite & "', premio = " & Abs(Val(medFiadores.Text)) _
+             & ", gar_sobreahorros = '" & IIf((chkSobreAhorros.Value = 1), "S", "N") & "'" _
+             & ", gar_fiadores = '" & IIf((chkfiadores.Value = 1), "S", "N") & "'" _
+             & ", gar_hipoteca = '" & IIf((chkHipoteca.Value = 1), "S", "N") & "'" _
+             & ", gar_no = '" & IIf((chkSinGarantia.Value = 1), "S", "N") & "'" _
+             & " where codigo = '" & txtCodigoCorriente.Text & "'"
+    GLOBALES.gConDatos.Execute strSQL
+    
+End Select
+
+intEdita = 2
+
+
+Exit Sub
+CapturaError:
+Call ProcedimientoErrores(Me.Name)
+End Sub
+
+Private Sub txtDescripcion_GotFocus()
+ strConsulta = "descripcion"
+End Sub
+
+Private Sub txtDescripcion_KeyPress(KeyAscii As Integer)
+If KeyAscii = 13 Then txtCodigoAtraso.SetFocus
+
+End Sub
+
+

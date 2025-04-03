@@ -1,0 +1,943 @@
+VERSION 5.00
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Begin VB.Form frmCR_Niveles 
+   BorderStyle     =   1  'Fixed Single
+   Caption         =   "Niveles Resolutivos"
+   ClientHeight    =   5025
+   ClientLeft      =   45
+   ClientTop       =   330
+   ClientWidth     =   8220
+   Icon            =   "CR_Niveles.frx":0000
+   LinkTopic       =   "Form1"
+   MaxButton       =   0   'False
+   MDIChild        =   -1  'True
+   ScaleHeight     =   5025
+   ScaleWidth      =   8220
+   Begin VB.TextBox txtHasta 
+      Height          =   315
+      Left            =   5760
+      TabIndex        =   10
+      Top             =   840
+      Width           =   1935
+   End
+   Begin VB.TextBox txtDesde 
+      Height          =   315
+      Left            =   2400
+      TabIndex        =   9
+      Top             =   840
+      Width           =   1935
+   End
+   Begin VB.CommandButton cmdAplicaCodigos 
+      Caption         =   "Actualiza &Códigos"
+      Height          =   315
+      Left            =   6000
+      TabIndex        =   8
+      Top             =   4680
+      Width           =   2055
+   End
+   Begin VB.CommandButton cmdAplicaMiembros 
+      Caption         =   "Actualiza &Miembros"
+      Height          =   315
+      Left            =   1920
+      TabIndex        =   7
+      Top             =   4680
+      Width           =   2055
+   End
+   Begin VB.TextBox txtGrupo 
+      Enabled         =   0   'False
+      Height          =   315
+      Left            =   1080
+      MaxLength       =   28
+      TabIndex        =   6
+      Top             =   480
+      Width           =   6615
+   End
+   Begin MSComctlLib.ListView lswMiembros 
+      Height          =   3015
+      Left            =   0
+      TabIndex        =   2
+      Top             =   1560
+      Width           =   4095
+      _ExtentX        =   7223
+      _ExtentY        =   5318
+      View            =   3
+      LabelWrap       =   -1  'True
+      HideSelection   =   -1  'True
+      Checkboxes      =   -1  'True
+      FullRowSelect   =   -1  'True
+      HotTracking     =   -1  'True
+      _Version        =   393217
+      ForeColor       =   -2147483640
+      BackColor       =   -2147483643
+      Appearance      =   0
+      Enabled         =   0   'False
+      NumItems        =   2
+      BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+         Text            =   "Usuario"
+         Object.Width           =   2540
+      EndProperty
+      BeginProperty ColumnHeader(2) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+         SubItemIndex    =   1
+         Text            =   "Descripción"
+         Object.Width           =   3528
+      EndProperty
+   End
+   Begin MSComctlLib.ListView lswCodigos 
+      Height          =   3015
+      Left            =   4200
+      TabIndex        =   3
+      Top             =   1560
+      Width           =   3975
+      _ExtentX        =   7011
+      _ExtentY        =   5318
+      View            =   3
+      LabelWrap       =   -1  'True
+      HideSelection   =   -1  'True
+      Checkboxes      =   -1  'True
+      FullRowSelect   =   -1  'True
+      HotTracking     =   -1  'True
+      _Version        =   393217
+      ForeColor       =   -2147483640
+      BackColor       =   -2147483643
+      Appearance      =   0
+      Enabled         =   0   'False
+      NumItems        =   2
+      BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+         Text            =   "Codigo"
+         Object.Width           =   2117
+      EndProperty
+      BeginProperty ColumnHeader(2) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+         SubItemIndex    =   1
+         Text            =   "Descripción"
+         Object.Width           =   4410
+      EndProperty
+   End
+   Begin MSComctlLib.Toolbar tlbPrincipal 
+      Align           =   1  'Align Top
+      Height          =   360
+      Left            =   0
+      TabIndex        =   4
+      Top             =   0
+      Width           =   8220
+      _ExtentX        =   14499
+      _ExtentY        =   635
+      ButtonWidth     =   609
+      ButtonHeight    =   582
+      AllowCustomize  =   0   'False
+      Appearance      =   1
+      Style           =   1
+      _Version        =   393216
+      BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
+         NumButtons      =   9
+         BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "insertar"
+            Object.ToolTipText     =   "Inserta (Agrega) un registro nuevo a la Base de Datos"
+            Object.Tag             =   "1"
+         EndProperty
+         BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "modificar"
+            Object.ToolTipText     =   "Modifica (Edita) el registro en pantalla"
+            Object.Tag             =   "1"
+         EndProperty
+         BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "borrar"
+            Object.ToolTipText     =   "Borra el registro en pantalla de la base de datos"
+            Object.Tag             =   "1"
+         EndProperty
+         BeginProperty Button4 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "guardar"
+            Object.ToolTipText     =   "Guarda la información del registro en la base de datos"
+            Object.Tag             =   "1"
+         EndProperty
+         BeginProperty Button5 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "deshacer"
+            Object.ToolTipText     =   "Deshace toda modificación realizada recientemente en el registro actual"
+            Object.Tag             =   "1"
+         EndProperty
+         BeginProperty Button6 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "consultar"
+            Object.ToolTipText     =   "Realiza una consulta personalizada sobre los datos actuales"
+            Object.Tag             =   "1"
+         EndProperty
+         BeginProperty Button7 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "reportes"
+            Object.ToolTipText     =   "Imprime el listado seleccionado"
+            Object.Tag             =   "1"
+            Style           =   5
+            BeginProperty ButtonMenus {66833FEC-8583-11D1-B16A-00C0F0283628} 
+               NumButtonMenus  =   7
+               BeginProperty ButtonMenu1 {66833FEE-8583-11D1-B16A-00C0F0283628} 
+                  Key             =   "Grupos"
+                  Text            =   "Grupos"
+               EndProperty
+               BeginProperty ButtonMenu2 {66833FEE-8583-11D1-B16A-00C0F0283628} 
+                  Key             =   "Miembros"
+                  Text            =   "Grupos y Miembros"
+               EndProperty
+               BeginProperty ButtonMenu3 {66833FEE-8583-11D1-B16A-00C0F0283628} 
+                  Key             =   "Derechos"
+                  Text            =   "Grupos y Derechos"
+               EndProperty
+               BeginProperty ButtonMenu4 {66833FEE-8583-11D1-B16A-00C0F0283628} 
+                  Key             =   "sep1"
+                  Text            =   "-"
+               EndProperty
+               BeginProperty ButtonMenu5 {66833FEE-8583-11D1-B16A-00C0F0283628} 
+                  Key             =   "GruposTotal"
+                  Text            =   "Grupos (Miembros - Derechos)"
+               EndProperty
+               BeginProperty ButtonMenu6 {66833FEE-8583-11D1-B16A-00C0F0283628} 
+                  Key             =   "MiembrosDerechos"
+                  Text            =   "Miembros Derechos"
+               EndProperty
+               BeginProperty ButtonMenu7 {66833FEE-8583-11D1-B16A-00C0F0283628} 
+                  Key             =   "MiembrosGrupos"
+                  Text            =   "Miembros Grupos"
+               EndProperty
+            EndProperty
+         EndProperty
+         BeginProperty Button8 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "ayuda"
+            Object.ToolTipText     =   "Ayuda General"
+            Object.Tag             =   "1"
+         EndProperty
+         BeginProperty Button9 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "cerrar"
+            Object.ToolTipText     =   "Sale de esta ventana"
+            Object.Tag             =   "1"
+         EndProperty
+      EndProperty
+      BorderStyle     =   1
+   End
+   Begin VB.Label G 
+      Alignment       =   2  'Center
+      BorderStyle     =   1  'Fixed Single
+      Caption         =   "Hasta"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   300
+      Index           =   3
+      Left            =   4320
+      TabIndex        =   13
+      Top             =   840
+      Width           =   1455
+   End
+   Begin VB.Label G 
+      Alignment       =   2  'Center
+      BorderStyle     =   1  'Fixed Single
+      Caption         =   "Desde"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   300
+      Index           =   2
+      Left            =   1080
+      TabIndex        =   12
+      Top             =   840
+      Width           =   1335
+   End
+   Begin VB.Label G 
+      Caption         =   "Rangos"
+      Height          =   255
+      Index           =   1
+      Left            =   120
+      TabIndex        =   11
+      Top             =   840
+      Width           =   975
+   End
+   Begin VB.Line Line2 
+      BorderColor     =   &H00FFFFFF&
+      X1              =   -120
+      X2              =   8160
+      Y1              =   1200
+      Y2              =   1200
+   End
+   Begin VB.Line Line1 
+      BorderColor     =   &H80000010&
+      BorderWidth     =   2
+      X1              =   0
+      X2              =   8160
+      Y1              =   1200
+      Y2              =   1200
+   End
+   Begin VB.Image imgBusqueda_Rapida 
+      Height          =   255
+      Index           =   1
+      Left            =   7800
+      Picture         =   "CR_Niveles.frx":030A
+      Stretch         =   -1  'True
+      ToolTipText     =   "Busqueda Rápida"
+      Top             =   480
+      Width           =   255
+   End
+   Begin VB.Label G 
+      Caption         =   "Grupo"
+      Height          =   255
+      Index           =   0
+      Left            =   120
+      TabIndex        =   5
+      Top             =   480
+      Width           =   975
+   End
+   Begin VB.Label Label1 
+      Alignment       =   2  'Center
+      BackColor       =   &H00808080&
+      Caption         =   "Códigos que Aprueba"
+      ForeColor       =   &H8000000E&
+      Height          =   285
+      Index           =   1
+      Left            =   4080
+      TabIndex        =   1
+      Top             =   1275
+      Width           =   4095
+   End
+   Begin VB.Label Label1 
+      Alignment       =   2  'Center
+      BackColor       =   &H00808080&
+      Caption         =   "Miembros"
+      ForeColor       =   &H8000000E&
+      Height          =   285
+      Index           =   0
+      Left            =   0
+      TabIndex        =   0
+      Top             =   1275
+      Width           =   4095
+   End
+End
+Attribute VB_Name = "frmCR_Niveles"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Explicit
+Dim strSQL As String
+Dim mblnEdita As Boolean
+Dim mstrGrupo As String
+Function fxDescribeUsuario(strUsuario As String) As String
+Dim rs As New ADODB.Recordset
+fxDescribeUsuario = ""
+
+strSQL = "Select * from Usuarios where Nombre='" & strUsuario & "'"
+With rs
+   .Open strSQL, glogon.Conection, adOpenStatic
+      If .EOF = False Then
+         fxDescribeUsuario = !descripcion
+      End If
+   .Close
+End With
+End Function
+
+Function fxDevuelveGrupo(strGrupo As String) As Variant
+Dim rs As New ADODB.Recordset
+
+fxDevuelveGrupo = 0
+strSQL = "Select * from Nivel_Grupos Where NV_Descripcion='" & strGrupo & "'" _
+          & "And Nv_Tipo='" & GLOBALES.gstrNivelResolutivo & "'"
+With rs
+  .Open strSQL, glogon.Conection, adOpenStatic
+     If .EOF = False Then
+        fxDevuelveGrupo = !NV_Cod_Grupo
+     End If
+  .Close
+End With
+
+End Function
+
+Function fxExisteMiembro(Grupo As Long, Miembro As String) As Boolean
+Dim rs As New ADODB.Recordset
+fxExisteMiembro = False
+
+strSQL = "Select * from Nivel_Miembros where NV_Cod_Grupo=" & Grupo
+strSQL = strSQL & " and Nombre='" & Miembro & "'"
+
+With rs
+  .Open strSQL, glogon.Conection, adOpenStatic
+    If .EOF = False Then
+        fxExisteMiembro = True
+    End If
+  .Close
+End With
+
+End Function
+
+Function fxExisteCodigo(Grupo As Long, Codigo As String) As Boolean
+Dim rs As New ADODB.Recordset
+fxExisteCodigo = False
+
+strSQL = "Select * from Nivel_Derechos where NV_Cod_Grupo=" & Grupo
+strSQL = strSQL & " and Codigo='" & Codigo & "'"
+
+With rs
+  .Open strSQL, glogon.Conection, adOpenStatic
+    If .EOF = False Then
+        fxExisteCodigo = True
+    End If
+  .Close
+End With
+
+End Function
+Function fxVerificaGrupo(strGrupo As String) As Boolean
+Dim rs As New ADODB.Recordset
+
+strSQL = "Select * from Nivel_Grupos where nv_descripcion='" & strGrupo & "'" _
+         & " And Nv_Tipo='" & GLOBALES.gstrNivelResolutivo & "'"
+fxVerificaGrupo = False
+With rs
+     .Open strSQL, glogon.Conection, adOpenStatic
+        If .EOF = False Then
+           fxVerificaGrupo = True
+        End If
+     .Close
+End With
+
+End Function
+
+Sub sbBuscaGrupo()
+Dim strSQL As String, rs As New ADODB.Recordset
+Dim lngGrupo As Long
+
+Me.MousePointer = vbHourglass
+'lngGrupo = fxDevuelveGrupo(UCase(Trim(txtGrupo)))
+
+lngGrupo = 0
+
+strSQL = "Select * from Nivel_Grupos Where NV_Descripcion='" & UCase(Trim(txtGrupo)) & "'" _
+          & "And Nv_Tipo='" & GLOBALES.gstrNivelResolutivo & "'"
+rs.Open strSQL, glogon.Conection, adOpenStatic
+If Not rs.EOF And Not rs.BOF Then
+   lngGrupo = rs!NV_Cod_Grupo
+   txtDesde = Format(IIf(IsNull(rs!nv_desde), 0, rs!nv_desde), "Standard")
+   txtHasta = Format(IIf(IsNull(rs!nv_hasta), 0, rs!nv_hasta), "Standard")
+End If
+rs.Close
+
+
+If lngGrupo > 0 Then
+   mblnEdita = True
+   tlbPrincipal.Buttons(1).Enabled = True
+   tlbPrincipal.Buttons(2).Enabled = True
+   tlbPrincipal.Buttons(3).Enabled = True
+   tlbPrincipal.Buttons(4).Enabled = False
+   tlbPrincipal.Buttons(5).Enabled = False
+   imgBusqueda_Rapida(1).Enabled = True
+   lswMiembros.Enabled = False
+   lswCodigos.Enabled = False
+   txtGrupo.Enabled = False
+   tlbPrincipal.Enabled = False
+   Call sbCodigosAsignados
+   Call sbMiembrosAsignados
+   tlbPrincipal.Enabled = True
+End If
+
+Me.MousePointer = vbDefault
+
+End Sub
+
+Sub sbCodigos()
+Dim rs As New ADODB.Recordset
+Dim itmX As ListItem
+
+lswCodigos.ListItems.Clear
+strSQL = "Select * From Catalogo order by Codigo"
+With rs
+  rs.Open strSQL, glogon.Conection, adOpenStatic
+    Do While .EOF = False
+       Set itmX = lswCodigos.ListItems.Add(, , !Codigo)
+           itmX.SubItems(1) = !descripcion
+       .MoveNext
+    Loop
+  rs.Close
+End With
+
+End Sub
+
+Sub sbCodigosAsignados()
+Dim rs As New ADODB.Recordset
+Dim itmX As ListItem
+Dim lngGrupo As Long
+Dim i As Integer
+Dim blnFind As Boolean
+
+lswCodigos.ListItems.Clear
+lngGrupo = fxDevuelveGrupo(UCase(Trim(txtGrupo)))
+
+strSQL = "Select C.codigo,C.descripcion " _
+       & " From Nivel_Derechos N inner join Catalogo C on N.codigo = C.codigo" _
+       & " where NV_Cod_Grupo=" & lngGrupo & " Order by C.Codigo"
+With rs
+  rs.Open strSQL, glogon.Conection, adOpenStatic
+    Do While .EOF = False
+       Set itmX = lswCodigos.ListItems.Add(, , !Codigo)
+           itmX.SubItems(1) = !descripcion
+           itmX.Checked = True
+       .MoveNext
+    Loop
+  rs.Close
+    
+  strSQL = "Select codigo,descripcion from Catalogo Where Codigo Not In (Select Codigo From Nivel_Derechos"
+  strSQL = strSQL & " Where NV_Cod_Grupo=" & lngGrupo & ") Order by Codigo"
+  rs.Open strSQL, glogon.Conection, adOpenStatic
+    Do While .EOF = False
+          Set itmX = lswCodigos.ListItems.Add(, , !Codigo)
+              itmX.SubItems(1) = !descripcion
+       .MoveNext
+    Loop
+  rs.Close
+  
+End With
+
+End Sub
+
+
+Sub sbGuardar()
+
+If Trim(txtGrupo) = "" Then
+   MsgBox "Falta El Nombre Del Grupo", vbInformation, "No Se Puede Actualizar Registro"
+   Exit Sub
+End If
+
+If mblnEdita = True Then
+   If txtGrupo <> mstrGrupo Then
+      If fxVerificaGrupo(UCase(Trim(txtGrupo))) = False Then
+         strSQL = "Update Nivel_Grupos set NV_Descripcion='" & UCase(Trim(txtGrupo)) _
+                & "',nv_desde = " & CCur(txtDesde) & ",nv_hasta = " & CCur(txtHasta) _
+                & " Where NV_Cod_Grupo=" & fxDevuelveGrupo(UCase(Trim(mstrGrupo)))
+         glogon.Conection.Execute strSQL
+         Call Bitacora("Modifica", "Modifica El Nombre Al Grupo " & mstrGrupo & " Por " & Trim(txtGrupo))
+      Else
+         MsgBox "El Nombre Del Grupo Ya Existe", vbInformation, "No Se Puede Actualizar Registro"
+         Exit Sub
+      End If
+   Else
+      strSQL = "Update Nivel_Grupos set NV_Descripcion='" & UCase(Trim(txtGrupo)) _
+             & "',nv_desde = " & CCur(txtDesde) & ",nv_hasta = " & CCur(txtHasta) _
+             & " Where NV_Cod_Grupo=" & fxDevuelveGrupo(UCase(Trim(mstrGrupo)))
+      glogon.Conection.Execute strSQL
+   End If
+
+Else
+   If fxVerificaGrupo(UCase(Trim(txtGrupo))) = False Then
+     strSQL = "Insert into Nivel_Grupos(NV_Descripcion,NV_Tipo,nv_desde,nv_hasta) Values('" _
+            & UCase(Trim(txtGrupo)) & "','" & GLOBALES.gstrNivelResolutivo & "'," & CCur(txtDesde) _
+            & "," & CCur(txtHasta) & ")"
+     glogon.Conection.Execute strSQL
+     Call Bitacora("Registra", "Registra Al Grupo " & Trim(txtGrupo))
+   Else
+     MsgBox "El Nombre Del Grupo Ya Existe", vbInformation, "No Se Puede Actualizar Registro"
+     Exit Sub
+   End If
+End If
+
+tlbPrincipal.Buttons(1).Enabled = True
+tlbPrincipal.Buttons(2).Enabled = True
+tlbPrincipal.Buttons(3).Enabled = True
+tlbPrincipal.Buttons(4).Enabled = False
+tlbPrincipal.Buttons(5).Enabled = False
+imgBusqueda_Rapida(1).Enabled = True
+lswMiembros.Enabled = False
+lswCodigos.Enabled = False
+txtGrupo.Enabled = False
+cmdAplicaCodigos.Value = True
+cmdAplicaMiembros.Value = True
+Call sbCodigosAsignados
+Call sbMiembrosAsignados
+mblnEdita = True
+
+cmdAplicaCodigos.Enabled = False
+cmdAplicaMiembros.Enabled = False
+
+End Sub
+
+Sub sbMiembros()
+Dim rs As New ADODB.Recordset
+Dim itmX As ListItem
+
+lswMiembros.ListItems.Clear
+strSQL = "Select * From Usuarios where Estado='A' order by Nombre"
+With rs
+  rs.Open strSQL, glogon.Conection, adOpenStatic
+    Do While .EOF = False
+       Set itmX = lswMiembros.ListItems.Add(, , !Nombre)
+           itmX.SubItems(1) = !descripcion
+       .MoveNext
+    Loop
+  rs.Close
+End With
+
+End Sub
+
+Sub sbMiembrosAsignados()
+Dim rs As New ADODB.Recordset
+Dim itmX As ListItem
+Dim lngGrupo As Long
+Dim i As Integer
+Dim blnFind As Boolean
+
+lswMiembros.ListItems.Clear
+lngGrupo = fxDevuelveGrupo(UCase(Trim(txtGrupo)))
+
+strSQL = "Select U.nombre,U.descripcion" _
+       & " From Nivel_Miembros N inner join Usuarios U on N.nombre = U.nombre" _
+       & " where NV_Cod_Grupo = " & lngGrupo & " Order by U.Nombre"
+With rs
+  rs.Open strSQL, glogon.Conection, adOpenStatic
+    Do While .EOF = False
+       Set itmX = lswMiembros.ListItems.Add(, , !Nombre)
+           itmX.SubItems(1) = !descripcion
+           itmX.Checked = True
+       .MoveNext
+    Loop
+  rs.Close
+  
+  strSQL = "Select Nombre,Descripcion from Usuarios Where Nombre Not In (Select Nombre From Nivel_Miembros"
+  strSQL = strSQL & " Where NV_Cod_Grupo=" & lngGrupo & ") Order by Nombre"
+  rs.Open strSQL, glogon.Conection, adOpenStatic
+    Do While .EOF = False
+          Set itmX = lswMiembros.ListItems.Add(, , !Nombre)
+              itmX.SubItems(1) = !descripcion
+       .MoveNext
+    Loop
+  rs.Close
+  
+End With
+
+End Sub
+
+Private Sub cmdAplicaCodigos_Click()
+Dim lngGrupo As Long
+Dim i As Integer
+
+Me.MousePointer = vbHourglass
+
+lngGrupo = fxDevuelveGrupo(UCase(Trim(txtGrupo)))
+If lngGrupo > 0 Then
+   For i = 1 To lswCodigos.ListItems.Count
+     If lswCodigos.ListItems.Item(i).Checked = True Then
+        If mblnEdita = False Then
+           strSQL = "Insert into Nivel_Derechos(NV_Cod_Grupo,Codigo) Values(" _
+                  & lngGrupo & ",'" & Trim(lswCodigos.ListItems.Item(i)) & "')"
+           glogon.Conection.Execute strSQL
+           Call Bitacora("Registra", "Registra Al Codigo " & Trim(lswCodigos.ListItems.Item(i)) & " En " & lngGrupo)
+        Else
+           If fxExisteCodigo(lngGrupo, Trim(lswCodigos.ListItems.Item(i))) = False Then
+              strSQL = "Insert into Nivel_Derechos(NV_Cod_Grupo,Codigo) Values(" _
+                     & lngGrupo & ",'" & Trim(lswCodigos.ListItems.Item(i)) & "')"
+              glogon.Conection.Execute strSQL
+              Call Bitacora("Registra", "Registra Al Codigo " & Trim(lswCodigos.ListItems.Item(i)) & " En " & lngGrupo)
+           End If
+        End If
+     Else
+        If mblnEdita = True Then
+           strSQL = "Delete from Nivel_Derechos where NV_Cod_Grupo=" & lngGrupo _
+                  & " and Codigo='" & Trim(lswCodigos.ListItems.Item(i)) & "'"
+           glogon.Conection.Execute strSQL
+           Call Bitacora("Borra", "Borra Al Codigo " & Trim(lswCodigos.ListItems.Item(i)) & " En " & lngGrupo)
+        End If
+     End If
+   Next
+End If
+
+Me.MousePointer = vbDefault
+
+End Sub
+
+Private Sub cmdAplicaMiembros_Click()
+Dim lngGrupo As Long
+Dim i As Integer
+
+Me.MousePointer = vbHourglass
+
+lngGrupo = fxDevuelveGrupo(UCase(Trim(txtGrupo)))
+If lngGrupo > 0 Then
+   For i = 1 To lswMiembros.ListItems.Count
+     If lswMiembros.ListItems.Item(i).Checked = True Then
+        If mblnEdita = False Then
+           strSQL = "Insert into Nivel_Miembros(NV_Cod_Grupo,Nombre) Values(" _
+                  & lngGrupo & ",'" & Trim(lswMiembros.ListItems.Item(i)) & "')"
+           glogon.Conection.Execute strSQL
+           Call Bitacora("Registra", "Registra Al Miembro " & Trim(lswMiembros.ListItems.Item(i)) & " En " & lngGrupo)
+        Else
+           If fxExisteMiembro(lngGrupo, Trim(lswMiembros.ListItems.Item(i))) = False Then
+              strSQL = "Insert into Nivel_Miembros(NV_Cod_Grupo,Nombre) Values(" _
+                     & lngGrupo & ",'" & Trim(lswMiembros.ListItems.Item(i)) & "')"
+              glogon.Conection.Execute strSQL
+              Call Bitacora("Registra", "Registra Al Miembro " & Trim(lswMiembros.ListItems.Item(i)) & " En " & lngGrupo)
+           End If
+        End If
+     Else
+        If mblnEdita = True Then
+           strSQL = "Delete from Nivel_Miembros where NV_Cod_Grupo=" & lngGrupo _
+                  & " and Nombre='" & Trim(lswMiembros.ListItems.Item(i)) & "'"
+           glogon.Conection.Execute strSQL
+           Call Bitacora("Borra", "Borra Al Miembro " & Trim(lswMiembros.ListItems.Item(i)) & " En " & lngGrupo)
+        End If
+     End If
+   Next
+End If
+
+Me.MousePointer = vbDefault
+
+End Sub
+
+Private Sub Form_Activate()
+vModulo = 3
+End Sub
+
+Private Sub Form_Load()
+Call sbToolBar_Iconos(tlbPrincipal, False)
+vModulo = 3
+Call Formularios(Me)
+
+tlbPrincipal.Buttons(1).Enabled = True
+tlbPrincipal.Buttons(2).Enabled = False
+tlbPrincipal.Buttons(3).Enabled = False
+tlbPrincipal.Buttons(4).Enabled = False
+tlbPrincipal.Buttons(5).Enabled = False
+
+Call RefrescaTags(Me)
+
+End Sub
+
+Private Sub imgBusqueda_Rapida_Click(Index As Integer)
+
+On Error GoTo CapturaError
+
+
+Select Case Index
+  Case 1
+    gBusquedas.Resultado = Trim(txtGrupo)
+    gBusquedas.Consulta = "Select NV_Descripcion AS DESCRIPCION From Nivel_Grupos"
+    gBusquedas.Filtro = "And Nv_Tipo='" & GLOBALES.gstrNivelResolutivo & "'"
+    gBusquedas.Columna = "NV_Descripcion"
+    gBusquedas.Orden = "NV_Descripcion"
+    frmBusquedas.Show vbModal
+    GLOBALES.gblnBuscando = True
+    txtGrupo = gBusquedas.Resultado
+    
+End Select
+
+Exit Sub
+CapturaError:
+   Call ProcedimientoErrores(Me.Name, Err)
+End Sub
+
+
+
+Private Sub tlbPrincipal_ButtonClick(ByVal Button As MSComctlLib.Button)
+Dim lngGrupo As Long
+
+If Button.Key <> "cerrar" Then
+   Me.MousePointer = vbHourglass
+End If
+
+Select Case Button.Key
+  Case "insertar"
+       mblnEdita = False
+       tlbPrincipal.Buttons(1).Enabled = False
+       tlbPrincipal.Buttons(2).Enabled = False
+       tlbPrincipal.Buttons(3).Enabled = False
+       tlbPrincipal.Buttons(4).Enabled = True
+       tlbPrincipal.Buttons(5).Enabled = True
+       imgBusqueda_Rapida(1).Enabled = False
+       lswMiembros.Enabled = True
+       lswCodigos.Enabled = True
+       txtGrupo.Enabled = True
+       txtGrupo = ""
+       txtDesde = 0
+       txtHasta = 0
+       txtGrupo.SetFocus
+       Call sbMiembros
+       Call sbCodigos
+       cmdAplicaCodigos.Enabled = False
+       cmdAplicaMiembros.Enabled = False
+       
+  Case "modificar"
+       mblnEdita = True
+       tlbPrincipal.Buttons(1).Enabled = False
+       tlbPrincipal.Buttons(2).Enabled = False
+       tlbPrincipal.Buttons(3).Enabled = False
+       tlbPrincipal.Buttons(4).Enabled = True
+       tlbPrincipal.Buttons(5).Enabled = True
+       imgBusqueda_Rapida(1).Enabled = False
+       lswMiembros.Enabled = True
+       lswCodigos.Enabled = True
+       txtGrupo.Enabled = True
+       txtGrupo.SetFocus
+       mstrGrupo = txtGrupo
+       cmdAplicaCodigos.Enabled = True
+       cmdAplicaMiembros.Enabled = True
+       
+  Case "borrar"
+       If MsgBox("Registro Será Eliminado", vbInformation + vbYesNo, "Confirme Opción") = vbYes Then
+          lngGrupo = fxDevuelveGrupo(UCase(Trim(txtGrupo)))
+          If lngGrupo > 0 Then
+             strSQL = "Delete from Nivel_Derechos where NV_Cod_Grupo=" & lngGrupo
+             glogon.Conection.Execute strSQL
+             
+             strSQL = "Delete from Nivel_Miembros where NV_Cod_Grupo=" & lngGrupo
+             glogon.Conection.Execute strSQL
+             
+             strSQL = "Delete from Nivel_Grupos where NV_Cod_Grupo=" & lngGrupo
+             glogon.Conection.Execute strSQL
+             
+             Call Bitacora("Borra", "Elimino Al Grupo " & Trim(txtGrupo))
+             
+             tlbPrincipal.Buttons(1).Enabled = True
+             tlbPrincipal.Buttons(2).Enabled = False
+             tlbPrincipal.Buttons(3).Enabled = False
+             tlbPrincipal.Buttons(4).Enabled = False
+             tlbPrincipal.Buttons(5).Enabled = False
+             imgBusqueda_Rapida(1).Enabled = True
+             lswMiembros.Enabled = False
+             lswCodigos.Enabled = False
+             txtGrupo.Enabled = False
+             txtGrupo = ""
+             lswMiembros.ListItems.Clear
+             lswCodigos.ListItems.Clear
+             cmdAplicaCodigos.Enabled = False
+             cmdAplicaMiembros.Enabled = False
+          End If
+       End If
+       
+  Case "guardar"
+       tlbPrincipal.Enabled = False
+       Call sbGuardar
+       tlbPrincipal.Enabled = True
+       
+  Case "deshacer"
+       tlbPrincipal.Buttons(1).Enabled = True
+       tlbPrincipal.Buttons(2).Enabled = False
+       tlbPrincipal.Buttons(3).Enabled = False
+       tlbPrincipal.Buttons(4).Enabled = False
+       tlbPrincipal.Buttons(5).Enabled = False
+       imgBusqueda_Rapida(1).Enabled = True
+       lswMiembros.Enabled = False
+       lswCodigos.Enabled = False
+       txtGrupo.Enabled = False
+       txtGrupo = ""
+       lswMiembros.ListItems.Clear
+       lswCodigos.ListItems.Clear
+       cmdAplicaCodigos.Enabled = False
+       cmdAplicaMiembros.Enabled = False
+       
+  Case "consultar"
+  Case "ayuda"
+  Case "cerrar"
+       Unload Me
+End Select
+
+If Button.Key <> "cerrar" Then
+   Me.MousePointer = vbDefault
+End If
+End Sub
+
+Private Sub tlbPrincipal_ButtonMenuClick(ByVal ButtonMenu As MSComctlLib.ButtonMenu)
+Dim strRuta As String
+Dim strSQL As String
+Dim dateFecha As Date
+
+On Error GoTo CapturaError
+Me.MousePointer = vbHourglass
+
+strRuta = App.Path + "\Credito\Reportes\"
+
+With MDIPrincipal.Crt
+ .Reset
+ .WindowShowGroupTree = True
+ .WindowShowPrintSetupBtn = True
+ .WindowShowRefreshBtn = True
+ .WindowShowSearchBtn = True
+ .WindowState = crptMaximized
+ .WindowTitle = "Reportes del Módulo de Créditos"
+ .Formulas(0) = "Fecha='" & Format(fxFechaServidor, "dd/mm/yyyy") & "'"
+ .Formulas(1) = "Empresa='" & GLOBALES.gstrNombreEmpresa & "'"
+ .SelectionFormula = "{NIVEL_GRUPOS.NV_TIPO} = '" & GLOBALES.gstrNivelResolutivo & "'"
+   
+ Select Case ButtonMenu.Key
+   Case "Grupos"
+         .ReportFileName = strRuta & "NV_Grupos.rpt"
+   Case "Miembros"
+         .ReportFileName = strRuta & "NV_GruposMiembros.rpt"
+   Case "Derechos"
+         .ReportFileName = strRuta & "NV_GruposDerechos.rpt"
+   Case "GruposTotal"
+         .ReportFileName = strRuta & "NV_GruposMiembrosDerechos.rpt"
+   Case "MiembrosDerechos"
+         .ReportFileName = strRuta & "NV_MiembrosDerechos.rpt"
+   Case "MiembrosGrupos"
+         .ReportFileName = strRuta & "NV_MiembrosGrupos.rpt"
+ End Select
+  
+  .PrintReport
+  
+End With
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+CapturaError:
+Me.MousePointer = vbDefault
+Call ProcedimientoErrores(Me.Name, Err)
+End Sub
+
+Private Sub txtDesde_GotFocus()
+On Error GoTo vError
+txtDesde = CCur(txtDesde)
+vError:
+End Sub
+
+Private Sub txtDesde_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = vbKeyReturn Or KeyCode = vbKeyTab Then txtHasta.SetFocus
+End Sub
+
+Private Sub txtDesde_LostFocus()
+On Error GoTo vError
+txtDesde = Format(txtDesde, "Standard")
+vError:
+End Sub
+
+Private Sub txtHasta_GotFocus()
+On Error GoTo vError
+txtHasta = CCur(txtHasta)
+vError:
+End Sub
+
+Private Sub txtHasta_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = vbKeyReturn Or KeyCode = vbKeyTab Then lswMiembros.SetFocus
+End Sub
+
+Private Sub txtHasta_LostFocus()
+On Error GoTo vError
+txtHasta = Format(txtHasta, "Standard")
+vError:
+End Sub
+
+Private Sub txtGrupo_Change()
+If GLOBALES.gblnBuscando = True Then
+   Call sbBuscaGrupo
+   GLOBALES.gblnBuscando = False
+   Call RefrescaTags(Me)
+End If
+End Sub
+
+Private Sub txtGrupo_KeyPress(KeyAscii As Integer)
+If KeyAscii = vbKeyReturn Or KeyAscii = vbKeyTab Then
+   Call sbBuscaGrupo
+   txtDesde.SetFocus
+End If
+End Sub
+
+

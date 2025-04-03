@@ -1,0 +1,158 @@
+VERSION 5.00
+Begin VB.Form frmAF_Botones 
+   BorderStyle     =   3  'Fixed Dialog
+   Caption         =   "Debe Suministrar Los Siguientes Datos..."
+   ClientHeight    =   1110
+   ClientLeft      =   45
+   ClientTop       =   330
+   ClientWidth     =   3720
+   ControlBox      =   0   'False
+   LinkTopic       =   "Form1"
+   MaxButton       =   0   'False
+   MinButton       =   0   'False
+   ScaleHeight     =   1110
+   ScaleWidth      =   3720
+   ShowInTaskbar   =   0   'False
+   StartUpPosition =   2  'CenterScreen
+   Begin VB.CommandButton cmdCerrar 
+      Caption         =   "&Cerrar"
+      Height          =   855
+      Left            =   2520
+      Picture         =   "frmAF_Botones.frx":0000
+      Style           =   1  'Graphical
+      TabIndex        =   2
+      Top             =   120
+      Width           =   1095
+   End
+   Begin VB.CommandButton cmdBeneficiario 
+      Caption         =   "&Beneficiarios"
+      Height          =   855
+      Left            =   1320
+      Picture         =   "frmAF_Botones.frx":030A
+      Style           =   1  'Graphical
+      TabIndex        =   1
+      Top             =   120
+      Width           =   1095
+   End
+   Begin VB.CommandButton cmdTelefono 
+      Caption         =   "&Telefonos"
+      Default         =   -1  'True
+      Height          =   855
+      Left            =   120
+      Picture         =   "frmAF_Botones.frx":0BD4
+      Style           =   1  'Graphical
+      TabIndex        =   0
+      Top             =   120
+      Width           =   1095
+   End
+End
+Attribute VB_Name = "frmAF_Botones"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+
+Private Sub cmdBeneficiario_Click()
+frmAF_Beneficiarios.Show vbModal
+End Sub
+
+
+Private Sub cmdCerrar_Click()
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'OBJETIVO:      Verificar que al nuevo Socio hayan sido asignadoa al menos un #Telefonico
+'               y un Beneficiario de lo contrario procede a reversar los movimientos para
+'               el Socio recien ingresado.
+'REFERENCIAS:   Ninguna.
+'OBSERVACIONES: Ninguna.
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Dim recTelefonos As New ADODB.Recordset
+Dim recBeneficiarios As New ADODB.Recordset
+Dim blnTelefonos As Boolean
+Dim blnBeneficiarios As Boolean
+Dim strResp As String
+Dim strSQL As String
+
+With recTelefonos
+     .Source = "Select * From Telefonos Where Cedula='" & Trim(frmAF_Principal.txtCedula) & "'"
+     .ActiveConnection = glogon.Conection
+     .CursorType = adOpenStatic
+     .Open
+     
+     If .EOF = True Then
+        blnTelefonos = False
+     Else
+        blnTelefonos = True
+     End If
+     
+     .Close
+End With
+
+With recBeneficiarios
+     .Source = "Select * From Beneficiarios Where Cedula='" & Trim(frmAF_Principal.txtCedula) & "'"
+     .ActiveConnection = glogon.Conection
+     .CursorType = adOpenStatic
+     .Open
+     
+     If .EOF = True Then
+        blnBeneficiarios = False
+     Else
+        blnBeneficiarios = True
+     End If
+     
+     .Close
+End With
+
+
+If blnTelefonos = False Then
+  strResp = MsgBox("Por lo tanto el Sistema procedera a reversar" & vbCrLf & "todo lo que ha registrado hasta este momento", vbExclamation + vbOKCancel + vbDefaultButton2, "No ha ingresado ningun número Telefonico")
+  If strResp = vbOK Then
+     Me.MousePointer = vbHourglass
+     strSQL = "Delete From Ahorro_Consolidado Where Cedula='" & Trim(frmAF_Principal.txtCedula) & "'"
+     glogon.Conection.Execute strSQL
+     strSQL = "Delete From Telefonos Where Cedula='" & Trim(frmAF_Principal.txtCedula) & "'"
+     glogon.Conection.Execute strSQL
+     strSQL = "Delete From Beneficiarios Where Cedula='" & Trim(frmAF_Principal.txtCedula) & "'"
+     glogon.Conection.Execute strSQL
+     strSQL = "Delete From Socios Where Cedula='" & Trim(frmAF_Principal.txtCedula) & "'"
+     glogon.Conection.Execute strSQL
+     
+     GLOBALES.gblnReversa = True
+     Me.MousePointer = vbDefault
+     Unload Me
+  End If
+ElseIf blnBeneficiarios = False Then
+  strResp = MsgBox("Por lo tanto el Sistema procedera a reversar" & vbCrLf & "todo lo que ha registrado hasta este momento", vbExclamation + vbOKCancel + vbDefaultButton2, "No ha ingresado ningun Beneficiario")
+  If strResp = vbOK Then
+     Me.MousePointer = vbHourglass
+     strSQL = "Delete From Ahorro_Consolidado Where Cedula='" & Trim(frmAF_Principal.txtCedula) & "'"
+     glogon.Conection.Execute strSQL
+     strSQL = "Delete From Telefonos Where Cedula='" & Trim(frmAF_Principal.txtCedula) & "'"
+     glogon.Conection.Execute strSQL
+     strSQL = "Delete From Beneficiarios Where Cedula='" & Trim(frmAF_Principal.txtCedula) & "'"
+     glogon.Conection.Execute strSQL
+     strSQL = "Delete From Socios Where Cedula='" & Trim(frmAF_Principal.txtCedula) & "'"
+     glogon.Conection.Execute strSQL
+     
+     GLOBALES.gblnReversa = True
+     Me.MousePointer = vbDefault
+     Unload Me
+  End If
+Else
+  Unload Me
+End If
+
+End Sub
+
+
+Private Sub cmdTelefono_Click()
+ GLOBALES.gCedulaActual = frmAF_Principal.txtCedula
+ frmAF_Telefonos.Show vbModal
+End Sub
+
+
+Private Sub Form_DblClick()
+Set Conlsw.frmX = Me
+Conlsw.ImprimeForm
+End Sub
+
