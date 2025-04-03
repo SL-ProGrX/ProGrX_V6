@@ -1,20 +1,20 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "mscomctl.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.2#0"; "Codejock.Controls.v19.2.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmFNDCalculoRendimiento 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Cálculo de Rendimientos"
    ClientHeight    =   6420
-   ClientLeft      =   48
-   ClientTop       =   288
-   ClientWidth     =   10128
+   ClientLeft      =   45
+   ClientTop       =   285
+   ClientWidth     =   10125
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
    ScaleHeight     =   6420
-   ScaleWidth      =   10128
+   ScaleWidth      =   10125
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin VB.TextBox txtTCP 
@@ -43,8 +43,8 @@ Begin VB.Form frmFNDCalculoRendimiento
       TabIndex        =   4
       Top             =   6255
       Width           =   10125
-      _ExtentX        =   17865
-      _ExtentY        =   296
+      _ExtentX        =   17859
+      _ExtentY        =   291
       _Version        =   393216
       Appearance      =   0
    End
@@ -73,8 +73,8 @@ Begin VB.Form frmFNDCalculoRendimiento
       TabIndex        =   7
       Top             =   480
       Width           =   492
-      _ExtentX        =   868
-      _ExtentY        =   445
+      _ExtentX        =   873
+      _ExtentY        =   450
       _Version        =   393216
       Arrows          =   65536
       Orientation     =   1638401
@@ -113,14 +113,14 @@ Begin VB.Form frmFNDCalculoRendimiento
       TabIndex        =   13
       Top             =   5160
       Width           =   2292
-      _Version        =   1245186
+      _Version        =   1572864
       _ExtentX        =   4043
       _ExtentY        =   1291
       _StockProps     =   79
       Caption         =   "Aplicar Rendimientos"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Arial"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -136,7 +136,7 @@ Begin VB.Form frmFNDCalculoRendimiento
       TabIndex        =   14
       Top             =   5520
       Width           =   1332
-      _Version        =   1245186
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   656
       _StockProps     =   68
@@ -158,9 +158,9 @@ Begin VB.Form frmFNDCalculoRendimiento
       TabIndex        =   15
       Top             =   120
       Width           =   6492
-      _Version        =   1245186
-      _ExtentX        =   11451
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   11456
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
       BackColor       =   16185078
@@ -184,7 +184,7 @@ Begin VB.Form frmFNDCalculoRendimiento
       TabIndex        =   16
       Top             =   480
       Width           =   1332
-      _Version        =   1245186
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   77
@@ -210,7 +210,7 @@ Begin VB.Form frmFNDCalculoRendimiento
       TabIndex        =   17
       Top             =   480
       Width           =   5172
-      _Version        =   1245186
+      _Version        =   1572864
       _ExtentX        =   9123
       _ExtentY        =   550
       _StockProps     =   77
@@ -295,7 +295,7 @@ Begin VB.Form frmFNDCalculoRendimiento
       BackColor       =   &H00FFC0C0&
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -333,7 +333,7 @@ Begin VB.Form frmFNDCalculoRendimiento
       Caption         =   "Operadora"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -354,7 +354,7 @@ Begin VB.Form frmFNDCalculoRendimiento
       Caption         =   "Plan"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -376,7 +376,7 @@ Begin VB.Form frmFNDCalculoRendimiento
       Caption         =   "Historial de Tasas Aplicadas para Cálculo de Rendimientos:"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -430,30 +430,30 @@ lbl.Refresh
 strSQL = "exec spFndRndGenPlanMain " & vOperadora & ",'" & vPlan & "','" & glogon.Usuario & "','" & GLOBALES.gOficinaTitular _
        & "','" & Format(dtpCorte.Value, "yyyy/mm/dd") & "'," & CCur(txtTasa) & ",1,'" & App.ProductName & "'," & CCur(txtTCP.Text)
 Call OpenRecordSet(rs, strSQL)
-  vRendimientos = rs!rendimiento
+  vRendimientos = rs!Rendimiento
   vCasos = rs!Casos
   vPendientes = rs!Casos - rs!Procesados
 rs.Close
 
-prgBar.Visible = True
-prgBar.Max = vCasos + 1
-prgBar.Value = 1
+PrgBar.Visible = True
+PrgBar.Max = vCasos + 1
+PrgBar.Value = 1
 
 
 'Paso 2: Procesa Casos de 100 en 100
 Do While vPendientes > 0
     
-    lbl.Caption = "Procesando Registro: " & prgBar.Value & " de " & prgBar.Max _
+    lbl.Caption = "Procesando Registro: " & PrgBar.Value & " de " & PrgBar.Max _
                 & vbCrLf & vbCrLf & " [Rendimiento Aplicado: " & Format(vRendimientos, "Standard") & "]"
     lbl.Refresh
     
     strSQL = "exec spFndRndGenPlanMain " & vOperadora & ",'" & vPlan & "','" & glogon.Usuario & "','" & GLOBALES.gOficinaTitular _
            & "','" & Format(dtpCorte.Value, "yyyy/mm/dd") & "'," & CCur(txtTasa) & ",2,'" & App.ProductName & "'," & CCur(txtTCP.Text)
     Call OpenRecordSet(rs, strSQL)
-      vRendimientos = rs!rendimiento
+      vRendimientos = rs!Rendimiento
       vCasos = rs!Casos
       vPendientes = rs!Pendientes
-      If prgBar.Value < prgBar.Max Then prgBar.Value = rs!Procesados
+      If PrgBar.Value < PrgBar.Max Then PrgBar.Value = rs!Procesados
     rs.Close
 
 Loop
@@ -462,7 +462,7 @@ Loop
 strSQL = "exec spFndRndGenPlanMain " & vOperadora & ",'" & vPlan & "','" & glogon.Usuario & "','" & GLOBALES.gOficinaTitular _
        & "','" & Format(dtpCorte.Value, "yyyy/mm/dd") & "'," & CCur(txtTasa) & ",3,'" & App.ProductName & "'," & CCur(txtTCP.Text)
 Call OpenRecordSet(rs, strSQL)
-  vRendimientos = rs!rendimiento
+  vRendimientos = rs!Rendimiento
   vCasos = rs!Casos
 rs.Close
 
@@ -557,7 +557,7 @@ If vScroll Then
     
     Call OpenRecordSet(rs, strSQL)
     If Not rs.EOF And Not rs.BOF Then
-      txtCodigo = rs!cod_Plan
+      txtCodigo = rs!COD_PLAN
       txtCodigo_LostFocus
     End If
     rs.Close
@@ -693,7 +693,7 @@ End If
 rs.Close
 
 lbl.Caption = ""
-prgBar.Visible = False
+PrgBar.Visible = False
 
 Me.MousePointer = vbDefault
 

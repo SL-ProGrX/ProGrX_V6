@@ -311,14 +311,14 @@ Begin VB.Form frmCxPFacturas
          Value           =   1
       End
       Begin XtremeSuiteControls.PushButton btnImpuesto 
-         Height          =   312
+         Height          =   330
          Left            =   4344
          TabIndex        =   21
          Top             =   960
          Width           =   1212
          _Version        =   1572864
          _ExtentX        =   2138
-         _ExtentY        =   550
+         _ExtentY        =   582
          _StockProps     =   79
          Caption         =   "Actualiza"
          BackColor       =   -2147483633
@@ -386,14 +386,14 @@ Begin VB.Form frmCxPFacturas
          Text            =   "ComboBox1"
       End
       Begin XtremeSuiteControls.DateTimePicker dtpVence 
-         Height          =   312
+         Height          =   330
          Left            =   9120
          TabIndex        =   28
          Top             =   600
          Width           =   1332
          _Version        =   1572864
          _ExtentX        =   2350
-         _ExtentY        =   550
+         _ExtentY        =   582
          _StockProps     =   68
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -408,14 +408,14 @@ Begin VB.Form frmCxPFacturas
          Format          =   3
       End
       Begin XtremeSuiteControls.FlatEdit txtImpuesto 
-         Height          =   312
+         Height          =   330
          Left            =   2520
          TabIndex        =   40
          Top             =   960
          Width           =   1812
          _Version        =   1572864
          _ExtentX        =   3196
-         _ExtentY        =   550
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -432,14 +432,14 @@ Begin VB.Form frmCxPFacturas
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtTipoCambio 
-         Height          =   312
+         Height          =   330
          Left            =   4320
          TabIndex        =   42
          Top             =   600
          Width           =   1212
          _Version        =   1572864
          _ExtentX        =   2138
-         _ExtentY        =   550
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -457,14 +457,14 @@ Begin VB.Form frmCxPFacturas
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtDivisaLocal 
-         Height          =   312
+         Height          =   330
          Left            =   5520
          TabIndex        =   41
          Top             =   600
          Width           =   1932
          _Version        =   1572864
          _ExtentX        =   3408
-         _ExtentY        =   550
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -482,14 +482,14 @@ Begin VB.Form frmCxPFacturas
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtTotalPagar 
-         Height          =   315
+         Height          =   330
          Left            =   480
          TabIndex        =   44
          Top             =   600
          Width           =   2055
          _Version        =   1572864
          _ExtentX        =   3625
-         _ExtentY        =   556
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BackColor       =   16777152
@@ -829,14 +829,14 @@ Begin VB.Form frmCxPFacturas
          Text            =   "ComboBox1"
       End
       Begin XtremeSuiteControls.FlatEdit txtPlantilla 
-         Height          =   312
+         Height          =   330
          Left            =   9360
          TabIndex        =   43
          Top             =   480
          Width           =   1212
          _Version        =   1572864
          _ExtentX        =   2138
-         _ExtentY        =   550
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -853,14 +853,14 @@ Begin VB.Form frmCxPFacturas
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtDebito 
-         Height          =   315
+         Height          =   330
          Left            =   8040
          TabIndex        =   45
          Top             =   3120
          Width           =   1815
          _Version        =   1572864
          _ExtentX        =   3201
-         _ExtentY        =   556
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -878,14 +878,14 @@ Begin VB.Form frmCxPFacturas
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtCredito 
-         Height          =   315
+         Height          =   330
          Left            =   9840
          TabIndex        =   46
          Top             =   3120
          Width           =   1815
          _Version        =   1572864
          _ExtentX        =   3201
-         _ExtentY        =   556
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -903,14 +903,14 @@ Begin VB.Form frmCxPFacturas
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtDiferencia 
-         Height          =   315
+         Height          =   330
          Left            =   1440
          TabIndex        =   47
          Top             =   3120
          Width           =   1815
          _Version        =   1572864
-         _ExtentX        =   3196
-         _ExtentY        =   550
+         _ExtentX        =   3201
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1055,7 +1055,6 @@ Begin VB.Form frmCxPFacturas
             MinWidth        =   9596
             Text            =   "Registrado por:"
             TextSave        =   "Registrado por:"
-            Key             =   ""
             Object.Tag             =   ""
          EndProperty
          BeginProperty Panel2 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
@@ -1064,7 +1063,6 @@ Begin VB.Form frmCxPFacturas
             MinWidth        =   6244
             Text            =   "Saldo: "
             TextSave        =   "Saldo: "
-            Key             =   ""
             Object.Tag             =   ""
          EndProperty
       EndProperty
@@ -1139,14 +1137,14 @@ Begin VB.Form frmCxPFacturas
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtProvDivisa 
-      Height          =   315
+      Height          =   330
       Left            =   9720
       TabIndex        =   32
       Top             =   960
       Width           =   1470
       _Version        =   1572864
       _ExtentX        =   2593
-      _ExtentY        =   556
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   0
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1189,14 +1187,14 @@ Begin VB.Form frmCxPFacturas
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtProvCod 
-      Height          =   312
+      Height          =   330
       Left            =   1320
       TabIndex        =   30
       Top             =   960
       Width           =   1224
       _Version        =   1572864
       _ExtentX        =   2159
-      _ExtentY        =   550
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   0
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1213,14 +1211,14 @@ Begin VB.Form frmCxPFacturas
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtProvDesc 
-      Height          =   315
+      Height          =   330
       Left            =   2520
       TabIndex        =   48
       Top             =   960
       Width           =   7215
       _Version        =   1572864
       _ExtentX        =   12726
-      _ExtentY        =   556
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   0
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1893,7 +1891,7 @@ If vCodigo <> "" Then
             vGrid.TextTip = TextTipFixed
          
          Case 4 'Divisa
-            vGrid.Text = rs!COD_DIVISA & ""
+            vGrid.Text = rs!cod_Divisa & ""
             vGrid.CellNoteIndicator = CellNoteIndicatorShowAndFireEvent
             vGrid.CellNote = rs!Divisa & ""
             vGrid.TextTip = TextTipFixed
@@ -2080,7 +2078,7 @@ strSQL = "select Cta.COD_CUENTA_MASK, Cta.DESCRIPCION, P.COD_UNIDAD, P.COD_CENTR
          vGrid.TextTip = TextTipFixed
       
       Case 4 'Divisa
-         vGrid.Text = rs!COD_DIVISA & ""
+         vGrid.Text = rs!cod_Divisa & ""
          vGrid.CellNoteIndicator = CellNoteIndicatorShowAndFireEvent
          vGrid.CellNote = rs!Divisa_Desc & ""
          vGrid.TextTip = TextTipFixed
@@ -2254,7 +2252,7 @@ If Not rs.BOF And Not rs.EOF Then
   StatusBarX.Panels(2).Text = "Saldo: " & Format(rs!Saldo, "Standard")
   
   vPaso = True
-    Call sbCboAsignaDato(cboDivisa, rs!DivisaFactura, True, rs!COD_DIVISA)
+    Call sbCboAsignaDato(cboDivisa, rs!DivisaFactura, True, rs!cod_Divisa)
   vPaso = False
   
   Select Case UCase(Trim(rs!Estado))
@@ -2688,9 +2686,9 @@ strSQL = "select P.cod_proveedor,P.descripcion,P.cod_divisa" _
 Call OpenRecordSet(rs, strSQL)
 If Not rs.EOF And Not rs.BOF Then
   txtProvDesc.Text = rs!Descripcion
-  txtProvDivisa.Text = rs!COD_DIVISA
+  txtProvDivisa.Text = rs!cod_Divisa
   
-  Call sbCboAsignaDato(cboDivisa, rs!DivisaLocal, True, rs!COD_DIVISA)
+  Call sbCboAsignaDato(cboDivisa, rs!DivisaLocal, True, rs!cod_Divisa)
 Else
   txtProvCod.Text = ""
 End If
@@ -2991,7 +2989,7 @@ If (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
                 vGrid.Col = 6
                 vGrid.Text = Trim(rs!Descripcion)
                 vGrid.Col = 4
-                vGrid.Text = Trim(rs!COD_DIVISA)
+                vGrid.Text = Trim(rs!cod_Divisa)
                 vGrid.Col = 5
                 vGrid.Text = CStr(rs!TIPO_CAMBIO)
             

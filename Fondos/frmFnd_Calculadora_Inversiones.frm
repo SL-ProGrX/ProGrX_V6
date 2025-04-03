@@ -6,14 +6,14 @@ Begin VB.Form frmFnd_Calculadora_Inversiones
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Calculadora de Inversiones"
-   ClientHeight    =   8445
+   ClientHeight    =   8835
    ClientLeft      =   45
    ClientTop       =   390
    ClientWidth     =   10905
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   8445
+   ScaleHeight     =   8835
    ScaleWidth      =   10905
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
@@ -21,7 +21,7 @@ Begin VB.Form frmFnd_Calculadora_Inversiones
       Height          =   2535
       Left            =   120
       TabIndex        =   27
-      Top             =   5760
+      Top             =   6120
       Width           =   10695
       _Version        =   1572864
       _ExtentX        =   18865
@@ -46,7 +46,7 @@ Begin VB.Form frmFnd_Calculadora_Inversiones
       Index           =   2
       Left            =   10320
       TabIndex        =   34
-      Top             =   5400
+      Top             =   5760
       Width           =   495
       _Version        =   1572864
       _ExtentX        =   873
@@ -62,27 +62,27 @@ Begin VB.Form frmFnd_Calculadora_Inversiones
       Top             =   1440
    End
    Begin XtremeSuiteControls.GroupBox gbCalcular 
-      Height          =   975
+      Height          =   1335
       Left            =   240
       TabIndex        =   28
       Top             =   4320
       Width           =   10455
       _Version        =   1572864
       _ExtentX        =   18441
-      _ExtentY        =   1720
+      _ExtentY        =   2355
       _StockProps     =   79
       UseVisualStyle  =   -1  'True
       Appearance      =   21
       BorderStyle     =   1
       Begin XtremeSuiteControls.CheckBox chkCapitaliza 
-         Height          =   375
-         Left            =   4320
+         Height          =   255
+         Left            =   4080
          TabIndex        =   37
-         Top             =   360
-         Width           =   1935
+         Top             =   960
+         Width           =   3975
          _Version        =   1572864
-         _ExtentX        =   3413
-         _ExtentY        =   661
+         _ExtentX        =   7011
+         _ExtentY        =   450
          _StockProps     =   79
          Caption         =   "Capitaliza Rendimientos?"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -99,7 +99,7 @@ Begin VB.Form frmFnd_Calculadora_Inversiones
       End
       Begin XtremeSuiteControls.PushButton btnCalcular 
          Height          =   615
-         Left            =   6720
+         Left            =   8880
          TabIndex        =   29
          Top             =   360
          Width           =   1575
@@ -126,9 +126,9 @@ Begin VB.Form frmFnd_Calculadora_Inversiones
          Left            =   2160
          TabIndex        =   32
          Top             =   240
-         Width           =   2055
+         Width           =   1815
          _Version        =   1572864
-         _ExtentX        =   3625
+         _ExtentX        =   3201
          _ExtentY        =   556
          _StockProps     =   77
          ForeColor       =   0
@@ -152,10 +152,10 @@ Begin VB.Form frmFnd_Calculadora_Inversiones
          Height          =   315
          Left            =   2160
          TabIndex        =   33
-         Top             =   600
-         Width           =   2055
+         Top             =   960
+         Width           =   1815
          _Version        =   1572864
-         _ExtentX        =   3625
+         _ExtentX        =   3201
          _ExtentY        =   556
          _StockProps     =   77
          ForeColor       =   0
@@ -175,12 +175,250 @@ Begin VB.Form frmFnd_Calculadora_Inversiones
          Appearance      =   6
          UseVisualStyle  =   0   'False
       End
+      Begin XtremeSuiteControls.FlatEdit txtT_InteresesNeto 
+         Height          =   315
+         Left            =   2160
+         TabIndex        =   38
+         Top             =   600
+         Width           =   1815
+         _Version        =   1572864
+         _ExtentX        =   3201
+         _ExtentY        =   556
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtT_TasaNeta 
+         Height          =   315
+         Left            =   5040
+         TabIndex        =   40
+         Top             =   600
+         Width           =   975
+         _Version        =   1572864
+         _ExtentX        =   1720
+         _ExtentY        =   556
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtT_ISR 
+         Height          =   315
+         Left            =   4080
+         TabIndex        =   42
+         Top             =   600
+         Width           =   975
+         _Version        =   1572864
+         _ExtentX        =   1720
+         _ExtentY        =   556
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtTP_Solicitada 
+         Height          =   330
+         Left            =   6120
+         TabIndex        =   45
+         Top             =   600
+         Width           =   855
+         _Version        =   1572864
+         _ExtentX        =   1508
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Text            =   "0"
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtTP_Margen 
+         Height          =   330
+         Left            =   6960
+         TabIndex        =   46
+         Top             =   600
+         Width           =   855
+         _Version        =   1572864
+         _ExtentX        =   1508
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Text            =   "0"
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin VB.Label lblTP 
+         Alignment       =   2  'Center
+         BackStyle       =   0  'Transparent
+         Caption         =   "Margen"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   0
+         Left            =   6960
+         TabIndex        =   44
+         ToolTipText     =   "Tasa Preferencial"
+         Top             =   360
+         Width           =   855
+      End
+      Begin VB.Label lblTP 
+         Alignment       =   2  'Center
+         BackStyle       =   0  'Transparent
+         Caption         =   "T.P."
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   4
+         Left            =   6120
+         TabIndex        =   47
+         ToolTipText     =   "Tasa Preferencial"
+         Top             =   360
+         Width           =   855
+      End
+      Begin VB.Label Label7 
+         BackStyle       =   0  'Transparent
+         Caption         =   "ISR"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   3
+         Left            =   4080
+         TabIndex        =   43
+         ToolTipText     =   "Impuesto Sobre Rendimientos"
+         Top             =   360
+         Width           =   975
+      End
+      Begin VB.Label Label7 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Tasa Neta"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   2
+         Left            =   5040
+         TabIndex        =   41
+         Top             =   360
+         Width           =   975
+      End
+      Begin XtremeSuiteControls.Label Label2 
+         Height          =   255
+         Index           =   2
+         Left            =   240
+         TabIndex        =   39
+         Top             =   600
+         Width           =   1695
+         _Version        =   1572864
+         _ExtentX        =   2990
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "Intereses Neto:"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   1
+      End
       Begin XtremeSuiteControls.Label Label2 
          Height          =   255
          Index           =   1
          Left            =   240
          TabIndex        =   31
-         Top             =   600
+         Top             =   960
          Width           =   1695
          _Version        =   1572864
          _ExtentX        =   2990
@@ -209,7 +447,7 @@ Begin VB.Form frmFnd_Calculadora_Inversiones
          _ExtentX        =   2990
          _ExtentY        =   450
          _StockProps     =   79
-         Caption         =   "Intereses Estimados:"
+         Caption         =   "Intereses Bruto:"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -665,13 +903,13 @@ Begin VB.Form frmFnd_Calculadora_Inversiones
    End
    Begin XtremeSuiteControls.FlatEdit txtTasa 
       Height          =   315
-      Left            =   6960
+      Left            =   7200
       TabIndex        =   13
       Top             =   3960
-      Width           =   1575
+      Width           =   855
       _Version        =   1572864
-      _ExtentX        =   2773
-      _ExtentY        =   550
+      _ExtentX        =   1508
+      _ExtentY        =   556
       _StockProps     =   77
       ForeColor       =   0
       BackColor       =   16777215
@@ -695,7 +933,7 @@ Begin VB.Form frmFnd_Calculadora_Inversiones
       Index           =   0
       Left            =   9360
       TabIndex        =   35
-      Top             =   5400
+      Top             =   5760
       Width           =   495
       _Version        =   1572864
       _ExtentX        =   873
@@ -710,7 +948,7 @@ Begin VB.Form frmFnd_Calculadora_Inversiones
       Index           =   1
       Left            =   9840
       TabIndex        =   36
-      Top             =   5400
+      Top             =   5760
       Width           =   495
       _Version        =   1572864
       _ExtentX        =   873
@@ -725,7 +963,7 @@ Begin VB.Form frmFnd_Calculadora_Inversiones
       Index           =   1
       Left            =   120
       TabIndex        =   26
-      Top             =   5400
+      Top             =   5760
       Width           =   10695
       _Version        =   1572864
       _ExtentX        =   18865
@@ -977,18 +1215,45 @@ Select Case True
        
 End Select
 
+
+Dim pTasa As Currency, pTP_Magen As Currency, pTP_Max As Currency, pTP_Sol As Currency
+Dim pTP_Indica As Integer
+
+pTasa = CCur(txtTasa.Text)
+pTP_Sol = CCur(txtTP_Solicitada.Text)
+pTP_Magen = CCur(txtTP_Margen.Text)
+pTP_Max = pTasa + pTP_Magen
+
+If pTP_Sol < pTasa Then
+    MsgBox "La Tasa Preferencial no puede ser menor a la Oficial!", vbExclamation
+    Exit Sub
+End If
+
+If pTP_Sol > pTP_Max Then
+    MsgBox "La Tasa Preferencial no puede ser superior al margen autorizado!", vbExclamation
+    Exit Sub
+End If
+
+If pTP_Sol > pTasa Then
+  pTP_Indica = 1
+Else
+  pTP_Indica = 0
+End If
+
 strSQL = "exec spFnd_Calculadora_Inversiones_Registro " & IIf((pCalculoId = 0), "Null", pCalculoId) _
        & ", " & CCur(txtInversion.Text) & ",'" & Format(vFecha, "yyyy-mm-dd") & "', " & txtPlazo.Text _
-       & ", " & txtTasa.Text & ", '" & pFrecuenciaPago & "', " & CCur(txtMonto.Text) & ", 360, " & chkCapitaliza.Value _
-       & ", '" & txtCedula.Text & "', '" & cboPlan.ItemData(cboPlan.ListIndex) & "', 'ProGrX', '" & glogon.Usuario & "'"
+       & ", " & pTP_Sol & ", '" & pFrecuenciaPago & "', " & CCur(txtMonto.Text) & ", 360, " & chkCapitaliza.Value _
+       & ", '" & txtCedula.Text & "', '" & cboPlan.ItemData(cboPlan.ListIndex) & "', 'ProGrX', '" & glogon.Usuario & "', " & pTP_Indica
 Call OpenRecordSet(rs, strSQL)
     pCalculoId = rs!IdCalculo
 rs.Close
 
-Dim curIntereses As Currency, curInversion As Currency
+Dim curIntereses As Currency, curInversion As Currency, curInteresesNetos As Currency, curTasaNeta As Currency, curISR As Currency
 
 curIntereses = 0
 curInversion = 0
+curTasaNeta = 0
+curISR = 0
 
 With lsw.ListItems
     .Clear
@@ -1005,8 +1270,19 @@ With lsw.ListItems
           itmX.SubItems(6) = Format(rs!AportacionExtra, "Standard")
           itmX.SubItems(7) = Format(rs!InteresGanadoAcumulado, "Standard")
           
+          itmX.SubItems(8) = Format(rs!ISR * 100, "Standard")
+          itmX.SubItems(9) = Format(rs!TasaNeta * 100, "Standard")
+          itmX.SubItems(10) = Format(rs!InteresesGanadosNetos, "Standard")
+          itmX.SubItems(11) = Format(rs!InteresGanadoAcumuladoNeto, "Standard")
+          
           curIntereses = rs!InteresGanadoAcumulado
           curInversion = rs!BaseCalculo + rs!AportacionExtra
+          
+          curISR = rs!ISR * 100
+          curTasaNeta = rs!TasaNeta * 100
+          curInteresesNetos = rs!InteresGanadoAcumuladoNeto
+          
+          
       rs.MoveNext
     Loop
     rs.Close
@@ -1016,6 +1292,11 @@ End With
 
 txtT_Intereses.Text = Format(curIntereses, "Standard")
 txtT_Inversion.Text = Format(curInversion, "Standard")
+
+txtT_ISR.Text = Format(curISR, "Standard")
+txtT_TasaNeta.Text = Format(curTasaNeta, "Standard")
+txtT_InteresesNeto.Text = Format(curInteresesNetos, "Standard")
+
 
 Exit Sub
 
@@ -1033,7 +1314,7 @@ On Error GoTo vError
 Me.MousePointer = vbHourglass
 
 
-strSQL = "select TIPO_DEDUC, PORC_DEDUC, TIPO_CDP, PAGO_CUPONES, CAPITALIZA_RENDIMIENTOS" _
+strSQL = "select TIPO_DEDUC, PORC_DEDUC, TIPO_CDP, PAGO_CUPONES, WEB_VENCE, CAPITALIZA_RENDIMIENTOS, TASA_MARGEN_NEGOCIACION" _
        & " from fnd_Planes" _
        & " where cod_operadora = 1 " _
        & " and cod_plan='" & cboPlan.ItemData(cboPlan.ListIndex) & "'"
@@ -1044,6 +1325,26 @@ If Not rs.BOF And Not rs.EOF Then
     chkCuponPaga.Value = rs!PAGO_CUPONES
 End If
 
+  dtpCorte.Enabled = True
+  txtPlazo.Locked = False
+  cboPlazo.Enabled = True
+      
+  If Not IsNull(rs!web_vence) Or rs!TIPO_CDP = 1 Then
+      dtpCorte.Enabled = False
+      txtPlazo.Locked = True
+      cboPlazo.Enabled = False
+  End If
+
+    If rs!PAGO_CUPONES = True Then
+        chkCuponPaga.Value = xtpUnchecked
+        chkCuponPaga.Enabled = True
+    Else
+        chkCuponPaga.Value = xtpUnchecked
+        chkCuponPaga.Enabled = False
+    End If
+
+    txtTP_Margen.Text = Format(rs!TASA_MARGEN_NEGOCIACION, "Standard")
+
 If rbTipo(1).Value Then
 
  vPaso = True
@@ -1052,6 +1353,7 @@ If rbTipo(1).Value Then
  vPaso = False
     
     Call cboPlazoInversion_Click
+    
 End If
 
 
@@ -1104,6 +1406,27 @@ Private Sub cboPlan_Click()
 If vPaso Then Exit Sub
 
 Call sbConsultaPlan
+
+End Sub
+
+Private Sub chkCuponPaga_Click()
+
+If vPaso Then Exit Sub
+
+On Error GoTo vError
+
+
+If chkCuponPaga.Value = xtpUnchecked Then
+   cboCuponFrecuencia.Clear
+   cboCuponFrecuencia.AddItem "Mensual"
+   cboCuponFrecuencia.Text = "Mensual"
+Else
+   Call cboPlazoInversion_Click
+End If
+
+Exit Sub
+
+vError:
 
 End Sub
 
@@ -1172,6 +1495,14 @@ With lsw.ColumnHeaders
     .Add , , "Intereses", 2100, vbRightJustify
     .Add , , "Aportación", 2100, vbRightJustify
     .Add , , "Int.Acumulados", 2100, vbRightJustify
+    
+    
+    .Add , , "ISR", 1000, vbRightJustify
+    .Add , , "Tasa Neta", 1000, vbRightJustify
+    .Add , , "Intereses Netos", 2100, vbRightJustify
+    .Add , , "Int.Acumulados Netos", 2100, vbRightJustify
+
+
 End With
 
 cboPlazo.Clear
@@ -1219,6 +1550,10 @@ lsw.ListItems.Clear
 txtT_Intereses.Text = "0.00"
 txtT_Inversion.Text = "0.00"
 txtTasa.Text = "0.00"
+
+txtT_ISR.Text = Format(0, "Standard")
+txtT_TasaNeta.Text = Format(0, "Standard")
+txtT_InteresesNeto.Text = Format(0, "Standard")
 
 txtPlazo.Text = "30"
 txtMonto.Text = "0.00"
@@ -1296,6 +1631,7 @@ End If
 
 txtTasa.Text = Format(fxTasaRef(txtPlazo.Text, Mid(cboPlazo.Text, 1, 1), cboPlan.ItemData(cboPlan.ListIndex), 1), "##0.00")
 
+txtTP_Solicitada.Text = txtTasa.Text
 'If CCur(txtTasa) > 0 Then
 '   txtT_Intereses.Text = CCur(txtInversion.Text) * IIf((Mid(cboPlazo.Text, 1, 1) = "D"), CLng(txtPlazo), CLng(txtPlazo) * 30) * CCur(txtTasa.Text) / 36500
 '   txtT_Intereses.Text = Format(txtIntereses.Text, "Standard")

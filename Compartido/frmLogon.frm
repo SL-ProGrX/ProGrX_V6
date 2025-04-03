@@ -20,6 +20,27 @@ Begin VB.Form frmLogon
    StartUpPosition =   2  'CenterScreen
    Tag             =   "2340"
    Visible         =   0   'False
+   Begin VB.TextBox txtPassword 
+      Appearance      =   0  'Flat
+      BeginProperty Font 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00800000&
+      Height          =   315
+      IMEMode         =   3  'DISABLE
+      Left            =   5880
+      PasswordChar    =   "*"
+      TabIndex        =   11
+      ToolTipText     =   "Digite Aqui su nombre de usuario"
+      Top             =   1875
+      Width           =   3132
+   End
    Begin VB.TextBox txt2FA_Codigo 
       Alignment       =   2  'Center
       Appearance      =   0  'Flat
@@ -37,7 +58,7 @@ Begin VB.Form frmLogon
       IMEMode         =   3  'DISABLE
       Left            =   6840
       PasswordChar    =   "*"
-      TabIndex        =   10
+      TabIndex        =   9
       ToolTipText     =   "Digite su Código de Autenticación"
       Top             =   2520
       Width           =   2175
@@ -60,7 +81,7 @@ Begin VB.Form frmLogon
       IMEMode         =   3  'DISABLE
       Left            =   5880
       Locked          =   -1  'True
-      TabIndex        =   9
+      TabIndex        =   8
       Text            =   "SMS"
       ToolTipText     =   "Método o Canal para el 2FA"
       Top             =   2520
@@ -74,7 +95,7 @@ Begin VB.Form frmLogon
    Begin XtremeSuiteControls.CheckBox chkModoCompatibilidad 
       Height          =   255
       Left            =   0
-      TabIndex        =   7
+      TabIndex        =   6
       Top             =   3000
       Visible         =   0   'False
       Width           =   1695
@@ -98,10 +119,10 @@ Begin VB.Form frmLogon
    Begin VB.TextBox txtUserName 
       Appearance      =   0  'Flat
       BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
+         Name            =   "Calibri"
+         Size            =   9
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
@@ -112,27 +133,6 @@ Begin VB.Form frmLogon
       TabIndex        =   0
       ToolTipText     =   "Digite Aqui su nombre de usuario"
       Top             =   1200
-      Width           =   3132
-   End
-   Begin VB.TextBox txtPassword 
-      Appearance      =   0  'Flat
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      ForeColor       =   &H00800000&
-      Height          =   315
-      IMEMode         =   3  'DISABLE
-      Left            =   5880
-      PasswordChar    =   "*"
-      TabIndex        =   1
-      ToolTipText     =   "Digite su contraseña del sistema"
-      Top             =   1875
       Width           =   3132
    End
    Begin VB.Label lbl2FA 
@@ -150,14 +150,14 @@ Begin VB.Form frmLogon
       ForeColor       =   &H00FFFFFF&
       Height          =   255
       Left            =   5880
-      TabIndex        =   11
+      TabIndex        =   10
       Top             =   2280
       Width           =   3135
    End
    Begin XtremeSuiteControls.Label lblOlvidaClave 
       Height          =   255
       Left            =   7800
-      TabIndex        =   8
+      TabIndex        =   7
       Top             =   3000
       Width           =   1575
       _Version        =   1572864
@@ -194,7 +194,7 @@ Begin VB.Form frmLogon
       ForeColor       =   &H00FFFFFF&
       Height          =   372
       Left            =   120
-      TabIndex        =   6
+      TabIndex        =   5
       Top             =   120
       Width           =   2652
    End
@@ -214,7 +214,7 @@ Begin VB.Form frmLogon
       Height          =   255
       Index           =   0
       Left            =   5880
-      TabIndex        =   5
+      TabIndex        =   4
       Top             =   960
       Width           =   1455
    End
@@ -234,7 +234,7 @@ Begin VB.Form frmLogon
       Height          =   255
       Index           =   1
       Left            =   5880
-      TabIndex        =   4
+      TabIndex        =   3
       Top             =   1635
       Width           =   1455
    End
@@ -254,7 +254,7 @@ Begin VB.Form frmLogon
       Height          =   255
       Index           =   2
       Left            =   6120
-      TabIndex        =   3
+      TabIndex        =   2
       Top             =   5520
       Width           =   1095
    End
@@ -274,7 +274,7 @@ Begin VB.Form frmLogon
       Height          =   255
       Index           =   3
       Left            =   6120
-      TabIndex        =   2
+      TabIndex        =   1
       Top             =   5160
       Width           =   1095
    End
@@ -546,7 +546,7 @@ On Error Resume Next
    
   If glogon.Conection.State = 1 Then glogon.Conection.Close
    
-   txtUserName.Text = WS.UserName
+   txtUserName.Text = WS.username
    
    txtUserName.SelStart = 0
    txtUserName.SelLength = Len(txtUserName)
@@ -614,6 +614,7 @@ End Sub
 Private Sub txtPassword_KeyPress(KeyAscii As Integer)
 If KeyAscii = vbKeyReturn Then Call sbLogin_Action("Aceptar")
 End Sub
+
 
 Private Sub txtUserName_KeyPress(KeyAscii As Integer)
 If KeyAscii = vbKeyReturn Then txtPassword.SetFocus

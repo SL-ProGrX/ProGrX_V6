@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmPreaSubDesembolsos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -10,12 +10,12 @@ Begin VB.Form frmPreaSubDesembolsos
    ClientHeight    =   7230
    ClientLeft      =   45
    ClientTop       =   315
-   ClientWidth     =   10380
+   ClientWidth     =   10290
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
    ScaleHeight     =   7230
-   ScaleWidth      =   10380
+   ScaleWidth      =   10290
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin VB.Frame fraBusca 
@@ -30,7 +30,7 @@ Begin VB.Form frmPreaSubDesembolsos
          Strikethrough   =   0   'False
       EndProperty
       Height          =   5295
-      Left            =   10440
+      Left            =   10680
       TabIndex        =   1
       Top             =   1320
       Visible         =   0   'False
@@ -186,7 +186,7 @@ Begin VB.Form frmPreaSubDesembolsos
       TabIndex        =   7
       Top             =   6840
       Width           =   1455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   556
       _StockProps     =   77
@@ -212,7 +212,7 @@ Begin VB.Form frmPreaSubDesembolsos
       TabIndex        =   8
       Top             =   6840
       Width           =   1335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2355
       _ExtentY        =   556
       _StockProps     =   77
@@ -322,7 +322,7 @@ fxGuardar = 0
 vGrid.Row = vGrid.ActiveRow
 vGrid.Col = 1
 
-If Not ValidaEstadoPreanalisis(gPreAnalisis.ESTADO) Then
+If Not ValidaEstadoPreanalisis(gPreAnalisis.Estado) Then
  GoTo salir
 End If
 
@@ -392,7 +392,7 @@ On Error GoTo vError
 
 mCambios = True
 
-If Not ValidaEstadoPreanalisis(gPreAnalisis.ESTADO) Then
+If Not ValidaEstadoPreanalisis(gPreAnalisis.Estado) Then
  GoTo salir
 End If
 i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
@@ -551,7 +551,7 @@ Do While Not rs.EOF
     vGrid.Col = i
     Select Case i
      Case 1 'Idx y el Tag con el Cod_Acredor
-        vGrid.Text = CStr(rs!IdX)
+        vGrid.Text = CStr(rs!IDX)
         vGrid.CellTag = CStr(rs!cod_Acredor)
         
      Case 2
@@ -636,7 +636,7 @@ End If
 rs.Open strSQL, glogon.Conection, adOpenForwardOnly
 Do While Not rs.EOF
  Set itmX = lsw.ListItems.Add(, , rs!Codigo)
-     itmX.SubItems(1) = rs!nombre
+     itmX.SubItems(1) = rs!Nombre
      itmX.SubItems(2) = rs!MODIFICA_NOMBRE_GIRO
  rs.MoveNext
 Loop

@@ -41,6 +41,29 @@ Begin VB.Form frmAF_CD_PreCalculo
       FullRowSelect   =   -1  'True
       Appearance      =   17
    End
+   Begin XtremeSuiteControls.PushButton btnActividades 
+      Height          =   375
+      Left            =   9000
+      TabIndex        =   22
+      Top             =   2620
+      Width           =   1335
+      _Version        =   1572864
+      _ExtentX        =   2355
+      _ExtentY        =   661
+      _StockProps     =   79
+      Caption         =   "Actividades"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   17
+   End
    Begin XtremeSuiteControls.FlatEdit txtComiteId 
       Height          =   330
       Left            =   2040
@@ -172,6 +195,7 @@ Begin VB.Form frmAF_CD_PreCalculo
       Left            =   2040
       TabIndex        =   13
       Top             =   2640
+      Visible         =   0   'False
       Width           =   3615
       _Version        =   1572864
       _ExtentX        =   6376
@@ -341,6 +365,7 @@ Begin VB.Form frmAF_CD_PreCalculo
       Left            =   240
       TabIndex        =   15
       Top             =   2640
+      Visible         =   0   'False
       Width           =   1815
       _Version        =   1572864
       _ExtentX        =   3201
@@ -664,6 +689,10 @@ txtMontoPagar.Text = 0
 
 End Sub
 
+Private Sub btnActividades_Click()
+ Call sbFormsCall("frmAF_CD_Actividades")
+End Sub
+
 Private Sub cboActividadTipo_Click()
 If vPaso Then Exit Sub
 
@@ -675,7 +704,7 @@ curMonto = 0
 
 
 strSQL = "exec spAFI_CD_Actividades_List '" & cboActividadTipo.ItemData(cboActividadTipo.ListIndex) & "', " & txtAsocTotalAjustado.Text _
-       & ", " & vOperacion & ", " & txtComiteId.Text
+       & ", " & vOperacion & ", '" & txtComiteId.Text & "'"
 Call OpenRecordSet(rs, strSQL)
 
 
@@ -807,9 +836,7 @@ Private Sub txtComiteId_KeyPress(KeyAscii As Integer)
   Select Case KeyAscii
       Case 48 To 57, 8
       Case 13
-        Call cboActividadTipo_Click
-        Call sbLlamaComite(txtComiteId.Text)
-        Call sbCalMiembros
+         txtComiteDesc.SetFocus
       Case Else
        KeyAscii = 0
   End Select
@@ -831,3 +858,8 @@ End If
 
 End Sub
 
+Private Sub txtComiteId_LostFocus()
+        Call sbLlamaComite(txtComiteId.Text)
+        Call sbCalMiembros
+        Call cboActividadTipo_Click
+End Sub

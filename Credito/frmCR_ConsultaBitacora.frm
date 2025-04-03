@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_ConsultaBitacora 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -53,7 +53,7 @@ Begin VB.Form frmCR_ConsultaBitacora
       TabIndex        =   3
       Top             =   1080
       Width           =   1332
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   68
@@ -75,7 +75,7 @@ Begin VB.Form frmCR_ConsultaBitacora
       TabIndex        =   4
       Top             =   1080
       Width           =   1332
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   68
@@ -97,7 +97,7 @@ Begin VB.Form frmCR_ConsultaBitacora
       TabIndex        =   5
       Top             =   1080
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   656
       _StockProps     =   79
@@ -114,7 +114,7 @@ Begin VB.Form frmCR_ConsultaBitacora
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmCR_ConsultaBitacora.frx":1B30
+      Picture         =   "frmCR_ConsultaBitacora.frx":1B78
    End
    Begin XtremeSuiteControls.PushButton btnExportar 
       Height          =   375
@@ -122,7 +122,7 @@ Begin VB.Form frmCR_ConsultaBitacora
       TabIndex        =   6
       Top             =   1080
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   656
       _StockProps     =   79
@@ -139,7 +139,7 @@ Begin VB.Form frmCR_ConsultaBitacora
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmCR_ConsultaBitacora.frx":2230
+      Picture         =   "frmCR_ConsultaBitacora.frx":2278
    End
    Begin VB.Label lblCliente 
       BackStyle       =   0  'Transparent
@@ -378,7 +378,7 @@ With vGrid
                  .MaxRows = .MaxRows + 1
                  .Row = .MaxRows
                  For i = 1 To .MaxCols
-                   .col = i
+                   .Col = i
                    Select Case i
                      Case 1 'NTransaccion
                         .Text = CStr(rs!NTransaccion)
@@ -421,10 +421,10 @@ With vGrid
                  .MaxRows = .MaxRows + 1
                  .Row = .MaxRows
                  For i = 1 To .MaxCols
-                   .col = i
+                   .Col = i
                    Select Case i
                      Case 1 'Operacion
-                        .Text = CStr(rs!Id_Solicitud)
+                        .Text = CStr(rs!ID_SOLICITUD)
                      Case 2 'Linea
                         .Text = CStr(rs!Codigo)
                      Case 3 'Descripcion
@@ -451,11 +451,11 @@ With vGrid
                      Case 13 'Total
                         .Text = Format(rs!IntCor + rs!IntMor + rs!Cargo + rs!Poliza + rs!Principal, "Standard")
                      Case 14 'Tipo Doc
-                        .Text = rs!Tipo
+                        .Text = rs!Tipo & ""
                      Case 15 'NDocumento
-                        .Text = rs!nCon
+                        .Text = rs!nCon & ""
                      Case 16 'Caja
-                        .Text = rs!Cod_Caja
+                        .Text = rs!COD_CAJA & ""
                      Case 17 'Garantia
                         .Text = CStr(rs!GarantiaDesc)
                    End Select
@@ -492,10 +492,10 @@ With vGrid
                  .MaxRows = .MaxRows + 1
                  .Row = .MaxRows
                  For i = 1 To .MaxCols
-                   .col = i
+                   .Col = i
                    Select Case i
                      Case 1 'Id Plan
-                        .Text = rs!cod_Plan
+                        .Text = rs!COD_PLAN
                      Case 2 'Contrato
                         .Text = rs!COD_CONTRATO
                      Case 3 'Descripcion
@@ -513,7 +513,7 @@ With vGrid
                      Case 9 'Num.Doc
                         .Text = rs!nCon & ""
                      Case 10  'Caja
-                        .Text = rs!Cod_Caja & ""
+                        .Text = rs!COD_CAJA & ""
                    End Select
                  Next i
                  rs.MoveNext
@@ -543,7 +543,7 @@ With vGrid
                  .MaxRows = .MaxRows + 1
                  .Row = .MaxRows
                  For i = 1 To .MaxCols
-                   .col = i
+                   .Col = i
                    Select Case i
                      Case 1 'Rubro
                         .Text = rs!Plan
@@ -560,7 +560,7 @@ With vGrid
                      Case 7 'Num.Doc
                         .Text = rs!nCon & ""
                      Case 8  'Caja
-                        .Text = rs!Cod_Caja & ""
+                        .Text = rs!COD_CAJA & ""
                    End Select
                  Next i
                  rs.MoveNext
@@ -595,7 +595,7 @@ With vGrid
                  .MaxRows = .MaxRows + 1
                  .Row = .MaxRows
                  For i = 1 To .MaxCols
-                   .col = i
+                   .Col = i
                    Select Case i
                      Case 1 'Banco
                         .Text = rs!BancoDesc
@@ -652,5 +652,4 @@ Exit Sub
 vError:
  MousePointer = vbDefault
  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
-
 End Sub

@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCR_Prendas_Parametros 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -21,7 +21,7 @@ Begin VB.Form frmCR_Prendas_Parametros
       TabIndex        =   1
       Top             =   1320
       Width           =   13455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   23733
       _ExtentY        =   11033
       _StockProps     =   68
@@ -37,7 +37,6 @@ Begin VB.Form frmCR_Prendas_Parametros
       Appearance      =   4
       Color           =   32
       ItemCount       =   4
-      SelectedItem    =   3
       Item(0).Caption =   "Catálogos Generales"
       Item(0).ControlCount=   3
       Item(0).Control(0)=   "Label1(3)"
@@ -59,7 +58,7 @@ Begin VB.Form frmCR_Prendas_Parametros
          Top             =   360
          Visible         =   0   'False
          Width           =   13455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   23733
          _ExtentY        =   9975
          _StockProps     =   68
@@ -81,56 +80,31 @@ Begin VB.Form frmCR_Prendas_Parametros
          Item(0).Control(1)=   "txtComercializaFiltro"
          Item(0).Control(2)=   "ShortcutCaption1"
          Item(1).Caption =   "Mantenimiento"
-         Item(1).ControlCount=   18
+         Item(1).ControlCount=   17
          Item(1).Control(0)=   "txtCodigo"
          Item(1).Control(1)=   "txtNombre"
          Item(1).Control(2)=   "Label1(0)"
          Item(1).Control(3)=   "cboTipoId"
          Item(1).Control(4)=   "txtCedJur"
-         Item(1).Control(5)=   "txtCodAlter"
-         Item(1).Control(6)=   "Label18(3)"
-         Item(1).Control(7)=   "Label14(1)"
-         Item(1).Control(8)=   "lswCuentas"
-         Item(1).Control(9)=   "btnCuentas"
-         Item(1).Control(10)=   "cboBancos"
-         Item(1).Control(11)=   "Label3(0)"
-         Item(1).Control(12)=   "Label3(1)"
-         Item(1).Control(13)=   "txtCorreo"
-         Item(1).Control(14)=   "btnComercializa(0)"
-         Item(1).Control(15)=   "btnComercializa(1)"
-         Item(1).Control(16)=   "btnComercializa(2)"
-         Item(1).Control(17)=   "btnComercializa(3)"
-         Begin XtremeSuiteControls.ListView lswCuentas 
-            Height          =   1695
-            Left            =   -68200
-            TabIndex        =   15
-            Top             =   2445
-            Visible         =   0   'False
-            Width           =   8655
-            _Version        =   1441793
-            _ExtentX        =   15261
-            _ExtentY        =   2984
-            _StockProps     =   77
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            View            =   3
-            Appearance      =   17
-            UseVisualStyle  =   0   'False
-         End
+         Item(1).Control(5)=   "Label18(3)"
+         Item(1).Control(6)=   "lswCuentas"
+         Item(1).Control(7)=   "btnCuentas"
+         Item(1).Control(8)=   "cboBancos"
+         Item(1).Control(9)=   "Label3(0)"
+         Item(1).Control(10)=   "Label3(1)"
+         Item(1).Control(11)=   "txtCorreo"
+         Item(1).Control(12)=   "btnComercializa(0)"
+         Item(1).Control(13)=   "btnComercializa(1)"
+         Item(1).Control(14)=   "btnComercializa(2)"
+         Item(1).Control(15)=   "btnComercializa(3)"
+         Item(1).Control(16)=   "chkActivo"
          Begin XtremeSuiteControls.ListView lsw 
             Height          =   4455
             Left            =   120
-            TabIndex        =   25
+            TabIndex        =   23
             Top             =   1200
             Width           =   13215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   23310
             _ExtentY        =   7858
             _StockProps     =   77
@@ -144,18 +118,69 @@ Begin VB.Form frmCR_Prendas_Parametros
                Strikethrough   =   0   'False
             EndProperty
             View            =   3
+            FullRowSelect   =   -1  'True
             Appearance      =   17
             UseVisualStyle  =   0   'False
+         End
+         Begin XtremeSuiteControls.ListView lswCuentas 
+            Height          =   1935
+            Left            =   -68200
+            TabIndex        =   13
+            Top             =   2565
+            Visible         =   0   'False
+            Width           =   8655
+            _Version        =   1572864
+            _ExtentX        =   15266
+            _ExtentY        =   3413
+            _StockProps     =   77
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            View            =   3
+            Appearance      =   17
+            UseVisualStyle  =   0   'False
+         End
+         Begin XtremeSuiteControls.CheckBox chkActivo 
+            Height          =   375
+            Left            =   -60520
+            TabIndex        =   27
+            Top             =   1080
+            Visible         =   0   'False
+            Width           =   975
+            _Version        =   1572864
+            _ExtentX        =   1720
+            _ExtentY        =   661
+            _StockProps     =   79
+            Caption         =   "Activo ?"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Transparent     =   -1  'True
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
+            Alignment       =   1
          End
          Begin XtremeSuiteControls.PushButton btnComercializa 
             Height          =   375
             Index           =   0
             Left            =   -64000
-            TabIndex        =   21
-            Top             =   4440
+            TabIndex        =   19
+            Top             =   4680
             Visible         =   0   'False
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   661
             _StockProps     =   79
@@ -180,11 +205,12 @@ Begin VB.Form frmCR_Prendas_Parametros
             Top             =   600
             Visible         =   0   'False
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1926
             _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   0
+            BackColor       =   16777152
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -194,7 +220,9 @@ Begin VB.Form frmCR_Prendas_Parametros
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
+            BackColor       =   16777152
             Alignment       =   2
+            Locked          =   -1  'True
             Appearance      =   6
             UseVisualStyle  =   0   'False
          End
@@ -205,7 +233,7 @@ Begin VB.Form frmCR_Prendas_Parametros
             Top             =   600
             Visible         =   0   'False
             Width           =   6375
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11239
             _ExtentY        =   582
             _StockProps     =   77
@@ -229,7 +257,7 @@ Begin VB.Form frmCR_Prendas_Parametros
             Top             =   1080
             Visible         =   0   'False
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   582
             _StockProps     =   77
@@ -256,32 +284,8 @@ Begin VB.Form frmCR_Prendas_Parametros
             Top             =   1080
             Visible         =   0   'False
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
-            _ExtentY        =   582
-            _StockProps     =   77
-            ForeColor       =   0
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            Appearance      =   6
-            UseVisualStyle  =   0   'False
-         End
-         Begin XtremeSuiteControls.FlatEdit txtCodAlter 
-            Height          =   330
-            Left            =   -61720
-            TabIndex        =   12
-            Top             =   1080
-            Visible         =   0   'False
-            Width           =   2175
-            _Version        =   1441793
-            _ExtentX        =   3836
             _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   0
@@ -300,12 +304,12 @@ Begin VB.Form frmCR_Prendas_Parametros
          Begin XtremeSuiteControls.PushButton btnCuentas 
             Height          =   375
             Left            =   -61240
-            TabIndex        =   16
+            TabIndex        =   14
             Tag             =   "1"
             Top             =   2040
             Visible         =   0   'False
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   656
             _StockProps     =   79
@@ -326,11 +330,11 @@ Begin VB.Form frmCR_Prendas_Parametros
          Begin XtremeSuiteControls.ComboBox cboBancos 
             Height          =   330
             Left            =   -67000
-            TabIndex        =   17
+            TabIndex        =   15
             Top             =   2085
             Visible         =   0   'False
             Width           =   5295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9340
             _ExtentY        =   582
             _StockProps     =   77
@@ -353,11 +357,11 @@ Begin VB.Form frmCR_Prendas_Parametros
          Begin XtremeSuiteControls.FlatEdit txtCorreo 
             Height          =   330
             Left            =   -67000
-            TabIndex        =   20
+            TabIndex        =   18
             Top             =   1680
             Visible         =   0   'False
             Width           =   7455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   13150
             _ExtentY        =   582
             _StockProps     =   77
@@ -378,11 +382,11 @@ Begin VB.Form frmCR_Prendas_Parametros
             Height          =   375
             Index           =   1
             Left            =   -62560
-            TabIndex        =   22
-            Top             =   4440
+            TabIndex        =   20
+            Top             =   4680
             Visible         =   0   'False
             Width           =   495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   873
             _ExtentY        =   661
             _StockProps     =   79
@@ -403,11 +407,11 @@ Begin VB.Form frmCR_Prendas_Parametros
             Height          =   375
             Index           =   2
             Left            =   -62080
-            TabIndex        =   23
-            Top             =   4440
+            TabIndex        =   21
+            Top             =   4680
             Visible         =   0   'False
             Width           =   495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   873
             _ExtentY        =   661
             _StockProps     =   79
@@ -428,11 +432,11 @@ Begin VB.Form frmCR_Prendas_Parametros
             Height          =   375
             Index           =   3
             Left            =   -61480
-            TabIndex        =   24
-            Top             =   4440
+            TabIndex        =   22
+            Top             =   4680
             Visible         =   0   'False
             Width           =   495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   873
             _ExtentY        =   661
             _StockProps     =   79
@@ -452,10 +456,10 @@ Begin VB.Form frmCR_Prendas_Parametros
          Begin XtremeSuiteControls.FlatEdit txtComercializaFiltro 
             Height          =   330
             Left            =   120
-            TabIndex        =   26
+            TabIndex        =   24
             Top             =   840
             Width           =   13215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   23310
             _ExtentY        =   582
             _StockProps     =   77
@@ -476,10 +480,10 @@ Begin VB.Form frmCR_Prendas_Parametros
          Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption1 
             Height          =   375
             Left            =   120
-            TabIndex        =   27
+            TabIndex        =   25
             Top             =   480
             Width           =   13215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   23310
             _ExtentY        =   661
             _StockProps     =   14
@@ -509,7 +513,7 @@ Begin VB.Form frmCR_Prendas_Parametros
             Height          =   255
             Index           =   1
             Left            =   -68200
-            TabIndex        =   19
+            TabIndex        =   17
             Top             =   1680
             Visible         =   0   'False
             Width           =   855
@@ -528,29 +532,10 @@ Begin VB.Form frmCR_Prendas_Parametros
             Height          =   255
             Index           =   0
             Left            =   -68200
-            TabIndex        =   18
+            TabIndex        =   16
             Top             =   2085
             Visible         =   0   'False
             Width           =   855
-         End
-         Begin VB.Label Label14 
-            Caption         =   "ID Alterno"
-            BeginProperty Font 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            Height          =   255
-            Index           =   1
-            Left            =   -62920
-            TabIndex        =   14
-            Top             =   1080
-            Visible         =   0   'False
-            Width           =   975
          End
          Begin VB.Label Label18 
             Caption         =   "Identificación"
@@ -566,7 +551,7 @@ Begin VB.Form frmCR_Prendas_Parametros
             Height          =   255
             Index           =   3
             Left            =   -68200
-            TabIndex        =   13
+            TabIndex        =   12
             Top             =   1080
             Visible         =   0   'False
             Width           =   1335
@@ -596,12 +581,11 @@ Begin VB.Form frmCR_Prendas_Parametros
       End
       Begin XtremeSuiteControls.ComboBox cboCatalogo 
          Height          =   330
-         Left            =   -66160
+         Left            =   3840
          TabIndex        =   2
          Top             =   480
-         Visible         =   0   'False
          Width           =   5055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8916
          _ExtentY        =   582
          _StockProps     =   77
@@ -623,10 +607,9 @@ Begin VB.Form frmCR_Prendas_Parametros
       End
       Begin FPSpreadADO.fpSpread vGrid 
          Height          =   5175
-         Left            =   -69760
+         Left            =   240
          TabIndex        =   4
          Top             =   960
-         Visible         =   0   'False
          Width           =   12735
          _Version        =   524288
          _ExtentX        =   22463
@@ -653,9 +636,10 @@ Begin VB.Form frmCR_Prendas_Parametros
       End
       Begin FPSpreadADO.fpSpread gUds 
          Height          =   5535
-         Left            =   0
+         Left            =   -70000
          TabIndex        =   5
          Top             =   480
+         Visible         =   0   'False
          Width           =   13335
          _Version        =   524288
          _ExtentX        =   23521
@@ -675,7 +659,7 @@ Begin VB.Form frmCR_Prendas_Parametros
          EndProperty
          MaxCols         =   8
          ScrollBars      =   2
-         SpreadDesigner  =   "frmCR_Prendas_Parametros.frx":2091
+         SpreadDesigner  =   "frmCR_Prendas_Parametros.frx":20A0
          VScrollSpecial  =   -1  'True
          VScrollSpecialType=   2
          AppearanceStyle =   1
@@ -683,7 +667,7 @@ Begin VB.Form frmCR_Prendas_Parametros
       Begin FPSpreadADO.fpSpread gCoberturas 
          Height          =   5655
          Left            =   -69880
-         TabIndex        =   28
+         TabIndex        =   26
          Top             =   480
          Visible         =   0   'False
          Width           =   13095
@@ -704,8 +688,7 @@ Begin VB.Form frmCR_Prendas_Parametros
             Strikethrough   =   0   'False
          EndProperty
          MaxCols         =   8
-         ScrollBars      =   2
-         SpreadDesigner  =   "frmCR_Prendas_Parametros.frx":4968
+         SpreadDesigner  =   "frmCR_Prendas_Parametros.frx":4986
          VScrollSpecial  =   -1  'True
          VScrollSpecialType=   2
          AppearanceStyle =   1
@@ -724,10 +707,9 @@ Begin VB.Form frmCR_Prendas_Parametros
          EndProperty
          Height          =   255
          Index           =   3
-         Left            =   -67360
+         Left            =   2640
          TabIndex        =   3
          Top             =   480
-         Visible         =   0   'False
          Width           =   1095
       End
    End
@@ -737,7 +719,7 @@ Begin VB.Form frmCR_Prendas_Parametros
       TabIndex        =   0
       Top             =   360
       Width           =   6735
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   11874
       _ExtentY        =   868
       _StockProps     =   79
@@ -769,11 +751,81 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
-
 Dim strSQL As String, rs As New ADODB.Recordset
 Dim itmX As ListViewItem
 Dim vPaso As Boolean
 
+
+Private Sub sbCuentas_Load()
+
+On Error GoTo vError
+
+lswCuentas.ListItems.Clear
+If txtCodigo.Text > "0" Then
+    strSQL = "select rtrim(B.Descripcion) as 'Banco'" _
+           & ",case when C.tipo = 'A' then 'Ahorros' else 'Corriente' end as 'TipoDesc'" _
+           & ",C.cod_Divisa,C.CUENTA_INTERNA, C.CUENTA_INTERBANCA, C.ACTIVA, C.DESTINO, C.REGISTRO_FECHA , C.REGISTRO_USUARIO" _
+           & " from SYS_CUENTAS_BANCARIAS C inner join TES_BANCOS_GRUPOS B on C.cod_banco = B.cod_grupo" _
+           & " where C.Identificacion = '" & Trim(txtCedJur.Text) & "'"
+    
+    Call OpenRecordSet(rs, strSQL)
+    Do While Not rs.EOF
+       Set itmX = lswCuentas.ListItems.Add(, , rs!CUENTA_INTERNA)
+           itmX.SubItems(1) = Trim(rs!Banco)
+           itmX.SubItems(2) = rs!TipoDesc
+           itmX.SubItems(3) = rs!cod_Divisa
+           itmX.SubItems(4) = IIf(rs!CUENTA_INTERBANCA = 1, "Sí", "No")
+           itmX.SubItems(5) = rs!Destino & ""
+           itmX.SubItems(6) = IIf(rs!ACTIVA = 1, "Activa", "Cerrada")
+           itmX.SubItems(7) = rs!REGISTRO_FECHA & ""
+           itmX.SubItems(8) = rs!REGISTRO_USUARIO & ""
+     
+       rs.MoveNext
+    Loop
+    rs.Close
+End If
+
+
+Exit Sub
+
+vError:
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+
+Private Sub btnComercializa_Click(Index As Integer)
+Select Case Index
+    Case 0 'Nuevo
+        Call sbComercializa_Limpia
+    Case 1 'Guarda
+        Call sbComercializa_Guarda
+    Case 2 'Refresca
+        If txtCodigo.Text <> "" Then
+            Call sbComercializa_Consulta(txtCodigo.Text)
+        End If
+    Case 3 'Elimina
+        If txtCodigo.Text <> "" Then
+            Call sbComercializa_Borra
+        End If
+
+End Select
+End Sub
+
+Private Sub btnCuentas_Click()
+
+If Trim(txtCedJur.Text) = "" Then
+   Exit Sub
+End If
+
+GLOBALES.gTag = Trim(txtCedJur.Text)
+GLOBALES.gTag2 = "CRD"
+
+frmCC_Cuentas_Bancarias.Show vbModal
+
+Call sbCuentas_Load
+
+End Sub
 
 Private Sub cboCatalogo_Click()
 If vPaso Then Exit Sub
@@ -803,12 +855,10 @@ Dim strSQL As String
 
 If vPaso Then Exit Sub
 
-strSQL = "select ID_COBERTURA, COD_POLIZA, COD_COBERTURA, COBERTURA, DESCRIPCION, ACTIVA " _
+strSQL = "select ID_COBERTURA, COD_POLIZA, COD_COBERTURA, COBERTURA, DESCRIPCION, ACTIVA, REGISTRO_FECHA, REGISTRO_USUARIO" _
        & " From CRD_PRENDAS_POLIZAS_COBERTURAS"
 
-Call sbCargaGrid(gCoberturas, 6, strSQL)
-strSQL = "select ID_UNIDAD, DESCRIPCION, PESO_APL, CAPACIDAD_APL, CILINDRAJE_APL, ACTIVA, REGISTRO_FECHA, REGISTRO_USUARIO" _
-       & " From crd_prendas_uds"
+Call sbCargaGrid(gCoberturas, 8, strSQL)
 
 End Sub
 
@@ -825,8 +875,6 @@ End Sub
 Private Sub Form_Load()
 
 vModulo = 3
-
-
 
 vPaso = True
 
@@ -847,8 +895,10 @@ cboCatalogo.AddItem "Presentación"
 cboCatalogo.ItemData(cboCatalogo.ListCount - 1) = "Pre"
 cboCatalogo.AddItem "Extras"
 cboCatalogo.ItemData(cboCatalogo.ListCount - 1) = "Ext"
+cboCatalogo.AddItem "Aseguradoras"
+cboCatalogo.ItemData(cboCatalogo.ListCount - 1) = "Ase"
 
-    cboCatalogo.Text = "Combustible"
+cboCatalogo.Text = "Combustible"
 
 vPaso = False
 
@@ -874,16 +924,12 @@ lswCuentas.ColumnHeaders.Add 9, , "Usuario", 2500
 'Carga Tipos de Identificacion
 vPaso = True
 strSQL = "select TIPO_ID as Idx, rtrim(Descripcion) as ItmX from AFI_TIPOS_IDS" _
-       & " Where TIPO_PERSONERIA = 'F' order by Tipo_Id"
+       & " order by Tipo_Id"
     Call sbCbo_Llena_New(cboTipoId, strSQL, False, True)
 vPaso = False
 
-
-
 strSQL = "exec spCxP_Bancos_Autorizados"
 Call sbCbo_Llena_New(cboBancos, strSQL, False, True)
-
-
 
 
 Call sbConsulta
@@ -895,55 +941,34 @@ End Sub
 
 
 Private Function fxGuardar() As Long
-Dim strSQL As String, rs As New ADODB.Recordset
-'Guarda la información de la linea
-'si es Insert devuelve el codigo, sino devuelve 0
+Dim pCodigo As String, pDescripcion As String, pActivo As Integer
+Dim pMovimiento As String
 
 On Error GoTo vError
 
 fxGuardar = 0
+
 vGrid.Row = vGrid.ActiveRow
-vGrid.col = 1
-'
-'strSQL = "select isnull(count(*),0) as Existe from CRD_PRENDAS_TIPOS " _
-'       & " where TIPO_PRENDA = '" & vGrid.Text & "'"
-'Call OpenRecordSet(rs, strSQL)
-'
-'If rs!Existe = 0 Then 'Insertar
-'  If Trim(vGrid.Text) = "" Then Exit Function
-'
-'  strSQL = "insert into CRD_PRENDAS_TIPOS(TIPO_PRENDA,DESCRIPCION, PORC_COBERTURA" _
-'         & ", ACTIVA, REGISTRO_USUARIO, REGISTRO_FECHA) values('" _
-'         & UCase(vGrid.Text) & "','"
-'  vGrid.col = 2
-'  strSQL = strSQL & vGrid.Text & "',"
-'  vGrid.col = 3
-'  strSQL = strSQL & CCur(vGrid.Text) & ","
-'  vGrid.col = 4
-'  strSQL = strSQL & vGrid.Value & ",'" & glogon.Usuario & "',dbo.Mygetdate())"
-'
-'  Call ConectionExecute(strSQL)
-'
-'  vGrid.col = 1
-'  Call Bitacora("Registra", "Tipo de Prenda: " & vGrid.Text)
-'
-'Else 'Actualizar
-'
-' vGrid.col = 2
-' strSQL = "update CRD_PRENDAS_TIPOS set descripcion = '" & vGrid.Text & "', PORC_COBERTURA = "
-' vGrid.col = 3
-' strSQL = strSQL & CCur(vGrid.Text) & ", ACTIVA = "
-' vGrid.col = 4
-' strSQL = strSQL & vGrid.Value & " where TIPO_PRENDA = '"
-' vGrid.col = 1
-' strSQL = strSQL & vGrid.Text & "'"
-' Call ConectionExecute(strSQL)
-'
-' vGrid.col = 1
-' Call Bitacora("Modifica", "Tipo de Prenda: " & vGrid.Text)
-'
-'End If
-'rs.Close
+vGrid.Col = 1
+pCodigo = vGrid.Text
+vGrid.Col = 2
+pDescripcion = vGrid.Text
+vGrid.Col = 3
+pActivo = vGrid.Value
+
+If pCodigo = "" Then
+   pCodigo = "0"
+End If
+
+strSQL = "exec spCrd_Prendas_Cat_Parametros_Add '" & cboCatalogo.ItemData(cboCatalogo.ListIndex) _
+       & "', '" & pCodigo & "', '" & pDescripcion & "', " & pActivo & ", '" & glogon.Usuario & "', 'A'"
+Call OpenRecordSet(rs, strSQL)
+    vGrid.Col = 1
+    vGrid.Text = rs!Codigo
+    pMovimiento = rs!Movimiento
+rs.Close
+
+Call Bitacora(pMovimiento, "Prendas Cat_" & cboCatalogo.Text & " Id: " & vGrid.Text)
 
 fxGuardar = 1
 
@@ -954,10 +979,227 @@ vError:
 
 End Function
 
+Private Function fxGuardar_Coberturas() As Long
+Dim pCodigo As String, pDescripcion As String, pActivo As Integer
+Dim pPoliza As String, pCoberturaId As String, pCobertura As String
 
+Dim pMovimiento As String
+
+On Error GoTo vError
+
+fxGuardar_Coberturas = 0
+ 
+gCoberturas.Row = gCoberturas.ActiveRow
+
+gCoberturas.Col = 1
+pCodigo = gCoberturas.Text
+
+gCoberturas.Col = 2
+pPoliza = gCoberturas.Text
+
+gCoberturas.Col = 3
+pCoberturaId = gCoberturas.Text
+
+gCoberturas.Col = 4
+pCobertura = gCoberturas.Text
+
+gCoberturas.Col = 5
+pDescripcion = gCoberturas.Text
+
+gCoberturas.Col = 6
+pActivo = gCoberturas.Value
+
+If pCodigo = "" Then
+   pCodigo = "0"
+End If
+
+strSQL = "exec spCrd_Prendas_Cat_Coberturas_Add '" & pCodigo & "', '" & pPoliza & "', '" & pCoberturaId & "', '" & pCobertura _
+       & "', '" & pDescripcion & "', " & pActivo & ", '" & glogon.Usuario & "', 'A'"
+Call OpenRecordSet(rs, strSQL)
+    gCoberturas.Col = 1
+    gCoberturas.Text = rs!Codigo
+    pMovimiento = rs!Movimiento
+rs.Close
+
+Call Bitacora(pMovimiento, "Prendas Cat_Coberturas Polizas Id: " & gCoberturas.Text)
+
+fxGuardar_Coberturas = 1
+
+Exit Function
+
+vError:
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Function
+
+
+Private Function fxGuardar_Unidades() As Long
+Dim pCodigo As String, pDescripcion As String, pActivo As Integer
+Dim pPeso As Integer, pCapacidad As Integer, pCilindraje As Integer
+
+Dim pMovimiento As String
+
+On Error GoTo vError
+
+fxGuardar_Unidades = 0
+
+gUds.Row = gUds.ActiveRow
+
+gUds.Col = 1
+pCodigo = gUds.Text
+
+If pCodigo = "" Then
+    MsgBox "Debe de indicar un código para la unidad!", vbExclamation
+    Exit Function
+End If
+
+gUds.Col = 2
+pDescripcion = gUds.Value
+
+gUds.Col = 3
+pPeso = gUds.Text
+
+gUds.Col = 4
+pCapacidad = gUds.Value
+
+gUds.Col = 5
+pCilindraje = gUds.Value
+
+gUds.Col = 6
+pActivo = gUds.Value
+
+                       
+strSQL = "exec spCrd_Prendas_Cat_Unidades_Add '" & pCodigo & "', '" & pDescripcion & "', " & pPeso & ", " & pCapacidad & ", " & pCilindraje & ", " _
+        & pActivo & ", '" & glogon.Usuario & "', 'A'"
+Call OpenRecordSet(rs, strSQL)
+    gUds.Col = 1
+    gUds.Text = rs!Codigo
+    pMovimiento = rs!Movimiento
+rs.Close
+
+Call Bitacora(pMovimiento, "Prendas Cat_Unidades Id: " & gUds.Text)
+
+fxGuardar_Unidades = 1
+
+Exit Function
+
+vError:
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Function
+
+
+
+
+Private Sub gCoberturas_KeyDown(KeyCode As Integer, Shift As Integer)
+Dim i As Integer, strSQL As String
+
+
+If gCoberturas.ActiveCol = 6 And (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
+  i = fxGuardar_Coberturas
+  If i = 0 Then Exit Sub
+  gCoberturas.Row = gCoberturas.ActiveRow
+  If gCoberturas.MaxRows <= gCoberturas.ActiveRow Then
+    gCoberturas.MaxRows = gCoberturas.MaxRows + 1
+    gCoberturas.Row = gCoberturas.MaxRows
+  End If
+End If
+
+'Inserta Linea
+If KeyCode = vbKeyInsert Then
+    gCoberturas.MaxRows = gCoberturas.MaxRows + 1
+    gCoberturas.InsertRows gCoberturas.ActiveRow, 1
+    gCoberturas.Row = gCoberturas.ActiveRow
+End If
+
+
+If KeyCode = vbKeyF4 And gCoberturas.ActiveCol = 2 Then
+    gBusquedas.Columna = "Codigo"
+    gBusquedas.Orden = "Codigo"
+    gBusquedas.Consulta = "select Codigo, Descripcion from Catalogo"
+    gBusquedas.Filtro = " and Poliza = 'S'"
+    
+    gBusquedas.Col1Name = "Código"
+    gBusquedas.Col2Name = "Descripción"
+
+    frmBusquedas.Show vbModal
+    
+    If gBusquedas.Resultado <> "" Then
+       gCoberturas.Row = gCoberturas.ActiveRow
+       gCoberturas.Col = 2
+       gCoberturas.Text = gBusquedas.Resultado
+    End If
+
+End If
+
+'Borrar una linea
+If KeyCode = vbKeyDelete Then
+     i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
+     If i = vbYes Then
+
+        gCoberturas.Row = gCoberturas.ActiveRow
+        gCoberturas.Col = 1
+               
+        strSQL = "exec spCrd_Prendas_Cat_Coberturas_Add '" & gCoberturas.Text & "', '', '', '', '', 0, '" & glogon.Usuario & "', 'E'"
+        Call ConectionExecute(strSQL)
+        
+        Call Bitacora("Elimina", "Prendas Cat_Coberturas Polizas Id: " & gCoberturas.Text)
+        
+        Call sbCobertura_Load
+     
+     End If
+End If
+
+
+End Sub
+
+
+
+Private Sub gUds_KeyDown(KeyCode As Integer, Shift As Integer)
+Dim i As Integer, strSQL As String
+
+If gUds.ActiveCol = 6 And (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
+  i = fxGuardar_Unidades
+  If i = 0 Then Exit Sub
+  gUds.Row = gUds.ActiveRow
+  If gUds.MaxRows <= gUds.ActiveRow Then
+    gUds.MaxRows = gUds.MaxRows + 1
+    gUds.Row = gUds.MaxRows
+  End If
+End If
+
+'Inserta Linea
+If KeyCode = vbKeyInsert Then
+    gUds.MaxRows = gUds.MaxRows + 1
+    gUds.InsertRows gUds.ActiveRow, 1
+    gUds.Row = gUds.ActiveRow
+End If
+
+'Borrar una linea
+If KeyCode = vbKeyDelete Then
+     i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
+     If i = vbYes Then
+
+        gUds.Row = gUds.ActiveRow
+        gUds.Col = 1
+        
+        strSQL = "exec spCrd_Prendas_Cat_Unidades_Add '" & gUds.Text & "', '', 0, 0, 0, 0, '" & glogon.Usuario & "', 'E'"
+        Call ConectionExecute(strSQL)
+        
+        Call Bitacora("Elimina", "Prendas Cat_Unidades Id: " & gUds.Text)
+        
+        Call sbUnidades_Load
+     
+     End If
+End If
+
+
+End Sub
 
 Private Sub lsw_DblClick()
 tcComercializa.Item(1).Selected = True
+txtCodigo.Text = lsw.SelectedItem.Text
+Call sbComercializa_Consulta(txtCodigo.Text)
 End Sub
 
 Private Sub tcComercializa_SelectedChanged(ByVal Item As XtremeSuiteControls.ITabControlItem)
@@ -991,8 +1233,6 @@ On Error GoTo vError
 
 Me.MousePointer = vbHourglass
 
-
-
 txtComercializaFiltro.Text = fxSysCleanTxtInject(txtComercializaFiltro.Text)
 
 strSQL = "select ID_COMERCIO, DESCRIPCION, case when ACTIVA = 1 then 'Sí' else 'No' end as 'Activa', REGISTRO_FECHA, REGISTRO_USUARIO " _
@@ -1003,11 +1243,11 @@ strSQL = "select ID_COMERCIO, DESCRIPCION, case when ACTIVA = 1 then 'Sí' else '
 lsw.ListItems.Clear
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
-  Set itmX = lsw.ListItems.Add(, , rs!ID_Comercio)
+  Set itmX = lsw.ListItems.Add(, , rs!ID_COMERCIO)
       itmX.SubItems(1) = rs!Descripcion
-      itmX.SubItems(2) = rs!Activa
-      itmX.SubItems(3) = rs!Registro_Usuario & ""
-      itmX.SubItems(4) = rs!Registro_Fecha & ""
+      itmX.SubItems(2) = rs!ACTIVA
+      itmX.SubItems(3) = rs!REGISTRO_USUARIO & ""
+      itmX.SubItems(4) = rs!REGISTRO_FECHA & ""
   rs.MoveNext
 Loop
 rs.Close
@@ -1019,6 +1259,185 @@ vError:
  Me.MousePointer = vbDefault
  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
  
+End Sub
+
+
+Private Sub sbComercializa_Limpia()
+   txtCodigo.Text = "0"
+   txtNombre.Text = ""
+   chkActivo.Value = xtpChecked
+   txtCorreo.Text = ""
+   
+   txtCedJur.Text = ""
+   lswCuentas.ListItems.Clear
+End Sub
+
+Private Sub sbComercializa_Consulta(pComerciaId As Long)
+
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+Call sbComercializa_Limpia
+
+strSQL = "exec spCrd_Prendas_Cat_Comercializa_Consulta " & pComerciaId
+Call OpenRecordSet(rs, strSQL)
+If Not rs.EOF Then
+   txtCodigo.Text = rs!ID_COMERCIO
+   txtNombre.Text = rs!Descripcion
+   chkActivo.Value = rs!ACTIVA
+   txtCorreo.Text = rs!correo
+   
+   txtCedJur.Text = Trim(rs!Cedula)
+   
+   Call sbCboAsignaDato(cboTipoId, rs!Tipo_Id_Desc, True, rs!Tipo_Id)
+   Call sbCboAsignaDato(cboBancos, rs!Banco_Desc, True, rs!Id_Banco)
+End If
+rs.Close
+
+If txtCodigo.Text <> "0" Then
+    Call sbCuentas_Load
+End If
+
+Me.MousePointer = vbDefault
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+ 
+End Sub
+
+
+Private Sub sbComercializa_Borra()
+
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+strSQL = "exec spCrd_Prendas_Cat_Comercializa_Add " & txtCodigo.Text & ", " & cboTipoId.ItemData(cboTipoId.ListIndex) _
+       & ", '" & txtCedJur.Text & "', '" & txtNombre.Text & "', " & chkActivo.Value & ", " & cboBancos.ItemData(cboBancos.ListIndex) _
+       & ", '" & txtCorreo.Text & "', '" & glogon.Usuario & "', 'E'"
+Call OpenRecordSet(rs, strSQL)
+If rs!Pass = 1 Then
+   txtCodigo.Text = rs!Codigo
+   Call Bitacora(rs!Movimiento, "Prendas> Comercializador Id: " & txtCodigo.Text)
+   
+   MsgBox "Se ha eliminado el Comercializador Id: " & txtCodigo.Text, vbInformation
+   Call sbComercializa_Limpia
+Else
+    MsgBox rs!Mensaje, vbExclamation
+End If
+
+If txtCodigo.Text <> "0" Then
+    Call sbCuentas_Load
+End If
+
+Me.MousePointer = vbDefault
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+ 
+End Sub
+
+Private Function fxComercializa_Valida() As Boolean
+Dim rs As New ADODB.Recordset, i As Integer
+
+Dim IdLargo As Integer
+
+Dim vMensaje As String
+
+vMensaje = ""
+  
+'Actualiza el Parametro de Validacion y Luego lo Aplica
+strSQL = "select LARGO_MINIMO from AFI_TIPOS_IDS Where TIPO_ID = " & cboTipoId.ItemData(cboTipoId.ListIndex)
+Call OpenRecordSet(rs, strSQL)
+If Not rs.EOF And Not rs.BOF Then
+    IdLargo = rs!Largo_Minimo
+End If
+rs.Close
+
+
+If Len(Trim(txtCedJur.Text)) <> IdLargo Then vMensaje = vMensaje & " - Número de Identidad no es válido, se espera que sea de: " & txtCedJur _
+        & " caracteres, verifique...!" & vbCrLf
+
+If Len(Trim(txtCedJur.Text)) > 20 Then vMensaje = vMensaje & " - Número de Identidad no es válido, verifique...!" & vbCrLf
+
+If Not fxEmail_Valida(txtCorreo.Text) Then
+    vMensaje = vMensaje & " - El Email no es válido!" & vbCrLf
+End If
+
+If Trim(txtNombre.Text) = "" Then vMensaje = vMensaje & " - Indique el nombre comercial" & vbCrLf
+
+If Len(vMensaje) = 0 Then
+  fxComercializa_Valida = True
+Else
+  fxComercializa_Valida = False
+  MsgBox vMensaje, vbExclamation
+
+End If
+End Function
+
+
+
+Private Sub sbComercializa_Guarda()
+
+On Error GoTo vError
+
+If Not fxComercializa_Valida() Then
+   Exit Sub
+End If
+
+Me.MousePointer = vbHourglass
+
+strSQL = "exec spCrd_Prendas_Cat_Comercializa_Add " & txtCodigo.Text & ", " & cboTipoId.ItemData(cboTipoId.ListIndex) _
+       & ", '" & txtCedJur.Text & "', '" & txtNombre.Text & "', " & chkActivo.Value & ", " & cboBancos.ItemData(cboBancos.ListIndex) _
+       & ", '" & txtCorreo.Text & "', '" & glogon.Usuario & "', 'A'"
+Call OpenRecordSet(rs, strSQL)
+If rs!Pass = 1 Then
+   txtCodigo.Text = rs!Codigo
+   Call Bitacora(rs!Movimiento, "Prendas> Comercializador Id: " & txtCodigo.Text)
+
+   MsgBox "Se ha " & rs!Movimiento & " el Comercializador Id: " & txtCodigo.Text, vbInformation
+
+Else
+    MsgBox rs!Mensaje, vbExclamation
+End If
+
+If txtCodigo.Text <> "0" Then
+    Call sbCuentas_Load
+End If
+
+Me.MousePointer = vbDefault
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+ 
+End Sub
+
+
+
+Private Sub txtCodigo_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = vbKeyReturn Or KeyCode = vbKeyTab Then txtNombre.SetFocus
+
+If KeyCode = vbKeyF4 Then
+  gBusquedas.Col1Name = "Id. Comercio"
+  gBusquedas.Col2Name = "Id. Real"
+  gBusquedas.Col3Name = "Nombre"
+  gBusquedas.Convertir = "N"
+  gBusquedas.Columna = "Id_Comercio"
+  gBusquedas.Orden = "Id_Comercio"
+  gBusquedas.Consulta = "select Id_Comercio, Cedula, Descripcion from crd_Prendas_Comercia"
+  gBusquedas.Filtro = ""
+  frmBusquedas.Show vbModal
+  txtCodigo = gBusquedas.Resultado
+  If txtCodigo <> "" Then Call sbComercializa_Consulta(CLng(gBusquedas.Resultado))
+End If
+
 End Sub
 
 
@@ -1053,14 +1472,15 @@ End If
 If KeyCode = vbKeyDelete Then
      i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
      If i = vbYes Then
+
+        vGrid.Row = vGrid.ActiveRow
+        vGrid.Col = 1
         
-'        vGrid.Row = vGrid.ActiveRow
-'        vGrid.col = 1
-'        strSQL = "delete CRD_PRENDAS_TIPOS where TIPO_PRENDA = '" & vGrid.Text & "'"
-'        Call ConectionExecute(strSQL)
-'        strSQL = vGrid.Text
-'        vGrid.col = 1
-'        Call Bitacora("Elimina", "Tipo de Prenda: " & vGrid.Text)
+        strSQL = "exec spCrd_Prendas_Cat_Parametros_Add '" & cboCatalogo.ItemData(cboCatalogo.ListIndex) _
+               & "', '" & vGrid.Text & "', '', 0, '" & glogon.Usuario & "', 'E'"
+        Call ConectionExecute(strSQL)
+        
+        Call Bitacora("Elimina", "Prendas Cat_" & cboCatalogo.Text & " Id: " & vGrid.Text)
         
         Call sbConsulta
      

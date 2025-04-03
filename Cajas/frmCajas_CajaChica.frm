@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCajas_CajaChica 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -22,7 +22,7 @@ Begin VB.Form frmCajas_CajaChica
       TabIndex        =   6
       Top             =   960
       Width           =   4572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8064
       _ExtentY        =   8911
       _StockProps     =   77
@@ -72,7 +72,7 @@ Begin VB.Form frmCajas_CajaChica
          BeginProperty Panel3 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
             Style           =   5
             Bevel           =   0
-            TextSave        =   "03:37:p. m."
+            TextSave        =   "04:49"
             Object.ToolTipText     =   "Fecha/Hora"
          EndProperty
       EndProperty
@@ -92,7 +92,7 @@ Begin VB.Form frmCajas_CajaChica
       TabIndex        =   1
       Top             =   120
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   550
       _StockProps     =   77
@@ -117,7 +117,7 @@ Begin VB.Form frmCajas_CajaChica
       TabIndex        =   2
       Top             =   480
       Width           =   4692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8276
       _ExtentY        =   550
       _StockProps     =   77
@@ -140,7 +140,7 @@ Begin VB.Form frmCajas_CajaChica
       TabIndex        =   3
       Top             =   240
       Width           =   3492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   6159
       _ExtentY        =   550
       _StockProps     =   77
@@ -164,7 +164,7 @@ Begin VB.Form frmCajas_CajaChica
       TabIndex        =   7
       Top             =   5040
       Width           =   6495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   11456
       _ExtentY        =   1720
       _StockProps     =   79
@@ -187,7 +187,7 @@ Begin VB.Form frmCajas_CajaChica
          TabIndex        =   8
          Top             =   240
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   1085
          _StockProps     =   79
@@ -213,7 +213,7 @@ Begin VB.Form frmCajas_CajaChica
          ToolTipText     =   "Cerrar"
          Top             =   240
          Width           =   735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1291
          _ExtentY        =   1080
          _StockProps     =   79
@@ -238,7 +238,7 @@ Begin VB.Form frmCajas_CajaChica
       TabIndex        =   10
       Top             =   2160
       Width           =   1932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   582
       _StockProps     =   77
@@ -264,7 +264,7 @@ Begin VB.Form frmCajas_CajaChica
       TabIndex        =   11
       Top             =   2880
       Width           =   1932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3408
       _ExtentY        =   550
       _StockProps     =   77
@@ -288,7 +288,7 @@ Begin VB.Form frmCajas_CajaChica
       TabIndex        =   12
       Top             =   2520
       Width           =   1932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3408
       _ExtentY        =   550
       _StockProps     =   77
@@ -312,7 +312,7 @@ Begin VB.Form frmCajas_CajaChica
       TabIndex        =   13
       Top             =   1440
       Width           =   1332
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   77
@@ -337,7 +337,7 @@ Begin VB.Form frmCajas_CajaChica
       TabIndex        =   14
       Top             =   1080
       Width           =   1332
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   77
@@ -362,7 +362,7 @@ Begin VB.Form frmCajas_CajaChica
       TabIndex        =   15
       Top             =   1080
       Width           =   3372
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5948
       _ExtentY        =   550
       _StockProps     =   77
@@ -386,7 +386,7 @@ Begin VB.Form frmCajas_CajaChica
       TabIndex        =   16
       Top             =   1440
       Width           =   3372
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5948
       _ExtentY        =   550
       _StockProps     =   77
@@ -410,7 +410,7 @@ Begin VB.Form frmCajas_CajaChica
       TabIndex        =   17
       Top             =   3240
       Width           =   4812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8488
       _ExtentY        =   2032
       _StockProps     =   77
@@ -437,7 +437,7 @@ Begin VB.Form frmCajas_CajaChica
       TabIndex        =   22
       Top             =   4560
       Width           =   4812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8493
       _ExtentY        =   582
       _StockProps     =   77

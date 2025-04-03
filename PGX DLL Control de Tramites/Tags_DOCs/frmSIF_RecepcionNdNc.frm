@@ -1,18 +1,19 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "mscomctl.OCX"
-Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmSIF_RecepcionNdNc 
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
-   Caption         =   "Recepción Documentos"
-   ClientHeight    =   8148
-   ClientLeft      =   48
-   ClientTop       =   312
-   ClientWidth     =   12204
+   Caption         =   "Documentos: Recepción"
+   ClientHeight    =   9405
+   ClientLeft      =   45
+   ClientTop       =   315
+   ClientWidth     =   12210
    BeginProperty Font 
       Name            =   "Arial"
-      Size            =   8.4
+      Size            =   8.25
       Charset         =   0
       Weight          =   400
       Underline       =   0   'False
@@ -22,183 +23,96 @@ Begin VB.Form frmSIF_RecepcionNdNc
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   8148
-   ScaleWidth      =   12204
+   ScaleHeight     =   9405
+   ScaleWidth      =   12210
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Visible         =   0   'False
-   Begin TabDlg.SSTab SSTab 
-      Height          =   7935
-      Left            =   240
-      TabIndex        =   1
-      Top             =   120
-      Width           =   11775
-      _ExtentX        =   20765
-      _ExtentY        =   13991
-      _Version        =   393216
-      Style           =   1
-      TabHeight       =   520
+   Begin XtremeSuiteControls.TabControl tcMain 
+      Height          =   7575
+      Left            =   120
+      TabIndex        =   4
+      Top             =   1800
+      Width           =   12015
+      _Version        =   1572864
+      _ExtentX        =   21193
+      _ExtentY        =   13361
+      _StockProps     =   68
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Arial"
-         Size            =   8.4
+         Name            =   "Calibri"
+         Size            =   9
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      TabCaption(0)   =   "Recepción - Devolución"
-      TabPicture(0)   =   "frmSIF_RecepcionNdNc.frx":0000
-      Tab(0).ControlEnabled=   -1  'True
-      Tab(0).Control(0)=   "Image1"
-      Tab(0).Control(0).Enabled=   0   'False
-      Tab(0).Control(1)=   "LblCedula"
-      Tab(0).Control(1).Enabled=   0   'False
-      Tab(0).Control(2)=   "Label1(0)"
-      Tab(0).Control(2).Enabled=   0   'False
-      Tab(0).Control(3)=   "Label1(2)"
-      Tab(0).Control(3).Enabled=   0   'False
-      Tab(0).Control(4)=   "lswDocumento"
-      Tab(0).Control(4).Enabled=   0   'False
-      Tab(0).Control(5)=   "PrgBar"
-      Tab(0).Control(5).Enabled=   0   'False
-      Tab(0).Control(6)=   "tlbAplicar"
-      Tab(0).Control(6).Enabled=   0   'False
-      Tab(0).Control(7)=   "cmdAgregar"
-      Tab(0).Control(7).Enabled=   0   'False
-      Tab(0).Control(8)=   "txtCodigo"
-      Tab(0).Control(8).Enabled=   0   'False
-      Tab(0).Control(9)=   "optRecepcion"
-      Tab(0).Control(9).Enabled=   0   'False
-      Tab(0).Control(10)=   "optDevolucion"
-      Tab(0).Control(10).Enabled=   0   'False
-      Tab(0).Control(11)=   "cboTipodoc"
-      Tab(0).Control(11).Enabled=   0   'False
-      Tab(0).ControlCount=   12
-      TabCaption(1)   =   "Pendientes"
-      TabPicture(1)   =   "frmSIF_RecepcionNdNc.frx":001C
-      Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "cboTipodocPendientes"
-      Tab(1).Control(1)=   "optPendRecepcion"
-      Tab(1).Control(2)=   "optPendDevolucion"
-      Tab(1).Control(3)=   "vGrid"
-      Tab(1).Control(4)=   "tlbBuscar"
-      Tab(1).Control(5)=   "Label2"
-      Tab(1).Control(6)=   "Image2"
-      Tab(1).ControlCount=   7
-      TabCaption(2)   =   "Consultas"
-      TabPicture(2)   =   "frmSIF_RecepcionNdNc.frx":0038
-      Tab(2).ControlEnabled=   0   'False
-      Tab(2).Control(0)=   "cboTipodocBuscar"
-      Tab(2).Control(1)=   "cboUsuario"
-      Tab(2).Control(2)=   "txtCodigoBuscar"
-      Tab(2).Control(3)=   "dtpFInicio"
-      Tab(2).Control(4)=   "dtpFFin"
-      Tab(2).Control(5)=   "tlbReportes"
-      Tab(2).Control(6)=   "vGridConsulta"
-      Tab(2).Control(7)=   "Label1(1)"
-      Tab(2).Control(8)=   "Label1(14)"
-      Tab(2).Control(9)=   "Label6"
-      Tab(2).Control(10)=   "Image4"
-      Tab(2).Control(11)=   "Label5"
-      Tab(2).Control(12)=   "Label7"
-      Tab(2).Control(13)=   "Image3"
-      Tab(2).ControlCount=   14
-      Begin VB.ComboBox cboTipodocPendientes 
-         Appearance      =   0  'Flat
-         ForeColor       =   &H00FF0000&
-         Height          =   330
-         Left            =   -72120
-         Style           =   2  'Dropdown List
-         TabIndex        =   29
-         Top             =   600
-         Width           =   3015
+      Appearance      =   4
+      Color           =   32
+      ItemCount       =   3
+      Item(0).Caption =   "Recepción o Devolución"
+      Item(0).ControlCount=   7
+      Item(0).Control(0)=   "lsw"
+      Item(0).Control(1)=   "Label3(1)"
+      Item(0).Control(2)=   "txtCodigo"
+      Item(0).Control(3)=   "cmdAgregar"
+      Item(0).Control(4)=   "rbMovimiento(0)"
+      Item(0).Control(5)=   "rbMovimiento(1)"
+      Item(0).Control(6)=   "btnAplicar"
+      Item(1).Caption =   "Pendientes"
+      Item(1).ControlCount=   3
+      Item(1).Control(0)=   "vGrid"
+      Item(1).Control(1)=   "btnPendientes(0)"
+      Item(1).Control(2)=   "btnPendientes(1)"
+      Item(2).Caption =   "Consulta"
+      Item(2).ControlCount=   9
+      Item(2).Control(0)=   "dtpFInicio"
+      Item(2).Control(1)=   "dtpFFin"
+      Item(2).Control(2)=   "txtCodigoBuscar"
+      Item(2).Control(3)=   "cboUsuario"
+      Item(2).Control(4)=   "Label3(2)"
+      Item(2).Control(5)=   "Label3(3)"
+      Item(2).Control(6)=   "Label3(4)"
+      Item(2).Control(7)=   "vGridConsulta"
+      Item(2).Control(8)=   "btnConsulta"
+      Begin XtremeSuiteControls.ListView lsw 
+         Height          =   6495
+         Left            =   120
+         TabIndex        =   5
+         Top             =   960
+         Width           =   11775
+         _Version        =   1572864
+         _ExtentX        =   20770
+         _ExtentY        =   11456
+         _StockProps     =   77
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Checkboxes      =   -1  'True
+         View            =   3
+         Appearance      =   17
+         UseVisualStyle  =   0   'False
       End
-      Begin VB.ComboBox cboTipodocBuscar 
-         Appearance      =   0  'Flat
-         ForeColor       =   &H00FF0000&
-         Height          =   330
-         Left            =   -74040
-         Style           =   2  'Dropdown List
-         TabIndex        =   26
-         Top             =   2280
-         Width           =   3615
-      End
-      Begin VB.ComboBox cboUsuario 
-         Appearance      =   0  'Flat
-         ForeColor       =   &H00FF0000&
-         Height          =   330
-         Left            =   -71160
-         Style           =   2  'Dropdown List
-         TabIndex        =   17
-         Top             =   1200
-         Width           =   3615
-      End
-      Begin VB.TextBox txtCodigoBuscar 
-         Alignment       =   2  'Center
-         Height          =   330
-         Left            =   -70440
-         TabIndex        =   16
-         Top             =   2280
-         Width           =   1935
-      End
-      Begin VB.OptionButton optPendRecepcion 
-         Caption         =   "Recepción"
-         Height          =   495
-         Left            =   -69000
-         TabIndex        =   12
+      Begin XtremeSuiteControls.RadioButton rbMovimiento 
+         Height          =   255
+         Index           =   0
+         Left            =   5280
+         TabIndex        =   9
          Top             =   480
-         Width           =   1095
-      End
-      Begin VB.OptionButton optPendDevolucion 
-         Caption         =   "Devolución"
-         Height          =   495
-         Left            =   -67560
-         TabIndex        =   11
-         Top             =   480
-         Visible         =   0   'False
-         Width           =   1335
-      End
-      Begin VB.ComboBox cboTipodoc 
-         Appearance      =   0  'Flat
-         ForeColor       =   &H00FF0000&
-         Height          =   330
-         Left            =   720
-         Style           =   2  'Dropdown List
-         TabIndex        =   10
-         Top             =   720
-         Width           =   3615
-      End
-      Begin VB.OptionButton optDevolucion 
-         Caption         =   "Devolución"
-         Height          =   375
-         Left            =   7800
-         TabIndex        =   4
-         Top             =   720
-         Visible         =   0   'False
-         Width           =   1335
-      End
-      Begin VB.OptionButton optRecepcion 
+         Width           =   1455
+         _Version        =   1572864
+         _ExtentX        =   2566
+         _ExtentY        =   450
+         _StockProps     =   79
          Caption         =   "Recepción"
-         Height          =   375
-         Left            =   6720
-         TabIndex        =   3
-         Top             =   720
-         Value           =   -1  'True
-         Width           =   1335
-      End
-      Begin VB.TextBox txtCodigo 
-         Alignment       =   2  'Center
-         Height          =   315
-         Left            =   4320
-         TabIndex        =   0
-         Top             =   720
-         Width           =   1695
-      End
-      Begin VB.CommandButton cmdAgregar 
-         Caption         =   "+"
-         BeginProperty Font 
-            Name            =   "Arial"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
             Size            =   9
             Charset         =   0
             Weight          =   700
@@ -206,145 +120,126 @@ Begin VB.Form frmSIF_RecepcionNdNc
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   375
-         Left            =   6120
-         TabIndex        =   2
-         Top             =   720
-         Width           =   495
+         Transparent     =   -1  'True
+         UseVisualStyle  =   -1  'True
+         Appearance      =   17
+         Value           =   -1  'True
       End
-      Begin MSComctlLib.Toolbar tlbAplicar 
-         Height          =   570
-         Left            =   8400
-         TabIndex        =   5
-         Top             =   7080
-         Width           =   3225
-         _ExtentX        =   5694
-         _ExtentY        =   995
-         ButtonWidth     =   2461
-         ButtonHeight    =   1005
-         Style           =   1
-         TextAlignment   =   1
-         ImageList       =   "ImageList1"
-         _Version        =   393216
-         BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
-            NumButtons      =   3
-            BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Caption         =   "Aplicar"
-               Key             =   "Aplicar"
-               Object.ToolTipText     =   "Aplicar Etiqueta"
-               ImageKey        =   "IMG1"
-            EndProperty
-            BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Style           =   3
-            EndProperty
-            BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Caption         =   "Opciones"
-               Key             =   "Opciones"
-               Object.ToolTipText     =   "Opciones"
-               ImageKey        =   "IMG2"
-               Style           =   5
-               BeginProperty ButtonMenus {66833FEC-8583-11D1-B16A-00C0F0283628} 
-                  NumButtonMenus  =   2
-                  BeginProperty ButtonMenu1 {66833FEE-8583-11D1-B16A-00C0F0283628} 
-                     Key             =   "Limpiar"
-                     Text            =   "Limpiar"
-                  EndProperty
-                  BeginProperty ButtonMenu2 {66833FEE-8583-11D1-B16A-00C0F0283628} 
-                     Key             =   "Eliminar"
-                     Text            =   "Eliminar"
-                  EndProperty
-               EndProperty
-            EndProperty
-         EndProperty
-      End
-      Begin MSComctlLib.ProgressBar PrgBar 
-         Height          =   315
-         Left            =   120
-         TabIndex        =   6
-         Top             =   7200
-         Visible         =   0   'False
-         Width           =   7935
-         _ExtentX        =   13991
-         _ExtentY        =   550
-         _Version        =   393216
-         Appearance      =   0
-      End
-      Begin MSComctlLib.ListView lswDocumento 
-         Height          =   5775
-         Left            =   240
-         TabIndex        =   9
-         Top             =   1200
-         Width           =   11295
-         _ExtentX        =   19918
-         _ExtentY        =   10181
-         View            =   3
-         Arrange         =   1
-         LabelWrap       =   -1  'True
-         HideSelection   =   -1  'True
-         FullRowSelect   =   -1  'True
-         HotTracking     =   -1  'True
-         HoverSelection  =   -1  'True
-         _Version        =   393217
-         ForeColor       =   -2147483640
-         BackColor       =   -2147483643
-         BorderStyle     =   1
-         Appearance      =   0
+      Begin XtremeSuiteControls.FlatEdit txtCodigo 
+         Height          =   345
+         Left            =   1560
+         TabIndex        =   7
+         Top             =   480
+         Width           =   2295
+         _Version        =   1572864
+         _ExtentX        =   4048
+         _ExtentY        =   609
+         _StockProps     =   77
+         ForeColor       =   0
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.4
+            Name            =   "Calibri"
+            Size            =   9.75
             Charset         =   0
-            Weight          =   400
+            Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         NumItems        =   6
-         BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            Text            =   "Código"
-            Object.Width           =   2999
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.PushButton cmdAgregar 
+         Height          =   375
+         Left            =   3960
+         TabIndex        =   8
+         Top             =   480
+         Width           =   615
+         _Version        =   1572864
+         _ExtentX        =   1085
+         _ExtentY        =   661
+         _StockProps     =   79
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
          EndProperty
-         BeginProperty ColumnHeader(2) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   1
-            Text            =   "Tipo"
-            Object.Width           =   2999
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         Picture         =   "frmSIF_RecepcionNdNc.frx":0000
+      End
+      Begin XtremeSuiteControls.RadioButton rbMovimiento 
+         Height          =   255
+         Index           =   1
+         Left            =   6840
+         TabIndex        =   10
+         Top             =   480
+         Width           =   1455
+         _Version        =   1572864
+         _ExtentX        =   2566
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "Devolución"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
          EndProperty
-         BeginProperty ColumnHeader(3) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   2
-            Text            =   "Cédula"
-            Object.Width           =   2999
+         Transparent     =   -1  'True
+         UseVisualStyle  =   -1  'True
+         Appearance      =   17
+      End
+      Begin XtremeSuiteControls.PushButton btnAplicar 
+         Height          =   375
+         Left            =   10560
+         TabIndex        =   12
+         Top             =   480
+         Width           =   1335
+         _Version        =   1572864
+         _ExtentX        =   2355
+         _ExtentY        =   661
+         _StockProps     =   79
+         Caption         =   "Aplicar"
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
          EndProperty
-         BeginProperty ColumnHeader(4) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   3
-            Text            =   "Nombre"
-            Object.Width           =   8114
-         EndProperty
-         BeginProperty ColumnHeader(5) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   4
-            Text            =   "Usuario Reg."
-            Object.Width           =   2540
-         EndProperty
-         BeginProperty ColumnHeader(6) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   5
-            Text            =   "Fecha reg."
-            Object.Width           =   2540
-         EndProperty
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         Picture         =   "frmSIF_RecepcionNdNc.frx":0720
       End
       Begin FPSpreadADO.fpSpread vGrid 
          Height          =   6495
-         Left            =   -74880
+         Left            =   -69880
          TabIndex        =   13
-         Top             =   1200
-         Width           =   11415
+         Top             =   960
+         Visible         =   0   'False
+         Width           =   11775
          _Version        =   524288
-         _ExtentX        =   20135
+         _ExtentX        =   20770
          _ExtentY        =   11456
          _StockProps     =   64
          BackColorStyle  =   1
          BorderStyle     =   0
          EditEnterAction =   5
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.4
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -353,137 +248,152 @@ Begin VB.Form frmSIF_RecepcionNdNc
          EndProperty
          MaxCols         =   486
          ScrollBarExtMode=   -1  'True
-         SpreadDesigner  =   "frmSIF_RecepcionNdNc.frx":0054
+         SpreadDesigner  =   "frmSIF_RecepcionNdNc.frx":0E47
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
-      Begin MSComctlLib.Toolbar tlbBuscar 
-         Height          =   330
-         Left            =   -66240
+      Begin XtremeSuiteControls.PushButton btnPendientes 
+         Height          =   375
+         Index           =   0
+         Left            =   -60760
          TabIndex        =   14
-         Top             =   600
-         Width           =   2625
-         _ExtentX        =   4636
-         _ExtentY        =   572
-         ButtonWidth     =   1931
-         Style           =   1
-         TextAlignment   =   1
-         ImageList       =   "ImageList3"
-         _Version        =   393216
-         BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
-            NumButtons      =   3
-            BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Caption         =   "Buscar"
-               Key             =   "Buscar"
-               Object.ToolTipText     =   "Buscar"
-               ImageIndex      =   5
-            EndProperty
-            BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Style           =   3
-            EndProperty
-            BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Caption         =   "Imprimir"
-               Key             =   "Imprimir"
-               ImageIndex      =   6
-            EndProperty
+         Top             =   480
+         Visible         =   0   'False
+         Width           =   1335
+         _Version        =   1572864
+         _ExtentX        =   2355
+         _ExtentY        =   661
+         _StockProps     =   79
+         Caption         =   "Buscar"
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
          EndProperty
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         Picture         =   "frmSIF_RecepcionNdNc.frx":1661
       End
-      Begin MSComCtl2.DTPicker dtpFInicio 
+      Begin XtremeSuiteControls.PushButton btnPendientes 
+         Height          =   375
+         Index           =   1
+         Left            =   -59440
+         TabIndex        =   15
+         Top             =   480
+         Visible         =   0   'False
+         Width           =   1335
+         _Version        =   1572864
+         _ExtentX        =   2355
+         _ExtentY        =   661
+         _StockProps     =   79
+         Caption         =   "Exportar"
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         Picture         =   "frmSIF_RecepcionNdNc.frx":1D61
+      End
+      Begin XtremeSuiteControls.DateTimePicker dtpFInicio 
          Height          =   330
-         Left            =   -74040
+         Left            =   -68920
+         TabIndex        =   16
+         Top             =   720
+         Visible         =   0   'False
+         Width           =   1455
+         _Version        =   1572864
+         _ExtentX        =   2566
+         _ExtentY        =   582
+         _StockProps     =   68
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CustomFormat    =   "dd/MM/yyyy"
+         Format          =   3
+      End
+      Begin XtremeSuiteControls.DateTimePicker dtpFFin 
+         Height          =   330
+         Left            =   -67480
+         TabIndex        =   17
+         Top             =   720
+         Visible         =   0   'False
+         Width           =   1455
+         _Version        =   1572864
+         _ExtentX        =   2566
+         _ExtentY        =   582
+         _StockProps     =   68
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CustomFormat    =   "dd/MM/yyyy"
+         Format          =   3
+      End
+      Begin XtremeSuiteControls.FlatEdit txtCodigoBuscar 
+         Height          =   330
+         Left            =   -63520
          TabIndex        =   18
-         ToolTipText     =   "Fecha Inicio Búsqueda"
-         Top             =   1200
-         Width           =   1215
-         _ExtentX        =   2138
-         _ExtentY        =   572
-         _Version        =   393216
+         Top             =   720
+         Visible         =   0   'False
+         Width           =   2295
+         _Version        =   1572864
+         _ExtentX        =   4048
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.4
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
-            Weight          =   400
+            Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         CustomFormat    =   "dd/MM/yyyy"
-         Format          =   191561731
-         CurrentDate     =   40361
-      End
-      Begin MSComCtl2.DTPicker dtpFFin 
-         Height          =   330
-         Left            =   -72480
-         TabIndex        =   19
-         ToolTipText     =   "Fecha Fin Búsqueda"
-         Top             =   1200
-         Width           =   1215
-         _ExtentX        =   2138
-         _ExtentY        =   572
-         _Version        =   393216
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.4
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         CustomFormat    =   "dd/MM/yyyy"
-         Format          =   191561731
-         CurrentDate     =   40361
-      End
-      Begin MSComctlLib.Toolbar tlbReportes 
-         Height          =   330
-         Left            =   -65640
-         TabIndex        =   20
-         Top             =   1080
-         Width           =   1545
-         _ExtentX        =   2731
-         _ExtentY        =   572
-         ButtonWidth     =   1931
-         Style           =   1
-         TextAlignment   =   1
-         ImageList       =   "ImageList3"
-         _Version        =   393216
-         BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
-            NumButtons      =   1
-            BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Caption         =   "Imprimir"
-               Key             =   "Imprimir"
-               ImageIndex      =   6
-               Style           =   5
-               BeginProperty ButtonMenus {66833FEC-8583-11D1-B16A-00C0F0283628} 
-                  NumButtonMenus  =   2
-                  BeginProperty ButtonMenu1 {66833FEE-8583-11D1-B16A-00C0F0283628} 
-                     Key             =   "Recepcion"
-                     Text            =   "Recepción"
-                  EndProperty
-                  BeginProperty ButtonMenu2 {66833FEE-8583-11D1-B16A-00C0F0283628} 
-                     Key             =   "Devolucion"
-                     Text            =   "Devolución"
-                  EndProperty
-               EndProperty
-            EndProperty
-         EndProperty
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
       End
       Begin FPSpreadADO.fpSpread vGridConsulta 
-         Height          =   4815
-         Left            =   -74640
-         TabIndex        =   21
-         Top             =   2880
-         Width           =   10935
+         Height          =   6135
+         Left            =   -69400
+         TabIndex        =   23
+         Top             =   1320
+         Visible         =   0   'False
+         Width           =   10695
          _Version        =   524288
-         _ExtentX        =   19288
-         _ExtentY        =   8493
+         _ExtentX        =   18865
+         _ExtentY        =   10821
          _StockProps     =   64
          BackColorStyle  =   1
          BorderStyle     =   0
          EditEnterAction =   5
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.4
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -492,131 +402,212 @@ Begin VB.Form frmSIF_RecepcionNdNc
          EndProperty
          MaxCols         =   486
          ScrollBarExtMode=   -1  'True
-         SpreadDesigner  =   "frmSIF_RecepcionNdNc.frx":0770
+         ScrollBars      =   2
+         SpreadDesigner  =   "frmSIF_RecepcionNdNc.frx":1ECB
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
-      Begin VB.Label Label1 
-         Caption         =   "Tipo Movimiento"
-         Height          =   255
-         Index           =   2
-         Left            =   6720
-         TabIndex        =   28
-         Top             =   480
-         Width           =   2055
-      End
-      Begin VB.Label Label1 
-         Caption         =   "Tipo Documento"
+      Begin XtremeSuiteControls.PushButton btnConsulta 
          Height          =   375
-         Index           =   1
-         Left            =   -74040
-         TabIndex        =   27
-         Top             =   2040
+         Left            =   -60280
+         TabIndex        =   2
+         Top             =   720
          Visible         =   0   'False
-         Width           =   2055
-      End
-      Begin VB.Label Label1 
-         Caption         =   "Usuario"
-         Height          =   255
-         Index           =   14
-         Left            =   -71160
-         TabIndex        =   25
-         Top             =   960
-         Width           =   735
-      End
-      Begin VB.Label Label6 
-         Caption         =   "Reportes (Inicio / Corte)"
-         Height          =   255
-         Left            =   -74040
-         TabIndex        =   24
-         Top             =   960
-         Width           =   2055
-      End
-      Begin VB.Image Image4 
-         Height          =   384
-         Left            =   -74760
-         Picture         =   "frmSIF_RecepcionNdNc.frx":0CC5
-         Top             =   1080
-         Width           =   384
-      End
-      Begin VB.Label Label5 
-         Alignment       =   2  'Center
-         Caption         =   "-"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   12
+         Width           =   1335
+         _Version        =   1572864
+         _ExtentX        =   2355
+         _ExtentY        =   661
+         _StockProps     =   79
+         Caption         =   "Buscar"
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
-            Weight          =   400
+            Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   255
-         Left            =   -72840
-         TabIndex        =   23
-         Top             =   1200
-         Width           =   375
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         Picture         =   "frmSIF_RecepcionNdNc.frx":246C
       End
-      Begin VB.Label Label7 
-         Caption         =   "No. Documento"
-         Height          =   255
-         Left            =   -70440
-         TabIndex        =   22
-         Top             =   2040
-         Width           =   1935
-      End
-      Begin VB.Image Image3 
-         Height          =   384
-         Left            =   -74640
-         Picture         =   "frmSIF_RecepcionNdNc.frx":0ECF
-         Top             =   2040
-         Width           =   384
-      End
-      Begin VB.Label Label2 
-         Caption         =   "Documentos  Pendientes de:"
-         Height          =   255
-         Left            =   -74280
-         TabIndex        =   15
-         Top             =   600
+      Begin XtremeSuiteControls.ComboBox cboUsuario 
+         Height          =   330
+         Left            =   -65920
+         TabIndex        =   19
+         Top             =   720
+         Visible         =   0   'False
          Width           =   2295
+         _Version        =   1572864
+         _ExtentX        =   4048
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Style           =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+         Text            =   "ComboBox1"
       End
-      Begin VB.Image Image2 
-         Height          =   384
-         Left            =   -74760
-         Picture         =   "frmSIF_RecepcionNdNc.frx":10E8
-         Top             =   480
-         Width           =   384
-      End
-      Begin VB.Label Label1 
-         Caption         =   "Tipo Documento"
+      Begin XtremeSuiteControls.Label Label3 
          Height          =   255
-         Index           =   0
-         Left            =   720
-         TabIndex        =   8
+         Index           =   4
+         Left            =   -68920
+         TabIndex        =   22
          Top             =   480
-         Width           =   2055
+         Visible         =   0   'False
+         Width           =   1575
+         _Version        =   1572864
+         _ExtentX        =   2778
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "Fechas:"
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+         WordWrap        =   -1  'True
       End
-      Begin VB.Label LblCedula 
-         Caption         =   "Código"
+      Begin XtremeSuiteControls.Label Label3 
          Height          =   255
-         Left            =   4320
-         TabIndex        =   7
+         Index           =   3
+         Left            =   -65920
+         TabIndex        =   21
          Top             =   480
-         Width           =   975
+         Visible         =   0   'False
+         Width           =   1575
+         _Version        =   1572864
+         _ExtentX        =   2778
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "Usuario:"
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+         WordWrap        =   -1  'True
       End
-      Begin VB.Image Image1 
-         Height          =   384
+      Begin XtremeSuiteControls.Label Label3 
+         Height          =   255
+         Index           =   2
+         Left            =   -63520
+         TabIndex        =   20
+         Top             =   480
+         Visible         =   0   'False
+         Width           =   1575
+         _Version        =   1572864
+         _ExtentX        =   2778
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "No. Documento:"
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+         WordWrap        =   -1  'True
+      End
+      Begin XtremeSuiteControls.Label Label3 
+         Height          =   255
+         Index           =   1
          Left            =   120
-         Picture         =   "frmSIF_RecepcionNdNc.frx":12F9
+         TabIndex        =   6
          Top             =   480
-         Width           =   384
+         Width           =   1575
+         _Version        =   1572864
+         _ExtentX        =   2778
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "No. Documento:"
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+         WordWrap        =   -1  'True
       End
    End
+   Begin XtremeSuiteControls.ComboBox cboTipodoc 
+      Height          =   345
+      Left            =   1800
+      TabIndex        =   1
+      Top             =   1320
+      Width           =   3975
+      _Version        =   1572864
+      _ExtentX        =   7011
+      _ExtentY        =   609
+      _StockProps     =   77
+      ForeColor       =   0
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Style           =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+      Text            =   "ComboBox1"
+   End
+   Begin XtremeSuiteControls.ProgressBar PrgBar 
+      Height          =   135
+      Left            =   120
+      TabIndex        =   11
+      Top             =   1680
+      Visible         =   0   'False
+      Width           =   12015
+      _Version        =   1572864
+      _ExtentX        =   21193
+      _ExtentY        =   238
+      _StockProps     =   93
+      BackColor       =   -2147483633
+   End
    Begin MSComctlLib.ImageList ImageList1 
-      Left            =   0
-      Top             =   0
-      _ExtentX        =   995
-      _ExtentY        =   995
+      Left            =   8520
+      Top             =   1680
+      _ExtentX        =   1005
+      _ExtentY        =   1005
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -625,24 +616,24 @@ Begin VB.Form frmSIF_RecepcionNdNc
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   3
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_RecepcionNdNc.frx":14EB
+            Picture         =   "frmSIF_RecepcionNdNc.frx":2B6C
             Key             =   "IMG1"
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_RecepcionNdNc.frx":7D4D
+            Picture         =   "frmSIF_RecepcionNdNc.frx":93CE
             Key             =   "IMG2"
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_RecepcionNdNc.frx":E5AF
+            Picture         =   "frmSIF_RecepcionNdNc.frx":FC30
             Key             =   "IMG3"
          EndProperty
       EndProperty
    End
    Begin MSComctlLib.ImageList ImageList3 
-      Left            =   120
-      Top             =   600
-      _ExtentX        =   995
-      _ExtentY        =   995
+      Left            =   8640
+      Top             =   2280
+      _ExtentX        =   1005
+      _ExtentY        =   1005
       BackColor       =   -2147483643
       ImageWidth      =   16
       ImageHeight     =   16
@@ -651,30 +642,81 @@ Begin VB.Form frmSIF_RecepcionNdNc
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   6
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_RecepcionNdNc.frx":14E11
+            Picture         =   "frmSIF_RecepcionNdNc.frx":16492
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_RecepcionNdNc.frx":1B673
+            Picture         =   "frmSIF_RecepcionNdNc.frx":1CCF4
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_RecepcionNdNc.frx":21ED5
+            Picture         =   "frmSIF_RecepcionNdNc.frx":23556
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_RecepcionNdNc.frx":21FEF
+            Picture         =   "frmSIF_RecepcionNdNc.frx":23670
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_RecepcionNdNc.frx":2210D
+            Picture         =   "frmSIF_RecepcionNdNc.frx":2378E
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_RecepcionNdNc.frx":2896F
+            Picture         =   "frmSIF_RecepcionNdNc.frx":29FF0
             Key             =   ""
          EndProperty
       EndProperty
+   End
+   Begin XtremeSuiteControls.Label Label3 
+      Height          =   255
+      Index           =   0
+      Left            =   360
+      TabIndex        =   3
+      Top             =   1320
+      Width           =   1575
+      _Version        =   1572864
+      _ExtentX        =   2778
+      _ExtentY        =   450
+      _StockProps     =   79
+      Caption         =   "Tipo Documento"
+      BackColor       =   -2147483633
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Transparent     =   -1  'True
+      WordWrap        =   -1  'True
+   End
+   Begin VB.Label Label1 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Recepción de Documentos"
+      BeginProperty Font 
+         Name            =   "Calibri"
+         Size            =   13.5
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00FFFFFF&
+      Height          =   480
+      Index           =   3
+      Left            =   1560
+      TabIndex        =   0
+      Top             =   360
+      Width           =   6252
+   End
+   Begin VB.Image imgBanner 
+      Height          =   1092
+      Left            =   0
+      Top             =   0
+      Width           =   13332
    End
 End
 Attribute VB_Name = "frmSIF_RecepcionNdNc"
@@ -683,22 +725,25 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
-Dim itmX As ListItem
+Dim strSQL As String, rs As New ADODB.Recordset
+Dim itmX As ListViewItem
+Dim vPaso As Boolean
+
 Dim mTagRecepcion As String, mTagDevolucion As String
 Dim mTagRecepcionDev As String
+
 Dim mCodigo As String, mTipoDoc As String
 
 
 Private Sub sbParametrosTags()
-Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
     
     '' Busca el parámetro del tag de recepción
-    strSQL = "select isnull(valor,'') from SIF_PARAMETROS where cod_parametro = '10'"
+    strSQL = "select isnull(valor,'') as 'Valor'from SIF_PARAMETROS where cod_parametro = '10'"
     Call OpenRecordSet(rs, strSQL)
     If Not rs.EOF Then
-        mTagRecepcion = rs.Fields(0)
+        mTagRecepcion = rs!Valor
     Else
         MsgBox "Falta agregar el parámetro 10 en la base de datos"
     End If
@@ -706,9 +751,9 @@ On Error GoTo vError
     
     If Not mTagRecepcion = Empty Then
     
-        strSQL = "select COUNT(*) FROM sif_tags where TAG_CODIGO = '" & mTagRecepcion & "'"
+        strSQL = "select COUNT(*) as 'Existe' FROM sif_tags where TAG_CODIGO = '" & mTagRecepcion & "'"
         Call OpenRecordSet(rs, strSQL)
-        If rs.Fields(0) = 0 Then
+        If rs!Existe = 0 Then
             mTagRecepcion = Empty
             MsgBox "El código de tag definido el los parámetros para la revisión no existe"
         End If
@@ -717,10 +762,10 @@ On Error GoTo vError
     End If
     
     '' Busca el parámetro del tag de devolución
-    strSQL = "select isnull(valor,'') from SIF_PARAMETROS where cod_parametro = '11'"
+    strSQL = "select isnull(valor,'') as 'Valor' from SIF_PARAMETROS where cod_parametro = '11'"
     Call OpenRecordSet(rs, strSQL)
     If Not rs.EOF Then
-        mTagDevolucion = rs.Fields(0)
+        mTagDevolucion = rs!Valor
     Else
         MsgBox "Falta agregar el parámetro 11 en la base de datos"
     End If
@@ -728,9 +773,9 @@ On Error GoTo vError
     
     If Not mTagDevolucion = Empty Then
     
-        strSQL = "select COUNT(*) FROM sif_tags where TAG_CODIGO = '" & mTagDevolucion & "'"
+        strSQL = "select COUNT(*) as 'Existe' FROM sif_tags where TAG_CODIGO = '" & mTagDevolucion & "'"
         Call OpenRecordSet(rs, strSQL)
-        If rs.Fields(0) = 0 Then
+        If rs!Existe = 0 Then
             mTagRecepcion = Empty
             MsgBox "El código de tag definido el los parámetros para la revisión no existe"
         End If
@@ -738,10 +783,10 @@ On Error GoTo vError
         
     End If
     
-    strSQL = "select isnull(valor,'') from SIF_PARAMETROS where cod_parametro = '12'"
+    strSQL = "select isnull(valor,'') as 'Valor' from SIF_PARAMETROS where cod_parametro = '12'"
     Call OpenRecordSet(rs, strSQL)
     If Not rs.EOF Then
-        mTagRecepcionDev = rs.Fields(0)
+        mTagRecepcionDev = rs!Valor
     Else
         MsgBox "Falta agregar el parámetro 12 en la base de datos"
     End If
@@ -749,9 +794,9 @@ On Error GoTo vError
     
     If Not mTagRecepcionDev = Empty Then
     
-        strSQL = "select COUNT(*) FROM sif_tags where TAG_CODIGO = '" & mTagRecepcionDev & "'"
+        strSQL = "select COUNT(*) as 'Existe' FROM sif_tags where TAG_CODIGO = '" & mTagRecepcionDev & "'"
         Call OpenRecordSet(rs, strSQL)
-        If rs.Fields(0) = 0 Then
+        If rs!Existe = 0 Then
             mTagRecepcionDev = Empty
             MsgBox "El código de tag definido el los parámetros para la revisión no existe"
         End If
@@ -760,7 +805,8 @@ On Error GoTo vError
     End If
     
     
-    Exit Sub
+Exit Sub
+
 vError:
  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 
@@ -769,102 +815,49 @@ End Sub
 Private Sub sbCargaInformacion()
 
 
-Dim rs As New ADODB.Recordset, strSQL As String
-
-
-'If cboFormasPago.Text <> "TODOS" Then
-'   strSQL = strSQL & " and dbo.fxSIFDocsFormaPagoExiste(Tipo_Documento,Cod_Transaccion,'" _
-'          & SIFGlobal.fxCodText(cboFormasPago.Text) & "','" & txtFormaPagoNoRef.Text & "')" _
-'          & " = 1"
-'End If
-
-
 On Error GoTo vError
 
-    If Trim(txtCodigo.Text) = "" Then
-        Exit Sub
-    End If
-    
-    
-    mCodigo = txtCodigo.Text
-    mTipoDoc = SIFGlobal.fxCodText(cboTipodoc.Text)
-     
-    
-    If fxValidaNoDuplicados Then
-        
-        MsgBox "El Documento ya fue digitado", vbExclamation
-        
-        txtCodigo.Text = Empty
-        txtCodigo.SetFocus
-        Exit Sub
-    End If
+mTipoDoc = cboTipodoc.ItemData(cboTipodoc.ListIndex)
 
-    'Valida no agregar en forma mismo tag en forma consecutiva
-    If optRecepcion.Value Then
-       strSQL = "SELECT dbo.fxSIFValidaTagRev('" & Trim(mTipoDoc) & "','" & Trim(mTagRecepcion) & "','" & Trim(mTagDevolucion) & "','DOC','" & mCodigo & "',NULL)"
-        Call OpenRecordSet(rs, strSQL)
-         If rs.Fields(0) = 2 Then
-             MsgBox "No es posible registrar en forma consecutiva dos recepciones del documento " & txtCodigo.Text, vbInformation
-            txtCodigo.Text = Empty
-            rs.Close
-            Exit Sub
-        End If
-    Else
-        strSQL = "SELECT dbo.fxSIFValidaTagRev(" & Trim(mTipoDoc) & ",'" & Trim(mTagDevolucion) & "','" & Trim(mTagRecepcion) & "','DOC','" & mCodigo & "',NULL)"
-        Call OpenRecordSet(rs, strSQL)
-         If rs.Fields(0) = 3 Then
-            MsgBox "No es posible registrar en forma consecutiva dos devoluciones del documento " & txtCodigo.Text
-            txtCodigo.Text = Empty
-            rs.Close
-            Exit Sub
-        
-        End If
-    End If
-   rs.Close
-   
-    strSQL = "SELECT dbo.fxSIFValidaTagRev('" & Trim(mTipoDoc) & "','" & Trim(mTagDevolucion) & "','" & Trim(mTagRecepcion) & "','DOC','" & mCodigo _
-            & "','" & Trim(mTagRecepcionDev) & "')"
-    Call OpenRecordSet(rs, strSQL)
-    If rs.Fields(0) = 4 Then
-       MsgBox "No es posible registrar una recepción sin aplicar la devolución del documento " & txtCodigo.Text
-       txtCodigo.Text = Empty
-       rs.Close
-        Exit Sub
-    End If
-    rs.Close
-    
-   strSQL = "Select T.COD_TRANSACCION,T.TIPO_DOCUMENTO,T.CLIENTE_IDENTIFICACION,S.NOMBRE,T.REGISTRO_USUARIO,T.REGISTRO_FECHA" _
-           & " from SIF_TRANSACCIONES T inner join Socios S on T.CLIENTE_IDENTIFICACION = S.cedula" _
-           & " where T.TIPO_DOCUMENTO = '" & mTipoDoc & "' and T.ANALISTA_REVISION is null" _
-           & " and T.COD_TRANSACCION = '" & mCodigo & "'"
-           
-    Call OpenRecordSet(rs, strSQL)
-    
-    If Not rs.EOF Then
-        
-        Set itmX = lswDocumento.ListItems.Add(, , rs!Cod_Transaccion)
-        itmX.SubItems(1) = rs!Tipo_Documento
-        itmX.SubItems(2) = rs!CLIENTE_IDENTIFICACION
-        itmX.SubItems(3) = rs!Nombre
-        itmX.SubItems(4) = rs!REGISTRO_USUARIO
-        itmX.SubItems(5) = Format(rs!REGISTRO_FECHA, "dd/mm/yyyyy")
-        
-    End If
-    
-    rs.Close
+If rbMovimiento(0).Value Then
+    strSQL = "Select Top 100 T.COD_TRANSACCION,T.TIPO_DOCUMENTO,T.CLIENTE_IDENTIFICACION, T.CLIENTE_NOMBRE,T.REGISTRO_USUARIO,T.REGISTRO_FECHA" _
+            & " from SIF_TRANSACCIONES T " _
+            & " where T.TIPO_DOCUMENTO = '" & mTipoDoc & "' and T.ANALISTA_REVISION is null" _
+            & "   and isnull(T.ANALISTA_RECEPCION,0) = 0 order by T.REGISTRO_FECHA desc"
+Else
+    strSQL = "Select Top 100 T.COD_TRANSACCION,T.TIPO_DOCUMENTO,T.CLIENTE_IDENTIFICACION,T.CLIENTE_NOMBRE,T.REGISTRO_USUARIO,T.REGISTRO_FECHA" _
+            & " from SIF_TRANSACCIONES T " _
+            & " where T.TIPO_DOCUMENTO = '" & mTipoDoc & "' and T.ANALISTA_REVISION is null" _
+            & "   and isnull(T.ANALISTA_RECEPCION,0) = 1 order by T.REGISTRO_FECHA desc"
 
-    txtCodigo.Text = Empty
-    txtCodigo.SetFocus
+End If
+       
+Call OpenRecordSet(rs, strSQL)
 
-    Exit Sub
+lsw.ListItems.Clear
+
+Do While Not rs.EOF
+    Set itmX = lsw.ListItems.Add(, , rs!Cod_Transaccion)
+    itmX.SubItems(1) = rs!TIPO_DOCUMENTO
+    itmX.SubItems(2) = RTrim(rs!CLIENTE_IDENTIFICACION)
+    itmX.SubItems(3) = rs!CLIENTE_NOMBRE
+    itmX.SubItems(4) = rs!REGISTRO_USUARIO
+    itmX.SubItems(5) = Format(rs!REGISTRO_FECHA, "yyyy-mm-dd")
+  rs.MoveNext
+Loop
+
+rs.Close
+
+
+Exit Sub
     
 vError:
-        MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 
 End Sub
 
-Private Sub sbAplicarRecepcionDevolucion()
-Dim i As Integer, strSQL As String
+Private Sub sbAplicar()
+Dim i As Long
 
 On Error GoTo vError
 
@@ -872,7 +865,7 @@ If MsgBox("Está seguro que sea aplicar estas etiquetas", vbExclamation + vbYesNo
     Exit Sub
 End If
 
-If optRecepcion.Value = True Then
+If rbMovimiento(0).Value = True Then
     If mTagRecepcion = Empty Then
         MsgBox "No se puede realizar el proceso no está definido la etiqueta de recepción"
         Exit Sub
@@ -886,26 +879,28 @@ End If
 
 Me.MousePointer = vbHourglass
 
-PrgBar.Max = lswDocumento.ListItems.Count + 1
+PrgBar.Max = lsw.ListItems.Count + 1
 PrgBar.Value = 1
 PrgBar.Visible = True
 
 
-With lswDocumento.ListItems
+With lsw.ListItems
 
 For i = 1 To .Count
 
-    If optRecepcion.Value = True Then
-    
-        Call sbSIFRegistraTags(.Item(i).SubItems(1), mTagRecepcion, "Recibida la documentación de la liquidación", .Item(i).Text, "DOC" _
-                            , .Item(i).SubItems(1), .Item(i).Text)
-        
-        
-    Else
-        Call sbSIFRegistraTags(.Item(i).SubItems(1), mTagDevolucion, "Devolución la documentación de la liquidación", .Item(i).Text, "DOC" _
-                             , .Item(i).SubItems(1), .Item(i).Text)
+    If .Item(i).Checked Then
+            If rbMovimiento(0).Value Then
+            
+                Call sbSIFRegistraTags(.Item(i).SubItems(1), mTagRecepcion, "Recibida la documentación de la liquidación", .Item(i).Text, "DOC" _
+                                    , .Item(i).SubItems(1), .Item(i).Text)
+                
+                
+            Else
+                Call sbSIFRegistraTags(.Item(i).SubItems(1), mTagDevolucion, "Devolución la documentación de la liquidación", .Item(i).Text, "DOC" _
+                                     , .Item(i).SubItems(1), .Item(i).Text)
+            End If
     End If
-
+    
     PrgBar.Value = PrgBar.Value + 1
 Next i
 
@@ -918,7 +913,9 @@ PrgBar.Visible = False
 Me.MousePointer = vbDefault
 
 
-MsgBox "Proceso concluido con éxito...", vbInformation
+MsgBox "Proceso concluído con éxito!", vbInformation
+
+Call sbCargaInformacion
 
 Exit Sub
 
@@ -934,9 +931,9 @@ Dim i As Integer
 
     fxValidaNoDuplicados = False
 
-    For i = 1 To lswDocumento.ListItems.Count
+    For i = 1 To lsw.ListItems.Count
 
-        If lswDocumento.ListItems(i).Text = Trim(mCodigo) And lswDocumento.ListItems(i).SubItems(1) = Trim(mTipoDoc) Then
+        If lsw.ListItems(i).Text = Trim(mCodigo) And lsw.ListItems(i).SubItems(1) = Trim(mTipoDoc) Then
             fxValidaNoDuplicados = True
         End If
         
@@ -944,24 +941,121 @@ Dim i As Integer
 
 End Function
 
-Private Sub cboTipodoc_Click()
-txtCodigo.Text = ""
+Private Sub btnAplicar_Click()
+  Call sbAplicar
 End Sub
 
-Private Sub cboTipodocBuscar_Click()
-txtCodigoBuscar.Text = ""
+Private Sub btnConsulta_Click()
+    Call sbConsulta_Seguimiento
+End Sub
+
+Private Sub btnPendientes_Click(Index As Integer)
+
+Select Case Index
+    Case 0 'Buscar
+        Call sbPendientes
+
+    Case 1 'Exportar
+        Dim vHeaders As vGridHeaders
+            vHeaders.Columnas = 6
+            vHeaders.Headers(1) = "No. Transaccion"
+            vHeaders.Headers(2) = "Tipo Doc."
+            vHeaders.Headers(3) = "Identificación"
+            vHeaders.Headers(4) = "Nombre"
+            vHeaders.Headers(5) = "Fec.Registro"
+            vHeaders.Headers(6) = "Usr.Registro"
+        
+         Call sbSIFGridExportar(vGrid, vHeaders, "ProGrX_Recepcion_Docs")
+
+End Select
+
+End Sub
+
+Private Sub cboTipodoc_Click()
+
+If vPaso Then Exit Sub
+
+Select Case tcMain.SelectedItem
+    Case 0 'Recepcion
+        Call sbCargaInformacion
+        
+    Case 1 'Pendientes
+        Call sbPendientes
+        
+    Case 2 'Consulta
+        If cboUsuario.ListCount = 0 Then
+            Call sbUsuarios_Load
+        End If
+        vGridConsulta.MaxRows = 0
+End Select
+
 End Sub
 
 Private Sub cmdAgregar_Click()
-    Call sbCargaInformacion
-End Sub
-
-Private Sub sbLimpiarDatos(ByVal Todo As Boolean)
-
-    If Todo = True Then
-        txtCodigo.Text = Empty
-    End If
+If vPaso Then Exit Sub
+If txtCodigo.Text = "" Then Exit Sub
+If cboTipodoc.ListCount < 0 Then Exit Sub
     
+Dim pTipoDoc As String
+    
+On Error GoTo vError
+    
+pTipoDoc = cboTipodoc.ItemData(cboTipodoc.ListIndex)
+    
+
+'Valida no agregar en forma mismo tag en forma consecutiva
+If rbMovimiento(0).Value Then
+   strSQL = "SELECT dbo.fxSIFValidaTagRev('" & Trim(pTipoDoc) & "','" & Trim(mTagRecepcion) & "','" & Trim(mTagDevolucion) & "','DOC','" & txtCodigo.Text & "',NULL) as 'Existe'"
+    Call OpenRecordSet(rs, strSQL)
+     If rs!Existe = 2 Then
+         MsgBox "No es posible registrar en forma consecutiva dos recepciones del documento " & txtCodigo.Text, vbInformation
+        txtCodigo.Text = ""
+        rs.Close
+        Exit Sub
+    End If
+Else
+    strSQL = "SELECT dbo.fxSIFValidaTagRev(" & Trim(pTipoDoc) & ",'" & Trim(mTagDevolucion) & "','" & Trim(mTagRecepcion) & "','DOC','" & txtCodigo.Text & "',NULL) as 'Existe'"
+    Call OpenRecordSet(rs, strSQL)
+     If rs!Existe = 3 Then
+        MsgBox "No es posible registrar en forma consecutiva dos devoluciones del documento " & txtCodigo.Text
+        txtCodigo.Text = ""
+        rs.Close
+        Exit Sub
+    
+    End If
+End If
+
+strSQL = "SELECT dbo.fxSIFValidaTagRev('" & Trim(pTipoDoc) & "','" & Trim(mTagDevolucion) & "','" & Trim(mTagRecepcion) & "','DOC','" & txtCodigo.Text _
+        & "','" & Trim(mTagRecepcionDev) & "') as 'Existe'"
+Call OpenRecordSet(rs, strSQL)
+If rs!Existe = 4 Then
+   MsgBox "No es posible registrar una recepción sin aplicar la devolución del documento " & txtCodigo.Text
+   txtCodigo.Text = ""
+   rs.Close
+   Exit Sub
+End If
+
+'Aplica el Movimiento
+If rbMovimiento(0).Value Then
+
+    Call sbSIFRegistraTags(pTipoDoc, mTagRecepcion, "Recibida la documentación de la liquidación", txtCodigo.Text, "DOC" _
+                        , pTipoDoc, txtCodigo.Text)
+    
+    
+Else
+    Call sbSIFRegistraTags(pTipoDoc, mTagDevolucion, "Devolución la documentación de la liquidación", txtCodigo.Text, "DOC" _
+                          , pTipoDoc, txtCodigo.Text)
+End If
+
+
+Call sbCargaInformacion
+
+Exit Sub
+
+vError:
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+
 End Sub
 
 Private Sub Form_Activate()
@@ -969,121 +1063,66 @@ vModulo = 8
 End Sub
 
 Private Sub Form_Load()
-Dim strSQL As String
 
- vModulo = 8
- 
-    
-    SSTab.Tab = 0
-    Call sbParametrosTags
-    
-    dtpFInicio.Value = fxFechaServidor
-    dtpFFin.Value = dtpFInicio.Value
-    vGrid.MaxRows = 0
+vModulo = 8
    
-   strSQL = "select rtrim(Tipo_Documento) + ' - ' + Descripcion as Itmx" _
-          & " from SIF_Documentos" _
-          & " where Tipo_documento in('NC','ND','FND','FNC','CA')" _
-          & " order by Tipo_Documento"
-          
-   Call sbLlenaCbo(cboTipodoc, strSQL, False, False)
-   Call sbLlenaCbo(cboTipodocPendientes, strSQL, False, False)
-   Call sbLlenaCbo(cboTipodocBuscar, strSQL, False, False)
-   
-   
+
+Set imgBanner.Picture = frmContenedor.imgBanner_Mantenimiento.Picture
+
+With lsw.ColumnHeaders
+    .Clear
+    .Add , , "Código", 1800
+    .Add , , "Tipo", 1800
+    .Add , , "Identificación", 1800, vbCenter
+    .Add , , "Nombre", 4500
+    .Add , , "Usuario", 2800, vbCenter
+    .Add , , "Fecha", 1800
+End With
+
+tcMain.Item(0).Selected = True
+
+Call sbParametrosTags
+
+dtpFInicio.Value = fxFechaServidor
+dtpFFin.Value = dtpFInicio.Value
+
+vGrid.MaxRows = 0
+
+vPaso = True
+    strSQL = "select rtrim(Tipo_Documento) as IdX, rtrim(Descripcion) as 'Itmx'" _
+           & " from SIF_Documentos" _
+           & " where Tipo_documento in('NC','ND','FND','FNC','CA', 'CD.Liq', 'BEAC', 'CBJ', 'FSL', 'REA', 'RH', 'TCP', 'TRFA', 'TCP', 'THCJ', 'TRA', 'THAV')" _
+           & " order by Descripcion"
+    Call sbCbo_Llena_New(cboTipodoc, strSQL, False, True)
+vPaso = False
+
 Call Formularios(Me)
 Call RefrescaTags(Me)
 
-End Sub
+Call cboTipodoc_Click
 
-Private Sub lswDocumento_DblClick()
-    If lswDocumento.ListItems.Count > 0 Then
-        If lswDocumento.SelectedItem.Index > 0 Then
-            If MsgBox("Desea eliminar la cédula " & lswDocumento.SelectedItem, vbYesNo) = vbYes Then
-                lswDocumento.ListItems.Remove (lswDocumento.SelectedItem.Index)
-            End If
-        End If
-    End If
 End Sub
 
 
 
-Private Sub optDevolucion_Click()
-    lswDocumento.ListItems.Clear
-End Sub
-
-Private Sub optRecepcion_Click()
-    lswDocumento.ListItems.Clear
-End Sub
-
-Private Sub ssTab_Click(PreviousTab As Integer)
-    Select Case SSTab.Tab
-    Case 0
-        optRecepcion.Value = True
-    Case 1
-        optPendRecepcion.Value = True
-    Case 2
-        vGridConsulta.MaxRows = 0
-        vGridConsulta.MaxCols = 3
-        txtCodigoBuscar.Text = Empty
-        txtCodigoBuscar.SetFocus
-        
-        Call sbCargarUsuarios
-    End Select
-End Sub
-
-Private Sub tlbAplicar_ButtonClick(ByVal Button As MSComctlLib.Button)
-    Select Case UCase(Button.Key)
-    Case "APLICAR"
-        Call sbAplicarRecepcionDevolucion
-    End Select
-End Sub
-
-Private Sub tlbAplicar_ButtonMenuClick(ByVal ButtonMenu As MSComctlLib.ButtonMenu)
-    Select Case UCase(ButtonMenu.Key)
-    Case "LIMPIAR"
-        lswDocumento.ListItems.Clear
-    Case "ELIMINAR"
-        If lswDocumento.ListItems.Count > 0 Then
-            If lswDocumento.SelectedItem.Index <> 0 Then
-                lswDocumento.ListItems.Remove (lswDocumento.SelectedItem.Index)
-            End If
-        End If
-    End Select
-End Sub
-
-Private Sub sbCargarListaSolicitudes(Optional ByVal Num_Operacion As String = Empty)
-' Carga Lista de operaciones
-    Dim strSQL As String, BancosSeleccionados As String
+Private Sub sbPendientes()
     
-On Error GoTo error
-    'Consulta la lista de las Operaciones
+On Error GoTo vError
     
     Me.MousePointer = vbHourglass
-    vGrid.SetFocus
-    dtpFInicio.Refresh
-    dtpFFin.Refresh
     
- If optPendRecepcion.Value = True Then
-    strSQL = "Select T.COD_TRANSACCION,T.TIPO_DOCUMENTO,T.CLIENTE_IDENTIFICACION,S.NOMBRE,T.REGISTRO_USUARIO,T.REGISTRO_FECHA" _
-           & " from SIF_TRANSACCIONES T inner join Socios S on T.CLIENTE_IDENTIFICACION = S.cedula" _
-           & " where T.TIPO_DOCUMENTO = '" & SIFGlobal.fxCodText(cboTipodocPendientes.Text) _
-           & "' and isnull(T.ANALISTA_RECEPCION,0) = 0 order by T.cod_Transaccion"
-'Else
-'    strSQL = "Select T.COD_TRANSACCION,T.TIPO_DOCUMENTO,T.CLIENTE_IDENTIFICACION,S.NOMBRE,T.REGISTRO_USUARIO,T.REGISTRO_FECHA" _
-'           & " from SIF_TRANSACCIONES T inner join Socios S on T.CLIENTE_IDENTIFICACION = S.cedula" _
-'           & " where T.TIPO_DOCUMENTO = '" & SIFGlobal.fxCodText(cboTipodocPendientes.Text) _
-'           & "' and T.ANALISTA_REVISION =2"
-End If
-            
-            
-                      
+    strSQL = "Select Top 300 T.COD_TRANSACCION,T.TIPO_DOCUMENTO,T.CLIENTE_IDENTIFICACION,T.CLIENTE_NOMBRE,T.REGISTRO_USUARIO,T.REGISTRO_FECHA" _
+           & " from SIF_TRANSACCIONES T" _
+           & " where T.TIPO_DOCUMENTO = '" & cboTipodoc.ItemData(cboTipodoc.ListIndex) _
+           & "' and isnull(T.ANALISTA_RECEPCION,0) = 0 order by T.REGISTRO_FECHA desc"
     Call sbCargaGrid(vGrid, 6, strSQL)
     vGrid.MaxRows = vGrid.MaxRows - 1
     
     Me.MousePointer = vbDefault
-    Exit Sub
-error:
+
+Exit Sub
+
+vError:
     Me.MousePointer = vbDefault
     MsgBox fxSys_Error_Handler(Err.Description), vbCritical
   
@@ -1091,46 +1130,53 @@ error:
 End Sub
 
 
-Private Sub tlbBuscar_ButtonClick(ByVal Button As MSComctlLib.Button)
-Select Case UCase(Button.Key)
-    Case "BUSCAR"
-        Call sbCargarListaSolicitudes
-    Case "IMPRIMIR"
-       
+Private Sub lsw_ColumnClick(ByVal ColumnHeader As XtremeSuiteControls.ListViewColumnHeader)
+ lsw.SortKey = ColumnHeader.Index - 1
+  If lsw.SortOrder = 0 Then lsw.SortOrder = 1 Else lsw.SortOrder = 0
+  lsw.Sorted = True
+End Sub
+
+Private Sub rbMovimiento_Click(Index As Integer)
+Call sbCargaInformacion
+End Sub
+
+Private Sub tcMain_SelectedChanged(ByVal Item As XtremeSuiteControls.ITabControlItem)
+
+Select Case Item.Index
+    Case 0 'Recepcion
+        Call sbCargaInformacion
+        
+    Case 1 'Pendientes
+        Call sbPendientes
+        
+    Case 2 'Consulta
+        If cboUsuario.ListCount = 0 Then
+            Call sbUsuarios_Load
+        End If
+        vGridConsulta.MaxRows = 0
+    
 End Select
 End Sub
 
-
-
-
-
-Private Sub txtCodigo_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = vbKeyReturn Then
-        Call sbCargaInformacion
-    End If
-End Sub
-
-
-
-Private Sub sbCargarGridConsulta()
-Dim strSQL As String, rs As New ADODB.Recordset
+Private Sub sbConsulta_Seguimiento()
 
 On Error GoTo vError
 
     If txtCodigoBuscar.Text = Empty Then Exit Sub
     mCodigo = Trim(txtCodigoBuscar.Text)
-    mTipoDoc = SIFGlobal.fxCodText(cboTipodocBuscar.Text)
+    mTipoDoc = cboTipodoc.ItemData(cboTipodoc.ListIndex)
     
     Me.MousePointer = vbHourglass
-    strSQL = "select T.DESCRIPCION, CT.NOTAS, CT.REGISTRO_FECHA, CT.REGISTRO_USUARIO from SIF_CONTROL_TAGS CT" _
-           & " inner join SIF_TAGS T on CT.TAG_CODIGO = T.TAG_CODIGO where CT.codigo = '" & mTipoDoc _
-           & "' and cod_modulo = 'DOC' and documento = '" & mCodigo & "'"
+    
+    strSQL = "select T.DESCRIPCION, CT.NOTAS, CT.REGISTRO_FECHA, CT.REGISTRO_USUARIO" _
+           & " from SIF_CONTROL_TAGS CT inner join SIF_TAGS T on CT.TAG_CODIGO = T.TAG_CODIGO" _
+           & " where CT.codigo = '" & mTipoDoc & "' and cod_modulo = 'DOC' and documento = '" & mCodigo & "' order by CT.REGISTRO_FECHA desc"
             
     vGridConsulta.MaxCols = 3
     vGridConsulta.MaxRows = 0
 
-
 Call OpenRecordSet(rs, strSQL)
+
 Do While Not rs.EOF
     vGridConsulta.MaxRows = vGridConsulta.MaxRows + 1
     vGridConsulta.Row = vGridConsulta.MaxRows
@@ -1148,35 +1194,32 @@ Do While Not rs.EOF
     rs.MoveNext
 Loop
 rs.Close
+
 Me.MousePointer = vbDefault
+
 Exit Sub
 vError:
     Me.MousePointer = vbDefault
     MsgBox fxSys_Error_Handler(Err.Description), vbCritical
-
 End Sub
 
 
-Private Sub sbCargarUsuarios()
-Dim strSQL As String
+Private Sub sbUsuarios_Load()
 
 On Error GoTo vError
+    
     Me.MousePointer = vbHourglass
 
-    strSQL = "SELECT UPPER(NOMBRE) as ItmX from USUARIOS WHERE ESTADO = 'A'"
+    strSQL = "SELECT UPPER(NOMBRE) as 'ItmX', Nombre as 'IdX' from USUARIOS WHERE ESTADO = 'A'"
     
-    Call sbLlenaCbo(cboUsuario, strSQL, True)
+    Call sbCbo_Llena_New(cboUsuario, strSQL, True, False)
 
     Me.MousePointer = vbDefault
-    Exit Sub
+    
+Exit Sub
+
 vError:
     Me.MousePointer = vbDefault
     MsgBox fxSys_Error_Handler(Err.Description), vbCritical
-End Sub
 
-Private Sub txtCodigoBuscar_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = vbKeyReturn Then
-        Call sbCargarGridConsulta
-    End If
 End Sub
-

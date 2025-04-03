@@ -1,8 +1,8 @@
 VERSION 5.00
 Object = "{38911DA0-E448-11D0-84A3-00DD01104159}#1.1#0"; "ComCt332.ocx"
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCT2.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
 Begin VB.Form frmInvTranRequisiciones 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Requisiciones"
@@ -214,16 +214,16 @@ Begin VB.Form frmInvTranRequisiciones
    End
    Begin ComCtl3.CoolBar CoolBarX 
       Align           =   1  'Align Top
-      Height          =   408
+      Height          =   420
       Left            =   0
       TabIndex        =   16
       Top             =   0
-      Width           =   10452
+      Width           =   10455
       _ExtentX        =   18441
-      _ExtentY        =   714
+      _ExtentY        =   741
       _CBWidth        =   10455
-      _CBHeight       =   405
-      _Version        =   "6.7.9816"
+      _CBHeight       =   420
+      _Version        =   "6.7.9839"
       Child1          =   "tlb"
       MinHeight1      =   270
       Width1          =   4065
@@ -236,15 +236,15 @@ Begin VB.Form frmInvTranRequisiciones
       Width3          =   1995
       NewRow3         =   0   'False
       Begin MSComctlLib.Toolbar tlbProcesos 
-         Height          =   312
-         Left            =   4224
+         Height          =   330
+         Left            =   4260
          TabIndex        =   19
-         Top             =   48
-         Width           =   2292
-         _ExtentX        =   4048
-         _ExtentY        =   556
-         ButtonWidth     =   1820
-         ButtonHeight    =   550
+         Top             =   45
+         Width           =   2250
+         _ExtentX        =   3969
+         _ExtentY        =   582
+         ButtonWidth     =   1958
+         ButtonHeight    =   582
          Style           =   1
          TextAlignment   =   1
          ImageList       =   "ImageList1"
@@ -265,15 +265,15 @@ Begin VB.Form frmInvTranRequisiciones
          EndProperty
       End
       Begin MSComctlLib.Toolbar tlb 
-         Height          =   264
-         Left            =   132
+         Height          =   330
+         Left            =   165
          TabIndex        =   18
-         Top             =   72
-         Width           =   3912
-         _ExtentX        =   6906
-         _ExtentY        =   476
-         ButtonWidth     =   487
-         ButtonHeight    =   466
+         Top             =   75
+         Width           =   3870
+         _ExtentX        =   6826
+         _ExtentY        =   582
+         ButtonWidth     =   609
+         ButtonHeight    =   582
          Style           =   1
          _Version        =   393216
          BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
@@ -349,7 +349,7 @@ Begin VB.Form frmInvTranRequisiciones
       _ExtentY        =   450
       _Version        =   393216
       Arrows          =   65536
-      Orientation     =   1179649
+      Orientation     =   1638401
    End
    Begin FPSpreadADO.fpSpread vGrid 
       Height          =   2772
@@ -628,7 +628,7 @@ Call sbInvESCombo("R", cboCausa)
 vGrid.MaxRows = 1
 vGrid.MaxCols = 5
 For i = 1 To vGrid.MaxCols
-  vGrid.col = i
+  vGrid.Col = i
   vGrid.Text = ""
 Next
 
@@ -717,7 +717,7 @@ If Not rs.BOF And Not rs.EOF Then
   
   txtFecha = Format(rs!genera_fecha, "yyyy/mm/dd hh:mm:ss")
   
-  txtNotas = rs!notas & ""
+  txtNotas = rs!Notas & ""
   
   Select Case rs!Estado
     Case "S" 'Solicitada
@@ -772,7 +772,7 @@ If vBorra Then
     vGrid.MaxRows = 1
     vGrid.Row = vGrid.MaxRows
     For i = 1 To vGrid.MaxCols
-     vGrid.col = i
+     vGrid.Col = i
      vGrid.Text = ""
     Next i
 End If
@@ -781,14 +781,14 @@ Call OpenRecordSet(rs, strSQL, 0)
 Do While Not rs.EOF
   vGrid.Row = vGrid.MaxRows
   For i = 1 To vGrid.MaxCols
-    vGrid.col = i
+    vGrid.Col = i
     vGrid.Text = CStr(rs.Fields(i - 1).Value)
   Next i
   
-  vGrid.col = 3
+  vGrid.Col = 3
   vGrid.TextTip = TextTipFixed
   vGrid.CellNote = "Unidades Despachadas : " & rs!despacho & vbCrLf & " Unidades Pendientes : " _
-                 & (rs!cantidad - rs!despacho)
+                 & (rs!Cantidad - rs!despacho)
   
   vGrid.MaxRows = vGrid.MaxRows + 1
   rs.MoveNext
@@ -873,14 +873,14 @@ Call ConectionExecute(strSQL)
 For i = 1 To vGrid.MaxRows
   vGrid.Row = i
   
-  vGrid.col = 3
+  vGrid.Col = 3
   curCantidad = CCur(IIf((vGrid.Text = ""), 0, vGrid.Text))
   
-  vGrid.col = 1
+  vGrid.Col = 1
   
   If vGrid.Text <> "" And curCantidad > 0 Then
     
-    vGrid.col = 1
+    vGrid.Col = 1
     strSQL = "insert pv_requi_detalle(linea,cod_requisicion,cod_producto,cantidad,despacho)" _
            & " values(" & i & "," & vCodigo & ",'" & vGrid.Text & "'," & curCantidad & ",0)"
     Call ConectionExecute(strSQL)
@@ -1032,10 +1032,10 @@ curCantidad = 0
 
 For lng = 1 To vGrid.MaxRows
  vGrid.Row = lng
- vGrid.col = 3
+ vGrid.Col = 3
  If vGrid.Text <> "" Then
     curTmpCant = CCur(vGrid.Text)
-    vGrid.col = 4
+    vGrid.Col = 4
     curTmpPrecio = CCur(vGrid.Text)
 
     curSubTotal = curSubTotal + (curTmpCant * curTmpPrecio)
@@ -1085,13 +1085,13 @@ If Not vPaso Then
   MsgBox "No se encontró el Articulo en la Base de Datos...", vbExclamation
 Else
   vGrid.Row = fila
-  vGrid.col = 1
-  vGrid.Text = rs!cod_producto
-  vGrid.col = 2
+  vGrid.Col = 1
+  vGrid.Text = rs!Cod_Producto
+  vGrid.Col = 2
   vGrid.Text = rs!Descripcion
-  vGrid.col = 4
+  vGrid.Col = 4
   vGrid.Text = CStr(rs!costo_regular)
-  vGrid.col = 3
+  vGrid.Col = 3
   vGrid.Text = 1
 End If
 rs.Close
@@ -1114,7 +1114,7 @@ End If
 
 'Consulta Articulo
 If vGrid.ActiveCol = 1 And KeyCode = vbKeyReturn Then
-  vGrid.col = vGrid.ActiveCol
+  vGrid.Col = vGrid.ActiveCol
   vGrid.Row = vGrid.ActiveRow
   Call sbConsultaArticulo(vGrid.ActiveRow, vGrid.ActiveCol, vGrid.Text)
 End If
@@ -1123,7 +1123,7 @@ End If
 If vGrid.ActiveCol = 1 And KeyCode = vbKeyF4 Then
    frmBusquedaArticulos.Show vbModal
    vGrid.Row = vGrid.ActiveRow
-   vGrid.col = 1
+   vGrid.Col = 1
    vGrid.Text = gBusquedas.Resultado
 End If
 
@@ -1131,17 +1131,17 @@ End If
 'Borrar una linea
 If KeyCode = vbKeyDelete Then
   vGrid.Row = vGrid.ActiveRow
-  vGrid.col = vGrid.MaxCols
+  vGrid.Col = vGrid.MaxCols
   For lng = vGrid.ActiveRow To vGrid.MaxRows
      vGrid.Row = lng + 1
      For x = 1 To vGrid.MaxCols
-        vGrid.col = x
+        vGrid.Col = x
         vTemp(x) = vGrid.Text
      Next x
 
      vGrid.Row = lng
      For x = 1 To vGrid.MaxCols
-       vGrid.col = x
+       vGrid.Col = x
        vGrid.Text = vTemp(x)
      Next x
   Next lng
@@ -1169,11 +1169,11 @@ On Error GoTo vError
 Select Case vGrid.ActiveCol
   Case 3, 4
     vGrid.Row = vGrid.ActiveRow
-    vGrid.col = 3
+    vGrid.Col = 3
     curCantidad = CCur(vGrid.Text)
-    vGrid.col = 4
+    vGrid.Col = 4
     curPrecio = CCur(vGrid.Text)
-    vGrid.col = 5
+    vGrid.Col = 5
     vGrid.Text = (curPrecio * curCantidad)
    Call sbCalculaTotales
   Case Else 'No Aplica

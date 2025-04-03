@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCR_TraspasoTesoreria 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -27,7 +27,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
       Top             =   7920
       Visible         =   0   'False
       Width           =   11655
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   20558
       _ExtentY        =   238
       _StockProps     =   93
@@ -39,7 +39,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
       Top             =   3360
       Visible         =   0   'False
       Width           =   7935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   13991
       _ExtentY        =   4890
       _StockProps     =   79
@@ -63,7 +63,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          TabIndex        =   66
          Top             =   600
          Width           =   6012
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10610
          _ExtentY        =   582
          _StockProps     =   77
@@ -88,7 +88,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          TabIndex        =   67
          Top             =   1080
          Width           =   6012
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10610
          _ExtentY        =   582
          _StockProps     =   77
@@ -113,7 +113,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          TabIndex        =   68
          Top             =   1560
          Width           =   6012
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10610
          _ExtentY        =   582
          _StockProps     =   77
@@ -139,7 +139,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          TabIndex        =   69
          Top             =   2160
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   741
          _StockProps     =   79
@@ -165,7 +165,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          TabIndex        =   70
          Top             =   2160
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   741
          _StockProps     =   79
@@ -190,7 +190,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          TabIndex        =   73
          Top             =   600
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -214,7 +214,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          TabIndex        =   72
          Top             =   1080
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -238,7 +238,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          TabIndex        =   71
          Top             =   1560
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -262,7 +262,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
       TabIndex        =   0
       Top             =   1320
       Width           =   11655
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   20553
       _ExtentY        =   11451
       _StockProps     =   68
@@ -361,40 +361,16 @@ Begin VB.Form frmCR_TraspasoTesoreria
       Item(6).Control(2)=   "Label3(1)"
       Item(6).Control(3)=   "txtConsulta_Remesa"
       Item(6).Control(4)=   "Label8(21)"
-      Begin XtremeSuiteControls.ListView lswRep 
-         Height          =   3612
-         Left            =   -70000
-         TabIndex        =   43
-         Top             =   840
+      Begin XtremeSuiteControls.ListView lswRemesas 
+         Height          =   3132
+         Left            =   -68440
+         TabIndex        =   18
+         Top             =   3240
          Visible         =   0   'False
-         Width           =   11652
-         _Version        =   1441793
-         _ExtentX        =   20553
-         _ExtentY        =   6371
-         _StockProps     =   77
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         View            =   3
-         FullRowSelect   =   -1  'True
-         Appearance      =   16
-         ShowBorder      =   0   'False
-      End
-      Begin XtremeSuiteControls.ListView lswTraslado 
-         Height          =   3975
-         Left            =   120
-         TabIndex        =   39
-         Top             =   1800
-         Width           =   11415
-         _Version        =   1441793
-         _ExtentX        =   20135
-         _ExtentY        =   7011
+         Width           =   10092
+         _Version        =   1572864
+         _ExtentX        =   17801
+         _ExtentY        =   5524
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -417,7 +393,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   2040
          Visible         =   0   'False
          Width           =   11652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   20553
          _ExtentY        =   7006
          _StockProps     =   77
@@ -436,16 +412,40 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Appearance      =   16
          ShowBorder      =   0   'False
       End
-      Begin XtremeSuiteControls.ListView lswRemesas 
-         Height          =   3132
-         Left            =   -68440
-         TabIndex        =   18
-         Top             =   3240
+      Begin XtremeSuiteControls.ListView lswTraslado 
+         Height          =   3975
+         Left            =   120
+         TabIndex        =   39
+         Top             =   1800
+         Width           =   11415
+         _Version        =   1572864
+         _ExtentX        =   20135
+         _ExtentY        =   7011
+         _StockProps     =   77
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         View            =   3
+         FullRowSelect   =   -1  'True
+         Appearance      =   16
+         ShowBorder      =   0   'False
+      End
+      Begin XtremeSuiteControls.ListView lswRep 
+         Height          =   3612
+         Left            =   -70000
+         TabIndex        =   43
+         Top             =   840
          Visible         =   0   'False
-         Width           =   10092
-         _Version        =   1441793
-         _ExtentX        =   17801
-         _ExtentY        =   5524
+         Width           =   11652
+         _Version        =   1572864
+         _ExtentX        =   20553
+         _ExtentY        =   6371
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -469,7 +469,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   5160
          Visible         =   0   'False
          Width           =   4812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8488
          _ExtentY        =   444
          _StockProps     =   79
@@ -494,7 +494,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1080
          Visible         =   0   'False
          Width           =   2412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   762
          _StockProps     =   77
@@ -518,7 +518,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   960
          Visible         =   0   'False
          Width           =   7452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13144
          _ExtentY        =   3619
          _StockProps     =   79
@@ -543,7 +543,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
             TabIndex        =   28
             Top             =   1200
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   444
             _StockProps     =   79
@@ -569,7 +569,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
             TabIndex        =   25
             Top             =   360
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   444
             _StockProps     =   79
@@ -593,7 +593,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
             TabIndex        =   23
             Top             =   360
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   556
             _StockProps     =   68
@@ -615,7 +615,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
             TabIndex        =   22
             Top             =   360
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   556
             _StockProps     =   68
@@ -637,7 +637,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
             TabIndex        =   24
             Top             =   720
             Width           =   4932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8705
             _ExtentY        =   582
             _StockProps     =   77
@@ -664,7 +664,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
             TabIndex        =   26
             Top             =   1200
             Width           =   612
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1080
             _ExtentY        =   741
             _StockProps     =   79
@@ -689,7 +689,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
             TabIndex        =   27
             Top             =   1200
             Width           =   492
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   868
             _ExtentY        =   741
             _StockProps     =   79
@@ -714,7 +714,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
             TabIndex        =   29
             Top             =   1200
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -748,7 +748,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
             TabIndex        =   21
             Top             =   720
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   656
             _StockProps     =   79
@@ -772,7 +772,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
             TabIndex        =   20
             Top             =   360
             Width           =   1212
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   656
             _StockProps     =   79
@@ -798,7 +798,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   480
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   741
          _StockProps     =   79
@@ -824,7 +824,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   480
          Visible         =   0   'False
          Width           =   2412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   762
          _StockProps     =   77
@@ -848,7 +848,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1680
          Visible         =   0   'False
          Width           =   2412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   550
          _StockProps     =   77
@@ -873,7 +873,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1320
          Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -898,7 +898,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1680
          Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -923,7 +923,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   2040
          Visible         =   0   'False
          Width           =   10092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17801
          _ExtentY        =   1397
          _StockProps     =   77
@@ -947,7 +947,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1320
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   556
          _StockProps     =   68
@@ -970,7 +970,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1320
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   556
          _StockProps     =   68
@@ -994,7 +994,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   480
          Visible         =   0   'False
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   741
          _StockProps     =   79
@@ -1020,7 +1020,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   480
          Visible         =   0   'False
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   741
          _StockProps     =   79
@@ -1045,7 +1045,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   480
          Visible         =   0   'False
          Width           =   7692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13573
          _ExtentY        =   582
          _StockProps     =   77
@@ -1071,7 +1071,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   840
          Visible         =   0   'False
          Width           =   7692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13573
          _ExtentY        =   582
          _StockProps     =   77
@@ -1097,7 +1097,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1200
          Visible         =   0   'False
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
@@ -1122,7 +1122,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1680
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   444
          _StockProps     =   79
@@ -1146,7 +1146,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          TabIndex        =   38
          Top             =   600
          Width           =   7692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13573
          _ExtentY        =   582
          _StockProps     =   77
@@ -1202,7 +1202,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1080
          Visible         =   0   'False
          Width           =   2412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   762
          _StockProps     =   77
@@ -1227,7 +1227,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1200
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   741
          _StockProps     =   79
@@ -1244,7 +1244,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "CR_TraspasoTesoreria.frx":3C68
+         Picture         =   "CR_TraspasoTesoreria.frx":3C40
       End
       Begin XtremeSuiteControls.PushButton btnBarra 
          Height          =   420
@@ -1254,7 +1254,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1200
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   741
          _StockProps     =   79
@@ -1271,7 +1271,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "CR_TraspasoTesoreria.frx":4368
+         Picture         =   "CR_TraspasoTesoreria.frx":4340
       End
       Begin XtremeSuiteControls.PushButton btnBarra 
          Height          =   420
@@ -1281,7 +1281,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1200
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   741
          _StockProps     =   79
@@ -1298,7 +1298,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "CR_TraspasoTesoreria.frx":4A70
+         Picture         =   "CR_TraspasoTesoreria.frx":4A48
       End
       Begin XtremeSuiteControls.PushButton btnBarra 
          Height          =   420
@@ -1307,7 +1307,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          TabIndex        =   53
          Top             =   960
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   741
          _StockProps     =   79
@@ -1324,7 +1324,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "CR_TraspasoTesoreria.frx":517C
+         Picture         =   "CR_TraspasoTesoreria.frx":5154
       End
       Begin XtremeSuiteControls.PushButton btnBarra 
          Height          =   420
@@ -1333,7 +1333,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          TabIndex        =   54
          Top             =   960
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   741
          _StockProps     =   79
@@ -1350,7 +1350,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "CR_TraspasoTesoreria.frx":587C
+         Picture         =   "CR_TraspasoTesoreria.frx":5854
       End
       Begin XtremeSuiteControls.PushButton btnBarra 
          Height          =   420
@@ -1360,7 +1360,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   5640
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   741
          _StockProps     =   79
@@ -1377,7 +1377,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "CR_TraspasoTesoreria.frx":614D
+         Picture         =   "CR_TraspasoTesoreria.frx":6125
          ImageAlignment  =   4
       End
       Begin XtremeSuiteControls.PushButton cmdReactivar 
@@ -1387,7 +1387,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   5760
          Visible         =   0   'False
          Width           =   4215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7435
          _ExtentY        =   741
          _StockProps     =   79
@@ -1404,7 +1404,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "CR_TraspasoTesoreria.frx":6854
+         Picture         =   "CR_TraspasoTesoreria.frx":682C
          ImageAlignment  =   4
       End
       Begin XtremeSuiteControls.FlatEdit txtRepRemesas 
@@ -1414,7 +1414,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   4590
          Visible         =   0   'False
          Width           =   852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
@@ -1440,7 +1440,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   5040
          Visible         =   0   'False
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
@@ -1466,7 +1466,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   5520
          Visible         =   0   'False
          Width           =   4812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8488
          _ExtentY        =   444
          _StockProps     =   79
@@ -1490,7 +1490,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   6120
          Visible         =   0   'False
          Width           =   2412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   550
          _StockProps     =   77
@@ -1513,7 +1513,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          TabIndex        =   64
          Top             =   6000
          Width           =   2412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   550
          _StockProps     =   77
@@ -1537,7 +1537,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1560
          Visible         =   0   'False
          Width           =   9852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17378
          _ExtentY        =   6900
          _StockProps     =   77
@@ -1563,7 +1563,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   960
          Visible         =   0   'False
          Width           =   2412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   762
          _StockProps     =   77
@@ -1587,7 +1587,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1560
          Visible         =   0   'False
          Width           =   9852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17378
          _ExtentY        =   6900
          _StockProps     =   77
@@ -1614,7 +1614,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   480
          Visible         =   0   'False
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   741
          _StockProps     =   79
@@ -1630,7 +1630,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "CR_TraspasoTesoreria.frx":6F54
+         Picture         =   "CR_TraspasoTesoreria.frx":6F2C
       End
       Begin XtremeSuiteControls.FlatEdit txtRemesa_Monto 
          Height          =   312
@@ -1639,7 +1639,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1680
          Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -1664,7 +1664,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1320
          Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -1690,7 +1690,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   4560
          Visible         =   0   'False
          Width           =   11655
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   20558
          _ExtentY        =   661
          _StockProps     =   14
@@ -1712,7 +1712,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   4560
          Visible         =   0   'False
          Width           =   5415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9551
          _ExtentY        =   661
          _StockProps     =   14
@@ -1734,7 +1734,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          TabIndex        =   86
          Top             =   1440
          Width           =   11415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   20135
          _ExtentY        =   661
          _StockProps     =   14
@@ -1758,7 +1758,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   480
          Visible         =   0   'False
          Width           =   11655
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   20558
          _ExtentY        =   661
          _StockProps     =   14
@@ -1782,7 +1782,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1320
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79
@@ -1807,7 +1807,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1680
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79
@@ -1832,7 +1832,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1440
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -1880,7 +1880,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   960
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -1904,7 +1904,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          TabIndex        =   63
          Top             =   6000
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -1930,7 +1930,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   6120
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -1956,7 +1956,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1080
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -1981,7 +1981,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1440
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -2006,7 +2006,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1080
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -2050,7 +2050,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Alignment       =   2  'Center
          Appearance      =   0  'Flat
          BackColor       =   &H00FFC0C0&
-         Caption         =   $"CR_TraspasoTesoreria.frx":7685
+         Caption         =   $"CR_TraspasoTesoreria.frx":765D
          BeginProperty Font 
             Name            =   "Arial Narrow"
             Size            =   7.5
@@ -2076,7 +2076,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          TabIndex        =   37
          Top             =   600
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -2101,7 +2101,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   840
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -2126,7 +2126,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   480
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -2151,7 +2151,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   2880
          Visible         =   0   'False
          Width           =   2892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5101
          _ExtentY        =   656
          _StockProps     =   79
@@ -2176,7 +2176,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   2040
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79
@@ -2201,7 +2201,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1680
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79
@@ -2226,7 +2226,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1680
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79
@@ -2251,7 +2251,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1320
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79
@@ -2276,7 +2276,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   1320
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79
@@ -2301,7 +2301,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
          Top             =   480
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79
@@ -2325,7 +2325,7 @@ Begin VB.Form frmCR_TraspasoTesoreria
       TabIndex        =   89
       Top             =   360
       Width           =   8775
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   15478
       _ExtentY        =   1085
       _StockProps     =   79

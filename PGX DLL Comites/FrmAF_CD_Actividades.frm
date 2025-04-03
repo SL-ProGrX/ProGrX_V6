@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Begin VB.Form frmAF_CD_Actividades 
@@ -26,7 +26,7 @@ Begin VB.Form frmAF_CD_Actividades
       TabIndex        =   1
       Top             =   600
       Width           =   13815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   24368
       _ExtentY        =   12515
       _StockProps     =   68
@@ -42,7 +42,6 @@ Begin VB.Form frmAF_CD_Actividades
       Appearance      =   4
       Color           =   32
       ItemCount       =   3
-      SelectedItem    =   2
       Item(0).Caption =   "Actividades"
       Item(0).ControlCount=   1
       Item(0).Control(0)=   "vGrid"
@@ -72,7 +71,7 @@ Begin VB.Form frmAF_CD_Actividades
          Top             =   960
          Visible         =   0   'False
          Width           =   6615
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11668
          _ExtentY        =   10398
          _StockProps     =   77
@@ -92,11 +91,12 @@ Begin VB.Form frmAF_CD_Actividades
       End
       Begin XtremeSuiteControls.ListView lsw 
          Height          =   5895
-         Left            =   120
+         Left            =   -69880
          TabIndex        =   15
          Top             =   1080
+         Visible         =   0   'False
          Width           =   13575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   23945
          _ExtentY        =   10398
          _StockProps     =   77
@@ -116,11 +116,12 @@ Begin VB.Form frmAF_CD_Actividades
       End
       Begin XtremeSuiteControls.PushButton btnBuscar 
          Height          =   375
-         Left            =   9960
+         Left            =   -60040
          TabIndex        =   13
          Top             =   480
+         Visible         =   0   'False
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1931
          _ExtentY        =   661
          _StockProps     =   79
@@ -145,7 +146,7 @@ Begin VB.Form frmAF_CD_Actividades
          Top             =   480
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   661
          _StockProps     =   79
@@ -164,11 +165,10 @@ Begin VB.Form frmAF_CD_Actividades
       End
       Begin FPSpreadADO.fpSpread vGrid 
          Height          =   6480
-         Left            =   -69880
+         Left            =   120
          TabIndex        =   2
          ToolTipText     =   "Para seleccionar la cuenta contable (F4)"
          Top             =   480
-         Visible         =   0   'False
          Width           =   13650
          _Version        =   524288
          _ExtentX        =   24077
@@ -224,11 +224,12 @@ Begin VB.Form frmAF_CD_Actividades
       End
       Begin XtremeSuiteControls.DateTimePicker dtpInicio 
          Height          =   330
-         Left            =   1080
+         Left            =   -68920
          TabIndex        =   4
          Top             =   480
+         Visible         =   0   'False
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   582
          _StockProps     =   68
@@ -246,11 +247,12 @@ Begin VB.Form frmAF_CD_Actividades
       End
       Begin XtremeSuiteControls.DateTimePicker dtpCorte 
          Height          =   330
-         Left            =   2520
+         Left            =   -67480
          TabIndex        =   5
          Top             =   480
+         Visible         =   0   'False
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   582
          _StockProps     =   68
@@ -268,11 +270,12 @@ Begin VB.Form frmAF_CD_Actividades
       End
       Begin XtremeSuiteControls.ComboBox cboActividad 
          Height          =   330
-         Left            =   5520
+         Left            =   -64480
          TabIndex        =   12
          Top             =   480
+         Visible         =   0   'False
          Width           =   4215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7435
          _ExtentY        =   582
          _StockProps     =   77
@@ -294,11 +297,12 @@ Begin VB.Form frmAF_CD_Actividades
       End
       Begin XtremeSuiteControls.PushButton btnExportar 
          Height          =   375
-         Left            =   11640
+         Left            =   -58360
          TabIndex        =   14
          Top             =   480
+         Visible         =   0   'False
          Width           =   615
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1085
          _ExtentY        =   661
          _StockProps     =   79
@@ -317,11 +321,12 @@ Begin VB.Form frmAF_CD_Actividades
       End
       Begin XtremeSuiteControls.ProgressBar ProgressBarX 
          Height          =   135
-         Left            =   120
+         Left            =   -69880
          TabIndex        =   16
          Top             =   960
+         Visible         =   0   'False
          Width           =   13575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   23945
          _ExtentY        =   238
          _StockProps     =   93
@@ -330,11 +335,12 @@ Begin VB.Form frmAF_CD_Actividades
       End
       Begin XtremeSuiteControls.PushButton btnReporte 
          Height          =   375
-         Left            =   11040
+         Left            =   -58960
          TabIndex        =   17
          Top             =   480
+         Visible         =   0   'False
          Width           =   615
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1085
          _ExtentY        =   661
          _StockProps     =   79
@@ -354,11 +360,12 @@ Begin VB.Form frmAF_CD_Actividades
       Begin XtremeSuiteControls.Label Label1 
          Height          =   210
          Index           =   1
-         Left            =   4200
+         Left            =   -65800
          TabIndex        =   11
          Top             =   480
+         Visible         =   0   'False
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1931
          _ExtentY        =   370
          _StockProps     =   79
@@ -378,11 +385,12 @@ Begin VB.Form frmAF_CD_Actividades
       Begin XtremeSuiteControls.Label Label1 
          Height          =   210
          Index           =   0
-         Left            =   240
+         Left            =   -69760
          TabIndex        =   10
          Top             =   480
+         Visible         =   0   'False
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1931
          _ExtentY        =   370
          _StockProps     =   79
@@ -406,7 +414,7 @@ Begin VB.Form frmAF_CD_Actividades
          Top             =   480
          Visible         =   0   'False
          Width           =   6975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12303
          _ExtentY        =   661
          _StockProps     =   14
@@ -429,7 +437,7 @@ Begin VB.Form frmAF_CD_Actividades
          Top             =   480
          Visible         =   0   'False
          Width           =   6615
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11668
          _ExtentY        =   661
          _StockProps     =   14
@@ -537,7 +545,7 @@ End Function
 Private Function fxConsecutivo()
 Dim strSQL As String, rs As New ADODB.Recordset
 
-strSQL = "select coalesce(max(cod_actividad),0) + 1 as Ultimo from AFI_CD_ACTIVIDADES"
+strSQL = "select isnull( MAX(CAST(cod_actividad AS INT)) , 0)  + 1 as Ultimo from AFI_CD_ACTIVIDADES"
 Call OpenRecordSet(rs, strSQL)
    fxConsecutivo = rs!ultimo
 rs.Close
@@ -872,8 +880,12 @@ Private Sub btnReporte_Click()
       .WindowState = crptMaximized
       .Connect = glogon.ConectRPT
       
-       strSQL = strSQL & "cdate({vAFI_CD_CuentasActividades.tesoreria_fecha}) in Date(" & Format(dtpInicio.Value, "yyyy,mm,dd")
+       strSQL = strSQL & "cdate({AFI_CD_vDesembolsos.TesoreriaFecha}) in Date(" & Format(dtpInicio.Value, "yyyy,mm,dd")
        strSQL = strSQL & ") to Date (" & Format(dtpCorte.Value, "yyyy,mm,dd") & ")"
+      
+      If cboActividad.Text <> "TODOS" Then
+        strSQL = " and {AFI_CD_vDesembolsos.TesoreriaFecha}"
+      End If
       
       .ReportFileName = SIFGlobal.fxPathReportes("Comites_ControlDesembolsosActividades.rpt")
       
@@ -885,7 +897,7 @@ Private Sub btnReporte_Click()
       .Formulas(5) = "fxFechaFinal = '" & Format(dtpCorte.Value, "dd/mm/yyyy") & "'"
       
       .SelectionFormula = strSQL
-
+        
       .PrintReport
    End With
 End Sub

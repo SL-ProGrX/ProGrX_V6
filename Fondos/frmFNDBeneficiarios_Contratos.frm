@@ -1,26 +1,29 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "mscomctl.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.Controls.v22.0.0.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmFNDBeneficiarios_Contratos 
-   BorderStyle     =   1  'Fixed Single
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
+   BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Beneficiarios Contratos"
-   ClientHeight    =   7110
+   ClientHeight    =   6960
    ClientLeft      =   2280
    ClientTop       =   3645
-   ClientWidth     =   10080
+   ClientWidth     =   9975
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7110
-   ScaleWidth      =   10080
+   ScaleHeight     =   6960
+   ScaleWidth      =   9975
+   ShowInTaskbar   =   0   'False
    Begin MSComctlLib.Toolbar tlbPrincipal 
       Align           =   1  'Align Top
       Height          =   360
       Left            =   0
       TabIndex        =   0
       Top             =   0
-      Width           =   10080
-      _ExtentX        =   17780
+      Width           =   9975
+      _ExtentX        =   17595
       _ExtentY        =   635
       ButtonWidth     =   609
       ButtonHeight    =   582
@@ -60,14 +63,14 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
       EndProperty
    End
    Begin XtremeSuiteControls.TabControl tcMain 
-      Height          =   5652
-      Left            =   120
+      Height          =   5655
+      Left            =   0
       TabIndex        =   5
       Top             =   1320
-      Width           =   9852
-      _Version        =   1441792
-      _ExtentX        =   17378
-      _ExtentY        =   9970
+      Width           =   9975
+      _Version        =   1572864
+      _ExtentX        =   17595
+      _ExtentY        =   9975
       _StockProps     =   68
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
@@ -79,7 +82,7 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          Strikethrough   =   0   'False
       EndProperty
       Appearance      =   4
-      Color           =   2048
+      Color           =   32
       ItemCount       =   2
       Item(0).Caption =   "Listado"
       Item(0).ControlCount=   1
@@ -120,11 +123,10 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          TabIndex        =   6
          Top             =   480
          Width           =   9732
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   17166
          _ExtentY        =   8911
          _StockProps     =   77
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -136,7 +138,7 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          EndProperty
          View            =   3
          FullRowSelect   =   -1  'True
-         Appearance      =   16
+         Appearance      =   21
       End
       Begin XtremeSuiteControls.ComboBox cboParentesco 
          Height          =   312
@@ -145,7 +147,7 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          Top             =   1800
          Visible         =   0   'False
          Width           =   2292
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   582
          _StockProps     =   77
@@ -161,7 +163,8 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
             Strikethrough   =   0   'False
          EndProperty
          Style           =   2
-         Appearance      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
       Begin XtremeSuiteControls.FlatEdit txtCedula 
@@ -171,12 +174,11 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          Top             =   600
          Visible         =   0   'False
          Width           =   2292
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   556
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -187,7 +189,7 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
             Strikethrough   =   0   'False
          EndProperty
          Alignment       =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.DateTimePicker dtpFechaNacimiento 
@@ -197,7 +199,7 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          Top             =   1800
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   556
          _StockProps     =   68
@@ -220,12 +222,11 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          Top             =   2880
          Visible         =   0   'False
          Width           =   7452
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   13144
          _ExtentY        =   1397
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -237,7 +238,8 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          EndProperty
          MultiLine       =   -1  'True
          ScrollBars      =   2
-         Appearance      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtObservacion 
          Height          =   912
@@ -246,12 +248,11 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          Top             =   4080
          Visible         =   0   'False
          Width           =   7452
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   13144
          _ExtentY        =   1609
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -263,7 +264,8 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          EndProperty
          MultiLine       =   -1  'True
          ScrollBars      =   2
-         Appearance      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtEmail 
          Height          =   312
@@ -272,12 +274,11 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          Top             =   3720
          Visible         =   0   'False
          Width           =   7452
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   13144
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -287,7 +288,7 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtApartadoPostal 
@@ -297,12 +298,11 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          Top             =   2400
          Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -312,7 +312,7 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtTelefono1 
@@ -322,12 +322,11 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          Top             =   2400
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -337,7 +336,7 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtTelefono2 
@@ -347,12 +346,11 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          Top             =   2400
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -362,7 +360,7 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtNombre 
@@ -372,12 +370,11 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          Top             =   1320
          Visible         =   0   'False
          Width           =   2892
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   5101
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -388,7 +385,7 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
             Strikethrough   =   0   'False
          EndProperty
          Alignment       =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtApellido2 
@@ -398,12 +395,11 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          Top             =   1320
          Visible         =   0   'False
          Width           =   2292
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -414,7 +410,7 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
             Strikethrough   =   0   'False
          EndProperty
          Alignment       =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtApellido1 
@@ -424,12 +420,11 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          Top             =   1320
          Visible         =   0   'False
          Width           =   2292
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -440,7 +435,7 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
             Strikethrough   =   0   'False
          EndProperty
          Alignment       =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtPorcentaje 
@@ -450,12 +445,11 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          Top             =   1800
          Visible         =   0   'False
          Width           =   852
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -477,12 +471,11 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          Top             =   5160
          Visible         =   0   'False
          Width           =   852
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -494,7 +487,7 @@ Begin VB.Form frmFNDBeneficiarios_Contratos
          EndProperty
          Alignment       =   2
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
          Transparent     =   -1  'True
       End
@@ -882,7 +875,7 @@ Do While Not rs.EOF
     itmX.SubItems(1) = rs!cedulaBn
     itmX.SubItems(2) = rs!Nombre
     itmX.SubItems(3) = Format(rs!FechaNac, "dd/mm/yyyy")
-    itmX.SubItems(4) = rs!parentesco_Desc
+    itmX.SubItems(4) = rs!Parentesco_Desc
     itmX.SubItems(5) = rs!Porcentaje & " %"
    rs.MoveNext
 Loop
@@ -1107,14 +1100,14 @@ If Not rs.BOF And Not rs.EOF Then
    txtCedula = Trim(rs!cedulaBn)
    txtObservacion = Trim(rs!Notas & "")
        
-    txtDireccion = Trim(rs!Direccion & "")
+    txtDireccion = Trim(rs!direccion & "")
     txtApartadoPostal = Trim(rs!apto_postal & "")
     txtEmail = Trim(rs!Email & "")
     
     txtTelefono1 = Trim(rs!telefono1 & "")
     txtTelefono2 = Trim(rs!telefono2 & "")
 
-    Call sbCboAsignaDato(cboParentesco, rs!parentesco_Desc, True, rs!cod_Parentesco)
+    Call sbCboAsignaDato(cboParentesco, rs!Parentesco_Desc, True, rs!Cod_Parentesco)
 
 Else
   

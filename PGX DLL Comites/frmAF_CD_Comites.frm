@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
@@ -34,11 +34,11 @@ Begin VB.Form frmAF_CD_Comites
    StartUpPosition =   2  'CenterScreen
    Begin XtremeSuiteControls.TabControl tcPlan 
       Height          =   6975
-      Left            =   9000
+      Left            =   9120
       TabIndex        =   60
       Top             =   1800
       Width           =   4815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8493
       _ExtentY        =   12303
       _StockProps     =   68
@@ -66,7 +66,7 @@ Begin VB.Form frmAF_CD_Comites
          TabIndex        =   61
          Top             =   360
          Width           =   1935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3413
          _ExtentY        =   661
          _StockProps     =   79
@@ -119,7 +119,7 @@ Begin VB.Form frmAF_CD_Comites
          TabIndex        =   63
          Top             =   360
          Width           =   375
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   661
          _ExtentY        =   661
          _StockProps     =   79
@@ -141,9 +141,9 @@ Begin VB.Form frmAF_CD_Comites
       Height          =   255
       Left            =   3480
       TabIndex        =   46
-      Top             =   480
+      Top             =   720
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2778
       _ExtentY        =   450
       _StockProps     =   79
@@ -181,7 +181,7 @@ Begin VB.Form frmAF_CD_Comites
          TabIndex        =   76
          Top             =   600
          Width           =   7215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12726
          _ExtentY        =   4048
          _StockProps     =   77
@@ -197,7 +197,6 @@ Begin VB.Form frmAF_CD_Comites
          View            =   3
          FullRowSelect   =   -1  'True
          Appearance      =   17
-         UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtCod_Comite_Ingreso 
          Height          =   330
@@ -205,7 +204,7 @@ Begin VB.Form frmAF_CD_Comites
          TabIndex        =   67
          Top             =   240
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1931
          _ExtentY        =   582
          _StockProps     =   77
@@ -229,7 +228,7 @@ Begin VB.Form frmAF_CD_Comites
          TabIndex        =   68
          Top             =   240
          Width           =   6135
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10821
          _ExtentY        =   582
          _StockProps     =   77
@@ -252,7 +251,7 @@ Begin VB.Form frmAF_CD_Comites
          TabIndex        =   69
          Top             =   240
          Width           =   7215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12726
          _ExtentY        =   582
          _StockProps     =   77
@@ -309,11 +308,11 @@ Begin VB.Form frmAF_CD_Comites
    End
    Begin MSComCtl2.FlatScrollBar FlatScrollBar 
       Height          =   255
-      Left            =   9480
+      Left            =   9240
       TabIndex        =   0
-      Top             =   840
-      Width           =   375
-      _ExtentX        =   661
+      Top             =   1080
+      Width           =   495
+      _ExtentX        =   873
       _ExtentY        =   450
       _Version        =   393216
       Arrows          =   65536
@@ -422,18 +421,18 @@ Begin VB.Form frmAF_CD_Comites
       TabCaption(3)   =   "Miembros"
       TabPicture(3)   =   "frmAF_CD_Comites.frx":9511
       Tab(3).ControlEnabled=   0   'False
-      Tab(3).Control(0)=   "fraMiembros"
-      Tab(3).Control(1)=   "chkActivos"
-      Tab(3).Control(2)=   "tlbNuevo"
-      Tab(3).Control(3)=   "lswMiembrosComite"
+      Tab(3).Control(0)=   "lswMiembrosComite"
+      Tab(3).Control(1)=   "fraMiembros"
+      Tab(3).Control(2)=   "chkActivos"
+      Tab(3).Control(3)=   "tlbNuevo"
       Tab(3).Control(4)=   "Label3"
       Tab(3).ControlCount=   5
       TabCaption(4)   =   "Liquidaciones"
       TabPicture(4)   =   "frmAF_CD_Comites.frx":9F23
       Tab(4).ControlEnabled=   0   'False
-      Tab(4).Control(0)=   "ShortcutCaption1(3)"
+      Tab(4).Control(0)=   "lswLiquidaciones"
       Tab(4).Control(1)=   "ListView1"
-      Tab(4).Control(2)=   "lswLiquidaciones"
+      Tab(4).Control(2)=   "ShortcutCaption1(3)"
       Tab(4).ControlCount=   3
       Begin XtremeSuiteControls.ListView lswMiembrosComite 
          Height          =   5175
@@ -441,81 +440,9 @@ Begin VB.Form frmAF_CD_Comites
          TabIndex        =   72
          Top             =   1440
          Width           =   7935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13996
          _ExtentY        =   9128
-         _StockProps     =   77
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         View            =   3
-         FullRowSelect   =   -1  'True
-         Appearance      =   17
-         UseVisualStyle  =   0   'False
-      End
-      Begin XtremeSuiteControls.ListView lswComites 
-         Height          =   3135
-         Left            =   1440
-         TabIndex        =   64
-         Top             =   3720
-         Width           =   7215
-         _Version        =   1441793
-         _ExtentX        =   12726
-         _ExtentY        =   5530
-         _StockProps     =   77
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         View            =   3
-         FullRowSelect   =   -1  'True
-         Appearance      =   17
-         UseVisualStyle  =   0   'False
-      End
-      Begin XtremeSuiteControls.ListView lswActividades 
-         Height          =   3135
-         Left            =   -73560
-         TabIndex        =   65
-         Top             =   3720
-         Width           =   7215
-         _Version        =   1441793
-         _ExtentX        =   12726
-         _ExtentY        =   5530
-         _StockProps     =   77
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         View            =   3
-         FullRowSelect   =   -1  'True
-         Appearance      =   17
-         UseVisualStyle  =   0   'False
-      End
-      Begin XtremeSuiteControls.ListView lswEjecutivo 
-         Height          =   3135
-         Left            =   -73560
-         TabIndex        =   66
-         Top             =   3720
-         Width           =   7215
-         _Version        =   1441793
-         _ExtentX        =   12726
-         _ExtentY        =   5530
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -537,7 +464,7 @@ Begin VB.Form frmAF_CD_Comites
          TabIndex        =   70
          Top             =   480
          Width           =   8175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   14420
          _ExtentY        =   5741
          _StockProps     =   77
@@ -554,6 +481,75 @@ Begin VB.Form frmAF_CD_Comites
          FullRowSelect   =   -1  'True
          Appearance      =   17
          UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.ListView lswComites 
+         Height          =   3135
+         Left            =   1440
+         TabIndex        =   64
+         Top             =   3720
+         Width           =   7215
+         _Version        =   1572864
+         _ExtentX        =   12726
+         _ExtentY        =   5530
+         _StockProps     =   77
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         View            =   3
+         FullRowSelect   =   -1  'True
+         Appearance      =   17
+      End
+      Begin XtremeSuiteControls.ListView lswActividades 
+         Height          =   3135
+         Left            =   -73560
+         TabIndex        =   65
+         Top             =   3720
+         Width           =   7215
+         _Version        =   1572864
+         _ExtentX        =   12726
+         _ExtentY        =   5530
+         _StockProps     =   77
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         View            =   3
+         FullRowSelect   =   -1  'True
+         Appearance      =   17
+      End
+      Begin XtremeSuiteControls.ListView lswEjecutivo 
+         Height          =   3135
+         Left            =   -73560
+         TabIndex        =   66
+         Top             =   3720
+         Width           =   7215
+         _Version        =   1572864
+         _ExtentX        =   12726
+         _ExtentY        =   5530
+         _StockProps     =   77
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         View            =   3
+         FullRowSelect   =   -1  'True
+         Appearance      =   17
       End
       Begin VB.Frame fraMiembros 
          Appearance      =   0  'Flat
@@ -573,7 +569,7 @@ Begin VB.Form frmAF_CD_Comites
             ToolTipText     =   "Cerrar"
             Top             =   120
             Width           =   495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   873
             _ExtentY        =   661
             _StockProps     =   79
@@ -597,7 +593,7 @@ Begin VB.Form frmAF_CD_Comites
             TabIndex        =   74
             Top             =   120
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2143
             _ExtentY        =   661
             _StockProps     =   79
@@ -622,7 +618,7 @@ Begin VB.Form frmAF_CD_Comites
             TabIndex        =   73
             Top             =   120
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2143
             _ExtentY        =   661
             _StockProps     =   79
@@ -740,7 +736,7 @@ Begin VB.Form frmAF_CD_Comites
                TabIndex        =   71
                Top             =   480
                Width           =   8175
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   14420
                _ExtentY        =   9551
                _StockProps     =   77
@@ -810,7 +806,7 @@ Begin VB.Form frmAF_CD_Comites
                TabIndex        =   44
                Top             =   1680
                Width           =   1815
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3201
                _ExtentY        =   582
                _StockProps     =   68
@@ -832,7 +828,7 @@ Begin VB.Form frmAF_CD_Comites
                TabIndex        =   50
                Top             =   3600
                Width           =   1575
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2778
                _ExtentY        =   582
                _StockProps     =   77
@@ -856,7 +852,7 @@ Begin VB.Form frmAF_CD_Comites
                TabIndex        =   51
                Top             =   3600
                Width           =   1575
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2778
                _ExtentY        =   582
                _StockProps     =   77
@@ -880,7 +876,7 @@ Begin VB.Form frmAF_CD_Comites
                TabIndex        =   49
                Top             =   3120
                Width           =   4815
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   8493
                _ExtentY        =   582
                _StockProps     =   77
@@ -903,7 +899,7 @@ Begin VB.Form frmAF_CD_Comites
                TabIndex        =   52
                Top             =   4080
                Width           =   6375
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   11245
                _ExtentY        =   582
                _StockProps     =   77
@@ -926,7 +922,7 @@ Begin VB.Form frmAF_CD_Comites
                TabIndex        =   53
                Top             =   2160
                Width           =   6375
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   11245
                _ExtentY        =   1005
                _StockProps     =   77
@@ -951,7 +947,7 @@ Begin VB.Form frmAF_CD_Comites
                TabIndex        =   54
                Top             =   1440
                Width           =   1335
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2355
                _ExtentY        =   450
                _StockProps     =   79
@@ -977,7 +973,7 @@ Begin VB.Form frmAF_CD_Comites
                TabIndex        =   55
                Top             =   1800
                Width           =   1335
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2355
                _ExtentY        =   450
                _StockProps     =   79
@@ -1002,7 +998,7 @@ Begin VB.Form frmAF_CD_Comites
                TabIndex        =   57
                Top             =   1320
                Width           =   1815
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3201
                _ExtentY        =   582
                _StockProps     =   77
@@ -1028,7 +1024,7 @@ Begin VB.Form frmAF_CD_Comites
                TabIndex        =   58
                Top             =   3120
                Width           =   1575
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2778
                _ExtentY        =   582
                _StockProps     =   77
@@ -1459,7 +1455,7 @@ Begin VB.Form frmAF_CD_Comites
          TabIndex        =   56
          Top             =   3840
          Width           =   8175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   14420
          _ExtentY        =   661
          _StockProps     =   14
@@ -1483,7 +1479,7 @@ Begin VB.Form frmAF_CD_Comites
          TabIndex        =   43
          Top             =   3360
          Width           =   7215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12726
          _ExtentY        =   661
          _StockProps     =   14
@@ -1507,7 +1503,7 @@ Begin VB.Form frmAF_CD_Comites
          TabIndex        =   42
          Top             =   3360
          Width           =   7215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12726
          _ExtentY        =   661
          _StockProps     =   14
@@ -1531,7 +1527,7 @@ Begin VB.Form frmAF_CD_Comites
          TabIndex        =   41
          Top             =   3360
          Width           =   7215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12726
          _ExtentY        =   661
          _StockProps     =   14
@@ -1754,9 +1750,9 @@ Begin VB.Form frmAF_CD_Comites
       Height          =   255
       Left            =   7200
       TabIndex        =   47
-      Top             =   480
+      Top             =   720
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2778
       _ExtentY        =   450
       _StockProps     =   79
@@ -1777,9 +1773,9 @@ Begin VB.Form frmAF_CD_Comites
       Height          =   330
       Left            =   2280
       TabIndex        =   45
-      Top             =   840
+      Top             =   1080
       Width           =   1095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1931
       _ExtentY        =   582
       _StockProps     =   77
@@ -1801,9 +1797,9 @@ Begin VB.Form frmAF_CD_Comites
       Height          =   330
       Left            =   3360
       TabIndex        =   48
-      Top             =   840
+      Top             =   1080
       Width           =   5775
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   10186
       _ExtentY        =   582
       _StockProps     =   77
@@ -1825,9 +1821,10 @@ Begin VB.Form frmAF_CD_Comites
       Height          =   330
       Left            =   2280
       TabIndex        =   59
-      Top             =   1200
+      Top             =   1440
+      Visible         =   0   'False
       Width           =   6855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12091
       _ExtentY        =   582
       _StockProps     =   77
@@ -1862,7 +1859,8 @@ Begin VB.Form frmAF_CD_Comites
       Height          =   375
       Left            =   1080
       TabIndex        =   5
-      Top             =   1200
+      Top             =   1440
+      Visible         =   0   'False
       Width           =   975
    End
    Begin VB.Label Label2 
@@ -1880,7 +1878,7 @@ Begin VB.Form frmAF_CD_Comites
       Height          =   345
       Left            =   1080
       TabIndex        =   1
-      Top             =   825
+      Top             =   1065
       Width           =   945
    End
 End
@@ -1925,7 +1923,7 @@ Dim Id_puesto As Integer
 Dim Puesto_Asignado As Boolean
 Dim vConsecutivo As Integer
 
-vConsecutivo = fxConsecutivo("linea", "Comites_nombramientos_h")
+vConsecutivo = fxConsecutivo("linea", "AFI_CD_nombramientos_h")
 
   If txtCedula.Text = Empty Or lblNombre.Caption = Empty Or txtNombreJefe.Text = Empty Then
    MsgBox "Falta información", vbInformation, "Información"
@@ -2123,7 +2121,7 @@ If lswComites.ListItems.Count > 0 Then
           strSQL = "insert afi_cd_comites_unidades (cod_comite,codigo_up) values('" & txtComite.Text _
                  & "', '" & lswSelecBusqueda.SelectedItem.Text & "')"
           Call ConectionExecute(strSQL)
-          Call Bitacora("Ingresa", "Comite:" & lswComites.SelectedItem.Text & " Comite: " & txtComite.Text & "")
+          Call Bitacora("Ingresa", "Comite:" & lswSelecBusqueda.SelectedItem.Text & " Comite: " & txtComite.Text & "")
        End If
      rs.Close
 End If
@@ -2291,16 +2289,16 @@ Private Function fxValida() As Boolean
 
 End Function
 
-Function FxNomComite(vUnidad As String)
+Function fxNomComite(vUnidad As String)
    Dim rs As New ADODB.Recordset
    Dim strSQL As String
   
    strSQL = "select cod_comite,descripcion from afi_cd_comites where cod_comite = '" & vUnidad & "'"
             Call OpenRecordSet(rs, strSQL)
    If rs.EOF Then
-      FxNomComite = "No existe unidad definida en Comites y Delegados"
+      fxNomComite = "No existe unidad definida en Comites y Delegados"
    Else
-      FxNomComite = rs!Descripcion
+      fxNomComite = rs!Descripcion
    End If
 
 End Function
@@ -2406,7 +2404,11 @@ Call OpenRecordSet(rs, strSQL)
         
         chkComiteActivo.Value = rs!activo
         txtDescripcionComite = rs!Descripcion
-        cboDirectores.Text = rs!Nombre
+        
+        If Not IsNull(rs!Nombre) Then
+            cboDirectores.Text = rs!Nombre
+        End If
+        
         chkAsociaUnidad.Visible = False
         
         lswComites.Checkboxes = True
@@ -3360,8 +3362,8 @@ Select Case KeyAscii
                 Call OpenRecordSet(rs, strSQL)
            If Not rs.EOF Then
                 txtDesc_Comite_Ingreso.Text = rs!Descripcion
-                Set itm = lswSelecBusqueda.ListItems.Add(, , txtCod_Comite_Ingreso.Text)
-                itm.SubItems(1) = txtDesc_Comite_Ingreso.Text
+                Set itmX = lswSelecBusqueda.ListItems.Add(, , txtCod_Comite_Ingreso.Text)
+                itmX.SubItems(1) = txtDesc_Comite_Ingreso.Text
            End If
               rs.Close
       Case Else

@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCR_SeguimientoDesembolsos 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "xx"
@@ -24,7 +24,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
       TabIndex        =   0
       Top             =   5760
       Width           =   10215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18018
       _ExtentY        =   3413
       _StockProps     =   77
@@ -54,7 +54,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
       TabIndex        =   1
       Top             =   840
       Width           =   10215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18018
       _ExtentY        =   7858
       _StockProps     =   79
@@ -75,7 +75,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
          TabIndex        =   24
          Top             =   2520
          Width           =   10095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17806
          _ExtentY        =   3836
          _StockProps     =   79
@@ -99,7 +99,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
             TabIndex        =   25
             Top             =   360
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   582
             _StockProps     =   77
@@ -124,7 +124,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
             TabIndex        =   26
             Top             =   720
             Width           =   4215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7435
             _ExtentY        =   582
             _StockProps     =   77
@@ -150,7 +150,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
             TabIndex        =   27
             Top             =   720
             Width           =   375
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   656
             _ExtentY        =   550
             _StockProps     =   79
@@ -173,7 +173,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
             TabIndex        =   30
             Top             =   360
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   582
             _StockProps     =   77
@@ -199,7 +199,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
             TabIndex        =   32
             Top             =   720
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   582
             _StockProps     =   77
@@ -225,7 +225,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
             TabIndex        =   35
             Top             =   1080
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   582
             _StockProps     =   77
@@ -250,7 +250,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
             TabIndex        =   37
             Top             =   1080
             Width           =   4215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7435
             _ExtentY        =   556
             _StockProps     =   77
@@ -275,7 +275,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
             TabIndex        =   39
             Top             =   1440
             Width           =   7815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   13785
             _ExtentY        =   767
             _StockProps     =   77
@@ -432,7 +432,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
          TabIndex        =   13
          Top             =   1680
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -456,7 +456,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
          TabIndex        =   6
          Top             =   600
          Width           =   7812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13779
          _ExtentY        =   550
          _StockProps     =   77
@@ -481,7 +481,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
          TabIndex        =   7
          Top             =   960
          Width           =   7812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13785
          _ExtentY        =   582
          _StockProps     =   77
@@ -507,7 +507,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
          TabIndex        =   9
          Top             =   1320
          Width           =   5652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9970
          _ExtentY        =   550
          _StockProps     =   77
@@ -532,7 +532,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
          TabIndex        =   12
          Top             =   1680
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -554,7 +554,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
          TabIndex        =   8
          Top             =   1320
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -579,7 +579,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
          TabIndex        =   10
          Top             =   1680
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -604,7 +604,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
          TabIndex        =   21
          Top             =   2040
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -630,7 +630,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
          TabIndex        =   22
          Top             =   2040
          Width           =   4215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7435
          _ExtentY        =   582
          _StockProps     =   77
@@ -696,7 +696,7 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
          TabIndex        =   18
          Top             =   120
          Width           =   10335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18230
          _ExtentY        =   661
          _StockProps     =   14
@@ -878,14 +878,14 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
       TabIndex        =   19
       Top             =   5400
       Width           =   10215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18013
       _ExtentY        =   656
       _StockProps     =   14
       Caption         =   "Desembolsos / Rebajos (Registrados)"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   8.93
+         Size            =   9
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -944,14 +944,14 @@ Begin VB.Form frmCR_SeguimientoDesembolsos
       TabIndex        =   16
       Top             =   0
       Width           =   10572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18648
       _ExtentY        =   656
       _StockProps     =   14
       Caption         =   "Desembolsos y Rebajos"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   8.93
+         Size            =   9
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -967,12 +967,13 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
-
 Dim lngID_Desembolso As Long
 Dim vEdita As Integer, mFecha As Date
 Dim curPrimerCuota As Currency, curPoliza As Currency, curInteres As Currency
 
-
+Dim strSQL As String, rs As New ADODB.Recordset
+Dim itmX As ListViewItem
+Dim vPaso As Boolean
 
 
 Private Sub btnCuenta_Click()
@@ -1010,6 +1011,14 @@ cboTipoDocumento.AddItem fxTipoDocumento("TE")
 cboTipoDocumento.AddItem fxTipoDocumento("ND")
 cboTipoDocumento.Text = fxTipoDocumento("TE")
 
+vPaso = True
+strSQL = "select TIPO_ID as Idx, rtrim(Descripcion) as ItmX from AFI_TIPOS_IDS" _
+       & " order by Tipo_Id"
+    Call sbCbo_Llena_New(cboTipoId, strSQL, False, True)
+vPaso = False
+
+strSQL = "select COD_DIVISA as 'IdX', DESCRIPCION as 'ItmX'   From vSys_Divisas"
+Call sbCbo_Llena_New(cboDivisa, strSQL, False, True)
 
 cboBanco.Clear
 

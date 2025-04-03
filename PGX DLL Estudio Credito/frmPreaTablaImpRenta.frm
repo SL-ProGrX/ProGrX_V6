@@ -5,15 +5,15 @@ Begin VB.Form frmPreaTablaImpRenta
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Tabla : Cálculo Impuesto de Renta"
-   ClientHeight    =   4224
-   ClientLeft      =   48
-   ClientTop       =   432
-   ClientWidth     =   7668
+   ClientHeight    =   4215
+   ClientLeft      =   45
+   ClientTop       =   435
+   ClientWidth     =   7665
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   4224
-   ScaleWidth      =   7668
+   ScaleHeight     =   4215
+   ScaleWidth      =   7665
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin FPSpreadADO.fpSpread vGrid 
@@ -48,7 +48,7 @@ Begin VB.Form frmPreaTablaImpRenta
       Caption         =   "Tabla para Renta sobre Salario"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -76,13 +76,29 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim strSQL As String, rs As New ADODB.Recordset
+
 
 Private Sub Form_Activate()
 vModulo = 3 'Modulo de Credito
 End Sub
 
+Private Sub sbGrid_Load()
+
+On Error GoTo vError
+
+strSQL = "select idx,desde,hasta,porcentaje from crd_prea_tabla_impuesto order by desde"
+Call sbCargaGrid(vGrid, 4, strSQL)
+
+Exit Sub
+
+vError:
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
 Private Sub Form_Load()
-Dim strSQL As String
+
 vModulo = 3 'Modulo de Credito
 
 Set imgBanner.Picture = frmContenedor.imgBanner_Mantenimiento.Picture
@@ -90,15 +106,11 @@ Set imgBanner.Picture = frmContenedor.imgBanner_Mantenimiento.Picture
 Call Formularios(Me)
 Call RefrescaTags(Me)
  
-strSQL = "select idx,desde,hasta,porcentaje from crd_prea_tabla_impuesto order by desde"
-Call sbCargaGrid(vGrid, 4, strSQL)
+Call sbGrid_Load
 
 End Sub
 
 Private Function fxGuardar() As Long
-Dim strSQL As String, rs As New ADODB.Recordset
-'Guarda la información de la linea
-'si es Insert devuelve el idx, sino devuelve 0
 
 On Error GoTo vError
 
@@ -107,36 +119,40 @@ vGrid.Row = vGrid.ActiveRow
 vGrid.Col = 1
 If vGrid.Text = "" Or vGrid.Text = "0" Then
    vGrid.Col = 2
-   strSQL = "insert into Crd_Prea_Tabla_Impuesto(desde,hasta,porcentaje)" _
+   strSQL = "insert into Crd_Prea_Tabla_Impuesto(desde,hasta,porcentaje, REGISTRO_USUARIO, REGISTRO_FECHA)" _
           & " values(" & CCur(vGrid.Text) & ","
    vGrid.Col = 3
    strSQL = strSQL & CCur(vGrid.Text) & ","
    vGrid.Col = 4
-   strSQL = strSQL & CCur(vGrid.Text) & ")"
+   strSQL = strSQL & CCur(vGrid.Text) & ",'" & glogon.Usuario & "', getdate() )"
    
    Call ConectionExecute(strSQL)
     
     strSQL = "select isnull(max(IDx),0) as ultimo from Crd_Prea_Tabla_Impuesto"
     Call OpenRecordSet(rs, strSQL)
       vGrid.Col = 1
-      vGrid.Text = CStr(rs!Ultimo)
+      vGrid.Text = CStr(rs!ultimo)
     rs.Close
    
-    Call Bitacora("Registra", "Rango PreAnalisis Impuesto Renta [ID]: " & vGrid.Text)
+    Call Bitacora("Registra", "Rango Estudio de Credito - Impuesto Renta [ID]: " & vGrid.Text)
+    
+    MsgBox "Impuesto de Renta Id: " & vGrid.Text & ", Registrado satisfactoriamente!", vbInformation
    
    Else 'Actualizar
     vGrid.Col = 2
     strSQL = "update Crd_Prea_Tabla_Impuesto set desde = " & CCur(vGrid.Text)
     vGrid.Col = 3
-    strSQL = strSQL & ",hasta = " & CCur(vGrid.Text)
+    strSQL = strSQL & ", hasta = " & CCur(vGrid.Text)
     vGrid.Col = 4
-    strSQL = strSQL & ",porcentaje = " & CCur(vGrid.Text)
+    strSQL = strSQL & ", porcentaje = " & CCur(vGrid.Text) & ", modifica_Usuario = '" & glogon.Usuario & "', modifica_fecha = getdate()"
     vGrid.Col = 1
     strSQL = strSQL & " where Idx = " & vGrid.Text
    
     Call ConectionExecute(strSQL)
     
-    Call Bitacora("Modifica", "Rango PreAnalisis Impuesto Renta [ID]: " & vGrid.Text)
+    Call Bitacora("Modifica", "Rango Estudio de Credito - Impuesto Renta [ID]: " & vGrid.Text)
+    
+    MsgBox "Impuesto de Renta Id: " & vGrid.Text & ", Modificado satisfactoriamente!", vbInformation
     
    End If
 
@@ -175,19 +191,7 @@ End If
 
 'Borrar una linea
 If KeyCode = vbKeyDelete Then
-  vGrid.Col = vGrid.ActiveCol
-  vGrid.Row = vGrid.ActiveRow
-  
-  
-   vGrid.Col = 1
-  If vGrid.Text <> "" Then
-    strSQL = "delete Crd_Prea_Tabla_Impuesto where IDx = " & vGrid.Text
-    Call ConectionExecute(strSQL)
-  End If
-  
-  vGrid.DeleteRows vGrid.ActiveRow, 1
-  vGrid.MaxRows = vGrid.MaxRows - 1
-  If vGrid.MaxRows = 0 Then vGrid.MaxRows = 1
+    Call sbBorrar
 End If
 
 'Inserta Linea
@@ -202,5 +206,37 @@ Exit Sub
 
 vError:
  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+End Sub
+
+
+Private Sub sbBorrar()
+Dim i As Integer
+
+On Error GoTo vError
+
+vGrid.Row = vGrid.ActiveRow
+vGrid.Col = 1
+If vGrid.Text = "" Then
+    Exit Sub
+End If
+
+i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
+If i = vbYes Then
+   strSQL = "delete Crd_Prea_Tabla_Impuesto where IDx = " & vGrid.Text
+   Call ConectionExecute(strSQL)
+    
+   Call Bitacora("Elimina", "Rango Estudio de Credito - Impuesto Renta [ID]: " & vGrid.Text)
+    
+   MsgBox "Impuesto de Renta Id: " & vGrid.Text & ", Eliminado!", vbInformation
+   
+   Call sbGrid_Load
+End If
+
+
+Exit Sub
+
+vError:
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 
 End Sub
+

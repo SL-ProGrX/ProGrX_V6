@@ -2,7 +2,7 @@ VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
 Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
-Begin VB.Form SE 
+Begin VB.Form frmCR_Retenciones 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Retenciones"
    ClientHeight    =   6315
@@ -974,7 +974,7 @@ Begin VB.Form SE
       Width           =   975
    End
 End
-Attribute VB_Name = "SE"
+Attribute VB_Name = "frmCR_Retenciones"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True

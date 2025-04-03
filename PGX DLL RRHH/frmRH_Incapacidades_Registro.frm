@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.Controls.v22.0.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmRH_Incapacidades_Registro 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -27,7 +27,7 @@ Begin VB.Form frmRH_Incapacidades_Registro
       TabIndex        =   0
       Top             =   480
       Width           =   1812
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
@@ -52,7 +52,7 @@ Begin VB.Form frmRH_Incapacidades_Registro
       TabIndex        =   1
       Top             =   480
       Width           =   5052
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   8911
       _ExtentY        =   550
       _StockProps     =   77
@@ -76,7 +76,7 @@ Begin VB.Form frmRH_Incapacidades_Registro
       TabIndex        =   2
       Top             =   480
       Width           =   1812
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
@@ -101,7 +101,7 @@ Begin VB.Form frmRH_Incapacidades_Registro
       TabIndex        =   6
       Top             =   1200
       Width           =   9135
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   16113
       _ExtentY        =   5530
       _StockProps     =   79
@@ -114,12 +114,12 @@ Begin VB.Form frmRH_Incapacidades_Registro
          TabIndex        =   7
          Top             =   2400
          Width           =   1572
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   1080
          _StockProps     =   79
          Caption         =   "Aplicar"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -139,7 +139,7 @@ Begin VB.Form frmRH_Incapacidades_Registro
          TabIndex        =   8
          Top             =   240
          Width           =   6852
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   12091
          _ExtentY        =   582
          _StockProps     =   77
@@ -164,7 +164,7 @@ Begin VB.Form frmRH_Incapacidades_Registro
          TabIndex        =   9
          Top             =   600
          Width           =   6852
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   12086
          _ExtentY        =   1609
          _StockProps     =   77
@@ -189,7 +189,7 @@ Begin VB.Form frmRH_Incapacidades_Registro
          TabIndex        =   10
          Top             =   1680
          Width           =   1335
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   556
          _StockProps     =   68
@@ -211,7 +211,7 @@ Begin VB.Form frmRH_Incapacidades_Registro
          TabIndex        =   11
          Top             =   1680
          Width           =   2172
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   3836
          _ExtentY        =   582
          _StockProps     =   77
@@ -236,7 +236,7 @@ Begin VB.Form frmRH_Incapacidades_Registro
          TabIndex        =   12
          Top             =   2040
          Width           =   1335
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   556
          _StockProps     =   68
@@ -259,7 +259,7 @@ Begin VB.Form frmRH_Incapacidades_Registro
          ToolTipText     =   "Dias a Disfrutar"
          Top             =   1680
          Width           =   1215
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   550
          _StockProps     =   77
@@ -285,7 +285,7 @@ Begin VB.Form frmRH_Incapacidades_Registro
          ToolTipText     =   "Dias a Disfrutar"
          Top             =   2040
          Width           =   1215
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   550
          _StockProps     =   77
@@ -657,6 +657,7 @@ vError:
     MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 
 End Sub
+
 
 
 Private Sub TimerX_Timer()

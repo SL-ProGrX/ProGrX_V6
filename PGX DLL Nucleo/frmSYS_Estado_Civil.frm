@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Begin VB.Form frmSYS_Estado_Civil 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -8,11 +8,11 @@ Begin VB.Form frmSYS_Estado_Civil
    ClientHeight    =   6765
    ClientLeft      =   30
    ClientTop       =   390
-   ClientWidth     =   9540
+   ClientWidth     =   9930
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    ScaleHeight     =   6765
-   ScaleWidth      =   9540
+   ScaleWidth      =   9930
    StartUpPosition =   3  'Windows Default
    Begin VB.Timer TimerX 
       Interval        =   10
@@ -24,10 +24,10 @@ Begin VB.Form frmSYS_Estado_Civil
       Left            =   120
       TabIndex        =   0
       Top             =   1440
-      Width           =   9255
+      Width           =   9735
       _Version        =   524288
-      _ExtentX        =   16320
-      _ExtentY        =   9123
+      _ExtentX        =   17171
+      _ExtentY        =   9128
       _StockProps     =   64
       BackColorStyle  =   1
       BorderStyle     =   0

@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmAutoVerCuentasSaldos 
    Caption         =   "Autoverificación de Saldos de las Cuentas vrs Saldos Cartera"
    ClientHeight    =   8625
@@ -24,7 +24,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
       TabIndex        =   14
       Top             =   360
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   661
       _StockProps     =   79
@@ -48,7 +48,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
       TabIndex        =   4
       Top             =   4080
       Width           =   12852
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   22669
       _ExtentY        =   7853
       _StockProps     =   79
@@ -61,7 +61,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
          TabIndex        =   25
          Top             =   240
          Width           =   2652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4678
          _ExtentY        =   582
          _StockProps     =   79
@@ -85,7 +85,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
          TabIndex        =   5
          Top             =   720
          Width           =   12612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   22246
          _ExtentY        =   6583
          _StockProps     =   68
@@ -144,7 +144,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
             TabIndex        =   26
             Top             =   385
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   550
             _StockProps     =   79
@@ -213,7 +213,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
                Strikethrough   =   0   'False
             EndProperty
             MaxCols         =   6
-            SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":10B4
+            SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":1090
             VScrollSpecial  =   -1  'True
             VScrollSpecialType=   2
             AppearanceStyle =   1
@@ -242,7 +242,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
                Strikethrough   =   0   'False
             EndProperty
             MaxCols         =   13
-            SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":173D
+            SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":16F5
             VScrollSpecial  =   -1  'True
             VScrollSpecialType=   2
             AppearanceStyle =   1
@@ -271,7 +271,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
                Strikethrough   =   0   'False
             EndProperty
             MaxCols         =   4
-            SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":20CD
+            SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":2061
             VScrollSpecial  =   -1  'True
             VScrollSpecialType=   2
             AppearanceStyle =   1
@@ -300,7 +300,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
                Strikethrough   =   0   'False
             EndProperty
             MaxCols         =   12
-            SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":275E
+            SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":26CE
             VScrollSpecial  =   -1  'True
             VScrollSpecialType=   2
             AppearanceStyle =   1
@@ -329,7 +329,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
                Strikethrough   =   0   'False
             EndProperty
             MaxCols         =   15
-            SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":2F8F
+            SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":2EDB
             VScrollSpecial  =   -1  'True
             VScrollSpecialType=   2
             AppearanceStyle =   1
@@ -357,7 +357,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
                Strikethrough   =   0   'False
             EndProperty
             MaxCols         =   13
-            SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":3A30
+            SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":3958
             VScrollSpecial  =   -1  'True
             VScrollSpecialType=   2
             AppearanceStyle =   1
@@ -369,7 +369,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
             TabIndex        =   27
             Top             =   385
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   550
             _StockProps     =   79
@@ -393,7 +393,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
             Top             =   384
             Visible         =   0   'False
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   550
             _StockProps     =   79
@@ -433,7 +433,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
                Strikethrough   =   0   'False
             EndProperty
             MaxCols         =   11
-            SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":42B6
+            SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":41BA
             VScrollSpecial  =   -1  'True
             VScrollSpecialType=   2
             AppearanceStyle =   1
@@ -446,7 +446,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
             Top             =   384
             Visible         =   0   'False
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   550
             _StockProps     =   79
@@ -469,7 +469,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
             TabIndex        =   24
             Top             =   360
             Width           =   12612
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   22246
             _ExtentY        =   656
             _StockProps     =   14
@@ -496,7 +496,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
             Top             =   360
             Visible         =   0   'False
             Width           =   12612
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   22246
             _ExtentY        =   656
             _StockProps     =   14
@@ -523,7 +523,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
             Top             =   360
             Visible         =   0   'False
             Width           =   12612
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   22246
             _ExtentY        =   656
             _StockProps     =   14
@@ -550,7 +550,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
             Top             =   360
             Visible         =   0   'False
             Width           =   12612
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   22246
             _ExtentY        =   656
             _StockProps     =   14
@@ -577,11 +577,11 @@ Begin VB.Form frmAutoVerCuentasSaldos
             Top             =   360
             Visible         =   0   'False
             Width           =   12612
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   22246
             _ExtentY        =   656
             _StockProps     =   14
-            Caption         =   $"frmAutoVerCuentasSaldos.frx":4BAE
+            Caption         =   $"frmAutoVerCuentasSaldos.frx":4A8E
             ForeColor       =   8388608
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
@@ -604,7 +604,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
             Top             =   360
             Visible         =   0   'False
             Width           =   12612
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   22246
             _ExtentY        =   656
             _StockProps     =   14
@@ -631,7 +631,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
             Top             =   360
             Visible         =   0   'False
             Width           =   12612
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   22246
             _ExtentY        =   656
             _StockProps     =   14
@@ -657,7 +657,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
          TabIndex        =   9
          Top             =   240
          Width           =   6132
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10816
          _ExtentY        =   582
          _StockProps     =   77
@@ -682,7 +682,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
          TabIndex        =   8
          Top             =   240
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   582
          _StockProps     =   77
@@ -744,7 +744,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
          Strikethrough   =   0   'False
       EndProperty
       MaxCols         =   11
-      SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":4C3F
+      SpreadDesigner  =   "frmAutoVerCuentasSaldos.frx":4B1F
       VScrollSpecial  =   -1  'True
       VScrollSpecialType=   2
       AppearanceStyle =   1
@@ -755,7 +755,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
       TabIndex        =   15
       Top             =   360
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   582
       _StockProps     =   77
@@ -781,7 +781,7 @@ Begin VB.Form frmAutoVerCuentasSaldos
       TabIndex        =   16
       Top             =   360
       Width           =   3612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   6376
       _ExtentY        =   582
       _StockProps     =   77
@@ -800,6 +800,30 @@ Begin VB.Form frmAutoVerCuentasSaldos
       Appearance      =   6
       UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
+   End
+   Begin XtremeSuiteControls.PushButton btnExport 
+      Height          =   375
+      Left            =   9120
+      TabIndex        =   32
+      Top             =   360
+      Width           =   1215
+      _Version        =   1572864
+      _ExtentX        =   2143
+      _ExtentY        =   661
+      _StockProps     =   79
+      Caption         =   "Exportar"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   17
+      Picture         =   "frmAutoVerCuentasSaldos.frx":544F
    End
    Begin VB.Label Label1 
       Appearance      =   0  'Flat
@@ -878,12 +902,14 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim vHeaders As vGridHeaders, vTitulo As String
+Dim strSQL As String, rs As New ADODB.Recordset
+
 Dim vPaso As Boolean, mTendencia As String
 Dim vAnio As Long, vMes As Integer
 
 
 Private Sub sbResumen(pVista As String)
-Dim strSQL As String, rs As New ADODB.Recordset
 Dim curTotales(8) As Currency, i As Integer
 
 
@@ -961,7 +987,6 @@ End Sub
 
 Private Sub bntExportar_Click()
 
-Dim vHeaders As vGridHeaders, vTitulo As String
 
 Select Case tcMain.SelectedItem
     Case 0 'Tendencia
@@ -1132,6 +1157,24 @@ Private Sub btnConcilaMov_Click(Index As Integer)
 Call sbCuenta_Analitico_Concilia(Index)
 End Sub
 
+Private Sub btnExport_Click()
+        vHeaders.Columnas = vGrid.MaxCols
+        vTitulo = "ProGrX_Aux_Conciliacion_" & cboPeriodos.Text & "_" & cboAuxiliar.Text
+    
+        vHeaders.Headers(1) = ".."
+        vHeaders.Headers(2) = "Año"
+        vHeaders.Headers(3) = "Mes"
+        vHeaders.Headers(4) = "Cuenta"
+        vHeaders.Headers(5) = "Descripción"
+        vHeaders.Headers(6) = "Saldo Auxiliar"
+        vHeaders.Headers(7) = "Saldo Contabilidad"
+        vHeaders.Headers(8) = "Diferencia"
+        vHeaders.Headers(9) = "Divisa"
+        vHeaders.Headers(10) = "Divisa Descripción"
+    
+        Call sbSIFGridExportar(vGrid, vHeaders, vTitulo)
+End Sub
+
 Private Sub cboAuxiliar_Click()
 If vPaso Then Exit Sub
 Call cmdBuscar_Click
@@ -1250,7 +1293,6 @@ End Sub
 
 
 Private Sub sbCuenta_Asignacion()
-Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
 
@@ -1293,7 +1335,6 @@ End Sub
 
 
 Private Sub sbCuenta_FormaPago()
-Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
 
@@ -1349,7 +1390,6 @@ vError:
 End Sub
 
 Private Sub sbCuenta_Rev_Mov()
-Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
 
@@ -1413,7 +1453,6 @@ End Sub
 
 
 Private Sub sbCuenta_Mov_No_Contabilizados()
-Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
 
@@ -1470,7 +1509,6 @@ End Sub
 
 
 Private Sub sbCuenta_Analitico(Optional pIndex As Integer = 1)
-Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
 
@@ -1542,7 +1580,6 @@ End Sub
 
 
 Private Sub sbCuenta_Analitico_Concilia(Optional pIndex As Integer = 1)
-Dim strSQL As String, rs As New ADODB.Recordset
 Dim pTipo As String, pMonto As Currency
 
 On Error GoTo vError
@@ -1657,7 +1694,6 @@ End Sub
 
 
 Private Sub sbCuenta_Crd_Cambio()
-Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
 
@@ -1808,7 +1844,6 @@ Private Sub vGrid_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal Butt
 
 If vPaso Then Exit Sub
 
-Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
 

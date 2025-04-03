@@ -1,19 +1,19 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.3#0"; "Codejock.Controls.v19.3.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCO_ReversionCobroJudicial 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Reversión de Cobro Judicial"
-   ClientHeight    =   6432
-   ClientLeft      =   48
-   ClientTop       =   312
-   ClientWidth     =   11304
+   ClientHeight    =   6435
+   ClientLeft      =   45
+   ClientTop       =   315
+   ClientWidth     =   11310
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   6432
-   ScaleWidth      =   11304
+   ScaleHeight     =   6435
+   ScaleWidth      =   11310
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin XtremeSuiteControls.PushButton btnPrincipal 
@@ -23,7 +23,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
       TabIndex        =   0
       Top             =   5640
       Width           =   2412
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   4254
       _ExtentY        =   1080
       _StockProps     =   79
@@ -49,7 +49,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
       ToolTipText     =   "Cerrar Ventana"
       Top             =   5640
       Width           =   612
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   1080
       _StockProps     =   79
@@ -72,7 +72,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
       TabIndex        =   3
       Top             =   1440
       Width           =   10812
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   19071
       _ExtentY        =   3831
       _StockProps     =   79
@@ -80,7 +80,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
       BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Arial Narrow"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -95,7 +95,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          TabIndex        =   4
          Top             =   4560
          Width           =   1212
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   556
          _StockProps     =   68
@@ -117,7 +117,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          TabIndex        =   5
          Top             =   720
          Width           =   1812
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
@@ -142,7 +142,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          TabIndex        =   6
          Top             =   360
          Width           =   1812
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
@@ -167,7 +167,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          TabIndex        =   7
          Top             =   360
          Width           =   1812
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
@@ -192,7 +192,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          TabIndex        =   8
          Top             =   1440
          Width           =   1812
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
@@ -217,7 +217,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          TabIndex        =   9
          Top             =   720
          Width           =   1812
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
@@ -242,7 +242,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          TabIndex        =   10
          Top             =   1080
          Width           =   1812
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
@@ -267,7 +267,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          TabIndex        =   11
          Top             =   4080
          Width           =   1812
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
@@ -292,7 +292,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          TabIndex        =   12
          Top             =   1800
          Width           =   1812
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
@@ -317,7 +317,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          TabIndex        =   37
          Top             =   1800
          Width           =   1812
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
@@ -343,7 +343,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          ToolTipText     =   "Original"
          Top             =   1440
          Width           =   852
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
@@ -370,7 +370,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          ToolTipText     =   "Original"
          Top             =   1080
          Width           =   852
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
@@ -396,7 +396,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          TabIndex        =   41
          Top             =   1080
          Width           =   972
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   550
          _StockProps     =   77
@@ -421,7 +421,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          TabIndex        =   42
          Top             =   1440
          Width           =   972
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   550
          _StockProps     =   77
@@ -446,7 +446,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          TabIndex        =   13
          Top             =   1800
          Width           =   612
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   1080
          _ExtentY        =   550
          _StockProps     =   77
@@ -735,7 +735,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
       TabIndex        =   23
       Top             =   120
       Width           =   1812
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   762
       _StockProps     =   77
@@ -760,7 +760,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
       TabIndex        =   24
       Top             =   120
       Width           =   2052
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   762
       _StockProps     =   77
@@ -785,7 +785,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
       TabIndex        =   25
       Top             =   120
       Width           =   1092
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   762
       _StockProps     =   77
@@ -810,7 +810,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
       TabIndex        =   26
       Top             =   600
       Width           =   1812
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
@@ -835,7 +835,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
       TabIndex        =   27
       Top             =   960
       Width           =   1812
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
@@ -860,7 +860,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
       TabIndex        =   28
       Top             =   960
       Width           =   6012
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   10604
       _ExtentY        =   550
       _StockProps     =   77
@@ -884,7 +884,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
       TabIndex        =   29
       Top             =   600
       Width           =   6012
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   10604
       _ExtentY        =   550
       _StockProps     =   77
@@ -908,7 +908,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
       TabIndex        =   33
       Top             =   3720
       Width           =   10932
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   19283
       _ExtentY        =   2984
       _StockProps     =   79
@@ -916,7 +916,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
       BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -931,7 +931,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          TabIndex        =   35
          Top             =   480
          Width           =   1812
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
@@ -955,7 +955,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
          TabIndex        =   36
          Top             =   840
          Width           =   6372
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   11239
          _ExtentY        =   1397
          _StockProps     =   77
@@ -1057,7 +1057,7 @@ Begin VB.Form frmCO_ReversionCobroJudicial
       Caption         =   "Operación"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   10.8
+         Size            =   10.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1183,7 +1183,7 @@ Call OpenRecordSet(rs, strSQL)
   
   txtCedula.Text = rs!Cedula
   txtNombre.Text = rs!Nombre
-  txtDivisa.Text = rs!cod_Divisa & ""
+  txtDivisa.Text = rs!COD_DIVISA & ""
   
   txtTasa.Text = Format(rs!Tasa, "Standard")
   
@@ -1260,7 +1260,7 @@ vMensaje = ""
 
 txtPlazo.Text = CStr(CLng(txtPlazo.Text))
 
-If CLng(txtPlazo.Text) > 300 Or CLng(txtPlazo.Text) < 1 Then
+If CLng(txtPlazo.Text) > 360 Or CLng(txtPlazo.Text) < 1 Then
    vMensaje = vMensaje & " - El plazo es incorrecto verifique..." & vbCrLf
 End If
 
@@ -1348,39 +1348,39 @@ strLinea(11) = "Póliza            " & Format(curPoliza * -1, "Standard")
     
     'ASIENTO
     If curIntC + curIntM + curAmortiza + curCargo + curPoliza > 0 Then
-      strSQL = "exec spSIFDocsAsiento '" & pTipoDocum & "','" & pNumDoc & "'," & curIntC + curIntM + curCargo + curAmortiza + curPoliza & ",'C','" & rs!cod_Divisa _
-             & "',1," & GLOBALES.gEnlace & ",'" & rs!cod_unidad & "','" & rs!cod_centro_costo & "','" & pCuenta _
-             & "','" & rs!id_solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+      strSQL = "exec spSIFDocsAsiento '" & pTipoDocum & "','" & pNumDoc & "'," & curIntC + curIntM + curCargo + curAmortiza + curPoliza & ",'C','" & rs!COD_DIVISA _
+             & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & pCuenta _
+             & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
       Call ConectionExecute(strSQL)
     End If
     
     
     If curIntC > 0 Then
-      strSQL = "exec spSIFDocsAsiento '" & pTipoDocum & "','" & pNumDoc & "'," & curIntC & ",'D','" & rs!cod_Divisa _
-             & "',1," & GLOBALES.gEnlace & ",'" & rs!cod_unidad & "','" & rs!cod_centro_costo & "','" & rs!ctaintc _
-             & "','" & rs!id_solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+      strSQL = "exec spSIFDocsAsiento '" & pTipoDocum & "','" & pNumDoc & "'," & curIntC & ",'D','" & rs!COD_DIVISA _
+             & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintc _
+             & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
       Call ConectionExecute(strSQL)
     End If
     
     If curIntM > 0 Then
-      strSQL = "exec spSIFDocsAsiento '" & pTipoDocum & "','" & pNumDoc & "'," & curIntM & ",'D','" & rs!cod_Divisa _
-             & "',1," & GLOBALES.gEnlace & ",'" & rs!cod_unidad & "','" & rs!cod_centro_costo & "','" & rs!ctaintm _
-             & "','" & rs!id_solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+      strSQL = "exec spSIFDocsAsiento '" & pTipoDocum & "','" & pNumDoc & "'," & curIntM & ",'D','" & rs!COD_DIVISA _
+             & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintm _
+             & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
       Call ConectionExecute(strSQL)
     End If
     
     If curCargo > 0 Then
-      strSQL = "exec spSIFDocsAsiento '" & pTipoDocum & "','" & pNumDoc & "'," & curCargo & ",'D','" & rs!cod_Divisa _
-             & "',1," & GLOBALES.gEnlace & ",'" & rs!cod_unidad & "','" & rs!cod_centro_costo & "','" & rs!CtaCargos _
-             & "','" & rs!id_solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+      strSQL = "exec spSIFDocsAsiento '" & pTipoDocum & "','" & pNumDoc & "'," & curCargo & ",'D','" & rs!COD_DIVISA _
+             & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!CtaCargos _
+             & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
       Call ConectionExecute(strSQL)
     End If
     
     
     If curAmortiza > 0 Then
-      strSQL = "exec spSIFDocsAsiento '" & pTipoDocum & "','" & pNumDoc & "'," & curAmortiza & ",'D','" & rs!cod_Divisa _
-             & "',1," & GLOBALES.gEnlace & ",'" & rs!cod_unidad & "','" & rs!cod_centro_costo & "','" & rs!ctaamortiza _
-             & "','" & rs!id_solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+      strSQL = "exec spSIFDocsAsiento '" & pTipoDocum & "','" & pNumDoc & "'," & curAmortiza & ",'D','" & rs!COD_DIVISA _
+             & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaamortiza _
+             & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
       Call ConectionExecute(strSQL)
     End If
 
@@ -1509,8 +1509,8 @@ strSQL = "exec spCrdOperacionCtas " & txtOperacion.Text
 Call OpenRecordSet(rs, strSQL)
  vCuenta = Trim(rs!ctaamortiza)
  vOficina = Trim(rs!cod_oficina_r)
- vUnidad = Trim(rs!cod_unidad)
- vDivisa = Trim(rs!cod_Divisa)
+ vUnidad = Trim(rs!Cod_Unidad)
+ vDivisa = Trim(rs!COD_DIVISA)
  vCentroCosto = ""
  vTipoCambio = rs!TipoCambio
 rs.Close

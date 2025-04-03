@@ -1,8 +1,8 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmTES_EmisionDocumentos 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Emisión de Documentos"
@@ -25,7 +25,7 @@ Begin VB.Form frmTES_EmisionDocumentos
       TabIndex        =   25
       Top             =   2916
       Width           =   11052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19494
       _ExtentY        =   5948
       _StockProps     =   77
@@ -97,7 +97,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   26
          Top             =   360
          Width           =   6972
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12303
          _ExtentY        =   582
          _StockProps     =   77
@@ -125,7 +125,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   27
          Top             =   6600
          Width           =   2532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4466
          _ExtentY        =   762
          _StockProps     =   79
@@ -140,7 +140,7 @@ Begin VB.Form frmTES_EmisionDocumentos
             Strikethrough   =   0   'False
          EndProperty
          Appearance      =   16
-         Picture         =   "frmTES_EmisionDocumentos.frx":09D1
+         Picture         =   "frmTES_EmisionDocumentos.frx":0A3B
       End
       Begin XtremeSuiteControls.PushButton btnPuenteAccion 
          Height          =   432
@@ -149,7 +149,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   28
          Top             =   6600
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   762
          _StockProps     =   79
@@ -164,7 +164,7 @@ Begin VB.Form frmTES_EmisionDocumentos
             Strikethrough   =   0   'False
          EndProperty
          Appearance      =   16
-         Picture         =   "frmTES_EmisionDocumentos.frx":11D6
+         Picture         =   "frmTES_EmisionDocumentos.frx":1240
       End
       Begin VB.Label Label2 
          BackStyle       =   0  'Transparent
@@ -213,7 +213,7 @@ Begin VB.Form frmTES_EmisionDocumentos
       TabIndex        =   18
       Top             =   1200
       Width           =   5292
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9334
       _ExtentY        =   2138
       _StockProps     =   79
@@ -237,7 +237,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   39
          Top             =   360
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   444
          _StockProps     =   79
@@ -259,7 +259,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   29
          Top             =   720
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -281,7 +281,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   30
          Top             =   720
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -303,7 +303,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   37
          Top             =   360
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   77
@@ -328,7 +328,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   38
          Top             =   360
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   77
@@ -354,7 +354,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   40
          Top             =   720
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   444
          _StockProps     =   79
@@ -423,7 +423,7 @@ Begin VB.Form frmTES_EmisionDocumentos
       TabIndex        =   6
       Top             =   6240
       Width           =   11052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19494
       _ExtentY        =   2138
       _StockProps     =   79
@@ -445,7 +445,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   9
          Top             =   360
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   1182
          _StockProps     =   79
@@ -461,7 +461,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmTES_EmisionDocumentos.frx":19A3
+         Picture         =   "frmTES_EmisionDocumentos.frx":1A0D
       End
       Begin XtremeSuiteControls.PushButton cmdPrevista 
          Height          =   672
@@ -469,7 +469,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   10
          Top             =   360
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   1182
          _StockProps     =   79
@@ -485,7 +485,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmTES_EmisionDocumentos.frx":21A8
+         Picture         =   "frmTES_EmisionDocumentos.frx":2212
       End
       Begin XtremeSuiteControls.PushButton cmdReporte 
          Height          =   672
@@ -493,7 +493,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   11
          Top             =   360
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   1185
          _StockProps     =   79
@@ -509,7 +509,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmTES_EmisionDocumentos.frx":286F
+         Picture         =   "frmTES_EmisionDocumentos.frx":28D9
       End
       Begin XtremeSuiteControls.PushButton cmdPuente 
          Height          =   672
@@ -517,7 +517,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   12
          Top             =   360
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   1182
          _StockProps     =   79
@@ -533,7 +533,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmTES_EmisionDocumentos.frx":302B
+         Picture         =   "frmTES_EmisionDocumentos.frx":3095
       End
       Begin XtremeSuiteControls.PushButton cmdCuentaVerifica 
          Height          =   672
@@ -541,7 +541,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   13
          Top             =   360
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   1182
          _StockProps     =   79
@@ -557,7 +557,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmTES_EmisionDocumentos.frx":37ED
+         Picture         =   "frmTES_EmisionDocumentos.frx":3857
       End
       Begin XtremeSuiteControls.FlatEdit txtCasos 
          Height          =   312
@@ -565,7 +565,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   35
          Top             =   600
          Width           =   612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1080
          _ExtentY        =   550
          _StockProps     =   77
@@ -592,7 +592,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   36
          Top             =   600
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -670,11 +670,11 @@ Begin VB.Form frmTES_EmisionDocumentos
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   2
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmTES_EmisionDocumentos.frx":4161
+            Picture         =   "frmTES_EmisionDocumentos.frx":41CB
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmTES_EmisionDocumentos.frx":4268
+            Picture         =   "frmTES_EmisionDocumentos.frx":42D2
             Key             =   ""
          EndProperty
       EndProperty
@@ -689,7 +689,7 @@ Begin VB.Form frmTES_EmisionDocumentos
       TabIndex        =   14
       Top             =   1200
       Width           =   4812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8488
       _ExtentY        =   2265
       _StockProps     =   79
@@ -712,7 +712,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   32
          Top             =   240
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   550
          _StockProps     =   77
@@ -738,7 +738,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   33
          Top             =   600
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   550
          _StockProps     =   77
@@ -764,7 +764,7 @@ Begin VB.Form frmTES_EmisionDocumentos
          TabIndex        =   34
          Top             =   960
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   550
          _StockProps     =   77
@@ -842,7 +842,7 @@ Begin VB.Form frmTES_EmisionDocumentos
       TabIndex        =   21
       Top             =   360
       Width           =   5292
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9340
       _ExtentY        =   582
       _StockProps     =   77
@@ -868,7 +868,7 @@ Begin VB.Form frmTES_EmisionDocumentos
       TabIndex        =   22
       Top             =   360
       Width           =   5172
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9128
       _ExtentY        =   582
       _StockProps     =   77
@@ -894,7 +894,7 @@ Begin VB.Form frmTES_EmisionDocumentos
       TabIndex        =   23
       Top             =   720
       Width           =   3492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   6165
       _ExtentY        =   582
       _StockProps     =   77
@@ -920,7 +920,7 @@ Begin VB.Form frmTES_EmisionDocumentos
       TabIndex        =   41
       Top             =   720
       Width           =   1812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3201
       _ExtentY        =   582
       _StockProps     =   77
@@ -946,7 +946,7 @@ Begin VB.Form frmTES_EmisionDocumentos
       TabIndex        =   42
       Top             =   720
       Width           =   372
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   556
       _StockProps     =   79
@@ -954,7 +954,7 @@ Begin VB.Form frmTES_EmisionDocumentos
       Transparent     =   -1  'True
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmTES_EmisionDocumentos.frx":439F
+      Picture         =   "frmTES_EmisionDocumentos.frx":4409
    End
    Begin XtremeShortcutBar.ShortcutCaption lblX 
       Height          =   372
@@ -962,14 +962,14 @@ Begin VB.Form frmTES_EmisionDocumentos
       TabIndex        =   31
       Top             =   2520
       Width           =   11052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19494
       _ExtentY        =   656
       _StockProps     =   14
       Caption         =   "Solicitudes a Generar"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   8.93
+         Size            =   9
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -2398,6 +2398,7 @@ Exit Sub
 vError:
        
    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
    If vPaso Then
       gTesGlobal.BancoConsec = fxTesTipoDocConsec(gTesGlobal.BancoID, gTesGlobal.BancoTDoc, "-")
    End If
@@ -3545,9 +3546,9 @@ strSQL = ""
 
 For i = 1 To vGrid.MaxRows
     vGrid.Row = i
-    vGrid.col = 1
+    vGrid.Col = 1
     If vGrid.Value = vbChecked Then
-        vGrid.col = 2
+        vGrid.Col = 2
         strSQL = strSQL & Space(10) & "exec spTes_Traslados_Cuenta_Puente " & vGrid.Text & "," & cbo.ItemData(cbo.ListIndex) & ",'" & glogon.Usuario & "'"
         
         If Len(strSQL) > 20000 Then

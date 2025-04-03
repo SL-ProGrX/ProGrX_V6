@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_ConsultaCrdExc 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -23,7 +23,7 @@ Begin VB.Form frmCR_ConsultaCrdExc
       TabIndex        =   12
       Top             =   960
       Width           =   4932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8700
       _ExtentY        =   7429
       _StockProps     =   77
@@ -61,7 +61,7 @@ Begin VB.Form frmCR_ConsultaCrdExc
             Bevel           =   0
             Object.Width           =   2187
             MinWidth        =   2187
-            TextSave        =   "14/12/2023"
+            TextSave        =   "29/12/2024"
          EndProperty
          BeginProperty Panel2 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
             Bevel           =   0
@@ -90,12 +90,12 @@ Begin VB.Form frmCR_ConsultaCrdExc
       TabIndex        =   11
       Top             =   4560
       Width           =   1692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   1080
       _StockProps     =   79
       Caption         =   "Formalizar"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Arial"
          Size            =   7.5
@@ -115,7 +115,7 @@ Begin VB.Form frmCR_ConsultaCrdExc
       TabIndex        =   15
       Top             =   2760
       Width           =   4212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   582
       _StockProps     =   77
@@ -141,7 +141,7 @@ Begin VB.Form frmCR_ConsultaCrdExc
       TabIndex        =   16
       Top             =   3120
       Width           =   4212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   582
       _StockProps     =   77
@@ -167,7 +167,7 @@ Begin VB.Form frmCR_ConsultaCrdExc
       TabIndex        =   13
       Top             =   2400
       Width           =   2412
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4260
       _ExtentY        =   582
       _StockProps     =   77
@@ -193,7 +193,7 @@ Begin VB.Form frmCR_ConsultaCrdExc
       TabIndex        =   14
       Top             =   3600
       Width           =   4212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   582
       _StockProps     =   77
@@ -219,7 +219,7 @@ Begin VB.Form frmCR_ConsultaCrdExc
       TabIndex        =   17
       Top             =   1080
       Width           =   2412
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4254
       _ExtentY        =   550
       _StockProps     =   77
@@ -244,7 +244,7 @@ Begin VB.Form frmCR_ConsultaCrdExc
       TabIndex        =   18
       Top             =   1440
       Width           =   2412
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4254
       _ExtentY        =   550
       _StockProps     =   77
@@ -270,7 +270,7 @@ Begin VB.Form frmCR_ConsultaCrdExc
       TabIndex        =   19
       Top             =   1800
       Width           =   2412
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4254
       _ExtentY        =   550
       _StockProps     =   77
@@ -295,7 +295,7 @@ Begin VB.Form frmCR_ConsultaCrdExc
       TabIndex        =   20
       Top             =   3960
       Width           =   4212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7429
       _ExtentY        =   550
       _StockProps     =   77
@@ -710,6 +710,8 @@ With lsw.ColumnHeaders
 End With
 lsw.HideSelection = True
 
+On Error GoTo vError
+
 strSQL = "exec spVoxExcedenteCredito '" & mCedula & "'"
 Call OpenRecordSet(rs, strSQL)
 
@@ -792,6 +794,12 @@ txtMontoAplicar.Text = Format(rs!Neto, "Standard")
 txtMontoGirar.Text = Format(rs!Neto - (rs!Neto * mTasaDiaria * mDias), "Standard")
 
 rs.Close
+
+Exit Sub
+
+vError:
+    MousePointer = vbDefault
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 
 End Sub
 

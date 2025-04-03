@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmAF_BeneficiosTraslado 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -21,7 +21,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
       Top             =   7800
       Visible         =   0   'False
       Width           =   12135
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   21405
       _ExtentY        =   265
       _StockProps     =   93
@@ -30,9 +30,9 @@ Begin VB.Form frmAF_BeneficiosTraslado
       Height          =   2295
       Left            =   1800
       TabIndex        =   60
-      Top             =   3000
+      Top             =   3720
       Width           =   7935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   13991
       _ExtentY        =   4043
       _StockProps     =   79
@@ -56,7 +56,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          TabIndex        =   61
          Top             =   600
          Width           =   6012
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10610
          _ExtentY        =   582
          _StockProps     =   77
@@ -82,7 +82,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          TabIndex        =   62
          Top             =   1080
          Width           =   6012
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10610
          _ExtentY        =   582
          _StockProps     =   77
@@ -109,7 +109,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          TabIndex        =   63
          Top             =   1680
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   741
          _StockProps     =   79
@@ -135,7 +135,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          TabIndex        =   64
          Top             =   1680
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   741
          _StockProps     =   79
@@ -160,7 +160,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          TabIndex        =   66
          Top             =   1080
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -184,7 +184,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          TabIndex        =   65
          Top             =   600
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -208,7 +208,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
       TabIndex        =   1
       Top             =   1320
       Width           =   12135
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   21405
       _ExtentY        =   11456
       _StockProps     =   68
@@ -224,28 +224,28 @@ Begin VB.Form frmAF_BeneficiosTraslado
       Appearance      =   4
       Color           =   32
       ItemCount       =   4
-      SelectedItem    =   2
+      SelectedItem    =   3
       Item(0).Caption =   "Remesa"
       Item(0).ControlCount=   19
-      Item(0).Control(0)=   "Label8(0)"
-      Item(0).Control(1)=   "Label8(1)"
-      Item(0).Control(2)=   "Label8(2)"
-      Item(0).Control(3)=   "Label8(3)"
-      Item(0).Control(4)=   "Label8(4)"
-      Item(0).Control(5)=   "Label8(5)"
-      Item(0).Control(6)=   "Label8(6)"
-      Item(0).Control(7)=   "txtRemesa"
-      Item(0).Control(8)=   "txtFecha"
-      Item(0).Control(9)=   "txtEstado"
-      Item(0).Control(10)=   "txtUsuario"
-      Item(0).Control(11)=   "txtNotas"
-      Item(0).Control(12)=   "dtpInicio"
-      Item(0).Control(13)=   "dtpCorte"
-      Item(0).Control(14)=   "btnBarra(0)"
-      Item(0).Control(15)=   "btnBarra(1)"
-      Item(0).Control(16)=   "btnBarra(2)"
-      Item(0).Control(17)=   "lswRemesas"
-      Item(0).Control(18)=   "fraReporte"
+      Item(0).Control(0)=   "Label8(1)"
+      Item(0).Control(1)=   "Label8(2)"
+      Item(0).Control(2)=   "Label8(3)"
+      Item(0).Control(3)=   "Label8(4)"
+      Item(0).Control(4)=   "Label8(5)"
+      Item(0).Control(5)=   "Label8(6)"
+      Item(0).Control(6)=   "txtRemesa"
+      Item(0).Control(7)=   "txtFecha"
+      Item(0).Control(8)=   "txtEstado"
+      Item(0).Control(9)=   "txtUsuario"
+      Item(0).Control(10)=   "txtNotas"
+      Item(0).Control(11)=   "dtpInicio"
+      Item(0).Control(12)=   "dtpCorte"
+      Item(0).Control(13)=   "btnBarra(0)"
+      Item(0).Control(14)=   "btnBarra(1)"
+      Item(0).Control(15)=   "btnBarra(2)"
+      Item(0).Control(16)=   "lswRemesas"
+      Item(0).Control(17)=   "fraReporte"
+      Item(0).Control(18)=   "Labe9(0)"
       Item(1).Caption =   "Cargar"
       Item(1).ControlCount=   12
       Item(1).Control(0)=   "Label8(9)"
@@ -281,40 +281,16 @@ Begin VB.Form frmAF_BeneficiosTraslado
       Item(3).Control(6)=   "chkRemesaInd"
       Item(3).Control(7)=   "lswRep"
       Item(3).Control(8)=   "btnBarra(8)"
-      Begin XtremeSuiteControls.ListView lswRep 
-         Height          =   3612
-         Left            =   -70000
-         TabIndex        =   5
-         Top             =   840
+      Begin XtremeSuiteControls.ListView lswRemesas 
+         Height          =   3132
+         Left            =   -68440
+         TabIndex        =   2
+         Top             =   3240
          Visible         =   0   'False
-         Width           =   11652
-         _Version        =   1441793
-         _ExtentX        =   20553
-         _ExtentY        =   6371
-         _StockProps     =   77
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         View            =   3
-         FullRowSelect   =   -1  'True
-         Appearance      =   16
-         ShowBorder      =   0   'False
-      End
-      Begin XtremeSuiteControls.ListView lswTraslado 
-         Height          =   4092
-         Left            =   120
-         TabIndex        =   4
-         Top             =   1800
-         Width           =   11412
-         _Version        =   1441793
-         _ExtentX        =   20129
-         _ExtentY        =   7218
+         Width           =   10092
+         _Version        =   1572864
+         _ExtentX        =   17801
+         _ExtentY        =   5524
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -337,7 +313,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   2040
          Visible         =   0   'False
          Width           =   11652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   20553
          _ExtentY        =   7006
          _StockProps     =   77
@@ -356,16 +332,40 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Appearance      =   16
          ShowBorder      =   0   'False
       End
-      Begin XtremeSuiteControls.ListView lswRemesas 
-         Height          =   3132
-         Left            =   -68440
-         TabIndex        =   2
-         Top             =   3240
+      Begin XtremeSuiteControls.ListView lswTraslado 
+         Height          =   4092
+         Left            =   -69880
+         TabIndex        =   4
+         Top             =   1800
          Visible         =   0   'False
-         Width           =   10092
-         _Version        =   1441793
-         _ExtentX        =   17801
-         _ExtentY        =   5524
+         Width           =   11412
+         _Version        =   1572864
+         _ExtentX        =   20129
+         _ExtentY        =   7218
+         _StockProps     =   77
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         View            =   3
+         FullRowSelect   =   -1  'True
+         Appearance      =   16
+         ShowBorder      =   0   'False
+      End
+      Begin XtremeSuiteControls.ListView lswRep 
+         Height          =   3612
+         Left            =   0
+         TabIndex        =   5
+         Top             =   840
+         Width           =   11652
+         _Version        =   1572864
+         _ExtentX        =   20553
+         _ExtentY        =   6371
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -384,12 +384,11 @@ Begin VB.Form frmAF_BeneficiosTraslado
       Begin XtremeSuiteControls.RadioButton opt 
          Height          =   252
          Index           =   0
-         Left            =   -69520
+         Left            =   480
          TabIndex        =   6
          Top             =   5160
-         Visible         =   0   'False
          Width           =   4812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8488
          _ExtentY        =   444
          _StockProps     =   79
@@ -408,13 +407,13 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Value           =   -1  'True
       End
       Begin XtremeSuiteControls.GroupBox fraReporte 
-         Height          =   2052
-         Left            =   -65680
+         Height          =   2055
+         Left            =   -65800
          TabIndex        =   7
          Top             =   960
          Visible         =   0   'False
-         Width           =   7452
-         _Version        =   1441793
+         Width           =   7455
+         _Version        =   1572864
          _ExtentX        =   13144
          _ExtentY        =   3619
          _StockProps     =   79
@@ -438,7 +437,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
             TabIndex        =   8
             Top             =   1200
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   444
             _StockProps     =   79
@@ -464,7 +463,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
             TabIndex        =   9
             Top             =   360
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   444
             _StockProps     =   79
@@ -488,7 +487,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
             TabIndex        =   10
             Top             =   360
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   556
             _StockProps     =   68
@@ -510,7 +509,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
             TabIndex        =   11
             Top             =   360
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   556
             _StockProps     =   68
@@ -532,7 +531,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
             TabIndex        =   12
             Top             =   720
             Width           =   4932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8705
             _ExtentY        =   582
             _StockProps     =   77
@@ -559,7 +558,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
             TabIndex        =   13
             Top             =   1200
             Width           =   612
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1080
             _ExtentY        =   741
             _StockProps     =   79
@@ -584,7 +583,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
             TabIndex        =   14
             Top             =   1200
             Width           =   492
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   868
             _ExtentY        =   741
             _StockProps     =   79
@@ -609,7 +608,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
             TabIndex        =   15
             Top             =   1200
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -643,7 +642,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
             TabIndex        =   17
             Top             =   720
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   656
             _StockProps     =   79
@@ -667,7 +666,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
             TabIndex        =   16
             Top             =   360
             Width           =   1212
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   656
             _StockProps     =   79
@@ -693,7 +692,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   480
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   741
          _StockProps     =   79
@@ -719,7 +718,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   480
          Visible         =   0   'False
          Width           =   2412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   762
          _StockProps     =   77
@@ -734,7 +733,8 @@ Begin VB.Form frmAF_BeneficiosTraslado
             Strikethrough   =   0   'False
          EndProperty
          Alignment       =   2
-         Appearance      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtFecha 
          Height          =   312
@@ -743,7 +743,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   1680
          Visible         =   0   'False
          Width           =   2412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   550
          _StockProps     =   77
@@ -759,7 +759,8 @@ Begin VB.Form frmAF_BeneficiosTraslado
          EndProperty
          Alignment       =   2
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtEstado 
          Height          =   312
@@ -768,7 +769,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   1320
          Visible         =   0   'False
          Width           =   2412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   550
          _StockProps     =   77
@@ -784,7 +785,8 @@ Begin VB.Form frmAF_BeneficiosTraslado
          EndProperty
          Alignment       =   2
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtUsuario 
          Height          =   312
@@ -793,7 +795,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   1680
          Visible         =   0   'False
          Width           =   2412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   550
          _StockProps     =   77
@@ -809,7 +811,8 @@ Begin VB.Form frmAF_BeneficiosTraslado
          EndProperty
          Alignment       =   2
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtNotas 
          Height          =   792
@@ -818,7 +821,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   2040
          Visible         =   0   'False
          Width           =   10092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17801
          _ExtentY        =   1397
          _StockProps     =   77
@@ -833,7 +836,8 @@ Begin VB.Form frmAF_BeneficiosTraslado
             Strikethrough   =   0   'False
          EndProperty
          ScrollBars      =   2
-         Appearance      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.DateTimePicker dtpInicio 
          Height          =   312
@@ -842,7 +846,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   1320
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   556
          _StockProps     =   68
@@ -865,7 +869,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   1320
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   556
          _StockProps     =   68
@@ -889,7 +893,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   480
          Visible         =   0   'False
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   741
          _StockProps     =   79
@@ -915,7 +919,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   480
          Visible         =   0   'False
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   741
          _StockProps     =   79
@@ -940,7 +944,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   480
          Visible         =   0   'False
          Width           =   7692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13573
          _ExtentY        =   582
          _StockProps     =   77
@@ -967,7 +971,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   840
          Visible         =   0   'False
          Width           =   7692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13573
          _ExtentY        =   582
          _StockProps     =   77
@@ -994,7 +998,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   1200
          Visible         =   0   'False
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
@@ -1019,7 +1023,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   1680
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   444
          _StockProps     =   79
@@ -1039,11 +1043,12 @@ Begin VB.Form frmAF_BeneficiosTraslado
       End
       Begin XtremeSuiteControls.ComboBox cboTraslado 
          Height          =   312
-         Left            =   2160
+         Left            =   -67840
          TabIndex        =   32
          Top             =   600
+         Visible         =   0   'False
          Width           =   7692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13573
          _ExtentY        =   582
          _StockProps     =   77
@@ -1071,7 +1076,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   1200
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   741
          _StockProps     =   79
@@ -1098,7 +1103,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   1200
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   741
          _StockProps     =   79
@@ -1125,7 +1130,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   1200
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   741
          _StockProps     =   79
@@ -1147,11 +1152,12 @@ Begin VB.Form frmAF_BeneficiosTraslado
       Begin XtremeSuiteControls.PushButton btnBarra 
          Height          =   420
          Index           =   6
-         Left            =   6960
+         Left            =   -63040
          TabIndex        =   36
          Top             =   960
+         Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   741
          _StockProps     =   79
@@ -1173,11 +1179,12 @@ Begin VB.Form frmAF_BeneficiosTraslado
       Begin XtremeSuiteControls.PushButton btnBarra 
          Height          =   420
          Index           =   7
-         Left            =   8280
+         Left            =   -61720
          TabIndex        =   37
          Top             =   960
+         Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   741
          _StockProps     =   79
@@ -1199,12 +1206,11 @@ Begin VB.Form frmAF_BeneficiosTraslado
       Begin XtremeSuiteControls.PushButton btnBarra 
          Height          =   420
          Index           =   8
-         Left            =   -60760
+         Left            =   9240
          TabIndex        =   38
          Top             =   5640
-         Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   741
          _StockProps     =   79
@@ -1226,12 +1232,11 @@ Begin VB.Form frmAF_BeneficiosTraslado
       End
       Begin XtremeSuiteControls.FlatEdit txtRepRemesas 
          Height          =   312
-         Left            =   -59200
+         Left            =   10800
          TabIndex        =   39
          Top             =   4560
-         Visible         =   0   'False
          Width           =   852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
@@ -1252,12 +1257,11 @@ Begin VB.Form frmAF_BeneficiosTraslado
       End
       Begin XtremeSuiteControls.CheckBox chkRemesaInd 
          Height          =   372
-         Left            =   -60640
+         Left            =   9360
          TabIndex        =   40
          Top             =   5040
-         Visible         =   0   'False
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
@@ -1278,12 +1282,11 @@ Begin VB.Form frmAF_BeneficiosTraslado
       Begin XtremeSuiteControls.RadioButton opt 
          Height          =   252
          Index           =   1
-         Left            =   -69520
+         Left            =   480
          TabIndex        =   41
          Top             =   5520
-         Visible         =   0   'False
          Width           =   4812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8488
          _ExtentY        =   444
          _StockProps     =   79
@@ -1307,7 +1310,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   6120
          Visible         =   0   'False
          Width           =   2412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   550
          _StockProps     =   77
@@ -1326,11 +1329,12 @@ Begin VB.Form frmAF_BeneficiosTraslado
       End
       Begin XtremeSuiteControls.FlatEdit txtPagoTotal 
          Height          =   312
-         Left            =   9120
+         Left            =   -60880
          TabIndex        =   43
          Top             =   6000
+         Visible         =   0   'False
          Width           =   2412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   550
          _StockProps     =   77
@@ -1350,11 +1354,12 @@ Begin VB.Form frmAF_BeneficiosTraslado
       Begin XtremeSuiteControls.Label Label8 
          Height          =   252
          Index           =   19
-         Left            =   7320
+         Left            =   -62680
          TabIndex        =   59
          Top             =   6000
+         Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -1380,7 +1385,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   6120
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -1414,10 +1419,9 @@ Begin VB.Form frmAF_BeneficiosTraslado
          ForeColor       =   &H00000000&
          Height          =   300
          Index           =   4
-         Left            =   -64600
+         Left            =   5400
          TabIndex        =   57
          Top             =   4560
-         Visible         =   0   'False
          Width           =   5412
       End
       Begin VB.Label lblRemesa 
@@ -1435,10 +1439,9 @@ Begin VB.Form frmAF_BeneficiosTraslado
          EndProperty
          ForeColor       =   &H00FF0000&
          Height          =   300
-         Left            =   -69880
+         Left            =   120
          TabIndex        =   56
          Top             =   4560
-         Visible         =   0   'False
          Width           =   5292
       End
       Begin VB.Label Label16 
@@ -1458,10 +1461,9 @@ Begin VB.Form frmAF_BeneficiosTraslado
          ForeColor       =   &H00000000&
          Height          =   300
          Index           =   2
-         Left            =   -70000
+         Left            =   0
          TabIndex        =   55
          Top             =   600
-         Visible         =   0   'False
          Width           =   11652
       End
       Begin VB.Label Label2 
@@ -1481,19 +1483,21 @@ Begin VB.Form frmAF_BeneficiosTraslado
          ForeColor       =   &H80000008&
          Height          =   252
          Index           =   16
-         Left            =   120
+         Left            =   -69880
          TabIndex        =   54
          Top             =   1560
+         Visible         =   0   'False
          Width           =   11412
       End
       Begin XtremeSuiteControls.Label Label8 
          Height          =   252
          Index           =   14
-         Left            =   840
+         Left            =   -69160
          TabIndex        =   53
          Top             =   600
+         Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -1518,7 +1522,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   840
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -1543,7 +1547,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   480
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -1568,7 +1572,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   2880
          Visible         =   0   'False
          Width           =   2892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5101
          _ExtentY        =   656
          _StockProps     =   79
@@ -1593,7 +1597,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   2040
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79
@@ -1618,7 +1622,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   1680
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79
@@ -1643,7 +1647,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   1680
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79
@@ -1668,7 +1672,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   1320
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79
@@ -1693,7 +1697,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   1320
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79
@@ -1710,7 +1714,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          EndProperty
          Transparent     =   -1  'True
       End
-      Begin XtremeSuiteControls.Label Label8 
+      Begin XtremeSuiteControls.Label Labe9 
          Height          =   372
          Index           =   0
          Left            =   -69400
@@ -1718,7 +1722,7 @@ Begin VB.Form frmAF_BeneficiosTraslado
          Top             =   480
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79

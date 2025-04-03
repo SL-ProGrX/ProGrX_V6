@@ -1,34 +1,32 @@
 VERSION 5.00
-Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmActivos_Departamentos 
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Departamentos y Secciones"
-   ClientHeight    =   7236
-   ClientLeft      =   48
-   ClientTop       =   372
-   ClientWidth     =   8544
+   ClientHeight    =   8475
+   ClientLeft      =   45
+   ClientTop       =   375
+   ClientWidth     =   8595
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7236
-   ScaleWidth      =   8544
+   ScaleHeight     =   8475
+   ScaleWidth      =   8595
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
-   Begin TabDlg.SSTab ssTab 
-      Height          =   5772
+   Begin XtremeSuiteControls.TabControl tcMain 
+      Height          =   7095
       Left            =   120
       TabIndex        =   1
       Top             =   1320
-      Width           =   8292
-      _ExtentX        =   14626
-      _ExtentY        =   10181
-      _Version        =   393216
-      Style           =   1
-      Tabs            =   2
-      TabsPerRow      =   2
-      TabHeight       =   520
-      ForeColor       =   16711680
+      Width           =   8415
+      _Version        =   1572864
+      _ExtentX        =   14843
+      _ExtentY        =   12515
+      _StockProps     =   68
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -38,45 +36,26 @@ Begin VB.Form frmActivos_Departamentos
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      TabCaption(0)   =   "Departamentos"
-      TabPicture(0)   =   "frmActivos_Departamentos.frx":0000
-      Tab(0).ControlEnabled=   -1  'True
-      Tab(0).Control(0)=   "vGrid"
-      Tab(0).Control(0).Enabled=   0   'False
-      Tab(0).ControlCount=   1
-      TabCaption(1)   =   "Secciones"
-      TabPicture(1)   =   "frmActivos_Departamentos.frx":6862
-      Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "cbo"
-      Tab(1).Control(1)=   "vGridSec"
-      Tab(1).Control(2)=   "Label2(0)"
-      Tab(1).ControlCount=   3
-      Begin VB.ComboBox cbo 
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   312
-         Left            =   -73560
-         Style           =   2  'Dropdown List
-         TabIndex        =   2
-         Top             =   600
-         Width           =   6135
-      End
+      Appearance      =   4
+      Color           =   32
+      ItemCount       =   2
+      Item(0).Caption =   "Departamentos"
+      Item(0).ControlCount=   1
+      Item(0).Control(0)=   "vGrid"
+      Item(1).Caption =   "Secciones"
+      Item(1).ControlCount=   3
+      Item(1).Control(0)=   "cbo"
+      Item(1).Control(1)=   "vGridSec"
+      Item(1).Control(2)=   "Label2(0)"
       Begin FPSpreadADO.fpSpread vGrid 
-         Height          =   5172
-         Left            =   840
-         TabIndex        =   3
+         Height          =   6495
+         Left            =   240
+         TabIndex        =   2
          Top             =   480
-         Width           =   6732
+         Width           =   7815
          _Version        =   524288
-         _ExtentX        =   11874
-         _ExtentY        =   9123
+         _ExtentX        =   13785
+         _ExtentY        =   11456
          _StockProps     =   64
          BackColorStyle  =   1
          BorderStyle     =   0
@@ -92,19 +71,20 @@ Begin VB.Form frmActivos_Departamentos
          EndProperty
          MaxCols         =   3
          ScrollBars      =   2
-         SpreadDesigner  =   "frmActivos_Departamentos.frx":D0C4
+         SpreadDesigner  =   "frmActivos_Departamentos.frx":0000
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
       Begin FPSpreadADO.fpSpread vGridSec 
-         Height          =   4452
-         Left            =   -74880
-         TabIndex        =   4
+         Height          =   5775
+         Left            =   -69880
+         TabIndex        =   3
          Top             =   1080
-         Width           =   7932
+         Visible         =   0   'False
+         Width           =   8055
          _Version        =   524288
-         _ExtentX        =   13991
-         _ExtentY        =   7853
+         _ExtentX        =   14208
+         _ExtentY        =   10186
          _StockProps     =   64
          BackColorStyle  =   1
          BorderStyle     =   0
@@ -120,9 +100,36 @@ Begin VB.Form frmActivos_Departamentos
          EndProperty
          MaxCols         =   3
          ScrollBars      =   2
-         SpreadDesigner  =   "frmActivos_Departamentos.frx":D68B
+         SpreadDesigner  =   "frmActivos_Departamentos.frx":05C7
          VScrollSpecialType=   2
          AppearanceStyle =   1
+      End
+      Begin XtremeSuiteControls.ComboBox cbo 
+         Height          =   330
+         Left            =   -68320
+         TabIndex        =   5
+         Top             =   480
+         Visible         =   0   'False
+         Width           =   6255
+         _Version        =   1572864
+         _ExtentX        =   11033
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Style           =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+         Text            =   "ComboBox1"
       End
       Begin VB.Label Label2 
          Caption         =   "Departamento"
@@ -135,12 +142,13 @@ Begin VB.Form frmActivos_Departamentos
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   372
+         Height          =   375
          Index           =   0
-         Left            =   -74760
-         TabIndex        =   5
-         Top             =   600
-         Width           =   1212
+         Left            =   -69760
+         TabIndex        =   4
+         Top             =   480
+         Visible         =   0   'False
+         Width           =   1215
       End
    End
    Begin VB.Label Label1 
@@ -148,7 +156,7 @@ Begin VB.Form frmActivos_Departamentos
       Caption         =   "Departamentos y Secciones"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -175,17 +183,19 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+
+Dim strSQL As String, rs As New ADODB.Recordset
+
 Dim vDepartamento As String
 Dim vPaso As Boolean
 
 
 Private Sub cbo_Click()
-Dim strSQL As String, rs As New ADODB.Recordset
 
-If Not vPaso Then Exit Sub
+If vPaso Then Exit Sub
 
-strSQL = "select * from Activos_secciones" _
-      & " where cod_departamento = '" & SIFGlobal.fxCodText(cbo.Text) _
+strSQL = "select * from vActivos_Secciones" _
+      & " where cod_departamento = '" & cbo.ItemData(cbo.ListIndex) _
       & "' order by cod_seccion"
 Call sbCargaGridLocal(vGridSec, strSQL, "S")
 
@@ -196,16 +206,15 @@ vModulo = 36
 End Sub
 
 Private Sub Form_Load()
-Dim strSQL As String
 
 vModulo = 36
 
 
 Set imgBanner.Picture = frmContenedor.imgBanner_Mantenimiento.Picture
 
-ssTab.Tab = 0
+tcMain.Item(0).Selected = True
 
-strSQL = "select * from Activos_departamentos" _
+strSQL = "select * from vActivos_departamentos" _
       & " order by cod_departamento"
 Call sbCargaGridLocal(vGrid, strSQL, "D")
 
@@ -230,7 +239,7 @@ pGrid.MaxRows = 0
 pGrid.MaxRows = 1
 pGrid.Row = pGrid.MaxRows
 
-rs.CursorLocation = adUseServer
+
 Call OpenRecordSet(rs, strSQL, 0)
 
 With pGrid
@@ -253,10 +262,10 @@ Do While Not rs.EOF
           .Text = rs!Descripcion
       
        Case 3 'Unidad
-          .Text = rs!cod_unidad
+          .Text = rs!Cod_Unidad
           .TextTip = TextTipFixed
           .TextTipDelay = 1000
-          .CellNote = fxgCntUnidad(rs!cod_unidad)
+          .CellNote = rs!Unidad_Desc
       End Select
     Next i
   
@@ -275,10 +284,10 @@ Do While Not rs.EOF
        Case 2 'Descripcion
           .Text = rs!Descripcion
        Case 3 'Centro de Costo
-          .Text = rs!cod_centro_costo
+          .Text = rs!Cod_Centro_Costo
           .TextTip = TextTipFixed
           .TextTipDelay = 1000
-          .CellNote = fxgCntCentroCostos(rs!cod_centro_costo)
+          .CellNote = rs!Centro_Costo_Desc
        
       End Select
     Next i
@@ -308,9 +317,6 @@ End Sub
 
 
 Private Function fxGuardar() As Long
-Dim strSQL As String, rs As New ADODB.Recordset
-'Guarda la información de la linea
-'si es Insert devuelve el codigo, sino devuelve 0
 
 On Error GoTo vError
 
@@ -365,12 +371,12 @@ vError:
 End Function
 
 
-Private Sub ssTab_Click(PreviousTab As Integer)
-Dim strSQL As String, rs As New ADODB.Recordset
 
-If ssTab.Tab = 0 Then
+Private Sub tcMain_SelectedChanged(ByVal Item As XtremeSuiteControls.ITabControlItem)
+
+If Item.Index = 0 Then
  'Departamentos
-    strSQL = "select * from Activos_departamentos" _
+    strSQL = "select * from vActivos_Departamentos" _
           & " order by cod_departamento"
     Call sbCargaGridLocal(vGrid, strSQL, "D")
 
@@ -378,29 +384,15 @@ If ssTab.Tab = 0 Then
 Else
  'Secciones
     vPaso = True
-    strSQL = "select rtrim(cod_departamento) + ' - ' + rtrim(descripcion) as Departamento from Activos_departamentos order by cod_departamento"
-    Call OpenRecordSet(rs, strSQL, 0)
+        strSQL = "select rtrim(cod_departamento) as 'IdX', rtrim(descripcion) as 'ItmX' from Activos_departamentos order by cod_departamento"
+        Call sbCbo_Llena_New(cbo, strSQL, False, True)
+    vPaso = False
     
-    cbo.Clear
-    Do While Not rs.EOF
-     cbo.AddItem rs!departamento
-     rs.MoveNext
-    Loop
-    If rs.RecordCount > 0 Then
-      rs.MoveFirst
-      cbo.Text = rs!departamento
-    End If
-    rs.Close
-
-    strSQL = "select * from Activos_Secciones where cod_departamento = '" & SIFGlobal.fxCodText(cbo.Text) & "'" _
-          & " order by cod_seccion"
-    Call sbCargaGridLocal(vGridSec, strSQL, "S")
-
+    Call cbo_Click
+    
 End If
 
-
 End Sub
-
 
 Private Sub vGrid_KeyDown(KeyCode As Integer, Shift As Integer)
 Dim strSQL As String, i As Integer
@@ -481,10 +473,6 @@ End Sub
 
 
 Private Function fxGuardarSeccion() As Long
-Dim strSQL As String, rs As New ADODB.Recordset
-'Guarda la información de la linea
-'si es Insert devuelve el codigo, sino devuelve 0
-
 On Error GoTo vError
 
 fxGuardarSeccion = 0
@@ -496,14 +484,14 @@ With vGridSec
     
     strSQL = "select coalesce(count(*),0) as Existe from Activos_secciones" _
            & " where cod_seccion = '" & .Text & "' and cod_departamento = '" _
-           & SIFGlobal.fxCodText(cbo.Text) & "'"
+           & cbo.ItemData(cbo.ListIndex) & "'"
     Call OpenRecordSet(rs, strSQL, 0)
     
     If rs!Existe = 0 Then 'Insertar
       If Trim(.Text) = "" Then Exit Function
       
       strSQL = "insert into Activos_secciones(cod_departamento,cod_seccion,descripcion,cod_centro_costo,registro_usuario,registro_fecha) values('" _
-             & SIFGlobal.fxCodText(cbo.Text) & "','" & UCase(.Text) & "','"
+             & cbo.ItemData(cbo.ListIndex) & "','" & Trim(.Text) & "','"
       .Col = 2
       strSQL = strSQL & .Text & "','"
       .Col = 3
@@ -512,21 +500,21 @@ With vGridSec
       Call ConectionExecute(strSQL)
     
       .Col = 1
-       Call Bitacora("Registra", "Sección : " & .Text & " - Dept.:" & SIFGlobal.fxCodText(cbo.Text))
+       Call Bitacora("Registra", "Sección: " & .Text & " - Dept.: " & cbo.ItemData(cbo.ListIndex))
     
     Else 'Actualizar
     
      .Col = 2
      strSQL = "update Activos_secciones set descripcion = '" & .Text & "',cod_centro_costo = '"
      .Col = 3
-     strSQL = strSQL & .Text & "',Modifica_Usuario = '" & glogon.Usuario & "',Modifica_Fecha = getdate()" _
-            & " where cod_departamento = '" & SIFGlobal.fxCodText(cbo.Text) & "' and cod_seccion = '"
+     strSQL = strSQL & .Text & "', Modifica_Usuario = '" & glogon.Usuario & "', Modifica_Fecha = getdate()" _
+            & " where cod_departamento = '" & cbo.ItemData(cbo.ListIndex) & "' and cod_seccion = '"
      .Col = 1
      strSQL = strSQL & .Text & "'"
      Call ConectionExecute(strSQL)
     
      .Col = 1
-      Call Bitacora("Modifica", "Sección : " & .Text & " - Dept.:" & SIFGlobal.fxCodText(cbo.Text))
+      Call Bitacora("Modifica", "Sección: " & .Text & " - Dept.: " & cbo.ItemData(cbo.ListIndex))
     
     End If
     rs.Close
@@ -601,11 +589,11 @@ End If
 If KeyCode = vbKeyDelete Then
   vGridSec.Row = vGridSec.ActiveRow
   vGridSec.Col = 1
-  strSQL = "delete Activos_Secciones where cod_departamento = '" & SIFGlobal.fxCodText(cbo.Text) _
+  strSQL = "delete Activos_Secciones where cod_departamento = '" & cbo.ItemData(cbo.ListIndex) _
         & "' and cod_seccion = '" & vGridSec.Text & "'"
   Call ConectionExecute(strSQL)
 
-  Call Bitacora("Elimina", "Sección : " & vGridSec.Text & " - Dept.:" & SIFGlobal.fxCodText(cbo.Text))
+  Call Bitacora("Elimina", "Sección: " & vGridSec.Text & " - Dept.: " & cbo.ItemData(cbo.ListIndex))
     
   vGridSec.DeleteRows vGridSec.ActiveRow, 1
   vGridSec.MaxRows = vGridSec.MaxRows - 1
@@ -616,6 +604,4 @@ Exit Sub
 
 vError:
   MsgBox fxSys_Error_Handler(Err.Description), vbCritical
-
-
 End Sub

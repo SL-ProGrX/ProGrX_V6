@@ -1,9 +1,9 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.ShortcutBar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCajas_Definicion 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Definición de cajas"
@@ -22,7 +22,7 @@ Begin VB.Form frmCajas_Definicion
       TabIndex        =   12
       Top             =   480
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   444
       _StockProps     =   79
@@ -46,7 +46,7 @@ Begin VB.Form frmCajas_Definicion
       TabIndex        =   5
       Top             =   1080
       Width           =   10575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18653
       _ExtentY        =   12091
       _StockProps     =   68
@@ -115,16 +115,16 @@ Begin VB.Form frmCajas_Definicion
       Item(7).ControlCount=   2
       Item(7).Control(0)=   "ShortcutCaption2"
       Item(7).Control(1)=   "GroupBox3"
-      Begin XtremeSuiteControls.ListView lswAuxiliares 
-         Height          =   5775
-         Left            =   -66640
-         TabIndex        =   40
-         Top             =   1080
+      Begin XtremeSuiteControls.ListView lswDocumentos 
+         Height          =   6255
+         Left            =   -67480
+         TabIndex        =   42
+         Top             =   600
          Visible         =   0   'False
-         Width           =   6735
-         _Version        =   1441793
-         _ExtentX        =   11880
-         _ExtentY        =   10186
+         Width           =   7695
+         _Version        =   1572864
+         _ExtentX        =   13573
+         _ExtentY        =   11033
          _StockProps     =   77
          BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -148,7 +148,7 @@ Begin VB.Form frmCajas_Definicion
          Top             =   600
          Visible         =   0   'False
          Width           =   7695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13573
          _ExtentY        =   11033
          _StockProps     =   77
@@ -167,16 +167,16 @@ Begin VB.Form frmCajas_Definicion
          FullRowSelect   =   -1  'True
          Appearance      =   16
       End
-      Begin XtremeSuiteControls.ListView lswDocumentos 
-         Height          =   6255
-         Left            =   -67480
-         TabIndex        =   42
-         Top             =   600
+      Begin XtremeSuiteControls.ListView lswAuxiliares 
+         Height          =   5775
+         Left            =   -66640
+         TabIndex        =   40
+         Top             =   1080
          Visible         =   0   'False
-         Width           =   7695
-         _Version        =   1441793
-         _ExtentX        =   13573
-         _ExtentY        =   11033
+         Width           =   6735
+         _Version        =   1572864
+         _ExtentX        =   11880
+         _ExtentY        =   10186
          _StockProps     =   77
          BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -200,7 +200,7 @@ Begin VB.Form frmCajas_Definicion
          Top             =   1080
          Visible         =   0   'False
          Width           =   9972
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17590
          _ExtentY        =   4043
          _StockProps     =   79
@@ -223,7 +223,7 @@ Begin VB.Form frmCajas_Definicion
             TabIndex        =   51
             Top             =   480
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   582
             _StockProps     =   77
@@ -248,7 +248,7 @@ Begin VB.Form frmCajas_Definicion
             TabIndex        =   52
             Top             =   480
             Width           =   6732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11874
             _ExtentY        =   582
             _StockProps     =   77
@@ -273,7 +273,7 @@ Begin VB.Form frmCajas_Definicion
             TabIndex        =   53
             Top             =   1320
             Width           =   1344
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2371
             _ExtentY        =   868
             _StockProps     =   79
@@ -298,7 +298,7 @@ Begin VB.Form frmCajas_Definicion
             TabIndex        =   54
             Top             =   1320
             Width           =   1344
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2371
             _ExtentY        =   868
             _StockProps     =   79
@@ -413,7 +413,7 @@ Begin VB.Form frmCajas_Definicion
          TabIndex        =   26
          Top             =   5880
          Width           =   9495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16748
          _ExtentY        =   1720
          _StockProps     =   79
@@ -436,7 +436,7 @@ Begin VB.Form frmCajas_Definicion
             TabIndex        =   27
             Top             =   600
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   582
             _StockProps     =   77
@@ -461,7 +461,7 @@ Begin VB.Form frmCajas_Definicion
             TabIndex        =   28
             Top             =   600
             Width           =   6015
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10610
             _ExtentY        =   582
             _StockProps     =   77
@@ -486,7 +486,7 @@ Begin VB.Form frmCajas_Definicion
             TabIndex        =   56
             Top             =   240
             Width           =   6855
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   12091
             _ExtentY        =   450
             _StockProps     =   79
@@ -513,7 +513,7 @@ Begin VB.Form frmCajas_Definicion
          TabIndex        =   14
          Top             =   960
          Width           =   7815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13785
          _ExtentY        =   582
          _StockProps     =   77
@@ -537,7 +537,7 @@ Begin VB.Form frmCajas_Definicion
          TabIndex        =   15
          Top             =   480
          Width           =   6975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12303
          _ExtentY        =   661
          _StockProps     =   79
@@ -563,7 +563,7 @@ Begin VB.Form frmCajas_Definicion
          TabIndex        =   16
          Top             =   1800
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   582
          _StockProps     =   77
@@ -589,7 +589,7 @@ Begin VB.Form frmCajas_Definicion
          TabIndex        =   17
          Top             =   1800
          Width           =   2655
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4683
          _ExtentY        =   582
          _StockProps     =   77
@@ -615,7 +615,7 @@ Begin VB.Form frmCajas_Definicion
          TabIndex        =   18
          Top             =   2280
          Width           =   7815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13785
          _ExtentY        =   1191
          _StockProps     =   77
@@ -641,7 +641,7 @@ Begin VB.Form frmCajas_Definicion
          TabIndex        =   19
          Top             =   1440
          Width           =   975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   550
          _StockProps     =   77
@@ -666,7 +666,7 @@ Begin VB.Form frmCajas_Definicion
          TabIndex        =   20
          Top             =   1440
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   556
          _StockProps     =   68
@@ -688,7 +688,7 @@ Begin VB.Form frmCajas_Definicion
          TabIndex        =   21
          Top             =   3120
          Width           =   9495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16748
          _ExtentY        =   4895
          _StockProps     =   79
@@ -711,7 +711,7 @@ Begin VB.Form frmCajas_Definicion
             TabIndex        =   22
             Top             =   480
             Width           =   6372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11239
             _ExtentY        =   444
             _StockProps     =   79
@@ -737,7 +737,7 @@ Begin VB.Form frmCajas_Definicion
             TabIndex        =   23
             Top             =   1920
             Width           =   6375
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11239
             _ExtentY        =   444
             _StockProps     =   79
@@ -763,7 +763,7 @@ Begin VB.Form frmCajas_Definicion
             TabIndex        =   24
             Top             =   2280
             Width           =   7815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   13785
             _ExtentY        =   582
             _StockProps     =   77
@@ -789,7 +789,7 @@ Begin VB.Form frmCajas_Definicion
             TabIndex        =   55
             Top             =   840
             Width           =   6375
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11239
             _ExtentY        =   444
             _StockProps     =   79
@@ -815,7 +815,7 @@ Begin VB.Form frmCajas_Definicion
             TabIndex        =   57
             Top             =   1560
             Width           =   6375
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11239
             _ExtentY        =   444
             _StockProps     =   79
@@ -841,7 +841,7 @@ Begin VB.Form frmCajas_Definicion
             TabIndex        =   58
             Top             =   1200
             Width           =   6375
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11239
             _ExtentY        =   444
             _StockProps     =   79
@@ -964,7 +964,7 @@ Begin VB.Form frmCajas_Definicion
             Strikethrough   =   0   'False
          EndProperty
          MaxCols         =   5
-         SpreadDesigner  =   "frmCajas_Definicion.frx":1575
+         SpreadDesigner  =   "frmCajas_Definicion.frx":154D
          VisibleRows     =   1
          VScrollSpecialType=   2
          AppearanceStyle =   1
@@ -976,7 +976,7 @@ Begin VB.Form frmCajas_Definicion
          Top             =   1560
          Visible         =   0   'False
          Width           =   2772
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4890
          _ExtentY        =   444
          _StockProps     =   79
@@ -1001,7 +1001,7 @@ Begin VB.Form frmCajas_Definicion
          Top             =   2040
          Visible         =   0   'False
          Width           =   2772
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4890
          _ExtentY        =   444
          _StockProps     =   79
@@ -1026,7 +1026,7 @@ Begin VB.Form frmCajas_Definicion
          Top             =   2520
          Visible         =   0   'False
          Width           =   2772
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4890
          _ExtentY        =   868
          _StockProps     =   79
@@ -1051,7 +1051,7 @@ Begin VB.Form frmCajas_Definicion
          Top             =   3240
          Visible         =   0   'False
          Width           =   2772
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4890
          _ExtentY        =   444
          _StockProps     =   79
@@ -1076,7 +1076,7 @@ Begin VB.Form frmCajas_Definicion
          Top             =   3720
          Visible         =   0   'False
          Width           =   2772
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4890
          _ExtentY        =   444
          _StockProps     =   79
@@ -1102,7 +1102,7 @@ Begin VB.Form frmCajas_Definicion
          Top             =   360
          Visible         =   0   'False
          Width           =   3375
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5953
          _ExtentY        =   741
          _StockProps     =   79
@@ -1118,7 +1118,7 @@ Begin VB.Form frmCajas_Definicion
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmCajas_Definicion.frx":1C1D
+         Picture         =   "frmCajas_Definicion.frx":1BCD
       End
       Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption2 
          Height          =   495
@@ -1127,7 +1127,7 @@ Begin VB.Form frmCajas_Definicion
          Top             =   360
          Visible         =   0   'False
          Width           =   10335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18230
          _ExtentY        =   873
          _StockProps     =   14
@@ -1436,15 +1436,15 @@ Begin VB.Form frmCajas_Definicion
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   3
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Definicion.frx":233D
+            Picture         =   "frmCajas_Definicion.frx":22ED
             Key             =   "imgDocu"
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Definicion.frx":3217
+            Picture         =   "frmCajas_Definicion.frx":31C7
             Key             =   "imgFormu"
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Definicion.frx":9A79
+            Picture         =   "frmCajas_Definicion.frx":9A29
             Key             =   ""
          EndProperty
       EndProperty
@@ -1490,7 +1490,7 @@ Begin VB.Form frmCajas_Definicion
       TabIndex        =   4
       Top             =   480
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   794
       _StockProps     =   77
@@ -1512,7 +1512,7 @@ Begin VB.Form frmCajas_Definicion
    Begin VB.Image imgCopia 
       Height          =   240
       Left            =   3960
-      Picture         =   "frmCajas_Definicion.frx":9B75
+      Picture         =   "frmCajas_Definicion.frx":9B25
       ToolTipText     =   "Copiar Configuración de Cajas"
       Top             =   480
       Width           =   240
@@ -1774,7 +1774,7 @@ If vScroll Then
     
     Call OpenRecordSet(rs, strSQL)
     If Not rs.EOF And Not rs.BOF Then
-      Call sbConsulta(rs!Cod_Caja)
+      Call sbConsulta(rs!COD_CAJA)
     End If
     rs.Close
 End If
@@ -2000,7 +2000,7 @@ Do While Not rs.EOF
   Set itmX = lswAuxiliares.ListItems.Add(, , rs!Codigo)
       itmX.SubItems(1) = rs!Descripcion
 
-  If Not IsNull(rs!asignado) Then
+  If Not IsNull(rs!Asignado) Then
      itmX.Checked = True
      itmX.ForeColor = vbBlue
      itmX.ListSubItems(1).ForeColor = vbBlue
@@ -2064,7 +2064,7 @@ Select Case Item.Index
           Set itmX = lswFormasPago.ListItems.Add(, , rs!Cod_Forma_Pago)
               itmX.SubItems(1) = rs!Descripcion
           
-          If Not IsNull(rs!asignado) Then
+          If Not IsNull(rs!Asignado) Then
              itmX.Checked = True
              itmX.ForeColor = vbBlue
              itmX.ListSubItems(1).ForeColor = vbBlue
@@ -2085,10 +2085,10 @@ Select Case Item.Index
         
         Call OpenRecordSet(rs, strSQL)
         Do While Not rs.EOF
-          Set itmX = lswDocumentos.ListItems.Add(, , rs!TIPO_DOCUMENTO)
+          Set itmX = lswDocumentos.ListItems.Add(, , rs!Tipo_documento)
               itmX.SubItems(1) = rs!Descripcion
           
-          If Not IsNull(rs!asignado) Then
+          If Not IsNull(rs!Asignado) Then
              itmX.Checked = True
              itmX.ForeColor = vbBlue
              itmX.ListSubItems(1).ForeColor = vbBlue
@@ -2135,7 +2135,6 @@ Select Case UCase(Button.Key)
     Case "MODIFICAR", "EDITAR"
       vEdita = True
       Call sbToolBar(tlb, "edicion")
-      txtDescripcion.SetFocus
     
     Case "BORRAR"
       Call sbBorrar
@@ -2390,19 +2389,19 @@ If Not rs.BOF And Not rs.EOF Then
   Call sbToolBar(tlb, "activo")
   vEdita = True
 
-  txtCodigo.Text = rs!Cod_Caja
-  vCodigo = rs!Cod_Caja
+  txtCodigo.Text = rs!COD_CAJA
+  vCodigo = rs!COD_CAJA
 
   txtDescripcion.Text = rs!Descripcion
   txtDescripcion.SetFocus
   
-  txtNotas.Text = rs!NOTAS
+  txtNotas.Text = rs!Notas
  
-  chkActivo.Value = rs!Activa
+  chkActivo.Value = rs!ACTIVA
   chkAperturaCompartida.Value = rs!Apertura_Compartida
   chkMovCbrJud.Value = rs!PERMITE_MOV_CBRJUD
   chkPermiteRC.Value = rs!PERMITE_RC
-  dtpFechaApertura = Format(rs!Apertura_Fecha, "dd/mm/yyyy")
+  dtpFechaApertura = Format(rs!APERTURA_FECHA, "dd/mm/yyyy")
   
   chkBoveda.Value = rs!ROL_BOVEDA
   chkTrasladoEfectivo.Value = rs!PERMITE_TRASLADOS_EF
@@ -2445,8 +2444,8 @@ If Not rs.BOF And Not rs.EOF Then
     tcMain.Item(5).Enabled = True
     tcMain.Item(6).Enabled = True
     
-    StatusBarX.Panels.Item(1).Text = rs!Registro_Usuario & ""
-    StatusBarX.Panels.Item(2).Text = rs!Registro_Fecha & ""
+    StatusBarX.Panels.Item(1).Text = rs!REGISTRO_USUARIO & ""
+    StatusBarX.Panels.Item(2).Text = rs!REGISTRO_FECHA & ""
 
 End If
 
@@ -2555,7 +2554,7 @@ With ArbolRecaudador
         
         Do While Not rs2.EOF
             Call sbCreaNodos("0x0" & rs!COD_RECAUDADOR & "R", rs2!Descripcion, "imgDocu", True, ArbolRecaudador, "0x0" & rs2!COD_SERVICIO & "-" & i & "D")
-            If Not IsNull(rs2!asignado) Then
+            If Not IsNull(rs2!Asignado) Then
                 .Nodes.Item(.Nodes.Count).Checked = True
                 .Nodes.Item(.Nodes.Count).ForeColor = vbBlue
             Else
@@ -2592,7 +2591,7 @@ On Error GoTo vError
 
 fxGuardar = 0
 vGridRangosDivisa.Row = vGridRangosDivisa.ActiveRow
-vGridRangosDivisa.col = 1
+vGridRangosDivisa.Col = 1
 If vGridRangosDivisa.Text = "" Then vGridRangosDivisa.Text = 0
 
 strSQL = "select isnull(count(*),0) as Existe from cajas_politicas_saldos  " _
@@ -2604,31 +2603,31 @@ If rs!Existe = 0 Then 'Insertar
     strSQL = "insert into cajas_politicas_saldos(cod_caja,cod_divisa,efectivo_maximo,efectivo_minimo,documentos_maximo,documentos_minimo," _
             & "registro_usuario,registro_fecha)" _
             & " values('" & txtCodigo & "','" & UCase(vGridRangosDivisa.Text) & "',"
-    vGridRangosDivisa.col = 3
+    vGridRangosDivisa.Col = 3
     strSQL = strSQL & "" & CCur(vGridRangosDivisa.Text) & ","
-    vGridRangosDivisa.col = 4
+    vGridRangosDivisa.Col = 4
     strSQL = strSQL & CCur(vGridRangosDivisa.Text) & ","
-    vGridRangosDivisa.col = 5
+    vGridRangosDivisa.Col = 5
     strSQL = strSQL & CCur(vGridRangosDivisa.Text) & ","
-    vGridRangosDivisa.col = 6
+    vGridRangosDivisa.Col = 6
     strSQL = strSQL & CCur(vGridRangosDivisa.Text) & ",'" & glogon.Usuario & "',dbo.MyGetdate())"
     
     Call ConectionExecute(strSQL)
     
-    vGridRangosDivisa.col = 1
+    vGridRangosDivisa.Col = 1
     Call Bitacora("Registra", "Mantenimieto Rangos Divisas: " & vGridRangosDivisa.Text & " " & txtCodigo)
 
 Else 'Actualizar
     
-    vGridRangosDivisa.col = 3
+    vGridRangosDivisa.Col = 3
     strSQL = "update cajas_politicas_saldos set efectivo_maximo = " & CCur(vGridRangosDivisa.Text) & ",efectivo_minimo = " & ""
-    vGridRangosDivisa.col = 4
+    vGridRangosDivisa.Col = 4
     strSQL = strSQL & CCur(vGridRangosDivisa.Text) & ",documentos_maximo = " & ""
-    vGridRangosDivisa.col = 5
+    vGridRangosDivisa.Col = 5
     strSQL = strSQL & CCur(vGridRangosDivisa.Text) & ",documentos_minimo = " & ""
-    vGridRangosDivisa.col = 6
+    vGridRangosDivisa.Col = 6
     strSQL = strSQL & CCur(vGridRangosDivisa.Text) & "  where cod_divisa =  '"
-    vGridRangosDivisa.col = 1
+    vGridRangosDivisa.Col = 1
     strSQL = strSQL & UCase(vGridRangosDivisa.Text) & " ' and cod_caja = '" & txtCodigo.Text & "'"
        
     

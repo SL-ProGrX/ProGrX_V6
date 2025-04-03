@@ -1,36 +1,36 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCajas_Crd_AbonosCtP 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Cajas...Abonos"
-   ClientHeight    =   8130
+   ClientHeight    =   8370
    ClientLeft      =   45
    ClientTop       =   315
    ClientWidth     =   9810
+   BeginProperty Font 
+      Name            =   "Calibri"
+      Size            =   9
+      Charset         =   0
+      Weight          =   700
+      Underline       =   0   'False
+      Italic          =   0   'False
+      Strikethrough   =   0   'False
+   EndProperty
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   8130
+   ScaleHeight     =   8370
    ScaleWidth      =   9810
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin VB.Frame fraCuotas 
       BackColor       =   &H00FFFFFF&
       Caption         =   "Cuotas Activas"
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
       ForeColor       =   &H00808080&
       Height          =   2292
       Left            =   0
@@ -43,7 +43,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   3
          Top             =   600
          Width           =   9615
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16960
          _ExtentY        =   2778
          _StockProps     =   77
@@ -59,7 +59,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          Checkboxes      =   -1  'True
          View            =   3
          FullRowSelect   =   -1  'True
-         Appearance      =   16
+         Appearance      =   21
       End
       Begin XtremeSuiteControls.PushButton btnAjustes 
          Height          =   288
@@ -67,21 +67,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   5
          Top             =   240
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   508
          _StockProps     =   79
          Caption         =   "Ajustes"
          BackColor       =   -2147483633
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
          Appearance      =   6
       End
       Begin XtremeSuiteControls.CheckBox chkMarcaTodas 
@@ -90,21 +81,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   4
          Top             =   240
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
          Caption         =   "Marcar Todas"
          BackColor       =   16777215
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
          Appearance      =   16
       End
    End
@@ -114,21 +96,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       TabIndex        =   57
       Top             =   1680
       Width           =   9492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16743
       _ExtentY        =   1926
       _StockProps     =   79
       Caption         =   "Estado"
       BackColor       =   16777215
-      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
       BorderStyle     =   1
@@ -512,29 +485,66 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       End
    End
    Begin XtremeSuiteControls.GroupBox fraDatosAbono 
-      Height          =   2172
+      Height          =   2655
       Left            =   120
       TabIndex        =   34
-      Top             =   3960
-      Width           =   9492
-      _Version        =   1441793
-      _ExtentX        =   16743
-      _ExtentY        =   3831
+      Top             =   3840
+      Width           =   9495
+      _Version        =   1572864
+      _ExtentX        =   16748
+      _ExtentY        =   4683
       _StockProps     =   79
       Caption         =   "Abono:"
       BackColor       =   16777215
-      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
       BorderStyle     =   1
+      Begin XtremeSuiteControls.GroupBox gbFactura 
+         Height          =   855
+         Left            =   3600
+         TabIndex        =   78
+         Top             =   2040
+         Visible         =   0   'False
+         Width           =   5895
+         _Version        =   1572864
+         _ExtentX        =   10398
+         _ExtentY        =   1508
+         _StockProps     =   79
+         Caption         =   "Comprobante Electrónico"
+         ForeColor       =   16711680
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         BorderStyle     =   1
+         Begin XtremeSuiteControls.RadioButton rbCE_Tipo 
+            Height          =   375
+            Index           =   0
+            Left            =   1200
+            TabIndex        =   79
+            Top             =   240
+            Width           =   1935
+            _Version        =   1572864
+            _ExtentX        =   3413
+            _ExtentY        =   661
+            _StockProps     =   79
+            Caption         =   "Tiquete electrónico"
+            UseVisualStyle  =   -1  'True
+         End
+         Begin XtremeSuiteControls.RadioButton rbCE_Tipo 
+            Height          =   375
+            Index           =   1
+            Left            =   3360
+            TabIndex        =   80
+            Top             =   240
+            Width           =   1935
+            _Version        =   1572864
+            _ExtentX        =   3413
+            _ExtentY        =   661
+            _StockProps     =   79
+            Caption         =   "Factura electrónica"
+            UseVisualStyle  =   -1  'True
+            Value           =   -1  'True
+         End
+      End
       Begin MSComCtl2.FlatScrollBar FlatScrollBar 
          Height          =   252
          Left            =   2760
@@ -553,21 +563,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   36
          Top             =   1320
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   444
          _StockProps     =   79
          Caption         =   "Recalcular Cuota?"
          BackColor       =   16777215
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   16
          Alignment       =   1
@@ -578,21 +579,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   37
          Top             =   840
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3836
          _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   1973790
          BackColor       =   16777215
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
          Style           =   2
          Appearance      =   6
          UseVisualStyle  =   0   'False
@@ -604,7 +596,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   48
          Top             =   240
          Width           =   852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
@@ -631,7 +623,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   49
          Top             =   600
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -657,7 +649,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   50
          Top             =   960
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -683,7 +675,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   51
          Top             =   1320
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -709,7 +701,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   52
          Top             =   1680
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -729,13 +721,13 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          Appearance      =   6
          UseVisualStyle  =   0   'False
       End
-      Begin XtremeSuiteControls.FlatEdit txtPolizas 
-         Height          =   312
-         Left            =   5040
+      Begin XtremeSuiteControls.FlatEdit txtIVA 
+         Height          =   315
+         Left            =   4920
          TabIndex        =   53
          Top             =   600
-         Width           =   1692
-         _Version        =   1441793
+         Width           =   1695
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -756,12 +748,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtDiferencia 
-         Height          =   312
-         Left            =   5040
+         Height          =   315
+         Left            =   4920
          TabIndex        =   54
          Top             =   1680
-         Width           =   1692
-         _Version        =   1441793
+         Width           =   1695
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -782,12 +774,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtTotalCancela 
-         Height          =   312
-         Left            =   5040
+         Height          =   315
+         Left            =   4920
          TabIndex        =   55
          Top             =   960
-         Width           =   1692
-         _Version        =   1441793
+         Width           =   1695
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -808,12 +800,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtTotalPagar 
-         Height          =   312
-         Left            =   5040
+         Height          =   315
+         Left            =   4920
          TabIndex        =   56
          Top             =   1320
-         Width           =   1692
-         _Version        =   1441793
+         Width           =   1695
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -835,6 +827,32 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          Appearance      =   6
          UseVisualStyle  =   0   'False
       End
+      Begin XtremeSuiteControls.FlatEdit txtPolizas 
+         Height          =   315
+         Left            =   1680
+         TabIndex        =   75
+         Top             =   2040
+         Width           =   1695
+         _Version        =   1572864
+         _ExtentX        =   2984
+         _ExtentY        =   550
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Text            =   "0"
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
       Begin VB.Label Label26 
          BackStyle       =   0  'Transparent
          Caption         =   "Ctas.Pólizas..:"
@@ -847,16 +865,16 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
-         Index           =   3
-         Left            =   3720
-         TabIndex        =   47
-         Top             =   600
-         Width           =   1212
+         Height          =   255
+         Index           =   4
+         Left            =   240
+         TabIndex        =   76
+         Top             =   2040
+         Width           =   1215
       End
       Begin VB.Label Label26 
          BackStyle       =   0  'Transparent
-         Caption         =   "C. Pago Anticipado"
+         Caption         =   "IVA..:"
          BeginProperty Font 
             Name            =   "Calibri"
             Size            =   9
@@ -866,12 +884,33 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   495
+         Height          =   255
+         Index           =   3
+         Left            =   3600
+         TabIndex        =   47
+         ToolTipText     =   "Impuesto Valor Agregado"
+         Top             =   600
+         Width           =   1215
+      End
+      Begin VB.Label Label26 
+         BackStyle       =   0  'Transparent
+         Caption         =   "C. Pago Antic."
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
          Index           =   1
          Left            =   240
          TabIndex        =   46
+         ToolTipText     =   "Cargo por Pago/Cancelación Anticipada"
          Top             =   1680
-         Width           =   1455
+         Width           =   1695
       End
       Begin VB.Label Label27 
          BackStyle       =   0  'Transparent
@@ -885,12 +924,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Index           =   1
-         Left            =   3720
+         Left            =   3600
          TabIndex        =   45
          Top             =   1680
-         Width           =   972
+         Width           =   975
       End
       Begin VB.Label Label26 
          BackStyle       =   0  'Transparent
@@ -923,12 +962,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Index           =   1
-         Left            =   3720
+         Left            =   3600
          TabIndex        =   43
          Top             =   960
-         Width           =   1212
+         Width           =   1215
       End
       Begin VB.Label Label24 
          BackStyle       =   0  'Transparent
@@ -942,12 +981,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Index           =   0
-         Left            =   3720
+         Left            =   3600
          TabIndex        =   42
          Top             =   1320
-         Width           =   1212
+         Width           =   1215
       End
       Begin VB.Label Label25 
          BackStyle       =   0  'Transparent
@@ -1035,7 +1074,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       Height          =   255
       Left            =   0
       TabIndex        =   0
-      Top             =   7875
+      Top             =   8115
       Width           =   9810
       _ExtentX        =   17304
       _ExtentY        =   450
@@ -1102,16 +1141,25 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       EndProperty
    End
    Begin XtremeSuiteControls.GroupBox fraFormaPago 
-      Height          =   1572
+      Height          =   1575
       Left            =   120
       TabIndex        =   6
-      Top             =   6240
-      Width           =   9492
-      _Version        =   1441793
+      Top             =   6600
+      Width           =   9495
+      _Version        =   1572864
       _ExtentX        =   16743
       _ExtentY        =   2773
       _StockProps     =   79
       BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
       BorderStyle     =   1
@@ -1121,21 +1169,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   7
          Top             =   240
          Width           =   2772
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4895
          _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BackColor       =   16777215
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
          Style           =   2
          Appearance      =   6
          UseVisualStyle  =   0   'False
@@ -1147,20 +1186,11 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   8
          Top             =   240
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
          Alignment       =   1
          Locked          =   -1  'True
          Appearance      =   6
@@ -1172,7 +1202,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   9
          Top             =   600
          Width           =   5412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9546
          _ExtentY        =   1397
          _StockProps     =   77
@@ -1198,12 +1228,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   10
          Top             =   600
          Width           =   852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   1397
          _StockProps     =   79
          Caption         =   "Pago"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1225,12 +1255,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   11
          Top             =   600
          Width           =   852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   1397
          _StockProps     =   79
          Caption         =   "Aplicar"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1252,12 +1282,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   12
          Top             =   600
          Width           =   972
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   1397
          _StockProps     =   79
          Caption         =   "Cancelar"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1272,18 +1302,26 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          Picture         =   "frmCajas_Crd_AbonosCtP.frx":8D58
          TextImageRelation=   1
       End
+      Begin XtremeSuiteControls.CheckBox chkReciboDigital 
+         Height          =   255
+         Left            =   7080
+         TabIndex        =   77
+         ToolTipText     =   "Enviar Recibo Digital"
+         Top             =   240
+         Width           =   1935
+         _Version        =   1572864
+         _ExtentX        =   3408
+         _ExtentY        =   444
+         _StockProps     =   79
+         Caption         =   "Recibo Digital?"
+         BackColor       =   16777215
+         Enabled         =   0   'False
+         UseVisualStyle  =   -1  'True
+         Appearance      =   16
+      End
       Begin VB.Label Label3 
          BackStyle       =   0  'Transparent
          Caption         =   "Documento ..:"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
          Height          =   252
          Index           =   1
          Left            =   120
@@ -1294,15 +1332,6 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       Begin VB.Label Label3 
          BackStyle       =   0  'Transparent
          Caption         =   "Notas ..:"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
          Height          =   252
          Index           =   3
          Left            =   120
@@ -1313,15 +1342,6 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       Begin VB.Label Label3 
          BackStyle       =   0  'Transparent
          Caption         =   "Total ..:"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
          Height          =   252
          Index           =   4
          Left            =   4080
@@ -1336,11 +1356,20 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       TabIndex        =   16
       Top             =   2880
       Width           =   9492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16743
       _ExtentY        =   1714
       _StockProps     =   79
       BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Appearance      =   16
       BorderStyle     =   1
       Begin XtremeSuiteControls.DateTimePicker dtpFechaCancelacion 
@@ -1349,19 +1378,10 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   17
          Top             =   600
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
          CustomFormat    =   "dd/MM/yyyy"
          Format          =   3
       End
@@ -1372,21 +1392,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   18
          Top             =   120
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
          Caption         =   "Ordinario"
          BackColor       =   -2147483633
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
          Appearance      =   6
       End
       Begin XtremeSuiteControls.PushButton optAbono 
@@ -1396,21 +1407,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   19
          Top             =   120
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
          Caption         =   "Extraordinario"
          BackColor       =   -2147483633
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
          Appearance      =   6
       End
       Begin XtremeSuiteControls.PushButton optAbono 
@@ -1420,21 +1422,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   20
          Top             =   120
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
          Caption         =   "Cancelación"
          BackColor       =   -2147483633
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
          Appearance      =   6
       End
       Begin XtremeSuiteControls.PushButton optAbono 
@@ -1444,21 +1437,12 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   23
          Top             =   120
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
          Caption         =   "Adelanto"
          BackColor       =   -2147483633
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
          Appearance      =   6
       End
       Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption2 
@@ -1467,14 +1451,14 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          TabIndex        =   22
          Top             =   120
          Width           =   9492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16743
          _ExtentY        =   656
          _StockProps     =   14
          Caption         =   "Tipo de Abono:"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   8.93
+            Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1486,15 +1470,6 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
          Alignment       =   1  'Right Justify
          BackStyle       =   0  'Transparent
          Caption         =   "Fecha de Abono (Real) por parte del cliente para cancelación...:"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
          Height          =   252
          Left            =   1560
          TabIndex        =   21
@@ -1508,7 +1483,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       TabIndex        =   24
       Top             =   120
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   656
       _StockProps     =   77
@@ -1532,7 +1507,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       TabIndex        =   25
       Top             =   120
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   656
       _StockProps     =   77
@@ -1558,7 +1533,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       Top             =   120
       Visible         =   0   'False
       Width           =   1095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1931
       _ExtentY        =   661
       _StockProps     =   79
@@ -1582,7 +1557,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       TabIndex        =   27
       Top             =   840
       Width           =   5415
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9551
       _ExtentY        =   556
       _StockProps     =   77
@@ -1606,7 +1581,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       TabIndex        =   28
       Top             =   1200
       Width           =   4815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8493
       _ExtentY        =   556
       _StockProps     =   77
@@ -1630,7 +1605,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       TabIndex        =   29
       Top             =   840
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   556
       _StockProps     =   77
@@ -1654,7 +1629,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       TabIndex        =   30
       Top             =   1200
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   556
       _StockProps     =   77
@@ -1678,7 +1653,7 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       TabIndex        =   31
       Top             =   1200
       Width           =   615
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   550
       _StockProps     =   77
@@ -1749,15 +1724,6 @@ Begin VB.Form frmCajas_Crd_AbonosCtP
       BackColor       =   &H00E0E0E0&
       BackStyle       =   0  'Transparent
       Caption         =   "Operación"
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
       ForeColor       =   &H00FFFFFF&
       Height          =   312
       Left            =   480
@@ -1785,6 +1751,7 @@ Dim vRetencion As Boolean, vBaseCalculo As String, vPrideduc As Long, vAnticipoP
 Dim vDiasActivo As Long, vFechaHoy As Date, vScroll As Boolean
 Dim pCharRelleno As String, mControl As Currency
 
+Dim mIVA_Aplica As Boolean, mIVA_Porc As Currency
 
 Private Sub btnAjustes_Click()
   GLOBALES.gTag = txtOperacion.Text
@@ -1833,6 +1800,15 @@ Select Case Index
         Else
            txtTotalCajas.BackColor = vbWhite
         End If
+
+        If ModuloCajas.mReciboDigital Then
+            chkReciboDigital.Enabled = True
+            chkReciboDigital.Value = xtpChecked
+        Else
+            chkReciboDigital.Enabled = False
+            chkReciboDigital.Value = xtpUnchecked
+        End If
+
 
   Case 1   'Aplicar
     Call CmdAplicar_Click
@@ -1899,7 +1875,6 @@ vFecha = fxFechaServidor
 vExtraOrdinario = False
 
 vTipoDoc = cboTipoDoc.ItemData(cboTipoDoc.ListIndex)
-
 vNumDoc = fxDocumentoConsecutivo(vTipoDoc)
 
 
@@ -1960,7 +1935,7 @@ Select Case True
         
         strSQL = "exec spCrdPlanPagoAbonoEC " & vOperacion & ",'CRD002','" & glogon.Usuario & "','" & vTipoDoc _
                & "','" & vNumDoc & "'," & vDiasActivo & "," & CCur(txtDatosInteres.Text) & "," & CCur(txtDatosAmortiza.Text) _
-               & ",0,'" & Format(vFecha, "yyyy/mm/dd") & "',''," & chkRecalculaCuota.Value
+               & ",0,'" & Format(vFecha, "yyyy/mm/dd") & "',''," & chkRecalculaCuota.Value & ", 1, 0, " & CCur(txtIVA.Text)
         Call ConectionExecute(strSQL)
 
         vExtraOrdinario = True
@@ -2064,13 +2039,56 @@ Select Case True
 End Select
 
 
+'Documento Electrónica
+
+Dim pDocumentoElectronico As String
+
+pDocumentoElectronico = ""
+
+If gbFactura.Visible Then
+    
+    If rbCE_Tipo(0).Value Then
+        'Tiquete
+        strSQL = "exec spCajas_Credito_TE '" & vTipoDoc & "', '" & vNumDoc & "', 'T'"
+        pDocumentoElectronico = "Tiquete Electrónico --> Emitido!"
+    Else
+        'Factura
+        strSQL = "exec spCajas_Credito_TE '" & vTipoDoc & "', '" & vNumDoc & "', 'F'"
+        pDocumentoElectronico = "Factura Electrónica --> Emitida!"
+    End If
+    
+    Call ConectionExecute(strSQL)
+
+End If
+
+
 'IMPRIMIR RECIBO
-Call sbImprimeRecibo(vNumDoc, vTipoDoc)
+If chkReciboDigital.Enabled And chkReciboDigital.Value = xtpChecked Then
+    strSQL = "exec spCajasReciboDigital '" & vNumDoc & "', '" & vTipoDoc & "', 'Creditos'"
+    Call ConectionExecute(strSQL)
+    
+    strSQL = pDocumentoElectronico & vbCrLf & vbCrLf _
+           & ">>> Recibo Digital enviado al cliente <<<" & vbCrLf _
+           & " - Abono aplicado, con : " & cboTipoDoc.Text & " ...No.: " & vNumDoc & vbCrLf _
+           & " - Desea Realizar Otra Transacción a esta Operación ?"
+
+Else
+    Call sbImprimeRecibo(vNumDoc, vTipoDoc)
+
+    strSQL = pDocumentoElectronico & vbCrLf & vbCrLf _
+           & " - Abono aplicado, con : " & cboTipoDoc.Text & " ...No.: " & vNumDoc & vbCrLf _
+           & " - Desea Realizar Otra Transacción a esta Operación ?"
+
+End If
+
+If vTipoDoc = "CA" Then
+    Call sbTrazabilidad_Inserta("07", vNumDoc, vNumDoc)
+Else
+    Call sbTrazabilidad_Inserta("05", vNumDoc & "-" & vTipoDoc, vNumDoc)
+End If
 
 Me.MousePointer = vbDefault
 
-strSQL = " - Abono aplicado, con : " & cboTipoDoc.Text & " ...No.: " & vNumDoc & vbCrLf _
-       & " - Desea Realizar Otra Transacción a esta Operación ?"
 
 i = MsgBox(strSQL, vbYesNo)
 If i = vbYes Then
@@ -2217,6 +2235,23 @@ End If
 If fxCajasAperturaEstado = "C" Then
    vMensaje = vMensaje & "- La apertura ..:" & ModuloCajas.mApertura & " de esta caja ha sido cerrada!" & vbCrLf
 End If
+
+ 'Cajas: Validación General sobre el Estado de la Caja, Aperturas, Sesiones, y Accesos
+ With ModuloCajas
+     strSQL = "exec spCajas_Transac_Validacion '" & .mCaja & "', '" & glogon.Usuario & "', " & .mApertura & ", " & .mSesionId _
+            & ", 'Crd', '" & Trim(txtCodigo.Text) & "', " & CCur(txtTotalCajas.Text) & ", '" & .mTiquete & "'"
+ End With
+ 
+ Call OpenRecordSet(rs, strSQL)
+ 
+ If Len(rs!Advertencias) > 0 Then
+    MsgBox rs!Advertencias, vbExclamation, "Advertencias!"
+ End If
+ 
+ If Len(rs!Validacion) > 0 Then
+    vMensaje = vMensaje & rs!Validacion
+ End If
+
 
 If Len(vMensaje) = 0 Then
   fxVerifica = True
@@ -2404,6 +2439,7 @@ Call sbCbo_Llena_New(cboTipoDoc, strSQL, False, True)
 
 
 ModuloCajas.mServicio = "Abonos a Operaciones de Crédito"
+ModuloCajas.mReciboDigital = False
 
 If IsNumeric(ModuloCajas.mRef_01) Then
     txtOperacion.Text = ModuloCajas.mRef_01
@@ -2412,7 +2448,7 @@ If IsNumeric(ModuloCajas.mRef_01) Then
 End If
 
 
-If ModuloCajas.mSesionId = 0 Then
+If ModuloCajas.mSesionId = 0 Or ModuloCajas.mClienteId <> ModuloCajas.mSesionCedula Then
    Call sbFormsCall("frmCajas_Sesion", vbModal, , , False, Me)
    If ModuloCajas.mSesionId = 0 Then
         MsgBox "No se ha iniciado ninguna sesión de Cliente para esta caja!", vbExclamation
@@ -2420,8 +2456,6 @@ If ModuloCajas.mSesionId = 0 Then
         Exit Sub
    End If
 End If
-
-
 
 End Sub
 
@@ -2460,6 +2494,7 @@ With lsw.ColumnHeaders
     .Add , , "Principal", 1300, vbRightJustify
     .Add , , "Cargos", 1200, vbRightJustify
     .Add , , "Pólizas", 1200, vbRightJustify
+    .Add , , "IVA", 1200, vbRightJustify
     .Add , , "Dias.Cor.", 1100, vbCenter
     .Add , , "Dias.Mor.", 1100, vbCenter
     .Add , , "Corte Cta", 1400, vbCenter
@@ -2486,19 +2521,21 @@ Me.MousePointer = vbHourglass
 
 Call sbLimpiaDatos
  
+ 
 strSQL = "select R.id_solicitud,R.saldo, R.saldo - isnull(V.amortiza,0) As Saldo_mes,R.proceso, isnull(R.cod_Divisa,'COL') as 'Divisa'" _
-       & ",R.interesv,R.int,R.plazo,R.interesc,R.amortiza,R.fecult,R.Prideduc" _
-       & ",R.opex,R.cuota,R.codigo,R.cedula,R.cuotas_planilla,R.cuotas_directas, datediff(m,R.fechaforp,dbo.MyGetdate()) as 'Meses'" _
-       & ",S.nombre,C.descripcion,C.retencion,C.poliza,R.fechaforp,C.PORC_CARGO_CANCELACION,C.ANTICIPO_MESES,R.Base_Calculo" _
-       & ",dbo.fxCrdPlanPagosDiasActivo(" & vOperacion & ") as 'DiasActivo', dbo.fxCrdOperacionTagReg(R.id_solicitud,'S15') as 'AutPagoAnt'" _
-       & ",C.descripcion as 'LineaDesc',Ofi.descripcion as 'OficinaDesc',Pre.Descripcion as 'RecursoDesc',dbo.MyGetdate() as 'FechaServer'" _
-       & ",dbo.fxCajas_Valida_Auxiliar('" & ModuloCajas.mCaja & "','CRD',R.Codigo) as 'Caja_Valida_Concepto'" _
+       & ", R.interesv,R.int,R.plazo,R.interesc,R.amortiza,R.fecult,R.Prideduc, isnull(C.Impuesto,0) as 'IVA_Aplica'" _
+       & ", R.opex,R.cuota,R.codigo,R.cedula,R.cuotas_planilla,R.cuotas_directas, datediff(m,R.fechaforp,dbo.MyGetdate()) as 'Meses'" _
+       & ", S.nombre,C.descripcion,C.retencion,C.poliza,R.fechaforp,C.PORC_CARGO_CANCELACION,C.ANTICIPO_MESES,R.Base_Calculo" _
+       & ", dbo.fxCrdPlanPagosDiasActivo(" & vOperacion & ") as 'DiasActivo', dbo.fxCrdOperacionTagReg(R.id_solicitud,'S15') as 'AutPagoAnt'" _
+       & ", C.descripcion as 'LineaDesc',Ofi.descripcion as 'OficinaDesc',Pre.Descripcion as 'RecursoDesc',dbo.MyGetdate() as 'FechaServer'" _
+       & ", dbo.fxCajas_Valida_Auxiliar('" & ModuloCajas.mCaja & "','CRD',R.Codigo) as 'Caja_Valida_Concepto'" _
        & ", dbo.fxCrd_Operacion_Control(R.id_solicitud) as 'Control'" _
+       & ", dbo.fxCrd_IVA_Porc() as 'IVA_Porc'" _
        & " from reg_creditos R inner join Catalogo C on R.codigo = C.codigo " _
        & " inner join Socios S on R.cedula = S.cedula" _
-       & " left join Sif_Oficinas Ofi on R.cod_Oficina_R = Ofi.cod_Oficina" _
-       & " left join CATALOGO_GRUPOS Pre on R.cod_grupo = Pre.cod_grupo" _
-       & " left join vista_morosidad V on R.id_solicitud = V.id_solicitud" _
+       & "  left join Sif_Oficinas Ofi on R.cod_Oficina_R = Ofi.cod_Oficina" _
+       & "  left join CATALOGO_GRUPOS Pre on R.cod_grupo = Pre.cod_grupo" _
+       & "  left join vista_morosidad V on R.id_solicitud = V.id_solicitud" _
        & " where R.estado = 'A' and R.saldo > 0" _
        & " and R.ID_SOLICITUD = " & vOperacion
        
@@ -2511,9 +2548,17 @@ If Not rs.EOF And Not rs.BOF Then
     
     mControl = rs!Control
     
+    mIVA_Aplica = IIf((rs!IVA_Aplica = 1), True, False)
+    
+    If mIVA_Aplica Then
+        mIVA_Porc = rs!IVA_PORC
+    Else
+        mIVA_Porc = 0
+    End If
+    
     ModuloCajas.mClienteId = Trim(rs!Cedula)
     ModuloCajas.mCliente = Trim(rs!Nombre)
-    ModuloCajas.mTiquete = Trim(rs!Codigo) & "." & rs!Id_Solicitud & "." & Format(Time, "HH:mm:ss")
+    ModuloCajas.mTiquete = Trim(rs!Codigo) & "." & rs!ID_SOLICITUD & "." & Format(Time, "HH:mm:ss")
     
     ModuloCajas.mDivisa = RTrim(rs!Divisa)
     ModuloCajas.mConceptoValida = IIf((rs!Caja_Valida_Concepto > 0), True, False)
@@ -2522,10 +2567,13 @@ If Not rs.EOF And Not rs.BOF Then
     txtTotalCajas.Text = 0
     
     
+    ModuloCajas.mReciboDigital = False
+    chkReciboDigital.Value = xtpUnchecked
+    chkReciboDigital.Enabled = False
     
   vBaseCalculo = Trim(rs!Base_Calculo)
   vPrideduc = rs!PriDeduc
-  vOperacion = rs!Id_Solicitud
+  vOperacion = rs!ID_SOLICITUD
   vPlazo = rs!Plazo
   vDiasActivo = rs!DiasActivo
   
@@ -2539,12 +2587,12 @@ If Not rs.EOF And Not rs.BOF Then
   vInteres = IIf(IsNull(rs!interesv), rs!Int, rs!interesv)
   If IsNull(rs!saldo_mes) Then
     vSaldoMes = rs!Saldo
-    strSQL = "update reg_creditos set saldo_mes = saldo where id_solicitud = " & rs!Id_Solicitud
+    strSQL = "update reg_creditos set saldo_mes = saldo where id_solicitud = " & rs!ID_SOLICITUD
     Call ConectionExecute(strSQL)
   Else
     If rs!saldo_mes = 0 Then
         vSaldoMes = rs!Saldo
-        strSQL = "update reg_creditos set saldo_mes = saldo where id_solicitud = " & rs!Id_Solicitud
+        strSQL = "update reg_creditos set saldo_mes = saldo where id_solicitud = " & rs!ID_SOLICITUD
         Call ConectionExecute(strSQL)
     Else
        vSaldoMes = rs!saldo_mes
@@ -2574,7 +2622,7 @@ If Not rs.EOF And Not rs.BOF Then
      lblSaldoR.Caption = 0
     
      txtCuotas = 0
-     txtOperacion = rs!Id_Solicitud
+     txtOperacion = rs!ID_SOLICITUD
 
      fraAbono.Enabled = True
      fraDatosAbono.Enabled = False
@@ -2593,7 +2641,7 @@ If Not rs.EOF And Not rs.BOF Then
     End Select
     
     
-    txtDescripcion.Text = rs!DESCRIPCION
+    txtDescripcion.Text = rs!Descripcion
     
     txtDatosAnticipo.ToolTipText = "% de Comision : " & vAnticipoPorc
     txtDatosAnticipo.Tag = vAnticipoPorc
@@ -2616,7 +2664,7 @@ If Not rs.EOF And Not rs.BOF Then
        
     'Consulta Cuotas Activas
     strSQL = "select * from CRD_OPERACION_TRANSAC" _
-           & " where estado = 'A' and id_solicitud = " & rs!Id_Solicitud _
+           & " where estado = 'A' and id_solicitud = " & rs!ID_SOLICITUD _
            & "  and Fecha_Inicio < dbo.MyGetdate()" _
            & " order by ID_SEQ asc"
       
@@ -2634,9 +2682,10 @@ If Not rs.EOF And Not rs.BOF Then
           itmX.SubItems(7) = Format(rs!Principal, "Standard")
           itmX.SubItems(8) = Format(rs!Cargos, "Standard")
           itmX.SubItems(9) = Format(rs!Poliza, "Standard")
-          itmX.SubItems(10) = rs!Dias_calculo
-          itmX.SubItems(11) = rs!Mora_Dias
-          itmX.SubItems(12) = Format(rs!Fecha_Corte, "yyyy/mm/dd")
+          itmX.SubItems(10) = Format(rs!IVA, "Standard")
+          itmX.SubItems(11) = rs!Dias_calculo
+          itmX.SubItems(12) = rs!Mora_Dias
+          itmX.SubItems(13) = Format(rs!fecha_corte, "yyyy/mm/dd")
           
           itmX.Tag = rs!Id_seq
       rs.MoveNext
@@ -2675,6 +2724,8 @@ Else
  vPlazo = 0
  vInteres = 0
  vSaldoMes = 0
+ 
+ 
  MsgBox "No se Encontró operación para abonos,puede que se encuentre cancelada ", vbInformation
 
 End If
@@ -2704,7 +2755,7 @@ Private Sub sbLimpiaDatos()
  lblSaldo.Caption = 0
  lblSaldoR.Caption = 0
  
- txtPolizas.Text = 0
+ txtIVA.Text = 0
  
  txtCedula = ""
  txtCodigo = ""
@@ -2784,7 +2835,7 @@ strSQL = "select R.id_solicitud,R.saldo,R.saldo_mes,R.interesv,R.int,R.plazo,R.i
 rs.CursorLocation = adUseServer
 Call OpenRecordSet(rs, strSQL)
 If Not rs.EOF And Not rs.BOF Then
-  vOperacion = rs!Id_Solicitud
+  vOperacion = rs!ID_SOLICITUD
   vPlazo = rs!Plazo
   vInteres = IIf(IsNull(rs!interesv), rs!Int, rs!interesv)
   vSaldoMes = IIf(IsNull(rs!saldo_mes), rs!Saldo, rs!saldo_mes)
@@ -2808,7 +2859,7 @@ If Not rs.EOF And Not rs.BOF Then
      lblSaldo.Caption = Format(vSaldoMes, "Standard")
      lblSaldoR.Caption = 0
      txtCuotas = 0
-     txtOperacion = rs!Id_Solicitud
+     txtOperacion = rs!ID_SOLICITUD
 
      fraAbono.Enabled = True
      fraDatosAbono.Enabled = False
@@ -2848,6 +2899,16 @@ rs.Close
 
 End Sub
 
+
+
+Private Sub Form_Unload(Cancel As Integer)
+'Mantiene o no la Sesion
+If ModuloCajas.mSesionId > 0 Then
+   Call sbFormsCall("frmCajas_Sesion", vbModal, , , False, Me)
+End If
+
+End Sub
+
 Private Sub imgDocumento_Click()
   frmCR_AbonosComprobante.Show vbModal
 End Sub
@@ -2856,13 +2917,15 @@ End Sub
 
 
 Private Sub lsw_ItemCheck(ByVal Item As XtremeSuiteControls.ListViewItem)
-Dim curInteres As Currency, curPrincipal As Currency, curCargos As Currency, curPolizas As Currency
+Dim curInteres As Currency, curPrincipal As Currency
+Dim curCargos As Currency, curPolizas As Currency, curIVA As Currency
 Dim i As Integer
 
 curInteres = 0
 curPrincipal = 0
 curCargos = 0
 curPolizas = 0
+curIVA = 0
 
 With lsw.ListItems
   For i = 1 To .Count
@@ -2871,6 +2934,7 @@ With lsw.ListItems
        curPrincipal = curPrincipal + CCur(.Item(i).SubItems(7))
        curCargos = curCargos + CCur(.Item(i).SubItems(8))
        curPolizas = curPolizas + CCur(.Item(i).SubItems(9))
+       curIVA = curIVA + CCur(.Item(i).SubItems(10))
     End If
   Next i
 End With
@@ -2879,9 +2943,10 @@ txtDatosAmortiza.Text = Format(curPrincipal, "Standard")
 txtDatosInteres.Text = Format(curInteres, "Standard")
 txtDatosCargos.Text = Format(curCargos, "Standard")
 txtPolizas.Text = Format(curPolizas, "Standard")
+txtIVA.Text = Format(curIVA, "Standard")
 txtDatosAnticipo.Text = 0
 
-txtTotalPagar.Text = Format(curPrincipal + curInteres + curCargos + curPolizas, "Standard")
+txtTotalPagar.Text = Format(curPrincipal + curInteres + curCargos + curPolizas + curIVA, "Standard")
 txtTotalCancela.Text = txtTotalPagar.Text
 
 End Sub
@@ -2922,11 +2987,33 @@ If ModuloCajas.mApertura = 0 Or ModuloCajas.mApertura = Empty Then
    Exit Sub
 End If
 
+If ModuloCajas.mSesionId = 0 Or ModuloCajas.mSesionId = Empty Then
+   Unload Me
+   Exit Sub
+End If
+
+
 Call optAbono_Click(0)
 
 End Sub
 
 
+
+
+
+Private Sub txtIVA_Change()
+
+On Error GoTo vError
+
+If CCur(txtIVA.Text) > 0 Then
+    gbFactura.Visible = True
+Else
+    gbFactura.Visible = False
+End If
+
+vError:
+
+End Sub
 
 Private Sub txtTotalPagar_Change()
 Dim strSQL As String, rs As New ADODB.Recordset
@@ -3004,7 +3091,7 @@ Select Case Index
    txtDatosCargos.Text = 0
    txtDatosInteres.Text = 0
    txtDatosAnticipo.Text = 0
-   txtPolizas.Text = 0
+   txtIVA.Text = 0
    txtDatosAmortiza = 0
       
    txtTotalCancela.Text = 0
@@ -3028,7 +3115,7 @@ Select Case Index
    txtDatosInteres.Text = 0
    txtDatosAnticipo.Text = 0
    txtDatosCargos.Text = 0
-   txtPolizas.Text = 0
+   txtIVA.Text = 0
    
   
    txtDatosAmortiza.Text = 0
@@ -3062,7 +3149,9 @@ Case 2 'Cancelación
     txtDatosCargos.Text = Format(rs!Cargos, "Standard")
     txtDatosAnticipo.Text = Format(rs!CargoAnticipo, "Standard")
     txtPolizas.Text = Format(rs!Poliza, "Standard")
-    txtTotalPagar.Text = Format(rs!Principal + rs!IntCor + rs!IntMor + rs!Cargos + rs!CargoAnticipo + rs!Poliza, "Standard")
+    txtIVA.Text = Format(rs!IVA, "Standard")
+    
+    txtTotalPagar.Text = Format(rs!Principal + rs!IntCor + rs!IntMor + rs!Cargos + rs!CargoAnticipo + rs!Poliza + rs!IVA, "Standard")
     txtTotalCancela.Text = txtTotalPagar.Text
    rs.Close
    
@@ -3077,6 +3166,7 @@ Case 2 'Cancelación
    txtDatosCargos.Text = 0
    txtDatosInteres.Text = 0
    txtPolizas.Text = 0
+   txtIVA.Text = 0
    txtDatosAmortiza.Text = 0
    
    txtCuotas.Enabled = True
@@ -3258,13 +3348,15 @@ End If
 If lngCuotas <= 0 Then lngCuotas = 1
 
 strSQL = "select isnull(max(id_Seq),0) as 'SeqX', isnull(sum(IntCor + IntMor),0) as 'IntCor', isnull(sum(Principal),0) as 'Principal'" _
-       & ",isnull(min(Saldo_Actual),0) as 'Saldo', isnull(max(Fecha_Proceso),0) as 'Fecha_Proceso', isnull(sum(Poliza),0) as 'Poliza'" _
+       & ",isnull(min(Saldo_Actual),0) as 'Saldo', isnull(max(Fecha_Proceso),0) as 'Fecha_Proceso', isnull(sum(Poliza),0) as 'Poliza', isnull(sum(IVA),0) as 'IVA'" _
        & " from CRD_OPERACION_PLAN_PAGOS where id_solicitud = " & vOperacion _
        & " and Id_Seq in(select Top " & lngCuotas & " Id_Seq from CRD_OPERACION_PLAN_PAGOS" _
        & " where estado in('A','P') and id_solicitud = " & vOperacion & " and num_cuota > 0  order by num_cuota)"
 Call OpenRecordSet(rs, strSQL)
     txtDatosInteres.Text = Format(rs!IntCor, "Standard")
+    txtIVA.Text = Format(rs!IVA, "Standard")
     txtPolizas.Text = Format(rs!Poliza, "Standard")
+
     lblFecUltMovR.Caption = rs!Fecha_Proceso
     
     If Not vRetencion Then 'El proceso nuevo de retenciones no toca los saldos
@@ -3308,8 +3400,8 @@ lblAmortizaR.Caption = Format(CCur(lblAmortiza.Caption) + CCur(txtDatosAmortiza)
 lblInteresR.Caption = Format(CCur(lblInteres.Caption) + CCur(txtDatosInteres), "Standard")
 
 
-txtTotalPagar.Text = Format(CCur(txtDatosAmortiza) + CCur(txtDatosInteres.Text) + CCur(txtPolizas.Text) _
-                + CCur(txtDatosAnticipo.Text) + CCur(txtDatosCargos.Text), "Standard")
+txtTotalPagar.Text = Format(CCur(txtDatosAmortiza) + CCur(txtDatosInteres.Text) + CCur(txtIVA.Text) + CCur(txtPolizas.Text) _
+                   + CCur(txtDatosAnticipo.Text) + CCur(txtDatosCargos.Text), "Standard")
 txtTotalCancela.Text = txtTotalPagar.Text
 txtDiferencia.Text = "0.00"
 
@@ -3356,7 +3448,8 @@ Private Sub sbDocumentoAbono(pTipoAbono As String, pTipoDoc As String, pNumDoc A
 Dim rs As New ADODB.Recordset, strSQL As String, strLinea(11) As String
 Dim strCliente As String, vCuenta As String
 Dim rsTmp As New ADODB.Recordset, vCuentaPoliza As String, pTipoCambio As Currency
-Dim curIntC As Currency, curIntM As Currency, curCargo As Currency, curAmortiza As Currency, curPoliza As Currency
+Dim curIntC As Currency, curIntM As Currency, curAmortiza As Currency
+Dim curCargo As Currency, curPoliza As Currency, curIVA As Currency
 
 vCuenta = pCuenta
 
@@ -3375,12 +3468,14 @@ If rsTmp.EOF And rsTmp.BOF Then
   curAmortiza = 0
   curCargo = 0
   curPoliza = 0
+  curIVA = 0
 Else
   curIntC = rsTmp!IntCor
   curIntM = rsTmp!IntMor
   curAmortiza = rsTmp!Principal
   curCargo = rsTmp!Cargos
   curPoliza = rsTmp!Polizas
+  curIVA = rsTmp!IVA
 End If
 rsTmp.Close
 
@@ -3413,37 +3508,39 @@ Call OpenRecordSet(rsTmp, strSQL, 0)
   strLinea(10) = "Notas: " & rsTmp!Notas & ""
 rsTmp.Close
       
-
-If dtpFechaCancelacion.Enabled Then
-   strLinea(11) = "Fecha Real Abono  ..: " & Format(dtpFechaCancelacion.Value, "dd/mm/yyyy")
+If curIVA > 0 Then
+       strLinea(11) = "Monto IVA         ..: " & SIFGlobal.fxStringRelleno(Format(curIVA, "Standard"), "I", pCharRelleno, 15) '
+Else
+    If dtpFechaCancelacion.Enabled Then
+       strLinea(11) = "Fecha Real Abono  ..: " & Format(dtpFechaCancelacion.Value, "dd/mm/yyyy")
+    End If
 End If
-
 
 'Registro del Comprobante
 strSQL = "insert SIF_TRANSACCIONES(COD_TRANSACCION,TIPO_DOCUMENTO,REGISTRO_FECHA,REGISTRO_USUARIO,Cliente_IDENTIFICACION,CLIENTE_NOMBRE" _
          & ",cod_concepto,monto,estado,Referencia_01,Referencia_02,Referencia_03,cod_oficina" _
-         & ",linea1,linea2,linea3,linea4,linea5,linea6,linea7,linea8,linea9,linea10,linea11,detalle,documento,cod_caja,cod_Apertura)" _
+         & ",linea1,linea2,linea3,linea4,linea5,linea6,linea7,linea8,linea9,linea10,linea11,detalle,documento,cod_caja,cod_Apertura, id_Sesion)" _
          & " values('" & pNumDoc & "','" & pTipoDoc & "',dbo.MyGetdate(),'" & glogon.Usuario & "','" & Trim(txtCedula.Text) _
-         & "','" & Trim(txtNombre.Text) & "','" & pConcepto & "'," & curIntC + curIntM + curAmortiza + curCargo + curPoliza & ",'P','" & txtOperacion.Text _
+         & "','" & Trim(txtNombre.Text) & "','" & pConcepto & "'," & curIntC + curIntM + curAmortiza + curCargo + curPoliza + curIVA & ",'P','" & txtOperacion.Text _
          & "','" & txtCodigo.Text & "','" & vAseDocDeposito & "','" & GLOBALES.gOficinaTitular & "','" & strLinea(1) & "','" _
          & strLinea(2) & "','" & strLinea(3) & "','" & strLinea(4) & "','" _
          & strLinea(5) & "','" & strLinea(6) & "','" & strLinea(7) & "','" _
          & strLinea(8) & "','" & strLinea(9) & "','" & strLinea(10) & "','" & strLinea(11) & "','" _
-         & txtNotas.Text & "','" & vAseDocDeposito & "','" & ModuloCajas.mCaja & "'," & ModuloCajas.mApertura & ")"
+         & txtNotas.Text & "','" & vAseDocDeposito & "','" & ModuloCajas.mCaja & "'," & ModuloCajas.mApertura & "," & ModuloCajas.mSesionId & ")"
 ' Call ConectionExecute(strSQL)
  
  'ASIENTO
  If curIntC <> 0 Then
    strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & curIntC * fxSys_Tipo_Cambio_Apl(pTipoCambio) & ",'C','" & rs!cod_Divisa _
           & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintc _
-          & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+          & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 '   Call ConectionExecute(strSQL)
  End If
  
  If curIntM <> 0 Then
    strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & curIntM * fxSys_Tipo_Cambio_Apl(pTipoCambio) & ",'C','" & rs!cod_Divisa _
           & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintm _
-          & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+          & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 '   Call ConectionExecute(strSQL)
  End If
  
@@ -3454,7 +3551,7 @@ strSQL = "insert SIF_TRANSACCIONES(COD_TRANSACCION,TIPO_DOCUMENTO,REGISTRO_FECHA
    Do While Not rsTmp.EOF
          strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & IIf(IsNull(rsTmp!Mov_Monto), curCargo, rsTmp!Mov_Monto * fxSys_Tipo_Cambio_Apl(pTipoCambio)) & ",'C','" & rs!cod_Divisa _
                 & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rsTmp!Cod_Unidad & "','" & rsTmp!Cod_Centro_Costo & "','" & rsTmp!cod_cuenta _
-                & "','" & rsTmp!Id_Solicitud & "','" & rsTmp!Codigo & "','" & vAseDocDeposito & "'"
+                & "','" & rsTmp!ID_SOLICITUD & "','" & rsTmp!Codigo & "','" & vAseDocDeposito & "'"
 '         Call ConectionExecute(strSQL)
          rsTmp.MoveNext
    Loop
@@ -3469,7 +3566,7 @@ strSQL = "insert SIF_TRANSACCIONES(COD_TRANSACCION,TIPO_DOCUMENTO,REGISTRO_FECHA
    Do While Not rsTmp.EOF
          strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & rsTmp!Mov_Monto * fxSys_Tipo_Cambio_Apl(pTipoCambio) & ",'C','" & rs!cod_Divisa _
                 & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rsTmp!cod_cuenta _
-                & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 '         Call ConectionExecute(strSQL)
          rsTmp.MoveNext
    Loop
@@ -3477,18 +3574,26 @@ strSQL = "insert SIF_TRANSACCIONES(COD_TRANSACCION,TIPO_DOCUMENTO,REGISTRO_FECHA
    
  End If
  
- If curAmortiza <> 0 Then
-   strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & curAmortiza * fxSys_Tipo_Cambio_Apl(pTipoCambio) & ",'C','" & rs!cod_Divisa _
-          & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaamortiza _
-          & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+ 
+ If curIVA <> 0 Then
+   strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & curIVA * fxSys_Tipo_Cambio_Apl(pTipoCambio) & ",'C','" & rs!cod_Divisa _
+          & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!CtaIVA _
+          & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 '   Call ConectionExecute(strSQL)
  End If
  
- If curIntC + curIntM + curPoliza + curCargo + curAmortiza <> 0 Then
+ If curAmortiza <> 0 Then
+   strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & curAmortiza * fxSys_Tipo_Cambio_Apl(pTipoCambio) & ",'C','" & rs!cod_Divisa _
+          & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaamortiza _
+          & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+'   Call ConectionExecute(strSQL)
+ End If
+ 
+ If curIntC + curIntM + curPoliza + curCargo + curAmortiza + curIVA <> 0 Then
      'Procesa Formas de Pago (Registro Final / Asiento de Pago)
       strSQL = strSQL & Space(10) & "exec spCajas_DesglocePagosDocFinal '" & ModuloCajas.mCaja & "'," & ModuloCajas.mApertura & ",'" & ModuloCajas.mTiquete _
               & "','" & ModuloCajas.mUsuario & "','" & pTipoDoc & "','" & pNumDoc & "','" & ModuloCajas.mUnidad _
-              & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "'"
+              & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "'"
 '      Call ConectionExecute(strSQL)
  End If
  
@@ -3513,7 +3618,7 @@ End Sub
 
 Private Sub txtTotalPagar_LostFocus()
 Dim vFecha As Date, vProceso As Long
-Dim curInteres As Currency, curAmortiza As Currency, curAnticipo As Currency
+Dim curInteres As Currency, curAmortiza As Currency, curAnticipo As Currency, curIVA As Currency
 Dim i As Integer, vChecks As Boolean, iPlazo As Integer
  
 On Error GoTo vError
@@ -3524,20 +3629,27 @@ If optAbono.Item(1).Checked = True Then
     txtTotalCancela.Text = Format(txtTotalPagar.Text, "Standard")
     curInteres = (CCur(txtTotalPagar.Text) * vInteres / 36000) * vDiasActivo
     curAnticipo = CCur(txtTotalPagar.Text) * vAnticipoPorc
+    curIVA = CCur(txtTotalPagar.Text) * mIVA_Porc
+    
    'Se re-calculan intereses para ajustar y relacionar segun porcion amortizada
    'Previamente sobre el monto a cancelar
    
    If curInteres + curAnticipo > 0 Then
       'Hacer 10 aproximaciones
       For i = 1 To 10
-            curAmortiza = CCur(txtTotalPagar.Text) - (curInteres + curAnticipo)
+            curIVA = (CCur(txtTotalPagar.Text) - curIVA - (curInteres + curAnticipo)) * mIVA_Porc
+            
+            curAmortiza = CCur(txtTotalPagar.Text) - (curInteres + curAnticipo + curIVA)
             curInteres = (curAmortiza * vInteres / 36000) * vDiasActivo
+            
+            
       Next i
    End If
    
+   txtIVA.Text = Format(curIVA, "Standard")
    txtDatosInteres.Text = Format(curInteres, "Standard")
    txtDatosAnticipo.Text = Format(curAnticipo, "Standard")
-   txtDatosAmortiza.Text = Format(CCur(txtTotalPagar.Text) - (curInteres + curAnticipo), "Standard")
+   txtDatosAmortiza.Text = Format(CCur(txtTotalPagar.Text) - (curInteres + curAnticipo + curIVA), "Standard")
 End If
 
 

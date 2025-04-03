@@ -1,9 +1,9 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "mscomctl.OCX"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.3#0"; "Codejock.Controls.v20.3.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.3#0"; "Codejock.ShortcutBar.v20.3.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCntX_Asientos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,11 +24,11 @@ Begin VB.Form frmCntX_Asientos
    Begin XtremeSuiteControls.PushButton btnProcesos 
       Height          =   330
       Index           =   0
-      Left            =   5520
+      Left            =   5400
       TabIndex        =   46
-      Top             =   40
+      Top             =   45
       Width           =   1455
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   582
       _StockProps     =   79
@@ -64,7 +64,7 @@ Begin VB.Form frmCntX_Asientos
          TabIndex        =   45
          Top             =   960
          Width           =   2295
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   450
          _StockProps     =   79
@@ -89,7 +89,7 @@ Begin VB.Form frmCntX_Asientos
          TabIndex        =   43
          Top             =   4680
          Width           =   1575
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   1085
          _StockProps     =   79
@@ -114,7 +114,7 @@ Begin VB.Form frmCntX_Asientos
          TabIndex        =   35
          Top             =   3000
          Width           =   4815
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   8488
          _ExtentY        =   1080
          _StockProps     =   79
@@ -141,7 +141,7 @@ Begin VB.Form frmCntX_Asientos
          TabIndex        =   36
          Top             =   4080
          Width           =   2415
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   550
          _StockProps     =   77
@@ -163,7 +163,7 @@ Begin VB.Form frmCntX_Asientos
          TabIndex        =   37
          Top             =   3720
          Width           =   2415
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   550
          _StockProps     =   77
@@ -185,7 +185,7 @@ Begin VB.Form frmCntX_Asientos
          TabIndex        =   38
          Top             =   960
          Width           =   1455
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   550
          _StockProps     =   68
@@ -207,7 +207,7 @@ Begin VB.Form frmCntX_Asientos
          TabIndex        =   39
          Top             =   1320
          Width           =   7215
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   12726
          _ExtentY        =   556
          _StockProps     =   77
@@ -229,7 +229,7 @@ Begin VB.Form frmCntX_Asientos
          TabIndex        =   40
          Top             =   960
          Width           =   2412
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   550
          _StockProps     =   77
@@ -251,7 +251,7 @@ Begin VB.Form frmCntX_Asientos
          TabIndex        =   41
          Top             =   1680
          Width           =   7215
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   12726
          _ExtentY        =   556
          _StockProps     =   77
@@ -273,7 +273,7 @@ Begin VB.Form frmCntX_Asientos
          TabIndex        =   42
          Top             =   2040
          Width           =   7215
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   12726
          _ExtentY        =   1614
          _StockProps     =   77
@@ -298,7 +298,7 @@ Begin VB.Form frmCntX_Asientos
          TabIndex        =   44
          Top             =   4680
          Width           =   1575
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   1085
          _StockProps     =   79
@@ -323,14 +323,14 @@ Begin VB.Form frmCntX_Asientos
          TabIndex        =   34
          Top             =   120
          Width           =   12372
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   21823
          _ExtentY        =   868
          _StockProps     =   14
          Caption         =   "Copiar el asiento  a:"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   11.93
+            Size            =   12
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -570,7 +570,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   21
       Top             =   1320
       Width           =   11415
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   20129
       _ExtentY        =   550
       _StockProps     =   77
@@ -592,7 +592,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   22
       Top             =   960
       Width           =   6375
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   11239
       _ExtentY        =   550
       _StockProps     =   77
@@ -614,7 +614,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   23
       Top             =   600
       Width           =   975
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   1714
       _ExtentY        =   550
       _StockProps     =   77
@@ -637,7 +637,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   24
       Top             =   600
       Width           =   2535
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   4466
       _ExtentY        =   550
       _StockProps     =   77
@@ -661,7 +661,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   25
       Top             =   600
       Width           =   2415
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   4254
       _ExtentY        =   550
       _StockProps     =   77
@@ -683,7 +683,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   26
       Top             =   600
       Width           =   1455
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   550
       _StockProps     =   68
@@ -705,7 +705,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   27
       Top             =   960
       Width           =   375
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   550
       _StockProps     =   77
@@ -728,7 +728,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   28
       Top             =   960
       Width           =   2535
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   4466
       _ExtentY        =   550
       _StockProps     =   77
@@ -752,7 +752,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   29
       Top             =   960
       Width           =   615
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   550
       _StockProps     =   77
@@ -775,7 +775,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   30
       Top             =   1680
       Width           =   11415
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   20135
       _ExtentY        =   979
       _StockProps     =   77
@@ -799,7 +799,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   31
       Top             =   7440
       Width           =   1935
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   3408
       _ExtentY        =   550
       _StockProps     =   77
@@ -823,7 +823,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   32
       Top             =   7440
       Width           =   1935
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   3408
       _ExtentY        =   550
       _StockProps     =   77
@@ -847,7 +847,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   33
       Top             =   7440
       Width           =   1695
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   550
       _StockProps     =   77
@@ -930,7 +930,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   47
       Top             =   40
       Width           =   1455
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   582
       _StockProps     =   79
@@ -959,7 +959,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   48
       Top             =   40
       Width           =   1455
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   582
       _StockProps     =   79
@@ -988,7 +988,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   49
       Top             =   40
       Width           =   1455
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   582
       _StockProps     =   79
@@ -1017,7 +1017,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   50
       Top             =   40
       Width           =   1455
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   582
       _StockProps     =   79
@@ -1042,12 +1042,12 @@ Begin VB.Form frmCntX_Asientos
    Begin XtremeSuiteControls.PushButton btnBarra 
       Height          =   330
       Index           =   0
-      Left            =   1200
+      Left            =   600
       TabIndex        =   51
       ToolTipText     =   "Nuevo"
-      Top             =   40
+      Top             =   45
       Width           =   1095
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   1931
       _ExtentY        =   582
       _StockProps     =   79
@@ -1071,12 +1071,12 @@ Begin VB.Form frmCntX_Asientos
    Begin XtremeSuiteControls.PushButton btnBarra 
       Height          =   330
       Index           =   1
-      Left            =   2280
+      Left            =   1680
       TabIndex        =   52
       ToolTipText     =   "Editar"
-      Top             =   40
+      Top             =   45
       Width           =   375
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   661
       _ExtentY        =   582
       _StockProps     =   79
@@ -1099,12 +1099,12 @@ Begin VB.Form frmCntX_Asientos
    Begin XtremeSuiteControls.PushButton btnBarra 
       Height          =   330
       Index           =   2
-      Left            =   2640
+      Left            =   2040
       TabIndex        =   53
       ToolTipText     =   "Eliminar"
-      Top             =   40
+      Top             =   45
       Width           =   375
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   661
       _ExtentY        =   582
       _StockProps     =   79
@@ -1127,12 +1127,12 @@ Begin VB.Form frmCntX_Asientos
    Begin XtremeSuiteControls.PushButton btnBarra 
       Height          =   330
       Index           =   3
-      Left            =   3120
+      Left            =   2520
       TabIndex        =   54
       ToolTipText     =   "Guardar"
       Top             =   45
       Width           =   375
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   661
       _ExtentY        =   582
       _StockProps     =   79
@@ -1155,12 +1155,12 @@ Begin VB.Form frmCntX_Asientos
    Begin XtremeSuiteControls.PushButton btnBarra 
       Height          =   330
       Index           =   4
-      Left            =   3480
+      Left            =   2880
       TabIndex        =   55
       ToolTipText     =   "Deshacer"
       Top             =   45
       Width           =   375
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   661
       _ExtentY        =   582
       _StockProps     =   79
@@ -1183,12 +1183,12 @@ Begin VB.Form frmCntX_Asientos
    Begin XtremeSuiteControls.PushButton btnBarra 
       Height          =   330
       Index           =   5
-      Left            =   3960
+      Left            =   3360
       TabIndex        =   56
       ToolTipText     =   "Reporte"
       Top             =   45
       Width           =   375
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   661
       _ExtentY        =   582
       _StockProps     =   79
@@ -1211,13 +1211,13 @@ Begin VB.Form frmCntX_Asientos
    Begin XtremeSuiteControls.PushButton btnBarra 
       Height          =   330
       Index           =   6
-      Left            =   4320
+      Left            =   3720
       TabIndex        =   57
       ToolTipText     =   "Consultas"
       Top             =   45
       Visible         =   0   'False
       Width           =   375
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   661
       _ExtentY        =   582
       _StockProps     =   79
@@ -1237,13 +1237,39 @@ Begin VB.Form frmCntX_Asientos
       Picture         =   "frmCntX_Asientos.frx":24409
       ImageAlignment  =   6
    End
+   Begin XtremeSuiteControls.PushButton btnAdjuntos 
+      Height          =   330
+      Left            =   4320
+      TabIndex        =   61
+      ToolTipText     =   "Adjuntar Documentos"
+      Top             =   45
+      Width           =   495
+      _Version        =   1572864
+      _ExtentX        =   873
+      _ExtentY        =   582
+      _StockProps     =   79
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      FlatStyle       =   -1  'True
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmCntX_Asientos.frx":24B09
+   End
    Begin XtremeShortcutBar.ShortcutCaption lblCuenta 
       Height          =   375
       Left            =   120
       TabIndex        =   60
       Top             =   2280
       Width           =   4935
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   8705
       _ExtentY        =   661
       _StockProps     =   14
@@ -1264,7 +1290,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   59
       Top             =   2280
       Width           =   4215
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   661
       _StockProps     =   14
@@ -1286,7 +1312,7 @@ Begin VB.Form frmCntX_Asientos
       TabIndex        =   58
       Top             =   2280
       Width           =   3495
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   6165
       _ExtentY        =   661
       _StockProps     =   14
@@ -1324,7 +1350,7 @@ Begin VB.Form frmCntX_Asientos
       Appearance      =   0  'Flat
       Height          =   240
       Left            =   9090
-      Picture         =   "frmCntX_Asientos.frx":24B09
+      Picture         =   "frmCntX_Asientos.frx":24B92
       Stretch         =   -1  'True
       ToolTipText     =   "Copiar Asiento"
       Top             =   600
@@ -1333,7 +1359,7 @@ Begin VB.Form frmCntX_Asientos
    Begin VB.Image imgBusquedaAdv 
       Height          =   240
       Left            =   8760
-      Picture         =   "frmCntX_Asientos.frx":252BF
+      Picture         =   "frmCntX_Asientos.frx":25348
       Stretch         =   -1  'True
       ToolTipText     =   "Busqueda Avanzada"
       Top             =   600
@@ -1623,6 +1649,19 @@ dtpAsientoFecha = CDate(txtAnio & "/" & txtMes & "/01")
 Exit Sub
 
 vError:
+End Sub
+
+Private Sub btnAdjuntos_Click()
+If txtNAsiento.Text = "" Then
+  Exit Sub
+End If
+ 
+ gGA.Modulo = "Cnt"
+ gGA.Llave_01 = txtCAsiento.Text
+ gGA.Llave_02 = txtNAsiento
+ gGA.Llave_03 = ""
+ 
+ Call sbFormsCall("frmGA_Documentos", vbModal, , , False, Me, True)
 End Sub
 
 Private Sub btnBarra_Click(Index As Integer)
@@ -2027,17 +2066,17 @@ End If
 
 For lng = 1 To vGrid.MaxRows
  vGrid.Row = lng
- vGrid.col = 1
+ vGrid.Col = 1
  If vGrid.Text <> "" Then
-   vGrid.col = 2
+   vGrid.Col = 2
    If vGrid.Text = "" Then
-      vGrid.col = 1
+      vGrid.Col = 1
       vMensaje = vMensaje & vbCrLf & "- Cuenta " & vGrid.Text & " No Existe"
    End If
    
-   vGrid.col = 4
+   vGrid.Col = 4
    If UCase(vGrid.Text) <> pDivisa Then
-      vGrid.col = 5
+      vGrid.Col = 5
       If CCur(vGrid.Text) = 1 Then
           vMensaje = vMensaje & vbCrLf & "- Línea " & lng & " : Tipo de Cambio Incorrecto."
       End If
@@ -2149,7 +2188,7 @@ Do While Not rs.EOF
         & "___________________"
   vGrid.Row = vGrid.MaxRows
   For i = 1 To vGrid.MaxCols
-    vGrid.col = i
+    vGrid.Col = i
     Select Case i
        Case 1 ' Cuenta
             vGrid.TextTip = TextTipFixed
@@ -2167,7 +2206,7 @@ Do While Not rs.EOF
             vGrid.CellNote = rs!CentroCosto & ""
             
             vGrid.CellTag = rs!CentroCosto & ""
-            vGrid.Text = CStr(rs!cod_centro_costo & "")
+            vGrid.Text = CStr(rs!Cod_Centro_Costo & "")
        
        Case 4 ' Divisa
             vGrid.Text = CStr(rs!cod_Divisa)
@@ -2355,29 +2394,29 @@ If fxVerificaAsiento Then
     
       For lng = 1 To vGrid.MaxRows
         vGrid.Row = lng
-        vGrid.col = 1
+        vGrid.Col = 1
         If vGrid.Text <> "" Then
             strSQL = strSQL & Space(10) & "insert into Cntx_Asientos_detalle(num_linea,tipo_asiento,num_asiento,cod_contabilidad" _
                    & ",cod_cuenta,cod_unidad,cod_centro_costo,cod_divisa,tipo_cambio,documento,detalle,monto_debito,monto_credito)" _
                    & " values(" & lng & ",'" & UCase(txtCAsiento) & "','" & txtNAsiento & "'," _
                    & gCntX_Parametros.CodigoConta & ",'"
-            vGrid.col = 1
+            vGrid.Col = 1
             strSQL = strSQL & fxCntX_CuentaFormato(False, vGrid.Text) & "','"
-            vGrid.col = 2
+            vGrid.Col = 2
             strSQL = strSQL & vGrid.Text & "','"
-            vGrid.col = 3
+            vGrid.Col = 3
             strSQL = strSQL & vGrid.Text & "','"
-            vGrid.col = 4
+            vGrid.Col = 4
             strSQL = strSQL & vGrid.Text & "',"
-            vGrid.col = 5
+            vGrid.Col = 5
             strSQL = strSQL & CCur(IIf((vGrid.Text = ""), 0, vGrid.Text)) & ",'"
-            vGrid.col = 6
+            vGrid.Col = 6
             strSQL = strSQL & vGrid.Text & "','"
-            vGrid.col = 7
+            vGrid.Col = 7
             strSQL = strSQL & vGrid.Text & "',"
-            vGrid.col = 8
+            vGrid.Col = 8
             strSQL = strSQL & CCur(IIf((vGrid.Text = ""), 0, vGrid.Text)) & ","
-            vGrid.col = 9
+            vGrid.Col = 9
             strSQL = strSQL & CCur(IIf((vGrid.Text = ""), 0, vGrid.Text)) & ")"
 
 '            Call ConectionExecute(strSQL, 0)
@@ -2645,9 +2684,9 @@ On Error GoTo vError
     'Solo en Colones en Pantalla por Eso no Hay que Convertir Tipo de Cambio
      TC = 1
       
-      vGrid.col = 8
+      vGrid.Col = 8
       txtDebito = CCur(txtDebito) + (CCur(IIf(vGrid.Text = "", 0, vGrid.Text)) * fxSys_Tipo_Cambio_Apl(TC))
-      vGrid.col = 9
+      vGrid.Col = 9
       txtCredito = CCur(txtCredito) + (CCur(IIf(vGrid.Text = "", 0, vGrid.Text)) * fxSys_Tipo_Cambio_Apl(TC))
   Next x
   txtDiferencia = txtDebito - txtCredito
@@ -2667,7 +2706,7 @@ Dim vTempo As String
 If KeyCode = vbKeyDelete Then
   
   vGrid.Row = vGrid.ActiveRow
-  vGrid.col = vGrid.MaxCols
+  vGrid.Col = vGrid.MaxCols
   If vGrid.Text <> "" Then 'Existe en la Base de datos
     'Preguntar y si la respuesta es afirmativa eliminar de la Base de datos
   
@@ -2676,13 +2715,13 @@ If KeyCode = vbKeyDelete Then
   For lng = vGrid.ActiveRow To vGrid.MaxRows
      vGrid.Row = lng + 1
      For x = 1 To vGrid.MaxCols
-        vGrid.col = x
+        vGrid.Col = x
         vTemp(x) = vGrid.Text
      Next x
      
      vGrid.Row = lng
      For x = 1 To vGrid.MaxCols
-       vGrid.col = x
+       vGrid.Col = x
        vGrid.Text = vTemp(x)
      Next x
   Next lng
@@ -2697,7 +2736,7 @@ End If
 'Consulta cuenta
 If KeyCode = vbKeyF4 And vGrid.ActiveCol = 1 Then
   frmCntX_ConsultaCuentas.Show vbModal
-  vGrid.col = vGrid.ActiveCol
+  vGrid.Col = vGrid.ActiveCol
   vGrid.Row = vGrid.ActiveRow
   vGrid.Text = gCuenta
 End If
@@ -2712,7 +2751,7 @@ If KeyCode = vbKeyF4 And vGrid.ActiveCol = 2 Then
   gBusquedas.Consulta = "select cod_unidad,descripcion from CntX_Unidades"
   frmBusquedas.Show vbModal
     
-  vGrid.col = vGrid.ActiveCol
+  vGrid.Col = vGrid.ActiveCol
   vGrid.Row = vGrid.ActiveRow
   
   vGrid.Text = gBusquedas.Resultado
@@ -2724,7 +2763,7 @@ End If
 'Consulta Centro de Costo
 If KeyCode = vbKeyF4 And vGrid.ActiveCol = 3 Then
   vGrid.Row = vGrid.ActiveRow
-  vGrid.col = 2
+  vGrid.Col = 2
   vTempo = vGrid.Text
   
   gBusquedas.Resultado = ""
@@ -2736,7 +2775,7 @@ If KeyCode = vbKeyF4 And vGrid.ActiveCol = 3 Then
   gBusquedas.Consulta = "select cod_centro_costo,descripcion from CntX_Centro_Costos"
   frmBusquedas.Show vbModal
     
-  vGrid.col = vGrid.ActiveCol
+  vGrid.Col = vGrid.ActiveCol
   vGrid.Row = vGrid.ActiveRow
   
   vGrid.Text = gBusquedas.Resultado
@@ -2766,7 +2805,7 @@ End If
 
 
 If (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
-    vGrid.col = vGrid.ActiveCol
+    vGrid.Col = vGrid.ActiveCol
     vGrid.Row = vGrid.ActiveRow
     
     Select Case vGrid.ActiveCol
@@ -2790,7 +2829,7 @@ If (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
           vTempo = fxCntX_CuentaDivisa(CStr(i))
           
           If vTempo <> "" Then
-            vGrid.col = 4
+            vGrid.Col = 4
             vGrid.Text = vTempo
           End If
 
@@ -2811,9 +2850,9 @@ If (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
       
       
       Case 3 'Verificar el Centro de Costo
-        vGrid.col = 2
+        vGrid.Col = 2
         vTempo = vGrid.Text
-        vGrid.col = 3
+        vGrid.Col = 3
         
         If fxCntX_CentroCostoVerifica(vGrid.Text, vTempo) Then
           vGrid.TextTip = TextTipFixed
@@ -2848,7 +2887,7 @@ If (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
         
       Case 8 'Debe
         If Val(vGrid.Text) > 0 Then
-            vGrid.col = vGrid.ActiveCol + 1
+            vGrid.Col = vGrid.ActiveCol + 1
             vGrid.Row = vGrid.ActiveRow
             vGrid.Text = 0
         
@@ -2858,7 +2897,7 @@ If (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
       
       Case 9 'Haber
         If Val(vGrid.Text) > 0 Then
-            vGrid.col = vGrid.ActiveCol - 1
+            vGrid.Col = vGrid.ActiveCol - 1
             vGrid.Row = vGrid.ActiveRow
             vGrid.Text = 0
             Call sbSumaDebitosCreditos
@@ -2867,22 +2906,22 @@ If (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
         If vGrid.MaxRows = vGrid.ActiveRow Then
             vGrid.MaxRows = vGrid.MaxRows + 1
             vGrid.Row = vGrid.MaxRows
-            vGrid.col = 2
+            vGrid.Col = 2
             vGrid.Text = vUltimos.Unidad
             vGrid.CellTag = vUltimos.UnidadDesc
             
-            vGrid.col = 3
+            vGrid.Col = 3
             vGrid.Text = vUltimos.CC
             vGrid.TextTip = TextTipFixed
             vGrid.CellTag = vUltimos.CCDesc
             vGrid.CellNote = vGrid.CellTag
             
-            vGrid.col = 4
+            vGrid.Col = 4
             vGrid.Text = vUltimos.Divisa
             vGrid.CellTag = vUltimos.DivisaDesc
-            vGrid.col = 6
+            vGrid.Col = 6
             vGrid.Text = vUltimos.Documento
-            vGrid.col = 7
+            vGrid.Col = 7
             vGrid.Text = vUltimos.Detalle
         End If
         
@@ -2896,22 +2935,22 @@ If KeyCode = vbKeyInsert Then
     vGrid.MaxRows = vGrid.MaxRows + 1
     vGrid.InsertRows vGrid.ActiveRow, 1
     vGrid.Row = vGrid.ActiveRow
-    vGrid.col = 2
+    vGrid.Col = 2
     vGrid.Text = vUltimos.Unidad
     vGrid.CellTag = vUltimos.UnidadDesc
     
-    vGrid.col = 3
+    vGrid.Col = 3
     vGrid.Text = vUltimos.CC
     vGrid.TextTip = TextTipFixed
     vGrid.CellTag = vUltimos.CCDesc
     vGrid.CellNote = vGrid.CellTag
     
-    vGrid.col = 4
+    vGrid.Col = 4
     vGrid.Text = vUltimos.Divisa
     vGrid.CellTag = vUltimos.DivisaDesc
-    vGrid.col = 6
+    vGrid.Col = 6
     vGrid.Text = vUltimos.Documento
-    vGrid.col = 7
+    vGrid.Col = 7
     vGrid.Text = vUltimos.Detalle
 End If
 
@@ -2919,18 +2958,18 @@ End If
 'If KeyCode >= 94 And KeyCode <= 105 Then
 If (vGrid.ActiveCol = 8 Or vGrid.ActiveCol = 9) _
     And lblCuenta.Tag = "N" And KeyCode = vbKeyF4 Then
-       vGrid.col = 1
+       vGrid.Col = 1
        gCntX_TipoCambio.Cuenta = fxCntX_CuentaFormato(False, vGrid.Text, 0)
        gCntX_TipoCambio.fecha = dtpAsientoFecha.Value
-       vGrid.col = vGrid.ActiveCol
+       vGrid.Col = vGrid.ActiveCol
        If vGrid.Text = "" Then
            gCntX_TipoCambio.Monto_Actual = 0
        Else
            gCntX_TipoCambio.Monto_Actual = CCur(vGrid.Text)
        End If
-       vGrid.col = 4
+       vGrid.Col = 4
        gCntX_TipoCambio.Moneda = vGrid.Text
-       vGrid.col = 5
+       vGrid.Col = 5
        If vGrid.Text = "" Or vGrid.Text = "0.0000" Then
          gCntX_TipoCambio.TC_Actual = 1
        Else
@@ -2940,9 +2979,9 @@ If (vGrid.ActiveCol = 8 Or vGrid.ActiveCol = 9) _
        frmCntX_TipoCambio.Show vbModal
        If gCntX_TipoCambio.Paso Then
           vGrid.Row = vGrid.ActiveRow
-          vGrid.col = 5
+          vGrid.Col = 5
           vGrid.Text = CStr(gCntX_TipoCambio.TC_Nuevo)
-          vGrid.col = vGrid.ActiveCol
+          vGrid.Col = vGrid.ActiveCol
           vGrid.Text = CStr(gCntX_TipoCambio.Monto_Nuevo)
        End If
     End If
@@ -2951,7 +2990,7 @@ If (vGrid.ActiveCol = 8 Or vGrid.ActiveCol = 9) _
 
 End Sub
 
-Private Sub vGrid_LeaveCell(ByVal col As Long, ByVal Row As Long, ByVal NewCol As Long, ByVal NewRow As Long, Cancel As Boolean)
+Private Sub vGrid_LeaveCell(ByVal Col As Long, ByVal Row As Long, ByVal NewCol As Long, ByVal NewRow As Long, Cancel As Boolean)
 Dim vCuenta As String, vDivisa As String, vMov As Currency, i As Byte
 
 On Error GoTo vError
@@ -2960,20 +2999,20 @@ vGrid.Row = Row
 
 
 If NewCol = 8 Or NewCol = 9 Then
-    vGrid.col = 4
+    vGrid.Col = 4
     lblCuenta.Tag = IIf(fxCntX_DivisaBase(vGrid.Text), "S", "N")
 End If
 
-If col = 4 Then
+If Col = 4 Then
     'Verificar Tipo de Cambio
-    vGrid.col = 4
+    vGrid.Col = 4
     vDivisa = vGrid.Text
     
-    vGrid.col = 5
+    vGrid.Col = 5
     If vGrid.Text = "" Or vGrid.Text = "0.0000" Then
-      vGrid.col = 1
+      vGrid.Col = 1
       vCuenta = fxCntX_CuentaFormato(False, vGrid.Text, 0)
-      vGrid.col = 5
+      vGrid.Col = 5
       vGrid.Text = fxCntX_TipoCambio(vDivisa, vCuenta, dtpAsientoFecha)
     Else
 '        vGrid.col = 4
@@ -2989,22 +3028,22 @@ If col = 4 Then
 End If
 
 vGrid.Row = NewRow
-vGrid.col = 1
+vGrid.Col = 1
 lblCuenta.Caption = vGrid.CellTag
 
 vUltimos.Cta = vGrid.Text
 vUltimos.CtaDesc = vGrid.CellTag
 
-vGrid.col = 2
+vGrid.Col = 2
 lblUnidad.Caption = vGrid.CellTag
-vGrid.col = 4
+vGrid.Col = 4
 lblDivisa.Caption = vGrid.CellTag
 
-vGrid.col = 8
+vGrid.Col = 8
 vMov = CCur(vGrid.Text)
-vGrid.col = 9
+vGrid.Col = 9
 vMov = vMov + CCur(vGrid.Text)
-vGrid.col = 5
+vGrid.Col = 5
 lblDivisa.Caption = lblDivisa.Caption & " [" & Format(vMov / fxSys_Tipo_Cambio_Apl(CCur(vGrid.Text)), "Standard") & "]"
 
 vError:

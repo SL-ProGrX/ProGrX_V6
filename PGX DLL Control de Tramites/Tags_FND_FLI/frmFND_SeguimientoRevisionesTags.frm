@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Begin VB.Form frmFNDSeguimientoRevisionesTags 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Revisión de Fondos (Tags)"
@@ -246,13 +246,13 @@ Begin VB.Form frmFNDSeguimientoRevisionesTags
       TabCaption(3)   =   "Revisión"
       TabPicture(3)   =   "frmFND_SeguimientoRevisionesTags.frx":3B7F6
       Tab(3).ControlEnabled=   0   'False
-      Tab(3).Control(0)=   "Label8(1)"
-      Tab(3).Control(1)=   "Label2(0)"
-      Tab(3).Control(2)=   "Label27"
+      Tab(3).Control(0)=   "cboEtiquetas"
+      Tab(3).Control(1)=   "txtObservacion"
+      Tab(3).Control(2)=   "tlbAplicar"
       Tab(3).Control(3)=   "lswErrores"
-      Tab(3).Control(4)=   "tlbAplicar"
-      Tab(3).Control(5)=   "txtObservacion"
-      Tab(3).Control(6)=   "cboEtiquetas"
+      Tab(3).Control(4)=   "Label27"
+      Tab(3).Control(5)=   "Label2(0)"
+      Tab(3).Control(6)=   "Label8(1)"
       Tab(3).ControlCount=   7
       Begin VB.TextBox txtDescripcion 
          Appearance      =   0  'Flat
@@ -344,7 +344,7 @@ Begin VB.Form frmFNDSeguimientoRevisionesTags
          EndProperty
          MaxCols         =   487
          ScrollBarExtMode=   -1  'True
-         SpreadDesigner  =   "frmFND_SeguimientoRevisionesTags.frx":3C2D6
+         SpreadDesigner  =   "frmFND_SeguimientoRevisionesTags.frx":3C2B4
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
@@ -423,13 +423,13 @@ Begin VB.Form frmFNDSeguimientoRevisionesTags
          EndProperty
       End
       Begin MSComctlLib.Toolbar tlbRefresh 
-         Height          =   348
+         Height          =   330
          Left            =   9480
          TabIndex        =   43
          Top             =   480
-         Width           =   1212
+         Width           =   1215
          _ExtentX        =   2143
-         _ExtentY        =   609
+         _ExtentY        =   582
          ButtonWidth     =   1984
          ButtonHeight    =   582
          Style           =   1
@@ -445,7 +445,6 @@ Begin VB.Form frmFNDSeguimientoRevisionesTags
                ImageIndex      =   1
             EndProperty
          EndProperty
-         BorderStyle     =   1
          MousePointer    =   1
       End
       Begin MSComctlLib.ImageList imgRefresh 
@@ -461,7 +460,7 @@ Begin VB.Form frmFNDSeguimientoRevisionesTags
          BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
             NumListImages   =   1
             BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-               Picture         =   "frmFND_SeguimientoRevisionesTags.frx":3C8F0
+               Picture         =   "frmFND_SeguimientoRevisionesTags.frx":3C8AC
                Key             =   ""
             EndProperty
          EndProperty
@@ -853,7 +852,7 @@ Begin VB.Form frmFNDSeguimientoRevisionesTags
    Begin VB.Image Image2 
       Height          =   360
       Left            =   1440
-      Picture         =   "frmFND_SeguimientoRevisionesTags.frx":3CA15
+      Picture         =   "frmFND_SeguimientoRevisionesTags.frx":3C9D1
       Top             =   120
       Width           =   360
    End
@@ -1101,16 +1100,16 @@ Do While Not rs.EOF
     vGridSeguimiento.Text = rs!Descripcion
     vGridSeguimiento.TextTip = TextTipFixed
     vGridSeguimiento.TextTipDelay = 1000
-    vGridSeguimiento.CellNote = "Usuario: " & rs!REGISTRO_USUARIO & "[" & rs!REGISTRO_FECHA & "]"
+    vGridSeguimiento.CellNote = "Usuario: " & rs!registro_usuario & "[" & rs!Registro_Fecha & "]"
             
     vGridSeguimiento.Col = 2
     vGridSeguimiento.Value = IIf(IsNull(rs!notas), "", rs!notas)
     
     vGridSeguimiento.Col = 3
-    vGridSeguimiento.Value = IIf(IsNull(rs!REGISTRO_FECHA), "", rs!REGISTRO_FECHA)
+    vGridSeguimiento.Value = IIf(IsNull(rs!Registro_Fecha), "", rs!Registro_Fecha)
     
     vGridSeguimiento.Col = 4
-    vGridSeguimiento.Value = IIf(IsNull(rs!REGISTRO_USUARIO), "", rs!REGISTRO_USUARIO)
+    vGridSeguimiento.Value = IIf(IsNull(rs!registro_usuario), "", rs!registro_usuario)
     
     vGridSeguimiento.RowHeight(vGridSeguimiento.Row) = vGridSeguimiento.MaxTextRowHeight(vGridSeguimiento.Row)
     rs.MoveNext

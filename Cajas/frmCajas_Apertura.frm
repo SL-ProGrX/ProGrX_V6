@@ -1,7 +1,7 @@
 VERSION 5.00
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.ShortcutBar.v22.1.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCajas_Apertura 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,7 +24,7 @@ Begin VB.Form frmCajas_Apertura
       TabIndex        =   9
       Top             =   1680
       Width           =   8535
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   15055
       _ExtentY        =   8493
       _StockProps     =   79
@@ -46,7 +46,7 @@ Begin VB.Form frmCajas_Apertura
          TabIndex        =   24
          Top             =   3360
          Width           =   5775
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10186
          _ExtentY        =   2355
          _StockProps     =   77
@@ -71,7 +71,7 @@ Begin VB.Form frmCajas_Apertura
          TabIndex        =   23
          Top             =   2880
          Width           =   2292
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   444
          _StockProps     =   79
@@ -121,7 +121,7 @@ Begin VB.Form frmCajas_Apertura
          TabIndex        =   16
          Top             =   1800
          Width           =   2892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5101
          _ExtentY        =   550
          _StockProps     =   77
@@ -146,7 +146,7 @@ Begin VB.Form frmCajas_Apertura
          TabIndex        =   17
          Top             =   1800
          Width           =   2892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5101
          _ExtentY        =   550
          _StockProps     =   77
@@ -171,7 +171,7 @@ Begin VB.Form frmCajas_Apertura
          TabIndex        =   18
          Top             =   2160
          Width           =   2892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5101
          _ExtentY        =   550
          _StockProps     =   77
@@ -196,7 +196,7 @@ Begin VB.Form frmCajas_Apertura
          TabIndex        =   19
          Top             =   2160
          Width           =   2892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5101
          _ExtentY        =   550
          _StockProps     =   77
@@ -221,7 +221,7 @@ Begin VB.Form frmCajas_Apertura
          TabIndex        =   20
          Top             =   2520
          Width           =   2892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5101
          _ExtentY        =   550
          _StockProps     =   77
@@ -246,7 +246,7 @@ Begin VB.Form frmCajas_Apertura
          TabIndex        =   21
          Top             =   2520
          Width           =   2892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5101
          _ExtentY        =   550
          _StockProps     =   77
@@ -271,7 +271,7 @@ Begin VB.Form frmCajas_Apertura
          TabIndex        =   22
          Top             =   2880
          Width           =   2892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5101
          _ExtentY        =   550
          _StockProps     =   77
@@ -431,7 +431,7 @@ Begin VB.Form frmCajas_Apertura
       TabIndex        =   3
       Top             =   6720
       Width           =   1455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   868
       _StockProps     =   79
@@ -456,7 +456,7 @@ Begin VB.Form frmCajas_Apertura
       TabIndex        =   4
       Top             =   6720
       Width           =   1455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   868
       _StockProps     =   79
@@ -480,7 +480,7 @@ Begin VB.Form frmCajas_Apertura
       TabIndex        =   5
       Top             =   360
       Width           =   5052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8916
       _ExtentY        =   582
       _StockProps     =   77
@@ -506,7 +506,7 @@ Begin VB.Form frmCajas_Apertura
       TabIndex        =   6
       Top             =   1200
       Width           =   2532
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4466
       _ExtentY        =   550
       _StockProps     =   77
@@ -531,7 +531,7 @@ Begin VB.Form frmCajas_Apertura
       TabIndex        =   7
       Top             =   1200
       Width           =   3252
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5736
       _ExtentY        =   550
       _StockProps     =   77
@@ -635,7 +635,7 @@ Begin VB.Form frmCajas_Apertura
       TabIndex        =   8
       Top             =   1080
       Width           =   8772
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   15473
       _ExtentY        =   868
       _StockProps     =   14
@@ -702,12 +702,12 @@ Do While Not rs.EOF
      itmX.SubItems(1) = rs!cod_Divisa
      itmX.SubItems(2) = Format(rs!Importe, "Standard")
      itmX.SubItems(3) = rs!Cod_Caja
-     itmX.SubItems(4) = rs!Registro_Usuario
+     itmX.SubItems(4) = rs!REGISTRO_USUARIO
      itmX.SubItems(5) = rs!Cod_Apertura
-     itmX.SubItems(6) = rs!Registro_Fecha
+     itmX.SubItems(6) = rs!REGISTRO_FECHA
      itmX.SubItems(7) = rs!TIPO_CAMBIO
      itmX.SubItems(8) = Format(rs!Monto, "Standard")
-     itmX.SubItems(9) = rs!NOTAS
+     itmX.SubItems(9) = rs!Notas
 
 
  rs.MoveNext
@@ -961,16 +961,16 @@ Call ConectionExecute(strSQL)
 
 For i = 1 To vGrid.MaxRows
     vGrid.Row = i
-    vGrid.col = 1
+    vGrid.Col = 1
     
     If Trim(vGrid.Text) <> "" Then
         strSQL = "insert cajas_aperturas_cierres(cod_apertura,cod_caja,si_efectivo,si_documentos,cod_divisa)" _
                & " values(" & ModuloCajas.mApertura & ",'" & cbo.ItemData(cbo.ListIndex) & "',"
-        vGrid.col = 2
+        vGrid.Col = 2
         strSQL = strSQL & " " & CCur(vGrid.Text) & ", "
-        vGrid.col = 3
+        vGrid.Col = 3
         strSQL = strSQL & "" & CCur(vGrid.Text) & ","
-        vGrid.col = 1
+        vGrid.Col = 1
         strSQL = strSQL & "'" & Trim(vGrid.Text) & "')"
         
         Call ConectionExecute(strSQL)

@@ -1,8 +1,8 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_SeguimientoRecepcionTag 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Recepción Documentación Créditos"
@@ -74,10 +74,10 @@ Begin VB.Form frmCR_SeguimientoRecepcionTag
       Style           =   1
       TabHeight       =   520
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Arial"
+         Name            =   "Calibri"
          Size            =   8.25
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
@@ -125,32 +125,30 @@ Begin VB.Form frmCR_SeguimientoRecepcionTag
       Tab(2).Control(0)=   "cboUsuario"
       Tab(2).Control(1)=   "txtOperacionBuscar"
       Tab(2).Control(2)=   "vGridConsulta"
-      Tab(2).Control(3)=   "dtpFInicio"
-      Tab(2).Control(4)=   "dtpFFin"
-      Tab(2).Control(5)=   "tlbReportes"
+      Tab(2).Control(3)=   "tlbReportes"
+      Tab(2).Control(4)=   "dtpFInicio"
+      Tab(2).Control(5)=   "dtpFFin"
       Tab(2).Control(6)=   "Label1(14)"
       Tab(2).Control(7)=   "Label7"
-      Tab(2).Control(8)=   "Line1"
-      Tab(2).Control(9)=   "Label6"
-      Tab(2).Control(10)=   "Image4"
-      Tab(2).Control(11)=   "Label5"
-      Tab(2).Control(12)=   "Image3"
-      Tab(2).ControlCount=   13
+      Tab(2).Control(8)=   "Label6"
+      Tab(2).Control(9)=   "Image4"
+      Tab(2).Control(10)=   "Image3"
+      Tab(2).ControlCount=   11
       Begin VB.ComboBox cboUsuario 
          Appearance      =   0  'Flat
          ForeColor       =   &H00FF0000&
          Height          =   330
-         Left            =   -70440
+         Left            =   -71160
          Style           =   2  'Dropdown List
-         TabIndex        =   24
-         Top             =   960
+         TabIndex        =   21
+         Top             =   840
          Width           =   2895
       End
       Begin VB.OptionButton optPendRecepcion 
          Caption         =   "Recepción"
          Height          =   495
          Left            =   -71640
-         TabIndex        =   23
+         TabIndex        =   20
          Top             =   480
          Width           =   1335
       End
@@ -158,7 +156,7 @@ Begin VB.Form frmCR_SeguimientoRecepcionTag
          Caption         =   "Devolución"
          Height          =   495
          Left            =   -70200
-         TabIndex        =   22
+         TabIndex        =   19
          Top             =   480
          Width           =   1335
       End
@@ -390,15 +388,15 @@ Begin VB.Form frmCR_SeguimientoRecepcionTag
          BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
             NumListImages   =   3
             BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-               Picture         =   "frmCR_SeguimientoRecepcionTag.frx":1AB17
+               Picture         =   "frmCR_SeguimientoRecepcionTag.frx":1AAF5
                Key             =   ""
             EndProperty
             BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-               Picture         =   "frmCR_SeguimientoRecepcionTag.frx":21379
+               Picture         =   "frmCR_SeguimientoRecepcionTag.frx":21357
                Key             =   ""
             EndProperty
             BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-               Picture         =   "frmCR_SeguimientoRecepcionTag.frx":27BDB
+               Picture         =   "frmCR_SeguimientoRecepcionTag.frx":27BB9
                Key             =   ""
             EndProperty
          EndProperty
@@ -427,61 +425,15 @@ Begin VB.Form frmCR_SeguimientoRecepcionTag
          EndProperty
          MaxCols         =   486
          ScrollBarExtMode=   -1  'True
-         SpreadDesigner  =   "frmCR_SeguimientoRecepcionTag.frx":2E43D
+         SpreadDesigner  =   "frmCR_SeguimientoRecepcionTag.frx":2E41B
          VScrollSpecialType=   2
          AppearanceStyle =   1
-      End
-      Begin MSComCtl2.DTPicker dtpFInicio 
-         Height          =   330
-         Left            =   -74160
-         TabIndex        =   16
-         ToolTipText     =   "Fecha Inicio Búsqueda"
-         Top             =   960
-         Width           =   1575
-         _ExtentX        =   2778
-         _ExtentY        =   582
-         _Version        =   393216
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         CustomFormat    =   "dd/MM/yyyy"
-         Format          =   293797891
-         CurrentDate     =   40361
-      End
-      Begin MSComCtl2.DTPicker dtpFFin 
-         Height          =   330
-         Left            =   -72240
-         TabIndex        =   17
-         ToolTipText     =   "Fecha Fin Búsqueda"
-         Top             =   960
-         Width           =   1575
-         _ExtentX        =   2778
-         _ExtentY        =   582
-         _Version        =   393216
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         CustomFormat    =   "dd/MM/yyyy"
-         Format          =   293863427
-         CurrentDate     =   40361
       End
       Begin MSComctlLib.Toolbar tlbReportes 
          Height          =   330
          Left            =   -67440
-         TabIndex        =   19
-         Top             =   960
+         TabIndex        =   16
+         Top             =   840
          Width           =   1545
          _ExtentX        =   2725
          _ExtentY        =   582
@@ -516,51 +468,55 @@ Begin VB.Form frmCR_SeguimientoRecepcionTag
             EndProperty
          EndProperty
       End
+      Begin XtremeSuiteControls.DateTimePicker dtpFInicio 
+         Height          =   330
+         Left            =   -74160
+         TabIndex        =   23
+         Top             =   840
+         Width           =   1455
+         _Version        =   1572864
+         _ExtentX        =   2566
+         _ExtentY        =   582
+         _StockProps     =   68
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CustomFormat    =   "dd/MM/yyyy"
+         Format          =   3
+      End
+      Begin XtremeSuiteControls.DateTimePicker dtpFFin 
+         Height          =   330
+         Left            =   -72720
+         TabIndex        =   24
+         Top             =   840
+         Width           =   1455
+         _Version        =   1572864
+         _ExtentX        =   2566
+         _ExtentY        =   582
+         _StockProps     =   68
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CustomFormat    =   "dd/MM/yyyy"
+         Format          =   3
+      End
       Begin VB.Label Label1 
          Caption         =   "Usuario"
-         Height          =   255
-         Index           =   14
-         Left            =   -70440
-         TabIndex        =   25
-         Top             =   720
-         Width           =   735
-      End
-      Begin VB.Label Label7 
-         Caption         =   "Consulta por Operación"
-         Height          =   255
-         Left            =   -74160
-         TabIndex        =   21
-         Top             =   1680
-         Width           =   1935
-      End
-      Begin VB.Line Line1 
-         BorderColor     =   &H80000014&
-         X1              =   -74760
-         X2              =   -63840
-         Y1              =   1440
-         Y2              =   1440
-      End
-      Begin VB.Label Label6 
-         Caption         =   "Reportes"
-         Height          =   255
-         Left            =   -74160
-         TabIndex        =   20
-         Top             =   600
-         Width           =   975
-      End
-      Begin VB.Image Image4 
-         Height          =   480
-         Left            =   -74760
-         Picture         =   "frmCR_SeguimientoRecepcionTag.frx":2E9DC
-         Top             =   480
-         Width           =   480
-      End
-      Begin VB.Label Label5 
-         Alignment       =   2  'Center
-         Caption         =   "-"
          BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   12
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -568,15 +524,57 @@ Begin VB.Form frmCR_SeguimientoRecepcionTag
             Strikethrough   =   0   'False
          EndProperty
          Height          =   255
-         Left            =   -72600
+         Index           =   14
+         Left            =   -71160
+         TabIndex        =   22
+         Top             =   600
+         Width           =   735
+      End
+      Begin VB.Label Label7 
+         Caption         =   "Consulta por Operación"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Left            =   -74160
          TabIndex        =   18
-         Top             =   960
-         Width           =   375
+         Top             =   1680
+         Width           =   1935
+      End
+      Begin VB.Label Label6 
+         Caption         =   "Reportes"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Left            =   -74160
+         TabIndex        =   17
+         Top             =   600
+         Width           =   975
+      End
+      Begin VB.Image Image4 
+         Height          =   480
+         Left            =   -74760
+         Picture         =   "frmCR_SeguimientoRecepcionTag.frx":2E998
+         Top             =   480
+         Width           =   480
       End
       Begin VB.Image Image3 
          Height          =   480
          Left            =   -74760
-         Picture         =   "frmCR_SeguimientoRecepcionTag.frx":2EBE6
+         Picture         =   "frmCR_SeguimientoRecepcionTag.frx":2EBA2
          Top             =   1560
          Width           =   480
       End
@@ -607,14 +605,14 @@ Begin VB.Form frmCR_SeguimientoRecepcionTag
       Begin VB.Image Image2 
          Height          =   480
          Left            =   -74760
-         Picture         =   "frmCR_SeguimientoRecepcionTag.frx":2EDFF
+         Picture         =   "frmCR_SeguimientoRecepcionTag.frx":2EDBB
          Top             =   480
          Width           =   480
       End
       Begin VB.Image Image1 
          Height          =   480
          Left            =   120
-         Picture         =   "frmCR_SeguimientoRecepcionTag.frx":2F010
+         Picture         =   "frmCR_SeguimientoRecepcionTag.frx":2EFCC
          Top             =   480
          Width           =   480
       End
@@ -1089,10 +1087,10 @@ Do While Not rs.EOF
     vGridConsulta.Text = rs!Descripcion
     
     vGridConsulta.Col = 2
-    vGridConsulta.Value = IIf(IsNull(rs!REGISTRO_FECHA), "", rs!REGISTRO_FECHA)
+    vGridConsulta.Value = IIf(IsNull(rs!Registro_Fecha), "", rs!Registro_Fecha)
     
     vGridConsulta.Col = 3
-    vGridConsulta.Value = IIf(IsNull(rs!REGISTRO_USUARIO), "", rs!REGISTRO_USUARIO)
+    vGridConsulta.Value = IIf(IsNull(rs!registro_usuario), "", rs!registro_usuario)
     
     vGridConsulta.RowHeight(vGridConsulta.Row) = vGridConsulta.MaxTextRowHeight(vGridConsulta.Row)
     rs.MoveNext

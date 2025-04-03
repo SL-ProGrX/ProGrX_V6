@@ -41,7 +41,7 @@ Begin VB.Form frmFNDRetirosyLiquidaciones
       Color           =   32
       ItemCount       =   2
       Item(0).Caption =   "Datos del Retiro: "
-      Item(0).ControlCount=   16
+      Item(0).ControlCount=   17
       Item(0).Control(0)=   "opt(0)"
       Item(0).Control(1)=   "opt(1)"
       Item(0).Control(2)=   "txtNotas"
@@ -58,6 +58,7 @@ Begin VB.Form frmFNDRetirosyLiquidaciones
       Item(0).Control(13)=   "fraPagoTercero"
       Item(0).Control(14)=   "txtRebajos"
       Item(0).Control(15)=   "Label1(12)"
+      Item(0).Control(16)=   "fraPlanDestino"
       Item(1).Caption =   "Otros Rebajos:"
       Item(1).ControlCount=   3
       Item(1).Control(0)=   "txtTotalRebajos"
@@ -65,9 +66,9 @@ Begin VB.Form frmFNDRetirosyLiquidaciones
       Item(1).Control(2)=   "vGrid"
       Begin VB.Frame fraDesembolso 
          Height          =   1455
-         Left            =   360
+         Left            =   600
          TabIndex        =   46
-         Top             =   3120
+         Top             =   3240
          Width           =   6375
          Begin XtremeSuiteControls.ComboBox cboTipoDocumento 
             Height          =   312
@@ -204,11 +205,86 @@ Begin VB.Form frmFNDRetirosyLiquidaciones
             Width           =   855
          End
       End
+      Begin VB.Frame fraPlanDestino 
+         Height          =   1455
+         Left            =   840
+         TabIndex        =   62
+         Top             =   3480
+         Visible         =   0   'False
+         Width           =   6375
+         Begin XtremeSuiteControls.ComboBox cboPlanDestino 
+            Height          =   315
+            Left            =   1080
+            TabIndex        =   63
+            Top             =   960
+            Width           =   5175
+            _Version        =   1572864
+            _ExtentX        =   9128
+            _ExtentY        =   582
+            _StockProps     =   77
+            ForeColor       =   1973790
+            BackColor       =   16777215
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Style           =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
+            Text            =   "ComboBox1"
+         End
+         Begin VB.Label Label9 
+            Caption         =   "Plan"
+            BeginProperty Font 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   255
+            Index           =   3
+            Left            =   120
+            TabIndex        =   65
+            Top             =   960
+            Width           =   855
+         End
+         Begin VB.Label Label10 
+            Alignment       =   2  'Center
+            Appearance      =   0  'Flat
+            BackColor       =   &H00FFC0C0&
+            Caption         =   "Acreditar el monto del Retiros o Liquidación a un Contrato de Fondos existente o nuevo?"
+            BeginProperty Font 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00000000&
+            Height          =   615
+            Index           =   2
+            Left            =   120
+            TabIndex        =   64
+            Top             =   240
+            Width           =   6135
+         End
+      End
       Begin VB.Frame fraRetener 
          Height          =   1455
          Left            =   360
          TabIndex        =   40
          Top             =   3120
+         Visible         =   0   'False
          Width           =   6375
          Begin XtremeSuiteControls.ComboBox cboRetencion 
             Height          =   312
@@ -221,7 +297,7 @@ Begin VB.Form frmFNDRetirosyLiquidaciones
             _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   1973790
-            BackColor       =   16185078
+            BackColor       =   16777215
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -231,9 +307,9 @@ Begin VB.Form frmFNDRetirosyLiquidaciones
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            BackColor       =   16185078
             Style           =   2
-            Appearance      =   16
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
             Text            =   "ComboBox1"
          End
          Begin VB.Label Label10 
@@ -1435,6 +1511,7 @@ If vPaso Then Exit Sub
 fraDesembolso.Visible = False
 fraRetener.Visible = False
 fraPagoTercero.Visible = False
+fraPlanDestino.Visible = False
 
 fraDesembolso.top = cboProceso.top + cboProceso.Height + 45
 fraDesembolso.Left = cboProceso.Left
@@ -1445,9 +1522,13 @@ fraRetener.Left = fraDesembolso.Left
 fraPagoTercero.top = fraDesembolso.top
 fraPagoTercero.Left = fraDesembolso.Left
  
+fraPlanDestino.top = fraDesembolso.top
+fraPlanDestino.Left = fraDesembolso.Left
  
 
-If Mid(cboProceso.Text, 1, 1) = "D" Then
+Select Case Mid(cboProceso.Text, 1, 1)
+
+Case "D"
   chkPagoTercero.Visible = True
   
   If chkPagoTercero.Value = vbChecked Then
@@ -1455,12 +1536,19 @@ If Mid(cboProceso.Text, 1, 1) = "D" Then
   Else
        fraDesembolso.Visible = True
   End If
-Else
+
+Case "R"
    chkPagoTercero.Visible = False
    fraRetener.Visible = True
-End If
+
+Case "F"
+   chkPagoTercero.Visible = False
+   fraPlanDestino.Visible = True
+
+End Select
 
 End Sub
+
 
 Private Sub chkPagoTercero_Click()
 If vPaso Then Exit Sub
@@ -1523,6 +1611,22 @@ If fxTipoDocumento(cboTipoDocumento.Text) = "RC" And Mid(cboProceso.Text, 1, 1) 
 End If
 
 
+'Validaciones Adicionales (CDPs y Otros)
+If opt.Item(0).Checked Then
+    vTipo = "R"
+Else
+    vTipo = "L"
+End If
+strSQL = "select dbo.fxFndRetiroValida_Notas(" & vOperadora & ", '" & vPlan & "', " & vContrato _
+       & ", '" & vTipo & "', '" & glogon.Usuario & "') as 'Resultado'"
+Call OpenRecordSet(rs, strSQL)
+If Len(rs!Resultado) > 0 Then
+    MsgBox rs!Resultado, vbExclamation
+    Exit Sub
+End If
+
+
+
 Select Case True
   Case opt.Item(0).Checked 'Retiro
     vTipo = "R"
@@ -1572,13 +1676,39 @@ If CCur(txtRebajos.Text) > 0 Then
     Call ConectionExecute(strSQL)
 End If
 
+Dim pRetCodigo As String, pBancoId As String, pCuentaBancaria As String
+
+pRetCodigo = ""
+pBancoId = "0"
+pCuentaBancaria = ""
+
+If cboBanco.ListCount > 0 Then
+    pBancoId = cboBanco.ItemData(cboBanco.ListIndex)
+End If
+
+If cboCuenta.ListCount > 0 Then
+    pCuentaBancaria = cboCuenta.ItemData(cboCuenta.ListIndex)
+End If
+
+Select Case Mid(cboProceso.Text, 1, 1)
+    Case "D" 'Desembolso
+
+    Case "R" 'Retencion
+      If cboRetencion.ListCount > 0 Then
+          pRetCodigo = cboRetencion.ItemData(cboRetencion.ListIndex)
+      End If
+    
+    Case "F" 'Fondo Destino
+      If cboPlanDestino.ListCount > 0 Then
+          pRetCodigo = cboPlanDestino.ItemData(cboPlanDestino.ListIndex)
+      End If
+End Select
 
 'Valida, aplica y envia a tesoreria (si es que aplica)
-strSQL = "exec spFndRetLiqProceso " & vOperadora & ",'" & vPlan & "'," & vContrato & ",'" & strCedula & "'," & CCur(txtMontoAplicar.Text) _
-       & ",'" & vTipo & "','" & txtNotas.Text & "','" & glogon.Usuario & "','" & GLOBALES.gOficinaTitular _
-       & "','" & Mid(cboProceso.Text, 1, 1) & "','" & cboRetencion.ItemData(cboRetencion.ListIndex) _
-       & "'," & cboBanco.ItemData(cboBanco.ListIndex) & ",'" & fxTipoDocumento(cboTipoDocumento.Text) & "','" & cboCuenta.ItemData(cboCuenta.ListIndex) _
-       & "','" & App.ProductName & "'"
+strSQL = "exec spFndRetLiqProceso " & vOperadora & ", '" & vPlan & "', " & vContrato & ",'" & strCedula & "', " & CCur(txtMontoAplicar.Text) _
+       & ", '" & vTipo & "', '" & txtNotas.Text & "', '" & glogon.Usuario & "', '" & GLOBALES.gOficinaTitular _
+       & "', '" & Mid(cboProceso.Text, 1, 1) & "', '" & pRetCodigo _
+       & "', " & pBancoId & ",'" & fxTipoDocumento(cboTipoDocumento.Text) & "','" & pCuentaBancaria & "', '" & App.ProductName & "'"
 
  
 
@@ -1604,6 +1734,9 @@ Else
   vTesoreria = rs!tesoreria
 End If
 rs.Close
+
+
+Call sbTrazabilidad_Inserta("08", CStr(vLiquidacion), CStr(vLiquidacion))
 
  With frmContenedor.Crt
   .Reset
@@ -1638,15 +1771,19 @@ Me.MousePointer = vbDefault
  
 Call sbSIFRegistraTags(str(vLiquidacion), "S10", "FND LIQ", "0", "FLQ")
 
-If Mid(cboProceso.Text, 1, 1) = "R" Then
-     MsgBox "Liquidación o Retiro aplicado satisfactoriamente [Se Aplica Retención al Desembolso]", vbInformation
-Else
-  If vTesoreria = 0 Then
-     MsgBox "Liquidación o Retiro aplicado satisfactoriamente [Activado para Traslado a Tesorería]", vbInformation
-  Else
-     MsgBox "Liquidación o Retiro aplicado y enviado a Tesoreria [No. de solictud en Tesoreria..: " & vTesoreria & " ]", vbInformation
-  End If
-End If
+
+Select Case Mid(cboProceso.Text, 1, 1)
+    Case "R"
+         MsgBox "Liquidación o Retiro aplicado satisfactoriamente [Se Aplica Retención al Desembolso]", vbInformation
+    Case "D"
+        If vTesoreria = 0 Then
+           MsgBox "Liquidación o Retiro aplicado satisfactoriamente [Activado para Traslado a Tesorería]", vbInformation
+        Else
+           MsgBox "Liquidación o Retiro aplicado y enviado a Tesoreria [No. de solictud en Tesoreria..: " & vTesoreria & " ]", vbInformation
+        End If
+    Case "F"
+         MsgBox "Liquidación o Retiro aplicado satisfactoriamente [Acredito a Fondo Indicado]", vbInformation
+End Select
 
 Unload Me
 
@@ -1720,12 +1857,24 @@ vModulo = 18 'Fondo de Inversion
 
 Set imgBanner.Picture = frmContenedor.imgBanner_01.Picture
 
+
+
+vOperadora = gFondos.Operadora
+vPlan = gFondos.Plan
+vContrato = gFondos.Contrato
+
+lblTipo.Caption = "Plan: " & Trim(gFondos.Plan) & Space(10) & " Contrato: " & gFondos.Contrato
+
+mFechaServer = fxFechaServidor
+
+
 vPermiteLiquidar = True
 
 vPaso = True
     cboProceso.Clear
     cboProceso.AddItem "Desembolsar"
     cboProceso.AddItem "Retener"
+    cboProceso.AddItem "Fondo"
 vPaso = False
 cboProceso.Text = "Desembolsar"
 
@@ -1734,6 +1883,7 @@ cboTipoDocumento.Clear
 cboTipoDocumento.AddItem fxTipoDocumento("TE")
 cboTipoDocumento.AddItem fxTipoDocumento("CK")
 cboTipoDocumento.AddItem fxTipoDocumento("RC")
+cboTipoDocumento.AddItem fxTipoDocumento("FD")
 cboTipoDocumento.Text = fxTipoDocumento("TE")
 
 If fxFndParametro("01") = "S" Then
@@ -1769,6 +1919,10 @@ strSQL = "select rtrim(RETENCION_CODIGO) as 'IdX', RTRIM(DESCRIPCION) as 'ItmX'"
        & " and dbo.fxFnd_Seguridad_Acceso_Concepto('" & glogon.Usuario & "', RETENCION_CODIGO) = 1"
 Call sbCbo_Llena_New(cboRetencion, strSQL, False, True)
 
+strSQL = "exec spFndRetirosPlanesDestinos_List " & vOperadora & ", '" & vPlan & "', " & vContrato
+Call sbCbo_Llena_New(cboPlanDestino, strSQL, False, True)
+
+
 strSQL = "select CODIGO, DESCRIPCION, '' AS DOCUMENTO, '' AS DETALLE, 0 AS 'MONTO'" _
        & " From vFnd_Rebajos_Aplicables_List Where dbo.fxFnd_Seguridad_Acceso_Concepto('" & glogon.Usuario & "', CODIGO) = 1"
 Call sbCargaGrid(vGrid, 5, strSQL, True)
@@ -1779,16 +1933,8 @@ End If
 txtRebajos.Text = Format(0, "Standard")
 txtTotalRebajos.Text = Format(0, "Standard")
 
-mFechaServer = fxFechaServidor
-
 Call Formularios(Me)
 Call RefrescaTags(Me)
-
-vOperadora = gFondos.Operadora
-vPlan = gFondos.Plan
-vContrato = gFondos.Contrato
-
-lblTipo.Caption = "Plan: " & Trim(gFondos.Plan) & Space(10) & " Contrato: " & gFondos.Contrato
 
 
 strSQL = "select isnull(sif_liquida,0) as 'PermiteLiquidar' from fnd_Planes where cod_Operadora = " & vOperadora & " and Cod_Plan = '" & vPlan & "'"
@@ -1805,10 +1951,10 @@ If rs!PermiteLiquidar Then
        lblCliente.Caption = "Id: " & strCedula & Space(10) & strCliente
     
        
-       txtAportes.Text = Format(rs!APORTES, "Standard")
+       txtAportes.Text = Format(rs!Aportes, "Standard")
        txtRendimientos.Text = Format(rs!Rendimiento, "Standard")
-       txtMontoAplicar.Text = Format(rs!APORTES + rs!Rendimiento + rs!Rend_Pendiente, "Standard")
-       txtFechaCorte.Text = Format(rs!Fecha_Corte, "yyyy/mm/dd")
+       txtMontoAplicar.Text = Format(rs!Aportes + rs!Rendimiento + rs!Rend_Pendiente, "Standard")
+       txtFechaCorte.Text = Format(rs!fecha_corte, "yyyy/mm/dd")
        
        If rs!Plazo <= 900 And rs!plazo_Tipo = "M" Then
          txtFechaCorte.Tag = "N"

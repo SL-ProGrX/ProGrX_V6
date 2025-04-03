@@ -1,32 +1,32 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.3#0"; "Codejock.Controls.v19.3.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.3#0"; "Codejock.ShortcutBar.v19.3.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmPreaEstadoPreanalisis 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Estado del Estudio de Crédito"
-   ClientHeight    =   6216
-   ClientLeft      =   48
-   ClientTop       =   216
-   ClientWidth     =   9264
+   ClientHeight    =   6225
+   ClientLeft      =   45
+   ClientTop       =   210
+   ClientWidth     =   9495
    KeyPreview      =   -1  'True
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   6216
-   ScaleWidth      =   9264
+   ScaleHeight     =   6225
+   ScaleWidth      =   9495
    ShowInTaskbar   =   0   'False
    StartUpPosition =   1  'CenterOwner
    Begin XtremeSuiteControls.ListView lsw 
-      Height          =   3372
-      Left            =   240
+      Height          =   3375
+      Left            =   120
       TabIndex        =   2
       Top             =   1800
-      Width           =   8892
-      _Version        =   1245187
-      _ExtentX        =   15684
-      _ExtentY        =   5948
+      Width           =   9255
+      _Version        =   1572864
+      _ExtentX        =   16325
+      _ExtentY        =   5953
       _StockProps     =   77
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
@@ -39,7 +39,8 @@ Begin VB.Form frmPreaEstadoPreanalisis
       EndProperty
       Checkboxes      =   -1  'True
       View            =   3
-      Appearance      =   16
+      Appearance      =   21
+      UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.PushButton cmb_Aceptar 
       Height          =   612
@@ -47,12 +48,12 @@ Begin VB.Form frmPreaEstadoPreanalisis
       TabIndex        =   1
       Top             =   5400
       Width           =   1812
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   1080
       _StockProps     =   79
       Caption         =   "Aceptar"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -62,7 +63,8 @@ Begin VB.Form frmPreaEstadoPreanalisis
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   14
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Picture         =   "frmPreaEstadoPreanalisis.frx":0000
    End
    Begin XtremeSuiteControls.PushButton btnOpcion 
@@ -72,7 +74,7 @@ Begin VB.Form frmPreaEstadoPreanalisis
       TabIndex        =   3
       Top             =   1200
       Width           =   2052
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   656
       _StockProps     =   79
@@ -96,7 +98,7 @@ Begin VB.Form frmPreaEstadoPreanalisis
       TabIndex        =   4
       Top             =   1200
       Width           =   2052
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   656
       _StockProps     =   79
@@ -120,7 +122,7 @@ Begin VB.Form frmPreaEstadoPreanalisis
       TabIndex        =   5
       Top             =   1200
       Width           =   2052
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   656
       _StockProps     =   79
@@ -144,7 +146,7 @@ Begin VB.Form frmPreaEstadoPreanalisis
       TabIndex        =   6
       Top             =   1200
       Width           =   2052
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   656
       _StockProps     =   79
@@ -167,13 +169,13 @@ Begin VB.Form frmPreaEstadoPreanalisis
       TabIndex        =   7
       Top             =   1080
       Width           =   12732
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   22458
       _ExtentY        =   1101
       _StockProps     =   14
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   7.8
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -237,13 +239,14 @@ Select Case Index
     pTipo = "R"
   Case 1 'Pendiente
     pTipo = "P"
+    Call sbListaCausas
   Case 2 'Aprobado
     pTipo = "A"
   Case 3 'Denegado
     pTipo = "D"
+    Call sbListaCausas
 End Select
 
-Call sbListaCausas
 
 End Sub
 
@@ -284,6 +287,9 @@ End If
 
 Call sbGuardar
 
+
+Call sbFormsCall("frmPrea_Notificacion", vbModal, , , False, Me, True)
+
 End Sub
 
 Private Sub sbListaCausas()
@@ -311,9 +317,9 @@ strSQL = "select Cg.COD_CAUSAS, Cg.DESCRIPCION,case when isnull(Pa.Cod_Causas,'N
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
  Set itmX = lsw.ListItems.Add(, , rs!Cod_Causas)
-     itmX.SubItems(1) = rs!Descripcion
-     itmX.SubItems(2) = rs!registro_Fecha & ""
-     itmX.SubItems(3) = rs!registro_usuario & ""
+     itmX.SubItems(1) = rs!DESCRIPCION
+     itmX.SubItems(2) = rs!Registro_Fecha & ""
+     itmX.SubItems(3) = rs!Registro_Usuario & ""
      itmX.Checked = IIf((rs!Check = 1), True, False)
      If itmX.Checked Then itmX.ForeColor = vbBlue
  rs.MoveNext
@@ -369,7 +375,8 @@ Private Sub sbGuardar()
 Dim StrUpdate1 As String
 Dim StrUpdate2 As String
 Dim StrSet As String
-Dim vEstado As String
+Dim vEstado As String, vEstadoNuevo As String
+
 On Error GoTo vError
 
 StrUpdate1 = "Update CRD_PREA_PREANALISIS SET "
@@ -379,21 +386,30 @@ StrUpdate2 = StrUpdate1
 Select Case True
   Case btnOpcion.Item(0).Checked  'Recibido
     vEstado = "R"
+    vEstadoNuevo = "RECI"
+    
  Case btnOpcion.Item(1).Checked 'Pendiente
     vEstado = "P"
+    vEstadoNuevo = "PEND"
+ 
  Case btnOpcion.Item(2).Checked 'Aprobado
     vEstado = "A"
+    vEstadoNuevo = "APRO"
+ 
  Case btnOpcion.Item(3).Checked 'Denegado
     vEstado = "D"
+    vEstadoNuevo = "DESC"
 End Select
 
+'------------------------------- Reemplazar por Este.
+'dbo.spCRD_PREA_MODIFICA_ESTADO_RESOLUCION
 
-StrSet = "ESTADO = " & fxFormatearValor(vEstado, Caracter)
-StrSet = StrSet & ", USUARIO_GESTION = " & fxFormatearValor(glogon.Usuario, Caracter) & ",  FECHA_GESTION = dbo.MyGetdate()"
+StrSet = "ESTADO = " & fxFormatearValor(vEstado, caracter) & ", COD_ESTADO_V2 = '" & vEstadoNuevo & "'"
+StrSet = StrSet & ", USUARIO_GESTION = " & fxFormatearValor(glogon.Usuario, caracter) & ",  FECHA_GESTION = dbo.MyGetdate()"
 
-StrUpdate1 = StrUpdate1 & StrSet & " where COD_PREANALISIS = " & fxFormatearValor(mExpediente, Caracter)
+StrUpdate1 = StrUpdate1 & StrSet & " where COD_PREANALISIS = " & fxFormatearValor(mExpediente, caracter)
 
-StrUpdate1 = StrUpdate1 & " or COD_PREANALISIS_REF = " & fxFormatearValor(mExpediente, Caracter)
+StrUpdate1 = StrUpdate1 & " or COD_PREANALISIS_REF = " & fxFormatearValor(mExpediente, caracter)
 
 m_estadoPreanalisis = vEstado
 
@@ -473,14 +489,14 @@ Dim Cod_Parametro As String, Tag As String, LineaTag As Integer, NotaTag As Stri
     End If
     rs.Close
     
-    strSQL = "select isnull(max(linea),0)+1 as Linea from CRD_PREA_TAGS where cod_preanalisis = " & fxFormatearValor(mExpediente, Caracter)
+    strSQL = "select isnull(max(linea),0)+1 as Linea from CRD_PREA_TAGS where cod_preanalisis = " & fxFormatearValor(mExpediente, caracter)
     Call OpenRecordSet(rs, strSQL)
     If Not rs.EOF Then
         LineaTag = rs!Linea
     End If
     rs.Close
     
-    strSQL = "select Cod_Linea from CRD_PREA_PREANALISIS where COD_PREANALISIS = " & fxFormatearValor(mExpediente, Caracter)
+    strSQL = "select Cod_Linea from CRD_PREA_PREANALISIS where COD_PREANALISIS = " & fxFormatearValor(mExpediente, caracter)
     Call OpenRecordSet(rs, strSQL)
     If Not rs.EOF Then
         Cod_Linea = rs!Cod_Linea
@@ -490,7 +506,7 @@ Dim Cod_Parametro As String, Tag As String, LineaTag As Integer, NotaTag As Stri
     strSQL = "insert CRD_PREA_TAGS (LINEA,CODIGO,COD_PREANALISIS,TAG_CODIGO,ASIGNADO_A,REGISTRO_FECHA,REGISTRO_USUARIO,NOTAS)" _
              & "values(" & LineaTag _
              & ",'" & Trim(Cod_Linea) _
-             & "'," & fxFormatearValor(mExpediente, Caracter) _
+             & "'," & fxFormatearValor(mExpediente, caracter) _
              & ",'" & Tag _
              & "','','" & Format(fxFechaServidor, "yyyy/mm/dd hh:mm:ss") _
              & "','" & glogon.Usuario _

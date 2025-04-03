@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCpr_Proveedores 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,7 +24,7 @@ Begin VB.Form frmCpr_Proveedores
       TabIndex        =   16
       Top             =   3840
       Width           =   9255
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16325
       _ExtentY        =   1720
       _StockProps     =   79
@@ -47,7 +47,7 @@ Begin VB.Form frmCpr_Proveedores
          TabIndex        =   17
          Top             =   480
          Width           =   3135
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5530
          _ExtentY        =   661
          _StockProps     =   79
@@ -84,7 +84,7 @@ Begin VB.Form frmCpr_Proveedores
       TabIndex        =   1
       Top             =   600
       Width           =   1095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   582
       _StockProps     =   77
@@ -108,7 +108,7 @@ Begin VB.Form frmCpr_Proveedores
       TabIndex        =   2
       Top             =   600
       Width           =   6375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   11239
       _ExtentY        =   582
       _StockProps     =   77
@@ -131,7 +131,7 @@ Begin VB.Form frmCpr_Proveedores
       TabIndex        =   4
       Top             =   1080
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   582
       _StockProps     =   77
@@ -157,7 +157,7 @@ Begin VB.Form frmCpr_Proveedores
       TabIndex        =   5
       Top             =   2040
       Width           =   7335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12938
       _ExtentY        =   582
       _StockProps     =   77
@@ -180,7 +180,7 @@ Begin VB.Form frmCpr_Proveedores
       TabIndex        =   11
       Top             =   2400
       Width           =   7335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12938
       _ExtentY        =   1826
       _StockProps     =   77
@@ -205,7 +205,7 @@ Begin VB.Form frmCpr_Proveedores
       TabIndex        =   13
       Top             =   1080
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   582
       _StockProps     =   77
@@ -288,7 +288,7 @@ Begin VB.Form frmCpr_Proveedores
       TabIndex        =   7
       Top             =   1080
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3408
       _ExtentY        =   582
       _StockProps     =   77
@@ -312,7 +312,7 @@ Begin VB.Form frmCpr_Proveedores
       TabIndex        =   6
       Top             =   1560
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   582
       _StockProps     =   77
@@ -655,7 +655,7 @@ If Not rs.BOF And Not rs.EOF Then
   txtCodigo.Text = CStr(rs!PROVEEDOR_CODIGO)
   
     txtNombre.Text = rs!Descripcion & ""
-    txtObservacion.Text = rs!observacion & ""
+    txtObservacion.Text = rs!Observacion & ""
     
     txtCedJur.Text = rs!CEDJUR & ""
     

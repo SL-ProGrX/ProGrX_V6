@@ -1,28 +1,28 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmFNDGruposOperativos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Grupos de Trabajo Operativo"
-   ClientHeight    =   8610
+   ClientHeight    =   8595
    ClientLeft      =   45
    ClientTop       =   390
-   ClientWidth     =   15885
+   ClientWidth     =   15780
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
-   ScaleHeight     =   8610
-   ScaleWidth      =   15885
+   ScaleHeight     =   8595
+   ScaleWidth      =   15780
    Begin XtremeSuiteControls.ListView lswUsuarios 
       Height          =   3495
       Left            =   5280
       TabIndex        =   1
       Top             =   5040
       Width           =   5295
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9334
       _ExtentY        =   6159
       _StockProps     =   77
@@ -47,7 +47,7 @@ Begin VB.Form frmFNDGruposOperativos
       TabIndex        =   2
       Top             =   5040
       Width           =   5295
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9334
       _ExtentY        =   6159
       _StockProps     =   77
@@ -72,7 +72,7 @@ Begin VB.Form frmFNDGruposOperativos
       TabIndex        =   7
       Top             =   5040
       Width           =   5295
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9334
       _ExtentY        =   6159
       _StockProps     =   77
@@ -126,7 +126,7 @@ Begin VB.Form frmFNDGruposOperativos
       TabIndex        =   4
       Top             =   4680
       Width           =   5295
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9340
       _ExtentY        =   635
       _StockProps     =   77
@@ -151,7 +151,7 @@ Begin VB.Form frmFNDGruposOperativos
       TabIndex        =   5
       Top             =   4680
       Width           =   5295
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9340
       _ExtentY        =   635
       _StockProps     =   77
@@ -176,7 +176,7 @@ Begin VB.Form frmFNDGruposOperativos
       TabIndex        =   8
       Top             =   4680
       Width           =   5295
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9340
       _ExtentY        =   635
       _StockProps     =   77
@@ -200,7 +200,7 @@ Begin VB.Form frmFNDGruposOperativos
       TabIndex        =   6
       Top             =   4320
       Width           =   15855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   27966
       _ExtentY        =   661
       _StockProps     =   14
@@ -279,9 +279,9 @@ strSQL = "select Pl.cod_Operadora, Pl.cod_Plan, Pl.Descripcion, Asg.FECHA_REGIST
        & " order by isnull(Asg.PLANES_CODIGO,'ZZZZZZZZZZZZ') asc,Pl.cod_Plan asc"
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
- Set itmX = lsw.ListItems.Add(, , rs!Cod_Plan)
+ Set itmX = lsw.ListItems.Add(, , rs!COD_PLAN)
      itmX.Tag = rs!COD_OPERADORA
-     itmX.SubItems(1) = rs!DESCRIPCION
+     itmX.SubItems(1) = rs!Descripcion
      itmX.SubItems(2) = rs!USUARIO_REGISTRA & ""
      itmX.SubItems(3) = rs!FECHA_REGISTRA & ""
      
@@ -327,7 +327,7 @@ strSQL = "select Us.Nombre, Us.Descripcion, Asg.FECHA_REGISTRA, Asg.USUARIO_REGI
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
  Set itmX = lswUsuarios.ListItems.Add(, , rs!Nombre)
-     itmX.SubItems(1) = rs!DESCRIPCION
+     itmX.SubItems(1) = rs!Descripcion
      itmX.SubItems(2) = rs!USUARIO_REGISTRA & ""
      itmX.SubItems(3) = rs!FECHA_REGISTRA & ""
      
@@ -374,7 +374,7 @@ strSQL = "select Pl.RETENCION_CODIGO, Pl.Descripcion, Asg.FECHA_REGISTRA, Asg.US
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
  Set itmX = lswConceptos.ListItems.Add(, , rs!RETENCION_CODIGO)
-     itmX.SubItems(1) = rs!DESCRIPCION
+     itmX.SubItems(1) = rs!Descripcion
      itmX.SubItems(2) = rs!USUARIO_REGISTRA & ""
      itmX.SubItems(3) = rs!FECHA_REGISTRA & ""
      
@@ -475,12 +475,12 @@ Do While Not rs.EOF
   vGrid.Row = vGrid.MaxRows
   
   For i = 1 To vGrid.MaxCols
-    vGrid.col = i
+    vGrid.Col = i
     Select Case i
      Case 1 'Codigo
         vGrid.Text = CStr(rs!GRUPO_CODIGO)
      Case 2 'descripcion
-        vGrid.Text = CStr(rs!DESCRIPCION)
+        vGrid.Text = CStr(rs!Descripcion)
      Case 3 'Tipo
         vGrid.Text = CStr(rs!TIPO_GRUPO)
      Case 4 'Estado
@@ -509,13 +509,13 @@ Dim vCuenta As String, vCuentaSalida As String
 On Error GoTo vError
         
 vGrid.Row = vGrid.ActiveRow
-vGrid.col = 1
+vGrid.Col = 1
 
 fxGuardar = 0
 If Trim(vGrid.Text) = "" Then Exit Function
 
 
-vGrid.col = 1
+vGrid.Col = 1
 
 If vGrid.Text = "" Then 'Insertar
 
@@ -526,16 +526,16 @@ If vGrid.Text = "" Then 'Insertar
 
   strSQL = "insert into FND_CONFIGURACION_GRUPOS(GRUPO_CODIGO, descripcion, TIPO_GRUPO, ESTADO, Fecha_Registra, Usuario_Registra)" _
          & " values('" & vGrid.Text & "', '"
-  vGrid.col = 2
+  vGrid.Col = 2
   strSQL = strSQL & vGrid.Text & "', '"
-  vGrid.col = 3
+  vGrid.Col = 3
   strSQL = strSQL & vGrid.Text & "' ,"
-  vGrid.col = 4
+  vGrid.Col = 4
   strSQL = strSQL & vGrid.Value & ", dbo.MyGetdate(), '" & glogon.Usuario & "')"
 
   Call ConectionExecute(strSQL)
 
-  vGrid.col = 1
+  vGrid.Col = 1
   
     strSQL = "select max(GRUPO_CODIGO) as 'Codigo' from FND_CONFIGURACION_GRUPOS "
     Call OpenRecordSet(rs, strSQL)
@@ -546,17 +546,17 @@ If vGrid.Text = "" Then 'Insertar
 
 Else 'Actualizar
 
- vGrid.col = 2
+ vGrid.Col = 2
  strSQL = "update FND_CONFIGURACION_GRUPOS set descripcion = '" & vGrid.Text & "', TIPO_GRUPO = '"
- vGrid.col = 3
+ vGrid.Col = 3
  strSQL = strSQL & vGrid.Text & "' , Estado = "
- vGrid.col = 4
+ vGrid.Col = 4
  strSQL = strSQL & vGrid.Value & " where GRUPO_CODIGO = '"
- vGrid.col = 1
+ vGrid.Col = 1
  strSQL = strSQL & vGrid.Text & "'"
  Call ConectionExecute(strSQL)
 
- vGrid.col = 1
+ vGrid.Col = 1
  Call Bitacora("Modifica", "Grupo Operativo de Fondos:  " & vGrid.Text)
 
 End If
@@ -685,14 +685,14 @@ End If
 
 End Sub
 
-Private Sub vGrid_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+Private Sub vGrid_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
 If vPaso Then Exit Sub
-If col <> 5 Then Exit Sub
+If Col <> 5 Then Exit Sub
 
 vGrid.Row = Row
-vGrid.col = 1
+vGrid.Col = 1
 scGrupo.Tag = vGrid.Text
-vGrid.col = 2
+vGrid.Col = 2
 scGrupo.Caption = vGrid.Text
 
 Call sbDetalle_Consulta
@@ -727,12 +727,12 @@ If KeyCode = vbKeyDelete Then
      i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
      If i = vbYes Then
         vGrid.Row = vGrid.ActiveRow
-        vGrid.col = 1
+        vGrid.Col = 1
         strSQL = "delete FND_CONFIGURACION_GRUPOS where GRUPO_CODIGO = '" & vGrid.Text & "'"
         Call ConectionExecute(strSQL)
 
         strSQL = vGrid.Text
-        vGrid.col = 1
+        vGrid.Col = 1
         Call Bitacora("Elimina", "Grupo Operativo de Fondos:  " & vGrid.Text)
 
         vGrid.DeleteRows vGrid.ActiveRow, 1

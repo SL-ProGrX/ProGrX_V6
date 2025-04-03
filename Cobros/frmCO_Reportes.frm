@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCO_Reportes 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -22,7 +22,7 @@ Begin VB.Form frmCO_Reportes
       TabIndex        =   20
       Top             =   1680
       Width           =   3735
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   6588
       _ExtentY        =   7223
       _StockProps     =   77
@@ -46,7 +46,7 @@ Begin VB.Form frmCO_Reportes
       TabIndex        =   21
       Top             =   5880
       Width           =   10212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18013
       _ExtentY        =   1714
       _StockProps     =   79
@@ -60,7 +60,7 @@ Begin VB.Form frmCO_Reportes
          TabIndex        =   22
          Top             =   240
          Width           =   2532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4471
          _ExtentY        =   582
          _StockProps     =   77
@@ -140,7 +140,7 @@ Begin VB.Form frmCO_Reportes
       TabIndex        =   1
       Top             =   1680
       Width           =   6372
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   11239
       _ExtentY        =   7218
       _StockProps     =   68
@@ -199,7 +199,7 @@ Begin VB.Form frmCO_Reportes
          Top             =   720
          Visible         =   0   'False
          Width           =   6132
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10816
          _ExtentY        =   5736
          _StockProps     =   77
@@ -224,7 +224,7 @@ Begin VB.Form frmCO_Reportes
          TabIndex        =   2
          Top             =   840
          Width           =   4575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8070
          _ExtentY        =   582
          _StockProps     =   77
@@ -250,7 +250,7 @@ Begin VB.Form frmCO_Reportes
          TabIndex        =   3
          Top             =   1200
          Width           =   4575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8070
          _ExtentY        =   582
          _StockProps     =   77
@@ -276,7 +276,7 @@ Begin VB.Form frmCO_Reportes
          TabIndex        =   4
          Top             =   2040
          Width           =   4575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8070
          _ExtentY        =   582
          _StockProps     =   77
@@ -302,7 +302,7 @@ Begin VB.Form frmCO_Reportes
          TabIndex        =   5
          Top             =   2400
          Width           =   4575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8070
          _ExtentY        =   582
          _StockProps     =   77
@@ -328,7 +328,7 @@ Begin VB.Form frmCO_Reportes
          TabIndex        =   6
          Top             =   480
          Width           =   255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   450
          _ExtentY        =   450
          _StockProps     =   79
@@ -353,7 +353,7 @@ Begin VB.Form frmCO_Reportes
          TabIndex        =   7
          Top             =   480
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
@@ -377,7 +377,7 @@ Begin VB.Form frmCO_Reportes
          TabIndex        =   8
          Top             =   480
          Width           =   3855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   6800
          _ExtentY        =   556
          _StockProps     =   77
@@ -401,7 +401,7 @@ Begin VB.Form frmCO_Reportes
          TabIndex        =   13
          Top             =   1560
          Width           =   4575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8070
          _ExtentY        =   582
          _StockProps     =   77
@@ -427,7 +427,7 @@ Begin VB.Form frmCO_Reportes
          TabIndex        =   16
          Top             =   3120
          Width           =   4575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8070
          _ExtentY        =   582
          _StockProps     =   77
@@ -453,7 +453,7 @@ Begin VB.Form frmCO_Reportes
          TabIndex        =   18
          Top             =   3480
          Width           =   4575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8070
          _ExtentY        =   582
          _StockProps     =   77
@@ -480,7 +480,7 @@ Begin VB.Form frmCO_Reportes
          Top             =   360
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -507,7 +507,7 @@ Begin VB.Form frmCO_Reportes
          Top             =   360
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -534,7 +534,7 @@ Begin VB.Form frmCO_Reportes
          Top             =   720
          Visible         =   0   'False
          Width           =   6132
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10816
          _ExtentY        =   5736
          _StockProps     =   77
@@ -561,7 +561,7 @@ Begin VB.Form frmCO_Reportes
          Top             =   360
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -588,7 +588,7 @@ Begin VB.Form frmCO_Reportes
          Top             =   720
          Visible         =   0   'False
          Width           =   6132
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10816
          _ExtentY        =   5736
          _StockProps     =   77
@@ -615,7 +615,7 @@ Begin VB.Form frmCO_Reportes
          Top             =   360
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -642,7 +642,7 @@ Begin VB.Form frmCO_Reportes
          Top             =   720
          Visible         =   0   'False
          Width           =   6135
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10816
          _ExtentY        =   5736
          _StockProps     =   77
@@ -872,14 +872,14 @@ Begin VB.Form frmCO_Reportes
       TabIndex        =   34
       Top             =   1320
       Width           =   6372
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   11239
       _ExtentY        =   656
       _StockProps     =   14
       Caption         =   "Filtros:"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   8.93
+         Size            =   9
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -894,13 +894,13 @@ Begin VB.Form frmCO_Reportes
       TabIndex        =   33
       Top             =   1320
       Width           =   3732
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   6583
       _ExtentY        =   656
       _StockProps     =   14
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   8.93
+         Size            =   9
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -944,6 +944,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim strSQL As String, rs As New ADODB.Recordset, itmX As ListViewItem
 Dim vPaso As Boolean
 
 Private Sub sbReporteListados()
@@ -1381,7 +1382,6 @@ End Sub
 
 
 Private Sub TimerX_Timer()
-Dim strSQL As String, rs As New ADODB.Recordset, itmX As ListViewItem
 
 TimerX.Interval = 0
 

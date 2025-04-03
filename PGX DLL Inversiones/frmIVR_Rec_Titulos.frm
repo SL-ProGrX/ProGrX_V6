@@ -1,20 +1,20 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
 Begin VB.Form frmIVR_Rec_Titulos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "SCGI Registro de Inversiones"
-   ClientHeight    =   9570
+   ClientHeight    =   9645
    ClientLeft      =   30
    ClientTop       =   390
    ClientWidth     =   13455
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   9570
+   ScaleHeight     =   9645
    ScaleWidth      =   13455
    ShowInTaskbar   =   0   'False
    StartUpPosition =   3  'Windows Default
@@ -29,7 +29,7 @@ Begin VB.Form frmIVR_Rec_Titulos
       TabIndex        =   4
       Top             =   2160
       Width           =   10575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18653
       _ExtentY        =   13573
       _StockProps     =   68
@@ -98,7 +98,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   4320
          Visible         =   0   'False
          Width           =   10332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18224
          _ExtentY        =   3408
          _StockProps     =   77
@@ -123,7 +123,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   720
          Visible         =   0   'False
          Width           =   10332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18224
          _ExtentY        =   11028
          _StockProps     =   77
@@ -148,7 +148,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   720
          Visible         =   0   'False
          Width           =   10332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18224
          _ExtentY        =   11028
          _StockProps     =   77
@@ -173,7 +173,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   720
          Visible         =   0   'False
          Width           =   10332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18224
          _ExtentY        =   11028
          _StockProps     =   77
@@ -198,7 +198,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   3960
          Visible         =   0   'False
          Width           =   10332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18224
          _ExtentY        =   5313
          _StockProps     =   77
@@ -223,7 +223,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   720
          Visible         =   0   'False
          Width           =   10332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18224
          _ExtentY        =   5101
          _StockProps     =   77
@@ -248,7 +248,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   1200
          Visible         =   0   'False
          Width           =   10572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18648
          _ExtentY        =   10393
          _StockProps     =   77
@@ -273,7 +273,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   720
          Visible         =   0   'False
          Width           =   10332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18224
          _ExtentY        =   5524
          _StockProps     =   77
@@ -300,7 +300,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   396
          Visible         =   0   'False
          Width           =   252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   444
          _ExtentY        =   444
          _StockProps     =   79
@@ -314,7 +314,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   6360
          Visible         =   0   'False
          Width           =   10332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18224
          _ExtentY        =   1080
          _StockProps     =   79
@@ -326,7 +326,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   164
             Top             =   120
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -350,7 +350,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   165
             Top             =   120
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -374,7 +374,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   166
             Top             =   120
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -399,7 +399,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   168
             Top             =   120
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   444
             _StockProps     =   79
@@ -422,7 +422,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   167
             Top             =   120
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   444
             _StockProps     =   79
@@ -446,7 +446,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   360
          Visible         =   0   'False
          Width           =   10572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18648
          _ExtentY        =   1503
          _StockProps     =   79
@@ -470,7 +470,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   121
             Top             =   360
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   656
             _StockProps     =   79
@@ -493,7 +493,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   122
             Top             =   360
             Width           =   492
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   868
             _ExtentY        =   656
             _StockProps     =   79
@@ -515,7 +515,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   123
             Top             =   360
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
@@ -541,7 +541,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   124
             Top             =   360
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -566,7 +566,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   360
          Visible         =   0   'False
          Width           =   10572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18648
          _ExtentY        =   12721
          _StockProps     =   79
@@ -579,7 +579,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   58
             Top             =   1320
             Width           =   10572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   18648
             _ExtentY        =   9123
             _StockProps     =   77
@@ -604,7 +604,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   62
             Top             =   720
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   656
             _StockProps     =   79
@@ -626,7 +626,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   59
             Top             =   360
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
@@ -651,7 +651,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   60
             Top             =   720
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
@@ -676,7 +676,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   61
             Top             =   720
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
@@ -702,7 +702,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   66
             Top             =   720
             Width           =   492
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   868
             _ExtentY        =   656
             _StockProps     =   79
@@ -725,7 +725,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   65
             Top             =   720
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   444
             _StockProps     =   79
@@ -748,7 +748,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   64
             Top             =   720
             Width           =   1092
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1926
             _ExtentY        =   444
             _StockProps     =   79
@@ -771,7 +771,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   63
             Top             =   360
             Width           =   1092
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1926
             _ExtentY        =   444
             _StockProps     =   79
@@ -794,7 +794,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   5
          Top             =   360
          Width           =   10692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18860
          _ExtentY        =   3619
          _StockProps     =   79
@@ -807,7 +807,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   6
             Top             =   240
             Width           =   5172
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9123
             _ExtentY        =   550
             _StockProps     =   77
@@ -830,7 +830,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   7
             Top             =   1680
             Width           =   4932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8705
             _ExtentY        =   582
             _StockProps     =   77
@@ -857,7 +857,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   8
             Top             =   960
             Width           =   4932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8705
             _ExtentY        =   582
             _StockProps     =   77
@@ -884,7 +884,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   9
             Top             =   960
             Width           =   5172
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9123
             _ExtentY        =   1820
             _StockProps     =   77
@@ -909,7 +909,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   127
             Top             =   240
             Width           =   4932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8705
             _ExtentY        =   582
             _StockProps     =   77
@@ -937,7 +937,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   126
             Top             =   0
             Width           =   1092
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1926
             _ExtentY        =   444
             _StockProps     =   79
@@ -960,7 +960,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   13
             Top             =   720
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -983,7 +983,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   12
             Top             =   0
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   444
             _StockProps     =   79
@@ -1006,7 +1006,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   11
             Top             =   1440
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -1029,7 +1029,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   10
             Top             =   720
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -1052,7 +1052,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   14
          Top             =   2400
          Width           =   10695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18865
          _ExtentY        =   9763
          _StockProps     =   79
@@ -1066,7 +1066,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             Top             =   5040
             Visible         =   0   'False
             Width           =   10575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   18653
             _ExtentY        =   7223
             _StockProps     =   79
@@ -1089,7 +1089,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   148
                Top             =   840
                Width           =   2772
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4890
                _ExtentY        =   444
                _StockProps     =   79
@@ -1111,7 +1111,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   149
                Top             =   360
                Width           =   1332
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2350
                _ExtentY        =   550
                _StockProps     =   68
@@ -1133,7 +1133,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   150
                Top             =   2040
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   550
                _StockProps     =   77
@@ -1158,7 +1158,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   151
                Top             =   1680
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   550
                _StockProps     =   77
@@ -1182,7 +1182,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   152
                Top             =   1200
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   550
                _StockProps     =   77
@@ -1206,7 +1206,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   153
                Top             =   840
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3625
                _ExtentY        =   582
                _StockProps     =   77
@@ -1234,7 +1234,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   158
                Top             =   360
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   444
                _StockProps     =   79
@@ -1257,7 +1257,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   157
                Top             =   2040
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   444
                _StockProps     =   79
@@ -1280,7 +1280,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   156
                Top             =   1680
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   444
                _StockProps     =   79
@@ -1303,7 +1303,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   155
                Top             =   1200
                Width           =   1932
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3408
                _ExtentY        =   444
                _StockProps     =   79
@@ -1326,7 +1326,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   154
                Top             =   840
                Width           =   1692
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2984
                _ExtentY        =   444
                _StockProps     =   79
@@ -1350,7 +1350,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             Top             =   5040
             Visible         =   0   'False
             Width           =   10575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   18653
             _ExtentY        =   7223
             _StockProps     =   79
@@ -1373,7 +1373,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   103
                Top             =   840
                Width           =   2772
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4890
                _ExtentY        =   444
                _StockProps     =   79
@@ -1395,7 +1395,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   83
                Top             =   360
                Width           =   1332
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2350
                _ExtentY        =   550
                _StockProps     =   68
@@ -1417,7 +1417,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   85
                Top             =   2040
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   550
                _StockProps     =   77
@@ -1442,7 +1442,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   86
                Top             =   1680
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   550
                _StockProps     =   77
@@ -1466,7 +1466,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   89
                Top             =   1200
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   550
                _StockProps     =   77
@@ -1490,7 +1490,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   101
                Top             =   840
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3625
                _ExtentY        =   582
                _StockProps     =   77
@@ -1518,7 +1518,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   102
                Top             =   840
                Width           =   1692
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2984
                _ExtentY        =   444
                _StockProps     =   79
@@ -1541,7 +1541,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   90
                Top             =   1200
                Width           =   1932
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3408
                _ExtentY        =   444
                _StockProps     =   79
@@ -1564,7 +1564,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   88
                Top             =   1680
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   444
                _StockProps     =   79
@@ -1587,7 +1587,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   87
                Top             =   2040
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   444
                _StockProps     =   79
@@ -1610,7 +1610,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   84
                Top             =   360
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   444
                _StockProps     =   79
@@ -1634,7 +1634,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             Top             =   840
             Visible         =   0   'False
             Width           =   10455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   18436
             _ExtentY        =   7429
             _StockProps     =   79
@@ -1656,7 +1656,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   73
                Top             =   360
                Width           =   1332
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2350
                _ExtentY        =   550
                _StockProps     =   68
@@ -1678,7 +1678,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   75
                Top             =   1200
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   550
                _StockProps     =   77
@@ -1702,7 +1702,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   76
                Top             =   1560
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   550
                _StockProps     =   77
@@ -1726,7 +1726,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   79
                Top             =   2160
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   550
                _StockProps     =   77
@@ -1750,7 +1750,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   80
                Top             =   2520
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   550
                _StockProps     =   77
@@ -1775,7 +1775,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   130
                Top             =   840
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3625
                _ExtentY        =   582
                _StockProps     =   77
@@ -1803,7 +1803,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   131
                Top             =   840
                Width           =   1692
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2984
                _ExtentY        =   444
                _StockProps     =   79
@@ -1826,7 +1826,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   82
                Top             =   2520
                Width           =   1692
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2984
                _ExtentY        =   444
                _StockProps     =   79
@@ -1849,7 +1849,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   81
                Top             =   2160
                Width           =   1692
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2984
                _ExtentY        =   444
                _StockProps     =   79
@@ -1872,7 +1872,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   78
                Top             =   1560
                Width           =   1692
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2984
                _ExtentY        =   444
                _StockProps     =   79
@@ -1895,7 +1895,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   77
                Top             =   1200
                Width           =   1692
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2984
                _ExtentY        =   444
                _StockProps     =   79
@@ -1918,7 +1918,7 @@ Begin VB.Form frmIVR_Rec_Titulos
                TabIndex        =   74
                Top             =   360
                Width           =   1692
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2984
                _ExtentY        =   444
                _StockProps     =   79
@@ -1941,7 +1941,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   15
             Top             =   2400
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -1966,7 +1966,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   16
             Top             =   2760
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   556
             _StockProps     =   68
@@ -1988,7 +1988,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   33
             Top             =   960
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   582
             _StockProps     =   77
@@ -2015,7 +2015,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   17
             Top             =   1320
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   582
             _StockProps     =   77
@@ -2042,7 +2042,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   18
             Top             =   1680
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   582
             _StockProps     =   77
@@ -2069,7 +2069,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   19
             Top             =   2400
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   556
             _StockProps     =   68
@@ -2091,7 +2091,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   35
             Top             =   960
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -2115,7 +2115,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   37
             Top             =   1320
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -2139,7 +2139,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   20
             Top             =   2040
             Width           =   2055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3625
             _ExtentY        =   556
             _StockProps     =   77
@@ -2164,7 +2164,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   21
             Top             =   3480
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -2188,7 +2188,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   22
             Top             =   3840
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -2212,7 +2212,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   25
             Top             =   3840
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -2237,7 +2237,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   26
             Top             =   4200
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -2262,7 +2262,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   27
             Top             =   3480
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -2287,7 +2287,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   28
             Top             =   2760
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -2312,7 +2312,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   29
             Top             =   480
             Width           =   2652
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4678
             _ExtentY        =   550
             _StockProps     =   77
@@ -2336,7 +2336,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   30
             Top             =   480
             Width           =   2652
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4678
             _ExtentY        =   550
             _StockProps     =   77
@@ -2360,7 +2360,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   41
             Top             =   2040
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -2384,7 +2384,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   39
             Top             =   1680
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -2409,7 +2409,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             ToolTipText     =   "Costo Neto"
             Top             =   1320
             Width           =   2055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3625
             _ExtentY        =   556
             _StockProps     =   77
@@ -2434,7 +2434,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   31
             Top             =   480
             Width           =   2652
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4678
             _ExtentY        =   550
             _StockProps     =   77
@@ -2458,7 +2458,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   32
             Top             =   480
             Width           =   2652
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4678
             _ExtentY        =   550
             _StockProps     =   77
@@ -2483,7 +2483,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             ToolTipText     =   "Costo Neto"
             Top             =   4200
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   556
             _StockProps     =   77
@@ -2508,7 +2508,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             ToolTipText     =   "Costo Neto"
             Top             =   2760
             Width           =   2055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3625
             _ExtentY        =   556
             _StockProps     =   77
@@ -2533,7 +2533,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   179
             Top             =   3480
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1720
             _ExtentY        =   556
             _StockProps     =   77
@@ -2557,7 +2557,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   180
             Top             =   3480
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1720
             _ExtentY        =   556
             _StockProps     =   77
@@ -2581,7 +2581,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   23
             Top             =   4200
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1720
             _ExtentY        =   556
             _StockProps     =   77
@@ -2605,7 +2605,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   24
             Top             =   4200
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1720
             _ExtentY        =   556
             _StockProps     =   77
@@ -2630,7 +2630,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   182
             Top             =   3960
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1720
             _ExtentY        =   450
             _StockProps     =   79
@@ -2656,7 +2656,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             ToolTipText     =   "Costo Neto"
             Top             =   4560
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   556
             _StockProps     =   77
@@ -2681,7 +2681,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   184
             Top             =   4560
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -2704,7 +2704,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   181
             Top             =   3240
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   450
             _StockProps     =   79
@@ -2727,7 +2727,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   178
             Top             =   3960
             Width           =   735
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1296
             _ExtentY        =   450
             _StockProps     =   79
@@ -2750,7 +2750,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   144
             Top             =   2520
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -2773,7 +2773,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   142
             Top             =   4200
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -2796,7 +2796,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   140
             Top             =   1080
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -2819,7 +2819,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   139
             Top             =   240
             Width           =   2532
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4466
             _ExtentY        =   444
             _StockProps     =   79
@@ -2843,7 +2843,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   138
             Top             =   240
             Width           =   2532
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4466
             _ExtentY        =   444
             _StockProps     =   79
@@ -2867,7 +2867,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   56
             Top             =   960
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -2890,7 +2890,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   55
             Top             =   1320
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -2913,7 +2913,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   54
             Top             =   240
             Width           =   2652
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4678
             _ExtentY        =   444
             _StockProps     =   79
@@ -2937,7 +2937,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   53
             Top             =   240
             Width           =   2532
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4466
             _ExtentY        =   444
             _StockProps     =   79
@@ -2961,7 +2961,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   52
             Top             =   1680
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -2984,7 +2984,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   51
             Top             =   2400
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -3007,7 +3007,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   50
             Top             =   2760
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -3030,7 +3030,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   49
             Top             =   960
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -3053,7 +3053,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   48
             Top             =   1320
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -3076,7 +3076,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   47
             Top             =   1800
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -3099,7 +3099,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   46
             Top             =   3480
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -3122,7 +3122,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   45
             Top             =   3840
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -3145,7 +3145,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   44
             Top             =   1680
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -3168,7 +3168,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   43
             Top             =   2040
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -3191,7 +3191,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   42
             Top             =   3840
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -3214,7 +3214,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   40
             Top             =   4200
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -3237,7 +3237,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   38
             Top             =   3480
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -3260,7 +3260,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   36
             Top             =   2400
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -3283,7 +3283,7 @@ Begin VB.Form frmIVR_Rec_Titulos
             TabIndex        =   34
             Top             =   2760
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -3307,7 +3307,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   396
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   582
          _StockProps     =   77
@@ -3335,7 +3335,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   396
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   582
          _StockProps     =   77
@@ -3363,7 +3363,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   396
          Visible         =   0   'False
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   582
          _StockProps     =   77
@@ -3393,7 +3393,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   3640
          Visible         =   0   'False
          Width           =   252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   444
          _ExtentY        =   444
          _StockProps     =   79
@@ -3409,7 +3409,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   360
          Visible         =   0   'False
          Width           =   252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   444
          _ExtentY        =   444
          _StockProps     =   79
@@ -3425,7 +3425,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   360
          Visible         =   0   'False
          Width           =   252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   444
          _ExtentY        =   444
          _StockProps     =   79
@@ -3441,7 +3441,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   360
          Visible         =   0   'False
          Width           =   252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   444
          _ExtentY        =   444
          _StockProps     =   79
@@ -3457,7 +3457,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   3960
          Visible         =   0   'False
          Width           =   252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   444
          _ExtentY        =   444
          _StockProps     =   79
@@ -3473,7 +3473,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   360
          Visible         =   0   'False
          Width           =   252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   444
          _ExtentY        =   444
          _StockProps     =   79
@@ -3488,7 +3488,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   360
          Visible         =   0   'False
          Width           =   10332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18224
          _ExtentY        =   656
          _StockProps     =   14
@@ -3512,7 +3512,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   3960
          Visible         =   0   'False
          Width           =   10332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18224
          _ExtentY        =   656
          _StockProps     =   14
@@ -3537,7 +3537,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   360
          Visible         =   0   'False
          Width           =   10332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18224
          _ExtentY        =   656
          _StockProps     =   14
@@ -3561,7 +3561,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   360
          Visible         =   0   'False
          Width           =   10332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18224
          _ExtentY        =   656
          _StockProps     =   14
@@ -3584,7 +3584,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   360
          Visible         =   0   'False
          Width           =   10332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18224
          _ExtentY        =   656
          _StockProps     =   14
@@ -3608,7 +3608,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   3600
          Visible         =   0   'False
          Width           =   10332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18224
          _ExtentY        =   656
          _StockProps     =   14
@@ -3632,7 +3632,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          Top             =   360
          Visible         =   0   'False
          Width           =   10332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18224
          _ExtentY        =   656
          _StockProps     =   14
@@ -3656,7 +3656,7 @@ Begin VB.Form frmIVR_Rec_Titulos
       TabIndex        =   104
       Top             =   720
       Width           =   2655
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4683
       _ExtentY        =   15690
       _StockProps     =   79
@@ -3670,7 +3670,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   106
          Top             =   3720
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
@@ -3693,7 +3693,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   107
          Top             =   4200
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
@@ -3716,7 +3716,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   108
          Top             =   4680
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
@@ -3739,7 +3739,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   109
          Top             =   6000
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
@@ -3762,7 +3762,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   110
          Top             =   6480
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
@@ -3785,7 +3785,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   111
          Top             =   6960
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
@@ -3808,7 +3808,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   118
          Top             =   5160
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
@@ -3831,7 +3831,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   132
          Top             =   2040
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
@@ -3856,7 +3856,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   133
          Top             =   1560
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
@@ -3881,7 +3881,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   134
          Top             =   2520
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
@@ -3906,7 +3906,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   135
          Top             =   3000
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
@@ -3930,7 +3930,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   145
          Top             =   8160
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -3956,7 +3956,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   146
          Top             =   7920
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   444
          _StockProps     =   79
@@ -3978,7 +3978,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   105
          Top             =   240
          Width           =   2292
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   1926
          _StockProps     =   14
@@ -4003,7 +4003,7 @@ Begin VB.Form frmIVR_Rec_Titulos
       TabIndex        =   92
       Top             =   720
       Width           =   10812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19071
       _ExtentY        =   2350
       _StockProps     =   79
@@ -4016,7 +4016,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   93
          Top             =   360
          Width           =   5052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8916
          _ExtentY        =   582
          _StockProps     =   77
@@ -4043,7 +4043,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   94
          Top             =   960
          Width           =   5052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8916
          _ExtentY        =   582
          _StockProps     =   77
@@ -4070,7 +4070,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   95
          Top             =   360
          Width           =   5052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8916
          _ExtentY        =   582
          _StockProps     =   77
@@ -4097,7 +4097,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   96
          Top             =   960
          Width           =   5052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8916
          _ExtentY        =   582
          _StockProps     =   77
@@ -4125,7 +4125,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   100
          Top             =   720
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   444
          _StockProps     =   79
@@ -4148,7 +4148,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   99
          Top             =   120
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   444
          _StockProps     =   79
@@ -4171,7 +4171,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   98
          Top             =   120
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   444
          _StockProps     =   79
@@ -4194,7 +4194,7 @@ Begin VB.Form frmIVR_Rec_Titulos
          TabIndex        =   97
          Top             =   720
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   444
          _StockProps     =   79
@@ -4218,7 +4218,7 @@ Begin VB.Form frmIVR_Rec_Titulos
       ToolTipText     =   "Presione F4 para Consultar"
       Top             =   120
       Width           =   1932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3408
       _ExtentY        =   868
       _StockProps     =   77
@@ -4244,7 +4244,7 @@ Begin VB.Form frmIVR_Rec_Titulos
       TabIndex        =   3
       Top             =   120
       Width           =   2172
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3831
       _ExtentY        =   868
       _StockProps     =   77
@@ -4282,7 +4282,7 @@ Begin VB.Form frmIVR_Rec_Titulos
       TabIndex        =   125
       Top             =   120
       Width           =   2772
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4890
       _ExtentY        =   868
       _StockProps     =   77
@@ -4307,7 +4307,7 @@ Begin VB.Form frmIVR_Rec_Titulos
       TabIndex        =   136
       Top             =   120
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   444
       _StockProps     =   79
@@ -4331,7 +4331,7 @@ Begin VB.Form frmIVR_Rec_Titulos
       TabIndex        =   2
       Top             =   120
       Width           =   1452
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   444
       _StockProps     =   79
@@ -4355,7 +4355,7 @@ Begin VB.Form frmIVR_Rec_Titulos
       TabIndex        =   0
       Top             =   120
       Width           =   1452
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   444
       _StockProps     =   79
@@ -4378,7 +4378,7 @@ Begin VB.Form frmIVR_Rec_Titulos
       TabIndex        =   137
       Top             =   0
       Width           =   13455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   23733
       _ExtentY        =   1296
       _StockProps     =   14

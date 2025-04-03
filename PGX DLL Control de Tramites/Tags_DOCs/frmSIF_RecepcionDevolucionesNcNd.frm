@@ -1,76 +1,68 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "MSCOMCTL.OCX"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmSIF_RecepcionDevolucionesNcNd 
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
-   Caption         =   "Recepcion Devoluciones ND/NC"
-   ClientHeight    =   8085
+   Caption         =   "Documentos: Devoluciones"
+   ClientHeight    =   8520
    ClientLeft      =   45
    ClientTop       =   315
    ClientWidth     =   12180
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   Picture         =   "frmSIF_RecepcionDevolucionesNcNd.frx":0000
-   ScaleHeight     =   8085
+   ScaleHeight     =   8520
    ScaleWidth      =   12180
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
-   Begin VB.OptionButton optNc 
-      Caption         =   "Nota Crédito"
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
+   Begin XtremeSuiteControls.ListView lsw 
+      Height          =   6615
+      Left            =   120
+      TabIndex        =   6
+      Top             =   1800
+      Width           =   11895
+      _Version        =   1572864
+      _ExtentX        =   20981
+      _ExtentY        =   11668
+      _StockProps     =   77
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   495
-      Left            =   7800
-      TabIndex        =   8
-      Top             =   840
-      Width           =   1335
+      Appearance      =   17
+      UseVisualStyle  =   0   'False
    End
-   Begin VB.OptionButton optNd 
-      Caption         =   "Nota Débito"
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   495
-      Left            =   6480
-      TabIndex        =   7
-      Top             =   840
-      Value           =   -1  'True
-      Width           =   1335
+   Begin XtremeSuiteControls.ProgressBar PrgBar 
+      Height          =   135
+      Left            =   120
+      TabIndex        =   4
+      Top             =   1680
+      Width           =   11895
+      _Version        =   1572864
+      _ExtentX        =   20981
+      _ExtentY        =   238
+      _StockProps     =   93
+      BackColor       =   -2147483633
    End
-   Begin VB.TextBox txtCodigo 
-      Alignment       =   2  'Center
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
+   Begin XtremeSuiteControls.PushButton cmdAgregar 
       Height          =   375
-      Left            =   1560
-      TabIndex        =   1
-      Top             =   960
-      Width           =   2415
-   End
-   Begin VB.CommandButton cmdAgregar 
-      Caption         =   "+"
-      BeginProperty Font 
-         Name            =   "Arial"
+      Left            =   8040
+      TabIndex        =   3
+      Top             =   1200
+      Width           =   615
+      _Version        =   1572864
+      _ExtentX        =   1085
+      _ExtentY        =   661
+      _StockProps     =   79
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
          Size            =   9
          Charset         =   0
          Weight          =   700
@@ -78,184 +70,132 @@ Begin VB.Form frmSIF_RecepcionDevolucionesNcNd
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   375
-      Left            =   4080
-      TabIndex        =   0
-      Top             =   960
-      Width           =   495
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmSIF_RecepcionDevolucionesNcNd.frx":0000
    End
-   Begin MSComctlLib.ListView lswDocumento 
-      Height          =   5775
-      Left            =   120
-      TabIndex        =   2
-      Top             =   1560
-      Width           =   11895
-      _ExtentX        =   20981
-      _ExtentY        =   10186
-      View            =   3
-      Arrange         =   2
-      LabelWrap       =   -1  'True
-      HideSelection   =   -1  'True
-      FullRowSelect   =   -1  'True
-      HotTracking     =   -1  'True
-      HoverSelection  =   -1  'True
-      _Version        =   393217
-      ForeColor       =   -2147483640
-      BackColor       =   -2147483643
-      BorderStyle     =   1
-      Appearance      =   0
+   Begin XtremeSuiteControls.FlatEdit txtCodigo 
+      Height          =   345
+      Left            =   5640
+      TabIndex        =   1
+      Top             =   1200
+      Width           =   2295
+      _Version        =   1572864
+      _ExtentX        =   4048
+      _ExtentY        =   609
+      _StockProps     =   77
+      ForeColor       =   0
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Arial"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      NumItems        =   6
-      BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-         Text            =   "Código"
-         Object.Width           =   2999
-      EndProperty
-      BeginProperty ColumnHeader(2) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-         SubItemIndex    =   1
-         Text            =   "Tipo"
-         Object.Width           =   2999
-      EndProperty
-      BeginProperty ColumnHeader(3) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-         SubItemIndex    =   2
-         Text            =   "Cédula"
-         Object.Width           =   2999
-      EndProperty
-      BeginProperty ColumnHeader(4) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-         SubItemIndex    =   3
-         Text            =   "Nombre"
-         Object.Width           =   8114
-      EndProperty
-      BeginProperty ColumnHeader(5) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-         SubItemIndex    =   4
-         Text            =   "Usuario Reg."
-         Object.Width           =   2540
-      EndProperty
-      BeginProperty ColumnHeader(6) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-         SubItemIndex    =   5
-         Text            =   "Fecha reg."
-         Object.Width           =   2540
-      EndProperty
-   End
-   Begin MSComctlLib.Toolbar tlbAplicar 
-      Height          =   570
-      Left            =   10680
-      TabIndex        =   3
-      Top             =   7440
-      Width           =   1305
-      _ExtentX        =   2302
-      _ExtentY        =   1005
-      ButtonWidth     =   2117
-      ButtonHeight    =   1005
-      Style           =   1
-      TextAlignment   =   1
-      ImageList       =   "ImageList1"
-      _Version        =   393216
-      BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
-         NumButtons      =   1
-         BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-            Caption         =   "Aplicar"
-            Key             =   "Aplicar"
-            Object.ToolTipText     =   "Aplicar Etiqueta"
-            ImageIndex      =   1
-         EndProperty
-      EndProperty
-   End
-   Begin MSComctlLib.ProgressBar PrgBar 
-      Height          =   285
-      Left            =   120
-      TabIndex        =   4
-      Top             =   7560
-      Visible         =   0   'False
-      Width           =   9690
-      _ExtentX        =   17092
-      _ExtentY        =   503
-      _Version        =   393216
-      Appearance      =   0
-   End
-   Begin MSComctlLib.ImageList ImageList1 
-      Left            =   9960
-      Top             =   240
-      _ExtentX        =   1005
-      _ExtentY        =   1005
-      BackColor       =   -2147483643
-      ImageWidth      =   32
-      ImageHeight     =   32
-      MaskColor       =   12632256
-      _Version        =   393216
-      BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
-         NumListImages   =   3
-         BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_RecepcionDevolucionesNcNd.frx":6852
-            Key             =   ""
-         EndProperty
-         BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_RecepcionDevolucionesNcNd.frx":D0B4
-            Key             =   ""
-         EndProperty
-         BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_RecepcionDevolucionesNcNd.frx":13916
-            Key             =   ""
-         EndProperty
-      EndProperty
-   End
-   Begin VB.Label Label3 
-      Caption         =   "Tipo Documento ..:"
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
+         Name            =   "Calibri"
+         Size            =   9.75
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      Alignment       =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+   End
+   Begin XtremeSuiteControls.ComboBox cboTipodoc 
+      Height          =   345
+      Left            =   1560
+      TabIndex        =   0
+      Top             =   1200
+      Width           =   3975
+      _Version        =   1572864
+      _ExtentX        =   7011
+      _ExtentY        =   609
+      _StockProps     =   77
+      ForeColor       =   0
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Style           =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+      Text            =   "ComboBox1"
+   End
+   Begin XtremeSuiteControls.PushButton btnAplicar 
       Height          =   375
-      Left            =   4800
-      TabIndex        =   9
-      Top             =   960
-      Width           =   1695
-   End
-   Begin VB.Label LblOperacion 
-      Caption         =   "Documento"
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
+      Left            =   10680
+      TabIndex        =   5
+      Top             =   1200
+      Width           =   1335
+      _Version        =   1572864
+      _ExtentX        =   2355
+      _ExtentY        =   661
+      _StockProps     =   79
+      Caption         =   "Aplicar"
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmSIF_RecepcionDevolucionesNcNd.frx":0720
+   End
+   Begin XtremeSuiteControls.Label Label2 
       Height          =   255
-      Left            =   240
-      TabIndex        =   6
-      Top             =   960
+      Left            =   360
+      TabIndex        =   7
+      Top             =   1200
       Width           =   1095
+      _Version        =   1572864
+      _ExtentX        =   1931
+      _ExtentY        =   450
+      _StockProps     =   79
+      Caption         =   "Documento:"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Transparent     =   -1  'True
    End
    Begin VB.Label Label1 
-      Caption         =   "Recepción de Devoluciones"
+      BackStyle       =   0  'Transparent
+      Caption         =   "Devolución de Documentos"
       BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   15.75
+         Name            =   "Calibri"
+         Size            =   13.5
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   495
-      Left            =   1080
-      TabIndex        =   5
-      Top             =   240
-      Width           =   4455
+      ForeColor       =   &H00FFFFFF&
+      Height          =   480
+      Index           =   0
+      Left            =   1560
+      TabIndex        =   2
+      Top             =   360
+      Width           =   6252
+   End
+   Begin VB.Image imgBanner 
+      Height          =   1092
+      Left            =   0
+      Top             =   0
+      Width           =   13332
    End
 End
 Attribute VB_Name = "frmSIF_RecepcionDevolucionesNcNd"
@@ -264,10 +204,17 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim strSQL As String, rs As New ADODB.Recordset
+Dim itmX As ListViewItem
+
 Dim mTagDevolucion As String
 Dim mTagAplicado  As String
 Dim vTipoDoc As String
 
+
+Private Sub btnAplicar_Click()
+ Call sbAplicarRecepcionDevolucion
+End Sub
 
 Private Sub cmdAgregar_Click()
 If Trim(txtCodigo.Text) <> "" Then Call sbCargaInformacion
@@ -279,13 +226,13 @@ vModulo = 10
 End Sub
 
 Private Sub Form_Load()
-Dim strSQL As String
-Dim rs As New ADODB.Recordset
+
+Set imgBanner.Picture = frmContenedor.imgBanner_Mantenimiento.Picture
 
 vModulo = 10
 
   strSQL = "select isnull(valor,'') from SIF_PARAMETROS where cod_parametro = '11'"
-    rs.Open strSQL, glogon.Conection, adOpenStatic
+  Call OpenRecordSet(rs, strSQL)
     If Not rs.EOF Then
         mTagAplicado = rs.Fields(0)
     Else
@@ -294,9 +241,8 @@ vModulo = 10
     rs.Close
 
 
-
   strSQL = "select isnull(valor,'') from SIF_PARAMETROS where cod_parametro = '12'"
-    rs.Open strSQL, glogon.Conection, adOpenStatic
+  Call OpenRecordSet(rs, strSQL)
     If Not rs.EOF Then
         mTagDevolucion = rs.Fields(0)
     Else
@@ -307,7 +253,7 @@ vModulo = 10
     If Not mTagDevolucion = Empty Then
     
         strSQL = "select COUNT(*) FROM sif_tags where TAG_CODIGO = '" & mTagDevolucion & "'"
-        rs.Open strSQL, glogon.Conection, adOpenStatic
+        Call OpenRecordSet(rs, strSQL)
         If rs.Fields(0) = 0 Then
             mTagDevolucion = Empty
             MsgBox "El código de tag definido el los parámetros para la Recepción/Devolución  no existe"
@@ -315,6 +261,13 @@ vModulo = 10
         rs.Close
         
     End If
+
+   strSQL = "select rtrim(Tipo_Documento) + ' - ' + Descripcion as Itmx" _
+          & " from SIF_Documentos" _
+          & " where Tipo_documento in('NC','ND','FND','FNC','CA', 'CD.Liq', 'BEAC', 'CBJ', 'FSL', 'REA', 'RH', 'TCP', 'TRFA', 'TCP', 'THCJ', 'TRA', 'THAV')" _
+          & " order by Tipo_Documento"
+          
+   Call sbLlenaCbo(cboTipodoc, strSQL, False, False)
 
 End Sub
 
@@ -325,10 +278,6 @@ End Sub
 Private Sub optNd_Click()
 If optNd = True Then vTipoDoc = "ND"
 
-End Sub
-
-Private Sub tlbAplicar_ButtonClick(ByVal Button As MSComctlLib.Button)
- Call sbAplicarRecepcionDevolucion
 End Sub
 
 Private Sub txtCodigo_KeyDown(KeyCode As Integer, Shift As Integer)

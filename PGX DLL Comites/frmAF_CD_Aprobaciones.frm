@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Begin VB.Form frmAF_CD_Aprobaciones 
    Appearance      =   0  'Flat
@@ -28,7 +28,7 @@ Begin VB.Form frmAF_CD_Aprobaciones
       TabIndex        =   3
       Top             =   7680
       Width           =   16095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   28390
       _ExtentY        =   2355
       _StockProps     =   79
@@ -42,7 +42,7 @@ Begin VB.Form frmAF_CD_Aprobaciones
          TabIndex        =   6
          Top             =   600
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   1085
          _StockProps     =   79
@@ -66,7 +66,7 @@ Begin VB.Form frmAF_CD_Aprobaciones
          TabIndex        =   5
          Top             =   240
          Width           =   7455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13150
          _ExtentY        =   1720
          _StockProps     =   77
@@ -92,7 +92,7 @@ Begin VB.Form frmAF_CD_Aprobaciones
          TabIndex        =   7
          Top             =   600
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   1085
          _StockProps     =   79
@@ -117,7 +117,7 @@ Begin VB.Form frmAF_CD_Aprobaciones
          TabIndex        =   4
          Top             =   240
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   450
          _StockProps     =   79
@@ -170,7 +170,7 @@ Begin VB.Form frmAF_CD_Aprobaciones
       TabIndex        =   2
       Top             =   480
       Width           =   6975
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12303
       _ExtentY        =   582
       _StockProps     =   77
@@ -196,7 +196,7 @@ Begin VB.Form frmAF_CD_Aprobaciones
       TabIndex        =   8
       Top             =   1200
       Width           =   210
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   370
       _ExtentY        =   370
       _StockProps     =   79
@@ -210,7 +210,7 @@ Begin VB.Form frmAF_CD_Aprobaciones
       TabIndex        =   1
       Top             =   480
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   450
       _StockProps     =   79
@@ -301,6 +301,7 @@ For i = 1 To vGrid.MaxRows
            
            'Activa y Registra Asiento
            strSQL = "exec spAFI_CD_AsientoCuentas '" & vGrid.Text & "', '" & glogon.Usuario & "','" & GLOBALES.gOficinaTitular & "'"
+           
            Call ConectionExecute(strSQL)
                       
        End If
@@ -405,6 +406,7 @@ TimerX.Enabled = False
 
 strSQL = "select B.id_banco as 'IdX', B.descripcion as 'itmX'" _
        & " from Tes_bancos B inner join afi_cd_cuentas C on B.id_banco = C.id_banco" _
+       & " Where C.Estado = 'S'" _
        & " group by B.id_Banco, B.descripcion "
        
 vPaso = True

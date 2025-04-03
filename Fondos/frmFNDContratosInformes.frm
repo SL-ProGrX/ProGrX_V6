@@ -1,19 +1,19 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmFNDContratosInformes 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Certificados: Boletas"
-   ClientHeight    =   8370
+   ClientHeight    =   8925
    ClientLeft      =   45
    ClientTop       =   390
    ClientWidth     =   10080
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   8370
+   ScaleHeight     =   8925
    ScaleWidth      =   10080
    ShowInTaskbar   =   0   'False
    StartUpPosition =   1  'CenterOwner
@@ -26,9 +26,9 @@ Begin VB.Form frmFNDContratosInformes
       Height          =   375
       Left            =   2760
       TabIndex        =   0
-      Top             =   7800
+      Top             =   8040
       Width           =   3375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5953
       _ExtentY        =   661
       _StockProps     =   79
@@ -48,9 +48,9 @@ Begin VB.Form frmFNDContratosInformes
       Height          =   495
       Left            =   2760
       TabIndex        =   1
-      Top             =   5640
+      Top             =   5880
       Width           =   6855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12091
       _ExtentY        =   873
       _StockProps     =   77
@@ -72,9 +72,9 @@ Begin VB.Form frmFNDContratosInformes
       Height          =   615
       Left            =   7080
       TabIndex        =   2
-      Top             =   7680
+      Top             =   7920
       Width           =   1695
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   1080
       _StockProps     =   79
@@ -96,9 +96,9 @@ Begin VB.Form frmFNDContratosInformes
       Height          =   615
       Left            =   8760
       TabIndex        =   3
-      Top             =   7680
+      Top             =   7920
       Width           =   855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1503
       _ExtentY        =   1080
       _StockProps     =   79
@@ -122,7 +122,7 @@ Begin VB.Form frmFNDContratosInformes
       TabIndex        =   4
       Top             =   3360
       Width           =   4815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8488
       _ExtentY        =   444
       _StockProps     =   79
@@ -148,7 +148,7 @@ Begin VB.Form frmFNDContratosInformes
       TabIndex        =   5
       Top             =   3720
       Width           =   4815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8488
       _ExtentY        =   444
       _StockProps     =   79
@@ -173,7 +173,7 @@ Begin VB.Form frmFNDContratosInformes
       TabIndex        =   6
       Top             =   4080
       Width           =   4815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8488
       _ExtentY        =   444
       _StockProps     =   79
@@ -195,9 +195,9 @@ Begin VB.Form frmFNDContratosInformes
       Height          =   495
       Left            =   2760
       TabIndex        =   7
-      Top             =   6240
+      Top             =   6480
       Width           =   6855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12091
       _ExtentY        =   873
       _StockProps     =   77
@@ -219,9 +219,9 @@ Begin VB.Form frmFNDContratosInformes
       Height          =   495
       Left            =   2760
       TabIndex        =   8
-      Top             =   6840
+      Top             =   7080
       Width           =   6855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12091
       _ExtentY        =   873
       _StockProps     =   77
@@ -245,7 +245,7 @@ Begin VB.Form frmFNDContratosInformes
       TabIndex        =   18
       Top             =   1800
       Width           =   7215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12726
       _ExtentY        =   661
       _StockProps     =   77
@@ -271,7 +271,7 @@ Begin VB.Form frmFNDContratosInformes
       TabIndex        =   19
       Top             =   2280
       Width           =   7215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12726
       _ExtentY        =   661
       _StockProps     =   77
@@ -297,7 +297,7 @@ Begin VB.Form frmFNDContratosInformes
       TabIndex        =   20
       Top             =   2760
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2778
       _ExtentY        =   661
       _StockProps     =   77
@@ -325,7 +325,7 @@ Begin VB.Form frmFNDContratosInformes
       TabIndex        =   21
       Top             =   4440
       Width           =   4815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8488
       _ExtentY        =   444
       _StockProps     =   79
@@ -350,7 +350,7 @@ Begin VB.Form frmFNDContratosInformes
       TabIndex        =   22
       Top             =   4800
       Width           =   4815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8488
       _ExtentY        =   444
       _StockProps     =   79
@@ -375,7 +375,32 @@ Begin VB.Form frmFNDContratosInformes
       TabIndex        =   23
       Top             =   5160
       Width           =   4815
-      _Version        =   1441793
+      _Version        =   1572864
+      _ExtentX        =   8488
+      _ExtentY        =   444
+      _StockProps     =   79
+      Caption         =   "Solicitud de Ahorros Consolidada"
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   16
+   End
+   Begin XtremeSuiteControls.RadioButton OptX 
+      Height          =   255
+      Index           =   6
+      Left            =   2760
+      TabIndex        =   24
+      Top             =   5520
+      Width           =   4815
+      _Version        =   1572864
       _ExtentX        =   8488
       _ExtentY        =   444
       _StockProps     =   79
@@ -393,6 +418,31 @@ Begin VB.Form frmFNDContratosInformes
       UseVisualStyle  =   -1  'True
       Appearance      =   16
    End
+   Begin XtremeSuiteControls.PushButton btnEmail 
+      Height          =   615
+      Left            =   6240
+      TabIndex        =   25
+      ToolTipText     =   "Enviar Información al correo electrónico del cliente"
+      Top             =   7920
+      Visible         =   0   'False
+      Width           =   855
+      _Version        =   1572864
+      _ExtentX        =   1503
+      _ExtentY        =   1080
+      _StockProps     =   79
+      BackColor       =   -2147483633
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Appearance      =   16
+      Picture         =   "frmFNDContratosInformes.frx":0F89
+   End
    Begin XtremeSuiteControls.Label Label1 
       Height          =   255
       Index           =   5
@@ -400,7 +450,7 @@ Begin VB.Form frmFNDContratosInformes
       TabIndex        =   17
       Top             =   2760
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   450
       _StockProps     =   79
@@ -425,7 +475,7 @@ Begin VB.Form frmFNDContratosInformes
       TabIndex        =   16
       Top             =   2280
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   450
       _StockProps     =   79
@@ -450,7 +500,7 @@ Begin VB.Form frmFNDContratosInformes
       TabIndex        =   15
       Top             =   1800
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   450
       _StockProps     =   79
@@ -475,14 +525,14 @@ Begin VB.Form frmFNDContratosInformes
       TabIndex        =   14
       Top             =   1320
       Width           =   2535
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4471
       _ExtentY        =   661
       _StockProps     =   14
       Caption         =   "CEDULA"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   12
+         Size            =   11.99
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -498,14 +548,14 @@ Begin VB.Form frmFNDContratosInformes
       TabIndex        =   13
       Top             =   1320
       Width           =   7575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   13361
       _ExtentY        =   661
       _StockProps     =   14
       Caption         =   "NOMBRE_COMPLETO"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   12
+         Size            =   11.99
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -521,7 +571,7 @@ Begin VB.Form frmFNDContratosInformes
       TabIndex        =   12
       Top             =   8280
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   661
       _StockProps     =   79
@@ -544,9 +594,9 @@ Begin VB.Form frmFNDContratosInformes
       Index           =   1
       Left            =   360
       TabIndex        =   11
-      Top             =   6240
+      Top             =   6480
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   661
       _StockProps     =   79
@@ -569,9 +619,9 @@ Begin VB.Form frmFNDContratosInformes
       Index           =   2
       Left            =   360
       TabIndex        =   10
-      Top             =   6840
+      Top             =   7080
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   661
       _StockProps     =   79
@@ -625,6 +675,7 @@ Attribute VB_Exposed = False
 Option Explicit
 Dim strSQL As String, rs As New ADODB.Recordset
 Dim mCedula As String
+Dim mTipoCDP As Integer, mCupones As Integer, mAportes As Currency
 
 Private Sub btnCerrar_Click()
  Unload Me
@@ -632,13 +683,36 @@ End Sub
 
 
 
+Private Sub btnEmail_Click()
+
+
+If OptX.Item(1).Value And (mTipoCDP = 0 Or mAportes = 0) Then
+    MsgBox "Este Plan NO es Tipo Certificado a Plazo o No se ha acreditado el monto de inversión!", vbExclamation
+    Exit Sub
+End If
+
+Call sbEmail
+End Sub
+
 Private Sub btnReporte_Click()
 Dim vLiquidacion As Long
 
-If OptX.Item(5).Value Then
+If OptX.Item(6).Value Then
     Call sbFnd_Contratos_Cuenta_Sinpe(scMain(0).Caption)
     Exit Sub
 End If
+
+
+If OptX.Item(0).Value And mAportes = 0 Then
+    MsgBox "Este Plan NO es Tipo Certificado a Plazo o No se ha acreditado el monto de inversión!", vbExclamation
+    Exit Sub
+End If
+
+If OptX.Item(1).Value And mTipoCDP = 0 Then
+    MsgBox "Este Plan NO es Tipo Certificado a Plazo!", vbExclamation
+    Exit Sub
+End If
+
 
 On Error GoTo vError
 
@@ -736,6 +810,24 @@ With frmContenedor.Crt
        
        
         
+          .ReportFileName = SIFGlobal.fxPathReportes("Fondos_Solicitud_Ahorros_Contrato.rpt")
+          
+          strSQL = "{FND_CONTRATOS.COD_OPERADORA} = " & txtOperadora.Tag _
+                 & " And {FND_CONTRATOS.COD_PLAN} = '" & txtPlan.Tag _
+                 & "' and {FND_CONTRATOS.COD_CONTRATO} = " & txtContrato.Text
+        
+          .SelectionFormula = strSQL
+          
+          .Formulas(0) = "Fecha='Fecha: " & Format(fxFechaServidor, "yyyy-mm-dd") & "'"
+          .Formulas(1) = "Usuario='Usuario: " & Trim(glogon.Usuario) & "'"
+          .Formulas(2) = "Empresa='" & Trim(GLOBALES.gstrNombreEmpresa) & "'"
+          .Formulas(3) = "fxBarraCodigo='*" & txtContrato.Text & "*'"
+
+
+      Case OptX.Item(5).Value 'Solicitud de Ahorros Consolidada
+       
+       
+        
           .ReportFileName = SIFGlobal.fxPathReportes("Fondos_Solicitud_Ahorros.rpt")
           .Formulas(0) = "Fecha='Fecha: " & Format(fxFechaServidor, "yyyy-mm-dd") & "'"
           .Formulas(1) = "Usuario='Usuario: " & Trim(glogon.Usuario) & "'"
@@ -750,15 +842,6 @@ With frmContenedor.Crt
           
         .SubreportToChange = "sbAhorros"
         .SelectionFormula = strSQL
-
-        
-'        .SubreportToChange = "sbTexto"
-'        .StoredProcParam(1) = chkIdAlterna.Value
-'        .StoredProcParam(2) = 2
-'
-'        .SubreportToChange = "sbPatrimonio"
-'        .StoredProcParam(0) = mCedula
-
        
    End Select
    
@@ -784,7 +867,7 @@ On Error GoTo vError
 strSQL = "select C.COD_OPERADORA, C.COD_PLAN, c.COD_CONTRATO, c.CEDULA, S.NOMBRE" _
        & " , O.DESCRIPCION as 'Operadora_Desc'" _
        & " , P.DESCRIPCION as 'Plan_Desc'" _
-       & " , P.COD_MONEDA" _
+       & " , P.COD_MONEDA, P.TIPO_CDP, C.APORTES, isnull(C.PAGO_CUPONESCDP,0) as 'Cupones'" _
        & " from FND_CONTRATOS C" _
        & "    inner join SOCIOS S on C.CEDULA = S.CEDULA" _
        & "    inner join FND_OPERADORAS O on C.COD_OPERADORA = C.COD_OPERADORA" _
@@ -794,16 +877,21 @@ strSQL = "select C.COD_OPERADORA, C.COD_PLAN, c.COD_CONTRATO, c.CEDULA, S.NOMBRE
 
 Call OpenRecordSet(rs, strSQL)
 
-txtOperadora.Tag = rs!Cod_Operadora
+txtOperadora.Tag = rs!COD_OPERADORA
 txtOperadora.Text = rs!OPERADORA_DESC
 
-txtPlan.Tag = rs!Cod_Plan
+txtPlan.Tag = rs!COD_PLAN
 txtPlan.Text = rs!Plan_Desc
 
-txtContrato.Text = rs!Cod_Contrato
+txtContrato.Text = rs!COD_CONTRATO
 
 scMain.Item(0).Caption = Trim(rs!Cedula)
 scMain.Item(1).Caption = Trim(rs!Nombre)
+
+
+mTipoCDP = rs!TIPO_CDP
+mAportes = rs!Aportes
+mCupones = 0
 
 mCedula = rs!Cedula
 
@@ -820,6 +908,45 @@ vError:
 End Sub
 
 
+
+Private Sub sbEmail()
+
+Dim pMensaje As String
+
+On Error GoTo vError
+
+
+Me.MousePointer = vbHourglass
+
+If OptX.Item(1).Value Then
+    pMensaje = "Se ha enviado el Gradiente de Inversión al correo de la persona!"
+Else
+    pMensaje = "Se ha enviado el Formulario de Solicitud de Ahorro/Inversión al correo de la persona!"
+End If
+
+strSQL = "exec spFnd_Contrato_Notifica_Email " & txtOperadora.Tag _
+       & ", '" & txtPlan.Tag & "', " & txtContrato.Text & ", '" & glogon.Usuario & "'"
+Call OpenRecordSet(rs, strSQL)
+
+Me.MousePointer = vbDefault
+
+If rs!Pass = 1 Then
+    MsgBox "Correo de Solicitud de Contrato enviado a la persona!", vbInformation
+Else
+    MsgBox rs!Mensaje, vbInformation
+End If
+rs.Close
+
+Exit Sub
+
+vError:
+  Me.MousePointer = vbDefault
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+
+
 Private Sub Form_Load()
 
 vModulo = 18
@@ -832,6 +959,16 @@ Exit Sub
 
 vError:
 
+End Sub
+
+Private Sub OptX_Click(Index As Integer)
+Select Case Index
+    Case 1, 4
+        btnEmail.Visible = True
+        
+    Case Else
+        btnEmail.Visible = False
+End Select
 End Sub
 
 Private Sub TimerX_Timer()

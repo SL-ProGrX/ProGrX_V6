@@ -1,17 +1,17 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.3#0"; "Codejock.Controls.v19.3.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmFNDConsultaDetalle 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Detalle del Contrato"
-   ClientHeight    =   7608
-   ClientLeft      =   2208
-   ClientTop       =   1488
-   ClientWidth     =   11232
+   ClientHeight    =   7605
+   ClientLeft      =   2205
+   ClientTop       =   1485
+   ClientWidth     =   11235
    Icon            =   "frmFNDConsultaDetalle.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
-   ScaleHeight     =   7608
-   ScaleWidth      =   11232
+   ScaleHeight     =   7605
+   ScaleWidth      =   11235
    StartUpPosition =   2  'CenterScreen
    Begin XtremeSuiteControls.TabControl tcMain 
       Height          =   3372
@@ -19,7 +19,7 @@ Begin VB.Form frmFNDConsultaDetalle
       TabIndex        =   40
       Top             =   3360
       Width           =   10932
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   19283
       _ExtentY        =   5948
       _StockProps     =   68
@@ -44,14 +44,13 @@ Begin VB.Form frmFNDConsultaDetalle
       Item(2).Caption =   "SINPE/Tránsito"
       Item(2).ControlCount=   1
       Item(2).Control(0)=   "lswTransito"
-      Begin XtremeSuiteControls.ListView lswBeneficiarios 
+      Begin XtremeSuiteControls.ListView lsw 
          Height          =   2892
-         Left            =   -69880
-         TabIndex        =   41
+         Left            =   120
+         TabIndex        =   43
          Top             =   360
-         Visible         =   0   'False
          Width           =   10692
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   18860
          _ExtentY        =   5101
          _StockProps     =   77
@@ -77,7 +76,7 @@ Begin VB.Form frmFNDConsultaDetalle
          Top             =   360
          Visible         =   0   'False
          Width           =   10692
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   18860
          _ExtentY        =   5101
          _StockProps     =   77
@@ -96,13 +95,14 @@ Begin VB.Form frmFNDConsultaDetalle
          Appearance      =   16
          ShowBorder      =   0   'False
       End
-      Begin XtremeSuiteControls.ListView lsw 
+      Begin XtremeSuiteControls.ListView lswBeneficiarios 
          Height          =   2892
-         Left            =   120
-         TabIndex        =   43
+         Left            =   -69880
+         TabIndex        =   41
          Top             =   360
+         Visible         =   0   'False
          Width           =   10692
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   18860
          _ExtentY        =   5101
          _StockProps     =   77
@@ -128,14 +128,14 @@ Begin VB.Form frmFNDConsultaDetalle
       TabIndex        =   39
       Top             =   6840
       Width           =   1572
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   1080
       _StockProps     =   79
       Caption         =   "Estado"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Arial"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -150,7 +150,7 @@ Begin VB.Form frmFNDConsultaDetalle
       Appearance      =   0  'Flat
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -173,7 +173,7 @@ Begin VB.Form frmFNDConsultaDetalle
       Appearance      =   0  'Flat
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -191,7 +191,7 @@ Begin VB.Form frmFNDConsultaDetalle
       Appearance      =   0  'Flat
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -622,7 +622,7 @@ Begin VB.Form frmFNDConsultaDetalle
       Caption         =   "IBAN:"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -662,7 +662,7 @@ Begin VB.Form frmFNDConsultaDetalle
       Caption         =   "Sub Cuenta"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -700,7 +700,7 @@ Begin VB.Form frmFNDConsultaDetalle
       Caption         =   "Identificación"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -867,7 +867,7 @@ Begin VB.Form frmFNDConsultaDetalle
       Caption         =   "Contrato"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -961,9 +961,9 @@ Call OpenRecordSet(rs, strSQL)
  txtCedula.Text = rs!Cedula
  txtNombre.Text = rs!Nombre
  txtOperadora.Text = rs!Operadora
- txtOperadora.Tag = rs!cod_Operadora
+ txtOperadora.Tag = rs!COD_OPERADORA
  txtDescripcion.Text = rs!PlanX
- txtDescripcion.Tag = rs!cod_Plan
+ txtDescripcion.Tag = rs!COD_PLAN
  txtContrato = rs!COD_CONTRATO
  txtEstado.Text = fxFndEstadoContrato(rs!Estado & "")
  txtFecha.Text = Format(rs!Fecha_Inicio, "dd/mm/yyyy")
@@ -985,8 +985,8 @@ Call OpenRecordSet(rs, strSQL)
  
 ' lblIncAnual.Caption = Format(rs!Inc_Anual, "Standard")
 ' lblIncTipo.Caption = IIf(rs!Inc_Tipo = "P", "Porcentaje", "Monto")
- lblAportes.Caption = Format(rs!aportes, "Standard")
- lblRendimiento.Caption = Format(rs!rendimiento, "Standard")
+ lblAportes.Caption = Format(rs!APORTES, "Standard")
+ lblRendimiento.Caption = Format(rs!Rendimiento, "Standard")
  
  lblOperacionASE = "Operación : " & IIf(IsNull(rs!Operacion), "", rs!Operacion)
 rs.Close
@@ -1018,8 +1018,8 @@ Else
     txtBeneficiario = Trim(rs!Nombre)
     'Reemplazo los valores del contrato por el de la subCuenta
     lblMonto = Format(rs!Cuota, "Standard")
-    lblAportes = Format(rs!aportes, "Standard")
-    lblRendimiento = Format(rs!rendimiento, "Standard")
+    lblAportes = Format(rs!APORTES, "Standard")
+    lblRendimiento = Format(rs!Rendimiento, "Standard")
   rs.Close
   
   strSQL = "Select Det.*,isnull(Doc.Descripcion,'') as 'DocDesc', '' as 'ConceptoDesc'" _
@@ -1094,6 +1094,9 @@ With frmContenedor.Crt
   .Formulas(2) = "Empresa='" & Trim(GLOBALES.gstrNombreEmpresa) & "'"
   .Formulas(3) = "SubTitulo='" & Format(fxFechaServidor, "yyyy/mm/dd") & "'"
   .SelectionFormula = strSQL
+  
+  .SubreportToChange = "Retiros"
+  .StoredProcParam(0) = Trim(txtCedula.Text)
   .PrintReport
 End With
 

@@ -1,8 +1,8 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "mscomctl.OCX"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.3#0"; "Codejock.Controls.v20.3.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.3#0"; "Codejock.ShortcutBar.v20.3.0.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmFNDConsultaContratos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -22,7 +22,7 @@ Begin VB.Form frmFNDConsultaContratos
       TabIndex        =   1
       Top             =   960
       Width           =   10932
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   19283
       _ExtentY        =   11874
       _StockProps     =   68
@@ -67,15 +67,16 @@ Begin VB.Form frmFNDConsultaContratos
       Item(2).Control(8)=   "Label7"
       Item(2).Control(9)=   "Label6"
       Item(2).Control(10)=   "Label5"
-      Begin XtremeSuiteControls.ListView lsw 
-         Height          =   3132
-         Left            =   1920
-         TabIndex        =   19
-         Top             =   480
-         Width           =   8892
-         _Version        =   1310723
-         _ExtentX        =   15684
-         _ExtentY        =   5524
+      Begin XtremeSuiteControls.ListView lswRet 
+         Height          =   4812
+         Left            =   -69880
+         TabIndex        =   21
+         Top             =   840
+         Visible         =   0   'False
+         Width           =   10692
+         _Version        =   1572864
+         _ExtentX        =   18860
+         _ExtentY        =   8488
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -91,16 +92,15 @@ Begin VB.Form frmFNDConsultaContratos
          Appearance      =   16
          Sorted          =   -1  'True
       End
-      Begin XtremeSuiteControls.ListView lswRet 
-         Height          =   4812
-         Left            =   -69880
-         TabIndex        =   21
-         Top             =   840
-         Visible         =   0   'False
-         Width           =   10692
-         _Version        =   1310723
-         _ExtentX        =   18860
-         _ExtentY        =   8488
+      Begin XtremeSuiteControls.ListView lsw 
+         Height          =   3132
+         Left            =   1920
+         TabIndex        =   19
+         Top             =   480
+         Width           =   8892
+         _Version        =   1572864
+         _ExtentX        =   15684
+         _ExtentY        =   5524
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -123,7 +123,7 @@ Begin VB.Form frmFNDConsultaContratos
          Top             =   720
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   444
          _StockProps     =   79
@@ -147,7 +147,7 @@ Begin VB.Form frmFNDConsultaContratos
          Top             =   1560
          Visible         =   0   'False
          Width           =   6492
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   11451
          _ExtentY        =   4043
          _StockProps     =   79
@@ -332,7 +332,7 @@ Begin VB.Form frmFNDConsultaContratos
          Top             =   600
          Visible         =   0   'False
          Width           =   1575
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   873
          _StockProps     =   79
@@ -349,7 +349,7 @@ Begin VB.Form frmFNDConsultaContratos
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmFNDConsultaContratos.frx":DCDD
+         Picture         =   "frmFNDConsultaContratos.frx":DCBB
       End
       Begin XtremeSuiteControls.GroupBox GroupBox2 
          Height          =   3732
@@ -357,7 +357,7 @@ Begin VB.Form frmFNDConsultaContratos
          TabIndex        =   9
          Top             =   360
          Width           =   1812
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   6583
          _StockProps     =   79
@@ -382,7 +382,7 @@ Begin VB.Form frmFNDConsultaContratos
             TabIndex        =   10
             Top             =   240
             Width           =   1572
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   868
             _StockProps     =   79
@@ -402,7 +402,7 @@ Begin VB.Form frmFNDConsultaContratos
             TextAlignment   =   1
             Appearance      =   17
             Checked         =   -1  'True
-            Picture         =   "frmFNDConsultaContratos.frx":E3DD
+            Picture         =   "frmFNDConsultaContratos.frx":E3BB
             ImageAlignment  =   0
          End
          Begin XtremeSuiteControls.PushButton opt 
@@ -412,7 +412,7 @@ Begin VB.Form frmFNDConsultaContratos
             TabIndex        =   11
             Top             =   840
             Width           =   1572
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   868
             _StockProps     =   79
@@ -431,7 +431,7 @@ Begin VB.Form frmFNDConsultaContratos
             UseVisualStyle  =   -1  'True
             TextAlignment   =   1
             Appearance      =   17
-            Picture         =   "frmFNDConsultaContratos.frx":EB4F
+            Picture         =   "frmFNDConsultaContratos.frx":EB2D
             ImageAlignment  =   0
          End
          Begin XtremeSuiteControls.PushButton opt 
@@ -441,7 +441,7 @@ Begin VB.Form frmFNDConsultaContratos
             TabIndex        =   12
             Top             =   1560
             Width           =   1572
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   868
             _StockProps     =   79
@@ -460,7 +460,7 @@ Begin VB.Form frmFNDConsultaContratos
             UseVisualStyle  =   -1  'True
             TextAlignment   =   1
             Appearance      =   17
-            Picture         =   "frmFNDConsultaContratos.frx":F2C1
+            Picture         =   "frmFNDConsultaContratos.frx":F29F
             ImageAlignment  =   0
          End
          Begin XtremeSuiteControls.PushButton opt 
@@ -470,7 +470,7 @@ Begin VB.Form frmFNDConsultaContratos
             TabIndex        =   13
             Top             =   2160
             Width           =   1572
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   868
             _StockProps     =   79
@@ -489,7 +489,7 @@ Begin VB.Form frmFNDConsultaContratos
             UseVisualStyle  =   -1  'True
             TextAlignment   =   1
             Appearance      =   17
-            Picture         =   "frmFNDConsultaContratos.frx":FA32
+            Picture         =   "frmFNDConsultaContratos.frx":FA10
             ImageAlignment  =   0
          End
          Begin XtremeSuiteControls.PushButton opt 
@@ -499,7 +499,7 @@ Begin VB.Form frmFNDConsultaContratos
             TabIndex        =   14
             Top             =   2760
             Width           =   1572
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   868
             _StockProps     =   79
@@ -518,7 +518,7 @@ Begin VB.Form frmFNDConsultaContratos
             UseVisualStyle  =   -1  'True
             TextAlignment   =   1
             Appearance      =   17
-            Picture         =   "frmFNDConsultaContratos.frx":101A4
+            Picture         =   "frmFNDConsultaContratos.frx":10182
             ImageAlignment  =   0
          End
       End
@@ -528,7 +528,7 @@ Begin VB.Form frmFNDConsultaContratos
          TabIndex        =   15
          Top             =   4440
          Width           =   10692
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   18860
          _ExtentY        =   3408
          _StockProps     =   79
@@ -553,7 +553,7 @@ Begin VB.Form frmFNDConsultaContratos
             TabIndex        =   20
             Top             =   360
             Width           =   10572
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   18648
             _ExtentY        =   2773
             _StockProps     =   77
@@ -578,7 +578,7 @@ Begin VB.Form frmFNDConsultaContratos
          TabIndex        =   16
          Top             =   3720
          Width           =   1935
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   3413
          _ExtentY        =   873
          _StockProps     =   79
@@ -596,7 +596,7 @@ Begin VB.Form frmFNDConsultaContratos
          Transparent     =   -1  'True
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmFNDConsultaContratos.frx":10916
+         Picture         =   "frmFNDConsultaContratos.frx":108F4
       End
       Begin XtremeSuiteControls.PushButton cmdEstadoCuenta 
          Height          =   495
@@ -604,7 +604,7 @@ Begin VB.Form frmFNDConsultaContratos
          TabIndex        =   17
          Top             =   3720
          Width           =   2295
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   873
          _StockProps     =   79
@@ -621,7 +621,7 @@ Begin VB.Form frmFNDConsultaContratos
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmFNDConsultaContratos.frx":11016
+         Picture         =   "frmFNDConsultaContratos.frx":10FF4
       End
       Begin XtremeSuiteControls.FlatEdit txtPlan 
          Height          =   312
@@ -630,7 +630,7 @@ Begin VB.Form frmFNDConsultaContratos
          Top             =   720
          Visible         =   0   'False
          Width           =   1092
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   1926
          _ExtentY        =   550
          _StockProps     =   77
@@ -655,7 +655,7 @@ Begin VB.Form frmFNDConsultaContratos
          Top             =   720
          Visible         =   0   'False
          Width           =   1092
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   1926
          _ExtentY        =   550
          _StockProps     =   77
@@ -680,7 +680,7 @@ Begin VB.Form frmFNDConsultaContratos
          Top             =   720
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -703,7 +703,7 @@ Begin VB.Form frmFNDConsultaContratos
          Top             =   720
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -726,7 +726,7 @@ Begin VB.Form frmFNDConsultaContratos
          Top             =   5760
          Visible         =   0   'False
          Width           =   2652
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   4678
          _ExtentY        =   1080
          _StockProps     =   79
@@ -743,7 +743,7 @@ Begin VB.Form frmFNDConsultaContratos
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmFNDConsultaContratos.frx":1171D
+         Picture         =   "frmFNDConsultaContratos.frx":116FB
       End
       Begin XtremeSuiteControls.PushButton cmdBoleta 
          Height          =   612
@@ -752,7 +752,7 @@ Begin VB.Form frmFNDConsultaContratos
          Top             =   5760
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   1080
          _StockProps     =   79
@@ -769,7 +769,7 @@ Begin VB.Form frmFNDConsultaContratos
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmFNDConsultaContratos.frx":120AA
+         Picture         =   "frmFNDConsultaContratos.frx":12088
       End
       Begin XtremeShortcutBar.ShortcutCaption scConsulta 
          Height          =   375
@@ -778,7 +778,7 @@ Begin VB.Form frmFNDConsultaContratos
          Top             =   480
          Visible         =   0   'False
          Width           =   10695
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   18865
          _ExtentY        =   661
          _StockProps     =   14
@@ -801,7 +801,7 @@ Begin VB.Form frmFNDConsultaContratos
          TabIndex        =   18
          Top             =   3840
          Width           =   1815
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -944,7 +944,7 @@ Begin VB.Form frmFNDConsultaContratos
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   1
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDConsultaContratos.frx":12866
+            Picture         =   "frmFNDConsultaContratos.frx":12844
             Key             =   ""
          EndProperty
       EndProperty
@@ -955,7 +955,7 @@ Begin VB.Form frmFNDConsultaContratos
       TabIndex        =   35
       Top             =   240
       Width           =   6852
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   12086
       _ExtentY        =   550
       _StockProps     =   77
@@ -979,7 +979,7 @@ Begin VB.Form frmFNDConsultaContratos
       TabIndex        =   36
       Top             =   240
       Width           =   2172
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   3831
       _ExtentY        =   550
       _StockProps     =   77
@@ -1138,7 +1138,10 @@ With frmContenedor.Crt
   .Formulas(1) = "Usuario='" & Trim(glogon.Usuario) & "'"
   .Formulas(2) = "Empresa='" & Trim(GLOBALES.gstrNombreEmpresa) & "'"
   .Formulas(3) = "SubTitulo=' Reporte al " & Format(fxFechaServidor, "yyyy/mm/dd") & "'"
-  .SelectionFormula = "{FND_CONTRATOS.CEDULA} ='" & Trim(txtCedula) & "'"
+  .SelectionFormula = "{SOCIOS.CEDULA} ='" & Trim(txtCedula) & "'"
+  
+ 
+
   .PrintReport
 End With
 
@@ -1303,7 +1306,7 @@ strSQL = "select C.cod_plan,P.descripcion,C.cod_contrato,L.consec,L.fecha,L.usua
        & " Where C.cedula = '" & txtCedula.Text & "' order by L.consec desc"
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
- Set itmX = lswRet.ListItems.Add(, , rs!cod_Plan)
+ Set itmX = lswRet.ListItems.Add(, , rs!COD_PLAN)
      itmX.SubItems(1) = rs!Descripcion
      itmX.SubItems(2) = rs!COD_CONTRATO
      itmX.SubItems(3) = rs!consec
@@ -1384,9 +1387,9 @@ End Select
 Call OpenRecordSet(rs, strSQL)
 
 Do While Not rs.EOF
-   Set itmX = lsw.ListItems.Add(, , rs!cod_Operadora)
+   Set itmX = lsw.ListItems.Add(, , rs!COD_OPERADORA)
        itmX.SubItems(1) = Trim(rs!Descripcion)
-       itmX.SubItems(2) = Trim(rs!cod_Plan)
+       itmX.SubItems(2) = Trim(rs!COD_PLAN)
        itmX.SubItems(3) = Trim(rs!DPlan)
        itmX.SubItems(4) = rs!COD_CONTRATO
        itmX.SubItems(5) = fxFndEstadoContrato(rs!Estado)
@@ -1401,16 +1404,16 @@ Do While Not rs.EOF
        itmX.SubItems(9) = IIf(rs!Renueva = "S", "SI", "NO")
        itmX.SubItems(10) = Format(rs!Inc_Anual, "Standard")
        itmX.SubItems(11) = IIf(rs!inc_tipo = "P", "Porcentaje", "Monto")
-       itmX.SubItems(12) = Format(rs!aportes, "Standard")
-       itmX.SubItems(13) = Format(rs!rendimiento, "Standard")
-       itmX.SubItems(14) = Format(rs!aportes + rs!rendimiento, "Standard")
+       itmX.SubItems(12) = Format(rs!Aportes, "Standard")
+       itmX.SubItems(13) = Format(rs!Rendimiento, "Standard")
+       itmX.SubItems(14) = Format(rs!Aportes + rs!Rendimiento, "Standard")
        itmX.SubItems(15) = Format(rs!Monto_Transito, "Standard")
        
        itmX.SubItems(16) = IIf(IsNull(rs!Operacion), "", rs!Operacion)
     
     curTotal(0) = curTotal(0) + rs!Monto
-    curTotal(1) = curTotal(1) + rs!aportes
-    curTotal(2) = curTotal(2) + rs!rendimiento
+    curTotal(1) = curTotal(1) + rs!Aportes
+    curTotal(2) = curTotal(2) + rs!Rendimiento
    
    rs.MoveNext
 Loop
@@ -1521,21 +1524,21 @@ Call OpenRecordSet(rs, strSQL)
 lswSubCuentas.ListItems.Clear
 
 Do While Not rs.EOF
-   Set itmX = lswSubCuentas.ListItems.Add(, , rs!cod_Plan)
+   Set itmX = lswSubCuentas.ListItems.Add(, , rs!COD_PLAN)
        itmX.SubItems(1) = rs!COD_CONTRATO
        itmX.SubItems(2) = rs!IdX
        itmX.SubItems(3) = rs!Cedula
        itmX.SubItems(4) = rs!Nombre
        itmX.SubItems(5) = Format(rs!Cuota, "Standard")
        itmX.SubItems(6) = IIf(rs!Estado = "A", "Activo", "Liquidado")
-       itmX.SubItems(7) = Format(rs!aportes, "Standard")
-       itmX.SubItems(8) = Format(rs!rendimiento, "Standard")
-       itmX.SubItems(9) = Format(rs!aportes + rs!rendimiento, "Standard")
-       itmX.Tag = rs!cod_Operadora
+       itmX.SubItems(7) = Format(rs!Aportes, "Standard")
+       itmX.SubItems(8) = Format(rs!Rendimiento, "Standard")
+       itmX.SubItems(9) = Format(rs!Aportes + rs!Rendimiento, "Standard")
+       itmX.Tag = rs!COD_OPERADORA
 
     curTotal(0) = curTotal(0) + rs!Cuota
-    curTotal(1) = curTotal(1) + rs!aportes
-    curTotal(2) = curTotal(2) + rs!rendimiento
+    curTotal(1) = curTotal(1) + rs!Aportes
+    curTotal(2) = curTotal(2) + rs!Rendimiento
     rs.MoveNext
 Loop
 rs.Close
@@ -1813,7 +1816,7 @@ Dim strSQL As String, rs As New ADODB.Recordset
 strSQL = "select cod_operadora from fnd_contratos where cedula = '" & txtCedula & "'"
 Call OpenRecordSet(rs, strSQL)
 If Not rs.EOF Then
-   gFondos.Operadora = rs!cod_Operadora
+   gFondos.Operadora = rs!COD_OPERADORA
 Else
    gFondos.Operadora = 0
 End If

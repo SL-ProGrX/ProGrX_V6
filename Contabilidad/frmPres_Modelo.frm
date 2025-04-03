@@ -1,27 +1,28 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{38911DA0-E448-11D0-84A3-00DD01104159}#1.1#0"; "ComCt332.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.Controls.v22.0.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmPres_Modelo 
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
    Caption         =   "Modelo Presupuestario"
-   ClientHeight    =   7350
+   ClientHeight    =   8310
    ClientLeft      =   45
    ClientTop       =   390
-   ClientWidth     =   10005
+   ClientWidth     =   9915
    LinkTopic       =   "Form1"
-   ScaleHeight     =   7350
-   ScaleWidth      =   10005
+   ScaleHeight     =   8310
+   ScaleWidth      =   9915
    StartUpPosition =   3  'Windows Default
    Begin XtremeSuiteControls.TabControl tcMain 
-      Height          =   5292
-      Left            =   120
-      TabIndex        =   10
+      Height          =   6375
+      Left            =   0
+      TabIndex        =   8
       Top             =   1920
-      Width           =   9732
-      _Version        =   1441792
-      _ExtentX        =   17166
-      _ExtentY        =   9334
+      Width           =   9975
+      _Version        =   1572864
+      _ExtentX        =   17595
+      _ExtentY        =   11245
       _StockProps     =   68
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
@@ -44,8 +45,8 @@ Begin VB.Form frmPres_Modelo
       Item(0).Control(4)=   "Label1(2)"
       Item(0).Control(5)=   "GroupBox1(0)"
       Item(0).Control(6)=   "GroupBox1(1)"
-      Item(0).Control(7)=   "btnPresupuestoClean"
-      Item(0).Control(8)=   "btnMapeoSinCC"
+      Item(0).Control(7)=   "btnMapeoSinCC"
+      Item(0).Control(8)=   "gbIniciar"
       Item(1).Caption =   "Usuarios"
       Item(1).ControlCount=   1
       Item(1).Control(0)=   "lswUsuarios"
@@ -59,17 +60,16 @@ Begin VB.Form frmPres_Modelo
       Item(3).Control(2)=   "lblAjuste"
       Item(3).Control(3)=   "lblUsuario"
       Begin XtremeSuiteControls.ListView lswUsuarioAsg 
-         Height          =   4452
-         Left            =   -65080
-         TabIndex        =   18
+         Height          =   5535
+         Left            =   -64960
+         TabIndex        =   16
          Top             =   720
          Visible         =   0   'False
-         Width           =   4692
-         _Version        =   1441792
-         _ExtentX        =   8276
-         _ExtentY        =   7853
+         Width           =   4815
+         _Version        =   1572864
+         _ExtentX        =   8493
+         _ExtentY        =   9763
          _StockProps     =   77
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -82,21 +82,19 @@ Begin VB.Form frmPres_Modelo
          Checkboxes      =   -1  'True
          View            =   3
          FullRowSelect   =   -1  'True
-         Appearance      =   16
-         UseVisualStyle  =   0   'False
+         Appearance      =   21
       End
       Begin XtremeSuiteControls.ListView lswAjusteAsg 
-         Height          =   4452
+         Height          =   5535
          Left            =   -69880
-         TabIndex        =   17
+         TabIndex        =   15
          Top             =   720
          Visible         =   0   'False
-         Width           =   4692
-         _Version        =   1441792
-         _ExtentX        =   8276
-         _ExtentY        =   7853
+         Width           =   4815
+         _Version        =   1572864
+         _ExtentX        =   8493
+         _ExtentY        =   9763
          _StockProps     =   77
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -109,21 +107,19 @@ Begin VB.Form frmPres_Modelo
          Checkboxes      =   -1  'True
          View            =   3
          FullRowSelect   =   -1  'True
-         Appearance      =   16
-         UseVisualStyle  =   0   'False
+         Appearance      =   21
       End
       Begin XtremeSuiteControls.ListView lswAjustes 
-         Height          =   4692
-         Left            =   -69760
-         TabIndex        =   16
+         Height          =   5775
+         Left            =   -69880
+         TabIndex        =   14
          Top             =   480
          Visible         =   0   'False
-         Width           =   9252
-         _Version        =   1441792
-         _ExtentX        =   16319
-         _ExtentY        =   8276
+         Width           =   9735
+         _Version        =   1572864
+         _ExtentX        =   17171
+         _ExtentY        =   10186
          _StockProps     =   77
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -136,21 +132,20 @@ Begin VB.Form frmPres_Modelo
          Checkboxes      =   -1  'True
          View            =   3
          FullRowSelect   =   -1  'True
-         Appearance      =   16
+         Appearance      =   21
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.ListView lswUsuarios 
-         Height          =   4572
-         Left            =   -69760
-         TabIndex        =   15
+         Height          =   5775
+         Left            =   -69880
+         TabIndex        =   13
          Top             =   480
          Visible         =   0   'False
-         Width           =   9252
-         _Version        =   1441792
-         _ExtentX        =   16319
-         _ExtentY        =   8064
+         Width           =   9735
+         _Version        =   1572864
+         _ExtentX        =   17171
+         _ExtentY        =   10186
          _StockProps     =   77
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -163,22 +158,157 @@ Begin VB.Form frmPres_Modelo
          Checkboxes      =   -1  'True
          View            =   3
          FullRowSelect   =   -1  'True
-         Appearance      =   16
-         UseVisualStyle  =   0   'False
+         Appearance      =   21
+      End
+      Begin XtremeSuiteControls.GroupBox gbIniciar 
+         Height          =   855
+         Left            =   480
+         TabIndex        =   37
+         Top             =   5280
+         Width           =   8895
+         _Version        =   1572864
+         _ExtentX        =   15690
+         _ExtentY        =   1508
+         _StockProps     =   79
+         BackColor       =   -2147483633
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         BorderStyle     =   1
+         Begin XtremeSuiteControls.CheckBox chkReinicio 
+            Height          =   255
+            Left            =   4920
+            TabIndex        =   42
+            Top             =   360
+            Width           =   1695
+            _Version        =   1572864
+            _ExtentX        =   2990
+            _ExtentY        =   450
+            _StockProps     =   79
+            Caption         =   "Reinicio Total"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Transparent     =   -1  'True
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
+         End
+         Begin XtremeSuiteControls.PushButton btnPresupuestoClean 
+            Height          =   615
+            Left            =   7080
+            TabIndex        =   38
+            Top             =   240
+            Width           =   1815
+            _Version        =   1572864
+            _ExtentX        =   3196
+            _ExtentY        =   1080
+            _StockProps     =   79
+            Caption         =   "Reiniciar el Presupuesto"
+            BackColor       =   -2147483633
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   7.5
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
+            Picture         =   "frmPres_Modelo.frx":0000
+         End
+         Begin XtremeSuiteControls.DateTimePicker dtpReinicio 
+            Height          =   375
+            Index           =   0
+            Left            =   2040
+            TabIndex        =   40
+            Top             =   360
+            Width           =   1335
+            _Version        =   1572864
+            _ExtentX        =   2355
+            _ExtentY        =   661
+            _StockProps     =   68
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Enabled         =   0   'False
+            CustomFormat    =   "dd/MM/yyyy"
+            Format          =   3
+         End
+         Begin XtremeSuiteControls.DateTimePicker dtpReinicio 
+            Height          =   375
+            Index           =   1
+            Left            =   3360
+            TabIndex        =   41
+            Top             =   360
+            Width           =   1335
+            _Version        =   1572864
+            _ExtentX        =   2355
+            _ExtentY        =   661
+            _StockProps     =   68
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Enabled         =   0   'False
+            CustomFormat    =   "dd/MM/yyyy"
+            Format          =   3
+         End
+         Begin XtremeSuiteControls.Label Label2 
+            Height          =   375
+            Left            =   120
+            TabIndex        =   39
+            Top             =   360
+            Width           =   1695
+            _Version        =   1572864
+            _ExtentX        =   2990
+            _ExtentY        =   661
+            _StockProps     =   79
+            Caption         =   "Rango de Reinicio"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Transparent     =   -1  'True
+            WordWrap        =   -1  'True
+         End
       End
       Begin XtremeSuiteControls.GroupBox GroupBox1 
-         Height          =   1932
+         Height          =   1935
          Index           =   0
-         Left            =   360
-         TabIndex        =   22
+         Left            =   480
+         TabIndex        =   20
          Top             =   1440
-         Width           =   8892
-         _Version        =   1441792
+         Width           =   8895
+         _Version        =   1572864
          _ExtentX        =   15684
          _ExtentY        =   3408
          _StockProps     =   79
          Caption         =   "Resolución"
          ForeColor       =   4210752
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -195,15 +325,14 @@ Begin VB.Form frmPres_Modelo
          Begin XtremeSuiteControls.FlatEdit txtResolucionUsuario 
             Height          =   312
             Left            =   1680
-            TabIndex        =   25
+            TabIndex        =   23
             Top             =   360
             Width           =   2172
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -215,21 +344,20 @@ Begin VB.Form frmPres_Modelo
             EndProperty
             Alignment       =   2
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtResolucionFecha 
             Height          =   312
             Left            =   5280
-            TabIndex        =   27
+            TabIndex        =   25
             Top             =   360
             Width           =   2172
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -241,20 +369,21 @@ Begin VB.Form frmPres_Modelo
             EndProperty
             Alignment       =   2
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.CheckBox chkMostrarInicio 
             Height          =   252
             Left            =   4080
-            TabIndex        =   28
+            TabIndex        =   26
             Top             =   720
             Width           =   3372
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   5948
             _ExtentY        =   444
             _StockProps     =   79
             Caption         =   "Mostrar Dashboard al Inicio?  "
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Arial"
                Size            =   7.5
@@ -264,22 +393,23 @@ Begin VB.Form frmPres_Modelo
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
+            UseVisualStyle  =   -1  'True
             TextAlignment   =   1
-            Appearance      =   16
+            Appearance      =   21
             Alignment       =   1
          End
          Begin XtremeSuiteControls.ComboBox cboEstado 
             Height          =   312
             Left            =   1680
-            TabIndex        =   29
+            TabIndex        =   27
             Top             =   720
             Width           =   2172
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   1973790
-            BackColor       =   16185078
+            BackColor       =   16777215
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -289,24 +419,22 @@ Begin VB.Form frmPres_Modelo
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            BackColor       =   16185078
             Style           =   2
-            Appearance      =   16
+            Appearance      =   6
             UseVisualStyle  =   0   'False
             Text            =   "ComboBox1"
          End
          Begin XtremeSuiteControls.FlatEdit txtResolucionNotas 
             Height          =   672
             Left            =   1680
-            TabIndex        =   32
+            TabIndex        =   30
             Top             =   1080
             Width           =   7212
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   12721
             _ExtentY        =   1185
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -318,7 +446,7 @@ Begin VB.Form frmPres_Modelo
             EndProperty
             MultiLine       =   -1  'True
             ScrollBars      =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin VB.Label Label1 
@@ -335,7 +463,7 @@ Begin VB.Form frmPres_Modelo
             Height          =   732
             Index           =   9
             Left            =   480
-            TabIndex        =   31
+            TabIndex        =   29
             Top             =   1080
             Width           =   1332
          End
@@ -353,7 +481,7 @@ Begin VB.Form frmPres_Modelo
             Height          =   252
             Index           =   1
             Left            =   480
-            TabIndex        =   30
+            TabIndex        =   28
             Top             =   720
             Width           =   1332
          End
@@ -371,7 +499,7 @@ Begin VB.Form frmPres_Modelo
             Height          =   252
             Index           =   8
             Left            =   4080
-            TabIndex        =   26
+            TabIndex        =   24
             Top             =   360
             Width           =   1332
          End
@@ -389,22 +517,23 @@ Begin VB.Form frmPres_Modelo
             Height          =   252
             Index           =   7
             Left            =   480
-            TabIndex        =   24
+            TabIndex        =   22
             Top             =   360
             Width           =   1332
          End
       End
       Begin XtremeSuiteControls.PushButton btnCatalogo 
-         Height          =   612
-         Left            =   360
-         TabIndex        =   11
+         Height          =   615
+         Left            =   480
+         TabIndex        =   9
          Top             =   4560
-         Width           =   1692
-         _Version        =   1441792
+         Width           =   1695
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   1080
          _StockProps     =   79
          Caption         =   "Importar Cuentas"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   7.5
@@ -414,20 +543,22 @@ Begin VB.Form frmPres_Modelo
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
-         Picture         =   "frmPres_Modelo.frx":0000
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         Picture         =   "frmPres_Modelo.frx":057A
       End
       Begin XtremeSuiteControls.PushButton btnPresupuesto 
-         Height          =   612
-         Left            =   2040
-         TabIndex        =   12
+         Height          =   615
+         Left            =   2160
+         TabIndex        =   10
          Top             =   4560
-         Width           =   1812
-         _Version        =   1441792
+         Width           =   1815
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   1080
          _StockProps     =   79
          Caption         =   "Confección por Partida"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   7.5
@@ -437,20 +568,22 @@ Begin VB.Form frmPres_Modelo
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
-         Picture         =   "frmPres_Modelo.frx":07EF
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         Picture         =   "frmPres_Modelo.frx":0D69
       End
       Begin XtremeSuiteControls.PushButton btnPlanning 
-         Height          =   612
-         Left            =   5880
-         TabIndex        =   13
+         Height          =   615
+         Left            =   7560
+         TabIndex        =   11
          Top             =   4560
-         Width           =   1812
-         _Version        =   1441792
+         Width           =   1815
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   1080
          _StockProps     =   79
          Caption         =   "Planificador"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   7.5
@@ -460,21 +593,21 @@ Begin VB.Form frmPres_Modelo
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
-         Picture         =   "frmPres_Modelo.frx":0EB6
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         Picture         =   "frmPres_Modelo.frx":1430
       End
       Begin XtremeSuiteControls.FlatEdit txtNotas 
-         Height          =   792
-         Left            =   2040
-         TabIndex        =   21
+         Height          =   795
+         Left            =   2160
+         TabIndex        =   19
          Top             =   600
-         Width           =   7212
-         _Version        =   1441792
+         Width           =   7215
+         _Version        =   1572864
          _ExtentX        =   12721
          _ExtentY        =   1397
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -486,22 +619,23 @@ Begin VB.Form frmPres_Modelo
          EndProperty
          MultiLine       =   -1  'True
          ScrollBars      =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.GroupBox GroupBox1 
-         Height          =   852
+         Height          =   855
          Index           =   1
-         Left            =   480
-         TabIndex        =   23
+         Left            =   600
+         TabIndex        =   21
          Top             =   3600
-         Width           =   8772
-         _Version        =   1441792
+         Width           =   8775
+         _Version        =   1572864
          _ExtentX        =   15473
          _ExtentY        =   1503
          _StockProps     =   79
          Caption         =   "Registro"
          ForeColor       =   4210752
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -518,15 +652,14 @@ Begin VB.Form frmPres_Modelo
          Begin XtremeSuiteControls.FlatEdit txtRegistroUsuario 
             Height          =   312
             Left            =   1560
-            TabIndex        =   35
+            TabIndex        =   33
             Top             =   240
             Width           =   2172
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -538,21 +671,20 @@ Begin VB.Form frmPres_Modelo
             EndProperty
             Alignment       =   2
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtRegistroFecha 
             Height          =   312
             Left            =   5160
-            TabIndex        =   36
+            TabIndex        =   34
             Top             =   240
             Width           =   2172
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -564,7 +696,7 @@ Begin VB.Form frmPres_Modelo
             EndProperty
             Alignment       =   2
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin VB.Label Label1 
@@ -581,7 +713,7 @@ Begin VB.Form frmPres_Modelo
             Height          =   252
             Index           =   5
             Left            =   3960
-            TabIndex        =   34
+            TabIndex        =   32
             Top             =   240
             Width           =   1332
          End
@@ -599,45 +731,23 @@ Begin VB.Form frmPres_Modelo
             Height          =   252
             Index           =   4
             Left            =   360
-            TabIndex        =   33
+            TabIndex        =   31
             Top             =   240
             Width           =   1332
          End
       End
-      Begin XtremeSuiteControls.PushButton btnPresupuestoClean 
-         Height          =   612
-         Left            =   7680
-         TabIndex        =   37
-         Top             =   4560
-         Width           =   1812
-         _Version        =   1441792
-         _ExtentX        =   3196
-         _ExtentY        =   1080
-         _StockProps     =   79
-         Caption         =   "Reiniciar el Presupuesto"
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   7.5
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Appearance      =   16
-         Picture         =   "frmPres_Modelo.frx":159E
-      End
       Begin XtremeSuiteControls.PushButton btnMapeoSinCC 
-         Height          =   612
-         Left            =   3840
-         TabIndex        =   38
+         Height          =   615
+         Left            =   3960
+         TabIndex        =   35
          Top             =   4560
-         Width           =   1812
-         _Version        =   1441792
+         Width           =   1815
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   1080
          _StockProps     =   79
          Caption         =   "Mapeo Cuentas sin Centro de Costo"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   7.5
@@ -647,7 +757,8 @@ Begin VB.Form frmPres_Modelo
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          Picture         =   "frmPres_Modelo.frx":1B18
       End
       Begin VB.Label lblUsuario 
@@ -662,12 +773,12 @@ Begin VB.Form frmPres_Modelo
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   372
+         Height          =   375
          Left            =   -69880
-         TabIndex        =   20
+         TabIndex        =   18
          Top             =   480
          Visible         =   0   'False
-         Width           =   4572
+         Width           =   4695
       End
       Begin VB.Label lblAjuste 
          BackStyle       =   0  'Transparent
@@ -681,12 +792,12 @@ Begin VB.Form frmPres_Modelo
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   372
-         Left            =   -65080
-         TabIndex        =   19
+         Height          =   375
+         Left            =   -64960
+         TabIndex        =   17
          Top             =   480
          Visible         =   0   'False
-         Width           =   4572
+         Width           =   4695
       End
       Begin VB.Label Label1 
          Caption         =   "Notas"
@@ -699,12 +810,12 @@ Begin VB.Form frmPres_Modelo
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Index           =   2
-         Left            =   360
-         TabIndex        =   14
+         Left            =   480
+         TabIndex        =   12
          Top             =   480
-         Width           =   1332
+         Width           =   1335
       End
    End
    Begin MSComCtl2.FlatScrollBar FlatScrollBar 
@@ -749,85 +860,18 @@ Begin VB.Form frmPres_Modelo
          EndProperty
       EndProperty
    End
-   Begin ComCtl3.CoolBar CoolBarX 
-      Align           =   1  'Align Top
-      Height          =   384
-      Left            =   0
-      TabIndex        =   1
-      Top             =   0
-      Width           =   10008
-      _ExtentX        =   17648
-      _ExtentY        =   688
-      BandCount       =   2
-      _CBWidth        =   10005
-      _CBHeight       =   390
-      _Version        =   "6.7.9839"
-      Child1          =   "tlb"
-      MinWidth1       =   1800
-      MinHeight1      =   270
-      Width1          =   1800
-      NewRow1         =   0   'False
-      Child2          =   "tlbAux"
-      MinHeight2      =   330
-      Width2          =   1110
-      NewRow2         =   0   'False
-      Begin MSComctlLib.Toolbar tlb 
-         Height          =   330
-         Left            =   165
-         TabIndex        =   2
-         Top             =   60
-         Width           =   8610
-         _ExtentX        =   15187
-         _ExtentY        =   582
-         ButtonWidth     =   609
-         ButtonHeight    =   582
-         AllowCustomize  =   0   'False
-         Style           =   1
-         _Version        =   393216
-         BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
-            NumButtons      =   9
-            BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "nuevo"
-            EndProperty
-            BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "editar"
-            EndProperty
-            BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "borrar"
-            EndProperty
-            BeginProperty Button4 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "guardar"
-            EndProperty
-            BeginProperty Button5 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "deshacer"
-            EndProperty
-            BeginProperty Button6 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Style           =   3
-            EndProperty
-            BeginProperty Button7 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "consultar"
-            EndProperty
-            BeginProperty Button8 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "reportes"
-            EndProperty
-            BeginProperty Button9 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "ayuda"
-            EndProperty
-         EndProperty
-      End
-   End
    Begin XtremeSuiteControls.ComboBox cboPeriodoFiscal 
       Height          =   312
       Left            =   2160
-      TabIndex        =   5
+      TabIndex        =   3
       Top             =   1080
       Width           =   6732
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   11880
       _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
-      BackColor       =   16185078
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -837,24 +881,22 @@ Begin VB.Form frmPres_Modelo
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
       UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
    Begin XtremeSuiteControls.FlatEdit txtDescripcion 
       Height          =   312
       Left            =   3480
-      TabIndex        =   7
+      TabIndex        =   5
       Top             =   1440
       Width           =   5412
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   9546
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -864,21 +906,20 @@ Begin VB.Form frmPres_Modelo
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtCodigo 
       Height          =   312
       Left            =   2160
-      TabIndex        =   6
+      TabIndex        =   4
       Top             =   1440
       Width           =   1332
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -889,21 +930,21 @@ Begin VB.Form frmPres_Modelo
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.ComboBox cboContabilidad 
       Height          =   312
       Left            =   2160
-      TabIndex        =   9
+      TabIndex        =   7
       Top             =   720
       Width           =   6732
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   11880
       _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
-      BackColor       =   16185078
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -913,13 +954,58 @@ Begin VB.Form frmPres_Modelo
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
       UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
+   Begin MSComctlLib.Toolbar tlb 
+      Align           =   1  'Align Top
+      Height          =   330
+      Left            =   0
+      TabIndex        =   36
+      Top             =   0
+      Width           =   9915
+      _ExtentX        =   17489
+      _ExtentY        =   582
+      ButtonWidth     =   609
+      ButtonHeight    =   582
+      AllowCustomize  =   0   'False
+      Style           =   1
+      _Version        =   393216
+      BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
+         NumButtons      =   9
+         BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "nuevo"
+         EndProperty
+         BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "editar"
+         EndProperty
+         BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "borrar"
+         EndProperty
+         BeginProperty Button4 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "guardar"
+         EndProperty
+         BeginProperty Button5 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "deshacer"
+         EndProperty
+         BeginProperty Button6 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Style           =   3
+         EndProperty
+         BeginProperty Button7 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "consultar"
+         EndProperty
+         BeginProperty Button8 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "reportes"
+         EndProperty
+         BeginProperty Button9 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "ayuda"
+         EndProperty
+      EndProperty
+   End
    Begin VB.Label Label1 
+      BackStyle       =   0  'Transparent
       Caption         =   "Contabilidad"
       BeginProperty Font 
          Name            =   "Calibri"
@@ -933,12 +1019,13 @@ Begin VB.Form frmPres_Modelo
       Height          =   252
       Index           =   10
       Left            =   720
-      TabIndex        =   8
+      TabIndex        =   6
       Top             =   720
       Width           =   1332
    End
    Begin VB.Label Label1 
       Appearance      =   0  'Flat
+      BackStyle       =   0  'Transparent
       Caption         =   "Modelo"
       BeginProperty Font 
          Name            =   "Calibri"
@@ -953,11 +1040,12 @@ Begin VB.Form frmPres_Modelo
       Height          =   312
       Index           =   14
       Left            =   720
-      TabIndex        =   4
+      TabIndex        =   2
       Top             =   1440
       Width           =   1332
    End
    Begin VB.Label Label1 
+      BackStyle       =   0  'Transparent
       Caption         =   "Periodo Fiscal"
       BeginProperty Font 
          Name            =   "Calibri"
@@ -971,7 +1059,7 @@ Begin VB.Form frmPres_Modelo
       Height          =   252
       Index           =   0
       Left            =   720
-      TabIndex        =   3
+      TabIndex        =   1
       Top             =   1080
       Width           =   1332
    End
@@ -1045,7 +1133,6 @@ Private Sub cboContabilidad_Click()
 If vPaso Then Exit Sub
 
 
-
 vPaso = True
 
  strSQL = "select ID_CIERRE as 'IdX',DESCRIPCION as 'ItmX'" _
@@ -1062,6 +1149,17 @@ Private Sub cboPeriodoFiscal_Click()
 If vPaso Then Exit Sub
 
  Call sbLimpiaPantalla
+End Sub
+
+Private Sub chkReinicio_Click()
+If chkReinicio.Value = xtpChecked Then
+    dtpReinicio(0).Enabled = False
+Else
+    dtpReinicio(0).Enabled = True
+End If
+
+dtpReinicio(1).Enabled = dtpReinicio(0).Enabled
+
 End Sub
 
 Private Sub FlatScrollBar_Change()
@@ -1116,6 +1214,11 @@ On Error GoTo vError
  vScroll = False
    FlatScrollBar.Value = 0
  vScroll = True
+ 
+ dtpReinicio(0).Value = CDate("2024-01-01")
+ dtpReinicio(1).Value = CDate("2024-12-31")
+ 
+ chkReinicio.Value = xtpChecked
  
 
 vEdita = False
@@ -1216,7 +1319,7 @@ Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
  Set itmX = lswUsuarios.ListItems.Add(, , rs!Usuario)
      itmX.SubItems(1) = rs!Nombre
-     itmX.SubItems(2) = rs!Registro_Fecha & ""
+     itmX.SubItems(2) = rs!REGISTRO_FECHA & ""
      itmX.SubItems(3) = rs!Registro_Usuario & ""
      itmX.Checked = IIf((rs!Activo = 1), True, False)
  rs.MoveNext
@@ -1332,6 +1435,8 @@ End Sub
 
 
 
+
+
 Private Sub lswAjusteAsg_ItemCheck(ByVal Item As XtremeSuiteControls.ListViewItem)
 If vPaso Then Exit Sub
 
@@ -1436,7 +1541,7 @@ Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
  Set itmX = lswAjustes.ListItems.Add(, , rs!cod_Ajuste)
      itmX.SubItems(1) = rs!Descripcion
-     itmX.SubItems(2) = rs!Registro_Fecha & ""
+     itmX.SubItems(2) = rs!REGISTRO_FECHA & ""
      itmX.SubItems(3) = rs!Registro_Usuario & ""
      itmX.Checked = IIf((rs!Activo = 1), True, False)
  rs.MoveNext
@@ -1551,7 +1656,7 @@ If Not rs.BOF And Not rs.EOF Then
   txtResolucionUsuario.Text = rs!Resolucion_Usuario & ""
   txtResolucionNotas.Text = rs!Resolucion_Notas & ""
   
-  txtRegistroFecha.Text = rs!Registro_Fecha & ""
+  txtRegistroFecha.Text = rs!REGISTRO_FECHA & ""
   txtRegistroUsuario.Text = rs!Registro_Usuario & ""
   
   chkMostrarInicio.Value = rs!Mostrar_Inicio

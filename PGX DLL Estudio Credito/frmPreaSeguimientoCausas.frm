@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.0#0"; "Codejock.Controls.v20.0.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmPreaSeguimientoCausas 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -13,12 +13,12 @@ Begin VB.Form frmPreaSeguimientoCausas
    ScaleWidth      =   9195
    StartUpPosition =   1  'CenterOwner
    Begin XtremeSuiteControls.ListView lsw 
-      Height          =   4692
+      Height          =   4695
       Left            =   120
       TabIndex        =   1
-      Top             =   1320
-      Width           =   8892
-      _Version        =   1310720
+      Top             =   1200
+      Width           =   8895
+      _Version        =   1572864
       _ExtentX        =   15684
       _ExtentY        =   8276
       _StockProps     =   77
@@ -100,13 +100,13 @@ On Error GoTo vError
 
 If Item.Checked Then
     strSQL = "insert CRD_PREA_GESTION(cod_causas,tipo,cod_preanalisis,codigo,registro_fecha,registro_usuario) values('" _
-           & Item.Text & "','" & gPreAnalisis.ESTADO & "','" & gPreAnalisis.Expediente _
+           & Item.Text & "','" & gPreAnalisis.Estado & "','" & gPreAnalisis.Expediente _
            & "','" & mCod_linea & "',dbo.Mygetdate(), '" & glogon.Usuario & "')"
 Else
   Call Bitacora("Elimina", "Causa SGT: " & Item.Text & ", Expediente: " & gPreAnalisis.Expediente)
     
   strSQL = "delete CRD_PREA_GESTION where cod_causas = '" & Item.Text & "' and tipo = '" _
-         & gPreAnalisis.ESTADO & "' and cod_preanalisis = '" & gPreAnalisis.Expediente & "'"
+         & gPreAnalisis.Estado & "' and cod_preanalisis = '" & gPreAnalisis.Expediente & "'"
 End If
 
 Call ConectionExecute(strSQL)
@@ -131,7 +131,7 @@ TimerX.Enabled = False
 Me.MousePointer = vbHourglass
 
 
-pTipo = gPreAnalisis.ESTADO
+pTipo = gPreAnalisis.Estado
 
 lsw.ListItems.Clear
 
@@ -149,8 +149,8 @@ Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
  Set itmX = lsw.ListItems.Add(, , rs!Cod_Causas)
      itmX.SubItems(1) = rs!Descripcion
-     itmX.SubItems(2) = rs!registro_Fecha & ""
-     itmX.SubItems(3) = rs!registro_usuario & ""
+     itmX.SubItems(2) = rs!Registro_Fecha & ""
+     itmX.SubItems(3) = rs!Registro_Usuario & ""
      itmX.Checked = IIf((rs!Check = 1), True, False)
      If itmX.Checked Then itmX.ForeColor = vbBlue
  rs.MoveNext

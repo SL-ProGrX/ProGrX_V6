@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmSYS_CORE_UENS 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,7 +24,7 @@ Begin VB.Form frmSYS_CORE_UENS
       TabIndex        =   1
       Top             =   1680
       Width           =   11055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19500
       _ExtentY        =   11245
       _StockProps     =   68
@@ -40,7 +40,6 @@ Begin VB.Form frmSYS_CORE_UENS
       Appearance      =   4
       Color           =   32
       ItemCount       =   3
-      SelectedItem    =   2
       Item(0).Caption =   "UENs"
       Item(0).ControlCount=   1
       Item(0).Control(0)=   "vGrid"
@@ -59,7 +58,7 @@ Begin VB.Form frmSYS_CORE_UENS
          Top             =   720
          Visible         =   0   'False
          Width           =   11055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   19500
          _ExtentY        =   9975
          _StockProps     =   77
@@ -80,10 +79,9 @@ Begin VB.Form frmSYS_CORE_UENS
       End
       Begin FPSpreadADO.fpSpread vGrid 
          Height          =   5895
-         Left            =   -69880
+         Left            =   120
          TabIndex        =   2
          Top             =   360
-         Visible         =   0   'False
          Width           =   10815
          _Version        =   524288
          _ExtentX        =   19076
@@ -115,7 +113,7 @@ Begin VB.Form frmSYS_CORE_UENS
          Top             =   360
          Visible         =   0   'False
          Width           =   11055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   19500
          _ExtentY        =   582
          _StockProps     =   77
@@ -135,9 +133,10 @@ Begin VB.Form frmSYS_CORE_UENS
       End
       Begin FPSpreadADO.fpSpread vgRoles 
          Height          =   5535
-         Left            =   0
+         Left            =   -70000
          TabIndex        =   6
          Top             =   720
+         Visible         =   0   'False
          Width           =   10935
          _Version        =   524288
          _ExtentX        =   19288
@@ -164,11 +163,12 @@ Begin VB.Form frmSYS_CORE_UENS
       End
       Begin XtremeSuiteControls.FlatEdit txtRolesFiltro 
          Height          =   330
-         Left            =   0
+         Left            =   -70000
          TabIndex        =   7
          Top             =   360
+         Visible         =   0   'False
          Width           =   11055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   19500
          _ExtentY        =   582
          _StockProps     =   77
@@ -193,7 +193,7 @@ Begin VB.Form frmSYS_CORE_UENS
       TabIndex        =   3
       Top             =   1320
       Width           =   11055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19500
       _ExtentY        =   661
       _StockProps     =   14

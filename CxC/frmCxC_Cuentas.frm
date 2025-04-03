@@ -45,6 +45,7 @@ Begin VB.Form frmCxC_Cuentas
       Appearance      =   4
       Color           =   32
       ItemCount       =   4
+      SelectedItem    =   1
       Item(0).Caption =   "Recepción"
       Item(0).ControlCount=   2
       Item(0).Control(0)=   "fraOperacion"
@@ -86,10 +87,9 @@ Begin VB.Form frmCxC_Cuentas
       End
       Begin XtremeSuiteControls.TabControl tcFacturas 
          Height          =   4692
-         Left            =   -70000
+         Left            =   0
          TabIndex        =   97
          Top             =   2400
-         Visible         =   0   'False
          Width           =   10812
          _Version        =   1572864
          _ExtentX        =   19071
@@ -122,30 +122,6 @@ Begin VB.Form frmCxC_Cuentas
          Item(1).Control(7)=   "Label2(17)"
          Item(1).Control(8)=   "txtFacturaFiltro(1)"
          Item(1).Control(9)=   "Label2(19)"
-         Begin XtremeSuiteControls.ListView lswFacturas 
-            Height          =   3012
-            Left            =   0
-            TabIndex        =   98
-            Top             =   360
-            Width           =   10812
-            _Version        =   1572864
-            _ExtentX        =   19071
-            _ExtentY        =   5313
-            _StockProps     =   77
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            View            =   3
-            GridLines       =   -1  'True
-            FullRowSelect   =   -1  'True
-            Appearance      =   16
-         End
          Begin XtremeSuiteControls.ListView lswAdelantadas 
             Height          =   3132
             Left            =   -70000
@@ -167,6 +143,30 @@ Begin VB.Form frmCxC_Cuentas
                Strikethrough   =   0   'False
             EndProperty
             Checkboxes      =   -1  'True
+            View            =   3
+            GridLines       =   -1  'True
+            FullRowSelect   =   -1  'True
+            Appearance      =   16
+         End
+         Begin XtremeSuiteControls.ListView lswFacturas 
+            Height          =   3012
+            Left            =   0
+            TabIndex        =   98
+            Top             =   360
+            Width           =   10812
+            _Version        =   1572864
+            _ExtentX        =   19071
+            _ExtentY        =   5313
+            _StockProps     =   77
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
             View            =   3
             GridLines       =   -1  'True
             FullRowSelect   =   -1  'True
@@ -873,10 +873,9 @@ Begin VB.Form frmCxC_Cuentas
       End
       Begin XtremeSuiteControls.GroupBox gbFacturaRegistra 
          Height          =   1695
-         Left            =   -70000
+         Left            =   0
          TabIndex        =   31
          Top             =   480
-         Visible         =   0   'False
          Width           =   10695
          _Version        =   1572864
          _ExtentX        =   18865
@@ -1249,9 +1248,10 @@ Begin VB.Form frmCxC_Cuentas
       End
       Begin XtremeSuiteControls.GroupBox fraOperacion 
          Height          =   5532
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   10
          Top             =   360
+         Visible         =   0   'False
          Width           =   10572
          _Version        =   1572864
          _ExtentX        =   18648
@@ -2389,9 +2389,10 @@ Begin VB.Form frmCxC_Cuentas
       End
       Begin XtremeSuiteControls.GroupBox GroupBox1 
          Height          =   852
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   11
          Top             =   6120
+         Visible         =   0   'False
          Width           =   9732
          _Version        =   1572864
          _ExtentX        =   17166
@@ -4802,8 +4803,8 @@ If Not rs.EOF And Not rs.BOF Then
   End Select
 
 
- lblRecibe.Caption = IIf(IsNull(rs!Registro_Usuario), "", rs!Registro_Usuario)
- lblFechaRec.Caption = rs!Registro_Fecha & ""
+ lblRecibe.Caption = IIf(IsNull(rs!REGISTRO_USUARIO), "", rs!REGISTRO_USUARIO)
+ lblFechaRec.Caption = rs!REGISTRO_FECHA & ""
  lblFormaliza.Caption = IIf(IsNull(rs!ACTIVA_USUARIO), "", rs!ACTIVA_USUARIO)
  lblFechaFor.Caption = IIf(IsNull(rs!Activa_Fecha), rs!Activa_Fecha & "", rs!Activa_Fecha)
  
@@ -4841,8 +4842,8 @@ If Not rs.EOF And Not rs.BOF Then
  
  End Select
 
- StatusBarX.Panels(1).Text = rs!Registro_Usuario
- StatusBarX.Panels(2).Text = rs!Registro_Fecha
+ StatusBarX.Panels(1).Text = rs!REGISTRO_USUARIO
+ StatusBarX.Panels(2).Text = rs!REGISTRO_FECHA
  StatusBarX.Panels(3).Text = rs!Autoriza_Usuario & ""
  StatusBarX.Panels(4).Text = rs!Autoriza_Fecha & ""
  StatusBarX.Panels(5).Text = rs!tesoreria_usuario & ""
@@ -5063,7 +5064,7 @@ Select Case xItem
           & " Where Reb.Operacion = " & txtOperacion.Text
    Call OpenRecordSet(rs, strSQL, 0)
    Do While Not rs.EOF
-    Set itmX = lsw.ListItems.Add(, , rs!Id_Solicitud)
+    Set itmX = lsw.ListItems.Add(, , rs!ID_SOLICITUD)
         itmX.SubItems(1) = rs!Codigo
         itmX.SubItems(2) = Format(rs!Monto, "Standard")
         itmX.SubItems(3) = rs!Descripcion
@@ -5339,7 +5340,7 @@ With lswAdelantadas
     Do While Not rs.EOF
       Set itmX = .ListItems.Add(, , rs!cod_Factura)
           itmX.SubItems(1) = Trim(rs!Operacion)
-          itmX.SubItems(2) = Trim(rs!COD_DIVISA)
+          itmX.SubItems(2) = Trim(rs!cod_Divisa)
           itmX.SubItems(3) = Format(rs!Importe, "Standard")
           itmX.SubItems(4) = rs!TIPO_CAMBIO
           itmX.SubItems(5) = Format(rs!Monto, "Standard")

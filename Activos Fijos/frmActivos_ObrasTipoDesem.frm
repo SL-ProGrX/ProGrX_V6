@@ -5,16 +5,16 @@ Begin VB.Form frmActivos_ObrasTipoDesem
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Tipos de Desembolsos para Obras en Proceso"
-   ClientHeight    =   6924
-   ClientLeft      =   48
-   ClientTop       =   432
-   ClientWidth     =   7344
+   ClientHeight    =   6915
+   ClientLeft      =   45
+   ClientTop       =   435
+   ClientWidth     =   7350
    Icon            =   "frmActivos_ObrasTipoDesem.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   6924
-   ScaleWidth      =   7344
+   ScaleHeight     =   6915
+   ScaleWidth      =   7350
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin FPSpreadADO.fpSpread vGrid 
@@ -50,7 +50,7 @@ Begin VB.Form frmActivos_ObrasTipoDesem
       Caption         =   "Tipos de Desembolsos para Obras en Proceso"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -92,9 +92,9 @@ Set imgBanner.Picture = frmContenedor.imgBanner_Mantenimiento.Picture
 strSQL = "select * from Activos_obras_tdesem" _
       & " order by cod_desembolso"
 Call sbCargaGridLocal(vGrid, strSQL)
-
-Call Formularios(Me)
-Call RefrescaTags(Me)
+'
+'Call Formularios(Me)
+'Call RefrescaTags(Me)
 
 End Sub
 
@@ -185,10 +185,10 @@ Do While Not rs.EOF
           .Text = rs!cod_desembolso
           .TextTip = TextTipFixed
           .TextTipDelay = 1000
-          .CellNote = "Registrado: " & rs!registro_usuario & vbCrLf & "Fecha: " & rs!registro_fecha & vbCrLf & vbCrLf _
+          .CellNote = "Registrado: " & rs!registro_Usuario & vbCrLf & "Fecha: " & rs!registro_fecha & vbCrLf & vbCrLf _
                     & "Modificado: " & rs!Modifica_Usuario & vbCrLf & "Fecha: " & rs!Modifica_Fecha
        Case 2 'Descripcion
-          .Text = rs!Descripcion
+          .Text = rs!DESCRIPCION
        Case 3 'Activo
           .Value = rs!activo
       End Select

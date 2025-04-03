@@ -2,13 +2,13 @@ VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "comctl32.Ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
-Object = "{B8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.TaskPanel.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
+Object = "{B8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.TaskPanel.v24.0.0.ocx"
 Begin VB.Form frmCO_Principal 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Gestión de Cobro"
-   ClientHeight    =   7245
+   ClientHeight    =   7395
    ClientLeft      =   45
    ClientTop       =   330
    ClientWidth     =   12060
@@ -26,15 +26,15 @@ Begin VB.Form frmCO_Principal
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
-   ScaleHeight     =   7245
+   ScaleHeight     =   7395
    ScaleWidth      =   12060
    Begin XtremeTaskPanel.TaskPanel tpMain 
       Height          =   5808
       Left            =   0
-      TabIndex        =   118
+      TabIndex        =   93
       Top             =   1440
       Width           =   2760
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4868
       _ExtentY        =   10245
       _StockProps     =   64
@@ -45,7 +45,7 @@ Begin VB.Form frmCO_Principal
    Begin ComctlLib.StatusBar StatusBarX 
       Height          =   252
       Left            =   2760
-      TabIndex        =   71
+      TabIndex        =   46
       Top             =   6960
       Width           =   9300
       _ExtentX        =   16404
@@ -58,7 +58,6 @@ Begin VB.Form frmCO_Principal
             Bevel           =   0
             Object.Width           =   9596
             MinWidth        =   9596
-            TextSave        =   ""
             Object.Tag             =   ""
             Object.ToolTipText     =   "Ultima Acción"
          EndProperty
@@ -66,7 +65,6 @@ Begin VB.Form frmCO_Principal
             Bevel           =   0
             Object.Width           =   9596
             MinWidth        =   9596
-            TextSave        =   ""
             Object.Tag             =   ""
             Object.ToolTipText     =   "Ultimo Seguimiento"
          EndProperty
@@ -82,14 +80,14 @@ Begin VB.Form frmCO_Principal
       EndProperty
    End
    Begin XtremeSuiteControls.TabControl tcMain 
-      Height          =   5415
+      Height          =   5655
       Left            =   2760
       TabIndex        =   3
       Top             =   1440
       Width           =   9255
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16325
-      _ExtentY        =   9551
+      _ExtentY        =   9975
       _StockProps     =   68
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
@@ -117,13 +115,10 @@ Begin VB.Form frmCO_Principal
       Item(3).ControlCount=   2
       Item(3).Control(0)=   "gbNotificaciones(0)"
       Item(3).Control(1)=   "gbNotificaciones(1)"
-      Item(4).Caption =   "En Cobro"
+      Item(4).Caption =   "Cobro a Fiadores"
       Item(4).Tooltip =   "Operaciones en Cobro"
-      Item(4).ControlCount=   4
-      Item(4).Control(0)=   "fraReversionDeTraspaso"
-      Item(4).Control(1)=   "lswOperacionesGeneradas"
-      Item(4).Control(2)=   "gbEnCobroNp"
-      Item(4).Control(3)=   "ShortcutCaption1"
+      Item(4).ControlCount=   1
+      Item(4).Control(0)=   "tcCF"
       Item(5).Caption =   "Contacto"
       Item(5).ControlCount=   7
       Item(5).Control(0)=   "txtDirFiadores"
@@ -146,57 +141,6 @@ Begin VB.Form frmCO_Principal
       Item(7).Control(1)=   "Label3"
       Item(7).Control(2)=   "btnDeductora"
       Item(7).Control(3)=   "chkDeducirPlanilla"
-      Begin XtremeSuiteControls.ListView lswTelefonos 
-         Height          =   1692
-         Left            =   -69760
-         TabIndex        =   56
-         Top             =   2160
-         Visible         =   0   'False
-         Width           =   5172
-         _Version        =   1441793
-         _ExtentX        =   9123
-         _ExtentY        =   2984
-         _StockProps     =   77
-         BackColor       =   -2147483643
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         View            =   3
-         Appearance      =   17
-         UseVisualStyle  =   0   'False
-      End
-      Begin XtremeSuiteControls.ListView lswContactos 
-         Height          =   1692
-         Left            =   -69760
-         TabIndex        =   55
-         Top             =   360
-         Visible         =   0   'False
-         Width           =   8772
-         _Version        =   1441793
-         _ExtentX        =   15473
-         _ExtentY        =   2984
-         _StockProps     =   77
-         BackColor       =   -2147483643
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         View            =   3
-         FullRowSelect   =   -1  'True
-         Appearance      =   17
-         UseVisualStyle  =   0   'False
-      End
       Begin XtremeSuiteControls.ListView lswAbonos 
          Height          =   4212
          Left            =   -69760
@@ -204,7 +148,7 @@ Begin VB.Form frmCO_Principal
          Top             =   1200
          Visible         =   0   'False
          Width           =   8772
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15473
          _ExtentY        =   7429
          _StockProps     =   77
@@ -222,16 +166,16 @@ Begin VB.Form frmCO_Principal
          Appearance      =   16
          ShowBorder      =   0   'False
       End
-      Begin XtremeSuiteControls.ListView lswOperacionesGeneradas 
-         Height          =   1935
-         Left            =   -70000
-         TabIndex        =   70
-         Top             =   720
+      Begin XtremeSuiteControls.ListView lswContactos 
+         Height          =   1692
+         Left            =   -69760
+         TabIndex        =   42
+         Top             =   360
          Visible         =   0   'False
-         Width           =   9255
-         _Version        =   1441793
-         _ExtentX        =   16325
-         _ExtentY        =   3413
+         Width           =   8772
+         _Version        =   1572864
+         _ExtentX        =   15473
+         _ExtentY        =   2984
          _StockProps     =   77
          BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -243,20 +187,1139 @@ Begin VB.Form frmCO_Principal
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Checkboxes      =   -1  'True
          View            =   3
          FullRowSelect   =   -1  'True
-         Appearance      =   16
-         ShowBorder      =   0   'False
+         Appearance      =   17
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.ListView lswTelefonos 
+         Height          =   1692
+         Left            =   -69760
+         TabIndex        =   43
+         Top             =   2160
+         Visible         =   0   'False
+         Width           =   5172
+         _Version        =   1572864
+         _ExtentX        =   9123
+         _ExtentY        =   2984
+         _StockProps     =   77
+         BackColor       =   -2147483643
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         View            =   3
+         Appearance      =   17
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.TabControl tcCF 
+         Height          =   6255
+         Left            =   -70000
+         TabIndex        =   102
+         Top             =   360
+         Visible         =   0   'False
+         Width           =   9255
+         _Version        =   1572864
+         _ExtentX        =   16325
+         _ExtentY        =   11033
+         _StockProps     =   68
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Appearance      =   4
+         Color           =   32
+         ItemCount       =   2
+         Item(0).Caption =   "Cobro a Fiadores"
+         Item(0).ControlCount=   4
+         Item(0).Control(0)=   "lswCF"
+         Item(0).Control(1)=   "ShortcutCaption1(1)"
+         Item(0).Control(2)=   "GroupBox1"
+         Item(0).Control(3)=   "btnExport(0)"
+         Item(1).Caption =   "Traslado de Deuda"
+         Item(1).ControlCount=   5
+         Item(1).Control(0)=   "lswOperacionesGeneradas"
+         Item(1).Control(1)=   "gbEnCobroNp"
+         Item(1).Control(2)=   "fraReversionDeTraspaso"
+         Item(1).Control(3)=   "ShortcutCaption1(0)"
+         Item(1).Control(4)=   "btnExport(1)"
+         Begin XtremeSuiteControls.ListView lswCF 
+            Height          =   2055
+            Left            =   0
+            TabIndex        =   128
+            Top             =   720
+            Width           =   9255
+            _Version        =   1572864
+            _ExtentX        =   16325
+            _ExtentY        =   3625
+            _StockProps     =   77
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Checkboxes      =   -1  'True
+            View            =   3
+            FullRowSelect   =   -1  'True
+            Appearance      =   16
+            ShowBorder      =   0   'False
+         End
+         Begin XtremeSuiteControls.ListView lswOperacionesGeneradas 
+            Height          =   1935
+            Left            =   -70000
+            TabIndex        =   103
+            Top             =   720
+            Visible         =   0   'False
+            Width           =   9255
+            _Version        =   1572864
+            _ExtentX        =   16325
+            _ExtentY        =   3413
+            _StockProps     =   77
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Checkboxes      =   -1  'True
+            View            =   3
+            FullRowSelect   =   -1  'True
+            Appearance      =   16
+            ShowBorder      =   0   'False
+         End
+         Begin XtremeSuiteControls.PushButton btnExport 
+            Height          =   360
+            Index           =   0
+            Left            =   8760
+            TabIndex        =   149
+            Top             =   360
+            Width           =   495
+            _Version        =   1572864
+            _ExtentX        =   873
+            _ExtentY        =   635
+            _StockProps     =   79
+            Appearance      =   6
+            Picture         =   "frmCO_Principal.frx":08CA
+         End
+         Begin XtremeSuiteControls.GroupBox GroupBox1 
+            Height          =   2415
+            Left            =   0
+            TabIndex        =   130
+            Top             =   2760
+            Width           =   9255
+            _Version        =   1572864
+            _ExtentX        =   16325
+            _ExtentY        =   4260
+            _StockProps     =   79
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Begin XtremeSuiteControls.PushButton btnCF 
+               Height          =   375
+               Index           =   0
+               Left            =   6960
+               TabIndex        =   134
+               ToolTipText     =   "Informe de Recaudación"
+               Top             =   240
+               Width           =   615
+               _Version        =   1572864
+               _ExtentX        =   1085
+               _ExtentY        =   661
+               _StockProps     =   79
+               UseVisualStyle  =   -1  'True
+               Appearance      =   21
+               Picture         =   "frmCO_Principal.frx":0A34
+            End
+            Begin XtremeSuiteControls.FlatEdit txtCF_Operacion 
+               Height          =   435
+               Left            =   3000
+               TabIndex        =   132
+               Top             =   240
+               Width           =   1815
+               _Version        =   1572864
+               _ExtentX        =   3196
+               _ExtentY        =   762
+               _StockProps     =   77
+               ForeColor       =   0
+               BackColor       =   -2147483643
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   12
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Alignment       =   2
+               Locked          =   -1  'True
+               Appearance      =   6
+               UseVisualStyle  =   0   'False
+            End
+            Begin XtremeSuiteControls.FlatEdit txtCF_Codigo 
+               Height          =   435
+               Left            =   4800
+               TabIndex        =   133
+               Top             =   240
+               Width           =   2055
+               _Version        =   1572864
+               _ExtentX        =   3619
+               _ExtentY        =   762
+               _StockProps     =   77
+               ForeColor       =   0
+               BackColor       =   -2147483643
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   12
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Alignment       =   2
+               Locked          =   -1  'True
+               Appearance      =   6
+               UseVisualStyle  =   0   'False
+            End
+            Begin XtremeSuiteControls.PushButton btnCF 
+               Height          =   375
+               Index           =   1
+               Left            =   7560
+               TabIndex        =   135
+               ToolTipText     =   "Cancela el Cobro"
+               Top             =   240
+               Width           =   1455
+               _Version        =   1572864
+               _ExtentX        =   2566
+               _ExtentY        =   661
+               _StockProps     =   79
+               Caption         =   "Cancela Cobro"
+               UseVisualStyle  =   -1  'True
+               Appearance      =   21
+               Picture         =   "frmCO_Principal.frx":113B
+            End
+            Begin XtremeSuiteControls.FlatEdit txtCF_Cedula 
+               Height          =   315
+               Left            =   1200
+               TabIndex        =   141
+               Top             =   840
+               Width           =   1815
+               _Version        =   1572864
+               _ExtentX        =   3201
+               _ExtentY        =   556
+               _StockProps     =   77
+               ForeColor       =   0
+               BackColor       =   -2147483643
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Alignment       =   2
+               Locked          =   -1  'True
+               Appearance      =   6
+               UseVisualStyle  =   0   'False
+            End
+            Begin XtremeSuiteControls.FlatEdit txtCF_Inicia 
+               Height          =   315
+               Left            =   4200
+               TabIndex        =   142
+               Top             =   2040
+               Width           =   1815
+               _Version        =   1572864
+               _ExtentX        =   3201
+               _ExtentY        =   556
+               _StockProps     =   77
+               ForeColor       =   0
+               BackColor       =   -2147483643
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Alignment       =   2
+               Locked          =   -1  'True
+               Appearance      =   6
+               UseVisualStyle  =   0   'False
+            End
+            Begin XtremeSuiteControls.FlatEdit txtCF_UltMov 
+               Height          =   315
+               Left            =   7320
+               TabIndex        =   143
+               Top             =   2040
+               Width           =   1815
+               _Version        =   1572864
+               _ExtentX        =   3201
+               _ExtentY        =   556
+               _StockProps     =   77
+               ForeColor       =   0
+               BackColor       =   -2147483643
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Alignment       =   2
+               Locked          =   -1  'True
+               Appearance      =   6
+               UseVisualStyle  =   0   'False
+            End
+            Begin XtremeSuiteControls.FlatEdit txtCF_Nombre 
+               Height          =   315
+               Left            =   3000
+               TabIndex        =   144
+               Top             =   840
+               Width           =   6135
+               _Version        =   1572864
+               _ExtentX        =   10821
+               _ExtentY        =   556
+               _StockProps     =   77
+               ForeColor       =   0
+               BackColor       =   -2147483643
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   400
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Locked          =   -1  'True
+               Appearance      =   6
+               UseVisualStyle  =   0   'False
+            End
+            Begin XtremeSuiteControls.FlatEdit txtCF_Recaudo 
+               Height          =   315
+               Left            =   1200
+               TabIndex        =   145
+               Top             =   1680
+               Width           =   1815
+               _Version        =   1572864
+               _ExtentX        =   3201
+               _ExtentY        =   556
+               _StockProps     =   77
+               ForeColor       =   0
+               BackColor       =   16777152
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               BackColor       =   16777152
+               Alignment       =   1
+               Locked          =   -1  'True
+               Appearance      =   6
+               UseVisualStyle  =   0   'False
+            End
+            Begin XtremeSuiteControls.FlatEdit txtCF_Devuelto 
+               Height          =   315
+               Left            =   7320
+               TabIndex        =   146
+               Top             =   1680
+               Width           =   1815
+               _Version        =   1572864
+               _ExtentX        =   3201
+               _ExtentY        =   556
+               _StockProps     =   77
+               ForeColor       =   0
+               BackColor       =   16777152
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               BackColor       =   16777152
+               Alignment       =   1
+               Locked          =   -1  'True
+               Appearance      =   6
+               UseVisualStyle  =   0   'False
+            End
+            Begin XtremeSuiteControls.FlatEdit txtCF_Estado 
+               Height          =   315
+               Left            =   1200
+               TabIndex        =   148
+               Top             =   2040
+               Width           =   1815
+               _Version        =   1572864
+               _ExtentX        =   3201
+               _ExtentY        =   556
+               _StockProps     =   77
+               ForeColor       =   0
+               BackColor       =   16777215
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               BackColor       =   16777215
+               Alignment       =   2
+               Locked          =   -1  'True
+               Appearance      =   6
+               UseVisualStyle  =   0   'False
+            End
+            Begin XtremeSuiteControls.FlatEdit txtCF_Aplicado 
+               Height          =   315
+               Left            =   4200
+               TabIndex        =   152
+               Top             =   1680
+               Width           =   1815
+               _Version        =   1572864
+               _ExtentX        =   3201
+               _ExtentY        =   556
+               _StockProps     =   77
+               ForeColor       =   0
+               BackColor       =   16777152
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               BackColor       =   16777152
+               Alignment       =   1
+               Locked          =   -1  'True
+               Appearance      =   6
+               UseVisualStyle  =   0   'False
+            End
+            Begin XtremeSuiteControls.FlatEdit txtCF_Cuota 
+               Height          =   315
+               Left            =   1200
+               TabIndex        =   154
+               Top             =   1320
+               Width           =   1815
+               _Version        =   1572864
+               _ExtentX        =   3201
+               _ExtentY        =   556
+               _StockProps     =   77
+               ForeColor       =   0
+               BackColor       =   16777152
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               BackColor       =   16777152
+               Alignment       =   1
+               Locked          =   -1  'True
+               Appearance      =   6
+               UseVisualStyle  =   0   'False
+            End
+            Begin XtremeSuiteControls.Label Label5 
+               Height          =   255
+               Index           =   1
+               Left            =   240
+               TabIndex        =   155
+               Top             =   1320
+               Width           =   975
+               _Version        =   1572864
+               _ExtentX        =   1720
+               _ExtentY        =   450
+               _StockProps     =   79
+               Caption         =   "Cuota"
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+            End
+            Begin XtremeSuiteControls.Label Label5 
+               Height          =   255
+               Index           =   7
+               Left            =   3240
+               TabIndex        =   153
+               Top             =   1680
+               Width           =   975
+               _Version        =   1572864
+               _ExtentX        =   1720
+               _ExtentY        =   450
+               _StockProps     =   79
+               Caption         =   "Aplicado"
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+            End
+            Begin XtremeSuiteControls.Label Label5 
+               Height          =   255
+               Index           =   6
+               Left            =   240
+               TabIndex        =   147
+               Top             =   2040
+               Width           =   855
+               _Version        =   1572864
+               _ExtentX        =   1508
+               _ExtentY        =   450
+               _StockProps     =   79
+               Caption         =   "Estado"
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+            End
+            Begin XtremeSuiteControls.Label Label5 
+               Height          =   255
+               Index           =   5
+               Left            =   6360
+               TabIndex        =   140
+               Top             =   1680
+               Width           =   975
+               _Version        =   1572864
+               _ExtentX        =   1720
+               _ExtentY        =   450
+               _StockProps     =   79
+               Caption         =   "Devuelto"
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+            End
+            Begin XtremeSuiteControls.Label Label5 
+               Height          =   255
+               Index           =   4
+               Left            =   240
+               TabIndex        =   139
+               Top             =   1680
+               Width           =   975
+               _Version        =   1572864
+               _ExtentX        =   1720
+               _ExtentY        =   450
+               _StockProps     =   79
+               Caption         =   "Recaudado"
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+            End
+            Begin XtremeSuiteControls.Label Label5 
+               Height          =   255
+               Index           =   3
+               Left            =   6360
+               TabIndex        =   138
+               Top             =   2040
+               Width           =   855
+               _Version        =   1572864
+               _ExtentX        =   1508
+               _ExtentY        =   450
+               _StockProps     =   79
+               Caption         =   "Ult. Mov."
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+            End
+            Begin XtremeSuiteControls.Label Label5 
+               Height          =   255
+               Index           =   2
+               Left            =   3240
+               TabIndex        =   137
+               Top             =   2040
+               Width           =   855
+               _Version        =   1572864
+               _ExtentX        =   1508
+               _ExtentY        =   450
+               _StockProps     =   79
+               Caption         =   "Inicio"
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+            End
+            Begin XtremeSuiteControls.Label Label5 
+               Height          =   255
+               Index           =   0
+               Left            =   240
+               TabIndex        =   136
+               Top             =   840
+               Width           =   855
+               _Version        =   1572864
+               _ExtentX        =   1508
+               _ExtentY        =   450
+               _StockProps     =   79
+               Caption         =   "Cédula"
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+            End
+            Begin XtremeSuiteControls.Label Label4 
+               Height          =   375
+               Left            =   240
+               TabIndex        =   131
+               Top             =   240
+               Width           =   2655
+               _Version        =   1572864
+               _ExtentX        =   4683
+               _ExtentY        =   661
+               _StockProps     =   79
+               Caption         =   "Datos de la Operación de Cobro a Fiador"
+               ForeColor       =   16711680
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   -1  'True
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               WordWrap        =   -1  'True
+            End
+         End
+         Begin XtremeSuiteControls.GroupBox gbEnCobroNp 
+            Height          =   855
+            Left            =   -69880
+            TabIndex        =   104
+            Top             =   2760
+            Visible         =   0   'False
+            Width           =   9135
+            _Version        =   1572864
+            _ExtentX        =   16108
+            _ExtentY        =   1503
+            _StockProps     =   79
+            Caption         =   "[Operación Deudor Original]"
+            ForeColor       =   8421504
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Appearance      =   16
+            BorderStyle     =   1
+            Begin VB.Label Label26 
+               Alignment       =   2  'Center
+               Appearance      =   0  'Flat
+               BorderStyle     =   1  'Fixed Single
+               Caption         =   "Operación"
+               ForeColor       =   &H00404040&
+               Height          =   288
+               Index           =   0
+               Left            =   240
+               TabIndex        =   114
+               Top             =   360
+               Width           =   1092
+            End
+            Begin VB.Label Label26 
+               Alignment       =   2  'Center
+               Appearance      =   0  'Flat
+               BorderStyle     =   1  'Fixed Single
+               Caption         =   "Monto"
+               ForeColor       =   &H00404040&
+               Height          =   288
+               Index           =   1
+               Left            =   2400
+               TabIndex        =   113
+               Top             =   360
+               Width           =   732
+            End
+            Begin VB.Label Label26 
+               Alignment       =   2  'Center
+               Appearance      =   0  'Flat
+               BorderStyle     =   1  'Fixed Single
+               Caption         =   "Plazo"
+               ForeColor       =   &H00404040&
+               Height          =   288
+               Index           =   2
+               Left            =   4440
+               TabIndex        =   112
+               Top             =   360
+               Width           =   612
+            End
+            Begin VB.Label Label26 
+               Alignment       =   2  'Center
+               Appearance      =   0  'Flat
+               BorderStyle     =   1  'Fixed Single
+               Caption         =   "Tasa"
+               ForeColor       =   &H00404040&
+               Height          =   288
+               Index           =   3
+               Left            =   5640
+               TabIndex        =   111
+               Top             =   360
+               Width           =   732
+            End
+            Begin VB.Label Label26 
+               Alignment       =   2  'Center
+               Appearance      =   0  'Flat
+               BorderStyle     =   1  'Fixed Single
+               Caption         =   "Saldo"
+               ForeColor       =   &H00404040&
+               Height          =   288
+               Index           =   4
+               Left            =   6960
+               TabIndex        =   110
+               Top             =   360
+               Width           =   492
+            End
+            Begin VB.Label lblMontoActualDeudor 
+               Alignment       =   1  'Right Justify
+               Appearance      =   0  'Flat
+               BackColor       =   &H00E0E0E0&
+               BorderStyle     =   1  'Fixed Single
+               ForeColor       =   &H80000008&
+               Height          =   288
+               Left            =   3120
+               TabIndex        =   109
+               Top             =   360
+               Width           =   1332
+            End
+            Begin VB.Label lblPlazoActualDeudor 
+               Alignment       =   1  'Right Justify
+               Appearance      =   0  'Flat
+               BackColor       =   &H00E0E0E0&
+               BorderStyle     =   1  'Fixed Single
+               ForeColor       =   &H80000008&
+               Height          =   288
+               Left            =   5040
+               TabIndex        =   108
+               Top             =   360
+               Width           =   612
+            End
+            Begin VB.Label lblInteresActualDeudor 
+               Alignment       =   1  'Right Justify
+               Appearance      =   0  'Flat
+               BackColor       =   &H00E0E0E0&
+               BorderStyle     =   1  'Fixed Single
+               ForeColor       =   &H80000008&
+               Height          =   288
+               Left            =   6360
+               TabIndex        =   107
+               Top             =   360
+               Width           =   612
+            End
+            Begin VB.Label lblSaldoActualDeudor 
+               Alignment       =   1  'Right Justify
+               Appearance      =   0  'Flat
+               BackColor       =   &H00E0E0E0&
+               BorderStyle     =   1  'Fixed Single
+               ForeColor       =   &H80000008&
+               Height          =   288
+               Left            =   7440
+               TabIndex        =   106
+               Top             =   360
+               Width           =   1572
+            End
+            Begin VB.Label lblOperacionActualDeudor 
+               Appearance      =   0  'Flat
+               BackColor       =   &H00E0E0E0&
+               BorderStyle     =   1  'Fixed Single
+               ForeColor       =   &H80000008&
+               Height          =   288
+               Left            =   1320
+               TabIndex        =   105
+               Top             =   360
+               Width           =   1092
+            End
+         End
+         Begin XtremeSuiteControls.GroupBox fraReversionDeTraspaso 
+            Height          =   1215
+            Left            =   -69880
+            TabIndex        =   115
+            Top             =   3840
+            Visible         =   0   'False
+            Width           =   9015
+            _Version        =   1572864
+            _ExtentX        =   15896
+            _ExtentY        =   2138
+            _StockProps     =   79
+            Caption         =   "Reversión de Cobro de Fiadores/Co Deudores"
+            ForeColor       =   8421504
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Appearance      =   17
+            BorderStyle     =   1
+            Begin VB.TextBox txtTRAFD_MONTO 
+               Alignment       =   1  'Right Justify
+               Appearance      =   0  'Flat
+               Enabled         =   0   'False
+               BeginProperty Font 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   400
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Height          =   315
+               Left            =   1680
+               MultiLine       =   -1  'True
+               TabIndex        =   119
+               Top             =   480
+               Width           =   1695
+            End
+            Begin VB.TextBox txtTRAFD_Plazo 
+               Appearance      =   0  'Flat
+               BeginProperty Font 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   400
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Height          =   315
+               Left            =   4200
+               TabIndex        =   118
+               Top             =   480
+               Width           =   615
+            End
+            Begin VB.TextBox txtTRAFD_Int 
+               Appearance      =   0  'Flat
+               BeginProperty Font 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   400
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Height          =   315
+               Left            =   4200
+               TabIndex        =   117
+               Top             =   840
+               Width           =   615
+            End
+            Begin VB.TextBox txtTRAFD_Cuota 
+               Alignment       =   1  'Right Justify
+               Appearance      =   0  'Flat
+               Enabled         =   0   'False
+               BeginProperty Font 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   400
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Height          =   315
+               Left            =   1680
+               MultiLine       =   -1  'True
+               TabIndex        =   116
+               Top             =   840
+               Width           =   1695
+            End
+            Begin XtremeSuiteControls.PushButton cmdCancelaReversionTraspaso 
+               Height          =   612
+               Left            =   6000
+               TabIndex        =   120
+               Top             =   600
+               Width           =   1452
+               _Version        =   1572864
+               _ExtentX        =   2561
+               _ExtentY        =   1080
+               _StockProps     =   79
+               Caption         =   "Cancelar"
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               UseVisualStyle  =   -1  'True
+               Appearance      =   17
+               Picture         =   "frmCO_Principal.frx":1851
+            End
+            Begin XtremeSuiteControls.PushButton cmdReversaTraspasoDeudas 
+               Height          =   612
+               Left            =   7440
+               TabIndex        =   121
+               Top             =   600
+               Width           =   1452
+               _Version        =   1572864
+               _ExtentX        =   2561
+               _ExtentY        =   1080
+               _StockProps     =   79
+               Caption         =   "Reversar"
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               UseVisualStyle  =   -1  'True
+               Appearance      =   17
+               Picture         =   "frmCO_Principal.frx":201E
+            End
+            Begin VB.Label lblTasa 
+               Caption         =   "..."
+               BeginProperty Font 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   400
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Height          =   252
+               Left            =   4920
+               TabIndex        =   126
+               Tag             =   "-1000"
+               Top             =   840
+               Width           =   1452
+            End
+            Begin VB.Label Label24 
+               Caption         =   "Plazo"
+               BeginProperty Font 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   400
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Height          =   252
+               Left            =   3600
+               TabIndex        =   125
+               Top             =   480
+               Width           =   492
+            End
+            Begin VB.Label Label25 
+               Caption         =   "Tasa"
+               BeginProperty Font 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   400
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Height          =   252
+               Index           =   0
+               Left            =   3600
+               TabIndex        =   124
+               Top             =   840
+               Width           =   492
+            End
+            Begin VB.Label Label25 
+               Caption         =   "Nuevo Monto"
+               BeginProperty Font 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   400
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Height          =   252
+               Index           =   1
+               Left            =   360
+               TabIndex        =   123
+               Top             =   480
+               Width           =   1092
+            End
+            Begin VB.Label Label25 
+               Caption         =   "Nueva Cuota"
+               BeginProperty Font 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   400
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Height          =   252
+               Index           =   2
+               Left            =   360
+               TabIndex        =   122
+               Top             =   840
+               Width           =   1092
+            End
+         End
+         Begin XtremeSuiteControls.PushButton btnExport 
+            Height          =   360
+            Index           =   1
+            Left            =   -61240
+            TabIndex        =   150
+            Top             =   360
+            Visible         =   0   'False
+            Width           =   495
+            _Version        =   1572864
+            _ExtentX        =   873
+            _ExtentY        =   635
+            _StockProps     =   79
+            Appearance      =   6
+            Picture         =   "frmCO_Principal.frx":29AB
+         End
+         Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption1 
+            Height          =   390
+            Index           =   1
+            Left            =   0
+            TabIndex        =   129
+            Top             =   360
+            Width           =   9255
+            _Version        =   1572864
+            _ExtentX        =   16325
+            _ExtentY        =   688
+            _StockProps     =   14
+            Caption         =   "Operaciones Generadas como Cobro a Fiadores"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Alignment       =   1
+         End
+         Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption1 
+            Height          =   390
+            Index           =   0
+            Left            =   -70000
+            TabIndex        =   127
+            Top             =   360
+            Visible         =   0   'False
+            Width           =   9255
+            _Version        =   1572864
+            _ExtentX        =   16325
+            _ExtentY        =   688
+            _StockProps     =   14
+            Caption         =   "Operaciones Generadas a Fiadores por Traspaso de Deudas"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Alignment       =   1
+         End
       End
       Begin XtremeSuiteControls.FlatEdit txtEmail 
          Height          =   312
          Left            =   -69760
-         TabIndex        =   72
+         TabIndex        =   47
          Top             =   4200
          Visible         =   0   'False
          Width           =   5172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9123
          _ExtentY        =   550
          _StockProps     =   77
@@ -276,399 +1339,13 @@ Begin VB.Form frmCO_Principal
          Appearance      =   6
          UseVisualStyle  =   0   'False
       End
-      Begin XtremeSuiteControls.GroupBox gbEnCobroNp 
-         Height          =   852
-         Left            =   -69880
-         TabIndex        =   59
-         Top             =   2760
-         Visible         =   0   'False
-         Width           =   9132
-         _Version        =   1441793
-         _ExtentX        =   16108
-         _ExtentY        =   1503
-         _StockProps     =   79
-         Caption         =   "[Operación Deudor Original]"
-         ForeColor       =   8421504
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Appearance      =   16
-         BorderStyle     =   1
-         Begin VB.Label lblOperacionActualDeudor 
-            Appearance      =   0  'Flat
-            BackColor       =   &H00E0E0E0&
-            BorderStyle     =   1  'Fixed Single
-            ForeColor       =   &H80000008&
-            Height          =   288
-            Left            =   1320
-            TabIndex        =   69
-            Top             =   360
-            Width           =   1092
-         End
-         Begin VB.Label lblSaldoActualDeudor 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H00E0E0E0&
-            BorderStyle     =   1  'Fixed Single
-            ForeColor       =   &H80000008&
-            Height          =   288
-            Left            =   7440
-            TabIndex        =   68
-            Top             =   360
-            Width           =   1572
-         End
-         Begin VB.Label lblInteresActualDeudor 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H00E0E0E0&
-            BorderStyle     =   1  'Fixed Single
-            ForeColor       =   &H80000008&
-            Height          =   288
-            Left            =   6360
-            TabIndex        =   67
-            Top             =   360
-            Width           =   612
-         End
-         Begin VB.Label lblPlazoActualDeudor 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H00E0E0E0&
-            BorderStyle     =   1  'Fixed Single
-            ForeColor       =   &H80000008&
-            Height          =   288
-            Left            =   5040
-            TabIndex        =   66
-            Top             =   360
-            Width           =   612
-         End
-         Begin VB.Label lblMontoActualDeudor 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H00E0E0E0&
-            BorderStyle     =   1  'Fixed Single
-            ForeColor       =   &H80000008&
-            Height          =   288
-            Left            =   3120
-            TabIndex        =   65
-            Top             =   360
-            Width           =   1332
-         End
-         Begin VB.Label Label26 
-            Alignment       =   2  'Center
-            Appearance      =   0  'Flat
-            BorderStyle     =   1  'Fixed Single
-            Caption         =   "Saldo"
-            ForeColor       =   &H00404040&
-            Height          =   288
-            Index           =   4
-            Left            =   6960
-            TabIndex        =   64
-            Top             =   360
-            Width           =   492
-         End
-         Begin VB.Label Label26 
-            Alignment       =   2  'Center
-            Appearance      =   0  'Flat
-            BorderStyle     =   1  'Fixed Single
-            Caption         =   "Tasa"
-            ForeColor       =   &H00404040&
-            Height          =   288
-            Index           =   3
-            Left            =   5640
-            TabIndex        =   63
-            Top             =   360
-            Width           =   732
-         End
-         Begin VB.Label Label26 
-            Alignment       =   2  'Center
-            Appearance      =   0  'Flat
-            BorderStyle     =   1  'Fixed Single
-            Caption         =   "Plazo"
-            ForeColor       =   &H00404040&
-            Height          =   288
-            Index           =   2
-            Left            =   4440
-            TabIndex        =   62
-            Top             =   360
-            Width           =   612
-         End
-         Begin VB.Label Label26 
-            Alignment       =   2  'Center
-            Appearance      =   0  'Flat
-            BorderStyle     =   1  'Fixed Single
-            Caption         =   "Monto"
-            ForeColor       =   &H00404040&
-            Height          =   288
-            Index           =   1
-            Left            =   2400
-            TabIndex        =   61
-            Top             =   360
-            Width           =   732
-         End
-         Begin VB.Label Label26 
-            Alignment       =   2  'Center
-            Appearance      =   0  'Flat
-            BorderStyle     =   1  'Fixed Single
-            Caption         =   "Operación"
-            ForeColor       =   &H00404040&
-            Height          =   288
-            Index           =   0
-            Left            =   240
-            TabIndex        =   60
-            Top             =   360
-            Width           =   1092
-         End
-      End
-      Begin XtremeSuiteControls.GroupBox fraReversionDeTraspaso 
-         Height          =   1212
-         Left            =   -69880
-         TabIndex        =   42
-         Top             =   3840
-         Visible         =   0   'False
-         Width           =   9012
-         _Version        =   1441793
-         _ExtentX        =   15896
-         _ExtentY        =   2138
-         _StockProps     =   79
-         Caption         =   "Reversión de Cobro de Fiadores/Co Deudores"
-         ForeColor       =   8421504
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         UseVisualStyle  =   -1  'True
-         Appearance      =   17
-         BorderStyle     =   1
-         Begin VB.TextBox txtTRAFD_Cuota 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            Enabled         =   0   'False
-            BeginProperty Font 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            Height          =   315
-            Left            =   1680
-            MultiLine       =   -1  'True
-            TabIndex        =   46
-            Top             =   840
-            Width           =   1695
-         End
-         Begin VB.TextBox txtTRAFD_Int 
-            Appearance      =   0  'Flat
-            BeginProperty Font 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            Height          =   315
-            Left            =   4200
-            TabIndex        =   45
-            Top             =   840
-            Width           =   615
-         End
-         Begin VB.TextBox txtTRAFD_Plazo 
-            Appearance      =   0  'Flat
-            BeginProperty Font 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            Height          =   315
-            Left            =   4200
-            TabIndex        =   44
-            Top             =   480
-            Width           =   615
-         End
-         Begin VB.TextBox txtTRAFD_MONTO 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            Enabled         =   0   'False
-            BeginProperty Font 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            Height          =   315
-            Left            =   1680
-            MultiLine       =   -1  'True
-            TabIndex        =   43
-            Top             =   480
-            Width           =   1695
-         End
-         Begin XtremeSuiteControls.PushButton cmdCancelaReversionTraspaso 
-            Height          =   612
-            Left            =   6000
-            TabIndex        =   52
-            Top             =   600
-            Width           =   1452
-            _Version        =   1441793
-            _ExtentX        =   2561
-            _ExtentY        =   1080
-            _StockProps     =   79
-            Caption         =   "Cancelar"
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   700
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            UseVisualStyle  =   -1  'True
-            Appearance      =   17
-            Picture         =   "frmCO_Principal.frx":08CA
-         End
-         Begin XtremeSuiteControls.PushButton cmdReversaTraspasoDeudas 
-            Height          =   612
-            Left            =   7440
-            TabIndex        =   53
-            Top             =   600
-            Width           =   1452
-            _Version        =   1441793
-            _ExtentX        =   2561
-            _ExtentY        =   1080
-            _StockProps     =   79
-            Caption         =   "Reversar"
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   700
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            UseVisualStyle  =   -1  'True
-            Appearance      =   17
-            Picture         =   "frmCO_Principal.frx":1097
-         End
-         Begin VB.Label Label25 
-            Caption         =   "Nueva Cuota"
-            BeginProperty Font 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            Height          =   252
-            Index           =   2
-            Left            =   360
-            TabIndex        =   51
-            Top             =   840
-            Width           =   1092
-         End
-         Begin VB.Label Label25 
-            Caption         =   "Nuevo Monto"
-            BeginProperty Font 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            Height          =   252
-            Index           =   1
-            Left            =   360
-            TabIndex        =   50
-            Top             =   480
-            Width           =   1092
-         End
-         Begin VB.Label Label25 
-            Caption         =   "Tasa"
-            BeginProperty Font 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            Height          =   252
-            Index           =   0
-            Left            =   3600
-            TabIndex        =   49
-            Top             =   840
-            Width           =   492
-         End
-         Begin VB.Label Label24 
-            Caption         =   "Plazo"
-            BeginProperty Font 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            Height          =   252
-            Left            =   3600
-            TabIndex        =   48
-            Top             =   480
-            Width           =   492
-         End
-         Begin VB.Label lblTasa 
-            Caption         =   "..."
-            BeginProperty Font 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            Height          =   252
-            Left            =   4920
-            TabIndex        =   47
-            Tag             =   "-1000"
-            Top             =   840
-            Width           =   1452
-         End
-      End
       Begin XtremeSuiteControls.GroupBox gbEstado 
          Height          =   4932
          Left            =   120
          TabIndex        =   5
          Top             =   480
          Width           =   4332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7641
          _ExtentY        =   8700
          _StockProps     =   79
@@ -689,10 +1366,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtMonto 
             Height          =   312
             Left            =   2040
-            TabIndex        =   86
+            TabIndex        =   61
             Top             =   1080
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   556
             _StockProps     =   77
@@ -715,10 +1392,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtCuota 
             Height          =   312
             Left            =   2040
-            TabIndex        =   87
+            TabIndex        =   62
             Top             =   2160
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   556
             _StockProps     =   77
@@ -741,10 +1418,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtAmortizado 
             Height          =   312
             Left            =   2040
-            TabIndex        =   88
+            TabIndex        =   63
             Top             =   2760
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   556
             _StockProps     =   77
@@ -767,10 +1444,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtInteresPagado 
             Height          =   312
             Left            =   2040
-            TabIndex        =   89
+            TabIndex        =   64
             Top             =   3120
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   556
             _StockProps     =   77
@@ -793,10 +1470,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtGarantia 
             Height          =   312
             Left            =   2040
-            TabIndex        =   90
+            TabIndex        =   65
             Top             =   3720
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   556
             _StockProps     =   77
@@ -819,10 +1496,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtDocumento 
             Height          =   312
             Left            =   2040
-            TabIndex        =   91
+            TabIndex        =   66
             Top             =   4080
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   556
             _StockProps     =   77
@@ -845,10 +1522,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtEstado 
             Height          =   312
             Left            =   2040
-            TabIndex        =   92
+            TabIndex        =   67
             Top             =   360
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   556
             _StockProps     =   77
@@ -871,10 +1548,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtEstadoMoroso 
             Height          =   312
             Left            =   2040
-            TabIndex        =   93
+            TabIndex        =   68
             Top             =   720
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   556
             _StockProps     =   77
@@ -897,10 +1574,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtPlazo 
             Height          =   312
             Left            =   3120
-            TabIndex        =   94
+            TabIndex        =   69
             Top             =   1440
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   77
@@ -923,10 +1600,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtInteresActual 
             Height          =   312
             Left            =   2400
-            TabIndex        =   95
+            TabIndex        =   70
             Top             =   1800
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   77
@@ -949,10 +1626,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtInteresPorcentaje 
             Height          =   312
             Left            =   3120
-            TabIndex        =   96
+            TabIndex        =   71
             Top             =   1800
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   77
@@ -975,10 +1652,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtUltimoMovimiento 
             Height          =   312
             Left            =   3000
-            TabIndex        =   98
+            TabIndex        =   73
             Top             =   4560
             Width           =   852
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1503
             _ExtentY        =   550
             _StockProps     =   77
@@ -1001,10 +1678,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtPrimerDeduccion 
             Height          =   312
             Left            =   2040
-            TabIndex        =   97
+            TabIndex        =   72
             Top             =   4560
             Width           =   852
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1503
             _ExtentY        =   550
             _StockProps     =   77
@@ -1247,7 +1924,7 @@ Begin VB.Form frmCO_Principal
             Strikethrough   =   0   'False
          EndProperty
          MaxCols         =   496
-         SpreadDesigner  =   "frmCO_Principal.frx":1A24
+         SpreadDesigner  =   "frmCO_Principal.frx":2B15
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
@@ -1257,7 +1934,7 @@ Begin VB.Form frmCO_Principal
          TabIndex        =   6
          Top             =   480
          Width           =   4332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7641
          _ExtentY        =   8700
          _StockProps     =   79
@@ -1278,10 +1955,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.DateTimePicker dtpCalculoIntCorte 
             Height          =   315
             Left            =   2280
-            TabIndex        =   81
+            TabIndex        =   56
             Top             =   4560
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   556
             _StockProps     =   68
@@ -1300,10 +1977,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtInteresesMoratorios 
             Height          =   315
             Left            =   2280
-            TabIndex        =   99
+            TabIndex        =   74
             Top             =   1080
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   556
             _StockProps     =   77
@@ -1326,10 +2003,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtSaldo 
             Height          =   315
             Left            =   2280
-            TabIndex        =   100
+            TabIndex        =   75
             Top             =   360
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   556
             _StockProps     =   77
@@ -1352,10 +2029,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtInteresesCorrientes 
             Height          =   315
             Left            =   2280
-            TabIndex        =   101
+            TabIndex        =   76
             Top             =   720
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   556
             _StockProps     =   77
@@ -1378,10 +2055,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtPolizasAtrasadas 
             Height          =   315
             Left            =   2280
-            TabIndex        =   102
+            TabIndex        =   77
             Top             =   2160
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   556
             _StockProps     =   77
@@ -1404,10 +2081,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtAmortizacionAtrasada 
             Height          =   315
             Left            =   2280
-            TabIndex        =   103
+            TabIndex        =   78
             Top             =   1440
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   556
             _StockProps     =   77
@@ -1430,10 +2107,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtCargosRegistrados 
             Height          =   315
             Left            =   2280
-            TabIndex        =   104
+            TabIndex        =   79
             Top             =   1800
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   556
             _StockProps     =   77
@@ -1456,10 +2133,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtCbrIntereses 
             Height          =   315
             Left            =   2280
-            TabIndex        =   105
+            TabIndex        =   80
             Top             =   4080
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   556
             _StockProps     =   77
@@ -1482,10 +2159,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtTotalMora 
             Height          =   315
             Left            =   2280
-            TabIndex        =   106
+            TabIndex        =   81
             Top             =   2760
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   556
             _StockProps     =   77
@@ -1508,10 +2185,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtTotalMoraLegal 
             Height          =   315
             Left            =   2280
-            TabIndex        =   107
+            TabIndex        =   82
             Top             =   3120
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   556
             _StockProps     =   77
@@ -1534,10 +2211,10 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.FlatEdit txtCbrDeuda 
             Height          =   315
             Left            =   2280
-            TabIndex        =   108
+            TabIndex        =   83
             Top             =   3720
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   556
             _StockProps     =   77
@@ -1561,7 +2238,7 @@ Begin VB.Form frmCO_Principal
             Height          =   252
             Index           =   1
             Left            =   3960
-            Picture         =   "frmCO_Principal.frx":2244
+            Picture         =   "frmCO_Principal.frx":3335
             Stretch         =   -1  'True
             Top             =   4560
             Width           =   252
@@ -1570,7 +2247,7 @@ Begin VB.Form frmCO_Principal
             Height          =   252
             Index           =   0
             Left            =   3600
-            Picture         =   "frmCO_Principal.frx":29F0
+            Picture         =   "frmCO_Principal.frx":3AE1
             Stretch         =   -1  'True
             Top             =   4560
             Width           =   252
@@ -1775,16 +2452,16 @@ Begin VB.Form frmCO_Principal
          End
       End
       Begin XtremeSuiteControls.GroupBox gbNotificaciones 
-         Height          =   2412
+         Height          =   2415
          Index           =   0
-         Left            =   -69760
+         Left            =   -69880
          TabIndex        =   29
          Top             =   3120
          Visible         =   0   'False
-         Width           =   8892
-         _Version        =   1441793
-         _ExtentX        =   15684
-         _ExtentY        =   4254
+         Width           =   9015
+         _Version        =   1572864
+         _ExtentX        =   15901
+         _ExtentY        =   4260
          _StockProps     =   79
          Caption         =   "Notificaciones Realizadas"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1799,14 +2476,14 @@ Begin VB.Form frmCO_Principal
          Appearance      =   16
          BorderStyle     =   1
          Begin XtremeSuiteControls.ListView lswAvisos 
-            Height          =   1692
-            Left            =   240
-            TabIndex        =   76
+            Height          =   1695
+            Left            =   0
+            TabIndex        =   51
             Top             =   360
-            Width           =   8532
-            _Version        =   1441793
-            _ExtentX        =   15049
-            _ExtentY        =   2984
+            Width           =   8895
+            _Version        =   1572864
+            _ExtentX        =   15690
+            _ExtentY        =   2990
             _StockProps     =   77
             BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1824,16 +2501,16 @@ Begin VB.Form frmCO_Principal
          End
       End
       Begin XtremeSuiteControls.GroupBox gbNotificaciones 
-         Height          =   3372
+         Height          =   3375
          Index           =   1
-         Left            =   -69760
+         Left            =   -69880
          TabIndex        =   30
          Top             =   360
          Visible         =   0   'False
-         Width           =   8892
-         _Version        =   1441793
-         _ExtentX        =   15684
-         _ExtentY        =   5948
+         Width           =   9015
+         _Version        =   1572864
+         _ExtentX        =   15901
+         _ExtentY        =   5953
          _StockProps     =   79
          Caption         =   "Notificaciones Realizadas"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1848,6 +2525,31 @@ Begin VB.Form frmCO_Principal
          UseVisualStyle  =   -1  'True
          Appearance      =   17
          BorderStyle     =   1
+         Begin XtremeSuiteControls.ListView lswRepOp 
+            Height          =   2055
+            Left            =   -120
+            TabIndex        =   50
+            Top             =   570
+            Width           =   4935
+            _Version        =   1572864
+            _ExtentX        =   8705
+            _ExtentY        =   3625
+            _StockProps     =   77
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            View            =   3
+            FullRowSelect   =   -1  'True
+            Appearance      =   16
+            ShowBorder      =   0   'False
+         End
          Begin VB.Frame fraCbrFia 
             BorderStyle     =   0  'None
             Caption         =   "Consulta Movimientos: Cobro Fiadores"
@@ -1862,17 +2564,18 @@ Begin VB.Form frmCO_Principal
             EndProperty
             ForeColor       =   &H00FF0000&
             Height          =   2532
-            Left            =   5040
-            TabIndex        =   121
+            Left            =   5160
+            TabIndex        =   95
             Top             =   120
+            Visible         =   0   'False
             Width           =   3495
             Begin XtremeSuiteControls.PushButton PushButton1 
                Height          =   615
                Left            =   960
-               TabIndex        =   122
+               TabIndex        =   96
                Top             =   1800
                Width           =   2175
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3836
                _ExtentY        =   1085
                _StockProps     =   79
@@ -1888,15 +2591,15 @@ Begin VB.Form frmCO_Principal
                EndProperty
                UseVisualStyle  =   -1  'True
                Appearance      =   17
-               Picture         =   "frmCO_Principal.frx":336D
+               Picture         =   "frmCO_Principal.frx":445E
             End
             Begin XtremeSuiteControls.ComboBox cboRepCbrFia_Exp 
                Height          =   330
                Left            =   960
-               TabIndex        =   123
+               TabIndex        =   97
                Top             =   960
                Width           =   2175
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3836
                _ExtentY        =   582
                _StockProps     =   77
@@ -1919,10 +2622,10 @@ Begin VB.Form frmCO_Principal
             Begin XtremeSuiteControls.FlatEdit txtRepCbrFia_Estado 
                Height          =   315
                Left            =   960
-               TabIndex        =   126
+               TabIndex        =   100
                Top             =   240
                Width           =   2055
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3625
                _ExtentY        =   556
                _StockProps     =   77
@@ -1946,10 +2649,10 @@ Begin VB.Form frmCO_Principal
             Begin XtremeSuiteControls.ComboBox cboRepCbrFia_ExpDt 
                Height          =   330
                Left            =   960
-               TabIndex        =   127
+               TabIndex        =   101
                Top             =   1320
                Width           =   2175
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3836
                _ExtentY        =   582
                _StockProps     =   77
@@ -1987,7 +2690,7 @@ Begin VB.Form frmCO_Principal
                Height          =   315
                Index           =   4
                Left            =   120
-               TabIndex        =   125
+               TabIndex        =   99
                Top             =   240
                Width           =   615
             End
@@ -2009,35 +2712,10 @@ Begin VB.Form frmCO_Principal
                Height          =   195
                Index           =   0
                Left            =   120
-               TabIndex        =   124
+               TabIndex        =   98
                Top             =   720
                Width           =   1095
             End
-         End
-         Begin XtremeSuiteControls.ListView lswRepOp 
-            Height          =   2052
-            Left            =   240
-            TabIndex        =   75
-            Top             =   564
-            Width           =   4812
-            _Version        =   1441793
-            _ExtentX        =   8488
-            _ExtentY        =   3619
-            _StockProps     =   77
-            BackColor       =   -2147483643
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            View            =   3
-            FullRowSelect   =   -1  'True
-            Appearance      =   16
-            ShowBorder      =   0   'False
          End
          Begin VB.Frame fraFechas 
             BorderStyle     =   0  'None
@@ -2061,10 +2739,10 @@ Begin VB.Form frmCO_Principal
             Begin XtremeSuiteControls.PushButton cmdAceptarFechas 
                Height          =   615
                Left            =   720
-               TabIndex        =   57
+               TabIndex        =   44
                Top             =   1800
                Width           =   2175
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3836
                _ExtentY        =   1085
                _StockProps     =   79
@@ -2080,15 +2758,15 @@ Begin VB.Form frmCO_Principal
                EndProperty
                UseVisualStyle  =   -1  'True
                Appearance      =   17
-               Picture         =   "frmCO_Principal.frx":3B29
+               Picture         =   "frmCO_Principal.frx":4C1A
             End
             Begin XtremeSuiteControls.DateTimePicker dtpFechaInicio 
                Height          =   312
                Left            =   720
-               TabIndex        =   82
+               TabIndex        =   57
                Top             =   360
                Width           =   1332
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2350
                _ExtentY        =   550
                _StockProps     =   68
@@ -2108,10 +2786,10 @@ Begin VB.Form frmCO_Principal
             Begin XtremeSuiteControls.DateTimePicker dtpFechaCorte 
                Height          =   312
                Left            =   720
-               TabIndex        =   83
+               TabIndex        =   58
                Top             =   720
                Width           =   1332
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2350
                _ExtentY        =   550
                _StockProps     =   68
@@ -2131,10 +2809,10 @@ Begin VB.Form frmCO_Principal
             Begin XtremeSuiteControls.ComboBox cboRepX 
                Height          =   312
                Left            =   720
-               TabIndex        =   84
+               TabIndex        =   59
                Top             =   1080
                Width           =   2652
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4683
                _ExtentY        =   582
                _StockProps     =   77
@@ -2157,10 +2835,10 @@ Begin VB.Form frmCO_Principal
             Begin XtremeSuiteControls.CheckBox chkRepFechaTodas 
                Height          =   492
                Left            =   2160
-               TabIndex        =   85
+               TabIndex        =   60
                Top             =   600
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   868
                _StockProps     =   79
@@ -2222,25 +2900,25 @@ Begin VB.Form frmCO_Principal
          Begin XtremeSuiteControls.PushButton btnReporteOperacion 
             Height          =   492
             Left            =   6240
-            TabIndex        =   58
+            TabIndex        =   45
             Top             =   2040
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   868
             _StockProps     =   79
             Caption         =   "Informe"
             UseVisualStyle  =   -1  'True
             Appearance      =   17
-            Picture         =   "frmCO_Principal.frx":42E5
+            Picture         =   "frmCO_Principal.frx":53D6
          End
          Begin XtremeSuiteControls.DateTimePicker dtpCartaCorte 
             Height          =   312
             Left            =   6840
-            TabIndex        =   116
+            TabIndex        =   91
             Top             =   1680
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   550
             _StockProps     =   68
@@ -2256,15 +2934,26 @@ Begin VB.Form frmCO_Principal
             CustomFormat    =   "dd/MM/yyyy"
             Format          =   3
          End
-         Begin VB.Label lblRepOp 
-            Appearance      =   0  'Flat
-            BackColor       =   &H00FFC0C0&
-            ForeColor       =   &H00FFFFFF&
-            Height          =   252
-            Left            =   240
-            TabIndex        =   41
-            Top             =   300
-            Width           =   4812
+         Begin XtremeShortcutBar.ShortcutCaption lblRepOp 
+            Height          =   315
+            Left            =   0
+            TabIndex        =   156
+            Top             =   240
+            Width           =   4815
+            _Version        =   1572864
+            _ExtentX        =   8493
+            _ExtentY        =   556
+            _StockProps     =   14
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Alignment       =   1
          End
          Begin VB.Label Label23 
             Alignment       =   2  'Center
@@ -2284,7 +2973,7 @@ Begin VB.Form frmCO_Principal
       Begin FPSpreadADO.fpSpread vgCobro 
          Height          =   4932
          Left            =   -70000
-         TabIndex        =   54
+         TabIndex        =   41
          Top             =   480
          Visible         =   0   'False
          Width           =   9132
@@ -2305,18 +2994,18 @@ Begin VB.Form frmCO_Principal
             Strikethrough   =   0   'False
          EndProperty
          MaxCols         =   11
-         SpreadDesigner  =   "frmCO_Principal.frx":4AA1
+         SpreadDesigner  =   "frmCO_Principal.frx":5B92
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
       Begin XtremeSuiteControls.FlatEdit txtApartado 
          Height          =   312
          Left            =   -69760
-         TabIndex        =   73
+         TabIndex        =   48
          Top             =   4920
          Visible         =   0   'False
          Width           =   5172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9123
          _ExtentY        =   550
          _StockProps     =   77
@@ -2339,11 +3028,11 @@ Begin VB.Form frmCO_Principal
       Begin XtremeSuiteControls.FlatEdit txtDirFiadores 
          Height          =   3072
          Left            =   -64480
-         TabIndex        =   74
+         TabIndex        =   49
          Top             =   2160
          Visible         =   0   'False
          Width           =   3492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   6159
          _ExtentY        =   5419
          _StockProps     =   77
@@ -2368,11 +3057,11 @@ Begin VB.Form frmCO_Principal
       Begin XtremeSuiteControls.ComboBox cboTipoCuotas 
          Height          =   312
          Left            =   -68920
-         TabIndex        =   77
+         TabIndex        =   52
          Top             =   480
          Visible         =   0   'False
          Width           =   2532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4471
          _ExtentY        =   582
          _StockProps     =   77
@@ -2395,11 +3084,11 @@ Begin VB.Form frmCO_Principal
       Begin XtremeSuiteControls.ComboBox cboDeductora 
          Height          =   312
          Left            =   -68920
-         TabIndex        =   78
+         TabIndex        =   53
          Top             =   1920
          Visible         =   0   'False
          Width           =   6852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12091
          _ExtentY        =   582
          _StockProps     =   77
@@ -2422,11 +3111,11 @@ Begin VB.Form frmCO_Principal
       Begin XtremeSuiteControls.PushButton btnDeductora 
          Height          =   615
          Left            =   -64120
-         TabIndex        =   80
+         TabIndex        =   55
          Top             =   2520
          Visible         =   0   'False
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   1085
          _StockProps     =   79
@@ -2442,16 +3131,16 @@ Begin VB.Form frmCO_Principal
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmCO_Principal.frx":5730
+         Picture         =   "frmCO_Principal.frx":6821
       End
       Begin XtremeSuiteControls.CheckBox chkDeducirPlanilla 
          Height          =   372
          Left            =   -64120
-         TabIndex        =   117
+         TabIndex        =   92
          Top             =   720
          Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   656
          _StockProps     =   79
@@ -2470,37 +3159,14 @@ Begin VB.Form frmCO_Principal
          Appearance      =   16
          Alignment       =   1
       End
-      Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption1 
-         Height          =   390
-         Left            =   -70000
-         TabIndex        =   119
-         Top             =   360
-         Visible         =   0   'False
-         Width           =   9255
-         _Version        =   1441793
-         _ExtentX        =   16325
-         _ExtentY        =   688
-         _StockProps     =   14
-         Caption         =   "Operaciones Generadas a Fiadores por Traspaso de Deudas"
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Alignment       =   1
-      End
       Begin XtremeSuiteControls.Label Label3 
          Height          =   252
          Left            =   -68920
-         TabIndex        =   79
+         TabIndex        =   54
          Top             =   1680
          Visible         =   0   'False
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   444
          _StockProps     =   79
@@ -2590,7 +3256,7 @@ Begin VB.Form frmCO_Principal
       Begin VB.Image imgReporteCuotas 
          Height          =   252
          Left            =   -65680
-         Picture         =   "frmCO_Principal.frx":5F08
+         Picture         =   "frmCO_Principal.frx":6FF9
          Stretch         =   -1  'True
          ToolTipText     =   "Reporte de Movimientos Registrados"
          Top             =   480
@@ -2611,35 +3277,35 @@ Begin VB.Form frmCO_Principal
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   8
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":66B4
+            Picture         =   "frmCO_Principal.frx":77A5
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":CF16
+            Picture         =   "frmCO_Principal.frx":E007
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":13778
+            Picture         =   "frmCO_Principal.frx":14869
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":19FDA
+            Picture         =   "frmCO_Principal.frx":1B0CB
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":2083C
+            Picture         =   "frmCO_Principal.frx":2192D
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":2709E
+            Picture         =   "frmCO_Principal.frx":2818F
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":2D900
+            Picture         =   "frmCO_Principal.frx":2E9F1
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":34162
+            Picture         =   "frmCO_Principal.frx":35253
             Key             =   ""
          EndProperty
       EndProperty
@@ -2647,10 +3313,10 @@ Begin VB.Form frmCO_Principal
    Begin XtremeSuiteControls.FlatEdit txtOperacion 
       Height          =   432
       Left            =   2880
-      TabIndex        =   109
+      TabIndex        =   84
       Top             =   120
       Width           =   1812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   762
       _StockProps     =   77
@@ -2672,10 +3338,10 @@ Begin VB.Form frmCO_Principal
    Begin XtremeSuiteControls.FlatEdit txtProceso 
       Height          =   432
       Left            =   4680
-      TabIndex        =   110
+      TabIndex        =   85
       Top             =   120
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   762
       _StockProps     =   77
@@ -2698,10 +3364,10 @@ Begin VB.Form frmCO_Principal
    Begin XtremeSuiteControls.FlatEdit txtOpex 
       Height          =   432
       Left            =   6720
-      TabIndex        =   111
+      TabIndex        =   86
       Top             =   120
       Width           =   1092
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   762
       _StockProps     =   77
@@ -2724,10 +3390,10 @@ Begin VB.Form frmCO_Principal
    Begin XtremeSuiteControls.FlatEdit txtCodigo 
       Height          =   312
       Left            =   2880
-      TabIndex        =   112
+      TabIndex        =   87
       Top             =   600
       Width           =   1812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
@@ -2750,10 +3416,10 @@ Begin VB.Form frmCO_Principal
    Begin XtremeSuiteControls.FlatEdit txtCedula 
       Height          =   312
       Left            =   2880
-      TabIndex        =   113
+      TabIndex        =   88
       Top             =   960
       Width           =   1812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
@@ -2776,10 +3442,10 @@ Begin VB.Form frmCO_Principal
    Begin XtremeSuiteControls.FlatEdit txtNombre 
       Height          =   312
       Left            =   4680
-      TabIndex        =   114
+      TabIndex        =   89
       Top             =   960
       Width           =   6012
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   10604
       _ExtentY        =   550
       _StockProps     =   77
@@ -2801,10 +3467,10 @@ Begin VB.Form frmCO_Principal
    Begin XtremeSuiteControls.FlatEdit txtDescripcion 
       Height          =   312
       Left            =   4680
-      TabIndex        =   115
+      TabIndex        =   90
       Top             =   600
       Width           =   6012
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   10604
       _ExtentY        =   550
       _StockProps     =   77
@@ -2836,67 +3502,67 @@ Begin VB.Form frmCO_Principal
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   16
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3A9C4
+            Picture         =   "frmCO_Principal.frx":3BAB5
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3AC39
+            Picture         =   "frmCO_Principal.frx":3BD2A
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3AED2
+            Picture         =   "frmCO_Principal.frx":3BFC3
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3B055
+            Picture         =   "frmCO_Principal.frx":3C146
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3B1ED
+            Picture         =   "frmCO_Principal.frx":3C2DE
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3B395
+            Picture         =   "frmCO_Principal.frx":3C486
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3B537
+            Picture         =   "frmCO_Principal.frx":3C628
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3B6C2
+            Picture         =   "frmCO_Principal.frx":3C7B3
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3B84D
+            Picture         =   "frmCO_Principal.frx":3C93E
             Key             =   ""
          EndProperty
          BeginProperty ListImage10 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3B951
+            Picture         =   "frmCO_Principal.frx":3CA42
             Key             =   ""
          EndProperty
          BeginProperty ListImage11 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3BBE0
+            Picture         =   "frmCO_Principal.frx":3CCD1
             Key             =   ""
          EndProperty
          BeginProperty ListImage12 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3BCEC
+            Picture         =   "frmCO_Principal.frx":3CDDD
             Key             =   ""
          EndProperty
          BeginProperty ListImage13 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3BF68
+            Picture         =   "frmCO_Principal.frx":3D059
             Key             =   ""
          EndProperty
          BeginProperty ListImage14 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3C02E
+            Picture         =   "frmCO_Principal.frx":3D11F
             Key             =   ""
          EndProperty
          BeginProperty ListImage15 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3C1CE
+            Picture         =   "frmCO_Principal.frx":3D2BF
             Key             =   ""
          EndProperty
          BeginProperty ListImage16 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_Principal.frx":3C36A
+            Picture         =   "frmCO_Principal.frx":3D45B
             Key             =   ""
          EndProperty
       EndProperty
@@ -2904,10 +3570,10 @@ Begin VB.Form frmCO_Principal
    Begin XtremeSuiteControls.PushButton btnAdjuntos 
       Height          =   375
       Left            =   7920
-      TabIndex        =   120
+      TabIndex        =   94
       Top             =   120
       Width           =   495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   873
       _ExtentY        =   661
       _StockProps     =   79
@@ -2923,7 +3589,20 @@ Begin VB.Form frmCO_Principal
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmCO_Principal.frx":3C415
+      Picture         =   "frmCO_Principal.frx":3D506
+   End
+   Begin XtremeSuiteControls.ProgressBar ProgressBarX 
+      Height          =   135
+      Left            =   0
+      TabIndex        =   151
+      Top             =   1320
+      Visible         =   0   'False
+      Width           =   12135
+      _Version        =   1572864
+      _ExtentX        =   21405
+      _ExtentY        =   238
+      _StockProps     =   93
+      Scrolling       =   1
    End
    Begin VB.Label Label1 
       BackStyle       =   0  'Transparent
@@ -3000,6 +3679,10 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
 
+Dim strSQL As String, rs As New ADODB.Recordset
+Dim itmX As ListViewItem
+Dim vPaso As Boolean
+
 Private Type vTab
  direccion As Integer   '1 y 0
  Fiadores As Integer    'Sirven Para Indicar si el Tab a sido
@@ -3009,9 +3692,9 @@ End Type
 
 Dim vTabs As vTab, vOperacion As Boolean 'vOperacion es para almacenar el ultimo
                                          'Numero de Operacion Consultado
-Dim mCurIntc As Currency, mCurIntm As Currency 'Para Alm. Interes Corriente y Moratorios Totales
+
+Dim mCurIntc As Currency, mCurIntm As Currency, mCurIVA As Currency  'Para Alm. Interes Corriente y Moratorios Totales
 Dim mcurCargos As Currency, mcurPoliza As Currency, mCurAmortAtrasada As Currency
-Dim vPaso As Boolean
 Dim mTasaPts   As Currency, mTasaLiq As Integer
 
 
@@ -3170,6 +3853,111 @@ vError:
 End Sub
 
 
+Private Sub sbCobro_Fiador_Informe()
+Dim vSubTitulo As String
+
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+
+vSubTitulo = "Deudor: [" & txtCodigo.Text & " - " & txtOperacion.Text & "] " & "Cédula: " & txtCedula.Text & " Nombre: " & txtNombre.Text
+
+With frmContenedor.Crt
+    .Reset
+    .WindowShowPrintSetupBtn = True
+    .WindowShowRefreshBtn = True
+    .WindowShowSearchBtn = True
+    .WindowState = crptMaximized
+    .WindowTitle = "Reportes del Módulo de Cobro"
+
+    .Connect = glogon.ConectRPT
+    
+    .Formulas(0) = "fxEmpresa='" & GLOBALES.gstrNombreEmpresa & "'"
+    .Formulas(1) = "fxSubTitulo='" & Mid(vSubTitulo, 1, 250) & "'"
+    .Formulas(2) = "fxFecha='" & Format(fxFechaServidor, "dd/mm/yyyy") & "'"
+    .Formulas(3) = "fxUsuario='" & glogon.Usuario & "'"
+             
+             
+    .ReportFileName = SIFGlobal.fxPathReportes("Cobro_Cobro_Fiador_Boleta.rpt")
+    .StoredProcParam(0) = txtCF_Operacion.Text
+        
+    .SubreportToChange = "sbMovimientos"
+    .StoredProcParam(0) = txtCF_Operacion.Text
+    
+    .Action = 1
+End With
+
+
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+    Me.MousePointer = vbDefault
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+
+Private Sub sbCobro_Fiador_Cancela()
+Dim i As Integer
+
+On Error GoTo vError
+
+i = MsgBox("Esta seguro que desea Cancelar el Cobro a Fiador de esta Operación", vbYesNo)
+If vbNo Then
+    Exit Sub
+End If
+
+Me.MousePointer = vbHourglass
+
+strSQL = "exec spCbr_Cobro_Fiadores_Cancela " & txtCF_Operacion.Text & ", '" & glogon.Usuario & "', ''"
+Call OpenRecordSet(rs, strSQL)
+
+If glogon.error Then
+   Me.MousePointer = vbDefault
+   Exit Sub
+End If
+
+Me.MousePointer = vbDefault
+
+If rs!Pass = 1 Then
+    Call Bitacora("Aplica", "Cancelación de Cobro a Fiador de la Operación: " & txtCF_Operacion.Text)
+    MsgBox "Cancelación de Cobro a Fiador de la Operación: " & txtCF_Operacion.Text & ", aplicada!", vbInformation
+    
+    Call sbCobro_Fiadores_List
+Else
+    MsgBox rs!Mensaje, vbExclamation
+End If
+
+Exit Sub
+
+vError:
+    Me.MousePointer = vbDefault
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+
+Private Sub btnCF_Click(Index As Integer)
+
+If txtCF_Operacion.Text = "0" _
+    Or txtCF_Operacion.Text = "" Or Not IsNumeric(txtCF_Operacion.Text) Then
+    MsgBox "Consulte una Operación de Cobro a Fiador!", vbExclamation
+    Exit Sub
+End If
+
+Select Case Index
+    Case 0 'Informe
+        Call sbCobro_Fiador_Informe
+    Case 1 'Cancela
+        Call sbCobro_Fiador_Cancela
+End Select
+
+End Sub
+
 Private Sub btnDeductora_Click()
 Dim strSQL As String, vDeductora As Long
 
@@ -3203,6 +3991,30 @@ Exit Sub
 
 vError:
  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+End Sub
+
+Private Sub btnExport_Click(Index As Integer)
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+ProgressBarX.Visible = True
+
+Select Case Index
+  Case 0 'Cobro a Fiadores
+        Call Excel_Exportar_Lsw(lswCF, ProgressBarX)
+  Case 1 'Traslados de Deuda
+        Call Excel_Exportar_Lsw(lswOperacionesGeneradas, ProgressBarX)
+End Select
+
+ProgressBarX.Visible = False
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 End Sub
 
 Private Sub btnReporteOperacion_Click()
@@ -3444,7 +4256,7 @@ Call OpenRecordSet(rs, strSQL)
  vCuenta = Trim(rs!ctaamortiza)
  vOficina = Trim(rs!cod_oficina_r)
  vUnidad = Trim(rs!Cod_Unidad)
- vDivisa = Trim(rs!COD_DIVISA)
+ vDivisa = Trim(rs!cod_Divisa)
  vCentroCosto = "" 'Trim(rs!cod_Centro_Costo)
  curTipoCambio = rs!TipoCambio
 rs.Close
@@ -3787,7 +4599,7 @@ Call OpenRecordSet(rs, strSQL)
     pOficina = Trim(rs!COD_OFICINA & "")
     pUnidad = rs!Cod_Unidad & ""
     pCentroCosto = rs!Cod_Centro_Costo & ""
-    pDivisa = IIf(IsNull(rs!COD_DIVISA), pDivisa, rs!COD_DIVISA)
+    pDivisa = IIf(IsNull(rs!cod_Divisa), pDivisa, rs!cod_Divisa)
     pDiaPago = IIf(IsNull(rs!dia_pago), 32, rs!dia_pago)
     pBaseCalculo = IIf(IsNull(rs!Base_Calculo), "01", rs!Base_Calculo)
 rs.Close
@@ -4037,7 +4849,7 @@ Do While Not rs.EOF
         If rs!Principal > 0 Then
           strSQL = "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & rs!Principal & ",'C','" & pDivisa _
                  & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','','" & rs!ctaamortiza _
-                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
           Call ConectionExecute(strSQL)
         End If
         
@@ -4045,7 +4857,7 @@ Do While Not rs.EOF
         If rs!Cargo > 0 And GLOBALES.SysPlanPagos = 0 Then
           strSQL = "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & rs!Cargo & ",'C','" & pDivisa _
                  & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & pCtaCargos _
-                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
           Call ConectionExecute(strSQL)
         End If
         
@@ -4054,9 +4866,9 @@ Do While Not rs.EOF
               strSQL = "exec spCrdDocumentoAfectacionCargos '" & pTipoDoc & "','" & pNumDoc & "'"
               Call OpenRecordSet(rsTmp, strSQL, 0)
               Do While Not rsTmp.EOF
-                    strSQL = "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & rsTmp!Mov_Monto & ",'C','" & rs!COD_DIVISA _
+                    strSQL = "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & rsTmp!Mov_Monto & ",'C','" & rs!cod_Divisa _
                            & "',1," & GLOBALES.gEnlace & ",'" & rsTmp!Cod_Unidad & "','" & rsTmp!Cod_Centro_Costo & "','" & rsTmp!cod_cuenta _
-                           & "','" & rsTmp!Id_Solicitud & "','" & rsTmp!Codigo & "','" & vAseDocDeposito & "'"
+                           & "','" & rsTmp!ID_SOLICITUD & "','" & rsTmp!Codigo & "','" & vAseDocDeposito & "'"
                     Call ConectionExecute(strSQL)
                     rsTmp.MoveNext
               Loop
@@ -4065,14 +4877,14 @@ Do While Not rs.EOF
         End If
         
        If rs!Poliza > 0 Then
-           strSQL = "select dbo.fxCrdOperacionCtaContaPolizas(" & rs!Id_Solicitud & ") as 'Cuenta'"
+           strSQL = "select dbo.fxCrdOperacionCtaContaPolizas(" & rs!ID_SOLICITUD & ") as 'Cuenta'"
            Call OpenRecordSet(rsTmp, strSQL, 0)
              pCtaPoliza = Trim(rsTmp!Cuenta)
            rsTmp.Close
         
-           strSQL = "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pCtaPoliza & "'," & rs!Poliza & ",'C','" & rs!COD_DIVISA _
+           strSQL = "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pCtaPoliza & "'," & rs!Poliza & ",'C','" & rs!cod_Divisa _
                   & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & pCtaPoliza _
-                  & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                  & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
            Call ConectionExecute(strSQL)
        End If
 
@@ -4080,14 +4892,14 @@ Do While Not rs.EOF
         If rs!IntCor > 0 Then
           strSQL = "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & rs!IntCor & ",'C','" & pDivisa _
                  & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintc _
-                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
           Call ConectionExecute(strSQL)
         End If
         
         If rs!IntMor > 0 Then
           strSQL = "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & rs!IntMor & ",'C','" & pDivisa _
                  & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintm _
-                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
           Call ConectionExecute(strSQL)
         End If
 
@@ -4179,8 +4991,7 @@ Call sbCbo_Llena_New(cboRepX, strSQL, True, True)
 'cboRepX.AddItem "X - Ex.Socios"
 
 
- 
- 
+  
 cboTipoCuotas.Clear
 cboTipoCuotas.AddItem "Canceladas"
 cboTipoCuotas.AddItem "Pendientes"
@@ -4200,7 +5011,26 @@ With lswOperacionesGeneradas.ColumnHeaders
     .Add , , "Int.Pendiente", 1300, vbRightJustify
     .Add , , "Cargos", 1300, vbRightJustify
     .Add , , "Pólizas", 1300, vbRightJustify
+    .Add , , "Estado", 1300, vbCenter
+    .Add , , "Nombre", 3400
 End With
+
+With lswCF.ColumnHeaders
+    .Clear
+    .Add , , "Operación", 1300
+    .Add , , "Línea", 1100, vbCenter
+    .Add , , "Cédula", 1400
+    .Add , , "Nombre", 3400
+    .Add , , "Cuota", 1300, vbRightJustify
+    .Add , , "Recaudo", 1400, vbRightJustify
+    .Add , , "Aplicado", 1400, vbRightJustify
+    .Add , , "Devuelto", 1400, vbRightJustify
+    .Add , , "Inicio", 1100, vbRightJustify
+    .Add , , "Ult.Mov.", 1100, vbRightJustify
+    .Add , , "Estado", 1300, vbRightJustify
+End With
+lswCF.Checkboxes = False
+
 
 With lswAbonos.ColumnHeaders
     .Clear
@@ -4797,6 +5627,73 @@ vError:
 
 End Sub
 
+Private Sub sbCobro_Fiadores_List()
+
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+tcCF.Item(0).Selected = True
+
+txtCF_Operacion.Text = ""
+txtCF_Codigo.Text = ""
+
+txtCF_Cedula.Text = ""
+txtCF_Nombre.Text = ""
+
+txtCF_Estado.Text = ""
+txtCF_Inicia.Text = ""
+txtCF_UltMov.Text = ""
+
+txtCF_Cuota.Text = "0"
+txtCF_Devuelto.Text = "0"
+txtCF_Recaudo.Text = "0"
+txtCF_Aplicado.Text = "0"
+
+vPaso = True
+
+With lswCF
+ .ListItems.Clear
+ 
+ 
+ strSQL = "exec spCbr_Cobro_Fiadores_List " & txtOperacion.Text
+ Call OpenRecordSet(rs, strSQL)
+ 
+ Do While Not rs.EOF
+    Set itmX = .ListItems.Add(, , rs!ID_SOLICITUD)
+        itmX.SubItems(1) = rs!Codigo
+        itmX.SubItems(2) = rs!Cedula
+        itmX.SubItems(3) = rs!Nombre
+        
+        itmX.SubItems(4) = Format(rs!Cuota, "Standard")
+        itmX.SubItems(5) = Format(rs!RECAUDADO, "Standard")
+        itmX.SubItems(6) = Format(rs!APLICADO, "Standard")
+        itmX.SubItems(7) = Format(rs!DEVUELTO, "Standard")
+        itmX.SubItems(8) = Format(rs!INICIO, "yyyy-mm-dd")
+        itmX.SubItems(9) = Format(rs!ULTMOV, "yyyy-mm-dd")
+        
+        itmX.SubItems(10) = rs!ESTADO_DESC
+  
+    rs.MoveNext
+ Loop
+ rs.Close
+ 
+End With
+
+vPaso = False
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+  Me.MousePointer = vbDefault
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+
+End Sub
+
+
 Private Sub OperacionesGeneradas()
 '-------------------------------------------------------------------------------------------
 'OBJETIVO      : Carga las operaciones de los fiadores que se generaron por un traspaso de
@@ -4804,13 +5701,14 @@ Private Sub OperacionesGeneradas()
 'REFERENCIAS   : Ninguna
 'OBSERVACIONES : Ver Traspaso de Deudas
 '-------------------------------------------------------------------------------------------
-Dim strSQL As String, rs As New ADODB.Recordset, itmX As ListViewItem
 Dim colReferencias() As Long, i As Integer, iTotal As Integer
-Dim rsTmp As New ADODB.Recordset
 
 On Error GoTo vError
 
-'Label17(3).Refresh
+Me.MousePointer = vbHourglass
+
+tcCF.Item(1).Selected = True
+
 lblMontoActualDeudor.Caption = 0
 lblPlazoActualDeudor.Caption = 0
 lblInteresActualDeudor.Caption = 0
@@ -4823,60 +5721,40 @@ With lswOperacionesGeneradas
  .ListItems.Clear
  
  
- If GLOBALES.SysPlanPagos = 1 Then
-    strSQL = "select R.id_solicitud,R.codigo,R.cedula,montoapr,R.saldo,[int],R.plazo,R.saldo,R.cuota,R.interesv, dbo.MyGetdate() as 'FechaServer'" _
-           & " from reg_creditos R" _
-           & " where R.estado in('A','C') and R.referencia = " & txtOperacion _
-           & " Order by R.Estado,R.id_Solicitud"
-
- Else
-    strSQL = "select R.id_solicitud,R.codigo,R.cedula,montoapr,R.saldo,[int],R.plazo,R.saldo,R.cuota,R.interesv" _
-           & ", isnull(V.Cargos,0) as 'Cargos', 0 as 'Poliza'" _
-           & " from reg_creditos R left join vista_morosidad V on R.id_solicitud = V.id_solicitud" _
-           & " where R.estado in('A','C') and R.referencia = " & txtOperacion _
-           & " Order by R.Estado,R.id_Solicitud"
- End If
- 
- 
+ strSQL = "exec spCbr_Operaciones_Trasladadas " & txtOperacion.Text
  Call OpenRecordSet(rs, strSQL)
  
  ReDim colReferencias(rs.RecordCount) As Long
+ 
  iTotal = rs.RecordCount
  i = 1
  
  Do While Not rs.EOF
   If Trim(rs!Cedula) = Trim(txtCedula) And UCase(Trim(rs!Codigo)) = UCase(Trim(txtCodigo)) Then
-    lblMontoActualDeudor.Caption = Format(rs!montoapr, "Standard")
+    lblMontoActualDeudor.Caption = Format(rs!Monto, "Standard")
     lblPlazoActualDeudor.Caption = rs!Plazo
-    lblInteresActualDeudor.Caption = rs!interesv
+    lblInteresActualDeudor.Caption = rs!Tasa_Actual
     lblSaldoActualDeudor.Caption = Format(rs!Saldo, "Standard")
-    lblOperacionActualDeudor.Caption = rs!Id_Solicitud
+    lblOperacionActualDeudor.Caption = rs!ID_SOLICITUD
   Else
     
-    Set itmX = .ListItems.Add(, , rs!Id_Solicitud)
+    Set itmX = .ListItems.Add(, , rs!ID_SOLICITUD)
         itmX.SubItems(1) = rs!Codigo
         itmX.SubItems(2) = rs!Cedula
-        itmX.SubItems(3) = Format(rs!montoapr, "Standard")
+        itmX.SubItems(3) = Format(rs!Monto, "Standard")
         itmX.SubItems(4) = Format(rs!Saldo, "Standard")
         itmX.SubItems(5) = Format(rs!Cuota, "Standard")
-        itmX.SubItems(6) = rs!Int
+        itmX.SubItems(6) = rs!Tasa
         itmX.SubItems(7) = rs!Plazo
-      If GLOBALES.SysPlanPagos = 1 Then
-            strSQL = "exec spCrdPlanPagosInfoCancelacion " & rs!Id_Solicitud & ",'" & Format(rs!FechaServer, "yyyy/mm/dd") & "'"
-            Call OpenRecordSet(rsTmp, strSQL, 0)
-                itmX.SubItems(8) = Format(rsTmp!IntCor + rsTmp!IntMor, "Standard")
-                itmX.SubItems(9) = Format(rsTmp!Cargos, "Standard")
-                itmX.SubItems(10) = Format(rsTmp!Poliza, "Standard")
-            rsTmp.Close
-      
-      Else
-            itmX.SubItems(8) = Format(fxInteresEnMoraYPendiente(rs!Id_Solicitud), "Standard")
-            itmX.SubItems(9) = Format(rs!Cargos, "Standard")
-            itmX.SubItems(10) = Format(rs!Poliza, "Standard")
-      End If
         
+        itmX.SubItems(8) = Format(rs!C_INTERESES, "Standard")
+        itmX.SubItems(9) = Format(rs!C_Cargos + rs!C_IVA, "Standard")
+        itmX.SubItems(10) = Format(rs!C_Polizas, "Standard")
+        
+        itmX.SubItems(11) = Format(rs!Nombre, "Standard")
+      
      
-     colReferencias(i) = rs!Id_Solicitud
+     colReferencias(i) = rs!ID_SOLICITUD
      itmX.Tag = itmX.Index
      i = i + 1
   
@@ -4890,19 +5768,52 @@ End With
 
 vPaso = False
 
+Me.MousePointer = vbDefault
+
 Exit Sub
 
 vError:
+  Me.MousePointer = vbDefault
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+
+
+Private Sub lswCF_ItemClick(ByVal Item As XtremeSuiteControls.ListViewItem)
+If vPaso Then Exit Sub
+
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+txtCF_Operacion.Text = Item.Text
+txtCF_Codigo.Text = Item.SubItems(1)
+
+txtCF_Cedula.Text = Item.SubItems(2)
+txtCF_Nombre.Text = Item.SubItems(3)
+
+txtCF_Estado.Text = Item.SubItems(10)
+txtCF_Inicia.Text = Item.SubItems(8)
+txtCF_UltMov.Text = Item.SubItems(9)
+
+txtCF_Cuota.Text = Item.SubItems(4)
+txtCF_Recaudo.Text = Item.SubItems(5)
+txtCF_Aplicado.Text = Item.SubItems(6)
+txtCF_Devuelto.Text = Item.SubItems(7)
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+  Me.MousePointer = vbDefault
   MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 
 
 End Sub
 
 
-
-Private Sub lblPrimerDeduccion_Click()
-
-End Sub
 
 Private Sub lswContactos_ItemClick(ByVal Item As XtremeSuiteControls.ListViewItem)
 If vPaso Then Exit Sub
@@ -4991,6 +5902,19 @@ End If
 End Sub
 
 
+Private Sub tcCF_SelectedChanged(ByVal Item As XtremeSuiteControls.ITabControlItem)
+
+Select Case Item.Index
+  Case 0 'Cobro a Fiadores
+        Call sbCobro_Fiadores_List
+        
+  Case 1 'Traslados de Deuda
+        Call OperacionesGeneradas
+
+End Select
+
+End Sub
+
 Private Sub tcMain_SelectedChanged(ByVal Item As XtremeSuiteControls.ITabControlItem)
 
 If Not vOperacion Then Exit Sub
@@ -5008,7 +5932,7 @@ Select Case Item.Index
     Call sbAvisos(txtOperacion)
   
   Case 4 'En Cobro
-    Call OperacionesGeneradas
+       Call sbCobro_Fiadores_List
   
   Case 5 'Contacto
     Call sbContactos
@@ -5573,7 +6497,8 @@ mcurCargos = 0
    .Add , "TRAREV", "Boleta de Traspaso y Reversión de Deudas"
    .Add , "REVER", "Operaciones con Reversión (CJ-TD)"
    .Add , "ENVCBR", "Operaciones en Cobro Judicial"
-   .Add , "TRADEUD", "Opeaciones con Traslado de Deudas"
+   .Add , "TRACF", "Cobros a Fiadores"
+   .Add , "TRADEUD", "Operaciones con Traslado de Deudas"
    .Add , "TRAFIA", "Operaciones de Fiadores con TD Aplicado"
    .Add , "CBRFIA", "Cobro a Fiadores: Retenciones"
  
@@ -5671,7 +6596,7 @@ End If
 End Sub
 
 
-Private Sub vgCobro_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+Private Sub vgCobro_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
 Dim frmX As Form
 
 If vPaso Then Exit Sub
@@ -5716,7 +6641,7 @@ With vgCobro
           .Row = .MaxRows
           
           For i = 2 To 11
-            .col = i
+            .Col = i
             Select Case i
               Case 2 'Fecha
                 .Text = Format(rs!fecha, "dd/mm/yyyy")
@@ -5760,7 +6685,7 @@ With vgCobro
           .Row = .MaxRows
           
           For i = 1 To 5
-            .col = i
+            .Col = i
             Select Case i
               Case 1 'Fecha
                 .Text = Format(rs!fecha_asignacion, "dd/mm/yyyy")
@@ -5794,15 +6719,15 @@ vError:
 End Sub
 
 
-Private Sub vGrid_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+Private Sub vGrid_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
 Dim vTipoDoc As String, vDocumento As String
 
 If vPaso Then Exit Sub
 
 vGrid.Row = Row
-vGrid.col = 10
+vGrid.Col = 10
 vTipoDoc = vGrid.Text
-vGrid.col = 11
+vGrid.Col = 11
 vDocumento = vGrid.Text
 
 If Len(vTipoDoc) > 0 And Len(vDocumento) > 0 Then

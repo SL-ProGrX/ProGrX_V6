@@ -1,19 +1,19 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "mscomctl.OCX"
-Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmAF_RecepcionLiquidacionesTags 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Liquidaciones: Recepción/Devolución"
-   ClientHeight    =   8196
-   ClientLeft      =   48
-   ClientTop       =   372
-   ClientWidth     =   12024
+   ClientHeight    =   8190
+   ClientLeft      =   45
+   ClientTop       =   375
+   ClientWidth     =   12030
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
-   ScaleHeight     =   8196
-   ScaleWidth      =   12024
+   ScaleHeight     =   8190
+   ScaleWidth      =   12030
    StartUpPosition =   1  'CenterOwner
    Begin TabDlg.SSTab SSTab 
       Height          =   7935
@@ -21,16 +21,16 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
       TabIndex        =   0
       Top             =   120
       Width           =   11775
-      _ExtentX        =   20765
-      _ExtentY        =   13991
+      _ExtentX        =   20770
+      _ExtentY        =   13996
       _Version        =   393216
       Style           =   1
       TabHeight       =   520
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Arial"
-         Size            =   8.4
+         Name            =   "Calibri"
+         Size            =   8.25
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
@@ -61,28 +61,44 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
       TabPicture(1)   =   "frmAF_RecepcionLiquidacionesTags.frx":001C
       Tab(1).ControlEnabled=   0   'False
       Tab(1).Control(0)=   "Image2"
+      Tab(1).Control(0).Enabled=   0   'False
       Tab(1).Control(1)=   "Label2"
+      Tab(1).Control(1).Enabled=   0   'False
       Tab(1).Control(2)=   "tlbBuscar"
+      Tab(1).Control(2).Enabled=   0   'False
       Tab(1).Control(3)=   "vGrid"
+      Tab(1).Control(3).Enabled=   0   'False
       Tab(1).Control(4)=   "optPendDevolucion"
+      Tab(1).Control(4).Enabled=   0   'False
       Tab(1).Control(5)=   "optPendRecepcion"
+      Tab(1).Control(5).Enabled=   0   'False
       Tab(1).ControlCount=   6
       TabCaption(2)   =   "Consultas"
       TabPicture(2)   =   "frmAF_RecepcionLiquidacionesTags.frx":0038
       Tab(2).ControlEnabled=   0   'False
       Tab(2).Control(0)=   "Image3"
+      Tab(2).Control(0).Enabled=   0   'False
       Tab(2).Control(1)=   "Label7"
-      Tab(2).Control(2)=   "Label5"
-      Tab(2).Control(3)=   "Image4"
-      Tab(2).Control(4)=   "Label6"
-      Tab(2).Control(5)=   "Label1(14)"
-      Tab(2).Control(6)=   "vGridConsulta"
-      Tab(2).Control(7)=   "tlbReportes"
-      Tab(2).Control(8)=   "dtpFFin"
-      Tab(2).Control(9)=   "dtpFInicio"
-      Tab(2).Control(10)=   "txtCodigoBuscar"
-      Tab(2).Control(11)=   "cboUsuario"
-      Tab(2).ControlCount=   12
+      Tab(2).Control(1).Enabled=   0   'False
+      Tab(2).Control(2)=   "Image4"
+      Tab(2).Control(2).Enabled=   0   'False
+      Tab(2).Control(3)=   "Label6"
+      Tab(2).Control(3).Enabled=   0   'False
+      Tab(2).Control(4)=   "Label1(14)"
+      Tab(2).Control(4).Enabled=   0   'False
+      Tab(2).Control(5)=   "dtpFFin"
+      Tab(2).Control(5).Enabled=   0   'False
+      Tab(2).Control(6)=   "dtpFInicio"
+      Tab(2).Control(6).Enabled=   0   'False
+      Tab(2).Control(7)=   "vGridConsulta"
+      Tab(2).Control(7).Enabled=   0   'False
+      Tab(2).Control(8)=   "tlbReportes"
+      Tab(2).Control(8).Enabled=   0   'False
+      Tab(2).Control(9)=   "txtCodigoBuscar"
+      Tab(2).Control(9).Enabled=   0   'False
+      Tab(2).Control(10)=   "cboUsuario"
+      Tab(2).Control(10).Enabled=   0   'False
+      Tab(2).ControlCount=   11
       Begin VB.CommandButton cmdAgregar 
          Caption         =   "+"
          BeginProperty Font 
@@ -96,7 +112,7 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          EndProperty
          Height          =   375
          Left            =   3840
-         TabIndex        =   24
+         TabIndex        =   21
          Top             =   600
          Width           =   495
       End
@@ -104,7 +120,7 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          Appearance      =   0  'Flat
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -113,7 +129,7 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          EndProperty
          ForeColor       =   &H00FF0000&
          Height          =   330
-         Left            =   -70440
+         Left            =   -71160
          Style           =   2  'Dropdown List
          TabIndex        =   15
          Top             =   1080
@@ -123,7 +139,7 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          Alignment       =   2  'Center
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -140,7 +156,7 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          Caption         =   "Recepción"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -157,7 +173,7 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          Caption         =   "Devolución"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -174,7 +190,7 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          Alignment       =   2  'Center
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -192,7 +208,7 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          Caption         =   "Recepción"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -212,7 +228,7 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          Caption         =   "Devolución"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -232,8 +248,8 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          TabIndex        =   4
          Top             =   1080
          Width           =   11535
-         _ExtentX        =   20341
-         _ExtentY        =   10605
+         _ExtentX        =   20346
+         _ExtentY        =   10610
          View            =   3
          LabelWrap       =   -1  'True
          HideSelection   =   -1  'True
@@ -247,7 +263,7 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          Appearance      =   0
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -281,8 +297,8 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          TabIndex        =   5
          Top             =   7200
          Width           =   3225
-         _ExtentX        =   5694
-         _ExtentY        =   995
+         _ExtentX        =   5689
+         _ExtentY        =   1005
          ButtonWidth     =   2461
          ButtonHeight    =   1005
          Style           =   1
@@ -327,8 +343,8 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          Top             =   7320
          Visible         =   0   'False
          Width           =   7935
-         _ExtentX        =   13991
-         _ExtentY        =   550
+         _ExtentX        =   13996
+         _ExtentY        =   556
          _Version        =   393216
          Appearance      =   0
       End
@@ -346,8 +362,8 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          BorderStyle     =   0
          EditEnterAction =   5
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.4
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -366,9 +382,10 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          TabIndex        =   12
          Top             =   600
          Width           =   2625
-         _ExtentX        =   4636
-         _ExtentY        =   572
+         _ExtentX        =   4630
+         _ExtentY        =   582
          ButtonWidth     =   1931
+         ButtonHeight    =   582
          Style           =   1
          TextAlignment   =   1
          ImageList       =   "ImageList3"
@@ -391,61 +408,16 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
             EndProperty
          EndProperty
       End
-      Begin MSComCtl2.DTPicker dtpFInicio 
-         Height          =   330
-         Left            =   -74160
-         TabIndex        =   16
-         ToolTipText     =   "Fecha Inicio Búsqueda"
-         Top             =   1080
-         Width           =   1575
-         _ExtentX        =   2773
-         _ExtentY        =   572
-         _Version        =   393216
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.4
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         CustomFormat    =   "dd/MM/yyyy"
-         Format          =   190513155
-         CurrentDate     =   40361
-      End
-      Begin MSComCtl2.DTPicker dtpFFin 
-         Height          =   330
-         Left            =   -72240
-         TabIndex        =   17
-         ToolTipText     =   "Fecha Fin Búsqueda"
-         Top             =   1080
-         Width           =   1575
-         _ExtentX        =   2773
-         _ExtentY        =   572
-         _Version        =   393216
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.4
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         CustomFormat    =   "dd/MM/yyyy"
-         Format          =   190513155
-         CurrentDate     =   40361
-      End
       Begin MSComctlLib.Toolbar tlbReportes 
          Height          =   330
          Left            =   -65760
-         TabIndex        =   18
+         TabIndex        =   16
          Top             =   960
          Width           =   1545
-         _ExtentX        =   2731
-         _ExtentY        =   572
+         _ExtentX        =   2725
+         _ExtentY        =   582
          ButtonWidth     =   1931
+         ButtonHeight    =   582
          Style           =   1
          TextAlignment   =   1
          ImageList       =   "ImageList3"
@@ -474,7 +446,7 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
       Begin FPSpreadADO.fpSpread vGridConsulta 
          Height          =   4815
          Left            =   -74760
-         TabIndex        =   19
+         TabIndex        =   17
          Top             =   2760
          Width           =   10935
          _Version        =   524288
@@ -485,8 +457,8 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          BorderStyle     =   0
          EditEnterAction =   5
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.4
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -495,15 +467,59 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          EndProperty
          MaxCols         =   486
          ScrollBarExtMode=   -1  'True
-         SpreadDesigner  =   "frmAF_RecepcionLiquidacionesTags.frx":06E7
+         SpreadDesigner  =   "frmAF_RecepcionLiquidacionesTags.frx":0731
          VScrollSpecialType=   2
          AppearanceStyle =   1
+      End
+      Begin XtremeSuiteControls.DateTimePicker dtpFInicio 
+         Height          =   330
+         Left            =   -74160
+         TabIndex        =   22
+         Top             =   1080
+         Width           =   1455
+         _Version        =   1572864
+         _ExtentX        =   2566
+         _ExtentY        =   582
+         _StockProps     =   68
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CustomFormat    =   "dd/MM/yyyy"
+         Format          =   3
+      End
+      Begin XtremeSuiteControls.DateTimePicker dtpFFin 
+         Height          =   330
+         Left            =   -72720
+         TabIndex        =   23
+         Top             =   1080
+         Width           =   1455
+         _Version        =   1572864
+         _ExtentX        =   2566
+         _ExtentY        =   582
+         _StockProps     =   68
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CustomFormat    =   "dd/MM/yyyy"
+         Format          =   3
       End
       Begin VB.Label Label1 
          Caption         =   "Usuario"
          BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.4
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -512,16 +528,16 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          EndProperty
          Height          =   255
          Index           =   14
-         Left            =   -70440
-         TabIndex        =   23
+         Left            =   -71160
+         TabIndex        =   20
          Top             =   840
          Width           =   735
       End
       Begin VB.Label Label6 
          Caption         =   "Reportes"
          BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.4
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -530,40 +546,22 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          EndProperty
          Height          =   255
          Left            =   -74160
-         TabIndex        =   22
+         TabIndex        =   19
          Top             =   840
          Width           =   975
       End
       Begin VB.Image Image4 
-         Height          =   384
+         Height          =   480
          Left            =   -74760
-         Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":0C3C
+         Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":0CD0
          Top             =   600
-         Width           =   384
-      End
-      Begin VB.Label Label5 
-         Alignment       =   2  'Center
-         Caption         =   "-"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   12
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   255
-         Left            =   -72600
-         TabIndex        =   21
-         Top             =   1080
-         Width           =   375
+         Width           =   480
       End
       Begin VB.Label Label7 
          Caption         =   "Consulta por No. Boleta"
          BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.4
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -572,22 +570,22 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          EndProperty
          Height          =   255
          Left            =   -74160
-         TabIndex        =   20
+         TabIndex        =   18
          Top             =   1680
          Width           =   1935
       End
       Begin VB.Image Image3 
-         Height          =   384
+         Height          =   480
          Left            =   -74760
-         Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":0E46
+         Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":0EDA
          Top             =   1560
-         Width           =   384
+         Width           =   480
       End
       Begin VB.Label Label2 
          Caption         =   "Liquidaciones  Pendientes de:"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -601,17 +599,17 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          Width           =   2295
       End
       Begin VB.Image Image2 
-         Height          =   384
+         Height          =   480
          Left            =   -74760
-         Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":105F
+         Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":10F3
          Top             =   480
-         Width           =   384
+         Width           =   480
       End
       Begin VB.Label lblCedula 
          Caption         =   "Boleta No."
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -628,7 +626,7 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
          Caption         =   "Tipo Movimiento ..:"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -645,8 +643,8 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
    Begin MSComctlLib.ImageList ImageList1 
       Left            =   -120
       Top             =   120
-      _ExtentX        =   995
-      _ExtentY        =   995
+      _ExtentX        =   1005
+      _ExtentY        =   1005
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -655,15 +653,15 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   3
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":1270
+            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":1304
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":7AD2
+            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":7B66
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":E334
+            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":E3C8
             Key             =   ""
          EndProperty
       EndProperty
@@ -671,8 +669,8 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
    Begin MSComctlLib.ImageList ImageList3 
       Left            =   0
       Top             =   720
-      _ExtentX        =   995
-      _ExtentY        =   995
+      _ExtentX        =   1005
+      _ExtentY        =   1005
       BackColor       =   -2147483643
       ImageWidth      =   16
       ImageHeight     =   16
@@ -681,27 +679,27 @@ Begin VB.Form frmAF_RecepcionLiquidacionesTags
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   6
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":14B96
+            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":14C2A
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":1B3F8
+            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":1B48C
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":21C5A
+            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":21CEE
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":21D74
+            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":21E08
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":21E92
+            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":21F26
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":286F4
+            Picture         =   "frmAF_RecepcionLiquidacionesTags.frx":28788
             Key             =   ""
          EndProperty
       EndProperty
@@ -1122,10 +1120,10 @@ Do While Not rs.EOF
     vGridConsulta.Text = rs!Descripcion
     
     vGridConsulta.Col = 2
-    vGridConsulta.Value = IIf(IsNull(rs!REGISTRO_FECHA), "", rs!REGISTRO_FECHA)
+    vGridConsulta.Value = IIf(IsNull(rs!Registro_Fecha), "", rs!Registro_Fecha)
     
     vGridConsulta.Col = 3
-    vGridConsulta.Value = IIf(IsNull(rs!REGISTRO_USUARIO), "", rs!REGISTRO_USUARIO)
+    vGridConsulta.Value = IIf(IsNull(rs!registro_usuario), "", rs!registro_usuario)
     
     vGridConsulta.RowHeight(vGridConsulta.Row) = vGridConsulta.MaxTextRowHeight(vGridConsulta.Row)
     rs.MoveNext

@@ -2,8 +2,8 @@ VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCR_CatalogoCreditos 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Catálogo de Créditos"
@@ -24,7 +24,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       TabIndex        =   93
       Top             =   480
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   450
       _StockProps     =   79
@@ -49,7 +49,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       ToolTipText     =   "Destinos o Plan de Inversión"
       Top             =   36
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   550
       _StockProps     =   79
@@ -74,7 +74,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       TabIndex        =   4
       Top             =   1320
       Width           =   11775
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   20770
       _ExtentY        =   11456
       _StockProps     =   68
@@ -90,6 +90,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       Appearance      =   4
       Color           =   32
       ItemCount       =   4
+      SelectedItem    =   2
       Item(0).Caption =   "Parámetros"
       Item(0).ControlCount=   1
       Item(0).Control(0)=   "tcParametros"
@@ -111,7 +112,7 @@ Begin VB.Form frmCR_CatalogoCreditos
          Top             =   360
          Visible         =   0   'False
          Width           =   11775
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   20770
          _ExtentY        =   8916
          _StockProps     =   77
@@ -131,11 +132,12 @@ Begin VB.Form frmCR_CatalogoCreditos
       End
       Begin XtremeSuiteControls.TabControl tcParametros 
          Height          =   6015
-         Left            =   0
+         Left            =   -70000
          TabIndex        =   5
          Top             =   360
+         Visible         =   0   'False
          Width           =   11775
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   20770
          _ExtentY        =   10610
          _StockProps     =   68
@@ -203,7 +205,7 @@ Begin VB.Form frmCR_CatalogoCreditos
          Item(2).Control(5)=   "Label6(0)"
          Item(2).Control(6)=   "Label4"
          Item(3).Caption =   "Bloque No.4"
-         Item(3).ControlCount=   14
+         Item(3).ControlCount=   18
          Item(3).Control(0)=   "gbSinpe"
          Item(3).Control(1)=   "chkBonifica"
          Item(3).Control(2)=   "chkPago_Activa"
@@ -218,6 +220,10 @@ Begin VB.Form frmCR_CatalogoCreditos
          Item(3).Control(11)=   "chkEdadPension_Formalizacion"
          Item(3).Control(12)=   "Label5(2)"
          Item(3).Control(13)=   "txtAnticipo_Extraordinario_Porc"
+         Item(3).Control(14)=   "Label5(3)"
+         Item(3).Control(15)=   "chkCPH(0)"
+         Item(3).Control(16)=   "chkCPH(1)"
+         Item(3).Control(17)=   "chkCPH(2)"
          Item(4).Caption =   "Reservas/Revolutivos"
          Item(4).ControlCount=   2
          Item(4).Control(0)=   "gbReservas"
@@ -244,7 +250,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   4320
             Visible         =   0   'False
             Width           =   10935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   19288
             _ExtentY        =   2778
             _StockProps     =   79
@@ -266,7 +272,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   133
                Top             =   360
                Width           =   5895
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   10398
                _ExtentY        =   450
                _StockProps     =   79
@@ -289,7 +295,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   135
                Top             =   720
                Width           =   3255
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   5741
                _ExtentY        =   582
                _StockProps     =   77
@@ -315,7 +321,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   154
                Top             =   720
                Width           =   3255
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   5741
                _ExtentY        =   582
                _StockProps     =   77
@@ -361,7 +367,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   134
                Top             =   720
                Width           =   1455
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2566
                _ExtentY        =   450
                _StockProps     =   79
@@ -385,7 +391,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             TabIndex        =   18
             Top             =   765
             Width           =   3495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6165
             _ExtentY        =   9128
             _StockProps     =   79
@@ -398,7 +404,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   19
                Top             =   240
                Width           =   2772
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4890
                _ExtentY        =   444
                _StockProps     =   79
@@ -421,7 +427,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   20
                Top             =   480
                Width           =   2772
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4890
                _ExtentY        =   444
                _StockProps     =   79
@@ -444,7 +450,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   21
                Top             =   840
                Width           =   2772
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4890
                _ExtentY        =   444
                _StockProps     =   79
@@ -467,7 +473,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   22
                Top             =   1080
                Width           =   2532
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4466
                _ExtentY        =   444
                _StockProps     =   79
@@ -490,7 +496,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   23
                Top             =   1560
                Width           =   2772
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4890
                _ExtentY        =   444
                _StockProps     =   79
@@ -513,7 +519,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   24
                Top             =   1800
                Width           =   2772
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4890
                _ExtentY        =   444
                _StockProps     =   79
@@ -536,7 +542,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   25
                Top             =   2280
                Width           =   2772
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4890
                _ExtentY        =   444
                _StockProps     =   79
@@ -559,7 +565,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   26
                Top             =   2520
                Width           =   2772
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4890
                _ExtentY        =   444
                _StockProps     =   79
@@ -582,7 +588,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   27
                Top             =   3120
                Width           =   2772
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4890
                _ExtentY        =   444
                _StockProps     =   79
@@ -605,7 +611,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   28
                Top             =   3360
                Width           =   2772
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4890
                _ExtentY        =   444
                _StockProps     =   79
@@ -628,7 +634,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   29
                Top             =   3600
                Width           =   2772
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4890
                _ExtentY        =   444
                _StockProps     =   79
@@ -651,7 +657,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   30
                Top             =   4200
                Width           =   2892
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   5101
                _ExtentY        =   444
                _StockProps     =   79
@@ -674,7 +680,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   31
                Top             =   4440
                Width           =   2772
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4890
                _ExtentY        =   444
                _StockProps     =   79
@@ -697,7 +703,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   32
                Top             =   2760
                Width           =   2772
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4890
                _ExtentY        =   444
                _StockProps     =   79
@@ -721,7 +727,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             TabIndex        =   33
             Top             =   885
             Width           =   3855
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6800
             _ExtentY        =   8916
             _StockProps     =   77
@@ -750,7 +756,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             TabIndex        =   34
             Top             =   885
             Width           =   3975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7011
             _ExtentY        =   8916
             _StockProps     =   77
@@ -780,7 +786,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   3624
             Visible         =   0   'False
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   582
             _StockProps     =   77
@@ -807,7 +813,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   1824
             Visible         =   0   'False
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2990
             _ExtentY        =   582
             _StockProps     =   77
@@ -834,7 +840,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   4200
             Visible         =   0   'False
             Width           =   3255
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5741
             _ExtentY        =   582
             _StockProps     =   77
@@ -861,7 +867,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   4584
             Visible         =   0   'False
             Width           =   3252
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5741
             _ExtentY        =   582
             _StockProps     =   77
@@ -888,7 +894,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   4944
             Visible         =   0   'False
             Width           =   3252
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5741
             _ExtentY        =   582
             _StockProps     =   77
@@ -915,7 +921,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   5304
             Visible         =   0   'False
             Width           =   3252
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5741
             _ExtentY        =   582
             _StockProps     =   77
@@ -942,7 +948,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   1824
             Visible         =   0   'False
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   77
@@ -969,7 +975,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   2544
             Visible         =   0   'False
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   77
@@ -996,7 +1002,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   2904
             Visible         =   0   'False
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   77
@@ -1023,7 +1029,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   3264
             Visible         =   0   'False
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   77
@@ -1050,7 +1056,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   3264
             Visible         =   0   'False
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   77
@@ -1077,7 +1083,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   3624
             Visible         =   0   'False
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   77
@@ -1104,7 +1110,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   1344
             Visible         =   0   'False
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   550
             _StockProps     =   68
@@ -1128,7 +1134,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   624
             Visible         =   0   'False
             Width           =   4932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8700
             _ExtentY        =   444
             _StockProps     =   79
@@ -1154,7 +1160,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   984
             Visible         =   0   'False
             Width           =   4932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8700
             _ExtentY        =   444
             _StockProps     =   79
@@ -1180,7 +1186,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   1344
             Visible         =   0   'False
             Width           =   5892
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10393
             _ExtentY        =   444
             _StockProps     =   79
@@ -1206,7 +1212,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   2208
             Visible         =   0   'False
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   77
@@ -1233,7 +1239,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   4584
             Visible         =   0   'False
             Width           =   8892
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   15684
             _ExtentY        =   1609
             _StockProps     =   77
@@ -1260,7 +1266,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   2520
             Visible         =   0   'False
             Width           =   9495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   16743
             _ExtentY        =   2773
             _StockProps     =   79
@@ -1285,7 +1291,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   85
                Top             =   360
                Width           =   3972
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   7006
                _ExtentY        =   444
                _StockProps     =   79
@@ -1309,7 +1315,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                ToolTipText     =   "Presione F4 para Consultar"
                Top             =   1080
                Width           =   972
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   1714
                _ExtentY        =   550
                _StockProps     =   77
@@ -1335,7 +1341,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   87
                Top             =   1080
                Width           =   7092
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   12509
                _ExtentY        =   550
                _StockProps     =   77
@@ -1381,7 +1387,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   630
             Visible         =   0   'False
             Width           =   5895
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10398
             _ExtentY        =   582
             _StockProps     =   77
@@ -1408,7 +1414,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   990
             Visible         =   0   'False
             Width           =   5895
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10398
             _ExtentY        =   582
             _StockProps     =   77
@@ -1435,7 +1441,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   1200
             Visible         =   0   'False
             Width           =   4815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8493
             _ExtentY        =   3625
             _StockProps     =   79
@@ -1458,7 +1464,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   97
                Top             =   240
                Width           =   2052
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3619
                _ExtentY        =   444
                _StockProps     =   79
@@ -1484,7 +1490,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   98
                Top             =   240
                Width           =   2292
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4043
                _ExtentY        =   444
                _StockProps     =   79
@@ -1508,7 +1514,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   99
                Top             =   720
                Width           =   3975
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   7006
                _ExtentY        =   444
                _StockProps     =   79
@@ -1531,7 +1537,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   100
                Top             =   1080
                Width           =   3975
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   7006
                _ExtentY        =   444
                _StockProps     =   79
@@ -1554,7 +1560,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   101
                Top             =   1680
                Width           =   1815
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3201
                _ExtentY        =   556
                _StockProps     =   77
@@ -1581,7 +1587,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   102
                Top             =   1680
                Width           =   2175
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3836
                _ExtentY        =   450
                _StockProps     =   79
@@ -1605,7 +1611,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   600
             Visible         =   0   'False
             Width           =   3975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7006
             _ExtentY        =   444
             _StockProps     =   79
@@ -1629,7 +1635,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   960
             Visible         =   0   'False
             Width           =   3975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7006
             _ExtentY        =   444
             _StockProps     =   79
@@ -1653,7 +1659,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   600
             Visible         =   0   'False
             Width           =   3975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7006
             _ExtentY        =   444
             _StockProps     =   79
@@ -1677,7 +1683,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   960
             Visible         =   0   'False
             Width           =   3975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7006
             _ExtentY        =   444
             _StockProps     =   79
@@ -1731,7 +1737,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   1320
             Visible         =   0   'False
             Width           =   3975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7006
             _ExtentY        =   868
             _StockProps     =   79
@@ -1755,7 +1761,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   1920
             Visible         =   0   'False
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   556
             _StockProps     =   77
@@ -1782,7 +1788,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   2280
             Visible         =   0   'False
             Width           =   3975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7006
             _ExtentY        =   868
             _StockProps     =   79
@@ -1806,7 +1812,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   2880
             Visible         =   0   'False
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   556
             _StockProps     =   77
@@ -1833,7 +1839,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   480
             Visible         =   0   'False
             Width           =   10455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   18441
             _ExtentY        =   4895
             _StockProps     =   79
@@ -1857,7 +1863,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   116
                Top             =   360
                Width           =   3972
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   7006
                _ExtentY        =   444
                _StockProps     =   79
@@ -1880,7 +1886,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   117
                Top             =   720
                Width           =   3972
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   7006
                _ExtentY        =   444
                _StockProps     =   79
@@ -1903,7 +1909,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   118
                Top             =   1080
                Width           =   3972
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   7006
                _ExtentY        =   444
                _StockProps     =   79
@@ -1927,7 +1933,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                ToolTipText     =   "Presione F4 para Consultar"
                Top             =   1680
                Width           =   972
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   1714
                _ExtentY        =   550
                _StockProps     =   77
@@ -1953,7 +1959,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   120
                Top             =   1680
                Width           =   6972
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   12298
                _ExtentY        =   550
                _StockProps     =   77
@@ -1978,7 +1984,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   121
                Top             =   2400
                Width           =   2292
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4043
                _ExtentY        =   550
                _StockProps     =   77
@@ -2044,7 +2050,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   3360
             Visible         =   0   'False
             Width           =   10215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   18018
             _ExtentY        =   4471
             _StockProps     =   79
@@ -2069,7 +2075,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   125
                Top             =   480
                Width           =   3972
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   7006
                _ExtentY        =   444
                _StockProps     =   79
@@ -2092,7 +2098,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   126
                Top             =   840
                Width           =   3972
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   7006
                _ExtentY        =   444
                _StockProps     =   79
@@ -2115,7 +2121,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   127
                Top             =   1320
                Width           =   3972
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   7006
                _ExtentY        =   444
                _StockProps     =   79
@@ -2138,7 +2144,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   128
                Top             =   1680
                Width           =   3972
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   7006
                _ExtentY        =   444
                _StockProps     =   79
@@ -2162,7 +2168,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                ToolTipText     =   "Presione F4 para Consultar"
                Top             =   2160
                Width           =   972
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   1714
                _ExtentY        =   550
                _StockProps     =   77
@@ -2188,7 +2194,7 @@ Begin VB.Form frmCR_CatalogoCreditos
                TabIndex        =   130
                Top             =   2160
                Width           =   6732
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   11874
                _ExtentY        =   550
                _StockProps     =   77
@@ -2234,7 +2240,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   1560
             Visible         =   0   'False
             Width           =   5295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9340
             _ExtentY        =   450
             _StockProps     =   79
@@ -2258,7 +2264,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   1920
             Visible         =   0   'False
             Width           =   5295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9340
             _ExtentY        =   450
             _StockProps     =   79
@@ -2282,7 +2288,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   2280
             Visible         =   0   'False
             Width           =   3615
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6376
             _ExtentY        =   450
             _StockProps     =   79
@@ -2306,7 +2312,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   2640
             Visible         =   0   'False
             Width           =   5295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9340
             _ExtentY        =   450
             _StockProps     =   79
@@ -2330,7 +2336,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   3240
             Visible         =   0   'False
             Width           =   5055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8916
             _ExtentY        =   450
             _StockProps     =   79
@@ -2354,7 +2360,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   3600
             Visible         =   0   'False
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   582
             _StockProps     =   77
@@ -2381,7 +2387,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   600
             Visible         =   0   'False
             Width           =   5295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9340
             _ExtentY        =   450
             _StockProps     =   79
@@ -2405,7 +2411,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   960
             Visible         =   0   'False
             Width           =   5295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9340
             _ExtentY        =   450
             _StockProps     =   79
@@ -2426,10 +2432,10 @@ Begin VB.Form frmCR_CatalogoCreditos
             Height          =   255
             Left            =   -64000
             TabIndex        =   150
-            Top             =   1560
+            Top             =   600
             Visible         =   0   'False
             Width           =   5535
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9763
             _ExtentY        =   450
             _StockProps     =   79
@@ -2450,10 +2456,10 @@ Begin VB.Form frmCR_CatalogoCreditos
             Height          =   255
             Left            =   -64000
             TabIndex        =   151
-            Top             =   1920
+            Top             =   960
             Visible         =   0   'False
             Width           =   5535
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9763
             _ExtentY        =   450
             _StockProps     =   79
@@ -2477,7 +2483,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   3480
             Visible         =   0   'False
             Width           =   615
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1085
             _ExtentY        =   582
             _StockProps     =   77
@@ -2497,6 +2503,110 @@ Begin VB.Form frmCR_CatalogoCreditos
             Appearance      =   6
             UseVisualStyle  =   0   'False
          End
+         Begin XtremeSuiteControls.CheckBox chkCPH 
+            Height          =   255
+            Index           =   0
+            Left            =   -63160
+            TabIndex        =   160
+            ToolTipText     =   "Indicador de Comportamiento de Pago Histórico (CPH), se encuentran definidos en el Acuerdo SUGEF 1-05 y sus Lineamientos Generales"
+            Top             =   1920
+            Visible         =   0   'False
+            Width           =   3615
+            _Version        =   1572864
+            _ExtentX        =   6376
+            _ExtentY        =   450
+            _StockProps     =   79
+            Caption         =   "Permite CPH 1"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Appearance      =   16
+         End
+         Begin XtremeSuiteControls.CheckBox chkCPH 
+            Height          =   255
+            Index           =   1
+            Left            =   -63160
+            TabIndex        =   161
+            ToolTipText     =   "Indicador de Comportamiento de Pago Histórico (CPH), se encuentran definidos en el Acuerdo SUGEF 1-05 y sus Lineamientos Generales"
+            Top             =   2280
+            Visible         =   0   'False
+            Width           =   3615
+            _Version        =   1572864
+            _ExtentX        =   6376
+            _ExtentY        =   450
+            _StockProps     =   79
+            Caption         =   "Permite CPH 2"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Appearance      =   16
+         End
+         Begin XtremeSuiteControls.CheckBox chkCPH 
+            Height          =   255
+            Index           =   2
+            Left            =   -63160
+            TabIndex        =   162
+            ToolTipText     =   "Indicador de Comportamiento de Pago Histórico (CPH), se encuentran definidos en el Acuerdo SUGEF 1-05 y sus Lineamientos Generales"
+            Top             =   2640
+            Visible         =   0   'False
+            Width           =   3615
+            _Version        =   1572864
+            _ExtentX        =   6376
+            _ExtentY        =   450
+            _StockProps     =   79
+            Caption         =   "Permite CPH 3"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Appearance      =   16
+         End
+         Begin XtremeSuiteControls.Label Label5 
+            Height          =   375
+            Index           =   3
+            Left            =   -64000
+            TabIndex        =   159
+            Top             =   1440
+            Visible         =   0   'False
+            Width           =   5295
+            _Version        =   1572864
+            _ExtentX        =   9340
+            _ExtentY        =   661
+            _StockProps     =   79
+            Caption         =   "Valida CPH a asociados sin historial crediticio interno (48 meses)"
+            ForeColor       =   16711680
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   -1  'True
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Transparent     =   -1  'True
+            WordWrap        =   -1  'True
+         End
          Begin XtremeSuiteControls.Label Label5 
             Height          =   375
             Index           =   2
@@ -2505,7 +2615,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   3480
             Visible         =   0   'False
             Width           =   4095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7223
             _ExtentY        =   661
             _StockProps     =   79
@@ -2530,7 +2640,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   3600
             Visible         =   0   'False
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   661
             _StockProps     =   79
@@ -2555,7 +2665,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   1920
             Visible         =   0   'False
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   450
             _StockProps     =   79
@@ -2579,7 +2689,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   2880
             Visible         =   0   'False
             Width           =   2055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3625
             _ExtentY        =   450
             _StockProps     =   79
@@ -2602,14 +2712,14 @@ Begin VB.Form frmCR_CatalogoCreditos
             Top             =   3360
             Visible         =   0   'False
             Width           =   8895
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   15684
             _ExtentY        =   656
             _StockProps     =   14
             Caption         =   "Lista de documentación requerida para los créditos y solicitudes en línea (Adjuntos)"
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
-               Size            =   9
+               Size            =   8.93
                Charset         =   0
                Weight          =   700
                Underline       =   0   'False
@@ -2668,7 +2778,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             TabIndex        =   71
             Top             =   360
             Width           =   4095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7223
             _ExtentY        =   661
             _StockProps     =   14
@@ -2691,7 +2801,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             TabIndex        =   70
             Top             =   360
             Width           =   3975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7011
             _ExtentY        =   661
             _StockProps     =   14
@@ -2714,14 +2824,14 @@ Begin VB.Form frmCR_CatalogoCreditos
             TabIndex        =   69
             Top             =   360
             Width           =   3732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6583
             _ExtentY        =   656
             _StockProps     =   14
             Caption         =   "Características"
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
-               Size            =   9
+               Size            =   8.93
                Charset         =   0
                Weight          =   700
                Underline       =   0   'False
@@ -3052,12 +3162,11 @@ Begin VB.Form frmCR_CatalogoCreditos
       End
       Begin XtremeSuiteControls.TabControl tcRangos 
          Height          =   5895
-         Left            =   -70000
+         Left            =   0
          TabIndex        =   6
          Top             =   360
-         Visible         =   0   'False
          Width           =   11775
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   20770
          _ExtentY        =   10398
          _StockProps     =   68
@@ -3072,8 +3181,7 @@ Begin VB.Form frmCR_CatalogoCreditos
          EndProperty
          Appearance      =   4
          Color           =   32
-         ItemCount       =   2
-         SelectedItem    =   1
+         ItemCount       =   4
          Item(0).Caption =   "General"
          Item(0).ControlCount=   13
          Item(0).Control(0)=   "chkRngTasaDestino"
@@ -3092,11 +3200,19 @@ Begin VB.Form frmCR_CatalogoCreditos
          Item(1).Caption =   "Rangos Base"
          Item(1).ControlCount=   1
          Item(1).Control(0)=   "vGrid"
+         Item(2).Caption =   "Rangos por Liquidez"
+         Item(2).ControlCount=   1
+         Item(2).Control(0)=   "gLiquidez"
+         Item(3).Caption =   "Comités: Estudio de Crédito"
+         Item(3).ControlCount=   2
+         Item(3).Control(0)=   "gComites"
+         Item(3).Control(1)=   "Label10"
          Begin FPSpreadADO.fpSpread vGrid 
             Height          =   5415
-            Left            =   120
+            Left            =   -69880
             TabIndex        =   7
             Top             =   480
+            Visible         =   0   'False
             Width           =   11415
             _Version        =   524288
             _ExtentX        =   20135
@@ -3119,12 +3235,11 @@ Begin VB.Form frmCR_CatalogoCreditos
          End
          Begin XtremeSuiteControls.CheckBox chkRngTasaDestino 
             Height          =   255
-            Left            =   -69670
+            Left            =   330
             TabIndex        =   10
             Top             =   720
-            Visible         =   0   'False
             Width           =   4695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8276
             _ExtentY        =   444
             _StockProps     =   79
@@ -3145,12 +3260,11 @@ Begin VB.Form frmCR_CatalogoCreditos
          End
          Begin XtremeSuiteControls.CheckBox chkRngTBP 
             Height          =   255
-            Left            =   -69670
+            Left            =   330
             TabIndex        =   11
             Top             =   1080
-            Visible         =   0   'False
             Width           =   4695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8276
             _ExtentY        =   444
             _StockProps     =   79
@@ -3171,13 +3285,12 @@ Begin VB.Form frmCR_CatalogoCreditos
          End
          Begin XtremeSuiteControls.ComboBox cboMoraTipo 
             Height          =   312
-            Left            =   -64996
+            Left            =   5004
             TabIndex        =   12
             Top             =   2280
-            Visible         =   0   'False
             Width           =   3252
-            _Version        =   1441793
-            _ExtentX        =   5741
+            _Version        =   1572864
+            _ExtentX        =   5715
             _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   1973790
@@ -3198,12 +3311,11 @@ Begin VB.Form frmCR_CatalogoCreditos
          End
          Begin XtremeSuiteControls.FlatEdit txtTasaMora 
             Height          =   330
-            Left            =   -65716
+            Left            =   4284
             TabIndex        =   13
             Top             =   2280
-            Visible         =   0   'False
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   582
             _StockProps     =   77
@@ -3225,12 +3337,11 @@ Begin VB.Form frmCR_CatalogoCreditos
          End
          Begin XtremeSuiteControls.FlatEdit txtRngPuntosAdicionalesTBP 
             Height          =   330
-            Left            =   -65716
+            Left            =   4284
             TabIndex        =   14
             Top             =   1560
-            Visible         =   0   'False
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   582
             _StockProps     =   77
@@ -3252,12 +3363,11 @@ Begin VB.Form frmCR_CatalogoCreditos
          End
          Begin XtremeSuiteControls.CheckBox chkTasaFija_TBP_Apl 
             Height          =   255
-            Left            =   -69670
+            Left            =   330
             TabIndex        =   94
             Top             =   3000
-            Visible         =   0   'False
             Width           =   4695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8281
             _ExtentY        =   450
             _StockProps     =   79
@@ -3278,12 +3388,11 @@ Begin VB.Form frmCR_CatalogoCreditos
          End
          Begin XtremeSuiteControls.FlatEdit txtTasaFija_TBP_Pts 
             Height          =   330
-            Left            =   -65710
+            Left            =   4290
             TabIndex        =   95
             Top             =   3510
-            Visible         =   0   'False
             Width           =   735
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   582
             _StockProps     =   77
@@ -3305,12 +3414,11 @@ Begin VB.Form frmCR_CatalogoCreditos
          End
          Begin XtremeSuiteControls.FlatEdit txtTasaFija_Plazo 
             Height          =   330
-            Left            =   -65710
+            Left            =   4290
             TabIndex        =   136
             Top             =   4230
-            Visible         =   0   'False
             Width           =   735
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   582
             _StockProps     =   77
@@ -3330,15 +3438,93 @@ Begin VB.Form frmCR_CatalogoCreditos
             Appearance      =   6
             UseVisualStyle  =   0   'False
          End
+         Begin FPSpreadADO.fpSpread gLiquidez 
+            Height          =   5415
+            Left            =   -69880
+            TabIndex        =   156
+            Top             =   480
+            Visible         =   0   'False
+            Width           =   11415
+            _Version        =   524288
+            _ExtentX        =   20135
+            _ExtentY        =   9551
+            _StockProps     =   64
+            BackColorStyle  =   1
+            BorderStyle     =   0
+            EditEnterAction =   5
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            MaxCols         =   4
+            SpreadDesigner  =   "frmCR_CatalogoCreditos.frx":8597
+            AppearanceStyle =   1
+         End
+         Begin FPSpreadADO.fpSpread gComites 
+            Height          =   4935
+            Left            =   -69280
+            TabIndex        =   157
+            Top             =   1080
+            Visible         =   0   'False
+            Width           =   10095
+            _Version        =   524288
+            _ExtentX        =   17806
+            _ExtentY        =   8705
+            _StockProps     =   64
+            BorderStyle     =   0
+            EditEnterAction =   5
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            MaxCols         =   5
+            RowHeaderDisplay=   0
+            ScrollBars      =   2
+            SpreadDesigner  =   "frmCR_CatalogoCreditos.frx":8FD0
+            AppearanceStyle =   1
+         End
+         Begin XtremeSuiteControls.Label Label10 
+            Height          =   495
+            Left            =   -69280
+            TabIndex        =   158
+            Top             =   480
+            Visible         =   0   'False
+            Width           =   9855
+            _Version        =   1572864
+            _ExtentX        =   17383
+            _ExtentY        =   873
+            _StockProps     =   79
+            Caption         =   $"frmCR_CatalogoCreditos.frx":9638
+            ForeColor       =   16711680
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            WordWrap        =   -1  'True
+         End
          Begin XtremeSuiteControls.Label Label9 
             Height          =   375
             Index           =   2
-            Left            =   -64840
+            Left            =   5160
             TabIndex        =   149
             Top             =   4200
-            Visible         =   0   'False
             Width           =   3015
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5318
             _ExtentY        =   661
             _StockProps     =   79
@@ -3357,12 +3543,11 @@ Begin VB.Form frmCR_CatalogoCreditos
          Begin XtremeSuiteControls.Label Label9 
             Height          =   375
             Index           =   1
-            Left            =   -68920
+            Left            =   1080
             TabIndex        =   148
             Top             =   4200
-            Visible         =   0   'False
             Width           =   3015
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5318
             _ExtentY        =   661
             _StockProps     =   79
@@ -3382,12 +3567,11 @@ Begin VB.Form frmCR_CatalogoCreditos
          Begin XtremeSuiteControls.Label Label9 
             Height          =   375
             Index           =   0
-            Left            =   -68920
+            Left            =   1080
             TabIndex        =   147
             Top             =   3600
-            Visible         =   0   'False
             Width           =   3015
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5318
             _ExtentY        =   661
             _StockProps     =   79
@@ -3418,10 +3602,9 @@ Begin VB.Form frmCR_CatalogoCreditos
             EndProperty
             Height          =   375
             Index           =   3
-            Left            =   -69400
+            Left            =   600
             TabIndex        =   16
             Top             =   1530
-            Visible         =   0   'False
             Width           =   3495
             WordWrap        =   -1  'True
          End
@@ -3439,10 +3622,9 @@ Begin VB.Form frmCR_CatalogoCreditos
             EndProperty
             Height          =   612
             Index           =   5
-            Left            =   -69880
+            Left            =   120
             TabIndex        =   15
             Top             =   2136
-            Visible         =   0   'False
             Width           =   3852
          End
       End
@@ -3453,7 +3635,7 @@ Begin VB.Form frmCR_CatalogoCreditos
          Top             =   5520
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   868
          _StockProps     =   79
@@ -3469,7 +3651,7 @@ Begin VB.Form frmCR_CatalogoCreditos
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmCR_CatalogoCreditos.frx":8597
+         Picture         =   "frmCR_CatalogoCreditos.frx":96ED
          ImageAlignment  =   0
       End
       Begin FPSpreadADO.fpSpread vGridAsg 
@@ -3497,7 +3679,7 @@ Begin VB.Form frmCR_CatalogoCreditos
          EndProperty
          MaxCols         =   497
          ScrollBars      =   2
-         SpreadDesigner  =   "frmCR_CatalogoCreditos.frx":8CB0
+         SpreadDesigner  =   "frmCR_CatalogoCreditos.frx":9E06
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
@@ -3508,7 +3690,7 @@ Begin VB.Form frmCR_CatalogoCreditos
          Top             =   5520
          Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   868
          _StockProps     =   79
@@ -3523,7 +3705,7 @@ Begin VB.Form frmCR_CatalogoCreditos
             Strikethrough   =   0   'False
          EndProperty
          Appearance      =   16
-         Picture         =   "frmCR_CatalogoCreditos.frx":9D4C
+         Picture         =   "frmCR_CatalogoCreditos.frx":AEA2
       End
    End
    Begin VB.Timer TimerX 
@@ -3549,7 +3731,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       TabIndex        =   2
       Top             =   840
       Width           =   972
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1714
       _ExtentY        =   550
       _StockProps     =   77
@@ -3574,7 +3756,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       TabIndex        =   3
       Top             =   840
       Width           =   6492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   11451
       _ExtentY        =   550
       _StockProps     =   77
@@ -3688,7 +3870,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       ToolTipText     =   "Requisitos"
       Top             =   36
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   550
       _StockProps     =   79
@@ -3704,7 +3886,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       EndProperty
       TextAlignment   =   1
       Appearance      =   6
-      Picture         =   "frmCR_CatalogoCreditos.frx":A52B
+      Picture         =   "frmCR_CatalogoCreditos.frx":B681
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnAccesoDirecto 
@@ -3715,7 +3897,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       ToolTipText     =   "Cargos Adicionales"
       Top             =   36
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   550
       _StockProps     =   79
@@ -3731,7 +3913,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       EndProperty
       TextAlignment   =   1
       Appearance      =   6
-      Picture         =   "frmCR_CatalogoCreditos.frx":AC52
+      Picture         =   "frmCR_CatalogoCreditos.frx":BDA8
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnAccesoDirecto 
@@ -3742,7 +3924,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       ToolTipText     =   "Recursos Presupuestarios"
       Top             =   36
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   550
       _StockProps     =   79
@@ -3758,7 +3940,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       EndProperty
       TextAlignment   =   1
       Appearance      =   6
-      Picture         =   "frmCR_CatalogoCreditos.frx":B339
+      Picture         =   "frmCR_CatalogoCreditos.frx":C48F
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnAccesoDirecto 
@@ -3769,7 +3951,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       ToolTipText     =   "Carteras de Crédito y Cobro"
       Top             =   36
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   550
       _StockProps     =   79
@@ -3785,7 +3967,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       EndProperty
       TextAlignment   =   1
       Appearance      =   6
-      Picture         =   "frmCR_CatalogoCreditos.frx":BA59
+      Picture         =   "frmCR_CatalogoCreditos.frx":CBAF
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnAccesoDirecto 
@@ -3796,7 +3978,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       ToolTipText     =   "Tipos de Garantías"
       Top             =   36
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   550
       _StockProps     =   79
@@ -3812,7 +3994,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       EndProperty
       TextAlignment   =   1
       Appearance      =   6
-      Picture         =   "frmCR_CatalogoCreditos.frx":C172
+      Picture         =   "frmCR_CatalogoCreditos.frx":D2C8
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnAccesoDirecto 
@@ -3823,7 +4005,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       ToolTipText     =   "Niveles de Resolución"
       Top             =   36
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   550
       _StockProps     =   79
@@ -3839,7 +4021,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       EndProperty
       TextAlignment   =   1
       Appearance      =   6
-      Picture         =   "frmCR_CatalogoCreditos.frx":C879
+      Picture         =   "frmCR_CatalogoCreditos.frx":D9CF
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnAccesoDirecto 
@@ -3850,7 +4032,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       ToolTipText     =   "Prioridades de Deducción por Línea"
       Top             =   36
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   550
       _StockProps     =   79
@@ -3866,7 +4048,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       EndProperty
       TextAlignment   =   1
       Appearance      =   6
-      Picture         =   "frmCR_CatalogoCreditos.frx":CFA0
+      Picture         =   "frmCR_CatalogoCreditos.frx":E0F6
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnAccesoDirecto 
@@ -3877,7 +4059,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       ToolTipText     =   "Prioridades de Deducción por Línea"
       Top             =   40
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   550
       _StockProps     =   79
@@ -3893,7 +4075,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       EndProperty
       TextAlignment   =   1
       Appearance      =   6
-      Picture         =   "frmCR_CatalogoCreditos.frx":D5C4
+      Picture         =   "frmCR_CatalogoCreditos.frx":E71A
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.CheckBox chkFiltraActivas 
@@ -3902,7 +4084,7 @@ Begin VB.Form frmCR_CatalogoCreditos
       TabIndex        =   144
       Top             =   480
       Width           =   1335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2355
       _ExtentY        =   450
       _StockProps     =   79
@@ -3926,13 +4108,13 @@ Begin VB.Form frmCR_CatalogoCreditos
       TabIndex        =   80
       Top             =   0
       Width           =   12732
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   22458
       _ExtentY        =   674
       _StockProps     =   14
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   8.41
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -4520,11 +4702,11 @@ Select Case pSheet
         Do While Not rs.EOF
           .MaxRows = .MaxRows + 1
           .Row = .MaxRows
-          .col = 1
+          .Col = 1
           .Text = rs!cod_destino
-          .col = 2
+          .Col = 2
           .Text = rs!Descripcion
-          .col = 3
+          .Col = 3
           .Value = IIf(IsNull(rs!Existe), 0, 1)
           rs.MoveNext
         Loop
@@ -4542,15 +4724,15 @@ Select Case pSheet
         Do While Not rs.EOF
           .MaxRows = .MaxRows + 1
           .Row = .MaxRows
-          .col = 1
+          .Col = 1
           .Text = rs!COD_CARGO
-          .col = 2
+          .Col = 2
           .Text = rs!Descripcion
-          .col = 3
+          .Col = 3
           .Text = IIf((rs!Tipo = "P"), "Porcentual", "Monto")
-          .col = 4
+          .Col = 4
           .Text = CStr(Format(rs!Valor, "##,###,##0.0000"))
-          .col = 5
+          .Col = 5
           .Value = IIf(IsNull(rs!Existe), 0, 1)
           rs.MoveNext
         Loop
@@ -4569,13 +4751,13 @@ Select Case pSheet
         Do While Not rs.EOF
           .MaxRows = .MaxRows + 1
           .Row = .MaxRows
-          .col = 1
+          .Col = 1
           .Text = rs!COD_REQUISITO
-          .col = 2
+          .Col = 2
           .Text = rs!Descripcion
-          .col = 3
+          .Col = 3
           .Value = rs!OpcionalX
-          .col = 4
+          .Col = 4
           .Value = IIf(IsNull(rs!Existe), 0, 1)
           rs.MoveNext
         Loop
@@ -4594,11 +4776,11 @@ Select Case pSheet
         Do While Not rs.EOF
           .MaxRows = .MaxRows + 1
           .Row = .MaxRows
-          .col = 1
+          .Col = 1
           .Text = rs!Cod_Grupo
-          .col = 2
+          .Col = 2
           .Text = rs!Descripcion
-          .col = 3
+          .Col = 3
           .Value = IIf(IsNull(rs!Existe), 0, 1)
           rs.MoveNext
         Loop
@@ -4617,11 +4799,11 @@ Select Case pSheet
         Do While Not rs.EOF
           .MaxRows = .MaxRows + 1
           .Row = .MaxRows
-          .col = 1
+          .Col = 1
           .Text = rs!COD_CLASIFICACION
-          .col = 2
+          .Col = 2
           .Text = rs!Descripcion
-          .col = 3
+          .Col = 3
           .Value = IIf(IsNull(rs!Existe), 0, 1)
           rs.MoveNext
         Loop
@@ -4642,11 +4824,11 @@ Select Case pSheet
         Do While Not rs.EOF
           .MaxRows = .MaxRows + 1
           .Row = .MaxRows
-          .col = 1
+          .Col = 1
           .Text = rs!Codigo
-          .col = 2
+          .Col = 2
           .Text = rs!Descripcion
-          .col = 3
+          .Col = 3
           .Value = IIf(IsNull(rs!Existe), 0, 1)
           rs.MoveNext
         Loop
@@ -4772,7 +4954,7 @@ Do While Not rs.EOF
   vGrid.Row = vGrid.MaxRows
   For i = 1 To vGrid.MaxCols
   
-    vGrid.col = i
+    vGrid.Col = i
     Select Case i
        Case 1 'Garantia
             vGrid.CellTag = rs!Garantia
@@ -4780,7 +4962,7 @@ Do While Not rs.EOF
             
             vGrid.TextTip = TextTipFixed
             vGrid.TextTipDelay = 1000
-            vGrid.CellNote = "Registro : " & rs!Registro_Usuario & "[" & rs!Registro_Fecha & "]" & vbCrLf _
+            vGrid.CellNote = "Registro : " & rs!REGISTRO_USUARIO & "[" & rs!REGISTRO_FECHA & "]" & vbCrLf _
                            & "Actualizado: " & rs!Actualiza_usuario & "[" & rs!Actualiza_fecha & "]"
             
        Case 2 'Utiliza Tasa Garantia
@@ -4819,6 +5001,64 @@ End Sub
 
 
 
+
+Private Sub gComites_KeyDown(KeyCode As Integer, Shift As Integer)
+
+If vPaso Then Exit Sub
+
+Dim strSQL As String, rs As New ADODB.Recordset
+
+On Error GoTo vError
+
+If KeyCode = vbKeyReturn And gComites.ActiveCol = gComites.MaxCols Then
+
+    Me.MousePointer = vbHourglass
+    
+    Dim pId As Long, pDetalle As String, pValor As Currency, pIdComite As Long
+    
+    With gComites
+      .Row = .ActiveRow
+      .Col = 1
+      pId = IIf(.Text = "", 0, .Text)
+      .Col = 3
+      pIdComite = .Text
+      .Col = 4
+      pDetalle = .Text
+      .Col = 5
+      pValor = CCur(.Text)
+
+    
+        strSQL = "exec spCrd_ComitesPreanalisis_Add " & pId & ", '" & txtCodigoCorriente.Text & "', " & pIdComite & ", " & pValor _
+               & ", '" & glogon.Usuario & "'"
+        Call OpenRecordSet(rs, strSQL)
+        If pId = 0 Then
+            .Col = 1
+            .Text = CStr(rs!Id)
+            .Col = 2
+            .Text = txtCodigoCorriente.Text
+        End If
+        
+    
+        .Col = 1
+        pDetalle = "Config: Porc. Extras [Línea: " & txtCodigoCorriente.Text & ", Id Reg: " & .Text & "...Comite: " & pDetalle & "] Porc: " & Format(pValor, "Standard")
+    
+    End With
+    
+    Call Bitacora(IIf(pId = 0, "Registra", "Modifica"), pDetalle)
+    
+    Me.MousePointer = vbDefault
+
+    MsgBox "Porcentaje " & " > " & IIf(pId = 0, "Registrado", "Modificado") & " satisfactoriamente!", vbInformation
+End If
+
+Exit Sub
+
+vError:
+  Me.MousePointer = vbDefault
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+
+End Sub
 
 Private Sub lswEstados_ItemCheck(ByVal Item As XtremeSuiteControls.ListViewItem)
 Dim strSQL As String, vMovimiento As String
@@ -4921,13 +5161,13 @@ With vgDocAdjunto
     Do While Not rs.EOF
       .MaxRows = .MaxRows + 1
       .Row = .MaxRows
-      .col = 1
+      .Col = 1
       .Text = rs!COD_ADJUNTO
-      .col = 2
+      .Col = 2
       .Text = rs!Descripcion
-      .col = 3
+      .Col = 3
       .Value = rs!OpcionalX
-      .col = 4
+      .Col = 4
       .Value = IIf(IsNull(rs!Existe), 0, 1)
       rs.MoveNext
     Loop
@@ -4953,10 +5193,33 @@ End If
 
 End Sub
 
+Private Sub sbComites_Liquidez_List()
+Dim strSQL As String
+
+On Error GoTo vError
+
+strSQL = "exec spCRD_ComitesPreanalisis_Consulta '" & txtCodigoCorriente.Text & "'"
+Call sbCargaGrid(gComites, 5, strSQL)
+
+'Quita la Ultima Linea en Blanco
+gComites.MaxRows = gComites.MaxRows - 1
+
+Exit Sub
+
+vError:
+
+
+End Sub
+
 Private Sub tcRangos_SelectedChanged(ByVal Item As XtremeSuiteControls.ITabControlItem)
-If Item.Index = 1 Then
+Select Case Item.Index
+  Case 1
     Call sbCargaRangos(1)
-End If
+  Case 2 'Rangos de Liquidez
+    'Call xxx
+  Case 3 'Comites Liquidez
+    Call sbComites_Liquidez_List
+End Select
 End Sub
 
 Private Sub TimerX_Timer()
@@ -5452,6 +5715,27 @@ If Not rs.EOF And Not rs.BOF Then
  Call sbCargaEstados
  Call sbCargaGarantias
  
+ 'Carga los CPH
+ 
+ chkCPH(0).Value = xtpUnchecked
+ chkCPH(1).Value = xtpUnchecked
+ chkCPH(2).Value = xtpUnchecked
+
+ strSQL = "select COD_CPH from CRD_FORMULARIO_CPH WHERE COD_LINEA = '" & txtCodigoCorriente.Text & "'"
+ Call OpenRecordSet(rs, strSQL)
+ Do While Not rs.EOF
+   Select Case rs!Cod_CPH
+    Case 1
+        chkCPH(0).Value = xtpChecked
+    Case 2
+        chkCPH(1).Value = xtpChecked
+    Case 3
+        chkCPH(2).Value = xtpChecked
+   End Select
+   
+   rs.MoveNext
+ Loop
+ 
 Else
  
  MsgBox "Código no existe en la Base de Datos", vbOKOnly
@@ -5729,55 +6013,6 @@ Call ConectionExecute(strSQL)
 Select Case intEdita
  Case 0 'Inserta
  
- 
-'
-'    iPrioridad = fxPrioridad("A")
-'    If chkRetencion.Value = 1 Then iPrioridad = fxPrioridad("R")
-'    If chkCodigoPoliza.Value = 1 Then iPrioridad = fxPrioridad("P")
-'
-'    strSQL = "insert into catalogo(codigo, codigoa, descripcion, id_comite, tramite" _
-'           & ", premio, convenio, refunde, poliza, retencion, AceptaRefun, casos, prioridad, moneda, TramiteDias" _
-'           & ", fechaCorte, FechaCorteAlterna, refunde_tipo, refunde_porc, operaciones_activas" _
-'           & ", cod_institucion, primer_cuota, PideCheque, Activo, Liq_TipoAumento, Liq_Valor, TBP_Utiliza, TBP_Adicional, Tasa_Destino, TASA_MORA_ADD, Tasa_Mora_Tipo" _
-'           & ", Linea_Interna, Visible_EC, Genera_Mora, MovCajas, WebSite, Notas, Cobertura, PORC_CARGO_CANCELACION, Requisitos_Tipo" _
-'           & ", Base_Calculo,COBRO_TIPO_APLICACION,ANTICIPO_MESES,RETENCION_MUESTRA_SALDO" _
-'           & ", Revolutiva,Revolutiva_Tope_Retiros,Revolutiva_Estudio,Revolutiva_Plan_Ahorro_Utiliza,Revolutiva_Plan_Ahorro,DEDUC_CODIGO_ALTER,Permite_PersonaEnCbrJud" _
-'           & ", Reserva_Aplica, Reserva_Facial_Flat, Reserva_Mora_Apl, Reserva_Codigo , Reserva_Monto_Minimo, Oficina_Linea,Oficina_Codigo" _
-'           & ", FORMA_PAGO_POS, FORMA_PAGO_WEB, FILTRA_REFUNDIBLES, MEMBRESIA_MESES, AUTO_GESTION_TIPO, AUTO_GESTION_LMAX" _
-'           & ", GIRO_AUTOMATICO, GIRO_MONTO_BASE, GIRO_MINIMO, GIRO_MAX_TRANSAC, REFUNDE_AUTO, REFUNDE_AUMENTA_BASE, IMPUESTO" _
-'           & ", MOV_SINPE, MOV_SINPE_TIPOS, TASA_FIJA_X_TBP, TASA_FIJA_X_TBP_PUNTOS_ADD, PLAZO_TASA_FIJA, ID_REQ_SUPERVISION, MONTO_SUPERVISION, PORC_ANTICIPO_EXT" _
-'           & ", IND_MOV_APLICA_BONIF, IND_PAGO_OP_APLICACION, IND_READECUA, IND_MONTO_MAX, IND_EDAD_PENSION_EST, IND_EDAD_PENSION_FOR" _
-'           & ", IND_NOTIFICA_CLI_FORMALIZA, IND_NOTIFICA_CLI_CANCELA, REGISTRO_FECHA, REGISTRO_USUARIO)"
-'
-'
-'    strSQL = strSQL & " values('" & txtCodigoCorriente.Text & "','" & mCodigoAlterno & "','" & txtDescripcion _
-'           & "'," & cboComite.ItemData(cboComite.ListIndex) & ",'" & strTramite & "',0,'" & IIf((chkConvenio.Value = 1), "S", "N") _
-'           & "','" & IIf((chkRefundeOtraOperacion.Value = 1), "S", "N") & "','" & IIf((chkCodigoPoliza.Value = 1), "S", "N") _
-'           & "','" & IIf((chkRetencion.Value = 1), "S", "N") & "','" & IIf((chkAceptaRefundicion.Value = 1), "S", "N") _
-'           & "',0," & iPrioridad & ",'" & cboMoneda.ItemData(cboMoneda.ListIndex) & "'," & txtDias & ",'" & Format(dtpFechaCorte.Value, "yyyy/mm/dd") _
-'           & "','" & IIf((chkFechaCorte.Value = 1), "S", "N") & "','" & IIf(Mid(cboTipoRefun.Text, 1, 2) = "01", "P", "M") _
-'           & "','" & txtPorcRefun.Text & "'," & txtNumOperaciones & "," & cboInstitucion.ItemData(cboInstitucion.ListIndex) & ",'" & IIf((chkPrimerCuota.Value = 1), "S", "N") _
-'           & "','" & IIf((chkPideCheque.Value = 1), "S", "N") & "'," & chkActivo.Value & ",'" & IIf(Mid(cboLiqTasa.Text, 1, 1) = "A", "P", "F") _
-'           & "'," & txtLiqValor.Text & "," & chkRngTBP.Value & "," & txtRngPuntosAdicionalesTBP.Text & "," & chkRngTasaDestino.Value _
-'           & "," & CCur(txtTasaMora) & ",'" & vMoraTipo & "'," & chkLineaInterna.Value & "," & chkLineaVisibleEC.Value & "," & chkLineaMora.Value _
-'           & "," & chkAceptaMovCajas.Value & "," & chkWebSite.Value & ",'" & txtNotas.Text & "'," & chkCobertura.Value _
-'           & "," & txtPorcCancelacion.Text & ",'" & Mid(cboRequisitos.Text, 1, 1) & "','" & vBaseCalculo _
-'           & "','" & Mid(cboMetodoCancelaCuotas.Text, 1, 1) & "'," & txtAnticipoMesesPenalizados.Text & "," & chkRetencionSaldo.Value _
-'           & "," & chkRevLinea.Value & "," & chkRevTopeRetiros.Value & "," & chkRevEstudio.Value & "," & chkRevPlanAhorros.Value _
-'           & ",'" & txtRevPlanAhorro.Text & "'," & chkCodigoAlterno.Value & "," & chkPermite_PersonaEnCbrJud.Value _
-'           & "," & chkReserva_Aplica.Value & "," & chkReserva_Flat.Value & "," & chkReserva_Mora.Value & ",'" & txtReserva_Plan.Text
-'
-'
-'     strSQL = strSQL & "'," & CCur(txtReserva_MontoMin.Text) & "," & chkOficinaLinea.Value & "," & IIf((Trim(txtOficina.Text) = ""), "Null", "'" & txtOficina.Text & "'") _
-'            & "," & chkFP_POS.Value & "," & chkFP_Web.Value & "," & chkListaRefundibles.Value & "," & txtMembresia.Text _
-'            & ",'" & vGestionTipo & "'," & chkGirosPorLinea.Value & ", " & chkGirosBancos.Value & ", " & CCur(txtGirosMntTraslado.Text) & ", " & CCur(txtGiroMinimo.Text) _
-'            & ", " & CCur(txtGiroMaxTransac.Text) & ", " & chkRefundeAuto.Value & ", " & chkRefundeAumentaBase.Value & ", 0" _
-'            & ", " & chkSINPE.Value & ", " & cboSinpe.ItemData(cboSinpe.ListIndex) & ", " & chkTasaFija_TBP_Apl.Value & ", " & CCur(txtTasaFija_TBP_Pts.Text) _
-'            & ", " & txtTasaFija_Plazo.Text & ", " & chkSupervision.Value & ", " & CCur(txtSupervisionMonto.Text) & ", " & CCur(txtAnticipo_Extraordinario_Porc.Text) _
-'            & ", " & chkBonifica.Value & ", " & chkPago_Activa.Value & ", " & chkReadecua.Value & ", " & chkMntMax.Value & ", " & chkEdadPension_Estudio.Value & ", " & chkEdadPension_Formalizacion.Value _
-'            & ", " & chkNotifica_Formaliza.Value & ", " & chkNotifica_Cancela.Value & ", getdate(), '" & glogon.Usuario & "')"
-'
-'    Call ConectionExecute(strSQL)
     
     Call Bitacora("Registra", "Linea de Credito : " & Trim(txtCodigoCorriente.Text))
   
@@ -5785,55 +6020,17 @@ Select Case intEdita
     Call sbCargaGarantias
   
   Case 1 'Edita
-'    strSQL = "update catalogo set descripcion = '" & txtDescripcion.Text & "', id_comite = " & cboComite.ItemData(cboComite.ListIndex) & ", tramite = '" & strTramite & "'" _
-'             & ", convenio = '" & IIf((chkConvenio.Value = 1), "S", "N") & "', DEDUC_CODIGO_ALTER = " & chkCodigoAlterno.Value _
-'             & ", poliza = '" & IIf((chkCodigoPoliza.Value = 1), "S", "N") & "'" _
-'             & ", refunde = '" & IIf((chkRefundeOtraOperacion.Value = 1), "S", "N") & "'" _
-'             & ", Aceptarefun = '" & IIf((chkAceptaRefundicion.Value = 1), "S", "N") & "'" _
-'             & ", retencion = '" & IIf((chkRetencion.Value = 1), "S", "N") & "', RETENCION_MUESTRA_SALDO = " & chkRetencionSaldo.Value _
-'             & ", primer_cuota = '" & IIf((chkPrimerCuota.Value = 1), "S", "N") & "'" _
-'             & ", fechaCorteAlterna = '" & IIf((chkFechaCorte.Value = 1), "S", "N") & "'" _
-'             & ", fechaCorte = '" & Format(dtpFechaCorte, "yyyy/mm/dd") & "'" _
-'             & ", moneda = '" & cboMoneda.ItemData(cboMoneda.ListIndex) & "', refunde_tipo = '" & IIf(Mid(cboTipoRefun, 1, 2) = "01", "P", "M") & "'" _
-'             & ", refunde_porc = " & txtPorcRefun & ", codigoa = '" & Trim(mCodigoAlterno) & "'" _
-'             & ", TramiteDias = " & txtDias & ", Operaciones_activas = " & txtNumOperaciones _
-'             & ", cod_institucion = " & cboInstitucion.ItemData(cboInstitucion.ListIndex) & ", PideCheque = '" & IIf((chkPideCheque.Value = 1), "S", "N") & "'" _
-'             & ",Activo = " & chkActivo.Value & ",LIQ_TIPOAUMENTO = '" & IIf(Mid(cboLiqTasa.Text, 1, 1) = "A", "P", "F") _
-'             & "',Liq_Valor = " & txtLiqValor & ",TBP_Utiliza = " & chkRngTBP.Value & ",TBP_Adicional = " & txtRngPuntosAdicionalesTBP.Text _
-'             & ",Tasa_Destino = " & chkRngTasaDestino.Value & ",TASA_MORA_ADD = " & CCur(txtTasaMora) & ", Tasa_Mora_Tipo ='" & vMoraTipo _
-'             & "', Linea_Interna = " & chkLineaInterna.Value & ", Requisitos_Tipo = '" & Mid(cboRequisitos.Text, 1, 1) & "'"
-'
-'     strSQL = strSQL & ",Visible_EC = " & chkLineaVisibleEC.Value & ", Genera_Mora = " & chkLineaMora.Value & ", cobertura = " & chkCobertura.Value _
-'             & ", MovCajas = " & chkAceptaMovCajas.Value & ", WebSite = " & chkWebSite.Value & ", Notas = '" & Trim(txtNotas.Text) _
-'             & "',PORC_CARGO_CANCELACION = " & txtPorcCancelacion.Text & ",Base_Calculo = '" & vBaseCalculo _
-'             & "', COBRO_TIPO_APLICACION = '" & Mid(cboMetodoCancelaCuotas.Text, 1, 1) & "', ANTICIPO_MESES = " & txtAnticipoMesesPenalizados.Text _
-'             & ", Revolutiva = " & chkRevLinea.Value & ", Revolutiva_Tope_Retiros = " & chkRevTopeRetiros.Value _
-'             & ", Revolutiva_Estudio = " & chkRevEstudio.Value & ", Revolutiva_Plan_Ahorro_Utiliza = " & chkRevPlanAhorros.Value _
-'             & ", Revolutiva_Plan_Ahorro = '" & Trim(txtRevPlanAhorro.Text) & "'" _
-'             & ", Permite_PersonaEnCbrJud = " & chkPermite_PersonaEnCbrJud.Value _
-'             & ", Reserva_Aplica = " & chkReserva_Aplica.Value & ", Reserva_Facial_Flat = " & chkReserva_Flat.Value _
-'             & ", Reserva_Mora_Apl = " & chkReserva_Mora.Value & ", Reserva_Codigo = '" & txtReserva_Plan.Text _
-'             & "', Reserva_Monto_Minimo = " & CCur(txtReserva_MontoMin.Text) _
-'             & ", Oficina_Linea = " & chkOficinaLinea.Value & ", Oficina_Codigo = " & IIf((Trim(txtOficina.Text) = ""), "Null", "'" & txtOficina.Text & "'") _
-'             & ", FORMA_PAGO_POS = " & chkFP_POS.Value & ", FORMA_PAGO_WEB = " & chkFP_Web.Value & ", FILTRA_REFUNDIBLES = " & chkListaRefundibles.Value _
-'             & ", Membresia_Meses = " & txtMembresia.Text _
-'             & ", AUTO_GESTION_TIPO = '" & vGestionTipo & "', AUTO_GESTION_LMAX = " & chkGirosPorLinea.Value _
-'             & ", GIRO_AUTOMATICO = " & chkGirosBancos.Value & ", GIRO_MONTO_BASE = " & CCur(txtGirosMntTraslado.Text) & ",  GIRO_MINIMO = " & CCur(txtGiroMinimo.Text) _
-'             & ", GIRO_MAX_TRANSAC = " & CCur(txtGiroMaxTransac.Text) & ", REFUNDE_AUTO = " & chkRefundeAuto.Value & ", REFUNDE_AUMENTA_BASE = " & chkRefundeAumentaBase.Value _
-'
-'     strSQL = strSQL & ", MOV_SINPE = " & chkSINPE.Value & ", MOV_SINPE_TIPOS = " & cboSinpe.ItemData(cboSinpe.ListIndex) _
-'             & ", TASA_FIJA_X_TBP = " & chkTasaFija_TBP_Apl.Value & ", TASA_FIJA_X_TBP_PUNTOS_ADD = " & CCur(txtTasaFija_TBP_Pts.Text) & ", PLAZO_TASA_FIJA = " & txtTasaFija_Plazo.Text _
-'             & ", ID_REQ_SUPERVISION = " & chkSupervision.Value & ", MONTO_SUPERVISION = " & CCur(txtSupervisionMonto.Text) & ", PORC_ANTICIPO_EXT = " & CCur(txtAnticipo_Extraordinario_Porc.Text) _
-'             & ", IND_MOV_APLICA_BONIF = " & chkBonifica.Value & ", IND_PAGO_OP_APLICACION = " & chkPago_Activa.Value & ", IND_READECUA = " & chkReadecua.Value _
-'             & ", IND_MONTO_MAX = " & chkMntMax.Value & ", IND_EDAD_PENSION_EST = " & chkEdadPension_Estudio.Value & ", IND_EDAD_PENSION_FOR = " & chkEdadPension_Formalizacion.Value _
-'             & ", IND_NOTIFICA_CLI_FORMALIZA = " & chkNotifica_Formaliza.Value & ", IND_NOTIFICA_CLI_CANCELA = " & chkNotifica_Cancela.Value _
-'             & ", MODIFICA_FECHA = getdate(), REGISTRO_USUARIO = '" & glogon.Usuario & "'" _
-'             & " where codigo = '" & txtCodigoCorriente.Text & "'"
-'    Call ConectionExecute(strSQL)
     
     Call Bitacora("Modifica", "Linea de Credito : " & Trim(txtCodigoCorriente))
     
 End Select
+
+'Registro de los CPH
+strSQL = "exec spCrd_Catalogo_CPH '" & txtCodigoCorriente.Text & "', 1, " & chkCPH(0).Value & ", '" & glogon.Usuario & "'"
+strSQL = strSQL & Space(10) & "exec spCrd_Catalogo_CPH '" & txtCodigoCorriente.Text & "', 2, " & chkCPH(1).Value & ", '" & glogon.Usuario & "'"
+strSQL = strSQL & Space(10) & "exec spCrd_Catalogo_CPH '" & txtCodigoCorriente.Text & "', 3, " & chkCPH(2).Value & ", '" & glogon.Usuario & "'"
+Call ConectionExecute(strSQL)
+
 
 intEdita = 2
 
@@ -5886,22 +6083,22 @@ On Error GoTo vError
 fxGuardarRango = 0
 vGrid.Sheet = 1
 vGrid.Row = vGrid.ActiveRow
-vGrid.col = 1
+vGrid.Col = 1
 If vGrid.Text = "" Or vGrid.Text = "0" Then
-   vGrid.col = 2
+   vGrid.Col = 2
    strSQL = "insert into rangos(codigo,de,hasta,plazo,intc_soc,intm_soc,intc_nsoc,intm_nsoc)" _
           & " values('" & txtCodigoCorriente & "'," & CCur(vGrid.Text) & ","
-   vGrid.col = 3
+   vGrid.Col = 3
    strSQL = strSQL & CCur(vGrid.Text) & ","
-   vGrid.col = 4
+   vGrid.Col = 4
    strSQL = strSQL & vGrid.Text & ","
-   vGrid.col = 5
+   vGrid.Col = 5
    strSQL = strSQL & vGrid.Text & ","
-   vGrid.col = 6
+   vGrid.Col = 6
    strSQL = strSQL & vGrid.Text & ","
-   vGrid.col = 7
+   vGrid.Col = 7
    strSQL = strSQL & vGrid.Text & ","
-   vGrid.col = 8
+   vGrid.Col = 8
    strSQL = strSQL & vGrid.Text & ")"
      
    Call ConectionExecute(strSQL)
@@ -5909,28 +6106,28 @@ If vGrid.Text = "" Or vGrid.Text = "0" Then
     strSQL = "select isnull(max(consec),0) as ultimo from rangos where codigo = '" _
            & txtCodigoCorriente & "'"
     Call OpenRecordSet(rs, strSQL)
-      vGrid.col = 1
+      vGrid.Col = 1
       vGrid.Text = CStr(rs!ultimo)
     rs.Close
    
     Call Bitacora("Registra", "Rango para el Codigo: " & txtCodigoCorriente & " ID:" & vGrid.Text)
    
    Else 'Actualizar
-    vGrid.col = 2
+    vGrid.Col = 2
     strSQL = "update rangos set de = " & CCur(vGrid.Text)
-    vGrid.col = 3
+    vGrid.Col = 3
     strSQL = strSQL & ",hasta = " & CCur(vGrid.Text)
-    vGrid.col = 4
+    vGrid.Col = 4
     strSQL = strSQL & ",plazo = " & vGrid.Text
-    vGrid.col = 5
+    vGrid.Col = 5
     strSQL = strSQL & ",intc_soc = " & vGrid.Text
-    vGrid.col = 6
+    vGrid.Col = 6
     strSQL = strSQL & ",intm_soc = " & vGrid.Text
-    vGrid.col = 7
+    vGrid.Col = 7
     strSQL = strSQL & ",intc_nsoc = " & vGrid.Text
-    vGrid.col = 8
+    vGrid.Col = 8
     strSQL = strSQL & ",intm_nsoc = " & vGrid.Text
-    vGrid.col = 1
+    vGrid.Col = 1
     strSQL = strSQL & " where consec = " & vGrid.Text
    
     Call ConectionExecute(strSQL)
@@ -5939,7 +6136,7 @@ If vGrid.Text = "" Or vGrid.Text = "0" Then
     
    End If
 
-   vGrid.col = 1
+   vGrid.Col = 1
    fxGuardarRango = vGrid.Text
    
    Exit Function
@@ -5962,15 +6159,15 @@ fxGuardarRangoPlazo = 0
 
 vGrid.Sheet = 2
 vGrid.Row = vGrid.ActiveRow
-vGrid.col = 1
+vGrid.Col = 1
 If vGrid.Text = "" Or vGrid.Text = "0" Then
-   vGrid.col = 2
+   vGrid.Col = 2
    
    strSQL = "insert into rangos_Plazo(codigo,desde,hasta,tasa)" _
           & " values('" & txtCodigoCorriente & "'," & CCur(vGrid.Text) & ","
-   vGrid.col = 3
+   vGrid.Col = 3
    strSQL = strSQL & CCur(vGrid.Text) & ","
-   vGrid.col = 4
+   vGrid.Col = 4
    strSQL = strSQL & vGrid.Text & ")"
    
    Call ConectionExecute(strSQL)
@@ -5978,20 +6175,20 @@ If vGrid.Text = "" Or vGrid.Text = "0" Then
     strSQL = "select isnull(max(consec),0) as ultimo from rangos_Plazo where codigo = '" _
            & txtCodigoCorriente & "'"
     Call OpenRecordSet(rs, strSQL)
-      vGrid.col = 1
+      vGrid.Col = 1
       vGrid.Text = CStr(rs!ultimo)
     rs.Close
    
     Call Bitacora("Registra", "Rango Plazo para el Codigo: " & txtCodigoCorriente & " ID:" & vGrid.Text)
    
    Else 'Actualizar
-    vGrid.col = 2
+    vGrid.Col = 2
     strSQL = "update rangos_Plazo set desde = " & CCur(vGrid.Text)
-    vGrid.col = 3
+    vGrid.Col = 3
     strSQL = strSQL & ",hasta = " & CCur(vGrid.Text)
-    vGrid.col = 4
+    vGrid.Col = 4
     strSQL = strSQL & ",Tasa = " & CCur(vGrid.Text)
-    vGrid.col = 1
+    vGrid.Col = 1
     strSQL = strSQL & " where consec = " & vGrid.Text
    
     Call ConectionExecute(strSQL)
@@ -6000,7 +6197,7 @@ If vGrid.Text = "" Or vGrid.Text = "0" Then
     
    End If
 
-   vGrid.col = 1
+   vGrid.Col = 1
    fxGuardarRangoPlazo = vGrid.Text
    
    Exit Function
@@ -6185,7 +6382,7 @@ vError:
 End Sub
 
 
-Private Sub vgDocAdjunto_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+Private Sub vgDocAdjunto_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
 Dim strSQL As String, vMovimiento As String
 Dim vTempo As Integer, pCodigo As String
 
@@ -6196,18 +6393,18 @@ pCodigo = Trim(txtCodigoCorriente.Text)
 With vgDocAdjunto
 
      .Row = Row
-     .col = col
+     .Col = Col
      
-     If col = 4 Then 'Ultima Columna
+     If Col = 4 Then 'Ultima Columna
         If .Value = 1 Then
-           .col = 3
+           .Col = 3
            vTempo = .Value
-           .col = 1
+           .Col = 1
            vMovimiento = "Registra"
            strSQL = "insert CRD_CATALOGO_ADJUNTOS(codigo,COD_ADJUNTO,opcional, REGISTRO_USUARIO, REGISTRO_FECHA) values('" _
                   & pCodigo & "','" & .Text & "'," & vTempo & ", '" & glogon.Usuario & "', dbo.mygetdate())"
         Else
-           .col = 1
+           .Col = 1
            vMovimiento = "Borrar"
            strSQL = "delete CRD_CATALOGO_ADJUNTOS where codigo = '" _
                   & pCodigo & "' and COD_ADJUNTO = '" & .Text & "'"
@@ -6218,12 +6415,12 @@ With vgDocAdjunto
          Call Bitacora(vMovimiento, "Catalogo, Adjunto: " & .Text & " a la Línea: " & pCodigo)
      End If
   
-     If col = 3 Then 'Columna de Opcional
-        .col = 3
+     If Col = 3 Then 'Columna de Opcional
+        .Col = 3
         vTempo = .Value
-        .col = 4
+        .Col = 4
         If .Value = 1 Then
-            .col = 1
+            .Col = 1
             vMovimiento = "Modifica"
             strSQL = "update CRD_CATALOGO_ADJUNTOS set Opcional = " & vTempo & " where codigo = '" _
                    & pCodigo & "' and COD_ADJUNTO = '" & .Text & "'"
@@ -6247,7 +6444,7 @@ If vGrid.ActiveCol = vGrid.MaxCols And (KeyCode = vbKeyReturn Or KeyCode = vbKey
     Case 1 'Rangos
           i = fxGuardarRango
         vGrid.Row = vGrid.ActiveRow
-        vGrid.col = 1
+        vGrid.Col = 1
         If vGrid.MaxRows <= vGrid.ActiveRow Then
           vGrid.MaxRows = vGrid.MaxRows + 1
           vGrid.Row = vGrid.MaxRows
@@ -6256,7 +6453,7 @@ If vGrid.ActiveCol = vGrid.MaxCols And (KeyCode = vbKeyReturn Or KeyCode = vbKey
     Case 2 'Plazos / Tasa
         i = fxGuardarRangoPlazo
         vGrid.Row = vGrid.ActiveRow
-        vGrid.col = 1
+        vGrid.Col = 1
         If vGrid.MaxRows <= vGrid.ActiveRow Then
           vGrid.MaxRows = vGrid.MaxRows + 1
           vGrid.Row = vGrid.MaxRows
@@ -6269,31 +6466,31 @@ If vGrid.ActiveCol = vGrid.MaxCols And (KeyCode = vbKeyReturn Or KeyCode = vbKey
            .Row = .ActiveRow
            
            
-           .col = 2
+           .Col = 2
            strSQL = "update crd_catalogo_garantias set utiliza_tasa_Garantia = " & .Value
-           .col = 3
+           .Col = 3
            strSQL = strSQL & ",Tasa_Garantia = " & IIf((.Text = ""), 0, .Text)
-           .col = 4
+           .Col = 4
            strSQL = strSQL & ",Utiliza_Tasa_Piso = " & .Value
-           .col = 5
+           .Col = 5
            strSQL = strSQL & ",Tasa_Piso = " & IIf((.Text = ""), 0, .Text)
 
-           .col = 6
+           .Col = 6
            strSQL = strSQL & ",utiliza_tasa_Techo = " & .Value
-           .col = 7
+           .Col = 7
            strSQL = strSQL & ",Tasa_Techo = " & IIf((.Text = ""), 0, .Text)
            
-           .col = 8
+           .Col = 8
            strSQL = strSQL & ",utiliza_maximos = " & .Value
-           .col = 9
+           .Col = 9
            strSQL = strSQL & ",Max_Monto = " & CCur(IIf((.Text = ""), 0, .Text)) _
         
-           .col = 10 'Liquidez
+           .Col = 10 'Liquidez
            strSQL = strSQL & ",Liquidez_Minima = " & IIf((.Text = ""), 0, .Text)
         
            strSQL = strSQL & ",actualiza_fecha = dbo.MyGetdate(), actualiza_usuario ='" & glogon.Usuario & "'"
                     
-           .col = 1
+           .Col = 1
            strSQL = strSQL & " Where Garantia = '" & .CellTag & "' and codigo = '" & txtCodigoCorriente.Text & "'"
            
            Call ConectionExecute(strSQL)
@@ -6307,7 +6504,7 @@ End If
 
 If vGrid.ActiveCol = 1 And (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) _
     And (vGrid.ActiveSheet = 1 Or vGrid.ActiveSheet = 2) Then
-  vGrid.col = vGrid.ActiveCol
+  vGrid.Col = vGrid.ActiveCol
   vGrid.Row = vGrid.ActiveRow
   vGrid.Text = vGrid.Text
 End If
@@ -6322,7 +6519,7 @@ Private Sub vGrid_SheetChanged(ByVal OldSheet As Integer, ByVal NewSheet As Inte
 Call sbCargaRangos(NewSheet)
 End Sub
 
-Private Sub vGridAsg_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+Private Sub vGridAsg_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
 Dim strSQL As String, vMovimiento As String
 Dim vTempo As Integer
 
@@ -6337,15 +6534,15 @@ Select Case .ActiveSheet
   Case 1 'Destinos
      .Sheet = .ActiveSheet
      .Row = Row
-     .col = col
+     .Col = Col
      
      If .Value = 1 Then
-        .col = 1
+        .Col = 1
         vMovimiento = "Registra"
         strSQL = "insert catalogo_DestinosAsg(codigo,cod_destino) values('" _
                & txtCodigoCorriente & "','" & .Text & "')"
      Else
-        .col = 1
+        .Col = 1
         vMovimiento = "Borrar"
         strSQL = "delete catalogo_DestinosAsg where codigo = '" _
                & txtCodigoCorriente & "' and cod_destino = '" & .Text & "'"
@@ -6359,15 +6556,15 @@ Select Case .ActiveSheet
 
      .Sheet = .ActiveSheet
      .Row = Row
-     .col = col
+     .Col = Col
      
      If .Value = 1 Then
-       .col = 1
+       .Col = 1
        vMovimiento = "Registra"
        strSQL = "insert cargos_asignacion(codigo,cod_cargo) values('" _
               & txtCodigoCorriente & "','" & .Text & "')"
      Else
-       .col = 1
+       .Col = 1
        vMovimiento = "Borrar"
        strSQL = "delete cargos_asignacion where codigo = '" _
               & txtCodigoCorriente & "' and cod_cargo = '" & .Text & "'"
@@ -6381,19 +6578,19 @@ Select Case .ActiveSheet
   
      .Sheet = .ActiveSheet
      .Row = Row
-     .col = col
+     .Col = Col
      
      
-     If col = 4 Then 'Ultima Columna
+     If Col = 4 Then 'Ultima Columna
         If .Value = 1 Then
-           .col = 3
+           .Col = 3
            vTempo = .Value
-           .col = 1
+           .Col = 1
            vMovimiento = "Registra"
            strSQL = "insert requisitos_asignacion(codigo,cod_requisito,opcional) values('" _
                   & txtCodigoCorriente & "','" & .Text & "'," & vTempo & ")"
         Else
-           .col = 1
+           .Col = 1
            vMovimiento = "Borrar"
            strSQL = "delete requisitos_asignacion where codigo = '" _
                   & txtCodigoCorriente & "' and cod_requisito = '" & .Text & "'"
@@ -6404,12 +6601,12 @@ Select Case .ActiveSheet
          Call Bitacora(vMovimiento, "Requisito : " & .Text & " a la Línea: " & txtCodigoCorriente)
      End If
   
-     If col = 3 Then 'Columna de Opcional
-        .col = 3
+     If Col = 3 Then 'Columna de Opcional
+        .Col = 3
         vTempo = .Value
-        .col = 4
+        .Col = 4
         If .Value = 1 Then
-            .col = 1
+            .Col = 1
             vMovimiento = "Modifica"
             strSQL = "update requisitos_asignacion set Opcional = " & vTempo & " where codigo = '" _
                    & txtCodigoCorriente & "' and cod_requisito = '" & .Text & "'"
@@ -6423,15 +6620,15 @@ Select Case .ActiveSheet
   Case 4 'Recursos
      .Sheet = .ActiveSheet
      .Row = Row
-     .col = col
+     .Col = Col
      
      If .Value = 1 Then
-        .col = 1
+        .Col = 1
         vMovimiento = "Registra"
         strSQL = "insert catalogo_asignaGrp(codigo,cod_grupo) values('" _
                & txtCodigoCorriente & "','" & .Text & "')"
      Else
-        .col = 1
+        .Col = 1
         vMovimiento = "Borrar"
         strSQL = "delete catalogo_asignaGrp where codigo = '" _
                & txtCodigoCorriente & "' and cod_grupo = '" & .Text & "'"
@@ -6444,15 +6641,15 @@ Select Case .ActiveSheet
   Case 5 'Cartera
      .Sheet = .ActiveSheet
      .Row = Row
-     .col = col
+     .Col = Col
      
      If .Value = 1 Then
-        .col = 1
+        .Col = 1
         vMovimiento = "Registra"
         strSQL = "insert CBR_CLASIFICACION_DETALLE(codigo,COD_CLASIFICACION) values('" _
                & txtCodigoCorriente & "','" & .Text & "')"
      Else
-        .col = 1
+        .Col = 1
         vMovimiento = "Borrar"
         strSQL = "delete CBR_CLASIFICACION_DETALLE where codigo = '" _
                & txtCodigoCorriente & "' and COD_CLASIFICACION = '" & .Text & "'"
@@ -6465,15 +6662,15 @@ Select Case .ActiveSheet
   Case 6 'Refundibles
      .Sheet = .ActiveSheet
      .Row = Row
-     .col = col
+     .Col = Col
      
      If .Value = 1 Then
-        .col = 1
+        .Col = 1
         vMovimiento = "Registra"
         strSQL = "insert CRD_CATALOGO_REFUNDIBLES(codigo,COD_REFUNDIBLE, REGISTRO_FECHA, REGISTRO_USUARIO) values('" _
                & txtCodigoCorriente & "','" & .Text & "', dbo.mygetdate(),'" & glogon.Usuario & "')"
      Else
-        .col = 1
+        .Col = 1
         vMovimiento = "Borrar"
         strSQL = "delete CRD_CATALOGO_REFUNDIBLES where codigo = '" _
                & txtCodigoCorriente & "' and COD_REFUNDIBLE = '" & .Text & "'"

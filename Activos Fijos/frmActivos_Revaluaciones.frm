@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmActivos_Revaluaciones 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,7 +24,7 @@ Begin VB.Form frmActivos_Revaluaciones
       TabIndex        =   4
       Top             =   1320
       Width           =   10092
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   17801
       _ExtentY        =   7429
       _StockProps     =   68
@@ -78,7 +78,7 @@ Begin VB.Form frmActivos_Revaluaciones
          Top             =   720
          Visible         =   0   'False
          Width           =   10092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17801
          _ExtentY        =   6159
          _StockProps     =   77
@@ -103,7 +103,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   7
          Top             =   960
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11028
          _ExtentY        =   1609
          _StockProps     =   77
@@ -128,7 +128,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   11
          Top             =   480
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11033
          _ExtentY        =   582
          _StockProps     =   77
@@ -154,7 +154,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   12
          Top             =   2280
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   68
@@ -176,7 +176,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   18
          Top             =   2640
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   582
          _StockProps     =   77
@@ -202,7 +202,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   19
          Top             =   3000
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   556
          _StockProps     =   77
@@ -228,7 +228,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   20
          Top             =   3360
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   556
          _StockProps     =   77
@@ -254,7 +254,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   21
          Top             =   3720
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   556
          _StockProps     =   77
@@ -281,7 +281,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   8
          Top             =   0
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   444
          _StockProps     =   79
@@ -305,7 +305,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   31
          Top             =   3720
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   79
@@ -328,7 +328,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   30
          Top             =   3360
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   79
@@ -351,7 +351,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   29
          Top             =   3000
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   79
@@ -374,7 +374,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   28
          Top             =   2640
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   79
@@ -397,7 +397,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   27
          Top             =   2280
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   79
@@ -421,7 +421,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   26
          Top             =   3720
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -445,7 +445,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   25
          Top             =   3360
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -469,7 +469,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   24
          Top             =   3000
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -493,7 +493,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   23
          Top             =   2640
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -517,7 +517,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   22
          Top             =   2280
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -541,7 +541,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   17
          Top             =   3720
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   444
          _StockProps     =   79
@@ -565,7 +565,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   16
          Top             =   3360
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   444
          _StockProps     =   79
@@ -589,7 +589,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   15
          Top             =   3000
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   444
          _StockProps     =   79
@@ -613,7 +613,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   14
          Top             =   2640
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   444
          _StockProps     =   79
@@ -637,7 +637,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   13
          Top             =   2280
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   444
          _StockProps     =   79
@@ -661,7 +661,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   10
          Top             =   960
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   444
          _StockProps     =   79
@@ -685,7 +685,7 @@ Begin VB.Form frmActivos_Revaluaciones
          TabIndex        =   9
          Top             =   480
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   444
          _StockProps     =   79
@@ -709,14 +709,14 @@ Begin VB.Form frmActivos_Revaluaciones
          Top             =   360
          Visible         =   0   'False
          Width           =   10092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17801
          _ExtentY        =   656
          _StockProps     =   14
          Caption         =   "Revaluaciones Registradas al Activo"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   8.93
+            Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -789,7 +789,7 @@ Begin VB.Form frmActivos_Revaluaciones
       TabIndex        =   1
       Top             =   600
       Width           =   2412
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4254
       _ExtentY        =   762
       _StockProps     =   77
@@ -815,7 +815,7 @@ Begin VB.Form frmActivos_Revaluaciones
       ToolTipText     =   "Nuevo"
       Top             =   45
       Width           =   1095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   582
       _StockProps     =   79
@@ -844,7 +844,7 @@ Begin VB.Form frmActivos_Revaluaciones
       ToolTipText     =   "Editar"
       Top             =   45
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -872,7 +872,7 @@ Begin VB.Form frmActivos_Revaluaciones
       ToolTipText     =   "Eliminar"
       Top             =   45
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -900,7 +900,7 @@ Begin VB.Form frmActivos_Revaluaciones
       ToolTipText     =   "Guardar"
       Top             =   45
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -928,7 +928,7 @@ Begin VB.Form frmActivos_Revaluaciones
       ToolTipText     =   "Deshacer"
       Top             =   45
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -956,7 +956,7 @@ Begin VB.Form frmActivos_Revaluaciones
       ToolTipText     =   "Reporte"
       Top             =   45
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -982,7 +982,7 @@ Begin VB.Form frmActivos_Revaluaciones
       TabIndex        =   3
       Top             =   600
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   339
       _StockProps     =   79
@@ -1007,7 +1007,7 @@ Begin VB.Form frmActivos_Revaluaciones
       TabIndex        =   2
       Top             =   600
       Width           =   6012
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   10604
       _ExtentY        =   762
       _StockProps     =   79

@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{B8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.TaskPanel.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{B8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.TaskPanel.v24.0.0.ocx"
 Begin VB.MDIForm MDIPrincipal 
    BackColor       =   &H80000003&
    ClientHeight    =   8940
@@ -22,7 +22,7 @@ Begin VB.MDIForm MDIPrincipal
       Top             =   495
       Visible         =   0   'False
       Width           =   15615
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   27543
       _ExtentY        =   741
       _StockProps     =   64
@@ -36,7 +36,7 @@ Begin VB.MDIForm MDIPrincipal
          TabIndex        =   8
          Top             =   45
          Width           =   3855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   6800
          _ExtentY        =   635
          _StockProps     =   79
@@ -63,7 +63,7 @@ Begin VB.MDIForm MDIPrincipal
          TabIndex        =   7
          Top             =   45
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   635
          _StockProps     =   79
@@ -91,7 +91,7 @@ Begin VB.MDIForm MDIPrincipal
          TabIndex        =   6
          Top             =   45
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   635
          _StockProps     =   79
@@ -119,7 +119,7 @@ Begin VB.MDIForm MDIPrincipal
          TabIndex        =   5
          Top             =   60
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   556
          _StockProps     =   77
@@ -145,7 +145,7 @@ Begin VB.MDIForm MDIPrincipal
          TabIndex        =   4
          Top             =   60
          Width           =   705
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1244
          _ExtentY        =   556
          _StockProps     =   77
@@ -172,7 +172,7 @@ Begin VB.MDIForm MDIPrincipal
          TabIndex        =   3
          Top             =   45
          Width           =   3615
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   6376
          _ExtentY        =   635
          _StockProps     =   79
@@ -200,7 +200,7 @@ Begin VB.MDIForm MDIPrincipal
       TabIndex        =   1
       Top             =   0
       Width           =   15615
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   27543
       _ExtentY        =   873
       _StockProps     =   64
@@ -215,7 +215,7 @@ Begin VB.MDIForm MDIPrincipal
          Top             =   75
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   635
          _StockProps     =   79
@@ -241,7 +241,7 @@ Begin VB.MDIForm MDIPrincipal
          Top             =   75
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   635
          _StockProps     =   79
@@ -265,7 +265,7 @@ Begin VB.MDIForm MDIPrincipal
          TabIndex        =   24
          Top             =   80
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   635
          _StockProps     =   79
@@ -292,7 +292,7 @@ Begin VB.MDIForm MDIPrincipal
          TabIndex        =   23
          Top             =   75
          Width           =   3615
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   6376
          _ExtentY        =   635
          _StockProps     =   79
@@ -320,7 +320,7 @@ Begin VB.MDIForm MDIPrincipal
          Top             =   75
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   635
          _StockProps     =   79
@@ -346,7 +346,7 @@ Begin VB.MDIForm MDIPrincipal
          Top             =   75
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   635
          _StockProps     =   79
@@ -372,7 +372,7 @@ Begin VB.MDIForm MDIPrincipal
          Top             =   75
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   635
          _StockProps     =   79
@@ -398,7 +398,7 @@ Begin VB.MDIForm MDIPrincipal
          Top             =   75
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   635
          _StockProps     =   79
@@ -424,7 +424,7 @@ Begin VB.MDIForm MDIPrincipal
          Top             =   75
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   635
          _StockProps     =   79
@@ -450,7 +450,7 @@ Begin VB.MDIForm MDIPrincipal
          Top             =   75
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   635
          _StockProps     =   79
@@ -476,7 +476,7 @@ Begin VB.MDIForm MDIPrincipal
          Top             =   75
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   635
          _StockProps     =   79
@@ -502,7 +502,7 @@ Begin VB.MDIForm MDIPrincipal
          Top             =   75
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   635
          _StockProps     =   79
@@ -528,7 +528,7 @@ Begin VB.MDIForm MDIPrincipal
          Top             =   75
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   635
          _StockProps     =   79
@@ -553,7 +553,7 @@ Begin VB.MDIForm MDIPrincipal
          ToolTipText     =   "Registro de Marcas"
          Top             =   75
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   635
          _StockProps     =   79
@@ -583,7 +583,7 @@ Begin VB.MDIForm MDIPrincipal
          ToolTipText     =   "Configuracion de Impresoras del sistema"
          Top             =   75
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1508
          _ExtentY        =   635
          _StockProps     =   79
@@ -611,7 +611,7 @@ Begin VB.MDIForm MDIPrincipal
          ToolTipText     =   "Explorador Activos Fijos"
          Top             =   80
          Width           =   735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1296
          _ExtentY        =   635
          _StockProps     =   79
@@ -639,7 +639,7 @@ Begin VB.MDIForm MDIPrincipal
          ToolTipText     =   "Explorador Contable"
          Top             =   80
          Width           =   735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1296
          _ExtentY        =   635
          _StockProps     =   79
@@ -667,7 +667,7 @@ Begin VB.MDIForm MDIPrincipal
          ToolTipText     =   "Menú Principal"
          Top             =   80
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1508
          _ExtentY        =   635
          _StockProps     =   79
@@ -714,7 +714,7 @@ Begin VB.MDIForm MDIPrincipal
             Bevel           =   0
             Object.Width           =   1764
             MinWidth        =   1764
-            TextSave        =   "01:50:a. m."
+            TextSave        =   "11:22"
             Object.ToolTipText     =   "Hora"
          EndProperty
          BeginProperty Panel2 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
@@ -998,6 +998,14 @@ Begin VB.MDIForm MDIPrincipal
          Begin VB.Menu mnuSeguridadSub 
             Caption         =   "Bitácora"
             Index           =   5
+         End
+         Begin VB.Menu mnuSeguridadSub 
+            Caption         =   "-"
+            Index           =   6
+         End
+         Begin VB.Menu mnuSeguridadSub 
+            Caption         =   "Cambios en la Configuración"
+            Index           =   7
          End
       End
       Begin VB.Menu mnuArchivoSeparador1 
@@ -1744,7 +1752,7 @@ With frmConsultaActiva.vgCreditos
     
     Select Case .Sheet
        Case 1 'Activos
-          .col = 3
+          .Col = 3
           If Index = 6 Or Index = 11 Then
             'Nada
            Else
@@ -1753,7 +1761,7 @@ With frmConsultaActiva.vgCreditos
            End If
         
        Case 2, 3 'Cancelados y En Tramite
-          .col = 3
+          .Col = 3
           
           If Index = 6 Or Index = 11 Then
             'Nada
@@ -1763,13 +1771,13 @@ With frmConsultaActiva.vgCreditos
            End If
        
        Case 4 'PreAnalisis
-          .col = 2
+          .Col = 2
           vExpediente = .Text
-          .col = 7
+          .Col = 7
           If IsNumeric(.Text) Then vOperacion = .Text
        
        Case 5 'Incobrables
-          .col = 2
+          .Col = 2
           If Not IsNumeric(.Text) Then Exit Sub
           vOperacion = .Text
       
@@ -1779,12 +1787,12 @@ With frmConsultaActiva.vgCreditos
     Select Case Index
       Case 0 'Abonos
             If vOperacion = 0 Then Exit Sub
-            .col = 7 'Saldo
+            .Col = 7 'Saldo
             If CCur(.Text) = 0 Then Exit Sub
             
             vCajas = IIf((fxCajasParametros("01") = "S"), True, False)
                 
-                .col = 19 'Cuotas Morosas
+                .Col = 19 'Cuotas Morosas
                 If CInt(.Text) = 0 Then
                   If vCajas Then
                         ModuloCajas.mRef_01 = vOperacion
@@ -2020,7 +2028,7 @@ With frmConsultaActiva.vgCreditos
         If vOperacion = 0 Then Exit Sub
         
         Operacion.OperacionConsulta = vOperacion
-        Call sbFormsCall("frmCR_PlanPagos", , , , False, Me)
+        Call sbFormsCall("frmCR_PlanPagos", , , , False, Me, True)
     
       Case 15 'Sep
       
@@ -2094,12 +2102,12 @@ With frmConsultaActiva.vgCxC
     
     Select Case .Sheet
        Case 1 'Activos
-          .col = 2
+          .Col = 2
           If Not IsNumeric(.CellTag) Then Exit Sub
           
           vOperacion = .CellTag
        Case 2, 3 'Cancelados y En Tramite
-          .col = 2
+          .Col = 2
           If Not IsNumeric(.Text) Then Exit Sub
           vOperacion = .Text
        
@@ -2110,7 +2118,7 @@ With frmConsultaActiva.vgCxC
       Case 0 'Abonos
             If vOperacion = 0 Then Exit Sub
       
-            .col = 6 'Saldo
+            .Col = 6 'Saldo
              If CCur(.Text) = 0 Then Exit Sub
 
                     Call sbFormsCall("frmCxC_CuentasAbonos", , , , , Me, True)
@@ -2364,6 +2372,7 @@ End Sub
 
 Private Sub mnuSeguridadSub_Click(Index As Integer)
 Dim frmX As Form, pUsuario As String
+Dim Nucleo As clsNucleo
 
 
 Select Case Index
@@ -2383,11 +2392,19 @@ Select Case Index
  Case 4 'Sep
  
  Case 5 'Bitacora
-        Dim Nucleo As clsNucleo
         Set Nucleo = New clsNucleo
         
         Call Nucleo.Menu(glogon.Usuario, glogon.Conection, glogon.BaseDatos, glogon.Servidor _
                     , App.Path, glogon.ConectRPT, 5, glogon.AppName, glogon.AppVersion, glogon.Maquina _
+                    , glogon.Portal_Con, glogon.Portal_User, glogon.Portal_Key, gPortal.Empresa_Id, gPortal.Empresa_Name)
+        
+        Set Nucleo = Nothing
+
+ Case 7 'Monitor de Cambios en la configuracion
+        
+        Set Nucleo = New clsNucleo
+        Call Nucleo.Menu(glogon.Usuario, glogon.Conection, glogon.BaseDatos, glogon.Servidor _
+                    , App.Path, glogon.ConectRPT, 15, glogon.AppName, glogon.AppVersion, glogon.Maquina _
                     , glogon.Portal_Con, glogon.Portal_User, glogon.Portal_Key, gPortal.Empresa_Id, gPortal.Empresa_Name)
         
         Set Nucleo = Nothing

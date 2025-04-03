@@ -1,12 +1,12 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmActivos_Reportes 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
-   ClientHeight    =   8505
+   ClientHeight    =   7740
    ClientLeft      =   45
    ClientTop       =   330
    ClientWidth     =   10470
@@ -14,7 +14,7 @@ Begin VB.Form frmActivos_Reportes
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   8505
+   ScaleHeight     =   7740
    ScaleWidth      =   10470
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
@@ -29,7 +29,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   23
       Top             =   1440
       Width           =   1812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   556
       _StockProps     =   79
@@ -44,7 +44,8 @@ Begin VB.Form frmActivos_Reportes
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Value           =   1
    End
    Begin XtremeSuiteControls.CheckBox CheckBox1 
@@ -53,7 +54,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   22
       Top             =   -3000
       Width           =   1932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3408
       _ExtentY        =   556
       _StockProps     =   79
@@ -79,7 +80,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   20
       Top             =   6480
       Width           =   10575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18648
       _ExtentY        =   2561
       _StockProps     =   79
@@ -92,12 +93,12 @@ Begin VB.Form frmActivos_Reportes
          TabIndex        =   21
          Top             =   240
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   1291
          _StockProps     =   79
          Caption         =   "Reporte"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -107,7 +108,8 @@ Begin VB.Form frmActivos_Reportes
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   14
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          Picture         =   "frmActivos_Reportes.frx":030A
       End
       Begin XtremeSuiteControls.CheckBox chkInformeResumen 
@@ -116,7 +118,7 @@ Begin VB.Form frmActivos_Reportes
          TabIndex        =   31
          Top             =   240
          Width           =   2652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4678
          _ExtentY        =   550
          _StockProps     =   79
@@ -131,8 +133,9 @@ Begin VB.Form frmActivos_Reportes
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
+         UseVisualStyle  =   -1  'True
          TextAlignment   =   1
-         Appearance      =   16
+         Appearance      =   21
          Alignment       =   1
       End
    End
@@ -177,7 +180,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   10
       Top             =   4800
       Width           =   1335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   68
@@ -199,7 +202,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   11
       Top             =   3960
       Width           =   1335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   68
@@ -222,7 +225,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   12
       Top             =   3960
       Width           =   1335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   68
@@ -245,7 +248,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   13
       Top             =   3600
       Width           =   2655
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4683
       _ExtentY        =   582
       _StockProps     =   77
@@ -271,7 +274,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   14
       Top             =   5160
       Width           =   2655
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4683
       _ExtentY        =   582
       _StockProps     =   77
@@ -297,7 +300,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   15
       Top             =   1440
       Width           =   5892
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   10398
       _ExtentY        =   582
       _StockProps     =   77
@@ -323,7 +326,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   16
       Top             =   1800
       Width           =   5892
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   10398
       _ExtentY        =   582
       _StockProps     =   77
@@ -349,7 +352,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   17
       Top             =   2160
       Width           =   5892
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   10398
       _ExtentY        =   582
       _StockProps     =   77
@@ -375,7 +378,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   19
       Top             =   5520
       Width           =   2655
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4678
       _ExtentY        =   550
       _StockProps     =   77
@@ -400,7 +403,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   24
       Top             =   1800
       Width           =   1812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   556
       _StockProps     =   79
@@ -415,7 +418,8 @@ Begin VB.Form frmActivos_Reportes
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Value           =   1
    End
    Begin XtremeSuiteControls.CheckBox chkSeccion 
@@ -424,7 +428,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   25
       Top             =   2160
       Width           =   1812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   556
       _StockProps     =   79
@@ -439,7 +443,8 @@ Begin VB.Form frmActivos_Reportes
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Value           =   1
    End
    Begin XtremeSuiteControls.CheckBox chkEstados 
@@ -448,7 +453,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   26
       Top             =   3600
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   556
       _StockProps     =   79
@@ -463,7 +468,8 @@ Begin VB.Form frmActivos_Reportes
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Value           =   1
    End
    Begin XtremeSuiteControls.CheckBox chkFechas 
@@ -472,7 +478,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   27
       Top             =   3960
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   556
       _StockProps     =   79
@@ -487,7 +493,8 @@ Begin VB.Form frmActivos_Reportes
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Value           =   1
    End
    Begin XtremeSuiteControls.CheckBox chkRes 
@@ -496,7 +503,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   28
       Top             =   5520
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   556
       _StockProps     =   79
@@ -511,7 +518,8 @@ Begin VB.Form frmActivos_Reportes
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Value           =   1
    End
    Begin XtremeSuiteControls.CheckBox chkMod 
@@ -520,7 +528,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   29
       Top             =   5160
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   556
       _StockProps     =   79
@@ -535,7 +543,8 @@ Begin VB.Form frmActivos_Reportes
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
    End
    Begin XtremeSuiteControls.CheckBox chkActivoDetalle 
       Height          =   315
@@ -543,7 +552,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   30
       Top             =   5880
       Width           =   2655
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4678
       _ExtentY        =   550
       _StockProps     =   79
@@ -558,7 +567,8 @@ Begin VB.Form frmActivos_Reportes
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Value           =   1
       Alignment       =   1
    End
@@ -568,7 +578,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   34
       Top             =   2520
       Width           =   5895
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   10398
       _ExtentY        =   582
       _StockProps     =   77
@@ -594,7 +604,7 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   36
       Top             =   2520
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   556
       _StockProps     =   79
@@ -609,7 +619,8 @@ Begin VB.Form frmActivos_Reportes
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Value           =   1
    End
    Begin VB.Label Label1 
@@ -641,14 +652,14 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   33
       Top             =   3120
       Width           =   6495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   11451
       _ExtentY        =   656
       _StockProps     =   14
       Caption         =   "Filtros:"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   8.93
+         Size            =   9
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -666,14 +677,14 @@ Begin VB.Form frmActivos_Reportes
       TabIndex        =   32
       Top             =   3120
       Width           =   3975
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7006
       _ExtentY        =   656
       _StockProps     =   14
       Caption         =   "Informes:"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   8.93
+         Size            =   9
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False

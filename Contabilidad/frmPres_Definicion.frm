@@ -1,21 +1,21 @@
 VERSION 5.00
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.3#0"; "Codejock.Controls.v19.3.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmPres_Definicion 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Definición Inicial del Presupuesto por Partida"
-   ClientHeight    =   6828
-   ClientLeft      =   48
-   ClientTop       =   312
-   ClientWidth     =   11292
+   ClientHeight    =   6825
+   ClientLeft      =   45
+   ClientTop       =   315
+   ClientWidth     =   11295
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   6828
-   ScaleWidth      =   11292
+   ScaleHeight     =   6825
+   ScaleWidth      =   11295
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin XtremeSuiteControls.TabControl tcMain 
@@ -24,7 +24,7 @@ Begin VB.Form frmPres_Definicion
       TabIndex        =   9
       Top             =   1800
       Width           =   11292
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   19918
       _ExtentY        =   8700
       _StockProps     =   68
@@ -60,7 +60,7 @@ Begin VB.Form frmPres_Definicion
          Top             =   360
          Visible         =   0   'False
          Width           =   11052
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   19494
          _ExtentY        =   7853
          _StockProps     =   77
@@ -75,7 +75,7 @@ Begin VB.Form frmPres_Definicion
          EndProperty
          View            =   3
          FullRowSelect   =   -1  'True
-         Appearance      =   16
+         Appearance      =   21
       End
       Begin FPSpreadADO.fpSpread vGrid 
          Height          =   3372
@@ -114,9 +114,9 @@ Begin VB.Form frmPres_Definicion
          TabIndex        =   15
          Top             =   840
          Width           =   2172
-         _Version        =   1245187
-         _ExtentX        =   3831
-         _ExtentY        =   550
+         _Version        =   1572864
+         _ExtentX        =   3836
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BackColor       =   16777215
@@ -130,7 +130,7 @@ Begin VB.Form frmPres_Definicion
             Strikethrough   =   0   'False
          EndProperty
          Style           =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
@@ -140,7 +140,7 @@ Begin VB.Form frmPres_Definicion
          TabIndex        =   18
          Top             =   1320
          Width           =   2172
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -156,7 +156,8 @@ Begin VB.Form frmPres_Definicion
          EndProperty
          Text            =   "0"
          Alignment       =   1
-         Appearance      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.PushButton btnProyectar 
          Height          =   372
@@ -164,7 +165,7 @@ Begin VB.Form frmPres_Definicion
          TabIndex        =   19
          Top             =   1680
          Width           =   2172
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   656
          _StockProps     =   79
@@ -172,16 +173,17 @@ Begin VB.Form frmPres_Definicion
          BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   7.8
+            Size            =   7.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
+         UseVisualStyle  =   -1  'True
          TextAlignment   =   1
-         Appearance      =   16
-         Picture         =   "frmPres_Definicion.frx":05D6
+         Appearance      =   21
+         Picture         =   "frmPres_Definicion.frx":05FA
          ImageAlignment  =   4
       End
       Begin XtremeSuiteControls.PushButton btnAplicar 
@@ -191,7 +193,7 @@ Begin VB.Form frmPres_Definicion
          TabIndex        =   20
          Top             =   4320
          Width           =   2172
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   656
          _StockProps     =   79
@@ -199,16 +201,17 @@ Begin VB.Form frmPres_Definicion
          BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   7.8
+            Size            =   7.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
+         UseVisualStyle  =   -1  'True
          TextAlignment   =   1
-         Appearance      =   16
-         Picture         =   "frmPres_Definicion.frx":0CEF
+         Appearance      =   21
+         Picture         =   "frmPres_Definicion.frx":0D13
          ImageAlignment  =   4
       End
       Begin XtremeSuiteControls.FlatEdit txtPresupuesto 
@@ -217,7 +220,7 @@ Begin VB.Form frmPres_Definicion
          TabIndex        =   21
          Top             =   4320
          Width           =   2652
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   4678
          _ExtentY        =   550
          _StockProps     =   77
@@ -234,7 +237,8 @@ Begin VB.Form frmPres_Definicion
          Text            =   "0"
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.Label Label4 
          Height          =   252
@@ -243,7 +247,7 @@ Begin VB.Form frmPres_Definicion
          TabIndex        =   17
          Top             =   1320
          Width           =   972
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   444
          _StockProps     =   79
@@ -268,7 +272,7 @@ Begin VB.Form frmPres_Definicion
          TabIndex        =   16
          Top             =   840
          Width           =   972
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   444
          _StockProps     =   79
@@ -298,8 +302,8 @@ Begin VB.Form frmPres_Definicion
       TabIndex        =   0
       Top             =   1356
       Width           =   492
-      _ExtentX        =   868
-      _ExtentY        =   445
+      _ExtentX        =   873
+      _ExtentY        =   450
       _Version        =   393216
       Arrows          =   65536
       Orientation     =   1638401
@@ -310,9 +314,9 @@ Begin VB.Form frmPres_Definicion
       TabIndex        =   1
       Top             =   240
       Width           =   3732
-      _Version        =   1245187
-      _ExtentX        =   6583
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   6588
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   0
       BackColor       =   16777215
@@ -326,7 +330,7 @@ Begin VB.Form frmPres_Definicion
          Strikethrough   =   0   'False
       EndProperty
       Style           =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
@@ -336,9 +340,9 @@ Begin VB.Form frmPres_Definicion
       TabIndex        =   2
       Top             =   600
       Width           =   3732
-      _Version        =   1245187
-      _ExtentX        =   6583
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   6588
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   0
       BackColor       =   16777215
@@ -352,7 +356,7 @@ Begin VB.Form frmPres_Definicion
          Strikethrough   =   0   'False
       EndProperty
       Style           =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
@@ -362,9 +366,9 @@ Begin VB.Form frmPres_Definicion
       TabIndex        =   3
       Top             =   600
       Width           =   3732
-      _Version        =   1245187
-      _ExtentX        =   6583
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   6588
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   0
       BackColor       =   16777215
@@ -378,7 +382,7 @@ Begin VB.Form frmPres_Definicion
          Strikethrough   =   0   'False
       EndProperty
       Style           =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
@@ -388,9 +392,9 @@ Begin VB.Form frmPres_Definicion
       TabIndex        =   4
       Top             =   240
       Width           =   3732
-      _Version        =   1245187
-      _ExtentX        =   6583
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   6588
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   0
       BackColor       =   16777215
@@ -404,7 +408,7 @@ Begin VB.Form frmPres_Definicion
          Strikethrough   =   0   'False
       EndProperty
       Style           =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
@@ -414,7 +418,7 @@ Begin VB.Form frmPres_Definicion
       TabIndex        =   11
       Top             =   1320
       Width           =   2172
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   3831
       _ExtentY        =   556
       _StockProps     =   77
@@ -430,7 +434,8 @@ Begin VB.Form frmPres_Definicion
       EndProperty
       Alignment       =   2
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtDescripcion 
       Height          =   312
@@ -438,7 +443,7 @@ Begin VB.Form frmPres_Definicion
       TabIndex        =   12
       Top             =   1320
       Width           =   6852
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   12086
       _ExtentY        =   550
       _StockProps     =   77
@@ -453,7 +458,8 @@ Begin VB.Form frmPres_Definicion
          Strikethrough   =   0   'False
       EndProperty
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.Label Label4 
       Height          =   252
@@ -462,7 +468,7 @@ Begin VB.Form frmPres_Definicion
       TabIndex        =   10
       Top             =   1320
       Width           =   972
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   1714
       _ExtentY        =   444
       _StockProps     =   79
@@ -486,7 +492,7 @@ Begin VB.Form frmPres_Definicion
       Caption         =   "Unidad de Negocio"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -507,7 +513,7 @@ Begin VB.Form frmPres_Definicion
       Caption         =   "Centro de Costo"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -528,7 +534,7 @@ Begin VB.Form frmPres_Definicion
       Caption         =   "Modelo"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -549,7 +555,7 @@ Begin VB.Form frmPres_Definicion
       Caption         =   "Contabilidad"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1160,8 +1166,8 @@ With lsw
           itmX.SubItems(8) = Format(rs!DIFERENCIA_TOTAL, "Standard")
           itmX.SubItems(9) = Format(rs!EJECUTADO_TOTAL * 100, "Standard")
      
-          itmX.SubItems(10) = rs!cod_unidad & ""
-          itmX.SubItems(11) = rs!cod_centro_costo & ""
+          itmX.SubItems(10) = rs!Cod_Unidad & ""
+          itmX.SubItems(11) = rs!cod_Centro_Costo & ""
      
      
             curAcumulado = rs!acumulado

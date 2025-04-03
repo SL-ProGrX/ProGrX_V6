@@ -1,17 +1,17 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "mscomctl.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Begin VB.Form frmFNDRecepcionDevolucionesLiq 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "(Fondos) Liquidaciones..: Recepción Devoluciones"
-   ClientHeight    =   8136
-   ClientLeft      =   48
-   ClientTop       =   372
-   ClientWidth     =   12012
+   ClientHeight    =   8130
+   ClientLeft      =   45
+   ClientTop       =   375
+   ClientWidth     =   12015
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    Picture         =   "frmFND_RecepcionDevolucionesLiq.frx":0000
-   ScaleHeight     =   8136
-   ScaleWidth      =   12012
+   ScaleHeight     =   8130
+   ScaleWidth      =   12015
    StartUpPosition =   2  'CenterScreen
    Begin VB.CommandButton cmdAgregar 
       Caption         =   "+"
@@ -45,16 +45,16 @@ Begin VB.Form frmFNDRecepcionDevolucionesLiq
       Top             =   7560
       Visible         =   0   'False
       Width           =   9855
-      _ExtentX        =   17378
-      _ExtentY        =   550
+      _ExtentX        =   17383
+      _ExtentY        =   556
       _Version        =   393216
       Appearance      =   0
    End
    Begin MSComctlLib.ImageList ImageList1 
       Left            =   5760
       Top             =   840
-      _ExtentX        =   995
-      _ExtentY        =   995
+      _ExtentX        =   1005
+      _ExtentY        =   1005
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -77,15 +77,15 @@ Begin VB.Form frmFNDRecepcionDevolucionesLiq
       EndProperty
    End
    Begin MSComctlLib.Toolbar tlbAplicar 
-      Height          =   456
+      Height          =   570
       Left            =   10440
       TabIndex        =   5
       Top             =   7440
-      Width           =   1308
-      _ExtentX        =   2307
-      _ExtentY        =   804
-      ButtonWidth     =   1905
-      ButtonHeight    =   804
+      Width           =   1305
+      _ExtentX        =   2302
+      _ExtentY        =   1005
+      ButtonWidth     =   2117
+      ButtonHeight    =   1005
       Style           =   1
       TextAlignment   =   1
       ImageList       =   "ImageList1"
@@ -106,8 +106,8 @@ Begin VB.Form frmFNDRecepcionDevolucionesLiq
       TabIndex        =   6
       Top             =   1560
       Width           =   11295
-      _ExtentX        =   19918
-      _ExtentY        =   10181
+      _ExtentX        =   19923
+      _ExtentY        =   10186
       View            =   3
       LabelWrap       =   -1  'True
       HideSelection   =   -1  'True
@@ -121,7 +121,7 @@ Begin VB.Form frmFNDRecepcionDevolucionesLiq
       Appearance      =   0
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -153,7 +153,7 @@ Begin VB.Form frmFNDRecepcionDevolucionesLiq
       Caption         =   "Liquidaciones ..: Recepción de Devoluciones  (Fondos)"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   15.6
+         Size            =   15.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -170,7 +170,7 @@ Begin VB.Form frmFNDRecepcionDevolucionesLiq
       Caption         =   "Boleta"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False

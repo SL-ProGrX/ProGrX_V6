@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmReportesConciliacion 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -25,7 +25,7 @@ Begin VB.Form frmReportesConciliacion
       TabIndex        =   2
       Top             =   1200
       Width           =   9015
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   15901
       _ExtentY        =   12091
       _StockProps     =   68
@@ -58,7 +58,7 @@ Begin VB.Form frmReportesConciliacion
          TabIndex        =   41
          Top             =   3720
          Width           =   9015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15901
          _ExtentY        =   3413
          _StockProps     =   79
@@ -82,7 +82,7 @@ Begin VB.Form frmReportesConciliacion
             ToolTipText     =   "Presione F4 para Consultar"
             Top             =   1200
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1720
             _ExtentY        =   582
             _StockProps     =   77
@@ -109,7 +109,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   43
             Top             =   1200
             Width           =   6015
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10610
             _ExtentY        =   582
             _StockProps     =   77
@@ -135,7 +135,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   48
             Top             =   360
             Width           =   6975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   12303
             _ExtentY        =   582
             _StockProps     =   77
@@ -161,7 +161,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   50
             Top             =   720
             Width           =   6975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   12303
             _ExtentY        =   582
             _StockProps     =   77
@@ -254,7 +254,7 @@ Begin VB.Form frmReportesConciliacion
          TabIndex        =   33
          Top             =   1920
          Width           =   9015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15901
          _ExtentY        =   3201
          _StockProps     =   79
@@ -277,7 +277,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   34
             Top             =   360
             Width           =   6975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   12303
             _ExtentY        =   582
             _StockProps     =   77
@@ -304,7 +304,7 @@ Begin VB.Form frmReportesConciliacion
             ToolTipText     =   "Presione F4 para Consultar"
             Top             =   720
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1720
             _ExtentY        =   582
             _StockProps     =   77
@@ -331,7 +331,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   37
             Top             =   720
             Width           =   6015
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10610
             _ExtentY        =   582
             _StockProps     =   77
@@ -358,7 +358,7 @@ Begin VB.Form frmReportesConciliacion
             ToolTipText     =   "Presione F4 para Consultar"
             Top             =   1080
             Width           =   2055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3625
             _ExtentY        =   582
             _StockProps     =   77
@@ -385,7 +385,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   46
             Top             =   1080
             Width           =   4935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8705
             _ExtentY        =   582
             _StockProps     =   77
@@ -411,7 +411,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   53
             Top             =   1440
             Width           =   6975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   12303
             _ExtentY        =   582
             _StockProps     =   77
@@ -527,7 +527,7 @@ Begin VB.Form frmReportesConciliacion
          Top             =   360
          Visible         =   0   'False
          Width           =   9135
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16113
          _ExtentY        =   7646
          _StockProps     =   79
@@ -599,7 +599,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   24
             Top             =   360
             Width           =   8055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   14208
             _ExtentY        =   450
             _StockProps     =   79
@@ -624,7 +624,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   25
             Top             =   840
             Width           =   6135
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10821
             _ExtentY        =   450
             _StockProps     =   79
@@ -648,7 +648,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   27
             Top             =   1320
             Width           =   6135
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10821
             _ExtentY        =   450
             _StockProps     =   79
@@ -701,7 +701,7 @@ Begin VB.Form frmReportesConciliacion
          TabIndex        =   3
          Top             =   5640
          Width           =   9015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15901
          _ExtentY        =   2143
          _StockProps     =   79
@@ -714,7 +714,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   4
             Top             =   360
             Width           =   3015
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5318
             _ExtentY        =   661
             _StockProps     =   79
@@ -740,7 +740,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   5
             Top             =   360
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   1080
             _StockProps     =   79
@@ -766,7 +766,7 @@ Begin VB.Form frmReportesConciliacion
          TabIndex        =   6
          Top             =   3720
          Width           =   9015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15901
          _ExtentY        =   3413
          _StockProps     =   79
@@ -791,7 +791,7 @@ Begin VB.Form frmReportesConciliacion
             ToolTipText     =   "Presione F4 para Consultar"
             Top             =   360
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1720
             _ExtentY        =   582
             _StockProps     =   77
@@ -818,7 +818,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   8
             Top             =   360
             Width           =   6015
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10610
             _ExtentY        =   582
             _StockProps     =   77
@@ -845,7 +845,7 @@ Begin VB.Form frmReportesConciliacion
             ToolTipText     =   "Presione F4 para Consultar"
             Top             =   1200
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1720
             _ExtentY        =   582
             _StockProps     =   77
@@ -872,7 +872,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   10
             Top             =   1200
             Width           =   6015
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10610
             _ExtentY        =   582
             _StockProps     =   77
@@ -899,7 +899,7 @@ Begin VB.Form frmReportesConciliacion
             ToolTipText     =   "Presione F4 para Consultar"
             Top             =   1560
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1720
             _ExtentY        =   582
             _StockProps     =   77
@@ -926,7 +926,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   12
             Top             =   1560
             Width           =   6015
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10610
             _ExtentY        =   582
             _StockProps     =   77
@@ -952,7 +952,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   40
             Top             =   720
             Width           =   6975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   12303
             _ExtentY        =   582
             _StockProps     =   77
@@ -1067,7 +1067,7 @@ Begin VB.Form frmReportesConciliacion
          TabIndex        =   16
          Top             =   360
          Width           =   9015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15901
          _ExtentY        =   3201
          _StockProps     =   79
@@ -1093,7 +1093,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   17
             Top             =   240
             Width           =   2415
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4260
             _ExtentY        =   1561
             _StockProps     =   79
@@ -1120,7 +1120,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   18
             Top             =   240
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   1561
             _StockProps     =   79
@@ -1146,7 +1146,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   19
             Top             =   240
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   1561
             _StockProps     =   79
@@ -1171,7 +1171,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   20
             Top             =   1200
             Width           =   6975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   12303
             _ExtentY        =   582
             _StockProps     =   77
@@ -1221,7 +1221,7 @@ Begin VB.Form frmReportesConciliacion
          Top             =   4680
          Visible         =   0   'False
          Width           =   9135
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16113
          _ExtentY        =   5953
          _StockProps     =   79
@@ -1235,7 +1235,7 @@ Begin VB.Form frmReportesConciliacion
             ToolTipText     =   "Exportar a Excel"
             Top             =   1080
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   1085
             _StockProps     =   79
@@ -1261,7 +1261,7 @@ Begin VB.Form frmReportesConciliacion
             Top             =   840
             Visible         =   0   'False
             Width           =   9015
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   15901
             _ExtentY        =   238
             _StockProps     =   93
@@ -1274,7 +1274,7 @@ Begin VB.Form frmReportesConciliacion
             TabIndex        =   29
             Top             =   1200
             Width           =   4815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8493
             _ExtentY        =   873
             _StockProps     =   79
@@ -1303,7 +1303,7 @@ Begin VB.Form frmReportesConciliacion
       TabIndex        =   1
       Top             =   480
       Width           =   4812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8493
       _ExtentY        =   582
       _StockProps     =   77

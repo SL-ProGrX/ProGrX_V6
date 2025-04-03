@@ -1,22 +1,22 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmPreaEstudio 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Estudio de Crédito"
    ClientHeight    =   8550
    ClientLeft      =   45
    ClientTop       =   435
-   ClientWidth     =   10395
+   ClientWidth     =   10470
    Icon            =   "frmPreaEstudio.frx":0000
    KeyPreview      =   -1  'True
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
    ScaleHeight     =   8550
-   ScaleWidth      =   10395
+   ScaleWidth      =   10470
    ShowInTaskbar   =   0   'False
    StartUpPosition =   1  'CenterOwner
    Begin XtremeSuiteControls.TabControl tcMain 
@@ -25,7 +25,7 @@ Begin VB.Form frmPreaEstudio
       TabIndex        =   3
       Top             =   1800
       Width           =   10455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18441
       _ExtentY        =   10610
       _StockProps     =   68
@@ -42,7 +42,6 @@ Begin VB.Form frmPreaEstudio
       Color           =   32
       PaintManager.ShowIcons=   -1  'True
       ItemCount       =   6
-      SelectedItem    =   1
       Item(0).Caption =   "Datos"
       Item(0).ControlCount=   2
       Item(0).Control(0)=   "GroupBox1(0)"
@@ -140,7 +139,7 @@ Begin VB.Form frmPreaEstudio
          Top             =   840
          Visible         =   0   'False
          Width           =   10335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18230
          _ExtentY        =   8916
          _StockProps     =   77
@@ -155,7 +154,8 @@ Begin VB.Form frmPreaEstudio
             Strikethrough   =   0   'False
          EndProperty
          View            =   3
-         Appearance      =   16
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
       End
       Begin VB.Frame fraDCargas 
          BackColor       =   &H00FFFFFF&
@@ -171,9 +171,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          ForeColor       =   &H00800000&
          Height          =   2055
-         Left            =   -960
+         Left            =   -64000
          TabIndex        =   118
          Top             =   3360
+         Visible         =   0   'False
          Width           =   4815
          Begin XtremeSuiteControls.CheckBox chkCargaAsociacion 
             Height          =   252
@@ -181,7 +182,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   127
             Top             =   360
             Width           =   1212
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   444
             _StockProps     =   79
@@ -205,7 +206,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   128
             Top             =   720
             Width           =   1212
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   444
             _StockProps     =   79
@@ -436,17 +437,18 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          ForeColor       =   &H00800000&
          Height          =   3015
-         Left            =   -960
+         Left            =   -64000
          TabIndex        =   129
          Top             =   600
+         Visible         =   0   'False
          Width           =   4815
          Begin XtremeSuiteControls.ListView ltvSalarios 
-            Height          =   2532
-            Left            =   120
+            Height          =   2535
+            Left            =   5160
             TabIndex        =   130
             Top             =   360
-            Width           =   4572
-            _Version        =   1441793
+            Width           =   4575
+            _Version        =   1572864
             _ExtentX        =   8064
             _ExtentY        =   4466
             _StockProps     =   77
@@ -476,12 +478,11 @@ Begin VB.Form frmPreaEstudio
       Begin XtremeSuiteControls.GroupBox GroupBox1 
          Height          =   3972
          Index           =   1
-         Left            =   -69880
+         Left            =   120
          TabIndex        =   72
          Top             =   1920
-         Visible         =   0   'False
          Width           =   9972
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17590
          _ExtentY        =   7006
          _StockProps     =   79
@@ -508,7 +509,7 @@ Begin VB.Form frmPreaEstudio
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Height          =   312
+            Height          =   330
             ItemData        =   "frmPreaEstudio.frx":0E18
             Left            =   1440
             List            =   "frmPreaEstudio.frx":0E1A
@@ -528,7 +529,7 @@ Begin VB.Form frmPreaEstudio
                Strikethrough   =   0   'False
             EndProperty
             ForeColor       =   &H00000000&
-            Height          =   312
+            Height          =   330
             ItemData        =   "frmPreaEstudio.frx":0E1C
             Left            =   5280
             List            =   "frmPreaEstudio.frx":0E1E
@@ -547,7 +548,7 @@ Begin VB.Form frmPreaEstudio
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Height          =   312
+            Height          =   330
             ItemData        =   "frmPreaEstudio.frx":0E20
             Left            =   1440
             List            =   "frmPreaEstudio.frx":0E22
@@ -566,7 +567,7 @@ Begin VB.Form frmPreaEstudio
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Height          =   312
+            Height          =   330
             ItemData        =   "frmPreaEstudio.frx":0E24
             Left            =   1440
             List            =   "frmPreaEstudio.frx":0E26
@@ -581,7 +582,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   88
             Top             =   2040
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   450
             _StockProps     =   79
@@ -606,7 +607,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   89
             Top             =   2400
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   450
             _StockProps     =   79
@@ -631,7 +632,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   90
             Top             =   3240
             Width           =   972
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   1080
             _StockProps     =   79
@@ -656,7 +657,7 @@ Begin VB.Form frmPreaEstudio
             ToolTipText     =   "Presione F4 para Consultar"
             Top             =   480
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -672,7 +673,7 @@ Begin VB.Form frmPreaEstudio
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtDesLineaCredito 
@@ -682,7 +683,7 @@ Begin VB.Form frmPreaEstudio
             ToolTipText     =   "Presione F4 para Consultar"
             Top             =   480
             Width           =   6612
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11663
             _ExtentY        =   550
             _StockProps     =   77
@@ -697,7 +698,7 @@ Begin VB.Form frmPreaEstudio
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.PushButton btnComiteCambio 
@@ -707,7 +708,7 @@ Begin VB.Form frmPreaEstudio
             ToolTipText     =   "Cambio de Evaluador"
             Top             =   1608
             Width           =   315
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   556
             _ExtentY        =   556
             _StockProps     =   79
@@ -720,7 +721,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   94
             Top             =   2040
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -738,7 +739,8 @@ Begin VB.Form frmPreaEstudio
             BackColor       =   16777215
             Alignment       =   1
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtPolizaIncendio 
             Height          =   312
@@ -746,7 +748,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   95
             Top             =   2400
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -763,7 +765,8 @@ Begin VB.Form frmPreaEstudio
             EndProperty
             Alignment       =   1
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtAsignado 
             Height          =   312
@@ -771,7 +774,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   96
             Top             =   3240
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -789,7 +792,8 @@ Begin VB.Form frmPreaEstudio
             BackColor       =   16777152
             Alignment       =   2
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtClasificacion 
             Height          =   312
@@ -797,7 +801,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   97
             Top             =   3600
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -815,7 +819,8 @@ Begin VB.Form frmPreaEstudio
             BackColor       =   16777152
             Alignment       =   2
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCuota 
             Height          =   312
@@ -823,7 +828,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   98
             Top             =   3240
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
@@ -841,7 +846,8 @@ Begin VB.Form frmPreaEstudio
             BackColor       =   16777152
             Alignment       =   1
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCompromiso 
             Height          =   312
@@ -849,7 +855,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   99
             Top             =   3600
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
@@ -867,7 +873,8 @@ Begin VB.Form frmPreaEstudio
             BackColor       =   16777152
             Alignment       =   1
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtMonto 
             Height          =   312
@@ -875,7 +882,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   100
             Top             =   2040
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
@@ -891,7 +898,8 @@ Begin VB.Form frmPreaEstudio
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   1
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtTasa 
             Height          =   312
@@ -899,7 +907,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   101
             Top             =   2760
             Width           =   1092
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1926
             _ExtentY        =   550
             _StockProps     =   77
@@ -915,7 +923,8 @@ Begin VB.Form frmPreaEstudio
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   1
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtPlazo 
             Height          =   312
@@ -923,7 +932,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   102
             Top             =   2400
             Width           =   1092
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1926
             _ExtentY        =   550
             _StockProps     =   77
@@ -939,7 +948,8 @@ Begin VB.Form frmPreaEstudio
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   1
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtPlMax 
             Height          =   312
@@ -947,7 +957,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   103
             Top             =   2400
             Width           =   972
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   550
             _StockProps     =   77
@@ -965,7 +975,8 @@ Begin VB.Form frmPreaEstudio
             BackColor       =   16777152
             Alignment       =   1
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.CheckBox chkPolizaDesempleo 
             Height          =   255
@@ -973,7 +984,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   150
             Top             =   2760
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   450
             _StockProps     =   79
@@ -998,7 +1009,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   151
             Top             =   2760
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -1015,7 +1026,8 @@ Begin VB.Form frmPreaEstudio
             EndProperty
             Alignment       =   1
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin VB.Label Label1 
             Appearance      =   0  'Flat
@@ -1263,12 +1275,11 @@ Begin VB.Form frmPreaEstudio
       Begin XtremeSuiteControls.GroupBox GroupBox1 
          Height          =   1332
          Index           =   0
-         Left            =   -69880
+         Left            =   120
          TabIndex        =   71
          Top             =   480
-         Visible         =   0   'False
          Width           =   9852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17378
          _ExtentY        =   2350
          _StockProps     =   79
@@ -1295,7 +1306,7 @@ Begin VB.Form frmPreaEstudio
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Height          =   312
+            Height          =   330
             ItemData        =   "frmPreaEstudio.frx":151B
             Left            =   3240
             List            =   "frmPreaEstudio.frx":1525
@@ -1314,7 +1325,7 @@ Begin VB.Form frmPreaEstudio
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Height          =   312
+            Height          =   330
             ItemData        =   "frmPreaEstudio.frx":153E
             Left            =   8880
             List            =   "frmPreaEstudio.frx":1545
@@ -1329,7 +1340,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   77
             Top             =   768
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   550
             _StockProps     =   68
@@ -1352,7 +1363,7 @@ Begin VB.Form frmPreaEstudio
             ToolTipText     =   "Presione F4 para Consultar"
             Top             =   360
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -1368,7 +1379,7 @@ Begin VB.Form frmPreaEstudio
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtNombre 
@@ -1378,7 +1389,7 @@ Begin VB.Form frmPreaEstudio
             ToolTipText     =   "Presione F4 para Consultar"
             Top             =   360
             Width           =   6612
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11663
             _ExtentY        =   550
             _StockProps     =   77
@@ -1393,7 +1404,7 @@ Begin VB.Form frmPreaEstudio
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin VB.Label Label1 
@@ -1488,11 +1499,12 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   330
          ItemData        =   "frmPreaEstudio.frx":154C
-         Left            =   2520
+         Left            =   -67480
          List            =   "frmPreaEstudio.frx":154E
          Style           =   2  'Dropdown List
          TabIndex        =   67
          Top             =   600
+         Visible         =   0   'False
          Width           =   2055
       End
       Begin XtremeSuiteControls.TabControl tcAux 
@@ -1502,7 +1514,7 @@ Begin VB.Form frmPreaEstudio
          Top             =   360
          Visible         =   0   'False
          Width           =   10455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18441
          _ExtentY        =   9763
          _StockProps     =   68
@@ -1542,7 +1554,7 @@ Begin VB.Form frmPreaEstudio
             Top             =   1320
             Visible         =   0   'False
             Width           =   10215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   18018
             _ExtentY        =   7435
             _StockProps     =   77
@@ -1567,7 +1579,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   147
             Top             =   600
             Width           =   2532
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4466
             _ExtentY        =   444
             _StockProps     =   79
@@ -1594,7 +1606,7 @@ Begin VB.Form frmPreaEstudio
             Top             =   960
             Visible         =   0   'False
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   444
             _StockProps     =   79
@@ -1618,7 +1630,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   7
             Top             =   4800
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   1085
             _StockProps     =   79
@@ -1632,8 +1644,9 @@ Begin VB.Form frmPreaEstudio
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
+            UseVisualStyle  =   -1  'True
             TextAlignment   =   1
-            Appearance      =   16
+            Appearance      =   21
             Picture         =   "frmPreaEstudio.frx":1550
             ImageAlignment  =   4
          End
@@ -1643,7 +1656,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   8
             Top             =   600
             Width           =   7095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   12515
             _ExtentY        =   8493
             _StockProps     =   77
@@ -1660,7 +1673,8 @@ Begin VB.Form frmPreaEstudio
             EndProperty
             MultiLine       =   -1  'True
             ScrollBars      =   2
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtActa 
             Height          =   312
@@ -1669,7 +1683,7 @@ Begin VB.Form frmPreaEstudio
             Top             =   480
             Visible         =   0   'False
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
@@ -1697,7 +1711,7 @@ Begin VB.Form frmPreaEstudio
             Top             =   480
             Visible         =   0   'False
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
@@ -1726,7 +1740,7 @@ Begin VB.Form frmPreaEstudio
             Top             =   960
             Visible         =   0   'False
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   444
             _StockProps     =   79
@@ -1752,7 +1766,7 @@ Begin VB.Form frmPreaEstudio
             Top             =   960
             Visible         =   0   'False
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   444
             _StockProps     =   79
@@ -1777,7 +1791,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   148
             Top             =   1080
             Width           =   2532
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4466
             _ExtentY        =   444
             _StockProps     =   79
@@ -1802,7 +1816,7 @@ Begin VB.Form frmPreaEstudio
             TabIndex        =   149
             Top             =   1560
             Width           =   2532
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4466
             _ExtentY        =   444
             _StockProps     =   79
@@ -1894,7 +1908,7 @@ Begin VB.Form frmPreaEstudio
          Top             =   3552
          Visible         =   0   'False
          Width           =   6612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11663
          _ExtentY        =   3302
          _StockProps     =   77
@@ -1939,7 +1953,7 @@ Begin VB.Form frmPreaEstudio
             Strikethrough   =   0   'False
          EndProperty
          MaxCols         =   5
-         SpreadDesigner  =   "frmPreaEstudio.frx":224F
+         SpreadDesigner  =   "frmPreaEstudio.frx":224D
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
@@ -1951,7 +1965,7 @@ Begin VB.Form frmPreaEstudio
          Top             =   360
          Visible         =   0   'False
          Width           =   2292
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   868
          _StockProps     =   79
@@ -1976,7 +1990,7 @@ Begin VB.Form frmPreaEstudio
          Top             =   360
          Visible         =   0   'False
          Width           =   2292
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   868
          _StockProps     =   79
@@ -1994,11 +2008,12 @@ Begin VB.Form frmPreaEstudio
       End
       Begin XtremeSuiteControls.FlatEdit txtSalarioReal 
          Height          =   312
-         Left            =   2520
+         Left            =   -67480
          TabIndex        =   21
          Top             =   2040
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2015,16 +2030,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtExtrasFijas 
          Height          =   312
-         Left            =   2520
+         Left            =   -67480
          TabIndex        =   22
          Top             =   2400
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2041,16 +2057,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          BackColor       =   16777152
          Alignment       =   1
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtDevengadoMes 
          Height          =   312
-         Left            =   2520
+         Left            =   -67480
          TabIndex        =   23
          Top             =   2760
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2067,16 +2084,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtTotal_Cargas_CCSS 
          Height          =   312
-         Left            =   2520
+         Left            =   -67480
          TabIndex        =   24
          Top             =   3480
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2093,16 +2111,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtPorcSobreSalario 
          Height          =   312
-         Left            =   2520
+         Left            =   -67480
          TabIndex        =   25
          Top             =   3840
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2119,16 +2138,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtDeducciones 
          Height          =   312
-         Left            =   2520
+         Left            =   -67480
          TabIndex        =   26
          Top             =   4200
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2145,16 +2165,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtCrdTransitoCancelados 
          Height          =   312
-         Left            =   2520
+         Left            =   -67480
          TabIndex        =   27
          Top             =   4560
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2171,16 +2192,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtCrdTransitoXCobrar 
          Height          =   312
-         Left            =   2520
+         Left            =   -67480
          TabIndex        =   28
          Top             =   4920
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2197,16 +2219,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtFianzas 
          Height          =   312
-         Left            =   7320
+         Left            =   -62680
          TabIndex        =   29
          Top             =   2400
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2223,16 +2246,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtLiquidezSinFianza 
          Height          =   312
-         Left            =   8040
+         Left            =   -61960
          TabIndex        =   30
          Top             =   3000
+         Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   77
@@ -2249,16 +2273,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtLiquidezPorcSinFianza 
          Height          =   312
-         Left            =   8040
+         Left            =   -61960
          TabIndex        =   31
          Top             =   3360
+         Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   77
@@ -2275,16 +2300,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtLiquidezConFianza 
          Height          =   312
-         Left            =   8040
+         Left            =   -61960
          TabIndex        =   32
          Top             =   3840
+         Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   77
@@ -2301,16 +2327,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtLiquidezPorcConFianza 
          Height          =   312
-         Left            =   8040
+         Left            =   -61960
          TabIndex        =   33
          Top             =   4200
+         Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   77
@@ -2327,16 +2354,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtPSD 
          Height          =   312
-         Left            =   8040
+         Left            =   -61960
          TabIndex        =   34
          Top             =   4560
+         Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   77
@@ -2353,16 +2381,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtMontoGirar 
          Height          =   312
-         Left            =   7320
+         Left            =   -62680
          TabIndex        =   35
          Top             =   4920
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2379,16 +2408,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtCuotaDiferencia 
          Height          =   312
-         Left            =   7320
+         Left            =   -62680
          TabIndex        =   36
          Top             =   5280
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2405,16 +2435,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtRebajoExtras 
          Height          =   312
-         Left            =   2520
+         Left            =   -67480
          TabIndex        =   54
          Top             =   1680
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2431,16 +2462,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtTotalLiquido 
          Height          =   312
-         Left            =   7320
+         Left            =   -62680
          TabIndex        =   55
          Top             =   1680
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2457,16 +2489,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtSalarioDevengado 
          Height          =   312
-         Left            =   2520
+         Left            =   -67480
          TabIndex        =   58
          Top             =   1320
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2483,16 +2516,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          BackColor       =   16777152
          Alignment       =   1
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.DateTimePicker dtpCorte 
          Height          =   312
-         Left            =   2520
+         Left            =   -67480
          TabIndex        =   60
          Top             =   960
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   556
          _StockProps     =   68
@@ -2510,11 +2544,12 @@ Begin VB.Form frmPreaEstudio
       End
       Begin XtremeSuiteControls.FlatEdit txtRefundiciones 
          Height          =   312
-         Left            =   7320
+         Left            =   -62680
          TabIndex        =   62
          Top             =   960
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2531,16 +2566,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtDesembolsos 
          Height          =   312
-         Left            =   7320
+         Left            =   -62680
          TabIndex        =   64
          Top             =   1320
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2557,16 +2593,17 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtSalarioLiquido 
          Height          =   312
-         Left            =   7320
+         Left            =   -62680
          TabIndex        =   68
          Top             =   600
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2583,152 +2620,161 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.PushButton btnDetalle 
          Height          =   312
          Index           =   0
-         Left            =   4680
+         Left            =   -65320
          TabIndex        =   138
          ToolTipText     =   "Cambio de Evaluador"
          Top             =   1680
+         Visible         =   0   'False
          Width           =   312
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   556
          _ExtentY        =   556
          _StockProps     =   79
          FlatStyle       =   -1  'True
          Appearance      =   16
-         Picture         =   "frmPreaEstudio.frx":2916
+         Picture         =   "frmPreaEstudio.frx":2912
          ImageAlignment  =   6
       End
       Begin XtremeSuiteControls.PushButton btnDetalle 
          Height          =   312
          Index           =   1
-         Left            =   4680
+         Left            =   -65320
          TabIndex        =   139
          ToolTipText     =   "Cambio de Evaluador"
          Top             =   3480
+         Visible         =   0   'False
          Width           =   312
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   556
          _ExtentY        =   556
          _StockProps     =   79
          FlatStyle       =   -1  'True
          Appearance      =   16
-         Picture         =   "frmPreaEstudio.frx":3036
+         Picture         =   "frmPreaEstudio.frx":3032
          ImageAlignment  =   6
       End
       Begin XtremeSuiteControls.PushButton btnDetalle 
          Height          =   312
          Index           =   2
-         Left            =   4680
+         Left            =   -65320
          TabIndex        =   140
          ToolTipText     =   "Cambio de Evaluador"
          Top             =   4200
+         Visible         =   0   'False
          Width           =   312
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   556
          _ExtentY        =   556
          _StockProps     =   79
          FlatStyle       =   -1  'True
          Appearance      =   16
-         Picture         =   "frmPreaEstudio.frx":3756
+         Picture         =   "frmPreaEstudio.frx":3752
          ImageAlignment  =   6
       End
       Begin XtremeSuiteControls.PushButton btnDetalle 
          Height          =   312
          Index           =   3
-         Left            =   9480
+         Left            =   -60520
          TabIndex        =   141
          ToolTipText     =   "Cambio de Evaluador"
          Top             =   960
+         Visible         =   0   'False
          Width           =   312
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   556
          _ExtentY        =   556
          _StockProps     =   79
          FlatStyle       =   -1  'True
          Appearance      =   16
-         Picture         =   "frmPreaEstudio.frx":3E76
+         Picture         =   "frmPreaEstudio.frx":3E72
          ImageAlignment  =   6
       End
       Begin XtremeSuiteControls.PushButton btnDetalle 
          Height          =   312
          Index           =   4
-         Left            =   9480
+         Left            =   -60520
          TabIndex        =   142
          ToolTipText     =   "Cambio de Evaluador"
          Top             =   1320
+         Visible         =   0   'False
          Width           =   312
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   556
          _ExtentY        =   556
          _StockProps     =   79
          FlatStyle       =   -1  'True
          Appearance      =   16
-         Picture         =   "frmPreaEstudio.frx":4596
+         Picture         =   "frmPreaEstudio.frx":4592
          ImageAlignment  =   6
       End
       Begin XtremeSuiteControls.PushButton btnDetalle 
          Height          =   312
          Index           =   5
-         Left            =   9480
+         Left            =   -60520
          TabIndex        =   143
          ToolTipText     =   "Cambio de Evaluador"
          Top             =   2400
+         Visible         =   0   'False
          Width           =   312
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   556
          _ExtentY        =   556
          _StockProps     =   79
          FlatStyle       =   -1  'True
          Appearance      =   16
-         Picture         =   "frmPreaEstudio.frx":4CB6
+         Picture         =   "frmPreaEstudio.frx":4CB2
          ImageAlignment  =   6
       End
       Begin XtremeSuiteControls.PushButton btnDetalle 
          Height          =   312
          Index           =   6
-         Left            =   4680
+         Left            =   -65320
          TabIndex        =   144
          ToolTipText     =   "Cambio de Evaluador"
          Top             =   4560
+         Visible         =   0   'False
          Width           =   312
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   556
          _ExtentY        =   556
          _StockProps     =   79
          FlatStyle       =   -1  'True
          Appearance      =   16
-         Picture         =   "frmPreaEstudio.frx":53D6
+         Picture         =   "frmPreaEstudio.frx":53D2
          ImageAlignment  =   6
       End
       Begin XtremeSuiteControls.PushButton btnDetalle 
          Height          =   312
          Index           =   7
-         Left            =   4680
+         Left            =   -65320
          TabIndex        =   145
          ToolTipText     =   "Cambio de Evaluador"
          Top             =   4920
+         Visible         =   0   'False
          Width           =   312
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   556
          _ExtentY        =   556
          _StockProps     =   79
          FlatStyle       =   -1  'True
          Appearance      =   16
-         Picture         =   "frmPreaEstudio.frx":5AF6
+         Picture         =   "frmPreaEstudio.frx":5AF2
          ImageAlignment  =   6
       End
       Begin XtremeSuiteControls.FlatEdit txtTotalLiquidoGrupo 
          Height          =   312
-         Left            =   7320
+         Left            =   -62680
          TabIndex        =   152
          Top             =   2040
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -2745,7 +2791,7 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin VB.Label Label1 
@@ -2762,10 +2808,11 @@ Begin VB.Form frmPreaEstudio
          ForeColor       =   &H00000000&
          Height          =   252
          Index           =   0
-         Left            =   5640
+         Left            =   -64360
          TabIndex        =   153
          ToolTipText     =   "Es el Total Liquido del Deudor + Co Deudores"
          Top             =   2040
+         Visible         =   0   'False
          Width           =   1572
       End
       Begin VB.Line Line3 
@@ -2835,9 +2882,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   24
-         Left            =   5640
+         Left            =   -64360
          TabIndex        =   70
          Top             =   600
+         Visible         =   0   'False
          Width           =   1572
       End
       Begin VB.Label Label1 
@@ -2854,9 +2902,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   5
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   69
          Top             =   600
+         Visible         =   0   'False
          Width           =   1812
       End
       Begin VB.Label Label1 
@@ -2872,9 +2921,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   29
-         Left            =   5640
+         Left            =   -64360
          TabIndex        =   65
          Top             =   1320
+         Visible         =   0   'False
          Width           =   1572
       End
       Begin VB.Label Label1 
@@ -2890,9 +2940,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   25
-         Left            =   5640
+         Left            =   -64360
          TabIndex        =   63
          Top             =   960
+         Visible         =   0   'False
          Width           =   1572
       End
       Begin VB.Label Label1 
@@ -2909,9 +2960,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   18
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   61
          Top             =   960
+         Visible         =   0   'False
          Width           =   1812
       End
       Begin VB.Label lblSalarioDevengado 
@@ -2928,9 +2980,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   9
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   59
          Top             =   1320
+         Visible         =   0   'False
          Width           =   1452
       End
       Begin VB.Label Label1 
@@ -2947,9 +3000,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   10
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   57
          Top             =   1680
+         Visible         =   0   'False
          Width           =   1812
       End
       Begin VB.Label Label1 
@@ -2966,9 +3020,10 @@ Begin VB.Form frmPreaEstudio
          ForeColor       =   &H00000000&
          Height          =   252
          Index           =   26
-         Left            =   5640
+         Left            =   -64360
          TabIndex        =   56
          Top             =   1680
+         Visible         =   0   'False
          Width           =   1572
       End
       Begin VB.Label Label1 
@@ -2986,9 +3041,10 @@ Begin VB.Form frmPreaEstudio
          ForeColor       =   &H00000000&
          Height          =   252
          Index           =   11
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   53
          Top             =   2040
+         Visible         =   0   'False
          Width           =   1812
       End
       Begin VB.Label Label1 
@@ -3005,9 +3061,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   12
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   52
          Top             =   2400
+         Visible         =   0   'False
          Width           =   1812
       End
       Begin VB.Label Label1 
@@ -3024,9 +3081,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   13
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   51
          Top             =   2760
+         Visible         =   0   'False
          Width           =   1812
       End
       Begin VB.Label lblPorcentajeSalario 
@@ -3043,9 +3101,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          ForeColor       =   &H00000000&
          Height          =   252
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   50
          Top             =   3840
+         Visible         =   0   'False
          Width           =   1812
       End
       Begin VB.Label Label1 
@@ -3062,9 +3121,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   19
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   49
          Top             =   3480
+         Visible         =   0   'False
          Width           =   1812
       End
       Begin VB.Label Label1 
@@ -3081,9 +3141,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   20
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   48
          Top             =   4200
+         Visible         =   0   'False
          Width           =   1812
       End
       Begin VB.Label Label1 
@@ -3100,9 +3161,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   21
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   47
          Top             =   4560
+         Visible         =   0   'False
          Width           =   2052
       End
       Begin VB.Label Label1 
@@ -3119,17 +3181,19 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   22
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   46
          Top             =   4920
+         Visible         =   0   'False
          Width           =   1812
       End
       Begin VB.Image imgCuotaDif 
          Height          =   240
-         Left            =   9480
+         Left            =   -60520
          Stretch         =   -1  'True
          ToolTipText     =   "Causas"
          Top             =   5280
+         Visible         =   0   'False
          Width           =   240
       End
       Begin VB.Label lblMontoGirar 
@@ -3145,9 +3209,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   0
-         Left            =   5640
+         Left            =   -64360
          TabIndex        =   45
          Top             =   5280
+         Visible         =   0   'False
          Width           =   1572
       End
       Begin VB.Label Label1 
@@ -3164,9 +3229,10 @@ Begin VB.Form frmPreaEstudio
          ForeColor       =   &H00000000&
          Height          =   252
          Index           =   42
-         Left            =   5640
+         Left            =   -64360
          TabIndex        =   44
          Top             =   4560
+         Visible         =   0   'False
          Width           =   1572
       End
       Begin VB.Label Label1 
@@ -3182,9 +3248,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   27
-         Left            =   5640
+         Left            =   -64360
          TabIndex        =   43
          Top             =   2400
+         Visible         =   0   'False
          Width           =   1572
       End
       Begin VB.Label Label1 
@@ -3200,9 +3267,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   28
-         Left            =   5640
+         Left            =   -64360
          TabIndex        =   42
          Top             =   2760
+         Visible         =   0   'False
          Width           =   1332
       End
       Begin VB.Label Label1 
@@ -3218,9 +3286,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   30
-         Left            =   6360
+         Left            =   -63640
          TabIndex        =   41
          Top             =   3000
+         Visible         =   0   'False
          Width           =   972
       End
       Begin VB.Label Label1 
@@ -3236,9 +3305,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   31
-         Left            =   6360
+         Left            =   -63640
          TabIndex        =   40
          Top             =   3840
+         Visible         =   0   'False
          Width           =   1092
       End
       Begin VB.Label Label1 
@@ -3254,9 +3324,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   255
          Index           =   33
-         Left            =   6360
+         Left            =   -63640
          TabIndex        =   39
          Top             =   3360
+         Visible         =   0   'False
          Width           =   1575
       End
       Begin VB.Label Label1 
@@ -3272,9 +3343,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   375
          Index           =   32
-         Left            =   6360
+         Left            =   -63640
          TabIndex        =   38
          Top             =   4200
+         Visible         =   0   'False
          Width           =   1575
       End
       Begin VB.Label lblMontoGirar 
@@ -3290,9 +3362,10 @@ Begin VB.Form frmPreaEstudio
          EndProperty
          Height          =   252
          Index           =   34
-         Left            =   5640
+         Left            =   -64360
          TabIndex        =   37
          Top             =   4920
+         Visible         =   0   'False
          Width           =   1572
       End
    End
@@ -3302,12 +3375,12 @@ Begin VB.Form frmPreaEstudio
    End
    Begin MSComctlLib.StatusBar stBar 
       Align           =   2  'Align Bottom
-      Height          =   276
+      Height          =   270
       Left            =   0
       TabIndex        =   0
       Top             =   8280
-      Width           =   10392
-      _ExtentX        =   18336
+      Width           =   10470
+      _ExtentX        =   18468
       _ExtentY        =   476
       _Version        =   393216
       BeginProperty Panels {8E3867A5-8586-11D1-B16A-00C0F0283628} 
@@ -3354,51 +3427,51 @@ Begin VB.Form frmPreaEstudio
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   12
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmPreaEstudio.frx":6216
+            Picture         =   "frmPreaEstudio.frx":6212
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmPreaEstudio.frx":6BAE
+            Picture         =   "frmPreaEstudio.frx":6BAA
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmPreaEstudio.frx":718D
+            Picture         =   "frmPreaEstudio.frx":7189
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmPreaEstudio.frx":7992
+            Picture         =   "frmPreaEstudio.frx":798E
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmPreaEstudio.frx":82F6
+            Picture         =   "frmPreaEstudio.frx":82F2
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmPreaEstudio.frx":8A8F
+            Picture         =   "frmPreaEstudio.frx":8A8B
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmPreaEstudio.frx":9452
+            Picture         =   "frmPreaEstudio.frx":944E
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmPreaEstudio.frx":9A31
+            Picture         =   "frmPreaEstudio.frx":9A2D
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmPreaEstudio.frx":A238
+            Picture         =   "frmPreaEstudio.frx":A234
             Key             =   ""
          EndProperty
          BeginProperty ListImage10 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmPreaEstudio.frx":AA3D
+            Picture         =   "frmPreaEstudio.frx":AA39
             Key             =   ""
          EndProperty
          BeginProperty ListImage11 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmPreaEstudio.frx":B22C
+            Picture         =   "frmPreaEstudio.frx":B228
             Key             =   ""
          EndProperty
          BeginProperty ListImage12 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmPreaEstudio.frx":BBA0
+            Picture         =   "frmPreaEstudio.frx":BB9C
             Key             =   ""
          EndProperty
       EndProperty
@@ -3482,7 +3555,7 @@ Begin VB.Form frmPreaEstudio
       ToolTipText     =   "Poner en Estado de Solicitado"
       Top             =   36
       Width           =   1812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   79
@@ -3498,7 +3571,7 @@ Begin VB.Form frmPreaEstudio
       EndProperty
       TextAlignment   =   1
       Appearance      =   6
-      Picture         =   "frmPreaEstudio.frx":C336
+      Picture         =   "frmPreaEstudio.frx":C332
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnCopiar 
@@ -3508,7 +3581,7 @@ Begin VB.Form frmPreaEstudio
       ToolTipText     =   "Copiar Expediente"
       Top             =   36
       Width           =   972
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1714
       _ExtentY        =   550
       _StockProps     =   79
@@ -3524,7 +3597,7 @@ Begin VB.Form frmPreaEstudio
       EndProperty
       TextAlignment   =   1
       Appearance      =   6
-      Picture         =   "frmPreaEstudio.frx":CA36
+      Picture         =   "frmPreaEstudio.frx":CA32
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnGestion 
@@ -3535,7 +3608,7 @@ Begin VB.Form frmPreaEstudio
       ToolTipText     =   "Copiar Expediente"
       Top             =   36
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   550
       _StockProps     =   79
@@ -3551,7 +3624,7 @@ Begin VB.Form frmPreaEstudio
       EndProperty
       TextAlignment   =   1
       Appearance      =   6
-      Picture         =   "frmPreaEstudio.frx":D126
+      Picture         =   "frmPreaEstudio.frx":D122
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnGestion 
@@ -3562,7 +3635,7 @@ Begin VB.Form frmPreaEstudio
       ToolTipText     =   "Copiar Expediente"
       Top             =   36
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   550
       _StockProps     =   79
@@ -3578,7 +3651,7 @@ Begin VB.Form frmPreaEstudio
       EndProperty
       TextAlignment   =   1
       Appearance      =   6
-      Picture         =   "frmPreaEstudio.frx":D82D
+      Picture         =   "frmPreaEstudio.frx":D829
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnGestion 
@@ -3589,7 +3662,7 @@ Begin VB.Form frmPreaEstudio
       ToolTipText     =   "Copiar Expediente"
       Top             =   36
       Width           =   1332
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   79
@@ -3605,7 +3678,7 @@ Begin VB.Form frmPreaEstudio
       EndProperty
       TextAlignment   =   1
       Appearance      =   6
-      Picture         =   "frmPreaEstudio.frx":DF46
+      Picture         =   "frmPreaEstudio.frx":DF42
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnGestion 
@@ -3616,7 +3689,7 @@ Begin VB.Form frmPreaEstudio
       ToolTipText     =   "Copiar Expediente"
       Top             =   40
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   550
       _StockProps     =   79
@@ -3632,7 +3705,7 @@ Begin VB.Form frmPreaEstudio
       EndProperty
       TextAlignment   =   1
       Appearance      =   6
-      Picture         =   "frmPreaEstudio.frx":E66D
+      Picture         =   "frmPreaEstudio.frx":E669
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.FlatEdit txtExpediente 
@@ -3641,7 +3714,7 @@ Begin VB.Form frmPreaEstudio
       TabIndex        =   136
       Top             =   840
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   706
       _StockProps     =   77
@@ -3666,7 +3739,7 @@ Begin VB.Form frmPreaEstudio
       TabIndex        =   146
       Top             =   840
       Width           =   2652
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4683
       _ExtentY        =   714
       _StockProps     =   77
@@ -3692,7 +3765,7 @@ Begin VB.Form frmPreaEstudio
       TabIndex        =   137
       Top             =   840
       Width           =   1692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   444
       _StockProps     =   79
@@ -3715,7 +3788,7 @@ Begin VB.Form frmPreaEstudio
       TabIndex        =   131
       Top             =   0
       Width           =   12732
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   22458
       _ExtentY        =   674
       _StockProps     =   14
@@ -3737,7 +3810,7 @@ Begin VB.Form frmPreaEstudio
       ToolTipText     =   "Estado del Estudio"
       Top             =   1440
       Width           =   5055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8916
       _ExtentY        =   661
       _StockProps     =   14
@@ -3761,7 +3834,7 @@ Begin VB.Form frmPreaEstudio
       ToolTipText     =   "Edad para Jubilación"
       Top             =   7920
       Width           =   10455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18441
       _ExtentY        =   661
       _StockProps     =   14
@@ -3785,7 +3858,7 @@ Begin VB.Form frmPreaEstudio
       ToolTipText     =   "Estado de la Persona"
       Top             =   1440
       Width           =   5415
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9551
       _ExtentY        =   661
       _StockProps     =   14
@@ -3850,35 +3923,6 @@ Dim vPasoCarga As Boolean 'Para que Bancos Click cbo lo ignore
 Dim m_NumPagos As Integer
 
 Private m_FECHA_CREACION As String 'Para el calulo de colilla
-Enum eTab
-    Datos
-    Calculo
-    Observaciones
-End Enum
-
-Enum eFormulas
-    eSalarioDevengado
-    eSalarioReal
-    eExtrasFijas
-    eDevengadoDelMes
-    eCargasSociales
-    ePorcentajeSobreSalario
-    eDeducciones
-    eCreditosCancelados
-    eCreditoxCobrar
-    eSalarioLiquido
-    eRefundiciones
-    eDesembolsos
-    eTotalLiquido
-    eFianzas
-    eLiquidezSinFianzas
-    eLiquidezPorcSinFianzas
-    eLiquidezConFianza
-    eLiquidezPorcConFianza
-    eMontoGirar
-    eAplicarTodas
-    ePolizaSD
-End Enum
 
 Dim pTabBefore As Integer
 
@@ -4637,7 +4681,7 @@ If IsNumeric(GlobalPorcAsocSolidarista) Then
     lblCargaAsociacion.Caption = Format((GlobalPorcAsocSolidarista * txtDevengadoMes.Text) / 100, "Standard")
 End If
     
-If clsMensajes.ESTADO = "N" Then
+If clsMensajes.Estado = "N" Then
     chkCargaAsociacion.Enabled = True
 End If
 
@@ -4686,7 +4730,7 @@ txtExtrasFijas.Locked = True
 
 btnDetalle.Item(1).Visible = False
 
-If clsEntidad.fxTraerUno(fxFormatearValor(pCodigo, Caracter)) Then
+If clsEntidad.fxTraerUno(fxFormatearValor(pCodigo, caracter)) Then
     If glogon.Recordset!MODIFICA_DEVENGADO = 1 Then
        txtSalarioDevengado.Locked = False
     End If
@@ -4708,7 +4752,7 @@ vError:
 
 End Sub
 
-Public Sub SbBloquearTab()
+Public Sub sbBloquearTab()
 
 On Error GoTo vError
 
@@ -4802,7 +4846,7 @@ vError:
 
 End Sub
 
-Private Sub SbLigarDatos(ByVal rs As ADODB.Recordset)
+Private Sub sbLigarDatos(ByVal rs As ADODB.Recordset)
 Dim Codigo As String
 Dim Item As String
 
@@ -4817,31 +4861,31 @@ txtFianzas.Text = Format(0, "Standard")
 
 clsMensajes.TASA_PTS_BONO = 0
 
-txtCedula.Text = !cedula & ""
+txtCedula.Text = !Cedula & ""
 
 DoEvents
 Call txtCedula_LostFocus
-txtNombre.Text = !nombre & ""
+txtNombre.Text = !Nombre & ""
 gPreAnalisis.Expediente = txtExpediente.Text
 
-clsMensajes.ESTADO = Trim(!ESTADO & "")
+clsMensajes.Estado = Trim(!Estado & "")
 
-gPreAnalisis.ESTADO = Trim(!ESTADO & "")
+gPreAnalisis.Estado = Trim(!Estado & "")
 
-If clsMensajes.ESTADO = "P" Then
+If clsMensajes.Estado = "P" Then
     lblEstado.Caption = "Pendiente"
     
-ElseIf clsMensajes.ESTADO = "R" Then
+ElseIf clsMensajes.Estado = "R" Then
     lblEstado.Caption = "Recibido"
-ElseIf clsMensajes.ESTADO = "A" Then
+ElseIf clsMensajes.Estado = "A" Then
     lblEstado.Caption = "Aprobado"
-ElseIf clsMensajes.ESTADO = "D" Then
+ElseIf clsMensajes.Estado = "D" Then
     lblEstado.Caption = "Denegado"
 End If
 
-m_estadoPreanalisis = clsMensajes.ESTADO
+m_estadoPreanalisis = clsMensajes.Estado
 
-Call SbBloquearTab
+Call sbBloquearTab
 
 Call sbSeleccionaSexo(cboSexo, Trim(!sexo & ""))
 
@@ -5032,7 +5076,7 @@ Call sbToolBar(Me.tlb, "edicion")
 Call SbAccionVentana(ModificarRegistro)
 
 
-Call SbTraerNumFiadores
+Call sbTraerNumFiadores
 
  m_CambioDatos = False
 
@@ -5078,7 +5122,7 @@ Else
     ExpedientePadre = txtExpediente.Text
 End If
 
-sql = "Select count(*) as NumFiadores from CRD_PREA_PREANALISIS where COD_PREANALISIS_REF = " & fxFormatearValor(ExpedientePadre, Caracter)
+sql = "Select count(*) as NumFiadores from CRD_PREA_PREANALISIS where COD_PREANALISIS_REF = " & fxFormatearValor(ExpedientePadre, caracter)
 
 If clsEntidad.fxEjecutaSQL(sql) Then
     m_FiadoresRegistrador = glogon.Recordset!NumFiadores
@@ -5115,7 +5159,7 @@ Else
     ExpedientePadre = txtExpediente.Text
 End If
 
-sql = "Select count(*) as NumFiadores from CRD_PREA_PREANALISIS where COD_PREANALISIS_REF = " & fxFormatearValor(ExpedientePadre, Caracter)
+sql = "Select count(*) as NumFiadores from CRD_PREA_PREANALISIS where COD_PREANALISIS_REF = " & fxFormatearValor(ExpedientePadre, caracter)
 
 If clsEntidad.fxEjecutaSQL(sql) Then
     m_FiadoresRegistrador = glogon.Recordset!NumFiadores
@@ -5135,7 +5179,7 @@ vError:
 
 End Function
 
-Private Sub SbTraerNumFiadores()
+Private Sub sbTraerNumFiadores()
 Dim m_Valor As String
 Dim Indicador As String
 Dim sql As String
@@ -5150,7 +5194,7 @@ Else
     ExpedientePadre = txtExpediente.Text
 End If
 
-sql = "Select NSUB_EXP from CRD_PREA_PREANALISIS where   COD_PREANALISIS = " & fxFormatearValor(ExpedientePadre, Caracter)
+sql = "Select NSUB_EXP from CRD_PREA_PREANALISIS where   COD_PREANALISIS = " & fxFormatearValor(ExpedientePadre, caracter)
 
 If clsEntidad.fxEjecutaSQL(sql) Then
 cboCantidadFiadores.Text = glogon.Recordset!NSUB_EXP
@@ -5163,7 +5207,7 @@ vError:
 
 End Sub
     
-Private Sub SbTraerDatosExpediente()
+Private Sub sbTraerDatosExpediente()
     
 On Error GoTo vError
 
@@ -5191,7 +5235,7 @@ Else
     Indicador = "E"
 End If
         
-If clsEntidad.fxTraerUno(fxFormatearValor(txtExpediente.Text, Caracter)) Then
+If clsEntidad.fxTraerUno(fxFormatearValor(txtExpediente.Text, caracter)) Then
 
     Set rs = glogon.Recordset
     m_Cargando = True
@@ -5199,7 +5243,7 @@ If clsEntidad.fxTraerUno(fxFormatearValor(txtExpediente.Text, Caracter)) Then
     If m_CargoCombo = False Then
         cboSubExpediente.Clear
         cboSubExpediente.AddItem m_Valor
-        Call sbLlenarComboFiltrado(cboSubExpediente, "spCRDPreaPREANALISIS", "COD_PREANALISIS", "COD_PREANALISIS", "SubExpediente", "", fxFormatearValor(m_Valor, Caracter))
+        Call sbLlenarComboFiltrado(cboSubExpediente, "spCRDPreaPREANALISIS", "COD_PREANALISIS", "COD_PREANALISIS", "SubExpediente", "", fxFormatearValor(m_Valor, caracter))
         cboSubExpediente.AddItem "Nuevo Expediente"
         cboSubExpediente.ItemData(cboSubExpediente.NewIndex) = -1
         VcboCantidadFiadores = IIf(Val(cboCantidadFiadores.Text) = 0, 1, Val(cboCantidadFiadores.Text))
@@ -5213,7 +5257,7 @@ If clsEntidad.fxTraerUno(fxFormatearValor(txtExpediente.Text, Caracter)) Then
         End If
 
     End If
-    Call SbLigarDatos(rs)
+    Call sbLigarDatos(rs)
 
     If Indicador = "S" Then
         Call sbBloquearControles(Me, SubExpediente)
@@ -5258,7 +5302,7 @@ If m_valorComboExp = "Nuevo SubExpediente" Then
             vpadre = txtExpediente.Text
         End If
          clsEntidad.tablaName = "spCRDPreaMaxSubExpediente"
-        If clsEntidad.fxTraerUno(fxFormatearValor(vpadre, Caracter)) Then
+        If clsEntidad.fxTraerUno(fxFormatearValor(vpadre, caracter)) Then
         Set vRecordset = glogon.Recordset
             If Trim(vRecordset(0) & "") <> "" Then
                 txtExpediente.Text = Trim(vRecordset(0) & "")
@@ -5274,7 +5318,7 @@ ElseIf InStr(1, txtExpediente.Text, "-", vbTextCompare) = 0 Then
     End If
     If m_valorComboExp = "Nuevo SubExpediente" Then
          clsEntidad.tablaName = "spCRDPreaMaxSubExpediente"
-        If clsEntidad.fxTraerUno(fxFormatearValor(m_Expediente, Caracter)) Then
+        If clsEntidad.fxTraerUno(fxFormatearValor(m_Expediente, caracter)) Then
         Set vRecordset = glogon.Recordset
             If Trim(vRecordset(0) & "") <> "" Then
                 txtExpediente.Text = Trim(vRecordset(0) & "")
@@ -5286,7 +5330,7 @@ ElseIf InStr(1, txtExpediente.Text, "-", vbTextCompare) = 0 Then
 Else
     vpadre = fxDeCodificaPrimaryKey(txtExpediente.Text, 1, "-")
     clsEntidad.tablaName = "spCRDPreaMaxSubExpediente"
-    If clsEntidad.fxTraerUno(fxFormatearValor(vpadre, Caracter)) Then
+    If clsEntidad.fxTraerUno(fxFormatearValor(vpadre, caracter)) Then
     Set vRecordset = glogon.Recordset
         If Trim(vRecordset(0) & "") <> "" Then
             txtExpediente.Text = Trim(vRecordset(0) & "")
@@ -5347,11 +5391,11 @@ If rs.EOF And rs.BOF Then
   MsgBox "No existen Garantias en Fondos [Creadas], verifique...", vbCritical
 Else
  Do While Not rs.EOF
-   cboFondo.AddItem Trim(rs!GARANTIA) & " - " & rs!Descripcion
+   cboFondo.AddItem Trim(rs!GARANTIA) & " - " & rs!DESCRIPCION
    rs.MoveNext
  Loop
  rs.MoveFirst
- cboFondo.Text = Trim(rs!GARANTIA) & " - " & rs!Descripcion
+ cboFondo.Text = Trim(rs!GARANTIA) & " - " & rs!DESCRIPCION
 End If
 rs.Close
 
@@ -5364,7 +5408,7 @@ Private Sub sbInicializaComboExpediente()
     cboSubExpediente.AddItem "Nuevo Expediente"
     cboSubExpediente.ItemData(cboSubExpediente.NewIndex) = -1
     cboSubExpediente.ListIndex = 0
-    clsMensajes.ESTADO = "P"
+    clsMensajes.Estado = "P"
      m_Cargando = False
      
 End Sub
@@ -5375,7 +5419,7 @@ On Error GoTo vError
 glogon.strSQL = "select descripcion from catalogo where codigo = '" & Trim(strCodigo) & "'"
 
 If execSql(glogon.strSQL, True) Then
-    fxDescLineaCredito = IIf(IsNull(glogon.Recordset!Descripcion), "", glogon.Recordset!Descripcion)
+    fxDescLineaCredito = IIf(IsNull(glogon.Recordset!DESCRIPCION), "", glogon.Recordset!DESCRIPCION)
 Else
     MsgBox "No se encontró la descripción del código de la linea de crédito digitada. - " & strCodigo, vbCritical
 End If
@@ -5493,13 +5537,13 @@ If m_ventanaEnModo = ModificarRegistro Then
    End If
 End If
 
-If ((clsMensajes.ESTADO = "A") Or (clsMensajes.ESTADO = "D")) Then
-    m_estadoPreanalisis = clsMensajes.ESTADO
+If ((clsMensajes.Estado = "A") Or (clsMensajes.Estado = "D")) Then
+    m_estadoPreanalisis = clsMensajes.Estado
     MsgBox "No es posible realizar cambios al expediente seleccionado.", vbInformation, gMsgTitulo
     fxValidaDatos = False
     Exit Function
 Else
-    clsMensajes.ESTADO = "R"
+    clsMensajes.Estado = "R"
 End If
 
 If Val(cboCantidadFiadores.Text) < m_FiadoresRegistrador Then
@@ -5514,7 +5558,7 @@ If Val(cboCantidadFiadores.Text) < m_FiadoresRegistrador Then
 '    Exit Function
 End If
 
-m_estadoPreanalisis = clsMensajes.ESTADO
+m_estadoPreanalisis = clsMensajes.Estado
 clsMensajes.Usuario = glogon.Usuario
 
 'Validar de Cantidad Fiadores
@@ -5566,20 +5610,20 @@ End If
 
 'If TabValidar = Datos Then 'Valida datos del tab del tab de datos
     'Validar número de cédula
-clsMensajes.cedula = Trim(txtCedula.Text)
+clsMensajes.Cedula = Trim(txtCedula.Text)
 If Len(txtCedula.Text) = 0 Then
     MsgBox "El Número de cédula es requerido.", vbInformation, gMsgTitulo
     fxValidaDatos = False
-    clsMensajes.cedula = ""
+    clsMensajes.Cedula = ""
     txtCedula.SetFocus
     Exit Function
 End If
 'Validar nombre
-clsMensajes.nombre = Trim(txtNombre.Text)
+clsMensajes.Nombre = Trim(txtNombre.Text)
 If Len(txtNombre.Text) = 0 Then
     MsgBox "El Nombre es requerido.", vbInformation, gMsgTitulo
     fxValidaDatos = False
-    clsMensajes.nombre = ""
+    clsMensajes.Nombre = ""
     txtNombre.SetFocus
     Exit Function
 End If
@@ -5884,8 +5928,8 @@ Dim strSQL As String, rs As New ADODB.Recordset
 On Error GoTo vError
 fxValidaDatosBorrar = True
 
-If ((clsMensajes.ESTADO = "A") Or (clsMensajes.ESTADO = "D")) Then
-    m_estadoPreanalisis = clsMensajes.ESTADO
+If ((clsMensajes.Estado = "A") Or (clsMensajes.Estado = "D")) Then
+    m_estadoPreanalisis = clsMensajes.Estado
     MsgBox "No es posible realizar cambios al expediente seleccionado.", vbInformation, gMsgTitulo
     fxValidaDatosBorrar = False
     Exit Function
@@ -5956,13 +6000,15 @@ For i = 1 To vGrid.MaxRows
         
     End Select
 Next i
+
 End Sub
+
 Public Function fxAgregaColleccionBorrar(ByVal cod_preanalisis As String, ByVal cod_preanalisis_ref As String) As String
 On Error GoTo error
 Dim Vcoleccion As New Collection
 With Vcoleccion
-    .Add fxFormatearValor(cod_preanalisis, Caracter)
-    .Add fxFormatearValor(cod_preanalisis_ref, Caracter)
+    .Add fxFormatearValor(cod_preanalisis, caracter)
+    .Add fxFormatearValor(cod_preanalisis_ref, caracter)
 
 End With
 fxAgregaColleccionBorrar = fxFormatearValuesCollection(Vcoleccion)
@@ -6045,7 +6091,7 @@ Select Case True
   Case m_ventanaEnModo = NuevoRegistro
     
     If clsEntidad.fxAgregar(clsMensajes.fxConcatenaColleccion) Then
-            
+             
         Call sbTraerMaxExpediente
         Call txtExpediente_LostFocus
         Call SbAccionVentana(ModificarRegistro)
@@ -6061,13 +6107,13 @@ Select Case True
         Else
         
             'Refundiciones (Lista)
-            glogon.strSQL = "spCRDPreaRefundiciones " & fxFormatearValor(gPreAnalisis.Expediente, Caracter) & "," & "'I'"
+            glogon.strSQL = "spCRDPreaRefundiciones " & fxFormatearValor(gPreAnalisis.Expediente, caracter) & "," & "'I'"
             If Not clsEntidad.fxEjecutaSQL(glogon.strSQL) Then
                 MsgBox "Ocurrió un error al inicializar refundiciones.", vbInformation, gMsgTitulo
             End If
             
             'Fianzas (Lista)
-            glogon.strSQL = "spCRDPreaFianzas " & fxFormatearValor(gPreAnalisis.Expediente, Caracter) & "," & "'I'"
+            glogon.strSQL = "spCRDPreaFianzas " & fxFormatearValor(gPreAnalisis.Expediente, caracter) & "," & "'I'"
             If Not clsEntidad.fxEjecutaSQL(glogon.strSQL) Then
                 MsgBox "Ocurrió un error al inicializar fianzas.", vbInformation, gMsgTitulo
             End If
@@ -6300,7 +6346,7 @@ GLOBALES.gTag2 = dtpCorte.Value
         End If
         
         'Inicializa Créditos en transito
-        glogon.strSQL = "spCRDPreaCreditosTransito  " & fxFormatearValor(gPreAnalisis.Expediente, Caracter) & "," & "'I'" & "," & vProceso
+        glogon.strSQL = "spCRDPreaCreditosTransito  " & fxFormatearValor(gPreAnalisis.Expediente, caracter) & "," & "'I'" & "," & vProceso
         If Not clsEntidad.fxEjecutaSQL(glogon.strSQL) Then
             MsgBox "Ocurrió un error al inicializar créditos en transito.", vbInformation, gMsgTitulo
         End If
@@ -6332,7 +6378,7 @@ GLOBALES.gTag2 = dtpCorte.Value
         End If
         
         'Inicializa Créditos en transito
-        glogon.strSQL = "spCRDPreaCreditosTransito  " & fxFormatearValor(gPreAnalisis.Expediente, Caracter) & "," & "'I'" & "," & vProceso
+        glogon.strSQL = "spCRDPreaCreditosTransito  " & fxFormatearValor(gPreAnalisis.Expediente, caracter) & "," & "'I'" & "," & vProceso
         If Not clsEntidad.fxEjecutaSQL(glogon.strSQL) Then
             MsgBox "Ocurrió un error al inicializar créditos en transisto.", vbInformation, gMsgTitulo
         End If
@@ -6515,7 +6561,7 @@ Private Sub cboFondo_Click()
     strSQL = "exec spCRDGarantiaFNDCalculo '" & Trim(txtCedula.Text) & "','" & SIFGlobal.fxCodText(cboFondo.Text) & "'"
     Call OpenRecordSet(rs, strSQL)
     
-    txtMonto.Text = Format(rs!disponible, "Standard")
+    txtMonto.Text = Format(rs!Disponible, "Standard")
     If rs!AplicaTasa = 1 Then
         txtTasa.Text = rs!TASA
     End If
@@ -6555,7 +6601,7 @@ pGarantia = fxGarantia(cboGarantia.Text)
 strSQL = "select FORMULARIO  From CRD_GARANTIA_TIPOS" _
        & " where garantia = '" & pGarantia & "'"
 Call OpenRecordSet(rs, strSQL)
- pGarantiaForm = Trim(rs!formulario)
+ pGarantiaForm = Trim(rs!Formulario)
 rs.Close
 
 
@@ -6684,8 +6730,8 @@ On Error GoTo vError
     IndiceTipoSalario = Right(cboSalario.Text, 3)
     
     'sbCRDPreaSalario(@Expediente varchar(15), @TipoSalario varchar(2) = '')
-    sql = "spCRDPreaSalario " & fxFormatearValor(gPreAnalisis.Expediente, Caracter) & ","
-    sql = sql & fxFormatearValor(Trim(Codigo), Caracter)
+    sql = "spCRDPreaSalario " & fxFormatearValor(gPreAnalisis.Expediente, caracter) & ","
+    sql = sql & fxFormatearValor(Trim(Codigo), caracter)
     
     If m_CargoSalario Then
         m_CargoSalario = False
@@ -7023,7 +7069,7 @@ Select Case Control
         End If
         
         ''Modifica tasa para aplicar bonos por membresia
-        If clsMensajes.ESTADO = "R" Or clsMensajes.ESTADO = "P" Then
+        If clsMensajes.Estado = "R" Or clsMensajes.Estado = "P" Then
             mBono = fxBonoMembresia(Trim(txtCedula.Text), txtLinea.Text, fxGarantia(cboGarantia.Text))
             mPlazo = fxBonoPlazoMembresia(Trim(txtCedula.Text), fxGarantia(cboGarantia.Text))
             If mBono > 0 Then
@@ -7187,10 +7233,10 @@ Public Function fxAgregaColleccion(ByVal Expediente As String, ByVal pObsAnalisi
 On Error GoTo error
 Dim Vcoleccion As New Collection
 With Vcoleccion
-    .Add fxFormatearValor(Expediente, Caracter)
-    .Add fxFormatearValor(pObsAnalisista, Caracter)
-    .Add fxFormatearValor(pObsComite, Caracter)
-    .Add fxFormatearValor(pObsJuntaDirectiva, Caracter)
+    .Add fxFormatearValor(Expediente, caracter)
+    .Add fxFormatearValor(pObsAnalisista, caracter)
+    .Add fxFormatearValor(pObsComite, caracter)
+    .Add fxFormatearValor(pObsJuntaDirectiva, caracter)
 End With
 fxAgregaColleccion = fxFormatearValuesCollection(Vcoleccion)
 
@@ -7207,7 +7253,7 @@ On Error GoTo vError
  
 
 
-If ((clsMensajes.ESTADO = "A") Or (clsMensajes.ESTADO = "D")) Then
+If ((clsMensajes.Estado = "A") Or (clsMensajes.Estado = "D")) Then
     MsgBox "No es posible realizar cambios en las observaciones del expediente seleccionado.", vbInformation, gMsgTitulo
     Exit Sub
 End If
@@ -7237,7 +7283,7 @@ End If
     
 End Sub
 
-Private Sub CmdScrollBar(Index As Integer)
+Private Sub cmdScrollBar(Index As Integer)
 Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
@@ -7434,7 +7480,7 @@ txtExpediente.Height = cboSubExpediente.Height
 
  mFrecuenciaPago = "M"
 
-Call SbInicializaGlobales
+Call sbInicializaGlobales
 lblPorcentajeSalario.Caption = str(GlobalPorcLiquidezLibre) & " % Sobre Salario "
 'txtCedula.SetFocus
  
@@ -7463,7 +7509,7 @@ Call sbInicializaComboExpediente
 
 tcMain.Item(0).Selected = True
 
-Call SbBloquearTab
+Call sbBloquearTab
 
 m_CargoSalario = True
 m_FECHA_CREACION = "-1"
@@ -7577,7 +7623,7 @@ End Sub
 Private Sub lblSalarioDevengado_DblClick(Index As Integer)
     Dim sql As String
     
-    sql = "spCRDPreaSalariosLista " & fxFormatearValor(gPreAnalisis.Expediente, Caracter)
+    sql = "spCRDPreaSalariosLista " & fxFormatearValor(gPreAnalisis.Expediente, caracter)
         
     If clsEntidad.fxEjecutaSQL(sql) Then
         m_SoloVerSalarios = True
@@ -7651,12 +7697,12 @@ End If
 
 Select Case UCase(Button.Key)
     Case UCase("anterior")
-        Call CmdScrollBar(0)
+        Call cmdScrollBar(0)
         Call sbActivarMontoGirar
         tcMain.Item(0).Selected = True
         
     Case UCase("Siguiente")
-        Call CmdScrollBar(1)
+        Call cmdScrollBar(1)
         Call sbActivarMontoGirar
         tcMain.Item(0).Selected = True
 End Select
@@ -7720,28 +7766,28 @@ Do While Not rs.EOF
     Select Case True
      Case rbActas.Item(0).Value 'Resoluciones
         
-        Set itmX = lswAutorizadores.ListItems.Add(, , rs!ESTADO)
-            itmX.SubItems(1) = rs!registro_Fecha
-            itmX.SubItems(2) = rs!registro_usuario
+        Set itmX = lswAutorizadores.ListItems.Add(, , rs!Estado)
+            itmX.SubItems(1) = rs!Registro_Fecha
+            itmX.SubItems(2) = rs!Registro_Usuario
             itmX.SubItems(3) = rs!Notas
      
      Case rbActas.Item(1).Value 'Autorizaciones
         
-        Set itmX = lswAutorizadores.ListItems.Add(, , rs!ESTADO)
-            itmX.SubItems(1) = rs!registro_Fecha
-            itmX.SubItems(2) = rs!cedula
-            itmX.SubItems(3) = rs!nombre
-            itmX.SubItems(4) = rs!registro_usuario
+        Set itmX = lswAutorizadores.ListItems.Add(, , rs!Estado)
+            itmX.SubItems(1) = rs!Registro_Fecha
+            itmX.SubItems(2) = rs!Cedula
+            itmX.SubItems(3) = rs!Nombre
+            itmX.SubItems(4) = rs!Registro_Usuario
             itmX.SubItems(5) = rs!Notas
             
           
         
      Case rbActas.Item(2).Value 'Asistencia
    
-        Set itmX = lswAutorizadores.ListItems.Add(, , rs!registro_Fecha)
-            itmX.SubItems(1) = rs!cedula
-            itmX.SubItems(2) = rs!nombre
-            itmX.SubItems(3) = rs!registro_usuario
+        Set itmX = lswAutorizadores.ListItems.Add(, , rs!Registro_Fecha)
+            itmX.SubItems(1) = rs!Cedula
+            itmX.SubItems(2) = rs!Nombre
+            itmX.SubItems(3) = rs!Registro_Usuario
     
     End Select
 
@@ -7803,7 +7849,7 @@ Select Case Index
         If m_CambioCalculo Then
             If m_valorComboExp <> "Nuevo SubExpediente" Then
                 
-                If ((clsMensajes.ESTADO = "R") Or (clsMensajes.ESTADO = "P")) Then
+                If ((clsMensajes.Estado = "R") Or (clsMensajes.Estado = "P")) Then
                         Call fxGuardar
                 End If
             End If
@@ -7812,7 +7858,7 @@ Select Case Index
     
     Case 2
         tcAux.Item(0).Selected = True
-        If ((clsMensajes.ESTADO = "R") Or (clsMensajes.ESTADO = "P")) Then
+        If ((clsMensajes.Estado = "R") Or (clsMensajes.Estado = "P")) Then
             If m_CambioObservaciones Then
                 Call sbGuardaObservaciones
             End If
@@ -7900,7 +7946,7 @@ Select Case UCase(Button.Key)
     Case "MODIFICAR", "EDITAR"
       Call sbToolBar(Me.tlb, "edicion")
       txtCedula.SetFocus
-      Call SbBloquearTab
+      Call sbBloquearTab
     
     Case "BORRAR"
          Call sbBorrar
@@ -7968,7 +8014,7 @@ Private Sub txtCedula_Change()
     txtNombre.Text = ""
     lblEdad.Caption = ""
     
-     Call SbBloquearTab
+     Call sbBloquearTab
      m_CambioDatos = True
      If cboSubExpediente.Text = "Nuevo Expediente" Then
         cboCantidadFiadores.Enabled = True
@@ -7999,7 +8045,7 @@ End If
 glogon.strSQL = "select nombre from CRD_PREA_PREANALISIS where COD_PREANALISIS = '" & vExpPadre & "' and cedula = '" & txtCedula.Text & "'"
 If execSql(glogon.strSQL, True) Then
     
-    MsgBox glogon.Recordset!nombre & " con numero de cedula " & txtCedula.Text & " ya existe como un expediente Maestro, verifique e intente de nuevo.", vbInformation, gMsgTitulo
+    MsgBox glogon.Recordset!Nombre & " con numero de cedula " & txtCedula.Text & " ya existe como un expediente Maestro, verifique e intente de nuevo.", vbInformation, gMsgTitulo
     fxExiteCedulaEnSubExpediente = True
 End If
 
@@ -8042,15 +8088,15 @@ If execSql(glogon.strSQL, True) Then
     
     mFrecuenciaPago = RsTemp!Frecuencia_ID
     
-    txtNombre.Text = IIf(IsNull(RsTemp!nombre), "", RsTemp!nombre)
+    txtNombre.Text = IIf(IsNull(RsTemp!Nombre), "", RsTemp!Nombre)
     gPreAnalisis.Institucion = IIf(IsNull(Trim(RsTemp!cod_institucion & "")), "-1", Trim(RsTemp!cod_institucion & ""))
     
-    gPreAnalisis.Socio = IIf(Trim(RsTemp!ESTADOACTUAL & "") = "", "N", Trim(RsTemp!ESTADOACTUAL))
+    gPreAnalisis.Socio = IIf(Trim(RsTemp!EstadoActual & "") = "", "N", Trim(RsTemp!EstadoActual))
     
     Call sbSeleccionaSexo(cboSexo, Trim(RsTemp!sexo & ""))
     
-    If Trim(RsTemp!FECHA_NAC & "") <> "" Then
-        dtpFecNac.Value = RsTemp!FECHA_NAC
+    If Trim(RsTemp!fecha_nac & "") <> "" Then
+        dtpFecNac.Value = RsTemp!fecha_nac
     Else
         dtpFecNac.Value = Format(RsTemp!FechaSistema, "dd/mm/yyyy")
     End If
@@ -8060,7 +8106,7 @@ If execSql(glogon.strSQL, True) Then
 
     txtNombre.Locked = True
     
-    Call SbBloquearTab
+    Call sbBloquearTab
 Else
     glogon.strSQL = "select nombre,FECHA_NACIMIENTO,sexo,dbo.MyGetdate() as 'FechaSistema', 'No Socio' as 'EstadoPersona'" _
                   & " from CRD_PREA_PREANALISIS" _
@@ -8069,7 +8115,7 @@ Else
     If execSql(glogon.strSQL, True) Then
     
         Set RsTemp = glogon.Recordset
-        txtNombre.Text = IIf(IsNull(RsTemp!nombre), "", RsTemp!nombre)
+        txtNombre.Text = IIf(IsNull(RsTemp!Nombre), "", RsTemp!Nombre)
         gPreAnalisis.Socio = "N"
         
         Call sbSeleccionaSexo(cboSexo, Trim(RsTemp!sexo & ""))
@@ -8121,9 +8167,9 @@ Public Sub txtExpediente_LostFocus()
 If Len(txtExpediente.Text) = 0 Then Exit Sub
 
 vPaso = True
-    Call SbTraerNumFiadores
+    Call sbTraerNumFiadores
     Call fxValidaNumFiadoresRegistrados
-    Call SbTraerDatosExpediente
+    Call sbTraerDatosExpediente
 
     m_CargoSalario = True
     m_CargoCombo = False
@@ -8179,7 +8225,7 @@ txtDesLineaCredito.Text = fxDescLineaCredito(Trim(txtLinea.Text))
 If Len(Trim(txtDesLineaCredito.Text)) > 0 Then
     Call sbCalcularCuota("txtMonto")
     cboDestino.Clear
-    Call sbLlenarComboFiltrado(cboDestino, "spCRDPreaDestinos", "cod_destino", "DescDestino", "Linea", "Seleccione un destino", fxFormatearValor(txtLinea.Text, Caracter))
+    Call sbLlenarComboFiltrado(cboDestino, "spCRDPreaDestinos", "cod_destino", "DescDestino", "Linea", "Seleccione un destino", fxFormatearValor(txtLinea.Text, caracter))
         
     If Len(txtDesLineaCredito.Text) > 0 Then
         Call sbSTCargaCboGarantia(cboGarantia, txtLinea.Text)
@@ -8235,7 +8281,7 @@ End Sub
 
 
 Private Sub txtNombre_LostFocus()
-Call SbBloquearTab
+Call sbBloquearTab
 End Sub
 
 Private Sub txtObservaciones_Change()
@@ -8684,7 +8730,7 @@ If Val(txtLiquidezPorcConFianza.Text) = 0 Then
     txtLiquidezPorcConFianza.Text = 0
 End If
 
-sql = "exec spCRDPreaClasificacionNew " & fxFormatearValor(txtCedula.Text, Caracter) & "," & fxFormatearValor(CDbl(txtLiquidezPorcConFianza.Text), Numerico) & ", " & fxFormatearValor(gPreAnalisis.Expediente, Caracter)
+sql = "exec spCRDPreaClasificacionNew " & fxFormatearValor(txtCedula.Text, caracter) & "," & fxFormatearValor(CDbl(txtLiquidezPorcConFianza.Text), Numerico) & ", " & fxFormatearValor(gPreAnalisis.Expediente, caracter)
 
 'Call clsEntidad.fxEjecutaSQL(sql)
 
@@ -8712,7 +8758,7 @@ With glogon.Recordset
        vGrid.Text = !Codigo
        
        vGrid.Col = 2
-       vGrid.Text = !Descripcion
+       vGrid.Text = !DESCRIPCION
        
        vGrid.Col = 3
        vGrid.Text = !Razon
@@ -8767,7 +8813,7 @@ Dim strSQL As String, rs As New ADODB.Recordset
         cboComite.ItemData(cboComite.NewIndex) = 0
         
         Do While Not rs.EOF
-            cboComite.AddItem Trim(rs!Descripcion & "")
+            cboComite.AddItem Trim(rs!DESCRIPCION & "")
             cboComite.ItemData(cboComite.NewIndex) = rs!ID_COMITE
          rs.MoveNext
         Loop
@@ -8828,9 +8874,9 @@ Do While Not rs.EOF
     Select Case i
         Case 1
             vGridTags.Tag = rs!Linea
-            vGridTags.Text = rs!registro_Fecha & ""
+            vGridTags.Text = rs!Registro_Fecha & ""
         Case 2
-            vGridTags.Text = rs!registro_usuario & ""
+            vGridTags.Text = rs!Registro_Usuario & ""
         Case 3
             vGridTags.Text = rs!Etiqueta & ""
         Case 4
@@ -8886,9 +8932,9 @@ strSQL = "select Pa.*, Cg.DESCRIPCION " _
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
  Set itmX = lsw.ListItems.Add(, , rs!Cod_Causas)
-     itmX.SubItems(1) = rs!Descripcion
-     itmX.SubItems(2) = rs!registro_Fecha & ""
-     itmX.SubItems(3) = rs!registro_usuario & ""
+     itmX.SubItems(1) = rs!DESCRIPCION
+     itmX.SubItems(2) = rs!Registro_Fecha & ""
+     itmX.SubItems(3) = rs!Registro_Usuario & ""
     
  rs.MoveNext
 Loop

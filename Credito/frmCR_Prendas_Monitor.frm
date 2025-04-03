@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_Prendas_Monitor 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -13,13 +13,14 @@ Begin VB.Form frmCR_Prendas_Monitor
    MDIChild        =   -1  'True
    ScaleHeight     =   10665
    ScaleWidth      =   17055
+   WindowState     =   2  'Maximized
    Begin XtremeSuiteControls.ListView lswComercio 
       Height          =   2055
       Left            =   120
       TabIndex        =   0
       Top             =   2880
       Width           =   3015
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5318
       _ExtentY        =   3625
       _StockProps     =   77
@@ -47,7 +48,7 @@ Begin VB.Form frmCR_Prendas_Monitor
       TabIndex        =   1
       Top             =   7920
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2778
       _ExtentY        =   582
       _StockProps     =   77
@@ -73,7 +74,7 @@ Begin VB.Form frmCR_Prendas_Monitor
       TabIndex        =   2
       Top             =   8280
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2778
       _ExtentY        =   582
       _StockProps     =   77
@@ -99,7 +100,7 @@ Begin VB.Form frmCR_Prendas_Monitor
       TabIndex        =   3
       Top             =   8640
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   556
       _StockProps     =   68
@@ -121,7 +122,7 @@ Begin VB.Form frmCR_Prendas_Monitor
       TabIndex        =   4
       Top             =   9000
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   556
       _StockProps     =   68
@@ -143,7 +144,7 @@ Begin VB.Form frmCR_Prendas_Monitor
       TabIndex        =   5
       Top             =   2520
       Width           =   3015
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5318
       _ExtentY        =   556
       _StockProps     =   77
@@ -167,7 +168,7 @@ Begin VB.Form frmCR_Prendas_Monitor
       TabIndex        =   6
       Top             =   2160
       Width           =   210
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   370
       _ExtentY        =   370
       _StockProps     =   79
@@ -181,9 +182,9 @@ Begin VB.Form frmCR_Prendas_Monitor
       Left            =   3360
       TabIndex        =   7
       Top             =   2880
-      Width           =   10695
+      Width           =   13575
       _Version        =   524288
-      _ExtentX        =   18865
+      _ExtentX        =   23945
       _ExtentY        =   11668
       _StockProps     =   64
       BackColorStyle  =   1
@@ -198,7 +199,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      MaxCols         =   33
+      MaxCols         =   45
       SpreadDesigner  =   "frmCR_Prendas_Monitor.frx":0000
       VScrollSpecial  =   -1  'True
       VScrollSpecialType=   2
@@ -210,7 +211,7 @@ Begin VB.Form frmCR_Prendas_Monitor
       TabIndex        =   8
       Top             =   0
       Width           =   16815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   29660
       _ExtentY        =   4471
       _StockProps     =   79
@@ -224,11 +225,11 @@ Begin VB.Form frmCR_Prendas_Monitor
       End
       Begin XtremeSuiteControls.FlatEdit txtUserActualiza 
          Height          =   330
-         Left            =   1920
+         Left            =   2040
          TabIndex        =   9
          Top             =   2160
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   582
          _StockProps     =   77
@@ -248,12 +249,12 @@ Begin VB.Form frmCR_Prendas_Monitor
       End
       Begin XtremeSuiteControls.FlatEdit txtIdPrincipal 
          Height          =   330
-         Left            =   1920
+         Left            =   2040
          TabIndex        =   10
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   600
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   582
          _StockProps     =   77
@@ -273,11 +274,11 @@ Begin VB.Form frmCR_Prendas_Monitor
       End
       Begin XtremeSuiteControls.FlatEdit txtPersonaId 
          Height          =   330
-         Left            =   1920
+         Left            =   2040
          TabIndex        =   11
          Top             =   240
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   582
          _StockProps     =   77
@@ -301,7 +302,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   12
          Top             =   240
          Width           =   5295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9340
          _ExtentY        =   582
          _StockProps     =   77
@@ -325,7 +326,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   13
          Top             =   1440
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   582
          _StockProps     =   77
@@ -351,7 +352,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   14
          Top             =   2160
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   582
          _StockProps     =   77
@@ -373,11 +374,11 @@ Begin VB.Form frmCR_Prendas_Monitor
       End
       Begin XtremeSuiteControls.FlatEdit txtUserRegistra 
          Height          =   330
-         Left            =   1920
+         Left            =   2040
          TabIndex        =   15
          Top             =   1800
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   582
          _StockProps     =   77
@@ -401,15 +402,15 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   16
          Top             =   360
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   1080
          _StockProps     =   79
          Caption         =   "Buscar"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial Narrow"
-            Size            =   7.5
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -418,7 +419,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmCR_Prendas_Monitor.frx":1098
+         Picture         =   "frmCR_Prendas_Monitor.frx":1458
       End
       Begin XtremeSuiteControls.PushButton btnExportar 
          Height          =   615
@@ -427,11 +428,11 @@ Begin VB.Form frmCR_Prendas_Monitor
          ToolTipText     =   "Exportar a Excel"
          Top             =   360
          Width           =   615
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1080
          _ExtentY        =   1080
          _StockProps     =   79
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Arial Narrow"
             Size            =   7.5
@@ -443,7 +444,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmCR_Prendas_Monitor.frx":1AB6
+         Picture         =   "frmCR_Prendas_Monitor.frx":1E76
       End
       Begin XtremeSuiteControls.ProgressBar ProgressBarX 
          Height          =   135
@@ -452,7 +453,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          Top             =   240
          Visible         =   0   'False
          Width           =   1935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   233
          _StockProps     =   93
@@ -461,11 +462,11 @@ Begin VB.Form frmCR_Prendas_Monitor
       End
       Begin XtremeSuiteControls.ComboBox cboEstadoPersona 
          Height          =   330
-         Left            =   1920
+         Left            =   2040
          TabIndex        =   19
          Top             =   1440
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   582
          _StockProps     =   77
@@ -492,7 +493,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   600
          Width           =   5295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9340
          _ExtentY        =   582
          _StockProps     =   77
@@ -516,7 +517,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   48
          Top             =   1800
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   582
          _StockProps     =   77
@@ -542,7 +543,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   49
          Top             =   1440
          Width           =   975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1720
          _ExtentY        =   582
          _StockProps     =   77
@@ -568,7 +569,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   50
          Top             =   2160
          Width           =   975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1720
          _ExtentY        =   582
          _StockProps     =   77
@@ -594,7 +595,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   54
          Top             =   1800
          Width           =   975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1720
          _ExtentY        =   582
          _StockProps     =   77
@@ -621,7 +622,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   1440
          Width           =   735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1296
          _ExtentY        =   582
          _StockProps     =   77
@@ -646,7 +647,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   1440
          Width           =   735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1296
          _ExtentY        =   582
          _StockProps     =   77
@@ -671,7 +672,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   1800
          Width           =   735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1296
          _ExtentY        =   582
          _StockProps     =   77
@@ -696,7 +697,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   1800
          Width           =   735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1296
          _ExtentY        =   582
          _StockProps     =   77
@@ -721,7 +722,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   2160
          Width           =   735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1296
          _ExtentY        =   582
          _StockProps     =   77
@@ -746,7 +747,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   2160
          Width           =   735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1296
          _ExtentY        =   582
          _StockProps     =   77
@@ -766,12 +767,12 @@ Begin VB.Form frmCR_Prendas_Monitor
       End
       Begin XtremeSuiteControls.FlatEdit txtIdSecundario 
          Height          =   330
-         Left            =   1920
+         Left            =   2040
          TabIndex        =   61
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   960
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   582
          _StockProps     =   77
@@ -796,7 +797,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   960
          Width           =   5295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9340
          _ExtentY        =   582
          _StockProps     =   77
@@ -820,7 +821,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   65
          Top             =   1440
          Width           =   975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1720
          _ExtentY        =   582
          _StockProps     =   77
@@ -844,9 +845,33 @@ Begin VB.Form frmCR_Prendas_Monitor
          Height          =   330
          Left            =   12240
          TabIndex        =   68
+         Top             =   2160
+         Width           =   975
+         _Version        =   1572864
+         _ExtentX        =   1720
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   4194304
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtAnio 
+         Height          =   330
+         Left            =   12240
+         TabIndex        =   69
          Top             =   1800
          Width           =   975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1720
          _ExtentY        =   582
          _StockProps     =   77
@@ -866,12 +891,35 @@ Begin VB.Form frmCR_Prendas_Monitor
       End
       Begin XtremeSuiteControls.Label Label2 
          Height          =   255
+         Index           =   18
+         Left            =   11040
+         TabIndex        =   70
+         Top             =   1800
+         Width           =   975
+         _Version        =   1572864
+         _ExtentX        =   1720
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "Año"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   1
+      End
+      Begin XtremeSuiteControls.Label Label2 
+         Height          =   255
          Index           =   17
          Left            =   11040
          TabIndex        =   67
-         Top             =   1800
+         Top             =   2160
          Width           =   975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1720
          _ExtentY        =   450
          _StockProps     =   79
@@ -894,7 +942,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   66
          Top             =   1440
          Width           =   975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1720
          _ExtentY        =   450
          _StockProps     =   79
@@ -917,7 +965,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   64
          Top             =   960
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   450
          _StockProps     =   79
@@ -940,12 +988,12 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   62
          ToolTipText     =   "No Placa Provisional"
          Top             =   960
-         Width           =   1215
-         _Version        =   1441793
-         _ExtentX        =   2143
+         Width           =   1695
+         _Version        =   1572864
+         _ExtentX        =   2990
          _ExtentY        =   450
          _StockProps     =   79
-         Caption         =   "Id Secundario"
+         Caption         =   "Id Prenda Secundario"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -963,7 +1011,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   53
          Top             =   2160
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1931
          _ExtentY        =   450
          _StockProps     =   79
@@ -986,7 +1034,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   52
          Top             =   1800
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   450
          _StockProps     =   79
@@ -1009,7 +1057,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   51
          Top             =   1440
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   450
          _StockProps     =   79
@@ -1032,7 +1080,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   31
          Top             =   240
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   450
          _StockProps     =   79
@@ -1054,7 +1102,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   30
          Top             =   240
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   450
          _StockProps     =   79
@@ -1077,12 +1125,12 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   29
          ToolTipText     =   "No Placa"
          Top             =   600
-         Width           =   1215
-         _Version        =   1441793
-         _ExtentX        =   2143
+         Width           =   1575
+         _Version        =   1572864
+         _ExtentX        =   2778
          _ExtentY        =   450
          _StockProps     =   79
-         Caption         =   "Id Principal"
+         Caption         =   "Id Prenda Principal"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1100,7 +1148,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   28
          Top             =   600
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   450
          _StockProps     =   79
@@ -1123,7 +1171,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   27
          Top             =   720
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   450
          _StockProps     =   79
@@ -1145,7 +1193,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   26
          Top             =   1440
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   450
          _StockProps     =   79
@@ -1168,7 +1216,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   25
          Top             =   1800
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   450
          _StockProps     =   79
@@ -1191,7 +1239,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   24
          Top             =   2160
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   450
          _StockProps     =   79
@@ -1214,7 +1262,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   23
          Top             =   1800
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   450
          _StockProps     =   79
@@ -1236,7 +1284,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   22
          Top             =   2160
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   450
          _StockProps     =   79
@@ -1258,7 +1306,7 @@ Begin VB.Form frmCR_Prendas_Monitor
          TabIndex        =   21
          Top             =   1440
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   450
          _StockProps     =   79
@@ -1280,7 +1328,7 @@ Begin VB.Form frmCR_Prendas_Monitor
       TabIndex        =   32
       Top             =   9840
       Width           =   735
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1296
       _ExtentY        =   556
       _StockProps     =   77
@@ -1306,7 +1354,7 @@ Begin VB.Form frmCR_Prendas_Monitor
       TabIndex        =   33
       Top             =   9840
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   556
       _StockProps     =   77
@@ -1332,7 +1380,7 @@ Begin VB.Form frmCR_Prendas_Monitor
       TabIndex        =   40
       Top             =   5760
       Width           =   3015
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5318
       _ExtentY        =   3625
       _StockProps     =   77
@@ -1360,7 +1408,7 @@ Begin VB.Form frmCR_Prendas_Monitor
       TabIndex        =   41
       Top             =   5400
       Width           =   3015
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5318
       _ExtentY        =   556
       _StockProps     =   77
@@ -1384,7 +1432,7 @@ Begin VB.Form frmCR_Prendas_Monitor
       TabIndex        =   42
       Top             =   5040
       Width           =   210
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   370
       _ExtentY        =   370
       _StockProps     =   79
@@ -1399,7 +1447,7 @@ Begin VB.Form frmCR_Prendas_Monitor
       TabIndex        =   44
       Top             =   840
       Width           =   3015
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5318
       _ExtentY        =   2143
       _StockProps     =   77
@@ -1427,7 +1475,7 @@ Begin VB.Form frmCR_Prendas_Monitor
       TabIndex        =   45
       Top             =   480
       Width           =   3015
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5318
       _ExtentY        =   556
       _StockProps     =   77
@@ -1451,7 +1499,7 @@ Begin VB.Form frmCR_Prendas_Monitor
       TabIndex        =   46
       Top             =   120
       Width           =   210
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   370
       _ExtentY        =   370
       _StockProps     =   79
@@ -1639,7 +1687,7 @@ Begin VB.Form frmCR_Prendas_Monitor
    Begin VB.Image imgBanner 
       Height          =   10710
       Left            =   0
-      Picture         =   "frmCR_Prendas_Monitor.frx":22BB
+      Picture         =   "frmCR_Prendas_Monitor.frx":267B
       Stretch         =   -1  'True
       Top             =   0
       Width           =   3285
@@ -1669,32 +1717,51 @@ On Error GoTo vError
 Me.MousePointer = vbHourglass
 iCantidad = 0
 
-'...
-'Codigo, Consec, Cedula, Nombre, Monto, Estado, Beneficio, Solicita Id, Solicita Nombre
-', Fecha Reg, Usuario Reg, Fecha Autoriza, Usuario Autoriza
-', Institución, Departamento, Oficina
+'create view vCrd_Prendas_Integral
+'as
+'SELECT Pg.PRENDA_ID, Pg.COD_PREANALISIS, Pg.ID_SOLICITUD, Pg.TIPO_PRENDA, Pg.DESCIPCION, Pg.CEDULA, Pg.ANIO, Pg.MODELO, Pg.MARCA, Pg.SERIE
+'      , Pg.ID_PRINCIPAL, Pg.ID_PROVISIONAL, Pg.COLOR, Pg.CAPACIDAD, Pg.PESO, Pg.CILINDRAJE, Pg.CHASIS_NUMERO, Pg.VIN_MOTOR, Pg.PUERTAS_NUMERO
+'      , Pg.VALOR_FISCAL, Pg.VALOR_MERCADO, Pg.AVALUO, Pg.PORC_COBERTURA, Pg.COBERTURA, Pg.POLIZA_FACTOR_APL, Pg.POLIZA_MNT_FORMALIZACION
+'      , Pg.POLIZA_RST_PLAN, Pg.OBSERVACION, Pg.REGISTRO_FECHA, Pg.REGISTRO_USUARIO, Pg.ACTUALIZA_FECHA, Pg.ACTUALIZA_USUARIO
+'      , Pg.AVALUO_OBSERVACION, Pg.AVALUO_ACTUALIZA_FECHA, Pg.AVALUO_ACTUALIZA_USUARIO
+'      , Pg.ID_COMERCIO, Pg.ID_MARCA, Pg.ID_MODELO, Pg.ID_PRESENTACION, Pg.ID_COMBUSTIBLE
+'      , Pg.TOMO, Pg.FOLIO, Pg.NOTARIO, Pg.NOTARIO_REGISTRO_FECHA, Pg.NOTARIO_REGISTRO_USUARIO, Pg.NOTARIO_ACTUALIZA_FECHA, Pg.NOTARIO_ACTUALIZA_USUARIO
+'      , Pg.CILINDRAJE_UD, Pg.PESO_UD, Pg.CAPACIDAD_UD
+'      , Pt.DESCRIPCION   as 'TIPO_PRENDA_DESC'
+'      , M.DESCRIPCION    as 'MARCA_DESC'
+'      , Md.DESCRIPCION   as 'MODELO_DESC'
+'      , Cm.DESCRIPCION   as 'COMERCIALIZA_DESC'
+'      , Pp.DESCRIPCION   as 'PRESENTACION_DESC'
+'      , Uc.DESCRIPCION   as 'CILINDRAJE_UD_DESC'
+'      , Up.DESCRIPCION   as 'PESO_UD_DESC'
+'      , UCap.DESCRIPCION     as 'CAPACIDAD_UD_DESC'
 
-
-strSQL = "select 0 as 'Btn', Cod_Beneficio, Consec, Cedula, NOMBRE_BENEFICIARIO, Monto, Estado_Desc, Beneficio_Desc" _
-       & ", Solicita, Solicita_Nombre, Registra_Fecha, Registra_User, Autoriza_Fecha, Autoriza_User " _
-       & ", Empresa_Desc, Departamento_Desc, Oficina_Desc" _
-       & " from vBeneficios_Integral"
+strSQL = "select 0 as 'Btn', PRENDA_ID, COD_PREANALISIS, ID_SOLICITUD, CEDULA, NOMBRE, TIPO_PRENDA_DESC, DESCRIPCION " _
+       & ", COBERTURA, PORC_COBERTURA, ESTADO_DESC, ID_PRINCIPAL, ID_PROVISIONAL, AVALUO, VALOR_FISCAL, VALOR_MERCADO " _
+       & ", CREDITO_MONTO, CREDITO_SALDO, CREDITO_DIVISA " _
+       & ", REGISTRO_FECHA, REGISTRO_USUARIO, ACTUALIZA_FECHA, ACTUALIZA_USUARIO " _
+       & ", COMERCIALIZA_DESC, MARCA_DESC, MODELO_DESC, ANIO, PRESENTACION_DESC " _
+       & ", SERIE, COLOR, CHASIS_NUMERO, VIN_MOTOR, PUERTAS_NUMERO, PESO, CAPACIDAD, CILINDRAJE " _
+       & ", TOMO , FOLIO , NOTARIO, NOTARIO_REGISTRO_FECHA " _
+       & ", POLIZA_MNT_FORMALIZACION, POLIZA_RST_PLAN " _
+       & ", PESO_UD_DESC, CAPACIDAD_UD_DESC, CILINDRAJE_UD_DESC " _
+       & " from vCrd_Prendas_Integral"
 
 Select Case Mid(cboFechas.Text, 1, 1)
     Case "R"
-        strSQL = strSQL & " Where Registra_Fecha between '" & Format(dtpInicio.Value, "yyyy-mm-dd") _
+        strSQL = strSQL & " Where REGISTRO_FECHA between '" & Format(dtpInicio.Value, "yyyy-mm-dd") _
                & " 00:00:00' and '" & Format(dtpCorte.Value, "yyyy-mm-dd") & " 23:59:59'"
     Case "A"
-        strSQL = strSQL & " Where Autoriza_Fecha between '" & Format(dtpInicio.Value, "yyyy-mm-dd") _
+        strSQL = strSQL & " Where ACTUALIZA_FECHA between '" & Format(dtpInicio.Value, "yyyy-mm-dd") _
                & " 00:00:00' and '" & Format(dtpCorte.Value, "yyyy-mm-dd") & " 23:59:59'"
     Case "P"
-        strSQL = strSQL & " Where Pago_Fecha between '" & Format(dtpInicio.Value, "yyyy-mm-dd") _
+        strSQL = strSQL & " Where NOTARIO_REGISTRO_FECHA between '" & Format(dtpInicio.Value, "yyyy-mm-dd") _
                & " 00:00:00' and '" & Format(dtpCorte.Value, "yyyy-mm-dd") & " 23:59:59'"
     Case Else
 End Select
 
 If cboEstado.Text <> "Todos" Then
-        strSQL = strSQL & " And Estado =  '" & Mid(cboEstado.Text, 1, 1) & "'"
+        strSQL = strSQL & " And CREDITO_ESTADO_ID =  '" & cboEstado.Text & "'"
 End If
 
 If cboPresentacion.Text <> "TODOS" Then
@@ -1702,7 +1769,11 @@ If cboPresentacion.Text <> "TODOS" Then
 End If
 
 If cboCombustible.Text <> "TODOS" Then
-        strSQL = strSQL & " And cod_Oficina =  '" & cboCombustible.ItemData(cboCombustible.ListIndex) & "'"
+        strSQL = strSQL & " And ID_COMBUSTIBLE =  '" & cboCombustible.ItemData(cboCombustible.ListIndex) & "'"
+End If
+
+If cboModelo.Text <> "TODOS" Then
+        strSQL = strSQL & " And ID_MODELO =  '" & cboModelo.ItemData(cboModelo.ListIndex) & "'"
 End If
 
 If cboEstadoPersona.Text <> "TODOS" Then
@@ -1710,13 +1781,40 @@ If cboEstadoPersona.Text <> "TODOS" Then
 End If
 
 
+If txtAnio.Text <> "" Then
+ If IsNumeric(txtAnio.Text) Then
+        strSQL = strSQL & " And ANIO = " & txtAnio.Text
+ End If
+End If
 
-'Lista de Documentos
-If lswComercio.ListItems.Count > 0 Then
-    vCadena = " and Cod_Beneficio in('"
-    For i = 1 To lswComercio.ListItems.Count
-      If lswComercio.ListItems.Item(i).Checked Then
-        vCadena = vCadena & "','" & lswComercio.ListItems.Item(i).Tag
+
+If cboPuertas.Text <> "No Aplica" Then
+        strSQL = strSQL & " And PUERTAS_NUMERO = " & cboPuertas.Text
+End If
+
+
+If cboPeso.Text <> "TODOS" Then
+        strSQL = strSQL & " And PESO_UD =  " & cboPeso.ItemData(cboPeso.ListIndex) _
+               & " and PESO between " & txtPesoInicio.Text & " and " & txtPesoCorte.Text
+End If
+
+If cboCapacidad.Text <> "TODOS" Then
+        strSQL = strSQL & " And CAPACIDAD_UD =  " & cboCapacidad.ItemData(cboCapacidad.ListIndex) _
+               & " and CAPACIDAD between " & txtCapacidadInicio.Text & " and " & txtCapacidadCorte.Text
+End If
+
+If cboCilindraje.Text <> "TODOS" Then
+        strSQL = strSQL & " And CILINDRAJE_UD =  " & cboCilindraje.ItemData(cboCilindraje.ListIndex) _
+               & " and CILINDRAJE between " & txtCilindrajeInicio.Text & " and " & txtCilindrajeCorte.Text
+End If
+
+
+'Lista de Tipos Prendas
+If lswPrenda.ListItems.Count > 0 Then
+    vCadena = " and Tipo_Prenda in('"
+    For i = 1 To lswPrenda.ListItems.Count
+      If lswPrenda.ListItems.Item(i).Checked Then
+        vCadena = vCadena & "', '" & lswPrenda.ListItems.Item(i).Tag
         iCantidad = iCantidad + 1
       End If
     Next i
@@ -1724,37 +1822,77 @@ If lswComercio.ListItems.Count > 0 Then
 End If
 
 
-If Trim(txtUserRegistra.Text) <> "" Then
-      strSQL = strSQL & " and Registra_Usuario like '%" & txtUserRegistra.Text & "%'"
+'Lista de Comercios
+If lswComercio.ListItems.Count > 0 Then
+    vCadena = " and ID_COMERCIO in(0"
+    For i = 1 To lswComercio.ListItems.Count
+      If lswComercio.ListItems.Item(i).Checked Then
+        vCadena = vCadena & ", " & lswComercio.ListItems.Item(i).Tag
+        iCantidad = iCantidad + 1
+      End If
+    Next i
+    strSQL = strSQL & vCadena & ")"
 End If
 
-If Trim(txtUserRegistra.Text) <> "" Then
-      strSQL = strSQL & " and Autoriza_Usuario like '%" & txtUserRegistra.Text & "%'"
+
+'Lista de Marcas
+If lswMarca.ListItems.Count > 0 Then
+    vCadena = " and ID_MARCA in(0"
+    For i = 1 To lswMarca.ListItems.Count
+      If lswMarca.ListItems.Item(i).Checked Then
+        vCadena = vCadena & ", " & lswMarca.ListItems.Item(i).Tag
+        iCantidad = iCantidad + 1
+      End If
+    Next i
+    strSQL = strSQL & vCadena & ")"
 End If
 
+
+If Trim(txtUserRegistra.Text) <> "" Then
+      strSQL = strSQL & " and REGISTRO_USUARIO like '%" & txtUserRegistra.Text & "%'"
+End If
+
+If Trim(txtUserActualiza.Text) <> "" Then
+      strSQL = strSQL & " and ACTUALIZA_USUARIO like '%" & txtUserActualiza.Text & "%'"
+End If
 
 
 If Trim(txtPersonaId.Text) <> "" Then
       strSQL = strSQL & " and Cedula like '%" & txtPersonaId.Text & "%'"
 End If
 
-
 If Trim(txtNombre.Text) <> "" Then
-      strSQL = strSQL & " and NOMBRE_BENEFICIARIO like '%" & txtNombre.Text & "%'"
+      strSQL = strSQL & " and Nombre like '%" & txtNombre.Text & "%'"
 End If
 
 If Trim(txtIdPrincipal.Text) <> "" Then
-      strSQL = strSQL & " and Solicita like '%" & txtIdPrincipal.Text & "%'"
+      strSQL = strSQL & " and ID_PRINCIPAL like '%" & txtIdPrincipal.Text & "%'"
+End If
+
+
+If Trim(txtIdSecundario.Text) <> "" Then
+      strSQL = strSQL & " and ID_PROVISIONAL like '%" & txtIdSecundario.Text & "%'"
 End If
 
 If Trim(txtChasisNo.Text) <> "" Then
-      strSQL = strSQL & " and Solicita_Nombre like '%" & txtChasisNo.Text & "%'"
+      strSQL = strSQL & " and CHASIS_NUMERO like '%" & txtChasisNo.Text & "%'"
 End If
 
-strSQL = strSQL & " Order by Registra_fecha desc, Beneficio_Desc, Consec desc"
+
+If Trim(txtVINMotor.Text) <> "" Then
+      strSQL = strSQL & " and VIN_MOTOR like '%" & txtVINMotor.Text & "%'"
+End If
+
+
+If Trim(txtColor.Text) <> "" Then
+      strSQL = strSQL & " and COLOR like '%" & txtColor.Text & "%'"
+End If
+
+
+strSQL = strSQL & " Order by REGISTRO_FECHA desc"
 
 vPaso = True
-    Call sbCargaGridLocal(vGrid, 17, strSQL)
+    Call sbCargaGridLocal(vGrid, vGrid.MaxCols, strSQL)
 vPaso = False
 
 Me.MousePointer = vbDefault
@@ -1777,7 +1915,7 @@ vGrid.MaxCols = vGridMaxCol
 vGrid.MaxRows = 1
 vGrid.Row = vGrid.MaxRows
 For i = 1 To vGrid.MaxCols
- vGrid.col = i
+ vGrid.Col = i
  vGrid.Text = ""
 Next i
 
@@ -1787,11 +1925,13 @@ Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
   vGrid.Row = vGrid.MaxRows
   For i = 1 To vGrid.MaxCols
-    vGrid.col = i
+    vGrid.Col = i
     vGrid.Text = CStr(rs.Fields(i - 1).Value & "")
   Next i
   vGrid.MaxRows = vGrid.MaxRows + 1
-  curMonto = curMonto + rs!Monto
+  
+  curMonto = curMonto + rs!Valor_Mercado
+  
   rs.MoveNext
 Loop
 rs.Close
@@ -1811,28 +1951,76 @@ End Sub
 
 Private Sub btnExportar_Click()
 Dim vHeaders As vGridHeaders
-    vHeaders.Columnas = 17
+    
+    vHeaders.Columnas = 45
     vHeaders.Headers(1) = "..."
-    vHeaders.Headers(2) = "Código"
-    vHeaders.Headers(3) = "Id Beneficio"
-    vHeaders.Headers(4) = "Identificación"
-    vHeaders.Headers(5) = "Nombre"
-    vHeaders.Headers(6) = "Monto"
-    vHeaders.Headers(7) = "Estado"
-    vHeaders.Headers(8) = "Beneficio"
-    vHeaders.Headers(9) = "Solicita Id"
-    vHeaders.Headers(10) = "Solicita Nombre"
-    vHeaders.Headers(11) = "Fecha Reg"
-    vHeaders.Headers(12) = "Usuario Reg"
-    vHeaders.Headers(13) = "Fecha Autoriza"
-    vHeaders.Headers(14) = "Usuario Autoriza"
-    vHeaders.Headers(15) = "Institución"
-    vHeaders.Headers(16) = "Departamento"
-    vHeaders.Headers(17) = "Oficina"
+    vHeaders.Headers(2) = "Id Prenda"
+    vHeaders.Headers(3) = "Id Estudio"
+    vHeaders.Headers(4) = "No.Operación"
+    vHeaders.Headers(5) = "Identificación"
+    vHeaders.Headers(6) = "Nombre"
+    vHeaders.Headers(7) = "Tipo Prenda"
+    vHeaders.Headers(8) = "Descripción"
+    vHeaders.Headers(9) = "Cobertura Crédito"
+    vHeaders.Headers(10) = "Cobertura %"
+    vHeaders.Headers(11) = "Estado"
+    vHeaders.Headers(12) = "Id Principal"
+    vHeaders.Headers(13) = "Id Secundario"
+    vHeaders.Headers(14) = "Monto Avalúo"
+    vHeaders.Headers(15) = "Valor Fiscal"
+    vHeaders.Headers(16) = "Valor Mercado"
+    vHeaders.Headers(17) = "Crédito Monto"
+    vHeaders.Headers(18) = "Crédito Saldo"
+    vHeaders.Headers(19) = "Divisa"
+    vHeaders.Headers(20) = "Reg. Fecha"
+    vHeaders.Headers(21) = "Reg. Usuario"
+    vHeaders.Headers(22) = "Act. Fecha"
+    vHeaders.Headers(23) = "Act. Usuario"
+    vHeaders.Headers(24) = "Comercializa"
+    vHeaders.Headers(25) = "Marca/Fabricante"
+    vHeaders.Headers(26) = "Modelo"
+    vHeaders.Headers(27) = "Año"
+    vHeaders.Headers(28) = "Tipo Presentación"
+    vHeaders.Headers(29) = "Serie"
+    vHeaders.Headers(30) = "Color"
+    vHeaders.Headers(31) = "No.Chasis"
+    vHeaders.Headers(32) = "No.VIN Motor"
     
-    
- Call sbSIFGridExportar(vGrid, vHeaders, "ProGrX_Beneficios_Monitor")
+    vHeaders.Headers(33) = "No. Puertas"
+    vHeaders.Headers(34) = "Peso"
+    vHeaders.Headers(35) = "Capacidad"
+    vHeaders.Headers(36) = "Cilindraje"
+    vHeaders.Headers(37) = "Tomo"
+    vHeaders.Headers(38) = "Folio"
+    vHeaders.Headers(39) = "Notario"
+    vHeaders.Headers(40) = "Notario Fecha"
+    vHeaders.Headers(41) = "Póliza Formaliza"
+    vHeaders.Headers(42) = "Póliza Rst.Plan"
+    vHeaders.Headers(43) = "Ud. Peso"
+    vHeaders.Headers(44) = "Ud. Capacidad"
+    vHeaders.Headers(45) = "Ud. Cilindraje"
+ 
+ Call sbSIFGridExportar(vGrid, vHeaders, "ProGrX_Prendas_Monitor")
 
+End Sub
+
+
+
+
+Private Sub cboModelo_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = vbKeyF4 Then
+ gBusquedas.Col1Name = "Modelo Id"
+ gBusquedas.Col2Name = "Descripción"
+ gBusquedas.Columna = "Descripcion"
+ gBusquedas.Orden = "Descripcion"
+ gBusquedas.Consulta = "select ID_MODELO, DESCRIPCION from CRD_PRENDAS_MODELOS"
+ gBusquedas.Filtro = " AND ACTIVO = 1"
+ frmBusquedas.Show vbModal
+ If gBusquedas.Resultado <> "" Then
+    Call sbCboAsignaDato(cboModelo, gBusquedas.Resultado2, True, gBusquedas.Resultado)
+ End If
+
+End If
 
 End Sub
 
@@ -1848,7 +2036,6 @@ Private Sub sbInicializa()
 
 Me.MousePointer = vbHourglass
 
-   
     'Estados
     strSQL = "select rtrim(cod_estado) as 'IdX', rtrim(descripcion) as ItmX" _
              & " from  afi_Estados_Persona"
@@ -1887,7 +2074,8 @@ Me.MousePointer = vbHourglass
     txtCilindrajeCorte.Text = 10000
     
     txtCapacidadInicio.Text = 0
-    txtCapacidadInicio.Text = 10000
+    txtCapacidadCorte.Text = 10000
+    
     txtPesoInicio.Text = 0
     txtPesoCorte.Text = 1000
     
@@ -1937,6 +2125,7 @@ lswPrenda.ColumnHeaders.Add , , "", 3150
 lswMarca.ColumnHeaders.Add , , "", 3150
 
 vGrid.AppearanceStyle = fxGridStyle
+vGrid.MaxRows = 0
 
 cboEstado.AddItem "Todos"
 cboEstado.AddItem "Tramite"
@@ -1964,7 +2153,7 @@ gbFiltros.Width = Me.Width - gbFiltros.Left
 imgBanner.Height = Me.Height
 
 vGrid.Width = Me.Width - (vGrid.Left + 120)
-vGrid.Height = Me.Height - (vGrid.top + 280)
+vGrid.Height = Me.Height - (vGrid.top + 480)
 End Sub
 
 Private Sub sbComercios_Load()
@@ -2000,6 +2189,75 @@ vError:
     MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 End Sub
 
+
+Private Sub sbPrendas_Load()
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+txtFiltroPrenda.Text = fxSysCleanTxtInject(txtFiltroPrenda.Text)
+
+lswPrenda.ListItems.Clear
+
+strSQL = "select TIPO_PRENDA as IdX, rtrim(DESCRIPCION) as ItmX" _
+       & " from CRD_PRENDAS_TIPOS " _
+       & " where ACTIVA = 1 and descripcion like '%" & txtFiltroPrenda.Text & "%'" _
+       & " order by descripcion"
+       
+      
+Call OpenRecordSet(rs, strSQL)
+Do While Not rs.EOF
+ Set itmX = lswPrenda.ListItems.Add(, , rs!itmX)
+     itmX.Tag = rs!IdX
+     itmX.Checked = chkPrenda.Value
+ rs.MoveNext
+Loop
+rs.Close
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+    Me.MousePointer = vbDefault
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+End Sub
+
+
+Private Sub sbMarcas_Load()
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+txtFiltraMarca.Text = fxSysCleanTxtInject(txtFiltraMarca.Text)
+
+lswMarca.ListItems.Clear
+
+strSQL = "select ID_MARCA as IdX, rtrim(DESCRIPCION) as ItmX" _
+       & " from CRD_PRENDAS_MARCAS " _
+       & " where ACTIVA = 1 and descripcion like '%" & txtFiltraMarca.Text & "%'" _
+       & " order by descripcion"
+       
+      
+Call OpenRecordSet(rs, strSQL)
+Do While Not rs.EOF
+ Set itmX = lswMarca.ListItems.Add(, , rs!itmX)
+     itmX.Tag = rs!IdX
+     itmX.Checked = chkMarca.Value
+ rs.MoveNext
+Loop
+rs.Close
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+    Me.MousePointer = vbDefault
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+End Sub
+
+
 Private Sub TimerX_Timer()
 
 TimerX.Interval = 0
@@ -2030,18 +2288,45 @@ Private Sub txtUnidad_KeyDown(KeyCode As Integer, Shift As Integer)
 
 End Sub
 
-Private Sub vGrid_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+
+
+Private Sub txtFiltraMarca_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = vbKeyReturn Then
+    Call sbMarcas_Load
+End If
+End Sub
+
+Private Sub txtFiltroPrenda_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = vbKeyReturn Then
+    Call sbPrendas_Load
+End If
+End Sub
+
+Private Sub vGrid_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
 If vPaso Then Exit Sub
 If vGrid.MaxRows = 0 Then Exit Sub
 
 vGrid.Row = Row
 
-vGrid.col = 4
-If Not IsNumeric(vGrid.Text) Then
-  Operacion.Operacion = 0
-Else
-    Operacion.Operacion = vGrid.Text
+Operacion.GarantiaTipo = "P" 'Prenda
+Operacion.GarantiaId = 0
+
+vGrid.Col = 2
+Operacion.GarantiaId = vGrid.Text
+
+vGrid.Col = 3
+Operacion.Expendiente = vGrid.Text
+Operacion.GarantiaParam = "E" 'Estudio
+
+vGrid.Col = 4
+If IsNumeric(vGrid.Text) Then
+   Operacion.Operacion = vGrid.Text
+   Operacion.GarantiaParam = "C" 'Credito
 End If
+
+vGrid.Col = 5
+Operacion.Cedula = vGrid.Text
+
 Call sbFormsCall("frmCR_Prendas", 1, , , False, Me)
 
 

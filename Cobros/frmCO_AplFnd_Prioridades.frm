@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCO_AplFnd_Prioridades 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,7 +24,7 @@ Begin VB.Form frmCO_AplFnd_Prioridades
       TabIndex        =   2
       Top             =   1320
       Width           =   4215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   661
       _StockProps     =   79
@@ -76,7 +76,7 @@ Begin VB.Form frmCO_AplFnd_Prioridades
       TabIndex        =   3
       Top             =   1320
       Width           =   4215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   661
       _StockProps     =   79

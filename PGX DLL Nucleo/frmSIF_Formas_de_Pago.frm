@@ -1,33 +1,33 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.ShortcutBar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmSIF_Formas_de_Pago 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Formas de pago "
-   ClientHeight    =   7455
+   ClientHeight    =   7905
    ClientLeft      =   45
    ClientTop       =   285
    ClientWidth     =   9495
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7455
+   ScaleHeight     =   7905
    ScaleWidth      =   9495
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin XtremeSuiteControls.TabControl tcMain 
-      Height          =   6015
+      Height          =   6615
       Left            =   120
       TabIndex        =   2
-      Top             =   1320
+      Top             =   1200
       Width           =   9255
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16325
-      _ExtentY        =   10610
+      _ExtentY        =   11668
       _StockProps     =   68
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
@@ -51,15 +51,15 @@ Begin VB.Form frmSIF_Formas_de_Pago
       Item(1).Control(0)=   "scTitulo"
       Item(1).Control(1)=   "lsw"
       Begin XtremeSuiteControls.ListView lsw 
-         Height          =   5295
+         Height          =   5895
          Left            =   -70000
          TabIndex        =   11
          Top             =   720
          Visible         =   0   'False
          Width           =   9255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16325
-         _ExtentY        =   9340
+         _ExtentY        =   10398
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -76,14 +76,14 @@ Begin VB.Form frmSIF_Formas_de_Pago
          Appearance      =   16
       End
       Begin XtremeSuiteControls.GroupBox GroupBox2 
-         Height          =   3015
+         Height          =   3615
          Left            =   0
          TabIndex        =   18
          Top             =   360
          Width           =   9255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16325
-         _ExtentY        =   5318
+         _ExtentY        =   6376
          _StockProps     =   79
          UseVisualStyle  =   -1  'True
          BorderStyle     =   2
@@ -93,7 +93,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   27
             Top             =   1680
             Width           =   3855
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6800
             _ExtentY        =   450
             _StockProps     =   79
@@ -116,7 +116,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   19
             Top             =   360
             Width           =   7455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   13144
             _ExtentY        =   550
             _StockProps     =   77
@@ -139,7 +139,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   20
             Top             =   840
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -164,10 +164,10 @@ Begin VB.Form frmSIF_Formas_de_Pago
             Left            =   1680
             TabIndex        =   21
             Top             =   1320
-            Width           =   5895
-            _Version        =   1441793
-            _ExtentX        =   10393
-            _ExtentY        =   444
+            Width           =   2295
+            _Version        =   1572864
+            _ExtentX        =   4048
+            _ExtentY        =   450
             _StockProps     =   79
             Caption         =   "Efectivo ?"
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -188,7 +188,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   22
             Top             =   2040
             Width           =   5895
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10393
             _ExtentY        =   444
             _StockProps     =   79
@@ -211,7 +211,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   23
             Top             =   2400
             Width           =   5895
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10393
             _ExtentY        =   444
             _StockProps     =   79
@@ -234,7 +234,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   26
             Top             =   1680
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   556
             _StockProps     =   77
@@ -252,6 +252,77 @@ Begin VB.Form frmSIF_Formas_de_Pago
             Appearance      =   6
             UseVisualStyle  =   0   'False
          End
+         Begin XtremeSuiteControls.CheckBox chkReciboDigital 
+            Height          =   255
+            Left            =   1680
+            TabIndex        =   28
+            Top             =   2760
+            Width           =   3855
+            _Version        =   1572864
+            _ExtentX        =   6800
+            _ExtentY        =   450
+            _StockProps     =   79
+            Caption         =   "Aplicar Recibo Digital"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Appearance      =   17
+         End
+         Begin XtremeSuiteControls.FlatEdit txtFE_Codigo 
+            Height          =   315
+            Left            =   1920
+            TabIndex        =   29
+            ToolTipText     =   "Código Númerico Para Facturación Electrónica"
+            Top             =   3120
+            Width           =   2055
+            _Version        =   1572864
+            _ExtentX        =   3625
+            _ExtentY        =   556
+            _StockProps     =   77
+            ForeColor       =   0
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Alignment       =   1
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
+         End
+         Begin XtremeSuiteControls.Label Label1 
+            Height          =   255
+            Index           =   0
+            Left            =   4200
+            TabIndex        =   30
+            Top             =   3120
+            Width           =   3135
+            _Version        =   1572864
+            _ExtentX        =   5530
+            _ExtentY        =   450
+            _StockProps     =   79
+            Caption         =   "Código para Facturación Electrónica"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            WordWrap        =   -1  'True
+         End
          Begin XtremeSuiteControls.Label Label3 
             Height          =   255
             Index           =   0
@@ -259,7 +330,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   25
             Top             =   360
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   444
             _StockProps     =   79
@@ -284,7 +355,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   24
             Top             =   840
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   444
             _StockProps     =   79
@@ -307,9 +378,9 @@ Begin VB.Form frmSIF_Formas_de_Pago
          Height          =   1575
          Left            =   0
          TabIndex        =   12
-         Top             =   3360
+         Top             =   3960
          Width           =   9255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16325
          _ExtentY        =   2778
          _StockProps     =   79
@@ -332,7 +403,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   13
             Top             =   360
             Width           =   5775
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10186
             _ExtentY        =   450
             _StockProps     =   79
@@ -355,7 +426,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   14
             Top             =   720
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   450
             _StockProps     =   79
@@ -379,7 +450,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   15
             Top             =   720
             Width           =   2415
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4260
             _ExtentY        =   556
             _StockProps     =   77
@@ -403,7 +474,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   16
             Top             =   1080
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   450
             _StockProps     =   79
@@ -427,7 +498,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   17
             Top             =   1080
             Width           =   2415
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4260
             _ExtentY        =   556
             _StockProps     =   77
@@ -445,14 +516,60 @@ Begin VB.Form frmSIF_Formas_de_Pago
             Appearance      =   6
             UseVisualStyle  =   0   'False
          End
+         Begin XtremeSuiteControls.Label Label1 
+            Height          =   255
+            Index           =   2
+            Left            =   6720
+            TabIndex        =   32
+            Top             =   1080
+            Width           =   3135
+            _Version        =   1572864
+            _ExtentX        =   5530
+            _ExtentY        =   450
+            _StockProps     =   79
+            Caption         =   "$ (Dólares Norteamericanos)"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            WordWrap        =   -1  'True
+         End
+         Begin XtremeSuiteControls.Label Label1 
+            Height          =   255
+            Index           =   1
+            Left            =   6720
+            TabIndex        =   31
+            Top             =   720
+            Width           =   3135
+            _Version        =   1572864
+            _ExtentX        =   5530
+            _ExtentY        =   450
+            _StockProps     =   79
+            Caption         =   "$ (Dólares Norteamericanos)"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            WordWrap        =   -1  'True
+         End
       End
       Begin XtremeSuiteControls.GroupBox GroupBox3 
          Height          =   1095
          Left            =   0
          TabIndex        =   5
-         Top             =   4920
+         Top             =   5520
          Width           =   9255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16325
          _ExtentY        =   1931
          _StockProps     =   79
@@ -476,7 +593,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   6
             Top             =   480
             Width           =   5535
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9763
             _ExtentY        =   556
             _StockProps     =   77
@@ -500,7 +617,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   7
             Top             =   480
             Width           =   2055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
@@ -525,7 +642,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
             TabIndex        =   9
             Top             =   480
             Width           =   1212
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   444
             _StockProps     =   79
@@ -551,7 +668,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
          Top             =   360
          Visible         =   0   'False
          Width           =   9255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16319
          _ExtentY        =   656
          _StockProps     =   14
@@ -632,7 +749,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
       TabIndex        =   3
       Top             =   600
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   762
       _StockProps     =   77
@@ -656,7 +773,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
       TabIndex        =   4
       Top             =   600
       Width           =   1692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   444
       _StockProps     =   79
@@ -683,7 +800,7 @@ Begin VB.Form frmSIF_Formas_de_Pago
       TabIndex        =   8
       Top             =   600
       Width           =   1692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   656
       _StockProps     =   79
@@ -884,6 +1001,9 @@ txtOrigenMontoDiario.Text = Format(0, "Standard")
 chkOrigenAplMensual.Value = xtpUnchecked
 txtOrigenMontoMensual.Text = Format(0, "Standard")
 
+txtFE_Codigo.Text = "1"
+chkReciboDigital.Value = xtpUnchecked
+
 Call cboTipo_Click
 
 End Sub
@@ -964,7 +1084,7 @@ Do While Not rs.EOF
   Set itmX = lsw.ListItems.Add(, , "( " & rs!id_banco & " )")
       itmX.Tag = rs!id_banco
       itmX.SubItems(1) = Trim(rs!Cta)
-      itmX.SubItems(2) = rs!Descripcion
+      itmX.SubItems(2) = rs!DESCRIPCION
       itmX.SubItems(3) = rs!Cod_Divisa
       itmX.SubItems(4) = rs!Entidad_Desc
       
@@ -1008,7 +1128,7 @@ If Not rs.BOF And Not rs.EOF Then
   'Asigna el Tipo de Formato de Documento (Refresca Chk's)
   cboTipo.Text = rs!Tipo_Desc
   
-  txtDescripcion.Text = rs!Descripcion
+  txtDescripcion.Text = rs!DESCRIPCION
   chkActiva.Value = rs!Activa
   chkEfectivo.Value = rs!Efectivo
   chkSaldosFavor.Value = rs!aplica_saldos_favor
@@ -1025,6 +1145,11 @@ If Not rs.BOF And Not rs.EOF Then
   txtOrigenMontoDiario.Text = Format(rs!OR_DIARIO_MONTO, "Standard")
   chkOrigenAplMensual.Value = rs!OR_MENSUAL_APL
   txtOrigenMontoMensual.Text = Format(rs!OR_MENSUAL_MONTO, "Standard")
+  
+  chkReciboDigital.Value = rs!RECIBO_DIGITAL
+  
+  txtFE_Codigo.Text = rs!CODIGO_FE & ""
+    
     
   Call sbLswLlena(rs!cod_forma_pago)
 
@@ -1114,16 +1239,6 @@ Select Case Mid(cboTipo.Text, 1, 2)
 
 End Select
 
-    
-'                   MAXIMO_APL SmallInt
-'               , MAXIMO_MONTO       DEC(18,2)
-'               , OR_APLICA          SMALLINT
-'               , OR_DIARIO_APL      SMALLINT
-'               , OR_DIARIO_MONTO    DEC(18,2)
-'               , OR_MENSUAL_APL     SMALLINT
-'               , OR_MENSUAL_MONTO   DEC(18,2)
-    
-
 If fxExisteForma(txtCodigo.Text) Then
   strSQL = "update SIF_FORMAS_PAGO set descripcion = '" & UCase(Trim(txtDescripcion)) & "'" _
          & ", activa = " & chkActiva.Value & ", efectivo = " & chkEfectivo.Value & ", aplica_saldos_favor = " & chkSaldosFavor.Value & "" _
@@ -1131,6 +1246,7 @@ If fxExisteForma(txtCodigo.Text) Then
          & "', aplica_para_deposito = " & chkAplicaDep.Value & ", MAXIMO_APL = " & chkMaximoAplica.Value & ", MAXIMO_MONTO = " & CCur(txtMaximoMonto.Text) _
          & ", OR_APLICA = " & chkOrigen.Value & ", OR_DIARIO_APL = " & chkOrigenAplDiario.Value & ", OR_DIARIO_MONTO = " & CCur(txtOrigenMontoDiario.Text) _
          & ", OR_MENSUAL_APL = " & chkOrigenAplMensual.Value & ", OR_MENSUAL_MONTO = " & CCur(txtOrigenMontoMensual.Text) _
+         & ", RECIBO_DIGITAL = " & chkReciboDigital.Value & ", CODIGO_FE = " & txtFE_Codigo.Text _
          & "  where cod_forma_pago = '" & vCodigo & "' "
          
   Call ConectionExecute(strSQL)
@@ -1140,12 +1256,13 @@ Else
   vCodigo = txtCodigo.Text
 
    strSQL = "insert into SIF_FORMAS_PAGO(cod_forma_pago, descripcion, activa, efectivo, aplica_saldos_favor, cod_cuenta, tipo, aplica_para_deposito" _
-          & ", MAXIMO_APL, MAXIMO_MONTO, OR_APLICA, OR_DIARIO_APL, OR_DIARIO_MONTO, OR_MENSUAL_APL, OR_MENSUAL_MONTO, REGISTRO_USUARIO, REGISTRO_FECHA)" _
+          & ", MAXIMO_APL, MAXIMO_MONTO, OR_APLICA, OR_DIARIO_APL, OR_DIARIO_MONTO, OR_MENSUAL_APL, OR_MENSUAL_MONTO" _
+          & ", CODIGO_FE, RECIBO_DIGITAL, REGISTRO_USUARIO, REGISTRO_FECHA)" _
           & " values('" & vCodigo & "','" & UCase(Trim(txtDescripcion)) & "', " & chkActiva.Value & ", " & chkEfectivo.Value _
           & ", " & chkSaldosFavor.Value & " ,'" & fxgCntCuentaFormato(False, txtCuentaCod) & "', '" & vTipo _
           & "'," & chkAplicaDep.Value & ", " & chkMaximoAplica.Value & ", " & CCur(txtMaximoMonto.Text) & ", " & chkOrigen.Value _
           & ", " & chkOrigenAplDiario.Value & ", " & CCur(txtOrigenMontoDiario.Text) & ", " & chkOrigenAplMensual.Value & ", " & CCur(txtOrigenMontoMensual.Text) _
-          & ", '" & glogon.Usuario & " ',dbo.MyGetdate())"
+          & ", " & chkReciboDigital.Value & ", " & txtFE_Codigo.Text & ", '" & glogon.Usuario & " ',dbo.MyGetdate())"
    Call ConectionExecute(strSQL)
 
    Call Bitacora("Registra", "Forma Pago: " & vCodigo)

@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Begin VB.Form frmCR_ConsultaPlanFidelidad 
    BorderStyle     =   4  'Fixed ToolWindow
    ClientHeight    =   6750
@@ -163,7 +163,6 @@ Begin VB.Form frmCR_ConsultaPlanFidelidad
       Alignment       =   2  'Center
       Appearance      =   0  'Flat
       BackColor       =   &H00FFC0C0&
-      BorderStyle     =   1  'Fixed Single
       Caption         =   "..."
       BeginProperty Font 
          Name            =   "Arial"
@@ -221,7 +220,6 @@ Begin VB.Form frmCR_ConsultaPlanFidelidad
       Alignment       =   2  'Center
       Appearance      =   0  'Flat
       BackColor       =   &H00FFC0C0&
-      BorderStyle     =   1  'Fixed Single
       Caption         =   "..."
       BeginProperty Font 
          Name            =   "Arial"

@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.ShortcutBar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmAH_Principal 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,7 +24,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   0
       Top             =   3600
       Width           =   9972
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   17590
       _ExtentY        =   5736
       _StockProps     =   77
@@ -48,7 +48,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   17
       Top             =   480
       Width           =   5532
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9758
       _ExtentY        =   550
       _StockProps     =   77
@@ -72,7 +72,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   16
       Top             =   480
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   550
       _StockProps     =   77
@@ -96,7 +96,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   12
       Top             =   6960
       Width           =   1932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3408
       _ExtentY        =   444
       _StockProps     =   79
@@ -121,7 +121,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   6
       Top             =   1320
       Width           =   9612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16954
       _ExtentY        =   2773
       _StockProps     =   79
@@ -145,7 +145,7 @@ Begin VB.Form frmAH_Principal
          TabIndex        =   22
          Top             =   480
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -171,7 +171,7 @@ Begin VB.Form frmAH_Principal
          TabIndex        =   23
          Top             =   840
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -197,7 +197,7 @@ Begin VB.Form frmAH_Principal
          TabIndex        =   26
          Top             =   480
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -223,7 +223,7 @@ Begin VB.Form frmAH_Principal
          TabIndex        =   27
          Top             =   840
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -249,7 +249,7 @@ Begin VB.Form frmAH_Principal
          TabIndex        =   30
          Top             =   1200
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -277,7 +277,7 @@ Begin VB.Form frmAH_Principal
          TabIndex        =   31
          Top             =   1200
          Width           =   612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1080
          _ExtentY        =   550
          _StockProps     =   77
@@ -302,7 +302,7 @@ Begin VB.Form frmAH_Principal
          TabIndex        =   34
          Top             =   1200
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -350,7 +350,7 @@ Begin VB.Form frmAH_Principal
          TabIndex        =   29
          Top             =   840
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   556
          _StockProps     =   79
@@ -374,7 +374,7 @@ Begin VB.Form frmAH_Principal
          TabIndex        =   28
          Top             =   480
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   556
          _StockProps     =   79
@@ -398,7 +398,7 @@ Begin VB.Form frmAH_Principal
          TabIndex        =   25
          Top             =   840
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   556
          _StockProps     =   79
@@ -422,7 +422,7 @@ Begin VB.Form frmAH_Principal
          TabIndex        =   24
          Top             =   480
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   556
          _StockProps     =   79
@@ -543,7 +543,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   1
       Top             =   3120
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   656
       _StockProps     =   79
@@ -613,7 +613,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   2
       Top             =   3120
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   656
       _StockProps     =   79
@@ -637,7 +637,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   3
       Top             =   3120
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   656
       _StockProps     =   79
@@ -661,7 +661,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   4
       Top             =   3120
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   656
       _StockProps     =   79
@@ -684,7 +684,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   5
       Top             =   3120
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   661
       _StockProps     =   79
@@ -707,7 +707,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   13
       Top             =   7200
       Width           =   1932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3408
       _ExtentY        =   444
       _StockProps     =   79
@@ -732,7 +732,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   14
       Top             =   6960
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   444
       _StockProps     =   79
@@ -757,7 +757,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   15
       Top             =   7200
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   450
       _StockProps     =   79
@@ -783,7 +783,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   20
       Top             =   6960
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   868
       _StockProps     =   79
@@ -811,7 +811,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   21
       Top             =   6960
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   868
       _StockProps     =   79
@@ -839,7 +839,7 @@ Begin VB.Form frmAH_Principal
       Top             =   3000
       Visible         =   0   'False
       Width           =   3735
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   6588
       _ExtentY        =   238
       _StockProps     =   93
@@ -852,7 +852,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   33
       Top             =   3120
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   661
       _StockProps     =   79
@@ -875,7 +875,7 @@ Begin VB.Form frmAH_Principal
       TabIndex        =   19
       Top             =   3120
       Width           =   12732
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   22458
       _ExtentY        =   674
       _StockProps     =   14
@@ -1083,7 +1083,7 @@ Select Case Index
                        itmX.SubItems(3) = Format(rs!Monto, "Standard")
                        
                        If rs!TipoDoc = "" Then
-                           itmX.SubItems(4) = fxTipoComprobante(rs!tcon)
+                           itmX.SubItems(4) = fxTipoComprobante(rs!Tcon)
                        Else
                            itmX.SubItems(4) = rs!TipoDoc
                        End If
@@ -1092,8 +1092,8 @@ Select Case Index
                        itmX.SubItems(7) = rs!Usuario & ""
                        
                        'Ojo historicamente la NC se utiliza como ND y viceversa
-                       If Not IsNull(rs!tcon) Then
-                          If rs!tcon = "5" Or rs!tcon = "8" Or rs!tcon = "ND" Or rs!tcon = "LIQ" Then
+                       If Not IsNull(rs!Tcon) Then
+                          If rs!Tcon = "5" Or rs!Tcon = "8" Or rs!Tcon = "ND" Or rs!Tcon = "LIQ" Then
                              itmX.ForeColor = vbRed
                           End If
                        End If

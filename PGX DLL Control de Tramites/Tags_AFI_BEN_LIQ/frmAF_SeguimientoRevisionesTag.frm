@@ -57,7 +57,6 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
          _Version        =   393216
          Style           =   1
          Tabs            =   4
-         Tab             =   1
          TabsPerRow      =   4
          TabHeight       =   520
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -71,58 +70,39 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
          EndProperty
          TabCaption(0)   =   "Afiliaciones"
          TabPicture(0)   =   "frmAF_SeguimientoRevisionesTag.frx":6852
-         Tab(0).ControlEnabled=   0   'False
-         Tab(0).Control(0)=   "vGrid"
+         Tab(0).ControlEnabled=   -1  'True
+         Tab(0).Control(0)=   "tlbRefresh"
+         Tab(0).Control(0).Enabled=   0   'False
          Tab(0).Control(1)=   "imgRefresh"
-         Tab(0).Control(2)=   "tlbRefresh"
+         Tab(0).Control(1).Enabled=   0   'False
+         Tab(0).Control(2)=   "vGrid"
+         Tab(0).Control(2).Enabled=   0   'False
          Tab(0).ControlCount=   3
          TabCaption(1)   =   "Detalle"
          TabPicture(1)   =   "frmAF_SeguimientoRevisionesTag.frx":686E
-         Tab(1).ControlEnabled=   -1  'True
-         Tab(1).Control(0)=   "Label13"
-         Tab(1).Control(0).Enabled=   0   'False
-         Tab(1).Control(1)=   "Label12(1)"
-         Tab(1).Control(1).Enabled=   0   'False
-         Tab(1).Control(2)=   "Label12(0)"
-         Tab(1).Control(2).Enabled=   0   'False
-         Tab(1).Control(3)=   "Label10(2)"
-         Tab(1).Control(3).Enabled=   0   'False
-         Tab(1).Control(4)=   "Label10(1)"
-         Tab(1).Control(4).Enabled=   0   'False
-         Tab(1).Control(5)=   "Label15(0)"
-         Tab(1).Control(5).Enabled=   0   'False
-         Tab(1).Control(6)=   "Label14"
-         Tab(1).Control(6).Enabled=   0   'False
-         Tab(1).Control(7)=   "Label1(0)"
-         Tab(1).Control(7).Enabled=   0   'False
-         Tab(1).Control(8)=   "Label6"
-         Tab(1).Control(8).Enabled=   0   'False
-         Tab(1).Control(9)=   "Label5"
-         Tab(1).Control(9).Enabled=   0   'False
-         Tab(1).Control(10)=   "dtpNacimiento"
-         Tab(1).Control(10).Enabled=   0   'False
-         Tab(1).Control(11)=   "dtpFechaIngreso"
-         Tab(1).Control(11).Enabled=   0   'False
-         Tab(1).Control(12)=   "ssTabSubX"
-         Tab(1).Control(12).Enabled=   0   'False
-         Tab(1).Control(13)=   "txtNombrePromotor"
-         Tab(1).Control(13).Enabled=   0   'False
-         Tab(1).Control(14)=   "txtCodPromotor"
-         Tab(1).Control(14).Enabled=   0   'False
-         Tab(1).Control(15)=   "txtBoleta"
-         Tab(1).Control(15).Enabled=   0   'False
-         Tab(1).Control(16)=   "txtHijos"
-         Tab(1).Control(16).Enabled=   0   'False
-         Tab(1).Control(17)=   "txtProfesion"
-         Tab(1).Control(17).Enabled=   0   'False
-         Tab(1).Control(18)=   "txtSector"
-         Tab(1).Control(18).Enabled=   0   'False
-         Tab(1).Control(19)=   "txtEstado"
-         Tab(1).Control(19).Enabled=   0   'False
-         Tab(1).Control(20)=   "txtSexo"
-         Tab(1).Control(20).Enabled=   0   'False
-         Tab(1).Control(21)=   "txtEstadoPersona"
-         Tab(1).Control(21).Enabled=   0   'False
+         Tab(1).ControlEnabled=   0   'False
+         Tab(1).Control(0)=   "txtEstadoPersona"
+         Tab(1).Control(1)=   "txtSexo"
+         Tab(1).Control(2)=   "txtEstado"
+         Tab(1).Control(3)=   "txtSector"
+         Tab(1).Control(4)=   "txtProfesion"
+         Tab(1).Control(5)=   "txtHijos"
+         Tab(1).Control(6)=   "txtBoleta"
+         Tab(1).Control(7)=   "txtCodPromotor"
+         Tab(1).Control(8)=   "txtNombrePromotor"
+         Tab(1).Control(9)=   "ssTabSubX"
+         Tab(1).Control(10)=   "dtpFechaIngreso"
+         Tab(1).Control(11)=   "dtpNacimiento"
+         Tab(1).Control(12)=   "Label5"
+         Tab(1).Control(13)=   "Label6"
+         Tab(1).Control(14)=   "Label1(0)"
+         Tab(1).Control(15)=   "Label14"
+         Tab(1).Control(16)=   "Label15(0)"
+         Tab(1).Control(17)=   "Label10(1)"
+         Tab(1).Control(18)=   "Label10(2)"
+         Tab(1).Control(19)=   "Label12(0)"
+         Tab(1).Control(20)=   "Label12(1)"
+         Tab(1).Control(21)=   "Label13"
          Tab(1).ControlCount=   22
          TabCaption(2)   =   "Seguimiento"
          TabPicture(2)   =   "frmAF_SeguimientoRevisionesTag.frx":688A
@@ -152,7 +132,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             Height          =   315
-            Left            =   1440
+            Left            =   -73560
             MaxLength       =   15
             TabIndex        =   24
             ToolTipText     =   "Campo para la Cédula de Identidad"
@@ -171,7 +151,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             Height          =   315
-            Left            =   4080
+            Left            =   -70920
             MaxLength       =   15
             TabIndex        =   23
             ToolTipText     =   "Campo para la Cédula de Identidad"
@@ -190,7 +170,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             Height          =   315
-            Left            =   1440
+            Left            =   -73560
             MaxLength       =   15
             TabIndex        =   22
             ToolTipText     =   "Campo para la Cédula de Identidad"
@@ -209,7 +189,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             Height          =   315
-            Left            =   6840
+            Left            =   -68160
             MaxLength       =   15
             TabIndex        =   21
             ToolTipText     =   "Campo para la Cédula de Identidad"
@@ -228,7 +208,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             Height          =   315
-            Left            =   1440
+            Left            =   -73560
             MaxLength       =   45
             TabIndex        =   20
             ToolTipText     =   "Campo para la Cédula de Identidad"
@@ -247,7 +227,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             Height          =   315
-            Left            =   6840
+            Left            =   -68160
             MaxLength       =   15
             TabIndex        =   19
             ToolTipText     =   "Campo para la Cédula de Identidad"
@@ -266,7 +246,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             Height          =   315
-            Left            =   4080
+            Left            =   -70920
             MaxLength       =   15
             TabIndex        =   18
             Text            =   "1"
@@ -284,7 +264,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             Height          =   315
-            Left            =   1440
+            Left            =   -73560
             Locked          =   -1  'True
             TabIndex        =   17
             Top             =   1920
@@ -301,7 +281,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             Height          =   315
-            Left            =   2400
+            Left            =   -72600
             Locked          =   -1  'True
             TabIndex        =   16
             Top             =   1920
@@ -347,7 +327,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
          End
          Begin FPSpreadADO.fpSpread vGrid 
             Height          =   5655
-            Left            =   -74880
+            Left            =   120
             TabIndex        =   8
             Top             =   840
             Width           =   10815
@@ -397,7 +377,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
             EndProperty
             MaxCols         =   487
             ScrollBarExtMode=   -1  'True
-            SpreadDesigner  =   "frmAF_SeguimientoRevisionesTag.frx":739D
+            SpreadDesigner  =   "frmAF_SeguimientoRevisionesTag.frx":73BF
             VScrollSpecialType=   2
             AppearanceStyle =   1
          End
@@ -477,7 +457,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
          End
          Begin TabDlg.SSTab ssTabSubX 
             Height          =   3615
-            Left            =   480
+            Left            =   -74520
             TabIndex        =   25
             Top             =   2640
             Width           =   8415
@@ -496,7 +476,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             TabCaption(0)   =   "Localización"
-            TabPicture(0)   =   "frmAF_SeguimientoRevisionesTag.frx":7973
+            TabPicture(0)   =   "frmAF_SeguimientoRevisionesTag.frx":79B7
             Tab(0).ControlEnabled=   -1  'True
             Tab(0).Control(0)=   "Label(25)"
             Tab(0).Control(0).Enabled=   0   'False
@@ -514,7 +494,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
             Tab(0).Control(6).Enabled=   0   'False
             Tab(0).ControlCount=   7
             TabCaption(1)   =   "Trabajo"
-            TabPicture(1)   =   "frmAF_SeguimientoRevisionesTag.frx":E1D5
+            TabPicture(1)   =   "frmAF_SeguimientoRevisionesTag.frx":E219
             Tab(1).ControlEnabled=   0   'False
             Tab(1).Control(0)=   "lblCentroTrabajo"
             Tab(1).Control(1)=   "lblDepartamento"
@@ -529,7 +509,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
             Tab(1).Control(10)=   "txtInstitucion"
             Tab(1).ControlCount=   11
             TabCaption(2)   =   "Nombramientos"
-            TabPicture(2)   =   "frmAF_SeguimientoRevisionesTag.frx":14A37
+            TabPicture(2)   =   "frmAF_SeguimientoRevisionesTag.frx":14A7B
             Tab(2).ControlEnabled=   0   'False
             Tab(2).Control(0)=   "Label19"
             Tab(2).Control(1)=   "Label1(2)"
@@ -1019,7 +999,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                   Strikethrough   =   0   'False
                EndProperty
                CustomFormat    =   "dd/MM/yyyy"
-               Format          =   292356099
+               Format          =   290848771
                CurrentDate     =   38899
                MaxDate         =   55153
                MinDate         =   14611
@@ -1305,7 +1285,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
          End
          Begin MSComCtl2.DTPicker dtpFechaIngreso 
             Height          =   315
-            Left            =   7080
+            Left            =   -67920
             TabIndex        =   64
             ToolTipText     =   "Fecha de Ingreso al sistema"
             Top             =   1080
@@ -1324,14 +1304,14 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             CustomFormat    =   "dd/MM/yyyy"
-            Format          =   292356099
+            Format          =   519307267
             CurrentDate     =   38899
             MaxDate         =   55153
             MinDate         =   14611
          End
          Begin MSComCtl2.DTPicker dtpNacimiento 
             Height          =   315
-            Left            =   7080
+            Left            =   -67920
             TabIndex        =   65
             ToolTipText     =   "Fecha de Ingreso al sistema"
             Top             =   720
@@ -1349,11 +1329,11 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             CustomFormat    =   "dd/MM/yyyy"
-            Format          =   292356099
+            Format          =   519307267
             CurrentDate     =   36059
          End
          Begin MSComctlLib.ImageList imgRefresh 
-            Left            =   -66240
+            Left            =   8760
             Top             =   240
             _ExtentX        =   1005
             _ExtentY        =   1005
@@ -1365,14 +1345,14 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
             BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
                NumListImages   =   1
                BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-                  Picture         =   "frmAF_SeguimientoRevisionesTag.frx":1B299
+                  Picture         =   "frmAF_SeguimientoRevisionesTag.frx":1B2DD
                   Key             =   ""
                EndProperty
             EndProperty
          End
          Begin MSComctlLib.Toolbar tlbRefresh 
             Height          =   330
-            Left            =   -65520
+            Left            =   9480
             TabIndex        =   77
             Top             =   360
             Width           =   1215
@@ -1407,7 +1387,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             Height          =   255
-            Left            =   480
+            Left            =   -74520
             TabIndex        =   75
             Top             =   1080
             Width           =   735
@@ -1424,7 +1404,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             Height          =   255
-            Left            =   6120
+            Left            =   -68880
             TabIndex        =   74
             Top             =   1080
             Width           =   735
@@ -1442,7 +1422,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
             EndProperty
             Height          =   255
             Index           =   0
-            Left            =   6120
+            Left            =   -68880
             TabIndex        =   73
             Top             =   720
             Width           =   855
@@ -1459,7 +1439,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             Height          =   255
-            Left            =   3360
+            Left            =   -71640
             TabIndex        =   72
             Top             =   720
             Width           =   375
@@ -1477,7 +1457,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
             EndProperty
             Height          =   255
             Index           =   0
-            Left            =   480
+            Left            =   -74520
             TabIndex        =   71
             Top             =   720
             Width           =   855
@@ -1495,7 +1475,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
             EndProperty
             Height          =   255
             Index           =   1
-            Left            =   480
+            Left            =   -74520
             TabIndex        =   70
             Top             =   1560
             Width           =   735
@@ -1513,7 +1493,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
             EndProperty
             Height          =   255
             Index           =   2
-            Left            =   480
+            Left            =   -74520
             TabIndex        =   69
             Top             =   1920
             Width           =   855
@@ -1531,7 +1511,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
             EndProperty
             Height          =   255
             Index           =   0
-            Left            =   5880
+            Left            =   -69120
             TabIndex        =   68
             ToolTipText     =   "Número de Dependientes"
             Top             =   1560
@@ -1550,7 +1530,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
             EndProperty
             Height          =   255
             Index           =   1
-            Left            =   6000
+            Left            =   -69000
             TabIndex        =   67
             Top             =   1920
             Width           =   855
@@ -1567,7 +1547,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
                Strikethrough   =   0   'False
             EndProperty
             Height          =   255
-            Left            =   3360
+            Left            =   -71640
             TabIndex        =   66
             Top             =   1080
             Width           =   735
@@ -1735,27 +1715,27 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   6
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":1B3BE
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":1B402
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":21C20
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":21C64
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":28482
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":284C6
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":2ECE4
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":2ED28
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":35546
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":3558A
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":3BDA8
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":3BDEC
             Key             =   ""
          EndProperty
       EndProperty
@@ -1773,39 +1753,39 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   9
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":4260A
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":4264E
             Key             =   "verde"
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":42728
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":4276C
             Key             =   "amarillo"
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":4284E
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":42892
             Key             =   "rojo"
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":42978
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":429BC
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":42A8A
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":42ACE
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":42BA1
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":42BE5
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":42CA2
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":42CE6
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":42DD9
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":42E1D
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":42EEE
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":42F32
             Key             =   ""
          EndProperty
       EndProperty
@@ -1823,23 +1803,23 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   5
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":43012
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":43056
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":49874
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":498B8
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":500D6
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":5011A
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":501F0
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":50234
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":5030E
+            Picture         =   "frmAF_SeguimientoRevisionesTag.frx":50352
             Key             =   ""
          EndProperty
       EndProperty
@@ -1863,7 +1843,7 @@ Begin VB.Form frmAF_SeguimientoRevisionesTag
    Begin VB.Image Image2 
       Height          =   360
       Left            =   1800
-      Picture         =   "frmAF_SeguimientoRevisionesTag.frx":5040A
+      Picture         =   "frmAF_SeguimientoRevisionesTag.frx":5044E
       Top             =   120
       Width           =   360
    End
@@ -2260,16 +2240,16 @@ Do While Not rs.EOF
     vGridSeguimiento.Text = rs!Descripcion
     vGridSeguimiento.TextTip = TextTipFixed
     vGridSeguimiento.TextTipDelay = 1000
-    vGridSeguimiento.CellNote = "Usuario: " & rs!REGISTRO_USUARIO & "[" & rs!REGISTRO_FECHA & "]"
+    vGridSeguimiento.CellNote = "Usuario: " & rs!registro_usuario & "[" & rs!Registro_Fecha & "]"
             
     vGridSeguimiento.Col = 2
     vGridSeguimiento.Value = IIf(IsNull(rs!notas), "", rs!notas)
     
     vGridSeguimiento.Col = 3
-    vGridSeguimiento.Value = IIf(IsNull(rs!REGISTRO_FECHA), "", rs!REGISTRO_FECHA)
+    vGridSeguimiento.Value = IIf(IsNull(rs!Registro_Fecha), "", rs!Registro_Fecha)
     
     vGridSeguimiento.Col = 4
-    vGridSeguimiento.Value = IIf(IsNull(rs!REGISTRO_USUARIO), "", rs!REGISTRO_USUARIO)
+    vGridSeguimiento.Value = IIf(IsNull(rs!registro_usuario), "", rs!registro_usuario)
     
     vGridSeguimiento.RowHeight(vGridSeguimiento.Row) = vGridSeguimiento.MaxTextRowHeight(vGridSeguimiento.Row)
     rs.MoveNext

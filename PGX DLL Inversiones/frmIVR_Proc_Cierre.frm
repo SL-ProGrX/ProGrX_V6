@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmIVR_Proc_Cierre 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -22,7 +22,7 @@ Begin VB.Form frmIVR_Proc_Cierre
       TabIndex        =   0
       Top             =   480
       Width           =   1332
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   556
       _StockProps     =   68
@@ -44,7 +44,7 @@ Begin VB.Form frmIVR_Proc_Cierre
       TabIndex        =   1
       Top             =   1320
       Width           =   7812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   13779
       _ExtentY        =   2773
       _StockProps     =   79
@@ -58,7 +58,7 @@ Begin VB.Form frmIVR_Proc_Cierre
          TabIndex        =   2
          Top             =   360
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   1926
          _StockProps     =   79
@@ -165,5 +165,6 @@ Private Sub Form_Load()
  Call RefrescaTags(Me)
  
 End Sub
+
 
 

@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmPres_Planning 
    Caption         =   "Presupuesto: Vista Mensual"
    ClientHeight    =   9180
@@ -19,7 +19,7 @@ Begin VB.Form frmPres_Planning
       TabIndex        =   26
       Top             =   360
       Width           =   210
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   370
       _ExtentY        =   370
       _StockProps     =   79
@@ -41,17 +41,16 @@ Begin VB.Form frmPres_Planning
       Top             =   0
    End
    Begin XtremeSuiteControls.GroupBox gbAjustes 
-      Height          =   5415
+      Height          =   5775
       Left            =   2760
       TabIndex        =   8
       Top             =   1680
       Visible         =   0   'False
       Width           =   8055
-      _Version        =   1441793
-      _ExtentX        =   14203
-      _ExtentY        =   9546
+      _Version        =   1572864
+      _ExtentX        =   14208
+      _ExtentY        =   10186
       _StockProps     =   79
-      Caption         =   "Ajuste de Partida   "
       ForeColor       =   16711680
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
@@ -68,9 +67,9 @@ Begin VB.Form frmPres_Planning
          Height          =   615
          Left            =   5280
          TabIndex        =   15
-         Top             =   4680
+         Top             =   5040
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   1085
          _StockProps     =   79
@@ -92,9 +91,9 @@ Begin VB.Form frmPres_Planning
          Height          =   615
          Left            =   6480
          TabIndex        =   16
-         Top             =   4680
+         Top             =   5040
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   1085
          _StockProps     =   79
@@ -113,12 +112,12 @@ Begin VB.Form frmPres_Planning
          Picture         =   "frmPres_Planning.frx":07DE
       End
       Begin XtremeSuiteControls.ComboBox cboAjuste 
-         Height          =   312
+         Height          =   315
          Left            =   1800
          TabIndex        =   32
-         Top             =   1560
-         Width           =   6012
-         _Version        =   1441793
+         Top             =   1920
+         Width           =   6015
+         _Version        =   1572864
          _ExtentX        =   10610
          _ExtentY        =   582
          _StockProps     =   77
@@ -139,12 +138,12 @@ Begin VB.Form frmPres_Planning
          Text            =   "ComboBox1"
       End
       Begin XtremeSuiteControls.FlatEdit txtAJ_Ajuste 
-         Height          =   312
+         Height          =   315
          Left            =   1800
          TabIndex        =   39
-         Top             =   2400
-         Width           =   1932
-         _Version        =   1441793
+         Top             =   2760
+         Width           =   1935
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -164,12 +163,12 @@ Begin VB.Form frmPres_Planning
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAJ_ValorActual 
-         Height          =   312
+         Height          =   315
          Left            =   1800
          TabIndex        =   40
-         Top             =   2040
-         Width           =   1932
-         _Version        =   1441793
+         Top             =   2400
+         Width           =   1935
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -191,12 +190,12 @@ Begin VB.Form frmPres_Planning
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAJ_ValorNuevo 
-         Height          =   312
+         Height          =   315
          Left            =   1800
          TabIndex        =   41
-         Top             =   2760
-         Width           =   1932
-         _Version        =   1441793
+         Top             =   3120
+         Width           =   1935
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -218,12 +217,12 @@ Begin VB.Form frmPres_Planning
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAJ_Disponible 
-         Height          =   312
+         Height          =   315
          Left            =   5880
          TabIndex        =   42
-         Top             =   2040
-         Width           =   1932
-         _Version        =   1441793
+         Top             =   2400
+         Width           =   1935
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -245,12 +244,12 @@ Begin VB.Form frmPres_Planning
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAJ_Acumulado 
-         Height          =   312
+         Height          =   315
          Left            =   5880
          TabIndex        =   43
-         Top             =   2400
-         Width           =   1932
-         _Version        =   1441793
+         Top             =   2760
+         Width           =   1935
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -272,12 +271,12 @@ Begin VB.Form frmPres_Planning
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAJ_PresupuestoTotal 
-         Height          =   312
+         Height          =   315
          Left            =   5880
          TabIndex        =   44
-         Top             =   2760
-         Width           =   1932
-         _Version        =   1441793
+         Top             =   3120
+         Width           =   1935
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -299,14 +298,14 @@ Begin VB.Form frmPres_Planning
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAJ_Notas 
-         Height          =   912
+         Height          =   795
          Left            =   1800
          TabIndex        =   45
-         Top             =   3480
-         Width           =   6012
-         _Version        =   1441793
-         _ExtentX        =   10604
-         _ExtentY        =   1609
+         Top             =   4080
+         Width           =   6015
+         _Version        =   1572864
+         _ExtentX        =   10610
+         _ExtentY        =   1402
          _StockProps     =   77
          ForeColor       =   0
          BackColor       =   -2147483643
@@ -326,12 +325,12 @@ Begin VB.Form frmPres_Planning
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAJ_Cuenta 
-         Height          =   792
+         Height          =   795
          Left            =   1800
          TabIndex        =   46
-         Top             =   600
-         Width           =   6012
-         _Version        =   1441793
+         Top             =   960
+         Width           =   6015
+         _Version        =   1572864
          _ExtentX        =   10604
          _ExtentY        =   1397
          _StockProps     =   77
@@ -354,12 +353,12 @@ Begin VB.Form frmPres_Planning
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAJ_PresupuestoTotalNuevo 
-         Height          =   312
+         Height          =   315
          Left            =   5880
          TabIndex        =   47
-         Top             =   3120
-         Width           =   1932
-         _Version        =   1441793
+         Top             =   3480
+         Width           =   1935
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -380,6 +379,28 @@ Begin VB.Form frmPres_Planning
          Appearance      =   6
          UseVisualStyle  =   0   'False
       End
+      Begin XtremeShortcutBar.ShortcutCaption scAjustes 
+         Height          =   375
+         Left            =   0
+         TabIndex        =   52
+         Top             =   0
+         Width           =   8055
+         _Version        =   1572864
+         _ExtentX        =   14208
+         _ExtentY        =   661
+         _StockProps     =   14
+         Caption         =   "Ajustes de Partidas"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   1
+      End
       Begin VB.Label Label2 
          BackColor       =   &H00C0FFC0&
          BackStyle       =   0  'Transparent
@@ -393,12 +414,12 @@ Begin VB.Form frmPres_Planning
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Index           =   15
          Left            =   4080
          TabIndex        =   48
-         Top             =   3120
-         Width           =   1692
+         Top             =   3480
+         Width           =   1695
       End
       Begin VB.Label lblAJ_CentroCosto 
          BackColor       =   &H00C0FFC0&
@@ -413,11 +434,11 @@ Begin VB.Form frmPres_Planning
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Left            =   4920
          TabIndex        =   36
-         Top             =   240
-         Width           =   2892
+         Top             =   600
+         Width           =   2895
       End
       Begin VB.Label lblAJ_Unidad 
          BackColor       =   &H00C0FFC0&
@@ -432,11 +453,11 @@ Begin VB.Form frmPres_Planning
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Left            =   1800
          TabIndex        =   35
-         Top             =   240
-         Width           =   3012
+         Top             =   600
+         Width           =   3015
       End
       Begin VB.Label Label2 
          BackColor       =   &H00C0FFC0&
@@ -451,12 +472,12 @@ Begin VB.Form frmPres_Planning
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Index           =   7
          Left            =   4080
          TabIndex        =   34
-         Top             =   2040
-         Width           =   1692
+         Top             =   2400
+         Width           =   1695
       End
       Begin VB.Label Label2 
          BackColor       =   &H00C0FFC0&
@@ -471,12 +492,12 @@ Begin VB.Form frmPres_Planning
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Index           =   3
          Left            =   360
          TabIndex        =   33
-         Top             =   1560
-         Width           =   2412
+         Top             =   1920
+         Width           =   2415
       End
       Begin VB.Label Label2 
          BackColor       =   &H00C0FFC0&
@@ -491,12 +512,12 @@ Begin VB.Form frmPres_Planning
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Index           =   14
          Left            =   360
          TabIndex        =   24
-         Top             =   3480
-         Width           =   2412
+         Top             =   4080
+         Width           =   1335
       End
       Begin VB.Label Label2 
          BackColor       =   &H00C0FFC0&
@@ -511,12 +532,12 @@ Begin VB.Form frmPres_Planning
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Index           =   12
          Left            =   4080
          TabIndex        =   14
-         Top             =   2760
-         Width           =   1692
+         Top             =   3120
+         Width           =   1695
       End
       Begin VB.Label Label2 
          BackColor       =   &H00C0FFC0&
@@ -531,12 +552,12 @@ Begin VB.Form frmPres_Planning
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Index           =   11
          Left            =   4080
          TabIndex        =   13
-         Top             =   2400
-         Width           =   1692
+         Top             =   2760
+         Width           =   1695
       End
       Begin VB.Label Label2 
          BackColor       =   &H00C0FFC0&
@@ -551,12 +572,12 @@ Begin VB.Form frmPres_Planning
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Index           =   10
          Left            =   360
          TabIndex        =   12
-         Top             =   2760
-         Width           =   2412
+         Top             =   3120
+         Width           =   2415
       End
       Begin VB.Label Label2 
          BackColor       =   &H00C0FFC0&
@@ -571,12 +592,12 @@ Begin VB.Form frmPres_Planning
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Index           =   9
          Left            =   360
          TabIndex        =   11
-         Top             =   2400
-         Width           =   1212
+         Top             =   2760
+         Width           =   1215
       End
       Begin VB.Label Label2 
          BackColor       =   &H00C0FFC0&
@@ -591,12 +612,12 @@ Begin VB.Form frmPres_Planning
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Index           =   8
          Left            =   360
          TabIndex        =   10
-         Top             =   2040
-         Width           =   2412
+         Top             =   2400
+         Width           =   2415
       End
       Begin VB.Label Label2 
          BackColor       =   &H00C0FFC0&
@@ -611,12 +632,12 @@ Begin VB.Form frmPres_Planning
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Index           =   4
          Left            =   360
          TabIndex        =   9
-         Top             =   600
-         Width           =   2412
+         Top             =   960
+         Width           =   2415
       End
    End
    Begin XtremeSuiteControls.GroupBox gbDetalle 
@@ -625,7 +646,7 @@ Begin VB.Form frmPres_Planning
       TabIndex        =   6
       Top             =   6240
       Width           =   12612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   22246
       _ExtentY        =   4890
       _StockProps     =   79
@@ -648,7 +669,7 @@ Begin VB.Form frmPres_Planning
          TabIndex        =   22
          Top             =   600
          Width           =   5172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9123
          _ExtentY        =   3831
          _StockProps     =   77
@@ -672,7 +693,7 @@ Begin VB.Form frmPres_Planning
          TabIndex        =   23
          Top             =   600
          Width           =   7092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12509
          _ExtentY        =   3831
          _StockProps     =   77
@@ -697,7 +718,7 @@ Begin VB.Form frmPres_Planning
          TabIndex        =   37
          Top             =   240
          Width           =   252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   444
          _ExtentY        =   444
          _StockProps     =   79
@@ -712,7 +733,7 @@ Begin VB.Form frmPres_Planning
          TabIndex        =   29
          Top             =   240
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   444
          _StockProps     =   79
@@ -737,7 +758,7 @@ Begin VB.Form frmPres_Planning
          TabIndex        =   30
          Top             =   240
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   444
          _StockProps     =   79
@@ -761,7 +782,7 @@ Begin VB.Form frmPres_Planning
          TabIndex        =   31
          Top             =   240
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   450
          _StockProps     =   79
@@ -785,7 +806,7 @@ Begin VB.Form frmPres_Planning
          TabIndex        =   38
          Top             =   240
          Width           =   255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   444
          _ExtentY        =   444
          _StockProps     =   79
@@ -820,11 +841,12 @@ Begin VB.Form frmPres_Planning
       TabIndex        =   4
       Top             =   360
       Width           =   972
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1714
       _ExtentY        =   1503
       _StockProps     =   79
       Caption         =   "Buscar"
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   7.5
@@ -835,7 +857,7 @@ Begin VB.Form frmPres_Planning
          Strikethrough   =   0   'False
       EndProperty
       UseVisualStyle  =   -1  'True
-      Appearance      =   17
+      Appearance      =   21
       Picture         =   "frmPres_Planning.frx":127F
       TextImageRelation=   1
    End
@@ -875,7 +897,7 @@ Begin VB.Form frmPres_Planning
       TabIndex        =   17
       Top             =   720
       Width           =   3972
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7011
       _ExtentY        =   582
       _StockProps     =   77
@@ -901,7 +923,7 @@ Begin VB.Form frmPres_Planning
       TabIndex        =   18
       Top             =   1080
       Width           =   3972
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7011
       _ExtentY        =   582
       _StockProps     =   77
@@ -927,7 +949,7 @@ Begin VB.Form frmPres_Planning
       TabIndex        =   19
       Top             =   360
       Width           =   3732
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   6588
       _ExtentY        =   582
       _StockProps     =   77
@@ -953,7 +975,7 @@ Begin VB.Form frmPres_Planning
       TabIndex        =   20
       Top             =   360
       Width           =   5532
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9763
       _ExtentY        =   582
       _StockProps     =   77
@@ -979,7 +1001,7 @@ Begin VB.Form frmPres_Planning
       TabIndex        =   25
       Top             =   960
       Width           =   3732
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   6588
       _ExtentY        =   582
       _StockProps     =   77
@@ -1006,7 +1028,7 @@ Begin VB.Form frmPres_Planning
       ToolTipText     =   "Se utiliza para traer el dato contable más cernano aún cuando no se encuentre cerrado el periodo o aplicado el movimiento."
       Top             =   840
       Width           =   210
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   370
       _ExtentY        =   370
       _StockProps     =   79
@@ -1028,7 +1050,7 @@ Begin VB.Form frmPres_Planning
       TabIndex        =   28
       Top             =   360
       Width           =   972
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1714
       _ExtentY        =   1503
       _StockProps     =   79
@@ -1044,7 +1066,7 @@ Begin VB.Form frmPres_Planning
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmPres_Planning.frx":2929
+      Picture         =   "frmPres_Planning.frx":294D
       TextImageRelation=   1
    End
    Begin XtremeSuiteControls.Label Label1 
@@ -1055,12 +1077,12 @@ Begin VB.Form frmPres_Planning
       ToolTipText     =   "No muestra cuentas de resumen, solo las que reciben movimientos"
       Top             =   720
       Width           =   1452
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   868
       _StockProps     =   79
       Caption         =   "Calcular Real en Trámite?"
-      ForeColor       =   16777215
+      ForeColor       =   0
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -1082,12 +1104,12 @@ Begin VB.Form frmPres_Planning
       ToolTipText     =   "No muestra cuentas de resumen, solo las que reciben movimientos"
       Top             =   240
       Width           =   1452
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   868
       _StockProps     =   79
       Caption         =   "Sin Cuentas de Resumen?"
-      ForeColor       =   16777215
+      ForeColor       =   0
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -1212,7 +1234,7 @@ Begin VB.Form frmPres_Planning
       TabIndex        =   51
       Top             =   0
       Width           =   14175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   25003
       _ExtentY        =   2566
       _StockProps     =   14
@@ -1492,7 +1514,7 @@ Private Sub btnExportar_Click()
 Dim vHeaders As vGridHeaders
 Dim vArchivo As String, Ex As Boolean
 
-    vHeaders.Columnas = 15
+    vHeaders.Columnas = vGrid.MaxCols
 
     vHeaders.Headers(1) = "[+/-]"
     vHeaders.Headers(2) = "[...]"
@@ -1508,9 +1530,13 @@ Dim vArchivo As String, Ex As Boolean
     vHeaders.Headers(11) = "Presupuesto Acumulado"
     vHeaders.Headers(12) = "Diferencia Acumulada"
     
-    vHeaders.Headers(13) = "(% Ejecución Mensual)"
-    vHeaders.Headers(14) = "(% Ejecución Acumulada)"
-    vHeaders.Headers(15) = "(% Ejecución Total)"
+    vHeaders.Headers(13) = "Presupuesto TOTAL"
+    vHeaders.Headers(14) = "Diferencia TOTAL"
+    
+    
+    vHeaders.Headers(15) = "(% Ejecución Mensual)"
+    vHeaders.Headers(16) = "(% Ejecución Acumulada)"
+    vHeaders.Headers(17) = "(% Ejecución Total)"
     
  
 vArchivo = "Presupuesto_" & cboModelo.ItemData(cboModelo.ListIndex) & "_" & Format(cboPeriodo.Text, "yyyy-mm-dd")

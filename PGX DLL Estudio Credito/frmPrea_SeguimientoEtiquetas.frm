@@ -1,28 +1,30 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.3#0"; "Codejock.Controls.v19.3.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmPrea_SeguimientoEtiquetas 
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Registro de Tag's del Estudio de Crédito"
-   ClientHeight    =   6576
-   ClientLeft      =   108
-   ClientTop       =   408
-   ClientWidth     =   9744
+   ClientHeight    =   6585
+   ClientLeft      =   105
+   ClientTop       =   405
+   ClientWidth     =   9750
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   6576
-   ScaleWidth      =   9744
+   ScaleHeight     =   6585
+   ScaleWidth      =   9750
    ShowInTaskbar   =   0   'False
    StartUpPosition =   1  'CenterOwner
    Begin XtremeSuiteControls.TabControl tcMain 
-      Height          =   5292
+      Height          =   5295
       Left            =   0
       TabIndex        =   0
       Top             =   1200
-      Width           =   9612
-      _Version        =   1245187
-      _ExtentX        =   16954
-      _ExtentY        =   9334
+      Width           =   9735
+      _Version        =   1572864
+      _ExtentX        =   17171
+      _ExtentY        =   9340
       _StockProps     =   68
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
@@ -53,16 +55,15 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
       Item(1).Control(8)=   "Label1(2)"
       Item(1).Control(9)=   "txtNotas"
       Begin XtremeSuiteControls.ListView lsw 
-         Height          =   3372
-         Left            =   120
+         Height          =   3375
+         Left            =   0
          TabIndex        =   1
          Top             =   360
-         Width           =   9492
-         _Version        =   1245187
-         _ExtentX        =   16743
-         _ExtentY        =   5948
+         Width           =   9735
+         _Version        =   1572864
+         _ExtentX        =   17171
+         _ExtentY        =   5953
          _StockProps     =   77
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -85,12 +86,12 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
          Top             =   840
          Visible         =   0   'False
          Width           =   6972
-         _Version        =   1245187
-         _ExtentX        =   12298
-         _ExtentY        =   550
+         _Version        =   1572864
+         _ExtentX        =   12303
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   1973790
-         BackColor       =   16185078
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -100,23 +101,22 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         BackColor       =   16185078
          Style           =   2
-         Appearance      =   16
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
       Begin XtremeSuiteControls.FlatEdit txtNotaTag 
-         Height          =   1332
-         Left            =   120
+         Height          =   1335
+         Left            =   0
          TabIndex        =   3
          Top             =   3840
-         Width           =   9492
-         _Version        =   1245187
-         _ExtentX        =   16743
-         _ExtentY        =   2350
+         Width           =   9735
+         _Version        =   1572864
+         _ExtentX        =   17171
+         _ExtentY        =   2355
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -128,7 +128,7 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
          EndProperty
          MultiLine       =   -1  'True
          ScrollBars      =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtNotas 
@@ -138,12 +138,11 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
          Top             =   1320
          Visible         =   0   'False
          Width           =   6972
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   12298
          _ExtentY        =   2350
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -155,7 +154,7 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
          EndProperty
          MultiLine       =   -1  'True
          ScrollBars      =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAsignadoIdentificacion 
@@ -165,12 +164,11 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
          Top             =   3120
          Visible         =   0   'False
          Width           =   5292
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   9334
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -180,7 +178,7 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAsignadoClave 
@@ -190,12 +188,11 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
          Top             =   3120
          Visible         =   0   'False
          Width           =   1692
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -207,7 +204,7 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
          EndProperty
          Alignment       =   2
          PasswordChar    =   "*"
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.PushButton cmdAplicar 
@@ -217,21 +214,23 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
          Top             =   4080
          Visible         =   0   'False
          Width           =   1452
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   1080
          _StockProps     =   79
          Caption         =   "&Aplicar"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   7.8
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          Picture         =   "frmPrea_SeguimientoEtiquetas.frx":0000
       End
       Begin VB.Label Label1 
@@ -344,12 +343,11 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
       TabIndex        =   13
       Top             =   120
       Width           =   2052
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   656
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   12
@@ -360,7 +358,8 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtIdentificacion 
       Height          =   315
@@ -368,12 +367,11 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
       TabIndex        =   16
       Top             =   600
       Width           =   6612
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   11663
       _ExtentY        =   556
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -384,7 +382,8 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
          Strikethrough   =   0   'False
       EndProperty
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
    End
    Begin VB.Label Label1 
       BackStyle       =   0  'Transparent
@@ -412,7 +411,7 @@ Begin VB.Form frmPrea_SeguimientoEtiquetas
       Caption         =   "Operación"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   10.8
+         Size            =   10.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -525,7 +524,7 @@ If Val(mId_Solicitud) > 0 Then
     Call OpenRecordSet(rs, strSQL)
     txtOperacion.Text = rs!ID_SOLICITUD
     txtOperacion.Tag = rs!Codigo
-    txtIdentificacion.Text = "[ " & rs!cedula & " ] " & rs!nombre
+    txtIdentificacion.Text = "[ " & rs!Cedula & " ] " & rs!Nombre
     
 Else
 
@@ -538,7 +537,7 @@ Else
     Call OpenRecordSet(rs, strSQL)
     txtOperacion.Text = rs!cod_preanalisis
     txtOperacion.Tag = rs!Cod_Linea
-    txtIdentificacion.Text = "[ " & rs!cedula & " ] " & rs!nombre
+    txtIdentificacion.Text = "[ " & rs!Cedula & " ] " & rs!Nombre
            
 End If
 
@@ -570,8 +569,8 @@ Else
 End If
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
- Set itmX = lsw.ListItems.Add(, , rs!registro_Fecha)
-     itmX.SubItems(1) = rs!registro_usuario
+ Set itmX = lsw.ListItems.Add(, , rs!Registro_Fecha)
+     itmX.SubItems(1) = rs!Registro_Usuario
      itmX.SubItems(2) = rs!Etiqueta
      itmX.SubItems(3) = rs!Asignado_A
      itmX.SubItems(4) = rs!Notas

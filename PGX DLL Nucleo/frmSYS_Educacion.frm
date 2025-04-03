@@ -1,7 +1,7 @@
 VERSION 5.00
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.ShortcutBar.v22.1.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmSYS_Educacion 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -25,7 +25,7 @@ Begin VB.Form frmSYS_Educacion
       TabIndex        =   1
       Top             =   1200
       Width           =   9015
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   15901
       _ExtentY        =   12515
       _StockProps     =   68
@@ -55,7 +55,7 @@ Begin VB.Form frmSYS_Educacion
          TabIndex        =   2
          Top             =   4200
          Width           =   9015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15901
          _ExtentY        =   5106
          _StockProps     =   77
@@ -81,7 +81,7 @@ Begin VB.Form frmSYS_Educacion
          TabIndex        =   5
          Top             =   3720
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   661
          _StockProps     =   79
@@ -134,7 +134,7 @@ Begin VB.Form frmSYS_Educacion
          TabIndex        =   6
          Top             =   3720
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   661
          _StockProps     =   79
@@ -159,7 +159,7 @@ Begin VB.Form frmSYS_Educacion
          TabIndex        =   7
          Top             =   3720
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   661
          _StockProps     =   79
@@ -183,7 +183,7 @@ Begin VB.Form frmSYS_Educacion
          TabIndex        =   4
          Top             =   3240
          Width           =   9015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15901
          _ExtentY        =   661
          _StockProps     =   14
@@ -268,9 +268,9 @@ strSQL = "exec spSys_Educacion_Asigna_Consulta '" & scTitulo.Tag & "', '" & vTip
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
   Set itmX = lsw.ListItems.Add(, , rs!cod_Educ)
-      itmX.SubItems(1) = rs!Descripcion
+      itmX.SubItems(1) = rs!DESCRIPCION
       
-      itmX.Checked = IIf(rs!Asignado = 1, True, False)
+      itmX.Checked = IIf(rs!ASIGNADO = 1, True, False)
       
   rs.MoveNext
 Loop

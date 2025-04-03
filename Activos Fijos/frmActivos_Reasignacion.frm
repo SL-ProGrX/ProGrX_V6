@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmActivos_Reasignacion 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -23,7 +23,7 @@ Begin VB.Form frmActivos_Reasignacion
       TabIndex        =   3
       Top             =   1320
       Width           =   11292
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19918
       _ExtentY        =   11663
       _StockProps     =   68
@@ -66,7 +66,7 @@ Begin VB.Form frmActivos_Reasignacion
       Item(0).Control(22)=   "cmdNuevo"
       Item(0).Control(23)=   "cmdGuardar"
       Item(1).Caption =   "Boletas"
-      Item(1).ControlCount=   14
+      Item(1).ControlCount=   15
       Item(1).Control(0)=   "lbl"
       Item(1).Control(1)=   "chkTodos"
       Item(1).Control(2)=   "lswHistorial"
@@ -81,6 +81,7 @@ Begin VB.Form frmActivos_Reasignacion
       Item(1).Control(11)=   "chkBoletasTodas"
       Item(1).Control(12)=   "btnBoletas(0)"
       Item(1).Control(13)=   "btnBoletas(1)"
+      Item(1).Control(14)=   "btnExportar"
       Begin XtremeSuiteControls.ListView lswHistorial 
          Height          =   4572
          Left            =   -70000
@@ -88,7 +89,7 @@ Begin VB.Form frmActivos_Reasignacion
          Top             =   720
          Visible         =   0   'False
          Width           =   11292
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   19918
          _ExtentY        =   8064
          _StockProps     =   77
@@ -107,6 +108,20 @@ Begin VB.Form frmActivos_Reasignacion
          Appearance      =   16
          UseVisualStyle  =   0   'False
       End
+      Begin XtremeSuiteControls.PushButton btnExportar 
+         Height          =   375
+         Left            =   -59320
+         TabIndex        =   42
+         Top             =   360
+         Visible         =   0   'False
+         Width           =   615
+         _Version        =   1572864
+         _ExtentX        =   1085
+         _ExtentY        =   661
+         _StockProps     =   79
+         Appearance      =   6
+         Picture         =   "frmActivos_Reasignacion.frx":0000
+      End
       Begin XtremeSuiteControls.CheckBox chkFechasTodas 
          Height          =   252
          Left            =   -64480
@@ -114,7 +129,7 @@ Begin VB.Form frmActivos_Reasignacion
          Top             =   5400
          Visible         =   0   'False
          Width           =   852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   444
          _StockProps     =   79
@@ -130,7 +145,6 @@ Begin VB.Form frmActivos_Reasignacion
             Strikethrough   =   0   'False
          EndProperty
          UseVisualStyle  =   -1  'True
-         Value           =   1
       End
       Begin XtremeSuiteControls.CheckBox chkTodos 
          Height          =   210
@@ -139,7 +153,7 @@ Begin VB.Form frmActivos_Reasignacion
          Top             =   480
          Visible         =   0   'False
          Width           =   210
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   370
          _ExtentY        =   370
          _StockProps     =   79
@@ -152,7 +166,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   4
          Top             =   480
          Width           =   2412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   762
          _StockProps     =   77
@@ -177,7 +191,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   7
          Top             =   480
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -200,7 +214,7 @@ Begin VB.Form frmActivos_Reasignacion
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   1800
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11028
          _ExtentY        =   550
          _StockProps     =   77
@@ -225,7 +239,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   9
          Top             =   2160
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11028
          _ExtentY        =   550
          _StockProps     =   77
@@ -251,7 +265,7 @@ Begin VB.Form frmActivos_Reasignacion
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   2520
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11028
          _ExtentY        =   550
          _StockProps     =   77
@@ -276,7 +290,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   13
          Top             =   3720
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11028
          _ExtentY        =   550
          _StockProps     =   77
@@ -302,7 +316,7 @@ Begin VB.Form frmActivos_Reasignacion
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   4080
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11028
          _ExtentY        =   550
          _StockProps     =   77
@@ -327,7 +341,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   17
          Top             =   4440
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11028
          _ExtentY        =   550
          _StockProps     =   77
@@ -352,7 +366,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   24
          Top             =   5040
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11033
          _ExtentY        =   582
          _StockProps     =   77
@@ -379,7 +393,7 @@ Begin VB.Form frmActivos_Reasignacion
          ToolTipText     =   "Importa Catálogo de Cuentas por Pagar"
          Top             =   0
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   79
@@ -395,7 +409,7 @@ Begin VB.Form frmActivos_Reasignacion
             Strikethrough   =   0   'False
          EndProperty
          Appearance      =   6
-         Picture         =   "frmActivos_Reasignacion.frx":0000
+         Picture         =   "frmActivos_Reasignacion.frx":016A
          ImageAlignment  =   4
       End
       Begin XtremeSuiteControls.PushButton cmdGuardar 
@@ -405,7 +419,7 @@ Begin VB.Form frmActivos_Reasignacion
          ToolTipText     =   "Importa Catálogo de Cuentas por Pagar"
          Top             =   5760
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   1080
          _StockProps     =   79
@@ -422,7 +436,7 @@ Begin VB.Form frmActivos_Reasignacion
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmActivos_Reasignacion.frx":0632
+         Picture         =   "frmActivos_Reasignacion.frx":079C
       End
       Begin XtremeSuiteControls.FlatEdit txtNotas 
          Height          =   1032
@@ -430,7 +444,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   22
          Top             =   5400
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11028
          _ExtentY        =   1820
          _StockProps     =   77
@@ -456,7 +470,7 @@ Begin VB.Form frmActivos_Reasignacion
          Top             =   5400
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -479,7 +493,7 @@ Begin VB.Form frmActivos_Reasignacion
          Top             =   5400
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -503,7 +517,7 @@ Begin VB.Form frmActivos_Reasignacion
          Top             =   5760
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   77
@@ -529,7 +543,7 @@ Begin VB.Form frmActivos_Reasignacion
          Top             =   5760
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   77
@@ -554,7 +568,7 @@ Begin VB.Form frmActivos_Reasignacion
          Top             =   5760
          Visible         =   0   'False
          Width           =   852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   444
          _StockProps     =   79
@@ -579,7 +593,7 @@ Begin VB.Form frmActivos_Reasignacion
          Top             =   6120
          Visible         =   0   'False
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   444
          _StockProps     =   79
@@ -606,7 +620,7 @@ Begin VB.Form frmActivos_Reasignacion
          Top             =   5520
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   1080
          _StockProps     =   79
@@ -614,7 +628,7 @@ Begin VB.Form frmActivos_Reasignacion
          BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   7.5
+            Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -623,8 +637,8 @@ Begin VB.Form frmActivos_Reasignacion
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmActivos_Reasignacion.frx":0D4B
-         ImageAlignment  =   0
+         Picture         =   "frmActivos_Reasignacion.frx":0EB5
+         ImageAlignment  =   4
       End
       Begin XtremeSuiteControls.PushButton btnBoletas 
          Height          =   612
@@ -635,7 +649,7 @@ Begin VB.Form frmActivos_Reasignacion
          Top             =   5520
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   1080
          _StockProps     =   79
@@ -643,7 +657,7 @@ Begin VB.Form frmActivos_Reasignacion
          BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   7.5
+            Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -652,8 +666,8 @@ Begin VB.Form frmActivos_Reasignacion
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmActivos_Reasignacion.frx":1769
-         ImageAlignment  =   0
+         Picture         =   "frmActivos_Reasignacion.frx":15B5
+         ImageAlignment  =   4
       End
       Begin XtremeSuiteControls.Label Label1 
          Height          =   252
@@ -663,7 +677,7 @@ Begin VB.Form frmActivos_Reasignacion
          Top             =   5760
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -690,7 +704,7 @@ Begin VB.Form frmActivos_Reasignacion
          Top             =   5400
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -716,14 +730,14 @@ Begin VB.Form frmActivos_Reasignacion
          Top             =   360
          Visible         =   0   'False
          Width           =   11292
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   19918
          _ExtentY        =   656
          _StockProps     =   14
          Caption         =   "Indique las Boletas de Traslados de Activos que visualizar"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   8.93
+            Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -741,7 +755,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   25
          Top             =   5040
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -765,7 +779,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   23
          Top             =   5400
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -789,7 +803,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   21
          Top             =   3120
          Width           =   11292
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   19918
          _ExtentY        =   656
          _StockProps     =   14
@@ -814,7 +828,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   20
          Top             =   1200
          Width           =   11292
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   19918
          _ExtentY        =   656
          _StockProps     =   14
@@ -839,7 +853,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   19
          Top             =   4080
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -863,7 +877,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   18
          Top             =   4440
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -887,7 +901,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   15
          Top             =   2520
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -911,7 +925,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   14
          Top             =   3720
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -935,7 +949,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   11
          Top             =   1800
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -959,7 +973,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   10
          Top             =   2160
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -983,7 +997,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   6
          Top             =   480
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1009,7 +1023,7 @@ Begin VB.Form frmActivos_Reasignacion
          TabIndex        =   5
          Top             =   480
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   444
          _StockProps     =   79
@@ -1034,7 +1048,7 @@ Begin VB.Form frmActivos_Reasignacion
       TabIndex        =   0
       Top             =   360
       Width           =   2412
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4254
       _ExtentY        =   762
       _StockProps     =   77
@@ -1058,7 +1072,7 @@ Begin VB.Form frmActivos_Reasignacion
       TabIndex        =   2
       Top             =   360
       Width           =   5292
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9334
       _ExtentY        =   762
       _StockProps     =   79
@@ -1084,7 +1098,7 @@ Begin VB.Form frmActivos_Reasignacion
       TabIndex        =   1
       Top             =   360
       Width           =   1812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   656
       _StockProps     =   79
@@ -1118,37 +1132,14 @@ Option Explicit
 Dim vMascara As String
 
 
-Private Sub sbBoleta(vBoleta As String)
-'Imprime la Boleta de Traslado
+Private Sub btnExportar_Click()
+On Error GoTo vError
 
-Me.MousePointer = vbHourglass
+Call Excel_Exportar_Lsw(lswHistorial)
 
-With frmContenedor.Crt
- .Reset
- .WindowShowExportBtn = True
- .WindowShowPrintBtn = True
- .WindowShowPrintSetupBtn = True
- .WindowShowRefreshBtn = True
- .WindowShowSearchBtn = True
- .WindowState = crptMaximized
- .WindowTitle = "Reportes de Activos Fijos"
- 
- .Connect = glogon.ConectRPT
+Exit Sub
 
- 
- .Formulas(0) = "fxEmpresa = '" & GLOBALES.gstrNombreEmpresa & "'"
- .Formulas(1) = "fxUsuario = 'USUARIO: " & UCase(glogon.Usuario) & "'"
- .Formulas(2) = "fxFecha = 'FECHA:" & Format(fxFechaServidor, "dd/mm/yyyy") & "'"
- .Formulas(3) = "fxSubTitulo = 'TRASLADO DE ACTIVOS Y CAMBIO DE RESPONSABLES'"
- 
- .ReportFileName = SIFGlobal.fxPathReportes("Activos_BoletaTraslado.rpt")
- .SelectionFormula = "{ACTIVOS_TRASLADOS.COD_TRASLADO} = '" & vBoleta & "'"
-  
- .PrintReport
-
-End With
-
-Me.MousePointer = vbDefault
+vError:
 
 End Sub
 
@@ -1174,7 +1165,7 @@ Select Case Index
 
         For i = 1 To lswHistorial.ListItems.Count
          If lswHistorial.ListItems.Item(i).Checked Then
-            Call sbBoleta(lswHistorial.ListItems.Item(i).Text)
+            Call sbActivos_Boleta_Cambio_Responsable(lswHistorial.ListItems.Item(i).Text)
          End If
         Next i
 
@@ -1227,7 +1218,7 @@ End If
 Me.MousePointer = vbHourglass
 
 
-strSQL = "exec  spActivos_ResponsableCambio '" & txtBoleta.Text & "','" & txtCodigo.Text & "','" & cboMotivo.ItemData(cboMotivo.ListIndex) _
+strSQL = "exec spActivos_ResponsableCambio '" & txtBoleta.Text & "','" & txtCodigo.Text & "','" & cboMotivo.ItemData(cboMotivo.ListIndex) _
        & "','" & txtNuevoPersona.Tag & "','" & glogon.Usuario & "','" & txtNotas.Text & "','P','" & Format(dtpFecha.Value, "yyyy/mm/dd") & "'"
 Call OpenRecordSet(rs, strSQL, 0)
   vBoleta = rs!Boleta
@@ -1238,7 +1229,7 @@ Call Bitacora("Registra", "Cambio Responsable, Activo: " & txtCodigo.Text & ", P
             & " a Persona Destino: " & txtNuevoPersona.Tag)
             
 'Boleta
-Call sbBoleta(vBoleta)
+Call sbActivos_Boleta_Cambio_Responsable(vBoleta)
 
 Me.MousePointer = vbDefault
 MsgBox "Traslado Realizado Satisfactoriamente...", vbInformation
@@ -1316,11 +1307,15 @@ dtpInicio.Value = DateAdd("m", -3, dtpCorte.Value)
 With lswHistorial.ColumnHeaders
     .Clear
     .Add , , "Boleta No.", 1400
+    .Add , , "No.Placa", 1200, vbCenter
+    .Add , , "Id Alterno", 1200, vbCenter
+    .Add , , "Descripción", 1200, vbCenter
     .Add , , "Fecha", 1800, vbCenter
     .Add , , "Usuario", 1800, vbCenter
     .Add , , "Persona Origen", 3000
     .Add , , "Persona Destino", 3000
     .Add , , "Motivo", 2400
+    .Add , , "Estado", 1400, vbCenter
 End With
 
 Call Formularios(Me)
@@ -1353,18 +1348,18 @@ Call OpenRecordSet(rs, strSQL, 0)
 Call cmdNuevo_Click
 
 If Not rs.EOF And Not rs.BOF Then
-  txtCodigo.Text = rs!num_placa
-  txtCodigo.Tag = rs!num_placa
+  txtCodigo.Text = rs!NUM_PLACA
+  txtCodigo.Tag = rs!NUM_PLACA
   lblDescripcion.Caption = rs!Nombre
   
   txtPersona.Text = rs!Persona
   txtPersona.Tag = rs!Identificacion
   
   txtDepartamento.Tag = rs!Cod_Departamento
-  txtDepartamento.Text = rs!departamento
+  txtDepartamento.Text = rs!Departamento
   
   txtSeccion.Tag = rs!Cod_Seccion
-  txtSeccion.Text = rs!seccion
+  txtSeccion.Text = rs!Seccion
   
   txtNuevoPersona.SetFocus
   
@@ -1394,7 +1389,7 @@ strSQL = "select * " _
        & " from vActivos_TrasladosHistorico "
        
 If chkTodosActivos.Value = vbUnchecked Then
-   strSQL = strSQL & " where num_placa = '" & txtCodigo.Tag & "'"
+   strSQL = strSQL & " where num_placa like '%" & txtCodigo.Tag & "%'"
    vWhere = True
 End If
 
@@ -1416,11 +1411,16 @@ Call OpenRecordSet(rs, strSQL, 0)
 
 Do While Not rs.EOF
  Set itmX = lswHistorial.ListItems.Add(, , rs!cod_traslado)
-     itmX.SubItems(1) = rs!registro_fecha
-     itmX.SubItems(2) = rs!registro_usuario
-     itmX.SubItems(3) = rs!Persona
-     itmX.SubItems(4) = rs!Persona_Destino
-     itmX.SubItems(5) = rs!Motivo
+     itmX.SubItems(1) = rs!NUM_PLACA
+     itmX.SubItems(2) = rs!PLACA_ALTERNA & ""
+     itmX.SubItems(3) = rs!DESCRIPCION
+     
+     itmX.SubItems(4) = rs!Registro_Fecha
+     itmX.SubItems(5) = rs!Registro_Usuario
+     itmX.SubItems(6) = rs!Persona
+     itmX.SubItems(7) = rs!Persona_Destino
+     itmX.SubItems(8) = rs!Motivo
+     itmX.SubItems(9) = rs!Estado_Desc
     
  rs.MoveNext
 Loop
@@ -1499,6 +1499,8 @@ End If
 
 End Sub
 
+
+
 Private Sub sbResponsableNuevo(pIdentificacion As String)
 Dim strSQL As String, rs As New ADODB.Recordset
 
@@ -1513,8 +1515,8 @@ txtNuevoSeccion.Tag = ""
 strSQL = "select * from vActivos_Personas where identificacion = '" & txtPersona.Tag & "'"
 Call OpenRecordSet(rs, strSQL, 0)
 If Not rs.BOF And Not rs.EOF Then
-    txtNuevoDepartamento.Text = rs!departamento
-    txtNuevoSeccion.Text = rs!seccion
+    txtNuevoDepartamento.Text = rs!Departamento
+    txtNuevoSeccion.Text = rs!Seccion
     
     txtNuevoDepartamento.Tag = rs!Cod_Departamento
     txtNuevoSeccion.Tag = rs!Cod_Seccion
@@ -1538,7 +1540,7 @@ If KeyCode = vbKeyF4 Then
     gBusquedas.Columna = "Nombre"
     gBusquedas.Orden = "Nombre"
     gBusquedas.Consulta = "select identificacion,Nombre from Activos_Personas"
-    gBusquedas.Filtro = ""
+    gBusquedas.Filtro = " and Identificacion <> '" & txtPersona.Tag & "'"
     frmBusquedas.Show vbModal
     txtNuevoPersona.Tag = gBusquedas.Resultado
     txtNuevoPersona.Text = gBusquedas.Resultado2
@@ -1563,3 +1565,6 @@ If KeyCode = vbKeyF4 Then
 End If
 
 End Sub
+
+
+

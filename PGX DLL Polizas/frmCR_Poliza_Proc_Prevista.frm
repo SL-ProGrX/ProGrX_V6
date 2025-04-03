@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCR_Poliza_Proc_Prevista 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -23,7 +23,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
       TabIndex        =   2
       Top             =   1080
       Width           =   12135
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   21405
       _ExtentY        =   13573
       _StockProps     =   68
@@ -66,37 +66,13 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
       Item(1).Control(4)=   "cboC_Proceso"
       Item(1).Control(5)=   "btnC_Buscar"
       Item(1).Control(6)=   "lswC"
-      Begin XtremeSuiteControls.ListView lswC 
-         Height          =   6615
-         Left            =   -69880
-         TabIndex        =   32
-         Top             =   960
-         Visible         =   0   'False
-         Width           =   11895
-         _Version        =   1441793
-         _ExtentX        =   20981
-         _ExtentY        =   11668
-         _StockProps     =   77
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         View            =   3
-         FullRowSelect   =   -1  'True
-         Appearance      =   17
-      End
       Begin XtremeSuiteControls.ListView lsw 
          Height          =   4815
          Left            =   120
          TabIndex        =   12
          Top             =   1800
          Width           =   11895
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   20981
          _ExtentY        =   8493
          _StockProps     =   77
@@ -114,13 +90,37 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
          FullRowSelect   =   -1  'True
          Appearance      =   17
       End
+      Begin XtremeSuiteControls.ListView lswC 
+         Height          =   6615
+         Left            =   -69880
+         TabIndex        =   32
+         Top             =   960
+         Visible         =   0   'False
+         Width           =   11895
+         _Version        =   1572864
+         _ExtentX        =   20981
+         _ExtentY        =   11668
+         _StockProps     =   77
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         View            =   3
+         FullRowSelect   =   -1  'True
+         Appearance      =   17
+      End
       Begin XtremeSuiteControls.CheckBox chkTodos 
          Height          =   210
          Left            =   360
          TabIndex        =   20
          Top             =   1520
          Width           =   210
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   370
          _ExtentY        =   370
          _StockProps     =   79
@@ -133,7 +133,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
          TabIndex        =   14
          Top             =   6720
          Width           =   11895
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   20981
          _ExtentY        =   1720
          _StockProps     =   79
@@ -146,7 +146,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
             TabIndex        =   21
             Top             =   120
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   556
             _StockProps     =   77
@@ -173,7 +173,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
             TabIndex        =   22
             Top             =   480
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   556
             _StockProps     =   77
@@ -200,7 +200,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
             TabIndex        =   23
             Top             =   120
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   556
             _StockProps     =   77
@@ -227,7 +227,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
             TabIndex        =   24
             Top             =   480
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   556
             _StockProps     =   77
@@ -254,7 +254,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
             TabIndex        =   25
             Top             =   240
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   873
             _StockProps     =   79
@@ -360,7 +360,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
          TabIndex        =   3
          Top             =   960
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   656
          _StockProps     =   79
@@ -375,7 +375,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
          TabIndex        =   4
          Top             =   960
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   656
          _StockProps     =   79
@@ -390,7 +390,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
          TabIndex        =   5
          Top             =   960
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   656
          _StockProps     =   79
@@ -405,7 +405,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
          TabIndex        =   6
          Top             =   960
          Width           =   6855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12086
          _ExtentY        =   656
          _StockProps     =   77
@@ -431,7 +431,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
          TabIndex        =   8
          Top             =   480
          Width           =   3135
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5530
          _ExtentY        =   556
          _StockProps     =   77
@@ -456,7 +456,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
          TabIndex        =   11
          Top             =   480
          Width           =   2535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4471
          _ExtentY        =   582
          _StockProps     =   77
@@ -482,7 +482,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
          TabIndex        =   13
          Top             =   960
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   661
          _StockProps     =   79
@@ -508,7 +508,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
          Top             =   480
          Visible         =   0   'False
          Width           =   2535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4471
          _ExtentY        =   582
          _StockProps     =   77
@@ -535,7 +535,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
          Top             =   480
          Visible         =   0   'False
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   582
          _StockProps     =   77
@@ -562,7 +562,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
          Top             =   480
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   656
          _StockProps     =   79
@@ -578,7 +578,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
          Top             =   480
          Visible         =   0   'False
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   661
          _StockProps     =   79
@@ -603,7 +603,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
          TabIndex        =   33
          Top             =   480
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   582
          _StockProps     =   77
@@ -690,7 +690,7 @@ Begin VB.Form frmCR_Poliza_Proc_Prevista
          TabIndex        =   19
          Top             =   1440
          Width           =   11895
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   20981
          _ExtentY        =   661
          _StockProps     =   14
@@ -823,9 +823,10 @@ Attribute VB_Exposed = False
 Option Explicit
 Dim strSQL As String, rs As New ADODB.Recordset
 Dim itmX As ListViewItem
+Dim vPaso As Boolean
 
 Private Sub Form_Load()
-vModulo = 3
+vModulo = 11
 
 Set imgBanner.Picture = frmContenedor.imgBanner_01.Picture
 
@@ -860,8 +861,21 @@ With lswC.ColumnHeaders
 End With
 
 
-cboProceso.AddItem "202406"
-cboProceso.Text = "202406"
+Dim vFecha As Date, vFechaInicial As Date, vProceso As Currency, i As Integer
+
+vFecha = fxFechaServidor
+vFechaInicial = vFecha
+
+vFecha = DateAdd("m", -10, vFecha)
+vProceso = Format(vFecha, "yyyymm")
+For i = 1 To 12
+  vProceso = fxFechaProcesoSiguiente(vProceso)
+  cboProceso.AddItem CStr(vProceso)
+Next i
+
+vProceso = Format(vFechaInicial, "yyyymm")
+cboProceso.Text = vProceso
+
 
 strSQL = "select COD_POLIZA as 'IdX', DESCRIPCION as 'ItmX' From CRD_CATALOGO_POLIZAS"
 Call sbCbo_Llena_New(cboPoliza, strSQL, False, True)

@@ -1,6 +1,7 @@
 VERSION 5.00
 Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
 Begin VB.Form frmAF_CD_Cuentas 
@@ -64,17 +65,17 @@ Begin VB.Form frmAF_CD_Cuentas
       TabCaption(1)   =   "Aprobación"
       TabPicture(1)   =   "FrmAF_CD_Cuentas.frx":349E
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "cbobancApro"
-      Tab(1).Control(1)=   "vGrid"
-      Tab(1).Control(2)=   "tlbAprobacion"
-      Tab(1).Control(3)=   "Label9"
+      Tab(1).Control(0)=   "Label9"
+      Tab(1).Control(1)=   "tlbAprobacion"
+      Tab(1).Control(2)=   "vGrid"
+      Tab(1).Control(3)=   "cbobancApro"
       Tab(1).ControlCount=   4
       TabCaption(2)   =   "Consulta de Envio de Operaciones a Tesorería"
       TabPicture(2)   =   "FrmAF_CD_Cuentas.frx":34BA
       Tab(2).ControlEnabled=   0   'False
-      Tab(2).Control(0)=   "lswinfoenvio"
+      Tab(2).Control(0)=   "Label8"
       Tab(2).Control(1)=   "Frame4"
-      Tab(2).Control(2)=   "Label8"
+      Tab(2).Control(2)=   "lswinfoenvio"
       Tab(2).ControlCount=   3
       Begin MSComctlLib.ListView lswinfoenvio 
          Height          =   6240
@@ -655,10 +656,10 @@ Begin VB.Form frmAF_CD_Cuentas
       Item(2).ControlCount=   2
       Item(2).Control(0)=   "lswHistorico"
       Item(2).Control(1)=   "btnExportar"
-      Begin XtremeSuiteControls.ListView lswHistorico 
+      Begin XtremeSuiteControls.ListView lswAdjuntos 
          Height          =   7455
          Left            =   -70000
-         TabIndex        =   72
+         TabIndex        =   70
          Top             =   360
          Visible         =   0   'False
          Width           =   10455
@@ -679,10 +680,10 @@ Begin VB.Form frmAF_CD_Cuentas
          FullRowSelect   =   -1  'True
          Appearance      =   17
       End
-      Begin XtremeSuiteControls.ListView lswAdjuntos 
+      Begin XtremeSuiteControls.ListView lswHistorico 
          Height          =   7455
          Left            =   -70000
-         TabIndex        =   70
+         TabIndex        =   72
          Top             =   360
          Visible         =   0   'False
          Width           =   10455
@@ -767,14 +768,14 @@ Begin VB.Form frmAF_CD_Cuentas
          Item(2).Control(1)=   "lblCargos"
          Item(2).Control(2)=   "lblX(6)"
          Begin XtremeSuiteControls.ListView lswActividades 
-            Height          =   2295
+            Height          =   2775
             Left            =   2160
             TabIndex        =   68
-            Top             =   840
+            Top             =   480
             Width           =   8055
             _Version        =   1572864
             _ExtentX        =   14208
-            _ExtentY        =   4048
+            _ExtentY        =   4895
             _StockProps     =   77
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
@@ -795,6 +796,7 @@ Begin VB.Form frmAF_CD_Cuentas
             Left            =   2160
             TabIndex        =   53
             Top             =   480
+            Visible         =   0   'False
             Width           =   3615
             _Version        =   1572864
             _ExtentX        =   6376
@@ -879,7 +881,7 @@ Begin VB.Form frmAF_CD_Cuentas
             Index           =   11
             Left            =   240
             TabIndex        =   69
-            Top             =   840
+            Top             =   480
             Width           =   1815
             _Version        =   1572864
             _ExtentX        =   3201
@@ -983,7 +985,8 @@ Begin VB.Form frmAF_CD_Cuentas
             Index           =   10
             Left            =   240
             TabIndex        =   52
-            Top             =   480
+            Top             =   1080
+            Visible         =   0   'False
             Width           =   1815
             _Version        =   1572864
             _ExtentX        =   3201
@@ -1158,6 +1161,7 @@ Begin VB.Form frmAF_CD_Cuentas
          Left            =   6360
          TabIndex        =   44
          Top             =   1320
+         Visible         =   0   'False
          Width           =   3615
          _Version        =   1572864
          _ExtentX        =   6376
@@ -1801,7 +1805,6 @@ Begin VB.Form frmAF_CD_Cuentas
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Locked          =   -1  'True
       Appearance      =   6
       UseVisualStyle  =   0   'False
    End
@@ -1817,6 +1820,42 @@ Begin VB.Form frmAF_CD_Cuentas
       _StockProps     =   93
       BackColor       =   -2147483633
       Scrolling       =   1
+   End
+   Begin MSComCtl2.FlatScrollBar FlatScrollBar 
+      Height          =   255
+      Left            =   3720
+      TabIndex        =   77
+      Top             =   960
+      Width           =   495
+      _ExtentX        =   873
+      _ExtentY        =   450
+      _Version        =   393216
+      Arrows          =   65536
+      Orientation     =   1638401
+   End
+   Begin XtremeSuiteControls.Label lblEstado 
+      Height          =   375
+      Left            =   6960
+      TabIndex        =   76
+      Top             =   960
+      Width           =   3255
+      _Version        =   1572864
+      _ExtentX        =   5741
+      _ExtentY        =   661
+      _StockProps     =   79
+      Caption         =   "..."
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Alignment       =   1
+      Transparent     =   -1  'True
+      WordWrap        =   -1  'True
    End
    Begin XtremeSuiteControls.Label Label1 
       Height          =   375
@@ -1890,6 +1929,8 @@ Dim vCuentaGasto As String
 Dim vMontoActividad As Double
 Dim vBacCargado As Boolean
 Dim vFecha As String
+Dim vScroll As Boolean
+
 
 
 Function fxConseConjunto()
@@ -1903,7 +1944,7 @@ rs.Close
 
 End Function
 
-Function fxNomComite(vUnidad As String)
+Function FxNomComite(vUnidad As String)
    
    Dim rs As New ADODB.Recordset
    Dim strSQL As String
@@ -1913,24 +1954,25 @@ Function fxNomComite(vUnidad As String)
             & " where A.cod_comite = '" & vUnidad & "'"
             Call OpenRecordSet(rs, strSQL)
    If rs.EOF Then
-      fxNomComite = "No existe unidad definida en Comites y Delegados"
+      FxNomComite = "No existe unidad definida en Comites y Delegados"
    Else
-      fxNomComite = rs!Descripcion
+      FxNomComite = rs!Descripcion
    End If
 rs.Close
 End Function
 
 Sub sbCargaBancos()
  
- strSQL = "select id_banco,descripcion from bancos "
-           rs.Open strSQL, glogon.Conection, adOpenForwardOnly
-  
- While rs.EOF = False
-     cboBanco.AddItem (rs!Descripcion)
-     cboBanco.ItemData(cboBanco.NewIndex) = rs!ID_BANCO
- rs.MoveNext
-Wend
-rs.Close
+ strSQL = "select id_banco as 'IdX', descripcion as 'ItmX' from AFI_CD_vBancos"
+ Call sbCbo_Llena_New(cboBanco, strSQL, False, True)
+ 
+' Call OpenRecordSet(rs, strSQL)
+' While rs.EOF = False
+'     cboBanco.AddItem (rs!Descripcion)
+'     cboBanco.ItemData(cboBanco.NewIndex) = rs!ID_BANCO
+' rs.MoveNext
+'Wend
+'rs.Close
 End Sub
 
 Private Sub sbCargaBan()
@@ -1966,7 +2008,7 @@ rs.Close
 
 End Function
 
-Private Sub sbConsulta(vSeleccion As Integer)
+Private Sub sbConsulta(vSeleccion As Long)
  Dim strSQL As String, rs As New ADODB.Recordset
  Dim itmX As ListItem
  Dim i As Integer
@@ -1978,8 +2020,8 @@ strSQL = "select C.noperacion,rtrim(P.cod_Comite) + ' - ' + P.descripcion as Com
         & " Where C.estado = 'T'" _
         & " and C.tesoreria_fecha between '" & Format(dtpEnvio.Value, "yyyymmdd") & " 00:00:00' and '" & Format(dtpFinalEnvio.Value, "yyyymmdd") & " 23:59:59'"
             
-If Len(Trim(TxtUsuario.Text)) > 0 Then
-   strSQL = strSQL & " and C.tesoreria_usuario like '%" & TxtUsuario.Text & "%'"
+If Len(Trim(txtUsuario.Text)) > 0 Then
+   strSQL = strSQL & " and C.tesoreria_usuario like '%" & txtUsuario.Text & "%'"
 End If
 
 If Len(Trim(txtCod_Comite.Text)) > 0 Then
@@ -2057,6 +2099,7 @@ Private Sub sbLimpiar()
      
      vOperacion = 0
      txtOperacion.Text = ""
+     lblEstado.Caption = ""
      
      txtComiteId.Text = ""
      
@@ -2083,6 +2126,7 @@ Private Sub sbLimpiar()
      lblCargos.Caption = 0
 
 '     txtComiteId.SetFocus
+     Call sbCargaBancos
 
 End Sub
 
@@ -2184,6 +2228,7 @@ Private Sub cboActividadTipo_Click()
 If vPaso Then Exit Sub
 
 'spAFI_CD_Actividades_List(@Tipo varchar(10) = 'T', @TotalAsoc int = 0, @Operacion int = 0, @Comite varchar(10))
+On Error GoTo vError
 
 tcDetalle(0).Selected = True
 
@@ -2212,6 +2257,11 @@ End With
 
 vPaso = False
 
+Exit Sub
+
+vError:
+
+
 End Sub
 
 
@@ -2228,6 +2278,8 @@ Call sbCbo_Llena_New(cboCuenta, strSQL, False, True)
 vError:
 
 End Sub
+
+
 
 
 Private Sub cboMiembros_Click()
@@ -2247,9 +2299,11 @@ Next i
 
 
 strSQL = "select Bn.ID_BANCO as 'IdX', Bn.DESCRIPCION as 'ItmX' " _
-       & " from SYS_CUENTAS_BANCARIAS Cta inner join Tes_Bancos Bn on Cta.COD_BANCO = Bn.COD_GRUPO" _
-       & "  Where Cta.IDENTIFICACION  = '" & Miembro & "'" _
-       & "  group by Bn.ID_BANCO , Bn.DESCRIPCION"
+       & " from SYS_CUENTAS_BANCARIAS Cta" _
+       & "  inner join Tes_Bancos Bn on Cta.COD_BANCO = Bn.COD_GRUPO" _
+       & "  inner join AFI_CD_vBancos Ba on Bn.ID_BANCO = Ba.ID_BANCO" _
+       & " Where Cta.IDENTIFICACION  = '" & Miembro & "'" _
+       & " group by Bn.ID_BANCO , Bn.DESCRIPCION"
 Call sbCbo_Llena_New(cboBanco, strSQL, False, True)
 
 cboBanco.SetFocus
@@ -2295,18 +2349,18 @@ With frmContenedor.Crt
    Case TxtSolicitud.Text <> ""
     strSQL = "{afi_cd_cuentas.tesoreria_nsolicitud} = " & TxtSolicitud.Text & " and "
     txtCod_Comite.Text = ""
-    TxtUsuario.Text = ""
+    txtUsuario.Text = ""
     vSubTitulo = "No. Solicitud " & TxtSolicitud.Text & ""
    Case txtCod_Comite.Text <> ""
     strSQL = "{afi_cd_cuentas.id_pricomite} = '" & txtCod_Comite.Text & "' and "
     TxtSolicitud.Text = ""
-    TxtUsuario.Text = ""
+    txtUsuario.Text = ""
     vSubTitulo = "Comité: " & txtCod_Comite.Text & ""
-   Case TxtUsuario.Text <> ""
-    strSQL = "{afi_cd_cuentas.tesoreria_usaurio} = " & TxtUsuario.Text & " and "
+   Case txtUsuario.Text <> ""
+    strSQL = "{afi_cd_cuentas.tesoreria_usaurio} = " & txtUsuario.Text & " and "
     TxtSolicitud.Text = ""
     txtCod_Comite.Text = ""
-    vSubTitulo = "Usuario: " & TxtUsuario.Text & ""
+    vSubTitulo = "Usuario: " & txtUsuario.Text & ""
   End Select
     
  strSQL = strSQL & "cdate({afi_cd_cuentas.tesoreria_fecha}) in Date(" & Format(dtpEnvio.Value, "yyyy,mm,dd")
@@ -2340,27 +2394,12 @@ End Sub
 Private Sub cmdLimpiar_Click()
  txtComiteId.Text = ""
  TxtSolicitud.Text = ""
- TxtUsuario.Text = ""
+ txtUsuario.Text = ""
  dtpEnvio.Value = Format(vFecha, "dd/mm/yyyy")
  dtpFinalEnvio.Value = Format(vFecha, "dd/mm/yyyy")
  lswinfoenvio.ListItems.Clear
- TxtUsuario.SetFocus
+ txtUsuario.SetFocus
 End Sub
-
-
-Private Sub Text1_KeyPress(KeyAscii As Integer)
-
-Select Case KeyAscii
-  Case 48 To 57, 8
-  Case 13
-   
-  Case Else
-   KeyAscii = 0
-End Select
-
-
-End Sub
-
 
 
 
@@ -2372,6 +2411,44 @@ Private Sub dtpFinalEnvio_Change()
  Call sbConsulta(1)
 End Sub
 
+Private Sub FlatScrollBar_Change()
+Dim strSQL As String, rs As New ADODB.Recordset
+
+On Error GoTo vError
+
+If FlatScrollBar.Value = 1 And txtOperacion.Text = "" Then txtOperacion.Text = "0"
+If FlatScrollBar.Value = 0 And txtOperacion.Text = "" Then txtOperacion.Text = "999999999999"
+
+If vScroll Then
+    strSQL = "select Top 1 R.NOperacion from Afi_CD_Cuentas R "
+    
+    If FlatScrollBar.Value = 1 Then
+       strSQL = strSQL & " where R.NOperacion > " & txtOperacion & " order by R.NOperacion asc"
+    Else
+       strSQL = strSQL & " where R.NOperacion < " & txtOperacion & " order by R.NOperacion desc"
+    End If
+    
+    Call OpenRecordSet(rs, strSQL)
+    If Not rs.EOF And Not rs.BOF Then
+      txtOperacion.Text = CStr(rs!Noperacion)
+      Call sbCuenta_Load(txtOperacion.Text)
+    End If
+
+End If
+
+vScroll = False
+FlatScrollBar.Value = 0
+vScroll = True
+
+Exit Sub
+
+vError:
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+
+
 Private Sub Form_Activate()
  vModulo = 40
 End Sub
@@ -2382,6 +2459,10 @@ Private Sub Form_Load()
    
 Set imgBanner.Picture = frmContenedor.imgBanner_01.Picture
    
+ vScroll = False
+ FlatScrollBar.Value = 0
+ vScroll = True
+ 
  vFecha = Format(fxFechaServidor, "yyyymmdd")
  
  vPaso = True
@@ -2582,25 +2663,10 @@ strSQL = "exec spAFI_CD_Cuenta_Load " & pOperacion
 Call OpenRecordSet(rs, strSQL)
 
 If Not rs.EOF And Not rs.BOF Then
-    
-'T A.Noperacion, A.CEDULA, S.Nombre
-'        , A.COD_COMITE , Co.DESCRIPCION as 'COMITE_DESC'
-'        , A.COD_DIRECTOR, Dr.DESCRIPCION as 'DIRECTOR_DESC'
-'        , A.MONTO, A.SALDO, A.ESTADO, A.PROCESO ,  A.APRUEBA, A.TIPO
-'        , Te.NombreEstado as 'ESTADO_DESC'
-'        , Tp.NombreTipoProceso as 'PROCESO_DESC'
-'        , Td.NombreTipoCuenta as 'TIPO_DESC'
-'        , ISNULL(Ta.NombreTipoAprobacion,'') as 'APROBACION_DESC'
-'        , A.LIQUIDABLE
-'        , A.LIQUIDA_FECHA, A.LIQUIDA_USUARIO, A.LIQUIDA_VENCE
-'        , A.REGISTRO_FECHA, A.REGISTRO_USUARIO
-'        , A.CUENTA, A.ID_BANCO, B.DESCRIPCION as 'BANCO_DESC'
-'        , A.TESORERIA_NSOLICITUD , A.TESORERIA_FECHA, A.TESORERIA_USUARIO , A.COD_REMESA
-'        , A.NOTAS, a.AJUSTE_ASOC, A.CANT_ASOCIADOS, a.MONTO_CARGOS , a.MONTO_REFUNDE
-'        , A.ACTIVA_FECHA, A.ACTIVA_USUARIO
-        
      vOperacion = pOperacion
      txtOperacion.Text = pOperacion
+     
+     lblEstado.Caption = rs!Estado_Desc & ""
      
      txtComiteId.Text = rs!cod_comite
      txtComiteDesc.Text = rs!COMITE_DESC
@@ -2893,12 +2959,57 @@ Private Sub txtComiteId_KeyPress(KeyAscii As Integer)
   End Select
 End Sub
 
+Private Function fxValida() As Boolean
+Dim strSQL As String, rs As New ADODB.Recordset
+Dim pOperacion As Long, pActividades As String
+Dim i As Integer, pMensaje As String
+
+'fxAFI_CD_Cuenta_Valida(@NOperacion int, @Comite varchar(10), @Actividades varchar(250)
+
+
+pActividades = ""
+If IsNumeric(txtOperacion.Text) Then
+    pOperacion = txtOperacion.Text
+Else
+    pOperacion = 0
+End If
+
+With lswActividades.ListItems
+    For i = 1 To .Count
+      If .Item(i).Checked Then
+           If Len(pActividades) > 0 Then
+               pActividades = pActividades & "," & .Item(i).Text
+           Else
+               pActividades = .Item(i).Text
+           End If
+      End If
+    Next i
+End With
+
+
+strSQL = "select dbo.fxAFI_CD_Cuenta_Valida(" & pOperacion & ", '" & txtComiteId.Text & "', '" & pActividades & "') as 'Resultado'"
+Call OpenRecordSet(rs, strSQL)
+If rs!Resultado <> "" Then
+ pMensaje = pMensaje & vbCrLf & "Existen Actividades que ya fueron Gestionadas Anteriormente: " & vbCrLf & rs!Resultado
+End If
+rs.Close
+
+If Len(pMensaje) > 0 Then
+   MsgBox pMensaje, vbExclamation, "Advertencia!"
+   fxValida = False
+Else
+   fxValida = True
+End If
+
+
+End Function
+
 
 Private Sub sbAplicar()
 
 Dim vCodDir As Integer, vInfoMonto As Currency
 Dim vTipo As String
-Dim vNumOperacion As Integer
+Dim vNumOperacion As Long
 Dim vCuentaBanco As Integer, x As Integer
 Dim vCtaDelegado As String
 Dim vAprueba As String
@@ -2926,7 +3037,18 @@ If strSQL <> "" Then
    Exit Sub
 End If
 
-On Error GoTo vError:
+On Error GoTo vError
+
+'Advertencia
+Dim i As Integer
+
+If Not fxValida Then
+     i = MsgBox("Esta Seguro que desea continuar con el registro de la cuenta?", vbYesNo)
+     If i = vbNo Then
+        Exit Sub
+     End If
+End If
+
 
 vTipo = cboEmite.ItemData(cboEmite.ListIndex)
 vCuentaBanco = cboBanco.ItemData(cboBanco.ListIndex)
@@ -2943,9 +3065,10 @@ txtOperacion.Text = vNumOperacion
 strSQL = "insert afi_cd_cuentas(noperacion,cod_comite,cedula,registro_fecha " _
        & ", registro_usuario,estado,tipo,cuenta,id_banco,notas,aprueba,cod_director,PROCESO,AJUSTE_ASOC,MONTO,MONTO_REFUNDE, MONTO_CARGOS, SALDO, CANT_ASOCIADOS, GuidId)" _
        & " values(" & vNumOperacion & ",'" & txtComiteId.Text & "', '" & cboMiembros.ItemData(cboMiembros.ListIndex) & "'" _
-       & ",getdate()" _
+       & ", dbo.MyGetdate()" _
        & ", '" & glogon.Usuario & "', 'S','" & vTipo & "','" & vCtaDelegado & "'," & vCuentaBanco & ",'" & txtNotas.Text & "' " _
-       & ", '" & vAprueba & "'," & IIf(vCodDir = 0, 1, vCodDir) & ",'T'," & txtAjusteAsoc.Text & "," & CCur(txtMontoPagar.Text) & "," & CCur(lblRefundiciones.Caption) & "," & CCur(lblCargos.Caption) & "," & CCur(txtMontoPagar.Text) & ", " & txtAsociados.Text & ", NEWID() )"
+       & ", '" & vAprueba & "'," & IIf(vCodDir = 0, 1, vCodDir) & ",'T'," & txtAjusteAsoc.Text & "," & CCur(txtMontoPagar.Text) & "," & CCur(lblRefundiciones.Caption) _
+       & "," & CCur(lblCargos.Caption) & "," & CCur(txtMontoPagar.Text) & ", " & txtAsociados.Text & ", NEWID() )"
 Call ConectionExecute(strSQL)
 
 
@@ -2971,7 +3094,7 @@ Call sbGuardaCargos(vNumOperacion)
 
 MsgBox "Solicitud Registrada: Proceda a la Aprobación!", vbInformation, "Información"
 
-Call sbLimpiar
+Call sbCuenta_Load(txtOperacion.Text)
 
 Exit Sub
 
@@ -3006,12 +3129,17 @@ End Sub
 
 Private Sub txtOperacion_KeyDown(KeyCode As Integer, Shift As Integer)
 
+If KeyCode = vbKeyReturn Or KeyCode = vbKeyTab Then
+    tcMain.Item(0).Selected = True
+    txtComiteId.SetFocus
+End If
+
 If KeyCode = vbKeyF4 Then
   gBusquedas.Col1Name = "No.Operación"
   gBusquedas.Col2Name = "Id Comité"
   gBusquedas.Col3Name = "Cédula"
   gBusquedas.Columna = "NOperacion"
-  gBusquedas.Orden = "NOperacion"
+  gBusquedas.Orden = "NOperacion desc"
   gBusquedas.Consulta = "select NOperacion, Cod_Comite, Cedula, Saldo from afi_cd_Cuentas"
   gBusquedas.Filtro = ""
   frmBusquedas.Show vbModal
@@ -3020,6 +3148,7 @@ If KeyCode = vbKeyF4 Then
     Call sbCuenta_Load(txtOperacion.Text)
   End If
 End If
+
 
 End Sub
 
@@ -3030,9 +3159,17 @@ Public Sub sbConsulta_Externa(pOperacion As Long)
 End Sub
 
 Private Sub txtOperacion_LostFocus()
+    
+On Error GoTo vError
+    
     If IsNumeric(txtOperacion.Text) Then
         Call sbCuenta_Load(txtOperacion.Text)
     End If
+
+Exit Sub
+
+vError:
+
 End Sub
 
 Private Sub TxtSolicitud_KeyPress(KeyAscii As Integer)

@@ -350,7 +350,7 @@ Begin VB.Form frmFnd_Tasa_Preferencial_Autorizacion
       Caption         =   "                                Seleccione las Solicitudes  a Autorizar o Desautorizar"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   9
+         Size            =   8.93
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -463,6 +463,21 @@ End Select
 End Sub
 
 Private Sub btnResolucion_Click(Index As Integer)
+Dim i As Long, vPass As Boolean
+
+vPass = False
+With lsw.ListItems
+    For i = 1 To .Count
+       If .Item(i).Checked Then
+          vPass = True
+       End If
+    Next i
+End With
+
+If Not vPass Then
+    MsgBox "Seleccione al menos una gestión!", vbExclamation
+    Exit Sub
+End If
 
 Select Case Index
   Case 0 'Autorizar
@@ -556,6 +571,8 @@ With lsw.ColumnHeaders
     .Add , , "Margen Sol.", 2100, vbRightJustify
     .Add , , "Margen Max.", 2100, vbRightJustify
     
+    .Add , , "Observacion", 3100
+    
     .Add , , "Plan", 1100, vbCenter
     .Add , , "Contrato", 1100, vbCenter
     .Add , , "Inversión", 2500, vbRightJustify
@@ -605,24 +622,26 @@ Do While Not rs.EOF
      itmX.SubItems(6) = Format(rs!MARGEN_SOLICITADO, "Standard")
      itmX.SubItems(7) = Format(rs!MARGEN_MAXIMO, "Standard")
      
-     itmX.SubItems(8) = rs!COD_PLAN
-     itmX.SubItems(9) = rs!COD_CONTRATO
+     itmX.SubItems(8) = rs!Observacion
      
-     itmX.SubItems(10) = Format(rs!MONTO_INVERSION, "Standard")
-     itmX.SubItems(11) = rs!PLAZO_DIAS
-     itmX.SubItems(12) = rs!Cupon_Frecuencia
+     itmX.SubItems(9) = rs!COD_PLAN
+     itmX.SubItems(10) = rs!COD_CONTRATO
+     
+     itmX.SubItems(11) = Format(rs!MONTO_INVERSION, "Standard")
+     itmX.SubItems(12) = rs!PLAZO_DIAS
+     itmX.SubItems(13) = rs!Cupon_Frecuencia
      
      
-     itmX.SubItems(13) = rs!Registro_Usuario & ""
-     itmX.SubItems(14) = Format(rs!Registro_Fecha & "", "dd/mm/yyyy")
+     itmX.SubItems(14) = rs!REGISTRO_USUARIO & ""
+     itmX.SubItems(15) = Format(rs!REGISTRO_FECHA & "", "dd/mm/yyyy")
      
-     itmX.SubItems(15) = rs!Resuelve_Usuario & ""
-     itmX.SubItems(16) = Format(rs!Resuelve_Fecha & "", "dd/mm/yyyy")
+     itmX.SubItems(16) = rs!Resuelve_Usuario & ""
+     itmX.SubItems(17) = Format(rs!Resuelve_Fecha & "", "dd/mm/yyyy")
      
-     itmX.SubItems(17) = rs!Aplica_Usuario & ""
-     itmX.SubItems(18) = Format(rs!Aplica_Fecha & "", "dd/mm/yyyy")
+     itmX.SubItems(18) = rs!Aplica_Usuario & ""
+     itmX.SubItems(19) = Format(rs!Aplica_Fecha & "", "dd/mm/yyyy")
      
-     itmX.SubItems(19) = rs!Plan_Desc & ""
+     itmX.SubItems(20) = rs!Plan_Desc & ""
 
      Select Case rs!Estado
          Case "P"

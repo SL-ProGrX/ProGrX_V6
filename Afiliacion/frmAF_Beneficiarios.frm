@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmAF_Beneficiarios 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,7 +24,7 @@ Begin VB.Form frmAF_Beneficiarios
       TabIndex        =   1
       Top             =   480
       Width           =   9855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   17383
       _ExtentY        =   13150
       _StockProps     =   68
@@ -97,7 +97,7 @@ Begin VB.Form frmAF_Beneficiarios
          Top             =   360
          Visible         =   0   'False
          Width           =   9855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17383
          _ExtentY        =   12091
          _StockProps     =   77
@@ -120,7 +120,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   44
          Top             =   5355
          Width           =   210
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   362
          _ExtentY        =   370
          _StockProps     =   79
@@ -133,7 +133,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   17
          Top             =   840
          Width           =   1935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   444
          _StockProps     =   79
@@ -158,7 +158,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   13
          Top             =   2040
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   582
          _StockProps     =   77
@@ -184,7 +184,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   14
          Top             =   840
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   582
          _StockProps     =   77
@@ -210,7 +210,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   16
          Top             =   840
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   582
          _StockProps     =   77
@@ -234,7 +234,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   15
          Top             =   2040
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   556
          _StockProps     =   68
@@ -256,7 +256,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   19
          Top             =   3120
          Width           =   7695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13573
          _ExtentY        =   1402
          _StockProps     =   77
@@ -281,7 +281,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   20
          Top             =   4320
          Width           =   7695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13573
          _ExtentY        =   1614
          _StockProps     =   77
@@ -306,7 +306,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   21
          Top             =   3960
          Width           =   7695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13573
          _ExtentY        =   582
          _StockProps     =   77
@@ -329,7 +329,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   22
          Top             =   2640
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   582
          _StockProps     =   77
@@ -352,7 +352,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   23
          Top             =   2640
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   582
          _StockProps     =   77
@@ -375,7 +375,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   24
          Top             =   2640
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   582
          _StockProps     =   77
@@ -398,7 +398,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   25
          Top             =   1560
          Width           =   3135
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5530
          _ExtentY        =   582
          _StockProps     =   77
@@ -422,7 +422,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   26
          Top             =   1560
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   582
          _StockProps     =   77
@@ -448,7 +448,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   27
          Top             =   1560
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   582
          _StockProps     =   77
@@ -474,7 +474,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   28
          Top             =   2040
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
@@ -499,7 +499,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   29
          Top             =   7080
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
@@ -525,7 +525,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   30
          Top             =   6000
          Width           =   5895
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10398
          _ExtentY        =   556
          _StockProps     =   77
@@ -548,7 +548,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   31
          Top             =   6000
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -571,7 +571,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   32
          Top             =   6600
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   556
          _StockProps     =   77
@@ -596,7 +596,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   33
          Top             =   6600
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   556
          _StockProps     =   77
@@ -621,7 +621,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   39
          Top             =   6600
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   556
          _StockProps     =   77
@@ -646,7 +646,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   45
          Top             =   480
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   582
          _StockProps     =   77
@@ -689,7 +689,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   43
          Top             =   1200
          Width           =   3135
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5530
          _ExtentY        =   635
          _StockProps     =   14
@@ -712,7 +712,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   42
          Top             =   1200
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   635
          _StockProps     =   14
@@ -735,7 +735,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   41
          Top             =   1200
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   635
          _StockProps     =   14
@@ -758,7 +758,7 @@ Begin VB.Form frmAF_Beneficiarios
          TabIndex        =   40
          Top             =   5280
          Width           =   7695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13573
          _ExtentY        =   661
          _StockProps     =   14

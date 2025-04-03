@@ -1,7 +1,7 @@
 VERSION 5.00
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.ShortcutBar.v22.1.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmTES_Conciliacion 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -27,7 +27,7 @@ Begin VB.Form frmTES_Conciliacion
       TabIndex        =   0
       Top             =   1080
       Width           =   13812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   24363
       _ExtentY        =   12509
       _StockProps     =   68
@@ -43,6 +43,7 @@ Begin VB.Form frmTES_Conciliacion
       Appearance      =   4
       Color           =   32
       ItemCount       =   5
+      SelectedItem    =   1
       Item(0).Caption =   "Historial"
       Item(0).ControlCount=   1
       Item(0).Control(0)=   "gHistorial"
@@ -80,7 +81,7 @@ Begin VB.Form frmTES_Conciliacion
          Top             =   720
          Visible         =   0   'False
          Width           =   7812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13779
          _ExtentY        =   9546
          _StockProps     =   79
@@ -105,7 +106,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   86
             Top             =   600
             Width           =   6012
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10604
             _ExtentY        =   656
             _StockProps     =   79
@@ -130,7 +131,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   85
             Top             =   4200
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   1138
             _StockProps     =   79
@@ -157,7 +158,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   87
             Top             =   960
             Width           =   6012
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10604
             _ExtentY        =   656
             _StockProps     =   79
@@ -182,7 +183,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   88
             Top             =   1320
             Width           =   6012
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10604
             _ExtentY        =   656
             _StockProps     =   79
@@ -207,7 +208,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   99
             Top             =   1680
             Width           =   6012
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10604
             _ExtentY        =   656
             _StockProps     =   79
@@ -232,7 +233,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   100
             Top             =   2040
             Width           =   6012
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10604
             _ExtentY        =   656
             _StockProps     =   79
@@ -257,7 +258,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   101
             Top             =   2400
             Width           =   6012
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10604
             _ExtentY        =   656
             _StockProps     =   79
@@ -282,7 +283,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   115
             Top             =   4320
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   661
             _StockProps     =   68
@@ -305,7 +306,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   116
             Top             =   4320
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   661
             _StockProps     =   68
@@ -327,7 +328,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   114
             Top             =   4320
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2990
             _ExtentY        =   661
             _StockProps     =   79
@@ -351,7 +352,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   113
             Top             =   2040
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1720
             _ExtentY        =   661
             _StockProps     =   79
@@ -365,7 +366,7 @@ Begin VB.Form frmTES_Conciliacion
          Top             =   6120
          Visible         =   0   'False
          Width           =   13812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   24363
          _ExtentY        =   1714
          _StockProps     =   79
@@ -389,7 +390,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   75
             Top             =   480
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   582
             _StockProps     =   79
@@ -413,7 +414,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   76
             Top             =   480
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   550
             _StockProps     =   77
@@ -438,7 +439,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   77
             Top             =   480
             Width           =   972
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   550
             _StockProps     =   77
@@ -463,7 +464,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   80
             Top             =   480
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
@@ -487,7 +488,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   79
             Top             =   480
             Width           =   4572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8064
             _ExtentY        =   550
             _StockProps     =   77
@@ -511,7 +512,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   102
             Top             =   240
             Width           =   3132
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5524
             _ExtentY        =   444
             _StockProps     =   79
@@ -540,7 +541,7 @@ Begin VB.Form frmTES_Conciliacion
             ToolTipText     =   "Pone la Transacción como Pendiente de Conciliación"
             Top             =   480
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   582
             _StockProps     =   79
@@ -608,7 +609,7 @@ Begin VB.Form frmTES_Conciliacion
          Top             =   1440
          Visible         =   0   'False
          Width           =   13812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   24363
          _ExtentY        =   9123
          _StockProps     =   68
@@ -639,16 +640,16 @@ Begin VB.Form frmTES_Conciliacion
          Item(1).Control(1)=   "lswConcilia_Lote"
          Item(1).Control(2)=   "Label1(26)"
          Item(1).Control(3)=   "btnConciliaReversa"
-         Begin XtremeSuiteControls.ListView lswConcilia 
-            Height          =   2892
+         Begin XtremeSuiteControls.ListView lswConcilia_Lote 
+            Height          =   1092
             Left            =   -69880
-            TabIndex        =   73
-            Top             =   360
+            TabIndex        =   94
+            Top             =   3960
             Visible         =   0   'False
             Width           =   13572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   23939
-            _ExtentY        =   5101
+            _ExtentY        =   1926
             _StockProps     =   77
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
@@ -663,16 +664,16 @@ Begin VB.Form frmTES_Conciliacion
             FullRowSelect   =   -1  'True
             Appearance      =   16
          End
-         Begin XtremeSuiteControls.ListView lswConcilia_Lote 
-            Height          =   1092
+         Begin XtremeSuiteControls.ListView lswConcilia 
+            Height          =   2892
             Left            =   -69880
-            TabIndex        =   94
-            Top             =   3960
+            TabIndex        =   73
+            Top             =   360
             Visible         =   0   'False
             Width           =   13572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   23939
-            _ExtentY        =   1926
+            _ExtentY        =   5101
             _StockProps     =   77
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
@@ -693,7 +694,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   105
             Top             =   360
             Width           =   2172
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   444
             _StockProps     =   79
@@ -716,7 +717,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   106
             Top             =   360
             Width           =   2772
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4890
             _ExtentY        =   444
             _StockProps     =   79
@@ -769,7 +770,7 @@ Begin VB.Form frmTES_Conciliacion
             Top             =   3360
             Visible         =   0   'False
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   582
             _StockProps     =   79
@@ -793,7 +794,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   107
             Top             =   360
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -816,7 +817,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   108
             Top             =   360
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   529
             _StockProps     =   68
@@ -838,7 +839,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   109
             Top             =   360
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   529
             _StockProps     =   68
@@ -860,7 +861,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   112
             Top             =   360
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1931
             _ExtentY        =   450
             _StockProps     =   79
@@ -906,7 +907,7 @@ Begin VB.Form frmTES_Conciliacion
          Top             =   480
          Visible         =   0   'False
          Width           =   13572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   23939
          _ExtentY        =   1714
          _StockProps     =   79
@@ -929,7 +930,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   48
             Top             =   600
             Width           =   3852
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6794
             _ExtentY        =   582
             _StockProps     =   77
@@ -954,7 +955,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   49
             Top             =   600
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   582
             _StockProps     =   77
@@ -979,7 +980,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   50
             Top             =   600
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   582
             _StockProps     =   77
@@ -1004,7 +1005,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   58
             Top             =   600
             Width           =   1212
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   582
             _StockProps     =   77
@@ -1029,7 +1030,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   59
             Top             =   600
             Width           =   972
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   582
             _StockProps     =   77
@@ -1054,7 +1055,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   60
             Top             =   600
             Width           =   1212
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   582
             _StockProps     =   77
@@ -1079,7 +1080,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   66
             Top             =   600
             Width           =   372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   656
             _ExtentY        =   550
             _StockProps     =   79
@@ -1103,7 +1104,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   82
             Top             =   600
             Width           =   1212
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   582
             _StockProps     =   77
@@ -1128,7 +1129,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   98
             Top             =   600
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   582
             _StockProps     =   77
@@ -1313,7 +1314,7 @@ Begin VB.Form frmTES_Conciliacion
          Top             =   480
          Visible         =   0   'False
          Width           =   13212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   23304
          _ExtentY        =   1291
          _StockProps     =   79
@@ -1337,7 +1338,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   30
             Top             =   360
             Width           =   2652
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4683
             _ExtentY        =   582
             _StockProps     =   77
@@ -1362,7 +1363,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   55
             Top             =   360
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   582
             _StockProps     =   77
@@ -1388,7 +1389,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   56
             Top             =   360
             Width           =   372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   656
             _ExtentY        =   550
             _StockProps     =   79
@@ -1412,7 +1413,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   57
             Top             =   360
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   582
             _StockProps     =   77
@@ -1438,7 +1439,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   67
             Top             =   360
             Width           =   972
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   550
             _StockProps     =   79
@@ -1462,7 +1463,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   68
             Top             =   360
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   550
             _StockProps     =   77
@@ -1487,7 +1488,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   70
             Top             =   360
             Width           =   972
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   550
             _StockProps     =   77
@@ -1530,12 +1531,11 @@ Begin VB.Form frmTES_Conciliacion
       End
       Begin XtremeSuiteControls.GroupBox gbAcciones 
          Height          =   975
-         Left            =   -68440
+         Left            =   1560
          TabIndex        =   25
          Top             =   5880
-         Visible         =   0   'False
          Width           =   9855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17383
          _ExtentY        =   1720
          _StockProps     =   79
@@ -1559,7 +1559,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   26
             Top             =   360
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   931
             _StockProps     =   79
@@ -1584,7 +1584,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   27
             Top             =   360
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   931
             _StockProps     =   79
@@ -1609,7 +1609,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   28
             Top             =   360
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   931
             _StockProps     =   79
@@ -1635,7 +1635,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   110
             Top             =   360
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   931
             _StockProps     =   79
@@ -1662,7 +1662,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   111
             Top             =   360
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   931
             _StockProps     =   79
@@ -1685,12 +1685,11 @@ Begin VB.Form frmTES_Conciliacion
       End
       Begin XtremeSuiteControls.GroupBox gbArchivo 
          Height          =   1335
-         Left            =   -68440
+         Left            =   1560
          TabIndex        =   21
          Top             =   4440
-         Visible         =   0   'False
          Width           =   9855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17383
          _ExtentY        =   2355
          _StockProps     =   79
@@ -1716,7 +1715,7 @@ Begin VB.Form frmTES_Conciliacion
             ToolTipText     =   "Busca Archivo de Carga"
             Top             =   480
             Width           =   492
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   868
             _ExtentY        =   762
             _StockProps     =   79
@@ -1742,7 +1741,7 @@ Begin VB.Form frmTES_Conciliacion
             ToolTipText     =   "Carga Archivo"
             Top             =   480
             Width           =   492
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   868
             _ExtentY        =   762
             _StockProps     =   79
@@ -1768,7 +1767,7 @@ Begin VB.Form frmTES_Conciliacion
             ToolTipText     =   "Información del Archivo a Cargar"
             Top             =   480
             Width           =   492
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   868
             _ExtentY        =   762
             _StockProps     =   79
@@ -1792,7 +1791,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   23
             Top             =   480
             Width           =   6372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11239
             _ExtentY        =   762
             _StockProps     =   77
@@ -1818,7 +1817,7 @@ Begin VB.Form frmTES_Conciliacion
             Top             =   960
             Visible         =   0   'False
             Width           =   6375
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11245
             _ExtentY        =   450
             _StockProps     =   14
@@ -1856,12 +1855,11 @@ Begin VB.Form frmTES_Conciliacion
       Begin XtremeSuiteControls.GroupBox gbResumen 
          Height          =   2292
          Index           =   0
-         Left            =   -68440
+         Left            =   1560
          TabIndex        =   3
          Top             =   600
-         Visible         =   0   'False
          Width           =   4692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8276
          _ExtentY        =   4043
          _StockProps     =   79
@@ -1885,7 +1883,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   9
             Top             =   480
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -1910,7 +1908,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   10
             Top             =   1320
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -1935,7 +1933,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   11
             Top             =   960
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -1960,7 +1958,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   12
             Top             =   1800
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -2058,9 +2056,10 @@ Begin VB.Form frmTES_Conciliacion
       End
       Begin FPSpreadADO.fpSpread gHistorial 
          Height          =   6252
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   1
          Top             =   600
+         Visible         =   0   'False
          Width           =   12852
          _Version        =   524288
          _ExtentX        =   22669
@@ -2118,12 +2117,11 @@ Begin VB.Form frmTES_Conciliacion
       Begin XtremeSuiteControls.GroupBox gbResumen 
          Height          =   2292
          Index           =   1
-         Left            =   -63160
+         Left            =   6840
          TabIndex        =   4
          Top             =   600
-         Visible         =   0   'False
          Width           =   4692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8276
          _ExtentY        =   4043
          _StockProps     =   79
@@ -2147,7 +2145,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   17
             Top             =   480
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -2171,7 +2169,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   18
             Top             =   960
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -2196,7 +2194,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   19
             Top             =   1320
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -2221,7 +2219,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   20
             Top             =   1800
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -2247,7 +2245,7 @@ Begin VB.Form frmTES_Conciliacion
             ToolTipText     =   "Reemplaza el Saldo en Bancos"
             Top             =   480
             Width           =   492
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   868
             _ExtentY        =   550
             _StockProps     =   79
@@ -2346,12 +2344,11 @@ Begin VB.Form frmTES_Conciliacion
       Begin XtremeSuiteControls.GroupBox gbResumen 
          Height          =   1332
          Index           =   2
-         Left            =   -68440
+         Left            =   1560
          TabIndex        =   51
          Top             =   2880
-         Visible         =   0   'False
          Width           =   9852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17378
          _ExtentY        =   2350
          _StockProps     =   79
@@ -2374,7 +2371,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   52
             Top             =   240
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   720
             _StockProps     =   79
@@ -2401,7 +2398,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   53
             Top             =   336
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -2426,7 +2423,7 @@ Begin VB.Form frmTES_Conciliacion
             TabIndex        =   93
             Top             =   720
             Width           =   7452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   13144
             _ExtentY        =   974
             _StockProps     =   77
@@ -2490,7 +2487,7 @@ Begin VB.Form frmTES_Conciliacion
          Top             =   6720
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   582
          _StockProps     =   79
@@ -2515,7 +2512,7 @@ Begin VB.Form frmTES_Conciliacion
          Top             =   6720
          Visible         =   0   'False
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -2541,7 +2538,7 @@ Begin VB.Form frmTES_Conciliacion
          Top             =   6720
          Visible         =   0   'False
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -2567,7 +2564,7 @@ Begin VB.Form frmTES_Conciliacion
          Top             =   6720
          Visible         =   0   'False
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -2593,7 +2590,7 @@ Begin VB.Form frmTES_Conciliacion
          Top             =   6720
          Visible         =   0   'False
          Width           =   612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1080
          _ExtentY        =   550
          _StockProps     =   77
@@ -2683,7 +2680,7 @@ Begin VB.Form frmTES_Conciliacion
       TabIndex        =   40
       Top             =   240
       Width           =   7692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   13573
       _ExtentY        =   582
       _StockProps     =   77
@@ -2709,7 +2706,7 @@ Begin VB.Form frmTES_Conciliacion
       TabIndex        =   43
       Top             =   600
       Width           =   732
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1291
       _ExtentY        =   550
       _StockProps     =   77
@@ -2733,7 +2730,7 @@ Begin VB.Form frmTES_Conciliacion
       TabIndex        =   44
       Top             =   600
       Width           =   4692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8276
       _ExtentY        =   550
       _StockProps     =   77
@@ -2759,7 +2756,7 @@ Begin VB.Form frmTES_Conciliacion
       TabIndex        =   45
       Top             =   600
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   550
       _StockProps     =   77
@@ -2783,7 +2780,7 @@ Begin VB.Form frmTES_Conciliacion
       TabIndex        =   46
       Top             =   600
       Width           =   1692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   550
       _StockProps     =   77
@@ -2808,7 +2805,7 @@ Begin VB.Form frmTES_Conciliacion
       TabIndex        =   47
       Top             =   600
       Width           =   372
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   550
       _StockProps     =   79
@@ -3147,21 +3144,21 @@ With gResultados
       .MaxRows = .MaxRows + 1
       .Row = .MaxRows
       
-      .col = 3
+      .Col = 3
       .Text = CStr(rs!Id)
-      .col = 4
+      .Col = 4
       .Text = Format(rs!fecha, "dd/mm/yyyy")
-      .col = 5
+      .Col = 5
       .Text = rs!Tipo_Desc & ""
-      .col = 6
+      .Col = 6
       .Text = rs!Documento
-      .col = 7
+      .Col = 7
       .Text = Format(rs!Importe, "Standard")
-      .col = 8
+      .Col = 8
       .Text = rs!Descripcion & ""
-      .col = 9
+      .Col = 9
       .Text = rs!Estado & ""
-      .col = 10
+      .Col = 10
       .Text = CStr(rs!CONCILIA_ID_REF & "")
       
       curTotal = curTotal + rs!Importe
@@ -3234,9 +3231,9 @@ With gResultados
     
     For i = 1 To .MaxRows
         .Row = i
-        .col = 2
+        .Col = 2
         If .Value = vbChecked Then
-            .col = 3
+            .Col = 3
             strSQL = strSQL & Space(10) & "exec spTes_Concilia_Auto_Registro " & cboBanco.ItemData(cboBanco.ListIndex) _
                    & "," & feAnio.Text & "," & feMes.Text & "," & .Text & ",'" & pCuenta & "','" & glogon.Usuario _
                    & "'," & chkAutoReg_Contabilidad.Value
@@ -3360,9 +3357,9 @@ With gConcilia
 
     For i = 1 To .MaxRows
         .Row = i
-        .col = 1
+        .Col = 1
         If .Value = vbChecked Then
-            .col = 2
+            .Col = 2
             
             If feMov_Id.Tag = "B" Then
                pId_Bancos = feMov_Id.Text
@@ -3582,9 +3579,9 @@ With gResultados
     
     For i = 1 To .MaxRows
         .Row = i
-        .col = 2
+        .Col = 2
         If .Value = vbChecked Then
-            .col = 3
+            .Col = 3
             strSQL = strSQL & Space(10) & "exec spTes_Concilia_Pendiente " & cboBanco.ItemData(cboBanco.ListIndex) _
                    & "," & feAnio.Text & "," & feMes.Text & "," & .Text _
                    & ",'" & cboUbicacion.ItemData(cboUbicacion.ListIndex) & "','" & glogon.Usuario & "'"
@@ -3862,7 +3859,7 @@ If Not rs.EOF And Not rs.BOF Then
     
     feSaldoDiferencia.Text = Format(rs!LIBROS_SALDO_CONCILIA - rs!CTA_SALDO_CONCILIA, "Standard")
     
-    feNotas.Text = rs!NOTAS & ""
+    feNotas.Text = rs!Notas & ""
         
     feBancosSaldoActual.ToolTipText = ""
     If rs!CTA_SALDO_UPD_IND = 1 Then
@@ -4086,11 +4083,11 @@ With gConcilia
     vPaso = True
     For i = 1 To .MaxRows
         .Row = i
-        .col = 1
+        .Col = 1
         .Value = chkConciliaTodos
         
         If .Value = vbChecked Then
-            .col = 6
+            .Col = 6
             feMov_SelCasos.Text = Format(CLng(feMov_SelCasos.Text) + 1, "###,###,##0")
             feMov_SelMonto.Text = Format(CCur(feMov_SelMonto.Text) + CCur(.Text), "Standard")
             
@@ -4375,21 +4372,21 @@ With gConcilia
       .MaxRows = .MaxRows + 1
       .Row = .MaxRows
       
-      .col = 2
+      .Col = 2
       .Text = CStr(rs!Id)
-      .col = 3
+      .Col = 3
       .Text = Format(rs!fecha, "dd/mm/yyyy")
-      .col = 4
+      .Col = 4
       .Text = rs!Tipo_Desc & ""
-      .col = 5
+      .Col = 5
       .Text = rs!Documento
-      .col = 6
+      .Col = 6
       .Text = Format(rs!Importe, "Standard")
-      .col = 7
+      .Col = 7
       .Text = rs!Descripcion & ""
-      .col = 8
+      .Col = 8
       .Text = rs!Estado & ""
-      .col = 9
+      .Col = 9
       .Text = CStr(rs!CONCILIA_ID_REF & "")
 
       rs.MoveNext
@@ -4410,7 +4407,7 @@ vError:
     MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 End Sub
 
-Private Sub gConcilia_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+Private Sub gConcilia_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
 
 If vPaso Then Exit Sub
 If gConcilia.MaxRows = 0 Then Exit Sub
@@ -4419,9 +4416,9 @@ On Error GoTo vError
 
 With gConcilia
     .Row = Row
-    .col = col
+    .Col = Col
     If .Value = vbChecked Then
-        .col = 6
+        .Col = 6
         feMov_SelCasos.Text = Format(CLng(feMov_SelCasos.Text) + 1, "###,###,##0")
         feMov_SelMonto.Text = Format(CCur(feMov_SelMonto.Text) + CCur(.Text), "Standard")
         
@@ -4429,7 +4426,7 @@ With gConcilia
         feMov_Pendiente.Text = Format(CCur(feMov_Pendiente.Text) - CCur(.Text), "Standard")
         
     Else
-        .col = 6
+        .Col = 6
         feMov_SelCasos.Text = Format(CLng(feMov_SelCasos.Text) - 1, "###,###,##0")
         feMov_SelMonto.Text = Format(CCur(feMov_SelMonto.Text) - CCur(.Text), "Standard")
     
@@ -4447,7 +4444,7 @@ vError:
     MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 End Sub
 
-Private Sub gResultados_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+Private Sub gResultados_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
 If vPaso Then Exit Sub
 If gResultados.MaxRows = 0 Then Exit Sub
 
@@ -4457,30 +4454,30 @@ On Error Resume Next
 
 With gResultados
     .Row = Row
-    .col = col
-    Select Case col
+    .Col = Col
+    Select Case Col
         Case 1 'Conciliacion
-            .col = 3
+            .Col = 3
             If IsNumeric(.Text) Then
                 Call sbConcilia(.Text, Mid(cboUbicacion.Text, 1, 1))
                     
             End If
         
         Case 2 'Auto Registro
-            .col = 2
+            .Col = 2
             If .Value = vbChecked Then
-                .col = 7
+                .Col = 7
                 feAR_Casos.Text = Format(CLng(feAR_Casos.Text) + 1, "###,###,##0")
                 feAR_Monto.Text = Format(CCur(feAR_Monto.Text) + CCur(.Text), "Standard")
             Else
-                .col = 7
+                .Col = 7
                 feAR_Casos.Text = Format(CLng(feAR_Casos.Text) - 1, "###,###,##0")
                 feAR_Monto.Text = Format(CCur(feAR_Monto.Text) - CCur(.Text), "Standard")
             End If
         
         
         Case 11 'Transacciones
-            .col = 10
+            .Col = 10
             If IsNumeric(.Text) Then
                 Call sbFormsCall("frmTES_Transacciones")
                 For Each frm In Forms
@@ -4533,17 +4530,17 @@ vError:
 End Sub
 
 
-Private Sub gHistorial_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+Private Sub gHistorial_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
 If vPaso Then Exit Sub
 
 Dim pAnio As Long, pMes As Integer
 
-If col = 1 Then
+If Col = 1 Then
     gHistorial.Row = Row
-    gHistorial.col = 2
+    gHistorial.Col = 2
     pAnio = gHistorial.Text
     
-    gHistorial.col = 3
+    gHistorial.Col = 3
     pMes = gHistorial.Text
     
 

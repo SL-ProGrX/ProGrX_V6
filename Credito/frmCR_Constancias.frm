@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCR_Constancias 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -29,7 +29,7 @@ Begin VB.Form frmCR_Constancias
       Top             =   2160
       Visible         =   0   'False
       Width           =   4695
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8281
       _ExtentY        =   6376
       _StockProps     =   79
@@ -42,7 +42,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   24
          Top             =   360
          Width           =   4575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8070
          _ExtentY        =   609
          _StockProps     =   77
@@ -68,7 +68,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   25
          Top             =   960
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   609
          _StockProps     =   77
@@ -94,7 +94,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   30
          Top             =   1560
          Width           =   4575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8070
          _ExtentY        =   609
          _StockProps     =   77
@@ -120,7 +120,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   31
          Top             =   2160
          Width           =   4575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8070
          _ExtentY        =   609
          _StockProps     =   77
@@ -146,7 +146,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   32
          Top             =   3120
          Width           =   4575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8070
          _ExtentY        =   609
          _StockProps     =   77
@@ -169,7 +169,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   36
          Top             =   2760
          Width           =   2535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4471
          _ExtentY        =   609
          _StockProps     =   77
@@ -195,7 +195,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   34
          Top             =   2760
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   609
          _StockProps     =   77
@@ -219,7 +219,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   37
          Top             =   960
          Width           =   1935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3413
          _ExtentY        =   609
          _StockProps     =   77
@@ -245,7 +245,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   38
          Top             =   960
          Width           =   630
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1111
          _ExtentY        =   609
          _StockProps     =   77
@@ -271,7 +271,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   39
          Top             =   720
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -296,7 +296,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   35
          Top             =   2520
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -321,7 +321,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   33
          Top             =   2520
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -346,7 +346,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   29
          Top             =   120
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -371,7 +371,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   28
          Top             =   720
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -396,7 +396,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   27
          Top             =   1320
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -421,7 +421,7 @@ Begin VB.Form frmCR_Constancias
          TabIndex        =   26
          Top             =   1920
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -446,7 +446,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   3
       Top             =   7800
       Width           =   3375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5953
       _ExtentY        =   661
       _StockProps     =   79
@@ -468,7 +468,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   4
       Top             =   5880
       Width           =   6855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12091
       _ExtentY        =   873
       _StockProps     =   77
@@ -492,7 +492,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   5
       Top             =   8280
       Width           =   1695
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   1080
       _StockProps     =   79
@@ -516,7 +516,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   6
       Top             =   8280
       Width           =   855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1503
       _ExtentY        =   1080
       _StockProps     =   79
@@ -539,7 +539,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   7
       Top             =   6480
       Width           =   6855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12091
       _ExtentY        =   873
       _StockProps     =   77
@@ -563,7 +563,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   8
       Top             =   7080
       Width           =   6855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12091
       _ExtentY        =   873
       _StockProps     =   77
@@ -587,7 +587,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   12
       Top             =   7800
       Width           =   1335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   68
@@ -610,7 +610,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   14
       Top             =   1920
       Width           =   4215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   450
       _StockProps     =   79
@@ -636,7 +636,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   15
       Top             =   2280
       Width           =   4215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   450
       _StockProps     =   79
@@ -662,7 +662,7 @@ Begin VB.Form frmCR_Constancias
       ToolTipText     =   "Centro de Información Crediticia de SUGEF"
       Top             =   2640
       Width           =   4215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   450
       _StockProps     =   79
@@ -687,7 +687,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   17
       Top             =   3000
       Width           =   4215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   450
       _StockProps     =   79
@@ -712,7 +712,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   18
       Top             =   3360
       Width           =   4215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   450
       _StockProps     =   79
@@ -737,7 +737,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   19
       Top             =   3720
       Width           =   4215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   450
       _StockProps     =   79
@@ -762,7 +762,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   20
       Top             =   4080
       Width           =   4215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   450
       _StockProps     =   79
@@ -787,7 +787,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   21
       Top             =   1920
       Width           =   4815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8488
       _ExtentY        =   444
       _StockProps     =   79
@@ -812,7 +812,7 @@ Begin VB.Form frmCR_Constancias
       Top             =   4440
       Visible         =   0   'False
       Width           =   4335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7646
       _ExtentY        =   609
       _StockProps     =   77
@@ -839,7 +839,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   13
       Top             =   7800
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   450
       _StockProps     =   79
@@ -864,7 +864,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   11
       Top             =   5880
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   661
       _StockProps     =   79
@@ -889,7 +889,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   10
       Top             =   6480
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   661
       _StockProps     =   79
@@ -914,7 +914,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   9
       Top             =   7080
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   661
       _StockProps     =   79
@@ -939,7 +939,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   2
       Top             =   1320
       Width           =   2535
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4471
       _ExtentY        =   661
       _StockProps     =   14
@@ -962,7 +962,7 @@ Begin VB.Form frmCR_Constancias
       TabIndex        =   1
       Top             =   1320
       Width           =   7935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   13996
       _ExtentY        =   661
       _StockProps     =   14

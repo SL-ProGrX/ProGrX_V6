@@ -1,32 +1,34 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_CatalogoExc 
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Tabla de Cálculo de Diponible Creditos Sobre Excedentes"
-   ClientHeight    =   6435
+   ClientHeight    =   5430
    ClientLeft      =   45
    ClientTop       =   285
-   ClientWidth     =   10725
+   ClientWidth     =   14355
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   6435
-   ScaleWidth      =   10725
+   ScaleHeight     =   5430
+   ScaleWidth      =   14355
    ShowInTaskbar   =   0   'False
    Begin XtremeSuiteControls.PushButton cmdModifica 
       Height          =   615
-      Left            =   4440
+      Left            =   11400
       TabIndex        =   1
-      Top             =   5640
+      Top             =   480
+      Visible         =   0   'False
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   1085
       _StockProps     =   79
       Caption         =   "Actualiza Tabla"
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -44,9 +46,9 @@ Begin VB.Form frmCR_CatalogoExc
       Left            =   120
       TabIndex        =   0
       Top             =   1440
-      Width           =   10455
+      Width           =   14175
       _Version        =   524288
-      _ExtentX        =   18441
+      _ExtentX        =   25003
       _ExtentY        =   6800
       _StockProps     =   64
       BackColorStyle  =   1
@@ -100,94 +102,20 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim strSQL As String, rs As New ADODB.Recordset
 
-Private Sub sbCargaGridLocal(vGrid As Object, vGridMaxCol As Integer, strSQL As String)
-Dim rs As New ADODB.Recordset, i As Integer
-
-Me.MousePointer = vbHourglass
-
-vGrid.MaxCols = vGridMaxCol
-vGrid.MaxRows = 1
-
-vGrid.Row = vGrid.MaxRows
-
-rs.CursorLocation = adUseServer
-Call OpenRecordSet(rs, strSQL)
-
-Do While Not rs.EOF
-  vGrid.Row = vGrid.MaxRows
-  For i = 1 To vGrid.MaxCols
-    vGrid.col = i
-    vGrid.Text = CStr(rs.Fields(i - 1).Value)
-  Next i
-  vGrid.MaxRows = vGrid.MaxRows + 1
-  rs.MoveNext
-Loop
-
-rs.Close
-
-Me.MousePointer = vbDefault
-
-End Sub
-
-
-
-Private Sub cmdModifica_Click()
-Dim strSQL As String, i As Integer
-
-On Error GoTo vError
-
-Dim pMes As Integer, pMesAcumulado As Integer, pPorc As Currency, pCapGen As Currency
-
-vGrid.Row = 1
-vGrid.col = 1
-
-For i = 1 To vGrid.MaxRows
-  vGrid.Row = i
-  vGrid.col = 1
-  If vGrid.Text <> "" Then
-         
-    strSQL = strSQL & Space(10) & "insert EXC_DISPONIBLE(MES,ACUMULADO_MES,ACUMULADO_PORC,CAPGEN) values("
-    vGrid.col = 1
-    pMes = vGrid.Text
-    
-    strSQL = strSQL & vGrid.Text & ","
-    vGrid.col = 2
-    pMesAcumulado = vGrid.Text
-    
-    strSQL = strSQL & vGrid.Text & ","
-    vGrid.col = 3
-    pPorc = CCur(vGrid.Text)
-    
-    strSQL = strSQL & vGrid.Text & ","
-    vGrid.col = 4
-    pCapGen = CCur(vGrid.Text)
-    strSQL = strSQL & vGrid.Text & ")"
-  End If
-Next i
-
-'Procesa Lote
-Call ConectionExecute(strSQL)
-
-MsgBox "Tabla para Disponibles de Excedentes actualizada satisfactoriamente!", vbInformation
-Unload Me
-
-vError:
-  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
-
-End Sub
 
 Private Sub Form_Load()
-Dim strSQL As String
 
 vModulo = 3
-vGrid.AppearanceStyle = fxGridStyle
- 
- 
 
-strSQL = "select MES,ACUMULADO_MES,ACUMULADO_PORC,CAPGEN, REGISTRO_FECHA, REGISTRO_USUARIO" _
+Set imgBanner = frmContenedor.imgBanner_Mantenimiento.Picture
+
+vGrid.AppearanceStyle = fxGridStyle
+
+strSQL = "select MES,ACUMULADO_MES,ACUMULADO_PORC,CAPGEN, REGISTRO_FECHA, REGISTRO_USUARIO, MODIFICA_FECHA, MODIFICA_USUARIO" _
        & " from EXC_DISPONIBLE order by mes"
-Call sbCargaGrid(vGrid, 6, strSQL)
+Call sbCargaGrid(vGrid, 8, strSQL)
 
 Call Formularios(Me)
 Call RefrescaTags(Me)
@@ -196,53 +124,108 @@ If Not cmdModifica.Enabled Then vGrid.Enabled = False
 
 End Sub
 
-Private Sub vGrid_KeyDown(KeyCode As Integer, Shift As Integer)
-Dim i As Variant, lng As Long, vTemp(6) As Variant, x As Integer
-Dim strSQL As String, rs As New ADODB.Recordset
 
-If KeyCode = vbKeyDelete Then
+Private Function fxGuardar() As Long
+
+On Error GoTo vError
+
+fxGuardar = 0
+vGrid.Row = vGrid.ActiveRow
+vGrid.Col = 1
+
+If Trim(vGrid.Text) = "" Then Exit Function
+
+        strSQL = "select MES,ACUMULADO_MES,ACUMULADO_PORC,CAPGEN, REGISTRO_FECHA, REGISTRO_USUARIO, MODIFICA_FECHA, MODIFICA_USUARIO" _
+               & " from EXC_DISPONIBLE order by mes"
+
+strSQL = "select isnull(count(*),0) as Existe from EXC_DISPONIBLE " _
+       & " where MES = " & vGrid.Text
+Call OpenRecordSet(rs, strSQL)
+
+If rs!Existe = 0 Then 'Insertar
   
+  strSQL = "insert into EXC_DISPONIBLE(MES, ACUMULADO_MES, ACUMULADO_PORC, CAPGEN, REGISTRO_FECHA, REGISTRO_USUARIO)" _
+         & " values( " & vGrid.Text & ", "
+  vGrid.Col = 2
+  strSQL = strSQL & vGrid.Text & ", "
+  vGrid.Col = 3
+  strSQL = strSQL & vGrid.Text & ", "
+  vGrid.Col = 4
+  strSQL = strSQL & vGrid.Text & ", dbo.MyGetDate(), '" & glogon.Usuario & "')"
+
+  Call ConectionExecute(strSQL)
+
+  vGrid.Col = 1
+  Call Bitacora("Registra", "Disponible Excedentes Mes: " & vGrid.Text)
+
+Else 'Actualizar
+
+ vGrid.Col = 2
+ strSQL = "update EXC_DISPONIBLE set ACUMULADO_MES = " & vGrid.Text & ", ACUMULADO_PORC = "
+ vGrid.Col = 3
+ strSQL = strSQL & CCur(vGrid.Text) & ", CAPGEN = "
+ vGrid.Col = 4
+ strSQL = strSQL & CCur(vGrid.Text) & ", Modifica_Fecha = dbo.mygetdate(), Modifica_Usuario = '" & glogon.Usuario & "'"
+ vGrid.Col = 1
+ strSQL = strSQL & " Where Mes = " & vGrid.Text
+ Call ConectionExecute(strSQL)
+
+ vGrid.Col = 1
+ Call Bitacora("Modifica", "Disponible Excedentes Mes: " & vGrid.Text)
+
+End If
+rs.Close
+
+fxGuardar = 1
+
+Exit Function
+
+vError:
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Function
+
+
+Private Sub vGrid_KeyDown(KeyCode As Integer, Shift As Integer)
+Dim i As Integer
+
+If vGrid.ActiveCol = 4 And (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
+  i = fxGuardar
+  If i = 0 Then Exit Sub
   vGrid.Row = vGrid.ActiveRow
-  vGrid.col = 1
-  If vGrid.Text <> "" Then
-    strSQL = "delete EXC_DISPONIBLE where MES = " & vGrid.Text
-    Call ConectionExecute(strSQL)
+  If vGrid.MaxRows <= vGrid.ActiveRow Then
+    vGrid.MaxRows = vGrid.MaxRows + 1
+    vGrid.Row = vGrid.MaxRows
   End If
-  
-  
-  vGrid.Row = vGrid.ActiveRow
-  vGrid.col = 4
-  
-  For lng = vGrid.ActiveRow To vGrid.MaxRows
-     vGrid.Row = lng + 1
-     For x = 1 To 4
-        vGrid.col = x
-        vTemp(x) = vGrid.Text
-     Next x
-     
-     vGrid.Row = lng
-     For x = 1 To 4
-       vGrid.col = x
-       vGrid.Text = vTemp(x)
-     Next x
-  Next lng
-  vGrid.MaxRows = vGrid.MaxRows - 1
-  
-  If vGrid.MaxRows = 0 Then vGrid.MaxRows = 1
-  
+End If
+
+'Inserta Linea
+If KeyCode = vbKeyInsert Then
+    vGrid.MaxRows = vGrid.MaxRows + 1
+    vGrid.InsertRows vGrid.ActiveRow, 1
+    vGrid.Row = vGrid.ActiveRow
 End If
 
 
-If (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
-    vGrid.col = vGrid.ActiveCol
-    vGrid.Row = vGrid.ActiveRow
+'Borrar Linea
+If KeyCode = vbKeyDelete Then
+    i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
+    If i = vbYes Then
+      vGrid.Row = vGrid.ActiveRow
+      vGrid.Col = 1
+      If vGrid.Text <> "" Then
+        strSQL = "delete EXC_DISPONIBLE where MES = " & vGrid.Text
+        Call ConectionExecute(strSQL)
+      End If
     
- If vGrid.ActiveCol = 4 Then
-    If vGrid.MaxRows = vGrid.Row Then
-        vGrid.MaxRows = vGrid.MaxRows + 1
-        vGrid.Row = vGrid.MaxRows
+      strSQL = vGrid.Text
+      vGrid.Col = 1
+      Call Bitacora("Elimina", "Disponible Excedentes Mes: " & vGrid.Text)
+      
+        strSQL = "select MES,ACUMULADO_MES,ACUMULADO_PORC,CAPGEN, REGISTRO_FECHA, REGISTRO_USUARIO, MODIFICA_FECHA, MODIFICA_USUARIO" _
+               & " from EXC_DISPONIBLE order by mes"
+        Call sbCargaGrid(vGrid, 8, strSQL)
     End If
- End If
  
 End If
 

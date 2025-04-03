@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.2#0"; "Codejock.Controls.v20.2.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmPreaSubReporte 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -17,12 +17,12 @@ Begin VB.Form frmPreaSubReporte
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin XtremeSuiteControls.CheckBox chkDeducciones 
-      Height          =   252
-      Left            =   2880
-      TabIndex        =   12
-      Top             =   1560
-      Width           =   3012
-      _Version        =   1310722
+      Height          =   255
+      Left            =   3360
+      TabIndex        =   3
+      Top             =   1440
+      Width           =   3015
+      _Version        =   1572864
       _ExtentX        =   5313
       _ExtentY        =   444
       _StockProps     =   79
@@ -36,173 +36,85 @@ Begin VB.Form frmPreaSubReporte
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
    End
    Begin XtremeSuiteControls.GroupBox GroupBox1 
-      Height          =   1332
-      Left            =   120
-      TabIndex        =   9
+      Height          =   1335
+      Left            =   0
+      TabIndex        =   1
       Top             =   4560
-      Width           =   7332
-      _Version        =   1310722
-      _ExtentX        =   12933
-      _ExtentY        =   2350
+      Width           =   7575
+      _Version        =   1572864
+      _ExtentX        =   13361
+      _ExtentY        =   2355
       _StockProps     =   79
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       BorderStyle     =   1
-      Begin VB.CheckBox chkImpresora 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFFFFF&
-         Caption         =   "Salida a Impresora"
-         BeginProperty Font 
-            Name            =   "Arial Narrow"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H80000008&
-         Height          =   495
-         Left            =   3120
-         TabIndex        =   11
-         Top             =   240
-         Width           =   1815
-      End
       Begin XtremeSuiteControls.PushButton cmdReporte 
          Height          =   612
          Left            =   5760
-         TabIndex        =   10
+         TabIndex        =   2
          Top             =   360
          Width           =   1452
-         _Version        =   1310722
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   1080
          _StockProps     =   79
          Caption         =   "Reporte"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial Narrow"
-            Size            =   7.5
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          Picture         =   "frmPreaSubReporte.frx":0000
       End
+      Begin XtremeSuiteControls.CheckBox chkImpresora 
+         Height          =   495
+         Left            =   4080
+         TabIndex        =   12
+         Top             =   360
+         Width           =   1335
+         _Version        =   1572864
+         _ExtentX        =   2355
+         _ExtentY        =   873
+         _StockProps     =   79
+         Caption         =   "Salida a Impresora"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         Value           =   1
+         Alignment       =   1
+      End
    End
-   Begin VB.CheckBox chkFichaConvenio 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFFFFF&
-      Caption         =   "Ficha para Convenios"
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      ForeColor       =   &H80000008&
+   Begin XtremeSuiteControls.CheckBox chkResumen 
       Height          =   255
       Left            =   600
-      TabIndex        =   8
-      Top             =   2280
-      Width           =   5055
-   End
-   Begin VB.CheckBox chkSubExpedienteResumen 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFFFFF&
-      Caption         =   "Ficha Resumen"
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      ForeColor       =   &H00C00000&
-      Height          =   255
-      Left            =   2040
-      TabIndex        =   5
-      Top             =   3360
-      Value           =   1  'Checked
-      Width           =   3255
-   End
-   Begin VB.CheckBox chkResumen 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFFFFF&
-      Caption         =   "Ficha Resumen"
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      ForeColor       =   &H80000008&
-      Height          =   255
-      Left            =   600
-      TabIndex        =   1
-      Top             =   1560
-      Value           =   1  'Checked
-      Width           =   5055
-   End
-   Begin VB.CheckBox chkEstadoCuenta 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFFFFF&
-      Caption         =   "Estado de Cuenta"
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      ForeColor       =   &H80000008&
-      Height          =   255
-      Left            =   600
-      TabIndex        =   0
-      Top             =   2640
-      Width           =   5055
-   End
-   Begin VB.CheckBox chkSubExpedienteEstado 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFFFFF&
-      Caption         =   "Estado de Cuenta"
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      ForeColor       =   &H00C00000&
-      Height          =   255
-      Left            =   2040
       TabIndex        =   4
-      Top             =   4080
-      Width           =   3255
-   End
-   Begin VB.CheckBox chkSubExpedienteDetalle 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFFFFF&
-      Caption         =   "Ficha Detallada"
-      BeginProperty Font 
+      Top             =   1440
+      Width           =   3015
+      _Version        =   1572864
+      _ExtentX        =   5313
+      _ExtentY        =   444
+      _StockProps     =   79
+      Caption         =   "Ficha Resumen"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
          Charset         =   0
@@ -211,54 +123,174 @@ Begin VB.Form frmPreaSubReporte
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      ForeColor       =   &H00C00000&
-      Height          =   255
-      Left            =   2040
-      TabIndex        =   6
-      Top             =   3720
-      Width           =   3255
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Value           =   1
    End
-   Begin VB.CheckBox chkSubExpediente 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFFFFF&
-      Caption         =   "Imprime Expedientes Asociados"
-      BeginProperty Font 
+   Begin XtremeSuiteControls.CheckBox chkDetalle 
+      Height          =   255
+      Left            =   600
+      TabIndex        =   5
+      Top             =   1800
+      Width           =   3015
+      _Version        =   1572864
+      _ExtentX        =   5313
+      _ExtentY        =   444
+      _StockProps     =   79
+      Caption         =   "Ficha Detallada"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
          Charset         =   0
          Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Value           =   1
+   End
+   Begin XtremeSuiteControls.CheckBox chkFichaConvenio 
+      Height          =   255
+      Left            =   600
+      TabIndex        =   6
+      Top             =   2160
+      Width           =   3015
+      _Version        =   1572864
+      _ExtentX        =   5313
+      _ExtentY        =   444
+      _StockProps     =   79
+      Caption         =   "Ficha para Convenios"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+   End
+   Begin XtremeSuiteControls.CheckBox chkEstadoCuenta 
+      Height          =   255
+      Left            =   600
+      TabIndex        =   7
+      Top             =   2520
+      Width           =   3015
+      _Version        =   1572864
+      _ExtentX        =   5313
+      _ExtentY        =   444
+      _StockProps     =   79
+      Caption         =   "Estado de Cuenta"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+   End
+   Begin XtremeSuiteControls.CheckBox chkSubExpedienteResumen 
+      Height          =   255
+      Left            =   2040
+      TabIndex        =   8
+      Top             =   3360
+      Width           =   3015
+      _Version        =   1572864
+      _ExtentX        =   5313
+      _ExtentY        =   444
+      _StockProps     =   79
+      Caption         =   "Ficha Resumen"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Value           =   1
+   End
+   Begin XtremeSuiteControls.CheckBox chkSubExpedienteDetalle 
+      Height          =   255
+      Left            =   2040
+      TabIndex        =   9
+      Top             =   3720
+      Width           =   3015
+      _Version        =   1572864
+      _ExtentX        =   5313
+      _ExtentY        =   444
+      _StockProps     =   79
+      Caption         =   "Ficha Detallada"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+   End
+   Begin XtremeSuiteControls.CheckBox chkSubExpedienteEstado 
+      Height          =   255
+      Left            =   2040
+      TabIndex        =   10
+      Top             =   4080
+      Width           =   3015
+      _Version        =   1572864
+      _ExtentX        =   5313
+      _ExtentY        =   444
+      _StockProps     =   79
+      Caption         =   "Estado de Cuenta"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+   End
+   Begin XtremeSuiteControls.CheckBox chkSubExpediente 
+      Height          =   255
+      Left            =   1560
+      TabIndex        =   11
+      Top             =   3000
+      Width           =   3015
+      _Version        =   1572864
+      _ExtentX        =   5313
+      _ExtentY        =   444
+      _StockProps     =   79
+      Caption         =   "Imprime Expedientes Asociados"
+      ForeColor       =   16711680
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
          Underline       =   -1  'True
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      ForeColor       =   &H80000008&
-      Height          =   255
-      Left            =   1080
-      TabIndex        =   3
-      Top             =   3000
-      Value           =   1  'Checked
-      Width           =   4575
-   End
-   Begin VB.CheckBox chkDetalle 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFFFFF&
-      Caption         =   "Ficha Detallada"
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      ForeColor       =   &H80000008&
-      Height          =   255
-      Left            =   600
-      TabIndex        =   2
-      Top             =   1920
-      Value           =   1  'Checked
-      Width           =   5055
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Value           =   1
    End
    Begin VB.Label Label2 
       Appearance      =   0  'Flat
@@ -277,7 +309,7 @@ Begin VB.Form frmPreaSubReporte
       ForeColor       =   &H00FFFFFF&
       Height          =   492
       Left            =   1560
-      TabIndex        =   7
+      TabIndex        =   0
       Top             =   240
       Width           =   5292
    End
@@ -375,7 +407,7 @@ If (chkSubExpediente.Enabled) And (chkSubExpediente.Value = vbChecked) Then
         
             vFechaIng = IIf(IsNull(rs!FechaIngreso), rs!FechaServer, rs!FechaIngreso)
             
-            If rs!ESTADOACTUAL <> "S" Then
+            If rs!EstadoActual <> "S" Then
                 vFechaIng = ""
             End If
             

@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Begin VB.Form frmSYS_RA_Tipos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -8,12 +8,12 @@ Begin VB.Form frmSYS_RA_Tipos
    ClientHeight    =   6660
    ClientLeft      =   45
    ClientTop       =   390
-   ClientWidth     =   9480
+   ClientWidth     =   10185
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
    ScaleHeight     =   6660
-   ScaleWidth      =   9480
+   ScaleWidth      =   10185
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin VB.Timer TimerX 
@@ -26,10 +26,10 @@ Begin VB.Form frmSYS_RA_Tipos
       Left            =   120
       TabIndex        =   0
       Top             =   1320
-      Width           =   9255
+      Width           =   9975
       _Version        =   524288
-      _ExtentX        =   16320
-      _ExtentY        =   9123
+      _ExtentX        =   17595
+      _ExtentY        =   9128
       _StockProps     =   64
       BackColorStyle  =   1
       BorderStyle     =   0
@@ -73,7 +73,7 @@ Begin VB.Form frmSYS_RA_Tipos
       Height          =   1215
       Left            =   0
       Top             =   0
-      Width           =   10095
+      Width           =   10575
    End
 End
 Attribute VB_Name = "frmSYS_RA_Tipos"

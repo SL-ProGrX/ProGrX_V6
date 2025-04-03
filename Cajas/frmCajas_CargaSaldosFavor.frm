@@ -1,7 +1,7 @@
 VERSION 5.00
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.ShortcutBar.v22.1.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCajas_CargaSaldosFavor 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -9,11 +9,12 @@ Begin VB.Form frmCajas_CargaSaldosFavor
    ClientHeight    =   9375
    ClientLeft      =   120
    ClientTop       =   450
-   ClientWidth     =   12990
+   ClientWidth     =   18465
    LinkTopic       =   "Form1"
    MDIChild        =   -1  'True
    ScaleHeight     =   9375
-   ScaleWidth      =   12990
+   ScaleWidth      =   18465
+   WindowState     =   2  'Maximized
    Begin XtremeSuiteControls.PushButton btnAccion 
       Height          =   375
       Index           =   0
@@ -21,7 +22,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       TabIndex        =   38
       Top             =   960
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   661
       _StockProps     =   79
@@ -46,9 +47,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       Left            =   120
       TabIndex        =   2
       Top             =   1440
-      Width           =   11895
-      _Version        =   1441793
-      _ExtentX        =   20981
+      Width           =   17655
+      _Version        =   1572864
+      _ExtentX        =   31141
       _ExtentY        =   13785
       _StockProps     =   68
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -63,8 +64,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       Appearance      =   4
       Color           =   32
       ItemCount       =   3
+      SelectedItem    =   1
       Item(0).Caption =   "Saldos en Cajas"
-      Item(0).ControlCount=   19
+      Item(0).ControlCount=   27
       Item(0).Control(0)=   "chkFechas"
       Item(0).Control(1)=   "dtpRegistroInicio"
       Item(0).Control(2)=   "dtpRegistroCorte"
@@ -84,8 +86,16 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       Item(0).Control(16)=   "Label2(1)"
       Item(0).Control(17)=   "Label2(0)"
       Item(0).Control(18)=   "vGrid"
+      Item(0).Control(19)=   "chkI_Recursos"
+      Item(0).Control(20)=   "Label2(10)"
+      Item(0).Control(21)=   "Label2(11)"
+      Item(0).Control(22)=   "cboSC_EntidadPagadora"
+      Item(0).Control(23)=   "cboSC_OrigenRecursos"
+      Item(0).Control(24)=   "txtSC_Mnt_Inicio"
+      Item(0).Control(25)=   "txtSC_Mnt_Hasta"
+      Item(0).Control(26)=   "Label2(12)"
       Item(1).Caption =   "Identificación de Depósitos"
-      Item(1).ControlCount=   9
+      Item(1).ControlCount=   14
       Item(1).Control(0)=   "vGridId"
       Item(1).Control(1)=   "dtpId_Inicio"
       Item(1).Control(2)=   "dtpId_Corte"
@@ -95,6 +105,11 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       Item(1).Control(6)=   "Label2(7)"
       Item(1).Control(7)=   "Label2(6)"
       Item(1).Control(8)=   "fraIdentifica"
+      Item(1).Control(9)=   "FlatEdit1"
+      Item(1).Control(10)=   "Label2(8)"
+      Item(1).Control(11)=   "Label2(9)"
+      Item(1).Control(12)=   "txtMnt_Inicio"
+      Item(1).Control(13)=   "txtMnt_Hasta"
       Item(2).Caption =   "Carga Masiva de Casos Identificados"
       Item(2).ControlCount=   12
       Item(2).Control(0)=   "fraCargaIdentTotales"
@@ -110,25 +125,48 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       Item(2).Control(10)=   "btnArchivo(1)"
       Item(2).Control(11)=   "btnArchivo(2)"
       Begin XtremeSuiteControls.GroupBox fraIdentifica 
-         Height          =   5055
-         Left            =   -68440
+         Height          =   6735
+         Left            =   2040
          TabIndex        =   55
-         Top             =   2040
-         Visible         =   0   'False
+         Top             =   1080
          Width           =   8415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   14843
-         _ExtentY        =   8916
+         _ExtentY        =   11880
          _StockProps     =   79
          UseVisualStyle  =   -1  'True
          Appearance      =   17
+         Begin XtremeSuiteControls.ListView lsw 
+            Height          =   2295
+            Left            =   0
+            TabIndex        =   98
+            Top             =   480
+            Width           =   8415
+            _Version        =   1572864
+            _ExtentX        =   14843
+            _ExtentY        =   4048
+            _StockProps     =   77
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            View            =   3
+            FullRowSelect   =   -1  'True
+            Appearance      =   21
+            ShowBorder      =   0   'False
+         End
          Begin XtremeSuiteControls.FlatEdit txtId_NSolicitud 
             Height          =   315
             Left            =   1560
             TabIndex        =   63
-            Top             =   600
+            Top             =   960
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   556
             _StockProps     =   77
@@ -153,9 +191,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Height          =   315
             Left            =   5880
             TabIndex        =   64
-            Top             =   600
+            Top             =   960
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   556
             _StockProps     =   77
@@ -182,7 +220,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             TabIndex        =   67
             Top             =   2280
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   556
             _StockProps     =   77
@@ -207,9 +245,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Height          =   315
             Left            =   1560
             TabIndex        =   73
-            Top             =   3360
+            Top             =   3720
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   556
             _StockProps     =   77
@@ -233,9 +271,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Height          =   315
             Left            =   1560
             TabIndex        =   72
-            Top             =   3720
+            Top             =   4080
             Width           =   6495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11456
             _ExtentY        =   556
             _StockProps     =   77
@@ -259,9 +297,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Height          =   315
             Left            =   1560
             TabIndex        =   65
-            Top             =   1080
+            Top             =   1440
             Width           =   6495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11456
             _ExtentY        =   556
             _StockProps     =   77
@@ -282,14 +320,14 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtId_Descripcion 
-            Height          =   795
+            Height          =   435
             Left            =   1560
             TabIndex        =   68
-            Top             =   1440
+            Top             =   1800
             Width           =   6495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11456
-            _ExtentY        =   1402
+            _ExtentY        =   767
             _StockProps     =   77
             ForeColor       =   0
             BackColor       =   16777215
@@ -311,11 +349,11 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          End
          Begin XtremeSuiteControls.FlatEdit txtId_Monto 
             Height          =   315
-            Left            =   1560
+            Left            =   5880
             TabIndex        =   66
-            Top             =   2280
+            Top             =   2880
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   556
             _StockProps     =   77
@@ -341,9 +379,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Index           =   0
             Left            =   5640
             TabIndex        =   74
-            Top             =   4320
+            Top             =   5880
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2143
             _ExtentY        =   873
             _StockProps     =   79
@@ -368,9 +406,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Index           =   1
             Left            =   6840
             TabIndex        =   75
-            Top             =   4320
+            Top             =   5880
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2143
             _ExtentY        =   873
             _StockProps     =   79
@@ -390,14 +428,213 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Picture         =   "frmCajas_CargaSaldosFavor.frx":0E27
             ImageAlignment  =   4
          End
+         Begin XtremeSuiteControls.ComboBox cboOrigenRecursos 
+            Height          =   330
+            Left            =   3000
+            TabIndex        =   76
+            Top             =   5400
+            Width           =   5055
+            _Version        =   1572864
+            _ExtentX        =   8916
+            _ExtentY        =   582
+            _StockProps     =   77
+            ForeColor       =   1973790
+            BackColor       =   16777215
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Style           =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
+            Text            =   "ComboBox1"
+         End
+         Begin XtremeSuiteControls.ComboBox cboPagadores 
+            Height          =   330
+            Left            =   3000
+            TabIndex        =   78
+            Top             =   5040
+            Width           =   5055
+            _Version        =   1572864
+            _ExtentX        =   8916
+            _ExtentY        =   582
+            _StockProps     =   77
+            ForeColor       =   1973790
+            BackColor       =   16777215
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Style           =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
+            Text            =   "ComboBox1"
+         End
+         Begin XtremeSuiteControls.PushButton btnAdjuntos 
+            Height          =   330
+            Left            =   6840
+            TabIndex        =   81
+            ToolTipText     =   "Adjuntar Documentos"
+            Top             =   4680
+            Width           =   1215
+            _Version        =   1572864
+            _ExtentX        =   2143
+            _ExtentY        =   582
+            _StockProps     =   79
+            Caption         =   "Adjuntos"
+            BackColor       =   16777215
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Picture         =   "frmCajas_CargaSaldosFavor.frx":153D
+         End
+         Begin XtremeSuiteControls.FlatEdit txtDepositoId 
+            Height          =   315
+            Left            =   1560
+            TabIndex        =   92
+            Top             =   480
+            Width           =   2175
+            _Version        =   1572864
+            _ExtentX        =   3836
+            _ExtentY        =   556
+            _StockProps     =   77
+            ForeColor       =   0
+            BackColor       =   16777215
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            BackColor       =   16777215
+            Alignment       =   2
+            Locked          =   -1  'True
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
+         End
+         Begin XtremeSuiteControls.Label Label4 
+            Height          =   255
+            Index           =   12
+            Left            =   360
+            TabIndex        =   93
+            Top             =   480
+            Width           =   1455
+            _Version        =   1572864
+            _ExtentX        =   2566
+            _ExtentY        =   450
+            _StockProps     =   79
+            Caption         =   "Id Depósito:"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Transparent     =   -1  'True
+         End
+         Begin XtremeSuiteControls.Label Label4 
+            Height          =   255
+            Index           =   11
+            Left            =   360
+            TabIndex        =   80
+            Top             =   4560
+            Width           =   3615
+            _Version        =   1572864
+            _ExtentX        =   6376
+            _ExtentY        =   450
+            _StockProps     =   79
+            Caption         =   "Identificación de Recursos:"
+            ForeColor       =   16711680
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   700
+               Underline       =   -1  'True
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Transparent     =   -1  'True
+         End
+         Begin XtremeSuiteControls.Label Label4 
+            Height          =   375
+            Index           =   10
+            Left            =   1560
+            TabIndex        =   79
+            Top             =   4920
+            Width           =   1335
+            _Version        =   1572864
+            _ExtentX        =   2355
+            _ExtentY        =   661
+            _StockProps     =   79
+            Caption         =   "Pagadores"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Transparent     =   -1  'True
+            WordWrap        =   -1  'True
+         End
+         Begin XtremeSuiteControls.Label Label4 
+            Height          =   375
+            Index           =   9
+            Left            =   1560
+            TabIndex        =   77
+            Top             =   5280
+            Width           =   1335
+            _Version        =   1572864
+            _ExtentX        =   2355
+            _ExtentY        =   661
+            _StockProps     =   79
+            Caption         =   "Origen Recursos"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Transparent     =   -1  'True
+            WordWrap        =   -1  'True
+         End
          Begin XtremeSuiteControls.Label Label4 
             Height          =   255
             Index           =   8
             Left            =   360
             TabIndex        =   71
-            Top             =   3720
+            Top             =   4080
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -418,9 +655,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Index           =   7
             Left            =   360
             TabIndex        =   70
-            Top             =   3360
+            Top             =   3720
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -441,19 +678,20 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Index           =   6
             Left            =   360
             TabIndex        =   69
-            Top             =   2880
+            Top             =   3240
             Width           =   3615
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6376
             _ExtentY        =   450
             _StockProps     =   79
             Caption         =   "Identificación del Caso:"
+            ForeColor       =   16711680
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9.75
                Charset         =   0
                Weight          =   700
-               Underline       =   0   'False
+               Underline       =   -1  'True
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
@@ -466,7 +704,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             TabIndex        =   62
             Top             =   2280
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -485,11 +723,11 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          Begin XtremeSuiteControls.Label Label4 
             Height          =   255
             Index           =   4
-            Left            =   360
+            Left            =   4680
             TabIndex        =   61
-            Top             =   2280
+            Top             =   2880
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -510,9 +748,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Index           =   3
             Left            =   4560
             TabIndex        =   60
-            Top             =   600
+            Top             =   960
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -533,9 +771,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Index           =   2
             Left            =   360
             TabIndex        =   59
-            Top             =   1560
+            Top             =   1920
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -556,9 +794,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Index           =   1
             Left            =   360
             TabIndex        =   58
-            Top             =   1080
+            Top             =   1440
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -579,9 +817,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Index           =   0
             Left            =   360
             TabIndex        =   57
-            Top             =   600
+            Top             =   960
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -603,7 +841,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             TabIndex        =   56
             Top             =   0
             Width           =   9495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   16748
             _ExtentY        =   661
             _StockProps     =   14
@@ -626,7 +864,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          Top             =   6720
          Visible         =   0   'False
          Width           =   11895
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   20981
          _ExtentY        =   1931
          _StockProps     =   79
@@ -640,7 +878,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             TabIndex        =   45
             Top             =   360
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2143
             _ExtentY        =   873
             _StockProps     =   79
@@ -657,7 +895,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             UseVisualStyle  =   -1  'True
             TextAlignment   =   1
             Appearance      =   17
-            Picture         =   "frmCajas_CargaSaldosFavor.frx":153D
+            Picture         =   "frmCajas_CargaSaldosFavor.frx":15C6
             ImageAlignment  =   4
          End
          Begin XtremeSuiteControls.PushButton btnProceso 
@@ -667,7 +905,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             TabIndex        =   46
             Top             =   360
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2143
             _ExtentY        =   873
             _StockProps     =   79
@@ -684,7 +922,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             UseVisualStyle  =   -1  'True
             TextAlignment   =   1
             Appearance      =   17
-            Picture         =   "frmCajas_CargaSaldosFavor.frx":1C64
+            Picture         =   "frmCajas_CargaSaldosFavor.frx":1CED
             ImageAlignment  =   4
          End
          Begin XtremeSuiteControls.FlatEdit txtMonto 
@@ -693,7 +931,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             TabIndex        =   48
             Top             =   480
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2990
             _ExtentY        =   556
             _StockProps     =   77
@@ -709,7 +947,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             TabIndex        =   49
             Top             =   480
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1931
             _ExtentY        =   556
             _StockProps     =   77
@@ -725,7 +963,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             TabIndex        =   50
             Top             =   480
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1931
             _ExtentY        =   556
             _StockProps     =   77
@@ -741,7 +979,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             TabIndex        =   51
             Top             =   480
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1931
             _ExtentY        =   556
             _StockProps     =   77
@@ -758,7 +996,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             TabIndex        =   54
             Top             =   240
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1931
             _ExtentY        =   450
             _StockProps     =   79
@@ -781,7 +1019,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             TabIndex        =   53
             Top             =   240
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1931
             _ExtentY        =   450
             _StockProps     =   79
@@ -804,7 +1042,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             TabIndex        =   52
             Top             =   240
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1931
             _ExtentY        =   450
             _StockProps     =   79
@@ -827,7 +1065,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             TabIndex        =   47
             Top             =   480
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2143
             _ExtentY        =   450
             _StockProps     =   79
@@ -845,11 +1083,12 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       End
       Begin XtremeSuiteControls.CheckBox chkFechas 
          Height          =   375
-         Left            =   2040
+         Left            =   -67960
          TabIndex        =   3
          Top             =   1200
+         Visible         =   0   'False
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   661
          _StockProps     =   79
@@ -872,11 +1111,12 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       End
       Begin XtremeSuiteControls.DateTimePicker dtpRegistroInicio 
          Height          =   315
-         Left            =   960
+         Left            =   -69040
          TabIndex        =   4
          Top             =   840
+         Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   556
          _StockProps     =   68
@@ -894,11 +1134,12 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       End
       Begin XtremeSuiteControls.DateTimePicker dtpRegistroCorte 
          Height          =   315
-         Left            =   2280
+         Left            =   -67720
          TabIndex        =   5
          Top             =   840
+         Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   556
          _StockProps     =   68
@@ -916,13 +1157,14 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       End
       Begin XtremeSuiteControls.CheckBox chkSF_Saldos 
          Height          =   375
-         Left            =   6240
+         Left            =   -63760
          TabIndex        =   6
          Top             =   1200
-         Width           =   1095
-         _Version        =   1441793
-         _ExtentX        =   1926
-         _ExtentY        =   656
+         Visible         =   0   'False
+         Width           =   1215
+         _Version        =   1572864
+         _ExtentX        =   2143
+         _ExtentY        =   661
          _StockProps     =   79
          Caption         =   "Saldos en cero"
          BackColor       =   -2147483633
@@ -942,11 +1184,12 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       End
       Begin XtremeSuiteControls.CheckBox chkSA_Marcas 
          Height          =   375
-         Left            =   720
+         Left            =   -69280
          TabIndex        =   7
          Top             =   1200
+         Visible         =   0   'False
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1926
          _ExtentY        =   656
          _StockProps     =   79
@@ -967,11 +1210,12 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       End
       Begin XtremeSuiteControls.FlatEdit txtUsuario 
          Height          =   315
-         Left            =   960
+         Left            =   -69040
          TabIndex        =   8
          Top             =   480
+         Visible         =   0   'False
          Width           =   2655
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4683
          _ExtentY        =   556
          _StockProps     =   77
@@ -991,11 +1235,12 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       End
       Begin XtremeSuiteControls.FlatEdit txtCedula 
          Height          =   315
-         Left            =   5280
+         Left            =   -64720
          TabIndex        =   9
          Top             =   480
+         Visible         =   0   'False
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -1015,11 +1260,12 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       End
       Begin XtremeSuiteControls.FlatEdit txtNombre 
          Height          =   315
-         Left            =   5280
+         Left            =   -64720
          TabIndex        =   10
          Top             =   840
+         Visible         =   0   'False
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -1039,11 +1285,12 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       End
       Begin XtremeSuiteControls.FlatEdit txtNumDoc 
          Height          =   315
-         Left            =   8520
+         Left            =   -61240
          TabIndex        =   11
          Top             =   840
+         Visible         =   0   'False
          Width           =   2535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4466
          _ExtentY        =   550
          _StockProps     =   77
@@ -1063,11 +1310,12 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       End
       Begin XtremeSuiteControls.ComboBox cboTipoSaldo 
          Height          =   315
-         Left            =   8520
+         Left            =   -61240
          TabIndex        =   12
          Top             =   480
+         Visible         =   0   'False
          Width           =   2535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4471
          _ExtentY        =   582
          _StockProps     =   77
@@ -1089,11 +1337,12 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       End
       Begin XtremeSuiteControls.ComboBox cboTipoLiquidacion 
          Height          =   315
-         Left            =   8520
+         Left            =   -61240
          TabIndex        =   13
          Top             =   1200
+         Visible         =   0   'False
          Width           =   2535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4471
          _ExtentY        =   582
          _StockProps     =   77
@@ -1115,12 +1364,13 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       End
       Begin FPSpreadADO.fpSpread vGrid 
          Height          =   5895
-         Left            =   0
+         Left            =   -70000
          TabIndex        =   21
          Top             =   1680
-         Width           =   11655
+         Visible         =   0   'False
+         Width           =   14415
          _Version        =   524288
-         _ExtentX        =   20558
+         _ExtentX        =   25426
          _ExtentY        =   10398
          _StockProps     =   64
          BackColorStyle  =   1
@@ -1135,17 +1385,16 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         MaxCols         =   20
-         SpreadDesigner  =   "frmCajas_CargaSaldosFavor.frx":237A
+         MaxCols         =   23
+         SpreadDesigner  =   "frmCajas_CargaSaldosFavor.frx":2403
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
       Begin FPSpreadADO.fpSpread vGridId 
          Height          =   6375
-         Left            =   -70000
+         Left            =   0
          TabIndex        =   22
          Top             =   1200
-         Visible         =   0   'False
          Width           =   11655
          _Version        =   524288
          _ExtentX        =   20558
@@ -1163,19 +1412,18 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         MaxCols         =   495
-         SpreadDesigner  =   "frmCajas_CargaSaldosFavor.frx":3330
+         MaxCols         =   17
+         SpreadDesigner  =   "frmCajas_CargaSaldosFavor.frx":34BA
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
       Begin XtremeSuiteControls.DateTimePicker dtpId_Inicio 
          Height          =   315
-         Left            =   -69040
+         Left            =   960
          TabIndex        =   23
          Top             =   480
-         Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   556
          _StockProps     =   68
@@ -1193,12 +1441,11 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       End
       Begin XtremeSuiteControls.DateTimePicker dtpId_Corte 
          Height          =   315
-         Left            =   -67720
+         Left            =   2280
          TabIndex        =   24
          Top             =   480
-         Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   556
          _StockProps     =   68
@@ -1215,14 +1462,13 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          Format          =   3
       End
       Begin XtremeSuiteControls.ComboBox cboBanco 
-         Height          =   315
-         Left            =   -65200
+         Height          =   330
+         Left            =   5280
          TabIndex        =   25
          Top             =   480
-         Visible         =   0   'False
-         Width           =   6855
-         _Version        =   1441793
-         _ExtentX        =   12091
+         Width           =   7095
+         _Version        =   1572864
+         _ExtentX        =   12515
          _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   1973790
@@ -1243,12 +1489,11 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       End
       Begin XtremeSuiteControls.FlatEdit txtId_NumDoc 
          Height          =   315
-         Left            =   -69040
+         Left            =   960
          TabIndex        =   26
          Top             =   840
-         Visible         =   0   'False
          Width           =   2655
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4683
          _ExtentY        =   556
          _StockProps     =   77
@@ -1290,7 +1535,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
             Strikethrough   =   0   'False
          EndProperty
          MaxCols         =   9
-         SpreadDesigner  =   "frmCajas_CargaSaldosFavor.frx":3EC6
+         SpreadDesigner  =   "frmCajas_CargaSaldosFavor.frx":3FE2
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
@@ -1301,7 +1546,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          Top             =   480
          Visible         =   0   'False
          Width           =   2535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4471
          _ExtentY        =   582
          _StockProps     =   77
@@ -1328,7 +1573,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          Top             =   960
          Visible         =   0   'False
          Width           =   8175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   14420
          _ExtentY        =   582
          _StockProps     =   77
@@ -1355,7 +1600,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          Top             =   480
          Visible         =   0   'False
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   656
          _StockProps     =   79
@@ -1382,7 +1627,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          Top             =   1320
          Visible         =   0   'False
          Width           =   8175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   14414
          _ExtentY        =   1185
          _StockProps     =   77
@@ -1410,13 +1655,13 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          Top             =   1320
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   656
          _StockProps     =   79
          BackColor       =   -2147483633
          Appearance      =   16
-         Picture         =   "frmCajas_CargaSaldosFavor.frx":469B
+         Picture         =   "frmCajas_CargaSaldosFavor.frx":47B7
       End
       Begin XtremeSuiteControls.PushButton btnArchivo 
          Height          =   375
@@ -1426,13 +1671,13 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          Top             =   1320
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   656
          _StockProps     =   79
          BackColor       =   -2147483633
          Appearance      =   16
-         Picture         =   "frmCajas_CargaSaldosFavor.frx":4D9B
+         Picture         =   "frmCajas_CargaSaldosFavor.frx":4EB7
       End
       Begin XtremeSuiteControls.PushButton btnArchivo 
          Height          =   375
@@ -1442,13 +1687,315 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          Top             =   1320
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   656
          _StockProps     =   79
          BackColor       =   -2147483633
          Appearance      =   16
-         Picture         =   "frmCajas_CargaSaldosFavor.frx":54B4
+         Picture         =   "frmCajas_CargaSaldosFavor.frx":55D0
+      End
+      Begin XtremeSuiteControls.FlatEdit FlatEdit1 
+         Height          =   315
+         Left            =   5280
+         TabIndex        =   82
+         Top             =   840
+         Width           =   2175
+         _Version        =   1572864
+         _ExtentX        =   3836
+         _ExtentY        =   556
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtMnt_Inicio 
+         Height          =   315
+         Left            =   8760
+         TabIndex        =   85
+         Top             =   840
+         Width           =   1815
+         _Version        =   1572864
+         _ExtentX        =   3201
+         _ExtentY        =   556
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Text            =   "0"
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtMnt_Hasta 
+         Height          =   315
+         Left            =   10560
+         TabIndex        =   86
+         Top             =   840
+         Width           =   1815
+         _Version        =   1572864
+         _ExtentX        =   3201
+         _ExtentY        =   556
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Text            =   "0"
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.CheckBox chkI_Recursos 
+         Height          =   375
+         Left            =   -66040
+         TabIndex        =   87
+         Top             =   1200
+         Visible         =   0   'False
+         Width           =   1935
+         _Version        =   1572864
+         _ExtentX        =   3413
+         _ExtentY        =   661
+         _StockProps     =   79
+         Caption         =   "Casos con Identificación de Recursos"
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   7.5
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+         UseVisualStyle  =   -1  'True
+         Appearance      =   16
+         Alignment       =   1
+      End
+      Begin XtremeSuiteControls.ComboBox cboSC_EntidadPagadora 
+         Height          =   330
+         Left            =   -56920
+         TabIndex        =   88
+         Top             =   480
+         Visible         =   0   'False
+         Width           =   2895
+         _Version        =   1572864
+         _ExtentX        =   5106
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   1973790
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Style           =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+         Text            =   "ComboBox1"
+      End
+      Begin XtremeSuiteControls.ComboBox cboSC_OrigenRecursos 
+         Height          =   330
+         Left            =   -56920
+         TabIndex        =   90
+         Top             =   840
+         Visible         =   0   'False
+         Width           =   2895
+         _Version        =   1572864
+         _ExtentX        =   5106
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   1973790
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Style           =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+         Text            =   "ComboBox1"
+      End
+      Begin XtremeSuiteControls.FlatEdit txtSC_Mnt_Inicio 
+         Height          =   315
+         Left            =   -56920
+         TabIndex        =   94
+         Top             =   1200
+         Visible         =   0   'False
+         Width           =   1455
+         _Version        =   1572864
+         _ExtentX        =   2566
+         _ExtentY        =   556
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Text            =   "0"
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtSC_Mnt_Hasta 
+         Height          =   315
+         Left            =   -55480
+         TabIndex        =   95
+         Top             =   1200
+         Visible         =   0   'False
+         Width           =   1455
+         _Version        =   1572864
+         _ExtentX        =   2566
+         _ExtentY        =   556
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Text            =   "0"
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin VB.Label Label2 
+         Caption         =   "Montos.: "
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   12
+         Left            =   -58480
+         TabIndex        =   96
+         Top             =   1200
+         Visible         =   0   'False
+         Width           =   1335
+      End
+      Begin VB.Label Label2 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Origen Recursos:"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   11
+         Left            =   -58480
+         TabIndex        =   91
+         Top             =   840
+         Visible         =   0   'False
+         Width           =   1695
+      End
+      Begin VB.Label Label2 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Entidad Pagadora:"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   10
+         Left            =   -58480
+         TabIndex        =   89
+         Top             =   480
+         Visible         =   0   'False
+         Width           =   1695
+      End
+      Begin VB.Label Label2 
+         Caption         =   "Montos.: "
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   9
+         Left            =   7800
+         TabIndex        =   84
+         Top             =   840
+         Width           =   1335
+      End
+      Begin VB.Label Label2 
+         Caption         =   "Cédula Origen.: "
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   8
+         Left            =   3840
+         TabIndex        =   83
+         Top             =   840
+         Width           =   1575
       End
       Begin VB.Label Label1 
          BackStyle       =   0  'Transparent
@@ -1523,10 +2070,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          EndProperty
          Height          =   255
          Index           =   6
-         Left            =   -69880
+         Left            =   120
          TabIndex        =   29
          Top             =   480
-         Visible         =   0   'False
          Width           =   975
       End
       Begin VB.Label Label2 
@@ -1542,10 +2088,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          EndProperty
          Height          =   255
          Index           =   7
-         Left            =   -69880
+         Left            =   120
          TabIndex        =   28
          Top             =   840
-         Visible         =   0   'False
          Width           =   975
       End
       Begin VB.Label Label2 
@@ -1562,10 +2107,9 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          EndProperty
          Height          =   255
          Index           =   16
-         Left            =   -66160
+         Left            =   3840
          TabIndex        =   27
          Top             =   480
-         Visible         =   0   'False
          Width           =   975
       End
       Begin VB.Label Label2 
@@ -1582,9 +2126,10 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          EndProperty
          Height          =   255
          Index           =   0
-         Left            =   120
+         Left            =   -69880
          TabIndex        =   20
          Top             =   480
+         Visible         =   0   'False
          Width           =   975
       End
       Begin VB.Label Label2 
@@ -1601,9 +2146,10 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          EndProperty
          Height          =   255
          Index           =   1
-         Left            =   120
+         Left            =   -69880
          TabIndex        =   19
          Top             =   840
+         Visible         =   0   'False
          Width           =   975
       End
       Begin VB.Label Label2 
@@ -1621,9 +2167,10 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          EndProperty
          Height          =   255
          Index           =   2
-         Left            =   3840
+         Left            =   -66160
          TabIndex        =   18
          Top             =   480
+         Visible         =   0   'False
          Width           =   1335
       End
       Begin VB.Label Label2 
@@ -1641,12 +2188,14 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          EndProperty
          Height          =   255
          Index           =   3
-         Left            =   4080
+         Left            =   -65920
          TabIndex        =   17
          Top             =   840
+         Visible         =   0   'False
          Width           =   1095
       End
       Begin VB.Label Label2 
+         Alignment       =   1  'Right Justify
          BackStyle       =   0  'Transparent
          Caption         =   "Tipo Doc.:"
          BeginProperty Font 
@@ -1660,12 +2209,14 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          EndProperty
          Height          =   255
          Index           =   4
-         Left            =   7680
+         Left            =   -62320
          TabIndex        =   16
          Top             =   480
+         Visible         =   0   'False
          Width           =   975
       End
       Begin VB.Label Label2 
+         Alignment       =   1  'Right Justify
          BackStyle       =   0  'Transparent
          Caption         =   "No. Doc.:"
          BeginProperty Font 
@@ -1679,12 +2230,14 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          EndProperty
          Height          =   255
          Index           =   5
-         Left            =   7680
+         Left            =   -62320
          TabIndex        =   15
          Top             =   840
+         Visible         =   0   'False
          Width           =   975
       End
       Begin VB.Label Label2 
+         Alignment       =   1  'Right Justify
          BackStyle       =   0  'Transparent
          Caption         =   "Tipo Liq.:"
          BeginProperty Font 
@@ -1698,9 +2251,10 @@ Begin VB.Form frmCajas_CargaSaldosFavor
          EndProperty
          Height          =   255
          Index           =   18
-         Left            =   7680
+         Left            =   -62320
          TabIndex        =   14
          Top             =   1200
+         Visible         =   0   'False
          Width           =   975
       End
    End
@@ -1708,11 +2262,11 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       Height          =   150
       Left            =   120
       TabIndex        =   1
-      Top             =   1320
+      Top             =   1440
       Visible         =   0   'False
-      Width           =   11895
-      _Version        =   1441793
-      _ExtentX        =   20981
+      Width           =   15015
+      _Version        =   1572864
+      _ExtentX        =   26485
       _ExtentY        =   265
       _StockProps     =   93
       Appearance      =   17
@@ -1724,7 +2278,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       TabIndex        =   39
       Top             =   960
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   661
       _StockProps     =   79
@@ -1741,7 +2295,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       UseVisualStyle  =   -1  'True
       TextAlignment   =   1
       Appearance      =   17
-      Picture         =   "frmCajas_CargaSaldosFavor.frx":5BCD
+      Picture         =   "frmCajas_CargaSaldosFavor.frx":5CE9
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnAccion 
@@ -1751,7 +2305,7 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       TabIndex        =   40
       Top             =   960
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   661
       _StockProps     =   79
@@ -1768,7 +2322,61 @@ Begin VB.Form frmCajas_CargaSaldosFavor
       UseVisualStyle  =   -1  'True
       TextAlignment   =   1
       Appearance      =   17
-      Picture         =   "frmCajas_CargaSaldosFavor.frx":649E
+      Picture         =   "frmCajas_CargaSaldosFavor.frx":65BA
+      ImageAlignment  =   4
+   End
+   Begin XtremeSuiteControls.PushButton btnAccion 
+      Height          =   375
+      Index           =   3
+      Left            =   3960
+      TabIndex        =   97
+      Top             =   960
+      Width           =   2655
+      _Version        =   1572864
+      _ExtentX        =   4683
+      _ExtentY        =   661
+      _StockProps     =   79
+      Caption         =   "Reenvío de Correo a Cobros"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      TextAlignment   =   1
+      Appearance      =   17
+      Picture         =   "frmCajas_CargaSaldosFavor.frx":6CAD
+      ImageAlignment  =   4
+   End
+   Begin XtremeSuiteControls.PushButton btnAccion 
+      Height          =   375
+      Index           =   4
+      Left            =   6720
+      TabIndex        =   99
+      Top             =   960
+      Width           =   1335
+      _Version        =   1572864
+      _ExtentX        =   2355
+      _ExtentY        =   661
+      _StockProps     =   79
+      Caption         =   "Identificar"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      TextAlignment   =   1
+      Appearance      =   17
+      Picture         =   "frmCajas_CargaSaldosFavor.frx":6E18
       ImageAlignment  =   4
    End
    Begin VB.Label Label1 
@@ -1808,7 +2416,91 @@ Attribute VB_Exposed = False
 Option Explicit
 
 Dim rs As New ADODB.Recordset, strSQL As String
+Dim itmX As ListViewItem
 Dim vPaso As Boolean
+
+Private Sub sbIdentifica_Lista()
+
+On Error GoTo vError
+
+Dim i As Long, curTotal As Currency
+Dim pDepositoId As Long, pTesoreriaId As Long, pDocumento As String, pMonto As Currency, pFecha As Date, pDescripcion As String, pCuenta As String
+
+If vPaso Then Exit Sub
+
+txtId_Cedula.Text = GLOBALES.gTag
+txtId_Nombre.Text = GLOBALES.gTag2
+
+lsw.ListItems.Clear
+curTotal = 0
+
+With lsw.ColumnHeaders
+    .Clear
+    .Add , , "Id Deposito", 1200
+    .Add , , "Id Tesoreria", 1200
+    .Add , , "Documento", 1800
+    .Add , , "Monto", 1800, vbRightJustify
+    .Add , , "Fecha", 1200, vbCenter
+    .Add , , "Descripción", 2200
+    .Add , , "Cuenta", 2200
+End With
+
+With vGridId
+    
+For i = 1 To .MaxRows
+    .Row = i
+    .Col = 1
+    If .Value = vbChecked Then
+        .Col = 2
+        pDepositoId = .Text
+        .Col = 3
+        pTesoreriaId = IIf(IsNumeric(.Text), .Text, 0)
+        .Col = 4
+        pCuenta = .Text
+        
+        .Col = 6
+        pDocumento = .Text
+        .Col = 7
+        pFecha = .Text
+        .Col = 8
+        pMonto = .Text
+        .Col = 9
+        pDescripcion = .Text
+        
+        curTotal = curTotal + pMonto
+        
+        Set itmX = lsw.ListItems.Add(, , pDepositoId)
+            itmX.SubItems(1) = pTesoreriaId
+            itmX.SubItems(2) = pDocumento
+            itmX.SubItems(3) = Format(pMonto, "Standard")
+            itmX.SubItems(4) = Format(pFecha, "yyyy-mm-dd")
+            itmX.SubItems(5) = pDescripcion
+            itmX.SubItems(6) = pCuenta
+            
+            .Col = 4
+            itmX.Tag = .CellTag 'Id Banco
+    End If
+    
+Next i
+
+End With
+
+txtId_Monto.Text = Format(curTotal, "Standard")
+
+If lsw.ListItems.Count = 0 Then
+    MsgBox "No se ha seleccionado ningún caso!", vbExclamation
+    Exit Sub
+End If
+
+fraIdentifica.Visible = True
+
+
+Exit Sub
+
+vError:
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
 
 Private Sub btnAccion_Click(Index As Integer)
 Select Case Index
@@ -1838,7 +2530,27 @@ Select Case Index
     
   Case 2 'Configura
        Call sbFormsCall("frmCajas_SaldosFavorLiquidaConfigura", 1, , , False, Me)
+       
+       
+  Case 3 'Notifica Correo de Saldo a Favor Identificado!
+    Call sbNotificaSaldoaFavor
+
+  Case 4 'Identificar
+    Call sbIdentifica_Lista
+  
 End Select
+
+End Sub
+
+Private Sub btnAdjuntos_Click()
+If txtId_Cedula.Text <> "" Then
+ gGA.Modulo = "CAJ"
+ gGA.Llave_01 = txtId_Cedula.Text
+ gGA.Llave_02 = ""
+ gGA.Llave_03 = ""
+ 
+ Call sbFormsCall("frmGA_Documentos", vbModal, , , False, Me, True)
+End If
 
 End Sub
 
@@ -1881,20 +2593,40 @@ If txtId_Nombre.Text = "" Then
     Exit Sub
 End If
 
+If lsw.ListItems.Count = 0 Then
+    MsgBox "No se ha seleccionado ningún caso!", vbExclamation
+    Exit Sub
+End If
+
 Me.MousePointer = vbHourglass
 
-strSQL = "exec spCajas_Identifica_TES_Depositos " & txtId_Banco.Tag & ",'" & txtId_NumDocId.Text & "','" & txtId_Cedula.Text _
-       & "','" & txtId_Nombre.Text & "','" & glogon.Usuario & "'"
-Call ConectionExecute(strSQL)
+Dim i As Long
+Dim pDepositoId As Long, pBancoId As Long, pDocumento As String
+
+With lsw.ListItems
+    For i = 1 To .Count
+      pDepositoId = .Item(i).Text
+      pBancoId = .Item(i).Tag
+      pDocumento = .Item(i).SubItems(2)
+        
+        strSQL = "exec spCajas_Identifica_TES_Depositos " & pBancoId & ",'" & pDocumento & "','" & txtId_Cedula.Text _
+               & "', '" & txtId_Nombre.Text & "', '" & glogon.Usuario & "', '" & cboPagadores.ItemData(cboPagadores.ListIndex) _
+               & "', '" & cboOrigenRecursos.ItemData(cboOrigenRecursos.ListIndex) & "', " & pDepositoId
+        Call ConectionExecute(strSQL)
+
+    Next i
+    
+End With
 
 Me.MousePointer = vbDefault
 
-vGridId.DeleteRows txtId_Cedula.Tag, 1
-vGridId.MaxRows = vGridId.MaxRows - 1
-
 fraIdentifica.Visible = False
 
-MsgBox "caso identificado correctamente!", vbInformation
+MsgBox "caso identificado correctamente, notificaciones realizadas!", vbInformation
+
+vPaso = True
+    Call sbConsultaDPTramite
+vPaso = False
 
 Exit Sub
 
@@ -1990,13 +2722,14 @@ dtpRegistroCorte.Enabled = dtpRegistroInicio.Enabled
   
 End Sub
 
+
 Private Sub chkSA_Marcas_Click()
 Dim i As Long
 
 
 For i = 1 To vGrid.MaxRows
    vGrid.Row = 1
-   vGrid.col = 1
+   vGrid.Col = 1
    vGrid.Value = chkSA_Marcas.Value
 Next i
 
@@ -2017,9 +2750,6 @@ vPaso = True
 
 
 Set imgBanner.Picture = frmContenedor.imgBanner_01.Picture
-
-Me.Width = 12630
-Me.Height = 9465
 
 cboBanco.Clear
 
@@ -2046,22 +2776,48 @@ strSQL = "select  rtrim(COD_FORMA_PAGO) as 'IdX', rtrim(DESCRIPCION) as 'itmX' f
        & " WHERE ACTIVA = 1 AND TIPO IN('B','T')  ORDER BY COD_FORMA_PAGO"
 Call sbCbo_Llena_New(cboCargaFormaPago, strSQL, False, True)
 
+
+'Identificacion de Recursos
+strSQL = "select COD_ENTIDAD_PAGO as 'IdX', DESCRIPCION AS 'ItmX' from SIF_ENTIDADES_PAGO" _
+       & " WHERE ACTIVA = 1 ORDER BY COD_ENTIDAD_PAGO"
+Call sbCbo_Llena_New(cboPagadores, strSQL, False, True)
+
+strSQL = "select COD_ORIGEN_RECURSOS as 'IdX', DESCRIPCION AS 'ItmX' from SIF_ORIGEN_RECURSOS" _
+       & "  WHERE ACTIVA = 1 ORDER BY COD_ORIGEN_RECURSOS"
+Call sbCbo_Llena_New(cboOrigenRecursos, strSQL, False, True)
+
+
+'Consulta de Saldos en Cajas
+strSQL = "select COD_ENTIDAD_PAGO as 'IdX', DESCRIPCION AS 'ItmX' from SIF_ENTIDADES_PAGO" _
+       & " WHERE ACTIVA = 1 ORDER BY DESCRIPCION"
+Call sbCbo_Llena_New(cboSC_EntidadPagadora, strSQL, True, True)
+
+strSQL = "select COD_ORIGEN_RECURSOS as 'IdX', DESCRIPCION AS 'ItmX' from SIF_ORIGEN_RECURSOS" _
+       & "  WHERE ACTIVA = 1 ORDER BY DESCRIPCION"
+Call sbCbo_Llena_New(cboSC_OrigenRecursos, strSQL, True, True)
+
+
 vPaso = False
 
 Call cboCargaFormaPago_Click
 
 
 vPaso = True
-    vGrid.MaxCols = 20
+    vGrid.MaxCols = 23
     vGrid.MaxRows = 0
     
-    vGridId.MaxCols = 10
+    vGridId.MaxCols = 17
     vGridId.MaxRows = 0
 
     vGridCarga.MaxRows = 0
 
 vPaso = False
 
+txtMnt_Inicio.Text = Format(0, "Standard")
+txtMnt_Hasta.Text = Format(999999999999.99, "Standard")
+
+txtSC_Mnt_Inicio.Text = Format(0, "Standard")
+txtSC_Mnt_Hasta.Text = Format(999999999999.99, "Standard")
 
 
 dtpId_Inicio.Value = fxFechaServidor
@@ -2127,12 +2883,12 @@ With vGrid
  
  For i = 1 To .MaxRows
     .Row = i
-    .col = 1
+    .Col = 1
     If .Value = vbChecked Then
-       .col = 3
+       .Col = 3
        vIdSaldoFavor = .Text
        
-       .col = 9
+       .Col = 9
        vMonto = CCur(.Text)
        
        If vMonto > 0 Then
@@ -2143,9 +2899,9 @@ With vGrid
             Case "F" 'Fondos
                      strSQL = "exec spCajas_SaldoFavorLiquidacionFondos " & vIdSaldoFavor & ",'" & glogon.Usuario & "'"
             Case "E" 'Excluye
-                     strSQL = "exec spCajas_SaldoFavorLiquidacionExcluye " & vIdSaldoFavor & ",'" & glogon.Usuario & "'"
+                     strSQL = "exec spCajas_SaldoFavorLiquidacionExclusion " & vIdSaldoFavor & ",'" & glogon.Usuario & "'"
             Case "C" 'Cajas
-                     strSQL = "exec spCajas_SaldoFavorLiquidacionCajas " & vIdSaldoFavor & ",'" & glogon.Usuario & "'"
+                     strSQL = "exec spCajas_SaldoFavorLiquidacionRC_Efectivo " & vIdSaldoFavor & ",'" & glogon.Usuario & "'"
             Case Else
                      strSQL = "exec spCajas_SaldoFavorLiquidacionTesoreria " & vIdSaldoFavor & ",'" & glogon.Usuario & "'"
         End Select
@@ -2175,10 +2931,61 @@ Exit Sub
 vError:
  Me.MousePointer = vbDefault
  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+ 
+ProgressBarC.Visible = False
+Call sbConsultaSaldosAfavor
+
 End Sub
 
 
+Private Sub sbNotificaSaldoaFavor()
+Dim i As Long, vIdSaldoFavor As Long
 
+Dim iCasos As Long
+
+Me.MousePointer = vbHourglass
+
+On Error GoTo vError
+
+iCasos = 0
+ProgressBarC.Visible = True
+
+With vGrid
+ ProgressBarC.Max = .MaxRows
+ 
+ For i = 1 To .MaxRows
+    .Row = i
+    .Col = 1
+    If .Value = vbChecked Then
+       .Col = 3
+       vIdSaldoFavor = .Text
+       'exec spCajasNotificaDepositos @Banco, @Documento, @Linea
+        strSQL = "exec spCajasNotificaDepositos Null, Null, " & vIdSaldoFavor
+        Call ConectionExecute(strSQL)
+        
+        iCasos = iCasos + 1
+    
+    End If
+    ProgressBarC.Value = i
+ Next i
+End With
+Me.MousePointer = vbDefault
+
+If iCasos > 0 Then
+    MsgBox "Se han notificado a Cobros los casos marcados..!", vbInformation
+Else
+    MsgBox "No se procesó ningún caso! Verifique que existan casos seleccionados!", vbExclamation
+End If
+
+
+ProgressBarC.Visible = False
+
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+End Sub
 
 Private Sub sbConsultaSaldosAfavor()
 Dim i As Long
@@ -2187,8 +2994,8 @@ On Error GoTo vError
 
 Me.MousePointer = vbHourglass
 
-strSQL = "select Sf.*, isnull(Soc.Nombre,'') as 'Nombre'" _
-       & " From CAJAS_SALDO_FAVOR Sf left join Socios Soc on Sf.cedula = Soc.Cedula"
+strSQL = "select *" _
+       & " From vCajas_Saldos_Favor"
 
 If chkSF_Saldos.Value = vbChecked Then
     strSQL = strSQL & " Where Saldo <= 0"
@@ -2198,32 +3005,46 @@ End If
 
 
 If chkFechas.Value = vbUnchecked Then
-    strSQL = strSQL & " and Sf.registro_fecha between '" & Format(dtpRegistroInicio.Value, "yyyy/mm/dd") & " 00:00:00' and '" _
+    strSQL = strSQL & " and registro_fecha between '" & Format(dtpRegistroInicio.Value, "yyyy/mm/dd") & " 00:00:00' and '" _
        & Format(dtpRegistroCorte.Value, "yyyy/mm/dd") & " 23:59:59'"
 End If
 
 If Len(Trim(txtCedula.Text)) > 0 Then
-    strSQL = strSQL & " and Sf.Cedula like '%" & txtCedula.Text & "%'"
+    strSQL = strSQL & " and Cedula like '%" & txtCedula.Text & "%'"
 End If
 
 If Len(Trim(txtNombre.Text)) > 0 Then
-    strSQL = strSQL & " and isnull(Soc.Nombre,'') like '%" & txtNombre.Text & "%'"
+    strSQL = strSQL & " and isnull(Nombre,'') like '%" & txtNombre.Text & "%'"
 End If
 
 If Trim(cboTipoSaldo.Text) <> "TODOS" Then
-    strSQL = strSQL & " and Sf.Doc_Tipo = '" & cboTipoSaldo.ItemData(cboTipoSaldo.ListIndex) & "'"
+    strSQL = strSQL & " and Doc_Tipo = '" & cboTipoSaldo.ItemData(cboTipoSaldo.ListIndex) & "'"
 End If
 
 If Len(Trim(txtNumDoc.Text)) > 0 Then
-    strSQL = strSQL & " and Sf.Doc_Numero like '%" & txtNumDoc.Text & "%'"
+    strSQL = strSQL & " and Doc_Numero like '%" & txtNumDoc.Text & "%'"
 End If
 
 If Len(Trim(txtUsuario.Text)) > 0 Then
-    strSQL = strSQL & " and Sf.Registro_Usuario like '%" & txtUsuario.Text & "%'"
+    strSQL = strSQL & " and Registro_Usuario like '%" & txtUsuario.Text & "%'"
 End If
 
+If Trim(cboSC_EntidadPagadora.Text) <> "TODOS" Then
+    strSQL = strSQL & " and COD_ENTIDAD_PAGO = '" & cboSC_EntidadPagadora.ItemData(cboSC_EntidadPagadora.ListIndex) & "'"
+End If
 
-rs.CursorLocation = adUseServer
+If Trim(cboSC_OrigenRecursos.Text) <> "TODOS" Then
+    strSQL = strSQL & " and COD_ORIGEN_RECURSOS = '" & cboSC_OrigenRecursos.ItemData(cboSC_OrigenRecursos.ListIndex) & "'"
+End If
+
+If chkI_Recursos.Value = xtpChecked Then
+    strSQL = strSQL & " and COD_ORIGEN_RECURSOS is not null"
+End If
+
+strSQL = strSQL & " and Monto between " & CCur(txtSC_Mnt_Inicio.Text) & " and " & CCur(txtSC_Mnt_Hasta.Text)
+
+strSQL = strSQL & " ORDER BY REGISTRO_FECHA DESC"
+
 Call OpenRecordSet(rs, strSQL)
 
 vGrid.MaxRows = 0
@@ -2233,11 +3054,11 @@ vGrid.MaxRows = 0
     vGrid.MaxRows = vGrid.MaxRows + 1
     vGrid.Row = vGrid.MaxRows
          
-    vGrid.col = 1
+    vGrid.Col = 1
     vGrid.Value = chkSA_Marcas.Value
     
     For i = 3 To vGrid.MaxCols
-      vGrid.col = i
+      vGrid.Col = i
       Select Case i
          Case 3 'Linea
             vGrid.Text = CStr(rs!Linea)
@@ -2259,7 +3080,7 @@ vGrid.MaxRows = 0
          
          
          Case 11 'Registro Fecha
-            vGrid.Text = rs!Registro_Fecha & ""
+            vGrid.Text = rs!REGISTRO_FECHA_FORMAT & ""
          Case 12 'Registro Usuario
             vGrid.Text = rs!Registro_Usuario & ""
       
@@ -2280,6 +3101,15 @@ vGrid.MaxRows = 0
             vGrid.Text = rs!LIQ_TIPO_DOC & ""
          Case 20 'Liquida nO. Comprobante
             vGrid.Text = rs!LIQ_NUM_DOC & ""
+      
+         Case 21 'Cuenta Bancaria Relacionada
+            vGrid.Text = rs!BancoDesc & ""
+            
+         Case 22 'Entidad Pagadora
+            vGrid.Text = rs!EntidadPagoDesc & ""
+      
+         Case 23 'Origen de Recursos
+            vGrid.Text = rs!OrigenRecursoDesc & ""
       
       
       End Select
@@ -2311,52 +3141,74 @@ End If
 
 Me.MousePointer = vbHourglass
 
-strSQL = "select Tra.*, Bn.Descripcion as 'BancoDesc'" _
-        & " From TES_DEPOSITOS_TRAMITE Tra inner join Tes_Bancos Bn on Tra.id_banco = Bn.id_Banco" _
-        & " Where Tra.ID_REQUERIDA = 1 And Tra.IDENTIFICADO = 0" _
+strSQL = "select *" _
+        & " From vTes_Depositos_Tramite_Identifica" _
+        & " Where ID_REQUERIDA = 1 And IDENTIFICADO = 0" _
         & " and  fecha between '" & Format(dtpId_Inicio.Value, "yyyy/mm/dd") & " 00:00:00' and '" _
         & Format(dtpId_Corte.Value, "yyyy/mm/dd") & " 23:59:59'"
 
 
 If Len(Trim(txtId_NumDoc.Text)) > 0 Then
-    strSQL = strSQL & " and Tra.Documento like '%" & txtId_NumDoc.Text & "%'"
+    strSQL = strSQL & " and Documento like '%" & txtId_NumDoc.Text & "%'"
 End If
 
-strSQL = strSQL & " and Tra.Id_Banco = " & cboBanco.ItemData(cboBanco.ListIndex)
+strSQL = strSQL & " and Id_Banco = " & cboBanco.ItemData(cboBanco.ListIndex)
+
+strSQL = strSQL & " and Monto between " & CCur(txtMnt_Inicio.Text) & " and " & CCur(txtMnt_Hasta.Text)
+
 
 Call OpenRecordSet(rs, strSQL)
 
 vGridId.MaxRows = 0
 
-
+'DP_TRAMITE_ID
   Do While Not rs.EOF
     vGridId.MaxRows = vGridId.MaxRows + 1
     vGridId.Row = vGridId.MaxRows
          
-    vGridId.col = 1
+    vGridId.Col = 1
 
     For i = 2 To vGridId.MaxCols
-      vGridId.col = i
+      vGridId.Col = i
       Select Case i
-         Case 2 'Id
+         Case 2 'Id Tramite
+            vGridId.Text = CStr(rs!DP_TRAMITE_ID)
+         
+         Case 3 'Id
             vGridId.Text = CStr(rs!NSolicitud)
-         Case 3 'Cuenta
+         Case 4 'Cuenta
             vGridId.Text = rs!BancoDesc & ""
             vGridId.CellTag = rs!Id_Banco
-         Case 4 ' Tipo
+         Case 5 ' Tipo
             vGridId.Text = "DP"
-         Case 5 'Num Documento
+         Case 6 'Num Documento
             vGridId.Text = rs!Documento
-         Case 6 'Fecha del Documento
+         Case 7 'Fecha del Documento
             vGridId.Text = Format(rs!fecha, "dd/mm/yyyy")
-         Case 7 'Monto
+         Case 8 'Monto
             vGridId.Text = Format(rs!Monto, "Standard")
-         Case 8 'Descripcion
+         Case 9 'Descripcion
             vGridId.Text = rs!Descripcion
-         Case 9 'Registro Fecha
+         Case 10 'Registro Fecha
             vGridId.Text = rs!Registro_Fecha & ""
-         Case 10 'Registro Usuario
+         Case 11 'Registro Usuario
             vGridId.Text = rs!Registro_Usuario & ""
+            
+         'Datos Sinpe
+         Case 12
+            vGridId.Text = rs!Id_Servicio & ""
+         Case 13
+            vGridId.Text = rs!Cuenta_Iban_Origen & ""
+         Case 14
+            vGridId.Text = rs!CEDULA_ORIGEN & ""
+         Case 15
+            vGridId.Text = rs!Nombre_Origen & ""
+         Case 16
+            vGridId.Text = rs!Telefono_Origen & ""
+         Case 17
+            vGridId.Text = rs!Banco_Origen & ""
+
+            
       
       End Select
     Next i
@@ -2575,29 +3427,29 @@ With vGridCarga
             .MaxRows = .MaxRows + 1
             .Row = .MaxRows
             
-            .col = 1
+            .Col = 1
             .Value = vbChecked
             
-            .col = 2
+            .Col = 2
             .Value = vExiste
             
-            .col = 3
+            .Col = 3
             .Text = vDocumento
-            .col = 4
+            .Col = 4
             .Text = CStr(vMonto)
-            .col = 5
+            .Col = 5
             .Text = vFecha
-            .col = 6
+            .Col = 6
             .Text = vDescripcion
-            .col = 7
+            .Col = 7
             .Text = vInconsistencia
-            .col = 8
+            .Col = 8
             .Text = vCedula
-            .col = 9
+            .Col = 9
             .Text = vNombre
             
             If vNombre = "" Then
-               .col = 7
+               .Col = 7
                .Text = "No existe registro de la Persona"
             End If
             
@@ -2666,23 +3518,23 @@ With vGridCarga
     For i = 1 To .MaxRows
 
        .Row = i
-       .col = 1
+       .Col = 1
        vRequiereId = .Value
-       .col = 2
+       .Col = 2
        vExiste = .Value
-       .col = 3
+       .Col = 3
        vDocumento = .Text
-       .col = 4
+       .Col = 4
        vMonto = CCur(.Text)
-       .col = 5
+       .Col = 5
        vFecha = Format(.Text, "yyyy/mm/dd")
-       .col = 6
+       .Col = 6
        vDescripcion = .Text
-       .col = 7
+       .Col = 7
        vInconsistencia = .Text
-       .col = 8
+       .Col = 8
        vCedula = .Text
-       .col = 9
+       .Col = 9
        vNombre = .Text
        
        
@@ -2754,11 +3606,17 @@ End Sub
 
 Private Sub tcMain_SelectedChanged(ByVal Item As XtremeSuiteControls.ITabControlItem)
 
+btnAccion(3).Visible = False
+btnAccion(4).Visible = False
+
 Select Case Item.Index
     Case 0
+        btnAccion(3).Visible = True
     Case 1
-            fraIdentifica.Visible = False
-    Case 2
+        btnAccion(4).Visible = True
+            
+        fraIdentifica.Visible = False
+     Case 2
 End Select
 
 End Sub
@@ -2797,45 +3655,65 @@ End If
 
 End Sub
 
-Private Sub vGrid_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+
+
+Private Sub txtMnt_Hasta_GotFocus()
+On Error GoTo vError
+  txtMnt_Hasta.Text = CCur(txtMnt_Hasta.Text)
+vError:
+End Sub
+
+Private Sub txtMnt_Hasta_LostFocus()
+On Error GoTo vError
+  txtMnt_Hasta.Text = Format(CCur(txtMnt_Hasta.Text), "Standard")
+vError:
+End Sub
+
+Private Sub txtMnt_Inicio_GotFocus()
+On Error GoTo vError
+  txtMnt_Inicio.Text = CCur(txtMnt_Inicio.Text)
+vError:
+End Sub
+
+Private Sub txtMnt_Inicio_LostFocus()
+On Error GoTo vError
+  txtMnt_Inicio.Text = Format(CCur(txtMnt_Inicio.Text), "Standard")
+vError:
+End Sub
+
+
+Private Sub txtSC_Mnt_Hasta_GotFocus()
+On Error GoTo vError
+  txtSC_Mnt_Hasta.Text = CCur(txtSC_Mnt_Hasta.Text)
+vError:
+End Sub
+
+Private Sub txtSC_Mnt_Hasta_LostFocus()
+On Error GoTo vError
+  txtSC_Mnt_Hasta.Text = Format(CCur(txtSC_Mnt_Hasta.Text), "Standard")
+vError:
+End Sub
+
+Private Sub txtSC_Mnt_Inicio_GotFocus()
+On Error GoTo vError
+  txtSC_Mnt_Inicio.Text = CCur(txtSC_Mnt_Inicio.Text)
+vError:
+End Sub
+
+Private Sub txtSC_Mnt_Inicio_LostFocus()
+On Error GoTo vError
+  txtSC_Mnt_Inicio.Text = Format(CCur(txtSC_Mnt_Inicio.Text), "Standard")
+vError:
+End Sub
+
+Private Sub vGrid_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
  
-If vPaso Or col = 1 Then Exit Sub
+If vPaso Or Col = 1 Then Exit Sub
 
  vGrid.Row = Row
- vGrid.col = 3
+ vGrid.Col = 3
 
   Call sbComprobanteSF(vGrid.Text)
   
 End Sub
 
-Private Sub vGridId_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
-
-If vPaso Then Exit Sub
-
-txtId_Cedula.Text = ""
-txtId_Nombre.Text = ""
-
-txtId_Cedula.Tag = Row
-txtId_Nombre.Tag = col
-
-With vGridId
-    .Row = Row
-    .col = 2
-    txtId_NSolicitud = .Text
-    .col = 3
-    txtId_Banco.Text = .Text
-    txtId_Banco.Tag = .CellTag
-    
-    .col = 5
-    txtId_NumDocId.Text = .Text
-    .col = 6
-    txtId_Fecha.Text = .Text
-    .col = 7
-    txtId_Monto.Text = .Text
-    .col = 8
-    txtId_Descripcion.Text = .Text
-End With
-
-fraIdentifica.Visible = True
-
-End Sub

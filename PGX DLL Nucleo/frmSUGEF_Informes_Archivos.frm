@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmSUGEF_Informes_Archivos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -25,7 +25,7 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       Top             =   600
       Visible         =   0   'False
       Width           =   1695
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2990
       _ExtentY        =   661
       _StockProps     =   79
@@ -48,7 +48,7 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       Top             =   1080
       Visible         =   0   'False
       Width           =   11415
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   20135
       _ExtentY        =   238
       _StockProps     =   93
@@ -59,7 +59,7 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       TabIndex        =   1
       Top             =   1200
       Width           =   11415
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   20135
       _ExtentY        =   13150
       _StockProps     =   68
@@ -75,7 +75,6 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       Appearance      =   4
       Color           =   32
       ItemCount       =   2
-      SelectedItem    =   1
       Item(0).Caption =   "Cortes"
       Item(0).ControlCount=   6
       Item(0).Control(0)=   "lsw"
@@ -97,12 +96,11 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       Item(1).Control(8)=   "lblStatus"
       Begin XtremeSuiteControls.ListView lsw 
          Height          =   2775
-         Left            =   -70000
+         Left            =   0
          TabIndex        =   3
          Top             =   360
-         Visible         =   0   'False
          Width           =   11415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   20135
          _ExtentY        =   4895
          _StockProps     =   77
@@ -117,16 +115,17 @@ Begin VB.Form frmSUGEF_Informes_Archivos
          EndProperty
          View            =   3
          FullRowSelect   =   -1  'True
-         Appearance      =   17
+         Appearance      =   21
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.PushButton btnCorte_Add 
          Height          =   495
-         Left            =   3840
+         Left            =   -66160
          TabIndex        =   15
          Top             =   3600
+         Visible         =   0   'False
          Width           =   3615
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   6376
          _ExtentY        =   873
          _StockProps     =   79
@@ -147,12 +146,11 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       Begin XtremeSuiteControls.PushButton btnCorte 
          Height          =   375
          Index           =   0
-         Left            =   -63040
+         Left            =   6960
          TabIndex        =   5
          Top             =   3120
-         Visible         =   0   'False
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   661
          _StockProps     =   79
@@ -173,12 +171,11 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       Begin XtremeSuiteControls.PushButton btnCorte 
          Height          =   375
          Index           =   1
-         Left            =   -61480
+         Left            =   8520
          TabIndex        =   6
          Top             =   3120
-         Visible         =   0   'False
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   661
          _StockProps     =   79
@@ -199,12 +196,11 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       Begin XtremeSuiteControls.PushButton btnCorte 
          Height          =   375
          Index           =   2
-         Left            =   -59920
+         Left            =   10080
          TabIndex        =   7
          Top             =   3120
-         Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   661
          _StockProps     =   79
@@ -224,10 +220,9 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       End
       Begin FPSpreadADO.fpSpread vGrid 
          Height          =   3735
-         Left            =   -70000
+         Left            =   0
          TabIndex        =   8
          Top             =   3600
-         Visible         =   0   'False
          Width           =   11415
          _Version        =   524288
          _ExtentX        =   20135
@@ -253,11 +248,12 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       End
       Begin XtremeSuiteControls.DateTimePicker dtpCorte 
          Height          =   330
-         Left            =   1920
+         Left            =   -68080
          TabIndex        =   9
          Top             =   840
+         Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -275,11 +271,12 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       End
       Begin XtremeSuiteControls.DateTimePicker dtpRngInicio 
          Height          =   330
-         Left            =   1920
+         Left            =   -68080
          TabIndex        =   11
          Top             =   1440
+         Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -297,11 +294,12 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       End
       Begin XtremeSuiteControls.DateTimePicker dtpRngCorte 
          Height          =   330
-         Left            =   3240
+         Left            =   -66760
          TabIndex        =   12
          Top             =   1440
+         Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -319,11 +317,12 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       End
       Begin XtremeSuiteControls.FlatEdit txtDescripcion 
          Height          =   975
-         Left            =   1920
+         Left            =   -68080
          TabIndex        =   14
          Top             =   2040
+         Visible         =   0   'False
          Width           =   7335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12938
          _ExtentY        =   1720
          _StockProps     =   77
@@ -344,11 +343,12 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       End
       Begin XtremeSuiteControls.Label lblStatus 
          Height          =   735
-         Left            =   2520
+         Left            =   -67480
          TabIndex        =   16
          Top             =   4320
+         Visible         =   0   'False
          Width           =   6135
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10821
          _ExtentY        =   1296
          _StockProps     =   79
@@ -369,11 +369,12 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       Begin XtremeSuiteControls.Label Label1 
          Height          =   255
          Index           =   1
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   13
          Top             =   2040
+         Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -393,11 +394,12 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       Begin XtremeSuiteControls.Label Label1 
          Height          =   255
          Index           =   0
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   10
          Top             =   1440
+         Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -416,12 +418,11 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       End
       Begin XtremeShortcutBar.ShortcutCaption scCorte 
          Height          =   375
-         Left            =   -70000
+         Left            =   0
          TabIndex        =   4
          Top             =   3120
-         Visible         =   0   'False
          Width           =   11415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   20135
          _ExtentY        =   661
          _StockProps     =   14
@@ -438,11 +439,12 @@ Begin VB.Form frmSUGEF_Informes_Archivos
       End
       Begin XtremeSuiteControls.Label lblX 
          Height          =   255
-         Left            =   480
+         Left            =   -69520
          TabIndex        =   2
          Top             =   840
+         Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79

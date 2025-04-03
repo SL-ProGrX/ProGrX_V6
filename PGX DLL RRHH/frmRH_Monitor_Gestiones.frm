@@ -1,7 +1,7 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.Controls.v22.0.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.ShortcutBar.v22.0.0.ocx"
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "mscomctl.OCX"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Begin VB.Form frmRH_Monitor_Gestiones 
    Caption         =   "RRHH: Monitor de Gestiones (Permisos, Vacaciones, Incapacidades)"
    ClientHeight    =   6585
@@ -19,7 +19,7 @@ Begin VB.Form frmRH_Monitor_Gestiones
       TabIndex        =   0
       Top             =   2040
       Width           =   10332
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   18224
       _ExtentY        =   8064
       _StockProps     =   77
@@ -47,7 +47,7 @@ Begin VB.Form frmRH_Monitor_Gestiones
       Top             =   1560
       Visible         =   0   'False
       Width           =   1455
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   238
       _StockProps     =   93
@@ -133,7 +133,7 @@ Begin VB.Form frmRH_Monitor_Gestiones
       TabIndex        =   2
       Top             =   1200
       Width           =   1332
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   556
       _StockProps     =   68
@@ -155,7 +155,7 @@ Begin VB.Form frmRH_Monitor_Gestiones
       TabIndex        =   3
       Top             =   1200
       Width           =   1332
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   556
       _StockProps     =   68
@@ -177,7 +177,7 @@ Begin VB.Form frmRH_Monitor_Gestiones
       TabIndex        =   4
       Top             =   1200
       Width           =   2295
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   4048
       _ExtentY        =   582
       _StockProps     =   77
@@ -203,7 +203,7 @@ Begin VB.Form frmRH_Monitor_Gestiones
       TabIndex        =   7
       Top             =   1200
       Width           =   2292
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   4048
       _ExtentY        =   582
       _StockProps     =   77
@@ -229,7 +229,7 @@ Begin VB.Form frmRH_Monitor_Gestiones
       TabIndex        =   8
       Top             =   1800
       Width           =   204
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   353
       _ExtentY        =   353
       _StockProps     =   79
@@ -253,7 +253,7 @@ Begin VB.Form frmRH_Monitor_Gestiones
       TabIndex        =   10
       Top             =   1200
       Width           =   1452
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   582
       _StockProps     =   77
@@ -279,7 +279,7 @@ Begin VB.Form frmRH_Monitor_Gestiones
       TabIndex        =   9
       Top             =   1200
       Width           =   1212
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   444
       _StockProps     =   79
@@ -320,7 +320,7 @@ Begin VB.Form frmRH_Monitor_Gestiones
       TabIndex        =   5
       Top             =   1680
       Width           =   10332
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   18224
       _ExtentY        =   656
       _StockProps     =   14
@@ -478,7 +478,7 @@ strSQL = strSQL & "  and dbo.fxRH_Autorizador_Valida(Empleado_ID,'" & txtAutoriz
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
  Set itmX = lsw.ListItems.Add(, , rs!Boleta_Id)
-     itmX.SubItems(1) = rs!EMPLEADO_ID
+     itmX.SubItems(1) = rs!Empleado_ID
      itmX.SubItems(2) = rs!IDENTIFICACION
      itmX.SubItems(3) = rs!NOMBRE_COMPLETO
      itmX.SubItems(4) = rs!TipoDesc

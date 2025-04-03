@@ -1,20 +1,20 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.3#0"; "Codejock.Controls.v19.3.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.3#0"; "Codejock.ShortcutBar.v19.3.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmSIF_Emisores 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Entidades Emisoras"
-   ClientHeight    =   8016
-   ClientLeft      =   48
-   ClientTop       =   288
+   ClientHeight    =   8025
+   ClientLeft      =   45
+   ClientTop       =   285
    ClientWidth     =   8340
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   8016
+   ScaleHeight     =   8025
    ScaleWidth      =   8340
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
@@ -29,7 +29,7 @@ Begin VB.Form frmSIF_Emisores
       TabIndex        =   1
       Top             =   1320
       Width           =   8052
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   14203
       _ExtentY        =   11663
       _StockProps     =   68
@@ -56,7 +56,7 @@ Begin VB.Form frmSIF_Emisores
          TabIndex        =   2
          Top             =   3600
          Width           =   7812
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   13779
          _ExtentY        =   5101
          _StockProps     =   77
@@ -110,14 +110,14 @@ Begin VB.Form frmSIF_Emisores
          TabIndex        =   4
          Top             =   3240
          Width           =   7812
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   13779
          _ExtentY        =   656
          _StockProps     =   14
          Caption         =   "..."
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   9
+            Size            =   8.93
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -133,7 +133,7 @@ Begin VB.Form frmSIF_Emisores
       Caption         =   "Entidades Emisoras"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -274,15 +274,17 @@ End If
 
 
 If KeyCode = vbKeyDelete Then
-   'Aqui codigo de Borrado
-   vGrid.Row = vGrid.ActiveRow
-   vGrid.Col = 1
-   If Trim(vGrid.Text) <> "" Then
-    strSQL = "Delete sif_emisores where cod_emisor = '" & vGrid.Text & "'"
-    Call ConectionExecute(strSQL)
-   End If
-   vGrid.DeleteRows vGrid.ActiveRow, 1
-   vGrid.MaxRows = vGrid.MaxRows - 1
+     i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
+     If i = vbYes Then
+            vGrid.Row = vGrid.ActiveRow
+            vGrid.Col = 1
+            If Trim(vGrid.Text) <> "" Then
+             strSQL = "Delete sif_emisores where cod_emisor = '" & vGrid.Text & "'"
+             Call ConectionExecute(strSQL)
+            End If
+            vGrid.DeleteRows vGrid.ActiveRow, 1
+            vGrid.MaxRows = vGrid.MaxRows - 1
+    End If
 End If
 
 
@@ -383,9 +385,9 @@ lsw.ListItems.Clear
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
  Set itmX = lsw.ListItems.Add(, , rs!Codigo)
-     itmX.SubItems(1) = rs!descripcion
+     itmX.SubItems(1) = rs!DESCRIPCION
  
-  If Not IsNull(rs!Asignado) Then
+  If Not IsNull(rs!ASIGNADO) Then
      itmX.Checked = True
   End If
   rs.MoveNext

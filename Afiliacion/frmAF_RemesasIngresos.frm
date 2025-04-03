@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmAF_RemesasIngresos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -199,29 +199,17 @@ Begin VB.Form frmAF_RemesasIngresos
       TabPicture(1)   =   "frmAF_RemesasIngresos.frx":6E9F4
       Tab(1).ControlEnabled=   0   'False
       Tab(1).Control(0)=   "Label2(0)"
-      Tab(1).Control(0).Enabled=   0   'False
       Tab(1).Control(1)=   "Label2(22)"
-      Tab(1).Control(1).Enabled=   0   'False
       Tab(1).Control(2)=   "Line1(5)"
-      Tab(1).Control(2).Enabled=   0   'False
       Tab(1).Control(3)=   "Label2(21)"
-      Tab(1).Control(3).Enabled=   0   'False
       Tab(1).Control(4)=   "Line1(18)"
-      Tab(1).Control(4).Enabled=   0   'False
       Tab(1).Control(5)=   "Label3(2)"
-      Tab(1).Control(5).Enabled=   0   'False
       Tab(1).Control(6)=   "lswCarga"
-      Tab(1).Control(6).Enabled=   0   'False
       Tab(1).Control(7)=   "tlbCarga"
-      Tab(1).Control(7).Enabled=   0   'False
       Tab(1).Control(8)=   "cboOficina"
-      Tab(1).Control(8).Enabled=   0   'False
       Tab(1).Control(9)=   "chkCarga"
-      Tab(1).Control(9).Enabled=   0   'False
       Tab(1).Control(10)=   "cboCarga"
-      Tab(1).Control(10).Enabled=   0   'False
       Tab(1).Control(11)=   "txtCargaTotal"
-      Tab(1).Control(11).Enabled=   0   'False
       Tab(1).ControlCount=   12
       TabCaption(2)   =   "Reportes"
       TabPicture(2)   =   "frmAF_RemesasIngresos.frx":6EA10
@@ -941,7 +929,7 @@ Begin VB.Form frmAF_RemesasIngresos
          TabIndex        =   62
          Top             =   1200
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -963,7 +951,7 @@ Begin VB.Form frmAF_RemesasIngresos
          TabIndex        =   63
          Top             =   1200
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -985,7 +973,7 @@ Begin VB.Form frmAF_RemesasIngresos
          TabIndex        =   64
          Top             =   5520
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   1080
          _StockProps     =   79

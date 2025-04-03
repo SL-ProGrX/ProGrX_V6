@@ -1,27 +1,27 @@
 VERSION 5.00
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.1#0"; "Codejock.Controls.v19.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_DeteccionFraudes 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Detección de Fraudes"
-   ClientHeight    =   6144
-   ClientLeft      =   48
-   ClientTop       =   432
-   ClientWidth     =   10572
+   ClientHeight    =   6135
+   ClientLeft      =   45
+   ClientTop       =   435
+   ClientWidth     =   10575
    Icon            =   "frmCR_DeteccionFraudes.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
-   ScaleHeight     =   6144
-   ScaleWidth      =   10572
+   ScaleHeight     =   6135
+   ScaleWidth      =   10575
    Begin TabDlg.SSTab ssTab 
       Height          =   5895
       Left            =   120
       TabIndex        =   0
       Top             =   120
       Width           =   10335
-      _ExtentX        =   18225
-      _ExtentY        =   10393
+      _ExtentX        =   18230
+      _ExtentY        =   10398
       _Version        =   393216
       Style           =   1
       Tabs            =   2
@@ -120,7 +120,7 @@ Begin VB.Form frmCR_DeteccionFraudes
          EndProperty
          ForeColor       =   &H80000008&
          Height          =   495
-         Left            =   -70080
+         Left            =   -69120
          TabIndex        =   32
          Top             =   480
          Width           =   1095
@@ -148,7 +148,7 @@ Begin VB.Form frmCR_DeteccionFraudes
          Appearance      =   0  'Flat
          BeginProperty Font 
             Name            =   "Courier New"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -156,7 +156,7 @@ Begin VB.Form frmCR_DeteccionFraudes
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00FF0000&
-         Height          =   300
+         Height          =   330
          Left            =   -72720
          Style           =   2  'Dropdown List
          TabIndex        =   17
@@ -167,7 +167,7 @@ Begin VB.Form frmCR_DeteccionFraudes
          Appearance      =   0  'Flat
          BeginProperty Font 
             Name            =   "Courier New"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -175,7 +175,7 @@ Begin VB.Form frmCR_DeteccionFraudes
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00FF0000&
-         Height          =   300
+         Height          =   330
          Left            =   -72720
          Style           =   2  'Dropdown List
          TabIndex        =   16
@@ -186,7 +186,7 @@ Begin VB.Form frmCR_DeteccionFraudes
          Appearance      =   0  'Flat
          BeginProperty Font 
             Name            =   "Courier New"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -194,7 +194,7 @@ Begin VB.Form frmCR_DeteccionFraudes
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00FF0000&
-         Height          =   300
+         Height          =   330
          Left            =   -73680
          Style           =   2  'Dropdown List
          TabIndex        =   15
@@ -205,7 +205,7 @@ Begin VB.Form frmCR_DeteccionFraudes
          Appearance      =   0  'Flat
          BeginProperty Font 
             Name            =   "Courier New"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -213,7 +213,7 @@ Begin VB.Form frmCR_DeteccionFraudes
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00FF0000&
-         Height          =   300
+         Height          =   330
          Left            =   -68880
          Style           =   2  'Dropdown List
          TabIndex        =   14
@@ -224,7 +224,7 @@ Begin VB.Form frmCR_DeteccionFraudes
          Appearance      =   0  'Flat
          BeginProperty Font 
             Name            =   "Courier New"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -232,7 +232,7 @@ Begin VB.Form frmCR_DeteccionFraudes
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00FF0000&
-         Height          =   300
+         Height          =   330
          Left            =   -68880
          Style           =   2  'Dropdown List
          TabIndex        =   13
@@ -271,7 +271,7 @@ Begin VB.Form frmCR_DeteccionFraudes
          Appearance      =   0  'Flat
          BeginProperty Font 
             Name            =   "Courier New"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -279,7 +279,7 @@ Begin VB.Form frmCR_DeteccionFraudes
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00FF0000&
-         Height          =   300
+         Height          =   330
          Left            =   -73680
          Style           =   2  'Dropdown List
          TabIndex        =   10
@@ -290,7 +290,7 @@ Begin VB.Form frmCR_DeteccionFraudes
          Appearance      =   0  'Flat
          BeginProperty Font 
             Name            =   "Courier New"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -298,7 +298,7 @@ Begin VB.Form frmCR_DeteccionFraudes
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00FF0000&
-         Height          =   300
+         Height          =   330
          Left            =   -73680
          Style           =   2  'Dropdown List
          TabIndex        =   9
@@ -341,7 +341,7 @@ Begin VB.Form frmCR_DeteccionFraudes
          Left            =   -74280
          TabIndex        =   6
          Top             =   1320
-         Width           =   3135
+         Width           =   3495
       End
       Begin VB.OptionButton optX 
          Appearance      =   0  'Flat
@@ -375,7 +375,7 @@ Begin VB.Form frmCR_DeteccionFraudes
             Strikethrough   =   0   'False
          EndProperty
          Height          =   324
-         Left            =   -71280
+         Left            =   -70320
          TabIndex        =   3
          Text            =   "30"
          Top             =   600
@@ -408,7 +408,7 @@ Begin VB.Form frmCR_DeteccionFraudes
          TabIndex        =   35
          Top             =   5160
          Width           =   1572
-         _Version        =   1245185
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   1080
          _StockProps     =   79
@@ -422,7 +422,8 @@ Begin VB.Form frmCR_DeteccionFraudes
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          Picture         =   "frmCR_DeteccionFraudes.frx":0342
       End
       Begin XtremeSuiteControls.DateTimePicker dtpInicio 
@@ -431,7 +432,7 @@ Begin VB.Form frmCR_DeteccionFraudes
          TabIndex        =   36
          Top             =   2520
          Width           =   1332
-         _Version        =   1245185
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   556
          _StockProps     =   68
@@ -453,7 +454,7 @@ Begin VB.Form frmCR_DeteccionFraudes
          TabIndex        =   37
          Top             =   2520
          Width           =   1332
-         _Version        =   1245185
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   556
          _StockProps     =   68
@@ -775,17 +776,17 @@ Begin VB.Form frmCR_DeteccionFraudes
             Strikethrough   =   0   'False
          EndProperty
          Height          =   255
-         Left            =   -70560
+         Left            =   -69600
          TabIndex        =   4
          Top             =   600
          Width           =   1215
       End
       Begin VB.Image Image1 
-         Height          =   576
+         Height          =   480
          Left            =   480
          Picture         =   "frmCR_DeteccionFraudes.frx":0AFE
          Top             =   720
-         Width           =   576
+         Width           =   480
       End
       Begin VB.Label Label1 
          Alignment       =   2  'Center

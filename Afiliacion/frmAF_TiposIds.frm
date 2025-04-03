@@ -5,16 +5,16 @@ Begin VB.Form frmAF_TiposIds
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Tipos de Identificaciones"
-   ClientHeight    =   6444
-   ClientLeft      =   48
-   ClientTop       =   372
-   ClientWidth     =   8808
+   ClientHeight    =   6435
+   ClientLeft      =   45
+   ClientTop       =   375
+   ClientWidth     =   12870
    Icon            =   "frmAF_TiposIds.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   6444
-   ScaleWidth      =   8808
+   ScaleHeight     =   6435
+   ScaleWidth      =   12870
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin VB.Timer TimerX 
@@ -23,14 +23,14 @@ Begin VB.Form frmAF_TiposIds
       Top             =   720
    End
    Begin FPSpreadADO.fpSpread vGrid 
-      Height          =   4932
+      Height          =   4935
       Left            =   120
       TabIndex        =   1
       Top             =   1320
-      Width           =   8532
+      Width           =   12615
       _Version        =   524288
-      _ExtentX        =   15050
-      _ExtentY        =   8700
+      _ExtentX        =   22251
+      _ExtentY        =   8705
       _StockProps     =   64
       BackColorStyle  =   1
       BorderStyle     =   0
@@ -55,7 +55,7 @@ Begin VB.Form frmAF_TiposIds
       Caption         =   "Tipos de Identificaciones"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -74,7 +74,7 @@ Begin VB.Form frmAF_TiposIds
       Height          =   1215
       Left            =   0
       Top             =   0
-      Width           =   10815
+      Width           =   13335
    End
 End
 Attribute VB_Name = "frmAF_TiposIds"
@@ -119,7 +119,8 @@ Call OpenRecordSet(rs, strSQL)
 If rs!Existe = 0 Then 'Insertar
   If Trim(vGrid.Text) = "" Then Exit Function
   
-  strSQL = "insert into afi_Tipos_IDs(Tipo_ID,descripcion,Tipo_Personeria,Largo_Minimo,Mascara,Usuario,Fecha) values(" _
+  strSQL = "insert into afi_Tipos_IDs(Tipo_ID, descripcion, Tipo_Personeria, Largo_Minimo, Mascara" _
+         & ", CODIGO_SUGEF, CODIGO_PIN, CODIGO_HACIENDA, CODIGO_SINPE, Usuario, Fecha) values(" _
          & vGrid.Text & ",'"
   vGrid.Col = 2
   strSQL = strSQL & vGrid.Text & "','"
@@ -128,7 +129,15 @@ If rs!Existe = 0 Then 'Insertar
   vGrid.Col = 4
   strSQL = strSQL & vGrid.Text & ",'"
   vGrid.Col = 5
-  strSQL = strSQL & vGrid.Text & "','" & glogon.Usuario & "',dbo.MyGetdate())"
+  strSQL = strSQL & vGrid.Text & "', "
+  vGrid.Col = 6 'SUGEF
+  strSQL = strSQL & vGrid.Text & ", "
+  vGrid.Col = 7 'PIN
+  strSQL = strSQL & vGrid.Text & ", "
+  vGrid.Col = 8 'HACIENDA
+  strSQL = strSQL & vGrid.Text & ", "
+  vGrid.Col = 9 'SINPE
+  strSQL = strSQL & vGrid.Text & ", '" & glogon.Usuario & "',dbo.MyGetdate())"
   
   Call ConectionExecute(strSQL)
 
@@ -138,13 +147,23 @@ If rs!Existe = 0 Then 'Insertar
 Else 'Actualizar
 
  vGrid.Col = 2
- strSQL = "update afi_Tipos_IDs set descripcion = '" & vGrid.Text & "',Tipo_Personeria = '"
+ strSQL = "update afi_Tipos_IDs set descripcion = '" & vGrid.Text & "', Tipo_Personeria = '"
  vGrid.Col = 3
- strSQL = strSQL & Mid(vGrid.Text, 1, 1) & "',Largo_Minimo = "
+ strSQL = strSQL & Mid(vGrid.Text, 1, 1) & "', Largo_Minimo = "
  vGrid.Col = 4
- strSQL = strSQL & vGrid.Text & ",Mascara = '"
+ strSQL = strSQL & vGrid.Text & ", Mascara = '"
  vGrid.Col = 5
- strSQL = strSQL & vGrid.Text & "' where Tipo_ID = "
+ strSQL = strSQL & vGrid.Text & "', CODIGO_SUGEF = "
+ vGrid.Col = 6
+ strSQL = strSQL & vGrid.Text & ", CODIGO_PIN = "
+ vGrid.Col = 7
+ strSQL = strSQL & vGrid.Text & ", CODIGO_HACIENDA = "
+ vGrid.Col = 8
+ strSQL = strSQL & vGrid.Text & ", CODIGO_SINPE = "
+ vGrid.Col = 9
+ 
+ vGrid.Col = 9
+ strSQL = strSQL & vGrid.Text & ", MODIFICA_USUARIO = '" & glogon.Usuario & "', MODIFICA_FECHA = dbo.MyGetdate() where Tipo_ID = "
  vGrid.Col = 1
  strSQL = strSQL & vGrid.Text
  Call ConectionExecute(strSQL)
@@ -174,10 +193,10 @@ TimerX.Enabled = False
 Dim strSQL As String
 
 strSQL = "select Tipo_ID,descripcion, Tipo_Personeria_Desc" _
-      & ", Largo_Minimo, Mascara" _
+      & ", Largo_Minimo, Mascara, CODIGO_SUGEF, CODIGO_PIN, CODIGO_HACIENDA, CODIGO_SINPE" _
       & " from vSys_Tipos_Ids" _
       & " order by Tipo_ID"
-Call sbCargaGrid(vGrid, 5, strSQL)
+Call sbCargaGrid(vGrid, 9, strSQL)
 
 Call Formularios(Me)
 Call RefrescaTags(Me)

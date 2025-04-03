@@ -1,7 +1,9 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "mscomctl.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.Controls.v22.0.0.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmActivos_ParametrosEnlaces 
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Parámetros de Enlaces"
    ClientHeight    =   3405
@@ -28,6 +30,8 @@ Begin VB.Form frmActivos_ParametrosEnlaces
       Appearance      =   0
    End
    Begin VB.CheckBox chkProveedores 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
       Caption         =   "Actualiza Lista de Proveedores vrs ProGrX_ Comercial"
       BeginProperty Font 
          Name            =   "Calibri"
@@ -38,6 +42,7 @@ Begin VB.Form frmActivos_ParametrosEnlaces
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      ForeColor       =   &H80000008&
       Height          =   255
       Left            =   1200
       TabIndex        =   4
@@ -46,6 +51,8 @@ Begin VB.Form frmActivos_ParametrosEnlaces
       Width           =   4815
    End
    Begin VB.CheckBox chkReponsables 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
       Caption         =   "Actualiza listado de Responsables vrs Planillas"
       BeginProperty Font 
          Name            =   "Calibri"
@@ -56,6 +63,7 @@ Begin VB.Form frmActivos_ParametrosEnlaces
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      ForeColor       =   &H80000008&
       Height          =   255
       Left            =   1200
       TabIndex        =   3
@@ -64,6 +72,8 @@ Begin VB.Form frmActivos_ParametrosEnlaces
       Width           =   4815
    End
    Begin VB.CheckBox chkSecciones 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
       Caption         =   "Actualiza listado de Secciones vrs Planillas"
       BeginProperty Font 
          Name            =   "Calibri"
@@ -74,6 +84,7 @@ Begin VB.Form frmActivos_ParametrosEnlaces
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      ForeColor       =   &H80000008&
       Height          =   255
       Left            =   1200
       TabIndex        =   2
@@ -82,6 +93,8 @@ Begin VB.Form frmActivos_ParametrosEnlaces
       Width           =   4815
    End
    Begin VB.CheckBox chkPeriodos 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
       Caption         =   "Actualiza Periodos para Cierres vrs Contabilidad"
       BeginProperty Font 
          Name            =   "Calibri"
@@ -92,6 +105,7 @@ Begin VB.Form frmActivos_ParametrosEnlaces
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      ForeColor       =   &H80000008&
       Height          =   255
       Left            =   1200
       TabIndex        =   1
@@ -100,6 +114,8 @@ Begin VB.Form frmActivos_ParametrosEnlaces
       Width           =   4815
    End
    Begin VB.CheckBox chkDepartamentos 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
       Caption         =   "Actualiza listado de Departamentos vrs Planillas"
       BeginProperty Font 
          Name            =   "Calibri"
@@ -110,6 +126,7 @@ Begin VB.Form frmActivos_ParametrosEnlaces
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      ForeColor       =   &H80000008&
       Height          =   255
       Left            =   1200
       TabIndex        =   0
@@ -118,17 +135,18 @@ Begin VB.Form frmActivos_ParametrosEnlaces
       Width           =   4815
    End
    Begin XtremeSuiteControls.PushButton cmdAplicar 
-      Height          =   492
+      Height          =   615
       Left            =   4680
       TabIndex        =   7
       ToolTipText     =   "Importa Catálogo de Cuentas por Pagar"
       Top             =   2520
-      Width           =   1572
-      _Version        =   1441792
-      _ExtentX        =   2773
-      _ExtentY        =   868
+      Width           =   1575
+      _Version        =   1572864
+      _ExtentX        =   2778
+      _ExtentY        =   1085
       _StockProps     =   79
       Caption         =   "Guardar"
+      BackColor       =   -2147483633
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -142,6 +160,8 @@ Begin VB.Form frmActivos_ParametrosEnlaces
       Picture         =   "frmActivos_ParametrosEnlaces.frx":0000
    End
    Begin VB.Label lblX 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
       BeginProperty Font 
          Name            =   "MS Sans Serif"
          Size            =   8.25
@@ -151,7 +171,7 @@ Begin VB.Form frmActivos_ParametrosEnlaces
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      ForeColor       =   &H00800000&
+      ForeColor       =   &H80000008&
       Height          =   372
       Left            =   0
       TabIndex        =   6

@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCC_ConsultaExcedente 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -21,7 +21,7 @@ Begin VB.Form frmCC_ConsultaExcedente
       TabIndex        =   27
       Top             =   3360
       Width           =   10932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19283
       _ExtentY        =   4890
       _StockProps     =   77
@@ -45,7 +45,7 @@ Begin VB.Form frmCC_ConsultaExcedente
       TabIndex        =   28
       Top             =   120
       Width           =   1092
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   444
       _StockProps     =   79
@@ -69,7 +69,7 @@ Begin VB.Form frmCC_ConsultaExcedente
       TabIndex        =   4
       Top             =   960
       Width           =   10812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19071
       _ExtentY        =   4043
       _StockProps     =   79
@@ -503,7 +503,7 @@ Begin VB.Form frmCC_ConsultaExcedente
       TabIndex        =   26
       Top             =   480
       Width           =   5292
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9334
       _ExtentY        =   550
       _StockProps     =   77
@@ -527,7 +527,7 @@ Begin VB.Form frmCC_ConsultaExcedente
       TabIndex        =   25
       Top             =   480
       Width           =   1692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   550
       _StockProps     =   77
@@ -551,7 +551,7 @@ Begin VB.Form frmCC_ConsultaExcedente
       TabIndex        =   29
       Top             =   120
       Width           =   3492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   6165
       _ExtentY        =   582
       _StockProps     =   77
@@ -577,7 +577,7 @@ Begin VB.Form frmCC_ConsultaExcedente
       TabIndex        =   30
       Top             =   480
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   661
       _StockProps     =   79
@@ -830,7 +830,7 @@ If KeyCode = vbKeyF4 Then
    
   
   txtCedula.Text = gBusquedas.Resultado
-  txtNombre.Text = gBusquedas.Resultado2
+  txtNombre.Text = gBusquedas.Resultado3
    
   Call sbConsulta(txtCedula)
 
@@ -1003,7 +1003,7 @@ If vNC_Mora <> "" And CCur(lblMoraGeneral.Caption) > 0 Then
           & "'"
    Call OpenRecordSet(rs, strSQL)
    Do While Not rs.EOF
-     Set itmX = lsw.ListItems.Add(, , rs!Id_Solicitud)
+     Set itmX = lsw.ListItems.Add(, , rs!ID_SOLICITUD)
          itmX.SubItems(1) = rs!Codigo & ""
          itmX.SubItems(2) = rs!CONCEPTO
          itmX.SubItems(3) = Format(rs!IntCor, "Standard")
@@ -1029,7 +1029,7 @@ If vNC_OPCF <> "" And CCur(lblOPCF.Caption) > 0 Then
          & vCedula & "' and garantia = 'F')))"
   Call OpenRecordSet(rs, strSQL)
   Do While Not rs.EOF
-     Set itmX = lsw.ListItems.Add(, , rs!Id_Solicitud)
+     Set itmX = lsw.ListItems.Add(, , rs!ID_SOLICITUD)
          itmX.SubItems(1) = rs!Codigo & ""
          itmX.SubItems(2) = "OPCF: " & rs!CONCEPTO
          itmX.SubItems(3) = Format(rs!IntCor, "Standard")
@@ -1052,7 +1052,7 @@ If vNC_Saldos <> "" And CCur(lblSaldos.Caption) > 0 Then
           & " where C.tcon in('7','NC')  and C.ncon = '" & vNC_Saldos & "' and C.cedula = '" & vCedula & "'"
    Call OpenRecordSet(rs, strSQL)
    Do While Not rs.EOF
-     Set itmX = lsw.ListItems.Add(, , rs!Id_Solicitud)
+     Set itmX = lsw.ListItems.Add(, , rs!ID_SOLICITUD)
          itmX.SubItems(1) = rs!Codigo & ""
          itmX.SubItems(2) = "CEXD: " & rs!CONCEPTO
          itmX.SubItems(3) = Format(rs!IntCor, "Standard")

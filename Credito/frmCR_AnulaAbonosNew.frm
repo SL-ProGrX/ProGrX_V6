@@ -1,26 +1,26 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.0#0"; "Codejock.Controls.v20.0.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.0#0"; "Codejock.ShortcutBar.v20.0.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCR_AnulaAbonosNew 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Anulación de Movimientos"
-   ClientHeight    =   8112
-   ClientLeft      =   48
-   ClientTop       =   348
-   ClientWidth     =   10716
+   ClientHeight    =   8115
+   ClientLeft      =   45
+   ClientTop       =   345
+   ClientWidth     =   10725
    Icon            =   "frmCR_AnulaAbonosNew.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
-   ScaleHeight     =   8112
-   ScaleWidth      =   10716
+   ScaleHeight     =   8115
+   ScaleWidth      =   10725
    Begin XtremeSuiteControls.ListView lsw 
       Height          =   2292
       Left            =   120
       TabIndex        =   10
       Top             =   2160
       Width           =   10452
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   18436
       _ExtentY        =   4043
       _StockProps     =   77
@@ -46,13 +46,13 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   12
       Top             =   1840
       Width           =   210
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   370
       _ExtentY        =   370
       _StockProps     =   79
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -69,7 +69,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   11
       Top             =   120
       Width           =   1812
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   656
       _StockProps     =   77
@@ -85,7 +85,8 @@ Begin VB.Form frmCR_AnulaAbonosNew
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtNombre 
       Height          =   312
@@ -93,7 +94,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   15
       Top             =   720
       Width           =   5412
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   9546
       _ExtentY        =   550
       _StockProps     =   77
@@ -109,7 +110,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
          Strikethrough   =   0   'False
       EndProperty
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtDescripcion 
@@ -118,7 +119,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   16
       Top             =   1080
       Width           =   5412
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   9546
       _ExtentY        =   550
       _StockProps     =   77
@@ -134,7 +135,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
          Strikethrough   =   0   'False
       EndProperty
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtCodigo 
@@ -143,7 +144,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   14
       Top             =   1080
       Width           =   1812
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
@@ -160,7 +161,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       EndProperty
       Alignment       =   2
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtCedula 
@@ -169,7 +170,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   13
       Top             =   720
       Width           =   1812
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
@@ -186,7 +187,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       EndProperty
       Alignment       =   2
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtProceso 
@@ -195,7 +196,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   17
       Top             =   1080
       Width           =   1092
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   550
       _StockProps     =   77
@@ -212,7 +213,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       EndProperty
       Alignment       =   2
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtOpex 
@@ -221,7 +222,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   18
       Top             =   720
       Width           =   1092
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   550
       _StockProps     =   77
@@ -238,7 +239,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       EndProperty
       Alignment       =   2
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtIntCor 
@@ -247,7 +248,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   22
       Top             =   4920
       Width           =   1572
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -264,7 +265,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       EndProperty
       Alignment       =   1
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
       Transparent     =   -1  'True
    End
@@ -274,7 +275,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   23
       Top             =   5280
       Width           =   1572
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -291,7 +292,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       EndProperty
       Alignment       =   1
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
       Transparent     =   -1  'True
    End
@@ -301,7 +302,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   24
       Top             =   5640
       Width           =   1572
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -318,7 +319,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       EndProperty
       Alignment       =   1
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
       Transparent     =   -1  'True
    End
@@ -328,7 +329,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   25
       Top             =   5280
       Width           =   1572
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -345,7 +346,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       EndProperty
       Alignment       =   1
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
       Transparent     =   -1  'True
    End
@@ -355,7 +356,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   26
       Top             =   4920
       Width           =   1572
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -372,7 +373,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       EndProperty
       Alignment       =   1
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
       Transparent     =   -1  'True
    End
@@ -382,7 +383,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   27
       Top             =   5640
       Width           =   1572
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -399,7 +400,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       EndProperty
       Alignment       =   1
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
       Transparent     =   -1  'True
    End
@@ -409,7 +410,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   28
       Top             =   4920
       Width           =   1572
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -425,7 +426,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   1
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtAbIntMor 
@@ -434,7 +435,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   29
       Top             =   5280
       Width           =   1572
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -450,7 +451,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   1
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtAbAmortizacion 
@@ -459,7 +460,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   30
       Top             =   5640
       Width           =   1572
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -475,7 +476,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   1
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtAbPoliza 
@@ -484,7 +485,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   31
       Top             =   5280
       Width           =   1572
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -500,7 +501,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   1
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtAbCargos 
@@ -509,7 +510,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   32
       Top             =   4920
       Width           =   1572
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -525,7 +526,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   1
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtAbTotal 
@@ -534,7 +535,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   33
       Top             =   5640
       Width           =   1572
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -551,7 +552,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       EndProperty
       Alignment       =   1
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.GroupBox gbAnulacion 
@@ -560,7 +561,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   34
       Top             =   6120
       Width           =   10332
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   18224
       _ExtentY        =   3408
       _StockProps     =   79
@@ -574,7 +575,8 @@ Begin VB.Form frmCR_AnulaAbonosNew
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       BorderStyle     =   1
       Begin XtremeSuiteControls.ComboBox cboAccion 
          Height          =   312
@@ -582,9 +584,9 @@ Begin VB.Form frmCR_AnulaAbonosNew
          TabIndex        =   35
          Top             =   600
          Width           =   1692
-         _Version        =   1310720
-         _ExtentX        =   2985
-         _ExtentY        =   550
+         _Version        =   1572864
+         _ExtentX        =   2990
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BackColor       =   16777215
@@ -598,7 +600,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
             Strikethrough   =   0   'False
          EndProperty
          Style           =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
@@ -608,7 +610,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
          TabIndex        =   36
          Top             =   960
          Width           =   5772
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   10181
          _ExtentY        =   1397
          _StockProps     =   77
@@ -625,7 +627,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
          EndProperty
          MultiLine       =   -1  'True
          ScrollBars      =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.ComboBox cboUltCtaCancelada 
@@ -634,9 +636,9 @@ Begin VB.Form frmCR_AnulaAbonosNew
          TabIndex        =   37
          Top             =   600
          Width           =   1692
-         _Version        =   1310720
-         _ExtentX        =   2985
-         _ExtentY        =   550
+         _Version        =   1572864
+         _ExtentX        =   2990
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BackColor       =   16777215
@@ -650,7 +652,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
             Strikethrough   =   0   'False
          EndProperty
          Style           =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
@@ -660,21 +662,22 @@ Begin VB.Form frmCR_AnulaAbonosNew
          TabIndex        =   41
          Top             =   1080
          Width           =   1332
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   1080
          _StockProps     =   79
          Caption         =   "&Anular"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   7.8
+            Size            =   7.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          Picture         =   "frmCR_AnulaAbonosNew.frx":000C
       End
       Begin XtremeSuiteControls.CheckBox chkRecalculaCuota 
@@ -683,7 +686,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
          TabIndex        =   42
          Top             =   600
          Width           =   1776
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   3133
          _ExtentY        =   381
          _StockProps     =   79
@@ -707,7 +710,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
          TabIndex        =   45
          Top             =   240
          Width           =   1452
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   444
          _StockProps     =   79
@@ -812,7 +815,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   43
       Top             =   1800
       Width           =   10452
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   18436
       _ExtentY        =   656
       _StockProps     =   14
@@ -836,7 +839,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   21
       Top             =   1080
       Width           =   1332
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   444
       _StockProps     =   79
@@ -861,7 +864,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   20
       Top             =   720
       Width           =   1332
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   444
       _StockProps     =   79
@@ -886,7 +889,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       TabIndex        =   19
       Top             =   120
       Width           =   1332
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   656
       _StockProps     =   79
@@ -894,7 +897,7 @@ Begin VB.Form frmCR_AnulaAbonosNew
       ForeColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   10.8
+         Size            =   10.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1231,11 +1234,18 @@ vFP_SF = ""
 
  Call Bitacora("Anula", "OP: " & txtOperacion & " Doc.:" & vNumDoc & " Total : " & CCur(txtABTotal) & " Rec.Cuota.:" & chkRecalculaCuota.Value)
  
+ 
+ Call sbTrazabilidad_Inserta("06", vNumDoc, vNumDoc)
+ 
+ 
  Me.MousePointer = vbDefault
  
  MsgBox "Anulación Realizada ... Con Nota Debito:" & vNumDoc, vbInformation
 
  Call sbImprimeRecibo(vNumDoc, vTipoDoc)
+
+
+
 
 Exit Sub
 
@@ -1311,7 +1321,7 @@ strLinea(10) = "Usuario           " & glogon.Usuario
 strLinea(11) = "Fecha Ult. Cta    " & cboUltCtaCancelada.Text
 
  If curPoliza > 0 Then
-   strSQL = "select dbo.fxCrdOperacionCtaContaPolizas(" & rs!id_solicitud & ") as 'Cuenta'"
+   strSQL = "select dbo.fxCrdOperacionCtaContaPolizas(" & rs!ID_SOLICITUD & ") as 'Cuenta'"
    Call OpenRecordSet(rsTmp, strSQL, 0)
      vCuentaPoliza = Trim(rsTmp!Cuenta)
    rsTmp.Close
@@ -1332,32 +1342,32 @@ strSQL = "insert SIF_TRANSACCIONES(COD_TRANSACCION,TIPO_DOCUMENTO,REGISTRO_FECHA
 'ASIENTO
 If curIntC > 0 Then
   strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & curIntC & ",'D','" & rs!cod_Divisa _
-         & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!cod_centro_costo & "','" & rs!ctaintc _
-         & "','" & rs!id_solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+         & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintc _
+         & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 End If
 
 If curIntM > 0 Then
   strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & curIntM & ",'D','" & rs!cod_Divisa _
-         & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!cod_centro_costo & "','" & rs!ctaintm _
-         & "','" & rs!id_solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+         & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintm _
+         & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 End If
 
 If curCargo > 0 Then
   strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & curCargo & ",'D','" & rs!cod_Divisa _
-         & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!cod_centro_costo & "','" & rs!CtaCargos _
-         & "','" & rs!id_solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+         & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!CtaCargos _
+         & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 End If
 
 If curPoliza > 0 Then
    strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & curPoliza & ",'D','" & rs!cod_Divisa _
-          & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!cod_centro_costo & "','" & vCuentaPoliza _
-          & "','" & rs!id_solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+          & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & vCuentaPoliza _
+          & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 End If
  
 If curAmortiza > 0 Then
   strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & curAmortiza & ",'D','" & rs!cod_Divisa _
-         & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!cod_centro_costo & "','" & rs!ctaamortiza _
-         & "','" & rs!id_solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+         & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaamortiza _
+         & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 End If
 
 'Corte Lote No 1
@@ -1368,8 +1378,8 @@ Call ConectionExecute(strSQL)
 'Cierre de Movimiento:
 If curIntC + curIntM + curAmortiza + curCargo + curPoliza > 0 Then
         strSQL = "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & curIntC + curIntM + curCargo + curAmortiza + curPoliza & ",'C','" & rs!cod_Divisa _
-               & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!cod_centro_costo & "','" & vCuenta _
-               & "','" & rs!id_solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+               & "',1," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & vCuenta _
+               & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
         Call ConectionExecute(strSQL)
                 
         vDivisa = rs!cod_Divisa
@@ -1429,6 +1439,12 @@ With lsw.ColumnHeaders
     .Add , , "Pólizas", 1800, vbRightJustify
     .Add , , "Dias Cor.", 1100, vbCenter
     .Add , , "Dias Mor.", 1100, vbCenter
+
+    .Add , , "Tipo Doc.", 1100, vbCenter
+    .Add , , "No. Doc.", 2100
+    .Add , , "Fecha", 2100
+    .Add , , "Usuario", 2100, vbCenter
+
 End With
 
 lsw.Checkboxes = True
@@ -1500,8 +1516,8 @@ Call OpenRecordSet(rs, strSQL)
 If Not rs.EOF And Not rs.BOF Then
   vBaseCalculo = Trim(rs!Base_Calculo)
   vPrideduc = rs!PriDeduc
-  vOperacion = rs!id_solicitud
-  txtOperacion.Text = rs!id_solicitud
+  vOperacion = rs!ID_SOLICITUD
+  txtOperacion.Text = rs!ID_SOLICITUD
   vPlazo = rs!Plazo
   vInteres = IIf(IsNull(rs!interesv), rs!Int, rs!interesv)
   
@@ -1554,7 +1570,7 @@ If Not rs.EOF And Not rs.BOF Then
         
     'Movimientos Registrados
     strSQL = "select * from CRD_OPERACION_TRANSAC" _
-           & " where estado = 'C' and id_solicitud = " & rs!id_solicitud _
+           & " where estado = 'C' and id_solicitud = " & rs!ID_SOLICITUD _
            & " and Tipo_Documento not in('AJ')" _
            & " and Mov_Monto > 0" _
            & " order by id_seq desc"
@@ -1567,7 +1583,7 @@ If Not rs.EOF And Not rs.BOF Then
     Call OpenRecordSet(rs, strSQL)
     lsw.ListItems.Clear
     Do While Not rs.EOF
-      Set itmX = lsw.ListItems.Add(, , rs!num_cuota)
+      Set itmX = lsw.ListItems.Add(, , rs!Num_Cuota)
           itmX.SubItems(1) = Format(rs!Fecha_Proceso, "####-##")
           itmX.SubItems(2) = Format(rs!Cuota, "Standard")
           itmX.SubItems(3) = IIf((rs!Mora_Dias > 0), "En Mora", "Al Día")
@@ -1578,6 +1594,15 @@ If Not rs.EOF And Not rs.BOF Then
           itmX.SubItems(8) = Format(rs!Mov_Poliza, "Standard")
           itmX.SubItems(9) = rs!Dias_calculo
           itmX.SubItems(10) = rs!Mora_Dias
+          
+          itmX.SubItems(11) = rs!Tipo_documento & ""
+          itmX.SubItems(12) = rs!Num_Comprobante & ""
+          itmX.SubItems(13) = rs!Mov_fecha & ""
+          itmX.SubItems(14) = rs!Mov_usuario & ""
+          
+          
+          
+          
           itmX.Tag = rs!Id_seq
       rs.MoveNext
     Loop

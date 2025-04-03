@@ -1,21 +1,21 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCR_ComitesAprobaciones 
    Caption         =   "Aprobación de Comites"
    ClientHeight    =   9435
    ClientLeft      =   120
    ClientTop       =   420
-   ClientWidth     =   14865
+   ClientWidth     =   16080
    LinkTopic       =   "Form1"
    MDIChild        =   -1  'True
    ScaleHeight     =   9435
-   ScaleWidth      =   14865
+   ScaleWidth      =   16080
    WindowState     =   2  'Maximized
    Begin VB.Frame fraActa 
+      BorderStyle     =   0  'None
       Caption         =   "Mantenimiento del Acta:"
       BeginProperty Font 
          Name            =   "Calibri"
@@ -26,275 +26,663 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   4932
-      Left            =   960
-      TabIndex        =   31
-      Top             =   1560
+      Height          =   6735
+      Left            =   10440
+      TabIndex        =   28
+      Top             =   1920
       Visible         =   0   'False
       Width           =   11412
-      Begin XtremeSuiteControls.ListView lswAsistencia 
-         Height          =   3972
-         Left            =   4800
-         TabIndex        =   32
-         Top             =   600
-         Width           =   6492
-         _Version        =   1441793
-         _ExtentX        =   11451
-         _ExtentY        =   7006
-         _StockProps     =   77
-         BackColor       =   -2147483643
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Checkboxes      =   -1  'True
-         View            =   3
-         FullRowSelect   =   -1  'True
-         Appearance      =   16
-      End
-      Begin XtremeSuiteControls.FlatEdit txtActaNew 
-         Height          =   312
-         Left            =   1080
-         TabIndex        =   33
-         Top             =   600
-         Width           =   1572
-         _Version        =   1441793
-         _ExtentX        =   2773
-         _ExtentY        =   550
-         _StockProps     =   77
-         ForeColor       =   0
-         BackColor       =   -2147483643
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Alignment       =   2
-         Locked          =   -1  'True
-         Appearance      =   2
-      End
-      Begin XtremeSuiteControls.PushButton btnActaTool 
-         Height          =   312
-         Index           =   0
-         Left            =   2640
-         TabIndex        =   36
-         Top             =   600
-         Width           =   852
-         _Version        =   1441793
-         _ExtentX        =   1503
-         _ExtentY        =   550
-         _StockProps     =   79
-         Caption         =   "Nueva"
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Appearance      =   16
-      End
-      Begin XtremeSuiteControls.PushButton btnActaTool 
-         Height          =   312
-         Index           =   1
-         Left            =   3480
-         TabIndex        =   37
-         Top             =   600
-         Width           =   852
-         _Version        =   1441793
-         _ExtentX        =   1503
-         _ExtentY        =   550
-         _StockProps     =   79
-         Caption         =   "Guardar"
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Appearance      =   16
-      End
-      Begin XtremeSuiteControls.ComboBox cboActaEstado 
-         Height          =   312
-         Left            =   1080
-         TabIndex        =   41
-         Top             =   1440
-         Width           =   1572
-         _Version        =   1441793
-         _ExtentX        =   2778
-         _ExtentY        =   582
-         _StockProps     =   77
-         ForeColor       =   1973790
-         BackColor       =   16185078
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         BackColor       =   16185078
-         Style           =   2
-         Appearance      =   16
-         Text            =   "ComboBox1"
-      End
-      Begin XtremeSuiteControls.DateTimePicker dtpActaFecha 
-         Height          =   315
-         Left            =   1080
-         TabIndex        =   42
-         Top             =   1080
-         Width           =   1572
-         _Version        =   1441793
-         _ExtentX        =   2773
-         _ExtentY        =   556
+      Begin XtremeSuiteControls.TabControl tcActas 
+         Height          =   6615
+         Left            =   0
+         TabIndex        =   151
+         Top             =   120
+         Width           =   11415
+         _Version        =   1572864
+         _ExtentX        =   20135
+         _ExtentY        =   11668
          _StockProps     =   68
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
             Charset         =   0
-            Weight          =   400
+            Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         CustomFormat    =   "dd/MM/yyyy"
-         Format          =   3
-      End
-      Begin XtremeSuiteControls.FlatEdit txtActasNotas 
-         Height          =   2712
-         Left            =   1080
-         TabIndex        =   43
-         Top             =   1800
-         Width           =   3612
-         _Version        =   1441793
-         _ExtentX        =   6371
-         _ExtentY        =   4784
-         _StockProps     =   77
-         ForeColor       =   0
-         BackColor       =   -2147483643
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         MultiLine       =   -1  'True
-         ScrollBars      =   2
-         Appearance      =   2
-      End
-      Begin VB.Label LabelX 
-         BackStyle       =   0  'Transparent
-         Caption         =   "Notas:"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   252
-         Index           =   2
-         Left            =   120
-         TabIndex        =   40
-         Top             =   1800
-         Width           =   1092
-      End
-      Begin VB.Label LabelX 
-         BackStyle       =   0  'Transparent
-         Caption         =   "Estado:"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   252
-         Index           =   1
-         Left            =   120
-         TabIndex        =   39
-         Top             =   1440
-         Width           =   1092
-      End
-      Begin VB.Label LabelX 
-         BackStyle       =   0  'Transparent
-         Caption         =   "Fecha:"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   252
-         Index           =   0
-         Left            =   120
-         TabIndex        =   38
-         Top             =   1080
-         Width           =   1092
-      End
-      Begin VB.Label lblUsuario 
-         BackStyle       =   0  'Transparent
-         Caption         =   "Asistencia:"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   252
-         Index           =   5
-         Left            =   4800
-         TabIndex        =   35
-         Top             =   240
-         Width           =   1092
-      End
-      Begin VB.Label LabelX 
-         BackStyle       =   0  'Transparent
-         Caption         =   "No. Acta:"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   252
-         Index           =   4
-         Left            =   120
-         TabIndex        =   34
-         Top             =   600
-         Width           =   1092
+         Appearance      =   4
+         Color           =   32
+         ItemCount       =   3
+         Item(0).Caption =   "Actual"
+         Item(0).ControlCount=   15
+         Item(0).Control(0)=   "lswAsistencia"
+         Item(0).Control(1)=   "btnActaTool(0)"
+         Item(0).Control(2)=   "btnActaTool(1)"
+         Item(0).Control(3)=   "dtpActaFecha"
+         Item(0).Control(4)=   "txtActasNotas"
+         Item(0).Control(5)=   "LabelX(2)"
+         Item(0).Control(6)=   "LabelX(1)"
+         Item(0).Control(7)=   "LabelX(0)"
+         Item(0).Control(8)=   "lblUsuario(5)"
+         Item(0).Control(9)=   "LabelX(4)"
+         Item(0).Control(10)=   "txtSesion"
+         Item(0).Control(11)=   "LabelX(3)"
+         Item(0).Control(12)=   "txtActa"
+         Item(0).Control(13)=   "txtActaEstado"
+         Item(0).Control(14)=   "btnActaTool(2)"
+         Item(1).Caption =   "Histórico"
+         Item(1).ControlCount=   8
+         Item(1).Control(0)=   "dtpActaInicio"
+         Item(1).Control(1)=   "dtpActaCorte"
+         Item(1).Control(2)=   "Label2"
+         Item(1).Control(3)=   "lswActaH"
+         Item(1).Control(4)=   "lblUsuario(4)"
+         Item(1).Control(5)=   "btnActaConsulta"
+         Item(1).Control(6)=   "txtActaFiltro"
+         Item(1).Control(7)=   "btnExportar(0)"
+         Item(2).Caption =   "Resoluciones"
+         Item(2).ControlCount=   3
+         Item(2).Control(0)=   "lswActaR"
+         Item(2).Control(1)=   "btnExportar(1)"
+         Item(2).Control(2)=   "ShortcutCaption1"
+         Begin XtremeSuiteControls.ListView lswActaR 
+            Height          =   5655
+            Left            =   -70000
+            TabIndex        =   176
+            Top             =   840
+            Visible         =   0   'False
+            Width           =   11415
+            _Version        =   1572864
+            _ExtentX        =   20135
+            _ExtentY        =   9975
+            _StockProps     =   77
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            View            =   3
+            FullRowSelect   =   -1  'True
+            Appearance      =   21
+         End
+         Begin XtremeSuiteControls.ListView lswAsistencia 
+            Height          =   5655
+            Left            =   4800
+            TabIndex        =   152
+            Top             =   840
+            Width           =   6495
+            _Version        =   1572864
+            _ExtentX        =   11456
+            _ExtentY        =   9975
+            _StockProps     =   77
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Checkboxes      =   -1  'True
+            View            =   3
+            FullRowSelect   =   -1  'True
+            Appearance      =   21
+            UseVisualStyle  =   0   'False
+         End
+         Begin XtremeSuiteControls.ListView lswActaH 
+            Height          =   5535
+            Left            =   -70000
+            TabIndex        =   167
+            Top             =   1080
+            Visible         =   0   'False
+            Width           =   11415
+            _Version        =   1572864
+            _ExtentX        =   20135
+            _ExtentY        =   9763
+            _StockProps     =   77
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            View            =   3
+            FullRowSelect   =   -1  'True
+            Appearance      =   21
+         End
+         Begin XtremeSuiteControls.PushButton btnActaTool 
+            Height          =   315
+            Index           =   0
+            Left            =   2640
+            TabIndex        =   153
+            Top             =   840
+            Width           =   855
+            _Version        =   1572864
+            _ExtentX        =   1503
+            _ExtentY        =   550
+            _StockProps     =   79
+            Caption         =   "Nueva"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Appearance      =   16
+         End
+         Begin XtremeSuiteControls.PushButton btnActaTool 
+            Height          =   555
+            Index           =   1
+            Left            =   3240
+            TabIndex        =   154
+            Top             =   5520
+            Width           =   1335
+            _Version        =   1572864
+            _ExtentX        =   2355
+            _ExtentY        =   979
+            _StockProps     =   79
+            Caption         =   "Guardar"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
+            Picture         =   "frmCR_ComitesAprobaciones.frx":0000
+         End
+         Begin XtremeSuiteControls.DateTimePicker dtpActaFecha 
+            Height          =   315
+            Left            =   1080
+            TabIndex        =   155
+            Top             =   1800
+            Width           =   1575
+            _Version        =   1572864
+            _ExtentX        =   2773
+            _ExtentY        =   556
+            _StockProps     =   68
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            CustomFormat    =   "dd/MM/yyyy"
+            Format          =   3
+         End
+         Begin XtremeSuiteControls.FlatEdit txtActasNotas 
+            Height          =   2715
+            Left            =   1080
+            TabIndex        =   156
+            Top             =   2640
+            Width           =   3615
+            _Version        =   1572864
+            _ExtentX        =   6371
+            _ExtentY        =   4784
+            _StockProps     =   77
+            ForeColor       =   0
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            MultiLine       =   -1  'True
+            ScrollBars      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
+         End
+         Begin XtremeSuiteControls.FlatEdit txtSesion 
+            Height          =   315
+            Left            =   1080
+            TabIndex        =   162
+            Top             =   1200
+            Width           =   1575
+            _Version        =   1572864
+            _ExtentX        =   2773
+            _ExtentY        =   550
+            _StockProps     =   77
+            ForeColor       =   0
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Alignment       =   2
+            Locked          =   -1  'True
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
+         End
+         Begin XtremeSuiteControls.DateTimePicker dtpActaInicio 
+            Height          =   315
+            Left            =   -69040
+            TabIndex        =   164
+            Top             =   600
+            Visible         =   0   'False
+            Width           =   1335
+            _Version        =   1572864
+            _ExtentX        =   2350
+            _ExtentY        =   550
+            _StockProps     =   68
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            CustomFormat    =   "dd/MM/yyyy"
+            Format          =   3
+         End
+         Begin XtremeSuiteControls.DateTimePicker dtpActaCorte 
+            Height          =   315
+            Left            =   -67720
+            TabIndex        =   165
+            Top             =   600
+            Visible         =   0   'False
+            Width           =   1335
+            _Version        =   1572864
+            _ExtentX        =   2350
+            _ExtentY        =   550
+            _StockProps     =   68
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            CustomFormat    =   "dd/MM/yyyy"
+            Format          =   3
+         End
+         Begin XtremeSuiteControls.FlatEdit txtActaFiltro 
+            Height          =   315
+            Left            =   -64240
+            TabIndex        =   168
+            ToolTipText     =   "Presione F4 para Consultar"
+            Top             =   600
+            Visible         =   0   'False
+            Width           =   1935
+            _Version        =   1572864
+            _ExtentX        =   3413
+            _ExtentY        =   556
+            _StockProps     =   77
+            ForeColor       =   0
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Alignment       =   2
+            Locked          =   -1  'True
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
+         End
+         Begin XtremeSuiteControls.PushButton btnActaConsulta 
+            Height          =   435
+            Left            =   -62080
+            TabIndex        =   171
+            Top             =   480
+            Visible         =   0   'False
+            Width           =   1335
+            _Version        =   1572864
+            _ExtentX        =   2355
+            _ExtentY        =   767
+            _StockProps     =   79
+            Caption         =   "Buscar"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
+            Picture         =   "frmCR_ComitesAprobaciones.frx":0731
+         End
+         Begin XtremeSuiteControls.FlatEdit txtActa 
+            Height          =   315
+            Left            =   1080
+            TabIndex        =   172
+            Top             =   840
+            Width           =   1575
+            _Version        =   1572864
+            _ExtentX        =   2773
+            _ExtentY        =   550
+            _StockProps     =   77
+            ForeColor       =   0
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Alignment       =   2
+            Locked          =   -1  'True
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
+         End
+         Begin XtremeSuiteControls.FlatEdit txtActaEstado 
+            Height          =   315
+            Left            =   1080
+            TabIndex        =   174
+            Top             =   2280
+            Width           =   1575
+            _Version        =   1572864
+            _ExtentX        =   2773
+            _ExtentY        =   550
+            _StockProps     =   77
+            ForeColor       =   0
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Alignment       =   2
+            Locked          =   -1  'True
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
+         End
+         Begin XtremeSuiteControls.PushButton btnActaTool 
+            Height          =   315
+            Index           =   2
+            Left            =   2640
+            TabIndex        =   175
+            Top             =   2280
+            Width           =   855
+            _Version        =   1572864
+            _ExtentX        =   1503
+            _ExtentY        =   550
+            _StockProps     =   79
+            Caption         =   "Cerrar"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Appearance      =   16
+         End
+         Begin XtremeSuiteControls.PushButton btnExportar 
+            Height          =   435
+            Index           =   0
+            Left            =   -60760
+            TabIndex        =   177
+            Top             =   480
+            Visible         =   0   'False
+            Width           =   615
+            _Version        =   1572864
+            _ExtentX        =   1085
+            _ExtentY        =   767
+            _StockProps     =   79
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
+            Picture         =   "frmCR_ComitesAprobaciones.frx":0E31
+         End
+         Begin XtremeSuiteControls.PushButton btnExportar 
+            Height          =   435
+            Index           =   1
+            Left            =   -59080
+            TabIndex        =   178
+            Top             =   360
+            Visible         =   0   'False
+            Width           =   495
+            _Version        =   1572864
+            _ExtentX        =   873
+            _ExtentY        =   767
+            _StockProps     =   79
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
+            Picture         =   "frmCR_ComitesAprobaciones.frx":0F9B
+         End
+         Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption1 
+            Height          =   375
+            Left            =   -70000
+            TabIndex        =   179
+            Top             =   360
+            Visible         =   0   'False
+            Width           =   11295
+            _Version        =   1572864
+            _ExtentX        =   19923
+            _ExtentY        =   661
+            _StockProps     =   14
+            Caption         =   "Lista de Casos con Resolución dentro del Acta:"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+         End
+         Begin VB.Label lblUsuario 
+            BackStyle       =   0  'Transparent
+            Caption         =   "No. Identificación"
+            BeginProperty Font 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   255
+            Index           =   4
+            Left            =   -65920
+            TabIndex        =   169
+            Top             =   600
+            Visible         =   0   'False
+            Width           =   1575
+         End
+         Begin VB.Label Label2 
+            BackStyle       =   0  'Transparent
+            Caption         =   "Fechas:"
+            BeginProperty Font 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   255
+            Left            =   -69760
+            TabIndex        =   166
+            Top             =   600
+            Visible         =   0   'False
+            Width           =   1095
+         End
+         Begin VB.Label LabelX 
+            BackStyle       =   0  'Transparent
+            Caption         =   "Sesión:"
+            BeginProperty Font 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   255
+            Index           =   3
+            Left            =   120
+            TabIndex        =   163
+            Top             =   1200
+            Width           =   1095
+         End
+         Begin VB.Label LabelX 
+            BackStyle       =   0  'Transparent
+            Caption         =   "No. Acta:"
+            BeginProperty Font 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   255
+            Index           =   4
+            Left            =   120
+            TabIndex        =   161
+            Top             =   840
+            Width           =   1095
+         End
+         Begin VB.Label lblUsuario 
+            BackStyle       =   0  'Transparent
+            Caption         =   "Asistencia:"
+            BeginProperty Font 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   255
+            Index           =   5
+            Left            =   4800
+            TabIndex        =   160
+            Top             =   600
+            Width           =   1095
+         End
+         Begin VB.Label LabelX 
+            BackStyle       =   0  'Transparent
+            Caption         =   "Fecha:"
+            BeginProperty Font 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   255
+            Index           =   0
+            Left            =   120
+            TabIndex        =   159
+            Top             =   1800
+            Width           =   1095
+         End
+         Begin VB.Label LabelX 
+            BackStyle       =   0  'Transparent
+            Caption         =   "Estado:"
+            BeginProperty Font 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   255
+            Index           =   1
+            Left            =   120
+            TabIndex        =   158
+            Top             =   2280
+            Width           =   1095
+         End
+         Begin VB.Label LabelX 
+            BackStyle       =   0  'Transparent
+            Caption         =   "Notas:"
+            BeginProperty Font 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   255
+            Index           =   2
+            Left            =   120
+            TabIndex        =   157
+            Top             =   2640
+            Width           =   1095
+         End
       End
    End
    Begin VB.Frame fraCausas 
@@ -309,18 +697,18 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Strikethrough   =   0   'False
       EndProperty
       Height          =   7695
-      Left            =   12240
+      Left            =   13920
       TabIndex        =   1
-      Top             =   3240
+      Top             =   3000
       Visible         =   0   'False
       Width           =   12612
       Begin XtremeSuiteControls.ListView lsw 
          Height          =   5052
          Left            =   120
-         TabIndex        =   44
+         TabIndex        =   29
          Top             =   1200
          Width           =   11052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   19494
          _ExtentY        =   8911
          _StockProps     =   77
@@ -342,10 +730,10 @@ Begin VB.Form frmCR_ComitesAprobaciones
       Begin XtremeSuiteControls.PushButton btnCausas 
          Height          =   312
          Left            =   9960
-         TabIndex        =   146
+         TabIndex        =   131
          Top             =   480
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   550
          _StockProps     =   79
@@ -361,7 +749,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
          EndProperty
          TextAlignment   =   1
          Appearance      =   6
-         Picture         =   "frmCR_ComitesAprobaciones.frx":0000
+         Picture         =   "frmCR_ComitesAprobaciones.frx":1105
          ImageAlignment  =   0
       End
       Begin VB.Label Label22 
@@ -385,7 +773,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
       Begin VB.Image Image3 
          Height          =   480
          Left            =   240
-         Picture         =   "frmCR_ComitesAprobaciones.frx":0716
+         Picture         =   "frmCR_ComitesAprobaciones.frx":181B
          Top             =   480
          Width           =   480
       End
@@ -399,16 +787,16 @@ Begin VB.Form frmCR_ComitesAprobaciones
       Left            =   0
       TabIndex        =   3
       Top             =   5040
-      Width           =   12132
+      Width           =   15255
       Begin XtremeSuiteControls.TabControl tcMain 
-         Height          =   3612
+         Height          =   3615
          Left            =   0
-         TabIndex        =   52
+         TabIndex        =   37
          Top             =   600
-         Width           =   13332
-         _Version        =   1441793
-         _ExtentX        =   23516
-         _ExtentY        =   6371
+         Width           =   14655
+         _Version        =   1572864
+         _ExtentX        =   25850
+         _ExtentY        =   6376
          _StockProps     =   68
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -422,6 +810,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Appearance      =   4
          Color           =   32
          ItemCount       =   5
+         SelectedItem    =   3
          Item(0).Caption =   "Detalle"
          Item(0).ControlCount=   1
          Item(0).Control(0)=   "tcDetalle"
@@ -454,25 +843,54 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Item(2).ControlCount=   1
          Item(2).Control(0)=   "vGridSeguimiento"
          Item(3).Caption =   "Resolución"
-         Item(3).ControlCount=   5
+         Item(3).ControlCount=   9
          Item(3).Control(0)=   "txtObservacion"
-         Item(3).Control(1)=   "Label8"
+         Item(3).Control(1)=   "Label8(0)"
          Item(3).Control(2)=   "btnResolucion(0)"
          Item(3).Control(3)=   "btnResolucion(1)"
          Item(3).Control(4)=   "btnResolucion(2)"
+         Item(3).Control(5)=   "Label8(1)"
+         Item(3).Control(6)=   "txtAcuerdoJD"
+         Item(3).Control(7)=   "btnResolucion(3)"
+         Item(3).Control(8)=   "btnResolucion(4)"
          Item(4).Caption =   "Causas"
          Item(4).ControlCount=   3
          Item(4).Control(0)=   "lswCausasList"
          Item(4).Control(1)=   "optCausas(0)"
          Item(4).Control(2)=   "optCausas(1)"
+         Begin XtremeSuiteControls.ListView lswCausasList 
+            Height          =   3132
+            Left            =   -67240
+            TabIndex        =   148
+            Top             =   480
+            Visible         =   0   'False
+            Width           =   9252
+            _Version        =   1572864
+            _ExtentX        =   16319
+            _ExtentY        =   5524
+            _StockProps     =   77
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            View            =   3
+            FullRowSelect   =   -1  'True
+            Appearance      =   16
+         End
          Begin XtremeSuiteControls.ListView lswFiadores 
             Height          =   2892
             Left            =   -69880
-            TabIndex        =   53
+            TabIndex        =   38
             Top             =   480
             Visible         =   0   'False
             Width           =   6372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11239
             _ExtentY        =   5101
             _StockProps     =   77
@@ -491,42 +909,16 @@ Begin VB.Form frmCR_ComitesAprobaciones
             Appearance      =   16
             ShowBorder      =   0   'False
          End
-         Begin XtremeSuiteControls.ListView lswCausasList 
-            Height          =   3132
-            Left            =   -67240
-            TabIndex        =   163
-            Top             =   480
-            Visible         =   0   'False
-            Width           =   9252
-            _Version        =   1441793
-            _ExtentX        =   16319
-            _ExtentY        =   5524
-            _StockProps     =   77
-            BackColor       =   -2147483643
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            View            =   3
-            FullRowSelect   =   -1  'True
-            Appearance      =   16
-         End
          Begin XtremeSuiteControls.PushButton btnResolucion 
-            Height          =   492
+            Height          =   615
             Index           =   0
-            Left            =   -68560
-            TabIndex        =   138
+            Left            =   1440
+            TabIndex        =   123
             Top             =   2520
-            Visible         =   0   'False
-            Width           =   1692
-            _Version        =   1441793
-            _ExtentX        =   2984
-            _ExtentY        =   868
+            Width           =   1695
+            _Version        =   1572864
+            _ExtentX        =   2990
+            _ExtentY        =   1085
             _StockProps     =   79
             Caption         =   "Aprobar   "
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -538,20 +930,22 @@ Begin VB.Form frmCR_ComitesAprobaciones
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
+            UseVisualStyle  =   -1  'True
             TextAlignment   =   1
-            Appearance      =   16
-            Picture         =   "frmCR_ComitesAprobaciones.frx":109E
+            Appearance      =   21
+            Picture         =   "frmCR_ComitesAprobaciones.frx":21A3
             ImageAlignment  =   4
          End
          Begin XtremeSuiteControls.TabControl tcDetalle 
-            Height          =   3612
-            Left            =   0
-            TabIndex        =   54
+            Height          =   3615
+            Left            =   -70000
+            TabIndex        =   39
             Top             =   360
-            Width           =   13332
-            _Version        =   1441793
-            _ExtentX        =   23516
-            _ExtentY        =   6371
+            Visible         =   0   'False
+            Width           =   14295
+            _Version        =   1572864
+            _ExtentX        =   25215
+            _ExtentY        =   6376
             _StockProps     =   68
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
@@ -566,7 +960,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             Color           =   32
             ItemCount       =   7
             Item(0).Caption =   "Crédito"
-            Item(0).ControlCount=   27
+            Item(0).ControlCount=   31
             Item(0).Control(0)=   "Label5"
             Item(0).Control(1)=   "lblMembresia"
             Item(0).Control(2)=   "Label7"
@@ -593,10 +987,15 @@ Begin VB.Form frmCR_ComitesAprobaciones
             Item(0).Control(23)=   "lblDiferenciaCuota"
             Item(0).Control(24)=   "lblCuota"
             Item(0).Control(25)=   "Label17"
-            Item(0).Control(26)=   "Label16"
+            Item(0).Control(26)=   "Label16(0)"
+            Item(0).Control(27)=   "Label16(1)"
+            Item(0).Control(28)=   "lblLinea"
+            Item(0).Control(29)=   "lblCA"
+            Item(0).Control(30)=   "Label4"
             Item(1).Caption =   "Clasificación"
-            Item(1).ControlCount=   1
+            Item(1).ControlCount=   2
             Item(1).Control(0)=   "vGrid"
+            Item(1).Control(1)=   "lblClasificacion"
             Item(2).Caption =   "Patrimonio"
             Item(2).ControlCount=   22
             Item(2).Control(0)=   "Label21"
@@ -658,12 +1057,12 @@ Begin VB.Form frmCR_ComitesAprobaciones
             Item(6).Control(4)=   "Label47"
             Item(6).Control(5)=   "scTitulos(0)"
             Begin FPSpreadADO.fpSpread vGrid 
-               Height          =   2052
-               Left            =   -69160
-               TabIndex        =   55
+               Height          =   2055
+               Left            =   -65800
+               TabIndex        =   40
                Top             =   600
                Visible         =   0   'False
-               Width           =   7212
+               Width           =   7215
                _Version        =   524288
                _ExtentX        =   12721
                _ExtentY        =   3620
@@ -681,13 +1080,13 @@ Begin VB.Form frmCR_ComitesAprobaciones
                   Strikethrough   =   0   'False
                EndProperty
                ScrollBars      =   0
-               SpreadDesigner  =   "frmCR_ComitesAprobaciones.frx":1810
+               SpreadDesigner  =   "frmCR_ComitesAprobaciones.frx":2915
                AppearanceStyle =   1
             End
             Begin FPSpreadADO.fpSpread vGridFianzas 
                Height          =   2652
                Left            =   -67360
-               TabIndex        =   56
+               TabIndex        =   41
                Top             =   480
                Visible         =   0   'False
                Width           =   10692
@@ -708,13 +1107,13 @@ Begin VB.Form frmCR_ComitesAprobaciones
                   Strikethrough   =   0   'False
                EndProperty
                MaxCols         =   499
-               SpreadDesigner  =   "frmCR_ComitesAprobaciones.frx":1DB8
+               SpreadDesigner  =   "frmCR_ComitesAprobaciones.frx":2EBD
                AppearanceStyle =   1
             End
             Begin FPSpreadADO.fpSpread vGridDesembolsos 
                Height          =   2652
                Left            =   -67360
-               TabIndex        =   57
+               TabIndex        =   42
                Top             =   480
                Visible         =   0   'False
                Width           =   10452
@@ -735,13 +1134,13 @@ Begin VB.Form frmCR_ComitesAprobaciones
                   Strikethrough   =   0   'False
                EndProperty
                MaxCols         =   492
-               SpreadDesigner  =   "frmCR_ComitesAprobaciones.frx":2594
+               SpreadDesigner  =   "frmCR_ComitesAprobaciones.frx":3699
                AppearanceStyle =   1
             End
             Begin FPSpreadADO.fpSpread vGridDeudas 
                Height          =   2892
                Left            =   -67360
-               TabIndex        =   147
+               TabIndex        =   132
                Top             =   480
                Visible         =   0   'False
                Width           =   9132
@@ -763,18 +1162,18 @@ Begin VB.Form frmCR_ComitesAprobaciones
                   Strikethrough   =   0   'False
                EndProperty
                MaxCols         =   17
-               SpreadDesigner  =   "frmCR_ComitesAprobaciones.frx":2B6B
+               SpreadDesigner  =   "frmCR_ComitesAprobaciones.frx":3C70
                VScrollSpecialType=   2
                AppearanceStyle =   1
             End
             Begin XtremeSuiteControls.FlatEdit txtPatrimonio 
                Height          =   312
                Left            =   -60400
-               TabIndex        =   148
+               TabIndex        =   133
                Top             =   720
                Visible         =   0   'False
                Width           =   1572
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2773
                _ExtentY        =   550
                _StockProps     =   77
@@ -791,17 +1190,17 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Alignment       =   1
                Locked          =   -1  'True
-               Appearance      =   2
+               Appearance      =   6
                UseVisualStyle  =   0   'False
             End
             Begin XtremeSuiteControls.FlatEdit txtPAT_Disponible 
                Height          =   312
                Left            =   -60400
-               TabIndex        =   149
+               TabIndex        =   134
                Top             =   2280
                Visible         =   0   'False
                Width           =   1572
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2773
                _ExtentY        =   550
                _StockProps     =   77
@@ -818,17 +1217,17 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Alignment       =   1
                Locked          =   -1  'True
-               Appearance      =   2
+               Appearance      =   6
                UseVisualStyle  =   0   'False
             End
             Begin XtremeSuiteControls.FlatEdit txtPAT_Saldos 
                Height          =   312
                Left            =   -60400
-               TabIndex        =   150
+               TabIndex        =   135
                Top             =   1680
                Visible         =   0   'False
                Width           =   1572
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2773
                _ExtentY        =   550
                _StockProps     =   77
@@ -845,17 +1244,17 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Alignment       =   1
                Locked          =   -1  'True
-               Appearance      =   2
+               Appearance      =   6
                UseVisualStyle  =   0   'False
             End
             Begin XtremeSuiteControls.FlatEdit txtAhorro 
                Height          =   312
                Left            =   -66160
-               TabIndex        =   151
+               TabIndex        =   136
                Top             =   720
                Visible         =   0   'False
                Width           =   1452
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2561
                _ExtentY        =   550
                _StockProps     =   77
@@ -872,17 +1271,17 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Alignment       =   1
                Locked          =   -1  'True
-               Appearance      =   2
+               Appearance      =   6
                UseVisualStyle  =   0   'False
             End
             Begin XtremeSuiteControls.FlatEdit txtAporte 
                Height          =   312
                Left            =   -66160
-               TabIndex        =   152
+               TabIndex        =   137
                Top             =   1080
                Visible         =   0   'False
                Width           =   1452
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2561
                _ExtentY        =   550
                _StockProps     =   77
@@ -899,17 +1298,17 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Alignment       =   1
                Locked          =   -1  'True
-               Appearance      =   2
+               Appearance      =   6
                UseVisualStyle  =   0   'False
             End
             Begin XtremeSuiteControls.FlatEdit txtCapitalizacion 
                Height          =   312
                Left            =   -66160
-               TabIndex        =   153
+               TabIndex        =   138
                Top             =   1440
                Visible         =   0   'False
                Width           =   1452
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2561
                _ExtentY        =   550
                _StockProps     =   77
@@ -926,17 +1325,17 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Alignment       =   1
                Locked          =   -1  'True
-               Appearance      =   2
+               Appearance      =   6
                UseVisualStyle  =   0   'False
             End
             Begin XtremeSuiteControls.FlatEdit txtCustodia 
                Height          =   312
                Left            =   -66160
-               TabIndex        =   154
+               TabIndex        =   139
                Top             =   1800
                Visible         =   0   'False
                Width           =   1452
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2561
                _ExtentY        =   550
                _StockProps     =   77
@@ -953,17 +1352,17 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Alignment       =   1
                Locked          =   -1  'True
-               Appearance      =   2
+               Appearance      =   6
                UseVisualStyle  =   0   'False
             End
             Begin XtremeSuiteControls.FlatEdit txtPAT_DisponibleBruto 
                Height          =   312
                Left            =   -60400
-               TabIndex        =   159
+               TabIndex        =   144
                Top             =   1320
                Visible         =   0   'False
                Width           =   1572
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2773
                _ExtentY        =   550
                _StockProps     =   77
@@ -980,17 +1379,17 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Alignment       =   1
                Locked          =   -1  'True
-               Appearance      =   2
+               Appearance      =   6
                UseVisualStyle  =   0   'False
             End
             Begin XtremeSuiteControls.FlatEdit txtFondos 
                Height          =   312
                Left            =   -66160
-               TabIndex        =   161
+               TabIndex        =   146
                Top             =   2160
                Visible         =   0   'False
                Width           =   1452
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2561
                _ExtentY        =   550
                _StockProps     =   77
@@ -1007,13 +1406,13 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Alignment       =   1
                Locked          =   -1  'True
-               Appearance      =   2
+               Appearance      =   6
                UseVisualStyle  =   0   'False
             End
             Begin FPSpreadADO.fpSpread vGridRefundiciones 
                Height          =   2772
                Left            =   -67360
-               TabIndex        =   162
+               TabIndex        =   147
                Top             =   480
                Visible         =   0   'False
                Width           =   9132
@@ -1035,9 +1434,110 @@ Begin VB.Form frmCR_ComitesAprobaciones
                   Strikethrough   =   0   'False
                EndProperty
                MaxCols         =   13
-               SpreadDesigner  =   "frmCR_ComitesAprobaciones.frx":39B7
+               SpreadDesigner  =   "frmCR_ComitesAprobaciones.frx":4ABC
                VScrollSpecialType=   2
                AppearanceStyle =   1
+            End
+            Begin XtremeSuiteControls.Label lblClasificacion 
+               Height          =   375
+               Left            =   -69640
+               TabIndex        =   190
+               Top             =   720
+               Visible         =   0   'False
+               Width           =   3135
+               _Version        =   1572864
+               _ExtentX        =   5530
+               _ExtentY        =   661
+               _StockProps     =   79
+               Caption         =   "Clasificación de la Persona:         A"
+               BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+            End
+            Begin VB.Label Label4 
+               BackStyle       =   0  'Transparent
+               Caption         =   "( + ) Salario Variable"
+               BeginProperty Font 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   400
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Height          =   195
+               Left            =   11160
+               TabIndex        =   189
+               Top             =   2160
+               Width           =   1815
+            End
+            Begin VB.Label lblCA 
+               Alignment       =   2  'Center
+               Appearance      =   0  'Flat
+               BackColor       =   &H80000005&
+               BorderStyle     =   1  'Fixed Single
+               BeginProperty Font 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               ForeColor       =   &H80000008&
+               Height          =   300
+               Left            =   11160
+               TabIndex        =   188
+               Top             =   2400
+               Width           =   1815
+            End
+            Begin VB.Label lblLinea 
+               Alignment       =   2  'Center
+               Appearance      =   0  'Flat
+               BackColor       =   &H80000005&
+               BorderStyle     =   1  'Fixed Single
+               BeginProperty Font 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               ForeColor       =   &H80000008&
+               Height          =   300
+               Left            =   9240
+               TabIndex        =   186
+               Top             =   840
+               Width           =   1815
+            End
+            Begin VB.Label Label16 
+               BackStyle       =   0  'Transparent
+               Caption         =   "Línea de Crédito"
+               BeginProperty Font 
+                  Name            =   "Calibri"
+                  Size            =   9
+                  Charset         =   0
+                  Weight          =   400
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Height          =   195
+               Index           =   1
+               Left            =   9240
+               TabIndex        =   185
+               Top             =   480
+               Width           =   1695
             End
             Begin VB.Label Label20 
                BackStyle       =   0  'Transparent
@@ -1054,7 +1554,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                Height          =   192
                Index           =   1
                Left            =   -68320
-               TabIndex        =   160
+               TabIndex        =   145
                Top             =   2160
                Visible         =   0   'False
                Width           =   2052
@@ -1076,7 +1576,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   312
                Left            =   -64720
-               TabIndex        =   158
+               TabIndex        =   143
                ToolTipText     =   "Fecha del último ahorro obrero reportado"
                Top             =   720
                Visible         =   0   'False
@@ -1099,7 +1599,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   312
                Left            =   -64720
-               TabIndex        =   157
+               TabIndex        =   142
                ToolTipText     =   "Fecha del último aporte patronal reportado"
                Top             =   1080
                Visible         =   0   'False
@@ -1122,7 +1622,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   312
                Left            =   -64720
-               TabIndex        =   156
+               TabIndex        =   141
                ToolTipText     =   "Fecha del último ahorro extraordinario de este socio"
                Top             =   1800
                Visible         =   0   'False
@@ -1145,7 +1645,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   312
                Left            =   -64720
-               TabIndex        =   155
+               TabIndex        =   140
                ToolTipText     =   "Fecha de la capitalización de los excedentes"
                Top             =   1440
                Visible         =   0   'False
@@ -1155,11 +1655,11 @@ Begin VB.Form frmCR_ComitesAprobaciones
                Height          =   312
                Index           =   3
                Left            =   -70000
-               TabIndex        =   144
+               TabIndex        =   129
                Top             =   480
                Visible         =   0   'False
                Width           =   2652
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4678
                _ExtentY        =   556
                _StockProps     =   14
@@ -1180,11 +1680,11 @@ Begin VB.Form frmCR_ComitesAprobaciones
                Height          =   312
                Index           =   2
                Left            =   -70000
-               TabIndex        =   143
+               TabIndex        =   128
                Top             =   480
                Visible         =   0   'False
                Width           =   2652
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4678
                _ExtentY        =   556
                _StockProps     =   14
@@ -1205,11 +1705,11 @@ Begin VB.Form frmCR_ComitesAprobaciones
                Height          =   312
                Index           =   1
                Left            =   -70000
-               TabIndex        =   142
+               TabIndex        =   127
                Top             =   480
                Visible         =   0   'False
                Width           =   2652
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4678
                _ExtentY        =   556
                _StockProps     =   14
@@ -1230,11 +1730,11 @@ Begin VB.Form frmCR_ComitesAprobaciones
                Height          =   315
                Index           =   0
                Left            =   -70000
-               TabIndex        =   141
+               TabIndex        =   126
                Top             =   480
                Visible         =   0   'False
                Width           =   2652
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   4678
                _ExtentY        =   556
                _StockProps     =   14
@@ -1265,7 +1765,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   240
-               TabIndex        =   112
+               TabIndex        =   97
                Top             =   480
                Width           =   1092
             End
@@ -1286,7 +1786,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   372
                Left            =   240
-               TabIndex        =   111
+               TabIndex        =   96
                Top             =   780
                Width           =   3132
             End
@@ -1304,7 +1804,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   240
-               TabIndex        =   110
+               TabIndex        =   95
                Top             =   1200
                Width           =   1332
             End
@@ -1325,7 +1825,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   372
                Left            =   240
-               TabIndex        =   109
+               TabIndex        =   94
                Top             =   1500
                Width           =   1572
             End
@@ -1343,7 +1843,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   312
                Left            =   1920
-               TabIndex        =   108
+               TabIndex        =   93
                Top             =   1200
                Width           =   1092
             End
@@ -1364,7 +1864,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   372
                Left            =   1920
-               TabIndex        =   107
+               TabIndex        =   92
                Top             =   1500
                Width           =   1452
             End
@@ -1382,7 +1882,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   312
                Left            =   240
-               TabIndex        =   106
+               TabIndex        =   91
                Top             =   1920
                Width           =   1452
             End
@@ -1401,11 +1901,11 @@ Begin VB.Form frmCR_ComitesAprobaciones
                   Strikethrough   =   0   'False
                EndProperty
                ForeColor       =   &H80000008&
-               Height          =   372
+               Height          =   735
                Left            =   240
-               TabIndex        =   105
+               TabIndex        =   90
                Top             =   2220
-               Width           =   3132
+               Width           =   3135
             End
             Begin VB.Label Label15 
                BackStyle       =   0  'Transparent
@@ -1421,7 +1921,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   3960
-               TabIndex        =   104
+               TabIndex        =   89
                Top             =   1920
                Width           =   1452
             End
@@ -1439,7 +1939,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   3960
-               TabIndex        =   103
+               TabIndex        =   88
                Top             =   1560
                Width           =   1452
             End
@@ -1457,7 +1957,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   3960
-               TabIndex        =   102
+               TabIndex        =   87
                Top             =   1200
                Width           =   1452
             End
@@ -1478,7 +1978,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   7200
-               TabIndex        =   101
+               TabIndex        =   86
                Top             =   2400
                Width           =   1800
             End
@@ -1499,7 +1999,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   7200
-               TabIndex        =   100
+               TabIndex        =   85
                Top             =   1920
                Width           =   1800
             End
@@ -1520,7 +2020,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   7200
-               TabIndex        =   99
+               TabIndex        =   84
                Top             =   1560
                Width           =   1800
             End
@@ -1541,9 +2041,8 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   7200
-               TabIndex        =   98
+               TabIndex        =   83
                Top             =   840
-               Visible         =   0   'False
                Width           =   1800
             End
             Begin VB.Label lblMontoDesembolsos 
@@ -1563,7 +2062,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   5280
-               TabIndex        =   97
+               TabIndex        =   82
                Top             =   1920
                Width           =   1800
             End
@@ -1584,7 +2083,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   5280
-               TabIndex        =   96
+               TabIndex        =   81
                Top             =   1560
                Width           =   1800
             End
@@ -1605,7 +2104,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   5280
-               TabIndex        =   95
+               TabIndex        =   80
                Top             =   1200
                Width           =   1800
             End
@@ -1626,7 +2125,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   5280
-               TabIndex        =   94
+               TabIndex        =   79
                Top             =   840
                Width           =   1800
             End
@@ -1644,7 +2143,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   3960
-               TabIndex        =   93
+               TabIndex        =   78
                Top             =   840
                Width           =   1212
             End
@@ -1663,7 +2162,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   7440
-               TabIndex        =   92
+               TabIndex        =   77
                Top             =   480
                Width           =   1092
             End
@@ -1682,7 +2181,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   5520
-               TabIndex        =   91
+               TabIndex        =   76
                Top             =   480
                Width           =   1092
             End
@@ -1700,7 +2199,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   4560
-               TabIndex        =   90
+               TabIndex        =   75
                Top             =   2400
                Width           =   2532
             End
@@ -1720,10 +2219,10 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                ForeColor       =   &H80000008&
                Height          =   300
-               Left            =   9480
-               TabIndex        =   89
+               Left            =   9240
+               TabIndex        =   74
                Top             =   2400
-               Width           =   1812
+               Width           =   1815
             End
             Begin VB.Label lblCuota 
                Alignment       =   2  'Center
@@ -1741,10 +2240,10 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                ForeColor       =   &H80000008&
                Height          =   300
-               Left            =   9480
-               TabIndex        =   88
+               Left            =   9240
+               TabIndex        =   73
                Top             =   1560
-               Width           =   1812
+               Width           =   1815
             End
             Begin VB.Label Label17 
                BackStyle       =   0  'Transparent
@@ -1758,11 +2257,11 @@ Begin VB.Form frmCR_ComitesAprobaciones
                   Italic          =   0   'False
                   Strikethrough   =   0   'False
                EndProperty
-               Height          =   192
-               Left            =   9480
-               TabIndex        =   87
-               Top             =   2040
-               Width           =   1812
+               Height          =   195
+               Left            =   9240
+               TabIndex        =   72
+               Top             =   2160
+               Width           =   1815
             End
             Begin VB.Label Label16 
                BackStyle       =   0  'Transparent
@@ -1776,11 +2275,12 @@ Begin VB.Form frmCR_ComitesAprobaciones
                   Italic          =   0   'False
                   Strikethrough   =   0   'False
                EndProperty
-               Height          =   192
-               Left            =   9480
-               TabIndex        =   86
-               Top             =   1200
-               Width           =   1452
+               Height          =   195
+               Index           =   0
+               Left            =   9240
+               TabIndex        =   71
+               Top             =   1320
+               Width           =   1455
             End
             Begin VB.Label Label21 
                BackStyle       =   0  'Transparent
@@ -1796,7 +2296,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -62440
-               TabIndex        =   85
+               TabIndex        =   70
                Top             =   720
                Visible         =   0   'False
                Width           =   1932
@@ -1816,7 +2316,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                Height          =   192
                Index           =   0
                Left            =   -68320
-               TabIndex        =   84
+               TabIndex        =   69
                Top             =   1800
                Visible         =   0   'False
                Width           =   1812
@@ -1835,7 +2335,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -68320
-               TabIndex        =   83
+               TabIndex        =   68
                Top             =   1080
                Visible         =   0   'False
                Width           =   1692
@@ -1854,7 +2354,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -68320
-               TabIndex        =   82
+               TabIndex        =   67
                Top             =   720
                Visible         =   0   'False
                Width           =   1572
@@ -1873,7 +2373,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -68320
-               TabIndex        =   81
+               TabIndex        =   66
                Top             =   1440
                Visible         =   0   'False
                Width           =   1452
@@ -1893,7 +2393,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                Height          =   192
                Index           =   0
                Left            =   -62440
-               TabIndex        =   80
+               TabIndex        =   65
                Top             =   2280
                Visible         =   0   'False
                Width           =   1932
@@ -1912,7 +2412,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -62440
-               TabIndex        =   79
+               TabIndex        =   64
                Top             =   1680
                Visible         =   0   'False
                Width           =   1452
@@ -1931,7 +2431,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -62440
-               TabIndex        =   78
+               TabIndex        =   63
                Top             =   1320
                Visible         =   0   'False
                Width           =   1452
@@ -1949,7 +2449,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -69640
-               TabIndex        =   77
+               TabIndex        =   62
                Top             =   1560
                Visible         =   0   'False
                Width           =   1932
@@ -1971,7 +2471,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   -69640
-               TabIndex        =   76
+               TabIndex        =   61
                Top             =   1800
                Visible         =   0   'False
                Width           =   1992
@@ -1993,7 +2493,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   -69640
-               TabIndex        =   75
+               TabIndex        =   60
                Top             =   2400
                Visible         =   0   'False
                Width           =   1992
@@ -2015,7 +2515,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   -69640
-               TabIndex        =   74
+               TabIndex        =   59
                Top             =   1200
                Visible         =   0   'False
                Width           =   1992
@@ -2033,7 +2533,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -69640
-               TabIndex        =   73
+               TabIndex        =   58
                Top             =   2160
                Visible         =   0   'False
                Width           =   1332
@@ -2051,7 +2551,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -69640
-               TabIndex        =   72
+               TabIndex        =   57
                Top             =   960
                Visible         =   0   'False
                Width           =   852
@@ -2073,7 +2573,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   -69520
-               TabIndex        =   71
+               TabIndex        =   56
                Top             =   1200
                Visible         =   0   'False
                Width           =   1992
@@ -2091,7 +2591,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -69520
-               TabIndex        =   70
+               TabIndex        =   55
                Top             =   960
                Visible         =   0   'False
                Width           =   852
@@ -2113,7 +2613,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   -69520
-               TabIndex        =   69
+               TabIndex        =   54
                Top             =   1800
                Visible         =   0   'False
                Width           =   1992
@@ -2131,7 +2631,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -69520
-               TabIndex        =   68
+               TabIndex        =   53
                Top             =   1560
                Visible         =   0   'False
                Width           =   852
@@ -2153,7 +2653,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   -69520
-               TabIndex        =   67
+               TabIndex        =   52
                Top             =   2400
                Visible         =   0   'False
                Width           =   1992
@@ -2171,7 +2671,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -69520
-               TabIndex        =   66
+               TabIndex        =   51
                Top             =   2160
                Visible         =   0   'False
                Width           =   852
@@ -2193,7 +2693,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   -69520
-               TabIndex        =   65
+               TabIndex        =   50
                Top             =   1920
                Visible         =   0   'False
                Width           =   1992
@@ -2212,7 +2712,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -69520
-               TabIndex        =   64
+               TabIndex        =   49
                Top             =   1680
                Visible         =   0   'False
                Width           =   2052
@@ -2231,7 +2731,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -69520
-               TabIndex        =   63
+               TabIndex        =   48
                Top             =   1080
                Visible         =   0   'False
                Width           =   852
@@ -2253,7 +2753,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   -69520
-               TabIndex        =   62
+               TabIndex        =   47
                Top             =   1320
                Visible         =   0   'False
                Width           =   1992
@@ -2272,7 +2772,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -69520
-               TabIndex        =   61
+               TabIndex        =   46
                Top             =   1560
                Visible         =   0   'False
                Width           =   2052
@@ -2294,7 +2794,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   -69520
-               TabIndex        =   60
+               TabIndex        =   45
                Top             =   1800
                Visible         =   0   'False
                Width           =   1992
@@ -2316,7 +2816,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
                ForeColor       =   &H80000008&
                Height          =   300
                Left            =   -69520
-               TabIndex        =   59
+               TabIndex        =   44
                Top             =   1200
                Visible         =   0   'False
                Width           =   1992
@@ -2335,22 +2835,21 @@ Begin VB.Form frmCR_ComitesAprobaciones
                EndProperty
                Height          =   192
                Left            =   -69520
-               TabIndex        =   58
+               TabIndex        =   43
                Top             =   960
                Visible         =   0   'False
                Width           =   1092
             End
          End
          Begin XtremeSuiteControls.FlatEdit txtObservacion 
-            Height          =   1992
-            Left            =   -68560
-            TabIndex        =   113
+            Height          =   1635
+            Left            =   1440
+            TabIndex        =   98
             Top             =   480
-            Visible         =   0   'False
-            Width           =   9492
-            _Version        =   1441793
-            _ExtentX        =   16743
-            _ExtentY        =   3514
+            Width           =   9615
+            _Version        =   1572864
+            _ExtentX        =   16960
+            _ExtentY        =   2884
             _StockProps     =   77
             ForeColor       =   0
             BackColor       =   -2147483643
@@ -2365,12 +2864,13 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             MultiLine       =   -1  'True
             ScrollBars      =   2
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin FPSpreadADO.fpSpread vGridSeguimiento 
             Height          =   3252
             Left            =   -69880
-            TabIndex        =   114
+            TabIndex        =   99
             Top             =   360
             Visible         =   0   'False
             Width           =   10932
@@ -2392,21 +2892,20 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             MaxCols         =   487
             ScrollBarExtMode=   -1  'True
-            SpreadDesigner  =   "frmCR_ComitesAprobaciones.frx":43AC
+            SpreadDesigner  =   "frmCR_ComitesAprobaciones.frx":54B1
             VScrollSpecialType=   2
             AppearanceStyle =   1
          End
          Begin XtremeSuiteControls.PushButton btnResolucion 
-            Height          =   492
+            Height          =   615
             Index           =   1
-            Left            =   -66760
-            TabIndex        =   139
+            Left            =   3240
+            TabIndex        =   124
             Top             =   2520
-            Visible         =   0   'False
-            Width           =   1692
-            _Version        =   1441793
-            _ExtentX        =   2984
-            _ExtentY        =   868
+            Width           =   1695
+            _Version        =   1572864
+            _ExtentX        =   2990
+            _ExtentY        =   1085
             _StockProps     =   79
             Caption         =   "Pendiente"
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -2418,22 +2917,22 @@ Begin VB.Form frmCR_ComitesAprobaciones
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
+            UseVisualStyle  =   -1  'True
             TextAlignment   =   1
-            Appearance      =   16
-            Picture         =   "frmCR_ComitesAprobaciones.frx":4942
+            Appearance      =   21
+            Picture         =   "frmCR_ComitesAprobaciones.frx":5A47
             ImageAlignment  =   4
          End
          Begin XtremeSuiteControls.PushButton btnResolucion 
-            Height          =   492
+            Height          =   615
             Index           =   2
-            Left            =   -65080
-            TabIndex        =   140
+            Left            =   9120
+            TabIndex        =   125
             Top             =   2520
-            Visible         =   0   'False
-            Width           =   1692
-            _Version        =   1441793
-            _ExtentX        =   2984
-            _ExtentY        =   868
+            Width           =   1695
+            _Version        =   1572864
+            _ExtentX        =   2990
+            _ExtentY        =   1085
             _StockProps     =   79
             Caption         =   "Denegar   "
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -2445,20 +2944,21 @@ Begin VB.Form frmCR_ComitesAprobaciones
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
+            UseVisualStyle  =   -1  'True
             TextAlignment   =   1
-            Appearance      =   16
-            Picture         =   "frmCR_ComitesAprobaciones.frx":50B4
+            Appearance      =   21
+            Picture         =   "frmCR_ComitesAprobaciones.frx":61B9
             ImageAlignment  =   4
          End
          Begin XtremeSuiteControls.RadioButton optCausas 
             Height          =   492
             Index           =   0
             Left            =   -69760
-            TabIndex        =   164
+            TabIndex        =   149
             Top             =   480
             Visible         =   0   'False
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   868
             _StockProps     =   79
@@ -2479,11 +2979,11 @@ Begin VB.Form frmCR_ComitesAprobaciones
             Height          =   492
             Index           =   1
             Left            =   -69760
-            TabIndex        =   165
+            TabIndex        =   150
             Top             =   960
             Visible         =   0   'False
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   868
             _StockProps     =   79
@@ -2499,6 +2999,104 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Appearance      =   16
          End
+         Begin XtremeSuiteControls.FlatEdit txtAcuerdoJD 
+            Height          =   315
+            Left            =   1440
+            TabIndex        =   182
+            Top             =   2160
+            Width           =   1695
+            _Version        =   1572864
+            _ExtentX        =   2990
+            _ExtentY        =   556
+            _StockProps     =   77
+            ForeColor       =   0
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Alignment       =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
+         End
+         Begin XtremeSuiteControls.PushButton btnResolucion 
+            Height          =   615
+            Index           =   3
+            Left            =   5040
+            TabIndex        =   183
+            Top             =   2520
+            Width           =   1935
+            _Version        =   1572864
+            _ExtentX        =   3413
+            _ExtentY        =   1085
+            _StockProps     =   79
+            Caption         =   "VB %Liq Pen.Avalúo"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            TextAlignment   =   1
+            Appearance      =   21
+            Picture         =   "frmCR_ComitesAprobaciones.frx":692B
+            ImageAlignment  =   4
+         End
+         Begin XtremeSuiteControls.PushButton btnResolucion 
+            Height          =   615
+            Index           =   4
+            Left            =   7080
+            TabIndex        =   184
+            Top             =   2520
+            Width           =   1935
+            _Version        =   1572864
+            _ExtentX        =   3413
+            _ExtentY        =   1085
+            _StockProps     =   79
+            Caption         =   "VB %Liq. Pend. Acuerdo/Factura"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            TextAlignment   =   1
+            Appearance      =   21
+            Picture         =   "frmCR_ComitesAprobaciones.frx":D18D
+            ImageAlignment  =   4
+         End
+         Begin VB.Label Label8 
+            BackStyle       =   0  'Transparent
+            Caption         =   "Acuerdo JD"
+            BeginProperty Font 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   255
+            Index           =   1
+            Left            =   120
+            TabIndex        =   181
+            Top             =   2160
+            Width           =   1455
+         End
          Begin VB.Label Label8 
             BackStyle       =   0  'Transparent
             Caption         =   "Observación"
@@ -2512,10 +3110,10 @@ Begin VB.Form frmCR_ComitesAprobaciones
                Strikethrough   =   0   'False
             EndProperty
             Height          =   252
-            Left            =   -69880
-            TabIndex        =   137
+            Index           =   0
+            Left            =   120
+            TabIndex        =   122
             Top             =   480
-            Visible         =   0   'False
             Width           =   1452
          End
          Begin VB.Label Label32 
@@ -2532,7 +3130,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   192
             Left            =   -59200
-            TabIndex        =   136
+            TabIndex        =   121
             Top             =   2760
             Visible         =   0   'False
             Width           =   252
@@ -2551,7 +3149,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   192
             Left            =   -61120
-            TabIndex        =   135
+            TabIndex        =   120
             Top             =   2760
             Visible         =   0   'False
             Width           =   252
@@ -2570,7 +3168,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   300
             Left            =   -58360
-            TabIndex        =   134
+            TabIndex        =   119
             ToolTipText     =   "Membresia"
             Top             =   3000
             Visible         =   0   'False
@@ -2590,7 +3188,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   300
             Left            =   -61480
-            TabIndex        =   133
+            TabIndex        =   118
             ToolTipText     =   "Membresia"
             Top             =   3000
             Visible         =   0   'False
@@ -2610,7 +3208,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   300
             Left            =   -63400
-            TabIndex        =   132
+            TabIndex        =   117
             ToolTipText     =   "Membresia"
             Top             =   1800
             Visible         =   0   'False
@@ -2630,7 +3228,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   192
             Left            =   -63400
-            TabIndex        =   131
+            TabIndex        =   116
             Top             =   1560
             Visible         =   0   'False
             Width           =   1572
@@ -2649,7 +3247,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   192
             Left            =   -60400
-            TabIndex        =   130
+            TabIndex        =   115
             Top             =   2760
             Visible         =   0   'False
             Width           =   1572
@@ -2668,7 +3266,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   192
             Left            =   -63400
-            TabIndex        =   129
+            TabIndex        =   114
             Top             =   2760
             Visible         =   0   'False
             Width           =   1572
@@ -2687,7 +3285,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   192
             Left            =   -59440
-            TabIndex        =   128
+            TabIndex        =   113
             Top             =   2160
             Visible         =   0   'False
             Width           =   1572
@@ -2706,7 +3304,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   300
             Left            =   -60400
-            TabIndex        =   127
+            TabIndex        =   112
             ToolTipText     =   "Membresia"
             Top             =   3000
             Visible         =   0   'False
@@ -2726,7 +3324,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   300
             Left            =   -63400
-            TabIndex        =   126
+            TabIndex        =   111
             ToolTipText     =   "Membresia"
             Top             =   3000
             Visible         =   0   'False
@@ -2746,7 +3344,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   300
             Left            =   -59440
-            TabIndex        =   125
+            TabIndex        =   110
             ToolTipText     =   "Membresia"
             Top             =   2400
             Visible         =   0   'False
@@ -2766,7 +3364,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   192
             Left            =   -63400
-            TabIndex        =   124
+            TabIndex        =   109
             Top             =   2160
             Visible         =   0   'False
             Width           =   1572
@@ -2785,7 +3383,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   300
             Left            =   -63400
-            TabIndex        =   123
+            TabIndex        =   108
             ToolTipText     =   "Membresia"
             Top             =   2400
             Visible         =   0   'False
@@ -2805,7 +3403,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   300
             Left            =   -60400
-            TabIndex        =   122
+            TabIndex        =   107
             ToolTipText     =   "Membresia"
             Top             =   1200
             Visible         =   0   'False
@@ -2825,7 +3423,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   312
             Left            =   -60400
-            TabIndex        =   121
+            TabIndex        =   106
             Top             =   960
             Visible         =   0   'False
             Width           =   1572
@@ -2844,7 +3442,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   300
             Left            =   -63400
-            TabIndex        =   120
+            TabIndex        =   105
             ToolTipText     =   "Membresia"
             Top             =   1200
             Visible         =   0   'False
@@ -2864,7 +3462,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   192
             Left            =   -63400
-            TabIndex        =   119
+            TabIndex        =   104
             Top             =   960
             Visible         =   0   'False
             Width           =   1572
@@ -2883,7 +3481,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   300
             Left            =   -59440
-            TabIndex        =   118
+            TabIndex        =   103
             ToolTipText     =   "Membresia"
             Top             =   600
             Visible         =   0   'False
@@ -2903,7 +3501,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   300
             Left            =   -63400
-            TabIndex        =   117
+            TabIndex        =   102
             ToolTipText     =   "Membresia"
             Top             =   600
             Visible         =   0   'False
@@ -2922,7 +3520,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   192
             Left            =   -59440
-            TabIndex        =   116
+            TabIndex        =   101
             Top             =   360
             Visible         =   0   'False
             Width           =   1092
@@ -2941,7 +3539,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Height          =   192
             Left            =   -63400
-            TabIndex        =   115
+            TabIndex        =   100
             Top             =   360
             Visible         =   0   'False
             Width           =   1572
@@ -2958,13 +3556,13 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Top             =   0
          Width           =   12132
          Begin XtremeSuiteControls.PushButton btnConsultaDetalle 
-            Height          =   312
+            Height          =   315
             Index           =   0
             Left            =   10200
-            TabIndex        =   26
-            Top             =   156
-            Width           =   852
-            _Version        =   1441793
+            TabIndex        =   24
+            Top             =   150
+            Width           =   855
+            _Version        =   1572864
             _ExtentX        =   1503
             _ExtentY        =   556
             _StockProps     =   79
@@ -2981,13 +3579,13 @@ Begin VB.Form frmCR_ComitesAprobaciones
             Appearance      =   6
          End
          Begin XtremeSuiteControls.PushButton btnConsultaDetalle 
-            Height          =   312
+            Height          =   315
             Index           =   1
             Left            =   11040
-            TabIndex        =   27
-            Top             =   156
-            Width           =   852
-            _Version        =   1441793
+            TabIndex        =   25
+            Top             =   150
+            Width           =   855
+            _Version        =   1572864
             _ExtentX        =   1503
             _ExtentY        =   556
             _StockProps     =   79
@@ -3006,10 +3604,10 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Begin XtremeSuiteControls.FlatEdit txtConsultaId 
             Height          =   312
             Left            =   1440
-            TabIndex        =   49
+            TabIndex        =   34
             Top             =   156
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   556
             _StockProps     =   77
@@ -3026,15 +3624,16 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Alignment       =   2
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtConsultaCedula 
             Height          =   312
             Left            =   3240
-            TabIndex        =   50
+            TabIndex        =   35
             Top             =   156
             Width           =   2172
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   556
             _StockProps     =   77
@@ -3051,15 +3650,16 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             Alignment       =   2
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtConsultaNombre 
             Height          =   312
             Left            =   5400
-            TabIndex        =   51
+            TabIndex        =   36
             Top             =   156
             Width           =   4812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   556
             _StockProps     =   77
@@ -3076,17 +3676,18 @@ Begin VB.Form frmCR_ComitesAprobaciones
             EndProperty
             BackColor       =   16777215
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeShortcutBar.ShortcutCaption lblOperacion 
-            Height          =   612
+            Height          =   615
             Left            =   0
-            TabIndex        =   48
+            TabIndex        =   33
             Top             =   0
-            Width           =   12132
-            _Version        =   1441793
-            _ExtentX        =   21399
-            _ExtentY        =   1080
+            Width           =   12255
+            _Version        =   1572864
+            _ExtentX        =   21616
+            _ExtentY        =   1085
             _StockProps     =   14
             Caption         =   "Operación"
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -3099,41 +3700,20 @@ Begin VB.Form frmCR_ComitesAprobaciones
                Strikethrough   =   0   'False
             EndProperty
          End
-         Begin VB.Label lblLinea 
-            Alignment       =   2  'Center
-            BackColor       =   &H00E0E0E0&
-            BorderStyle     =   1  'Fixed Single
-            BeginProperty Font 
-               Name            =   "Arial"
-               Size            =   8.25
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            Height          =   372
-            Left            =   10080
-            TabIndex        =   5
-            ToolTipText     =   "Operación"
-            Top             =   120
-            Visible         =   0   'False
-            Width           =   252
-         End
       End
       Begin XtremeShortcutBar.ShortcutCaption scOperacionBar 
          Height          =   612
          Left            =   0
-         TabIndex        =   145
+         TabIndex        =   130
          Top             =   0
          Width           =   12132
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   21399
          _ExtentY        =   1080
          _StockProps     =   14
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   9
+            Size            =   8.96
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -3145,10 +3725,10 @@ Begin VB.Form frmCR_ComitesAprobaciones
    Begin XtremeSuiteControls.PushButton btnEstudio 
       Height          =   312
       Left            =   10200
-      TabIndex        =   24
+      TabIndex        =   22
       Top             =   1560
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   550
       _StockProps     =   79
@@ -3162,16 +3742,17 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   6
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
    End
    Begin XtremeSuiteControls.FlatEdit txtUsuario 
       Height          =   312
       Index           =   1
       Left            =   6000
-      TabIndex        =   16
+      TabIndex        =   14
       Top             =   1080
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -3187,30 +3768,31 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.CheckBox chkUsuarioValida 
       Height          =   204
       Index           =   0
       Left            =   4440
-      TabIndex        =   14
+      TabIndex        =   12
       Top             =   1080
       Width           =   204
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   360
       _ExtentY        =   360
       _StockProps     =   79
       Appearance      =   16
    End
    Begin FPSpreadADO.fpSpread vGridSolicitudes 
-      Height          =   3012
+      Height          =   3015
       Left            =   0
       TabIndex        =   0
       Top             =   2040
-      Width           =   11412
+      Width           =   15015
       _Version        =   524288
-      _ExtentX        =   20130
-      _ExtentY        =   5313
+      _ExtentX        =   26485
+      _ExtentY        =   5318
       _StockProps     =   64
       BackColorStyle  =   1
       BorderStyle     =   0
@@ -3224,19 +3806,19 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      MaxCols         =   492
+      MaxCols         =   493
       ScrollBarExtMode=   -1  'True
-      SpreadDesigner  =   "frmCR_ComitesAprobaciones.frx":5826
+      SpreadDesigner  =   "frmCR_ComitesAprobaciones.frx":139EF
       VScrollSpecialType=   2
       AppearanceStyle =   1
    End
    Begin XtremeSuiteControls.FlatEdit txtComiteId 
       Height          =   372
       Left            =   3000
-      TabIndex        =   8
+      TabIndex        =   7
       Top             =   240
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   656
       _StockProps     =   77
@@ -3252,16 +3834,16 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtComiteDesc 
       Height          =   372
       Left            =   4200
-      TabIndex        =   9
+      TabIndex        =   8
       Top             =   240
       Width           =   6492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   11451
       _ExtentY        =   656
       _StockProps     =   77
@@ -3276,29 +3858,17 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
-   End
-   Begin MSComCtl2.FlatScrollBar FlatScrollBar 
-      Height          =   360
-      Left            =   10800
-      TabIndex        =   10
-      Top             =   240
-      Width           =   492
-      _ExtentX        =   873
-      _ExtentY        =   635
-      _Version        =   393216
-      Arrows          =   65536
-      Orientation     =   1638401
    End
    Begin XtremeSuiteControls.FlatEdit txtUsuario 
       Height          =   312
       Index           =   0
       Left            =   1200
-      TabIndex        =   12
+      TabIndex        =   10
       Top             =   1080
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -3314,16 +3884,17 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtUsuarioClave 
       Height          =   312
       Index           =   0
       Left            =   2760
-      TabIndex        =   13
+      TabIndex        =   11
       Top             =   1080
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -3340,16 +3911,17 @@ Begin VB.Form frmCR_ComitesAprobaciones
       EndProperty
       Alignment       =   2
       PasswordChar    =   "*"
-      Appearance      =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtUsuarioClave 
       Height          =   312
       Index           =   1
       Left            =   7560
-      TabIndex        =   17
+      TabIndex        =   15
       Top             =   1080
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -3366,16 +3938,17 @@ Begin VB.Form frmCR_ComitesAprobaciones
       EndProperty
       Alignment       =   2
       PasswordChar    =   "*"
-      Appearance      =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.CheckBox chkUsuarioValida 
       Height          =   204
       Index           =   1
       Left            =   9240
-      TabIndex        =   18
+      TabIndex        =   16
       Top             =   1080
       Width           =   204
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   360
       _ExtentY        =   360
       _StockProps     =   79
@@ -3385,10 +3958,10 @@ Begin VB.Form frmCR_ComitesAprobaciones
       Height          =   312
       Index           =   2
       Left            =   10800
-      TabIndex        =   20
+      TabIndex        =   18
       Top             =   1080
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -3404,16 +3977,17 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtUsuarioClave 
       Height          =   312
       Index           =   2
       Left            =   12360
-      TabIndex        =   21
+      TabIndex        =   19
       Top             =   1080
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -3430,16 +4004,17 @@ Begin VB.Form frmCR_ComitesAprobaciones
       EndProperty
       Alignment       =   2
       PasswordChar    =   "*"
-      Appearance      =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.CheckBox chkUsuarioValida 
       Height          =   204
       Index           =   2
       Left            =   14040
-      TabIndex        =   22
+      TabIndex        =   20
       Top             =   1080
       Width           =   204
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   360
       _ExtentY        =   360
       _StockProps     =   79
@@ -3448,15 +4023,15 @@ Begin VB.Form frmCR_ComitesAprobaciones
    Begin XtremeSuiteControls.ComboBox cboFiltroEstado 
       Height          =   312
       Left            =   12240
-      TabIndex        =   23
+      TabIndex        =   21
       Top             =   1560
       Width           =   1692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2990
       _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
-      BackColor       =   16185078
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -3466,18 +4041,18 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
    Begin XtremeSuiteControls.PushButton btnSolicitud 
       Height          =   312
       Left            =   8160
-      TabIndex        =   25
+      TabIndex        =   23
       Top             =   1560
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   550
       _StockProps     =   79
@@ -3491,40 +4066,16 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   6
-   End
-   Begin XtremeSuiteControls.FlatEdit txtActa 
-      Height          =   312
-      Left            =   1200
-      TabIndex        =   28
-      Top             =   1560
-      Width           =   1572
-      _Version        =   1441793
-      _ExtentX        =   2773
-      _ExtentY        =   550
-      _StockProps     =   77
-      ForeColor       =   0
-      BackColor       =   -2147483643
-      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Alignment       =   2
-      Locked          =   -1  'True
-      Appearance      =   2
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
    End
    Begin XtremeSuiteControls.PushButton btnActa 
-      Height          =   312
-      Left            =   2760
-      TabIndex        =   30
+      Height          =   315
+      Left            =   3240
+      TabIndex        =   27
       Top             =   1560
-      Width           =   492
-      _Version        =   1441793
+      Width           =   495
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   550
       _StockProps     =   79
@@ -3538,15 +4089,16 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
    End
    Begin XtremeSuiteControls.DateTimePicker dtpInicio 
-      Height          =   312
-      Left            =   4440
-      TabIndex        =   46
+      Height          =   315
+      Left            =   5400
+      TabIndex        =   31
       Top             =   1560
-      Width           =   1332
-      _Version        =   1441793
+      Width           =   1335
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   68
@@ -3563,12 +4115,12 @@ Begin VB.Form frmCR_ComitesAprobaciones
       Format          =   3
    End
    Begin XtremeSuiteControls.DateTimePicker dtpCorte 
-      Height          =   312
-      Left            =   5760
-      TabIndex        =   47
+      Height          =   315
+      Left            =   6720
+      TabIndex        =   32
       Top             =   1560
-      Width           =   1332
-      _Version        =   1441793
+      Width           =   1335
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   68
@@ -3597,66 +4149,143 @@ Begin VB.Form frmCR_ComitesAprobaciones
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   15
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_ComitesAprobaciones.frx":63FB
+            Picture         =   "frmCR_ComitesAprobaciones.frx":1430F
             Key             =   "verde"
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_ComitesAprobaciones.frx":6A17
+            Picture         =   "frmCR_ComitesAprobaciones.frx":1492B
             Key             =   "amarillo"
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_ComitesAprobaciones.frx":7035
+            Picture         =   "frmCR_ComitesAprobaciones.frx":14F49
             Key             =   "rojo"
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_ComitesAprobaciones.frx":771C
+            Picture         =   "frmCR_ComitesAprobaciones.frx":15630
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_ComitesAprobaciones.frx":7FED
+            Picture         =   "frmCR_ComitesAprobaciones.frx":15F01
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_ComitesAprobaciones.frx":8714
+            Picture         =   "frmCR_ComitesAprobaciones.frx":16628
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_ComitesAprobaciones.frx":8D38
+            Picture         =   "frmCR_ComitesAprobaciones.frx":16C4C
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_ComitesAprobaciones.frx":95E5
+            Picture         =   "frmCR_ComitesAprobaciones.frx":174F9
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_ComitesAprobaciones.frx":9CF1
+            Picture         =   "frmCR_ComitesAprobaciones.frx":17C05
             Key             =   ""
          EndProperty
          BeginProperty ListImage10 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_ComitesAprobaciones.frx":A3F8
+            Picture         =   "frmCR_ComitesAprobaciones.frx":1830C
             Key             =   ""
          EndProperty
          BeginProperty ListImage11 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_ComitesAprobaciones.frx":AAF8
+            Picture         =   "frmCR_ComitesAprobaciones.frx":18A0C
             Key             =   ""
          EndProperty
          BeginProperty ListImage12 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_ComitesAprobaciones.frx":B114
+            Picture         =   "frmCR_ComitesAprobaciones.frx":19028
             Key             =   ""
          EndProperty
          BeginProperty ListImage13 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_ComitesAprobaciones.frx":B845
+            Picture         =   "frmCR_ComitesAprobaciones.frx":19759
             Key             =   ""
          EndProperty
          BeginProperty ListImage14 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_ComitesAprobaciones.frx":BF42
+            Picture         =   "frmCR_ComitesAprobaciones.frx":19E56
             Key             =   ""
          EndProperty
          BeginProperty ListImage15 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_ComitesAprobaciones.frx":C649
+            Picture         =   "frmCR_ComitesAprobaciones.frx":1A55D
             Key             =   ""
          EndProperty
       EndProperty
+   End
+   Begin XtremeSuiteControls.PushButton btnActaInforme 
+      Height          =   315
+      Left            =   3720
+      TabIndex        =   170
+      Top             =   1560
+      Width           =   495
+      _Version        =   1572864
+      _ExtentX        =   868
+      _ExtentY        =   550
+      _StockProps     =   79
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmCR_ComitesAprobaciones.frx":1AC73
+   End
+   Begin XtremeSuiteControls.ComboBox cboActas 
+      Height          =   330
+      Left            =   1200
+      TabIndex        =   173
+      Top             =   1560
+      Width           =   1935
+      _Version        =   1572864
+      _ExtentX        =   3413
+      _ExtentY        =   582
+      _StockProps     =   77
+      ForeColor       =   1973790
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Style           =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+      Text            =   "ComboBox1"
+   End
+   Begin XtremeSuiteControls.ProgressBar ProgressBarX 
+      Height          =   135
+      Left            =   3000
+      TabIndex        =   180
+      Top             =   720
+      Width           =   7695
+      _Version        =   1572864
+      _ExtentX        =   13573
+      _ExtentY        =   238
+      _StockProps     =   93
+      Scrolling       =   1
+   End
+   Begin XtremeSuiteControls.UpDown UpDownComite 
+      Height          =   375
+      Left            =   10800
+      TabIndex        =   187
+      Top             =   240
+      Width           =   615
+      _Version        =   1572864
+      _ExtentX        =   1085
+      _ExtentY        =   656
+      _StockProps     =   64
+      Orientation     =   1
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+      BuddyControl    =   ""
+      BuddyProperty   =   ""
    End
    Begin VB.Label lblFechas 
       BackStyle       =   0  'Transparent
@@ -3670,11 +4299,11 @@ Begin VB.Form frmCR_ComitesAprobaciones
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   252
-      Left            =   3720
-      TabIndex        =   45
+      Height          =   255
+      Left            =   4680
+      TabIndex        =   30
       Top             =   1560
-      Width           =   1092
+      Width           =   1095
    End
    Begin VB.Label lblUsuario 
       BackStyle       =   0  'Transparent
@@ -3691,7 +4320,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
       Height          =   252
       Index           =   3
       Left            =   240
-      TabIndex        =   29
+      TabIndex        =   26
       Top             =   1560
       Width           =   1092
    End
@@ -3710,7 +4339,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
       Height          =   252
       Index           =   2
       Left            =   9840
-      TabIndex        =   19
+      TabIndex        =   17
       Top             =   1080
       Width           =   1092
    End
@@ -3729,7 +4358,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
       Height          =   252
       Index           =   1
       Left            =   5040
-      TabIndex        =   15
+      TabIndex        =   13
       Top             =   1080
       Width           =   1092
    End
@@ -3749,7 +4378,7 @@ Begin VB.Form frmCR_ComitesAprobaciones
       ForeColor       =   &H00FFFFFF&
       Height          =   252
       Left            =   1320
-      TabIndex        =   11
+      TabIndex        =   9
       Top             =   240
       Width           =   1572
    End
@@ -3768,23 +4397,23 @@ Begin VB.Form frmCR_ComitesAprobaciones
       Height          =   252
       Index           =   0
       Left            =   240
-      TabIndex        =   7
+      TabIndex        =   6
       Top             =   1080
       Width           =   1092
    End
    Begin XtremeShortcutBar.ShortcutCaption scMain 
       Height          =   492
       Left            =   0
-      TabIndex        =   6
+      TabIndex        =   5
       Top             =   960
       Width           =   14532
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   25633
       _ExtentY        =   868
       _StockProps     =   14
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   10.5
+         Size            =   10.44
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -3822,6 +4451,9 @@ Private mCarga As Boolean
 Dim vNAprobaciones As Integer, vMancomunado As Boolean, vActa As Long
 Dim vRngInicio As Currency, vRngCorte As Currency, vLineaFiltra As Integer
 
+Dim strSQL As String, rs As New ADODB.Recordset
+Dim itmX As ListViewItem
+
 Dim vPaso As Boolean
 
 
@@ -3833,6 +4465,7 @@ Private Sub btnActa_Click()
     fraActa.Left = 120
     fraActa.top = 1920
     fraActa.Visible = True
+    tcActas.Item(0).Selected = True
  End If
 End Sub
 
@@ -3841,17 +4474,14 @@ Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
 
-strSQL = "select max(Acta) as 'Acta' from CRD_COMITES_ACTAS" _
-       & " WHERE ID_COMITE = " & txtComiteId.Text _
-       & " Estado = 'A'"
-Call OpenRecordSet(rs, strSQL)
-If Not rs.EOF And Not rs.BOF Then
-    Call sbActa_Consultar(rs!acta)
-Else
-    txtActa.Text = ""
-    txtActaNew.Text = ""
-End If
+vPaso = True
+strSQL = "exec spCrd_Comites_Actas_Abiertas " & txtComiteId.Text
+    Call sbCbo_Llena_New(cboActas, strSQL, False, True)
+vPaso = False
 
+If cboActas.ListCount >= 0 Then
+   Call cboActas_Click
+End If
 
 Exit Sub
 
@@ -3866,6 +4496,8 @@ Dim itmX As ListViewItem
 
 On Error GoTo vError
 
+tcActas.Item(0).Selected = True
+
 lswAsistencia.ListItems.Clear
 
 strSQL = "select * from CRD_COMITES_ACTAS" _
@@ -3874,15 +4506,18 @@ Call OpenRecordSet(rs, strSQL)
 
 If Not rs.EOF And Not rs.BOF Then
     txtActa.Text = rs!acta
-    txtActaNew.Text = rs!acta
+    txtSesion.Text = rs!Sesion_Id
     dtpActaFecha.Value = rs!fecha
-    cboActaEstado.Text = IIf((rs!Estado = "A"), "Abierta", "Cerrada")
+    txtActaEstado.Text = IIf((rs!Estado = "A"), "Abierta", "Cerrada")
     txtActasNotas.Text = rs!Notas
+    vPaso = True
+        Call sbCboAsignaDato(cboActas, rs!Sesion_Id, True, rs!acta)
+    vPaso = False
 Else
     txtActa.Text = ""
-    txtActaNew.Text = ""
+    txtSesion.Text = ""
     dtpActaFecha.Value = fxFechaServidor
-    cboActaEstado.Text = "Abierta"
+    txtActaEstado.Text = "Abierta"
     txtActasNotas.Text = ""
 End If
 
@@ -3900,14 +4535,14 @@ With lswAsistencia
     .ColumnHeaders.Add , , "Nombre", 4100
     .Checkboxes = True
     
-    If Mid(cboActaEstado.Text, 1, 1) = "A" Then
+    If Mid(txtActaEstado.Text, 1, 1) = "A" Then
         .Enabled = True
     Else
         .Enabled = False
     End If
     
-    If txtActaNew.Text <> "" Then
-            strSQL = "exec spCrd_Comites_Acta_Asistencia_Consulta " & txtComiteId.Text & ",'" & txtActaNew.Text & "'"
+    If txtActa.Text <> "" Then
+            strSQL = "exec spCrd_Comites_Acta_Asistencia_Consulta " & txtComiteId.Text & ",'" & txtActa.Text & "'"
             Call OpenRecordSet(rs, strSQL)
             Do While Not rs.EOF
              Set itmX = .ListItems.Add(, , rs!Cedula)
@@ -3934,6 +4569,84 @@ vError:
 
 End Sub
 
+Private Sub btnActaConsulta_Click()
+    
+On Error GoTo vError
+    
+Me.MousePointer = vbHourglass
+
+strSQL = "exec spCrd_Comites_Actas_Consulta " & txtComiteId.Text _
+       & ", '" & Format(dtpActaInicio.Value, "yyyy-mm-dd") & " 00:00:00'" _
+       & ", '" & Format(dtpActaCorte.Value, "yyyy-mm-dd") & " 23:59:59', '" & txtActaFiltro.Text & "'"
+Call OpenRecordSet(rs, strSQL)
+
+lswActaH.ListItems.Clear
+
+Do While Not rs.EOF
+  Set itmX = lswActaH.ListItems.Add(, , rs!id_Comite)
+      itmX.SubItems(1) = rs!acta
+      itmX.SubItems(2) = rs!Sesion_Id
+      itmX.SubItems(3) = Format(rs!fecha, "yyyy-mm-dd")
+      itmX.SubItems(4) = rs!ESTADO_DESC
+      itmX.SubItems(5) = rs!Comite_Desc
+      itmX.SubItems(6) = rs!Registro_Fecha & ""
+      itmX.SubItems(7) = rs!Registro_Usuario & ""
+      itmX.SubItems(8) = rs!CIERRE_FECHA & ""
+      itmX.SubItems(9) = rs!CIERRE_USUARIO & ""
+  rs.MoveNext
+Loop
+rs.Close
+
+Me.MousePointer = vbDefault
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+Private Sub btnActaInforme_Click()
+Dim strSubtitulo As String
+
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+With frmContenedor.Crt
+ .Reset
+' .WindowShowGroupTree = True
+ .WindowShowRefreshBtn = True
+ .WindowShowPrintSetupBtn = True
+ .WindowState = crptMaximized
+ .WindowShowSearchBtn = True
+ .WindowTitle = "Reportes Módulo de Crédito"
+ 
+ .Connect = glogon.ConectRPT
+ 
+ .Formulas(0) = "Empresa='" & GLOBALES.gstrNombreEmpresa & "'"
+ .Formulas(1) = "fxUsuario='Usuario : " & glogon.Usuario & "'"
+ .Formulas(2) = "fxFecha='Fecha   : " & Format(fxFechaServidor, "dd/mm/yyyy") & "'"
+ 
+  strSQL = "{vCrd_Comites_Actas.ID_COMITE} = " & txtComiteId.Text & " AND {vCrd_Comites_Actas.ACTA} = '" & txtActa.Text & "'"
+  
+    .ReportFileName = SIFGlobal.fxPathReportes("Credito_Comite_Actas.rpt")
+    .SelectionFormula = strSQL
+    
+
+    .PrintReport
+End With
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
 Private Sub btnActaTool_Click(Index As Integer)
 Dim strSQL As String, rs As New ADODB.Recordset
 
@@ -3945,14 +4658,16 @@ Select Case Index
 
             strSQL = "select Acta, dbo.MyGetdate() as 'Fecha' from COMITES" _
                    & " WHERE ID_COMITE = " & txtComiteId.Text
+                   
+            strSQL = "exec spCrd_Comites_Acta_Nueva " & txtComiteId.Text & ", '" & glogon.Usuario & "'"
             Call OpenRecordSet(rs, strSQL)
             If Not rs.EOF And Not rs.BOF Then
-                txtActaNew.Text = Format(rs!acta + 1, "00000000")
+                txtActa.Text = CStr(rs!acta)
+                txtSesion.Text = rs!Sesion
                 dtpActaFecha.Value = rs!fecha
-                cboActaEstado.Text = "Abierta"
+                txtActaEstado.Text = "Abierta"
             Else
                 txtActa.Text = ""
-                txtActaNew.Text = ""
             End If
             rs.Close
             
@@ -3962,12 +4677,28 @@ Select Case Index
 
     Case 1 'Guardar
     
-        If txtActaNew.Text <> "" Then
-                strSQL = "exec spCrd_Comites_Acta " & txtComiteId.Text & ",'" & txtActaNew.Text & "','" & Format(dtpActaFecha.Value, "yyyy/mm/dd") _
-                       & "','" & Trim(txtActasNotas.Text) & "','" & Mid(cboActaEstado.Text, 1, 1) & "','" & glogon.Usuario & "'"
+        If txtActa.Text <> "" Then
+                strSQL = "exec spCrd_Comites_Acta " & txtComiteId.Text & ",'" & txtActa.Text & "','" & Format(dtpActaFecha.Value, "yyyy/mm/dd") _
+                       & "','" & Trim(txtActasNotas.Text) & "','" & Mid(txtActaEstado.Text, 1, 1) & "','" & glogon.Usuario & "', '" & txtSesion.Text & "'"
                 Call ConectionExecute(strSQL)
                 
-                Call sbActa_Consultar(txtActaNew.Text)
+                Call txtComiteId_LostFocus
+'                Call sbActa_Consultar(txtActa.Text)
+        End If
+
+    Case 2 'Cierra
+
+        If txtActa.Text <> "" Then
+                strSQL = "exec spCrd_Comites_Acta_Cierra " & txtComiteId.Text & ",'" & txtActa.Text & "','" & glogon.Usuario & "'"
+                Call OpenRecordSet(rs, strSQL)
+                
+                If rs!Pass = 1 Then
+                     MsgBox "Acta Cerrada Satisfactoriamente!", vbInformation
+                     Call sbActa_Consultar(txtActa.Text)
+                
+                Else
+                    MsgBox rs!Mensaje, vbExclamation
+                End If
         End If
 
 End Select
@@ -4064,13 +4795,36 @@ Private Sub btnEstudio_Click()
             Exit Sub
         End If
     
-        vGridSolicitudes.col = 2
+        vGridSolicitudes.Col = 3
         vGridSolicitudes.Row = 0
         vGridSolicitudes.Text = "Estudio"
         lblOperacion.Caption = "Estudio"
         
         Call sbLimpiarDatosCreditos
         Call sbCargarListaSolicitudes
+End Sub
+
+Private Sub btnExportar_Click(Index As Integer)
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+ProgressBarX.Visible = True
+
+If Index = 0 Then
+    Call Excel_Exportar_Lsw(lswActaH, ProgressBarX)
+Else
+    Call Excel_Exportar_Lsw(lswActaR, ProgressBarX)
+End If
+
+ProgressBarX.Visible = False
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 End Sub
 
 Private Sub btnResolucion_Click(Index As Integer)
@@ -4080,9 +4834,18 @@ Dim strSQL As String, rs As New ADODB.Recordset
     On Error GoTo vError
 
     If Len(Trim(mOperacion)) = 0 Then
-        MsgBox "Debe seleccionar una solicitud"
+        MsgBox "Debe seleccionar una solicitud", vbExclamation
         Exit Sub
     End If
+    
+    txtObservacion.Text = fxSysCleanTxtInject(txtObservacion.Text)
+    txtAcuerdoJD.Text = fxSysCleanTxtInject(txtAcuerdoJD.Text)
+    
+    If Len(Trim(txtObservacion)) <= 50 Then
+        MsgBox "Debe indicar una observación válida (50 Caracteres mínimo)", vbExclamation
+        Exit Sub
+    End If
+
 
     Select Case Index
         Case 0 'Aprobar
@@ -4091,7 +4854,20 @@ Dim strSQL As String, rs As New ADODB.Recordset
             Call sbResolucion("P")
         Case 2 'Denegar
             Call sbResolucion("D")
+            
+        Case 3 'VBPENAVALUO
+            Call sbResolucion("V")
+            
+        Case 4 'VBPENLIQ
+            Call sbResolucion("VL")
+            
     End Select
+    
+    
+    txtObservacion.Text = ""
+    txtAcuerdoJD.Text = ""
+    
+    
     Exit Sub
 vError:
       MsgBox fxSys_Error_Handler(Err.Description), vbCritical
@@ -4102,12 +4878,40 @@ Private Sub btnSolicitud_Click()
             Exit Sub
         End If
     
-        vGridSolicitudes.col = 2
+        vGridSolicitudes.Col = 3
         vGridSolicitudes.Row = 0
         vGridSolicitudes.Text = "Solicitud"
         lblOperacion.Caption = "Operación"
         Call sbLimpiarDatosCreditos
         Call sbCargarListaSolicitudes
+End Sub
+
+Private Sub cboActas_Click()
+If vPaso Then Exit Sub
+
+On Error GoTo vError
+
+vPaso = True
+strSQL = "exec spCrd_Comites_Actas_Abiertas " & txtComiteId.Text
+    Call sbCbo_Llena_New(cboActas, strSQL, False, True)
+vPaso = False
+
+vGrid.MaxRows = 0
+txtActa.Text = ""
+txtSesion.Text = ""
+txtActaEstado.Text = ""
+txtActasNotas.Text = ""
+
+If cboActas.ListCount >= 0 Then
+  Call sbActa_Consultar(cboActas.ItemData(cboActas.ListIndex))
+End If
+
+
+Exit Sub
+
+vError:
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
 End Sub
 
 Private Sub cboFiltroEstado_Click()
@@ -4142,17 +4946,46 @@ End Sub
 
 Private Sub sbCargarListaSolicitudes()
 ' Carga Lista de operaciones
-    Dim strSQL As String
-    
+Dim rs As New ADODB.Recordset, strSQL As String
+Dim i As Long
+
 On Error GoTo error
     'Consulta la lista de las Operaciones
+    
+'
+'If OptSolicitud.Checked = True Then
+'                strSQL = "select dbo.fxSemaforo(R.id_solicitud,R.ID_COMITE,'S') as Semaforo,R.id_solicitud AS cod_preanalisis,R.USERREC AS USUARIO,R.cedula,S.nombre,R.codigo AS cod_linea, R.MONTOSOL AS monto,R.CUOTA as cuota,R.PLAZO AS plazo,R.INT AS tasa,case " & " R.ESTADOSOL when 'R' then 'Recibido' when 'P' then 'Pendiente' else R.ESTADOSOL end AS Estado,FECHASOL AS FECHA_CREACION,Garantia, case R.ESTADOSOL when 'R' then 'Recibido' when 'P' then 'Pendiente' else R.ESTADOSOL end AS EstadoNuevoPrea,'' AS Acta" & " from reg_creditos R " & " inner join socios S on S.cedula = R.cedula " & " where R.ID_COMITE = " & txtId_Comite.Text
+'                If Not IsNothing(mFechaInicio) Then
+'                    strSQL = strSQL & " and R.FECHASOL >= '" & mFechaInicio & "'"
+'                End If
+'
+'                strSQL = strSQL & " and R.ESTADOSOL = 'R'"
+'
+'                strSQL = strSQL & " and dbo.fxCRDTagAprobacion(R.id_solicitud)= 0 "
+'                strSQL = strSQL & " order by R.FECHASOL"
+'            Else
+'                strSQL = "select dbo.fxSemaforo(P.cod_preanalisis,P.ID_COMITE,'S') as Semaforo,P.cod_preanalisis,P.USUARIO,P.cedula,S.nombre,P.cod_linea,P.monto,P.cuota,P.plazo,P.tasa,case " & " P.ESTADO when 'R' then 'Recibido' when 'P' then 'Pendiente' else P.ESTADO end as Estado,FECHA_CREACION,Garantia,CASE P.COD_ESTADO_V2 when 'RECI' then 'Recibido' when 'PRCO' then 'PEN. REV. COMITE' when 'PENVB' then 'VB %LIQ. PEN. AVALUO' when 'AAPA' then 'AVALUO ASIG. PEN. APR'  when 'PEND' then 'Pendiente' else ISNULL(P.COD_ESTADO_V2,'') end as EstadoNuevoPrea,'' AS Acta"
+'                strSQL = strSQL & " from crd_prea_preanalisis P " & " inner join socios S on s.cedula = P.cedula "
+'                strSQL = strSQL & " where P.tipo_preanalisis = 'E' and P.ID_COMITE = " & txtId_Comite.Text
+'
+'                If Not IsNothing(mFechaInicio) Then
+'                    strSQL = strSQL & " and p.FECHA_CREACION >= '" & mFechaInicio & "'"
+'                End If
+'
+'                strSQL = strSQL & " and p.ESTADO = 'R'"
+'
+'                strSQL = strSQL & " order by FECHA_CREACION"
+'            End If
+
+            
     
     Me.MousePointer = vbHourglass
     
     If lblOperacion.Caption = "Operación" Then
     
-            strSQL = "select R.id_solicitud,R.USERREC,R.cedula,S.nombre,R.codigo, R.MONTOSOL,R.CUOTA,R.PLAZO,R.INT,case " _
-                    & " R.ESTADOSOL when 'R' then 'Recibido' when 'P' then 'Pendiente' else R.ESTADOSOL end,FECHASOL, Gt.Descripcion as 'Garantia'" _
+            strSQL = "select R.id_solicitud as 'EXPEDIENTE', R.USERREC as 'USUARIO', R.cedula, S.nombre, R.codigo, R.MONTOSOL as 'MONTO', R.CUOTA, R.PLAZO, R.INT AS 'TASA', R.Garantia" _
+                    & ", case R.ESTADOSOL when 'R' then 'Recibido' when 'P' then 'Pendiente' else R.ESTADOSOL end AS 'ESTADO', FECHASOL AS 'FECHA', Gt.Descripcion as 'Garantia_Desc'" _
+                    & ", dbo.fxSemaforo(R.id_solicitud,R.ID_COMITE,'S') as 'Semaforo'" _
                     & " from reg_creditos R " _
                     & " inner join socios S on S.cedula = R.cedula " _
                     & " inner join CRD_COMITES_RNG_GARANTIA G on G.cod_garantia = R.garantia and G.id_comite = R.id_comite" _
@@ -4185,8 +5018,9 @@ On Error GoTo error
             End If
             
     Else
-            strSQL = "select P.cod_preanalisis,P.USUARIO,P.cedula,S.nombre,P.cod_linea,P.monto,P.cuota,P.plazo,P.tasa,case " _
-                    & " P.ESTADO when 'R' then 'Recibido' when 'P' then 'Pendiente' else P.ESTADO end as Estado,FECHA_CREACION,Gt.Descripcion as 'Garantia'" _
+            strSQL = "select P.cod_preanalisis as 'EXPEDIENTE', P.USUARIO, P.cedula, S.nombre, P.cod_linea as 'CODIGO', P.monto, P.cuota, P.plazo, P.tasa, P.Garantia" _
+                    & " , case P.ESTADO when 'R' then 'Recibido' when 'P' then 'Pendiente' else P.ESTADO end as 'Estado',FECHA_CREACION AS 'FECHA',Gt.Descripcion as 'Garantia_Desc'" _
+                    & " , dbo.fxSemaforo(P.cod_preanalisis,P.ID_COMITE,'P')  as 'Semaforo'" _
                     & " from crd_prea_preanalisis P " _
                     & " inner join socios S on s.cedula = P.cedula " _
                     & " inner join CRD_COMITES_RNG_GARANTIA G on G.cod_garantia = P.garantia and G.id_comite = P.id_comite" _
@@ -4219,11 +5053,63 @@ On Error GoTo error
     
     End If
         
-    Call sbCargaGridCheckIni(vGridSolicitudes, 12, strSQL)
-    vGridSolicitudes.MaxRows = vGridSolicitudes.MaxRows - 1
     
-    Me.MousePointer = vbDefault
-    Exit Sub
+'Carga el Grid Principal
+
+With vGridSolicitudes
+
+    .MaxRows = 0
+    Call OpenRecordSet(rs, strSQL)
+    
+    Do While Not rs.EOF
+      .MaxRows = .MaxRows + 1
+      .MaxCols = 14
+      
+      .Row = .MaxRows
+      .Col = 2
+        
+      Select Case rs!Semaforo
+            Case "R" ' Rojo
+                .TypePictPicture = imgSemaforos.ListImages.Item(3).Picture
+            Case "A" ' Amarillo
+                .TypePictPicture = imgSemaforos.ListImages.Item(2).Picture
+            Case "V" ' Verde
+                .TypePictPicture = imgSemaforos.ListImages.Item(1).Picture
+        End Select
+      
+      .Col = 3
+      .Text = rs!Expediente
+      .Col = 4
+      .Text = rs!Usuario & ""
+      .Col = 5
+      .Text = RTrim(rs!Cedula & "")
+      .Col = 6
+      .Text = rs!Nombre & ""
+      .Col = 7
+      .Text = rs!Codigo & ""
+      .Col = 8
+      .Text = Format(rs!Monto, "Standard")
+      .Col = 9
+      .Text = Format(rs!Cuota, "Standard")
+      .Col = 10
+      .Text = rs!Plazo & ""
+      .Col = 11
+      .Text = Format(rs!Tasa, "Standard")
+      .Col = 12
+      .Text = rs!Estado & ""
+      .Col = 13
+      .Text = rs!fecha & ""
+      .Col = 14
+      .Text = rs!Garantia_Desc & ""
+      
+      rs.MoveNext
+    Loop
+    rs.Close
+
+End With
+    
+Me.MousePointer = vbDefault
+Exit Sub
 error:
     Me.MousePointer = vbDefault
     MsgBox fxSys_Error_Handler(Err.Description), vbCritical
@@ -4320,7 +5206,7 @@ vError:
 
 End Sub
 
-Private Sub FlatScrollBar_Change()
+Private Sub FlatScrollBar_Change(pValor As Integer)
 Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
@@ -4331,7 +5217,7 @@ If vScroll Then
     
     If Len(txtComiteId.Text) > 0 Then
     
-        If FlatScrollBar.Value = 1 Then
+        If pValor = 1 Then
            strSQL = strSQL & " where estado = 1 and ID_COMITE > '" & txtComiteId.Text & "' order by ID_COMITE asc"
         Else
            strSQL = strSQL & " where estado = 1 and ID_COMITE < '" & txtComiteId.Text & "' order by ID_COMITE desc"
@@ -4350,7 +5236,7 @@ If vScroll Then
 End If
 
 vScroll = False
-FlatScrollBar.Value = 0
+pValor = 0
 vScroll = True
 
 Exit Sub
@@ -4424,23 +5310,38 @@ Private Sub Form_Load()
     Me.imgBanner.Picture = frmContenedor.imgBanner_Consultas.Picture
 
     dtpActaFecha.Value = fxFechaServidor
+    
+    dtpActaCorte.Value = dtpActaFecha.Value
+    dtpActaInicio.Value = DateAdd("d", -30, dtpActaCorte.Value)
+    
+    
+
     dtpCorte.Value = dtpActaFecha.Value
     dtpInicio.Value = DateAdd("d", -7, dtpCorte.Value)
     
-    cboActaEstado.AddItem "Abierta"
-    cboActaEstado.AddItem "Cerrada"
-    cboActaEstado.Text = "Abierta"
     
-    
-    
+    With lswActaH.ColumnHeaders
+        .Clear
+        .Add , , "Id Comite", 1000
+        .Add , , "Id Acta", 1200, vbCenter
+        .Add , , "Sesión", 2800, vbCenter
+        .Add , , "Fecha", 2100, vbCenter
+        .Add , , "Estado", 1500, vbCenter
+        .Add , , "Comité", 3500, vbCenter
+        
+        .Add , , "Reg.Fecha", 2500, vbCenter
+        .Add , , "Reg.Usuario", 2500, vbCenter
+        
+        .Add , , "Cierra Fecha", 2500, vbCenter
+        .Add , , "Cierra Usuario", 2500, vbCenter
+    End With
+
     With lswAsistencia.ColumnHeaders
         .Clear
         .Add , , "Identificación", 2200
         .Add , , "Nombre", 4200
     End With
 
-    vScroll = False
-        FlatScrollBar.Value = 0
     vScroll = True
     mCarga = True
 
@@ -4448,15 +5349,14 @@ Private Sub Form_Load()
     vGridSeguimiento.AppearanceStyle = fxGridStyle
     
     vGridSolicitudes.MaxRows = 0
-    vGridSolicitudes.MaxCols = 13
-    vGridSeguimiento.MaxRows = 0
-    vGridSeguimiento.MaxCols = 2
+    vGridSolicitudes.MaxCols = 14
+
     
     cboFiltroEstado.Clear
     cboFiltroEstado.AddItem ("Todos")
     cboFiltroEstado.AddItem ("Recibida")
     cboFiltroEstado.AddItem ("Pendiente")
-    cboFiltroEstado.Text = "Todos"
+    cboFiltroEstado.Text = "Recibida"
     
     
     mCarga = False
@@ -4575,6 +5475,24 @@ vError:
 
 End Sub
 
+Private Sub lswActaH_ItemClick(ByVal Item As XtremeSuiteControls.ListViewItem)
+Dim pComiteId As Long, pActa As String
+
+On Error GoTo vError
+
+pComiteId = Item.Text
+pActa = Item.SubItems(1)
+
+If txtComiteId.Text <> pComiteId Then
+   txtComiteId.Text = pComiteId
+   Call txtComiteId_LostFocus
+End If
+
+Call sbActa_Consultar(pActa)
+
+vError:
+End Sub
+
 Private Sub lswAsistencia_ItemCheck(ByVal Item As XtremeSuiteControls.ListViewItem)
 Dim strSQL As String
 
@@ -4585,7 +5503,7 @@ On Error GoTo vError
             
     strSQL = "UPDATE CRD_COMITES_ACTAS_ASISTENCIA SET ASISTENCIA = " & IIf(Item.Checked, 1, 0) _
            & ", REGISTRO_FECHA = dbo.myGetdate(), REGISTRO_USUARIO = '" & glogon.Usuario & "'" _
-           & " WHERE ID_COMITE = " & txtComiteId.Text & " and ACTA = '" & txtActaNew.Text & "' and cedula = '" & Item.Text & "'"
+           & " WHERE ID_COMITE = " & txtComiteId.Text & " and ACTA = '" & txtActa.Text & "' and cedula = '" & Item.Text & "'"
     
     Call ConectionExecute(strSQL)
     
@@ -4668,9 +5586,9 @@ With vGridRefundiciones
     .MaxRows = .MaxRows - 1
     For i = 1 To .MaxRows
         .Row = i
-        .col = 5
+        .Col = 5
         curMonto = curMonto + CCur(.Text)
-        .col = 6
+        .Col = 6
         curCuota = curCuota + CCur(.Text)
     Next i
     
@@ -4744,6 +5662,96 @@ Private Sub optCausas_Click(Index As Integer)
 Call sbCargarListaCausas
 End Sub
 
+
+Private Sub sbActas_Resoluciones()
+On Error GoTo vError
+    
+Me.MousePointer = vbHourglass
+
+    With lswActaR.ColumnHeaders
+        .Clear
+        .Add , , "Id Comite", 1000
+        .Add , , "Id Acta", 1200, vbCenter
+        .Add , , "Sesión", 2800, vbCenter
+        
+        .Add , , "Cedula", 1500, vbCenter
+        .Add , , "Nombre", 3500
+        .Add , , "Línea", 1200, vbCenter
+        .Add , , "Garantía", 2500
+        .Add , , "Estado", 2500
+        .Add , , "Resolución", 3000
+        .Add , , "Notas", 3000
+        
+        .Add , , "Monto", 2100, vbRightJustify
+        .Add , , "Plazo", 1100, vbRightJustify
+        .Add , , "Tasa", 1100, vbRightJustify
+        .Add , , "Cuota", 1800, vbRightJustify
+        
+        
+        .Add , , "Destino", 3000
+        .Add , , "Comite", 3000
+        
+        .Add , , "Reg.Fecha", 2500, vbCenter
+        .Add , , "Reg.Usuario", 2500, vbCenter
+        
+    End With
+
+
+strSQL = "select Expediente, Recibe_Usuario, Cedula, Nombre, Cod_Linea, Monto, Cuota, Plazo, [Int]" _
+        & "    , Estado, Recibe_Fecha, Garantia, Destino, EstadoResolucion, ResolucionNotas, ResolucionEstadoDesc" _
+        & "    , ID_COMITE, ACTA, SESION_ID, ComiteDesc" _
+        & " from vCrd_Comites_Actas_Resoluciones R" _
+        & " Where id_comite = " & txtComiteId.Text & " And Acta = " & txtActa.Text
+
+Call OpenRecordSet(rs, strSQL)
+
+lswActaR.ListItems.Clear
+'Format(rs!fecha, "yyyy-mm-dd")
+Do While Not rs.EOF
+  Set itmX = lswActaR.ListItems.Add(, , rs!id_Comite)
+      itmX.SubItems(1) = rs!acta
+      itmX.SubItems(2) = rs!Sesion_Id
+      itmX.SubItems(3) = rs!Cedula
+      itmX.SubItems(4) = rs!Nombre
+      itmX.SubItems(5) = rs!cod_linea
+      itmX.SubItems(6) = rs!Garantia
+      itmX.SubItems(7) = rs!Estado
+      itmX.SubItems(8) = rs!ResolucionEstadoDesc
+      itmX.SubItems(9) = rs!ResolucionNotas
+      itmX.SubItems(10) = Format(rs!Monto, "Standard")
+      itmX.SubItems(11) = rs!Plazo
+      itmX.SubItems(12) = Format(rs!Int, "Standard")
+      itmX.SubItems(13) = Format(rs!Cuota, "Standard")
+      
+      itmX.SubItems(14) = rs!Destino & ""
+      itmX.SubItems(15) = rs!ComiteDesc
+      itmX.SubItems(16) = rs!Recibe_Fecha
+      itmX.SubItems(17) = rs!Recibe_Usuario
+  
+  rs.MoveNext
+Loop
+rs.Close
+
+Me.MousePointer = vbDefault
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+Private Sub tcActas_SelectedChanged(ByVal Item As XtremeSuiteControls.ITabControlItem)
+Select Case Item.Index
+    Case 1 'Actas
+      Call btnActaConsulta_Click
+      
+    Case 2 'Resoluciones
+      Call sbActas_Resoluciones
+    
+End Select
+End Sub
+
 Private Sub tcDetalle_SelectedChanged(ByVal Item As XtremeSuiteControls.ITabControlItem)
 
 Call Form_Resize
@@ -4753,6 +5761,9 @@ Call Form_Resize
     Case 1
         vGrid.MaxRows = 0
         Call sbClasificacion_Load
+        
+        vGrid.Visible = False
+        
     Case 2
         Call sbPatrimonio_Load
     
@@ -4809,23 +5820,102 @@ End Sub
 
 Private Sub sbResolucion(ByVal vEstado As String)
 Dim strSQL As String, rs As New ADODB.Recordset
+
 Dim Cod_Parametro As String, Tag As String, LineaTag As Integer, NotaTag As String
+
 Dim EnviaMensaje As Boolean, Email As String, EmailCC As String
 Dim Asunto As String, Cuerpo As String
 
-    On Error GoTo vError
+Dim i As Integer, vMensaje As String
+Dim vEstadoComite As String, vEstadoEditable As Integer
+    
+Dim vIndicadoTrasladoSalario As Boolean, LineaValidar As String
+Dim vMontoCreditos As Currency, vMontoMaximo As Currency
+Dim vLiquidez As Currency, vLiquidezMinima As Currency, liquidezSinCompAdicional As String
+   
+Dim pTipo As String
+   
+On Error GoTo vError
+    
+    
+
+If btnSolicitud.Value = True Then
+    pTipo = "S" 'Solicitiud
+Else
+    pTipo = "E" 'Estudio de Credito
+
+    strSQL = "exec spCrdPrea_Comite_Validacion_Resolucion '" & mOperacion & "', " & txtComiteId.Text
+    Call OpenRecordSet(rs, strSQL)
+        
+        vLiquidezMinima = rs!LiquidezMinima
+        vMontoMaximo = rs!MontoMaximo
+        vMontoCreditos = rs!MontoCreditos
+        liquidezSinCompAdicional = rs!liquidezSinCompAdicional
+        vLiquidez = rs!Liquidez
+        vIndicadoTrasladoSalario = IIf((rs!TRASLADA_SALARIO = True Or rs!TRASLADA_SALARIO = 1), True, False)
+        LineaValidar = rs!LineaValida
+        
+    rs.Close
+End If
     
     Select Case vEstado
         Case "A"
             Cod_Parametro = "01"
+            vEstadoComite = "APRO"
+            vEstadoEditable = 0
+            
+                    If pTipo = "E" Then
+                        If LineaValidar = lblLinea.Caption Then
+                            If Not vIndicadoTrasladoSalario Then
+                                If MsgBox("Se está realizando una aprobación de una línea " & LineaValidar & " sin traslado de salario activo. ¿Desea continuar con la aprobación?", vbYesNo + vbQuestion, "Validaciones Generales") <> vbYes Then
+                                    Exit Sub
+                                End If
+                            End If
+                        End If
+                        
+                        If vMontoCreditos > vMontoMaximo And vMontoMaximo > 0 Then
+                            MsgBox "Excede el monto autorizado de aprobación: " & Format(vMontoMaximo, "Standard") & " para este nivel resolutivo.", vbExclamation
+                            Exit Sub
+                        End If
+
+                        If vLiquidez < vLiquidezMinima Then
+                            MsgBox "No se puede aprobar debido a que no cumple con el % de liquidez mínima (" & vLiquidezMinima & ") requerida para el tipo de garantía, favor validar.", vbExclamation
+                            Exit Sub
+                        End If
+
+                    End If
+        
         Case "P"
+            vEstadoComite = "PEND"
             Cod_Parametro = "03"
+            vEstadoEditable = 1
+        
         Case "D"
+            vEstadoComite = "DESC"
             Cod_Parametro = "02"
+            vEstadoEditable = 0
+
+'Codigo ASECCSS
+'            Dim _frmMotivos As New frmPreaSeleccionarMotivoCambioEstado() '35795 mchaves
+'            _frmMotivos.codPreanalisis = mOperacion
+'            _frmMotivos.ShowDialog()
+
+        Case "V"
+            vEstadoComite = "PENVB"
+            Cod_Parametro = "03"
+            vEstadoEditable = 1
+            vEstado = "P"
+        
+        Case "VL"
+            vEstadoComite = "PNVBL" 'Sol 25929 FAlas
+            Cod_Parametro = "03"
+            vEstadoEditable = 1
+            vEstado = "P"
     End Select
     
+    
+    '--------------------------------------------------------------------------
     'Valida Seguridad de Pantalla
-    Dim i As Integer, vMensaje As String
     
     vMensaje = ""
     For i = 0 To vNAprobaciones - 1
@@ -4908,16 +5998,15 @@ Dim Asunto As String, Cuerpo As String
     End If
             
 
-    ' Actualiza estado en reg_creditos
-    Dim pTipo As String
-    If btnSolicitud.Value = True Then
-        pTipo = "S" 'Solicitiud
-    Else
-        pTipo = "E" 'Estudio de Credito
-    End If
-    
-    strSQL = "exec spCrd_Comites_Resolucion_Add " & txtComiteId.Text & ",'" & txtActa.Text & "','" & glogon.Usuario _
-           & "','" & pTipo & "','" & mOperacion & "','" & Mid(txtObservacion.Text, 1, 1000) & "','" & vEstado & "'"
+'Codigo: ASECCSS
+'    strSQL = "UPDATE CRD_COMITES_ACTAS_DETALLE set Estado = 'R', EstadoResolucion='" & EstadoV2 & "',"
+'            strSQL = strSQL + " Resolucion='" & Resolucion & "', FechaActualiza=Getdate(), UsuarioActualiza='" & glogon.Usuario & "'"
+'            strSQL = strSQL + " WHERE Acta='" & txtActa.Text & "' and CodPreanalisis='" & CodPreanalisis & "'"
+'
+    strSQL = "exec spCrd_Comites_Resolucion_Add " & txtComiteId.Text & ",'" & txtActa.Text & "','" & txtUsuario(0).Text _
+           & "','" & pTipo & "','" & mOperacion & "','" & Mid(txtObservacion.Text, 1, 1000) & "','" & vEstado _
+           & "', '" & vEstadoComite & "', " & vEstadoEditable & ", '" & txtAcuerdoJD.Text & "', '" & txtUsuario(1).Text _
+           & "', '" & txtUsuario(2).Text & "'"
     Call ConectionExecute(strSQL)
 
     Call Bitacora("Modifica", IIf((pTipo = "S"), "Solicitud: ", "Estudio de Crédito: ") & mOperacion & " Cambia estado a: " & vEstado)
@@ -5055,6 +6144,27 @@ vError:
       
 End Sub
 
+
+Private Sub txtActaFiltro_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = vbKeyF4 Then
+   
+   gBusquedas.Col1Name = "Identificación"
+   gBusquedas.Col2Name = "Id Alterno"
+   gBusquedas.Col3Name = "Nombre"
+   
+   gBusquedas.Convertir = "N"
+   gBusquedas.Columna = "Cedula"
+   gBusquedas.Orden = "Cedula"
+   gBusquedas.Consulta = "Select Cedula,CedulaR, Nombre From Socios"
+   gBusquedas.Filtro = ""
+
+   frmBusquedas.Show vbModal
+   
+   txtActaFiltro.Text = Trim(gBusquedas.Resultado)
+End If
+
+End Sub
+
 Private Sub txtComiteId_Change()
     Call sbLimpiarDatos
     Call sbLimpiarDatosCreditos
@@ -5114,6 +6224,8 @@ On Error GoTo vError
     lblCuota.Caption = Empty
     lblDiferenciaCuota.Caption = Empty
     lblLugarTrabajo.Caption = Empty
+        
+    lblCA.Caption = Empty
         
     txtObservacion.Text = Empty
     
@@ -5202,7 +6314,7 @@ Else
     vLineaFiltra = 0
 
     txtActa.Text = ""
-    txtActaNew.Text = ""
+    txtSesion.Text = ""
     
     
 End If
@@ -5217,8 +6329,14 @@ Next i
 
 rs.Close
 
-'Consulta Detalle el Acta
-Call sbActa_Consultar(txtActa.Text)
+vPaso = True
+    strSQL = "exec spCrd_Comites_Actas_Abiertas " & txtComiteId.Text
+    Call sbCbo_Llena_New(cboActas, strSQL, False, True)
+vPaso = False
+
+If cboActas.ListCount >= 0 Then
+    Call sbActa_Consultar(cboActas.ItemData(cboActas.ListIndex))
+End If
 
 Exit Sub
     
@@ -5260,7 +6378,7 @@ If Not rs.EOF Then
     txtConsultaId.Text = rs!Caso_Id
     
     lblLinea.Caption = IIf(IsNull(rs!Codigo), "", rs!Codigo)
-    lblLinea.Tag = lblLinea
+    lblLinea.Tag = lblLinea.Caption
     
     lblEstadoLaboral.Caption = rs!EstadoLaboral_Desc
     lblEstadoActual.Caption = rs!EstadoPersona_Desc
@@ -5287,7 +6405,10 @@ If Not rs.EOF Then
         lblDiferenciaCuota.ForeColor = vbBlack
     End If
 
+    lblCA.Caption = Format(rs!CA, "Standard")
     
+    
+    lblClasificacion.Caption = "Clasificación de la Persona: " & rs!COD_CATEGORIA_ASOCIADO & ""
 End If
 rs.Close
 
@@ -5367,6 +6488,7 @@ On Error GoTo vError
             lblFiadorLiqCFianzaPorc = Format(((lblFiadorLiqCFianza.Caption / mDevengadoMes) * 100), "Standard")
         End If
     
+'        lblCA.Caption = Format(rs!CA, "Standard")
     End If
     rs.Close
         
@@ -5403,13 +6525,13 @@ Do While Not rs.EOF
     vGridSeguimiento.MaxRows = vGridSeguimiento.MaxRows + 1
     vGridSeguimiento.Row = vGridSeguimiento.MaxRows
   
-    vGridSeguimiento.col = 1
+    vGridSeguimiento.Col = 1
     vGridSeguimiento.Text = rs!Descripcion
     vGridSeguimiento.TextTip = TextTipFixed
     vGridSeguimiento.TextTipDelay = 1000
     vGridSeguimiento.CellNote = "Usuario: " & rs!Registro_Usuario & "[" & rs!Registro_Fecha & "]"
             
-    vGridSeguimiento.col = 2
+    vGridSeguimiento.Col = 2
     vGridSeguimiento.Value = IIf(IsNull(rs!Notas), "", rs!Notas)
     
     vGridSeguimiento.RowHeight(vGridSeguimiento.Row) = vGridSeguimiento.MaxTextRowHeight(vGridSeguimiento.Row)
@@ -5460,8 +6582,17 @@ chkUsuarioValida.Item(Index).Value = vbUnchecked
 End Sub
 
 
-Private Sub vGridSolicitudes_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
-    vGridSolicitudes.col = 2
+Private Sub UpDownComite_DownClick()
+Call FlatScrollBar_Change(0)
+End Sub
+
+Private Sub UpDownComite_UpClick()
+Call FlatScrollBar_Change(1)
+End Sub
+
+Private Sub vGridSolicitudes_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+    
+    vGridSolicitudes.Col = 3
     vGridSolicitudes.Row = Row
     
     mOperacion = vGridSolicitudes.Text
@@ -5478,33 +6609,38 @@ Private Sub vGridSolicitudes_ButtonClicked(ByVal col As Long, ByVal Row As Long,
 End Sub
 
 
-
-Public Sub sbCargaGridCheckIni(vGrid As Object, vGridMaxCol As Integer, strSQL As String)
+Public Sub sbCargaGridCheckIni(vGrid As Object, MaxCol As Integer, strSQL As String)
 'Procedimiento para cargar grids con el check en la primera columna
 Dim rs As New ADODB.Recordset, i As Integer
 
 On Error GoTo vError
 
-    vGrid.MaxCols = vGridMaxCol + 1
-    vGrid.MaxRows = 1
-    vGrid.Row = vGrid.MaxRows
-    For i = 1 To vGrid.MaxCols
-     vGrid.col = i
-     vGrid.Text = ""
+With vGrid
+    .MaxCols = MaxCol + 1
+    .MaxRows = 1
+    .Row = .MaxRows
+    For i = 1 To .MaxCols
+     .Col = i
+     .Text = ""
     Next i
     
     Call OpenRecordSet(rs, strSQL)
     Do While Not rs.EOF
-      vGrid.Row = vGrid.MaxRows
-      For i = 2 To vGrid.MaxCols
-        vGrid.col = i
-        vGrid.Text = CStr(rs.Fields(i - 2).Value & "")
+      .Row = .MaxRows
+      .Col = 1
+      
+      For i = 2 To .MaxCols
+        .Col = i
+        .Text = CStr(rs.Fields(i - 2).Value & "")
       Next i
-      vGrid.MaxRows = vGrid.MaxRows + 1
-      rs.MoveNext
-    Loop
-    rs.Close
-    Exit Sub
+      .MaxRows = .MaxRows + 1
+  rs.MoveNext
+Loop
+rs.Close
+
+End With
+
+Exit Sub
 
 vError:
         MsgBox fxSys_Error_Handler(Err.Description)
@@ -5517,7 +6653,7 @@ On Error GoTo vError
 If Habilita = False Then
     
     txtComiteId.Enabled = False
-    FlatScrollBar.Enabled = False
+    UpDownComite.Enabled = False
 '    txtUsuario(0).Enabled = False
 '    txtUsuario2.Enabled = False
 '    txtClaveUsuario1.Enabled = False
@@ -5528,7 +6664,7 @@ If Habilita = False Then
 Else
 
     txtComiteId.Enabled = True
-    FlatScrollBar.Enabled = True
+    UpDownComite.Enabled = True
 '    txtUsuario(0).Enabled = True
 '    txtUsuario2.Enabled = True
 '    txtClaveUsuario1.Enabled = True
@@ -5714,16 +6850,16 @@ With glogon.Recordset
        vGrid.MaxRows = vGrid.MaxRows + 1
        
        vGrid.Row = vGrid.MaxRows
-       vGrid.col = 1
+       vGrid.Col = 1
        vGrid.Text = !Codigo
        
-       vGrid.col = 2
+       vGrid.Col = 2
        vGrid.Text = !Descripcion
        
-       vGrid.col = 3
+       vGrid.Col = 3
        vGrid.Text = !Razon
     
-       vGrid.col = 1
+       vGrid.Col = 1
         Select Case LCase(!Color)
             Case "rojo"
                  vGrid.BackColor = &HFF&
@@ -5852,7 +6988,7 @@ With vGridDeudas
 
     
     For i = 1 To .MaxCols
-      .col = i
+      .Col = i
       Select Case i
         Case 1 'Status
 
@@ -5939,8 +7075,8 @@ With vGridDeudas
             End If
         
         Case 2 'Operacion
-           .CellTag = CStr(rs!Id_Solicitud)
-           .Text = CStr(rs!Id_Solicitud)
+           .CellTag = CStr(rs!ID_SOLICITUD)
+           .Text = CStr(rs!ID_SOLICITUD)
 
         
         Case 3 'Linea
@@ -6054,10 +7190,10 @@ End Sub
 
 Private Function fxColorCell(ByRef vGrid As Object, _
                              ByVal Row As Integer, _
-                             ByVal col As Integer, _
+                             ByVal Col As Integer, _
                              ByVal strcolor As String) As String
 vGrid.Row = Row
-vGrid.col = col
+vGrid.Col = Col
 Select Case LCase(strcolor)
     Case "rojo"
          vGrid.BackColor = &HFF&

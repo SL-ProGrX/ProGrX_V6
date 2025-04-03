@@ -86,7 +86,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    End
    Begin XtremeSuiteControls.PushButton btnSoS 
       Height          =   330
-      Left            =   11880
+      Left            =   12360
       TabIndex        =   163
       Top             =   105
       Visible         =   0   'False
@@ -606,14 +606,14 @@ Begin VB.Form frmCR_ConsultaCreditos
             Bevel           =   0
             Object.Width           =   1834
             MinWidth        =   1834
-            TextSave        =   "7/10/2024"
+            TextSave        =   "4/3/2025"
          EndProperty
          BeginProperty Panel2 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
             Style           =   5
             Bevel           =   0
             Object.Width           =   1658
             MinWidth        =   1658
-            TextSave        =   "09:40:a. m."
+            TextSave        =   "01:35"
          EndProperty
          BeginProperty Panel3 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
             Style           =   2
@@ -833,7 +833,7 @@ Begin VB.Form frmCR_ConsultaCreditos
       Color           =   32
       PaintManager.Position=   2
       ItemCount       =   10
-      SelectedItem    =   2
+      SelectedItem    =   1
       Item(0).Caption =   "Credito"
       Item(0).ControlCount=   20
       Item(0).Control(0)=   "vgCreditos"
@@ -965,9 +965,10 @@ Begin VB.Form frmCR_ConsultaCreditos
       Item(9).Control(6)=   "btnSoS_Export(1)"
       Begin XtremeSuiteControls.ListView lswFND 
          Height          =   1812
-         Left            =   120
+         Left            =   -69880
          TabIndex        =   46
          Top             =   240
+         Visible         =   0   'False
          Width           =   12372
          _Version        =   1572864
          _ExtentX        =   21823
@@ -1097,9 +1098,10 @@ Begin VB.Form frmCR_ConsultaCreditos
       End
       Begin XtremeSuiteControls.ListView lswFnd_List 
          Height          =   975
-         Left            =   120
+         Left            =   -69880
          TabIndex        =   162
          Top             =   2640
+         Visible         =   0   'False
          Width           =   12495
          _Version        =   1572864
          _ExtentX        =   22040
@@ -1229,9 +1231,10 @@ Begin VB.Form frmCR_ConsultaCreditos
       Begin XtremeSuiteControls.PushButton btnFondos_List 
          Height          =   375
          Index           =   0
-         Left            =   120
+         Left            =   -69880
          TabIndex        =   158
          Top             =   2160
+         Visible         =   0   'False
          Width           =   1335
          _Version        =   1572864
          _ExtentX        =   2355
@@ -1425,10 +1428,9 @@ Begin VB.Form frmCR_ConsultaCreditos
       Begin XtremeSuiteControls.RadioButton rbNotificaEmail 
          Height          =   372
          Index           =   0
-         Left            =   -69760
+         Left            =   240
          TabIndex        =   136
          Top             =   2160
-         Visible         =   0   'False
          Width           =   1212
          _Version        =   1572864
          _ExtentX        =   2138
@@ -2142,10 +2144,9 @@ Begin VB.Form frmCR_ConsultaCreditos
       End
       Begin FPSpreadADO.fpSpread vgCobro 
          Height          =   4452
-         Left            =   -68200
+         Left            =   1800
          TabIndex        =   43
          Top             =   240
-         Visible         =   0   'False
          Width           =   10572
          _Version        =   524288
          _ExtentX        =   18648
@@ -2164,17 +2165,16 @@ Begin VB.Form frmCR_ConsultaCreditos
             Strikethrough   =   0   'False
          EndProperty
          MaxCols         =   11
-         SpreadDesigner  =   "frmCR_ConsultaCréditos.frx":F2D2
+         SpreadDesigner  =   "frmCR_ConsultaCréditos.frx":F318
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
       Begin XtremeSuiteControls.PushButton isButtonCb 
          Height          =   375
          Index           =   0
-         Left            =   -69880
+         Left            =   120
          TabIndex        =   44
          Top             =   240
-         Visible         =   0   'False
          Width           =   1452
          _Version        =   1572864
          _ExtentX        =   2561
@@ -2196,10 +2196,9 @@ Begin VB.Form frmCR_ConsultaCreditos
       Begin XtremeSuiteControls.PushButton isButtonCb 
          Height          =   375
          Index           =   1
-         Left            =   -69880
+         Left            =   120
          TabIndex        =   45
          Top             =   600
-         Visible         =   0   'False
          Width           =   1452
          _Version        =   1572864
          _ExtentX        =   2561
@@ -2220,9 +2219,10 @@ Begin VB.Form frmCR_ConsultaCreditos
       End
       Begin XtremeSuiteControls.GroupBox gbFndContrato 
          Height          =   855
-         Left            =   120
+         Left            =   -69880
          TabIndex        =   47
          Top             =   3720
+         Visible         =   0   'False
          Width           =   12735
          _Version        =   1572864
          _ExtentX        =   22463
@@ -2290,7 +2290,7 @@ Begin VB.Form frmCR_ConsultaCreditos
             EndProperty
             UseVisualStyle  =   -1  'True
             Appearance      =   17
-            Picture         =   "frmCR_ConsultaCréditos.frx":FF97
+            Picture         =   "frmCR_ConsultaCréditos.frx":10023
          End
          Begin XtremeSuiteControls.PushButton btnFondos 
             Height          =   528
@@ -2315,7 +2315,7 @@ Begin VB.Form frmCR_ConsultaCreditos
             EndProperty
             UseVisualStyle  =   -1  'True
             Appearance      =   17
-            Picture         =   "frmCR_ConsultaCréditos.frx":10753
+            Picture         =   "frmCR_ConsultaCréditos.frx":107DF
          End
          Begin XtremeSuiteControls.PushButton btnFondos 
             Height          =   528
@@ -2340,7 +2340,7 @@ Begin VB.Form frmCR_ConsultaCreditos
             EndProperty
             UseVisualStyle  =   -1  'True
             Appearance      =   17
-            Picture         =   "frmCR_ConsultaCréditos.frx":10E07
+            Picture         =   "frmCR_ConsultaCréditos.frx":10E93
          End
          Begin XtremeSuiteControls.PushButton btnFondos 
             Height          =   528
@@ -2365,7 +2365,7 @@ Begin VB.Form frmCR_ConsultaCreditos
             EndProperty
             UseVisualStyle  =   -1  'True
             Appearance      =   17
-            Picture         =   "frmCR_ConsultaCréditos.frx":115F6
+            Picture         =   "frmCR_ConsultaCréditos.frx":11682
          End
          Begin XtremeSuiteControls.PushButton btnFondos 
             Height          =   528
@@ -2390,7 +2390,7 @@ Begin VB.Form frmCR_ConsultaCreditos
             EndProperty
             UseVisualStyle  =   -1  'True
             Appearance      =   17
-            Picture         =   "frmCR_ConsultaCréditos.frx":12014
+            Picture         =   "frmCR_ConsultaCréditos.frx":120A0
          End
          Begin XtremeSuiteControls.PushButton btnFondos 
             Height          =   525
@@ -2415,7 +2415,7 @@ Begin VB.Form frmCR_ConsultaCreditos
             EndProperty
             UseVisualStyle  =   -1  'True
             Appearance      =   17
-            Picture         =   "frmCR_ConsultaCréditos.frx":12709
+            Picture         =   "frmCR_ConsultaCréditos.frx":12795
          End
       End
       Begin FPSpreadADO.fpSpread vgPatrimonio 
@@ -2443,7 +2443,7 @@ Begin VB.Form frmCR_ConsultaCreditos
             Strikethrough   =   0   'False
          EndProperty
          MaxCols         =   8
-         SpreadDesigner  =   "frmCR_ConsultaCréditos.frx":12A55
+         SpreadDesigner  =   "frmCR_ConsultaCréditos.frx":12AE1
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
@@ -2497,7 +2497,7 @@ Begin VB.Form frmCR_ConsultaCreditos
             Strikethrough   =   0   'False
          EndProperty
          MaxCols         =   7
-         SpreadDesigner  =   "frmCR_ConsultaCréditos.frx":14782
+         SpreadDesigner  =   "frmCR_ConsultaCréditos.frx":14854
          VScrollSpecial  =   -1  'True
          VScrollSpecialType=   2
          AppearanceStyle =   1
@@ -3321,7 +3321,7 @@ Begin VB.Form frmCR_ConsultaCreditos
          UseVisualStyle  =   -1  'True
          TextAlignment   =   1
          Appearance      =   17
-         Picture         =   "frmCR_ConsultaCréditos.frx":14F3F
+         Picture         =   "frmCR_ConsultaCréditos.frx":15057
          ImageAlignment  =   0
          TextImageRelation=   0
       End
@@ -3381,10 +3381,9 @@ Begin VB.Form frmCR_ConsultaCreditos
       Begin XtremeSuiteControls.PushButton isButtonCb 
          Height          =   768
          Index           =   2
-         Left            =   -69880
+         Left            =   120
          TabIndex        =   135
          Top             =   1200
-         Visible         =   0   'False
          Width           =   1452
          _Version        =   1572864
          _ExtentX        =   2561
@@ -3406,10 +3405,9 @@ Begin VB.Form frmCR_ConsultaCreditos
       Begin XtremeSuiteControls.RadioButton rbNotificaEmail 
          Height          =   372
          Index           =   1
-         Left            =   -69760
+         Left            =   240
          TabIndex        =   137
          Top             =   2520
-         Visible         =   0   'False
          Width           =   1212
          _Version        =   1572864
          _ExtentX        =   2138
@@ -3466,7 +3464,7 @@ Begin VB.Form frmCR_ConsultaCreditos
             UseVisualStyle  =   -1  'True
             TextAlignment   =   1
             Appearance      =   17
-            Picture         =   "frmCR_ConsultaCréditos.frx":15646
+            Picture         =   "frmCR_ConsultaCréditos.frx":1575E
             ImageAlignment  =   0
          End
          Begin XtremeSuiteControls.FlatEdit txtRenunciasCasos 
@@ -3520,7 +3518,7 @@ Begin VB.Form frmCR_ConsultaCreditos
             UseVisualStyle  =   -1  'True
             TextAlignment   =   1
             Appearance      =   17
-            Picture         =   "frmCR_ConsultaCréditos.frx":15C78
+            Picture         =   "frmCR_ConsultaCréditos.frx":15D90
             ImageAlignment  =   0
          End
          Begin XtremeSuiteControls.Label Label2 
@@ -3572,16 +3570,17 @@ Begin VB.Form frmCR_ConsultaCreditos
          UseVisualStyle  =   -1  'True
          TextAlignment   =   1
          Appearance      =   17
-         Picture         =   "frmCR_ConsultaCréditos.frx":16549
+         Picture         =   "frmCR_ConsultaCréditos.frx":16661
          ImageAlignment  =   0
          TextImageRelation=   0
       End
       Begin XtremeSuiteControls.PushButton btnFondos_List 
          Height          =   375
          Index           =   1
-         Left            =   1440
+         Left            =   -68560
          TabIndex        =   159
          Top             =   2160
+         Visible         =   0   'False
          Width           =   1335
          _Version        =   1572864
          _ExtentX        =   2355
@@ -3604,9 +3603,10 @@ Begin VB.Form frmCR_ConsultaCreditos
       Begin XtremeSuiteControls.PushButton btnFondos_List 
          Height          =   375
          Index           =   2
-         Left            =   2760
+         Left            =   -67240
          TabIndex        =   160
          Top             =   2160
+         Visible         =   0   'False
          Width           =   1335
          _Version        =   1572864
          _ExtentX        =   2355
@@ -3628,10 +3628,11 @@ Begin VB.Form frmCR_ConsultaCreditos
       End
       Begin XtremeSuiteControls.PushButton btnFondos_Export 
          Height          =   375
-         Left            =   5520
+         Left            =   -64480
          TabIndex        =   161
          ToolTipText     =   "Exportar a Excel"
          Top             =   2160
+         Visible         =   0   'False
          Width           =   495
          _Version        =   1572864
          _ExtentX        =   873
@@ -3649,7 +3650,7 @@ Begin VB.Form frmCR_ConsultaCreditos
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmCR_ConsultaCréditos.frx":16C49
+         Picture         =   "frmCR_ConsultaCréditos.frx":16D61
       End
       Begin XtremeSuiteControls.FlatEdit txtSoS_Monto 
          Height          =   330
@@ -3704,14 +3705,15 @@ Begin VB.Form frmCR_ConsultaCreditos
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmCR_ConsultaCréditos.frx":16DB3
+         Picture         =   "frmCR_ConsultaCréditos.frx":16ECB
       End
       Begin XtremeSuiteControls.PushButton btnFondos_List 
          Height          =   375
          Index           =   3
-         Left            =   4080
+         Left            =   -65920
          TabIndex        =   174
          Top             =   2160
+         Visible         =   0   'False
          Width           =   1215
          _Version        =   1572864
          _ExtentX        =   2143
@@ -3903,7 +3905,7 @@ Begin VB.Form frmCR_ConsultaCreditos
       Begin VB.Image imgBorraMsj 
          Height          =   255
          Left            =   -68080
-         Picture         =   "frmCR_ConsultaCréditos.frx":17684
+         Picture         =   "frmCR_ConsultaCréditos.frx":1779C
          Stretch         =   -1  'True
          ToolTipText     =   "Eliminar Mensajes Marcados"
          Top             =   1200
@@ -3913,7 +3915,7 @@ Begin VB.Form frmCR_ConsultaCreditos
       Begin VB.Image imgMsjNuevo 
          Height          =   255
          Left            =   -67720
-         Picture         =   "frmCR_ConsultaCréditos.frx":17E41
+         Picture         =   "frmCR_ConsultaCréditos.frx":17F59
          Stretch         =   -1  'True
          ToolTipText     =   "Crear Nuevo Mensaje"
          Top             =   1200
@@ -3941,7 +3943,7 @@ Begin VB.Form frmCR_ConsultaCreditos
       Begin VB.Image imgMsjResuelve 
          Height          =   255
          Left            =   -68440
-         Picture         =   "frmCR_ConsultaCréditos.frx":18620
+         Picture         =   "frmCR_ConsultaCréditos.frx":18738
          Stretch         =   -1  'True
          ToolTipText     =   "Quita Pendiente de Mensajes Marcados"
          Top             =   1200
@@ -4291,7 +4293,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    End
    Begin XtremeSuiteControls.PushButton btnIdentificarDP 
       Height          =   330
-      Left            =   10680
+      Left            =   11160
       TabIndex        =   172
       ToolTipText     =   "Identificación de Depósitos"
       Top             =   105
@@ -4328,7 +4330,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    End
    Begin XtremeSuiteControls.PushButton btnAdjuntos 
       Height          =   330
-      Left            =   11400
+      Left            =   11880
       TabIndex        =   180
       ToolTipText     =   "Adjuntar Documentos"
       Top             =   105
@@ -4348,12 +4350,36 @@ Begin VB.Form frmCR_ConsultaCreditos
          Strikethrough   =   0   'False
       EndProperty
       UseVisualStyle  =   -1  'True
-      Picture         =   "frmCR_ConsultaCréditos.frx":18DE8
+      Picture         =   "frmCR_ConsultaCréditos.frx":18F00
+   End
+   Begin XtremeSuiteControls.PushButton btnCajasSesion 
+      Height          =   330
+      Left            =   10680
+      TabIndex        =   186
+      ToolTipText     =   "Ver Sesión Activa de Cajas"
+      Top             =   105
+      Width           =   495
+      _Version        =   1572864
+      _ExtentX        =   873
+      _ExtentY        =   582
+      _StockProps     =   79
+      BackColor       =   -2147483643
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Picture         =   "frmCR_ConsultaCréditos.frx":18F89
    End
    Begin VB.Image imgMsjAdvertencia 
       Height          =   255
       Left            =   13320
-      Picture         =   "frmCR_ConsultaCréditos.frx":18E71
+      Picture         =   "frmCR_ConsultaCréditos.frx":19012
       Stretch         =   -1  'True
       Top             =   600
       Visible         =   0   'False
@@ -4402,7 +4428,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    Begin VB.Image imgMsjMorosidad 
       Height          =   255
       Left            =   13320
-      Picture         =   "frmCR_ConsultaCréditos.frx":19640
+      Picture         =   "frmCR_ConsultaCréditos.frx":197E1
       Stretch         =   -1  'True
       Top             =   840
       Visible         =   0   'False
@@ -4411,7 +4437,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    Begin VB.Image imgTS 
       Height          =   255
       Left            =   9720
-      Picture         =   "frmCR_ConsultaCréditos.frx":19E0F
+      Picture         =   "frmCR_ConsultaCréditos.frx":19FB0
       Stretch         =   -1  'True
       ToolTipText     =   "Tarjeta Débito"
       Top             =   840
@@ -4449,7 +4475,7 @@ Begin VB.Form frmCR_ConsultaCreditos
       _StockProps     =   14
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   8.24
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -4500,7 +4526,7 @@ Begin VB.Form frmCR_ConsultaCreditos
       Height          =   252
       Index           =   2
       Left            =   9720
-      Picture         =   "frmCR_ConsultaCréditos.frx":1A4FF
+      Picture         =   "frmCR_ConsultaCréditos.frx":1A6A0
       Stretch         =   -1  'True
       ToolTipText     =   "Cuenta de Ahorros Sinpe?"
       Top             =   1500
@@ -4510,7 +4536,7 @@ Begin VB.Form frmCR_ConsultaCreditos
       Height          =   252
       Index           =   1
       Left            =   9720
-      Picture         =   "frmCR_ConsultaCréditos.frx":1ABA3
+      Picture         =   "frmCR_ConsultaCréditos.frx":1AD44
       Stretch         =   -1  'True
       ToolTipText     =   "Tarjeta Débito"
       Top             =   1155
@@ -4520,7 +4546,7 @@ Begin VB.Form frmCR_ConsultaCreditos
       Height          =   255
       Index           =   1
       Left            =   9720
-      Picture         =   "frmCR_ConsultaCréditos.frx":1B1B5
+      Picture         =   "frmCR_ConsultaCréditos.frx":1B356
       Stretch         =   -1  'True
       ToolTipText     =   "Advertencias?"
       Top             =   540
@@ -4548,7 +4574,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    Begin VB.Image imgMsjGenerales 
       Height          =   255
       Left            =   7680
-      Picture         =   "frmCR_ConsultaCréditos.frx":1BB19
+      Picture         =   "frmCR_ConsultaCréditos.frx":1BCBA
       Stretch         =   -1  'True
       Top             =   840
       Width           =   255
@@ -4594,7 +4620,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    Begin VB.Image imgMsjPendientes 
       Height          =   255
       Left            =   7680
-      Picture         =   "frmCR_ConsultaCréditos.frx":1C2E8
+      Picture         =   "frmCR_ConsultaCréditos.frx":1C489
       Stretch         =   -1  'True
       Top             =   1155
       Width           =   255
@@ -4622,7 +4648,7 @@ Begin VB.Form frmCR_ConsultaCreditos
       Height          =   255
       Index           =   0
       Left            =   7680
-      Picture         =   "frmCR_ConsultaCréditos.frx":1CAB7
+      Picture         =   "frmCR_ConsultaCréditos.frx":1CC58
       Stretch         =   -1  'True
       ToolTipText     =   "Gestiones de Cobro?"
       Top             =   1500
@@ -4650,7 +4676,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    Begin VB.Image Image2 
       Height          =   255
       Left            =   7680
-      Picture         =   "frmCR_ConsultaCréditos.frx":1D240
+      Picture         =   "frmCR_ConsultaCréditos.frx":1D3E1
       Stretch         =   -1  'True
       ToolTipText     =   "Estado de Actualización de los Beneficiarios"
       Top             =   540
@@ -4699,7 +4725,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    Begin VB.Image imgEstadoConsentimiento 
       Height          =   255
       Left            =   120
-      Picture         =   "frmCR_ConsultaCréditos.frx":1DA4D
+      Picture         =   "frmCR_ConsultaCréditos.frx":1DBEE
       Stretch         =   -1  'True
       ToolTipText     =   "Estado de Autorización de Uso de Información Personal"
       Top             =   840
@@ -4708,7 +4734,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    Begin VB.Image imgEstadoBeneficiarios 
       Height          =   255
       Left            =   120
-      Picture         =   "frmCR_ConsultaCréditos.frx":1E21C
+      Picture         =   "frmCR_ConsultaCréditos.frx":1E3BD
       Stretch         =   -1  'True
       ToolTipText     =   "Estado de Actualización de los Beneficiarios"
       Top             =   540
@@ -4717,7 +4743,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    Begin VB.Image imgClasificacion 
       Height          =   255
       Left            =   2280
-      Picture         =   "frmCR_ConsultaCréditos.frx":1E9EB
+      Picture         =   "frmCR_ConsultaCréditos.frx":1EB8C
       Stretch         =   -1  'True
       ToolTipText     =   "Clasificacion ABCD de la persona"
       Top             =   1500
@@ -4745,7 +4771,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    Begin VB.Image imgMembresia 
       Height          =   255
       Left            =   2280
-      Picture         =   "frmCR_ConsultaCréditos.frx":1F16B
+      Picture         =   "frmCR_ConsultaCréditos.frx":1F30C
       Stretch         =   -1  'True
       ToolTipText     =   "Membresía de la Persona"
       Top             =   1160
@@ -4754,7 +4780,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    Begin VB.Image imgFianzas 
       Height          =   255
       Left            =   120
-      Picture         =   "frmCR_ConsultaCréditos.frx":1F843
+      Picture         =   "frmCR_ConsultaCréditos.frx":1F9E4
       Stretch         =   -1  'True
       ToolTipText     =   "Estado de las fianzas"
       Top             =   1460
@@ -4763,7 +4789,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    Begin VB.Image imgCreditos 
       Height          =   255
       Left            =   120
-      Picture         =   "frmCR_ConsultaCréditos.frx":20012
+      Picture         =   "frmCR_ConsultaCréditos.frx":201B3
       Stretch         =   -1  'True
       ToolTipText     =   "Estado de los creditos"
       Top             =   1160
@@ -4850,7 +4876,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    Begin VB.Image imgEstado 
       Height          =   240
       Left            =   2280
-      Picture         =   "frmCR_ConsultaCréditos.frx":207E1
+      Picture         =   "frmCR_ConsultaCréditos.frx":20982
       ToolTipText     =   "Estado de la persona"
       Top             =   540
       Width           =   240
@@ -4877,7 +4903,7 @@ Begin VB.Form frmCR_ConsultaCreditos
    Begin VB.Image imgInstitucion 
       Height          =   240
       Left            =   2280
-      Picture         =   "frmCR_ConsultaCréditos.frx":208F8
+      Picture         =   "frmCR_ConsultaCréditos.frx":20A99
       ToolTipText     =   "Empresa / Deductora?"
       Top             =   840
       Width           =   240
@@ -5100,11 +5126,11 @@ With vgCreditos
         Case 2 'Check + Currency
            
            .Col = 3
-           .CellTag = CStr(rs!Id_Solicitud)
-           .Text = CStr(rs!Id_Solicitud)
+           .CellTag = CStr(rs!ID_SOLICITUD)
+           .Text = CStr(rs!ID_SOLICITUD)
             
             .Col = 2
-           .CellTag = CStr(rs!Id_Solicitud)
+           .CellTag = CStr(rs!ID_SOLICITUD)
 '           .Text = CStr(rs!Id_Solicitud)
 
            If pSheet = 1 Then
@@ -5122,10 +5148,10 @@ With vgCreditos
         
         
         Case 3 'Operacion
-           .CellTag = CStr(rs!Id_Solicitud)
-           .Text = CStr(rs!Id_Solicitud)
+           .CellTag = CStr(rs!ID_SOLICITUD)
+           .Text = CStr(rs!ID_SOLICITUD)
            If pSheet = 1 Then
-                .TypeCheckText = CStr(rs!Id_Solicitud)
+                .TypeCheckText = CStr(rs!ID_SOLICITUD)
            End If
         
         Case 4 'Linea
@@ -5270,7 +5296,7 @@ With vgCreditos
             .CellNote = rs!Divisa_Desc & ""
                      
         Case 3 'Operacion
-            .Text = CStr(rs!Id_Solicitud)
+            .Text = CStr(rs!ID_SOLICITUD)
         
         Case 4 'Linea
             .Text = CStr(rs!Codigo)
@@ -5454,7 +5480,7 @@ With vgCreditos
             .TypePictPicture = imgSemaforos.ListImages.Item(7).Picture
              
         Case 2 'Operacion
-            .Text = CStr(rs!Id_Solicitud)
+            .Text = CStr(rs!ID_SOLICITUD)
         
         Case 3 'Linea
             .Text = CStr(rs!Codigo)
@@ -5466,10 +5492,10 @@ With vgCreditos
             .Text = CStr(rs!EstadoX)
         
         Case 6 'Usuario
-            .Text = CStr(rs!Registro_Usuario & "")
+            .Text = CStr(rs!registro_Usuario & "")
         
         Case 7 'Fecha
-            .Text = Format(rs!Registro_Fecha, "dd/mm/yyyy")
+            .Text = Format(rs!registro_fecha, "dd/mm/yyyy")
         
         Case 8 'Documento
             .Text = "NC." & rs!genera_documento
@@ -5517,6 +5543,16 @@ Select Case Index
         'Call sbFormsCall("frmAF_CRSeguimiento", , , , False, Me, False)
         
 End Select
+
+End Sub
+
+Private Sub btnCajasSesion_Click()
+
+If ModuloCajas.mSesionId > 0 Then
+    Call sbFormsCall("frmCajas_Sesion", vbModal, , , False, Me, True)
+Else
+   MsgBox "No hay sesiones activas!", vbInformation
+End If
 
 End Sub
 
@@ -6174,11 +6210,15 @@ If chkFndContrato.Value = vbChecked And pContrato > 0 Then
       .Formulas(3) = "SubTitulo='" & Format(fxFechaServidor, "yyyy/mm/dd") & "'"
       .SelectionFormula = strSQL
 
+    .SubreportToChange = "Retiros"
+    .StoredProcParam(0) = Trim(txtCedula.Text)
 Else
 
       .ReportFileName = SIFGlobal.fxPathReportes("Fondos_EstadoConsolidado.rpt")
       .Formulas(3) = "SubTitulo=' Reporte al " & Format(fxFechaServidor, "yyyy/mm/dd") & "'"
       .SelectionFormula = "{SOCIOS.CEDULA} ='" & Trim(txtCedula) & "'"
+  
+  
   
 End If
   .PrintReport
@@ -6737,7 +6777,7 @@ Do While Not rs.EOF
      itmX.SubItems(1) = rs!cod_beneficio
      itmX.SubItems(2) = rs!Beneficio_Desc
      itmX.SubItems(3) = Format(rs!Registra_Fecha, "yyyy-mm-dd")
-     itmX.SubItems(4) = rs!Estado_Desc
+     itmX.SubItems(4) = rs!ESTADO_DESC
      itmX.SubItems(5) = rs!Tipo_Benefico
      itmX.SubItems(6) = Format(rs!Monto, "Standard")
      itmX.SubItems(7) = rs!REGISTRA_USER & ""
@@ -6807,9 +6847,9 @@ lswRenuncias.ListItems.Clear
 Do While Not rs.EOF
  Set itmX = lswRenuncias.ListItems.Add(, , rs!Cod_Renuncia)
      itmX.SubItems(1) = rs!Causa_Desc
-     itmX.SubItems(2) = Format(rs!Registro_Fecha, "yyyy-mm-dd")
+     itmX.SubItems(2) = Format(rs!registro_fecha, "yyyy-mm-dd")
      itmX.SubItems(3) = Format(rs!Vencimiento, "yyyy-mm-dd")
-     itmX.SubItems(4) = rs!Estado_Desc
+     itmX.SubItems(4) = rs!ESTADO_DESC
      itmX.SubItems(5) = rs!Tipo_Renuncia
      itmX.SubItems(6) = rs!Desea_Volver
      itmX.SubItems(7) = rs!Aplica_Reingreso
@@ -6819,7 +6859,7 @@ Do While Not rs.EOF
      itmX.SubItems(11) = rs!Provincia_Desc
      itmX.SubItems(12) = rs!Email & ""
      itmX.SubItems(13) = rs!Liquida_Id & ""
-     itmX.SubItems(14) = rs!Registro_Usuario & ""
+     itmX.SubItems(14) = rs!registro_Usuario & ""
      
  rs.MoveNext
 Loop
@@ -7184,11 +7224,11 @@ Select Case Index
            Set itmX = lswDP.ListItems.Add(, , rs!CUENTA_INTERNA)
                itmX.SubItems(1) = Trim(rs!Banco)
                itmX.SubItems(2) = rs!TipoDesc
-               itmX.SubItems(3) = rs!COD_DIVISA
+               itmX.SubItems(3) = rs!cod_Divisa
                itmX.SubItems(4) = rs!CUENTA_INTERBANCA
-               itmX.SubItems(5) = IIf(rs!Activa = 1, "Activa", "Cerrada")
-               itmX.SubItems(6) = rs!Registro_Fecha & ""
-               itmX.SubItems(7) = rs!Registro_Usuario & ""
+               itmX.SubItems(5) = IIf(rs!ACTIVA = 1, "Activa", "Cerrada")
+               itmX.SubItems(6) = rs!registro_fecha & ""
+               itmX.SubItems(7) = rs!registro_Usuario & ""
          
            rs.MoveNext
         Loop
@@ -7327,11 +7367,11 @@ Select Case Index
        .Clear
        Do While Not rs.EOF
         Set itmX = .Add(, , rs!Descripcion)
-            itmX.SubItems(1) = rs!Registro_Usuario & ""
-            itmX.SubItems(2) = rs!Registro_Fecha & ""
+            itmX.SubItems(1) = rs!registro_Usuario & ""
+            itmX.SubItems(2) = rs!registro_fecha & ""
             itmX.Tag = rs!Canal_Tipo
             
-            itmX.Checked = IIf((rs!Asignado = 1), True, False)
+            itmX.Checked = IIf((rs!asignado = 1), True, False)
             
         rs.MoveNext
        Loop
@@ -7359,11 +7399,11 @@ Select Case Index
          .Clear
          Do While Not rs.EOF
           Set itmX = .Add(, , rs!Descripcion)
-              itmX.SubItems(1) = rs!Registro_Usuario & ""
-              itmX.SubItems(2) = rs!Registro_Fecha & ""
+              itmX.SubItems(1) = rs!registro_Usuario & ""
+              itmX.SubItems(2) = rs!registro_fecha & ""
               itmX.Tag = rs!cod_preferencia
               
-              itmX.Checked = IIf((rs!Asignado = 1), True, False)
+              itmX.Checked = IIf((rs!asignado = 1), True, False)
               
           rs.MoveNext
          Loop
@@ -7394,11 +7434,11 @@ Select Case Index
        .Clear
        Do While Not rs.EOF
         Set itmX = .Add(, , rs!Descripcion)
-            itmX.SubItems(1) = rs!Registro_Usuario & ""
-            itmX.SubItems(2) = rs!Registro_Fecha & ""
+            itmX.SubItems(1) = rs!registro_Usuario & ""
+            itmX.SubItems(2) = rs!registro_fecha & ""
             itmX.Tag = rs!Bien_Tipo
             
-            itmX.Checked = IIf((rs!Asignado = 1), True, False)
+            itmX.Checked = IIf((rs!asignado = 1), True, False)
             
         rs.MoveNext
        Loop
@@ -7425,11 +7465,11 @@ Select Case Index
        .Clear
        Do While Not rs.EOF
         Set itmX = .Add(, , rs!Descripcion)
-            itmX.SubItems(1) = rs!Registro_Usuario & ""
-            itmX.SubItems(2) = rs!Registro_Fecha & ""
+            itmX.SubItems(1) = rs!registro_Usuario & ""
+            itmX.SubItems(2) = rs!registro_fecha & ""
             itmX.Tag = rs!Escolaridad_Tipo
             
-            itmX.Checked = IIf((rs!Asignado = 1), True, False)
+            itmX.Checked = IIf((rs!asignado = 1), True, False)
             
         rs.MoveNext
        Loop
@@ -7560,24 +7600,28 @@ curMensualidad = 0
 
 Do While Not rs.EOF
  Set itmX = lswFND.ListItems.Add(, , rs!COD_OPERADORA)
-     itmX.SubItems(1) = rs!Cod_Plan
-     itmX.SubItems(2) = rs!COD_Contrato
+     itmX.SubItems(1) = rs!COD_PLAN
+     itmX.SubItems(2) = rs!COD_CONTRATO
      itmX.SubItems(3) = Format(rs!Fecha_Inicio, "yyyy-mm-dd")
      itmX.SubItems(4) = Format(rs!Monto, "Standard")
-     itmX.SubItems(5) = Format(rs!APORTES, "Standard")
+     itmX.SubItems(5) = Format(rs!Aportes, "Standard")
      itmX.SubItems(6) = Format(rs!Rendimiento, "Standard")
-     itmX.SubItems(7) = Format(rs!APORTES + rs!Rendimiento, "Standard")
+     itmX.SubItems(7) = Format(rs!Aportes + rs!Rendimiento, "Standard")
      itmX.SubItems(8) = rs!Plan_Desc
-     itmX.SubItems(9) = rs!Estado_Desc
+     itmX.SubItems(9) = rs!ESTADO_DESC
      itmX.SubItems(10) = rs!OPERADORA_DESC
      itmX.SubItems(11) = rs!IBAN
 
+If rs!VALIDA_INVERSION = 0 Then
+    itmX.TextBackColor = RGB(233, 233, 170)
+End If
  
- curAportes = curAportes + rs!APORTES
+ curAportes = curAportes + rs!Aportes
  curRendi = curRendi + rs!Rendimiento
- curMonto = curMonto + rs!APORTES + rs!Rendimiento
+ curMonto = curMonto + rs!Aportes + rs!Rendimiento
  
  rs.MoveNext
+ 
 Loop
 rs.Close
 
@@ -7723,7 +7767,7 @@ vPaso = True
 
     If rs!Estado = "A" Then
       chkSoS_Exclusion.Value = xtpChecked
-      chkSoS_Exclusion.ToolTipText = "Fecha: " & rs!Registro_Fecha & ".." & rs!Registro_Usuario & ""
+      chkSoS_Exclusion.ToolTipText = "Fecha: " & rs!registro_fecha & ".." & rs!registro_Usuario & ""
     Else
       chkSoS_Exclusion.Value = xtpUnchecked
       chkSoS_Exclusion.ToolTipText = ""
@@ -7824,7 +7868,7 @@ strSQL = "exec spSOS_Consulta_Operaciones '" & pCedula & "', " & pProceso & ", '
  
  Do While Not rs.EOF
    Set itmX = lswSoS_Det.ListItems.Add(, , rs!Proceso)
-       itmX.SubItems(1) = rs!Id_Solicitud
+       itmX.SubItems(1) = rs!ID_SOLICITUD
        itmX.SubItems(2) = rs!Codigo
        itmX.SubItems(3) = rs!Linea_Desc
        itmX.SubItems(4) = rs!Garantia_Desc
@@ -8223,7 +8267,7 @@ If Not rs.EOF And Not rs.BOF Then
    lblFechaCustodia.Caption = IIf(IsNull(rs!fecCustodia), "", Format(rs!fecCustodia, "dd/mm/yyyy"))
    lblCapitalizado.Caption = IIf(IsNull(rs!fecCapitaliza), "", Format(rs!fecCapitaliza, "dd/mm/yyyy"))
    
-   txtPat_Divisa.Text = rs!COD_DIVISA
+   txtPat_Divisa.Text = rs!cod_Divisa
    txtPAT_Disponible.Text = Format(rs!Pat_Garantia_Total, "Standard")
    txtPAT_Saldos.Text = Format(rs!Pat_Garantia_Saldos, "Standard")
    txtPAT_Saldos.Tag = rs!Pat_Garantia_Saldos
@@ -8272,7 +8316,7 @@ If Not rs.EOF And Not rs.BOF Then
         strSQL = "exec spAFI_ConsultaRenunciaTransito '" & pCedula & "'"
         Call OpenRecordSet(rsTmp, strSQL, 0)
         If Not rsTmp.EOF And Not rsTmp.BOF Then
-            lblMembresia.Caption = "Renuncia: " & rsTmp!Cod_Renuncia & " ¦ " & rsTmp!Registro_Fecha & " ¦ " & rsTmp!registro_user
+            lblMembresia.Caption = "Renuncia: " & rsTmp!Cod_Renuncia & " ¦ " & rsTmp!registro_fecha & " ¦ " & rsTmp!registro_user
             lblMembresia.ToolTipText = rsTmp!Estado & " ¦ " & rsTmp!Tipo & " ¦ " & Trim(rsTmp!Descripcion)
             
             lblMembresia.BackStyle = 1
@@ -8504,8 +8548,9 @@ End Select
 Exit Sub
 
 vError:
-    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
-    
+    MsgBox "Error en Consulta de Tramite de Traslado de Salario [Notifique a su administrador]", vbCritical
+    'MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
 End Sub
 
 Private Sub txtCedula_KeyDown(KeyCode As Integer, Shift As Integer)
@@ -8798,7 +8843,7 @@ With vgCreditos
        ' si no hay mora el proceso es igual al proceso de mora
        
        If rs!MoraCuota > 0 Then
-         strSQL = "select max(fechap) as Proceso from morosidad where estado = 'A' and id_solicitud = " & rs!Id_Solicitud
+         strSQL = "select max(fechap) as Proceso from morosidad where estado = 'A' and id_solicitud = " & rs!ID_SOLICITUD
          Call OpenRecordSet(rsTmp, strSQL, 0)
             If rsTmp!Proceso > vUltimaCuota Then vUltimaCuota = rsTmp!Proceso
          rsTmp.Close

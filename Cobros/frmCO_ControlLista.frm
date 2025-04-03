@@ -1,9 +1,9 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "mscomctl.OCX"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.3#0"; "Codejock.Controls.v20.3.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.3#0"; "Codejock.ShortcutBar.v20.3.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCO_ControlLista 
    Caption         =   "Listado de Carteras de Cobros a Ejecutivos"
    ClientHeight    =   8775
@@ -58,7 +58,7 @@ Begin VB.Form frmCO_ControlLista
          ForeColor       =   &H80000008&
          Height          =   615
          Left            =   7800
-         TabIndex        =   86
+         TabIndex        =   76
          Top             =   360
          Width           =   1575
       End
@@ -76,7 +76,7 @@ Begin VB.Form frmCO_ControlLista
          Height          =   330
          Left            =   6240
          Style           =   2  'Dropdown List
-         TabIndex        =   84
+         TabIndex        =   74
          Top             =   1320
          Width           =   3015
       End
@@ -94,14 +94,14 @@ Begin VB.Form frmCO_ControlLista
          Height          =   330
          Left            =   1680
          Style           =   2  'Dropdown List
-         TabIndex        =   82
+         TabIndex        =   72
          Top             =   1320
          Width           =   4575
       End
       Begin MSComctlLib.ListView lswConGarantias 
          Height          =   2295
          Left            =   360
-         TabIndex        =   80
+         TabIndex        =   70
          Top             =   4560
          Width           =   4335
          _ExtentX        =   7646
@@ -148,7 +148,7 @@ Begin VB.Form frmCO_ControlLista
          ForeColor       =   &H00FF0000&
          Height          =   210
          Left            =   5040
-         TabIndex        =   79
+         TabIndex        =   69
          Top             =   4200
          Value           =   1  'Checked
          Width           =   2655
@@ -168,7 +168,7 @@ Begin VB.Form frmCO_ControlLista
          ForeColor       =   &H00FF0000&
          Height          =   210
          Left            =   360
-         TabIndex        =   78
+         TabIndex        =   68
          Top             =   4200
          Value           =   1  'Checked
          Width           =   2655
@@ -178,7 +178,7 @@ Begin VB.Form frmCO_ControlLista
          BackColor       =   &H00E0E0E0&
          Height          =   315
          Left            =   8640
-         TabIndex        =   77
+         TabIndex        =   67
          Text            =   "80"
          Top             =   1920
          Width           =   615
@@ -188,7 +188,7 @@ Begin VB.Form frmCO_ControlLista
          BackColor       =   &H00E0E0E0&
          Height          =   315
          Left            =   8040
-         TabIndex        =   76
+         TabIndex        =   66
          Text            =   "1"
          Top             =   1920
          Width           =   615
@@ -208,7 +208,7 @@ Begin VB.Form frmCO_ControlLista
          ForeColor       =   &H00FFFFFF&
          Height          =   315
          Left            =   2520
-         TabIndex        =   68
+         TabIndex        =   65
          ToolTipText     =   "Presione (F4) para Consultar"
          Top             =   3600
          Width           =   3735
@@ -218,7 +218,7 @@ Begin VB.Form frmCO_ControlLista
          Appearance      =   0  'Flat
          Height          =   315
          Left            =   1680
-         TabIndex        =   67
+         TabIndex        =   64
          ToolTipText     =   "Presione (F4) para Consultar"
          Top             =   3600
          Width           =   855
@@ -238,7 +238,7 @@ Begin VB.Form frmCO_ControlLista
          ForeColor       =   &H00FFFFFF&
          Height          =   315
          Left            =   2520
-         TabIndex        =   66
+         TabIndex        =   63
          ToolTipText     =   "Presione (F4) para Consultar"
          Top             =   3240
          Width           =   3735
@@ -248,7 +248,7 @@ Begin VB.Form frmCO_ControlLista
          Appearance      =   0  'Flat
          Height          =   315
          Left            =   1680
-         TabIndex        =   65
+         TabIndex        =   62
          ToolTipText     =   "Presione (F4) para Consultar"
          Top             =   3240
          Width           =   855
@@ -268,7 +268,7 @@ Begin VB.Form frmCO_ControlLista
          ForeColor       =   &H00FFFFFF&
          Height          =   315
          Left            =   2520
-         TabIndex        =   64
+         TabIndex        =   61
          ToolTipText     =   "Presione (F4) para Consultar"
          Top             =   2880
          Width           =   3735
@@ -278,7 +278,7 @@ Begin VB.Form frmCO_ControlLista
          Appearance      =   0  'Flat
          Height          =   315
          Left            =   1680
-         TabIndex        =   63
+         TabIndex        =   60
          ToolTipText     =   "Presione (F4) para Consultar"
          Top             =   2880
          Width           =   855
@@ -406,7 +406,7 @@ Begin VB.Form frmCO_ControlLista
       Begin MSComctlLib.ListView lswConAntiguedad 
          Height          =   2295
          Left            =   5040
-         TabIndex        =   81
+         TabIndex        =   71
          Top             =   4560
          Width           =   4335
          _ExtentX        =   7646
@@ -441,10 +441,10 @@ Begin VB.Form frmCO_ControlLista
       Begin XtremeSuiteControls.DateTimePicker dtpFPInicio 
          Height          =   312
          Left            =   6840
-         TabIndex        =   132
+         TabIndex        =   121
          Top             =   3240
          Width           =   1212
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   550
          _StockProps     =   68
@@ -464,10 +464,10 @@ Begin VB.Form frmCO_ControlLista
       Begin XtremeSuiteControls.DateTimePicker dtpFPCorte 
          Height          =   312
          Left            =   8040
-         TabIndex        =   133
+         TabIndex        =   122
          Top             =   3240
          Width           =   1212
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   550
          _StockProps     =   68
@@ -500,7 +500,7 @@ Begin VB.Form frmCO_ControlLista
          Height          =   315
          Index           =   20
          Left            =   6360
-         TabIndex        =   85
+         TabIndex        =   75
          Top             =   1080
          Width           =   1575
       End
@@ -520,7 +520,7 @@ Begin VB.Form frmCO_ControlLista
          Height          =   315
          Index           =   11
          Left            =   360
-         TabIndex        =   83
+         TabIndex        =   73
          Top             =   1320
          Width           =   1575
       End
@@ -769,6 +769,591 @@ Begin VB.Form frmCO_ControlLista
          Width           =   1575
       End
    End
+   Begin VB.Frame fraGestion 
+      Caption         =   "Gestiones"
+      BeginProperty Font 
+         Name            =   "Arial Narrow"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   6255
+      Left            =   600
+      TabIndex        =   49
+      ToolTipText     =   "Salir"
+      Top             =   1440
+      Width           =   11295
+      Begin XtremeSuiteControls.GroupBox fraLista 
+         Height          =   4212
+         Left            =   5880
+         TabIndex        =   118
+         Top             =   1080
+         Width           =   5292
+         _Version        =   1572864
+         _ExtentX        =   9334
+         _ExtentY        =   7429
+         _StockProps     =   79
+         Caption         =   "Gestion"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         BorderStyle     =   1
+         Begin XtremeSuiteControls.ListView lswLista 
+            Height          =   3372
+            Left            =   120
+            TabIndex        =   119
+            Top             =   720
+            Width           =   4932
+            _Version        =   1572864
+            _ExtentX        =   8700
+            _ExtentY        =   5948
+            _StockProps     =   77
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            View            =   3
+            FullRowSelect   =   -1  'True
+            Appearance      =   16
+         End
+         Begin XtremeSuiteControls.FlatEdit txtListaFiltro 
+            Height          =   330
+            Left            =   120
+            TabIndex        =   130
+            Top             =   360
+            Width           =   4935
+            _Version        =   1572864
+            _ExtentX        =   8705
+            _ExtentY        =   582
+            _StockProps     =   77
+            ForeColor       =   0
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Alignment       =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
+         End
+      End
+      Begin XtremeSuiteControls.PushButton cmdAplica 
+         Height          =   612
+         Left            =   9120
+         TabIndex        =   87
+         Top             =   5400
+         Width           =   1932
+         _Version        =   1572864
+         _ExtentX        =   3408
+         _ExtentY        =   1080
+         _StockProps     =   79
+         Caption         =   "Aplicar"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+         UseVisualStyle  =   -1  'True
+         Appearance      =   16
+         Picture         =   "frmCO_ControlLista.frx":0000
+      End
+      Begin VB.ComboBox cboOperacion 
+         Appearance      =   0  'Flat
+         BackColor       =   &H00FFC0C0&
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   330
+         Left            =   1440
+         Style           =   2  'Dropdown List
+         TabIndex        =   50
+         Top             =   3120
+         Width           =   1815
+      End
+      Begin XtremeSuiteControls.DateTimePicker dtpVence 
+         Height          =   330
+         Left            =   1440
+         TabIndex        =   88
+         Top             =   2520
+         Width           =   1812
+         _Version        =   1572864
+         _ExtentX        =   3196
+         _ExtentY        =   582
+         _StockProps     =   68
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CustomFormat    =   "dd/MM/yyyy"
+         Format          =   3
+      End
+      Begin XtremeSuiteControls.FlatEdit txtNotas 
+         Height          =   1455
+         Left            =   1440
+         TabIndex        =   127
+         Top             =   3720
+         Width           =   4455
+         _Version        =   1572864
+         _ExtentX        =   7858
+         _ExtentY        =   2566
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   -2147483643
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         MultiLine       =   -1  'True
+         ScrollBars      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtPersonaGestion 
+         Height          =   330
+         Left            =   1440
+         TabIndex        =   128
+         Top             =   600
+         Width           =   4335
+         _Version        =   1572864
+         _ExtentX        =   7646
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   -2147483643
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtEstado 
+         Height          =   330
+         Left            =   6000
+         TabIndex        =   129
+         Top             =   600
+         Width           =   4935
+         _Version        =   1572864
+         _ExtentX        =   8705
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   -2147483643
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Enabled         =   0   'False
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtGestion 
+         Height          =   330
+         Left            =   1440
+         TabIndex        =   131
+         Top             =   1080
+         Width           =   855
+         _Version        =   1572864
+         _ExtentX        =   1508
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   -2147483643
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtGestionDesc 
+         Height          =   330
+         Left            =   2280
+         TabIndex        =   132
+         Top             =   1080
+         Width           =   3495
+         _Version        =   1572864
+         _ExtentX        =   6165
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtCausa 
+         Height          =   330
+         Left            =   1440
+         TabIndex        =   133
+         Top             =   1440
+         Width           =   855
+         _Version        =   1572864
+         _ExtentX        =   1508
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   -2147483643
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtCausaDesc 
+         Height          =   330
+         Left            =   2280
+         TabIndex        =   134
+         Top             =   1440
+         Width           =   3495
+         _Version        =   1572864
+         _ExtentX        =   6165
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtArreglo 
+         Height          =   330
+         Left            =   1440
+         TabIndex        =   135
+         Top             =   1800
+         Width           =   855
+         _Version        =   1572864
+         _ExtentX        =   1508
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   -2147483643
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtArregloDesc 
+         Height          =   330
+         Left            =   2280
+         TabIndex        =   136
+         Top             =   1800
+         Width           =   3495
+         _Version        =   1572864
+         _ExtentX        =   6165
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtGestionMonto 
+         Height          =   330
+         Left            =   1440
+         TabIndex        =   137
+         Top             =   2160
+         Width           =   1815
+         _Version        =   1572864
+         _ExtentX        =   3201
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   -2147483643
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin VB.Label Label12 
+         Appearance      =   0  'Flat
+         Caption         =   "Persona"
+         BeginProperty Font 
+            Name            =   "Arial Narrow"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00000000&
+         Height          =   315
+         Index           =   19
+         Left            =   240
+         TabIndex        =   59
+         Top             =   600
+         Width           =   855
+      End
+      Begin VB.Image imgSalir 
+         Appearance      =   0  'Flat
+         Height          =   240
+         Left            =   10800
+         Picture         =   "frmCO_ControlLista.frx":07D8
+         Top             =   240
+         Width           =   240
+      End
+      Begin VB.Label Label1 
+         Caption         =   "Acuerdo"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   9
+         Left            =   240
+         TabIndex        =   58
+         Top             =   1800
+         Width           =   975
+      End
+      Begin VB.Label Label1 
+         Caption         =   "Causas"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   8
+         Left            =   240
+         TabIndex        =   57
+         Top             =   1440
+         Width           =   975
+      End
+      Begin VB.Label Label1 
+         Caption         =   "a la que se le va a registrar el recargo"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   495
+         Index           =   7
+         Left            =   3360
+         TabIndex        =   56
+         Top             =   3120
+         Width           =   2415
+      End
+      Begin VB.Label Label1 
+         Caption         =   "Operación"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   6
+         Left            =   240
+         TabIndex        =   55
+         Top             =   3120
+         Width           =   975
+      End
+      Begin VB.Label Label1 
+         Caption         =   "Monto"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   5
+         Left            =   240
+         TabIndex        =   54
+         Top             =   2160
+         Width           =   975
+      End
+      Begin VB.Label Label1 
+         Caption         =   "Notas"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   3
+         Left            =   240
+         TabIndex        =   53
+         Top             =   3720
+         Width           =   975
+      End
+      Begin VB.Label Label1 
+         Caption         =   "Fecha Pago"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   2
+         Left            =   240
+         TabIndex        =   52
+         Top             =   2520
+         Width           =   975
+      End
+      Begin VB.Label Label1 
+         Caption         =   "Gestión"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   0
+         Left            =   240
+         TabIndex        =   51
+         Top             =   1080
+         Width           =   975
+      End
+   End
    Begin VB.Frame fraCargaDatos 
       Appearance      =   0  'Flat
       Caption         =   "Cargar Datos"
@@ -814,7 +1399,7 @@ Begin VB.Form frmCO_ControlLista
       Begin VB.Image imgFraCargarDatos 
          Height          =   255
          Left            =   10440
-         Picture         =   "frmCO_ControlLista.frx":0000
+         Picture         =   "frmCO_ControlLista.frx":08FF
          Stretch         =   -1  'True
          Top             =   240
          Width           =   255
@@ -830,7 +1415,7 @@ Begin VB.Form frmCO_ControlLista
       Begin VB.Image Image3 
          Height          =   630
          Left            =   1920
-         Picture         =   "frmCO_ControlLista.frx":6852
+         Picture         =   "frmCO_ControlLista.frx":7151
          Top             =   840
          Width           =   585
       End
@@ -1090,520 +1675,17 @@ Begin VB.Form frmCO_ControlLista
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         SpreadDesigner  =   "frmCO_ControlLista.frx":6D21
+         SpreadDesigner  =   "frmCO_ControlLista.frx":7620
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
       Begin VB.Image ImgCerrarFrameCartera 
          Height          =   255
          Left            =   10440
-         Picture         =   "frmCO_ControlLista.frx":795C
+         Picture         =   "frmCO_ControlLista.frx":825B
          Stretch         =   -1  'True
          Top             =   170
          Width           =   255
-      End
-   End
-   Begin VB.Frame fraGestion 
-      Caption         =   "Gestiones"
-      BeginProperty Font 
-         Name            =   "Arial Narrow"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   6255
-      Left            =   600
-      TabIndex        =   49
-      ToolTipText     =   "Salir"
-      Top             =   1440
-      Width           =   11295
-      Begin XtremeSuiteControls.GroupBox fraLista 
-         Height          =   4212
-         Left            =   5880
-         TabIndex        =   128
-         Top             =   1080
-         Width           =   5292
-         _Version        =   1310723
-         _ExtentX        =   9334
-         _ExtentY        =   7429
-         _StockProps     =   79
-         Caption         =   "Gestion"
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Appearance      =   16
-         BorderStyle     =   1
-         Begin XtremeSuiteControls.ListView lswLista 
-            Height          =   3372
-            Left            =   120
-            TabIndex        =   129
-            Top             =   720
-            Width           =   4932
-            _Version        =   1310723
-            _ExtentX        =   8700
-            _ExtentY        =   5948
-            _StockProps     =   77
-            BackColor       =   -2147483643
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            View            =   3
-            FullRowSelect   =   -1  'True
-            Appearance      =   16
-         End
-         Begin VB.TextBox txtListaFiltro 
-            Appearance      =   0  'Flat
-            Height          =   315
-            Left            =   120
-            TabIndex        =   130
-            Top             =   360
-            Width           =   4935
-         End
-      End
-      Begin XtremeSuiteControls.PushButton cmdAplica 
-         Height          =   612
-         Left            =   9120
-         TabIndex        =   97
-         Top             =   5400
-         Width           =   1932
-         _Version        =   1310723
-         _ExtentX        =   3408
-         _ExtentY        =   1080
-         _StockProps     =   79
-         Caption         =   "Aplicar"
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Transparent     =   -1  'True
-         UseVisualStyle  =   -1  'True
-         Appearance      =   16
-         Picture         =   "frmCO_ControlLista.frx":E1AE
-      End
-      Begin VB.TextBox txtEstado 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         Enabled         =   0   'False
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   5880
-         TabIndex        =   75
-         Top             =   600
-         Width           =   5175
-      End
-      Begin VB.TextBox txtArregloDesc 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFC0C0&
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00FFFFFF&
-         Height          =   315
-         Left            =   2280
-         TabIndex        =   74
-         ToolTipText     =   "Presione (F4) para Consultar"
-         Top             =   1800
-         Width           =   3375
-      End
-      Begin VB.TextBox txtArreglo 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1440
-         TabIndex        =   73
-         ToolTipText     =   "Presione (F4) para Consultar"
-         Top             =   1800
-         Width           =   855
-      End
-      Begin VB.TextBox txtCausaDesc 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFC0C0&
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00FFFFFF&
-         Height          =   315
-         Left            =   2280
-         TabIndex        =   72
-         ToolTipText     =   "Presione (F4) para Consultar"
-         Top             =   1440
-         Width           =   3375
-      End
-      Begin VB.TextBox txtCausa 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1440
-         TabIndex        =   71
-         ToolTipText     =   "Presione (F4) para Consultar"
-         Top             =   1440
-         Width           =   855
-      End
-      Begin VB.TextBox txtGestionDesc 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFC0C0&
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00FFFFFF&
-         Height          =   315
-         Left            =   2280
-         TabIndex        =   70
-         ToolTipText     =   "Presione (F4) para Consultar"
-         Top             =   1080
-         Width           =   3375
-      End
-      Begin VB.TextBox txtGestion 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1440
-         TabIndex        =   69
-         ToolTipText     =   "Presione (F4) para Consultar"
-         Top             =   1080
-         Width           =   855
-      End
-      Begin VB.TextBox txtPersonaGestion 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1440
-         TabIndex        =   61
-         Top             =   600
-         Width           =   4215
-      End
-      Begin VB.ComboBox cboOperacion 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFC0C0&
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   312
-         Left            =   1440
-         Style           =   2  'Dropdown List
-         TabIndex        =   52
-         Top             =   3120
-         Width           =   1815
-      End
-      Begin VB.TextBox txtGestionMonto 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1440
-         TabIndex        =   51
-         ToolTipText     =   "Presione (F4) para Consultar"
-         Top             =   2160
-         Width           =   1815
-      End
-      Begin VB.TextBox txtNotas 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   1515
-         Left            =   1320
-         MultiLine       =   -1  'True
-         ScrollBars      =   2  'Vertical
-         TabIndex        =   50
-         Top             =   3720
-         Width           =   4335
-      End
-      Begin XtremeSuiteControls.DateTimePicker dtpVence 
-         Height          =   315
-         Left            =   1440
-         TabIndex        =   98
-         Top             =   2520
-         Width           =   1812
-         _Version        =   1310723
-         _ExtentX        =   3196
-         _ExtentY        =   556
-         _StockProps     =   68
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         CustomFormat    =   "dd/MM/yyyy"
-         Format          =   3
-      End
-      Begin VB.Label Label12 
-         Appearance      =   0  'Flat
-         Caption         =   "Persona"
-         BeginProperty Font 
-            Name            =   "Arial Narrow"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00000000&
-         Height          =   315
-         Index           =   19
-         Left            =   240
-         TabIndex        =   62
-         Top             =   600
-         Width           =   855
-      End
-      Begin VB.Image imgSalir 
-         Appearance      =   0  'Flat
-         BorderStyle     =   1  'Fixed Single
-         Height          =   270
-         Left            =   10800
-         Picture         =   "frmCO_ControlLista.frx":E986
-         Top             =   240
-         Width           =   270
-      End
-      Begin VB.Label Label1 
-         Caption         =   "Acuerdo"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   255
-         Index           =   9
-         Left            =   240
-         TabIndex        =   60
-         Top             =   1800
-         Width           =   975
-      End
-      Begin VB.Label Label1 
-         Caption         =   "Causas"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   255
-         Index           =   8
-         Left            =   240
-         TabIndex        =   59
-         Top             =   1440
-         Width           =   975
-      End
-      Begin VB.Label Label1 
-         Caption         =   "a la que se le va a registrar el recargo"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   495
-         Index           =   7
-         Left            =   3360
-         TabIndex        =   58
-         Top             =   3120
-         Width           =   2415
-      End
-      Begin VB.Label Label1 
-         Caption         =   "Operación"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   255
-         Index           =   6
-         Left            =   240
-         TabIndex        =   57
-         Top             =   3120
-         Width           =   975
-      End
-      Begin VB.Label Label1 
-         Caption         =   "Monto"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   255
-         Index           =   5
-         Left            =   240
-         TabIndex        =   56
-         Top             =   2160
-         Width           =   975
-      End
-      Begin VB.Label Label1 
-         Caption         =   "Notas"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   255
-         Index           =   3
-         Left            =   240
-         TabIndex        =   55
-         Top             =   3720
-         Width           =   975
-      End
-      Begin VB.Label Label1 
-         Caption         =   "Fecha Pago"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   255
-         Index           =   2
-         Left            =   240
-         TabIndex        =   54
-         Top             =   2520
-         Width           =   975
-      End
-      Begin VB.Label Label1 
-         Caption         =   "Gestión"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   255
-         Index           =   0
-         Left            =   240
-         TabIndex        =   53
-         Top             =   1080
-         Width           =   975
       End
    End
    Begin VB.CheckBox chkCasosSinEjecutivo 
@@ -1621,7 +1703,7 @@ Begin VB.Form frmCO_ControlLista
       ForeColor       =   &H80000008&
       Height          =   255
       Left            =   4320
-      TabIndex        =   95
+      TabIndex        =   85
       Top             =   840
       Width           =   200
    End
@@ -1640,7 +1722,7 @@ Begin VB.Form frmCO_ControlLista
       ForeColor       =   &H80000008&
       Height          =   255
       Left            =   4320
-      TabIndex        =   90
+      TabIndex        =   80
       Top             =   480
       Value           =   1  'Checked
       Width           =   200
@@ -1661,7 +1743,7 @@ Begin VB.Form frmCO_ControlLista
       Height          =   225
       Left            =   360
       MaskColor       =   &H00FF8080&
-      TabIndex        =   89
+      TabIndex        =   79
       Top             =   1200
       Width           =   200
    End
@@ -1681,7 +1763,7 @@ Begin VB.Form frmCO_ControlLista
       Height          =   255
       Left            =   4320
       MaskColor       =   &H00FF8080&
-      TabIndex        =   88
+      TabIndex        =   78
       Top             =   120
       Width           =   200
    End
@@ -1701,7 +1783,7 @@ Begin VB.Form frmCO_ControlLista
       Height          =   255
       Left            =   360
       MaskColor       =   &H00FF8080&
-      TabIndex        =   87
+      TabIndex        =   77
       Top             =   840
       Width           =   200
    End
@@ -2017,10 +2099,10 @@ Begin VB.Form frmCO_ControlLista
    Begin XtremeSuiteControls.DateTimePicker dtpInicio 
       Height          =   312
       Left            =   1200
-      TabIndex        =   99
+      TabIndex        =   89
       Top             =   480
       Width           =   1212
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   550
       _StockProps     =   68
@@ -2040,10 +2122,10 @@ Begin VB.Form frmCO_ControlLista
    Begin XtremeSuiteControls.DateTimePicker dtpCorte 
       Height          =   312
       Left            =   2400
-      TabIndex        =   100
+      TabIndex        =   90
       Top             =   480
       Width           =   1212
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   550
       _StockProps     =   68
@@ -2063,10 +2145,10 @@ Begin VB.Form frmCO_ControlLista
    Begin XtremeSuiteControls.TabControl tcMain 
       Height          =   2892
       Left            =   120
-      TabIndex        =   101
+      TabIndex        =   91
       Top             =   5640
       Width           =   11412
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   20129
       _ExtentY        =   5101
       _StockProps     =   68
@@ -2113,11 +2195,11 @@ Begin VB.Form frmCO_ControlLista
       Begin XtremeSuiteControls.PushButton btnNotifica 
          Height          =   732
          Left            =   -70000
-         TabIndex        =   134
+         TabIndex        =   123
          Top             =   360
          Visible         =   0   'False
          Width           =   1692
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   1291
          _StockProps     =   79
@@ -2136,11 +2218,11 @@ Begin VB.Form frmCO_ControlLista
       Begin XtremeSuiteControls.CheckBox chkFiadoresEstado 
          Height          =   372
          Left            =   -69280
-         TabIndex        =   131
+         TabIndex        =   120
          Top             =   360
          Visible         =   0   'False
          Width           =   6372
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   11239
          _ExtentY        =   656
          _StockProps     =   79
@@ -2173,7 +2255,7 @@ Begin VB.Form frmCO_ControlLista
          Left            =   -66520
          List            =   "frmCO_ControlLista.frx":3A787
          Style           =   2  'Dropdown List
-         TabIndex        =   117
+         TabIndex        =   107
          Top             =   1080
          Visible         =   0   'False
          Width           =   855
@@ -2193,7 +2275,7 @@ Begin VB.Form frmCO_ControlLista
          Left            =   -66520
          List            =   "frmCO_ControlLista.frx":3A79D
          Style           =   2  'Dropdown List
-         TabIndex        =   116
+         TabIndex        =   106
          Top             =   720
          Visible         =   0   'False
          Width           =   855
@@ -2213,7 +2295,7 @@ Begin VB.Form frmCO_ControlLista
          Height          =   324
          Left            =   -62680
          Locked          =   -1  'True
-         TabIndex        =   115
+         TabIndex        =   105
          ToolTipText     =   "Presione F4 Para Consultar"
          Top             =   1080
          Visible         =   0   'False
@@ -2232,17 +2314,17 @@ Begin VB.Form frmCO_ControlLista
          EndProperty
          Height          =   2325
          Left            =   -70000
-         TabIndex        =   103
+         TabIndex        =   93
          Top             =   360
          Visible         =   0   'False
          Width           =   11412
          Begin XtremeSuiteControls.ListView lswOtros 
             Height          =   1692
             Left            =   7200
-            TabIndex        =   127
+            TabIndex        =   117
             Top             =   360
             Width           =   3612
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   6371
             _ExtentY        =   2984
             _StockProps     =   77
@@ -2263,10 +2345,10 @@ Begin VB.Form frmCO_ControlLista
          Begin XtremeSuiteControls.PushButton btnContacto 
             Height          =   252
             Left            =   10920
-            TabIndex        =   126
+            TabIndex        =   116
             Top             =   360
             Width           =   372
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   656
             _ExtentY        =   444
             _StockProps     =   79
@@ -2286,7 +2368,7 @@ Begin VB.Form frmCO_ControlLista
             EndProperty
             Height          =   255
             Left            =   120
-            TabIndex        =   112
+            TabIndex        =   102
             Top             =   360
             Width           =   735
          End
@@ -2304,7 +2386,7 @@ Begin VB.Form frmCO_ControlLista
             Height          =   255
             Index           =   0
             Left            =   120
-            TabIndex        =   111
+            TabIndex        =   101
             Top             =   720
             Width           =   735
          End
@@ -2322,7 +2404,7 @@ Begin VB.Form frmCO_ControlLista
             Height          =   255
             Index           =   0
             Left            =   120
-            TabIndex        =   110
+            TabIndex        =   100
             Top             =   1080
             Width           =   735
          End
@@ -2331,7 +2413,7 @@ Begin VB.Form frmCO_ControlLista
             Height          =   255
             Index           =   1
             Left            =   120
-            TabIndex        =   109
+            TabIndex        =   99
             Top             =   1680
             Width           =   735
          End
@@ -2351,7 +2433,7 @@ Begin VB.Form frmCO_ControlLista
             ForeColor       =   &H80000008&
             Height          =   315
             Left            =   960
-            TabIndex        =   108
+            TabIndex        =   98
             Top             =   360
             Width           =   1935
          End
@@ -2371,7 +2453,7 @@ Begin VB.Form frmCO_ControlLista
             ForeColor       =   &H80000008&
             Height          =   315
             Left            =   960
-            TabIndex        =   107
+            TabIndex        =   97
             Top             =   720
             Width           =   1935
          End
@@ -2391,7 +2473,7 @@ Begin VB.Form frmCO_ControlLista
             ForeColor       =   &H80000008&
             Height          =   315
             Left            =   960
-            TabIndex        =   106
+            TabIndex        =   96
             Top             =   1080
             Width           =   1935
          End
@@ -2411,7 +2493,7 @@ Begin VB.Form frmCO_ControlLista
             ForeColor       =   &H80000008&
             Height          =   315
             Left            =   960
-            TabIndex        =   105
+            TabIndex        =   95
             Top             =   1680
             Width           =   6015
          End
@@ -2431,7 +2513,7 @@ Begin VB.Form frmCO_ControlLista
             ForeColor       =   &H80000008&
             Height          =   1035
             Left            =   3000
-            TabIndex        =   104
+            TabIndex        =   94
             Top             =   360
             Width           =   4095
          End
@@ -2439,7 +2521,7 @@ Begin VB.Form frmCO_ControlLista
       Begin FPSpreadADO.fpSpread vgOperaciones 
          Height          =   2532
          Left            =   0
-         TabIndex        =   102
+         TabIndex        =   92
          Top             =   360
          Width           =   10812
          _Version        =   524288
@@ -2466,7 +2548,7 @@ Begin VB.Form frmCO_ControlLista
       Begin FPSpreadADO.fpSpread vgCobro 
          Height          =   2532
          Left            =   -68080
-         TabIndex        =   113
+         TabIndex        =   103
          Top             =   360
          Visible         =   0   'False
          Width           =   10932
@@ -2494,7 +2576,7 @@ Begin VB.Form frmCO_ControlLista
       Begin FPSpreadADO.fpSpread vgridFiadores 
          Height          =   2172
          Left            =   -70000
-         TabIndex        =   114
+         TabIndex        =   104
          Top             =   720
          Visible         =   0   'False
          Width           =   10812
@@ -2522,11 +2604,11 @@ Begin VB.Form frmCO_ControlLista
       Begin XtremeSuiteControls.PushButton cmdMantiene 
          Height          =   732
          Left            =   -65560
-         TabIndex        =   118
+         TabIndex        =   108
          Top             =   720
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   1291
          _StockProps     =   79
@@ -2547,11 +2629,11 @@ Begin VB.Form frmCO_ControlLista
       Begin XtremeSuiteControls.PushButton cmdTrasladar 
          Height          =   732
          Left            =   -60400
-         TabIndex        =   119
+         TabIndex        =   109
          Top             =   840
          Visible         =   0   'False
          Width           =   1452
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   1291
          _StockProps     =   79
@@ -2573,11 +2655,11 @@ Begin VB.Form frmCO_ControlLista
          Height          =   372
          Index           =   0
          Left            =   -69880
-         TabIndex        =   135
+         TabIndex        =   124
          Top             =   1200
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79
@@ -2599,11 +2681,11 @@ Begin VB.Form frmCO_ControlLista
          Height          =   372
          Index           =   1
          Left            =   -69880
-         TabIndex        =   136
+         TabIndex        =   125
          Top             =   1560
          Visible         =   0   'False
          Width           =   1212
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   656
          _StockProps     =   79
@@ -2639,7 +2721,7 @@ Begin VB.Form frmCO_ControlLista
          Height          =   312
          Index           =   10
          Left            =   -67960
-         TabIndex        =   124
+         TabIndex        =   114
          Top             =   1080
          Visible         =   0   'False
          Width           =   1332
@@ -2663,7 +2745,7 @@ Begin VB.Form frmCO_ControlLista
          Height          =   312
          Index           =   7
          Left            =   -67960
-         TabIndex        =   123
+         TabIndex        =   113
          Top             =   720
          Visible         =   0   'False
          Width           =   1332
@@ -2686,7 +2768,7 @@ Begin VB.Form frmCO_ControlLista
          Height          =   1212
          Index           =   5
          Left            =   -64120
-         TabIndex        =   122
+         TabIndex        =   112
          Top             =   720
          Visible         =   0   'False
          Width           =   1332
@@ -2710,7 +2792,7 @@ Begin VB.Form frmCO_ControlLista
          Height          =   312
          Index           =   6
          Left            =   -62680
-         TabIndex        =   121
+         TabIndex        =   111
          Top             =   840
          Visible         =   0   'False
          Width           =   2052
@@ -2733,7 +2815,7 @@ Begin VB.Form frmCO_ControlLista
          Height          =   972
          Index           =   4
          Left            =   -69760
-         TabIndex        =   120
+         TabIndex        =   110
          Top             =   720
          Visible         =   0   'False
          Width           =   1812
@@ -2742,10 +2824,10 @@ Begin VB.Form frmCO_ControlLista
    Begin XtremeSuiteControls.PushButton btnNotificaLista 
       Height          =   312
       Left            =   9840
-      TabIndex        =   137
+      TabIndex        =   126
       Top             =   1200
       Width           =   2892
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   5101
       _ExtentY        =   550
       _StockProps     =   79
@@ -2764,16 +2846,16 @@ Begin VB.Form frmCO_ControlLista
    Begin XtremeShortcutBar.ShortcutCaption scTitulo 
       Height          =   372
       Left            =   120
-      TabIndex        =   125
+      TabIndex        =   115
       Top             =   5160
       Width           =   11412
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   20129
       _ExtentY        =   656
       _StockProps     =   14
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   7.5
+         Size            =   7.44
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -2799,7 +2881,7 @@ Begin VB.Form frmCO_ControlLista
       Height          =   315
       Index           =   2
       Left            =   4680
-      TabIndex        =   96
+      TabIndex        =   86
       Top             =   840
       Width           =   2295
    End
@@ -2820,7 +2902,7 @@ Begin VB.Form frmCO_ControlLista
       Height          =   315
       Index           =   4
       Left            =   720
-      TabIndex        =   94
+      TabIndex        =   84
       Top             =   1200
       Width           =   1935
    End
@@ -2841,7 +2923,7 @@ Begin VB.Form frmCO_ControlLista
       Height          =   315
       Index           =   3
       Left            =   720
-      TabIndex        =   93
+      TabIndex        =   83
       Top             =   840
       Width           =   1935
    End
@@ -2862,7 +2944,7 @@ Begin VB.Form frmCO_ControlLista
       Height          =   315
       Index           =   1
       Left            =   4680
-      TabIndex        =   92
+      TabIndex        =   82
       Top             =   480
       Width           =   975
    End
@@ -2883,7 +2965,7 @@ Begin VB.Form frmCO_ControlLista
       Height          =   315
       Index           =   0
       Left            =   4680
-      TabIndex        =   91
+      TabIndex        =   81
       Top             =   120
       Width           =   975
    End
@@ -3002,9 +3084,9 @@ pCount = 0
 With vGrid
     For i = 1 To .MaxRows
         .Row = i
-        .col = 1
+        .Col = 1
         If .Value = vbChecked Then
-           .col = 5
+           .Col = 5
            Call sbCbr_Notifica_Email(Trim(.Text), "R")
            pCount = pCount + 1
         End If
@@ -3091,7 +3173,7 @@ vGrid.MaxCols = 7
 vGrid.MaxRows = 1
 vGrid.Row = vGrid.MaxRows
 For i = 1 To vGrid.MaxCols
- vGrid.col = i
+ vGrid.Col = i
  vGrid.Text = ""
 Next i
 
@@ -3107,7 +3189,7 @@ Do While Not rs.EOF
   .Row = .MaxRows
   
   For i = 1 To .MaxCols
-     .col = i
+     .Col = i
      Select Case i
         Case 1 'Status
            If rs!EstadoMora = "A" Then
@@ -3118,7 +3200,7 @@ Do While Not rs.EOF
            
               
         Case 3 'Solicitud
-           .Text = CStr(rs!Id_Solicitud)
+           .Text = CStr(rs!ID_SOLICITUD)
            
         Case 4 'Cedula
            .Text = rs!Cedula
@@ -3170,7 +3252,7 @@ Dim lngCasos As Long
 
 For lngCasos = 1 To vGrid.MaxRows
   vGrid.Row = lngCasos
-  vGrid.col = 1
+  vGrid.Col = 1
   vGrid.Value = chkMarcas.Value
 Next lngCasos
 
@@ -3209,16 +3291,16 @@ y = IIf((cboRebajo.Text = "SI"), 1, 0)
 For x = 1 To vGrid.MaxRows
  vGrid.Row = x
  
- vGrid.col = 1
+ vGrid.Col = 1
  
  
  If vGrid.Value = vbChecked Then
-    vGrid.col = 11
+    vGrid.Col = 11
     vGrid.Value = i
-    vGrid.col = 12
+    vGrid.Col = 12
     vGrid.Value = y
     
-    vGrid.col = 5
+    vGrid.Col = 5
     strSQL = "update cbr_asignacion set mantener = " & i & ",rebajo_doble = " & y _
            & " where usuario = '" & txtCodigo & "' and cedula = '" & vGrid.Text & "'"
     Call ConectionExecute(strSQL)
@@ -3246,10 +3328,10 @@ Me.MousePointer = vbHourglass
 
 For x = 1 To vGrid.MaxRows
  vGrid.Row = x
- vGrid.col = 1
+ vGrid.Col = 1
  If vGrid.Value = vbChecked Then
     
-    vGrid.col = 5
+    vGrid.Col = 5
     strSQL = "exec spCBRControlAsg '" & vGrid.Text _
            & "','" & txtTrasladar.Text & "',1"
     Call ConectionExecute(strSQL)
@@ -3791,12 +3873,12 @@ vGrid.MaxRows = vGrid.MaxRows - 1
 
 For lngCasos = 1 To vGrid.MaxRows
   vGrid.Row = lngCasos
-  vGrid.col = 8
+  vGrid.Col = 8
   curMora = curMora + CCur(vGrid.Text)
-  vGrid.col = 9
+  vGrid.Col = 9
   curMoraLegal = curMoraLegal + CCur(vGrid.Text)
 
-  vGrid.col = 1
+  vGrid.Col = 1
   vGrid.Value = chkMarcas.Value
 Next lngCasos
 
@@ -3843,7 +3925,7 @@ Private Sub tcMain_SelectedChanged(ByVal Item As XtremeSuiteControls.ITabControl
         lblDistrito.Caption = IIf(IsNull(rs!DistDesc), "", rs!DistDesc)
       
         
-        lblDireccion.Caption = IIf(IsNull(rs!Direccion), "", rs!Direccion)
+        lblDireccion.Caption = IIf(IsNull(rs!direccion), "", rs!direccion)
         lblEmail.Caption = IIf(IsNull(rs!AF_Email), "", rs!AF_Email)
         
         rs.Close
@@ -4468,7 +4550,7 @@ If vBorra Then
     vGrid.MaxRows = 1
     vGrid.Row = vGrid.MaxRows
     For i = 1 To vGrid.MaxCols
-     vGrid.col = i
+     vGrid.Col = i
      vGrid.Text = ""
     Next i
 End If
@@ -4477,7 +4559,7 @@ Call OpenRecordSet(rs, strSQL, 0)
 Do While Not rs.EOF
   vGrid.Row = vGrid.MaxRows
   For i = 1 To vGrid.MaxCols
-    vGrid.col = i
+    vGrid.Col = i
     If i <> 2 And i <> 3 Then
         If i = 1 Then
             vGrid.Text = CStr(IIf(IsNull(rs.Fields(i - 1).Value), "", rs.Fields(i - 1)))
@@ -4525,7 +4607,7 @@ With vgCobro
           .Row = .MaxRows
           
           For i = 1 To 11
-            .col = i
+            .Col = i
             Select Case i
               Case 1 'ID
                 .Text = CStr(rs!Cod_Seg)
@@ -4568,7 +4650,7 @@ With vgCobro
           .Row = .MaxRows
           
           For i = 1 To 5
-            .col = i
+            .Col = i
             Select Case i
               Case 1 'Fecha
                 .Text = Format(rs!fecha_asignacion, "dd/mm/yyyy")
@@ -4600,7 +4682,7 @@ vError:
 End Sub
 
 
-Private Sub vGrid_Click(ByVal col As Long, ByVal Row As Long)
+Private Sub vGrid_Click(ByVal Col As Long, ByVal Row As Long)
 Dim frm As Form
 
 
@@ -4618,7 +4700,7 @@ On Error GoTo vError
     If vGrid.Sheet = 1 Then
         
         vGrid.Row = Row
-        Select Case col
+        Select Case Col
     
         Case 2
            
@@ -4628,7 +4710,7 @@ On Error GoTo vError
           For Each frm In Forms
             If UCase(frm.Name) = UCase("frmCR_ConsultaCreditos") Then
               vGrid.Row = Row
-              vGrid.col = 5
+              vGrid.Col = 5
               Call frm.sbXConsultaAsistida(vGrid.Text)
               Exit For
             End If
@@ -4643,14 +4725,14 @@ On Error GoTo vError
              fraGestion.Left = vGrid.Left
           
           
-          vGrid.col = 5
+          vGrid.Col = 5
           scTitulo.Tag = vGrid.Text
           txtPersonaGestion.Tag = vGrid.Text
           
           Call sbTraeUltimaGestiones(vGrid.Text, txtCodigo.Text)
           Call sbEstadoTxtCbo(vGrid.Text, txtEstado, cboOperacion)
           
-          vGrid.col = 6
+          vGrid.Col = 6
           scTitulo.Caption = vGrid.Text
           txtPersonaGestion.Text = vGrid.Text
           
@@ -4662,10 +4744,10 @@ On Error GoTo vError
         
     End If
      
-    vGrid.col = 5
+    vGrid.Col = 5
     If scTitulo.Tag <> vGrid.Text Then
         scTitulo.Tag = vGrid.Text
-        vGrid.col = 6
+        vGrid.Col = 6
         scTitulo.Caption = vGrid.Text
         
         Call sbCargarDetalleCuotas
@@ -4694,7 +4776,7 @@ tcMain.Item(0).Selected = True
     
     Me.MousePointer = vbHourglass
 
-    vGrid.col = 5
+    vGrid.Col = 5
    
     strSQL = "exec spCbrPersonaMoraGarantia '" & scTitulo.Tag & "','V'"
     vgOperaciones.Sheet = 1
@@ -4738,7 +4820,7 @@ If vBorra Then
     vGrid.MaxRows = 1
     vGrid.Row = vGrid.MaxRows
     For i = 1 To vGrid.MaxCols
-     vGrid.col = i
+     vGrid.Col = i
      vGrid.Text = ""
     Next i
 End If
@@ -4747,13 +4829,13 @@ Call OpenRecordSet(rs, strSQL, 0)
 Do While Not rs.EOF
   vGrid.Row = vGrid.MaxRows
   For i = 1 To vGrid.MaxCols
-    vGrid.col = i
+    vGrid.Col = i
     vGrid.Text = CStr(IIf(IsNull(rs.Fields(i - 1).Value), "", rs.Fields(i - 1)))
     
     If vGrid.Sheet = 1 Then 'Cartera Al dia y Judicial
         
         ' Totales Saldo Al Dia y Judicial
-        If vGrid.col = 3 Then
+        If vGrid.Col = 3 Then
             If rs.Fields!Proceso = "Normal" Then
                 SaldoAlDia = SaldoAlDia + vGrid.Text
             Else
@@ -4762,7 +4844,7 @@ Do While Not rs.EOF
         End If
         
         ' Totales Operaciones Al Dia y Judicial
-        If vGrid.col = 5 Then
+        If vGrid.Col = 5 Then
             If rs.Fields!Proceso = "Normal" Then
                 OperacionesAlDia = OperacionesAlDia + vGrid.Text
             Else
@@ -4773,12 +4855,12 @@ Do While Not rs.EOF
     Else 'Cartera En Mora
     
         ' Totales Saldo Mora
-        If vGrid.col = 3 Then
+        If vGrid.Col = 3 Then
             SaldoMora = SaldoMora + vGrid.Text
         End If
         
         ' Totales Operaciones Mora
-        If vGrid.col = 4 Then
+        If vGrid.Col = 4 Then
             OperacionesMora = OperacionesMora + vGrid.Text
 
         End If
@@ -4812,16 +4894,16 @@ Private Sub vGrid_KeyDown(KeyCode As Integer, Shift As Integer)
     End If
 End Sub
 
-Private Sub vGrid_LeaveCell(ByVal col As Long, ByVal Row As Long, ByVal NewCol As Long, ByVal NewRow As Long, Cancel As Boolean)
+Private Sub vGrid_LeaveCell(ByVal Col As Long, ByVal Row As Long, ByVal NewCol As Long, ByVal NewRow As Long, Cancel As Boolean)
     If mCambioCelda Then
         mCambioCelda = False
         
         If Row = NewRow Then Exit Sub
         
         vGrid.Row = NewRow
-        vGrid.col = 5
+        vGrid.Col = 5
         scTitulo.Tag = vGrid.Text
-        vGrid.col = 6
+        vGrid.Col = 6
         scTitulo.Caption = vGrid.Text
         
         
@@ -4836,14 +4918,14 @@ Private Sub vGrid_LeaveCell(ByVal col As Long, ByVal Row As Long, ByVal NewCol A
 End Sub
 
 
-Private Sub vgridFiadores_Click(ByVal col As Long, ByVal Row As Long)
+Private Sub vgridFiadores_Click(ByVal Col As Long, ByVal Row As Long)
 
   With vgridFiadores
     .Row = Row
     
-    Select Case col
+    Select Case Col
       Case 2
-        .col = 4
+        .Col = 4
         If .Text = "" Then Exit Sub
         GLOBALES.gCedulaActual = .Text
         Call sbFormsCall("frmCR_VerificaDatosPersonales", 1, , , False, Me)
@@ -5366,7 +5448,7 @@ Else
    txtX.Tag = "S"
    txtX.Text = "Presenta operaciones con morosidad" & vbCrLf & vbCrLf
    Do While Not rs.EOF
-     cboX.AddItem rs!Id_Solicitud
+     cboX.AddItem rs!ID_SOLICITUD
      rs.MoveNext
    Loop
 End If

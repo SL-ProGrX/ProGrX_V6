@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.Controls.v22.0.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmRH_Vacaciones 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -27,7 +27,7 @@ Begin VB.Form frmRH_Vacaciones
       TabIndex        =   0
       Top             =   1200
       Width           =   9255
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   16325
       _ExtentY        =   6376
       _StockProps     =   79
@@ -42,7 +42,7 @@ Begin VB.Form frmRH_Vacaciones
          TabIndex        =   20
          Top             =   1680
          Width           =   1452
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   444
          _StockProps     =   79
@@ -67,12 +67,12 @@ Begin VB.Form frmRH_Vacaciones
          TabIndex        =   1
          Top             =   3000
          Width           =   1572
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   1080
          _StockProps     =   79
          Caption         =   "Aplicar"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -92,7 +92,7 @@ Begin VB.Form frmRH_Vacaciones
          TabIndex        =   2
          Top             =   240
          Width           =   6852
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   12091
          _ExtentY        =   582
          _StockProps     =   77
@@ -117,7 +117,7 @@ Begin VB.Form frmRH_Vacaciones
          TabIndex        =   3
          Top             =   600
          Width           =   6852
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   12086
          _ExtentY        =   1609
          _StockProps     =   77
@@ -142,7 +142,7 @@ Begin VB.Form frmRH_Vacaciones
          TabIndex        =   4
          Top             =   2160
          Width           =   1335
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   556
          _StockProps     =   68
@@ -164,7 +164,7 @@ Begin VB.Form frmRH_Vacaciones
          TabIndex        =   5
          Top             =   3120
          Width           =   2655
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   4683
          _ExtentY        =   582
          _StockProps     =   77
@@ -189,7 +189,7 @@ Begin VB.Form frmRH_Vacaciones
          TabIndex        =   16
          Top             =   2160
          Width           =   1335
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   556
          _StockProps     =   68
@@ -212,7 +212,7 @@ Begin VB.Form frmRH_Vacaciones
          ToolTipText     =   "Dias a Disfrutar"
          Top             =   2640
          Width           =   1335
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   556
          _StockProps     =   77
@@ -237,7 +237,7 @@ Begin VB.Form frmRH_Vacaciones
          ToolTipText     =   "Días Disponibles"
          Top             =   2640
          Width           =   1335
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   556
          _StockProps     =   77
@@ -264,7 +264,7 @@ Begin VB.Form frmRH_Vacaciones
          TabIndex        =   21
          Top             =   1680
          Width           =   1452
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   444
          _StockProps     =   79
@@ -384,7 +384,7 @@ Begin VB.Form frmRH_Vacaciones
       TabIndex        =   10
       Top             =   480
       Width           =   1812
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
@@ -409,7 +409,7 @@ Begin VB.Form frmRH_Vacaciones
       TabIndex        =   11
       Top             =   480
       Width           =   5052
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   8911
       _ExtentY        =   550
       _StockProps     =   77
@@ -433,7 +433,7 @@ Begin VB.Form frmRH_Vacaciones
       TabIndex        =   12
       Top             =   480
       Width           =   1812
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
@@ -604,6 +604,7 @@ vError:
  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 End Sub
 
+
 Private Sub cboTipo_Click()
 If vPaso Then Exit Sub
 If cboTipo.ListCount = 0 Then Exit Sub
@@ -768,11 +769,11 @@ If Not rs.EOF And Not rs.BOF Then
     dtpFechaI.Value = rs!Fecha
     dtpFechaC.Value = rs!Fecha
     
-    txtEmpleadoId.Text = rs!EMPLEADO_ID
+    txtEmpleadoId.Text = rs!Empleado_ID
     txtIdentificacion.Text = rs!IDENTIFICACION
     txtNombre.Text = rs!Nombre
     
-    mNomina = rs!Cod_Nomina
+    mNomina = rs!COD_NOMINA
     
 Else
     txtDiasDisponibles.Text = 0

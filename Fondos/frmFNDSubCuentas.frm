@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "mscomctl.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.Controls.v22.0.0.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmFNDSubCuentas 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "SubCuentas"
@@ -67,7 +67,7 @@ Begin VB.Form frmFNDSubCuentas
       TabIndex        =   1
       Top             =   1320
       Width           =   9852
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   17378
       _ExtentY        =   9970
       _StockProps     =   68
@@ -83,6 +83,7 @@ Begin VB.Form frmFNDSubCuentas
       Appearance      =   4
       Color           =   32
       ItemCount       =   2
+      SelectedItem    =   1
       Item(0).Caption =   "Listado"
       Item(0).ControlCount=   1
       Item(0).Control(0)=   "lsw"
@@ -118,11 +119,12 @@ Begin VB.Form frmFNDSubCuentas
       Item(1).Control(27)=   "txtCuota"
       Begin XtremeSuiteControls.ListView lsw 
          Height          =   5052
-         Left            =   120
+         Left            =   -69880
          TabIndex        =   2
          Top             =   480
+         Visible         =   0   'False
          Width           =   9732
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   17166
          _ExtentY        =   8911
          _StockProps     =   77
@@ -142,12 +144,11 @@ Begin VB.Form frmFNDSubCuentas
       End
       Begin XtremeSuiteControls.ComboBox cboParentesco 
          Height          =   312
-         Left            =   -68320
+         Left            =   1680
          TabIndex        =   3
          Top             =   1800
-         Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   582
          _StockProps     =   77
@@ -168,12 +169,11 @@ Begin VB.Form frmFNDSubCuentas
       End
       Begin XtremeSuiteControls.FlatEdit txtCedula 
          Height          =   315
-         Left            =   -68320
+         Left            =   1680
          TabIndex        =   4
          Top             =   600
-         Visible         =   0   'False
          Width           =   2292
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   556
          _StockProps     =   77
@@ -194,12 +194,11 @@ Begin VB.Form frmFNDSubCuentas
       End
       Begin XtremeSuiteControls.DateTimePicker dtpFechaNacimiento 
          Height          =   312
-         Left            =   -65680
+         Left            =   4320
          TabIndex        =   5
          Top             =   1800
-         Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   556
          _StockProps     =   68
@@ -217,12 +216,11 @@ Begin VB.Form frmFNDSubCuentas
       End
       Begin XtremeSuiteControls.FlatEdit txtDireccion 
          Height          =   792
-         Left            =   -68320
+         Left            =   1680
          TabIndex        =   6
          Top             =   2880
-         Visible         =   0   'False
          Width           =   7452
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   13144
          _ExtentY        =   1397
          _StockProps     =   77
@@ -243,12 +241,11 @@ Begin VB.Form frmFNDSubCuentas
       End
       Begin XtremeSuiteControls.FlatEdit txtObservacion 
          Height          =   912
-         Left            =   -68320
+         Left            =   1680
          TabIndex        =   7
          Top             =   4080
-         Visible         =   0   'False
          Width           =   7452
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   13144
          _ExtentY        =   1609
          _StockProps     =   77
@@ -269,12 +266,11 @@ Begin VB.Form frmFNDSubCuentas
       End
       Begin XtremeSuiteControls.FlatEdit txtEmail 
          Height          =   312
-         Left            =   -68320
+         Left            =   1680
          TabIndex        =   8
          Top             =   3720
-         Visible         =   0   'False
          Width           =   7452
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   13144
          _ExtentY        =   550
          _StockProps     =   77
@@ -294,12 +290,11 @@ Begin VB.Form frmFNDSubCuentas
       End
       Begin XtremeSuiteControls.FlatEdit txtApartadoPostal 
          Height          =   312
-         Left            =   -62920
+         Left            =   7080
          TabIndex        =   9
          Top             =   2400
-         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -319,12 +314,11 @@ Begin VB.Form frmFNDSubCuentas
       End
       Begin XtremeSuiteControls.FlatEdit txtTelefono1 
          Height          =   312
-         Left            =   -68320
+         Left            =   1680
          TabIndex        =   10
          Top             =   2400
-         Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
@@ -344,12 +338,11 @@ Begin VB.Form frmFNDSubCuentas
       End
       Begin XtremeSuiteControls.FlatEdit txtTelefono2 
          Height          =   312
-         Left            =   -65680
+         Left            =   4320
          TabIndex        =   11
          Top             =   2400
-         Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
@@ -369,12 +362,11 @@ Begin VB.Form frmFNDSubCuentas
       End
       Begin XtremeSuiteControls.FlatEdit txtNombre 
          Height          =   312
-         Left            =   -63760
+         Left            =   6240
          TabIndex        =   12
          Top             =   1320
-         Visible         =   0   'False
          Width           =   2892
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   5101
          _ExtentY        =   550
          _StockProps     =   77
@@ -395,12 +387,11 @@ Begin VB.Form frmFNDSubCuentas
       End
       Begin XtremeSuiteControls.FlatEdit txtApellido2 
          Height          =   312
-         Left            =   -66040
+         Left            =   3960
          TabIndex        =   13
          Top             =   1320
-         Visible         =   0   'False
          Width           =   2292
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   550
          _StockProps     =   77
@@ -421,12 +412,11 @@ Begin VB.Form frmFNDSubCuentas
       End
       Begin XtremeSuiteControls.FlatEdit txtApellido1 
          Height          =   312
-         Left            =   -68320
+         Left            =   1680
          TabIndex        =   14
          Top             =   1320
-         Visible         =   0   'False
          Width           =   2292
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   550
          _StockProps     =   77
@@ -447,12 +437,11 @@ Begin VB.Form frmFNDSubCuentas
       End
       Begin XtremeSuiteControls.FlatEdit txtCodigo 
          Height          =   312
-         Left            =   -61720
+         Left            =   8280
          TabIndex        =   16
          Top             =   5160
-         Visible         =   0   'False
          Width           =   852
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
@@ -475,12 +464,11 @@ Begin VB.Form frmFNDSubCuentas
       End
       Begin XtremeSuiteControls.FlatEdit txtCuota 
          Height          =   312
-         Left            =   -62800
+         Left            =   7200
          TabIndex        =   15
          Top             =   1800
-         Visible         =   0   'False
          Width           =   1932
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -514,10 +502,9 @@ Begin VB.Form frmFNDSubCuentas
          EndProperty
          Height          =   252
          Index           =   1
-         Left            =   -63160
+         Left            =   6840
          TabIndex        =   30
          Top             =   5160
-         Visible         =   0   'False
          Width           =   1092
       End
       Begin VB.Label Lbl1 
@@ -532,10 +519,9 @@ Begin VB.Form frmFNDSubCuentas
             Strikethrough   =   0   'False
          EndProperty
          Height          =   252
-         Left            =   -69640
+         Left            =   360
          TabIndex        =   29
          Top             =   636
-         Visible         =   0   'False
          Width           =   1212
       End
       Begin VB.Label Lbl3 
@@ -551,10 +537,9 @@ Begin VB.Form frmFNDSubCuentas
          EndProperty
          Height          =   252
          Index           =   0
-         Left            =   -69640
+         Left            =   360
          TabIndex        =   28
          Top             =   1800
-         Visible         =   0   'False
          Width           =   972
       End
       Begin VB.Label Lbl4 
@@ -569,10 +554,9 @@ Begin VB.Form frmFNDSubCuentas
             Strikethrough   =   0   'False
          EndProperty
          Height          =   252
-         Left            =   -66640
+         Left            =   3360
          TabIndex        =   27
          Top             =   1800
-         Visible         =   0   'False
          Width           =   852
       End
       Begin VB.Label Lbl5 
@@ -587,10 +571,9 @@ Begin VB.Form frmFNDSubCuentas
             Strikethrough   =   0   'False
          EndProperty
          Height          =   252
-         Left            =   -64000
+         Left            =   6000
          TabIndex        =   26
          Top             =   1800
-         Visible         =   0   'False
          Width           =   1212
       End
       Begin VB.Label Label4 
@@ -606,10 +589,9 @@ Begin VB.Form frmFNDSubCuentas
          EndProperty
          Height          =   252
          Index           =   0
-         Left            =   -66640
+         Left            =   3360
          TabIndex        =   25
          Top             =   2400
-         Visible         =   0   'False
          Width           =   972
       End
       Begin VB.Label Label8 
@@ -624,10 +606,9 @@ Begin VB.Form frmFNDSubCuentas
             Strikethrough   =   0   'False
          EndProperty
          Height          =   252
-         Left            =   -69640
+         Left            =   360
          TabIndex        =   24
          Top             =   4080
-         Visible         =   0   'False
          Width           =   1452
       End
       Begin VB.Label Label14 
@@ -642,10 +623,9 @@ Begin VB.Form frmFNDSubCuentas
             Strikethrough   =   0   'False
          EndProperty
          Height          =   372
-         Left            =   -64000
+         Left            =   6000
          TabIndex        =   23
          Top             =   2400
-         Visible         =   0   'False
          Width           =   1092
       End
       Begin VB.Label Label15 
@@ -661,10 +641,9 @@ Begin VB.Form frmFNDSubCuentas
          EndProperty
          Height          =   252
          Index           =   0
-         Left            =   -69640
+         Left            =   360
          TabIndex        =   22
          Top             =   3720
-         Visible         =   0   'False
          Width           =   1092
       End
       Begin VB.Label Label16 
@@ -679,10 +658,9 @@ Begin VB.Form frmFNDSubCuentas
             Strikethrough   =   0   'False
          EndProperty
          Height          =   252
-         Left            =   -69640
+         Left            =   360
          TabIndex        =   21
          Top             =   2760
-         Visible         =   0   'False
          Width           =   1332
       End
       Begin VB.Label Label7 
@@ -698,10 +676,9 @@ Begin VB.Form frmFNDSubCuentas
          EndProperty
          Height          =   252
          Index           =   1
-         Left            =   -69640
+         Left            =   360
          TabIndex        =   20
          Top             =   2400
-         Visible         =   0   'False
          Width           =   972
       End
       Begin VB.Label Label4 
@@ -721,10 +698,9 @@ Begin VB.Form frmFNDSubCuentas
          ForeColor       =   &H00FFFFFF&
          Height          =   312
          Index           =   1
-         Left            =   -63760
+         Left            =   6240
          TabIndex        =   19
          Top             =   1020
-         Visible         =   0   'False
          Width           =   2892
       End
       Begin VB.Label Label3 
@@ -743,10 +719,9 @@ Begin VB.Form frmFNDSubCuentas
          EndProperty
          ForeColor       =   &H00FFFFFF&
          Height          =   312
-         Left            =   -66040
+         Left            =   3960
          TabIndex        =   18
          Top             =   1020
-         Visible         =   0   'False
          Width           =   2412
       End
       Begin VB.Label Label2 
@@ -765,10 +740,9 @@ Begin VB.Form frmFNDSubCuentas
          EndProperty
          ForeColor       =   &H00FFFFFF&
          Height          =   312
-         Left            =   -68320
+         Left            =   1680
          TabIndex        =   17
          Top             =   1020
-         Visible         =   0   'False
          Width           =   2292
       End
    End
@@ -863,18 +837,18 @@ Dim vEdita As Boolean, vCodigo As Long, vCedulaPrincipal As String
 Dim vPaso As Boolean
 
 Private Sub sbActualizaCuotaContrato()
-Dim strSQL As String, rs As New ADODB.Recordset
+Dim strSQL As String
 
-strSQL = "select isnull(sum(cuota),0) as Cuota from fnd_subCuentas where cod_operadora = " _
-       & gFondos.Operadora & " and cod_plan = '" & gFondos.Plan & "' and cod_contrato = " & gFondos.Contrato
-Call OpenRecordSet(rs, strSQL)
+On Error GoTo vError
 
-strSQL = "update fnd_contratos set monto = " & rs!Cuota _
-       & " where cod_operadora = " & gFondos.Operadora _
-       & " and cod_plan = '" & gFondos.Plan & "' and cod_contrato = " & gFondos.Contrato
+strSQL = "exec spFnd_SubCuentas_Maestro_Update " & gFondos.Operadora _
+       & ", '" & gFondos.Plan & "', " & gFondos.Contrato & ", '" & glogon.Usuario & "'"
 Call ConectionExecute(strSQL)
 
-rs.Close
+Exit Sub
+
+vError:
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 
 End Sub
 
@@ -900,7 +874,7 @@ Do While Not rs.EOF
     itmX.SubItems(1) = rs!Cedula
     itmX.SubItems(2) = rs!Nombre
     itmX.SubItems(3) = Format(rs!FechaNac, "dd/mm/yyyy")
-    itmX.SubItems(4) = rs!parentesco_Desc
+    itmX.SubItems(4) = rs!Parentesco_Desc
     itmX.SubItems(5) = Format(rs!Cuota, "Standard")
    rs.MoveNext
 Loop
@@ -1134,14 +1108,14 @@ If Not rs.BOF And Not rs.EOF Then
    txtCedula = Trim(rs!Cedula)
    txtObservacion = Trim(rs!Notas & "")
        
-    txtDireccion = Trim(rs!Direccion & "")
+    txtDireccion = Trim(rs!direccion & "")
     txtApartadoPostal = Trim(rs!apto_postal & "")
     txtEmail = Trim(rs!Email & "")
     
     txtTelefono1 = Trim(rs!telefono1 & "")
     txtTelefono2 = Trim(rs!telefono2 & "")
 
-    Call sbCboAsignaDato(cboParentesco, rs!parentesco_Desc, True, rs!cod_Parentesco)
+    Call sbCboAsignaDato(cboParentesco, rs!Parentesco_Desc, True, rs!Cod_Parentesco)
 
 Else
   
@@ -1240,12 +1214,12 @@ Else
    rs.Close
        
    
-   strSQL = "insert FND_SubCUENTAS(IdX,cedula,Nombre,parentesco,fechaNac,cuota,direccion,notas,telefono1" _
+   strSQL = "insert FND_SubCUENTAS(IdX,cedula,Nombre,parentesco,fechaNac,cuota, APORTES, RENDIMIENTO, direccion,notas,telefono1" _
           & ",telefono2,email,apto_postal,cod_operadora,cod_plan,cod_contrato,cod_beneficiario,estado)" _
           & " values(" & vCodigo & ",'" & txtCedula.Text _
           & "','" & UCase(Trim(txtApellido1)) & " " & UCase(Trim(txtApellido2)) & " " & UCase(Trim(txtNombre)) _
           & "','" & cboParentesco.ItemData(cboParentesco.ListIndex) & "','" & Format(dtpFechaNacimiento.Value, "yyyy/mm/dd") _
-          & "'," & CCur(txtCuota) & ",'" & txtDireccion & "','" & txtObservacion & "','" & txtTelefono1 _
+          & "'," & CCur(txtCuota) & ", 0, 0, '" & txtDireccion & "','" & txtObservacion & "','" & txtTelefono1 _
           & "','" & txtTelefono2 & "','" & txtEmail & "','" & txtApartadoPostal _
           & "'," & lblOperadora.Tag & ",'" & lblPlan.Tag & "'," & lblContrato.Tag & ",0,'A')"
    Call ConectionExecute(strSQL)

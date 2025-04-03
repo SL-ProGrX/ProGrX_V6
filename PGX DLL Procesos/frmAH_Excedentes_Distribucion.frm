@@ -6,14 +6,14 @@ Begin VB.Form frmAH_Excedentes_Distribucion
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Distribución de Excedentes"
-   ClientHeight    =   7890
+   ClientHeight    =   8340
    ClientLeft      =   45
    ClientTop       =   390
    ClientWidth     =   12360
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7890
+   ScaleHeight     =   8340
    ScaleWidth      =   12360
    ShowInTaskbar   =   0   'False
    StartUpPosition =   3  'Windows Default
@@ -21,7 +21,7 @@ Begin VB.Form frmAH_Excedentes_Distribucion
       Height          =   3975
       Left            =   120
       TabIndex        =   5
-      Top             =   3840
+      Top             =   4320
       Width           =   12135
       _Version        =   1572864
       _ExtentX        =   21405
@@ -47,14 +47,14 @@ Begin VB.Form frmAH_Excedentes_Distribucion
       Top             =   0
    End
    Begin XtremeSuiteControls.GroupBox gbMain 
-      Height          =   1455
+      Height          =   2055
       Left            =   120
       TabIndex        =   1
       Top             =   1800
       Width           =   12135
       _Version        =   1572864
       _ExtentX        =   21405
-      _ExtentY        =   2566
+      _ExtentY        =   3625
       _StockProps     =   79
       BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -164,7 +164,7 @@ Begin VB.Form frmAH_Excedentes_Distribucion
       Begin XtremeSuiteControls.PushButton btnAccion 
          Height          =   375
          Index           =   0
-         Left            =   10320
+         Left            =   9960
          TabIndex        =   13
          Top             =   1080
          Width           =   495
@@ -180,7 +180,7 @@ Begin VB.Form frmAH_Excedentes_Distribucion
       Begin XtremeSuiteControls.PushButton btnAccion 
          Height          =   375
          Index           =   1
-         Left            =   10800
+         Left            =   10440
          TabIndex        =   14
          Top             =   1080
          Width           =   495
@@ -195,7 +195,7 @@ Begin VB.Form frmAH_Excedentes_Distribucion
       End
       Begin XtremeSuiteControls.PushButton btnExport 
          Height          =   375
-         Left            =   11400
+         Left            =   11040
          TabIndex        =   15
          Top             =   1080
          Width           =   495
@@ -288,6 +288,70 @@ Begin VB.Form frmAH_Excedentes_Distribucion
          Alignment       =   1
          Appearance      =   6
          UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.PushButton btnInforme 
+         Height          =   375
+         Left            =   11520
+         TabIndex        =   22
+         Top             =   1080
+         Width           =   495
+         _Version        =   1572864
+         _ExtentX        =   873
+         _ExtentY        =   661
+         _StockProps     =   79
+         BackColor       =   16777215
+         UseVisualStyle  =   -1  'True
+         Appearance      =   17
+         Picture         =   "frmAH_Excedentes_Distribucion.frx":0F98
+      End
+      Begin XtremeSuiteControls.FlatEdit txtJustificacion 
+         Height          =   615
+         Left            =   1680
+         TabIndex        =   24
+         Top             =   1440
+         Width           =   6135
+         _Version        =   1572864
+         _ExtentX        =   10821
+         _ExtentY        =   1085
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         MultiLine       =   -1  'True
+         ScrollBars      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.Label Label2 
+         Height          =   375
+         Index           =   5
+         Left            =   120
+         TabIndex        =   23
+         Top             =   1560
+         Width           =   1455
+         _Version        =   1572864
+         _ExtentX        =   2566
+         _ExtentY        =   661
+         _StockProps     =   79
+         Caption         =   "Justificación de Cambio"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+         WordWrap        =   -1  'True
       End
       Begin XtremeSuiteControls.Label lblPorcentaje 
          Height          =   255
@@ -453,7 +517,7 @@ Begin VB.Form frmAH_Excedentes_Distribucion
       Height          =   375
       Left            =   120
       TabIndex        =   20
-      Top             =   3480
+      Top             =   3960
       Width           =   12135
       _Version        =   1572864
       _ExtentX        =   21405
@@ -542,22 +606,100 @@ If InStr(1, UCase(cboPeriodo.Text), "CERRADO") > 0 Then
         Exit Sub
 End If
 
+If Index = 0 Then
+
+        If CCur(txtMonto.Text) = 0 Then
+                MsgBox "El monto no puede ser 0!", vbExclamation
+                Exit Sub
+        End If
+        
+        If CCur(txtPorcentaje.Text) > 100 Or CCur(txtPorcentaje.Text) < 0 Then
+                MsgBox "El Porcentaje no es válido!", vbExclamation
+                Exit Sub
+        End If
+
+End If
+
+If cboTipo.ItemData(cboTipo.ListIndex) = "C" Then
+    strSQL = "select dbo.fxExc_ConsultaDistribucionAplicada(" & cboPeriodo.ItemData(cboPeriodo.ListIndex) _
+           & ", '" & cboCorte.Text & " 23:59') as 'Aplicado'"
+    Call OpenRecordSet(rs, strSQL)
+    If rs!Aplicado = 1 Then
+        MsgBox "El monto cargado ya fue distribuido y no puede ser modificado!", vbExclamation
+        Exit Sub
+    End If
+End If
+
+'Notas y Justificaciones cuando se realiza un cambio.
+txtJustificacion.Text = fxSysCleanTxtInject(txtJustificacion.Text)
+
 Me.MousePointer = vbHourglass
 
 strSQL = "exec spExc_Montos_Distribucion_Tabla_Add " & cboPeriodo.ItemData(cboPeriodo.ListIndex) & ", '" & IIf((Index = 0), "A", "B") _
         & "', '" & glogon.Usuario & "', '" & cboCorte.Text & " 23:59', '" & cboTipo.ItemData(cboTipo.ListIndex) & "', '" & cboBase.ItemData(cboBase.ListIndex) _
-        & "', " & CCur(txtMonto.Text) & ", " & CCur(txtPorcentaje.Text)
+        & "', " & CCur(txtMonto.Text) & ", " & CCur(txtPorcentaje.Text) & ", '" & Mid(txtJustificacion.Text, 1, 200) & "'"
 Call ConectionExecute(strSQL)
 
 Me.MousePointer = vbDefault
 
-Call sbLista
+If Not glogon.error Then
+    MsgBox "Registro Procesado Satisfactoriamente!", vbInformation
+    
+    txtJustificacion.Text = ""
+    
+    Call sbLista
+End If
 
 Exit Sub
 
 vError:
+    Me.MousePointer = vbDefault
     MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 
+End Sub
+
+
+Private Sub btnInforme_Click()
+Dim strSQL As String
+Dim pCorte As Date, pCorteFiltro As String
+
+
+On Error GoTo vError
+
+
+Me.MousePointer = vbHourglass
+
+
+With frmContenedor.Crt
+    .Reset
+    .WindowShowGroupTree = True
+    .WindowShowRefreshBtn = True
+    .WindowShowPrintSetupBtn = True
+    .WindowState = crptMaximized
+    .WindowShowSearchBtn = True
+    .WindowTitle = "Excedentes - Reportes"
+    
+    .Connect = glogon.ConectRPT
+     
+    .Formulas(1) = "empresa='" & GLOBALES.gstrNombreEmpresa & "'"
+    .Formulas(2) = "fecha='" & Format(fxFechaServidor, "DD/MM/YYYY") & "'"
+    .Formulas(3) = "usuario='" & UCase(glogon.Usuario) & "'"
+    .Formulas(4) = "subtitulo='PERIODO: " & cboPeriodo.Text & "'"
+    
+    
+        .ReportFileName = SIFGlobal.fxPathReportes("Excedentes_Montos_Distribuir.rpt")
+        .StoredProcParam(0) = cboPeriodo.ItemData(cboPeriodo.ListIndex)
+
+
+    .Action = 1
+End With
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 End Sub
 
 Private Sub btnExport_Click()
@@ -658,6 +800,8 @@ If cboTipo.ListCount = 0 Then Exit Sub
 
 Me.MousePointer = vbHourglass
 
+
+
 strSQL = "exec spExc_Mnt_Distribuir_Calculo " & cboPeriodo.ItemData(cboPeriodo.ListIndex) & ", '" & cboCorte.ItemData(cboCorte.ListIndex) _
        & "', '" & cboTipo.ItemData(cboTipo.ListIndex) & "', '" & cboBase.ItemData(cboBase.ListIndex) & "', " & CCur(txtPorcentaje.Text)
 
@@ -744,7 +888,7 @@ End With
  
  strSQL = "select A.USUARIO,  A.ACTIVO, A.CARGA, A.REAL, A.PROYECTADO, A.PRORRATEADO" _
         & "  from EXC_APLICADORES A left join USUARIOS U on A.USUARIO = U.NOMBRE" _
-        & " Where U.ESTADO = 'A' and A.Activo = 1"
+        & " Where U.ESTADO = 'A' and A.Activo = 1 and U.Nombre = '" & glogon.Usuario & "'"
  Call OpenRecordSet(rs, strSQL)
  
  With cboTipo

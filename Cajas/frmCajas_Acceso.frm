@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCajas_Acceso 
    BackColor       =   &H00FFFFFF&
    BorderStyle     =   4  'Fixed ToolWindow
@@ -22,7 +22,7 @@ Begin VB.Form frmCajas_Acceso
       TabIndex        =   6
       Top             =   2640
       Width           =   1692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   1080
       _StockProps     =   79
@@ -36,8 +36,8 @@ Begin VB.Form frmCajas_Acceso
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Transparent     =   -1  'True
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Picture         =   "frmCajas_Acceso.frx":6061
    End
    Begin VB.TextBox txtClave 
@@ -80,7 +80,7 @@ Begin VB.Form frmCajas_Acceso
       TabIndex        =   7
       Top             =   1320
       Width           =   3012
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5318
       _ExtentY        =   582
       _StockProps     =   77
@@ -97,7 +97,7 @@ Begin VB.Form frmCajas_Acceso
       EndProperty
       BackColor       =   16579836
       Style           =   2
-      Appearance      =   14
+      Appearance      =   6
       UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
@@ -240,7 +240,7 @@ Call OpenRecordSet(rs, strSQL)
 
 If rs!aceptado > 0 Then
      rs.Close
-     strSQL = "exec spCajas_AbreCaja '" & cbo.ItemData(cbo.ListIndex) & "','" & txtUsuario.Text & "'"
+     strSQL = "exec spCajas_AbreCaja '" & cbo.ItemData(cbo.ListIndex) & "','" & txtUsuario.Text & "', 'ProGrX_" & glogon.AppVersion & "'"
      Call OpenRecordSet(rs, strSQL)
      If Not rs.EOF And Not rs.BOF Then
        ModuloCajas.mApertura = rs!Cod_Apertura

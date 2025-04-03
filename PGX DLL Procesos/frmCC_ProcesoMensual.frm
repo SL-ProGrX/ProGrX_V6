@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCC_ProcesoMensual 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,7 +24,7 @@ Begin VB.Form frmCC_ProcesoMensual
       TabIndex        =   3
       Top             =   5880
       Width           =   9855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   17383
       _ExtentY        =   4048
       _StockProps     =   77
@@ -48,7 +48,7 @@ Begin VB.Form frmCC_ProcesoMensual
       TabIndex        =   15
       Top             =   1920
       Width           =   9495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16743
       _ExtentY        =   5736
       _StockProps     =   79
@@ -72,7 +72,7 @@ Begin VB.Form frmCC_ProcesoMensual
          TabIndex        =   34
          Top             =   480
          Width           =   4575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8064
          _ExtentY        =   4043
          _StockProps     =   79
@@ -96,7 +96,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   36
             Top             =   480
             Width           =   3012
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5313
             _ExtentY        =   444
             _StockProps     =   79
@@ -121,7 +121,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   37
             Top             =   960
             Width           =   3012
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5313
             _ExtentY        =   444
             _StockProps     =   79
@@ -146,7 +146,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   38
             Top             =   1440
             Width           =   3012
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5313
             _ExtentY        =   444
             _StockProps     =   79
@@ -171,7 +171,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   43
             Top             =   1920
             Width           =   3012
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5313
             _ExtentY        =   444
             _StockProps     =   79
@@ -256,7 +256,7 @@ Begin VB.Form frmCC_ProcesoMensual
          TabIndex        =   35
          Top             =   480
          Width           =   4815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8488
          _ExtentY        =   4890
          _StockProps     =   79
@@ -280,7 +280,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   39
             Top             =   480
             Width           =   3012
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5313
             _ExtentY        =   444
             _StockProps     =   79
@@ -305,7 +305,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   40
             Top             =   960
             Width           =   3012
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5313
             _ExtentY        =   444
             _StockProps     =   79
@@ -330,7 +330,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   41
             Top             =   1440
             Width           =   3012
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5313
             _ExtentY        =   444
             _StockProps     =   79
@@ -355,7 +355,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   42
             Top             =   1920
             Width           =   3732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6583
             _ExtentY        =   444
             _StockProps     =   79
@@ -423,14 +423,14 @@ Begin VB.Form frmCC_ProcesoMensual
          TabIndex        =   49
          Top             =   0
          Width           =   9855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17383
          _ExtentY        =   450
          _StockProps     =   14
          Caption         =   "Aplicación de la información recibida:"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   9
+            Size            =   9.01
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -470,7 +470,7 @@ Begin VB.Form frmCC_ProcesoMensual
       TabIndex        =   10
       Top             =   2040
       Width           =   9495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16743
       _ExtentY        =   5101
       _StockProps     =   79
@@ -495,7 +495,7 @@ Begin VB.Form frmCC_ProcesoMensual
          TabIndex        =   11
          Top             =   480
          Width           =   3012
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5313
          _ExtentY        =   444
          _StockProps     =   79
@@ -520,7 +520,7 @@ Begin VB.Form frmCC_ProcesoMensual
          TabIndex        =   12
          Top             =   960
          Width           =   3012
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5313
          _ExtentY        =   444
          _StockProps     =   79
@@ -545,14 +545,14 @@ Begin VB.Form frmCC_ProcesoMensual
          TabIndex        =   50
          Top             =   0
          Width           =   9855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17383
          _ExtentY        =   450
          _StockProps     =   14
          Caption         =   "Recepción y detalle de la información:"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   9
+            Size            =   9.01
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -564,7 +564,7 @@ Begin VB.Form frmCC_ProcesoMensual
       Begin VB.Image imgRepDesgloce 
          Height          =   252
          Left            =   4680
-         Picture         =   "frmCC_ProcesoMensual.frx":5FDA
+         Picture         =   "frmCC_ProcesoMensual.frx":5FFE
          Stretch         =   -1  'True
          ToolTipText     =   "Reporte del desgloce de la Carga"
          Top             =   960
@@ -573,7 +573,7 @@ Begin VB.Form frmCC_ProcesoMensual
       Begin VB.Image imgRepCarga 
          Height          =   252
          Left            =   4680
-         Picture         =   "frmCC_ProcesoMensual.frx":6786
+         Picture         =   "frmCC_ProcesoMensual.frx":67AA
          Stretch         =   -1  'True
          ToolTipText     =   "Reporte de la Carga de la Planilla"
          Top             =   480
@@ -582,7 +582,7 @@ Begin VB.Form frmCC_ProcesoMensual
       Begin VB.Image imgAplCarga 
          Height          =   228
          Left            =   5160
-         Picture         =   "frmCC_ProcesoMensual.frx":6F32
+         Picture         =   "frmCC_ProcesoMensual.frx":6F56
          Stretch         =   -1  'True
          Top             =   480
          Width           =   228
@@ -590,7 +590,7 @@ Begin VB.Form frmCC_ProcesoMensual
       Begin VB.Image imgAplDesgloce 
          Height          =   228
          Left            =   5160
-         Picture         =   "frmCC_ProcesoMensual.frx":7694
+         Picture         =   "frmCC_ProcesoMensual.frx":76B8
          Stretch         =   -1  'True
          Top             =   960
          Width           =   228
@@ -602,7 +602,7 @@ Begin VB.Form frmCC_ProcesoMensual
       TabIndex        =   14
       Top             =   1800
       Width           =   9855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   17383
       _ExtentY        =   6376
       _StockProps     =   79
@@ -627,7 +627,7 @@ Begin VB.Form frmCC_ProcesoMensual
          TabIndex        =   18
          Top             =   480
          Width           =   3015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5313
          _ExtentY        =   444
          _StockProps     =   79
@@ -651,7 +651,7 @@ Begin VB.Form frmCC_ProcesoMensual
          TabIndex        =   19
          Top             =   840
          Width           =   3015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5313
          _ExtentY        =   444
          _StockProps     =   79
@@ -675,7 +675,7 @@ Begin VB.Form frmCC_ProcesoMensual
          Top             =   1440
          Visible         =   0   'False
          Width           =   7335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12933
          _ExtentY        =   3831
          _StockProps     =   79
@@ -698,7 +698,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   21
             Top             =   720
             Width           =   3852
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6794
             _ExtentY        =   444
             _StockProps     =   79
@@ -721,7 +721,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   22
             Top             =   360
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   582
             _StockProps     =   77
@@ -745,7 +745,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   23
             Top             =   360
             Width           =   372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   656
             _ExtentY        =   582
             _StockProps     =   77
@@ -770,23 +770,24 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   24
             Top             =   1680
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   741
             _StockProps     =   79
             Caption         =   "Aplicar"
-            BackColor       =   -2147483633
+            BackColor       =   16777215
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
-               Size            =   7.5
+               Size            =   9
                Charset         =   0
                Weight          =   700
                Underline       =   0   'False
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   16
-            Picture         =   "frmCC_ProcesoMensual.frx":7DF6
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
+            Picture         =   "frmCC_ProcesoMensual.frx":7E1A
             ImageAlignment  =   4
          End
          Begin XtremeSuiteControls.PushButton btnGenera 
@@ -796,23 +797,24 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   25
             Top             =   1680
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   741
             _StockProps     =   79
             Caption         =   "Cancelar"
-            BackColor       =   -2147483633
+            BackColor       =   16777215
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
-               Size            =   7.5
+               Size            =   9
                Charset         =   0
                Weight          =   700
                Underline       =   0   'False
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   16
-            Picture         =   "frmCC_ProcesoMensual.frx":851D
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
+            Picture         =   "frmCC_ProcesoMensual.frx":8541
             ImageAlignment  =   4
          End
          Begin XtremeSuiteControls.CheckBox chkRedondeo 
@@ -821,7 +823,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   26
             Top             =   960
             Width           =   3852
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6794
             _ExtentY        =   444
             _StockProps     =   79
@@ -844,7 +846,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   27
             Top             =   1200
             Width           =   3852
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6794
             _ExtentY        =   444
             _StockProps     =   79
@@ -868,7 +870,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   44
             Top             =   360
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   582
             _StockProps     =   77
@@ -934,7 +936,7 @@ Begin VB.Form frmCC_ProcesoMensual
          Top             =   1440
          Visible         =   0   'False
          Width           =   5415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9546
          _ExtentY        =   1926
          _StockProps     =   79
@@ -957,7 +959,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   31
             Top             =   360
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   77
@@ -981,7 +983,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   32
             Top             =   360
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -1007,7 +1009,7 @@ Begin VB.Form frmCC_ProcesoMensual
             TabIndex        =   45
             Top             =   720
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -1030,7 +1032,7 @@ Begin VB.Form frmCC_ProcesoMensual
          Begin VB.Image imgCambiaFecha 
             Height          =   480
             Left            =   4560
-            Picture         =   "frmCC_ProcesoMensual.frx":8C33
+            Picture         =   "frmCC_ProcesoMensual.frx":8C57
             Top             =   360
             Width           =   480
          End
@@ -1060,14 +1062,14 @@ Begin VB.Form frmCC_ProcesoMensual
          TabIndex        =   48
          Top             =   0
          Width           =   9855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17383
          _ExtentY        =   450
          _StockProps     =   14
          Caption         =   "Envío de Información:"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   9
+            Size            =   9.01
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1079,7 +1081,7 @@ Begin VB.Form frmCC_ProcesoMensual
       Begin VB.Image imgModificaCtas 
          Height          =   255
          Left            =   3480
-         Picture         =   "frmCC_ProcesoMensual.frx":9401
+         Picture         =   "frmCC_ProcesoMensual.frx":9425
          Stretch         =   -1  'True
          ToolTipText     =   "Revisar y Modificar Cuotas"
          Top             =   840
@@ -1088,7 +1090,7 @@ Begin VB.Form frmCC_ProcesoMensual
       Begin VB.Image imgAplGenera 
          Height          =   225
          Left            =   4920
-         Picture         =   "frmCC_ProcesoMensual.frx":9D56
+         Picture         =   "frmCC_ProcesoMensual.frx":9D7A
          Stretch         =   -1  'True
          Top             =   840
          Width           =   225
@@ -1096,7 +1098,7 @@ Begin VB.Form frmCC_ProcesoMensual
       Begin VB.Image imgRepGenera 
          Height          =   255
          Left            =   4440
-         Picture         =   "frmCC_ProcesoMensual.frx":A4B8
+         Picture         =   "frmCC_ProcesoMensual.frx":A4DC
          Stretch         =   -1  'True
          ToolTipText     =   "Reporte de la Generación"
          Top             =   840
@@ -1105,7 +1107,7 @@ Begin VB.Form frmCC_ProcesoMensual
       Begin VB.Image imgAplFecha 
          Height          =   225
          Left            =   4920
-         Picture         =   "frmCC_ProcesoMensual.frx":AC64
+         Picture         =   "frmCC_ProcesoMensual.frx":AC88
          Stretch         =   -1  'True
          Top             =   480
          Width           =   225
@@ -1113,7 +1115,7 @@ Begin VB.Form frmCC_ProcesoMensual
       Begin VB.Image imgGeneraArchivo 
          Height          =   255
          Left            =   3960
-         Picture         =   "frmCC_ProcesoMensual.frx":B3C6
+         Picture         =   "frmCC_ProcesoMensual.frx":B3EA
          Stretch         =   -1  'True
          ToolTipText     =   "Genera Archivo"
          Top             =   840
@@ -1127,7 +1129,7 @@ Begin VB.Form frmCC_ProcesoMensual
       TabIndex        =   4
       Top             =   1320
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   741
       _StockProps     =   79
@@ -1143,7 +1145,7 @@ Begin VB.Form frmCC_ProcesoMensual
          Strikethrough   =   0   'False
       EndProperty
       Appearance      =   16
-      Picture         =   "frmCC_ProcesoMensual.frx":BAAD
+      Picture         =   "frmCC_ProcesoMensual.frx":BAD1
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnProceso 
@@ -1153,7 +1155,7 @@ Begin VB.Form frmCC_ProcesoMensual
       TabIndex        =   5
       Top             =   1320
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   741
       _StockProps     =   79
@@ -1169,7 +1171,7 @@ Begin VB.Form frmCC_ProcesoMensual
          Strikethrough   =   0   'False
       EndProperty
       Appearance      =   16
-      Picture         =   "frmCC_ProcesoMensual.frx":C0CB
+      Picture         =   "frmCC_ProcesoMensual.frx":C0EF
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnProceso 
@@ -1179,7 +1181,7 @@ Begin VB.Form frmCC_ProcesoMensual
       TabIndex        =   6
       Top             =   1320
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   741
       _StockProps     =   79
@@ -1195,7 +1197,7 @@ Begin VB.Form frmCC_ProcesoMensual
          Strikethrough   =   0   'False
       EndProperty
       Appearance      =   16
-      Picture         =   "frmCC_ProcesoMensual.frx":C6E9
+      Picture         =   "frmCC_ProcesoMensual.frx":C70D
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnEjecucion 
@@ -1205,7 +1207,7 @@ Begin VB.Form frmCC_ProcesoMensual
       TabIndex        =   7
       Top             =   1320
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   741
       _StockProps     =   79
@@ -1221,7 +1223,7 @@ Begin VB.Form frmCC_ProcesoMensual
          Strikethrough   =   0   'False
       EndProperty
       Appearance      =   16
-      Picture         =   "frmCC_ProcesoMensual.frx":CD05
+      Picture         =   "frmCC_ProcesoMensual.frx":CD29
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.PushButton btnEjecucion 
@@ -1232,7 +1234,7 @@ Begin VB.Form frmCC_ProcesoMensual
       ToolTipText     =   "Bitácoras"
       Top             =   1320
       Width           =   615
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   741
       _StockProps     =   79
@@ -1247,7 +1249,7 @@ Begin VB.Form frmCC_ProcesoMensual
          Strikethrough   =   0   'False
       EndProperty
       Appearance      =   16
-      Picture         =   "frmCC_ProcesoMensual.frx":D5B7
+      Picture         =   "frmCC_ProcesoMensual.frx":D5DB
    End
    Begin XtremeSuiteControls.PushButton btnEjecucion 
       Height          =   420
@@ -1257,7 +1259,7 @@ Begin VB.Form frmCC_ProcesoMensual
       ToolTipText     =   "Informes"
       Top             =   1320
       Width           =   615
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   741
       _StockProps     =   79
@@ -1272,7 +1274,7 @@ Begin VB.Form frmCC_ProcesoMensual
          Strikethrough   =   0   'False
       EndProperty
       Appearance      =   16
-      Picture         =   "frmCC_ProcesoMensual.frx":DE63
+      Picture         =   "frmCC_ProcesoMensual.frx":DE87
    End
    Begin XtremeSuiteControls.GroupBox GroupBox2 
       Height          =   1092
@@ -1280,7 +1282,7 @@ Begin VB.Form frmCC_ProcesoMensual
       TabIndex        =   13
       Top             =   6120
       Width           =   1092
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   1926
       _StockProps     =   79
@@ -1305,7 +1307,7 @@ Begin VB.Form frmCC_ProcesoMensual
       TabIndex        =   16
       Top             =   8280
       Width           =   9855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   17383
       _ExtentY        =   1508
       _StockProps     =   79
@@ -1329,7 +1331,7 @@ Begin VB.Form frmCC_ProcesoMensual
          TabIndex        =   46
          Top             =   600
          Width           =   9855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17383
          _ExtentY        =   238
          _StockProps     =   93
@@ -1384,7 +1386,7 @@ Begin VB.Form frmCC_ProcesoMensual
       TabIndex        =   52
       Top             =   1320
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3201
       _ExtentY        =   582
       _StockProps     =   77
@@ -1410,14 +1412,14 @@ Begin VB.Form frmCC_ProcesoMensual
       TabIndex        =   47
       Top             =   5520
       Width           =   9855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   17383
       _ExtentY        =   450
       _StockProps     =   14
       Caption         =   "Bitácora del Proceso:"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   9
+         Size            =   9.01
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1571,17 +1573,27 @@ On Error GoTo vError
 prgProcesoMensual.Value = 1
 Me.MousePointer = vbHourglass
 
-lblStatus.Caption = "Aplicado Aportes (Espere...!)"
+lblStatus.Caption = "Aplicado Aportes Paso 1/2 (Espere...!)"
 DoEvents
 
-strSQL = "exec spPrmAporteAplica " & GLOBALES.glngFechaCR & "," & GLOBALES.gInstitucion & ",'" & glogon.Usuario & "'"
+strSQL = "exec spPrmAporteAplica " & GLOBALES.glngFechaCR & "," & GLOBALES.gInstitucion & ",'" & glogon.Usuario & "', 1"
 Call ConectionExecute(strSQL)
 
+lblStatus.Caption = "Aplicado Aportes Paso 2/2 (Espere...!)"
+DoEvents
+
+strSQL = "exec spPrmAporteAplica " & GLOBALES.glngFechaCR & "," & GLOBALES.gInstitucion & ",'" & glogon.Usuario & "', 1"
+Call ConectionExecute(strSQL)
+
+
+
+
+lblStatus.Caption = "Aplicado Inconsistencias a Fondo de Devolución..."
+DoEvents
 
 'Aplicar Devoluciones Al Fondo de Ahorros e Inversiones
 'Solo Personas que se encuentran registradas
 strSQL = "select * from instituciones where cod_institucion = " & GLOBALES.gInstitucion
-
 Call OpenRecordSet(rs1, strSQL)
 
 'Comprobante de Planilla de Fondos (Proceso + Institucion + Consecutivo)
@@ -1589,24 +1601,29 @@ vTemp = GLOBALES.glngFechaCR & "." & GLOBALES.gInstitucion & ".PAT.01"
 
 
 If rs1!fnd_ap_Aplica = 1 Then
-  strSQL = "select * from sociostemp where existe = 'D' and cod_institucion = " & GLOBALES.gInstitucion _
+  strSQL = "select Cedula, Monto, Aporte " _
+         & " from sociostemp" _
+         & " where existe = 'D' and cod_institucion = " & GLOBALES.gInstitucion _
          & " and fechaproc = " & GLOBALES.glngFechaCR & " and (monto + aporte) > 0"
   Call OpenRecordSet(rs, strSQL)
   
   Do While Not rs.EOF
   
         'Inserta Ahorro Obrero
-        strSQL = "exec spPrmDevFondos " & GLOBALES.gInstitucion & "," & GLOBALES.glngFechaCR & "," & rs1!fnd_ap_operadora _
-               & ",'" & Trim(rs1!fnd_ap_plan) & "','" & Trim(rs!Cedula) & "'," & rs!Monto & ",'" & vTemp & "','" & Trim(rs1!cta_inconsistencia) _
-               & "','A','" & Format(vFecha, "yyyy/mm/dd") & "'"
-        Call ConectionExecute(strSQL)
-  
+        If rs!Monto > 0 Then
+            strSQL = "exec spPrmDevFondos " & GLOBALES.gInstitucion & "," & GLOBALES.glngFechaCR & "," & rs1!fnd_ap_operadora _
+                   & ",'" & Trim(rs1!fnd_ap_plan) & "','" & Trim(rs!Cedula) & "'," & rs!Monto & ",'" & vTemp & "','" & Trim(rs1!cta_inconsistencia) _
+                   & "','A','" & Format(vFecha, "yyyy/mm/dd") & "'"
+            Call ConectionExecute(strSQL)
+        End If
+        
         'Inserta Aporte Patronal
-        strSQL = "exec spPrmDevFondos " & GLOBALES.gInstitucion & "," & GLOBALES.glngFechaCR & "," & rs1!fnd_ap_operadora _
-               & ",'" & Trim(rs1!fnd_ap_planP) & "','" & Trim(rs!Cedula) & "'," & rs!Aporte & ",'" & vTemp & "','" & Trim(rs1!cta_inconsistencia) _
-               & "','P','" & Format(vFecha, "yyyy/mm/dd") & "'"
-        Call ConectionExecute(strSQL)
-  
+        If rs!Aporte > 0 Then
+            strSQL = "exec spPrmDevFondos " & GLOBALES.gInstitucion & "," & GLOBALES.glngFechaCR & "," & rs1!fnd_ap_operadora _
+                   & ",'" & Trim(rs1!fnd_ap_planP) & "','" & Trim(rs!Cedula) & "'," & rs!Aporte & ",'" & vTemp & "','" & Trim(rs1!cta_inconsistencia) _
+                   & "','P','" & Format(vFecha, "yyyy/mm/dd") & "'"
+            Call ConectionExecute(strSQL)
+        End If
   
    
     rs.MoveNext
@@ -2136,7 +2153,7 @@ fxDescomponeCsv = vResultado
 End Function
 
 
-Private Sub sbCargaDeducciones()
+Private Sub sbCargaDeducciones_OLD()
 Dim fn, strCadena As String, lng As Long, iPago As Integer
 Dim strMonto As String, strSQL As String, rs As New ADODB.Recordset
 Dim vPlanilla As String, vTipoAporte As String, vTipoCredito As String
@@ -2475,6 +2492,418 @@ Do While Not EOF(fn)
 
 Loop
 Close #fn
+
+If Len(pCadenaExec) > 0 Then
+     lblStatus.Caption = "Subiendo Registros (Espere!)"
+     DoEvents
+     Call ConectionExecute(pCadenaExec)
+     pCadenaExec = ""
+End If
+
+lblStatus.Caption = "Revisando Ids de las Personas"
+DoEvents
+
+'Fix Cedula por Codigo de Empleado
+strSQL = "exec spPrmCargado_Revision_Cedulas " & GLOBALES.gInstitucion & "," & GLOBALES.glngFechaCR & "," & iPago
+Call ConectionExecute(strSQL)
+
+lblStatus.Caption = ""
+
+Me.MousePointer = vbDefault
+
+prgProcesoMensual.Value = 1
+
+Call Bitacora("Aplica", "PRM-CREDITO Carga Deducciones Inst:" & GLOBALES.gInstitucion)
+Call sbBitacoraPlanilla("03", GLOBALES.gInstitucion, GLOBALES.glngFechaCR, "R", "Pla.Num." & iPago)
+
+strSQL = "update instituciones set pr_carga = 1 where cod_institucion = " & GLOBALES.gInstitucion
+Call ConectionExecute(strSQL)
+
+Call sbEstadoActualProceso
+
+lblStatus.Caption = "Estado..."
+
+Call sbReporteCargado(GLOBALES.glngFechaCR)
+
+MsgBox "Información Cargada ...", vbInformation
+
+
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+Private Sub sbCargaDeducciones()
+Dim fn, strCadena As String, lng As Long, iPago As Integer
+Dim strMonto As String, strSQL As String, rs As New ADODB.Recordset
+Dim vPlanilla As String, vTipoAporte As String, vTipoCredito As String
+Dim vCedula As String, vTemp  As String, i As Long
+Dim vCodigoDeduccion As String, vCodigoTipo As String
+
+Dim pCadenaExec As String
+
+On Error GoTo vError
+
+fn = FreeFile
+pCadenaExec = ""
+
+
+strSQL = "select planilla,codigo_aportes,codigo_creditos from instituciones" _
+       & " where cod_institucion = " & GLOBALES.gInstitucion
+Call OpenRecordSet(rs, strSQL)
+  vPlanilla = Trim(rs!planilla)
+  vTipoAporte = Trim(rs!codigo_aportes & "")
+  vTipoCredito = Trim(rs!codigo_creditos & "")
+rs.Close
+
+With frmContenedor.CD
+ .DialogTitle = "Localice archivo con las deducciones de Planilla..."
+ .Filter = "*.*"
+ .InitDir = "C:\"
+ .ShowOpen
+End With
+
+If frmContenedor.CD.FileName = "" Then
+ MsgBox "Seleccione el Archivo de Deducciones del Proceso " & Format(GLOBALES.glngFechaCR, "####-##"), vbInformation
+ Exit Sub
+End If
+
+
+MsgBox "Se procederá a cargar los registros del archivo :" & frmContenedor.CD.FileName, vbInformation
+
+'CAPTURA EL NUMERO DE PAGO DE LA PLANILLA
+strSQL = ""
+Do While Not IsNumeric(strSQL)
+  strSQL = InputBox("Digite el Numero de Planilla del Mes: ", "# Pago en el Mes...", 1)
+Loop
+iPago = strSQL
+
+
+Me.MousePointer = vbHourglass
+
+'Limpiando Informacion Anterior
+lblStatus = "Borrando Información Anterior ..."
+DoEvents
+
+strSQL = "delete prm_cargado where fecha_proceso = " & GLOBALES.glngFechaCR _
+       & " and pago = " & iPago & " and cod_institucion = " & GLOBALES.gInstitucion
+Call ConectionExecute(strSQL)
+
+
+prgProcesoMensual.Value = 1
+prgProcesoMensual.Max = 2
+
+lblStatus = "Cargando ..."
+DoEvents
+
+Dim Contenido As String
+Dim lineas() As String
+Dim iCount As Long
+
+'Open frmContenedor.CD.FileName For Input As #fn   ' Lee el archivo.
+' Do While Not EOF(fn)
+'   Input #fn, strCadena
+'   prgProcesoMensual.Max = prgProcesoMensual.Max + 1
+' Loop
+'Close #fn
+
+' Abrir el archivo y leer todo su contenido en una sola variable
+Open frmContenedor.CD.FileName For Binary As #1
+    Contenido = Space$(LOF(1)) ' Reservar espacio suficiente
+    Get #1, , Contenido ' Leer todo el contenido del archivo
+Close #1
+
+' Dividir el contenido en líneas utilizando el carácter LF (Chr(10))
+lineas = Split(Contenido, Chr(10))
+
+
+If prgProcesoMensual.Max < UBound(lineas) Then
+    prgProcesoMensual.Max = UBound(lineas) + 1
+End If
+
+prgProcesoMensual.Min = 1
+DoEvents
+
+
+'cboX.AddItem "00 - Microsoft Excel"
+'cboX.AddItem "01 - [CCSS] Caja Costarricense Seguro Social"
+'cboX.AddItem "02 - [INTEGRA] Mecanizada Tesoreria Nacional"
+'cboX.AddItem "03 - [ASECCSS] Asociacion Solidarista Emp CCSS"
+'cboX.AddItem "04 - [ICE](ACOTEL)Instituto Costarricense Electricidad"
+'cboX.AddItem "05 - [COPECAJA] CoopeCaja RL"
+'cboX.AddItem "06 - [ICE] Oficinas Centrales"
+'cboX.AddItem "07 - [ICE] Proyectos"
+'cboX.AddItem "08 - [AYA] Acueductos y Alcantarillados"
+'cboX.AddItem "09 - [SPA] Mecanizada Tesoreria Nacional"
+'
+'cboX.AddItem "10 - [SIF] Sistema SIF [F01.Indefinidos]"
+'cboX.AddItem "11 - [SIF] Sistema SIF [F02.Plazo definido]"
+'
+'cboX.AddItem "12 - [IMAS]Institucto Mixto de Ayuda de Social"
+'cboX.AddItem "13 - [INA] Instituto Nacional de Apendizaje"
+'cboX.AddItem "14 - [MSJ] Municipalidad de San José"
+'cboX.AddItem "15 - [ PJ] Poder Judicial"
+'cboX.AddItem "16 - [StarH] PriceWaterHouseCoopers"
+
+Dim vUP As String, vUT As String
+
+' Recorrer cada línea y procesarla
+For iCount = 0 To UBound(lineas)
+    strCadena = lineas(iCount) ' Esto imprime cada línea en la ventana de depuración
+
+'Open frmContenedor.CD.FileName For Input As #fn   'Lee el Archivo y lo compara
+'Do While Not EOF(fn)
+'   Input #fn, strCadena
+   
+   Select Case vPlanilla
+     Case "01" 'Planilla de la Caja Costarricense del Seguro Social
+        'Preguntar si es credito o si es aportes
+          strMonto = Format(Mid(strCadena, 28, 13), "###########")
+          strMonto = LTrim(RTrim(strMonto))
+          If Len(strMonto) > 2 Then
+           strMonto = Mid(strMonto, 1, Len(strMonto) - 2) & "." & Mid(strMonto, Len(strMonto) - 1, Len(strMonto))
+          Else
+           strMonto = "0" & "." & strMonto
+          End If
+             
+            vUP = Format(Mid(strCadena, 54, 4), "####")
+            vUT = Format(Mid(strCadena, 58, 4), "####")
+             
+             
+             strSQL = "insert prm_cargado(cod_institucion,pago,fecha_proceso,tipo,cedula,monto,cod_deduccion, UP, UT) values(" _
+                    & GLOBALES.gInstitucion & "," & iPago & "," & GLOBALES.glngFechaCR
+             Select Case Mid(strCadena, 12, 5)
+                Case vTipoAporte
+                    vCodigoTipo = "1"
+                Case vTipoCredito
+                    vCodigoTipo = "3"
+                Case Else
+                    vCodigoTipo = "3"
+             End Select
+             strSQL = strSQL & "," & vCodigoTipo & ",'" & Trim(Format(Mid(strCadena, 1, 11), "###########")) & "',"
+             
+             strSQL = strSQL & strMonto & ",'" & Mid(strCadena, 12, 5) & "', '" & vUP & "', '" & vUT & "')"
+             
+             If Len(strCadena) > 100 Then
+'               Call ConectionExecute(strSQL)
+                pCadenaExec = pCadenaExec & Space(10) & strSQL
+             End If
+     
+     Case "02", "15", "18" 'INTEGRA: Tesorería Nacional , Poder Judicial, CONAVI
+        'Nuevo Carga Formato de MECANIZADA
+        
+        
+        strSQL = "insert prm_cargado(cod_institucion,pago,fecha_proceso,tipo,cedula,monto,cod_deduccion) values(" _
+               & GLOBALES.gInstitucion & "," & iPago & "," & GLOBALES.glngFechaCR
+        
+        If UCase(Right(frmContenedor.CD.FileName, 3)) = "CSV" Then
+                vCodigoDeduccion = fxDescomponeCsv(3, strCadena)
+                Select Case vCodigoDeduccion
+                        Case vTipoAporte
+                            vCodigoTipo = "1"
+                        Case vTipoCredito
+                            vCodigoTipo = "3"
+                        Case Else
+                            vCodigoTipo = "3"
+                End Select
+                strSQL = strSQL & "," & vCodigoTipo & ",'" & Val(fxDescomponeCsv(1, strCadena)) _
+                      & "'," & fxDescomponeCsv(4, strCadena) & ",'" & vCodigoDeduccion & "')"
+        
+        Else
+                vCodigoDeduccion = fxDescomponeCadena(2, strCadena)
+                Select Case vCodigoDeduccion
+                        Case vTipoAporte
+                            vCodigoTipo = "1"
+                        Case vTipoCredito
+                            vCodigoTipo = "3"
+                        Case Else
+                            vCodigoTipo = "3"
+                End Select
+        
+        
+                strSQL = strSQL & "," & vCodigoTipo & ",'" & Val(fxDescomponeCadena(1, strCadena)) _
+                      & "'," & fxDescomponeCadena(3, strCadena) & ",'" & vCodigoDeduccion & "')"
+        
+        End If
+        If vCodigoDeduccion <> "codigodeduccion" Then
+            pCadenaExec = pCadenaExec & Space(10) & strSQL
+        End If
+
+      Case "03" 'ASECCSS (Para ASE-ASECCSS)
+         
+      Case "04" ' - [ICE](ACOTEL)Instituto Costarricense Electricidad"
+      Case "05" ' - [COPECAJA] CoopeCaja RL"
+      Case "06" ' - [ICE] Oficinas Centrales"
+          vCedula = Trim(Mid(strCadena, 8, 9))
+          strMonto = Mid(strCadena, 47, 10)
+          
+          'Elimina Caracter en Blanco
+          vTemp = strMonto
+'          For i = 1 To Len(strMonto)
+'            If Mid(strMonto, i, 1) <> " " Then
+'               vTemp = vTemp & Mid(strMonto, i, 1)
+'            End If
+'          Next i
+          
+          'Divide base 100, para indicar decimales
+          If IsNumeric(vTemp) Then
+              strMonto = CCur(vTemp) / 100
+          End If
+             
+          strSQL = "insert prm_cargado(cod_institucion,pago,fecha_proceso,tipo,cedula,monto) values(" _
+                 & GLOBALES.gInstitucion & "," & iPago & "," & GLOBALES.glngFechaCR & ",3,'" _
+                 & vCedula & "'," & strMonto & ")"
+          
+          'Valida Linea
+           If IsNumeric(vCedula) And IsNumeric(strMonto) Then
+               'Call ConectionExecute(strSQL)
+               pCadenaExec = pCadenaExec & Space(10) & strSQL
+           End If
+      
+      
+      Case "07" ' - [ICE] Proyectos"
+          
+          vCedula = Trim(Mid(strCadena, 37, 9))
+          strMonto = Mid(strCadena, 82, 10)
+          
+          If strMonto = "" Then
+            vCedula = Trim(Mid(strCadena, 1, 9))
+            strMonto = Mid(strCadena, 47, 10)
+          End If
+          
+          'Elimina Caracter en Blanco
+          vTemp = ""
+          For i = 1 To Len(strMonto)
+            If Mid(strMonto, i, 1) <> " " Then
+               vTemp = vTemp & Mid(strMonto, i, 1)
+            End If
+          Next i
+          strMonto = vTemp
+             
+             
+          strSQL = "insert prm_cargado(cod_institucion,pago,fecha_proceso,tipo,cedula,monto) values(" _
+                 & GLOBALES.gInstitucion & "," & iPago & "," & GLOBALES.glngFechaCR & ",3,'" _
+                 & vCedula & "'," & strMonto & ")"
+          
+          'Valida Linea
+           If IsNumeric(vCedula) And IsNumeric(strMonto) Then
+'               Call ConectionExecute(strSQL)
+                pCadenaExec = pCadenaExec & Space(10) & strSQL
+           End If
+        
+      
+      Case "08" ' - [AYA] Acueductos y Alcantarillados"
+        
+        
+      Case "09" ' - [SPA] Mecanizada Tesoreria Nacional"
+        If Val(Mid(strCadena, 87, 1)) = 1 Then
+             strSQL = "insert prm_cargado(cod_institucion,pago,fecha_proceso,tipo,cedula,monto) values(" _
+                    & GLOBALES.gInstitucion & "," & iPago & "," & GLOBALES.glngFechaCR
+             Select Case Mid(strCadena, 81, 6)
+                Case vTipoAporte  'Aporte Obrero
+                   strSQL = strSQL & ",1,'" & Val(Mid(strCadena, 1, 10)) & "'," & (CCur(Mid(strCadena, 50, 8)) / 100) & ")"
+                   'Call ConectionExecute(strSQL)
+                    pCadenaExec = pCadenaExec & Space(10) & strSQL
+                Case vTipoCredito, "553551", "533195" 'Abonos a Creditos y Retenciones
+                   strSQL = strSQL & ",3,'" & Val(Mid(strCadena, 1, 10)) & "'," & (CCur(Mid(strCadena, 50, 8)) / 100) & ")"
+                   'Call ConectionExecute(strSQL)
+                   pCadenaExec = pCadenaExec & Space(10) & strSQL
+             End Select
+        End If
+
+
+      Case "10", "11" '- [SIF] Formato del Sistema SIF
+           If Len(strCadena) >= 77 Then
+             strSQL = "insert prm_cargado(cod_institucion,pago,fecha_proceso,tipo,cedula,monto) values(" _
+                    & GLOBALES.gInstitucion & "," & iPago & "," & GLOBALES.glngFechaCR & ",3,'" _
+                    & Mid(strCadena, 1, 15) & "'," & CCur(Mid(strCadena, 67, 12)) & ")"
+'             Call ConectionExecute(strSQL)
+             pCadenaExec = pCadenaExec & Space(10) & strSQL
+           End If
+           
+      Case "14" 'MSJ
+           If Len(strCadena) >= 48 Then
+             strSQL = "insert prm_cargado(cod_institucion,pago,fecha_proceso,tipo,cedula,monto) values(" _
+                    & GLOBALES.gInstitucion & "," & iPago & "," & GLOBALES.glngFechaCR & ",3,'" _
+                    & Mid(strCadena, 1, 9) & "'," & (CCur(Mid(strCadena, 40, 10)) / 100) & ")"
+'             Call ConectionExecute(strSQL)
+             pCadenaExec = pCadenaExec & Space(10) & strSQL
+           End If
+        
+        
+     Case "19" 'CGR Contraloría de la Republica
+       
+       'Si se pudo realizar la deducción
+        If Right(strCadena, 1) = "1" And Len(strCadena) >= 66 Then
+        
+            vCodigoDeduccion = Mid(strCadena, 2, 6)
+            
+            strSQL = "insert prm_cargado(cod_institucion,pago,fecha_proceso,tipo,cedula,monto,cod_deduccion) values(" _
+                   & GLOBALES.gInstitucion & "," & iPago & "," & GLOBALES.glngFechaCR
+            
+            Select Case vCodigoDeduccion
+               Case vTipoAporte
+                    vCodigoTipo = "1"
+               Case vTipoCredito
+                    vCodigoTipo = "3"
+               Case Else
+                    vCodigoTipo = "3"
+            End Select
+       
+            strSQL = strSQL & "," & vCodigoTipo & ",'" & Val(Mid(strCadena, 38, 10)) & "'," & (CCur(Mid(strCadena, 57, 9)) / 100) & ",'" & vCodigoDeduccion & "')"
+            pCadenaExec = pCadenaExec & Space(10) & strSQL
+       
+       End If
+        
+        
+     Case "35" 'ProGrX: RRGHH
+       
+'            pIdentificacion = Trim(Mid(strCadena, 1, 20))
+'            pCodigo = Trim(Mid(strCadena, 21, 10))
+'            pMonto = CCur(Mid(strCadena, 33, 10)) / 100
+
+       'Si se pudo realizar la deducción
+        If Len(strCadena) >= 50 Then
+        
+            vCodigoDeduccion = Trim(Mid(strCadena, 21, 10))
+            
+            strSQL = "insert prm_cargado(cod_institucion,pago,fecha_proceso,tipo,cedula,monto,cod_deduccion) values(" _
+                   & GLOBALES.gInstitucion & "," & iPago & "," & GLOBALES.glngFechaCR
+            
+            Select Case vCodigoDeduccion
+               Case vTipoAporte
+                    vCodigoTipo = "1"
+               Case vTipoCredito
+                    vCodigoTipo = "3"
+               Case Else
+                    vCodigoTipo = "3"
+            End Select
+       
+            strSQL = strSQL & "," & vCodigoTipo & ",'" & Trim(Mid(strCadena, 1, 20)) & "'," & (CCur(Mid(strCadena, 34, 10)) / 100) & ",'" & vCodigoDeduccion & "')"
+            pCadenaExec = pCadenaExec & Space(10) & strSQL
+       
+       End If
+        
+   End Select
+   
+   If prgProcesoMensual.Max > prgProcesoMensual.Value Then prgProcesoMensual.Value = prgProcesoMensual.Value + 1
+'   lblStatus.Caption = "Cargando..Registro # " & prgProcesoMensual.Value & " de " & prgProcesoMensual.Max & "     " & Format((prgProcesoMensual.Value / prgProcesoMensual.Max) * 100, "##0") & "%"
+'   doEvents
+   
+   If Len(pCadenaExec) > 35000 Then
+        lblStatus.Caption = "Subiendo Registros (Espere!)  (" & prgProcesoMensual.Value & " / " & prgProcesoMensual.Max & ")     " & Format((prgProcesoMensual.Value / prgProcesoMensual.Max) * 100, "##0") & "%"
+        DoEvents
+        Call ConectionExecute(pCadenaExec)
+        pCadenaExec = ""
+   End If
+
+
+Next iCount
+'Loop
+'Close #fn
 
 If Len(pCadenaExec) > 0 Then
      lblStatus.Caption = "Subiendo Registros (Espere!)"
@@ -3714,7 +4143,7 @@ DoEvents
 strSQL = "exec spPrmCreditoDesgloseNew " & GLOBALES.gInstitucion & "," & GLOBALES.glngFechaCR _
        & ",'" & Format(mFechaSistema, "yyyy/mm/dd") & "'," & iAplInco & ",1,50"
 Call OpenRecordSet(rs, strSQL)
-  vTotal = rs!total + 1
+  vTotal = rs!Total + 1
       
   If vTotal = 0 Then
     vPendientes = 0
@@ -3734,10 +4163,10 @@ DoEvents
 
 Do While vPendientes > 0
     strSQL = "exec spPrmCreditoDesgloseNew " & GLOBALES.gInstitucion & "," & GLOBALES.glngFechaCR _
-           & ",'" & Format(mFechaSistema, "yyyy/mm/dd") & "'," & iAplInco & ",0,150"
+           & ",'" & Format(mFechaSistema, "yyyy/mm/dd") & "'," & iAplInco & ",0,350"
     Call OpenRecordSet(rs, strSQL)
     
-        vTotal = rs!total
+        vTotal = rs!Total
         vPendientes = rs!Pendientes
         vProcesados = rs!Procesados
     
@@ -3873,10 +4302,28 @@ If vProcesaCreditos Then
 
         Else
             
-            lblStatus.Caption = "Procesando Cuotas Ordinarias..."
+            lblStatus.Caption = "Activando Cuotas Ordinarias..."
             DoEvents
             
-            strSQL = "exec spPrmCreditoEnviaCuotaOrdinaria " & vFechaProceso & "," & GLOBALES.gInstitucion
+            strSQL = "exec spPrmCredito_Activa_Cuotas " & vFechaProceso & "," & GLOBALES.gInstitucion
+            Call ConectionExecute(strSQL)
+            
+            lblStatus.Caption = "Procesando Cuotas Ordinarias, Pt.1 Inicializando"
+            DoEvents
+            
+            strSQL = "exec spPrmCreditoEnviaCuotaOrdinaria " & vFechaProceso & "," & GLOBALES.gInstitucion & ", 0"
+            Call ConectionExecute(strSQL)
+            
+            lblStatus.Caption = "Procesando Cuotas Ordinarias, Pt.2 Créditos"
+            DoEvents
+            
+            strSQL = "exec spPrmCreditoEnviaCuotaOrdinaria " & vFechaProceso & "," & GLOBALES.gInstitucion & ", 1"
+            Call ConectionExecute(strSQL)
+            
+            lblStatus.Caption = "Procesando Cuotas Ordinarias, Pt.3 Recaudos"
+            DoEvents
+            
+            strSQL = "exec spPrmCreditoEnviaCuotaOrdinaria " & vFechaProceso & "," & GLOBALES.gInstitucion & ", 2"
             Call ConectionExecute(strSQL)
             
             lblStatus.Caption = "Procesando Cuotas Atrasadas..."
@@ -3887,6 +4334,9 @@ If vProcesaCreditos Then
             
             
         End If
+        
+            lblStatus.Caption = "Procesando Casos con Doble Deducción..."
+            DoEvents
         
         'Aplica Deduccion Doble a los casos marcados con esta opción
         strSQL = "insert into PRM_ENVIADO_DETALLE(id_solicitud,codigo,fecpro,cedula,cuota,morosidad" _
@@ -3944,7 +4394,7 @@ End If 'Procesa Creditos
 lblStatus.Caption = "Codificando..."
 DoEvents
 
-strSQL = "exec  spPrmProcCodigosSeparacion " & GLOBALES.gInstitucion & "," & vFechaProceso
+strSQL = "exec spPrmProcCodigosSeparacion " & GLOBALES.gInstitucion & "," & vFechaProceso
 Call ConectionExecute(strSQL)
 
 
@@ -3952,7 +4402,7 @@ lblStatus.Caption = "Consolidadon Envío de Deducciones..."
 DoEvents
 
 'Codificacion y Registra Cobros de Aportes de Patrimonio
-strSQL = "exec  spPrmDeduccionCodifica_Envio " & GLOBALES.gInstitucion & "," & vFechaProceso & "," & chkRedondeo.Value
+strSQL = "exec spPrmDeduccionCodifica_Envio " & GLOBALES.gInstitucion & "," & vFechaProceso & "," & chkRedondeo.Value
 Call ConectionExecute(strSQL)
 
 
@@ -4499,7 +4949,7 @@ End If
 
 If vCodigoAportes <> "NO" Then
     Open vTempo For Output As #fnFile  ' Create file name.
-      lblStatus = "Creando archivo a enviar"
+      lblStatus = "Creando archivo a enviar [Aportes]"
       DoEvents
     
       strSQL = "select P.*,S.nombre " _
@@ -4558,7 +5008,7 @@ End If
 
 If vCodigoCreditos <> "NO" Then
     Open vTempo For Output As #fnFile  ' Create file name.
-      lblStatus = "Creando archivo a enviar"
+      lblStatus = "Creando archivo a enviar [Credito - Principal]"
       DoEvents
     
       strSQL = "select P.*,S.nombre " _
@@ -4607,7 +5057,7 @@ If vCodigoCreditos <> "NO" Then
         
         fnFile = FreeFile
         
-        vArchivo = Format(GLOBALES.gInstitucion, "000") & "-ARC" & vCodCreArcAlterno & ".txt"
+        vArchivo = Format(GLOBALES.gInstitucion, "000") & "[" & Format(vFechaProceso, "####-##") & "]-ARC" & vCodCreArcAlterno & ".txt"
         
         vTempo = vRuta & "\" & vArchivo
         vFile = Dir(vTempo, vbArchive)
@@ -4619,7 +5069,7 @@ If vCodigoCreditos <> "NO" Then
         fnFile = FreeFile
         
             Open vTempo For Output As #fnFile  ' Create file name.
-              lblStatus = "Creando archivo a enviar"
+              lblStatus = "Creando archivo a enviar [Creditos - Secundario]"
               DoEvents
             
               strSQL = "select P.*,S.nombre " _
@@ -4645,7 +5095,7 @@ If vCodigoCreditos <> "NO" Then
                    
                    If Len(vLinea) > 11 Then vLinea = Mid(vLinea, 1, 11)
                    
-                    vLinea = vLinea & "9999" & Mid(vCodCreArcAlterno, 1, 4) & Format((rs!Monto_Actual * 100), "0000000000000") & "0000000099999999" _
+                    vLinea = vLinea & "9999" & Mid(vCodigoCreditosAlterno, 1, 4) & Format((rs!Monto_Actual * 100), "0000000000000") & "0000000099999999" _
                            & "   CREDITO00000000000000000000000000100000000"
                 
                    Print #fnFile, vLinea
@@ -10642,6 +11092,9 @@ Me.MousePointer = vbHourglass
 
 prgProcesoMensual.Value = 1
 
+'Aumenta el Tiempo de Conexion
+glogon.Conection.CommandTimeout = 1200
+
 
 strSQL = "select isnull(desc_Corta,convert(varchar(10),cod_institucion)) as 'CodDoc'" _
        & " from  instituciones where cod_institucion = " & GLOBALES.gInstitucion
@@ -10664,18 +11117,33 @@ DoEvents
 
 
 
-Dim pPaso As Integer
+Dim pPaso As Integer, pPendientes As Long
 
 pPaso = 1
+pPendientes = 0
 
-Do While pPaso <= 3
-    lblStatus = "Aplicando Abonos Masivo Paso " & pPaso & " / 3 [Espere]"
+Do While pPaso <= 5
+    
+    prgProcesoMensual.Max = 5
+    prgProcesoMensual.Value = pPaso
+    
+    If pPendientes > 0 Then
+        lblStatus = "Aplicando Abonos Masivo Paso " & pPaso & " / 5 [Espere...] [Pendientes: " & pPendientes & "] "
+    Else
+        lblStatus = "Aplicando Abonos Masivo Paso " & pPaso & " / 5 [Espere...]"
+    End If
     DoEvents
     
     strSQL = "exec spPrmCreditoAplicaAbonosMasivo " & GLOBALES.gInstitucion & "," & GLOBALES.glngFechaCR & ",'" & vDocumento & "', " & pPaso
-    Call ConectionExecute(strSQL)
-    
-    pPaso = pPaso + 1
+    Call OpenRecordSet(rs, strSQL)
+    'Call ConectionExecute(strSQL)
+    If Not glogon.error Then
+        pPaso = rs!PasoSiguiente
+        pPendientes = rs!Pendientes
+    Else
+        glogon.Conection.CommandTimeout = 1200
+    End If
+
 Loop
 
 
@@ -10688,8 +11156,8 @@ strSQL = "select count(*) + 1 as Total from prm_creditos" _
        & " and id_aplicacion = 1 and ind_paso = 0" _
        & " and cod_institucion = " & GLOBALES.gInstitucion
 Call OpenRecordSet(rs, strSQL)
-    prgProcesoMensual.Max = (rs!total + 1)
-    vRegistros = rs!total
+    prgProcesoMensual.Max = (rs!Total + 1)
+    vRegistros = rs!Total
 rs.Close
 
 Do While vRegistros > 0
@@ -10718,13 +11186,24 @@ DoEvents
 strSQL = "exec spPrm_Deducciones_Porc_Revision " & GLOBALES.gInstitucion & "," & GLOBALES.glngFechaCR & ",'" & glogon.Usuario & "'"
 Call ConectionExecute(strSQL)
 
-lblStatus = "Generando Comprobante de aplicación!"
-DoEvents
 
-'Asiento
-strSQL = "exec spPrmCreditoAsiento '1','" & vDocumento & "','" & Format(vFecha, "yyyy/mm/dd") & "','" & glogon.Usuario _
-       & "'," & GLOBALES.gInstitucion & "," & GLOBALES.glngFechaCR
-Call ConectionExecute(strSQL)
+'------------------------------------------------------------------
+'Asiento> Paso 1> Revision
+    
+lblStatus = "Generando Comprobante de aplicación! Paso 1/2 [Revisión]"
+DoEvents
+    
+    strSQL = "exec spPrmCreditoAsiento '1','" & vDocumento & "','" & Format(vFecha, "yyyy/mm/dd") & "','" & glogon.Usuario _
+           & "'," & GLOBALES.gInstitucion & "," & GLOBALES.glngFechaCR & ", 1"
+    Call ConectionExecute(strSQL)
+
+'Asiento> Paso 2> Registro de Asiento
+lblStatus = "Generando Comprobante de aplicación! Paso 2/2 [Comprobante]"
+DoEvents
+    
+    strSQL = "exec spPrmCreditoAsiento '1','" & vDocumento & "','" & Format(vFecha, "yyyy/mm/dd") & "','" & glogon.Usuario & "', " & GLOBALES.gInstitucion & ", " & GLOBALES.glngFechaCR & ", 2"
+    Call ConectionExecute(strSQL)
+
 
 
 Call sbBitacoraPlanilla("08", GLOBALES.gInstitucion, GLOBALES.glngFechaCR, "R", vDocumento)
@@ -10755,13 +11234,21 @@ Call sbBitacoraPlanilla("08", GLOBALES.gInstitucion, GLOBALES.glngFechaCR, "R", 
 
 
    
-lblStatus.Caption = "Procesamiento de Sobrantes [Espere!]"
+lblStatus.Caption = "Procesamiento de Sobrantes [Espere!] Paso 1/2 [Asociados]"
 DoEvents
 
 '18/09/2023  Aplicacion de Sobrantes - Masivamente desde el Server
 strSQL = "exec spPrm_Sobrantes_Main " & GLOBALES.glngFechaCR & "," & GLOBALES.gInstitucion _
-       & ",'" & vDocumento & "','" & glogon.Usuario & "'"
+       & ",'" & vDocumento & "','" & glogon.Usuario & "', 1"
 Call ConectionExecute(strSQL)
+
+lblStatus.Caption = "Procesamiento de Sobrantes [Espere!] Paso 2/2 [No Asociados]"
+DoEvents
+
+strSQL = "exec spPrm_Sobrantes_Main " & GLOBALES.glngFechaCR & "," & GLOBALES.gInstitucion _
+       & ",'" & vDocumento & "','" & glogon.Usuario & "', 2"
+Call ConectionExecute(strSQL)
+
 
 lblStatus.Caption = "Trasladando Retenciones a Fondos de Ahorros!"
 DoEvents
@@ -10920,7 +11407,7 @@ lblStatus.Caption = "Aplicado Procesos Complementarios..."
 DoEvents
 
 strSQL = "select * from PRM_PROCESOS_ADD" _
-       & " where Transaccion = '" & pTransaccion & "' and EJECUCION_TIPO = '" & pTipo & "'" _
+       & " where Transaccion = '" & pTransaccion & "' and EJECUCION_TIPO = '" & pTipo & "' and PARAMETROS_PLANILLAS = 1" _
        & " order by EJECUCION_ORDEN,PROC_NUM"
 Call OpenRecordSet(rs, strSQL)
 
@@ -10982,6 +11469,7 @@ Private Sub optCreditos_Click(Index As Integer)
   optAhorros.Item(2).Value = False
   optAhorros.Item(3).Value = False
 End Sub
+
 
 Private Sub txtAno_KeyPress(KeyAscii As Integer)
  Call Valida(KeyAscii)

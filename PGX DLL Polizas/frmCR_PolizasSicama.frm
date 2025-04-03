@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_PolizasSicama 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -20,7 +20,7 @@ Begin VB.Form frmCR_PolizasSicama
       TabIndex        =   0
       Top             =   960
       Width           =   11052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19494
       _ExtentY        =   12298
       _StockProps     =   68
@@ -93,7 +93,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   600
          Visible         =   0   'False
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1508
          _ExtentY        =   503
          _StockProps     =   79
@@ -120,7 +120,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   1320
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -142,7 +142,7 @@ Begin VB.Form frmCR_PolizasSicama
          TabIndex        =   11
          Top             =   960
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -165,7 +165,7 @@ Begin VB.Form frmCR_PolizasSicama
          TabIndex        =   9
          Top             =   840
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   868
          _StockProps     =   79
@@ -191,7 +191,7 @@ Begin VB.Form frmCR_PolizasSicama
          TabIndex        =   5
          Top             =   600
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -213,7 +213,7 @@ Begin VB.Form frmCR_PolizasSicama
          TabIndex        =   7
          Top             =   600
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   68
@@ -237,7 +237,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   960
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -261,7 +261,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   960
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   873
          _StockProps     =   79
@@ -289,7 +289,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   480
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   868
          _StockProps     =   79
@@ -317,7 +317,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   480
          Visible         =   0   'False
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   503
          _StockProps     =   79
@@ -344,7 +344,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   840
          Visible         =   0   'False
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   508
          _StockProps     =   79
@@ -371,7 +371,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   480
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   508
          _StockProps     =   79
@@ -398,7 +398,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   480
          Visible         =   0   'False
          Width           =   1092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1926
          _ExtentY        =   868
          _StockProps     =   79
@@ -426,7 +426,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   480
          Visible         =   0   'False
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   868
          _StockProps     =   79
@@ -454,7 +454,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   480
          Visible         =   0   'False
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1926
          _ExtentY        =   868
          _StockProps     =   79
@@ -481,7 +481,7 @@ Begin VB.Form frmCR_PolizasSicama
          TabIndex        =   28
          Top             =   840
          Width           =   1092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1926
          _ExtentY        =   868
          _StockProps     =   79
@@ -567,7 +567,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   480
          Visible         =   0   'False
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   656
          _StockProps     =   79
@@ -583,7 +583,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   480
          Visible         =   0   'False
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   656
          _StockProps     =   79
@@ -599,7 +599,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   480
          Visible         =   0   'False
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   656
          _StockProps     =   79
@@ -615,7 +615,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   480
          Visible         =   0   'False
          Width           =   6852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12086
          _ExtentY        =   656
          _StockProps     =   77
@@ -641,7 +641,7 @@ Begin VB.Form frmCR_PolizasSicama
          TabIndex        =   33
          Top             =   960
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -667,7 +667,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   1080
          Visible         =   0   'False
          Width           =   2292
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   550
          _StockProps     =   77
@@ -693,7 +693,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   600
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -747,7 +747,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   840
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   508
          _StockProps     =   79
@@ -773,7 +773,7 @@ Begin VB.Form frmCR_PolizasSicama
          Top             =   480
          Visible         =   0   'False
          Width           =   4815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8493
          _ExtentY        =   820
          _StockProps     =   77

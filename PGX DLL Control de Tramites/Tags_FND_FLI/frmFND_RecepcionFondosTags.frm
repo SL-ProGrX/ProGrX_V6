@@ -1,19 +1,19 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "mscomctl.OCX"
-Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmFNDRecepcionFondosTags 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Fondos.: Recepción / Devolución"
-   ClientHeight    =   8136
-   ClientLeft      =   48
-   ClientTop       =   372
-   ClientWidth     =   12012
+   ClientHeight    =   8130
+   ClientLeft      =   45
+   ClientTop       =   375
+   ClientWidth     =   12015
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
-   ScaleHeight     =   8136
-   ScaleWidth      =   12012
+   ScaleHeight     =   8130
+   ScaleWidth      =   12015
    StartUpPosition =   2  'CenterScreen
    Begin TabDlg.SSTab SSTab 
       Height          =   7935
@@ -21,51 +21,38 @@ Begin VB.Form frmFNDRecepcionFondosTags
       TabIndex        =   0
       Top             =   120
       Width           =   11775
-      _ExtentX        =   20765
-      _ExtentY        =   13991
+      _ExtentX        =   20770
+      _ExtentY        =   13996
       _Version        =   393216
       Style           =   1
+      Tab             =   2
       TabHeight       =   520
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Arial"
-         Size            =   8.4
+         Name            =   "Calibri"
+         Size            =   8.25
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
       TabCaption(0)   =   "Recepción - Devolución"
       TabPicture(0)   =   "frmFND_RecepcionFondosTags.frx":0000
-      Tab(0).ControlEnabled=   -1  'True
-      Tab(0).Control(0)=   "Image1"
-      Tab(0).Control(0).Enabled=   0   'False
-      Tab(0).Control(1)=   "LblCedula"
-      Tab(0).Control(1).Enabled=   0   'False
-      Tab(0).Control(2)=   "Label3"
-      Tab(0).Control(2).Enabled=   0   'False
-      Tab(0).Control(3)=   "Label4"
-      Tab(0).Control(3).Enabled=   0   'False
-      Tab(0).Control(4)=   "Label10"
-      Tab(0).Control(4).Enabled=   0   'False
-      Tab(0).Control(5)=   "PrgBar"
-      Tab(0).Control(5).Enabled=   0   'False
-      Tab(0).Control(6)=   "tlbAplicar"
-      Tab(0).Control(6).Enabled=   0   'False
-      Tab(0).Control(7)=   "lswCedula"
-      Tab(0).Control(7).Enabled=   0   'False
-      Tab(0).Control(8)=   "txtCedula"
-      Tab(0).Control(8).Enabled=   0   'False
-      Tab(0).Control(9)=   "optRecepcion"
-      Tab(0).Control(9).Enabled=   0   'False
-      Tab(0).Control(10)=   "optDevolucion"
-      Tab(0).Control(10).Enabled=   0   'False
-      Tab(0).Control(11)=   "txtCodigo"
-      Tab(0).Control(11).Enabled=   0   'False
-      Tab(0).Control(12)=   "cmdAgregar"
-      Tab(0).Control(12).Enabled=   0   'False
-      Tab(0).Control(13)=   "txtContratoB"
-      Tab(0).Control(13).Enabled=   0   'False
+      Tab(0).ControlEnabled=   0   'False
+      Tab(0).Control(0)=   "txtContratoB"
+      Tab(0).Control(1)=   "cmdAgregar"
+      Tab(0).Control(2)=   "txtCodigo"
+      Tab(0).Control(3)=   "optDevolucion"
+      Tab(0).Control(4)=   "optRecepcion"
+      Tab(0).Control(5)=   "txtCedula"
+      Tab(0).Control(6)=   "lswCedula"
+      Tab(0).Control(7)=   "tlbAplicar"
+      Tab(0).Control(8)=   "PrgBar"
+      Tab(0).Control(9)=   "Label10"
+      Tab(0).Control(10)=   "Label4"
+      Tab(0).Control(11)=   "Label3"
+      Tab(0).Control(12)=   "LblCedula"
+      Tab(0).Control(13)=   "Image1"
       Tab(0).ControlCount=   14
       TabCaption(1)   =   "Pendientes"
       TabPicture(1)   =   "frmFND_RecepcionFondosTags.frx":001C
@@ -79,27 +66,39 @@ Begin VB.Form frmFNDRecepcionFondosTags
       Tab(1).ControlCount=   6
       TabCaption(2)   =   "Consultas"
       TabPicture(2)   =   "frmFND_RecepcionFondosTags.frx":0038
-      Tab(2).ControlEnabled=   0   'False
-      Tab(2).Control(0)=   "txtPlan"
-      Tab(2).Control(1)=   "txtContrato"
-      Tab(2).Control(2)=   "cboUsuario"
-      Tab(2).Control(3)=   "dtpFInicio"
-      Tab(2).Control(4)=   "dtpFFin"
-      Tab(2).Control(5)=   "tlbReportes"
-      Tab(2).Control(6)=   "vGridConsulta"
-      Tab(2).Control(7)=   "Label9"
-      Tab(2).Control(8)=   "Label8"
-      Tab(2).Control(9)=   "Image3"
-      Tab(2).Control(10)=   "Label5"
-      Tab(2).Control(11)=   "Image4"
-      Tab(2).Control(12)=   "Label6"
-      Tab(2).Control(13)=   "Label1(14)"
-      Tab(2).ControlCount=   14
+      Tab(2).ControlEnabled=   -1  'True
+      Tab(2).Control(0)=   "Label1(14)"
+      Tab(2).Control(0).Enabled=   0   'False
+      Tab(2).Control(1)=   "Label6"
+      Tab(2).Control(1).Enabled=   0   'False
+      Tab(2).Control(2)=   "Image4"
+      Tab(2).Control(2).Enabled=   0   'False
+      Tab(2).Control(3)=   "Image3"
+      Tab(2).Control(3).Enabled=   0   'False
+      Tab(2).Control(4)=   "Label8"
+      Tab(2).Control(4).Enabled=   0   'False
+      Tab(2).Control(5)=   "Label9"
+      Tab(2).Control(5).Enabled=   0   'False
+      Tab(2).Control(6)=   "dtpFFin"
+      Tab(2).Control(6).Enabled=   0   'False
+      Tab(2).Control(7)=   "dtpFInicio"
+      Tab(2).Control(7).Enabled=   0   'False
+      Tab(2).Control(8)=   "vGridConsulta"
+      Tab(2).Control(8).Enabled=   0   'False
+      Tab(2).Control(9)=   "tlbReportes"
+      Tab(2).Control(9).Enabled=   0   'False
+      Tab(2).Control(10)=   "cboUsuario"
+      Tab(2).Control(10).Enabled=   0   'False
+      Tab(2).Control(11)=   "txtContrato"
+      Tab(2).Control(11).Enabled=   0   'False
+      Tab(2).Control(12)=   "txtPlan"
+      Tab(2).Control(12).Enabled=   0   'False
+      Tab(2).ControlCount=   13
       Begin VB.TextBox txtContratoB 
          Appearance      =   0  'Flat
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -107,9 +106,9 @@ Begin VB.Form frmFNDRecepcionFondosTags
             Strikethrough   =   0   'False
          EndProperty
          Height          =   315
-         Left            =   4440
+         Left            =   -70560
          MaxLength       =   10
-         TabIndex        =   29
+         TabIndex        =   26
          Top             =   840
          Width           =   1575
       End
@@ -117,7 +116,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Appearance      =   0  'Flat
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -125,9 +124,9 @@ Begin VB.Form frmFNDRecepcionFondosTags
             Strikethrough   =   0   'False
          EndProperty
          Height          =   315
-         Left            =   -74040
+         Left            =   960
          MaxLength       =   10
-         TabIndex        =   27
+         TabIndex        =   24
          Top             =   2040
          Width           =   1575
       End
@@ -135,7 +134,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Appearance      =   0  'Flat
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -143,9 +142,9 @@ Begin VB.Form frmFNDRecepcionFondosTags
             Strikethrough   =   0   'False
          EndProperty
          Height          =   315
-         Left            =   -72360
+         Left            =   2640
          MaxLength       =   10
-         TabIndex        =   25
+         TabIndex        =   22
          Top             =   2040
          Width           =   1575
       End
@@ -161,8 +160,8 @@ Begin VB.Form frmFNDRecepcionFondosTags
             Strikethrough   =   0   'False
          EndProperty
          Height          =   315
-         Left            =   6240
-         TabIndex        =   24
+         Left            =   -68760
+         TabIndex        =   21
          Top             =   840
          Width           =   495
       End
@@ -170,7 +169,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Appearance      =   0  'Flat
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -178,9 +177,9 @@ Begin VB.Form frmFNDRecepcionFondosTags
             Strikethrough   =   0   'False
          EndProperty
          Height          =   315
-         Left            =   2760
+         Left            =   -72240
          MaxLength       =   10
-         TabIndex        =   22
+         TabIndex        =   19
          Top             =   840
          Width           =   1575
       End
@@ -188,7 +187,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Appearance      =   0  'Flat
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -197,7 +196,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          EndProperty
          ForeColor       =   &H00FF0000&
          Height          =   330
-         Left            =   -70320
+         Left            =   4680
          Style           =   2  'Dropdown List
          TabIndex        =   14
          Top             =   960
@@ -207,7 +206,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Caption         =   "Devolución"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -224,7 +223,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Caption         =   "Recepción"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -241,7 +240,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Caption         =   "Devolución"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -249,7 +248,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
             Strikethrough   =   0   'False
          EndProperty
          Height          =   315
-         Left            =   8520
+         Left            =   -66480
          TabIndex        =   3
          Top             =   840
          Width           =   1335
@@ -258,7 +257,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Caption         =   "Recepción"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -266,7 +265,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
             Strikethrough   =   0   'False
          EndProperty
          Height          =   315
-         Left            =   7200
+         Left            =   -67800
          TabIndex        =   2
          Top             =   840
          Value           =   -1  'True
@@ -276,19 +275,19 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Alignment       =   2  'Center
          Appearance      =   0  'Flat
          Height          =   315
-         Left            =   840
+         Left            =   -74160
          TabIndex        =   1
          Top             =   840
          Width           =   1815
       End
       Begin MSComctlLib.ListView lswCedula 
          Height          =   5895
-         Left            =   120
+         Left            =   -74880
          TabIndex        =   4
          Top             =   1320
          Width           =   11535
-         _ExtentX        =   20341
-         _ExtentY        =   10393
+         _ExtentX        =   20346
+         _ExtentY        =   10398
          View            =   3
          LabelWrap       =   -1  'True
          HideSelection   =   -1  'True
@@ -303,7 +302,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Appearance      =   0
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -348,12 +347,12 @@ Begin VB.Form frmFNDRecepcionFondosTags
       End
       Begin MSComctlLib.Toolbar tlbAplicar 
          Height          =   570
-         Left            =   8520
+         Left            =   -66480
          TabIndex        =   5
          Top             =   7200
          Width           =   3225
-         _ExtentX        =   5694
-         _ExtentY        =   995
+         _ExtentX        =   5689
+         _ExtentY        =   1005
          ButtonWidth     =   2461
          ButtonHeight    =   1005
          Style           =   1
@@ -393,13 +392,13 @@ Begin VB.Form frmFNDRecepcionFondosTags
       End
       Begin MSComctlLib.ProgressBar PrgBar 
          Height          =   315
-         Left            =   120
+         Left            =   -74880
          TabIndex        =   6
          Top             =   7320
          Visible         =   0   'False
          Width           =   8295
-         _ExtentX        =   14626
-         _ExtentY        =   550
+         _ExtentX        =   14631
+         _ExtentY        =   556
          _Version        =   393216
          Appearance      =   0
       End
@@ -417,8 +416,8 @@ Begin VB.Form frmFNDRecepcionFondosTags
          BorderStyle     =   0
          EditEnterAction =   5
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.4
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -437,8 +436,8 @@ Begin VB.Form frmFNDRecepcionFondosTags
          TabIndex        =   12
          Top             =   600
          Width           =   2625
-         _ExtentX        =   4636
-         _ExtentY        =   572
+         _ExtentX        =   4630
+         _ExtentY        =   582
          ButtonWidth     =   1931
          ButtonHeight    =   582
          Style           =   1
@@ -463,60 +462,14 @@ Begin VB.Form frmFNDRecepcionFondosTags
             EndProperty
          EndProperty
       End
-      Begin MSComCtl2.DTPicker dtpFInicio 
-         Height          =   330
-         Left            =   -74040
-         TabIndex        =   15
-         ToolTipText     =   "Fecha Inicio Búsqueda"
-         Top             =   960
-         Width           =   1575
-         _ExtentX        =   2773
-         _ExtentY        =   572
-         _Version        =   393216
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.4
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         CustomFormat    =   "dd/MM/yyyy"
-         Format          =   190840835
-         CurrentDate     =   40361
-      End
-      Begin MSComCtl2.DTPicker dtpFFin 
-         Height          =   330
-         Left            =   -72120
-         TabIndex        =   16
-         ToolTipText     =   "Fecha Fin Búsqueda"
-         Top             =   960
-         Width           =   1575
-         _ExtentX        =   2773
-         _ExtentY        =   572
-         _Version        =   393216
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.4
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         CustomFormat    =   "dd/MM/yyyy"
-         Format          =   190840835
-         CurrentDate     =   40361
-      End
       Begin MSComctlLib.Toolbar tlbReportes 
          Height          =   330
-         Left            =   -65640
-         TabIndex        =   17
+         Left            =   9360
+         TabIndex        =   15
          Top             =   840
          Width           =   1545
-         _ExtentX        =   2731
-         _ExtentY        =   572
+         _ExtentX        =   2725
+         _ExtentY        =   582
          ButtonWidth     =   1931
          ButtonHeight    =   582
          Style           =   1
@@ -546,8 +499,8 @@ Begin VB.Form frmFNDRecepcionFondosTags
       End
       Begin FPSpreadADO.fpSpread vGridConsulta 
          Height          =   4815
-         Left            =   -74640
-         TabIndex        =   18
+         Left            =   360
+         TabIndex        =   16
          Top             =   2640
          Width           =   10935
          _Version        =   524288
@@ -558,8 +511,8 @@ Begin VB.Form frmFNDRecepcionFondosTags
          BorderStyle     =   0
          EditEnterAction =   5
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.4
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -568,15 +521,59 @@ Begin VB.Form frmFNDRecepcionFondosTags
          EndProperty
          MaxCols         =   486
          ScrollBarExtMode=   -1  'True
-         SpreadDesigner  =   "frmFND_RecepcionFondosTags.frx":07AA
+         SpreadDesigner  =   "frmFND_RecepcionFondosTags.frx":07D2
          VScrollSpecialType=   2
          AppearanceStyle =   1
+      End
+      Begin XtremeSuiteControls.DateTimePicker dtpFInicio 
+         Height          =   330
+         Left            =   960
+         TabIndex        =   28
+         Top             =   960
+         Width           =   1455
+         _Version        =   1572864
+         _ExtentX        =   2566
+         _ExtentY        =   582
+         _StockProps     =   68
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CustomFormat    =   "dd/MM/yyyy"
+         Format          =   3
+      End
+      Begin XtremeSuiteControls.DateTimePicker dtpFFin 
+         Height          =   330
+         Left            =   2400
+         TabIndex        =   29
+         Top             =   960
+         Width           =   1455
+         _Version        =   1572864
+         _ExtentX        =   2566
+         _ExtentY        =   582
+         _StockProps     =   68
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CustomFormat    =   "dd/MM/yyyy"
+         Format          =   3
       End
       Begin VB.Label Label10 
          Caption         =   "Contrato"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -584,8 +581,8 @@ Begin VB.Form frmFNDRecepcionFondosTags
             Strikethrough   =   0   'False
          EndProperty
          Height          =   255
-         Left            =   4440
-         TabIndex        =   30
+         Left            =   -70560
+         TabIndex        =   27
          Top             =   600
          Width           =   975
       End
@@ -593,7 +590,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Caption         =   "Plan"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -601,8 +598,8 @@ Begin VB.Form frmFNDRecepcionFondosTags
             Strikethrough   =   0   'False
          EndProperty
          Height          =   255
-         Left            =   -74040
-         TabIndex        =   28
+         Left            =   960
+         TabIndex        =   25
          Top             =   1800
          Width           =   975
       End
@@ -610,7 +607,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Caption         =   "Contrato"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -618,8 +615,8 @@ Begin VB.Form frmFNDRecepcionFondosTags
             Strikethrough   =   0   'False
          EndProperty
          Height          =   255
-         Left            =   -72360
-         TabIndex        =   26
+         Left            =   2640
+         TabIndex        =   23
          Top             =   1800
          Width           =   975
       End
@@ -627,7 +624,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Caption         =   "Plan"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -635,48 +632,30 @@ Begin VB.Form frmFNDRecepcionFondosTags
             Strikethrough   =   0   'False
          EndProperty
          Height          =   255
-         Left            =   2760
-         TabIndex        =   23
+         Left            =   -72240
+         TabIndex        =   20
          Top             =   600
          Width           =   975
       End
       Begin VB.Image Image3 
-         Height          =   384
-         Left            =   -74760
-         Picture         =   "frmFND_RecepcionFondosTags.frx":0CFF
+         Height          =   480
+         Left            =   240
+         Picture         =   "frmFND_RecepcionFondosTags.frx":0D4F
          Top             =   1440
-         Width           =   384
-      End
-      Begin VB.Label Label5 
-         Alignment       =   2  'Center
-         Caption         =   "-"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   12
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   255
-         Left            =   -72480
-         TabIndex        =   21
-         Top             =   960
-         Width           =   375
+         Width           =   480
       End
       Begin VB.Image Image4 
-         Height          =   384
-         Left            =   -74760
-         Picture         =   "frmFND_RecepcionFondosTags.frx":0F18
+         Height          =   480
+         Left            =   240
+         Picture         =   "frmFND_RecepcionFondosTags.frx":0F68
          Top             =   600
-         Width           =   384
+         Width           =   480
       End
       Begin VB.Label Label6 
          Caption         =   "Reportes / Fechas"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -684,8 +663,8 @@ Begin VB.Form frmFNDRecepcionFondosTags
             Strikethrough   =   0   'False
          EndProperty
          Height          =   255
-         Left            =   -74040
-         TabIndex        =   20
+         Left            =   960
+         TabIndex        =   18
          Top             =   720
          Width           =   1455
       End
@@ -693,7 +672,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Caption         =   "Usuario"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -702,23 +681,23 @@ Begin VB.Form frmFNDRecepcionFondosTags
          EndProperty
          Height          =   255
          Index           =   14
-         Left            =   -70320
-         TabIndex        =   19
+         Left            =   4680
+         TabIndex        =   17
          Top             =   720
          Width           =   735
       End
       Begin VB.Image Image2 
-         Height          =   384
+         Height          =   480
          Left            =   -74760
-         Picture         =   "frmFND_RecepcionFondosTags.frx":1122
+         Picture         =   "frmFND_RecepcionFondosTags.frx":1172
          Top             =   600
-         Width           =   384
+         Width           =   480
       End
       Begin VB.Label Label2 
          Caption         =   "Liquidaciones  Pendientes de:"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -736,7 +715,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Caption         =   "Tipo Movimiento"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -744,7 +723,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
             Strikethrough   =   0   'False
          EndProperty
          Height          =   255
-         Left            =   7800
+         Left            =   -67200
          TabIndex        =   8
          Top             =   600
          Width           =   1695
@@ -753,7 +732,7 @@ Begin VB.Form frmFNDRecepcionFondosTags
          Caption         =   "Cédula"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -761,24 +740,24 @@ Begin VB.Form frmFNDRecepcionFondosTags
             Strikethrough   =   0   'False
          EndProperty
          Height          =   255
-         Left            =   840
+         Left            =   -74160
          TabIndex        =   7
          Top             =   600
          Width           =   975
       End
       Begin VB.Image Image1 
-         Height          =   384
-         Left            =   240
-         Picture         =   "frmFND_RecepcionFondosTags.frx":1333
+         Height          =   480
+         Left            =   -74760
+         Picture         =   "frmFND_RecepcionFondosTags.frx":1383
          Top             =   720
-         Width           =   384
+         Width           =   480
       End
    End
    Begin MSComctlLib.ImageList ImageList1 
       Left            =   0
       Top             =   0
-      _ExtentX        =   995
-      _ExtentY        =   995
+      _ExtentX        =   1005
+      _ExtentY        =   1005
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -787,15 +766,15 @@ Begin VB.Form frmFNDRecepcionFondosTags
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   3
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_RecepcionFondosTags.frx":1525
+            Picture         =   "frmFND_RecepcionFondosTags.frx":1575
             Key             =   "IMG1"
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_RecepcionFondosTags.frx":7D87
+            Picture         =   "frmFND_RecepcionFondosTags.frx":7DD7
             Key             =   "IMG2"
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_RecepcionFondosTags.frx":E5E9
+            Picture         =   "frmFND_RecepcionFondosTags.frx":E639
             Key             =   "IMG3"
          EndProperty
       EndProperty
@@ -803,8 +782,8 @@ Begin VB.Form frmFNDRecepcionFondosTags
    Begin MSComctlLib.ImageList ImageList3 
       Left            =   0
       Top             =   600
-      _ExtentX        =   995
-      _ExtentY        =   995
+      _ExtentX        =   1005
+      _ExtentY        =   1005
       BackColor       =   -2147483643
       ImageWidth      =   16
       ImageHeight     =   16
@@ -813,27 +792,27 @@ Begin VB.Form frmFNDRecepcionFondosTags
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   6
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_RecepcionFondosTags.frx":14E4B
+            Picture         =   "frmFND_RecepcionFondosTags.frx":14E9B
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_RecepcionFondosTags.frx":1B6AD
+            Picture         =   "frmFND_RecepcionFondosTags.frx":1B6FD
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_RecepcionFondosTags.frx":21F0F
+            Picture         =   "frmFND_RecepcionFondosTags.frx":21F5F
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_RecepcionFondosTags.frx":22029
+            Picture         =   "frmFND_RecepcionFondosTags.frx":22079
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_RecepcionFondosTags.frx":22147
+            Picture         =   "frmFND_RecepcionFondosTags.frx":22197
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_RecepcionFondosTags.frx":289A9
+            Picture         =   "frmFND_RecepcionFondosTags.frx":289F9
             Key             =   ""
          EndProperty
       EndProperty
@@ -1235,10 +1214,10 @@ Do While Not rs.EOF
     vGridConsulta.Text = rs!Descripcion
     
     vGridConsulta.Col = 2
-    vGridConsulta.Value = IIf(IsNull(rs!REGISTRO_FECHA), "", rs!REGISTRO_FECHA)
+    vGridConsulta.Value = IIf(IsNull(rs!Registro_Fecha), "", rs!Registro_Fecha)
     
     vGridConsulta.Col = 3
-    vGridConsulta.Value = IIf(IsNull(rs!REGISTRO_USUARIO), "", rs!REGISTRO_USUARIO)
+    vGridConsulta.Value = IIf(IsNull(rs!registro_usuario), "", rs!registro_usuario)
     
     vGridConsulta.RowHeight(vGridConsulta.Row) = vGridConsulta.MaxTextRowHeight(vGridConsulta.Row)
     rs.MoveNext

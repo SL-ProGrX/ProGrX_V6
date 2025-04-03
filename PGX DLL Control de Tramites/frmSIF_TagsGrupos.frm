@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmSIF_TagsGrupos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,7 +24,7 @@ Begin VB.Form frmSIF_TagsGrupos
       TabIndex        =   0
       Top             =   1200
       Width           =   9735
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   17171
       _ExtentY        =   10398
       _StockProps     =   68
@@ -61,7 +61,7 @@ Begin VB.Form frmSIF_TagsGrupos
          Top             =   1140
          Visible         =   0   'False
          Width           =   7095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12515
          _ExtentY        =   8281
          _StockProps     =   77
@@ -86,7 +86,7 @@ Begin VB.Form frmSIF_TagsGrupos
          Top             =   840
          Visible         =   0   'False
          Width           =   7100
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12524
          _ExtentY        =   8705
          _StockProps     =   77
@@ -139,7 +139,7 @@ Begin VB.Form frmSIF_TagsGrupos
          Top             =   375
          Visible         =   0   'False
          Width           =   7095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12515
          _ExtentY        =   582
          _StockProps     =   77
@@ -166,7 +166,7 @@ Begin VB.Form frmSIF_TagsGrupos
          Top             =   375
          Visible         =   0   'False
          Width           =   7095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12515
          _ExtentY        =   582
          _StockProps     =   77
@@ -193,7 +193,7 @@ Begin VB.Form frmSIF_TagsGrupos
          Top             =   760
          Visible         =   0   'False
          Width           =   7095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12515
          _ExtentY        =   582
          _StockProps     =   77
@@ -219,7 +219,7 @@ Begin VB.Form frmSIF_TagsGrupos
          Top             =   360
          Visible         =   0   'False
          Width           =   9735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17171
          _ExtentY        =   661
          _StockProps     =   14
@@ -243,7 +243,7 @@ Begin VB.Form frmSIF_TagsGrupos
          Top             =   360
          Visible         =   0   'False
          Width           =   9735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17171
          _ExtentY        =   661
          _StockProps     =   14

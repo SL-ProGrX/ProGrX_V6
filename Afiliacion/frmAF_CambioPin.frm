@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmAF_CambioPin 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -21,7 +21,7 @@ Begin VB.Form frmAF_CambioPin
       TabIndex        =   5
       Top             =   1320
       Width           =   9492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16743
       _ExtentY        =   3196
       _StockProps     =   68
@@ -99,7 +99,7 @@ Begin VB.Form frmAF_CambioPin
             TabIndex        =   14
             Top             =   600
             Width           =   372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   656
             _ExtentY        =   656
             _StockProps     =   79
@@ -122,7 +122,7 @@ Begin VB.Form frmAF_CambioPin
             TabIndex        =   3
             Top             =   120
             Width           =   372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   656
             _ExtentY        =   656
             _StockProps     =   79
@@ -183,7 +183,7 @@ Begin VB.Form frmAF_CambioPin
          Top             =   960
          Visible         =   0   'False
          Width           =   6732
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11874
          _ExtentY        =   550
          _StockProps     =   77
@@ -227,7 +227,7 @@ Begin VB.Form frmAF_CambioPin
       TabIndex        =   1
       Top             =   3720
       Width           =   1812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   1080
       _StockProps     =   79
@@ -251,7 +251,7 @@ Begin VB.Form frmAF_CambioPin
       TabIndex        =   2
       Top             =   3720
       Width           =   2292
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4043
       _ExtentY        =   1080
       _StockProps     =   79
@@ -275,7 +275,7 @@ Begin VB.Form frmAF_CambioPin
       TabIndex        =   11
       Top             =   480
       Width           =   1932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3408
       _ExtentY        =   550
       _StockProps     =   77
@@ -299,7 +299,7 @@ Begin VB.Form frmAF_CambioPin
       TabIndex        =   12
       Top             =   480
       Width           =   4812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8488
       _ExtentY        =   550
       _StockProps     =   77
@@ -323,7 +323,7 @@ Begin VB.Form frmAF_CambioPin
       TabIndex        =   13
       Top             =   3240
       Width           =   6732
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   11874
       _ExtentY        =   550
       _StockProps     =   77
@@ -542,6 +542,7 @@ Select Case tcMain.Selected.Index
             Call ConectionExecute(strSQL)
         End If
         
+        Call sbTrazabilidad_Inserta("13", txtTicket.Text, txtTicket)
         
         Me.MousePointer = vbDefault
         

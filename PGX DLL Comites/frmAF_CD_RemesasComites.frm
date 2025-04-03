@@ -1,5 +1,6 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
 Begin VB.Form frmAF_CD_RemesasComites 
@@ -54,7 +55,7 @@ Begin VB.Form frmAF_CD_RemesasComites
       Align           =   2  'Align Bottom
       Height          =   150
       Left            =   0
-      TabIndex        =   33
+      TabIndex        =   11
       Top             =   7560
       Width           =   10440
       _ExtentX        =   18415
@@ -88,65 +89,41 @@ Begin VB.Form frmAF_CD_RemesasComites
       TabCaption(0)   =   "Remesas"
       TabPicture(0)   =   "frmAF_CD_RemesasComites.frx":4BE42
       Tab(0).ControlEnabled=   -1  'True
-      Tab(0).Control(0)=   "Label2(9)"
+      Tab(0).Control(0)=   "Labe9(0)"
       Tab(0).Control(0).Enabled=   0   'False
-      Tab(0).Control(1)=   "Label2(1)"
+      Tab(0).Control(1)=   "Labe9(1)"
       Tab(0).Control(1).Enabled=   0   'False
-      Tab(0).Control(2)=   "Label2(6)"
+      Tab(0).Control(2)=   "Labe9(2)"
       Tab(0).Control(2).Enabled=   0   'False
-      Tab(0).Control(3)=   "Label2(2)"
+      Tab(0).Control(3)=   "Labe9(3)"
       Tab(0).Control(3).Enabled=   0   'False
-      Tab(0).Control(4)=   "Label2(3)"
+      Tab(0).Control(4)=   "Labe9(4)"
       Tab(0).Control(4).Enabled=   0   'False
-      Tab(0).Control(5)=   "Label2(4)"
+      Tab(0).Control(5)=   "Labe9(5)"
       Tab(0).Control(5).Enabled=   0   'False
-      Tab(0).Control(6)=   "Label2(5)"
+      Tab(0).Control(6)=   "ShortcutCaption1"
       Tab(0).Control(6).Enabled=   0   'False
-      Tab(0).Control(7)=   "Label2(0)"
+      Tab(0).Control(7)=   "txtTotal"
       Tab(0).Control(7).Enabled=   0   'False
-      Tab(0).Control(8)=   "Label1(5)"
+      Tab(0).Control(8)=   "txtUsuario"
       Tab(0).Control(8).Enabled=   0   'False
-      Tab(0).Control(9)=   "Label1(6)"
+      Tab(0).Control(9)=   "txtEstado"
       Tab(0).Control(9).Enabled=   0   'False
-      Tab(0).Control(10)=   "Line1(5)"
+      Tab(0).Control(10)=   "txtFecha"
       Tab(0).Control(10).Enabled=   0   'False
-      Tab(0).Control(11)=   "Line1(4)"
+      Tab(0).Control(11)=   "txtRemesa"
       Tab(0).Control(11).Enabled=   0   'False
-      Tab(0).Control(12)=   "Line1(3)"
+      Tab(0).Control(12)=   "txtNotas"
       Tab(0).Control(12).Enabled=   0   'False
-      Tab(0).Control(13)=   "Line1(2)"
+      Tab(0).Control(13)=   "dtpFechaCorte"
       Tab(0).Control(13).Enabled=   0   'False
-      Tab(0).Control(14)=   "Line1(0)"
+      Tab(0).Control(14)=   "dtpFechaInicio"
       Tab(0).Control(14).Enabled=   0   'False
-      Tab(0).Control(15)=   "Line1(6)"
+      Tab(0).Control(15)=   "tlb"
       Tab(0).Control(15).Enabled=   0   'False
-      Tab(0).Control(16)=   "Line1(7)"
+      Tab(0).Control(16)=   "lswRemesas"
       Tab(0).Control(16).Enabled=   0   'False
-      Tab(0).Control(17)=   "Line2"
-      Tab(0).Control(17).Enabled=   0   'False
-      Tab(0).Control(18)=   "Line1(10)"
-      Tab(0).Control(18).Enabled=   0   'False
-      Tab(0).Control(19)=   "dtpFechaCorte"
-      Tab(0).Control(19).Enabled=   0   'False
-      Tab(0).Control(20)=   "dtpFechaInicio"
-      Tab(0).Control(20).Enabled=   0   'False
-      Tab(0).Control(21)=   "tlb"
-      Tab(0).Control(21).Enabled=   0   'False
-      Tab(0).Control(22)=   "lswRemesas"
-      Tab(0).Control(22).Enabled=   0   'False
-      Tab(0).Control(23)=   "txtTotal"
-      Tab(0).Control(23).Enabled=   0   'False
-      Tab(0).Control(24)=   "txtEstado"
-      Tab(0).Control(24).Enabled=   0   'False
-      Tab(0).Control(25)=   "txtFecha"
-      Tab(0).Control(25).Enabled=   0   'False
-      Tab(0).Control(26)=   "txtUsuario"
-      Tab(0).Control(26).Enabled=   0   'False
-      Tab(0).Control(27)=   "txtRemesa"
-      Tab(0).Control(27).Enabled=   0   'False
-      Tab(0).Control(28)=   "txtNotas"
-      Tab(0).Control(28).Enabled=   0   'False
-      Tab(0).ControlCount=   29
+      Tab(0).ControlCount=   17
       TabCaption(1)   =   "Cargado"
       TabPicture(1)   =   "frmAF_CD_RemesasComites.frx":4BE5E
       Tab(1).ControlEnabled=   0   'False
@@ -166,17 +143,17 @@ Begin VB.Form frmAF_CD_RemesasComites
       TabCaption(2)   =   "Reportes"
       TabPicture(2)   =   "frmAF_CD_RemesasComites.frx":4BE7A
       Tab(2).ControlEnabled=   0   'False
-      Tab(2).Control(0)=   "lblRemesa"
+      Tab(2).Control(0)=   "Label16(4)"
       Tab(2).Control(1)=   "Label16(2)"
-      Tab(2).Control(2)=   "Label16(4)"
-      Tab(2).Control(3)=   "DTPRfecF"
-      Tab(2).Control(4)=   "DTPRFecI"
-      Tab(2).Control(5)=   "lswRep"
-      Tab(2).Control(6)=   "opt(1)"
-      Tab(2).Control(7)=   "opt(0)"
-      Tab(2).Control(8)=   "txtRepRemesas"
-      Tab(2).Control(9)=   "Frame1"
-      Tab(2).Control(10)=   "cmdReporte"
+      Tab(2).Control(2)=   "lblRemesa"
+      Tab(2).Control(3)=   "opt(1)"
+      Tab(2).Control(4)=   "opt(0)"
+      Tab(2).Control(5)=   "txtRepRemesas"
+      Tab(2).Control(6)=   "dtpRepCorte"
+      Tab(2).Control(7)=   "dtpRepInicio"
+      Tab(2).Control(8)=   "Frame1"
+      Tab(2).Control(9)=   "cmdReporte"
+      Tab(2).Control(10)=   "lswRep"
       Tab(2).ControlCount=   11
       TabCaption(3)   =   "Consultas"
       TabPicture(3)   =   "frmAF_CD_RemesasComites.frx":4BE96
@@ -184,16 +161,15 @@ Begin VB.Form frmAF_CD_RemesasComites
       Tab(3).Control(0)=   "Label16(3)"
       Tab(3).Control(1)=   "Line9(1)"
       Tab(3).Control(2)=   "Label5"
-      Tab(3).Control(3)=   "lblComite"
-      Tab(3).Control(4)=   "Label7"
-      Tab(3).Control(5)=   "Label8"
-      Tab(3).Control(6)=   "dtpConCorte"
-      Tab(3).Control(7)=   "dtpConInicio"
-      Tab(3).Control(8)=   "txtComite"
+      Tab(3).Control(3)=   "Label7"
+      Tab(3).Control(4)=   "Label8"
+      Tab(3).Control(5)=   "lblComite"
+      Tab(3).Control(6)=   "txtComite"
+      Tab(3).Control(7)=   "dtpConCorte"
+      Tab(3).Control(8)=   "dtpConInicio"
       Tab(3).Control(9)=   "lswRemCD"
-      Tab(3).Control(10)=   "Picture1"
-      Tab(3).Control(11)=   "PrgFecRem"
-      Tab(3).ControlCount=   12
+      Tab(3).Control(10)=   "PrgFecRem"
+      Tab(3).ControlCount=   11
       TabCaption(4)   =   "Enviar Remesas a Tesoreria"
       TabPicture(4)   =   "frmAF_CD_RemesasComites.frx":4BEB2
       Tab(4).ControlEnabled=   0   'False
@@ -207,13 +183,61 @@ Begin VB.Form frmAF_CD_RemesasComites
       Tab(4).Control(7)=   "PrgEnvio"
       Tab(4).Control(8)=   "lswOperaciones"
       Tab(4).ControlCount=   9
+      Begin XtremeSuiteControls.ListView lswRep 
+         Height          =   2055
+         Left            =   -74760
+         TabIndex        =   59
+         Top             =   840
+         Width           =   9735
+         _Version        =   1572864
+         _ExtentX        =   17171
+         _ExtentY        =   3625
+         _StockProps     =   77
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         View            =   3
+         FullRowSelect   =   -1  'True
+         Appearance      =   16
+         ShowBorder      =   0   'False
+      End
+      Begin XtremeSuiteControls.ListView lswRemesas 
+         Height          =   2175
+         Left            =   120
+         TabIndex        =   57
+         Top             =   3960
+         Width           =   9975
+         _Version        =   1572864
+         _ExtentX        =   17595
+         _ExtentY        =   3836
+         _StockProps     =   77
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         View            =   3
+         FullRowSelect   =   -1  'True
+         Appearance      =   16
+         ShowBorder      =   0   'False
+      End
       Begin XtremeSuiteControls.PushButton cmdReporte 
          Height          =   495
          Left            =   -66600
-         TabIndex        =   65
+         TabIndex        =   38
          Top             =   5640
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   873
          _StockProps     =   79
@@ -246,7 +270,7 @@ Begin VB.Form frmAF_CD_RemesasComites
          EndProperty
          Height          =   2175
          Left            =   -67800
-         TabIndex        =   55
+         TabIndex        =   28
          Top             =   3360
          Width           =   2775
          Begin VB.OptionButton optRemesaEstado 
@@ -265,7 +289,7 @@ Begin VB.Form frmAF_CD_RemesasComites
             Height          =   255
             Index           =   3
             Left            =   240
-            TabIndex        =   60
+            TabIndex        =   33
             Top             =   1440
             Width           =   2295
          End
@@ -285,7 +309,7 @@ Begin VB.Form frmAF_CD_RemesasComites
             Height          =   255
             Index           =   2
             Left            =   240
-            TabIndex        =   59
+            TabIndex        =   32
             Top             =   1080
             Width           =   2295
          End
@@ -305,7 +329,7 @@ Begin VB.Form frmAF_CD_RemesasComites
             Height          =   255
             Index           =   1
             Left            =   240
-            TabIndex        =   58
+            TabIndex        =   31
             Top             =   720
             Width           =   2295
          End
@@ -325,7 +349,7 @@ Begin VB.Form frmAF_CD_RemesasComites
             Height          =   255
             Index           =   0
             Left            =   240
-            TabIndex        =   57
+            TabIndex        =   30
             Top             =   360
             Value           =   -1  'True
             Width           =   2295
@@ -345,7 +369,7 @@ Begin VB.Form frmAF_CD_RemesasComites
             ForeColor       =   &H80000008&
             Height          =   255
             Left            =   720
-            TabIndex        =   56
+            TabIndex        =   29
             Top             =   1800
             Width           =   1695
          End
@@ -353,7 +377,7 @@ Begin VB.Form frmAF_CD_RemesasComites
       Begin MSComctlLib.ProgressBar PrgFecRem 
          Height          =   225
          Left            =   -72225
-         TabIndex        =   53
+         TabIndex        =   26
          Top             =   5625
          Width           =   7080
          _ExtentX        =   12488
@@ -361,23 +385,10 @@ Begin VB.Form frmAF_CD_RemesasComites
          _Version        =   393216
          Appearance      =   0
       End
-      Begin VB.PictureBox Picture1 
-         Appearance      =   0  'Flat
-         BackColor       =   &H80000005&
-         ForeColor       =   &H80000008&
-         Height          =   1410
-         Left            =   -73800
-         Picture         =   "frmAF_CD_RemesasComites.frx":4C5D5
-         ScaleHeight     =   1380
-         ScaleWidth      =   1350
-         TabIndex        =   52
-         Top             =   4200
-         Width           =   1380
-      End
       Begin MSComctlLib.ListView lswRemCD 
          Height          =   4050
          Left            =   -72240
-         TabIndex        =   51
+         TabIndex        =   25
          Top             =   1560
          Width           =   7080
          _ExtentX        =   12488
@@ -440,7 +451,7 @@ Begin VB.Form frmAF_CD_RemesasComites
       Begin MSComctlLib.ListView lswOperaciones 
          Height          =   1740
          Left            =   -74760
-         TabIndex        =   41
+         TabIndex        =   16
          Top             =   3180
          Width           =   9780
          _ExtentX        =   17251
@@ -509,7 +520,7 @@ Begin VB.Form frmAF_CD_RemesasComites
       Begin MSComctlLib.ProgressBar PrgEnvio 
          Height          =   135
          Left            =   -74760
-         TabIndex        =   44
+         TabIndex        =   19
          Top             =   4980
          Visible         =   0   'False
          Width           =   9795
@@ -535,29 +546,9 @@ Begin VB.Form frmAF_CD_RemesasComites
          Height          =   315
          Left            =   -67440
          Locked          =   -1  'True
-         TabIndex        =   37
+         TabIndex        =   13
          Top             =   5760
          Width           =   2535
-      End
-      Begin VB.TextBox txtNotas 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00C00000&
-         Height          =   675
-         Left            =   3120
-         MultiLine       =   -1  'True
-         ScrollBars      =   2  'Vertical
-         TabIndex        =   36
-         Top             =   3360
-         Width           =   6975
       End
       Begin VB.ComboBox cboBanco 
          BeginProperty Font 
@@ -573,7 +564,7 @@ Begin VB.Form frmAF_CD_RemesasComites
          Height          =   330
          Left            =   -71880
          Style           =   2  'Dropdown List
-         TabIndex        =   31
+         TabIndex        =   9
          Top             =   840
          Width           =   6975
       End
@@ -591,7 +582,7 @@ Begin VB.Form frmAF_CD_RemesasComites
          Height          =   330
          Left            =   -71880
          Style           =   2  'Dropdown List
-         TabIndex        =   26
+         TabIndex        =   4
          Top             =   480
          Width           =   6975
       End
@@ -611,241 +602,15 @@ Begin VB.Form frmAF_CD_RemesasComites
          ForeColor       =   &H00C00000&
          Height          =   210
          Left            =   -74880
-         TabIndex        =   25
+         TabIndex        =   3
          Top             =   1920
          Width           =   1455
       End
-      Begin VB.TextBox txtRemesa 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   3120
-         TabIndex        =   15
-         Top             =   450
-         Width           =   2655
-      End
-      Begin VB.TextBox txtUsuario 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00C00000&
-         Height          =   315
-         Left            =   3120
-         Locked          =   -1  'True
-         TabIndex        =   14
-         Top             =   1920
-         Width           =   2655
-      End
-      Begin VB.TextBox txtFecha 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00C00000&
-         Height          =   315
-         Left            =   3120
-         Locked          =   -1  'True
-         TabIndex        =   13
-         Top             =   2280
-         Width           =   2655
-      End
-      Begin VB.TextBox txtEstado 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00C00000&
-         Height          =   315
-         Left            =   3120
-         Locked          =   -1  'True
-         TabIndex        =   12
-         Top             =   2640
-         Width           =   2655
-      End
-      Begin VB.TextBox txtTotal 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00C00000&
-         Height          =   315
-         Left            =   3120
-         Locked          =   -1  'True
-         TabIndex        =   11
-         Top             =   3000
-         Width           =   2655
-      End
-      Begin VB.TextBox txtRepRemesas 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   -65640
-         TabIndex        =   7
-         Text            =   "15"
-         Top             =   3000
-         Width           =   615
-      End
-      Begin VB.OptionButton opt 
-         Appearance      =   0  'Flat
-         Caption         =   "Detalle de Remesa"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H80000008&
-         Height          =   255
-         Index           =   0
-         Left            =   -74640
-         TabIndex        =   6
-         Top             =   3480
-         Value           =   -1  'True
-         Width           =   2415
-      End
-      Begin VB.OptionButton opt 
-         Caption         =   "Detalle de Remesas por fechas"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   255
-         Index           =   1
-         Left            =   -74640
-         TabIndex        =   5
-         Top             =   3900
-         Visible         =   0   'False
-         Width           =   3015
-      End
-      Begin VB.TextBox txtComite 
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   -73665
-         TabIndex        =   3
-         Top             =   2220
-         Width           =   1230
-      End
-      Begin MSComctlLib.ListView lswRemesas 
-         Height          =   2055
-         Left            =   3120
-         TabIndex        =   16
-         Top             =   4080
-         Width           =   6735
-         _ExtentX        =   11880
-         _ExtentY        =   3625
-         View            =   3
-         LabelWrap       =   -1  'True
-         HideSelection   =   -1  'True
-         FullRowSelect   =   -1  'True
-         HotTracking     =   -1  'True
-         HoverSelection  =   -1  'True
-         _Version        =   393217
-         ForeColor       =   -2147483640
-         BackColor       =   -2147483643
-         BorderStyle     =   1
-         Appearance      =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Courier New"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         NumItems        =   6
-         BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            Text            =   "Remesa"
-            Object.Width           =   2187
-         EndProperty
-         BeginProperty ColumnHeader(2) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   1
-            Text            =   "Usuario"
-            Object.Width           =   4304
-         EndProperty
-         BeginProperty ColumnHeader(3) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   2
-            Text            =   "Fecha"
-            Object.Width           =   5715
-         EndProperty
-         BeginProperty ColumnHeader(4) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   3
-            Text            =   "Inicio"
-            Object.Width           =   2540
-         EndProperty
-         BeginProperty ColumnHeader(5) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   4
-            Text            =   "Corte"
-            Object.Width           =   2540
-         EndProperty
-         BeginProperty ColumnHeader(6) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   5
-            Text            =   "Notas"
-            Object.Width           =   2540
-         EndProperty
-      End
       Begin MSComctlLib.Toolbar tlb 
          Height          =   330
-         Left            =   6000
-         TabIndex        =   17
-         Top             =   960
+         Left            =   4800
+         TabIndex        =   2
+         Top             =   600
          Width           =   1905
          _ExtentX        =   3360
          _ExtentY        =   582
@@ -876,7 +641,7 @@ Begin VB.Form frmAF_CD_RemesasComites
       Begin MSComctlLib.ListView lswCarga 
          Height          =   3510
          Left            =   -74880
-         TabIndex        =   27
+         TabIndex        =   5
          Top             =   2145
          Width           =   9975
          _ExtentX        =   17595
@@ -952,7 +717,7 @@ Begin VB.Form frmAF_CD_RemesasComites
       Begin MSComctlLib.Toolbar tlbCarga 
          Height          =   570
          Left            =   -71895
-         TabIndex        =   28
+         TabIndex        =   6
          Top             =   1200
          Width           =   5835
          _ExtentX        =   10292
@@ -992,68 +757,10 @@ Begin VB.Form frmAF_CD_RemesasComites
             EndProperty
          EndProperty
       End
-      Begin MSComctlLib.ListView lswRep 
-         Height          =   2175
-         Left            =   -74760
-         TabIndex        =   39
-         Top             =   720
-         Width           =   9735
-         _ExtentX        =   17171
-         _ExtentY        =   3836
-         View            =   3
-         LabelWrap       =   -1  'True
-         HideSelection   =   -1  'True
-         FullRowSelect   =   -1  'True
-         HotTracking     =   -1  'True
-         HoverSelection  =   -1  'True
-         _Version        =   393217
-         ForeColor       =   -2147483640
-         BackColor       =   -2147483643
-         Appearance      =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Courier New"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         NumItems        =   6
-         BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            Text            =   "Remesa"
-            Object.Width           =   2187
-         EndProperty
-         BeginProperty ColumnHeader(2) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   1
-            Text            =   "Usuario"
-            Object.Width           =   4304
-         EndProperty
-         BeginProperty ColumnHeader(3) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   2
-            Text            =   "Fecha"
-            Object.Width           =   5715
-         EndProperty
-         BeginProperty ColumnHeader(4) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   3
-            Text            =   "Inicio"
-            Object.Width           =   2540
-         EndProperty
-         BeginProperty ColumnHeader(5) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   4
-            Text            =   "Corte"
-            Object.Width           =   2540
-         EndProperty
-         BeginProperty ColumnHeader(6) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   5
-            Text            =   "Notas"
-            Object.Width           =   2540
-         EndProperty
-      End
       Begin MSComctlLib.ListView lswRegistroR 
          Height          =   1995
          Left            =   -74760
-         TabIndex        =   43
+         TabIndex        =   18
          ToolTipText     =   "Si desea ver las operaciones de la remesa precione doble click derecho"
          Top             =   840
          Width           =   9765
@@ -1120,11 +827,11 @@ Begin VB.Form frmAF_CD_RemesasComites
       End
       Begin XtremeSuiteControls.DateTimePicker dtpFechaInicio 
          Height          =   330
-         Left            =   3120
-         TabIndex        =   61
-         Top             =   1560
+         Left            =   1800
+         TabIndex        =   34
+         Top             =   1320
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -1142,11 +849,11 @@ Begin VB.Form frmAF_CD_RemesasComites
       End
       Begin XtremeSuiteControls.DateTimePicker dtpFechaCorte 
          Height          =   330
-         Left            =   4440
-         TabIndex        =   62
-         Top             =   1560
+         Left            =   3120
+         TabIndex        =   35
+         Top             =   1320
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -1162,13 +869,13 @@ Begin VB.Form frmAF_CD_RemesasComites
          CustomFormat    =   "dd/MM/yyyy"
          Format          =   3
       End
-      Begin XtremeSuiteControls.DateTimePicker DTPRFecI 
+      Begin XtremeSuiteControls.DateTimePicker dtpRepInicio 
          Height          =   330
-         Left            =   -74280
-         TabIndex        =   63
-         Top             =   4440
+         Left            =   -74160
+         TabIndex        =   36
+         Top             =   4320
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -1184,13 +891,13 @@ Begin VB.Form frmAF_CD_RemesasComites
          CustomFormat    =   "dd/MM/yyyy"
          Format          =   3
       End
-      Begin XtremeSuiteControls.DateTimePicker DTPRfecF 
+      Begin XtremeSuiteControls.DateTimePicker dtpRepCorte 
          Height          =   330
-         Left            =   -72960
-         TabIndex        =   64
-         Top             =   4440
+         Left            =   -72840
+         TabIndex        =   37
+         Top             =   4320
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -1209,10 +916,10 @@ Begin VB.Form frmAF_CD_RemesasComites
       Begin XtremeSuiteControls.DateTimePicker dtpConInicio 
          Height          =   330
          Left            =   -73680
-         TabIndex        =   66
+         TabIndex        =   39
          Top             =   1440
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -1231,10 +938,10 @@ Begin VB.Form frmAF_CD_RemesasComites
       Begin XtremeSuiteControls.DateTimePicker dtpConCorte 
          Height          =   330
          Left            =   -73680
-         TabIndex        =   67
+         TabIndex        =   40
          Top             =   1800
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -1253,10 +960,10 @@ Begin VB.Form frmAF_CD_RemesasComites
       Begin XtremeSuiteControls.PushButton cmdAplicar 
          Height          =   495
          Left            =   -66600
-         TabIndex        =   68
+         TabIndex        =   41
          Top             =   5520
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   873
          _StockProps     =   79
@@ -1273,12 +980,21 @@ Begin VB.Form frmAF_CD_RemesasComites
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmAF_CD_RemesasComites.frx":4CC83
+         Picture         =   "frmAF_CD_RemesasComites.frx":4C5D5
          ImageAlignment  =   4
       End
-      Begin VB.Label Label6 
-         Caption         =   "Operaciones de Remesa"
-         BeginProperty Font 
+      Begin XtremeSuiteControls.FlatEdit txtNotas 
+         Height          =   615
+         Left            =   1800
+         TabIndex        =   42
+         Top             =   2880
+         Width           =   8055
+         _Version        =   1572864
+         _ExtentX        =   14208
+         _ExtentY        =   1085
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
             Charset         =   0
@@ -1287,9 +1003,501 @@ Begin VB.Form frmAF_CD_RemesasComites
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
+         MultiLine       =   -1  'True
+         ScrollBars      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtRemesa 
+         Height          =   435
+         Left            =   1800
+         TabIndex        =   44
+         Top             =   600
+         Width           =   2655
+         _Version        =   1572864
+         _ExtentX        =   4683
+         _ExtentY        =   767
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   12
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtFecha 
+         Height          =   330
+         Left            =   1800
+         TabIndex        =   49
+         Top             =   2040
+         Width           =   2655
+         _Version        =   1572864
+         _ExtentX        =   4683
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtEstado 
+         Height          =   330
+         Left            =   1800
+         TabIndex        =   50
+         Top             =   1680
+         Width           =   2655
+         _Version        =   1572864
+         _ExtentX        =   4683
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtUsuario 
+         Height          =   330
+         Left            =   4440
+         TabIndex        =   51
+         Top             =   2040
+         Width           =   2655
+         _Version        =   1572864
+         _ExtentX        =   4683
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtTotal 
+         Height          =   330
+         Left            =   1800
+         TabIndex        =   56
+         Top             =   2520
+         Width           =   2655
+         _Version        =   1572864
+         _ExtentX        =   4683
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtRepRemesas 
+         Height          =   330
+         Left            =   -65880
+         TabIndex        =   60
+         Top             =   3000
+         Width           =   855
+         _Version        =   1572864
+         _ExtentX        =   1508
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Text            =   "15"
+         Alignment       =   2
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.RadioButton opt 
+         Height          =   255
+         Index           =   0
+         Left            =   -74640
+         TabIndex        =   64
+         Top             =   3480
+         Width           =   3855
+         _Version        =   1572864
+         _ExtentX        =   6800
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "Detalle de Remesa"
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Appearance      =   16
+         Value           =   -1  'True
+      End
+      Begin XtremeSuiteControls.RadioButton opt 
+         Height          =   255
+         Index           =   1
+         Left            =   -74640
+         TabIndex        =   43
+         Top             =   3840
+         Width           =   3855
+         _Version        =   1572864
+         _ExtentX        =   6800
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "Remesa por Fecha"
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Appearance      =   16
+      End
+      Begin XtremeSuiteControls.FlatEdit txtComite 
+         Height          =   435
+         Left            =   -73680
+         TabIndex        =   45
+         Top             =   2160
+         Width           =   1335
+         _Version        =   1572864
+         _ExtentX        =   2355
+         _ExtentY        =   767
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   12
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeShortcutBar.ShortcutCaption lblComite 
+         Height          =   375
+         Left            =   -72240
+         TabIndex        =   48
+         Top             =   1200
+         Width           =   7095
+         _Version        =   1572864
+         _ExtentX        =   12515
+         _ExtentY        =   661
+         _StockProps     =   14
+         Caption         =   "Comité"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         SubItemCaption  =   -1  'True
+      End
+      Begin VB.Label lblRemesa 
+         Alignment       =   2  'Center
+         Appearance      =   0  'Flat
+         BackColor       =   &H00FFC0C0&
+         BeginProperty Font 
+            Name            =   "Arial Narrow"
+            Size            =   7.5
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FF0000&
+         Height          =   330
+         Left            =   -74760
+         TabIndex        =   63
+         Top             =   3000
+         Width           =   5175
+      End
+      Begin VB.Label Label16 
+         Alignment       =   2  'Center
+         Appearance      =   0  'Flat
+         BackColor       =   &H00FFC0C0&
+         Caption         =   "Seleccione la Remesa que Desea Visualizar"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00000000&
+         Height          =   330
+         Index           =   2
+         Left            =   -74760
+         TabIndex        =   62
+         Top             =   480
+         Width           =   9735
+      End
+      Begin VB.Label Label16 
+         Appearance      =   0  'Flat
+         BackColor       =   &H00FFC0C0&
+         Caption         =   "Remesas - visualizar últimas"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00000000&
+         Height          =   330
+         Index           =   4
+         Left            =   -69600
+         TabIndex        =   61
+         Top             =   3000
+         Width           =   3735
+      End
+      Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption1 
+         Height          =   375
+         Left            =   120
+         TabIndex        =   58
+         Top             =   3600
+         Width           =   9975
+         _Version        =   1572864
+         _ExtentX        =   17595
+         _ExtentY        =   661
+         _StockProps     =   14
+         Caption         =   "Lista de Remesas:"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         SubItemCaption  =   -1  'True
+      End
+      Begin XtremeSuiteControls.Label Labe9 
+         Height          =   255
+         Index           =   5
+         Left            =   360
+         TabIndex        =   55
+         Top             =   2880
+         Width           =   1215
+         _Version        =   1572864
+         _ExtentX        =   2143
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "Notas:"
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+      End
+      Begin XtremeSuiteControls.Label Labe9 
+         Height          =   255
+         Index           =   4
+         Left            =   360
+         TabIndex        =   54
+         Top             =   2520
+         Width           =   1215
+         _Version        =   1572864
+         _ExtentX        =   2143
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "Total:"
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+      End
+      Begin XtremeSuiteControls.Label Labe9 
+         Height          =   255
+         Index           =   3
+         Left            =   360
+         TabIndex        =   53
+         Top             =   2040
+         Width           =   1215
+         _Version        =   1572864
+         _ExtentX        =   2143
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "Registro:"
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+      End
+      Begin XtremeSuiteControls.Label Labe9 
+         Height          =   255
+         Index           =   2
+         Left            =   360
+         TabIndex        =   52
+         Top             =   1680
+         Width           =   1215
+         _Version        =   1572864
+         _ExtentX        =   2143
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "Estado:"
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+      End
+      Begin XtremeSuiteControls.Label Labe9 
+         Height          =   255
+         Index           =   1
+         Left            =   360
+         TabIndex        =   47
+         Top             =   1320
+         Width           =   1215
+         _Version        =   1572864
+         _ExtentX        =   2143
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "Fechas:"
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+      End
+      Begin XtremeSuiteControls.Label Labe9 
+         Height          =   375
+         Index           =   0
+         Left            =   360
+         TabIndex        =   46
+         Top             =   600
+         Width           =   1215
+         _Version        =   1572864
+         _ExtentX        =   2138
+         _ExtentY        =   656
+         _StockProps     =   79
+         Caption         =   "Remesa Id:"
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+      End
+      Begin VB.Label Label6 
+         Caption         =   "Operaciones de Remesa"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
          Height          =   255
          Left            =   -74760
-         TabIndex        =   54
+         TabIndex        =   27
          Top             =   2955
          Width           =   2655
       End
@@ -1307,7 +1515,7 @@ Begin VB.Form frmAF_CD_RemesasComites
          EndProperty
          Height          =   180
          Left            =   -74805
-         TabIndex        =   50
+         TabIndex        =   24
          Top             =   1800
          Width           =   510
       End
@@ -1325,31 +1533,9 @@ Begin VB.Form frmAF_CD_RemesasComites
          EndProperty
          Height          =   285
          Left            =   -74805
-         TabIndex        =   49
+         TabIndex        =   23
          Top             =   1350
          Width           =   810
-      End
-      Begin VB.Label lblComite 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H80000005&
-         BackStyle       =   0  'Transparent
-         BorderStyle     =   1  'Fixed Single
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H80000008&
-         Height          =   315
-         Left            =   -72240
-         TabIndex        =   48
-         Top             =   1320
-         Width           =   7080
       End
       Begin VB.Label Label5 
          BackStyle       =   0  'Transparent
@@ -1365,7 +1551,7 @@ Begin VB.Form frmAF_CD_RemesasComites
          EndProperty
          Height          =   225
          Left            =   -74805
-         TabIndex        =   47
+         TabIndex        =   22
          Top             =   2265
          Width           =   1080
       End
@@ -1376,7 +1562,7 @@ Begin VB.Form frmAF_CD_RemesasComites
          ForeColor       =   &H000000C0&
          Height          =   255
          Left            =   -72675
-         TabIndex        =   46
+         TabIndex        =   21
          Top             =   5265
          Visible         =   0   'False
          Width           =   225
@@ -1394,7 +1580,7 @@ Begin VB.Form frmAF_CD_RemesasComites
          EndProperty
          Height          =   180
          Left            =   -74760
-         TabIndex        =   45
+         TabIndex        =   20
          Top             =   5265
          Visible         =   0   'False
          Width           =   1800
@@ -1402,22 +1588,21 @@ Begin VB.Form frmAF_CD_RemesasComites
       Begin VB.Label LblReme 
          Alignment       =   2  'Center
          Appearance      =   0  'Flat
-         BackColor       =   &H80000005&
-         BorderStyle     =   1  'Fixed Single
+         BackColor       =   &H00FFFFC0&
          BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
-            Weight          =   400
+            Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H80000008&
-         Height          =   255
+         Height          =   330
          Left            =   -72660
-         TabIndex        =   42
-         Top             =   555
+         TabIndex        =   17
+         Top             =   435
          Visible         =   0   'False
          Width           =   1035
       End
@@ -1427,15 +1612,15 @@ Begin VB.Form frmAF_CD_RemesasComites
             Name            =   "Calibri"
             Size            =   9
             Charset         =   0
-            Weight          =   400
+            Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
          Height          =   255
          Left            =   -74775
-         TabIndex        =   40
-         Top             =   570
+         TabIndex        =   15
+         Top             =   450
          Width           =   1860
       End
       Begin VB.Label Label3 
@@ -1451,17 +1636,9 @@ Begin VB.Form frmAF_CD_RemesasComites
          EndProperty
          Height          =   255
          Left            =   -68280
-         TabIndex        =   38
+         TabIndex        =   14
          Top             =   5760
          Width           =   855
-      End
-      Begin VB.Line Line1 
-         BorderColor     =   &H00FFFFFF&
-         Index           =   10
-         X1              =   120
-         X2              =   3000
-         Y1              =   3600
-         Y2              =   3600
       End
       Begin VB.Line Line1 
          BorderColor     =   &H00FFFFFF&
@@ -1497,135 +1674,9 @@ Begin VB.Form frmAF_CD_RemesasComites
          Height          =   255
          Index           =   7
          Left            =   -74880
-         TabIndex        =   29
+         TabIndex        =   7
          Top             =   1905
          Width           =   9975
-      End
-      Begin VB.Line Line2 
-         BorderColor     =   &H00FFFFFF&
-         X1              =   0
-         X2              =   9840
-         Y1              =   840
-         Y2              =   840
-      End
-      Begin VB.Line Line1 
-         BorderColor     =   &H00FFFFFF&
-         Index           =   7
-         X1              =   120
-         X2              =   3000
-         Y1              =   1500
-         Y2              =   1500
-      End
-      Begin VB.Line Line1 
-         BorderColor     =   &H00FFFFFF&
-         Index           =   6
-         X1              =   120
-         X2              =   3000
-         Y1              =   4320
-         Y2              =   4320
-      End
-      Begin VB.Line Line1 
-         BorderColor     =   &H00FFFFFF&
-         Index           =   0
-         X1              =   120
-         X2              =   3000
-         Y1              =   720
-         Y2              =   720
-      End
-      Begin VB.Line Line1 
-         BorderColor     =   &H00FFFFFF&
-         Index           =   2
-         X1              =   120
-         X2              =   3000
-         Y1              =   2160
-         Y2              =   2160
-      End
-      Begin VB.Line Line1 
-         BorderColor     =   &H00FFFFFF&
-         Index           =   3
-         X1              =   120
-         X2              =   3000
-         Y1              =   2520
-         Y2              =   2520
-      End
-      Begin VB.Line Line1 
-         BorderColor     =   &H00FFFFFF&
-         Index           =   4
-         X1              =   120
-         X2              =   3000
-         Y1              =   2880
-         Y2              =   2880
-      End
-      Begin VB.Line Line1 
-         BorderColor     =   &H00FFFFFF&
-         Index           =   5
-         X1              =   120
-         X2              =   3000
-         Y1              =   3240
-         Y2              =   3240
-      End
-      Begin VB.Label Label16 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         Caption         =   "Remesas - visualizar últimas"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00000000&
-         Height          =   300
-         Index           =   4
-         Left            =   -69960
-         TabIndex        =   10
-         Top             =   3000
-         Width           =   4935
-      End
-      Begin VB.Label Label16 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         Caption         =   "Seleccione la Remesa que Desea Visualizar"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00000000&
-         Height          =   300
-         Index           =   2
-         Left            =   -74760
-         TabIndex        =   9
-         Top             =   480
-         Width           =   9735
-      End
-      Begin VB.Label lblRemesa 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00FF0000&
-         Height          =   300
-         Left            =   -74760
-         TabIndex        =   8
-         Top             =   3000
-         Width           =   5295
       End
       Begin VB.Line Line9 
          BorderColor     =   &H00FFFFFF&
@@ -1634,52 +1685,6 @@ Begin VB.Form frmAF_CD_RemesasComites
          X2              =   -65160
          Y1              =   765
          Y2              =   765
-      End
-      Begin VB.Label Label1 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BorderStyle     =   1  'Fixed Single
-         Caption         =   "Corte"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00FF0000&
-         Height          =   315
-         Index           =   6
-         Left            =   4440
-         TabIndex        =   2
-         Top             =   1230
-         Width           =   1335
-      End
-      Begin VB.Label Label1 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BorderStyle     =   1  'Fixed Single
-         Caption         =   "Inicio"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00FF0000&
-         Height          =   315
-         Index           =   5
-         Left            =   3120
-         TabIndex        =   1
-         Top             =   1230
-         Width           =   1335
       End
       Begin VB.Label Label16 
          BackColor       =   &H00E0E0E0&
@@ -1697,156 +1702,9 @@ Begin VB.Form frmAF_CD_RemesasComites
          Height          =   300
          Index           =   3
          Left            =   -74880
-         TabIndex        =   4
+         TabIndex        =   1
          Top             =   480
          Width           =   3975
-      End
-      Begin VB.Label Label2 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         Caption         =   "Lista de Remesas"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H80000008&
-         Height          =   255
-         Index           =   0
-         Left            =   120
-         TabIndex        =   23
-         Top             =   4080
-         Width           =   2895
-      End
-      Begin VB.Label Label2 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         Caption         =   "Total"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H80000008&
-         Height          =   255
-         Index           =   5
-         Left            =   120
-         TabIndex        =   18
-         Top             =   3000
-         Width           =   2895
-      End
-      Begin VB.Label Label2 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         Caption         =   "Estado"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H80000008&
-         Height          =   255
-         Index           =   4
-         Left            =   120
-         TabIndex        =   19
-         Top             =   2640
-         Width           =   2895
-      End
-      Begin VB.Label Label2 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         Caption         =   "Fecha"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H80000008&
-         Height          =   255
-         Index           =   3
-         Left            =   120
-         TabIndex        =   20
-         Top             =   2280
-         Width           =   2895
-      End
-      Begin VB.Label Label2 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         Caption         =   "Usuario"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H80000008&
-         Height          =   255
-         Index           =   2
-         Left            =   120
-         TabIndex        =   21
-         Top             =   1920
-         Width           =   2895
-      End
-      Begin VB.Label Label2 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         Caption         =   "Fechas"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H80000008&
-         Height          =   255
-         Index           =   6
-         Left            =   120
-         TabIndex        =   24
-         Top             =   1245
-         Width           =   2895
-      End
-      Begin VB.Label Label2 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         Caption         =   "Remesa"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H80000008&
-         Height          =   255
-         Index           =   1
-         Left            =   120
-         TabIndex        =   22
-         Top             =   480
-         Width           =   2895
       End
       Begin VB.Label Label2 
          Appearance      =   0  'Flat
@@ -1865,7 +1723,7 @@ Begin VB.Form frmAF_CD_RemesasComites
          Height          =   255
          Index           =   8
          Left            =   -74880
-         TabIndex        =   30
+         TabIndex        =   8
          Top             =   480
          Width           =   2895
       End
@@ -1886,29 +1744,8 @@ Begin VB.Form frmAF_CD_RemesasComites
          Height          =   255
          Index           =   10
          Left            =   -74880
-         TabIndex        =   32
+         TabIndex        =   10
          Top             =   840
-         Width           =   2895
-      End
-      Begin VB.Label Label2 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         Caption         =   "Notas"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H80000008&
-         Height          =   255
-         Index           =   9
-         Left            =   120
-         TabIndex        =   35
-         Top             =   3360
          Width           =   2895
       End
    End
@@ -1928,7 +1765,7 @@ Begin VB.Form frmAF_CD_RemesasComites
       Height          =   420
       Index           =   0
       Left            =   1080
-      TabIndex        =   34
+      TabIndex        =   12
       Top             =   240
       Width           =   4005
    End
@@ -2165,18 +2002,35 @@ txtCargaTotal.Text = Format(curTotal, "Standard")
 
 End Sub
 
+
+
+Private Function fxCreaToquen() As String
+Dim strSQL As String, rs As New ADODB.Recordset
+Dim strToken As String
+
+strToken = Format(fxFechaServidor, "yyyy.mm.dd")
+
+
+strSQL = "select  isnull(COUNT(id_token),0)+ 1 as 'consec'  from tes_tokens where id_token like('" & strToken & "%')"
+Call OpenRecordSet(rs, strSQL)
+
+strToken = strToken & "." & rs!Consec
+
+rs.Close
+
+strSQL = "insert tes_tokens(id_token,registro_fecha,registro_usuario,estado)" _
+      & "values('" & strToken & "',dbo.MyGetdate(),'" & glogon.Usuario & "','A') "
+Call ConectionExecute(strSQL)
+
+fxCreaToquen = strToken
+
+End Function
+
+
+
 Private Sub cmdAplicar_Click()
-Dim lngSolicitud As Long, i As Integer, vRemesa As Integer
-Dim vTipoDocumento As String, vCuenta As String
-Dim vCuentaPuente As String, vFecha As Date
-
-
-
-' Campos de la función de Tesoreria Maestro
-' 1-Tipo Cheque o Tipo Transferencia,2-Banco,3-Monto,
-' 4-Cedula,5-Beneficiario,6-Detalle origen quien lo realiza,7-Referencia que se paga
-' 8-CuentaBanco,9-Fecha dia que se manda la transferencia,
-' 10-Unidad entra como OC,11-Concepto por que se paga
+Dim i As Long, vRemesa As Long
+Dim vToken As String
 
 LblRotuloR.Visible = True
 Lbl_NRem.Visible = True
@@ -2187,95 +2041,31 @@ PrgEnvio.Visible = True
    Exit Sub
  End If
 
+vToken = ""
 
 On Error GoTo vError
  
  
-vCuentaPuente = fxCDParametros("03")
-vFecha = fxFechaServidor
+strSQL = "select top 1 id_token from tes_tokens where estado = 'A' order by registro_fecha "
+Call OpenRecordSet(rs, strSQL)
+If Not rs.EOF Then
+  vToken = rs!ID_TOKEN
+Else
+  vToken = fxCreaToquen
+End If
+rs.Close
+ 
 
 For i = 1 To lswRegistroR.ListItems.Count
     
   If lswRegistroR.ListItems.Item(i).Checked Then
     
     vRemesa = lswRegistroR.ListItems.Item(i)
-          
-          
-'     strSQL = "select C.NOperacion,C.tipo,C.id_banco,A.monto,C.cedula,S.nombre,C.cuenta,J.cod_actividad,J.cod_cuenta,J.descripcion as 'Actividad'" _
-'            & ",B.CTACONTA as 'BancoCtaConta',C.cod_Comite" _
-'            & " from afi_cd_cuentas C left join afi_cd_cuentas_actividades A on C.noperacion = A.noperacion" _
-'            & " inner join afi_cd_actividades J on A.Cod_actividad = J.Cod_Actividad" _
-'            & " inner join Socios S on C.cedula = S.cedula" _
-'            & " inner join Tes_Bancos B on C.id_Banco = B.id_Banco" _
-'            & " Where C.cod_remesa = " & vRemesa
-            
-     strSQL = "select C.NOperacion,C.tipo,C.id_banco,C.monto,C.cedula,S.nombre,C.cuenta" _
-            & ",B.CTACONTA as 'BancoCtaConta',C.cod_Comite" _
-            & " from afi_cd_cuentas C " _
-            & " inner join Socios S on C.cedula = S.cedula" _
-            & " inner join Tes_Bancos B on C.id_Banco = B.id_Banco" _
-            & " Where C.cod_remesa = " & vRemesa
-     Call OpenRecordSet(rs, strSQL)
-         
-     Do While Not rs.EOF
-        
-        PrgEnvio.Max = rs.RecordCount + 1
-        Lbl_NRem.Caption = vRemesa
-        PrgEnvio.Value = PrgEnvio + 1
-       
-        Select Case True
-            Case rs!Tipo = "T"
-              vTipoDocumento = "TE"
-            Case rs!Tipo = "C"
-              vTipoDocumento = "CK"
-        End Select
-       
-        vCuenta = Trim(rs!Cuenta)
-        
-        If vCuenta = "" Then vCuenta = 0
-    
-       'Tranferencia Solicitud de tesoreria
-''       lngSolicitud = fxgTesoreriaMaestro(vTipoDocumento, rs!ID_BANCO, rs!Monto, rs!Cedula, rs!Nombre, 0, "COMITES Y DELEGADOS", 0, Trim(rs!cod_comite) _
-''                      , vCuenta, vFecha, GLOBALES.gOficinaUnidad, , "Op.: " & rs!Noperacion, "Comité.: " & Trim(rs!cod_comite), "Act.: GEN")
-    
-       'ASIENTOS -- PROCESO DE BALANCE PARA CONTABILIDAD
-       'Campos de la funcion Tesorería Detalle
-       '1-Funcion Tesoreria Maestro,2-Cuenta Banco,3-Monto
-       
-       
-        'Cuenta Banco
-'        Call sbgTesoreriaDetalle(lngSolicitud, rs!BancoCtaConta, rs!Monto, "H", 1, GLOBALES.gOficinaUnidad)
-'
-'        'Cuenta Puente
-'        Call sbgTesoreriaDetalle(lngSolicitud, vCuentaPuente, rs!Monto, "D", 2, GLOBALES.gOficinaUnidad)
-              
-      
-        'Carga las fechas del envio a tesoreria en afi_cd_cuentas
-        'Estado cambia Tranferido = T
-       
-        strSQL = "update afi_cd_cuentas set tesoreria_fecha = getdate()" _
-                & ",tesoreria_usuario = '" & glogon.Usuario & "' ,tesoreria_nsolicitud = " & lngSolicitud _
-                & ",estado = 'T' where noperacion = " & rs!Noperacion
-        Call ConectionExecute(strSQL)
-      
-       'Carga el detalle de las remesas Afi_cd_remesas_tes_detalle
-    
-        strSQL = "insert afi_cd_remesas_tes_detalle(cod_remesa,monto,nsolicitud,id_banco,cuenta_ahorro,tipo,noperacion)" _
-               & " values(" & vRemesa & "," & rs!Monto & "," & lngSolicitud & ",'" & rs!ID_BANCO & "'," _
-               & "'" & Trim(vCuenta) & "','" & vTipoDocumento & "'," & rs!Noperacion & ")"
-        Call ConectionExecute(strSQL)
-        
-        rs.MoveNext
-    
-    Loop
-    rs.Close
-       
-    'Cambia estado en afi_cd_remesas_tes
-    'Estado cambia Tranferido = T
-      
-    strSQL = "update afi_cd_remesas_tes set estado = 'T' where cod_remesa = " & vRemesa & ""
+    Lbl_NRem.Caption = vRemesa
+
+    strSQL = "exec spAFI_CD_Remesa_Desembolso " & vRemesa & ", '" & vToken & "', '" & glogon.Usuario & "'"
     Call ConectionExecute(strSQL)
-      
+          
     End If 'lswRegistroR.ListItems.Item(i).Checked
 
 Next i 'For i = 1 To lswRegistroR.ListItems.Count
@@ -2286,7 +2076,6 @@ PrgEnvio.Visible = False
 lswOperaciones.ListItems.Clear
 
 MsgBox "Envío de Remesas a Tesorería realizado satisfactoriamente!", vbInformation, "Información"
-
 
 LblRotuloR.Visible = False
 Lbl_NRem.Visible = False
@@ -2346,18 +2135,16 @@ Select Case True
   Case opt.Item(0).Value 'Detalle Remesa
      .ReportFileName = SIFGlobal.fxPathReportes("Comites_Remesas.rpt")
      .SelectionFormula = "{afi_cd_remesas_tes_detalle.cod_remesa} = " & lblRemesa.Tag & ""
-'  Case opt.Item(1).Value 'Detalle Remesa por fechas
-'     .ReportFileName = App.Path & "\comitesd\Reportes\Afi_cd_RemesasCDAgrupado1.rpt"
-'     vSubTitulo = "REMESA : " & lblRemesa.Tag & " LISTADO : REMESAS POR FECHAS"
-'     strSQL = strSQL & "cdate({AFI_CD_REMESAS_TES.FECHA_INICIO}) >=  " & Format(xx.Value, "yyyy,mm,dd") & " and "
-'     strSQL = strSQL & "cdate({AFI_CD_REMESAS_TES.FECHA_CORTE}) <= " & Format(xc.Value, "yyyy,mm,dd") & ""
-'          MsgBox strSQL
-'      strSQL = strSQL & "cdate({AFI_CD_REMESAS_TES.FECHA_INICIO}) in Date(" & Format(xx, "yyyy,mm,dd")
-'      strSQL = strSQL & ") to Date (" & Format(xc.Value, "yyyy,mm,dd") & ")"
-'      .SelectionFormula = strSQL
+  Case opt.Item(1).Value 'Detalle Remesa por fechas
+     .ReportFileName = SIFGlobal.fxPathReportes("Comites_Remesas.rpt")
+     vSubTitulo = "REMESA : " & lblRemesa.Tag & " LISTADO : REMESAS POR FECHAS (" _
+                & Format(dtpRepInicio.Value, "dd/mm/yyyy") & " -> " & Format(dtpRepCorte.Value, "dd/mm/yyyy")
+        
+     strSQL = strSQL & "cdate({AFI_CD_REMESAS_TES.FECHA_INICIO}) in Date(" & Format(dtpRepInicio.Value, "yyyy,mm,dd")
+     strSQL = strSQL & ") to Date (" & Format(dtpRepCorte.Value, "yyyy,mm,dd") & ")"
+      .SelectionFormula = strSQL
          
-'         .Formulas(4) = "fxfecInicio = '" & Format(DtpIniR.Value, "dd/mm/yyyy") & "'"
-'         .Formulas(5) = "fxfecfinal = '" & Format(DtpFinR.Value, "dd/mm/yyyy") & "'"
+
 
  End Select
  
@@ -2366,8 +2153,6 @@ Select Case True
  .Formulas(2) = "fxUsuario='Usuario: " & glogon.Usuario & "'"
  .Formulas(3) = "fxTitulo='REMESA DE COMITES Y DELEGADOS: PAGO DE ACTIVIDADES'"
  .Formulas(4) = "fxSubTitulo='" & vSubTitulo & "'"
- '.Formulas(5) = "fxNoRemesa='" & lblRemesa.Tag & "'"
- '.SelectionFormula = "{afi_cd_cuentas.remesa} = " & lblRemesa.Tag & ""
  
  .Action = 1
 
@@ -2546,6 +2331,36 @@ Private Sub Form_Load()
  Set imgBanner.Picture = frmContenedor.imgBanner_01.Picture
  
  ssTab.Tab = 0
+ 
+ dtpRepCorte.Value = fxFechaServidor
+ dtpRepInicio.Value = DateAdd("d", -30, dtpRepCorte.Value)
+ 
+ dtpConCorte.Value = dtpRepCorte.Value
+ dtpConInicio.Value = dtpRepInicio.Value
+ 
+  With lswRemesas.ColumnHeaders
+    .Clear
+    .Add , , "Remesa Id", 1400
+    .Add , , "Usuario", 1800
+    .Add , , "Fecha", 2100
+    .Add , , "Estado", 1400
+    .Add , , "Inicio", 1400
+    .Add , , "Corte", 1400
+    .Add , , "Notas", 3400
+ End With
+ 
+  
+ With lswRep.ColumnHeaders
+    .Clear
+    .Add , , "Remesa Id", 1400
+    .Add , , "Usuario", 1800
+    .Add , , "Fecha", 2100
+    .Add , , "Inicio", 1400
+    .Add , , "Corte", 1400
+    .Add , , "Notas", 3400
+ End With
+
+ 
  Call sbToolBarIconos(tlb, False)
  
  Call Formularios(Me)
@@ -2571,7 +2386,7 @@ Call OpenRecordSet(rs, strSQL)
 
 If Not rs.BOF And Not rs.EOF Then
   txtRemesa.Text = rs!cod_remesa
-  TxtUsuario.Text = rs!Usuario
+  txtUsuario.Text = rs!Usuario
   txtFecha.Text = rs!Fecha
   
   
@@ -2713,18 +2528,29 @@ Select Case KeyAscii
 End Select
 End Sub
 
-Private Sub lswRemesas_Click()
- If lswRemesas.ListItems.Count <= 0 Then Exit Sub
-  Call sbConsulta(lswRemesas.SelectedItem, False)
+Private Sub lswRemesas_ColumnClick(ByVal ColumnHeader As XtremeSuiteControls.ListViewColumnHeader)
+ lswRemesas.SortKey = ColumnHeader.Index - 1
+  If lswRemesas.SortOrder = 0 Then lswRemesas.SortOrder = 1 Else lswRemesas.SortOrder = 0
+  lswRemesas.Sorted = True
 End Sub
 
-Private Sub lswRep_Click()
+Private Sub lswRemesas_ItemClick(ByVal Item As XtremeSuiteControls.ListViewItem)
+    If lswRemesas.ListItems.Count <= 0 Then Exit Sub
+    Call sbConsulta(Item.Text)
+End Sub
+
+Private Sub lswRep_ColumnClick(ByVal ColumnHeader As XtremeSuiteControls.ListViewColumnHeader)
+ lswRep.SortKey = ColumnHeader.Index - 1
+  If lswRep.SortOrder = 0 Then lswRep.SortOrder = 1 Else lswRep.SortOrder = 0
+  lswRep.Sorted = True
+End Sub
+
+Private Sub lswRep_ItemClick(ByVal Item As XtremeSuiteControls.ListViewItem)
 If lswRep.ListItems.Count <= 0 Then Exit Sub
 
-lblRemesa.Caption = lswRep.SelectedItem.Text & " ¦ " & lswRep.SelectedItem.SubItems(1) _
-            & " ¦ " & lswRep.SelectedItem.SubItems(2)
-lblRemesa.Tag = lswRep.SelectedItem
-
+lblRemesa.Caption = Item.Text & " ¦ " & Item.SubItems(1) _
+            & " ¦ " & Item.SubItems(2)
+lblRemesa.Tag = Item.Text
 End Sub
 
 Private Sub optRemesaEstado_Click(Index As Integer)
@@ -2859,6 +2685,9 @@ End Sub
 
 Private Sub sbLimpia(Optional vTodo As Boolean = True)
 
+Dim itmX As ListViewItem
+
+
 On Error GoTo vError
 
 Me.MousePointer = vbHourglass
@@ -2867,11 +2696,11 @@ Me.MousePointer = vbHourglass
 Select Case ssTab.Tab
   
   Case 0 'Remesas
-     txtEstado = ""
-     txtFecha = ""
-     txtTotal = 0
-     TxtUsuario = ""
-     txtRemesa = ""
+     txtEstado.Text = ""
+     txtFecha.Text = ""
+     txtTotal.Text = "0.00"
+     txtUsuario.Text = ""
+     txtRemesa.Text = ""
      txtNotas.Text = ""
      
      dtpFechaInicio.Value = fxFechaServidor
@@ -2963,8 +2792,7 @@ Exit Sub
 
 vError:
  Me.MousePointer = vbDefault
- MsgBox Err.Description, vbCritical
-
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 
 End Sub
 
@@ -3110,15 +2938,12 @@ vError:
 End Sub
 
 Private Sub sbCarga()
-
 Dim i As Integer, vCasos As Integer
-Dim vFecha As Date
 
 
 On Error GoTo vError
 
 'Valida el Estado de la Remesa
-
 strSQL = "select estado from afi_cd_remesas_tes" _
        & " where cod_remesa = " & cboCarga.ItemData(cboCarga.ListIndex) _
        & " and estado = 'T'"
@@ -3129,47 +2954,45 @@ Call OpenRecordSet(rs, strSQL)
     MsgBox "La Remesa actual; ya se encuentra cerrada...", vbExclamation
     Exit Sub
  End If
- rs.Close
 
 Me.MousePointer = vbHourglass
-vFecha = fxFechaServidor
 
 
-strSQL = "select cod_remesa from afi_cd_cuentas where cod_remesa = " & cboCarga.ItemData(cboCarga.ListIndex) & " " _
-         & "and id_banco = " & cboBanco.ItemData(cboBanco.ListIndex) & ""
-         Call OpenRecordSet(rs, strSQL)
+strSQL = "select cod_remesa from afi_cd_cuentas where cod_remesa = " & cboCarga.ItemData(cboCarga.ListIndex) _
+         & " and id_banco = " & cboBanco.ItemData(cboBanco.ListIndex)
+Call OpenRecordSet(rs, strSQL)
 
 
 'Validar Estado de la operacion - Pone la operación en proceso
 'Calcula los casos a procesar
 
+Dim pNotas As String
+
+pNotas = "Cargado en Remesa: " & cboCarga.ItemData(cboCarga.ListIndex)
+strSQL = ""
 
 
+'spAFI_CD_Cuenta_Remesa(@Operacion int, @RemesaId int, @Estado varchar(10), @Usuario varchar(30), @Notas varchar(300) = '')
 For i = 1 To lswCarga.ListItems.Count
  
  If lswCarga.ListItems.Item(i).Checked Then
     
-    strSQL = " update afi_cd_cuentas set estado = 'P',cod_remesa = " & cboCarga.ItemData(cboCarga.ListIndex) & " " _
-             & "Where noperacion = '" & lswCarga.ListItems.Item(i) & "' " _
-             & "and id_banco = " & cboBanco.ItemData(cboBanco.ListIndex) & " " _
-             & "and registro_fecha between " _
-             & "'" & Format(vFechaInicio, "yyyymmdd") & " 00:00:00' " _
-             & "and '" & Format(vFechaCorte, "yyyymmdd") & " 23:59:59' and estado = 'A'"
-             Call ConectionExecute(strSQL)
-             
+    strSQL = strSQL & Space(10) & "exec spAFI_CD_Cuenta_Remesa " & lswCarga.ListItems.Item(i) & ", " & cboCarga.ItemData(cboCarga.ListIndex) _
+           & ", 'C', '" & glogon.Usuario & "', '" & pNotas & "'"
+    If Len(strSQL) > 20000 Then
+       Call ConectionExecute(strSQL)
+       strSQL = ""
+    End If
+    
     vCasos = vCasos + 1
  End If
 
 Next i
 
-rs.Close
+If Len(strSQL) > 0 Then
+   Call ConectionExecute(strSQL)
+End If
 
-PrgBar.Max = vCasos
-PrgBar.Value = 0
-PrgBar.Visible = True
-
-
- 
 If vCasos > 0 Then
     
  'Actualiza el Estado de la Remesa en Proceso
@@ -3181,18 +3004,18 @@ If vCasos > 0 Then
 
 End If
 
-PrgBar.Visible = False
-
 Me.MousePointer = vbDefault
 
 MsgBox "Proceso Realizado Satisfactoriamente...", vbInformation
+
 Call sbCargaBuscar
 
 Exit Sub
 
 vError:
  Me.MousePointer = vbDefault
- MsgBox Err.Description, vbCritical
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+ 
  lswCarga.ListItems.Clear
 
 End Sub
@@ -3243,7 +3066,7 @@ On Error GoTo vError
 
 With glogon
  .strSQL = "select valor from AFI_CD_PARAMETROS where cod_parametro = '" & vParametro & "'"
- rsX.Open .strSQL, .Conection, adOpenStatic
+ Call OpenRecordSet(rsX, .strSQL)
    fxCDParametros = rsX!Valor
  rsX.Close
 

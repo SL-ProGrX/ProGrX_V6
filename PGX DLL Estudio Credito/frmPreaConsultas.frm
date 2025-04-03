@@ -1,8 +1,8 @@
 VERSION 5.00
 Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "comctl32.Ocx"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.ShortcutBar.v22.1.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmPreaConsultas 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -27,7 +27,7 @@ Begin VB.Form frmPreaConsultas
       TabIndex        =   16
       Top             =   5400
       Width           =   8895
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   15690
       _ExtentY        =   4683
       _StockProps     =   79
@@ -50,7 +50,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   22
          Top             =   480
          Width           =   6495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11451
          _ExtentY        =   3619
          _StockProps     =   77
@@ -78,7 +78,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   17
          Top             =   480
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   444
          _StockProps     =   79
@@ -103,7 +103,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   18
          Top             =   840
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   444
          _StockProps     =   79
@@ -127,7 +127,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   19
          Top             =   1200
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   444
          _StockProps     =   79
@@ -151,7 +151,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   20
          Top             =   1560
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   444
          _StockProps     =   79
@@ -175,7 +175,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   21
          Top             =   1920
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   444
          _StockProps     =   79
@@ -199,7 +199,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   44
          Top             =   2280
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   444
          _StockProps     =   79
@@ -222,7 +222,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   47
          Top             =   60
          Width           =   255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   444
          _ExtentY        =   444
          _StockProps     =   79
@@ -236,7 +236,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   48
          Top             =   0
          Width           =   6015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10610
          _ExtentY        =   661
          _StockProps     =   14
@@ -272,7 +272,6 @@ Begin VB.Form frmPreaConsultas
             Bevel           =   0
             Object.Width           =   6068
             MinWidth        =   6068
-            TextSave        =   ""
             Key             =   ""
             Object.Tag             =   ""
          EndProperty
@@ -301,7 +300,7 @@ Begin VB.Form frmPreaConsultas
          BeginProperty Panel5 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
             Style           =   6
             Bevel           =   0
-            TextSave        =   "30/6/2023"
+            TextSave        =   "22/2/2025"
             Key             =   ""
             Object.Tag             =   ""
          EndProperty
@@ -323,7 +322,7 @@ Begin VB.Form frmPreaConsultas
       Top             =   1920
       Visible         =   0   'False
       Width           =   5895
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   10393
       _ExtentY        =   2350
       _StockProps     =   79
@@ -347,7 +346,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   13
          Top             =   840
          Width           =   3972
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7011
          _ExtentY        =   450
          _StockProps     =   93
@@ -383,7 +382,7 @@ Begin VB.Form frmPreaConsultas
       TabIndex        =   0
       Top             =   0
       Width           =   2772
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4890
       _ExtentY        =   9546
       _StockProps     =   79
@@ -405,7 +404,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   1
          Top             =   360
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   582
          _StockProps     =   77
@@ -429,7 +428,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   2
          Top             =   720
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   582
          _StockProps     =   77
@@ -453,7 +452,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   3
          Top             =   1080
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   582
          _StockProps     =   77
@@ -477,7 +476,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   4
          Top             =   1440
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   582
          _StockProps     =   77
@@ -501,7 +500,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   5
          Top             =   1800
          Width           =   1212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2138
          _ExtentY        =   582
          _StockProps     =   77
@@ -525,7 +524,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   28
          Top             =   2640
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   582
          _StockProps     =   77
@@ -551,7 +550,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   29
          Top             =   3240
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   582
          _StockProps     =   77
@@ -577,7 +576,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   30
          Top             =   3840
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   582
          _StockProps     =   77
@@ -603,7 +602,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   31
          Top             =   4440
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   582
          _StockProps     =   77
@@ -629,7 +628,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   32
          Top             =   5040
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   582
          _StockProps     =   77
@@ -914,7 +913,7 @@ Begin VB.Form frmPreaConsultas
       TabIndex        =   33
       Top             =   5880
       Width           =   2772
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4890
       _ExtentY        =   5313
       _StockProps     =   79
@@ -936,7 +935,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   34
          Top             =   2160
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1926
          _ExtentY        =   1291
          _StockProps     =   79
@@ -953,7 +952,7 @@ Begin VB.Form frmPreaConsultas
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmPreaConsultas.frx":249B
+         Picture         =   "frmPreaConsultas.frx":24BF
          TextImageRelation=   1
       End
       Begin XtremeSuiteControls.PushButton btnExportar 
@@ -962,7 +961,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   35
          Top             =   2160
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1926
          _ExtentY        =   1291
          _StockProps     =   79
@@ -979,7 +978,7 @@ Begin VB.Form frmPreaConsultas
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmPreaConsultas.frx":2EB9
+         Picture         =   "frmPreaConsultas.frx":2EDD
          TextImageRelation=   1
       End
       Begin XtremeSuiteControls.DateTimePicker dtpInicio 
@@ -988,7 +987,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   36
          Top             =   1320
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   556
          _StockProps     =   68
@@ -1010,7 +1009,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   37
          Top             =   1680
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   556
          _StockProps     =   68
@@ -1032,7 +1031,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   38
          Top             =   840
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   582
          _StockProps     =   77
@@ -1058,7 +1057,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   41
          Top             =   120
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   582
          _StockProps     =   77
@@ -1084,7 +1083,7 @@ Begin VB.Form frmPreaConsultas
          TabIndex        =   46
          Top             =   480
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   582
          _StockProps     =   77
@@ -1220,7 +1219,7 @@ Begin VB.Form frmPreaConsultas
          Height          =   9516
          Index           =   1
          Left            =   0
-         Picture         =   "frmPreaConsultas.frx":36BE
+         Picture         =   "frmPreaConsultas.frx":36E2
          Stretch         =   -1  'True
          Top             =   0
          Width           =   3204
@@ -1229,7 +1228,7 @@ Begin VB.Form frmPreaConsultas
    Begin VB.Image imgMainBanner 
       Height          =   9396
       Left            =   -120
-      Picture         =   "frmPreaConsultas.frx":4628
+      Picture         =   "frmPreaConsultas.frx":464C
       Stretch         =   -1  'True
       Top             =   0
       Width           =   3204

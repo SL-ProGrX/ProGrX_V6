@@ -1,7 +1,7 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
-Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCT2.OCX"
-Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
+Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
 Begin VB.Form frmCntX_ConPortales 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Portales"
@@ -31,7 +31,7 @@ Begin VB.Form frmCntX_ConPortales
       TabHeight       =   520
       ForeColor       =   16711680
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Arial"
+         Name            =   "Arial Narrow"
          Size            =   8.25
          Charset         =   0
          Weight          =   700
@@ -66,8 +66,8 @@ Begin VB.Form frmCntX_ConPortales
       TabCaption(1)   =   "Contabilidades"
       TabPicture(1)   =   "frmCntX_ConPortales.frx":0124
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "Label3(0)"
-      Tab(1).Control(1)=   "lsw"
+      Tab(1).Control(0)=   "lsw"
+      Tab(1).Control(1)=   "Label3(0)"
       Tab(1).ControlCount=   2
       Begin VB.TextBox txtBaseDatos 
          Appearance      =   0  'Flat
@@ -379,8 +379,8 @@ Begin VB.Form frmCntX_ConPortales
       Width           =   7950
       _ExtentX        =   14023
       _ExtentY        =   1005
-      ButtonWidth     =   487
-      ButtonHeight    =   466
+      ButtonWidth     =   609
+      ButtonHeight    =   582
       AllowCustomize  =   0   'False
       Style           =   1
       _Version        =   393216
@@ -464,7 +464,7 @@ Begin VB.Form frmCntX_ConPortales
       _ExtentY        =   450
       _Version        =   393216
       Arrows          =   65536
-      Orientation     =   1179649
+      Orientation     =   1638401
    End
    Begin VB.Label label1 
       Appearance      =   0  'Flat
@@ -753,7 +753,7 @@ If Not rs.BOF And Not rs.EOF Then
   txtBaseDatos = rs!por_database
   
     StatusBarX.Panels(1).Text = rs!Registro_Usuario & ""
-    StatusBarX.Panels(2).Text = rs!Registro_Fecha & ""
+    StatusBarX.Panels(2).Text = rs!REGISTRO_FECHA & ""
     StatusBarX.Panels(3).Text = rs!Actualiza_Usuario & ""
     StatusBarX.Panels(4).Text = rs!Actualiza_Fecha & ""
   

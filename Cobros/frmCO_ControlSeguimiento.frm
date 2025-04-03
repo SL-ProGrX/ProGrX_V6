@@ -1,7 +1,7 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "mscomctl.OCX"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.3#0"; "Codejock.Controls.v20.3.0.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCO_ControlSeguimiento 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -23,7 +23,7 @@ Begin VB.Form frmCO_ControlSeguimiento
       TabIndex        =   1
       Top             =   1320
       Width           =   11532
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   20341
       _ExtentY        =   9758
       _StockProps     =   68
@@ -79,27 +79,28 @@ Begin VB.Form frmCO_ControlSeguimiento
       Item(4).ControlCount=   1
       Item(4).Control(0)=   "txtEstado"
       Begin XtremeSuiteControls.PushButton cmdAplica 
-         Height          =   492
+         Height          =   615
          Left            =   9240
-         TabIndex        =   29
+         TabIndex        =   20
          Top             =   4800
-         Width           =   1692
-         _Version        =   1310723
-         _ExtentX        =   2984
-         _ExtentY        =   868
+         Width           =   1695
+         _Version        =   1572864
+         _ExtentX        =   2990
+         _ExtentY        =   1085
          _StockProps     =   79
          Caption         =   "Aplicar"
          BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   7.5
+            Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          Picture         =   "frmCO_ControlSeguimiento.frx":6852
       End
       Begin VB.TextBox txtEstado 
@@ -119,7 +120,7 @@ Begin VB.Form frmCO_ControlSeguimiento
          Locked          =   -1  'True
          MultiLine       =   -1  'True
          ScrollBars      =   2  'Vertical
-         TabIndex        =   28
+         TabIndex        =   19
          Top             =   480
          Visible         =   0   'False
          Width           =   11292
@@ -139,70 +140,11 @@ Begin VB.Form frmCO_ControlSeguimiento
          ForeColor       =   &H00FF0000&
          Height          =   330
          Left            =   -65920
-         TabIndex        =   24
+         TabIndex        =   15
          Top             =   360
          Value           =   1  'Checked
          Visible         =   0   'False
          Width           =   4095
-      End
-      Begin VB.TextBox txtGestionDesc 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFC0C0&
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00FFFFFF&
-         Height          =   324
-         Left            =   2280
-         Locked          =   -1  'True
-         TabIndex        =   15
-         ToolTipText     =   "Presione (F4) para Consultar"
-         Top             =   480
-         Width           =   3375
-      End
-      Begin VB.TextBox txtNotas 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   1395
-         Left            =   1320
-         MultiLine       =   -1  'True
-         ScrollBars      =   2  'Vertical
-         TabIndex        =   14
-         Top             =   3120
-         Width           =   4335
-      End
-      Begin VB.TextBox txtGestionMonto 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   324
-         Left            =   1440
-         TabIndex        =   13
-         ToolTipText     =   "Presione (F4) para Consultar"
-         Top             =   1560
-         Width           =   1452
       End
       Begin VB.ComboBox cboOperacion 
          Appearance      =   0  'Flat
@@ -219,108 +161,9 @@ Begin VB.Form frmCO_ControlSeguimiento
          Height          =   330
          Left            =   1440
          Style           =   2  'Dropdown List
-         TabIndex        =   12
+         TabIndex        =   6
          Top             =   2520
          Width           =   1815
-      End
-      Begin VB.TextBox txtCausaDesc 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFC0C0&
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00FFFFFF&
-         Height          =   324
-         Left            =   2280
-         Locked          =   -1  'True
-         TabIndex        =   11
-         ToolTipText     =   "Presione (F4) para Consultar"
-         Top             =   840
-         Width           =   3375
-      End
-      Begin VB.TextBox txtCausa 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   324
-         Left            =   1440
-         TabIndex        =   10
-         ToolTipText     =   "Presione (F4) para Consultar"
-         Top             =   840
-         Width           =   855
-      End
-      Begin VB.TextBox txtArregloDesc 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFC0C0&
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00FFFFFF&
-         Height          =   324
-         Left            =   2280
-         Locked          =   -1  'True
-         TabIndex        =   9
-         ToolTipText     =   "Presione (F4) para Consultar"
-         Top             =   1200
-         Width           =   3375
-      End
-      Begin VB.TextBox txtArreglo 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   324
-         Left            =   1440
-         TabIndex        =   8
-         ToolTipText     =   "Presione (F4) para Consultar"
-         Top             =   1200
-         Width           =   855
-      End
-      Begin VB.TextBox txtGestion 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   324
-         Left            =   1440
-         TabIndex        =   7
-         ToolTipText     =   "Presione (F4) para Consultar"
-         Top             =   480
-         Width           =   855
       End
       Begin VB.Frame fraLista 
          Caption         =   "Gestión"
@@ -334,7 +177,7 @@ Begin VB.Form frmCO_ControlSeguimiento
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00FF0000&
-         Height          =   4215
+         Height          =   4335
          Left            =   5880
          TabIndex        =   5
          Top             =   360
@@ -342,10 +185,10 @@ Begin VB.Form frmCO_ControlSeguimiento
          Begin XtremeSuiteControls.ListView lswLista 
             Height          =   3372
             Left            =   120
-            TabIndex        =   35
+            TabIndex        =   26
             Top             =   720
             Width           =   4932
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   8700
             _ExtentY        =   5948
             _StockProps     =   77
@@ -362,22 +205,29 @@ Begin VB.Form frmCO_ControlSeguimiento
             FullRowSelect   =   -1  'True
             Appearance      =   16
          End
-         Begin VB.TextBox txtListaFiltro 
-            Appearance      =   0  'Flat
-            BeginProperty Font 
-               Name            =   "Arial"
-               Size            =   8.25
+         Begin XtremeSuiteControls.FlatEdit txtListaFiltro 
+            Height          =   330
+            Left            =   120
+            TabIndex        =   35
+            Top             =   360
+            Width           =   4935
+            _Version        =   1572864
+            _ExtentX        =   8705
+            _ExtentY        =   582
+            _StockProps     =   77
+            ForeColor       =   0
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
                Charset         =   0
                Weight          =   400
                Underline       =   0   'False
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Height          =   315
-            Left            =   120
-            TabIndex        =   6
-            Top             =   360
-            Width           =   4935
+            Alignment       =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
       End
       Begin XtremeSuiteControls.TabControl tcAux 
@@ -387,13 +237,13 @@ Begin VB.Form frmCO_ControlSeguimiento
          Top             =   360
          Visible         =   0   'False
          Width           =   11532
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   20341
          _ExtentY        =   9546
          _StockProps     =   68
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   7.5
+            Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -401,7 +251,7 @@ Begin VB.Form frmCO_ControlSeguimiento
             Strikethrough   =   0   'False
          EndProperty
          Appearance      =   4
-         Color           =   64
+         Color           =   32
          ItemCount       =   2
          Item(0).Caption =   "Gestiones"
          Item(0).ControlCount=   1
@@ -437,13 +287,13 @@ Begin VB.Form frmCO_ControlSeguimiento
             AppearanceStyle =   1
          End
          Begin MSComctlLib.ListView lswDetalle 
-            Height          =   4692
+            Height          =   4695
             Left            =   -70000
             TabIndex        =   4
             Top             =   360
             Visible         =   0   'False
-            Width           =   11052
-            _ExtentX        =   19500
+            Width           =   11415
+            _ExtentX        =   20135
             _ExtentY        =   8281
             View            =   3
             LabelWrap       =   -1  'True
@@ -510,7 +360,7 @@ Begin VB.Form frmCO_ControlSeguimiento
       Begin FPSpreadADO.fpSpread vgridFiadores 
          Height          =   4572
          Left            =   -69880
-         TabIndex        =   25
+         TabIndex        =   16
          Top             =   840
          Visible         =   0   'False
          Width           =   11292
@@ -531,14 +381,14 @@ Begin VB.Form frmCO_ControlSeguimiento
             Strikethrough   =   0   'False
          EndProperty
          MaxCols         =   7
-         SpreadDesigner  =   "frmCO_ControlSeguimiento.frx":7D12
+         SpreadDesigner  =   "frmCO_ControlSeguimiento.frx":7CCC
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
       Begin MSComctlLib.ListView lswRetencion 
          Height          =   1932
          Left            =   -69880
-         TabIndex        =   26
+         TabIndex        =   17
          Top             =   840
          Visible         =   0   'False
          Width           =   11292
@@ -600,7 +450,7 @@ Begin VB.Form frmCO_ControlSeguimiento
       Begin MSComctlLib.ListView lswComisiones 
          Height          =   1932
          Left            =   -69880
-         TabIndex        =   27
+         TabIndex        =   18
          Top             =   3240
          Visible         =   0   'False
          Width           =   11292
@@ -655,10 +505,10 @@ Begin VB.Form frmCO_ControlSeguimiento
       Begin XtremeSuiteControls.DateTimePicker dtpVence 
          Height          =   315
          Left            =   1440
-         TabIndex        =   32
+         TabIndex        =   23
          Top             =   1920
          Width           =   1452
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   556
          _StockProps     =   68
@@ -674,15 +524,214 @@ Begin VB.Form frmCO_ControlSeguimiento
          CustomFormat    =   "dd/MM/yyyy"
          Format          =   3
       End
+      Begin XtremeSuiteControls.FlatEdit txtGestion 
+         Height          =   330
+         Left            =   1440
+         TabIndex        =   27
+         Top             =   480
+         Width           =   855
+         _Version        =   1572864
+         _ExtentX        =   1508
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtGestionDesc 
+         Height          =   330
+         Left            =   2280
+         TabIndex        =   28
+         Top             =   480
+         Width           =   3495
+         _Version        =   1572864
+         _ExtentX        =   6165
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtCausa 
+         Height          =   330
+         Left            =   1440
+         TabIndex        =   29
+         Top             =   840
+         Width           =   855
+         _Version        =   1572864
+         _ExtentX        =   1508
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtCausaDesc 
+         Height          =   330
+         Left            =   2280
+         TabIndex        =   30
+         Top             =   840
+         Width           =   3495
+         _Version        =   1572864
+         _ExtentX        =   6165
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtArreglo 
+         Height          =   330
+         Left            =   1440
+         TabIndex        =   31
+         Top             =   1200
+         Width           =   855
+         _Version        =   1572864
+         _ExtentX        =   1508
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtArregloDesc 
+         Height          =   330
+         Left            =   2280
+         TabIndex        =   32
+         Top             =   1200
+         Width           =   3495
+         _Version        =   1572864
+         _ExtentX        =   6165
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtGestionMonto 
+         Height          =   330
+         Left            =   1440
+         TabIndex        =   33
+         Top             =   1560
+         Width           =   1815
+         _Version        =   1572864
+         _ExtentX        =   3201
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtNotas 
+         Height          =   2415
+         Left            =   1320
+         TabIndex        =   34
+         Top             =   3000
+         Width           =   4455
+         _Version        =   1572864
+         _ExtentX        =   7858
+         _ExtentY        =   4260
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         MultiLine       =   -1  'True
+         ScrollBars      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
       Begin XtremeSuiteControls.Label Label2 
          Height          =   252
          Index           =   1
          Left            =   -69880
-         TabIndex        =   31
+         TabIndex        =   22
          Top             =   2880
          Visible         =   0   'False
          Width           =   3492
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   6159
          _ExtentY        =   444
          _StockProps     =   79
@@ -702,11 +751,11 @@ Begin VB.Form frmCO_ControlSeguimiento
          Height          =   252
          Index           =   0
          Left            =   -69880
-         TabIndex        =   30
+         TabIndex        =   21
          Top             =   480
          Visible         =   0   'False
          Width           =   3492
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   6159
          _ExtentY        =   444
          _StockProps     =   79
@@ -736,7 +785,7 @@ Begin VB.Form frmCO_ControlSeguimiento
          Height          =   252
          Index           =   0
          Left            =   240
-         TabIndex        =   23
+         TabIndex        =   14
          Top             =   480
          Width           =   972
       End
@@ -754,7 +803,7 @@ Begin VB.Form frmCO_ControlSeguimiento
          Height          =   252
          Index           =   2
          Left            =   240
-         TabIndex        =   22
+         TabIndex        =   13
          Top             =   1920
          Width           =   972
       End
@@ -772,7 +821,7 @@ Begin VB.Form frmCO_ControlSeguimiento
          Height          =   252
          Index           =   3
          Left            =   240
-         TabIndex        =   21
+         TabIndex        =   12
          Top             =   3120
          Width           =   972
       End
@@ -790,7 +839,7 @@ Begin VB.Form frmCO_ControlSeguimiento
          Height          =   252
          Index           =   5
          Left            =   240
-         TabIndex        =   20
+         TabIndex        =   11
          Top             =   1560
          Width           =   972
       End
@@ -808,7 +857,7 @@ Begin VB.Form frmCO_ControlSeguimiento
          Height          =   252
          Index           =   6
          Left            =   240
-         TabIndex        =   19
+         TabIndex        =   10
          Top             =   2520
          Width           =   972
       End
@@ -826,7 +875,7 @@ Begin VB.Form frmCO_ControlSeguimiento
          Height          =   492
          Index           =   7
          Left            =   3360
-         TabIndex        =   18
+         TabIndex        =   9
          Top             =   2520
          Width           =   2412
       End
@@ -844,7 +893,7 @@ Begin VB.Form frmCO_ControlSeguimiento
          Height          =   252
          Index           =   8
          Left            =   240
-         TabIndex        =   17
+         TabIndex        =   8
          Top             =   840
          Width           =   972
       End
@@ -862,7 +911,7 @@ Begin VB.Form frmCO_ControlSeguimiento
          Height          =   252
          Index           =   9
          Left            =   240
-         TabIndex        =   16
+         TabIndex        =   7
          Top             =   1200
          Width           =   972
       End
@@ -880,47 +929,47 @@ Begin VB.Form frmCO_ControlSeguimiento
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   11
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_ControlSeguimiento.frx":8729
+            Picture         =   "frmCO_ControlSeguimiento.frx":869D
             Key             =   "verde"
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_ControlSeguimiento.frx":8847
+            Picture         =   "frmCO_ControlSeguimiento.frx":87BB
             Key             =   "amarillo"
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_ControlSeguimiento.frx":896D
+            Picture         =   "frmCO_ControlSeguimiento.frx":88E1
             Key             =   "rojo"
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_ControlSeguimiento.frx":8A97
+            Picture         =   "frmCO_ControlSeguimiento.frx":8A0B
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_ControlSeguimiento.frx":8BA9
+            Picture         =   "frmCO_ControlSeguimiento.frx":8B1D
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_ControlSeguimiento.frx":8CC0
+            Picture         =   "frmCO_ControlSeguimiento.frx":8C34
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_ControlSeguimiento.frx":8DC1
+            Picture         =   "frmCO_ControlSeguimiento.frx":8D35
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_ControlSeguimiento.frx":8EF8
+            Picture         =   "frmCO_ControlSeguimiento.frx":8E6C
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_ControlSeguimiento.frx":900D
+            Picture         =   "frmCO_ControlSeguimiento.frx":8F81
             Key             =   ""
          EndProperty
          BeginProperty ListImage10 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_ControlSeguimiento.frx":9131
+            Picture         =   "frmCO_ControlSeguimiento.frx":90A5
             Key             =   ""
          EndProperty
          BeginProperty ListImage11 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCO_ControlSeguimiento.frx":925A
+            Picture         =   "frmCO_ControlSeguimiento.frx":91CE
             Key             =   ""
          EndProperty
       EndProperty
@@ -928,10 +977,10 @@ Begin VB.Form frmCO_ControlSeguimiento
    Begin XtremeSuiteControls.FlatEdit txtCedula 
       Height          =   312
       Left            =   2640
-      TabIndex        =   33
+      TabIndex        =   24
       Top             =   480
       Width           =   1812
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
@@ -947,16 +996,16 @@ Begin VB.Form frmCO_ControlSeguimiento
       EndProperty
       Alignment       =   2
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtNombre 
       Height          =   312
       Left            =   4440
-      TabIndex        =   34
+      TabIndex        =   25
       Top             =   480
       Width           =   6012
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   10604
       _ExtentY        =   550
       _StockProps     =   77
@@ -971,13 +1020,13 @@ Begin VB.Form frmCO_ControlSeguimiento
          Strikethrough   =   0   'False
       EndProperty
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin VB.Image imgDatosPersonales 
       Height          =   360
       Left            =   11040
-      Picture         =   "frmCO_ControlSeguimiento.frx":9642
+      Picture         =   "frmCO_ControlSeguimiento.frx":95B6
       Stretch         =   -1  'True
       ToolTipText     =   "Datos Personales"
       Top             =   480
@@ -986,7 +1035,7 @@ Begin VB.Form frmCO_ControlSeguimiento
    Begin VB.Image imgExpediente 
       Height          =   360
       Left            =   10560
-      Picture         =   "frmCO_ControlSeguimiento.frx":9DD5
+      Picture         =   "frmCO_ControlSeguimiento.frx":9D49
       Stretch         =   -1  'True
       Top             =   480
       Width           =   348
@@ -1846,7 +1895,7 @@ vGrid.MaxCols = 7
 vGrid.MaxRows = 1
 vGrid.Row = vGrid.MaxRows
 For i = 1 To vGrid.MaxCols
- vGrid.col = i
+ vGrid.Col = i
  vGrid.Text = ""
 Next i
 
@@ -1861,7 +1910,7 @@ Do While Not rs.EOF
   .Row = .MaxRows
   
   For i = 1 To .MaxCols
-     .col = i
+     .Col = i
      Select Case i
         Case 1 'Status
            If rs!EstadoMora = "A" Then
@@ -1872,7 +1921,7 @@ Do While Not rs.EOF
            
               
         Case 3 'Solicitud
-           .Text = CStr(rs!Id_Solicitud)
+           .Text = CStr(rs!ID_SOLICITUD)
            
         Case 4 'Cedula
            .Text = rs!Cedula
@@ -1898,7 +1947,7 @@ End With
 End Sub
 
 
-Private Sub vgCobro_Click(ByVal col As Long, ByVal Row As Long)
+Private Sub vgCobro_Click(ByVal Col As Long, ByVal Row As Long)
 'Private Sub lswSGT_Click()
 'Dim strSQL As String, rs As New ADODB.Recordset, itmX As ListItem
 'Dim curSaldo As Currency, curAbono As Currency, curMora As Currency
@@ -1951,7 +2000,7 @@ With vgCobro
           .Row = .MaxRows
           
           For i = 1 To 11
-            .col = i
+            .Col = i
             Select Case i
               Case 1 'ID
                 .Text = CStr(rs!Cod_Seg)
@@ -1994,7 +2043,7 @@ With vgCobro
           .Row = .MaxRows
           
           For i = 1 To 5
-            .col = i
+            .Col = i
             Select Case i
               Case 1 'Fecha
                 .Text = Format(rs!fecha_asignacion, "dd/mm/yyyy")
@@ -2025,13 +2074,13 @@ vError:
 
 End Sub
 
-Private Sub vgridFiadores_Click(ByVal col As Long, ByVal Row As Long)
+Private Sub vgridFiadores_Click(ByVal Col As Long, ByVal Row As Long)
   With vgridFiadores
     .Row = Row
     
-    Select Case col
+    Select Case Col
       Case 2
-        .col = 4
+        .Col = 4
         If .Text = "" Then Exit Sub
         GLOBALES.gCedulaActual = .Text
         Call sbFormsCall("frmCR_VerificaDatosPersonales", 1, , , False, Me)

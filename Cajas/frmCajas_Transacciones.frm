@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCajas_Transacciones 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -23,7 +23,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   13
       Top             =   960
       Width           =   4572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8064
       _ExtentY        =   9758
       _StockProps     =   77
@@ -47,7 +47,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   28
       Top             =   5520
       Width           =   6135
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   10821
       _ExtentY        =   1720
       _StockProps     =   79
@@ -70,12 +70,12 @@ Begin VB.Form frmCajas_Transacciones
          TabIndex        =   29
          Top             =   240
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   1085
          _StockProps     =   79
          Caption         =   "Forma Pago"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -85,8 +85,8 @@ Begin VB.Form frmCajas_Transacciones
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Transparent     =   -1  'True
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          Picture         =   "frmCajas_Transacciones.frx":0000
       End
       Begin XtremeSuiteControls.PushButton btnCaja_Aplicar 
@@ -95,12 +95,12 @@ Begin VB.Form frmCajas_Transacciones
          TabIndex        =   30
          Top             =   240
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   1085
          _StockProps     =   79
          Caption         =   "Aplicar"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -110,9 +110,9 @@ Begin VB.Form frmCajas_Transacciones
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Transparent     =   -1  'True
-         Appearance      =   16
-         Picture         =   "frmCajas_Transacciones.frx":09EC
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         Picture         =   "frmCajas_Transacciones.frx":04AD
       End
       Begin XtremeSuiteControls.PushButton btnCaja_Cerrar 
          Height          =   612
@@ -121,11 +121,11 @@ Begin VB.Form frmCajas_Transacciones
          ToolTipText     =   "Cerrar"
          Top             =   240
          Width           =   732
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1291
          _ExtentY        =   1080
          _StockProps     =   79
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   7.5
@@ -135,9 +135,35 @@ Begin VB.Form frmCajas_Transacciones
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Transparent     =   -1  'True
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         Picture         =   "frmCajas_Transacciones.frx":0C85
+      End
+      Begin XtremeSuiteControls.CheckBox chkReciboDigital 
+         Height          =   255
+         Left            =   360
+         TabIndex        =   32
+         ToolTipText     =   "Enviar Recibo Digital"
+         Top             =   360
+         Width           =   1935
+         _Version        =   1572864
+         _ExtentX        =   3408
+         _ExtentY        =   444
+         _StockProps     =   79
+         Caption         =   "Recibo Digital?"
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Enabled         =   0   'False
+         UseVisualStyle  =   -1  'True
          Appearance      =   16
-         Picture         =   "frmCajas_Transacciones.frx":11C4
       End
    End
    Begin VB.Timer TimerCaja 
@@ -172,7 +198,7 @@ Begin VB.Form frmCajas_Transacciones
          BeginProperty Panel3 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
             Style           =   5
             Bevel           =   0
-            TextSave        =   "03:00:p. m."
+            TextSave        =   "07:38"
             Object.ToolTipText     =   "Fecha/Hora"
          EndProperty
       EndProperty
@@ -192,7 +218,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   14
       Top             =   2160
       Width           =   1932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   582
       _StockProps     =   77
@@ -218,7 +244,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   15
       Top             =   5160
       Width           =   4812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8493
       _ExtentY        =   582
       _StockProps     =   77
@@ -244,7 +270,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   17
       Top             =   2880
       Width           =   1932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3408
       _ExtentY        =   550
       _StockProps     =   77
@@ -268,7 +294,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   18
       Top             =   4440
       Width           =   2292
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4043
       _ExtentY        =   550
       _StockProps     =   77
@@ -293,7 +319,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   19
       Top             =   4800
       Width           =   2292
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4043
       _ExtentY        =   550
       _StockProps     =   77
@@ -318,7 +344,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   20
       Top             =   2520
       Width           =   1932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3408
       _ExtentY        =   550
       _StockProps     =   77
@@ -342,7 +368,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   21
       Top             =   1440
       Width           =   1332
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   77
@@ -367,7 +393,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   22
       Top             =   1080
       Width           =   1332
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   77
@@ -392,7 +418,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   23
       Top             =   1080
       Width           =   3372
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5948
       _ExtentY        =   550
       _StockProps     =   77
@@ -416,7 +442,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   24
       Top             =   1440
       Width           =   3372
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5948
       _ExtentY        =   550
       _StockProps     =   77
@@ -440,7 +466,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   25
       Top             =   120
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   550
       _StockProps     =   77
@@ -465,7 +491,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   26
       Top             =   480
       Width           =   4692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8276
       _ExtentY        =   550
       _StockProps     =   77
@@ -489,7 +515,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   27
       Top             =   240
       Width           =   3492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   6159
       _ExtentY        =   550
       _StockProps     =   77
@@ -513,7 +539,7 @@ Begin VB.Form frmCajas_Transacciones
       TabIndex        =   16
       Top             =   3240
       Width           =   4812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8488
       _ExtentY        =   2032
       _StockProps     =   77
@@ -809,6 +835,8 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+
+Dim strSQL As String, rs As New ADODB.Recordset
 Dim vPaso As Boolean, mToken As String
 
 Private Sub btnCaja_Aplicar_Click()
@@ -860,6 +888,19 @@ Call sbFormsCall("frmCajas_DetallePago", vbModal, 0, 0, False, Me)
 txtTotalCajas.Text = Format(ModuloCajas.mTotalDetallado, "Standard")
 txtPendiente.Text = Format(CCur(txtMonto.Text) - ModuloCajas.mTotalDetallado, "Standard")
 
+        If txtTotalCajas.Text <> txtMonto.Text Then
+           txtTotalCajas.BackColor = vbRed
+        Else
+           txtTotalCajas.BackColor = vbWhite
+        End If
+        
+        If ModuloCajas.mReciboDigital Then
+            chkReciboDigital.Enabled = True
+            chkReciboDigital.Value = xtpChecked
+        Else
+            chkReciboDigital.Enabled = False
+            chkReciboDigital.Value = xtpUnchecked
+        End If
 
 Exit Sub
 
@@ -939,12 +980,12 @@ vRef_03 = Mid(txtNRef.Text, 1, 30)
 'Control de Documentos v2
 strSQL = "insert SIF_TRANSACCIONES(COD_TRANSACCION,TIPO_DOCUMENTO,REGISTRO_FECHA,REGISTRO_USUARIO,Cliente_IDENTIFICACION,CLIENTE_NOMBRE" _
         & ",cod_concepto,monto,estado,Referencia_01,Referencia_02,Referencia_03, cod_oficina" _
-        & ",linea1,linea2,linea3,linea4,detalle,documento,cod_caja,cod_apertura)" _
+        & ",linea1,linea2,linea3,linea4,detalle,documento,cod_caja,cod_apertura, id_Sesion)" _
         & " values('" & vNumDoc & "','" & vTipoDoc & "',dbo.MyGetdate(),'" & glogon.Usuario & "','" & txtCedula.Text _
         & "','" & Trim(txtNombre.Text) & "','" & Trim(rs!cod_Concepto) & "'," & curMonto & ",'P','" & vRef_01 _
-        & "','" & vRef_02 & "','" & vRef_03 & "','" & ModuloCajas.mOficina & "','" & strLinea(1) & "','" _
-        & strLinea(2) & "','" & strLinea(3) & "','" & strLinea(4) & "','" _
-        & txtDetalle.Text & "','" & vAseDocDeposito & "','" & ModuloCajas.mCaja & "'," & ModuloCajas.mApertura & ")"
+        & "','" & vRef_02 & "','" & vRef_03 & "','" & ModuloCajas.mOficina & "','" & strLinea(1) & "', '" _
+        & strLinea(2) & "','" & strLinea(3) & "','" & strLinea(4) & "', '" _
+        & txtDetalle.Text & "', '" & vAseDocDeposito & "', '" & ModuloCajas.mCaja & "', " & ModuloCajas.mApertura & ", " & ModuloCajas.mSesionId & ")"
 Call ConectionExecute(strSQL)
 
 
@@ -969,7 +1010,7 @@ If rs!InterCambio = 0 Then
 Else
     'Registra Segun Forma de Pago (Efectivo)
     strSQL = "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & rs!Mnt_Bruto * fxSys_Tipo_Cambio_Apl(pTipoCambio) & "" _
-            & ",'C','" & strDivisa & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "'," _
+            & ",'C','" & strDivisa & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" _
             & rs!Cod_Centro_Costo & "','" & rs!EF_CTA & "','" & vRef_01 & "','" & vRef_02 & "','" & vRef_03 & "'"
 End If
 Call ConectionExecute(strSQL)
@@ -989,17 +1030,32 @@ If rs!InterCambio = 1 Then
     Call ConectionExecute(strSQL)
 End If
 
-Call sbImprimeRecibo(vNumDoc, vTipoDoc)
  
- strSQL = " - Aporte aplicado, con : " & cboDocumento.Text & " ...No.: " & vNumDoc & vbCrLf _
-        & " - Desea Realizar Otra Transacción ?"
+'Recibo Digital
+If chkReciboDigital.Enabled And chkReciboDigital.Value = xtpChecked Then
+    strSQL = "exec spCajasReciboDigital '" & vNumDoc & "', '" & vTipoDoc & "', 'General'"
+    Call ConectionExecute(strSQL)
+    
+    strSQL = ">>> Recibo Digital enviado al cliente <<<" & vbCrLf _
+           & " - Movimiento aplicado, con : " & vTipoDoc & " ...No.: " & vNumDoc & vbCrLf _
+           & " - Desea Realizar Otra Transacción ?"
+
+Else
+    Call sbImprimeRecibo(vNumDoc, vTipoDoc)
+
+    strSQL = " - Movimiento aplicado, con : " & vTipoDoc & " ...No.: " & vNumDoc & vbCrLf _
+           & " - Desea Realizar Otra Transacción ?"
+
+End If
+Me.MousePointer = vbDefault
+ 
  
  i = MsgBox(strSQL, vbYesNo)
  If i = vbYes Then
      
         ModuloCajas.mTiquete = ""
         txtCedula.Text = ModuloCajas.mClienteId
-        txtNombre = ModuloCajas.mCliente
+        txtNombre.Text = ModuloCajas.mCliente
         
         txtTotalCajas.Text = 0
         txtPendiente.Text = 0
@@ -1007,7 +1063,12 @@ Call sbImprimeRecibo(vNumDoc, vTipoDoc)
         txtMonto = 0
         txtNRef.Text = ""
         txtDetalle.Text = ""
-
+        
+        ModuloCajas.mTotalDetallado = 0
+        ModuloCajas.mReciboDigital = False
+        chkReciboDigital.Value = xtpUnchecked
+        chkReciboDigital.Enabled = False
+        
  Else
      Unload Me
  End If
@@ -1031,7 +1092,6 @@ End If
 
 If CCur(txtMonto.Text) <= 0 Then
    vMensaje = vMensaje & "- El Monto de la Transacción no es valido!" & vbCrLf
-
 End If
 
 
@@ -1039,7 +1099,29 @@ If fxCajasAperturaEstado = "C" Then
    vMensaje = vMensaje & "- La apertura ..:" & ModuloCajas.mApertura & " de esta caja ha sido cerrada!" & vbCrLf
 End If
 
+If CCur(txtTotalCajas.Text) <> CCur(txtMonto.Text) Then
+   vMensaje = vMensaje & "- No se ha recaudado en cajas el monto a aplicar!" & vbCrLf
+
+End If
+
 Call sbSIFCleanTxtInject(txtDetalle)
+
+ 'Cajas: Validación General sobre el Estado de la Caja, Aperturas, Sesiones, y Accesos
+ With ModuloCajas
+     strSQL = "exec spCajas_Transac_Validacion '" & .mCaja & "', '" & glogon.Usuario & "', " & .mApertura & ", " & .mSesionId _
+            & ", 'CAJ', '" & Trim(txtServicioCod.Text) & "', " & CCur(txtTotalCajas.Text) & ", '" & .mTiquete & "'"
+ End With
+ 
+ Call OpenRecordSet(rs, strSQL)
+ 
+ If Len(rs!Advertencias) > 0 Then
+    MsgBox rs!Advertencias, vbExclamation, "Advertencias!"
+ End If
+ 
+ If Len(rs!Validacion) > 0 Then
+    vMensaje = vMensaje & rs!Validacion
+ End If
+
 
 
 If Len(vMensaje) = 0 Then
@@ -1050,6 +1132,15 @@ Else
 End If
 
 End Function
+
+Private Sub Form_Unload(Cancel As Integer)
+
+'Mantiene o no la Sesion
+If ModuloCajas.mSesionId > 0 Then
+   Call sbFormsCall("frmCajas_Sesion", vbModal, , , False, Me)
+End If
+
+End Sub
 
 Private Sub lsw_ItemClick(ByVal Item As XtremeSuiteControls.ListViewItem)
 If vPaso Then Exit Sub
@@ -1179,9 +1270,19 @@ End If
 Me.Caption = "Servicios y Conceptos Generales  ¦ Caja .: " & ModuloCajas.mCaja _
            & "   Apertura .: " & ModuloCajas.mApertura & "     Usuario.: " & ModuloCajas.mUsuario
 
+If ModuloCajas.mSesionId = 0 Then
+   Call sbFormsCall("frmCajas_Sesion", vbModal, , , False, Me)
+   If ModuloCajas.mSesionId = 0 Then
+        MsgBox "No se ha iniciado ninguna sesión de Cliente para esta caja!", vbExclamation
+        Unload Me
+        Exit Sub
+   End If
+End If
+
 
 StatusBarX.Panels(1).Text = ModuloCajas.mDescripcion
 StatusBarX.Panels(2).Text = ModuloCajas.mOficinaDesc
+
 
 'Inicializa datos Principales
 Call sbInicializa

@@ -1,19 +1,19 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "mscomctl.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.4#0"; "comctl32.Ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "comctl32.Ocx"
 Begin VB.Form frmPreaConsultaExpeditentes 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Consulta de expedientes y subexpedientes"
    ClientHeight    =   5520
-   ClientLeft      =   -1848
-   ClientTop       =   4428
-   ClientWidth     =   9036
+   ClientLeft      =   -1845
+   ClientTop       =   4425
+   ClientWidth     =   9030
    KeyPreview      =   -1  'True
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
    ScaleHeight     =   5520
-   ScaleWidth      =   9036
+   ScaleWidth      =   9030
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.ProgressBar ProgressBar 
       Height          =   255
@@ -21,8 +21,8 @@ Begin VB.Form frmPreaConsultaExpeditentes
       TabIndex        =   0
       Top             =   5280
       Width           =   8955
-      _ExtentX        =   15790
-      _ExtentY        =   445
+      _ExtentX        =   15796
+      _ExtentY        =   450
       _Version        =   327682
       Appearance      =   1
    End
@@ -32,8 +32,8 @@ Begin VB.Form frmPreaConsultaExpeditentes
       TabIndex        =   7
       Top             =   1050
       Width           =   8955
-      _ExtentX        =   15790
-      _ExtentY        =   7387
+      _ExtentX        =   15796
+      _ExtentY        =   7382
       View            =   3
       LabelEdit       =   1
       LabelWrap       =   -1  'True
@@ -46,7 +46,7 @@ Begin VB.Form frmPreaConsultaExpeditentes
       Appearance      =   1
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -98,7 +98,7 @@ Begin VB.Form frmPreaConsultaExpeditentes
       Begin VB.TextBox TxtExpediente 
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -117,7 +117,7 @@ Begin VB.Form frmPreaConsultaExpeditentes
          BackColor       =   &H00FFFFFF&
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -134,7 +134,7 @@ Begin VB.Form frmPreaConsultaExpeditentes
       Begin VB.TextBox txtNombre 
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -152,7 +152,7 @@ Begin VB.Form frmPreaConsultaExpeditentes
          Caption         =   "N° Expediente"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -170,7 +170,7 @@ Begin VB.Form frmPreaConsultaExpeditentes
          Caption         =   "Nombre"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -187,7 +187,7 @@ Begin VB.Form frmPreaConsultaExpeditentes
          Caption         =   "Cédula"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -201,6 +201,45 @@ Begin VB.Form frmPreaConsultaExpeditentes
          Top             =   240
          Width           =   1335
       End
+   End
+   Begin MSComctlLib.Toolbar tlb 
+      Height          =   330
+      Left            =   0
+      TabIndex        =   9
+      Top             =   0
+      Visible         =   0   'False
+      Width           =   2505
+      _ExtentX        =   4419
+      _ExtentY        =   582
+      ButtonWidth     =   609
+      ButtonHeight    =   582
+      AllowCustomize  =   0   'False
+      Style           =   1
+      _Version        =   393216
+      BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
+         NumButtons      =   7
+         BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "nuevo"
+         EndProperty
+         BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "editar"
+         EndProperty
+         BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "BORRAR"
+         EndProperty
+         BeginProperty Button4 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "guardar"
+         EndProperty
+         BeginProperty Button5 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "deshacer"
+         EndProperty
+         BeginProperty Button6 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Style           =   3
+         EndProperty
+         BeginProperty Button7 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "Reportes"
+         EndProperty
+      EndProperty
    End
 End
 Attribute VB_Name = "frmPreaConsultaExpeditentes"

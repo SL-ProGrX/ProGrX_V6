@@ -1,20 +1,20 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.3#0"; "Codejock.Controls.v19.3.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmPreaTablaPagos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Tabla de Pagos"
-   ClientHeight    =   6192
-   ClientLeft      =   48
-   ClientTop       =   432
-   ClientWidth     =   9612
+   ClientHeight    =   6195
+   ClientLeft      =   45
+   ClientTop       =   435
+   ClientWidth     =   9660
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   6192
-   ScaleWidth      =   9612
+   ScaleHeight     =   6195
+   ScaleWidth      =   9660
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin VB.Timer TimerX 
@@ -23,14 +23,14 @@ Begin VB.Form frmPreaTablaPagos
       Top             =   1560
    End
    Begin FPSpreadADO.fpSpread vGrid 
-      Height          =   4092
-      Left            =   840
+      Height          =   4095
+      Left            =   960
       TabIndex        =   2
       Top             =   1920
-      Width           =   8532
+      Width           =   8655
       _Version        =   524288
-      _ExtentX        =   15050
-      _ExtentY        =   7218
+      _ExtentX        =   15266
+      _ExtentY        =   7223
       _StockProps     =   64
       BorderStyle     =   0
       EditEnterAction =   5
@@ -54,9 +54,9 @@ Begin VB.Form frmPreaTablaPagos
       TabIndex        =   3
       Top             =   1440
       Width           =   6732
-      _Version        =   1245187
-      _ExtentX        =   11875
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   11880
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   0
       BackColor       =   16777215
@@ -103,7 +103,7 @@ Begin VB.Form frmPreaTablaPagos
       Caption         =   "Tabla de Fechas de Pagos de Salario"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -131,6 +131,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim strSQL As String, rs As New ADODB.Recordset
 Dim vPaso As Boolean
 
 
@@ -167,9 +168,6 @@ End Sub
 
 
 Private Function fxGuardar() As Long
-Dim strSQL As String, rs As New ADODB.Recordset
-'Guarda la información de la linea
-'si es Insert devuelve el idx, sino devuelve 0
 
 On Error GoTo vError
 
@@ -191,11 +189,13 @@ If vGrid.Text = "" Or vGrid.Text = "0" Then
     strSQL = "select isnull(max(IDx),0) as ultimo from Crd_Prea_Tabla_pagos"
     Call OpenRecordSet(rs, strSQL)
       vGrid.Col = 1
-      vGrid.Text = CStr(rs!Ultimo)
+      vGrid.Text = CStr(rs!ultimo)
     rs.Close
    
     vGrid.Col = 1
     Call Bitacora("Registra", "Estudio Credito Tabla de Pago [ID]: " & vGrid.Text)
+    
+    MsgBox "Estudio Credito Tabla de Pago [ID]: " & vGrid.Text & ", Registrado satisfactoriamente!", vbInformation
    
       vGrid.Col = 2
       vGrid.Text = fxFechaServidor
@@ -208,13 +208,15 @@ If vGrid.Text = "" Or vGrid.Text = "0" Then
     vGrid.Col = 5
     strSQL = strSQL & "',corte = '" & Format(vGrid.Text, "yyyy/mm/dd")
     vGrid.Col = 6
-    strSQL = strSQL & "',npagos = " & vGrid.Text & ",usuario = '" & glogon.Usuario & "',fecha = dbo.MyGetdate()"
+    strSQL = strSQL & "',npagos = " & vGrid.Text & ", Modifica_usuario = '" & glogon.Usuario & "', Modifica_fecha = dbo.MyGetdate()"
     vGrid.Col = 1
     strSQL = strSQL & " where Idx = " & vGrid.Text
    
     Call ConectionExecute(strSQL)
     
     Call Bitacora("Modifica", "Estudio Credito Tabla de Pago [ID]: " & vGrid.Text)
+    
+    MsgBox "Estudio Credito Tabla de Pago [ID]: " & vGrid.Text & ", modificado satisfactoriamente!", vbInformation
     
       vGrid.Col = 2
       vGrid.Text = fxFechaServidor
@@ -247,7 +249,7 @@ vPaso = True
 cbo.Clear
 
 strSQL = "select cod_institucion as 'IdX',descripcion as 'ItmX'" _
-      & " from instituciones Order by Descripcion"
+      & " from instituciones Order by cod_institucion"
 Call sbCbo_Llena_New(cbo, strSQL, False, True)
 
 vPaso = False
@@ -285,13 +287,22 @@ If KeyCode = vbKeyDelete Then
   
   vGrid.Col = 1
   If vGrid.Text <> "" Then
-    strSQL = "delete Crd_Prea_Tabla_pagos where IDx = " & vGrid.Text
-    Call ConectionExecute(strSQL)
+  
+    i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
+    If i = vbYes Then
+          strSQL = "delete Crd_Prea_Tabla_pagos where IDx = " & vGrid.Text
+          Call ConectionExecute(strSQL)
+        
+          Call Bitacora("Elimina", "Estudio Credito Tabla de Pago [ID]: " & vGrid.Text)
+          
+          MsgBox "Estudio Credito Tabla de Pago [ID]: " & vGrid.Text & ", Eliminado!", vbInformation
+        
+          vGrid.DeleteRows vGrid.ActiveRow, 1
+          vGrid.MaxRows = vGrid.MaxRows - 1
+          If vGrid.MaxRows = 0 Then vGrid.MaxRows = 1
+    End If
   End If
   
-  vGrid.DeleteRows vGrid.ActiveRow, 1
-  vGrid.MaxRows = vGrid.MaxRows - 1
-  If vGrid.MaxRows = 0 Then vGrid.MaxRows = 1
 End If
 
 'Inserta Linea

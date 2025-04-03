@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCO_AplFnd_Procesa 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -21,7 +21,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
       TabIndex        =   14
       Top             =   1560
       Width           =   12840
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   22648
       _ExtentY        =   7646
       _StockProps     =   77
@@ -44,7 +44,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
       TabIndex        =   0
       Top             =   6000
       Width           =   7815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   13785
       _ExtentY        =   3413
       _StockProps     =   79
@@ -68,7 +68,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   1
          Top             =   720
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -95,7 +95,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   2
          Top             =   1080
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -122,7 +122,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   3
          Top             =   360
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -149,7 +149,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   4
          Top             =   720
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   556
          _StockProps     =   77
@@ -176,7 +176,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   5
          Top             =   1080
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   556
          _StockProps     =   77
@@ -203,7 +203,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   6
          Top             =   360
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   556
          _StockProps     =   77
@@ -230,7 +230,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   7
          Top             =   1680
          Width           =   7695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13573
          _ExtentY        =   238
          _StockProps     =   93
@@ -242,7 +242,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   13
          Top             =   360
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   450
          _StockProps     =   79
@@ -266,7 +266,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   12
          Top             =   720
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   450
          _StockProps     =   79
@@ -290,7 +290,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   11
          Top             =   1080
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   450
          _StockProps     =   79
@@ -314,7 +314,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   10
          Top             =   360
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   450
          _StockProps     =   79
@@ -338,7 +338,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   9
          Top             =   720
          Width           =   1935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3413
          _ExtentY        =   450
          _StockProps     =   79
@@ -362,7 +362,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   8
          Top             =   1080
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   450
          _StockProps     =   79
@@ -387,7 +387,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
       ToolTipText     =   "Exportar Lista"
       Top             =   1200
       Width           =   495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   873
       _ExtentY        =   661
       _StockProps     =   79
@@ -410,7 +410,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
       TabIndex        =   16
       Top             =   1200
       Width           =   1695
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2990
       _ExtentY        =   661
       _StockProps     =   79
@@ -434,7 +434,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
       TabIndex        =   17
       Top             =   6000
       Width           =   4815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8493
       _ExtentY        =   3413
       _StockProps     =   79
@@ -458,7 +458,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   18
          Top             =   360
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -485,7 +485,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   19
          Top             =   1560
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   661
          _StockProps     =   79
@@ -509,7 +509,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   20
          Top             =   1080
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -536,7 +536,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   21
          Top             =   720
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -564,7 +564,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   24
          Top             =   360
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   450
          _StockProps     =   79
@@ -588,7 +588,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   23
          Top             =   720
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   450
          _StockProps     =   79
@@ -612,7 +612,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
          TabIndex        =   22
          Top             =   1080
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   450
          _StockProps     =   79
@@ -637,7 +637,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
       TabIndex        =   26
       Top             =   360
       Width           =   5175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9128
       _ExtentY        =   873
       _StockProps     =   79
@@ -661,7 +661,7 @@ Begin VB.Form frmCO_AplFnd_Procesa
       TabIndex        =   25
       Top             =   1200
       Width           =   12855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   22675
       _ExtentY        =   661
       _StockProps     =   14

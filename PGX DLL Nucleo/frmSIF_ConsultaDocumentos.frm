@@ -2,7 +2,7 @@ VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmSIF_ConsultaDocumentos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -10,20 +10,20 @@ Begin VB.Form frmSIF_ConsultaDocumentos
    ClientHeight    =   9045
    ClientLeft      =   60
    ClientTop       =   345
-   ClientWidth     =   16935
+   ClientWidth     =   19980
    Icon            =   "frmSIF_ConsultaDocumentos.frx":0000
    LinkTopic       =   "Form1"
    ScaleHeight     =   9045
-   ScaleWidth      =   16935
+   ScaleWidth      =   19980
    StartUpPosition =   2  'CenterScreen
    WindowState     =   2  'Maximized
    Begin XtremeSuiteControls.CheckBox chkConceptos 
       Height          =   210
       Left            =   2880
-      TabIndex        =   128
+      TabIndex        =   121
       Top             =   3960
       Width           =   210
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   370
       _ExtentY        =   370
       _StockProps     =   79
@@ -32,174 +32,13 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Appearance      =   17
       Value           =   1
    End
-   Begin VB.Frame fraDocumento 
-      Caption         =   "Buscar Tipo de Documento"
-      BeginProperty Font 
-         Name            =   "Arial Narrow"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   3975
-      Left            =   3600
-      TabIndex        =   15
-      Top             =   5040
-      Visible         =   0   'False
-      Width           =   10695
-      Begin VB.TextBox txtDocNameConsulta 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFFFFF&
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00FF0000&
-         Height          =   315
-         Left            =   3120
-         TabIndex        =   18
-         Top             =   480
-         Width           =   6015
-      End
-      Begin VB.TextBox txtDocCodConsulta 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00FF0000&
-         Height          =   315
-         Left            =   1800
-         TabIndex        =   17
-         ToolTipText     =   "Código del Tipo de Documento"
-         Top             =   480
-         Width           =   1335
-      End
-      Begin MSComctlLib.ListView lswDocConsulta 
-         Height          =   2895
-         Left            =   1800
-         TabIndex        =   16
-         Top             =   960
-         Width           =   8655
-         _ExtentX        =   15266
-         _ExtentY        =   5106
-         View            =   3
-         LabelWrap       =   -1  'True
-         HideSelection   =   -1  'True
-         HideColumnHeaders=   -1  'True
-         FullRowSelect   =   -1  'True
-         GridLines       =   -1  'True
-         _Version        =   393217
-         ForeColor       =   -2147483640
-         BackColor       =   -2147483643
-         BorderStyle     =   1
-         Appearance      =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         NumItems        =   2
-         BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            Object.Width           =   2540
-         EndProperty
-         BeginProperty ColumnHeader(2) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   1
-            Object.Width           =   7832
-         EndProperty
-      End
-      Begin XtremeSuiteControls.PushButton btnDocConsultaCerrar 
-         Height          =   495
-         Left            =   9960
-         TabIndex        =   76
-         Top             =   0
-         Width           =   735
-         _Version        =   1441793
-         _ExtentX        =   1291
-         _ExtentY        =   868
-         _StockProps     =   79
-         BackColor       =   -2147483633
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   7.5
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         FlatStyle       =   -1  'True
-         Appearance      =   16
-         Picture         =   "frmSIF_ConsultaDocumentos.frx":6852
-      End
-      Begin VB.Label Label1 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BackStyle       =   0  'Transparent
-         Caption         =   "Documento"
-         BeginProperty Font 
-            Name            =   "Arial Narrow"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00000000&
-         Height          =   315
-         Index           =   26
-         Left            =   240
-         TabIndex        =   20
-         Top             =   480
-         Width           =   1215
-      End
-      Begin VB.Label Label1 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BackStyle       =   0  'Transparent
-         Caption         =   "Seleccione el tipo de documento que desea filtrar..:"
-         BeginProperty Font 
-            Name            =   "Arial Narrow"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00000000&
-         Height          =   1395
-         Index           =   25
-         Left            =   240
-         TabIndex        =   19
-         Top             =   960
-         Width           =   1335
-      End
-   End
    Begin XtremeSuiteControls.TabControl tcMain 
       Height          =   3612
       Left            =   3600
-      TabIndex        =   79
+      TabIndex        =   72
       Top             =   5160
       Width           =   13452
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   23728
       _ExtentY        =   6371
       _StockProps     =   68
@@ -271,10 +110,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.CheckBox chkBloqueado 
          Height          =   252
          Left            =   2280
-         TabIndex        =   116
+         TabIndex        =   109
          Top             =   3000
          Width           =   5892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10393
          _ExtentY        =   444
          _StockProps     =   79
@@ -296,15 +135,15 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Alignment       =   1
       End
       Begin FPSpreadADO.fpSpread vgridAsiento 
-         Height          =   2412
+         Height          =   2415
          Left            =   -69880
-         TabIndex        =   80
+         TabIndex        =   73
          Top             =   480
          Visible         =   0   'False
-         Width           =   10008
+         Width           =   13125
          _Version        =   524288
-         _ExtentX        =   17653
-         _ExtentY        =   4255
+         _ExtentX        =   23151
+         _ExtentY        =   4260
          _StockProps     =   64
          BackColorStyle  =   1
          BorderStyle     =   0
@@ -318,21 +157,21 @@ Begin VB.Form frmSIF_ConsultaDocumentos
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         MaxCols         =   12
-         SpreadDesigner  =   "frmSIF_ConsultaDocumentos.frx":701F
+         MaxCols         =   14
+         SpreadDesigner  =   "frmSIF_ConsultaDocumentos.frx":6852
          VScrollSpecial  =   -1  'True
          AppearanceStyle =   1
       End
       Begin FPSpreadADO.fpSpread vGridAfectaciones 
-         Height          =   2892
+         Height          =   2895
          Left            =   -70000
-         TabIndex        =   83
+         TabIndex        =   76
          Top             =   480
          Visible         =   0   'False
-         Width           =   10332
+         Width           =   10335
          _Version        =   524288
-         _ExtentX        =   18225
-         _ExtentY        =   5101
+         _ExtentX        =   18230
+         _ExtentY        =   5106
          _StockProps     =   64
          BackColorStyle  =   1
          BorderStyle     =   0
@@ -346,8 +185,8 @@ Begin VB.Form frmSIF_ConsultaDocumentos
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         MaxCols         =   12
-         SpreadDesigner  =   "frmSIF_ConsultaDocumentos.frx":7965
+         MaxCols         =   17
+         SpreadDesigner  =   "frmSIF_ConsultaDocumentos.frx":71E1
          VScrollSpecial  =   -1  'True
          VScrollSpecialType=   2
          AppearanceStyle =   1
@@ -355,7 +194,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin FPSpreadADO.fpSpread vGridFormasPago 
          Height          =   2892
          Left            =   -69880
-         TabIndex        =   89
+         TabIndex        =   82
          Top             =   480
          Visible         =   0   'False
          Width           =   10008
@@ -376,16 +215,16 @@ Begin VB.Form frmSIF_ConsultaDocumentos
             Strikethrough   =   0   'False
          EndProperty
          MaxCols         =   7
-         SpreadDesigner  =   "frmSIF_ConsultaDocumentos.frx":8720
+         SpreadDesigner  =   "frmSIF_ConsultaDocumentos.frx":81F8
          AppearanceStyle =   1
       End
       Begin XtremeSuiteControls.FlatEdit txtMonto 
          Height          =   312
          Left            =   1200
-         TabIndex        =   99
+         TabIndex        =   92
          Top             =   1800
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -401,20 +240,21 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtCedula 
          Height          =   312
          Left            =   1200
-         TabIndex        =   90
+         TabIndex        =   83
          Top             =   600
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -424,18 +264,19 @@ Begin VB.Form frmSIF_ConsultaDocumentos
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
+         BackColor       =   16777215
          Alignment       =   2
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtCod_Concepto 
          Height          =   312
          Left            =   1200
-         TabIndex        =   97
+         TabIndex        =   90
          Top             =   960
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -451,16 +292,16 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          EndProperty
          Alignment       =   2
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtDocumento 
          Height          =   312
          Left            =   1200
-         TabIndex        =   98
+         TabIndex        =   91
          Top             =   1440
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -475,16 +316,16 @@ Begin VB.Form frmSIF_ConsultaDocumentos
             Strikethrough   =   0   'False
          EndProperty
          Alignment       =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtCaja 
          Height          =   312
          Left            =   1200
-         TabIndex        =   100
+         TabIndex        =   93
          Top             =   2160
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -500,16 +341,16 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          EndProperty
          Alignment       =   2
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtUsuarioCaja 
          Height          =   312
          Left            =   6240
-         TabIndex        =   103
+         TabIndex        =   96
          Top             =   2160
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -525,16 +366,16 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          EndProperty
          Alignment       =   2
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtNombre 
          Height          =   312
          Left            =   3120
-         TabIndex        =   104
+         TabIndex        =   97
          Top             =   600
          Width           =   5052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8911
          _ExtentY        =   550
          _StockProps     =   77
@@ -549,16 +390,16 @@ Begin VB.Form frmSIF_ConsultaDocumentos
             Strikethrough   =   0   'False
          EndProperty
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtDescConcepto 
          Height          =   312
          Left            =   3120
-         TabIndex        =   105
+         TabIndex        =   98
          Top             =   960
          Width           =   5052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8911
          _ExtentY        =   550
          _StockProps     =   77
@@ -573,16 +414,16 @@ Begin VB.Form frmSIF_ConsultaDocumentos
             Strikethrough   =   0   'False
          EndProperty
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtEstado 
          Height          =   312
          Left            =   6240
-         TabIndex        =   106
+         TabIndex        =   99
          Top             =   1800
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -598,16 +439,16 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          EndProperty
          Alignment       =   2
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtFecha 
          Height          =   312
          Left            =   6240
-         TabIndex        =   108
+         TabIndex        =   101
          Top             =   1440
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -623,16 +464,16 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          EndProperty
          Alignment       =   2
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtOficina 
          Height          =   312
          Left            =   1200
-         TabIndex        =   101
+         TabIndex        =   94
          Top             =   2640
          Width           =   6972
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12298
          _ExtentY        =   550
          _StockProps     =   77
@@ -648,20 +489,21 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          EndProperty
          Alignment       =   2
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtDetalle 
          Height          =   2712
          Left            =   8280
-         TabIndex        =   111
+         TabIndex        =   104
          Top             =   600
          Width           =   5292
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9334
          _ExtentY        =   4784
          _StockProps     =   77
          ForeColor       =   0
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -671,19 +513,20 @@ Begin VB.Form frmSIF_ConsultaDocumentos
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
+         BackColor       =   16777215
          Locked          =   -1  'True
          MultiLine       =   -1  'True
          ScrollBars      =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.PushButton btnDocFix 
          Height          =   372
          Left            =   3240
-         TabIndex        =   112
+         TabIndex        =   105
          Top             =   1400
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   656
          _StockProps     =   79
@@ -699,16 +542,16 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmSIF_ConsultaDocumentos.frx":8E29
+         Picture         =   "frmSIF_ConsultaDocumentos.frx":88DF
       End
       Begin XtremeSuiteControls.FlatEdit txtRegistroUsuario 
          Height          =   312
          Left            =   -65800
-         TabIndex        =   117
+         TabIndex        =   110
          Top             =   1080
          Visible         =   0   'False
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -730,11 +573,11 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtRegistroFecha 
          Height          =   312
          Left            =   -63640
-         TabIndex        =   118
+         TabIndex        =   111
          Top             =   1080
          Visible         =   0   'False
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -756,11 +599,11 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtTrasladoUsuario 
          Height          =   312
          Left            =   -65800
-         TabIndex        =   119
+         TabIndex        =   112
          Top             =   1440
          Visible         =   0   'False
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -782,11 +625,11 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtTrasladoFecha 
          Height          =   312
          Left            =   -63640
-         TabIndex        =   120
+         TabIndex        =   113
          Top             =   1440
          Visible         =   0   'False
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -808,11 +651,11 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtAnulaUsuario 
          Height          =   312
          Left            =   -65800
-         TabIndex        =   121
+         TabIndex        =   114
          Top             =   1800
          Visible         =   0   'False
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -834,11 +677,11 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtAnulaFecha 
          Height          =   312
          Left            =   -63640
-         TabIndex        =   122
+         TabIndex        =   115
          Top             =   1800
          Visible         =   0   'False
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -860,11 +703,11 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtDebito 
          Height          =   312
          Left            =   -63040
-         TabIndex        =   123
+         TabIndex        =   116
          Top             =   3000
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
@@ -886,11 +729,11 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtCredito 
          Height          =   312
          Left            =   -61480
-         TabIndex        =   124
+         TabIndex        =   117
          Top             =   3000
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
@@ -912,11 +755,11 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtDiferencia 
          Height          =   312
          Left            =   -68320
-         TabIndex        =   125
+         TabIndex        =   118
          Top             =   3000
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -953,7 +796,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   192
          Index           =   12
          Left            =   240
-         TabIndex        =   110
+         TabIndex        =   103
          Top             =   2640
          Width           =   972
       End
@@ -975,7 +818,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   312
          Index           =   44
          Left            =   5280
-         TabIndex        =   109
+         TabIndex        =   102
          Top             =   1440
          Width           =   1212
       End
@@ -997,7 +840,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   312
          Index           =   43
          Left            =   5280
-         TabIndex        =   107
+         TabIndex        =   100
          Top             =   1800
          Width           =   1212
       End
@@ -1019,7 +862,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   192
          Index           =   42
          Left            =   5280
-         TabIndex        =   102
+         TabIndex        =   95
          Top             =   2160
          Width           =   972
       End
@@ -1041,7 +884,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   312
          Index           =   8
          Left            =   240
-         TabIndex        =   96
+         TabIndex        =   89
          Top             =   600
          Width           =   1212
       End
@@ -1063,7 +906,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   312
          Index           =   9
          Left            =   240
-         TabIndex        =   95
+         TabIndex        =   88
          Top             =   960
          Width           =   1212
       End
@@ -1085,7 +928,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   312
          Index           =   10
          Left            =   8280
-         TabIndex        =   94
+         TabIndex        =   87
          Top             =   360
          Width           =   1212
       End
@@ -1107,7 +950,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   312
          Index           =   11
          Left            =   240
-         TabIndex        =   93
+         TabIndex        =   86
          Top             =   1440
          Width           =   1212
       End
@@ -1129,7 +972,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   312
          Index           =   13
          Left            =   240
-         TabIndex        =   92
+         TabIndex        =   85
          Top             =   1800
          Width           =   1212
       End
@@ -1151,7 +994,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   192
          Index           =   15
          Left            =   240
-         TabIndex        =   91
+         TabIndex        =   84
          Top             =   2160
          Width           =   972
       End
@@ -1172,7 +1015,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          ForeColor       =   &H80000008&
          Height          =   252
          Left            =   -65800
-         TabIndex        =   88
+         TabIndex        =   81
          Top             =   840
          Visible         =   0   'False
          Width           =   2160
@@ -1194,7 +1037,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          ForeColor       =   &H80000008&
          Height          =   252
          Left            =   -63760
-         TabIndex        =   87
+         TabIndex        =   80
          Top             =   840
          Visible         =   0   'False
          Width           =   2292
@@ -1216,7 +1059,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          ForeColor       =   &H80000008&
          Height          =   312
          Left            =   -67480
-         TabIndex        =   86
+         TabIndex        =   79
          Top             =   1080
          Visible         =   0   'False
          Width           =   1680
@@ -1238,7 +1081,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          ForeColor       =   &H80000008&
          Height          =   312
          Left            =   -67480
-         TabIndex        =   85
+         TabIndex        =   78
          Top             =   1440
          Visible         =   0   'False
          Width           =   1680
@@ -1260,7 +1103,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          ForeColor       =   &H80000008&
          Height          =   312
          Left            =   -67480
-         TabIndex        =   84
+         TabIndex        =   77
          Top             =   1800
          Visible         =   0   'False
          Width           =   1680
@@ -1280,7 +1123,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   252
          Index           =   1
          Left            =   -69520
-         TabIndex        =   82
+         TabIndex        =   75
          Top             =   3000
          Visible         =   0   'False
          Width           =   1092
@@ -1299,7 +1142,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   252
          Index           =   0
          Left            =   -64000
-         TabIndex        =   81
+         TabIndex        =   74
          Top             =   3000
          Visible         =   0   'False
          Width           =   852
@@ -1337,7 +1180,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   255
          Index           =   6
          Left            =   360
-         TabIndex        =   28
+         TabIndex        =   22
          Top             =   3600
          Width           =   2775
       End
@@ -1357,7 +1200,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   255
          Index           =   5
          Left            =   360
-         TabIndex        =   27
+         TabIndex        =   21
          Top             =   2880
          Width           =   2775
       End
@@ -1377,7 +1220,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   255
          Index           =   4
          Left            =   360
-         TabIndex        =   26
+         TabIndex        =   20
          Top             =   2040
          Width           =   2295
       End
@@ -1397,7 +1240,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   255
          Index           =   3
          Left            =   360
-         TabIndex        =   25
+         TabIndex        =   19
          Top             =   1680
          Width           =   2295
       End
@@ -1417,7 +1260,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   255
          Index           =   2
          Left            =   360
-         TabIndex        =   24
+         TabIndex        =   18
          Top             =   1320
          Width           =   2295
       End
@@ -1437,7 +1280,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   255
          Index           =   1
          Left            =   360
-         TabIndex        =   23
+         TabIndex        =   17
          Top             =   960
          Width           =   2295
       End
@@ -1465,10 +1308,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.ComboBox cboBanco 
          Height          =   312
          Left            =   1320
-         TabIndex        =   61
+         TabIndex        =   55
          Top             =   4200
          Width           =   4212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7435
          _ExtentY        =   582
          _StockProps     =   77
@@ -1491,10 +1334,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.ComboBox cboTipoReporte 
          Height          =   312
          Left            =   1320
-         TabIndex        =   62
+         TabIndex        =   56
          Top             =   5040
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3836
          _ExtentY        =   582
          _StockProps     =   77
@@ -1517,10 +1360,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.PushButton btnRepInforme 
          Height          =   612
          Left            =   3600
-         TabIndex        =   63
+         TabIndex        =   57
          Top             =   5040
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   1080
          _StockProps     =   79
@@ -1536,15 +1379,15 @@ Begin VB.Form frmSIF_ConsultaDocumentos
             Strikethrough   =   0   'False
          EndProperty
          Appearance      =   16
-         Picture         =   "frmSIF_ConsultaDocumentos.frx":951C
+         Picture         =   "frmSIF_ConsultaDocumentos.frx":8FD2
       End
       Begin XtremeSuiteControls.PushButton btnRepCerrar 
          Height          =   612
          Left            =   5040
-         TabIndex        =   64
+         TabIndex        =   58
          Top             =   5040
          Width           =   852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   1080
          _StockProps     =   79
@@ -1559,15 +1402,15 @@ Begin VB.Form frmSIF_ConsultaDocumentos
             Strikethrough   =   0   'False
          EndProperty
          Appearance      =   16
-         Picture         =   "frmSIF_ConsultaDocumentos.frx":9CD8
+         Picture         =   "frmSIF_ConsultaDocumentos.frx":978E
       End
       Begin XtremeSuiteControls.FlatEdit txtReporteUsuario 
          Height          =   312
          Left            =   1320
-         TabIndex        =   65
+         TabIndex        =   59
          Top             =   3240
          Width           =   4212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7429
          _ExtentY        =   550
          _StockProps     =   77
@@ -1602,7 +1445,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   315
          Index           =   31
          Left            =   480
-         TabIndex        =   31
+         TabIndex        =   25
          Top             =   3240
          Width           =   1095
       End
@@ -1624,7 +1467,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   315
          Index           =   30
          Left            =   120
-         TabIndex        =   30
+         TabIndex        =   24
          Top             =   2520
          Width           =   1815
       End
@@ -1646,7 +1489,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   312
          Index           =   29
          Left            =   480
-         TabIndex        =   29
+         TabIndex        =   23
          Top             =   3960
          Width           =   3252
       End
@@ -1668,7 +1511,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   312
          Index           =   28
          Left            =   120
-         TabIndex        =   22
+         TabIndex        =   16
          Top             =   240
          Width           =   1812
       End
@@ -1690,7 +1533,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   315
          Index           =   27
          Left            =   480
-         TabIndex        =   21
+         TabIndex        =   15
          Top             =   5040
          Width           =   855
       End
@@ -1716,27 +1559,27 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   6
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_ConsultaDocumentos.frx":A4A5
+            Picture         =   "frmSIF_ConsultaDocumentos.frx":9F5B
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_ConsultaDocumentos.frx":AEC3
+            Picture         =   "frmSIF_ConsultaDocumentos.frx":A979
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_ConsultaDocumentos.frx":B67F
+            Picture         =   "frmSIF_ConsultaDocumentos.frx":B135
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_ConsultaDocumentos.frx":BE5B
+            Picture         =   "frmSIF_ConsultaDocumentos.frx":B911
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_ConsultaDocumentos.frx":C628
+            Picture         =   "frmSIF_ConsultaDocumentos.frx":C0DE
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmSIF_ConsultaDocumentos.frx":CFB5
+            Picture         =   "frmSIF_ConsultaDocumentos.frx":CA6B
             Key             =   ""
          EndProperty
       EndProperty
@@ -1758,8 +1601,8 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Strikethrough   =   0   'False
       EndProperty
       Height          =   5295
-      Left            =   3600
-      TabIndex        =   32
+      Left            =   5160
+      TabIndex        =   26
       Top             =   1200
       Visible         =   0   'False
       Width           =   7455
@@ -1779,7 +1622,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          ForeColor       =   &H80000008&
          Height          =   345
          Left            =   840
-         TabIndex        =   37
+         TabIndex        =   31
          Top             =   4200
          Width           =   4575
       End
@@ -1799,17 +1642,17 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          ForeColor       =   &H80000008&
          Height          =   345
          Left            =   840
-         TabIndex        =   33
+         TabIndex        =   27
          Top             =   4560
          Width           =   4575
       End
       Begin XtremeSuiteControls.ComboBox cboFormasPago 
          Height          =   312
          Left            =   1560
-         TabIndex        =   58
+         TabIndex        =   52
          Top             =   2160
          Width           =   2652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4683
          _ExtentY        =   582
          _StockProps     =   77
@@ -1832,10 +1675,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.ComboBox cboCajas 
          Height          =   312
          Left            =   1560
-         TabIndex        =   59
+         TabIndex        =   53
          Top             =   2640
          Width           =   5052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8916
          _ExtentY        =   582
          _StockProps     =   77
@@ -1858,10 +1701,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.ComboBox cboUsuarios 
          Height          =   312
          Left            =   1560
-         TabIndex        =   60
+         TabIndex        =   54
          Top             =   3000
          Width           =   5052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8916
          _ExtentY        =   582
          _StockProps     =   77
@@ -1884,10 +1727,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtReferencia_01 
          Height          =   312
          Left            =   5640
-         TabIndex        =   70
+         TabIndex        =   64
          Top             =   480
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   550
          _StockProps     =   77
@@ -1908,10 +1751,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtReferencia_02 
          Height          =   312
          Left            =   5640
-         TabIndex        =   71
+         TabIndex        =   65
          Top             =   840
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   550
          _StockProps     =   77
@@ -1932,10 +1775,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtReferencia_03 
          Height          =   312
          Left            =   5640
-         TabIndex        =   72
+         TabIndex        =   66
          Top             =   1200
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   550
          _StockProps     =   77
@@ -1956,10 +1799,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtFormaPagoNoRef 
          Height          =   312
          Left            =   5040
-         TabIndex        =   73
+         TabIndex        =   67
          Top             =   2160
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
@@ -1980,10 +1823,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtCajasApertura 
          Height          =   312
          Left            =   1560
-         TabIndex        =   74
+         TabIndex        =   68
          Top             =   3480
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
@@ -2004,10 +1847,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.PushButton btnFiltrosCerrar 
          Height          =   612
          Left            =   6360
-         TabIndex        =   75
+         TabIndex        =   69
          Top             =   4320
          Width           =   852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   1080
          _StockProps     =   79
@@ -2022,15 +1865,15 @@ Begin VB.Form frmSIF_ConsultaDocumentos
             Strikethrough   =   0   'False
          EndProperty
          Appearance      =   16
-         Picture         =   "frmSIF_ConsultaDocumentos.frx":D91A
+         Picture         =   "frmSIF_ConsultaDocumentos.frx":D3D0
       End
       Begin XtremeSuiteControls.FlatEdit txtCuenta 
          Height          =   312
          Left            =   1560
-         TabIndex        =   69
+         TabIndex        =   63
          Top             =   1680
          Width           =   2652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4678
          _ExtentY        =   550
          _StockProps     =   77
@@ -2051,10 +1894,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtUsuarioRegistra 
          Height          =   312
          Left            =   1560
-         TabIndex        =   68
+         TabIndex        =   62
          Top             =   1200
          Width           =   2652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4678
          _ExtentY        =   550
          _StockProps     =   77
@@ -2075,10 +1918,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtNoDocumento 
          Height          =   312
          Left            =   1560
-         TabIndex        =   67
+         TabIndex        =   61
          Top             =   840
          Width           =   2652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4678
          _ExtentY        =   550
          _StockProps     =   77
@@ -2099,10 +1942,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Begin XtremeSuiteControls.FlatEdit txtNoTransaccion 
          Height          =   312
          Left            =   1560
-         TabIndex        =   66
+         TabIndex        =   60
          Top             =   480
          Width           =   2652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4678
          _ExtentY        =   550
          _StockProps     =   77
@@ -2138,7 +1981,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   315
          Index           =   41
          Left            =   4320
-         TabIndex        =   46
+         TabIndex        =   40
          Top             =   1200
          Width           =   1455
       End
@@ -2160,7 +2003,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   315
          Index           =   40
          Left            =   4320
-         TabIndex        =   45
+         TabIndex        =   39
          Top             =   840
          Width           =   1455
       End
@@ -2182,7 +2025,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   315
          Index           =   39
          Left            =   4320
-         TabIndex        =   44
+         TabIndex        =   38
          Top             =   480
          Width           =   1455
       End
@@ -2204,7 +2047,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   435
          Index           =   38
          Left            =   120
-         TabIndex        =   43
+         TabIndex        =   37
          Top             =   1680
          Width           =   1335
       End
@@ -2226,7 +2069,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   315
          Index           =   37
          Left            =   120
-         TabIndex        =   42
+         TabIndex        =   36
          Top             =   1200
          Width           =   1455
       End
@@ -2248,7 +2091,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   315
          Index           =   36
          Left            =   120
-         TabIndex        =   41
+         TabIndex        =   35
          Top             =   840
          Width           =   1455
       End
@@ -2270,7 +2113,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   315
          Index           =   35
          Left            =   120
-         TabIndex        =   40
+         TabIndex        =   34
          Top             =   480
          Width           =   1455
       End
@@ -2292,7 +2135,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   315
          Index           =   34
          Left            =   4320
-         TabIndex        =   39
+         TabIndex        =   33
          Top             =   2160
          Width           =   1455
       End
@@ -2314,7 +2157,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   315
          Index           =   33
          Left            =   120
-         TabIndex        =   38
+         TabIndex        =   32
          Top             =   2160
          Width           =   1455
       End
@@ -2336,7 +2179,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   675
          Index           =   32
          Left            =   120
-         TabIndex        =   36
+         TabIndex        =   30
          Top             =   3480
          Width           =   1335
       End
@@ -2366,7 +2209,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   315
          Index           =   21
          Left            =   120
-         TabIndex        =   35
+         TabIndex        =   29
          Top             =   2640
          Width           =   1215
       End
@@ -2388,19 +2231,19 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Height          =   315
          Index           =   22
          Left            =   120
-         TabIndex        =   34
+         TabIndex        =   28
          Top             =   3000
          Width           =   1695
       End
    End
    Begin MSComctlLib.StatusBar StatusBarX 
       Align           =   2  'Align Bottom
-      Height          =   252
+      Height          =   255
       Left            =   0
       TabIndex        =   4
-      Top             =   8796
-      Width           =   16932
-      _ExtentX        =   29871
+      Top             =   8790
+      Width           =   19980
+      _ExtentX        =   35243
       _ExtentY        =   450
       _Version        =   393216
       BeginProperty Panels {8E3867A5-8586-11D1-B16A-00C0F0283628} 
@@ -2427,14 +2270,14 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       EndProperty
    End
    Begin FPSpreadADO.fpSpread vGrid 
-      Height          =   3372
+      Height          =   3375
       Left            =   3600
       TabIndex        =   3
       Top             =   1200
-      Width           =   10692
+      Width           =   10695
       _Version        =   524288
-      _ExtentX        =   18860
-      _ExtentY        =   5948
+      _ExtentX        =   18865
+      _ExtentY        =   5953
       _StockProps     =   64
       BackColorStyle  =   1
       BorderStyle     =   0
@@ -2448,8 +2291,8 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      MaxCols         =   12
-      SpreadDesigner  =   "frmSIF_ConsultaDocumentos.frx":E0E7
+      MaxCols         =   13
+      SpreadDesigner  =   "frmSIF_ConsultaDocumentos.frx":DB9D
       VScrollSpecial  =   -1  'True
       VScrollSpecialType=   2
       AppearanceStyle =   1
@@ -2470,10 +2313,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
    Begin XtremeSuiteControls.ListView lswDocumentos 
       Height          =   3015
       Left            =   120
-      TabIndex        =   47
+      TabIndex        =   41
       Top             =   840
       Width           =   3015
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5318
       _ExtentY        =   5318
       _StockProps     =   77
@@ -2498,10 +2341,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
    Begin XtremeSuiteControls.ListView lswConceptos 
       Height          =   1815
       Left            =   120
-      TabIndex        =   48
+      TabIndex        =   42
       Top             =   4680
       Width           =   3015
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5313
       _ExtentY        =   3196
       _StockProps     =   77
@@ -2526,10 +2369,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
    Begin XtremeSuiteControls.ComboBox cboEstado 
       Height          =   315
       Left            =   1560
-      TabIndex        =   49
+      TabIndex        =   43
       Top             =   6600
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2778
       _ExtentY        =   582
       _StockProps     =   77
@@ -2552,10 +2395,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
    Begin XtremeSuiteControls.ComboBox cboFechas 
       Height          =   315
       Left            =   1560
-      TabIndex        =   50
+      TabIndex        =   44
       Top             =   6960
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2778
       _ExtentY        =   582
       _StockProps     =   77
@@ -2578,10 +2421,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
    Begin XtremeSuiteControls.DateTimePicker dtpInicio 
       Height          =   315
       Left            =   1560
-      TabIndex        =   51
+      TabIndex        =   45
       Top             =   7320
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   556
       _StockProps     =   68
@@ -2600,10 +2443,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
    Begin XtremeSuiteControls.DateTimePicker dtpCorte 
       Height          =   315
       Left            =   1560
-      TabIndex        =   52
+      TabIndex        =   46
       Top             =   7680
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   556
       _StockProps     =   68
@@ -2620,12 +2463,12 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Format          =   3
    End
    Begin XtremeSuiteControls.PushButton btnBuscar 
-      Height          =   612
-      Left            =   8280
-      TabIndex        =   53
+      Height          =   615
+      Left            =   9960
+      TabIndex        =   47
       Top             =   480
-      Width           =   1212
-      _Version        =   1441793
+      Width           =   1215
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   1080
       _StockProps     =   79
@@ -2642,15 +2485,15 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmSIF_ConsultaDocumentos.frx":E986
+      Picture         =   "frmSIF_ConsultaDocumentos.frx":E457
    End
    Begin XtremeSuiteControls.FlatEdit txtBuscarPor 
       Height          =   312
       Left            =   3600
-      TabIndex        =   54
+      TabIndex        =   48
       Top             =   840
       Width           =   4452
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7853
       _ExtentY        =   550
       _StockProps     =   77
@@ -2670,10 +2513,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
    Begin XtremeSuiteControls.ComboBox cbo 
       Height          =   312
       Left            =   3600
-      TabIndex        =   55
+      TabIndex        =   49
       Top             =   480
       Width           =   4452
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7858
       _ExtentY        =   582
       _StockProps     =   77
@@ -2694,12 +2537,12 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       Text            =   "ComboBox1"
    End
    Begin XtremeSuiteControls.PushButton btnInforme 
-      Height          =   612
-      Left            =   9480
-      TabIndex        =   56
+      Height          =   615
+      Left            =   11160
+      TabIndex        =   50
       Top             =   480
-      Width           =   1572
-      _Version        =   1441793
+      Width           =   1575
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   1080
       _StockProps     =   79
@@ -2716,15 +2559,15 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmSIF_ConsultaDocumentos.frx":F3A4
+      Picture         =   "frmSIF_ConsultaDocumentos.frx":EE75
    End
    Begin XtremeSuiteControls.PushButton btnExportar 
-      Height          =   612
-      Left            =   11040
-      TabIndex        =   57
+      Height          =   615
+      Left            =   12720
+      TabIndex        =   51
       Top             =   480
-      Width           =   1572
-      _Version        =   1441793
+      Width           =   1575
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   1080
       _StockProps     =   79
@@ -2741,21 +2584,21 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmSIF_ConsultaDocumentos.frx":FB60
+      Picture         =   "frmSIF_ConsultaDocumentos.frx":F631
    End
    Begin XtremeSuiteControls.PushButton btnMain 
-      Height          =   372
+      Height          =   375
       Index           =   0
       Left            =   14040
-      TabIndex        =   77
+      TabIndex        =   70
       Top             =   4740
-      Width           =   1452
-      _Version        =   1441793
-      _ExtentX        =   2561
-      _ExtentY        =   656
+      Width           =   1335
+      _Version        =   1572864
+      _ExtentX        =   2355
+      _ExtentY        =   661
       _StockProps     =   79
       Caption         =   "Imprimir"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   7.5
@@ -2767,21 +2610,21 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmSIF_ConsultaDocumentos.frx":10365
+      Picture         =   "frmSIF_ConsultaDocumentos.frx":FE36
    End
    Begin XtremeSuiteControls.PushButton btnMain 
-      Height          =   372
+      Height          =   375
       Index           =   1
-      Left            =   15480
-      TabIndex        =   78
+      Left            =   15360
+      TabIndex        =   71
       Top             =   4740
-      Width           =   1452
-      _Version        =   1441793
-      _ExtentX        =   2561
-      _ExtentY        =   656
+      Width           =   1335
+      _Version        =   1572864
+      _ExtentX        =   2355
+      _ExtentY        =   661
       _StockProps     =   79
       Caption         =   "Reversar"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   7.5
@@ -2793,15 +2636,15 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmSIF_ConsultaDocumentos.frx":10A6C
+      Picture         =   "frmSIF_ConsultaDocumentos.frx":1053D
    End
    Begin XtremeSuiteControls.FlatEdit txtTransaccion 
       Height          =   312
       Left            =   11040
-      TabIndex        =   113
+      TabIndex        =   106
       Top             =   4800
       Width           =   2292
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4043
       _ExtentY        =   550
       _StockProps     =   77
@@ -2816,16 +2659,16 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtDocCod 
       Height          =   312
       Left            =   4800
-      TabIndex        =   114
+      TabIndex        =   107
       Top             =   4800
       Width           =   864
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1524
       _ExtentY        =   550
       _StockProps     =   77
@@ -2840,16 +2683,16 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtDocName 
       Height          =   312
       Left            =   5640
-      TabIndex        =   115
+      TabIndex        =   108
       Top             =   4800
       Width           =   4584
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8086
       _ExtentY        =   550
       _StockProps     =   77
@@ -2863,16 +2706,16 @@ Begin VB.Form frmSIF_ConsultaDocumentos
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtFiltraTipoDoc 
       Height          =   315
       Left            =   120
-      TabIndex        =   126
+      TabIndex        =   119
       Top             =   480
       Width           =   3015
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5318
       _ExtentY        =   556
       _StockProps     =   77
@@ -2893,10 +2736,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
    Begin XtremeSuiteControls.FlatEdit txtFiltraConcepto 
       Height          =   315
       Left            =   120
-      TabIndex        =   127
+      TabIndex        =   120
       Top             =   4320
       Width           =   3015
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5318
       _ExtentY        =   556
       _StockProps     =   77
@@ -2917,10 +2760,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
    Begin XtremeSuiteControls.CheckBox chkDocumentos 
       Height          =   210
       Left            =   2880
-      TabIndex        =   129
+      TabIndex        =   122
       Top             =   120
       Width           =   210
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   370
       _ExtentY        =   370
       _StockProps     =   79
@@ -2932,10 +2775,10 @@ Begin VB.Form frmSIF_ConsultaDocumentos
    Begin XtremeSuiteControls.CheckBox chkFiltros 
       Height          =   210
       Left            =   6840
-      TabIndex        =   130
+      TabIndex        =   123
       Top             =   120
       Width           =   1170
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2064
       _ExtentY        =   370
       _StockProps     =   79
@@ -2953,6 +2796,109 @@ Begin VB.Form frmSIF_ConsultaDocumentos
       UseVisualStyle  =   -1  'True
       Appearance      =   17
       Alignment       =   1
+   End
+   Begin XtremeSuiteControls.PushButton btnMain 
+      Height          =   375
+      Index           =   2
+      Left            =   16680
+      TabIndex        =   124
+      Top             =   4740
+      Width           =   1335
+      _Version        =   1572864
+      _ExtentX        =   2355
+      _ExtentY        =   661
+      _StockProps     =   79
+      Caption         =   "Exportar"
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   7.5
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   17
+      Picture         =   "frmSIF_ConsultaDocumentos.frx":10C3D
+   End
+   Begin XtremeSuiteControls.ComboBox cboSesion 
+      Height          =   330
+      Left            =   8160
+      TabIndex        =   125
+      Top             =   480
+      Width           =   1575
+      _Version        =   1572864
+      _ExtentX        =   2778
+      _ExtentY        =   582
+      _StockProps     =   77
+      ForeColor       =   1973790
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Style           =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+      Text            =   "ComboBox1"
+   End
+   Begin XtremeSuiteControls.FlatEdit txtSesionId 
+      Height          =   315
+      Left            =   8160
+      TabIndex        =   126
+      Top             =   840
+      Width           =   1575
+      _Version        =   1572864
+      _ExtentX        =   2778
+      _ExtentY        =   556
+      _StockProps     =   77
+      ForeColor       =   0
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Alignment       =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+   End
+   Begin XtremeSuiteControls.PushButton btnMain 
+      Height          =   375
+      Index           =   3
+      Left            =   18000
+      TabIndex        =   127
+      Top             =   4740
+      Width           =   1335
+      _Version        =   1572864
+      _ExtentX        =   2355
+      _ExtentY        =   661
+      _StockProps     =   79
+      Caption         =   "Recibo Digital"
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   7.5
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Enabled         =   0   'False
+      UseVisualStyle  =   -1  'True
+      Appearance      =   17
+      Picture         =   "frmSIF_ConsultaDocumentos.frx":10DA7
    End
    Begin VB.Label Label1 
       Appearance      =   0  'Flat
@@ -3175,7 +3121,7 @@ Begin VB.Form frmSIF_ConsultaDocumentos
    Begin VB.Image imgBanner 
       Height          =   9390
       Left            =   0
-      Picture         =   "frmSIF_ConsultaDocumentos.frx":1116C
+      Picture         =   "frmSIF_ConsultaDocumentos.frx":10F12
       Stretch         =   -1  'True
       Top             =   0
       Width           =   3285
@@ -3193,6 +3139,7 @@ Dim vScroll As Boolean
 Dim strSQLReporte As String
 Dim strDetalle As String
 Dim strSQL As String, rs As New ADODB.Recordset, itmX As ListViewItem
+Dim vPaso As Boolean
 
 
 
@@ -3220,9 +3167,6 @@ Private Sub btnBuscar_Click()
     Call vGrid_Click(1, 1)
 End Sub
 
-Private Sub btnDocConsultaCerrar_Click()
-fraDocumento.Visible = False
-End Sub
 
 Private Sub btnDocFix_Click()
 Dim strSQL As String
@@ -3256,7 +3200,7 @@ End Sub
 
 Private Sub btnExportar_Click()
 Dim vHeaders As vGridHeaders
-    vHeaders.Columnas = 12
+    vHeaders.Columnas = 13
     vHeaders.Headers(1) = "# Transaccion"
     vHeaders.Headers(2) = "# Documento"
     vHeaders.Headers(3) = "Tipo.Doc."
@@ -3266,18 +3210,13 @@ Dim vHeaders As vGridHeaders
     vHeaders.Headers(7) = "Usr.Registro"
     vHeaders.Headers(8) = "Caja"
     vHeaders.Headers(9) = "Apertura"
-    vHeaders.Headers(10) = "Oficina"
-    vHeaders.Headers(11) = "Cliente"
-    vHeaders.Headers(12) = "Detalle"
+    vHeaders.Headers(10) = "Sesión Id"
+    vHeaders.Headers(11) = "Oficina"
+    vHeaders.Headers(12) = "Cliente"
+    vHeaders.Headers(13) = "Detalle"
 
  Call sbSIFGridExportar(vGrid, vHeaders, "ProGrX_ConsultaDocumentos")
 
-'Select Case ButtonMenu.Key
-'  Case "Excel"
-'      Call sbSIFGridExportar(vGrid, vHeaders, "ProGrX_ConsultaDocumentos")
-'  Case "HTML"
-'      Call sbSIFGridExportar(vGrid, vHeaders, "ProGrX_ConsultaDocumentos", "HTML")
-'End Select
 End Sub
 
 Private Sub btnFiltrosCerrar_Click()
@@ -3291,12 +3230,156 @@ Private Sub btnInforme_Click()
     fraReportes.Visible = True
 End Sub
 
+
+Private Sub sbExportar_Detalle()
+Dim vHeaders As vGridHeaders
+    
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+    
+Select Case tcMain.SelectedItem
+
+Case 1 'Asiento
+    vHeaders.Columnas = vgridAsiento.MaxCols
+    vHeaders.Headers(1) = "Cuenta"
+    vHeaders.Headers(2) = "Unidad"
+    vHeaders.Headers(3) = "Centro Costo"
+    vHeaders.Headers(4) = "Divisa"
+    vHeaders.Headers(5) = "Descripción"
+    vHeaders.Headers(6) = "Débito"
+    vHeaders.Headers(7) = "Crédito"
+    vHeaders.Headers(8) = "Tipo Cambio"
+    vHeaders.Headers(9) = "Importe Real"
+    vHeaders.Headers(10) = "Ref.01"
+    vHeaders.Headers(11) = "Ref.02"
+    vHeaders.Headers(12) = "Ref.03"
+    vHeaders.Headers(13) = "Tipo Doc."
+    vHeaders.Headers(14) = "Num. Doc."
+
+    Call sbSIFGridExportar(vgridAsiento, vHeaders, "ProGrX_ConsultaDocumentos_Asiento")
+
+Case 2 'Afectaciones
+
+    vGridAfectaciones.Sheet = vGridAfectaciones.ActiveSheet
+ 
+    Select Case vGridAfectaciones.ActiveSheet
+    Case 1 'Creditos
+        vHeaders.Columnas = vGridAfectaciones.MaxCols
+        vHeaders.Headers(1) = "No. Operacion"
+        vHeaders.Headers(2) = "Linea"
+        vHeaders.Headers(3) = "Proceso"
+        vHeaders.Headers(4) = "Int.Cor"
+        vHeaders.Headers(5) = "Int.Mor"
+        vHeaders.Headers(6) = "Cargos"
+        vHeaders.Headers(7) = "Póliza"
+        vHeaders.Headers(8) = "IVA"
+        vHeaders.Headers(9) = "Principal"
+        vHeaders.Headers(10) = "Cédula"
+        vHeaders.Headers(11) = "Nombre"
+        vHeaders.Headers(12) = "Concepto"
+        vHeaders.Headers(13) = "Institución"
+        vHeaders.Headers(14) = "Línea Descripcion"
+        vHeaders.Headers(15) = "Garantía"
+        vHeaders.Headers(16) = "Tipo Doc."
+        vHeaders.Headers(17) = "Num.Doc."
+        
+        Call sbSIFGridExportar(vGridAfectaciones, vHeaders, "ProGrX_ConsultaDocumentos_Mov_Creditos")
+    
+    Case 2 'Fondos
+    
+    
+        vHeaders.Columnas = vGridAfectaciones.MaxCols
+        vHeaders.Headers(1) = "Plan"
+        vHeaders.Headers(2) = "Contrato"
+        vHeaders.Headers(3) = "Cédula"
+        vHeaders.Headers(4) = "Nombre"
+        vHeaders.Headers(5) = "Monto"
+        vHeaders.Headers(6) = "Concepto"
+        vHeaders.Headers(7) = "Detalle"
+        vHeaders.Headers(8) = "Institución"
+        vHeaders.Headers(9) = "Plan Descripcion"
+        vHeaders.Headers(10) = "Tipo Doc."
+        vHeaders.Headers(11) = "Num.Doc."
+        Call sbSIFGridExportar(vGridAfectaciones, vHeaders, "ProGrX_ConsultaDocumentos_Mov_Fondos")
+    
+    Case 3 'Patrimonio
+    
+ 
+        vHeaders.Columnas = vGridAfectaciones.MaxCols
+        vHeaders.Headers(1) = "Tipo"
+        vHeaders.Headers(2) = "Cédula"
+        vHeaders.Headers(3) = "Nombre"
+        vHeaders.Headers(4) = "Monto"
+        vHeaders.Headers(5) = "Concepto"
+        vHeaders.Headers(6) = "Institución"
+        vHeaders.Headers(7) = "Tipo Doc."
+        vHeaders.Headers(8) = "Num.Doc."
+    
+        Call sbSIFGridExportar(vGridAfectaciones, vHeaders, "ProGrX_ConsultaDocumentos_Mov_Patrimonio")
+    Case 3 'CxC
+    
+        vHeaders.Columnas = vGridAfectaciones.MaxCols
+        vHeaders.Headers(1) = "# Transaccion"
+        vHeaders.Headers(2) = "# Documento"
+        vHeaders.Headers(3) = "Tipo.Doc."
+        vHeaders.Headers(4) = "Monto"
+        vHeaders.Headers(5) = "Estado"
+        vHeaders.Headers(6) = "Fec.Registro"
+        vHeaders.Headers(7) = "Usr.Registro"
+        vHeaders.Headers(8) = "Caja"
+        vHeaders.Headers(9) = "Apertura"
+        vHeaders.Headers(10) = "Sesión Id"
+        vHeaders.Headers(11) = "Oficina"
+        vHeaders.Headers(12) = "Cliente"
+        vHeaders.Headers(13) = "Detalle"
+        Call sbSIFGridExportar(vGridAfectaciones, vHeaders, "ProGrX_ConsultaDocumentos_Mov_CxC")
+    End Select
+    
+
+End Select
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
 Private Sub btnMain_Click(Index As Integer)
+Dim pFormato As String
+
  Select Case Index
    Case 0 'Reimprimir
         Call sbImprimeRecibo(vCodigo, vTipoDocu)
    Case 1 'Reversar
         Call sbReversar(vTipoDocu, vCodigo)
+   Case 2 'Exportar
+        Call sbExportar_Detalle
+        
+   Case 3 'Recibo Digital
+        Select Case Mid(txtCod_Concepto.Text, 1, 3)
+            Case "CRD"
+                pFormato = "Creditos"
+            Case "FND"
+                pFormato = "Fondos"
+            Case "PAT"
+                pFormato = "Patrimonio"
+            Case "GEN"
+                pFormato = "General"
+            Case Else
+                pFormato = "General"
+        End Select
+   
+        strSQL = "exec spCajasReciboDigital '" & vCodigo & "', '" & vTipoDocu & "', '" & pFormato & "'"
+        Call ConectionExecute(strSQL)
+        
+        strSQL = ">>> Recibo Digital enviado al cliente <<<" & vbCrLf _
+               & " Documento : " & vTipoDocu & " ...No.: " & vCodigo
+
  End Select
 End Sub
 
@@ -3482,7 +3565,7 @@ strSQL = "select cod_concepto,DESCRIPCION from sif_conceptos" _
        & " order by descripcion"
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
- Set itmX = lswConceptos.ListItems.Add(, , rs!Descripcion)
+ Set itmX = lswConceptos.ListItems.Add(, , rs!DESCRIPCION)
      itmX.Tag = rs!cod_concepto
      itmX.Checked = chkConceptos.Value
  rs.MoveNext
@@ -3545,11 +3628,12 @@ Dim vCadena As String, iCantidad As Integer
 On Error GoTo vError
 
 Me.MousePointer = vbHourglass
+
 iCantidad = 0
 
 strSQL = "select Cod_transaccion,isnull(documento,0),Tipo_documento,monto,case when estado = 'I' then 'Emitido'" _
        & " when estado = 'P' then 'Pendiente' when  estado = 'A' then 'Anulado'  end as Estado" _
-       & ",isnull(Registro_fecha,'') as Fecha_registro,isnull(Registro_Usuario,'') as 'Usuario', cod_caja,cod_apertura,cod_oficina,Cliente_Nombre" _
+       & ",isnull(Registro_fecha,'') as Fecha_registro,isnull(Registro_Usuario,'') as 'Usuario', cod_caja, cod_apertura, Id_Sesion, cod_oficina, Cliente_Nombre" _
        & ",isnull(Detalle,'') from Sif_Transacciones"
  
 Select Case Mid(cbo, 1, 2)
@@ -3674,9 +3758,31 @@ If chkAsientosDesbalanceados.Value = vbChecked Then
           & " = 0"
 End If
 
+If IsNumeric(txtSesionId.Text) Then
+   
+   Dim pSesion As Long
+   pSesion = txtSesionId.Text
+   
+   If cboSesion.Text = "ROE" Then
+        glogon.strSQL = "select ISNULL(ID_SESION,0) AS 'ID_SESION' from CAJAS_ROE WHERE ID_ROE = " & pSesion
+        Call OpenRecordSet(rs, glogon.strSQL)
+        If Not rs.BOF And Not rs.EOF Then
+            If rs!ID_SESION > 0 Then
+                pSesion = rs!ID_SESION
+            End If
+        End If
+   End If
+   
+   
+   strSQL = strSQL & " and ID_SESION = " & pSesion
+   
+
+End If
+
+
 strSQL = strSQL & " Order by Registro_fecha desc, Tipo_Documento, Cod_Transaccion desc"
 
-Call sbCargaGridLocal(vGrid, 12, strSQL)
+Call sbCargaGridLocal(vGrid, 13, strSQL)
 
 Me.MousePointer = vbDefault
 
@@ -3807,9 +3913,11 @@ Me.MousePointer = vbHourglass
 
 txtTransaccion.SetFocus
 
-strSQL = "select  isnull(LTRIM( max( REPLICATE(' ', 40 - len(COD_TRANSACCION)) + COD_TRANSACCION  ) ), '') as 'Transaccion'" _
+'strSQL = "select  isnull(LTRIM( max( REPLICATE(' ', 40 - len(COD_TRANSACCION)) + COD_TRANSACCION  ) ), '') as 'Transaccion'"
+strSQL = "select  Top 1 rtrim(COD_TRANSACCION)  as 'Transaccion'" _
        & " from Sif_Transacciones" _
-       & " where Tipo_Documento = '" & txtDocCod.Text & "'"
+       & " where Tipo_Documento = '" & txtDocCod.Text _
+       & "' order by Registro_Fecha desc, Cod_Transaccion"
 Call OpenRecordSet(rs, strSQL)
 If Not rs.EOF And Not rs.BOF Then
    txtTransaccion.Text = rs!Transaccion & ""
@@ -3833,7 +3941,7 @@ Private Sub sbAfectaciones(strCodigo As String, strDocumento As String)
 Dim strSQL As String, rs As New ADODB.Recordset
 Dim vTcon As String, i As Integer, curCargos As Currency
 Dim curIntC As Currency, curIntM As Currency, curAmortiza As Currency
-Dim curPoliza As Currency
+Dim curPoliza As Currency, curIVA As Currency
 
 Me.MousePointer = vbHourglass
 
@@ -3845,7 +3953,7 @@ curIntM = 0
 curAmortiza = 0
 curCargos = 0
 curPoliza = 0
-
+curIVA = 0
 
 
 With vGridAfectaciones
@@ -3854,7 +3962,7 @@ Select Case .Sheet
  
   Case 1 'Creditos
         .MaxRows = 0
-        .MaxCols = 11
+        .MaxCols = 17
   
         strSQL = "select * from vSIF_CtrlDoc_Crd_Detalle" _
                & " Where TCon= '" & strDocumento & "' And NCon = '" & strCodigo & "'"
@@ -3878,21 +3986,36 @@ Select Case .Sheet
           .Col = 7
           .Text = Format(rs!Poliza, "Standard")
           .Col = 8
-          .Text = Format(rs!Principal, "Standard")
+          .Text = Format(rs!Iva, "Standard")
+          
+          
           .Col = 9
-          .Text = CStr(rs!Cedula)
+          .Text = Format(rs!Principal, "Standard")
           .Col = 10
-          .Text = CStr(rs!Nombre)
+          .Text = CStr(rs!Cedula)
           .Col = 11
-          .Text = CStr(rs!Concepto)
+          .Text = CStr(rs!Nombre)
           .Col = 12
+          .Text = CStr(rs!Concepto)
+          .Col = 13
           .Text = CStr(rs!Institucion)
+          .Col = 14
+          .Text = CStr(rs!LineaX)
+          .Col = 15
+          .Text = CStr(rs!Garantia_Desc)
+          
+          .Col = 16
+          .Text = CStr(rs!TCon)
+          .Col = 17
+          .Text = CStr(rs!NCon)
+          
           
           curAmortiza = curAmortiza + rs!Principal
           curCargos = curCargos + rs!Cargo
           curIntC = curIntC + rs!IntCor
           curIntM = curIntM + rs!IntMor
           curPoliza = curPoliza + rs!Poliza
+          curIVA = curIVA + rs!Iva
           rs.MoveNext
         Loop
         rs.Close
@@ -3911,14 +4034,16 @@ Select Case .Sheet
         .Col = 7
         .Text = Format(curPoliza, "Standard")
         .Col = 8
-        .Text = Format(curAmortiza, "Standard")
+        .Text = Format(curIVA, "Standard")
         .Col = 9
-        .Text = Format(curIntC + curIntM + curAmortiza + curCargos + curPoliza, "Standard")
+        .Text = Format(curAmortiza, "Standard")
+        .Col = 10
+        .Text = Format(curIVA + curIntC + curIntM + curAmortiza + curCargos + curPoliza, "Standard")
 
     Case 2 'Fondos
     
         .MaxRows = 0
-        .MaxCols = 8
+        .MaxCols = 11
   
         strSQL = "select * from vSIF_CtrlDoc_Fnd_Detalle" _
                & " Where TCon= '" & strDocumento & "' And NCon = '" & strCodigo & "'"
@@ -3938,10 +4063,19 @@ Select Case .Sheet
           .Text = Format(rs!Monto, "Standard")
           .Col = 6
           .Text = Trim(rs!Concepto)
+          
           .Col = 7
-          .Text = Trim(rs!Institucion)
+          .Text = Trim(rs!Detalle)
+          
           .Col = 8
+          .Text = Trim(rs!Institucion)
+          .Col = 9
           .Text = Trim(rs!PlanDesc)
+          
+          .Col = 10
+          .Text = CStr(rs!TCon)
+          .Col = 11
+          .Text = CStr(rs!NCon)
           
           curAmortiza = curAmortiza + rs!Monto
           rs.MoveNext
@@ -3959,7 +4093,7 @@ Select Case .Sheet
     
     Case 3 'Patrimonio
         .MaxRows = 0
-        .MaxCols = 6
+        .MaxCols = 8
   
         strSQL = "select * from vSIF_CtrlDoc_Pat_Detalle" _
                & " Where TCon= '" & strDocumento & "' And NCon = '" & strCodigo & "'"
@@ -3979,6 +4113,12 @@ Select Case .Sheet
           .Text = Trim(rs!Concepto)
           .Col = 6
           .Text = Trim(rs!Institucion)
+          
+          
+          .Col = 7
+          .Text = CStr(rs!TCon)
+          .Col = 8
+          .Text = CStr(rs!NCon)
           
           curAmortiza = curAmortiza + rs!Monto
           rs.MoveNext
@@ -4024,7 +4164,7 @@ Call OpenRecordSet(rs, strSQL)
 If rs.EOF And rs.BOF Then
  fxUsuarioNombre = "[SIN DESCRIPCION]"
 Else
- fxUsuarioNombre = "[" & UCase(Trim(rs!Descripcion)) & "]"
+ fxUsuarioNombre = "[" & UCase(Trim(rs!DESCRIPCION)) & "]"
 
 End If
 rs.Close
@@ -4039,12 +4179,18 @@ Dim strSQL As String, rs As New ADODB.Recordset
 
 vModulo = 10
 
+vPaso = False
+
 vScroll = False
  FlatScrollBar.Value = 0
 vScroll = True
 
 Call Formularios(Me)
 Call RefrescaTags(Me)
+
+cboSesion.AddItem "Sesión Id"
+cboSesion.AddItem "ROE"
+cboSesion.Text = "Sesión Id"
 
 lswConceptos.ColumnHeaders.Add , , "", 3150
 lswDocumentos.ColumnHeaders.Add , , "", 3150
@@ -4126,6 +4272,8 @@ FlatScrollBar.Top = txtDocCod.Top
 
 btnMain.Item(0).Top = txtDocCod.Top - 60
 btnMain.Item(1).Top = btnMain.Item(0).Top
+btnMain.Item(2).Top = btnMain.Item(0).Top
+btnMain.Item(3).Top = btnMain.Item(0).Top
 
 lswConceptos.Height = cboEstado.Top - lswConceptos.Top - 200  '  7800
 
@@ -4144,19 +4292,6 @@ End Sub
 
 
 
-
-
-Private Sub lswDocConsulta_DblClick()
-
-If lswDocConsulta.ListItems.Count = 0 Then Exit Sub
-
-fraDocumento.Visible = False
-
-txtDocCod.Text = lswDocConsulta.SelectedItem
-txtDocName.Text = lswDocConsulta.SelectedItem.SubItems(1)
-Call sbDocUltDocumento
-
-End Sub
 
 
 
@@ -4247,6 +4382,7 @@ strSQL = "exec spSIFDocsReversaMain '" & pTipo & "','" & pDocumento & "','" & gl
 Call ConectionExecute(strSQL)
 
 Me.MousePointer = vbDefault
+
 MsgBox "Documento Reversado Satisfactoriamente...", vbExclamation
 
 Exit Sub
@@ -4461,16 +4597,30 @@ If KeyCode = vbKeyReturn Or KeyCode = vbKeyTab Then
 End If
 
 If KeyCode = vbKeyF4 Then
-   fraDocumento.Top = txtDocCod.Top
-   fraDocumento.Visible = True
-   
-   txtDocCodConsulta.Text = ""
-   txtDocNameConsulta.Text = ""
-   
-   txtDocCodConsulta.SetFocus
-   lswDocConsulta.ListItems.Clear
-   
-   Call sbDocConsulta
+
+    
+
+    gBusquedas.Col1Name = "Tipo"
+    gBusquedas.Col2Name = "Descripción"
+    gBusquedas.Columna = "Tipo_Documento"
+    gBusquedas.Orden = "Tipo_Documento"
+    gBusquedas.Consulta = "select Tipo_Documento,Descripcion from SIF_Documentos"
+    gBusquedas.Filtro = " And Activo = 1"
+    
+    vPaso = True
+    
+    frmBusquedas.Show vbModal
+    
+    vPaso = False
+    
+    If gBusquedas.Resultado <> "" Then
+        txtDocCod.Text = gBusquedas.Resultado
+        txtDocName.Text = gBusquedas.Resultado2
+        
+        Call sbDocUltDocumento
+    End If
+    
+
 End If
 
 End Sub
@@ -4487,7 +4637,7 @@ strSQL = "select Descripcion from SIF_Documentos where Activo = 1" _
 
 Call OpenRecordSet(rs, strSQL)
 If Not rs.EOF And Not rs.BOF Then
-   txtDocName.Text = Trim(rs!Descripcion)
+   txtDocName.Text = Trim(rs!DESCRIPCION)
 Else
    txtDocName.Text = "! >> Tipo de Documento no encontrado << !"
 End If
@@ -4504,86 +4654,21 @@ End Sub
 
 
 
-Private Sub sbDocConsulta()
-Dim strSQL As String, rs As New ADODB.Recordset
-Dim itmX As ListItem
-
-On Error GoTo vError
-Me.MousePointer = vbHourglass
-
-strSQL = "select Tipo_Documento,Descripcion from SIF_Documentos where Activo = 1"
-
-If Len(txtDocCodConsulta.Text) > 0 Then
-   strSQL = strSQL & " and Tipo_Documento like '%" & txtDocCodConsulta.Text & "%'"
-End If
-
-If Len(txtDocNameConsulta.Text) > 0 Then
-   strSQL = strSQL & " and Descripcion like '%" & txtDocNameConsulta.Text & "%'"
-End If
-
-strSQL = strSQL & " order by Tipo_documento"
-
-lswDocConsulta.ListItems.Clear
-
-Call OpenRecordSet(rs, strSQL)
-Do While Not rs.EOF
-  Set itmX = lswDocConsulta.ListItems.Add(, , rs!Tipo_Documento)
-      itmX.SubItems(1) = rs!Descripcion
-  rs.MoveNext
-Loop
-rs.Close
-
-Me.MousePointer = vbDefault
-Exit Sub
-
-vError:
-  Me.MousePointer = vbDefault
-  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
-  
-End Sub
-
 Private Sub txtDocCod_LostFocus()
-Call sbDocCodName
-Call sbDocUltDocumento
-End Sub
+If vPaso Then Exit Sub
 
-Private Sub txtDocCodConsulta_KeyDown(KeyCode As Integer, Shift As Integer)
-If KeyCode = vbKeyReturn Then
-   txtDocNameConsulta.SetFocus
-   Call sbDocConsulta
+If txtDocCod.Text <> "" Then
+    Call sbDocCodName
+    Call sbDocUltDocumento
 End If
 End Sub
+
 
 Private Sub txtDocName_KeyDown(KeyCode As Integer, Shift As Integer)
 If KeyCode = vbKeyReturn Or KeyCode = vbKeyTab Then
    txtTransaccion.SetFocus
 End If
-
-If KeyCode = vbKeyF4 Then
-   fraDocumento.Top = txtDocCod.Top
-   fraDocumento.Left = tcMain.Left
-   fraDocumento.Visible = True
-   
-   txtDocCodConsulta.Text = ""
-   txtDocNameConsulta.Text = ""
-   
-   txtDocCodConsulta.SetFocus
-   lswDocConsulta.ListItems.Clear
-   
-   Call sbDocConsulta
-   
-End If
-
 End Sub
-
-Private Sub txtDocNameConsulta_KeyDown(KeyCode As Integer, Shift As Integer)
-If KeyCode = vbKeyReturn Then
-   Call sbDocConsulta
-End If
-End Sub
-
-
-
 
 Private Sub txtFiltraConcepto_KeyDown(KeyCode As Integer, Shift As Integer)
 If KeyCode = vbKeyReturn Then
@@ -4640,6 +4725,7 @@ vTipoDocu = vGrid.Text
 txtTransaccion.Text = vCodigo
 txtDocCod.Text = vTipoDocu
 
+
 Call sbCargaDocumento(vCodigo, vTipoDocu)
 
 End Sub
@@ -4673,7 +4759,7 @@ Dim i As Integer
 
  strSQL = "select isnull(C.Cod_Cuenta_Mask, D.cod_cuenta) as 'COD_CUENTA' , isnull(C.descripcion,'--Cuenta No Existe--') as 'Descripcion',D.Cod_divisa,D.tipo_movimiento,D.monto,D.cod_unidad" _
           & ",U.descripcion as UnidadX,D.cod_centro_costo,X.descripcion as CCX,D.Tipo_Cambio" _
-          & ",D.Referencia_01,D.Referencia_02,D.Referencia_03, D.Monto / dbo.fxSys_Tipo_Cambio_Apl(D.Tipo_Cambio) as 'IMPORTE_REAL'" _
+          & ",D.Referencia_01,D.Referencia_02,D.Referencia_03, D.Monto / dbo.fxSys_Tipo_Cambio_Apl(D.Tipo_Cambio) as 'IMPORTE_REAL', D.Tipo_Documento, D.Cod_Transaccion" _
           & " from Sif_transacciones_asiento D left join CntX_Cuentas C on D.cod_cuenta = C.cod_cuenta and D.cod_contabilidad = C.cod_contabilidad" _
           & " left join cntx_unidades U on D.cod_unidad = U.cod_unidad and D.cod_contabilidad = U.cod_contabilidad" _
           & " left join cntx_centro_costos X on D.cod_centro_costo = X.cod_centro_costo and D.cod_contabilidad = X.cod_contabilidad" _
@@ -4696,7 +4782,7 @@ Call OpenRecordSet(rs, strSQL)
             vgridAsiento.Text = rs!cod_cuenta & ""
             
          Case 2
-            vgridAsiento.Text = rs!Cod_Unidad & ""
+            vgridAsiento.Text = rs!COD_UNIDAD & ""
             vgridAsiento.CellNoteIndicator = CellNoteIndicatorShowAndFireEvent
             vgridAsiento.CellNote = rs!UnidadX & ""
             vgridAsiento.TextTip = TextTipFixed
@@ -4711,7 +4797,7 @@ Call OpenRecordSet(rs, strSQL)
            vgridAsiento.Text = UCase(CStr(rs!Cod_Divisa))
          
          Case 5
-            vgridAsiento.Text = UCase(CStr(rs!Descripcion & ""))
+            vgridAsiento.Text = UCase(CStr(rs!DESCRIPCION & ""))
          Case 6 'Debitos
            If rs!Tipo_Movimiento = "D" Then
              vgridAsiento.Text = Format(CStr(rs!Monto), "Standard")
@@ -4734,8 +4820,16 @@ Call OpenRecordSet(rs, strSQL)
                vgridAsiento.Text = rs!Referencia_01 & ""
          Case 11 'Referencia 02
                vgridAsiento.Text = rs!Referencia_02 & ""
+         
          Case 12 'Referencia 03
                vgridAsiento.Text = rs!Referencia_03 & ""
+               
+         Case 13 'Tipo
+               vgridAsiento.Text = rs!Tipo_Documento & ""
+               
+         Case 14 'Documento
+               vgridAsiento.Text = rs!Cod_Transaccion & ""
+               
         End Select
       Next i
       vgridAsiento.MaxRows = vgridAsiento.MaxRows + 1
@@ -4780,11 +4874,14 @@ Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
 
+btnMain(3).Enabled = False
+
 strSQL = "select T.tipo_documento,T.cod_transaccion, Docs.Descripcion as 'DocumentoDesc' " _
-        & ",isnull(T.cliente_identificacion,'') as identificacion, isnull(T.cliente_nombre,'') as nombre,T.monto,T.registro_fecha" _
-        & ",T.cod_Concepto,T.registro_usuario, C.descripcion as concepto,Documento,O.Descripcion as oficina,Ca.Descripcion as 'Caja'" _
-        & ",case when T.Estado = 'P' then 'Pendiente' when T.Estado = 'I' then 'Impreso' when T.Estado = 'A' then 'Anulado' end as 'Estado'" _
-        & ",Linea1,Linea2,Linea3,Linea4,Linea5,Linea6,Linea7,Linea8,Linea9,Linea10,Linea11,Detalle,isnull(T.TRASLADO_BLOQUEO,0) as 'Bloqueo'" _
+        & ", isnull(T.cliente_identificacion,'') as identificacion, isnull(T.cliente_nombre,'') as nombre,T.monto,T.registro_fecha" _
+        & ", T.cod_Concepto,T.registro_usuario, C.descripcion as concepto,Documento,O.Descripcion as oficina,Ca.Descripcion as 'Caja'" _
+        & ", case when T.Estado = 'P' then 'Pendiente' when T.Estado = 'I' then 'Impreso' when T.Estado = 'A' then 'Anulado' end as 'Estado'" _
+        & ", Linea1,Linea2,Linea3,Linea4,Linea5,Linea6,Linea7,Linea8,Linea9,Linea10,Linea11,Detalle,isnull(T.TRASLADO_BLOQUEO,0) as 'Bloqueo'" _
+        & ", dbo.fxCajas_Recibo_Digital_Doc_Aplica(T.Tipo_Documento, T.Cod_Transaccion) as 'Recibo_Digital'" _
         & " from sif_transacciones T" _
         & " inner join sif_conceptos C on T.cod_concepto = C.cod_concepto" _
         & " inner join sif_documentos Docs on T.tipo_documento = Docs.Tipo_Documento" _
@@ -4832,6 +4929,12 @@ If Not rs.EOF Then
    
    chkBloqueado.Value = rs!Bloqueo
    
+   
+   If rs!RECIBO_DIGITAL = 1 Then
+       btnMain(3).Enabled = True
+   End If
+   
+   
 Else
   Call sbLimpia
 End If
@@ -4846,7 +4949,10 @@ vError:
 End Sub
 
 Private Sub sbLimpia()
+   
+   
    tcMain.Item(0).Selected = True
+   
    txtCedula = ""
    txtNombre = ""
    txtCod_Concepto = ""
@@ -4857,6 +4963,8 @@ Private Sub sbLimpia()
    txtOficina = ""
    txtEstado = ""
    txtDetalle = ""
+   
+   btnMain(3).Enabled = False
    
 End Sub
 

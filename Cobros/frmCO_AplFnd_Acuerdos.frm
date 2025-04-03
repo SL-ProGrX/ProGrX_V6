@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCO_AplFnd_Acuerdos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -21,7 +21,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
       TabIndex        =   0
       Top             =   4200
       Width           =   12840
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   22648
       _ExtentY        =   11668
       _StockProps     =   77
@@ -44,7 +44,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
       TabIndex        =   1
       Top             =   1200
       Width           =   12615
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   22251
       _ExtentY        =   3836
       _StockProps     =   79
@@ -68,7 +68,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
          TabIndex        =   2
          Top             =   1800
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   450
          _StockProps     =   79
@@ -92,7 +92,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
          TabIndex        =   3
          Top             =   480
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   661
          _StockProps     =   79
@@ -117,7 +117,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
          TabIndex        =   4
          Top             =   480
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   661
          _StockProps     =   79
@@ -141,7 +141,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
          TabIndex        =   5
          Top             =   480
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   661
          _StockProps     =   79
@@ -164,7 +164,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
          TabIndex        =   6
          Top             =   480
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -189,7 +189,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
          TabIndex        =   7
          Top             =   480
          Width           =   6015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10604
          _ExtentY        =   550
          _StockProps     =   77
@@ -213,7 +213,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
          TabIndex        =   8
          Top             =   840
          Width           =   7815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13785
          _ExtentY        =   1402
          _StockProps     =   77
@@ -238,7 +238,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
          TabIndex        =   9
          Top             =   1800
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   582
          _StockProps     =   68
@@ -260,7 +260,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
          TabIndex        =   10
          Top             =   1800
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   450
          _StockProps     =   79
@@ -283,7 +283,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
          TabIndex        =   19
          Top             =   1800
          Width           =   2535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4471
          _ExtentY        =   450
          _StockProps     =   79
@@ -307,7 +307,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
          TabIndex        =   13
          Top             =   480
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   450
          _StockProps     =   79
@@ -331,7 +331,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
          TabIndex        =   12
          Top             =   840
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   450
          _StockProps     =   79
@@ -355,7 +355,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
          TabIndex        =   11
          Top             =   1800
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   450
          _StockProps     =   79
@@ -381,7 +381,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
       ToolTipText     =   "Exportar Lista"
       Top             =   3840
       Width           =   495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   873
       _ExtentY        =   661
       _StockProps     =   79
@@ -404,7 +404,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
       TabIndex        =   14
       Top             =   3840
       Width           =   10095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   17806
       _ExtentY        =   661
       _StockProps     =   77
@@ -432,7 +432,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
       TabIndex        =   18
       Top             =   360
       Width           =   10335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18230
       _ExtentY        =   873
       _StockProps     =   79
@@ -456,7 +456,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
       TabIndex        =   17
       Top             =   3480
       Width           =   12855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   22675
       _ExtentY        =   635
       _StockProps     =   14
@@ -478,7 +478,7 @@ Begin VB.Form frmCO_AplFnd_Acuerdos
       TabIndex        =   16
       Top             =   3840
       Width           =   2295
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4048
       _ExtentY        =   661
       _StockProps     =   14

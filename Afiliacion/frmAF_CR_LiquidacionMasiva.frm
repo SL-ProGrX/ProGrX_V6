@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Begin VB.Form frmAF_CR_LiquidacionMasiva 
    Appearance      =   0  'Flat
@@ -18,7 +18,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   27
       Top             =   960
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   661
       _ExtentY        =   661
       _StockProps     =   79
@@ -32,7 +32,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   15
       Top             =   2400
       Width           =   14295
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   25215
       _ExtentY        =   1296
       _StockProps     =   79
@@ -45,7 +45,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
          TabIndex        =   21
          Top             =   360
          Width           =   975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1720
          _ExtentY        =   450
          _StockProps     =   79
@@ -68,7 +68,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
          TabIndex        =   16
          Top             =   240
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   873
          _StockProps     =   79
@@ -94,7 +94,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
          ToolTipText     =   "Etiqueta de Revisión Masiva Automática"
          Top             =   360
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   450
          _StockProps     =   79
@@ -117,7 +117,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
          TabIndex        =   23
          Top             =   240
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   873
          _StockProps     =   79
@@ -143,7 +143,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
          TabIndex        =   24
          Top             =   240
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   873
          _StockProps     =   79
@@ -169,7 +169,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
          TabIndex        =   25
          Top             =   240
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   873
          _StockProps     =   79
@@ -195,7 +195,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
          Top             =   0
          Visible         =   0   'False
          Width           =   14895
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   26273
          _ExtentY        =   238
          _StockProps     =   93
@@ -236,7 +236,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   3
       Top             =   960
       Width           =   1335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2355
       _ExtentY        =   661
       _StockProps     =   68
@@ -258,7 +258,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   4
       Top             =   960
       Width           =   1335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2355
       _ExtentY        =   661
       _StockProps     =   68
@@ -280,7 +280,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   8
       Top             =   1440
       Width           =   2655
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4683
       _ExtentY        =   582
       _StockProps     =   77
@@ -304,7 +304,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   11
       Top             =   960
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   582
       _StockProps     =   77
@@ -330,7 +330,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   12
       Top             =   960
       Width           =   4695
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8281
       _ExtentY        =   582
       _StockProps     =   77
@@ -356,7 +356,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   13
       Top             =   1440
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   582
       _StockProps     =   77
@@ -380,7 +380,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   14
       Top             =   1440
       Width           =   4695
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8281
       _ExtentY        =   582
       _StockProps     =   77
@@ -404,7 +404,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   18
       Top             =   1920
       Width           =   2655
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4683
       _ExtentY        =   582
       _StockProps     =   77
@@ -428,7 +428,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   20
       Top             =   1920
       Width           =   4695
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8281
       _ExtentY        =   582
       _StockProps     =   77
@@ -455,7 +455,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   19
       Top             =   1920
       Width           =   975
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1720
       _ExtentY        =   450
       _StockProps     =   79
@@ -479,7 +479,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   17
       Top             =   1920
       Width           =   975
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1720
       _ExtentY        =   450
       _StockProps     =   79
@@ -503,7 +503,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   10
       Top             =   1440
       Width           =   975
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1720
       _ExtentY        =   450
       _StockProps     =   79
@@ -527,7 +527,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   9
       Top             =   1440
       Width           =   975
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1720
       _ExtentY        =   450
       _StockProps     =   79
@@ -551,7 +551,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   7
       Top             =   1440
       Width           =   975
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1720
       _ExtentY        =   450
       _StockProps     =   79
@@ -575,7 +575,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   6
       Top             =   960
       Width           =   975
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1720
       _ExtentY        =   450
       _StockProps     =   79
@@ -599,7 +599,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   5
       Top             =   960
       Width           =   975
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1720
       _ExtentY        =   450
       _StockProps     =   79
@@ -623,7 +623,7 @@ Begin VB.Form frmAF_CR_LiquidacionMasiva
       TabIndex        =   2
       Top             =   960
       Width           =   975
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1720
       _ExtentY        =   450
       _StockProps     =   79

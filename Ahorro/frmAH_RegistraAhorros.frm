@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmAH_RegistraAhorro 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,7 +24,7 @@ Begin VB.Form frmAH_RegistraAhorro
       ToolTipText     =   "Revisa si fue autorizada!"
       Top             =   3585
       Width           =   495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   873
       _ExtentY        =   661
       _StockProps     =   79
@@ -38,7 +38,7 @@ Begin VB.Form frmAH_RegistraAhorro
       TabIndex        =   18
       Top             =   960
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3201
       _ExtentY        =   450
       _StockProps     =   79
@@ -67,7 +67,7 @@ Begin VB.Form frmAH_RegistraAhorro
       TabIndex        =   0
       Top             =   4080
       Width           =   9495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16743
       _ExtentY        =   2773
       _StockProps     =   79
@@ -81,7 +81,7 @@ Begin VB.Form frmAH_RegistraAhorro
          TabIndex        =   1
          Top             =   240
          Width           =   2772
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4895
          _ExtentY        =   582
          _StockProps     =   77
@@ -107,7 +107,7 @@ Begin VB.Form frmAH_RegistraAhorro
          TabIndex        =   2
          Top             =   240
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   556
          _StockProps     =   77
@@ -132,7 +132,7 @@ Begin VB.Form frmAH_RegistraAhorro
          TabIndex        =   3
          Top             =   600
          Width           =   5412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9546
          _ExtentY        =   1397
          _StockProps     =   77
@@ -158,7 +158,7 @@ Begin VB.Form frmAH_RegistraAhorro
          TabIndex        =   4
          Top             =   480
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1508
          _ExtentY        =   1508
          _StockProps     =   79
@@ -185,7 +185,7 @@ Begin VB.Form frmAH_RegistraAhorro
          TabIndex        =   5
          Top             =   480
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1508
          _ExtentY        =   1508
          _StockProps     =   79
@@ -212,7 +212,7 @@ Begin VB.Form frmAH_RegistraAhorro
          TabIndex        =   6
          Top             =   480
          Width           =   975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1720
          _ExtentY        =   1508
          _StockProps     =   79
@@ -231,6 +231,32 @@ Begin VB.Form frmAH_RegistraAhorro
          Appearance      =   17
          Picture         =   "frmAH_RegistraAhorros.frx":168F
          TextImageRelation=   1
+      End
+      Begin XtremeSuiteControls.CheckBox chkReciboDigital 
+         Height          =   255
+         Left            =   7080
+         TabIndex        =   29
+         ToolTipText     =   "Enviar Recibo Digital"
+         Top             =   120
+         Width           =   1935
+         _Version        =   1572864
+         _ExtentX        =   3408
+         _ExtentY        =   444
+         _StockProps     =   79
+         Caption         =   "Recibo Digital?"
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Enabled         =   0   'False
+         UseVisualStyle  =   -1  'True
+         Appearance      =   16
       End
       Begin VB.Label Label3 
          BackStyle       =   0  'Transparent
@@ -296,7 +322,7 @@ Begin VB.Form frmAH_RegistraAhorro
       TabIndex        =   10
       Top             =   2640
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3201
       _ExtentY        =   556
       _StockProps     =   77
@@ -321,7 +347,7 @@ Begin VB.Form frmAH_RegistraAhorro
       TabIndex        =   13
       Top             =   1320
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3201
       _ExtentY        =   582
       _StockProps     =   77
@@ -347,7 +373,7 @@ Begin VB.Form frmAH_RegistraAhorro
       TabIndex        =   14
       Top             =   240
       Width           =   5292
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9334
       _ExtentY        =   550
       _StockProps     =   77
@@ -371,7 +397,7 @@ Begin VB.Form frmAH_RegistraAhorro
       TabIndex        =   15
       Top             =   240
       Width           =   1692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   550
       _StockProps     =   77
@@ -396,7 +422,7 @@ Begin VB.Form frmAH_RegistraAhorro
       TabIndex        =   17
       Top             =   2640
       Width           =   615
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1085
       _ExtentY        =   556
       _StockProps     =   77
@@ -421,7 +447,7 @@ Begin VB.Form frmAH_RegistraAhorro
       TabIndex        =   20
       Top             =   2160
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3201
       _ExtentY        =   556
       _StockProps     =   77
@@ -450,7 +476,7 @@ Begin VB.Form frmAH_RegistraAhorro
       ToolTipText     =   "Revisa si fue autorizada!"
       Top             =   3120
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3201
       _ExtentY        =   661
       _StockProps     =   79
@@ -473,7 +499,7 @@ Begin VB.Form frmAH_RegistraAhorro
       TabIndex        =   24
       Top             =   3600
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3201
       _ExtentY        =   556
       _StockProps     =   77
@@ -498,7 +524,7 @@ Begin VB.Form frmAH_RegistraAhorro
       TabIndex        =   25
       Top             =   3600
       Width           =   1455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   556
       _StockProps     =   77
@@ -523,7 +549,7 @@ Begin VB.Form frmAH_RegistraAhorro
       TabIndex        =   27
       Top             =   1680
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3201
       _ExtentY        =   582
       _StockProps     =   77
@@ -589,7 +615,7 @@ Begin VB.Form frmAH_RegistraAhorro
       TabIndex        =   21
       Top             =   3165
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   450
       _StockProps     =   79
@@ -825,11 +851,28 @@ End If
     Call ConectionExecute(strSQL)
  End If
  
- Call sbImprimeRecibo(vNumDoc, vTipoDoc)
  
- strSQL = " - Aporte aplicado, con : " & cboTipoDoc.Text & " ...No.: " & vNumDoc & vbCrLf _
-        & " - Desea Realizar Otra Transacción a Este Contrato ?"
  
+ 'IMPRIMIR RECIBO
+If chkReciboDigital.Enabled And chkReciboDigital.Value = xtpChecked Then
+    strSQL = "exec spCajasReciboDigital '" & vNumDoc & "', '" & vTipoDoc & "', 'Patrimonio'"
+    Call ConectionExecute(strSQL)
+    
+    MsgBox "Recibo Digital enviado al cliente!", vbInformation
+
+    strSQL = ">>> Recibo Digital enviado al cliente <<<" & vbCrLf _
+           & " - Aporte aplicado, con : " & cboTipoDoc.Text & " ...No.: " & vNumDoc & vbCrLf _
+           & " - Desea Realizar Otra Transacción ?"
+
+Else
+    Call sbImprimeRecibo(vNumDoc, vTipoDoc)
+
+    strSQL = " - Aporte aplicado, con : " & cboTipoDoc.Text & " ...No.: " & vNumDoc & vbCrLf _
+           & " - Desea Realizar Otra Transacción ?"
+
+End If
+Me.MousePointer = vbDefault
+
  i = MsgBox(strSQL, vbYesNo)
  If i = vbYes Then
      Call sbLimpiaPantalla
@@ -879,6 +922,18 @@ strSQL = "select rTrim(C.tipo_documento) as 'IdX', rtrim(D.Descripcion) as 'itmX
        & " Where C.cod_caja =  '" & ModuloCajas.mCaja & "' and D.Tipo_Movimiento in('A','D')" _
        & " order by C.tipo_documento"
 Call sbCbo_Llena_New(cboTipoDoc, strSQL, False, True)
+
+
+If ModuloCajas.mSesionId = 0 Or ModuloCajas.mClienteId <> ModuloCajas.mSesionCedula Then
+   Call sbFormsCall("frmCajas_Sesion", vbModal, , , False, Me)
+   If ModuloCajas.mSesionId = 0 Then
+        MsgBox "No se ha iniciado ninguna sesión de Cliente para esta caja!", vbExclamation
+        Unload Me
+        Exit Sub
+   End If
+End If
+
+
 
 End Sub
 
@@ -930,11 +985,31 @@ vError:
 
 End Sub
 
+Private Sub Form_Unload(Cancel As Integer)
+'Mantiene o no la Sesion
+If ModuloCajas.mSesionId > 0 Then
+   Call sbFormsCall("frmCajas_Sesion", vbModal, , , False, Me)
+End If
+
+End Sub
+
 Private Sub TimerX_Timer()
 TimerX.Enabled = False
 TimerX.Interval = 0
 
 Call sbCajaInicial
+
+
+If ModuloCajas.mApertura = 0 Or ModuloCajas.mApertura = Empty Then
+   Unload Me
+   Exit Sub
+End If
+
+If ModuloCajas.mSesionId = 0 Or ModuloCajas.mSesionId = Empty Then
+   Unload Me
+   Exit Sub
+End If
+
 End Sub
 
 Private Sub sbLimpiaPantalla()
@@ -955,6 +1030,10 @@ Call OpenRecordSet(rs, strSQL)
  
  ModuloCajas.mCliente = Trim(rs!Nombre)
  ModuloCajas.mClienteId = Trim(rs!Cedula)
+ 
+ ModuloCajas.mReciboDigital = False
+ chkReciboDigital.Value = xtpUnchecked
+ chkReciboDigital.Enabled = False
  
  txtDivisa.Text = rs!cod_Divisa
  
@@ -1030,6 +1109,20 @@ Select Case Index
         Call sbFormsCall("frmCajas_DetallePago", vbModal, 0, 0, False, Me)
         
         txtTotalCajas.Text = Format(ModuloCajas.mTotalDetallado, "Standard")
+        
+        If txtTotalCajas.Text <> txtMonto.Text Then
+           txtTotalCajas.BackColor = vbRed
+        Else
+           txtTotalCajas.BackColor = vbWhite
+        End If
+
+        If ModuloCajas.mReciboDigital Then
+            chkReciboDigital.Enabled = True
+            chkReciboDigital.Value = xtpChecked
+        Else
+            chkReciboDigital.Enabled = False
+            chkReciboDigital.Value = xtpUnchecked
+        End If
 
   Case 1  'Aplicar
     Call sbAplicar
@@ -1120,6 +1213,23 @@ If Len(vMensaje) = 0 Then
     End If
 End If
 
+ 'Cajas: Validación General sobre el Estado de la Caja, Aperturas, Sesiones, y Accesos
+ With ModuloCajas
+     strSQL = "exec spCajas_Transac_Validacion '" & .mCaja & "', '" & glogon.Usuario & "', " & .mApertura & ", " & .mSesionId _
+            & ", 'PAT', '" & cboTipo.ItemData(cboTipo.ListIndex) & "', " & CCur(txtTotalCajas.Text) & ", '" & .mTiquete & "'"
+ End With
+ 
+ Call OpenRecordSet(rs, strSQL)
+ 
+ If Len(rs!Advertencias) > 0 Then
+    MsgBox rs!Advertencias, vbExclamation, "Advertencias!"
+ End If
+ 
+ If Len(rs!Validacion) > 0 Then
+    vMensaje = vMensaje & rs!Validacion
+ End If
+
+
 If Len(vMensaje) = 0 Then
   fxVerificaDatos = True
 Else
@@ -1181,14 +1291,14 @@ strLinea(10) = ""
     
    strSQL = "insert SIF_TRANSACCIONES(COD_TRANSACCION,TIPO_DOCUMENTO,REGISTRO_FECHA,REGISTRO_USUARIO,Cliente_IDENTIFICACION,CLIENTE_NOMBRE" _
              & ",cod_concepto,monto,estado,Referencia_01,Referencia_02,Referencia_03,cod_oficina" _
-             & ",linea1,linea2,linea3,linea4,linea5,linea6,linea7,linea8,linea9,linea10,detalle,documento,cod_caja,cod_apertura)" _
+             & ",linea1,linea2,linea3,linea4,linea5,linea6,linea7,linea8,linea9,linea10,detalle,documento,cod_caja,cod_apertura, id_sesion)" _
              & " values('" & vNumDoc & "','" & vTipoDoc & "',dbo.MyGetdate(),'" & glogon.Usuario & "','" _
              & txtCedula.Text & "','" & txtNombre & "','PAT001'," & CCur(txtMonto) & ",'P','" _
              & txtCedula.Text & "','','','" & GLOBALES.gOficinaTitular & "', " _
              & "'" & strLinea(1) & "','" & strLinea(2) & "','" & strLinea(3) & "','" & strLinea(4) & "','" _
              & strLinea(5) & "','" & strLinea(6) & "','" & strLinea(7) & "','" _
              & strLinea(8) & "','" & strLinea(9) & "','" & strLinea(10) & "','" _
-             & vAseDocDetalle & "','" & vAseDocDeposito & "','" & ModuloCajas.mCaja & "'," & ModuloCajas.mApertura & ")"
+             & vAseDocDetalle & "','" & vAseDocDeposito & "', '" & ModuloCajas.mCaja & "', " & ModuloCajas.mApertura & ", " & ModuloCajas.mSesionId & ")"
     
     'ASIENTO
     If CCur(txtMonto) > 0 Then

@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCajas_AplicacionMultiple 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -25,7 +25,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
       TabIndex        =   19
       Top             =   840
       Width           =   11295
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19923
       _ExtentY        =   10398
       _StockProps     =   68
@@ -62,16 +62,15 @@ Begin VB.Form frmCajas_AplicacionMultiple
       Item(1).Control(4)=   "chkMarcasApl"
       Item(1).Control(5)=   "btnApl(0)"
       Item(1).Control(6)=   "btnApl(1)"
-      Begin XtremeSuiteControls.ListView lswApl 
-         Height          =   4815
-         Left            =   -69880
-         TabIndex        =   21
-         Top             =   840
-         Visible         =   0   'False
+      Begin XtremeSuiteControls.ListView lswSel 
+         Height          =   4455
+         Left            =   120
+         TabIndex        =   20
+         Top             =   1320
          Width           =   11055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   19500
-         _ExtentY        =   8493
+         _ExtentY        =   7858
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -87,15 +86,16 @@ Begin VB.Form frmCajas_AplicacionMultiple
          FullRowSelect   =   -1  'True
          Appearance      =   17
       End
-      Begin XtremeSuiteControls.ListView lswSel 
-         Height          =   4455
-         Left            =   120
-         TabIndex        =   20
-         Top             =   1320
+      Begin XtremeSuiteControls.ListView lswApl 
+         Height          =   4815
+         Left            =   -69880
+         TabIndex        =   21
+         Top             =   840
+         Visible         =   0   'False
          Width           =   11055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   19500
-         _ExtentY        =   7858
+         _ExtentY        =   8493
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -117,7 +117,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          TabIndex        =   33
          Top             =   960
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   582
          _StockProps     =   79
@@ -142,7 +142,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          TabIndex        =   28
          Top             =   600
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   661
          _StockProps     =   79
@@ -167,7 +167,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          Top             =   3960
          Visible         =   0   'False
          Width           =   11055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   19500
          _ExtentY        =   2990
          _StockProps     =   79
@@ -182,7 +182,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          Top             =   3720
          Visible         =   0   'False
          Width           =   11055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   19500
          _ExtentY        =   2566
          _StockProps     =   79
@@ -196,7 +196,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          TabIndex        =   24
          Top             =   600
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3836
          _ExtentY        =   582
          _StockProps     =   77
@@ -222,7 +222,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          TabIndex        =   25
          Top             =   600
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   582
          _StockProps     =   77
@@ -248,7 +248,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          TabIndex        =   27
          Top             =   600
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   556
          _StockProps     =   68
@@ -271,7 +271,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          TabIndex        =   29
          Top             =   600
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   661
          _StockProps     =   79
@@ -295,7 +295,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          TabIndex        =   31
          Top             =   600
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   556
          _StockProps     =   68
@@ -318,7 +318,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          Top             =   480
          Visible         =   0   'False
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3836
          _ExtentY        =   582
          _StockProps     =   77
@@ -346,7 +346,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          Top             =   480
          Visible         =   0   'False
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   661
          _StockProps     =   79
@@ -372,7 +372,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          Top             =   480
          Visible         =   0   'False
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   661
          _StockProps     =   79
@@ -397,7 +397,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          Top             =   480
          Visible         =   0   'False
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   582
          _StockProps     =   79
@@ -421,7 +421,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          TabIndex        =   32
          Top             =   360
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   450
          _StockProps     =   79
@@ -443,7 +443,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          TabIndex        =   26
          Top             =   360
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   450
          _StockProps     =   79
@@ -466,7 +466,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
       TabIndex        =   0
       Top             =   7200
       Width           =   11175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19711
       _ExtentY        =   2778
       _StockProps     =   79
@@ -480,7 +480,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          TabIndex        =   1
          Top             =   240
          Width           =   3375
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5953
          _ExtentY        =   582
          _StockProps     =   77
@@ -506,7 +506,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          TabIndex        =   2
          Top             =   240
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   556
          _StockProps     =   77
@@ -531,7 +531,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          TabIndex        =   3
          Top             =   600
          Width           =   6735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11880
          _ExtentY        =   1402
          _StockProps     =   77
@@ -557,12 +557,12 @@ Begin VB.Form frmCajas_AplicacionMultiple
          TabIndex        =   4
          Top             =   600
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   1397
          _StockProps     =   79
          Caption         =   "Pago"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -584,12 +584,12 @@ Begin VB.Form frmCajas_AplicacionMultiple
          TabIndex        =   5
          Top             =   600
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   1397
          _StockProps     =   79
          Caption         =   "Aplicar"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -611,12 +611,12 @@ Begin VB.Form frmCajas_AplicacionMultiple
          TabIndex        =   6
          Top             =   600
          Width           =   975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   1397
          _StockProps     =   79
          Caption         =   "Cancelar"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -638,7 +638,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
          Top             =   120
          Visible         =   0   'False
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   661
          _StockProps     =   79
@@ -719,7 +719,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
       TabIndex        =   10
       Top             =   6840
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   556
       _StockProps     =   77
@@ -744,7 +744,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
       TabIndex        =   12
       Top             =   6840
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   556
       _StockProps     =   77
@@ -769,7 +769,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
       TabIndex        =   14
       Top             =   6840
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   556
       _StockProps     =   77
@@ -796,7 +796,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
       TabIndex        =   16
       Top             =   240
       Width           =   7095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12515
       _ExtentY        =   556
       _StockProps     =   77
@@ -821,7 +821,7 @@ Begin VB.Form frmCajas_AplicacionMultiple
       ToolTipText     =   "Presione F4 para Consultar"
       Top             =   240
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   556
       _StockProps     =   77
@@ -950,18 +950,53 @@ End Select
 
 End Sub
 
+Private Function fxVerificar() As Boolean
+Dim vMensaje As String
 
+vMensaje = ""
+
+If fxCajasAperturaEstado = "C" Then
+   vMensaje = vMensaje & "- La apertura ..:" & ModuloCajas.mApertura & " de esta caja ha sido cerrada!" & vbCrLf
+End If
+
+ 'Cajas: Validación General sobre el Estado de la Caja, Aperturas, Sesiones, y Accesos
+ With ModuloCajas
+     strSQL = "exec spCajas_Transac_Validacion '" & .mCaja & "', '" & glogon.Usuario & "', " & .mApertura & ", " & .mSesionId _
+            & ", 'Crd', '-AM-', " & CCur(txtTotalCajas.Text) & ", '" & .mTiquete & "'"
+ End With
+ 
+ Call OpenRecordSet(rs, strSQL)
+ 
+ If Len(rs!Advertencias) > 0 Then
+    MsgBox rs!Advertencias, vbExclamation, "Advertencias!"
+ End If
+ 
+ If Len(rs!Validacion) > 0 Then
+    vMensaje = vMensaje & rs!Validacion
+ End If
+
+
+If Len(vMensaje) > 0 Then
+   MsgBox vMensaje, vbExclamation
+   fxVerificar = False
+Else
+   fxVerificar = True
+End If
+
+End Function
 
 
 Private Sub sbAplicar()
 
 On Error GoTo vError
 
+If Not fxVerificar Then
+    Exit Sub
+End If
+
 Me.MousePointer = vbHourglass
 
-'spCajas_AM_Registro_Control(@Caja   varchar(10), @Apertura int  , @Token varchar(100), @Usuario varchar(30)
-'                        , @Cedula varchar(20), @Monto dec(18,2), @Divisa varchar(10), @TipoCambio float = 1, @Notas varchar(500)= '')
-                        
+                      
                         
 Dim pAM_Id As Long
                         
@@ -969,13 +1004,11 @@ txtNotas.Text = fxSysCleanTxtInject(txtNotas.Text)
                         
 strSQL = "exec spCajas_AM_Registro_Control '" & ModuloCajas.mCaja & "', " & ModuloCajas.mApertura & ", '" & ModuloCajas.mTiquete _
         & "', '" & glogon.Usuario & "','" & txtCedula.Text & "', " & CCur(txtTotalPagar.Text) & ", '" & ModuloCajas.mDivisa _
-        & "', 1, '" & Mid(txtNotas.Text, 1, 500) & "'"
+        & "', 1, '" & Mid(txtNotas.Text, 1, 500) & "', " & ModuloCajas.mSesionId
 Call OpenRecordSet(rs, strSQL)
     pAM_Id = rs!CAJA_AM_ID
 rs.Close
                         
-'Create proc spCajas_AM_Procesa(@Cedula varchar(20), @Caja varchar(10), @Apertura int, @Token varchar(100), @Usuario varchar(30)
-'        , @TipoDoc varchar(10), @Monto dec(18,2), @Divisa varchar(10), @TipoCambio float = 1, @CajasAM_Id int = 0)
                         
 strSQL = "exec spCajas_AM_Procesa  '" & txtCedula.Text & "', '" & ModuloCajas.mCaja & "', " & ModuloCajas.mApertura & ", '" & ModuloCajas.mTiquete _
         & "', '" & glogon.Usuario & "','" & cboTipoDoc.ItemData(cboTipoDoc.ListIndex) & "', " & CCur(txtTotalPagar.Text) & ", '" & ModuloCajas.mDivisa _
@@ -1062,7 +1095,7 @@ vError:
 End Sub
 
 
-Private Sub sbCajaInicial()
+Private Sub sbCajaInicial(Optional pTipo As String = "T")
 Dim strSQL As String
 
 'Paso 1: Si la Caja no está abierta (Llamar pantalla de login de Caja)
@@ -1093,13 +1126,16 @@ Call sbCbo_Llena_New(cboTipoDoc, strSQL, False, True)
 
 ModuloCajas.mServicio = "Abonos a Operaciones de Crédito"
 
-'If IsNumeric(ModuloCajas.mRef_01) Then
-'    txtOperacion.Text = ModuloCajas.mRef_01
-'    vOperacion = txtOperacion.Text
-'    Call sbConsulta
-'End If
-
-
+If pTipo = "C" Then
+    If ModuloCajas.mSesionId = 0 Or ModuloCajas.mClienteId <> ModuloCajas.mSesionCedula Then
+       Call sbFormsCall("frmCajas_Sesion", vbModal, , , False, Me)
+       If ModuloCajas.mSesionId = 0 Then
+            MsgBox "No se ha iniciado ninguna sesión de Cliente para esta caja!", vbExclamation
+            Unload Me
+            Exit Sub
+       End If
+    End If
+End If
 
 End Sub
 
@@ -1149,7 +1185,7 @@ strSQL = "exec spCajas_Crd_Persona_Creditos_En_Lista '" & txtCedula.Text & "', '
        & ", '" & ModuloCajas.mTiquete & "'"
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
- Set itmX = lswApl.ListItems.Add(, , rs!Id_Solicitud)
+ Set itmX = lswApl.ListItems.Add(, , rs!ID_SOLICITUD)
      itmX.SubItems(1) = rs!Codigo
      itmX.SubItems(2) = Format(rs!Saldo, "Standard")
      itmX.SubItems(3) = IIf((rs!Tipo_Abono = "C"), "Cancelación", "Pago Cuota")
@@ -1232,7 +1268,7 @@ strSQL = "exec spCajas_Crd_Persona_Creditos_Pendientes_Lista '" & txtCedula.Text
        & " 23:59:59', '" & cboTipoMovimiento.ItemData(cboTipoMovimiento.ListIndex) & "', " & fPago
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
- Set itmX = lswSel.ListItems.Add(, , rs!Id_Solicitud)
+ Set itmX = lswSel.ListItems.Add(, , rs!ID_SOLICITUD)
      itmX.SubItems(1) = rs!Codigo
      itmX.SubItems(2) = Format(rs!Saldo, "Standard")
      itmX.SubItems(3) = Format(rs!Compromiso, "Standard")
@@ -1601,12 +1637,15 @@ If KeyCode = vbKeyF4 Then
     gBusquedas.Columna = "nombre"
     gBusquedas.Orden = "nombre"
     frmBusquedas.Show vbModal
+    
     txtCedula.Text = Trim(gBusquedas.Resultado)
     txtNombre.Text = Trim(gBusquedas.Resultado3)
+    
     gBusquedas.Consulta = ""
     gBusquedas.Columna = ""
     gBusquedas.Orden = ""
     gBusquedas.Resultado = ""
+    
     If Trim(txtCedula) <> "" Then
         Call sbConsulta
     End If
@@ -1616,10 +1655,7 @@ End If
 End Sub
 
 
-
-
 Private Sub sbConsulta()
-
 
 Me.MousePointer = vbHourglass
 
@@ -1644,7 +1680,6 @@ If Not rs.EOF And Not rs.BOF Then
     txtTotalCajas.Text = 0
     
     
-    
     strSQL = " select rtrim(COD_DIVISA) as 'Divisa'  from vSys_Divisas where DIVISA_LOCAL = 1"
     Call OpenRecordSet(rs, strSQL)
     
@@ -1657,6 +1692,9 @@ Else
 
 End If
 rs.Close
+
+'Refresca Datos de la Caja por si El Cliente Cambia
+Call sbCajaInicial("C")
 
 Me.MousePointer = vbDefault
 

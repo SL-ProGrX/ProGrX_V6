@@ -1,18 +1,18 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "mscomctl.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Begin VB.Form frmCC_CA_Lineas 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Cargos Automáticos: Lineas de asociadas"
-   ClientHeight    =   7104
-   ClientLeft      =   48
-   ClientTop       =   372
+   ClientHeight    =   7095
+   ClientLeft      =   45
+   ClientTop       =   375
    ClientWidth     =   10920
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7104
+   ScaleHeight     =   7095
    ScaleWidth      =   10920
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
@@ -22,8 +22,8 @@ Begin VB.Form frmCC_CA_Lineas
       TabIndex        =   1
       Top             =   1200
       Width           =   10845
-      _ExtentX        =   19135
-      _ExtentY        =   10181
+      _ExtentX        =   19129
+      _ExtentY        =   10186
       _Version        =   393216
       TabOrientation  =   1
       Style           =   1
@@ -32,7 +32,7 @@ Begin VB.Form frmCC_CA_Lineas
       TabHeight       =   1023
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Arial Narrow"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -48,9 +48,12 @@ Begin VB.Form frmCC_CA_Lineas
       TabCaption(1)   =   "Asignación de Código"
       TabPicture(1)   =   "frmCC_CA_Lineas.frx":06B4
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "lswLineas"
+      Tab(1).Control(0)=   "Label2"
+      Tab(1).Control(0).Enabled=   0   'False
       Tab(1).Control(1)=   "cboLineas"
-      Tab(1).Control(2)=   "Label2"
+      Tab(1).Control(1).Enabled=   0   'False
+      Tab(1).Control(2)=   "lswLineas"
+      Tab(1).Control(2).Enabled=   0   'False
       Tab(1).ControlCount=   3
       Begin MSComctlLib.ListView lswLineas 
          Height          =   4215
@@ -58,8 +61,8 @@ Begin VB.Form frmCC_CA_Lineas
          TabIndex        =   5
          Top             =   720
          Width           =   9015
-         _ExtentX        =   15896
-         _ExtentY        =   7430
+         _ExtentX        =   15901
+         _ExtentY        =   7435
          View            =   3
          LabelWrap       =   -1  'True
          HideSelection   =   -1  'True
@@ -74,7 +77,7 @@ Begin VB.Form frmCC_CA_Lineas
          Appearance      =   0
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -144,7 +147,7 @@ Begin VB.Form frmCC_CA_Lineas
          Caption         =   "Líneas"
          BeginProperty Font 
             Name            =   "Arial Narrow"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -163,7 +166,7 @@ Begin VB.Form frmCC_CA_Lineas
       Caption         =   "Líneas de Crédito y Retención Autorizadas"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False

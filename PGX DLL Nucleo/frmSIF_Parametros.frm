@@ -5,26 +5,26 @@ Begin VB.Form frmSIF_Parametros
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "SIF: Parámetros del Sistema"
-   ClientHeight    =   6888
-   ClientLeft      =   48
-   ClientTop       =   312
-   ClientWidth     =   9528
+   ClientHeight    =   6885
+   ClientLeft      =   45
+   ClientTop       =   315
+   ClientWidth     =   11655
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   6888
-   ScaleWidth      =   9528
+   ScaleHeight     =   6885
+   ScaleWidth      =   11655
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin FPSpreadADO.fpSpread vGrid 
-      Height          =   5532
+      Height          =   5535
       Left            =   120
       TabIndex        =   0
       Top             =   1200
-      Width           =   9252
+      Width           =   11535
       _Version        =   524288
-      _ExtentX        =   16320
-      _ExtentY        =   9758
+      _ExtentX        =   20346
+      _ExtentY        =   9763
       _StockProps     =   64
       BackColorStyle  =   1
       BorderStyle     =   0
@@ -49,7 +49,7 @@ Begin VB.Form frmSIF_Parametros
       Caption         =   "Parámetros del Sistema"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False

@@ -67,7 +67,6 @@ Begin VB.Form frmCntX_Consolidaciones
       _Version        =   393216
       Style           =   1
       Tabs            =   2
-      Tab             =   1
       TabsPerRow      =   2
       TabHeight       =   520
       ForeColor       =   16711680
@@ -82,22 +81,21 @@ Begin VB.Form frmCntX_Consolidaciones
       EndProperty
       TabCaption(0)   =   "Contabildades locales"
       TabPicture(0)   =   "frmCntX_Consolidaciones.frx":0000
-      Tab(0).ControlEnabled=   0   'False
-      Tab(0).Control(0)=   "lsw"
-      Tab(0).Control(1)=   "Label3(0)"
+      Tab(0).ControlEnabled=   -1  'True
+      Tab(0).Control(0)=   "Label3(0)"
+      Tab(0).Control(0).Enabled=   0   'False
+      Tab(0).Control(1)=   "lsw"
+      Tab(0).Control(1).Enabled=   0   'False
       Tab(0).ControlCount=   2
       TabCaption(1)   =   "Portales (Contabilidades Externas)"
       TabPicture(1)   =   "frmCntX_Consolidaciones.frx":0120
-      Tab(1).ControlEnabled=   -1  'True
-      Tab(1).Control(0)=   "Label3(1)"
-      Tab(1).Control(0).Enabled=   0   'False
+      Tab(1).ControlEnabled=   0   'False
+      Tab(1).Control(0)=   "imgExp"
       Tab(1).Control(1)=   "ArbolExp"
-      Tab(1).Control(1).Enabled=   0   'False
-      Tab(1).Control(2)=   "imgExp"
-      Tab(1).Control(2).Enabled=   0   'False
+      Tab(1).Control(2)=   "Label3(1)"
       Tab(1).ControlCount=   3
       Begin MSComctlLib.ImageList imgExp 
-         Left            =   6240
+         Left            =   -68760
          Top             =   2280
          _ExtentX        =   1005
          _ExtentY        =   1005
@@ -124,7 +122,7 @@ Begin VB.Form frmCntX_Consolidaciones
       End
       Begin MSComctlLib.ListView lsw 
          Height          =   3255
-         Left            =   -74880
+         Left            =   120
          TabIndex        =   13
          Top             =   765
          Width           =   7095
@@ -163,7 +161,7 @@ Begin VB.Form frmCntX_Consolidaciones
       End
       Begin MSComctlLib.TreeView ArbolExp 
          Height          =   3240
-         Left            =   120
+         Left            =   -74880
          TabIndex        =   14
          Top             =   765
          Width           =   7095
@@ -209,7 +207,7 @@ Begin VB.Form frmCntX_Consolidaciones
          ForeColor       =   &H80000008&
          Height          =   285
          Index           =   1
-         Left            =   120
+         Left            =   -74880
          TabIndex        =   12
          Top             =   480
          Width           =   7095
@@ -232,7 +230,7 @@ Begin VB.Form frmCntX_Consolidaciones
          ForeColor       =   &H00FFFFFF&
          Height          =   285
          Index           =   0
-         Left            =   -74880
+         Left            =   120
          TabIndex        =   11
          Top             =   480
          Width           =   7095

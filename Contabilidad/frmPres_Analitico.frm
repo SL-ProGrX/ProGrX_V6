@@ -1,15 +1,17 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.3#0"; "Codejock.Controls.v19.3.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmPres_Analitico 
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
    Caption         =   "Análitico Contable"
-   ClientHeight    =   6672
-   ClientLeft      =   48
-   ClientTop       =   396
-   ClientWidth     =   12972
+   ClientHeight    =   6675
+   ClientLeft      =   45
+   ClientTop       =   390
+   ClientWidth     =   12975
    LinkTopic       =   "Form1"
-   ScaleHeight     =   6672
-   ScaleWidth      =   12972
+   ScaleHeight     =   6675
+   ScaleWidth      =   12975
    StartUpPosition =   3  'Windows Default
    WindowState     =   2  'Maximized
    Begin VB.Timer TimerX 
@@ -23,15 +25,14 @@ Begin VB.Form frmPres_Analitico
       TabIndex        =   6
       Top             =   120
       Width           =   2652
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   4678
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -39,7 +40,7 @@ Begin VB.Form frmPres_Analitico
          Strikethrough   =   0   'False
       EndProperty
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit feContabilidad 
@@ -48,15 +49,14 @@ Begin VB.Form frmPres_Analitico
       TabIndex        =   7
       Top             =   120
       Width           =   3252
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   5736
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -64,7 +64,7 @@ Begin VB.Form frmPres_Analitico
          Strikethrough   =   0   'False
       EndProperty
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit feUnidad 
@@ -73,15 +73,14 @@ Begin VB.Form frmPres_Analitico
       TabIndex        =   8
       Top             =   600
       Width           =   3252
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   5736
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -89,7 +88,7 @@ Begin VB.Form frmPres_Analitico
          Strikethrough   =   0   'False
       EndProperty
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit feCentroCosto 
@@ -98,15 +97,14 @@ Begin VB.Form frmPres_Analitico
       TabIndex        =   9
       Top             =   960
       Width           =   3252
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   5736
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -114,7 +112,7 @@ Begin VB.Form frmPres_Analitico
          Strikethrough   =   0   'False
       EndProperty
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit feCuenta 
@@ -123,15 +121,14 @@ Begin VB.Form frmPres_Analitico
       TabIndex        =   10
       Top             =   600
       Width           =   2652
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   4678
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -139,7 +136,7 @@ Begin VB.Form frmPres_Analitico
          Strikethrough   =   0   'False
       EndProperty
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit fePeriodo 
@@ -148,15 +145,14 @@ Begin VB.Form frmPres_Analitico
       TabIndex        =   11
       Top             =   960
       Width           =   2652
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   4678
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -164,7 +160,7 @@ Begin VB.Form frmPres_Analitico
          Strikethrough   =   0   'False
       EndProperty
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.PushButton btnExportar 
@@ -173,21 +169,23 @@ Begin VB.Form frmPres_Analitico
       TabIndex        =   12
       Top             =   480
       Width           =   1332
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   1503
       _StockProps     =   79
       Caption         =   "Exportar"
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Arial"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Picture         =   "frmPres_Analitico.frx":0000
       TextImageRelation=   1
    End
@@ -226,7 +224,7 @@ Begin VB.Form frmPres_Analitico
       Caption         =   "Periodo "
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -246,7 +244,7 @@ Begin VB.Form frmPres_Analitico
       Caption         =   "Unidad de Negocio"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -266,7 +264,7 @@ Begin VB.Form frmPres_Analitico
       Caption         =   "Centro de Costo"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -286,7 +284,7 @@ Begin VB.Form frmPres_Analitico
       Caption         =   "Modelo"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -306,7 +304,7 @@ Begin VB.Form frmPres_Analitico
       Caption         =   "Cuenta"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -326,7 +324,7 @@ Begin VB.Form frmPres_Analitico
       Caption         =   "Contabilidad"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False

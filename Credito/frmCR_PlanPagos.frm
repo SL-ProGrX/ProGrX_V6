@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_PlanPagos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -22,7 +22,7 @@ Begin VB.Form frmCR_PlanPagos
       Top             =   1680
       Visible         =   0   'False
       Width           =   5535
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9758
       _ExtentY        =   6371
       _StockProps     =   79
@@ -36,7 +36,7 @@ Begin VB.Form frmCR_PlanPagos
          Top             =   1080
          Visible         =   0   'False
          Width           =   5292
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9334
          _ExtentY        =   2773
          _StockProps     =   79
@@ -49,7 +49,7 @@ Begin VB.Form frmCR_PlanPagos
             TabIndex        =   53
             Top             =   240
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   550
             _StockProps     =   77
@@ -73,7 +73,7 @@ Begin VB.Form frmCR_PlanPagos
             TabIndex        =   54
             Top             =   720
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   550
             _StockProps     =   77
@@ -98,7 +98,7 @@ Begin VB.Form frmCR_PlanPagos
             TabIndex        =   58
             Top             =   1200
             Width           =   3252
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5736
             _ExtentY        =   444
             _StockProps     =   79
@@ -181,7 +181,7 @@ Begin VB.Form frmCR_PlanPagos
          TabIndex        =   49
          Top             =   360
          Width           =   3612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   6371
          _ExtentY        =   444
          _StockProps     =   79
@@ -207,12 +207,12 @@ Begin VB.Form frmCR_PlanPagos
          TabIndex        =   50
          Top             =   2760
          Width           =   2532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4466
          _ExtentY        =   1101
          _StockProps     =   79
          Caption         =   "Aplicar Revisión + Ajustes"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -222,7 +222,6 @@ Begin VB.Form frmCR_PlanPagos
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Transparent     =   -1  'True
          UseVisualStyle  =   -1  'True
          Appearance      =   17
          Picture         =   "frmCR_PlanPagos.frx":0000
@@ -233,7 +232,7 @@ Begin VB.Form frmCR_PlanPagos
          TabIndex        =   51
          Top             =   840
          Width           =   3612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   6371
          _ExtentY        =   444
          _StockProps     =   79
@@ -259,7 +258,7 @@ Begin VB.Form frmCR_PlanPagos
       TabIndex        =   24
       Top             =   1680
       Width           =   17175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   30295
       _ExtentY        =   1085
       _StockProps     =   79
@@ -273,7 +272,7 @@ Begin VB.Form frmCR_PlanPagos
          TabIndex        =   36
          Top             =   240
          Width           =   735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1291
          _ExtentY        =   550
          _StockProps     =   77
@@ -298,7 +297,7 @@ Begin VB.Form frmCR_PlanPagos
          TabIndex        =   34
          Top             =   240
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
@@ -323,7 +322,7 @@ Begin VB.Form frmCR_PlanPagos
          TabIndex        =   29
          Top             =   240
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
@@ -348,7 +347,7 @@ Begin VB.Form frmCR_PlanPagos
          TabIndex        =   30
          Top             =   240
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
@@ -373,7 +372,7 @@ Begin VB.Form frmCR_PlanPagos
          TabIndex        =   31
          Top             =   240
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
@@ -398,7 +397,7 @@ Begin VB.Form frmCR_PlanPagos
          TabIndex        =   32
          Top             =   240
          Width           =   735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1291
          _ExtentY        =   550
          _StockProps     =   77
@@ -423,7 +422,7 @@ Begin VB.Form frmCR_PlanPagos
          TabIndex        =   60
          Top             =   240
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
@@ -584,7 +583,7 @@ Begin VB.Form frmCR_PlanPagos
       TabIndex        =   15
       Top             =   900
       Width           =   6612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   11663
       _ExtentY        =   1503
       _StockProps     =   79
@@ -608,7 +607,7 @@ Begin VB.Form frmCR_PlanPagos
          TabIndex        =   44
          Top             =   0
          Width           =   1935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   1291
          _StockProps     =   79
@@ -622,7 +621,7 @@ Begin VB.Form frmCR_PlanPagos
             TabIndex        =   46
             Top             =   144
             Width           =   972
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   444
             _StockProps     =   79
@@ -647,7 +646,7 @@ Begin VB.Form frmCR_PlanPagos
             TabIndex        =   45
             Top             =   216
             Width           =   492
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   868
             _ExtentY        =   741
             _StockProps     =   79
@@ -664,7 +663,7 @@ Begin VB.Form frmCR_PlanPagos
             TabIndex        =   47
             Top             =   396
             Width           =   972
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   444
             _StockProps     =   79
@@ -689,7 +688,7 @@ Begin VB.Form frmCR_PlanPagos
          TabIndex        =   40
          Top             =   0
          Width           =   3015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5318
          _ExtentY        =   1296
          _StockProps     =   79
@@ -702,7 +701,7 @@ Begin VB.Form frmCR_PlanPagos
             TabIndex        =   41
             Top             =   120
             Width           =   492
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   868
             _ExtentY        =   952
             _StockProps     =   79
@@ -719,7 +718,7 @@ Begin VB.Form frmCR_PlanPagos
             TabIndex        =   42
             Top             =   120
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -745,7 +744,7 @@ Begin VB.Form frmCR_PlanPagos
             TabIndex        =   43
             Top             =   360
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -769,7 +768,7 @@ Begin VB.Form frmCR_PlanPagos
             TabIndex        =   59
             Top             =   120
             Width           =   495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   868
             _ExtentY        =   952
             _StockProps     =   79
@@ -786,12 +785,11 @@ Begin VB.Form frmCR_PlanPagos
          TabIndex        =   16
          Top             =   100
          Width           =   612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1080
          _ExtentY        =   1094
          _StockProps     =   79
-         BackColor       =   -2147483633
-         Transparent     =   -1  'True
+         BackColor       =   16777215
          UseVisualStyle  =   -1  'True
          Appearance      =   17
          Picture         =   "frmCR_PlanPagos.frx":1F9B
@@ -802,12 +800,11 @@ Begin VB.Form frmCR_PlanPagos
          TabIndex        =   17
          Top             =   100
          Width           =   612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1080
          _ExtentY        =   1094
          _StockProps     =   79
-         BackColor       =   -2147483633
-         Transparent     =   -1  'True
+         BackColor       =   16777215
          UseVisualStyle  =   -1  'True
          Appearance      =   17
          Picture         =   "frmCR_PlanPagos.frx":2928
@@ -819,7 +816,7 @@ Begin VB.Form frmCR_PlanPagos
       TabIndex        =   9
       Top             =   4440
       Width           =   12372
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   21823
       _ExtentY        =   4466
       _StockProps     =   79
@@ -842,7 +839,7 @@ Begin VB.Form frmCR_PlanPagos
          TabIndex        =   10
          Top             =   240
          Width           =   12132
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   21399
          _ExtentY        =   3831
          _StockProps     =   68
@@ -857,7 +854,8 @@ Begin VB.Form frmCR_PlanPagos
          EndProperty
          Appearance      =   4
          Color           =   32
-         ItemCount       =   4
+         ItemCount       =   5
+         SelectedItem    =   4
          Item(0).Caption =   "Cargos"
          Item(0).ControlCount=   1
          Item(0).Control(0)=   "lsw"
@@ -873,64 +871,20 @@ Begin VB.Form frmCR_PlanPagos
          Item(3).Caption =   "Ajustes"
          Item(3).ControlCount=   1
          Item(3).Control(0)=   "lswAjustes"
-         Begin XtremeSuiteControls.ListView lswAjustes 
+         Item(4).Caption =   "Activación"
+         Item(4).ControlCount=   3
+         Item(4).Control(0)=   "Label3"
+         Item(4).Control(1)=   "dtpActivacion"
+         Item(4).Control(2)=   "btnActivar"
+         Begin XtremeSuiteControls.ListView lswValores 
             Height          =   1780
-            Left            =   -70000
-            TabIndex        =   37
+            Left            =   -63880
+            TabIndex        =   13
             Top             =   360
             Visible         =   0   'False
-            Width           =   12132
-            _Version        =   1441793
-            _ExtentX        =   21399
-            _ExtentY        =   3140
-            _StockProps     =   77
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            View            =   3
-            FullRowSelect   =   -1  'True
-            Appearance      =   16
-            ShowBorder      =   0   'False
-         End
-         Begin XtremeSuiteControls.ListView lswDocumentos 
-            Height          =   1780
-            Left            =   -68680
-            TabIndex        =   14
-            Top             =   360
-            Visible         =   0   'False
-            Width           =   4692
-            _Version        =   1441793
-            _ExtentX        =   8276
-            _ExtentY        =   3140
-            _StockProps     =   77
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            View            =   3
-            FullRowSelect   =   -1  'True
-            Appearance      =   16
-            ShowBorder      =   0   'False
-         End
-         Begin XtremeSuiteControls.ListView lsw 
-            Height          =   1780
-            Left            =   0
-            TabIndex        =   11
-            Top             =   360
-            Width           =   12135
-            _Version        =   1441793
-            _ExtentX        =   21405
+            Width           =   6012
+            _Version        =   1572864
+            _ExtentX        =   10604
             _ExtentY        =   3140
             _StockProps     =   77
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -954,7 +908,7 @@ Begin VB.Form frmCR_PlanPagos
             Top             =   360
             Visible         =   0   'False
             Width           =   12132
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   21399
             _ExtentY        =   3140
             _StockProps     =   77
@@ -972,15 +926,65 @@ Begin VB.Form frmCR_PlanPagos
             Appearance      =   16
             ShowBorder      =   0   'False
          End
-         Begin XtremeSuiteControls.ListView lswValores 
+         Begin XtremeSuiteControls.ListView lsw 
             Height          =   1780
-            Left            =   -63880
-            TabIndex        =   13
+            Left            =   -70000
+            TabIndex        =   11
             Top             =   360
             Visible         =   0   'False
-            Width           =   6012
-            _Version        =   1441793
-            _ExtentX        =   10604
+            Width           =   12135
+            _Version        =   1572864
+            _ExtentX        =   21405
+            _ExtentY        =   3140
+            _StockProps     =   77
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            View            =   3
+            FullRowSelect   =   -1  'True
+            Appearance      =   16
+            ShowBorder      =   0   'False
+         End
+         Begin XtremeSuiteControls.ListView lswDocumentos 
+            Height          =   1780
+            Left            =   -68680
+            TabIndex        =   14
+            Top             =   360
+            Visible         =   0   'False
+            Width           =   4692
+            _Version        =   1572864
+            _ExtentX        =   8276
+            _ExtentY        =   3140
+            _StockProps     =   77
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            View            =   3
+            FullRowSelect   =   -1  'True
+            Appearance      =   16
+            ShowBorder      =   0   'False
+         End
+         Begin XtremeSuiteControls.ListView lswAjustes 
+            Height          =   1780
+            Left            =   -70000
+            TabIndex        =   37
+            Top             =   360
+            Visible         =   0   'False
+            Width           =   12132
+            _Version        =   1572864
+            _ExtentX        =   21399
             _ExtentY        =   3140
             _StockProps     =   77
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1004,7 +1008,7 @@ Begin VB.Form frmCR_PlanPagos
             Top             =   480
             Visible         =   0   'False
             Width           =   1092
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1926
             _ExtentY        =   1714
             _StockProps     =   79
@@ -1030,7 +1034,7 @@ Begin VB.Form frmCR_PlanPagos
             Top             =   1560
             Visible         =   0   'False
             Width           =   1092
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1926
             _ExtentY        =   1080
             _StockProps     =   79
@@ -1048,6 +1052,76 @@ Begin VB.Form frmCR_PlanPagos
             UseVisualStyle  =   -1  'True
             TextAlignment   =   5
             Appearance      =   16
+         End
+         Begin XtremeSuiteControls.DateTimePicker dtpActivacion 
+            Height          =   330
+            Left            =   2160
+            TabIndex        =   63
+            Top             =   960
+            Width           =   1455
+            _Version        =   1572864
+            _ExtentX        =   2566
+            _ExtentY        =   582
+            _StockProps     =   68
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            CustomFormat    =   "dd/MM/yyyy"
+            Format          =   3
+         End
+         Begin XtremeSuiteControls.PushButton btnActivar 
+            Height          =   615
+            Left            =   3840
+            TabIndex        =   64
+            Top             =   960
+            Width           =   1935
+            _Version        =   1572864
+            _ExtentX        =   3413
+            _ExtentY        =   1085
+            _StockProps     =   79
+            Caption         =   "Activar Cuota"
+            BackColor       =   16777215
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Appearance      =   17
+            Picture         =   "frmCR_PlanPagos.frx":3106
+         End
+         Begin XtremeSuiteControls.Label Label3 
+            Height          =   495
+            Left            =   240
+            TabIndex        =   62
+            Top             =   840
+            Width           =   1695
+            _Version        =   1572864
+            _ExtentX        =   2990
+            _ExtentY        =   873
+            _StockProps     =   79
+            Caption         =   "Activación de Cuota que vence el:"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Transparent     =   -1  'True
+            WordWrap        =   -1  'True
          End
       End
    End
@@ -1148,7 +1222,7 @@ Begin VB.Form frmCR_PlanPagos
          Strikethrough   =   0   'False
       EndProperty
       MaxCols         =   34
-      SpreadDesigner  =   "frmCR_PlanPagos.frx":3106
+      SpreadDesigner  =   "frmCR_PlanPagos.frx":38E4
       VScrollSpecial  =   -1  'True
       VScrollSpecialType=   2
       AppearanceStyle =   1
@@ -1159,7 +1233,7 @@ Begin VB.Form frmCR_PlanPagos
       TabIndex        =   18
       Top             =   1320
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -1184,7 +1258,7 @@ Begin VB.Form frmCR_PlanPagos
       TabIndex        =   19
       Top             =   960
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -1209,7 +1283,7 @@ Begin VB.Form frmCR_PlanPagos
       TabIndex        =   20
       Top             =   960
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -1234,7 +1308,7 @@ Begin VB.Form frmCR_PlanPagos
       TabIndex        =   21
       Top             =   1320
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -1259,7 +1333,7 @@ Begin VB.Form frmCR_PlanPagos
       TabIndex        =   22
       Top             =   960
       Width           =   4332
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7641
       _ExtentY        =   550
       _StockProps     =   77
@@ -1283,7 +1357,7 @@ Begin VB.Form frmCR_PlanPagos
       TabIndex        =   23
       Top             =   1320
       Width           =   4332
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7641
       _ExtentY        =   550
       _StockProps     =   77
@@ -1459,6 +1533,54 @@ Dim vPaso As Boolean, pLinea As Currency
 
 
 
+Private Sub btnActivar_Click()
+Dim pProceso As Currency, pPass As Boolean
+
+On Error GoTo vError
+
+pPass = False
+
+If txtPlazo.Text = "999" Then
+    strSQL = "select dbo.fxSIFDateTimeToProceso('" & Format(dtpActivacion.Value, "yyyy-mm-dd") & "') as 'Proceso'"
+    Call OpenRecordSet(rs, strSQL)
+     pProceso = rs!Proceso
+    rs.Close
+    
+    strSQL = "exec dbo.spCrdPlanPagosActivaRetenciones_Operacion " & lblOperacion.Caption & ", " & pProceso
+    Call ConectionExecute(strSQL)
+
+    pPass = True
+    
+Else
+    strSQL = "select Id_Seq from Crd_Operacion_Plan_Pagos where Id_Solicitud = " & lblOperacion.Caption & " and Estado = 'P' and Fecha_Corte <= '" _
+             & Format(dtpActivacion.Value, "yyyy-mm-dd") & "' order by Id_Seq asc"
+    Call OpenRecordSet(rs, strSQL)
+    Do While Not rs.EOF
+      strSQL = "exec spCrdPlanPagosActivaCuota " & lblOperacion.Caption & ", " & rs!Id_seq
+      Call ConectionExecute(strSQL)
+      
+      pPass = True
+      
+      rs.MoveNext
+    Loop
+    rs.Close
+
+End If
+
+If pPass Then
+    MsgBox "Activación de Cuotas Procesada!", vbInformation
+    Call Bitacora("Activa", "Cuotas Operacion: " & lblOperacion.Caption & " al " & Format(dtpActivacion.Value, "yyyy-mm-dd"))
+End If
+
+Call sbInicializa
+
+Exit Sub
+
+vError:
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
 Private Sub btnEmail_Click()
 Dim i As Integer, vDetalle As String
 
@@ -1489,7 +1611,7 @@ End Sub
 Private Sub btnExportar_Click()
 Dim vHeaders As vGridHeaders
 
-vHeaders.Columnas = 32
+vHeaders.Columnas = vGrid.MaxCols
 vHeaders.Headers(1) = ""
 vHeaders.Headers(2) = "Linea"
 vHeaders.Headers(3) = "No. Cuota"
@@ -1500,28 +1622,30 @@ vHeaders.Headers(7) = "Fec.Pago"
 vHeaders.Headers(8) = "Tasa"
 vHeaders.Headers(9) = "Plazo"
 vHeaders.Headers(10) = "Cuota"
-vHeaders.Headers(11) = "Cargos"
-vHeaders.Headers(12) = "Póliza"
-vHeaders.Headers(13) = "Int.Cor."
-vHeaders.Headers(14) = "Int.Mor."
-vHeaders.Headers(15) = "Amortización"
-vHeaders.Headers(16) = "Saldo Ant."
-vHeaders.Headers(17) = "Saldo Actual"
-vHeaders.Headers(18) = "Dias"
-vHeaders.Headers(19) = "Estado"
-vHeaders.Headers(20) = "Dias Atraso"
-vHeaders.Headers(21) = "Mov.Fecha"
-vHeaders.Headers(22) = "Mov.Total"
-vHeaders.Headers(23) = "Mov.Cargos"
-vHeaders.Headers(24) = "Mov.Póliza"
-vHeaders.Headers(25) = "Mov.Int.Cor."
-vHeaders.Headers(26) = "Mov.Int.Mor."
-vHeaders.Headers(27) = "Mov.Amortización"
-vHeaders.Headers(28) = "Usr.Caja"
-vHeaders.Headers(29) = "Tipo.Doc."
-vHeaders.Headers(30) = "No. Documento"
-vHeaders.Headers(31) = ""
-vHeaders.Headers(32) = "Concepto"
+vHeaders.Headers(11) = "IVA"
+vHeaders.Headers(12) = "Cargos"
+vHeaders.Headers(13) = "Póliza"
+vHeaders.Headers(14) = "Int.Cor."
+vHeaders.Headers(15) = "Int.Mor."
+vHeaders.Headers(16) = "Amortización"
+vHeaders.Headers(17) = "Saldo Ant."
+vHeaders.Headers(18) = "Saldo Actual"
+vHeaders.Headers(19) = "Dias"
+vHeaders.Headers(20) = "Estado"
+vHeaders.Headers(21) = "Dias Atraso"
+vHeaders.Headers(22) = "Mov.Fecha"
+vHeaders.Headers(23) = "Mov.Total"
+vHeaders.Headers(24) = "Mov.IVA"
+vHeaders.Headers(25) = "Mov.Cargos"
+vHeaders.Headers(26) = "Mov.Póliza"
+vHeaders.Headers(27) = "Mov.Int.Cor."
+vHeaders.Headers(28) = "Mov.Int.Mor."
+vHeaders.Headers(29) = "Mov.Amortización"
+vHeaders.Headers(30) = "Usr.Caja"
+vHeaders.Headers(31) = "Tipo.Doc."
+vHeaders.Headers(32) = "No. Documento"
+vHeaders.Headers(33) = ""
+vHeaders.Headers(34) = "Concepto"
 
 Select Case True
   Case rbExport.Item(0).Value    'EXCEL
@@ -1671,6 +1795,9 @@ With lswValores.ColumnHeaders
 End With
 
 Call Formularios(Me)
+
+btnActivar.Tag = btnRevisar.Tag
+
 Call RefrescaTags(Me)
 
 End Sub
@@ -1728,11 +1855,15 @@ End If
 
 txtFecUltCta.Text = rs!CtaFechaUltCorte
 
+dtpActivacion.Value = DateAdd("d", 1, rs!CtaFechaUltCorte)
+dtpActivacion.MinDate = DateAdd("d", 1, rs!CtaFechaUltCorte)
+dtpActivacion.MaxDate = DateAdd("d", 32, rs!CtaFechaUltCorte)
+
 txtFactorCalculo.Text = fxCrd_Factor_Calculo(rs!Base_Calculo)
 
 rs.Close
 
-strSQL = "select 0 as 'Sep1', TP.Id_Seq, TP.num_cuota, TP.Fecha_Proceso, TP.Fecha_Inicio, TP.Fecha_Corte, TP.Fecha_Pago, TP.Tasa, TP.Plazo, TP.Cuota, TP.Cargos, isnull(Tp.IVA,0) as 'IVA'" _
+strSQL = "select 0 as 'Sep1', TP.Id_Seq, TP.num_cuota, TP.Fecha_Proceso, TP.Fecha_Inicio, TP.Fecha_Corte, TP.Fecha_Pago, TP.Tasa, TP.Plazo, TP.Cuota, isnull(Tp.IVA,0) as 'IVA', TP.Cargos" _
        & ", TP.Poliza, TP.IntCor, TP.IntMor, TP.Principal, TP.Saldo_Anterior, TP.Saldo_Actual" _
        & ", TP.Dias_Calculo,case TP.Estado when 'A' then 'Activa' when 'P' then 'Pendiente'" _
        & " when 'C' then 'Cancelada' when 'N' then 'Anulada' end as 'Estado', Mov.Mora_Dias" _
@@ -2021,8 +2152,8 @@ Do While Not rs.EOF
       itmX.SubItems(5) = Format(rs!Monto, "Standard")
       itmX.SubItems(6) = Format(rs!Mov_Monto, "Standard")
       itmX.SubItems(7) = Format(rs!Mov_Saldo, "Standard")
-      itmX.SubItems(8) = rs!Registro_Fecha
-      itmX.SubItems(9) = rs!Registro_Usuario
+      itmX.SubItems(8) = rs!REGISTRO_FECHA
+      itmX.SubItems(9) = rs!REGISTRO_USUARIO
       itmX.SubItems(10) = rs!ASEGURADORA_NOMBRE
       itmX.SubItems(11) = rs!Cod_Cuenta_Mask & ""
       itmX.SubItems(12) = rs!Cuenta_Desc & ""
@@ -2068,8 +2199,8 @@ Do While Not rs.EOF
       itmX.SubItems(8) = Format(rs!Mov_Cargos, "Standard")
       itmX.SubItems(9) = Format(rs!Mov_Polizas, "Standard")
       itmX.SubItems(10) = Format(rs!Mov_Principal, "Standard")
-      itmX.SubItems(11) = rs!Registro_Fecha
-      itmX.SubItems(12) = rs!Registro_Usuario
+      itmX.SubItems(11) = rs!REGISTRO_FECHA
+      itmX.SubItems(12) = rs!REGISTRO_USUARIO
       itmX.Tag = rs!TIPO_DOCUMENTO
   rs.MoveNext
 Loop
@@ -2102,7 +2233,7 @@ Do While Not rs.EOF
       itmX.SubItems(3) = rs!Num_Referencia
       itmX.SubItems(4) = Format(rs!Monto_Doc, "Standard")
       itmX.SubItems(5) = Format(rs!Monto, "Standard")
-      itmX.SubItems(6) = rs!COD_DIVISA
+      itmX.SubItems(6) = rs!cod_Divisa
       itmX.SubItems(7) = Format(rs!TIPO_CAMBIO, "Standard")
       itmX.SubItems(8) = rs!Saldo_Favor_Id
       itmX.SubItems(9) = rs!Registra_Fecha
@@ -2187,10 +2318,10 @@ If Not IsNumeric(vGrid.Text) Then
 End If
 pLinea = vGrid.Text
 
-If Col = 31 Then
-  vGrid.Col = 29
+If Col = 33 Then
+  vGrid.Col = 31
   pTipoDoc = vGrid.Text
-  vGrid.Col = 30
+  vGrid.Col = 32
   pNumDoc = vGrid.Text
   
   Call sbImprimeRecibo(pNumDoc, pTipoDoc)

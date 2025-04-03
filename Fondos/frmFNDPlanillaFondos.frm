@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmFNDPlanillaFondos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -50,7 +50,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   8
       Top             =   240
       Width           =   6852
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12091
       _ExtentY        =   582
       _StockProps     =   77
@@ -76,7 +76,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   9
       Top             =   600
       Width           =   6852
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12091
       _ExtentY        =   582
       _StockProps     =   77
@@ -102,7 +102,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   10
       Top             =   2160
       Width           =   1932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   582
       _StockProps     =   77
@@ -128,7 +128,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   11
       Top             =   2520
       Width           =   1932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   582
       _StockProps     =   77
@@ -154,7 +154,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   13
       Top             =   1320
       Width           =   6852
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12091
       _ExtentY        =   582
       _StockProps     =   77
@@ -180,7 +180,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   14
       Top             =   1680
       Width           =   6852
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12086
       _ExtentY        =   762
       _StockProps     =   77
@@ -207,7 +207,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   15
       Top             =   7200
       Width           =   1572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -232,7 +232,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   16
       Top             =   7200
       Width           =   972
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1714
       _ExtentY        =   550
       _StockProps     =   77
@@ -257,7 +257,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   17
       Top             =   7200
       Width           =   972
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1714
       _ExtentY        =   550
       _StockProps     =   77
@@ -282,7 +282,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   18
       Top             =   7200
       Width           =   972
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1714
       _ExtentY        =   550
       _StockProps     =   77
@@ -307,7 +307,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   23
       Top             =   2880
       Width           =   1812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
@@ -331,7 +331,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   24
       Top             =   2880
       Width           =   5052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8911
       _ExtentY        =   550
       _StockProps     =   77
@@ -355,7 +355,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   25
       Top             =   2520
       Width           =   2772
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4890
       _ExtentY        =   550
       _StockProps     =   77
@@ -381,13 +381,13 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   26
       Top             =   1680
       Width           =   492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   79
       BackColor       =   -2147483633
       Appearance      =   16
-      Picture         =   "frmFNDPlanillaFondos.frx":2C3F
+      Picture         =   "frmFNDPlanillaFondos.frx":2C85
    End
    Begin XtremeSuiteControls.PushButton btnArchivo 
       Height          =   372
@@ -396,13 +396,13 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   27
       Top             =   1680
       Width           =   492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   79
       BackColor       =   -2147483633
       Appearance      =   16
-      Picture         =   "frmFNDPlanillaFondos.frx":333F
+      Picture         =   "frmFNDPlanillaFondos.frx":3385
    End
    Begin XtremeSuiteControls.PushButton btnArchivo 
       Height          =   372
@@ -411,13 +411,13 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   28
       Top             =   1680
       Width           =   492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   79
       BackColor       =   -2147483633
       Appearance      =   16
-      Picture         =   "frmFNDPlanillaFondos.frx":3A58
+      Picture         =   "frmFNDPlanillaFondos.frx":3A9E
    End
    Begin XtremeSuiteControls.PushButton btnAplicar 
       Height          =   492
@@ -425,7 +425,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   29
       Top             =   6960
       Width           =   1332
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   868
       _StockProps     =   79
@@ -442,7 +442,7 @@ Begin VB.Form frmFNDPlanillaFondos
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmFNDPlanillaFondos.frx":4171
+      Picture         =   "frmFNDPlanillaFondos.frx":41B7
    End
    Begin XtremeSuiteControls.PushButton btnCancelar 
       Height          =   492
@@ -450,7 +450,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   30
       Top             =   6960
       Width           =   1332
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   868
       _StockProps     =   79
@@ -467,7 +467,7 @@ Begin VB.Form frmFNDPlanillaFondos
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmFNDPlanillaFondos.frx":4898
+      Picture         =   "frmFNDPlanillaFondos.frx":48DE
    End
    Begin XtremeSuiteControls.PushButton btnBitacora 
       Height          =   492
@@ -475,7 +475,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   31
       Top             =   6960
       Width           =   732
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1291
       _ExtentY        =   868
       _StockProps     =   79
@@ -491,7 +491,7 @@ Begin VB.Form frmFNDPlanillaFondos
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmFNDPlanillaFondos.frx":4F98
+      Picture         =   "frmFNDPlanillaFondos.frx":4FDE
    End
    Begin XtremeSuiteControls.CheckBox chkExcel 
       Height          =   615
@@ -499,7 +499,7 @@ Begin VB.Form frmFNDPlanillaFondos
       TabIndex        =   32
       Top             =   2520
       Width           =   1095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1931
       _ExtentY        =   1085
       _StockProps     =   79
@@ -1172,18 +1172,18 @@ If vTipo = 1 Then 'Archivo de excel
               
                     .MaxRows = .MaxRows + 1
                     .Row = .MaxRows
-                    .col = 1
+                    .Col = 1
                     .Text = rs!Cedula
-                    .col = 2
+                    .Col = 2
                     .Text = rs!Nombre
-                    .col = 3
+                    .Col = 3
                     .Value = IIf((rs!Existe_Persona = 1), 0, 1)
                     
-                    .col = 4
+                    .Col = 4
                     .Value = IIf((rs!Existe_Contrato = 1), 0, 1)
                     .CellTag = rs!COD_CONTRATO
                     
-                    .col = 5
+                    .Col = 5
                     .Text = Format(rs!fondos, "Standard")
                     
                     If rs!Existe_Persona = 0 Then
@@ -1232,25 +1232,25 @@ Else 'Archivo Texto
                 If Len(strCadena) > "54" Then
                     .MaxRows = .MaxRows + 1
                     .Row = .MaxRows
-                    .col = 1
+                    .Col = 1
                     .Text = strCedula
-                    .col = 2
+                    .Col = 2
                     .Text = strNombre
-                    .col = 3
+                    .Col = 3
                     If fxNombre(strCedula) = "" Then
                         .Value = 1
                         txtSocios.Text = txtSocios + 1
                     Else
                         .Value = 0
                     End If
-                    .col = 4
+                    .Col = 4
                     If fxExisteContrato(strCedula) Then
                         .Value = 0
                         txtContratos = txtContratos + 1
                     Else
                         .Value = 1
                     End If
-                    .col = 5
+                    .Col = 5
                     .Text = Format(strMonto, "Standard")
                End If
             End With

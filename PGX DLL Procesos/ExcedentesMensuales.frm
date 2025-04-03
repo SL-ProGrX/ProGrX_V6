@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmAH_ExcedentesMensuales 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Excedentes"
@@ -24,7 +24,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
       TabIndex        =   79
       Top             =   7695
       Width           =   11415
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   20135
       _ExtentY        =   344
       _StockProps     =   93
@@ -37,7 +37,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
       TabIndex        =   39
       Top             =   1200
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   550
       _StockProps     =   79
@@ -64,7 +64,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
       TabIndex        =   0
       Top             =   1224
       Width           =   11292
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19918
       _ExtentY        =   10816
       _StockProps     =   68
@@ -84,10 +84,13 @@ Begin VB.Form frmAH_ExcedentesMensuales
       Item(0).ControlCount=   1
       Item(0).Control(0)=   "GroupBox1"
       Item(1).Caption =   "Mensual"
-      Item(1).ControlCount=   3
+      Item(1).ControlCount=   6
       Item(1).Control(0)=   "GroupBox2"
       Item(1).Control(1)=   "GroupBox3"
       Item(1).Control(2)=   "GroupBox4"
+      Item(1).Control(3)=   "cboBaseAplicacion"
+      Item(1).Control(4)=   "btnBaseAplicacionUpdate"
+      Item(1).Control(5)=   "Label1(12)"
       Item(2).Caption =   "Cierre"
       Item(2).ControlCount=   2
       Item(2).Control(0)=   "GroupBox5"
@@ -112,7 +115,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
          Top             =   480
          Visible         =   0   'False
          Width           =   8535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15055
          _ExtentY        =   9763
          _StockProps     =   77
@@ -131,15 +134,15 @@ Begin VB.Form frmAH_ExcedentesMensuales
          Appearance      =   16
       End
       Begin XtremeSuiteControls.GroupBox GroupBox7 
-         Height          =   5652
+         Height          =   5775
          Left            =   -67600
          TabIndex        =   65
-         Top             =   1080
+         Top             =   960
          Visible         =   0   'False
-         Width           =   8652
-         _Version        =   1441793
-         _ExtentX        =   15261
-         _ExtentY        =   9970
+         Width           =   8655
+         _Version        =   1572864
+         _ExtentX        =   15266
+         _ExtentY        =   10186
          _StockProps     =   79
          Caption         =   "Aplicaciones"
          ForeColor       =   8421504
@@ -152,16 +155,17 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          BorderStyle     =   1
          Begin XtremeSuiteControls.RadioButton optAplicaciones 
-            Height          =   252
+            Height          =   255
             Index           =   0
             Left            =   360
             TabIndex        =   66
-            Top             =   360
-            Width           =   4212
-            _Version        =   1441793
+            Top             =   720
+            Width           =   4215
+            _Version        =   1572864
             _ExtentX        =   7429
             _ExtentY        =   444
             _StockProps     =   79
@@ -175,17 +179,17 @@ Begin VB.Form frmAH_ExcedentesMensuales
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   16
-            Value           =   -1  'True
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
          End
          Begin XtremeSuiteControls.RadioButton optAplicaciones 
-            Height          =   252
+            Height          =   255
             Index           =   1
             Left            =   360
             TabIndex        =   67
-            Top             =   720
-            Width           =   4212
-            _Version        =   1441793
+            Top             =   1080
+            Width           =   4215
+            _Version        =   1572864
             _ExtentX        =   7429
             _ExtentY        =   444
             _StockProps     =   79
@@ -199,16 +203,17 @@ Begin VB.Form frmAH_ExcedentesMensuales
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   16
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
          End
          Begin XtremeSuiteControls.RadioButton optAplicaciones 
-            Height          =   252
+            Height          =   255
             Index           =   2
             Left            =   360
             TabIndex        =   68
-            Top             =   1080
-            Width           =   4212
-            _Version        =   1441793
+            Top             =   1440
+            Width           =   4215
+            _Version        =   1572864
             _ExtentX        =   7429
             _ExtentY        =   444
             _StockProps     =   79
@@ -222,16 +227,17 @@ Begin VB.Form frmAH_ExcedentesMensuales
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   16
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
          End
          Begin XtremeSuiteControls.RadioButton optAplicaciones 
-            Height          =   252
+            Height          =   255
             Index           =   3
             Left            =   360
             TabIndex        =   69
-            Top             =   1440
-            Width           =   4212
-            _Version        =   1441793
+            Top             =   1800
+            Width           =   4215
+            _Version        =   1572864
             _ExtentX        =   7429
             _ExtentY        =   444
             _StockProps     =   79
@@ -245,20 +251,21 @@ Begin VB.Form frmAH_ExcedentesMensuales
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   16
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
          End
          Begin XtremeSuiteControls.RadioButton optAplicaciones 
-            Height          =   252
+            Height          =   255
             Index           =   4
             Left            =   360
             TabIndex        =   70
-            Top             =   1800
-            Width           =   4212
-            _Version        =   1441793
+            Top             =   2160
+            Width           =   4215
+            _Version        =   1572864
             _ExtentX        =   7429
             _ExtentY        =   444
             _StockProps     =   79
-            Caption         =   "Carga/Apl/Act Mora OPCF al Excedente"
+            Caption         =   "Carga/Apl/Act Mora OPCF/Res al Excedente"
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -268,16 +275,17 @@ Begin VB.Form frmAH_ExcedentesMensuales
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   16
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
          End
          Begin XtremeSuiteControls.RadioButton optAplicaciones 
-            Height          =   252
+            Height          =   255
             Index           =   5
             Left            =   360
             TabIndex        =   71
-            Top             =   2160
-            Width           =   4212
-            _Version        =   1441793
+            Top             =   2520
+            Width           =   4215
+            _Version        =   1572864
             _ExtentX        =   7429
             _ExtentY        =   444
             _StockProps     =   79
@@ -291,16 +299,17 @@ Begin VB.Form frmAH_ExcedentesMensuales
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   16
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
          End
          Begin XtremeSuiteControls.RadioButton optAplicaciones 
-            Height          =   252
+            Height          =   255
             Index           =   6
             Left            =   360
             TabIndex        =   72
-            Top             =   2760
-            Width           =   4812
-            _Version        =   1441793
+            Top             =   3480
+            Width           =   4815
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   444
             _StockProps     =   79
@@ -314,16 +323,17 @@ Begin VB.Form frmAH_ExcedentesMensuales
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   16
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
          End
          Begin XtremeSuiteControls.RadioButton optAplicaciones 
-            Height          =   252
+            Height          =   255
             Index           =   7
             Left            =   360
             TabIndex        =   73
-            Top             =   3120
-            Width           =   4812
-            _Version        =   1441793
+            Top             =   3840
+            Width           =   4815
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   444
             _StockProps     =   79
@@ -337,16 +347,17 @@ Begin VB.Form frmAH_ExcedentesMensuales
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   16
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
          End
          Begin XtremeSuiteControls.RadioButton optAplicaciones 
-            Height          =   252
+            Height          =   255
             Index           =   8
             Left            =   360
             TabIndex        =   74
-            Top             =   3480
-            Width           =   4812
-            _Version        =   1441793
+            Top             =   4200
+            Width           =   4815
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   444
             _StockProps     =   79
@@ -360,16 +371,17 @@ Begin VB.Form frmAH_ExcedentesMensuales
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   16
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
          End
          Begin XtremeSuiteControls.RadioButton optAplicaciones 
-            Height          =   252
+            Height          =   255
             Index           =   9
             Left            =   360
             TabIndex        =   75
-            Top             =   3840
-            Width           =   4812
-            _Version        =   1441793
+            Top             =   4560
+            Width           =   4815
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   444
             _StockProps     =   79
@@ -383,16 +395,17 @@ Begin VB.Form frmAH_ExcedentesMensuales
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   16
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
          End
          Begin XtremeSuiteControls.RadioButton optAplicaciones 
-            Height          =   252
+            Height          =   255
             Index           =   10
             Left            =   360
             TabIndex        =   76
-            Top             =   4200
-            Width           =   4812
-            _Version        =   1441793
+            Top             =   4920
+            Width           =   4815
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   444
             _StockProps     =   79
@@ -406,16 +419,17 @@ Begin VB.Form frmAH_ExcedentesMensuales
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   16
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
          End
          Begin XtremeSuiteControls.RadioButton optAplicaciones 
-            Height          =   252
+            Height          =   255
             Index           =   11
             Left            =   5400
             TabIndex        =   77
-            Top             =   360
-            Width           =   4812
-            _Version        =   1441793
+            Top             =   1080
+            Width           =   4815
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   444
             _StockProps     =   79
@@ -429,16 +443,17 @@ Begin VB.Form frmAH_ExcedentesMensuales
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   16
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
          End
          Begin XtremeSuiteControls.RadioButton optAplicaciones 
-            Height          =   252
+            Height          =   255
             Index           =   12
             Left            =   5400
             TabIndex        =   78
-            Top             =   720
-            Width           =   4812
-            _Version        =   1441793
+            Top             =   1440
+            Width           =   4815
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   444
             _StockProps     =   79
@@ -452,15 +467,116 @@ Begin VB.Form frmAH_ExcedentesMensuales
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   16
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
+         End
+         Begin XtremeSuiteControls.RadioButton optAplicaciones 
+            Height          =   255
+            Index           =   13
+            Left            =   5400
+            TabIndex        =   84
+            Top             =   240
+            Width           =   4815
+            _Version        =   1572864
+            _ExtentX        =   8488
+            _ExtentY        =   444
+            _StockProps     =   79
+            Caption         =   "Factura Electrónica"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
+         End
+         Begin XtremeSuiteControls.RadioButton optAplicaciones 
+            Height          =   255
+            Index           =   14
+            Left            =   360
+            TabIndex        =   85
+            Top             =   2880
+            Width           =   4215
+            _Version        =   1572864
+            _ExtentX        =   7429
+            _ExtentY        =   444
+            _StockProps     =   79
+            Caption         =   "Aplica Abono Extraordinario Ren. Patronal"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
+         End
+         Begin XtremeSuiteControls.RadioButton optAplicaciones 
+            Height          =   255
+            Index           =   15
+            Left            =   360
+            TabIndex        =   86
+            Top             =   240
+            Width           =   4815
+            _Version        =   1572864
+            _ExtentX        =   8488
+            _ExtentY        =   444
+            _StockProps     =   79
+            Caption         =   "Casos Insolventes"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
+            Value           =   -1  'True
+         End
+         Begin VB.Image imgPass 
+            Appearance      =   0  'Flat
+            Height          =   240
+            Index           =   15
+            Left            =   120
+            Picture         =   "ExcedentesMensuales.frx":030A
+            Top             =   240
+            Width           =   240
+         End
+         Begin VB.Image imgPass 
+            Appearance      =   0  'Flat
+            Height          =   240
+            Index           =   14
+            Left            =   120
+            Picture         =   "ExcedentesMensuales.frx":0A21
+            Top             =   2880
+            Width           =   240
+         End
+         Begin VB.Image imgPass 
+            Appearance      =   0  'Flat
+            Height          =   240
+            Index           =   13
+            Left            =   5160
+            Picture         =   "ExcedentesMensuales.frx":1138
+            Top             =   240
+            Width           =   240
          End
          Begin VB.Image imgPass 
             Appearance      =   0  'Flat
             Height          =   240
             Index           =   12
             Left            =   5160
-            Picture         =   "ExcedentesMensuales.frx":030A
-            Top             =   720
+            Picture         =   "ExcedentesMensuales.frx":184F
+            Top             =   1440
             Width           =   240
          End
          Begin VB.Image imgPass 
@@ -468,8 +584,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Height          =   240
             Index           =   11
             Left            =   5160
-            Picture         =   "ExcedentesMensuales.frx":0A21
-            Top             =   360
+            Picture         =   "ExcedentesMensuales.frx":1F66
+            Top             =   1080
             Width           =   240
          End
          Begin VB.Image imgPass 
@@ -477,8 +593,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Height          =   240
             Index           =   10
             Left            =   120
-            Picture         =   "ExcedentesMensuales.frx":1138
-            Top             =   4200
+            Picture         =   "ExcedentesMensuales.frx":267D
+            Top             =   4920
             Width           =   240
          End
          Begin VB.Image imgPass 
@@ -486,8 +602,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Height          =   240
             Index           =   9
             Left            =   120
-            Picture         =   "ExcedentesMensuales.frx":184F
-            Top             =   3840
+            Picture         =   "ExcedentesMensuales.frx":2D94
+            Top             =   4560
             Width           =   240
          End
          Begin VB.Image imgPass 
@@ -495,8 +611,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Height          =   240
             Index           =   8
             Left            =   120
-            Picture         =   "ExcedentesMensuales.frx":1F66
-            Top             =   3480
+            Picture         =   "ExcedentesMensuales.frx":34AB
+            Top             =   4200
             Width           =   240
          End
          Begin VB.Image imgPass 
@@ -504,8 +620,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Height          =   240
             Index           =   7
             Left            =   120
-            Picture         =   "ExcedentesMensuales.frx":267D
-            Top             =   3120
+            Picture         =   "ExcedentesMensuales.frx":3BC2
+            Top             =   3840
             Width           =   240
          End
          Begin VB.Image imgPass 
@@ -513,8 +629,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Height          =   240
             Index           =   6
             Left            =   120
-            Picture         =   "ExcedentesMensuales.frx":2D94
-            Top             =   2760
+            Picture         =   "ExcedentesMensuales.frx":42D9
+            Top             =   3480
             Width           =   240
          End
          Begin VB.Image imgPass 
@@ -522,8 +638,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Height          =   240
             Index           =   5
             Left            =   120
-            Picture         =   "ExcedentesMensuales.frx":34AB
-            Top             =   2160
+            Picture         =   "ExcedentesMensuales.frx":49F0
+            Top             =   2520
             Width           =   240
          End
          Begin VB.Image imgPass 
@@ -531,8 +647,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Height          =   240
             Index           =   4
             Left            =   120
-            Picture         =   "ExcedentesMensuales.frx":3BC2
-            Top             =   1800
+            Picture         =   "ExcedentesMensuales.frx":5107
+            Top             =   2160
             Width           =   240
          End
          Begin VB.Image imgPass 
@@ -540,8 +656,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Height          =   240
             Index           =   3
             Left            =   120
-            Picture         =   "ExcedentesMensuales.frx":42D9
-            Top             =   1440
+            Picture         =   "ExcedentesMensuales.frx":581E
+            Top             =   1800
             Width           =   240
          End
          Begin VB.Image imgPass 
@@ -549,8 +665,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Height          =   240
             Index           =   2
             Left            =   120
-            Picture         =   "ExcedentesMensuales.frx":49F0
-            Top             =   1080
+            Picture         =   "ExcedentesMensuales.frx":5F35
+            Top             =   1440
             Width           =   240
          End
          Begin VB.Image imgPass 
@@ -558,8 +674,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Height          =   240
             Index           =   1
             Left            =   120
-            Picture         =   "ExcedentesMensuales.frx":5107
-            Top             =   720
+            Picture         =   "ExcedentesMensuales.frx":664C
+            Top             =   1080
             Width           =   240
          End
          Begin VB.Image imgPass 
@@ -567,8 +683,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Height          =   240
             Index           =   0
             Left            =   120
-            Picture         =   "ExcedentesMensuales.frx":581E
-            Top             =   360
+            Picture         =   "ExcedentesMensuales.frx":6D63
+            Top             =   720
             Width           =   240
          End
       End
@@ -578,7 +694,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
          TabIndex        =   3
          Top             =   480
          Width           =   10692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18860
          _ExtentY        =   10604
          _StockProps     =   79
@@ -601,7 +717,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   13
             Top             =   1080
             Width           =   10695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   18865
             _ExtentY        =   7011
             _StockProps     =   77
@@ -626,7 +742,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   12
             Top             =   240
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   444
             _StockProps     =   79
@@ -650,7 +766,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   9
             Top             =   480
             Width           =   1092
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1926
             _ExtentY        =   868
             _StockProps     =   79
@@ -673,7 +789,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   7
             Top             =   600
             Width           =   2412
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4260
             _ExtentY        =   582
             _StockProps     =   77
@@ -699,7 +815,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   8
             Top             =   600
             Width           =   3732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6588
             _ExtentY        =   582
             _StockProps     =   77
@@ -725,7 +841,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   10
             Top             =   480
             Width           =   1092
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1926
             _ExtentY        =   868
             _StockProps     =   79
@@ -748,7 +864,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   11
             Top             =   600
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -769,18 +885,19 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Text            =   "ComboBox1"
          End
          Begin XtremeSuiteControls.PushButton btnExport 
-            Height          =   255
+            Height          =   375
             Index           =   0
-            Left            =   10440
+            Left            =   10200
             TabIndex        =   80
             Top             =   5160
-            Width           =   255
-            _Version        =   1441793
-            _ExtentX        =   444
-            _ExtentY        =   444
+            Width           =   495
+            _Version        =   1572864
+            _ExtentX        =   873
+            _ExtentY        =   661
             _StockProps     =   79
-            Appearance      =   16
-            Picture         =   "ExcedentesMensuales.frx":5F35
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
+            Picture         =   "ExcedentesMensuales.frx":747A
          End
          Begin VB.Label Label6 
             Caption         =   "Corte"
@@ -826,7 +943,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
          Top             =   600
          Visible         =   0   'False
          Width           =   9015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15901
          _ExtentY        =   3201
          _StockProps     =   79
@@ -849,7 +966,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   21
             Top             =   720
             Width           =   2412
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4260
             _ExtentY        =   582
             _StockProps     =   77
@@ -875,7 +992,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   22
             Top             =   720
             Width           =   3732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6588
             _ExtentY        =   582
             _StockProps     =   77
@@ -910,7 +1027,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   26
             Top             =   1080
             Width           =   2412
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4254
             _ExtentY        =   556
             _StockProps     =   77
@@ -944,7 +1061,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   82
             Top             =   1440
             Width           =   2415
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4254
             _ExtentY        =   556
             _StockProps     =   77
@@ -1048,7 +1165,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
          Top             =   1920
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   656
          _StockProps     =   79
@@ -1062,7 +1179,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          Alignment       =   1
       End
       Begin XtremeSuiteControls.CheckBox chkPosCierreLimpiar 
@@ -1072,7 +1190,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
          Top             =   1320
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   1080
          _StockProps     =   79
@@ -1086,7 +1204,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          Value           =   1
          Alignment       =   1
       End
@@ -1097,7 +1216,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
          Top             =   4560
          Visible         =   0   'False
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3836
          _ExtentY        =   1085
          _StockProps     =   79
@@ -1121,7 +1240,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
          Top             =   5280
          Visible         =   0   'False
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3836
          _ExtentY        =   1085
          _StockProps     =   79
@@ -1145,7 +1264,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
          Top             =   2520
          Visible         =   0   'False
          Width           =   9015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15896
          _ExtentY        =   3196
          _StockProps     =   79
@@ -1177,7 +1296,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   29
             Top             =   840
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   550
             _StockProps     =   77
@@ -1212,7 +1331,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   30
             Top             =   840
             Width           =   2412
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4254
             _ExtentY        =   556
             _StockProps     =   77
@@ -1247,7 +1366,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   34
             Top             =   1320
             Width           =   6372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11239
             _ExtentY        =   550
             _StockProps     =   77
@@ -1282,7 +1401,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   28
             Top             =   360
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   550
             _StockProps     =   77
@@ -1385,10 +1504,10 @@ Begin VB.Form frmAH_ExcedentesMensuales
          TabIndex        =   20
          Top             =   4680
          Visible         =   0   'False
-         Width           =   9015
-         _Version        =   1441793
-         _ExtentX        =   15896
-         _ExtentY        =   2138
+         Width           =   6495
+         _Version        =   1572864
+         _ExtentX        =   11456
+         _ExtentY        =   2143
          _StockProps     =   79
          Caption         =   "Información aplicada:"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1418,7 +1537,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   36
             Top             =   360
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   550
             _StockProps     =   77
@@ -1453,7 +1572,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   37
             Top             =   840
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   550
             _StockProps     =   77
@@ -1519,7 +1638,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
          Top             =   600
          Visible         =   0   'False
          Width           =   9372
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16531
          _ExtentY        =   5736
          _StockProps     =   79
@@ -1533,7 +1652,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          BorderStyle     =   1
          Begin XtremeSuiteControls.ListView lswCRE_Renta 
             Height          =   1692
@@ -1541,7 +1661,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   45
             Top             =   1080
             Width           =   6852
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   12086
             _ExtentY        =   2984
             _StockProps     =   77
@@ -1557,7 +1677,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             EndProperty
             View            =   3
             FullRowSelect   =   -1  'True
-            Appearance      =   17
+            Appearance      =   21
             UseVisualStyle  =   0   'False
             ShowBorder      =   0   'False
          End
@@ -1569,7 +1689,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             ToolTipText     =   "Abrir Configuración del Parámetro"
             Top             =   600
             Width           =   372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   656
             _ExtentY        =   550
             _StockProps     =   79
@@ -1584,7 +1704,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   41
             Top             =   600
             Width           =   3732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6588
             _ExtentY        =   582
             _StockProps     =   77
@@ -1619,7 +1739,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   42
             Top             =   600
             Width           =   1212
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   550
             _StockProps     =   77
@@ -1648,7 +1768,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             ToolTipText     =   "Abrir Configuración del Parámetro"
             Top             =   1080
             Width           =   372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   656
             _ExtentY        =   550
             _StockProps     =   79
@@ -1665,7 +1785,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             ToolTipText     =   "Abrir Configuración del Parámetro"
             Top             =   2880
             Width           =   372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   656
             _ExtentY        =   550
             _StockProps     =   79
@@ -1680,7 +1800,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   60
             Top             =   2880
             Width           =   4932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8700
             _ExtentY        =   444
             _StockProps     =   79
@@ -1698,6 +1818,32 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TextAlignment   =   1
             Appearance      =   16
             Alignment       =   1
+         End
+         Begin XtremeSuiteControls.PushButton btnAdjuntos 
+            Height          =   330
+            Left            =   3480
+            TabIndex        =   83
+            ToolTipText     =   "Adjuntar Documentos"
+            Top             =   240
+            Width           =   1815
+            _Version        =   1572864
+            _ExtentX        =   3201
+            _ExtentY        =   582
+            _StockProps     =   79
+            Caption         =   "Adjuntos"
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            UseVisualStyle  =   -1  'True
+            Appearance      =   21
+            Picture         =   "ExcedentesMensuales.frx":75E4
          End
          Begin VB.Label Label6 
             Alignment       =   1  'Right Justify
@@ -1764,7 +1910,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
          Top             =   3960
          Visible         =   0   'False
          Width           =   9252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16319
          _ExtentY        =   4043
          _StockProps     =   79
@@ -1778,7 +1924,8 @@ Begin VB.Form frmAH_ExcedentesMensuales
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          BorderStyle     =   1
          Begin XtremeSuiteControls.FlatEdit txtCRECasos 
             BeginProperty DataFormat 
@@ -1795,7 +1942,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   47
             Top             =   360
             Width           =   972
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   550
             _StockProps     =   77
@@ -1830,7 +1977,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   48
             Top             =   360
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   550
             _StockProps     =   77
@@ -1865,7 +2012,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   51
             Top             =   1440
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   550
             _StockProps     =   77
@@ -1900,7 +2047,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   53
             Top             =   1080
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   550
             _StockProps     =   77
@@ -1935,7 +2082,7 @@ Begin VB.Form frmAH_ExcedentesMensuales
             TabIndex        =   55
             Top             =   720
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   550
             _StockProps     =   77
@@ -2060,13 +2207,89 @@ Begin VB.Form frmAH_ExcedentesMensuales
          Top             =   480
          Visible         =   0   'False
          Width           =   372
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   656
          _ExtentY        =   550
          _StockProps     =   79
          Caption         =   "..."
          Transparent     =   -1  'True
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+      End
+      Begin XtremeSuiteControls.ComboBox cboBaseAplicacion 
+         Height          =   330
+         Left            =   -61960
+         TabIndex        =   87
+         Top             =   5160
+         Visible         =   0   'False
+         Width           =   2055
+         _Version        =   1572864
+         _ExtentX        =   3625
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Style           =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+         Text            =   "ComboBox1"
+      End
+      Begin XtremeSuiteControls.PushButton btnBaseAplicacionUpdate 
+         Height          =   375
+         Left            =   -61960
+         TabIndex        =   88
+         Top             =   5520
+         Visible         =   0   'False
+         Width           =   2055
+         _Version        =   1572864
+         _ExtentX        =   3625
+         _ExtentY        =   661
+         _StockProps     =   79
+         Caption         =   "Actualiza"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         UseVisualStyle  =   -1  'True
+         Appearance      =   17
+         Picture         =   "ExcedentesMensuales.frx":766D
+         ImageAlignment  =   0
+      End
+      Begin VB.Label Label1 
+         Alignment       =   1  'Right Justify
+         BackStyle       =   0  'Transparent
+         Caption         =   "Tipo de cálculo para aplicación mensual: "
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   495
+         Index           =   12
+         Left            =   -62440
+         TabIndex        =   89
+         Top             =   4680
+         Visible         =   0   'False
+         Width           =   2535
+         WordWrap        =   -1  'True
       End
       Begin VB.Label Label4 
          Alignment       =   1  'Right Justify
@@ -2093,7 +2316,6 @@ Begin VB.Form frmAH_ExcedentesMensuales
          Alignment       =   2  'Center
          Appearance      =   0  'Flat
          BackColor       =   &H80000005&
-         BorderStyle     =   1  'Fixed Single
          BeginProperty Font 
             Name            =   "Calibri"
             Size            =   9
@@ -2125,19 +2347,19 @@ Begin VB.Form frmAH_ExcedentesMensuales
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   4
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "ExcedentesMensuales.frx":609F
+            Picture         =   "ExcedentesMensuales.frx":7D94
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "ExcedentesMensuales.frx":63BB
+            Picture         =   "ExcedentesMensuales.frx":80B0
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "ExcedentesMensuales.frx":6C97
+            Picture         =   "ExcedentesMensuales.frx":898C
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "ExcedentesMensuales.frx":7573
+            Picture         =   "ExcedentesMensuales.frx":9268
             Key             =   ""
          EndProperty
       EndProperty
@@ -2148,13 +2370,13 @@ Begin VB.Form frmAH_ExcedentesMensuales
       TabIndex        =   64
       Top             =   7440
       Width           =   11292
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19918
       _ExtentY        =   444
       _StockProps     =   14
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   7.41
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -2198,6 +2420,19 @@ Option Explicit
 Dim rsParametros As New ADODB.Recordset
 Dim vReporte As String, vPaso As Boolean
 
+Private Sub btnAdjuntos_Click()
+On Error GoTo vError
+ 
+ gGA.Modulo = "EXC"
+ gGA.Llave_01 = cboCRE_Periodo.ItemData(cboCRE_Periodo.ListIndex)
+ gGA.Llave_02 = ""
+ gGA.Llave_03 = ""
+ 
+ Call sbFormsCall("frmGA_Documentos", vbModal, , , False, Me, True)
+
+vError:
+End Sub
+
 Private Sub btnAplicar_Click()
     Select Case tcMain.Selected.Index
       Case 1 'Aplica
@@ -2207,6 +2442,25 @@ Private Sub btnAplicar_Click()
       Case 3 'PosCierre
         Call sbExcedentes_PosCierre_Aplica
     End Select
+End Sub
+
+Private Sub btnBaseAplicacionUpdate_Click()
+Dim strSQL As String
+
+On Error GoTo vError
+
+strSQL = "exec spExc_Periodo_Modo_Aplicacion " & cboAPL_Periodo.ItemData(cboAPL_Periodo.ListIndex) & ", '" & cboBaseAplicacion.ItemData(cboBaseAplicacion.ListIndex) & "', '" & glogon.Usuario & "'"
+Call ConectionExecute(strSQL)
+
+MsgBox "Base para distribución guardada satisfactoriamente...", vbInformation
+
+Call cboAPL_Periodo_Click
+
+Exit Sub
+
+vError:
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
 End Sub
 
 Private Sub btnCierreParametros_Click(Index As Integer)
@@ -2353,11 +2607,22 @@ With frmContenedor.Crt
        
      Case "APLPERIODO"
      
-              .SelectionFormula = "{EXC_CARGA.ID_PERIODO} = " & cboRepPeriodo.ItemData(cboRepPeriodo.ListIndex)
+              If chkReporteResumen.Value = xtpChecked Then
               
-              .Formulas(4) = "subtitulo='PERIODO: " & cboRepPeriodo.Text _
-                           & " --> CORTE APLICADO'"
-              .ReportFileName = SIFGlobal.fxPathReportes("Excedentes_AplicadoPeriodo_Total.rpt")
+                .Formulas(4) = "subtitulo='PERIODO: " & cboRepPeriodo.Text _
+                             & " --> CORTE APLICADO'"
+                .ReportFileName = SIFGlobal.fxPathReportes("Excedentes_AplicadoPeriodo_Total_Resumen.rpt")
+                
+                .StoredProcParam(0) = cboRepPeriodo.ItemData(cboRepPeriodo.ListIndex)
+                .StoredProcParam(1) = "'" & glogon.Usuario & "'"
+              
+              Else
+                .SelectionFormula = "{EXC_CARGA.ID_PERIODO} = " & cboRepPeriodo.ItemData(cboRepPeriodo.ListIndex)
+                
+                .Formulas(4) = "subtitulo='PERIODO: " & cboRepPeriodo.Text _
+                             & " --> CORTE APLICADO'"
+                .ReportFileName = SIFGlobal.fxPathReportes("Excedentes_AplicadoPeriodo_Total.rpt")
+              End If
               
               Call Bitacora("Imprime", "Resumen Exc. Aplicado TOTAL Per." & cboRepPeriodo.Text)
      
@@ -2484,6 +2749,9 @@ Call OpenRecordSet(rs, strSQL)
 
 txtTipoDistribucion.Tag = rs!TIPO_APL_MENSUAL
 txtTipoDistribucion.Text = rs!TIPO_APL_MENSUAL_DESC
+
+Call sbCboAsignaDato(cboBaseAplicacion, rs!TIPO_APL_MENSUAL_DESC, True, rs!TIPO_APL_MENSUAL)
+
 
 txtMonto.Locked = True
 txtMonto.Text = Format(0, "Standard")
@@ -2614,6 +2882,8 @@ Dim strSQL As String
 
  Set imgBanner.Picture = frmContenedor.imgBanner_Procesar.Picture
 
+
+
 With lswParametros.ColumnHeaders
     .Clear
     .Add , , "Código", 1000
@@ -2626,6 +2896,21 @@ End With
     .Add , , "Inicio", 1800, vbRightJustify
     .Add , , "Corte", 1800, vbRightJustify
     .Add , , "[%] Renta", 1100, vbRightJustify
+ End With
+ 
+ With cboBaseAplicacion
+    .Clear
+    .AddItem "Manual"
+    .ItemData(.ListCount - 1) = "M"
+    .AddItem "Cargado [%]"
+    .ItemData(.ListCount - 1) = "C"
+    .AddItem "Real Contable"
+    .ItemData(.ListCount - 1) = "R"
+    .AddItem "Proyectado"
+    .ItemData(.ListCount - 1) = "P"
+    .AddItem "Prorrateado"
+    .ItemData(.ListCount - 1) = "T"
+    .Text = "Manual"
  End With
  
  With cboRepInforme
@@ -2801,7 +3086,9 @@ On Error GoTo vError
 pPeriodoId = lblUltimoCierre.Tag
 pPeriodoDesc = Mid(lblUltimoCierre.Caption, 1, 17)
 
-glogon.Conection.CommandTimeout = 1300
+'Aumenta el Tiempo de Conexion
+glogon.Conection.CommandTimeout = 5200
+
 
 Select Case True
   
@@ -2920,12 +3207,14 @@ Select Case True
     End If
        Call sbExcedentesAsientoGeneral(pPeriodoId, Me)
 
+
   Case optAplicaciones(11).Value 'Salidas Separa
     If Not fxExcedente_Bitacora_Valida(pPeriodoId, "12", "Actualiza") Then
         MsgBox "Este proceso no se puede realizar porque ya se aplicó anteriormente!", vbExclamation
         Exit Sub
     End If
        Call sbSalidas_Separa(pPeriodoId)
+
 
   Case optAplicaciones(12).Value 'Acredita los Fondos para Pago de Excedentes
     If Not fxExcedente_Bitacora_Valida(pPeriodoId, "12", "Actualiza") Then
@@ -2936,6 +3225,30 @@ Select Case True
        Call sbExcedente_Bitacora(pPeriodoId, "12", "Actualiza")
 
 
+  Case optAplicaciones(13).Value 'Factura Electronica
+    If Not fxExcedente_Bitacora_Valida(pPeriodoId, "11.1", "Actualiza") Then
+        MsgBox "Este proceso no se puede realizar porque ya se aplicó anteriormente!", vbExclamation
+        Exit Sub
+    End If
+       
+       Call sbExcedentesAplicaFacturaElectronica(pPeriodoId, Me)
+  
+  Case optAplicaciones(14).Value 'Abono Extraordinario Ren. Patronal
+    If Not fxExcedente_Bitacora_Valida(pPeriodoId, "10.1", "Actualiza") Then
+        MsgBox "Este proceso no se puede realizar porque ya se aplicó anteriormente!", vbExclamation
+        Exit Sub
+    End If
+       
+       Call sbExcedentesAplicaAbonoRenPatronal(pPeriodoId, Me)
+  
+  
+  Case optAplicaciones(15).Value 'Separa Casos Insolventes
+    If Not fxExcedente_Bitacora_Valida(pPeriodoId, "01.1", "Actualiza") Then
+        MsgBox "Este proceso no se puede realizar porque ya se aplicó la separacion de Insolventes!", vbExclamation
+        Exit Sub
+    End If
+       
+       Call sbExcedentesAplicaInsolventes(pPeriodoId, Me)
 
 End Select
 
@@ -2943,6 +3256,9 @@ lblStatus.Caption = ""
 
 'Actualiza Seguimiento
 Call sbAplicacion_Pass
+
+glogon.Conection.CommandTimeout = 360
+
 
 Exit Sub
 
@@ -2966,7 +3282,16 @@ Next i
 strSQL = "select * from EXC_PERIODOS_BITACORA where id_periodo = " & lblUltimoCierre.Tag
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
- Select Case rs!cod_Proceso
+ Select Case rs!COD_PROCESO
+    Case "01.1" 'Actualiza indicador Insolvente
+        imgPass.Item(15).Visible = True
+    
+    Case "10.1"  'Actualiza Créditos con Abonos Ext. (Ren. Patronal)
+        imgPass.Item(14).Visible = True
+    
+    Case "11.1"  'Factura Electrónica
+        imgPass.Item(13).Visible = True
+    
     Case "02" 'Donacion
         imgPass.Item(0).Visible = True
     
@@ -3172,12 +3497,12 @@ If (MsgBox("Está seguro que desea aplicar distribución de Excedentes Brutos a es
        curAporte = curAporte + IIf(IsNull(rs!capitaliza), 0, rs!capitaliza) + IIf(IsNull(rs!capliq), 0, rs!capliq)
     
     
-        txtAPLCasosGeneral.Text = IIf(IsNull(rs!total), 0, rs!total)
+        txtAPLCasosGeneral.Text = IIf(IsNull(rs!Total), 0, rs!Total)
         txtAPLTotalAhorros.Text = Format(curAhorro, "Standard")
         txtAPLTotalAportes.Text = Format(curAporte, "Standard")
-        txtAPLFactor.Text = rs!Factor
+        txtAPLFactor.Text = Format(rs!Factor, "0.000000000000000")
         txtAPLTotalDistribuido = Format(rs!Excedente, "Standard")
-        txtAPLCasosProceso = rs!total
+        txtAPLCasosProceso = rs!Total
      
      rs.Close
      

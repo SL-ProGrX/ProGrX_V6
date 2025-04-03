@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmPreaSubCredito 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -23,7 +23,7 @@ Begin VB.Form frmPreaSubCredito
       TabIndex        =   7
       Top             =   2640
       Width           =   9492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16743
       _ExtentY        =   2350
       _StockProps     =   79
@@ -36,7 +36,7 @@ Begin VB.Form frmPreaSubCredito
          TabIndex        =   8
          Top             =   480
          Width           =   2292
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   1080
          _StockProps     =   79
@@ -60,7 +60,7 @@ Begin VB.Form frmPreaSubCredito
          TabIndex        =   10
          Top             =   600
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   582
          _StockProps     =   77
@@ -111,7 +111,7 @@ Begin VB.Form frmPreaSubCredito
       TabIndex        =   1
       Top             =   1440
       Width           =   4212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   582
       _StockProps     =   77
@@ -138,7 +138,7 @@ Begin VB.Form frmPreaSubCredito
       TabIndex        =   2
       Top             =   1800
       Width           =   4212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   582
       _StockProps     =   77
@@ -165,7 +165,7 @@ Begin VB.Form frmPreaSubCredito
       TabIndex        =   5
       Top             =   1440
       Width           =   2292
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4048
       _ExtentY        =   582
       _StockProps     =   77
@@ -335,6 +335,10 @@ If execSql(glogon.strSQL, True) Then
  
  m_Id_Solicitud = glogon.Recordset!Operacion
  
+ 
+  
+ Call sbTrazabilidad_Inserta("01", CStr(m_Id_Solicitud), CStr(m_Id_Solicitud))
+ 
  MsgBox "Solicitud de Credito Generada Satisfactoriamente, Solicitud # " & glogon.Recordset!Operacion
     'Call sbActualizarEstadoPreanalisis
 Else
@@ -362,12 +366,12 @@ Else
     vExpediente = gPreAnalisis.Expediente
 End If
 
-StrSet = "ESTADO = " & fxFormatearValor("A", Caracter)
-StrSet = StrSet & ", USUARIO_GESTION = " & fxFormatearValor(glogon.Usuario, Caracter) & ",  FECHA_GESTION = dbo.MyGetdate()"
+StrSet = "ESTADO = " & fxFormatearValor("A", caracter)
+StrSet = StrSet & ", USUARIO_GESTION = " & fxFormatearValor(glogon.Usuario, caracter) & ",  FECHA_GESTION = dbo.MyGetdate()"
 
-StrUpdate1 = StrUpdate1 & StrSet & " where COD_PREANALISIS = " & fxFormatearValor(vExpediente, Caracter)
+StrUpdate1 = StrUpdate1 & StrSet & " where COD_PREANALISIS = " & fxFormatearValor(vExpediente, caracter)
 
-StrUpdate1 = StrUpdate1 & " or COD_PREANALISIS_REF = " & fxFormatearValor(vExpediente, Caracter)
+StrUpdate1 = StrUpdate1 & " or COD_PREANALISIS_REF = " & fxFormatearValor(vExpediente, caracter)
 
     
 If Not execSql(StrUpdate1, False) Then

@@ -171,7 +171,7 @@ Begin VB.Form frmFNDReportesGenerales
       Item(0).Control(14)=   "cboDivisa"
       Item(0).Control(15)=   "Label2(14)"
       Item(1).Caption =   "Filtro: Movimientos"
-      Item(1).ControlCount=   16
+      Item(1).ControlCount=   18
       Item(1).Control(0)=   "txtCedula"
       Item(1).Control(1)=   "txtUsuario"
       Item(1).Control(2)=   "txtNDocRef"
@@ -188,6 +188,8 @@ Begin VB.Form frmFNDReportesGenerales
       Item(1).Control(13)=   "Label2(6)"
       Item(1).Control(14)=   "Label2(13)"
       Item(1).Control(15)=   "cboEPersona"
+      Item(1).Control(16)=   "txtContrato"
+      Item(1).Control(17)=   "Label2(15)"
       Begin XtremeSuiteControls.ComboBox cboOperadora 
          Height          =   312
          Left            =   1440
@@ -491,12 +493,12 @@ Begin VB.Form frmFNDReportesGenerales
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtCedula 
-         Height          =   312
+         Height          =   315
          Left            =   -67960
          TabIndex        =   38
-         Top             =   3360
+         Top             =   3600
          Visible         =   0   'False
-         Width           =   3732
+         Width           =   3735
          _Version        =   1572864
          _ExtentX        =   6583
          _ExtentY        =   556
@@ -648,6 +650,51 @@ Begin VB.Form frmFNDReportesGenerales
          Appearance      =   6
          UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
+      End
+      Begin XtremeSuiteControls.FlatEdit txtContrato 
+         Height          =   315
+         Left            =   -67960
+         TabIndex        =   56
+         Top             =   3960
+         Visible         =   0   'False
+         Width           =   3735
+         _Version        =   1572864
+         _ExtentX        =   6583
+         _ExtentY        =   556
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin VB.Label Label2 
+         BackStyle       =   0  'Transparent
+         Caption         =   "No. Contrato"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   15
+         Left            =   -69520
+         TabIndex        =   57
+         Top             =   3960
+         Visible         =   0   'False
+         Width           =   1575
       End
       Begin VB.Label Label2 
          Caption         =   "Divisa"
@@ -819,13 +866,13 @@ Begin VB.Form frmFNDReportesGenerales
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
          Index           =   12
          Left            =   -69520
          TabIndex        =   16
-         Top             =   3360
+         Top             =   3600
          Visible         =   0   'False
-         Width           =   1572
+         Width           =   1575
       End
       Begin VB.Label Label2 
          Alignment       =   1  'Right Justify
@@ -1145,6 +1192,7 @@ Begin VB.Form frmFNDReportesGenerales
          Index           =   7
          Left            =   360
          TabIndex        =   51
+         ToolTipText     =   "Indicar Fecha de Inicio y Corte "
          Top             =   3000
          Width           =   3375
          _Version        =   1572864
@@ -1170,6 +1218,7 @@ Begin VB.Form frmFNDReportesGenerales
          Index           =   8
          Left            =   360
          TabIndex        =   52
+         ToolTipText     =   "Indicar Fecha de Corte (Opcional: No Identificación y No. Contrato)"
          Top             =   3360
          Width           =   3375
          _Version        =   1572864
@@ -1869,15 +1918,92 @@ With frmContenedor.Crt
          End If
          
          
-      Case opt.Item(7).Value, opt.Item(8).Value, opt.Item(9).Value
-      'Cashback
-        MsgBox "Informe no localizado!", vbInformation
+      Case opt.Item(7).Value 'Cashback Generados
+            If chkResumen.Value = vbUnchecked Then
+                .ReportFileName = SIFGlobal.fxPathReportes("Fondos_CashBack_Generados.rpt")
+            
+                .StoredProcParam(0) = Format(dtpInicio.Value, "yyyy/mm/dd")
+                .StoredProcParam(1) = Format(dtpCorte.Value, "yyyy/mm/dd")
+                
+                .Formulas(4) = "Subtitulo = 'Fecha: " & Format(dtpInicio.Value, "yyyy/mm/dd") & " al " & Format(dtpCorte.Value, "yyyy/mm/dd") & "'"
+            
+            Else
+                .ReportFileName = SIFGlobal.fxPathReportes("Fondos_CashBack_Generados_Rsm.rpt")
+            
+                .StoredProcParam(0) = Format(dtpCorte.Value, "yyyy/mm/dd")
+                
+                .Formulas(4) = "Subtitulo = 'Fecha Corte: " & Format(dtpCorte.Value, "yyyy/mm/dd") & "'"
+            
+            End If
+                  
+      
+      Case opt.Item(8).Value 'Cashback Liquidados
+      
+                .ReportFileName = SIFGlobal.fxPathReportes("Fondos_CashBack_Liquidados.rpt")
+            
+                .StoredProcParam(0) = Format(dtpCorte.Value, "yyyy/mm/dd")
+                
+                
+                If txtCedula.Text <> "" Then
+                    .StoredProcParam(1) = txtCedula.Text
+                Else
+                    .StoredProcParam(1) = "-1"
+                End If
+                
+                If IsNumeric(txtContrato.Text) = True Then
+                    .StoredProcParam(2) = txtContrato.Text
+                Else
+                    .StoredProcParam(2) = "0"
+                End If
+                
+                .Formulas(4) = "Subtitulo = 'Fecha Corte: " & Format(dtpCorte.Value, "yyyy/mm/dd") _
+                             & "  Identificación: " & txtCedula.Text _
+                             & "  No.Contrato: " & txtContrato.Text & "'"
+      
+      
+      Case opt.Item(9).Value 'Cashback Vencidos
+                
+                .ReportFileName = SIFGlobal.fxPathReportes("Fondos_CashBack_Vencidos.rpt")
+            
+                .StoredProcParam(0) = Format(dtpCorte.Value, "yyyy/mm/dd")
+                
+                
+                If txtCedula.Text <> "" Then
+                    .StoredProcParam(1) = txtCedula.Text
+                Else
+                    .StoredProcParam(1) = "-1"
+                End If
+                
+                If IsNumeric(txtContrato.Text) = True Then
+                    .StoredProcParam(2) = txtContrato.Text
+                Else
+                    .StoredProcParam(2) = "0"
+                End If
+                
+                .Formulas(4) = "Subtitulo = 'Fecha Corte: " & Format(dtpCorte.Value, "yyyy/mm/dd") _
+                             & "  Identificación: " & txtCedula.Text _
+                             & "  No.Contrato: " & txtContrato.Text & "'"
         
       Case opt.Item(10).Value 'IVA Trasfronterizo
-        MsgBox "Informe no localizado!", vbInformation
+         
+                .ReportFileName = SIFGlobal.fxPathReportes("Fondos_IVA_Transfronterizo.rpt")
+            
+'                .StoredProcParam(0) = "'" & Format(dtpInicio.Value, "yyyy-mm-dd") & "'"
+'                .StoredProcParam(1) = "'" & Format(dtpCorte.Value, "yyyy-mm-dd") & "'"
+'
+'                .Formulas(4) = "Subtitulo = 'Fecha: " & Format(dtpInicio.Value, "yyyy/mm/dd") & " al " & Format(dtpCorte.Value, "yyyy/mm/dd") & "'"
+         
          
       Case opt.Item(11).Value 'Proyeccion de Cupones
-        MsgBox "Informe no localizado!", vbInformation
+            If chkResumen.Value = vbUnchecked Then
+                .ReportFileName = SIFGlobal.fxPathReportes("Fondos_Proyeccion_Cupones.rpt")
+                .StoredProcParam(0) = "D"
+            Else
+                .ReportFileName = SIFGlobal.fxPathReportes("Fondos_Proyeccion_Cupones_Rsm.rpt")
+                .StoredProcParam(0) = "R"
+            End If
+                .Formulas(4) = "Subtitulo = 'Corte: " & Format(fxFechaServidor, "yyyy/mm/dd") & "'"
+                  
          
          
     End Select
@@ -1897,7 +2023,7 @@ With frmContenedor.Crt
     .Formulas(2) = "Usuario='" & Trim(glogon.Usuario) & "'"
     .Formulas(3) = "Empresa='" & Trim(GLOBALES.gstrNombreEmpresa) & "'"
     
-    
+
     .PrintReport
 
 
@@ -1937,7 +2063,7 @@ If vScroll Then
     
     Call OpenRecordSet(rs, strSQL)
     If Not rs.EOF And Not rs.BOF Then
-      txtCodigo = rs!Cod_Plan
+      txtCodigo = rs!COD_PLAN
       txtCodigo_LostFocus
     End If
     rs.Close
@@ -2125,8 +2251,11 @@ Private Sub txtCodigo_KeyDown(KeyCode As Integer, Shift As Integer)
 If KeyCode = vbKeyF4 Then
    gBusquedas.Columna = "cod_plan"
    gBusquedas.Orden = "cod_plan"
-   gBusquedas.Filtro = "And Cod_operadora=" & cboOperadora.ItemData(cboOperadora.ListIndex)
    gBusquedas.Consulta = "select cod_plan,descripcion from fnd_planes"
+   
+   gBusquedas.Filtro = " And Cod_operadora=" & cboOperadora.ItemData(cboOperadora.ListIndex) _
+                     & " and dbo.fxFnd_Seguridad_Acceso_Planes('" & glogon.Usuario & "', cod_operadora, cod_plan) = 1"
+   
    frmBusquedas.Show vbModal
    txtDescripcion.SetFocus
    

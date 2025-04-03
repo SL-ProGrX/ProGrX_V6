@@ -1,8 +1,8 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "mscomctl.OCX"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.3#0"; "Codejock.Controls.v20.3.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCajas_Recaudores 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Cajas: Recaudadores"
@@ -21,7 +21,7 @@ Begin VB.Form frmCajas_Recaudores
       TabIndex        =   6
       Top             =   960
       Width           =   8652
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   15261
       _ExtentY        =   6583
       _StockProps     =   68
@@ -185,7 +185,7 @@ Begin VB.Form frmCajas_Recaudores
          TabIndex        =   13
          Top             =   480
          Width           =   6732
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   11874
          _ExtentY        =   550
          _StockProps     =   77
@@ -200,7 +200,7 @@ Begin VB.Form frmCajas_Recaudores
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtNotas 
@@ -209,7 +209,7 @@ Begin VB.Form frmCajas_Recaudores
          TabIndex        =   15
          Top             =   840
          Width           =   6732
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   11874
          _ExtentY        =   1609
          _StockProps     =   77
@@ -226,7 +226,7 @@ Begin VB.Form frmCajas_Recaudores
          EndProperty
          MultiLine       =   -1  'True
          ScrollBars      =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.GroupBox GroupBox1 
@@ -236,7 +236,7 @@ Begin VB.Form frmCajas_Recaudores
          TabIndex        =   17
          Top             =   1920
          Width           =   8292
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   14626
          _ExtentY        =   5101
          _StockProps     =   79
@@ -259,7 +259,7 @@ Begin VB.Form frmCajas_Recaudores
             TabIndex        =   18
             Top             =   480
             Width           =   1932
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -275,7 +275,7 @@ Begin VB.Form frmCajas_Recaudores
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCuentaComision 
@@ -284,7 +284,7 @@ Begin VB.Form frmCajas_Recaudores
             TabIndex        =   19
             Top             =   840
             Width           =   1932
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -300,7 +300,7 @@ Begin VB.Form frmCajas_Recaudores
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCuentaIV 
@@ -309,7 +309,7 @@ Begin VB.Form frmCajas_Recaudores
             TabIndex        =   20
             Top             =   1200
             Width           =   1932
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -325,7 +325,7 @@ Begin VB.Form frmCajas_Recaudores
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCuentaDesc 
@@ -334,7 +334,7 @@ Begin VB.Form frmCajas_Recaudores
             TabIndex        =   21
             Top             =   480
             Width           =   4812
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   550
             _StockProps     =   77
@@ -350,7 +350,7 @@ Begin VB.Form frmCajas_Recaudores
                Strikethrough   =   0   'False
             EndProperty
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCuentaComisionDesc 
@@ -359,7 +359,7 @@ Begin VB.Form frmCajas_Recaudores
             TabIndex        =   22
             Top             =   840
             Width           =   4812
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   550
             _StockProps     =   77
@@ -375,7 +375,7 @@ Begin VB.Form frmCajas_Recaudores
                Strikethrough   =   0   'False
             EndProperty
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCuentaIVDesc 
@@ -384,7 +384,7 @@ Begin VB.Form frmCajas_Recaudores
             TabIndex        =   23
             Top             =   1200
             Width           =   4812
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   550
             _StockProps     =   77
@@ -400,7 +400,7 @@ Begin VB.Form frmCajas_Recaudores
                Strikethrough   =   0   'False
             EndProperty
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin VB.Label Label1 
@@ -633,7 +633,7 @@ Begin VB.Form frmCajas_Recaudores
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   1
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Recaudores.frx":0705
+            Picture         =   "frmCajas_Recaudores.frx":06BF
             Key             =   ""
          EndProperty
       EndProperty
@@ -644,7 +644,7 @@ Begin VB.Form frmCajas_Recaudores
       TabIndex        =   2
       Top             =   480
       Width           =   1452
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   444
       _StockProps     =   79
@@ -680,7 +680,7 @@ Begin VB.Form frmCajas_Recaudores
       TabIndex        =   4
       Top             =   480
       Width           =   1452
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   550
       _StockProps     =   77
@@ -696,7 +696,7 @@ Begin VB.Form frmCajas_Recaudores
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin VB.Label Label1 
@@ -846,7 +846,7 @@ lswCajas.ListItems.Clear
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
   Set itmX = lswCajas.ListItems.Add(, , Trim(rs!Descripcion))
-      itmX.Tag = Trim(rs!cod_caja)
+      itmX.Tag = Trim(rs!COD_CAJA)
   
   If Not IsNull(rs!Asignado) Then
      itmX.Checked = True
@@ -1195,7 +1195,7 @@ If Not rs.BOF And Not rs.EOF Then
   txtCodigo = rs!COD_RECAUDADOR
   vCodigo = Trim(rs!COD_RECAUDADOR)
 
-  chkActivo.Value = rs!activo
+  chkActivo.Value = rs!Activo
 
   txtDescripcion = rs!Descripcion
   txtNotas = rs!Notas
@@ -1209,8 +1209,8 @@ If Not rs.BOF And Not rs.EOF Then
   txtCuentaComision.Text = fxgCntCuentaFormato(True, rs!Cod_Cuenta_Comision)
   txtCuentaComisionDesc.Text = rs!CtaDescCom
   
-  StatusBarX.Panels.Item(1).Text = rs!Registro_Usuario & ""
-  StatusBarX.Panels.Item(2).Text = rs!Registro_Fecha & ""
+  StatusBarX.Panels.Item(1).Text = rs!REGISTRO_USUARIO & ""
+  StatusBarX.Panels.Item(2).Text = rs!REGISTRO_FECHA & ""
 
   tcMain.Item(0).Selected = True
   tcMain.Item(1).Enabled = True
@@ -1269,7 +1269,7 @@ On Error GoTo vError
 
 fxGuardarContacto = 0
 vGrid.Row = vGrid.ActiveRow
-vGrid.col = 1
+vGrid.Col = 1
 
 
 If vGrid.Text = "" Then 'Insertar
@@ -1281,37 +1281,37 @@ If vGrid.Text = "" Then 'Insertar
     
     strSQL = "insert into cajas_recaudador_contactos(cod_recaudador,linea,identificacion,nombre,tel_trabajo,tel_celular,email)" _
            & " values('" & vCodigo & "'," & vGrid.Text & ",'"
-    vGrid.col = 2
+    vGrid.Col = 2
     strSQL = strSQL & Trim(vGrid.Text) & "',"
-    vGrid.col = 3
+    vGrid.Col = 3
     strSQL = strSQL & "'" & Trim(vGrid.Text) & "',"
-    vGrid.col = 4
+    vGrid.Col = 4
     strSQL = strSQL & "'" & Trim(vGrid.Text) & "',"
-    vGrid.col = 5
+    vGrid.Col = 5
     strSQL = strSQL & " '" & Trim(vGrid.Text) & "',"
-    vGrid.col = 6
+    vGrid.Col = 6
     strSQL = strSQL & "'" & Trim(vGrid.Text) & "')"
     Call ConectionExecute(strSQL)
     
-    vGrid.col = 2
+    vGrid.Col = 2
     Call Bitacora("Registra", "Contato ..: " & vGrid.Text & " ... Recaudador ..:" & vCodigo)
 
 Else 'Actualizar
     
-    vGrid.col = 2
+    vGrid.Col = 2
     strSQL = "update cajas_recaudador_contactos set identificacion= " & Trim(vGrid.Text) & ","
-    vGrid.col = 3
+    vGrid.Col = 3
       strSQL = strSQL & "nombre = '" & Trim(vGrid.Text) & "',"
-    vGrid.col = 4
+    vGrid.Col = 4
     strSQL = strSQL & "tel_trabajo = '" & Trim(vGrid.Text) & "',"
-    vGrid.col = 5
+    vGrid.Col = 5
     strSQL = strSQL & "tel_celular = '" & Trim(vGrid.Text) & "',"
-    vGrid.col = 6
+    vGrid.Col = 6
     strSQL = strSQL & "email = '" & Trim(vGrid.Text) & "'"
-    vGrid.col = 1
+    vGrid.Col = 1
     strSQL = strSQL & " where linea =  " & vGrid.Text & " and cod_recaudador = '" & vCodigo & "'"
             
-    vGrid.col = 2
+    vGrid.Col = 2
     
     Call ConectionExecute(strSQL)
     
@@ -1346,13 +1346,13 @@ End If
 
 If KeyCode = vbKeyDelete Then
     If MsgBox("¿Desea eliminar este registro?", vbYesNo Or vbQuestion, "") = vbYes Then
-        vGrid.col = 1
+        vGrid.Col = 1
         If vGrid.Text = "" Then Exit Sub
         
         strSQL = "Delete cajas_recaudador_contactos where cod_recaudador = '" & vCodigo & "' and linea = '" & vGrid.Text & "'"
         Call ConectionExecute(strSQL)
         
-        vGrid.col = 2
+        vGrid.Col = 2
         Call Bitacora("Elimina", "Contato ..: " & vGrid.Text & " ... Recaudador ..:" & vCodigo)
         
         vGrid.Row = vGrid.ActiveRow

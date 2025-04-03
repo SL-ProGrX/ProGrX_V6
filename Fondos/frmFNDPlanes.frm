@@ -23,7 +23,7 @@ Begin VB.Form frmFNDPlanes
       Height          =   255
       Index           =   0
       Left            =   3000
-      TabIndex        =   159
+      TabIndex        =   157
       Top             =   1200
       Width           =   1695
       _Version        =   1572864
@@ -86,13 +86,12 @@ Begin VB.Form frmFNDPlanes
       Item(3).Control(0)=   "vhGrid"
       Item(3).Control(1)=   "Label8(4)"
       Item(4).Caption =   "Destinos"
-      Item(4).ControlCount=   2
-      Item(4).Control(0)=   "lswDestinos"
-      Item(4).Control(1)=   "Label7(3)"
+      Item(4).ControlCount=   1
+      Item(4).Control(0)=   "tcDestinos"
       Begin XtremeSuiteControls.ListView lswR 
          Height          =   2055
          Left            =   -70000
-         TabIndex        =   144
+         TabIndex        =   142
          Top             =   360
          Visible         =   0   'False
          Width           =   9255
@@ -113,10 +112,103 @@ Begin VB.Form frmFNDPlanes
          FullRowSelect   =   -1  'True
          Appearance      =   17
       End
+      Begin XtremeSuiteControls.TabControl tcDestinos 
+         Height          =   6855
+         Left            =   -70000
+         TabIndex        =   181
+         Top             =   480
+         Visible         =   0   'False
+         Width           =   9255
+         _Version        =   1572864
+         _ExtentX        =   16325
+         _ExtentY        =   12091
+         _StockProps     =   68
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Appearance      =   4
+         Color           =   32
+         ItemCount       =   2
+         Item(0).Caption =   "Destinos Objetivos"
+         Item(0).ControlCount=   1
+         Item(0).Control(0)=   "gDestinos"
+         Item(1).Caption =   "Destinos Asociados"
+         Item(1).ControlCount=   1
+         Item(1).Control(0)=   "lswDestinos"
+         Begin MSComctlLib.ListView lswDestinos 
+            Height          =   6375
+            Left            =   -69280
+            TabIndex        =   182
+            Top             =   480
+            Visible         =   0   'False
+            Width           =   7815
+            _ExtentX        =   13785
+            _ExtentY        =   11245
+            View            =   2
+            LabelWrap       =   -1  'True
+            HideSelection   =   -1  'True
+            Checkboxes      =   -1  'True
+            FlatScrollBar   =   -1  'True
+            FullRowSelect   =   -1  'True
+            HotTracking     =   -1  'True
+            _Version        =   393217
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            Appearance      =   0
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            NumItems        =   1
+            BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+               Text            =   "Destinos"
+               Object.Width           =   7832
+            EndProperty
+         End
+         Begin FPSpreadADO.fpSpread gDestinos 
+            Height          =   6495
+            Left            =   480
+            TabIndex        =   183
+            Top             =   480
+            Width           =   8295
+            _Version        =   524288
+            _ExtentX        =   14631
+            _ExtentY        =   11456
+            _StockProps     =   64
+            BackColorStyle  =   1
+            BorderStyle     =   0
+            EditEnterAction =   5
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            MaxCols         =   490
+            ScrollBars      =   2
+            SpreadDesigner  =   "frmFNDPlanes.frx":000C
+            VScrollSpecialType=   2
+            AppearanceStyle =   1
+         End
+      End
       Begin XtremeSuiteControls.GroupBox gbRegla 
          Height          =   2295
          Left            =   -70000
-         TabIndex        =   145
+         TabIndex        =   143
          Top             =   2400
          Visible         =   0   'False
          Width           =   9255
@@ -141,7 +233,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   375
             Index           =   0
             Left            =   1440
-            TabIndex        =   152
+            TabIndex        =   150
             Top             =   1800
             Width           =   1215
             _Version        =   1572864
@@ -159,12 +251,12 @@ Begin VB.Form frmFNDPlanes
                Strikethrough   =   0   'False
             EndProperty
             UseVisualStyle  =   -1  'True
-            Picture         =   "frmFNDPlanes.frx":000C
+            Picture         =   "frmFNDPlanes.frx":0691
          End
          Begin XtremeSuiteControls.ComboBox cboR_Tipo 
             Height          =   330
             Left            =   3960
-            TabIndex        =   149
+            TabIndex        =   147
             Top             =   600
             Width           =   2055
             _Version        =   1572864
@@ -190,7 +282,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.DateTimePicker dtpR_Fecha 
             Height          =   315
             Left            =   7560
-            TabIndex        =   150
+            TabIndex        =   148
             Top             =   600
             Width           =   1455
             _Version        =   1572864
@@ -212,7 +304,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtR_Justifica 
             Height          =   675
             Left            =   1440
-            TabIndex        =   151
+            TabIndex        =   149
             Top             =   960
             Width           =   7575
             _Version        =   1572864
@@ -238,7 +330,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   375
             Index           =   1
             Left            =   2640
-            TabIndex        =   153
+            TabIndex        =   151
             Top             =   1800
             Width           =   1215
             _Version        =   1572864
@@ -256,13 +348,13 @@ Begin VB.Form frmFNDPlanes
                Strikethrough   =   0   'False
             EndProperty
             UseVisualStyle  =   -1  'True
-            Picture         =   "frmFNDPlanes.frx":063E
+            Picture         =   "frmFNDPlanes.frx":0CC3
          End
          Begin XtremeSuiteControls.PushButton btnRegla_Activa 
             Height          =   375
             Index           =   2
             Left            =   5880
-            TabIndex        =   154
+            TabIndex        =   152
             Top             =   1800
             Width           =   2535
             _Version        =   1572864
@@ -281,12 +373,12 @@ Begin VB.Form frmFNDPlanes
             EndProperty
             UseVisualStyle  =   -1  'True
             Appearance      =   17
-            Picture         =   "frmFNDPlanes.frx":0D6F
+            Picture         =   "frmFNDPlanes.frx":13F4
          End
          Begin XtremeSuiteControls.FlatEdit txtR_Id 
             Height          =   315
             Left            =   1440
-            TabIndex        =   156
+            TabIndex        =   154
             Top             =   240
             Width           =   1095
             _Version        =   1572864
@@ -313,7 +405,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtR_Vigente 
             Height          =   315
             Left            =   1440
-            TabIndex        =   157
+            TabIndex        =   155
             Top             =   600
             Width           =   1095
             _Version        =   1572864
@@ -341,7 +433,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   255
             Index           =   4
             Left            =   240
-            TabIndex        =   158
+            TabIndex        =   156
             Top             =   600
             Width           =   1335
             _Version        =   1572864
@@ -363,7 +455,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   255
             Index           =   3
             Left            =   240
-            TabIndex        =   155
+            TabIndex        =   153
             Top             =   240
             Width           =   1335
             _Version        =   1572864
@@ -385,7 +477,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   255
             Index           =   2
             Left            =   240
-            TabIndex        =   148
+            TabIndex        =   146
             Top             =   960
             Width           =   1335
             _Version        =   1572864
@@ -407,7 +499,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   255
             Index           =   1
             Left            =   6120
-            TabIndex        =   147
+            TabIndex        =   145
             Top             =   600
             Width           =   1335
             _Version        =   1572864
@@ -429,7 +521,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   255
             Index           =   0
             Left            =   2640
-            TabIndex        =   146
+            TabIndex        =   144
             Top             =   600
             Width           =   1335
             _Version        =   1572864
@@ -540,35 +632,10 @@ Begin VB.Form frmFNDPlanes
          Item(4).Control(4)=   "gbVencimientos"
          Item(4).Control(5)=   "lswVence_Plazos"
          Item(4).Control(6)=   "chkVence_Plazo_Sol"
-         Begin XtremeSuiteControls.ListView lswEstados 
-            Height          =   2655
-            Left            =   -69880
-            TabIndex        =   128
-            Top             =   1080
-            Visible         =   0   'False
-            Width           =   4335
-            _Version        =   1572864
-            _ExtentX        =   7646
-            _ExtentY        =   4683
-            _StockProps     =   77
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            Checkboxes      =   -1  'True
-            View            =   3
-            FullRowSelect   =   -1  'True
-            Appearance      =   17
-         End
          Begin XtremeSuiteControls.ListView lswVence_Plazos 
             Height          =   2655
             Left            =   -65320
-            TabIndex        =   130
+            TabIndex        =   128
             Top             =   1080
             Visible         =   0   'False
             Width           =   4575
@@ -590,10 +657,35 @@ Begin VB.Form frmFNDPlanes
             FullRowSelect   =   -1  'True
             Appearance      =   17
          End
+         Begin XtremeSuiteControls.ListView lswEstados 
+            Height          =   2655
+            Left            =   -69880
+            TabIndex        =   126
+            Top             =   1080
+            Visible         =   0   'False
+            Width           =   4335
+            _Version        =   1572864
+            _ExtentX        =   7646
+            _ExtentY        =   4683
+            _StockProps     =   77
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Checkboxes      =   -1  'True
+            View            =   3
+            FullRowSelect   =   -1  'True
+            Appearance      =   17
+         End
          Begin XtremeSuiteControls.GroupBox GroupBox3 
             Height          =   2535
             Left            =   -65560
-            TabIndex        =   172
+            TabIndex        =   170
             Top             =   1920
             Visible         =   0   'False
             Width           =   4695
@@ -619,7 +711,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.ComboBox cboTipoPatrimonio 
                Height          =   315
                Left            =   1320
-               TabIndex        =   173
+               TabIndex        =   171
                Top             =   1440
                Width           =   1455
                _Version        =   1572864
@@ -645,7 +737,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkEnlazaPatrimonio 
                Height          =   255
                Left            =   480
-               TabIndex        =   174
+               TabIndex        =   172
                Top             =   1200
                Width           =   4215
                _Version        =   1572864
@@ -670,7 +762,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkPat_Unifica 
                Height          =   375
                Left            =   1320
-               TabIndex        =   175
+               TabIndex        =   173
                Top             =   1800
                Width           =   2895
                _Version        =   1572864
@@ -695,7 +787,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkSINPE_Mov 
                Height          =   255
                Left            =   480
-               TabIndex        =   176
+               TabIndex        =   174
                Top             =   360
                Width           =   2895
                _Version        =   1572864
@@ -720,7 +812,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.ComboBox cboSinpeTipos 
                Height          =   315
                Left            =   1320
-               TabIndex        =   177
+               TabIndex        =   175
                Top             =   720
                Width           =   1455
                _Version        =   1572864
@@ -747,7 +839,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.GroupBox gbWebSite 
             Height          =   2535
             Left            =   -69760
-            TabIndex        =   163
+            TabIndex        =   161
             Top             =   1920
             Visible         =   0   'False
             Width           =   4215
@@ -773,7 +865,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkWebSite 
                Height          =   375
                Left            =   480
-               TabIndex        =   164
+               TabIndex        =   162
                Top             =   240
                Width           =   3135
                _Version        =   1572864
@@ -798,7 +890,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkLiquidaWebSite 
                Height          =   255
                Left            =   480
-               TabIndex        =   165
+               TabIndex        =   163
                Top             =   1800
                Width           =   2895
                _Version        =   1572864
@@ -823,7 +915,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkVenceWeb 
                Height          =   255
                Left            =   3240
-               TabIndex        =   166
+               TabIndex        =   164
                Top             =   600
                Width           =   2655
                _Version        =   1572864
@@ -848,7 +940,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.DateTimePicker dtpVenceWeb 
                Height          =   315
                Left            =   1320
-               TabIndex        =   167
+               TabIndex        =   165
                Top             =   600
                Width           =   1455
                _Version        =   1572864
@@ -870,7 +962,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkRetiroParcial 
                Height          =   375
                Left            =   1320
-               TabIndex        =   168
+               TabIndex        =   166
                Top             =   2040
                Width           =   2895
                _Version        =   1572864
@@ -895,7 +987,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.PushButton btnFechaCorte 
                Height          =   315
                Left            =   2775
-               TabIndex        =   169
+               TabIndex        =   167
                ToolTipText     =   "Corrige la Fecha de Corte para Todos los Contratos bajo este Plan"
                Top             =   600
                Width           =   375
@@ -915,12 +1007,12 @@ Begin VB.Form frmFNDPlanes
                EndProperty
                FlatStyle       =   -1  'True
                Appearance      =   16
-               Picture         =   "frmFNDPlanes.frx":1496
+               Picture         =   "frmFNDPlanes.frx":1B1B
             End
             Begin XtremeSuiteControls.CheckBox chkWebCrea 
                Height          =   255
                Left            =   480
-               TabIndex        =   170
+               TabIndex        =   168
                Top             =   1080
                Width           =   3135
                _Version        =   1572864
@@ -945,7 +1037,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkWebModifica 
                Height          =   255
                Left            =   480
-               TabIndex        =   171
+               TabIndex        =   169
                Top             =   1440
                Width           =   3135
                _Version        =   1572864
@@ -971,7 +1063,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.CheckBox chkVence_Plazo_Sol 
             Height          =   210
             Left            =   -65080
-            TabIndex        =   138
+            TabIndex        =   136
             Top             =   600
             Visible         =   0   'False
             Width           =   210
@@ -986,7 +1078,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.GroupBox gbVencimientos 
             Height          =   2895
             Left            =   -69880
-            TabIndex        =   132
+            TabIndex        =   130
             Top             =   3960
             Visible         =   0   'False
             Width           =   9135
@@ -1012,7 +1104,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.ComboBox cboVence_Accion 
                Height          =   330
                Left            =   1920
-               TabIndex        =   133
+               TabIndex        =   131
                Top             =   600
                Width           =   2415
                _Version        =   1572864
@@ -1038,7 +1130,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtVence_Plan 
                Height          =   315
                Left            =   1920
-               TabIndex        =   136
+               TabIndex        =   134
                ToolTipText     =   "Presione F4 para Consultar"
                Top             =   1200
                Width           =   1215
@@ -1064,7 +1156,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtVence_PlanDesc 
                Height          =   315
                Left            =   3120
-               TabIndex        =   137
+               TabIndex        =   135
                Top             =   1200
                Width           =   5895
                _Version        =   1572864
@@ -1088,7 +1180,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkVence_Renueva 
                Height          =   210
                Left            =   4800
-               TabIndex        =   139
+               TabIndex        =   137
                Top             =   600
                Width           =   3210
                _Version        =   1572864
@@ -1112,7 +1204,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkVence_AplTasaCntVencidos 
                Height          =   210
                Left            =   1920
-               TabIndex        =   178
+               TabIndex        =   176
                Top             =   1800
                Width           =   5250
                _Version        =   1572864
@@ -1136,7 +1228,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkVence_ActivaControlVencimiento 
                Height          =   210
                Left            =   1920
-               TabIndex        =   179
+               TabIndex        =   177
                Top             =   2160
                Width           =   5250
                _Version        =   1572864
@@ -1161,7 +1253,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   495
                Index           =   1
                Left            =   240
-               TabIndex        =   135
+               TabIndex        =   133
                Top             =   1200
                Width           =   1335
                _Version        =   1572864
@@ -1185,7 +1277,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   255
                Index           =   0
                Left            =   240
-               TabIndex        =   134
+               TabIndex        =   132
                Top             =   600
                Width           =   1455
                _Version        =   1572864
@@ -1210,7 +1302,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   2055
             Index           =   0
             Left            =   -69880
-            TabIndex        =   98
+            TabIndex        =   96
             Top             =   1920
             Visible         =   0   'False
             Width           =   8895
@@ -1236,7 +1328,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.ComboBox cboBaseCalculo 
                Height          =   312
                Left            =   2760
-               TabIndex        =   112
+               TabIndex        =   110
                Top             =   720
                Width           =   1092
                _Version        =   1572864
@@ -1262,7 +1354,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkRendimientos 
                Height          =   372
                Left            =   360
-               TabIndex        =   113
+               TabIndex        =   111
                Top             =   240
                Width           =   3492
                _Version        =   1572864
@@ -1288,7 +1380,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkTasaFluctuante 
                Height          =   252
                Left            =   3960
-               TabIndex        =   114
+               TabIndex        =   112
                Top             =   720
                Width           =   4332
                _Version        =   1572864
@@ -1313,7 +1405,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkCapiltalizaRendimiento 
                Height          =   252
                Left            =   3960
-               TabIndex        =   115
+               TabIndex        =   113
                Top             =   960
                Width           =   4332
                _Version        =   1572864
@@ -1338,7 +1430,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkUtilizaTBP 
                Height          =   252
                Left            =   3960
-               TabIndex        =   116
+               TabIndex        =   114
                Top             =   1320
                Width           =   4332
                _Version        =   1572864
@@ -1363,7 +1455,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkRenuevaTasa 
                Height          =   252
                Left            =   3960
-               TabIndex        =   117
+               TabIndex        =   115
                Top             =   1680
                Width           =   4332
                _Version        =   1572864
@@ -1388,7 +1480,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtTasaBase 
                Height          =   312
                Left            =   2760
-               TabIndex        =   118
+               TabIndex        =   116
                Top             =   1320
                Width           =   1092
                _Version        =   1572864
@@ -1412,7 +1504,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtNuevaTasa 
                Height          =   312
                Left            =   2760
-               TabIndex        =   119
+               TabIndex        =   117
                Top             =   1680
                Width           =   1092
                _Version        =   1572864
@@ -1436,7 +1528,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkRendimientoAuto 
                Height          =   252
                Left            =   3960
-               TabIndex        =   123
+               TabIndex        =   121
                Top             =   480
                Width           =   4692
                _Version        =   1572864
@@ -1474,7 +1566,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   312
                Index           =   2
                Left            =   960
-               TabIndex        =   122
+               TabIndex        =   120
                Top             =   1680
                Width           =   1932
             End
@@ -1492,7 +1584,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   252
                Index           =   1
                Left            =   960
-               TabIndex        =   121
+               TabIndex        =   119
                Top             =   1320
                Width           =   1212
             End
@@ -1510,7 +1602,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   375
                Index           =   0
                Left            =   960
-               TabIndex        =   120
+               TabIndex        =   118
                Top             =   720
                Width           =   1695
             End
@@ -1518,7 +1610,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.CheckBox chkCDP 
             Height          =   372
             Left            =   -69520
-            TabIndex        =   55
+            TabIndex        =   53
             Top             =   360
             Visible         =   0   'False
             Width           =   4332
@@ -1545,7 +1637,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   1095
             Index           =   0
             Left            =   360
-            TabIndex        =   26
+            TabIndex        =   25
             Top             =   3120
             Width           =   8295
             _Version        =   1572864
@@ -1570,7 +1662,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.ComboBox cboTipoAporte 
                Height          =   312
                Left            =   1440
-               TabIndex        =   36
+               TabIndex        =   35
                Top             =   360
                Width           =   1452
                _Version        =   1572864
@@ -1596,7 +1688,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.ComboBox cboPlazo 
                Height          =   312
                Left            =   2040
-               TabIndex        =   41
+               TabIndex        =   40
                Top             =   720
                Width           =   852
                _Version        =   1572864
@@ -1622,7 +1714,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtPorcentaje 
                Height          =   312
                Left            =   3600
-               TabIndex        =   73
+               TabIndex        =   71
                Top             =   360
                Width           =   1332
                _Version        =   1572864
@@ -1646,7 +1738,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtMonto 
                Height          =   312
                Left            =   3600
-               TabIndex        =   74
+               TabIndex        =   72
                Top             =   720
                Width           =   1332
                _Version        =   1572864
@@ -1670,7 +1762,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtInversion 
                Height          =   312
                Left            =   6000
-               TabIndex        =   75
+               TabIndex        =   73
                Top             =   720
                Width           =   1812
                _Version        =   1572864
@@ -1694,7 +1786,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtPlazo 
                Height          =   330
                Left            =   1440
-               TabIndex        =   76
+               TabIndex        =   74
                Top             =   720
                Width           =   612
                _Version        =   1572864
@@ -1729,7 +1821,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   252
                Index           =   14
                Left            =   5040
-               TabIndex        =   54
+               TabIndex        =   52
                Top             =   360
                Width           =   2772
             End
@@ -1747,7 +1839,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   252
                Index           =   2
                Left            =   3000
-               TabIndex        =   53
+               TabIndex        =   51
                Top             =   360
                Width           =   1092
             End
@@ -1765,7 +1857,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   255
                Index           =   0
                Left            =   5040
-               TabIndex        =   33
+               TabIndex        =   32
                Top             =   720
                Width           =   975
             End
@@ -1783,7 +1875,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   252
                Index           =   13
                Left            =   480
-               TabIndex        =   32
+               TabIndex        =   31
                Top             =   360
                Width           =   972
             End
@@ -1801,7 +1893,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   252
                Index           =   0
                Left            =   480
-               TabIndex        =   31
+               TabIndex        =   30
                Top             =   720
                Width           =   732
             End
@@ -1819,7 +1911,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   252
                Index           =   1
                Left            =   3000
-               TabIndex        =   30
+               TabIndex        =   29
                Top             =   720
                Width           =   1092
             End
@@ -1828,7 +1920,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   2175
             Index           =   1
             Left            =   360
-            TabIndex        =   27
+            TabIndex        =   26
             Top             =   4560
             Width           =   8295
             _Version        =   1572864
@@ -1853,7 +1945,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.PushButton btnConfig_Recaudo 
                Height          =   330
                Left            =   7560
-               TabIndex        =   126
+               TabIndex        =   124
                ToolTipText     =   "Crea Automaticamente el Código para Recaudacion (Retención Asociada)"
                Top             =   360
                Width           =   372
@@ -1873,12 +1965,12 @@ Begin VB.Form frmFNDPlanes
                EndProperty
                UseVisualStyle  =   -1  'True
                Appearance      =   17
-               Picture         =   "frmFNDPlanes.frx":1B89
+               Picture         =   "frmFNDPlanes.frx":220E
             End
             Begin XtremeSuiteControls.CheckBox chkDeducirPlanilla 
                Height          =   372
                Left            =   1800
-               TabIndex        =   60
+               TabIndex        =   58
                Top             =   720
                Width           =   4332
                _Version        =   1572864
@@ -1904,7 +1996,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkGeneraMora 
                Height          =   252
                Left            =   2280
-               TabIndex        =   61
+               TabIndex        =   59
                Top             =   1080
                Width           =   4332
                _Version        =   1572864
@@ -1929,7 +2021,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkDeducIndependiente 
                Height          =   252
                Left            =   2280
-               TabIndex        =   62
+               TabIndex        =   60
                Top             =   1320
                Width           =   4332
                _Version        =   1572864
@@ -1954,7 +2046,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtAseCod 
                Height          =   312
                Left            =   1440
-               TabIndex        =   68
+               TabIndex        =   66
                Top             =   360
                Width           =   1212
                _Version        =   1572864
@@ -1978,7 +2070,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtAseDesc 
                Height          =   312
                Left            =   2640
-               TabIndex        =   69
+               TabIndex        =   67
                Top             =   360
                Width           =   4812
                _Version        =   1572864
@@ -2002,7 +2094,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtCodigoDeduc 
                Height          =   312
                Left            =   1440
-               TabIndex        =   70
+               TabIndex        =   68
                Top             =   1680
                Width           =   1572
                _Version        =   1572864
@@ -2036,7 +2128,7 @@ Begin VB.Form frmFNDPlanes
                EndProperty
                Height          =   252
                Left            =   480
-               TabIndex        =   35
+               TabIndex        =   34
                Top             =   360
                Width           =   852
             End
@@ -2055,7 +2147,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   252
                Index           =   9
                Left            =   3240
-               TabIndex        =   34
+               TabIndex        =   33
                Top             =   1680
                Width           =   3972
             End
@@ -2064,7 +2156,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   1335
             Index           =   2
             Left            =   -69760
-            TabIndex        =   28
+            TabIndex        =   27
             Top             =   6000
             Visible         =   0   'False
             Width           =   8415
@@ -2089,7 +2181,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtContratosPersona 
                Height          =   315
                Left            =   3360
-               TabIndex        =   80
+               TabIndex        =   78
                Top             =   360
                Width           =   615
                _Version        =   1572864
@@ -2113,7 +2205,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtComVentaTasa 
                Height          =   315
                Left            =   3360
-               TabIndex        =   81
+               TabIndex        =   79
                Top             =   720
                Width           =   615
                _Version        =   1572864
@@ -2137,7 +2229,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtComVentaMonto 
                Height          =   315
                Left            =   6720
-               TabIndex        =   82
+               TabIndex        =   80
                Top             =   720
                Width           =   1335
                _Version        =   1572864
@@ -2172,7 +2264,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   255
                Index           =   3
                Left            =   120
-               TabIndex        =   51
+               TabIndex        =   50
                Top             =   360
                Width           =   3255
             End
@@ -2190,7 +2282,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   495
                Index           =   6
                Left            =   4680
-               TabIndex        =   50
+               TabIndex        =   49
                Top             =   585
                Width           =   1575
             End
@@ -2208,7 +2300,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   255
                Index           =   7
                Left            =   240
-               TabIndex        =   49
+               TabIndex        =   48
                Top             =   720
                Width           =   3135
             End
@@ -2227,7 +2319,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   255
                Index           =   8
                Left            =   3960
-               TabIndex        =   48
+               TabIndex        =   47
                Top             =   720
                Width           =   255
             End
@@ -2236,7 +2328,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   1095
             Index           =   3
             Left            =   -69760
-            TabIndex        =   29
+            TabIndex        =   28
             Top             =   4680
             Visible         =   0   'False
             Width           =   8415
@@ -2261,7 +2353,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtTasaComAportes 
                Height          =   315
                Left            =   3360
-               TabIndex        =   77
+               TabIndex        =   75
                Top             =   360
                Width           =   615
                _Version        =   1572864
@@ -2285,7 +2377,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtTasaComRend 
                Height          =   315
                Left            =   3360
-               TabIndex        =   78
+               TabIndex        =   76
                Top             =   720
                Width           =   615
                _Version        =   1572864
@@ -2309,7 +2401,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtImpuestosRend 
                Height          =   312
                Left            =   7200
-               TabIndex        =   79
+               TabIndex        =   77
                Top             =   360
                Width           =   612
                _Version        =   1572864
@@ -2333,7 +2425,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkRentaGlobal 
                Height          =   495
                Left            =   4680
-               TabIndex        =   97
+               TabIndex        =   95
                Top             =   720
                Width           =   3135
                _Version        =   1572864
@@ -2370,7 +2462,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   255
                Index           =   1
                Left            =   600
-               TabIndex        =   47
+               TabIndex        =   46
                Top             =   360
                Width           =   2655
             End
@@ -2388,7 +2480,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   255
                Index           =   2
                Left            =   600
-               TabIndex        =   46
+               TabIndex        =   45
                Top             =   720
                Width           =   2775
             End
@@ -2407,7 +2499,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   255
                Index           =   4
                Left            =   3960
-               TabIndex        =   45
+               TabIndex        =   44
                Top             =   360
                Width           =   255
             End
@@ -2426,7 +2518,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   255
                Index           =   5
                Left            =   3960
-               TabIndex        =   44
+               TabIndex        =   43
                Top             =   720
                Width           =   255
             End
@@ -2445,7 +2537,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   252
                Index           =   11
                Left            =   7800
-               TabIndex        =   43
+               TabIndex        =   42
                Top             =   360
                Width           =   252
             End
@@ -2463,7 +2555,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   252
                Index           =   12
                Left            =   4680
-               TabIndex        =   42
+               TabIndex        =   41
                Top             =   360
                Width           =   2532
             End
@@ -2471,7 +2563,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.ComboBox cboEstado 
             Height          =   312
             Left            =   1800
-            TabIndex        =   37
+            TabIndex        =   36
             Top             =   2280
             Width           =   1452
             _Version        =   1572864
@@ -2497,7 +2589,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.ComboBox cboGrupo 
             Height          =   312
             Left            =   1800
-            TabIndex        =   38
+            TabIndex        =   37
             Top             =   840
             Width           =   6012
             _Version        =   1572864
@@ -2523,7 +2615,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.ComboBox cboMoneda 
             Height          =   312
             Left            =   4440
-            TabIndex        =   40
+            TabIndex        =   39
             Top             =   2280
             Width           =   3372
             _Version        =   1572864
@@ -2549,7 +2641,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.CheckBox chkControlaSaldo 
             Height          =   255
             Left            =   -69520
-            TabIndex        =   56
+            TabIndex        =   54
             Top             =   1560
             Visible         =   0   'False
             Width           =   4335
@@ -2575,7 +2667,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.CheckBox chkSINPE 
             Height          =   375
             Left            =   -64960
-            TabIndex        =   57
+            TabIndex        =   55
             Top             =   1080
             Visible         =   0   'False
             Width           =   4335
@@ -2601,7 +2693,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.CheckBox chkCuentaMaestra 
             Height          =   372
             Left            =   -64960
-            TabIndex        =   58
+            TabIndex        =   56
             Top             =   360
             Visible         =   0   'False
             Width           =   4332
@@ -2627,7 +2719,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.CheckBox chkRequiereBeneficiario 
             Height          =   372
             Left            =   -64960
-            TabIndex        =   59
+            TabIndex        =   57
             Top             =   720
             Visible         =   0   'False
             Width           =   4212
@@ -2653,7 +2745,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.CheckBox chkLiqSocio 
             Height          =   375
             Left            =   -69280
-            TabIndex        =   63
+            TabIndex        =   61
             Top             =   360
             Visible         =   0   'False
             Width           =   7335
@@ -2679,7 +2771,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.CheckBox chkPagoTercero 
             Height          =   255
             Left            =   -69280
-            TabIndex        =   64
+            TabIndex        =   62
             Top             =   1080
             Visible         =   0   'False
             Width           =   6375
@@ -2705,7 +2797,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.CheckBox chkVisibleEC 
             Height          =   255
             Left            =   -69280
-            TabIndex        =   65
+            TabIndex        =   63
             Top             =   1440
             Visible         =   0   'False
             Width           =   4335
@@ -2732,7 +2824,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtNotas 
             Height          =   1032
             Left            =   1800
-            TabIndex        =   71
+            TabIndex        =   69
             Top             =   1200
             Width           =   6012
             _Version        =   1572864
@@ -2757,7 +2849,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtUltContrato 
             Height          =   312
             Left            =   4440
-            TabIndex        =   72
+            TabIndex        =   70
             Top             =   480
             Width           =   3372
             _Version        =   1572864
@@ -2781,7 +2873,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtCuentaCod 
             Height          =   312
             Left            =   -68680
-            TabIndex        =   83
+            TabIndex        =   81
             Top             =   960
             Visible         =   0   'False
             Width           =   1812
@@ -2806,7 +2898,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtCuentaDesc 
             Height          =   312
             Left            =   -66880
-            TabIndex        =   84
+            TabIndex        =   82
             Top             =   960
             Visible         =   0   'False
             Width           =   5292
@@ -2831,7 +2923,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtCuentaRend 
             Height          =   312
             Left            =   -68680
-            TabIndex        =   85
+            TabIndex        =   83
             Top             =   1680
             Visible         =   0   'False
             Width           =   1812
@@ -2856,7 +2948,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtCuentaRendDesc 
             Height          =   312
             Left            =   -66880
-            TabIndex        =   86
+            TabIndex        =   84
             Top             =   1680
             Visible         =   0   'False
             Width           =   5292
@@ -2881,7 +2973,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtCuentaGasto 
             Height          =   312
             Left            =   -68680
-            TabIndex        =   87
+            TabIndex        =   85
             Top             =   2400
             Visible         =   0   'False
             Width           =   1812
@@ -2906,7 +2998,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtCuentaGasDesc 
             Height          =   312
             Left            =   -66880
-            TabIndex        =   88
+            TabIndex        =   86
             Top             =   2400
             Visible         =   0   'False
             Width           =   5292
@@ -2931,7 +3023,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtCuentaIngComision 
             Height          =   312
             Left            =   -68680
-            TabIndex        =   89
+            TabIndex        =   87
             Top             =   3120
             Visible         =   0   'False
             Width           =   1812
@@ -2956,7 +3048,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtCuentaIngComisionDesc 
             Height          =   312
             Left            =   -66880
-            TabIndex        =   90
+            TabIndex        =   88
             Top             =   3120
             Visible         =   0   'False
             Width           =   5292
@@ -2981,7 +3073,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtCuentaIngRetiros 
             Height          =   312
             Left            =   -68680
-            TabIndex        =   91
+            TabIndex        =   89
             Top             =   3840
             Visible         =   0   'False
             Width           =   1812
@@ -3006,7 +3098,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtCuentaIngRetirosDesc 
             Height          =   312
             Left            =   -66880
-            TabIndex        =   92
+            TabIndex        =   90
             Top             =   3840
             Visible         =   0   'False
             Width           =   5292
@@ -3031,7 +3123,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtCuentaGstComision 
             Height          =   312
             Left            =   -68680
-            TabIndex        =   93
+            TabIndex        =   91
             Top             =   4560
             Visible         =   0   'False
             Width           =   1812
@@ -3056,7 +3148,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtCuentaGstComisionDesc 
             Height          =   312
             Left            =   -66880
-            TabIndex        =   94
+            TabIndex        =   92
             Top             =   4560
             Visible         =   0   'False
             Width           =   5292
@@ -3081,7 +3173,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtCuentaImpuestos 
             Height          =   312
             Left            =   -68680
-            TabIndex        =   95
+            TabIndex        =   93
             Top             =   5280
             Visible         =   0   'False
             Width           =   1812
@@ -3106,7 +3198,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtCuentaImpuestosDesc 
             Height          =   312
             Left            =   -66880
-            TabIndex        =   96
+            TabIndex        =   94
             Top             =   5280
             Visible         =   0   'False
             Width           =   5292
@@ -3132,7 +3224,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   1455
             Index           =   1
             Left            =   -69880
-            TabIndex        =   99
+            TabIndex        =   97
             Top             =   4080
             Visible         =   0   'False
             Width           =   8895
@@ -3158,7 +3250,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkGarantia 
                Height          =   252
                Left            =   480
-               TabIndex        =   105
+               TabIndex        =   103
                Top             =   360
                Width           =   4932
                _Version        =   1572864
@@ -3185,7 +3277,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkBacktoBackIntegra 
                Height          =   252
                Left            =   3960
-               TabIndex        =   106
+               TabIndex        =   104
                Top             =   720
                Width           =   4332
                _Version        =   1572864
@@ -3210,7 +3302,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtBacktoBackDisponible 
                Height          =   312
                Left            =   2760
-               TabIndex        =   107
+               TabIndex        =   105
                Top             =   720
                Width           =   1092
                _Version        =   1572864
@@ -3234,7 +3326,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.FlatEdit txtBacktoBackTasaAdCredito 
                Height          =   312
                Left            =   2760
-               TabIndex        =   108
+               TabIndex        =   106
                Top             =   1080
                Width           =   1092
                _Version        =   1572864
@@ -3269,7 +3361,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   252
                Index           =   4
                Left            =   960
-               TabIndex        =   111
+               TabIndex        =   109
                Top             =   1080
                Width           =   1572
             End
@@ -3289,7 +3381,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   315
                Index           =   3
                Left            =   3960
-               TabIndex        =   110
+               TabIndex        =   108
                Top             =   1080
                Width           =   3615
             End
@@ -3307,7 +3399,7 @@ Begin VB.Form frmFNDPlanes
                Height          =   252
                Index           =   2
                Left            =   960
-               TabIndex        =   109
+               TabIndex        =   107
                Top             =   720
                Width           =   1212
             End
@@ -3316,7 +3408,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   1455
             Index           =   2
             Left            =   -69880
-            TabIndex        =   100
+            TabIndex        =   98
             Top             =   5760
             Visible         =   0   'False
             Width           =   8895
@@ -3342,7 +3434,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkMovCajas 
                Height          =   252
                Left            =   360
-               TabIndex        =   101
+               TabIndex        =   99
                Top             =   360
                Width           =   4332
                _Version        =   1572864
@@ -3368,7 +3460,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkCajasRetiros 
                Height          =   255
                Left            =   360
-               TabIndex        =   102
+               TabIndex        =   100
                Top             =   720
                Width           =   4455
                _Version        =   1572864
@@ -3393,7 +3485,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkMovEntreFondos 
                Height          =   252
                Left            =   4920
-               TabIndex        =   103
+               TabIndex        =   101
                Top             =   360
                Width           =   4332
                _Version        =   1572864
@@ -3418,7 +3510,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkMovEntreFondosTerceros 
                Height          =   252
                Left            =   4920
-               TabIndex        =   104
+               TabIndex        =   102
                Top             =   720
                Width           =   4692
                _Version        =   1572864
@@ -3443,7 +3535,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkFP_Servicios 
                Height          =   255
                Left            =   360
-               TabIndex        =   124
+               TabIndex        =   122
                Top             =   1080
                Width           =   4455
                _Version        =   1572864
@@ -3468,7 +3560,7 @@ Begin VB.Form frmFNDPlanes
             Begin XtremeSuiteControls.CheckBox chkFP_POS 
                Height          =   252
                Left            =   4920
-               TabIndex        =   125
+               TabIndex        =   123
                Top             =   1080
                Width           =   4332
                _Version        =   1572864
@@ -3494,7 +3586,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.ComboBox cboTipoPlan 
             Height          =   330
             Left            =   1800
-            TabIndex        =   141
+            TabIndex        =   139
             Top             =   480
             Width           =   2295
             _Version        =   1572864
@@ -3520,7 +3612,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.CheckBox chkLiqPlanesAhorros 
             Height          =   255
             Left            =   -69280
-            TabIndex        =   142
+            TabIndex        =   140
             Top             =   720
             Visible         =   0   'False
             Width           =   7335
@@ -3546,7 +3638,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.CheckBox chkCDP_PagaCupones 
             Height          =   375
             Left            =   -69160
-            TabIndex        =   180
+            TabIndex        =   178
             Top             =   720
             Visible         =   0   'False
             Width           =   3375
@@ -3572,7 +3664,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeSuiteControls.FlatEdit txtTasaMargenNegociacion 
             Height          =   315
             Left            =   -69160
-            TabIndex        =   181
+            TabIndex        =   179
             Top             =   1200
             Visible         =   0   'False
             Width           =   735
@@ -3608,7 +3700,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   255
             Index           =   5
             Left            =   -68320
-            TabIndex        =   182
+            TabIndex        =   180
             ToolTipText     =   "Tasa Preferencial: Puntos de Variación aplicables a la Tasa Oficial"
             Top             =   1200
             Visible         =   0   'False
@@ -3632,7 +3724,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   315
             Index           =   3
             Left            =   840
-            TabIndex        =   140
+            TabIndex        =   138
             Top             =   480
             Width           =   975
          End
@@ -3640,7 +3732,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   510
             Index           =   1
             Left            =   -65920
-            TabIndex        =   131
+            TabIndex        =   129
             Top             =   480
             Visible         =   0   'False
             Width           =   1215
@@ -3663,7 +3755,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   510
             Index           =   0
             Left            =   -64720
-            TabIndex        =   129
+            TabIndex        =   127
             Top             =   480
             Visible         =   0   'False
             Width           =   3975
@@ -3686,7 +3778,7 @@ Begin VB.Form frmFNDPlanes
          Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption1 
             Height          =   510
             Left            =   -70000
-            TabIndex        =   127
+            TabIndex        =   125
             Top             =   480
             Visible         =   0   'False
             Width           =   4095
@@ -3724,7 +3816,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   312
             Index           =   1
             Left            =   840
-            TabIndex        =   25
+            TabIndex        =   24
             Top             =   840
             Width           =   972
          End
@@ -3742,7 +3834,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   252
             Index           =   1
             Left            =   840
-            TabIndex        =   24
+            TabIndex        =   23
             Top             =   1320
             Width           =   852
          End
@@ -3760,7 +3852,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   252
             Index           =   0
             Left            =   840
-            TabIndex        =   23
+            TabIndex        =   22
             Top             =   2280
             Width           =   612
          End
@@ -3778,7 +3870,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   252
             Index           =   1
             Left            =   3600
-            TabIndex        =   22
+            TabIndex        =   21
             Top             =   2280
             Width           =   732
          End
@@ -3796,7 +3888,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   252
             Index           =   0
             Left            =   -69640
-            TabIndex        =   21
+            TabIndex        =   20
             Top             =   720
             Visible         =   0   'False
             Width           =   4212
@@ -3815,7 +3907,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   252
             Index           =   2
             Left            =   -69640
-            TabIndex        =   20
+            TabIndex        =   19
             Top             =   2160
             Visible         =   0   'False
             Width           =   3132
@@ -3834,7 +3926,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   255
             Index           =   3
             Left            =   -69640
-            TabIndex        =   19
+            TabIndex        =   18
             Top             =   2880
             Visible         =   0   'False
             Width           =   7095
@@ -3853,7 +3945,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   252
             Index           =   4
             Left            =   -69640
-            TabIndex        =   18
+            TabIndex        =   17
             Top             =   4320
             Visible         =   0   'False
             Width           =   4452
@@ -3872,7 +3964,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   252
             Index           =   5
             Left            =   -69640
-            TabIndex        =   17
+            TabIndex        =   16
             Top             =   3600
             Visible         =   0   'False
             Width           =   4452
@@ -3891,7 +3983,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   255
             Index           =   6
             Left            =   -69640
-            TabIndex        =   16
+            TabIndex        =   15
             Top             =   1440
             Visible         =   0   'False
             Width           =   6495
@@ -3910,7 +4002,7 @@ Begin VB.Form frmFNDPlanes
             Height          =   252
             Index           =   9
             Left            =   -69640
-            TabIndex        =   15
+            TabIndex        =   14
             Top             =   5040
             Visible         =   0   'False
             Width           =   4452
@@ -3941,7 +4033,7 @@ Begin VB.Form frmFNDPlanes
          EndProperty
          MaxCols         =   493
          ScrollBars      =   2
-         SpreadDesigner  =   "frmFNDPlanes.frx":245A
+         SpreadDesigner  =   "frmFNDPlanes.frx":2ADF
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
@@ -3970,7 +4062,7 @@ Begin VB.Form frmFNDPlanes
          EndProperty
          MaxCols         =   494
          ScrollBars      =   2
-         SpreadDesigner  =   "frmFNDPlanes.frx":2AFA
+         SpreadDesigner  =   "frmFNDPlanes.frx":3231
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
@@ -3999,49 +4091,14 @@ Begin VB.Form frmFNDPlanes
          EndProperty
          MaxCols         =   495
          ScrollBars      =   2
-         SpreadDesigner  =   "frmFNDPlanes.frx":31DB
+         SpreadDesigner  =   "frmFNDPlanes.frx":39C4
          VScrollSpecialType=   2
          AppearanceStyle =   1
-      End
-      Begin MSComctlLib.ListView lswDestinos 
-         Height          =   6372
-         Left            =   -67360
-         TabIndex        =   14
-         Top             =   480
-         Visible         =   0   'False
-         Width           =   6372
-         _ExtentX        =   11245
-         _ExtentY        =   11245
-         View            =   2
-         LabelWrap       =   -1  'True
-         HideSelection   =   -1  'True
-         Checkboxes      =   -1  'True
-         FlatScrollBar   =   -1  'True
-         FullRowSelect   =   -1  'True
-         HotTracking     =   -1  'True
-         _Version        =   393217
-         ForeColor       =   -2147483640
-         BackColor       =   -2147483643
-         Appearance      =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         NumItems        =   1
-         BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            Text            =   "Destinos"
-            Object.Width           =   7832
-         EndProperty
       End
       Begin XtremeShortcutBar.ShortcutCaption scRegla 
          Height          =   375
          Left            =   -70000
-         TabIndex        =   143
+         TabIndex        =   141
          Top             =   4680
          Visible         =   0   'False
          Width           =   9255
@@ -4062,25 +4119,6 @@ Begin VB.Form frmFNDPlanes
          EndProperty
          SubItemCaption  =   -1  'True
          ForeColor       =   4210752
-      End
-      Begin VB.Label Label7 
-         Caption         =   "Indicar los posibles usos o destinos que la persona puede darle a este plan."
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   2172
-         Index           =   3
-         Left            =   -69760
-         TabIndex        =   52
-         Top             =   480
-         Visible         =   0   'False
-         Width           =   1452
       End
       Begin VB.Label Label8 
          Alignment       =   1  'Right Justify
@@ -4259,7 +4297,7 @@ Begin VB.Form frmFNDPlanes
    Begin XtremeSuiteControls.ComboBox cboOperadora 
       Height          =   312
       Left            =   1680
-      TabIndex        =   39
+      TabIndex        =   38
       Top             =   480
       Width           =   6132
       _Version        =   1572864
@@ -4285,7 +4323,7 @@ Begin VB.Form frmFNDPlanes
    Begin XtremeSuiteControls.FlatEdit txtCodigo 
       Height          =   312
       Left            =   1680
-      TabIndex        =   66
+      TabIndex        =   64
       Top             =   840
       Width           =   1212
       _Version        =   1572864
@@ -4309,7 +4347,7 @@ Begin VB.Form frmFNDPlanes
    Begin XtremeSuiteControls.FlatEdit txtDescripcion 
       Height          =   312
       Left            =   2880
-      TabIndex        =   67
+      TabIndex        =   65
       Top             =   840
       Width           =   4932
       _Version        =   1572864
@@ -4333,7 +4371,7 @@ Begin VB.Form frmFNDPlanes
       Height          =   255
       Index           =   1
       Left            =   4800
-      TabIndex        =   160
+      TabIndex        =   158
       Top             =   1200
       Width           =   1095
       _Version        =   1572864
@@ -4358,7 +4396,7 @@ Begin VB.Form frmFNDPlanes
       Height          =   255
       Index           =   2
       Left            =   6000
-      TabIndex        =   162
+      TabIndex        =   160
       Top             =   1200
       Width           =   1935
       _Version        =   1572864
@@ -4397,14 +4435,14 @@ Begin VB.Form frmFNDPlanes
       Height          =   315
       Index           =   4
       Left            =   1440
-      TabIndex        =   161
+      TabIndex        =   159
       Top             =   1200
       Width           =   1455
    End
    Begin VB.Image imgCopia 
       Height          =   240
       Left            =   8040
-      Picture         =   "frmFNDPlanes.frx":384F
+      Picture         =   "frmFNDPlanes.frx":40EA
       ToolTipText     =   "Copiar Configuración de un Plan a Otro"
       Top             =   480
       Width           =   240
@@ -5314,6 +5352,125 @@ End Sub
 
 
 
+Private Function fxDestinosGuardar() As Integer
+Dim strSQL As String, rs As New ADODB.Recordset
+'Guarda la información de la linea
+'si es Insert devuelve el codigo, sino devuelve 0
+
+On Error GoTo vError
+
+Dim pId As Long, pDestino As String, pActivo As Integer, pMovimiento As String
+
+fxDestinosGuardar = 0
+gDestinos.Row = gDestinos.ActiveRow
+gDestinos.Col = 1
+
+
+
+
+If gDestinos.Text = "" Then
+   pMovimiento = "Registra"
+   pId = 0
+Else
+   pMovimiento = "Modifica"
+   pId = gDestinos.Text
+End If
+
+gDestinos.Col = 2
+pDestino = gDestinos.Text
+gDestinos.Col = 3
+
+If gDestinos.Value = True Then
+    pActivo = 1
+Else
+    pActivo = 0
+End If
+
+'spFnd_Planes_Destinos_Ahorros_Add(@Id int, @Plan varchar(10), @Descripcion varchar(200), @Activo bit, @Usuario varchar(30))
+strSQL = "exec spFnd_Planes_Destinos_Ahorros_Add " & pId & ", '" & Trim(txtCodigo.Text) & "', '" & pDestino _
+       & "', " & pActivo & ", '" & glogon.Usuario & "'"
+Call OpenRecordSet(rs, strSQL)
+gDestinos.Col = 1
+ gDestinos.Text = CStr(rs!Id)
+rs.Close
+   
+Call Bitacora(pMovimiento, "Destino Directo No. " & gDestinos.Text & ", Plan: " & txtCodigo.Text)
+   
+gDestinos.Col = 1
+fxDestinosGuardar = gDestinos.Text
+
+Exit Function
+   
+vError:
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Function
+
+
+
+
+Private Sub gDestinos_KeyDown(KeyCode As Integer, Shift As Integer)
+Dim i As Long, strSQL As String
+
+On Error GoTo vError
+
+If gDestinos.ActiveCol = gDestinos.MaxCols And (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
+  i = fxDestinosGuardar
+  gDestinos.Row = gDestinos.ActiveRow
+  gDestinos.Col = 1
+  If gDestinos.MaxRows <= gDestinos.ActiveRow Then
+    gDestinos.MaxRows = gDestinos.MaxRows + 1
+    gDestinos.Row = gDestinos.MaxRows
+  End If
+End If
+
+If gDestinos.ActiveCol = 1 And (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
+  gDestinos.Col = gDestinos.ActiveCol
+  gDestinos.Row = gDestinos.ActiveRow
+  gDestinos.Text = gDestinos.Text
+End If
+
+'Inserta Linea
+If KeyCode = vbKeyInsert Then
+    gDestinos.MaxRows = gDestinos.MaxRows + 1
+    gDestinos.InsertRows gDestinos.ActiveRow, 1
+    gDestinos.Row = gDestinos.ActiveRow
+End If
+
+
+'Borrar una linea
+If KeyCode = vbKeyDelete Then
+
+        gDestinos.Row = gDestinos.ActiveRow
+        gDestinos.Col = 1
+
+       If gDestinos.Text = "" Then Exit Sub
+
+     i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
+     If i = vbYes Then
+        
+        gDestinos.Col = 1
+        strSQL = "exec spFnd_Planes_Destinos_Ahorros_Delete " & gDestinos.Text & ", '" & glogon.Usuario & "'"
+        Call ConectionExecute(strSQL)
+        
+        
+        Call Bitacora("Elimina", "Destino Directo No. " & gDestinos.Text & ", Plan: " & txtCodigo.Text)
+        
+        gDestinos.DeleteRows gDestinos.ActiveRow, 1
+        gDestinos.MaxRows = gDestinos.MaxRows - 1
+        If gDestinos.MaxRows = 0 Then gDestinos.MaxRows = 1
+        
+     End If
+End If
+
+
+Exit Sub
+
+vError:
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+
+End Sub
 
 Private Sub imgCopia_Click()
 
@@ -5628,7 +5785,15 @@ Select Case Item.Index
     vhGrid.MaxRows = vhGrid.MaxRows - 1
     
   Case 4 'Destinos: Asignación
+     tcDestinos.Item(0).Selected = True
+     
      vPaso = True
+     
+     strSQL = "select  ID_DESTINO, DESCRIPCION, ACTIVO" _
+            & " From FND_PLANES_DESTINOS_AHORRO" _
+            & " Where cod_Plan = '" & Trim(txtCodigo.Text) & "'"
+     Call sbCargaGrid(gDestinos, 3, strSQL)
+     
      strSQL = "select D.cod_destino,D.descripcion,A.cod_plan " _
             & " from fnd_destinos D left join fnd_planes_destinos A on D.cod_destino = A.cod_destino" _
             & " and A.cod_operadora = " & cboOperadora.ItemData(cboOperadora.ListIndex) _
@@ -5898,7 +6063,7 @@ Me.MousePointer = vbHourglass
            txtCuentaImpuestosDesc.Text = rs!CtaImpuestoDesc
            
            txtNotas.Text = Trim(rs!Notas)
-           cboEstado.Text = IIf(rs!Estado = "A", "Activo", "InActivo")
+           cboEstado.Text = IIf(rs!estado = "A", "Activo", "InActivo")
            
            Call sbCboAsignaDato(cboMoneda, rs!DivisaDesc, True, rs!Cod_Moneda)
            Call sbCboAsignaDato(cboGrupo, rs!GrupoDesc, True, rs!Cod_Grupo)
@@ -5946,7 +6111,7 @@ Me.MousePointer = vbHourglass
            
   
             'Caracteristicas
-            chkCDP.Value = rs!tipo_cdp
+            chkCDP.Value = rs!TIPO_CDP
             chkCDP_PagaCupones.Value = rs!PAGO_CUPONES
             chkControlaSaldo.Value = rs!CONTROLA_SALDO
             txtTasaMargenNegociacion.Text = Format(rs!TASA_MARGEN_NEGOCIACION, "Standard")
@@ -5963,7 +6128,7 @@ Me.MousePointer = vbHourglass
             cboBaseCalculo.Text = rs!Base_Calculo
             txtTasaBase.Text = Format(rs!tasa_base, "Standard")
             chkTasaFluctuante.Value = rs!UTILIZA_TASA_FLUCTUANTE
-            chkCapiltalizaRendimiento.Value = rs!Capitaliza_rendimientos
+            chkCapiltalizaRendimiento.Value = rs!CAPITALIZA_RENDIMIENTOS
             chkUtilizaTBP.Value = rs!utiliza_tbp
             chkRendimientoAuto.Value = rs!APL_REND_AUTOMATICO
             
@@ -6023,8 +6188,8 @@ Me.MousePointer = vbHourglass
                     dtpVenceWeb.Value = rs!web_vence
                 End If
                         
-            chkWebCrea.Value = rs!WEB_CREAR
-            chkWebModifica.Value = rs!WEB_MODIFICA_COUTA
+            chkWebCrea.Value = IIf(IsNull(rs!WEB_CREAR), False, rs!WEB_CREAR)
+            chkWebModifica.Value = IIf(IsNull(rs!WEB_MODIFICA_COUTA), False, rs!WEB_MODIFICA_COUTA)
             
             
             'Vencimientos
@@ -6607,7 +6772,7 @@ lswVence_Plazos.ListItems.Clear
 Do While Not rs.EOF
   Set itmX = lswVence_Plazos.ListItems.Add(, , rs!Descripcion)
       itmX.Tag = rs!Plazo
-      itmX.Checked = IIf((rs!Asignado = 1), vbChecked, vbUnchecked)
+      itmX.Checked = IIf((rs!asignado = 1), vbChecked, vbUnchecked)
       If itmX.Checked Then itmX.ForeColor = vbBlue
       
   rs.MoveNext

@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.Controls.v22.0.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCajas_ConsultaMovimientos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -8,10 +8,10 @@ Begin VB.Form frmCajas_ConsultaMovimientos
    ClientHeight    =   9285
    ClientLeft      =   120
    ClientTop       =   450
-   ClientWidth     =   15045
+   ClientWidth     =   16320
    LinkTopic       =   "Form1"
    ScaleHeight     =   9285
-   ScaleWidth      =   15045
+   ScaleWidth      =   16320
    StartUpPosition =   3  'Windows Default
    WindowState     =   2  'Maximized
    Begin FPSpreadADO.fpSpread vGrid 
@@ -36,7 +36,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      MaxCols         =   18
+      MaxCols         =   19
       SpreadDesigner  =   "frmCajas_ConsultaMovimientos.frx":0000
       VScrollSpecialType=   2
       AppearanceStyle =   1
@@ -47,7 +47,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
       TabIndex        =   8
       Top             =   1680
       Width           =   1332
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   68
@@ -69,7 +69,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
       TabIndex        =   9
       Top             =   1680
       Width           =   1332
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   68
@@ -91,7 +91,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
       TabIndex        =   10
       Top             =   1320
       Width           =   2652
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   4678
       _ExtentY        =   550
       _StockProps     =   77
@@ -115,7 +115,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
       TabIndex        =   11
       Top             =   1320
       Width           =   2052
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   550
       _StockProps     =   77
@@ -139,7 +139,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
       TabIndex        =   12
       Top             =   1680
       Width           =   2052
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   550
       _StockProps     =   77
@@ -163,7 +163,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
       TabIndex        =   13
       Top             =   2400
       Width           =   2295
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   4043
       _ExtentY        =   550
       _StockProps     =   77
@@ -187,7 +187,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
       TabIndex        =   14
       Top             =   1320
       Width           =   2292
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   4048
       _ExtentY        =   582
       _StockProps     =   77
@@ -213,7 +213,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
       TabIndex        =   15
       Top             =   2040
       Width           =   3852
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   6794
       _ExtentY        =   444
       _StockProps     =   79
@@ -239,7 +239,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
       TabIndex        =   16
       Top             =   2040
       Width           =   2412
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   4254
       _ExtentY        =   444
       _StockProps     =   79
@@ -261,16 +261,16 @@ Begin VB.Form frmCajas_ConsultaMovimientos
    End
    Begin XtremeSuiteControls.PushButton btnBuscar 
       Height          =   420
-      Left            =   10680
+      Left            =   13560
       TabIndex        =   17
-      Top             =   1320
+      Top             =   2280
       Width           =   1350
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2381
       _ExtentY        =   741
       _StockProps     =   79
       Caption         =   "Buscar"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -282,7 +282,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmCajas_ConsultaMovimientos.frx":0B73
+      Picture         =   "frmCajas_ConsultaMovimientos.frx":0BC8
    End
    Begin XtremeSuiteControls.ComboBox cboCajas 
       Height          =   312
@@ -290,7 +290,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
       TabIndex        =   18
       Top             =   2400
       Width           =   2652
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   4683
       _ExtentY        =   582
       _StockProps     =   77
@@ -316,7 +316,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
       TabIndex        =   20
       Top             =   2400
       Width           =   2052
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   550
       _StockProps     =   77
@@ -336,16 +336,16 @@ Begin VB.Form frmCajas_ConsultaMovimientos
    End
    Begin XtremeSuiteControls.PushButton btnExport 
       Height          =   420
-      Left            =   12000
+      Left            =   14880
       TabIndex        =   22
-      Top             =   1320
+      Top             =   2280
       Width           =   1350
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2381
       _ExtentY        =   741
       _StockProps     =   79
       Caption         =   "Exportar"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -357,7 +357,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmCajas_ConsultaMovimientos.frx":1273
+      Picture         =   "frmCajas_ConsultaMovimientos.frx":12C8
    End
    Begin XtremeSuiteControls.ComboBox cboMov 
       Height          =   315
@@ -365,7 +365,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
       TabIndex        =   23
       Top             =   1680
       Width           =   2295
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   4048
       _ExtentY        =   582
       _StockProps     =   77
@@ -391,11 +391,12 @@ Begin VB.Form frmCajas_ConsultaMovimientos
       TabIndex        =   25
       Top             =   2400
       Width           =   2295
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   4043
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
+      BackColor       =   16777152
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -405,10 +406,101 @@ Begin VB.Form frmCajas_ConsultaMovimientos
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      BackColor       =   16777152
       Alignment       =   1
       Locked          =   -1  'True
       Appearance      =   6
       UseVisualStyle  =   0   'False
+   End
+   Begin XtremeSuiteControls.ComboBox cboSC_EntidadPagadora 
+      Height          =   315
+      Left            =   12360
+      TabIndex        =   27
+      Top             =   1320
+      Width           =   2535
+      _Version        =   1572864
+      _ExtentX        =   4471
+      _ExtentY        =   582
+      _StockProps     =   77
+      ForeColor       =   1973790
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Style           =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+      Text            =   "ComboBox1"
+   End
+   Begin XtremeSuiteControls.ComboBox cboSC_OrigenRecursos 
+      Height          =   315
+      Left            =   12360
+      TabIndex        =   28
+      Top             =   1680
+      Width           =   2535
+      _Version        =   1572864
+      _ExtentX        =   4471
+      _ExtentY        =   582
+      _StockProps     =   77
+      ForeColor       =   1973790
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Style           =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+      Text            =   "ComboBox1"
+   End
+   Begin VB.Label Label2 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Entidad Pagadora:"
+      BeginProperty Font 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   255
+      Index           =   10
+      Left            =   10680
+      TabIndex        =   30
+      Top             =   1320
+      Width           =   1695
+   End
+   Begin VB.Label Label2 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Origen Recursos:"
+      BeginProperty Font 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   255
+      Index           =   11
+      Left            =   10680
+      TabIndex        =   29
+      Top             =   1680
+      Width           =   1695
    End
    Begin VB.Label Label2 
       Appearance      =   0  'Flat
@@ -497,7 +589,7 @@ Begin VB.Form frmCajas_ConsultaMovimientos
    Begin VB.Label Label2 
       Appearance      =   0  'Flat
       BackColor       =   &H80000005&
-      Caption         =   "No. Doc.:"
+      Caption         =   "Referencia"
       BeginProperty Font 
          Name            =   "Calibri"
          Size            =   9
@@ -656,8 +748,6 @@ Attribute VB_Exposed = False
 Option Explicit
 Dim vPaso As Boolean
 
-
-
 Private Sub btnBuscar_Click()
      Call sbConsulta
 End Sub
@@ -692,19 +782,21 @@ Private Sub btnExport_Click()
     vHeaders.Headers(2) = "Nombre"
     vHeaders.Headers(3) = "Tipo Doc."
     vHeaders.Headers(4) = "Num. Doc."
-    vHeaders.Headers(5) = "Monto Aplicado"
-    vHeaders.Headers(6) = "Divisa"
-    vHeaders.Headers(7) = "Tipo Cambio"
-    vHeaders.Headers(8) = "Reg.Fecha"
-    vHeaders.Headers(9) = "Reg.Usuario"
-    vHeaders.Headers(10) = "Forma Pago"
-    vHeaders.Headers(11) = "Referencia"
-    vHeaders.Headers(12) = "Banco"
-    vHeaders.Headers(13) = "Pagador"
-    vHeaders.Headers(14) = "Cuenta"
-    vHeaders.Headers(15) = "Concepto"
-    vHeaders.Headers(16) = "Caja"
-    vHeaders.Headers(17) = "Apertura/Cierre"
+    vHeaders.Headers(5) = "Monto Documento"
+    vHeaders.Headers(6) = "Monto Aplicado"
+    vHeaders.Headers(7) = "Divisa"
+    vHeaders.Headers(8) = "Tipo Cambio"
+    vHeaders.Headers(9) = "Reg.Fecha"
+    vHeaders.Headers(10) = "Reg.Usuario"
+    vHeaders.Headers(11) = "Forma Pago"
+    vHeaders.Headers(12) = "Referencia"
+    vHeaders.Headers(13) = "Banco"
+    vHeaders.Headers(14) = "Origen Recursos"
+    vHeaders.Headers(15) = "Pagador"
+    vHeaders.Headers(16) = "Cuenta"
+    vHeaders.Headers(17) = "Concepto"
+    vHeaders.Headers(18) = "Caja"
+    vHeaders.Headers(19) = "Apertura/Cierre"
     
     
     Call sbSIFGridExportar(vGrid, vHeaders, "ProGrX_Cajas_Consulta_Movimientos")
@@ -749,9 +841,6 @@ vModulo = 5
 'Carga las cuentas bancarias asiganadas a la forma de pago
 vPaso = True
 
-Me.Width = 12630
-Me.Height = 9465
-
 Set imgBanner.Picture = frmContenedor.imgBanner_Reportes.Picture
 
 strSQL = "select  rtrim(COD_FORMA_PAGO) as 'IdX', rtrim(DESCRIPCION) as 'itmX' from SIF_FORMAS_PAGO" _
@@ -760,6 +849,16 @@ Call sbCbo_Llena_New(cboFormaPago, strSQL, True, True)
 
 strSQL = "select rtrim(cod_caja) as 'IdX', rtrim(Descripcion) as itmx from cajas_definicion  where activa = 1"
 Call sbCbo_Llena_New(cboCajas, strSQL, True, True)
+
+'Consulta de Saldos en Cajas
+strSQL = "select COD_ENTIDAD_PAGO as 'IdX', DESCRIPCION AS 'ItmX' from SIF_ENTIDADES_PAGO" _
+       & " WHERE ACTIVA = 1 ORDER BY DESCRIPCION"
+Call sbCbo_Llena_New(cboSC_EntidadPagadora, strSQL, True, True)
+
+strSQL = "select COD_ORIGEN_RECURSOS as 'IdX', DESCRIPCION AS 'ItmX' from SIF_ORIGEN_RECURSOS" _
+       & "  WHERE ACTIVA = 1 ORDER BY DESCRIPCION"
+Call sbCbo_Llena_New(cboSC_OrigenRecursos, strSQL, True, True)
+
 
 cboMov.Clear
 cboMov.AddItem "Entradas"
@@ -859,6 +958,18 @@ Select Case Mid(cboMov.Text, 1, 1)
      strSQL = strSQL & " and Monto_Aplicado < 0"
 End Select
 
+
+If Trim(cboSC_EntidadPagadora.Text) <> "TODOS" Then
+    strSQL = strSQL & " and COD_ENTIDAD_PAGO = '" & cboSC_EntidadPagadora.ItemData(cboSC_EntidadPagadora.ListIndex) & "'"
+End If
+
+If Trim(cboSC_OrigenRecursos.Text) <> "TODOS" Then
+    strSQL = strSQL & " and COD_ORIGEN_RECURSOS = '" & cboSC_OrigenRecursos.ItemData(cboSC_OrigenRecursos.ListIndex) & "'"
+End If
+
+
+strSQL = strSQL & " ORDER BY REGISTRO_FECHA DESC"
+
 Call OpenRecordSet(rs, strSQL)
 
 vGrid.MaxRows = 0
@@ -870,7 +981,7 @@ vGrid.MaxRows = 0
          
    
     For i = 1 To vGrid.MaxCols
-      vGrid.col = i
+      vGrid.Col = i
       Select Case i
          Case 1 'Cedula
             vGrid.Text = Trim(rs!Cliente_Identificacion & "")
@@ -889,14 +1000,14 @@ vGrid.MaxRows = 0
          Case 7 'Divisa
             vGrid.Text = rs!cod_Divisa & ""
          Case 8 'Tipo de Cambio
-            vGrid.Text = rs!Tipo_Cambio & ""
+            vGrid.Text = rs!TIPO_CAMBIO & ""
            
          
          
          Case 9 'Registro Fecha
-            vGrid.Text = rs!Registro_Fecha & ""
+            vGrid.Text = rs!REGISTRO_FECHA_FORMAT & ""
          Case 10 'Registro Usuario
-            vGrid.Text = rs!Registro_Usuario & ""
+            vGrid.Text = rs!REGISTRO_USUARIO & ""
       
       
          Case 11 'Forma de Pago
@@ -905,16 +1016,20 @@ vGrid.MaxRows = 0
             vGrid.Text = rs!Num_Referencia & ""
          Case 13 'Banco
             vGrid.Text = rs!BancoDesc & ""
-         Case 14 'Pagador
+            
+         Case 14 'Origen de Recursos
+            vGrid.Text = rs!OrigenRecursoDesc & ""
+            
+         Case 15 'Pagador
             vGrid.Text = rs!EntidadPagoDesc & ""
-         Case 15 'Cuenta
+         Case 16 'Cuenta
             vGrid.Text = rs!cod_cuenta & ""
-         Case 16 'Concepto
+         Case 17 'Concepto
             vGrid.Text = rs!ConceptoDesc & ""
-         Case 17 'Caja
-            vGrid.Text = rs!cod_caja & ""
-         Case 18 'Apertura
-            vGrid.Text = rs!cod_Apertura & ""
+         Case 18 'Caja
+            vGrid.Text = rs!Cod_Caja & ""
+         Case 19 'Apertura
+            vGrid.Text = rs!Cod_Apertura & ""
      
       
       End Select

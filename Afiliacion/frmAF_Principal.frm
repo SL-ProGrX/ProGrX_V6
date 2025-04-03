@@ -1,15 +1,15 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
-Object = "{B8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.TaskPanel.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
+Object = "{B8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.TaskPanel.v24.0.0.ocx"
 Begin VB.Form frmAF_Principal 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Registro de Personas"
-   ClientHeight    =   9660
+   ClientHeight    =   9285
    ClientLeft      =   45
    ClientTop       =   330
    ClientWidth     =   12015
@@ -17,7 +17,7 @@ Begin VB.Form frmAF_Principal
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
-   ScaleHeight     =   9660
+   ScaleHeight     =   9285
    ScaleWidth      =   12015
    Begin XtremeTaskPanel.TaskPanel tpMain 
       Height          =   7365
@@ -25,7 +25,7 @@ Begin VB.Form frmAF_Principal
       TabIndex        =   72
       Top             =   1680
       Width           =   2760
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4868
       _ExtentY        =   12991
       _StockProps     =   64
@@ -40,7 +40,7 @@ Begin VB.Form frmAF_Principal
       Top             =   4680
       Visible         =   0   'False
       Width           =   9255
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16325
       _ExtentY        =   7223
       _StockProps     =   79
@@ -52,7 +52,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   177
          Top             =   1800
          Width           =   6735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11880
          _ExtentY        =   1720
          _StockProps     =   79
@@ -76,7 +76,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   180
             Top             =   600
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -103,7 +103,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   181
             Top             =   600
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -131,7 +131,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   179
             Top             =   360
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   450
             _StockProps     =   79
@@ -155,7 +155,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   178
             Top             =   360
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   450
             _StockProps     =   79
@@ -179,7 +179,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   176
          Top             =   840
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   450
          _StockProps     =   79
@@ -203,7 +203,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   173
          Top             =   1320
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   582
          _StockProps     =   79
@@ -230,7 +230,7 @@ Begin VB.Form frmAF_Principal
          ToolTipText     =   "Cierra: Actualizacion de Dimex"
          Top             =   480
          Width           =   255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   450
          _ExtentY        =   370
          _StockProps     =   79
@@ -253,7 +253,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   175
          Top             =   840
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   582
          _StockProps     =   77
@@ -278,7 +278,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   182
          Top             =   2880
          Width           =   6735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11880
          _ExtentY        =   1720
          _StockProps     =   79
@@ -302,7 +302,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   183
             Top             =   600
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -329,7 +329,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   184
             Top             =   600
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -357,7 +357,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   186
             Top             =   360
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   450
             _StockProps     =   79
@@ -381,7 +381,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   185
             Top             =   360
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   450
             _StockProps     =   79
@@ -406,7 +406,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   172
          Top             =   600
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   450
          _StockProps     =   79
@@ -429,7 +429,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   171
          Top             =   0
          Width           =   9255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16325
          _ExtentY        =   661
          _StockProps     =   14
@@ -459,7 +459,7 @@ Begin VB.Form frmAF_Principal
       TabIndex        =   112
       Top             =   45
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3201
       _ExtentY        =   582
       _StockProps     =   79
@@ -486,7 +486,7 @@ Begin VB.Form frmAF_Principal
       Height          =   255
       Left            =   0
       TabIndex        =   0
-      Top             =   9405
+      Top             =   9030
       Width           =   12015
       _ExtentX        =   21193
       _ExtentY        =   450
@@ -534,7 +534,7 @@ Begin VB.Form frmAF_Principal
       TabIndex        =   4
       Top             =   840
       Width           =   2655
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4683
       _ExtentY        =   582
       _StockProps     =   77
@@ -559,7 +559,7 @@ Begin VB.Form frmAF_Principal
       TabIndex        =   5
       Top             =   840
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   582
       _StockProps     =   77
@@ -583,7 +583,7 @@ Begin VB.Form frmAF_Principal
       TabIndex        =   6
       Top             =   840
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   582
       _StockProps     =   77
@@ -607,7 +607,7 @@ Begin VB.Form frmAF_Principal
       TabIndex        =   7
       Top             =   1680
       Width           =   9255
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16325
       _ExtentY        =   13573
       _StockProps     =   68
@@ -714,16 +714,16 @@ Begin VB.Form frmAF_Principal
       Item(6).Control(0)=   "gbCProductos(0)"
       Item(6).Control(1)=   "gbCProductos(2)"
       Item(6).Control(2)=   "GroupBox4"
-      Begin XtremeSuiteControls.ListView lswHistorico 
-         Height          =   6975
+      Begin XtremeSuiteControls.ListView lswDireccion 
+         Height          =   2415
          Left            =   -70000
-         TabIndex        =   70
-         Top             =   360
+         TabIndex        =   102
+         Top             =   0
          Visible         =   0   'False
          Width           =   9255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16325
-         _ExtentY        =   12303
+         _ExtentY        =   4260
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -740,16 +740,16 @@ Begin VB.Form frmAF_Principal
          Appearance      =   16
          ShowBorder      =   0   'False
       End
-      Begin XtremeSuiteControls.ListView lswDireccion 
-         Height          =   2415
+      Begin XtremeSuiteControls.ListView lswHistorico 
+         Height          =   6975
          Left            =   -70000
-         TabIndex        =   102
-         Top             =   0
+         TabIndex        =   70
+         Top             =   360
          Visible         =   0   'False
          Width           =   9255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16325
-         _ExtentY        =   4260
+         _ExtentY        =   12303
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -773,7 +773,7 @@ Begin VB.Form frmAF_Principal
          Top             =   3360
          Visible         =   0   'False
          Width           =   9495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16748
          _ExtentY        =   2355
          _StockProps     =   68
@@ -814,7 +814,7 @@ Begin VB.Form frmAF_Principal
             Top             =   360
             Visible         =   0   'False
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   582
             _StockProps     =   77
@@ -840,7 +840,7 @@ Begin VB.Form frmAF_Principal
             Top             =   360
             Visible         =   0   'False
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -866,7 +866,7 @@ Begin VB.Form frmAF_Principal
             Top             =   360
             Visible         =   0   'False
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   582
             _StockProps     =   77
@@ -892,7 +892,7 @@ Begin VB.Form frmAF_Principal
             Top             =   720
             Visible         =   0   'False
             Width           =   6375
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11245
             _ExtentY        =   979
             _StockProps     =   77
@@ -919,7 +919,7 @@ Begin VB.Form frmAF_Principal
             Top             =   840
             Visible         =   0   'False
             Width           =   495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   873
             _ExtentY        =   661
             _StockProps     =   79
@@ -943,7 +943,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   264
             Top             =   480
             Width           =   855
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1508
             _ExtentY        =   556
             _StockProps     =   77
@@ -968,7 +968,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   265
             Top             =   480
             Width           =   5535
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9763
             _ExtentY        =   556
             _StockProps     =   77
@@ -992,7 +992,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   266
             Top             =   840
             Width           =   855
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1508
             _ExtentY        =   556
             _StockProps     =   77
@@ -1017,7 +1017,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   267
             Top             =   840
             Width           =   5535
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9763
             _ExtentY        =   556
             _StockProps     =   77
@@ -1104,7 +1104,7 @@ Begin VB.Form frmAF_Principal
             Top             =   480
             Visible         =   0   'False
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1931
             _ExtentY        =   1085
             _StockProps     =   79
@@ -1129,7 +1129,7 @@ Begin VB.Form frmAF_Principal
          Top             =   0
          Visible         =   0   'False
          Width           =   9375
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16536
          _ExtentY        =   12515
          _StockProps     =   79
@@ -1151,7 +1151,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   192
             Top             =   450
             Width           =   6255
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11033
             _ExtentY        =   767
             _StockProps     =   77
@@ -1174,7 +1174,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   193
             Top             =   1050
             Width           =   6255
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11033
             _ExtentY        =   767
             _StockProps     =   77
@@ -1197,7 +1197,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   194
             Top             =   1650
             Width           =   6255
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11033
             _ExtentY        =   767
             _StockProps     =   77
@@ -1220,7 +1220,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   195
             Top             =   2250
             Width           =   6255
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11033
             _ExtentY        =   767
             _StockProps     =   77
@@ -1243,7 +1243,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   196
             Top             =   2850
             Width           =   6255
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11033
             _ExtentY        =   767
             _StockProps     =   77
@@ -1313,7 +1313,7 @@ Begin VB.Form frmAF_Principal
          Top             =   1560
          Visible         =   0   'False
          Width           =   5535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9763
          _ExtentY        =   556
          _StockProps     =   77
@@ -1339,7 +1339,7 @@ Begin VB.Form frmAF_Principal
          Top             =   0
          Visible         =   0   'False
          Width           =   9255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16325
          _ExtentY        =   4683
          _StockProps     =   79
@@ -1363,7 +1363,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   143
             Top             =   240
             Width           =   4335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7646
             _ExtentY        =   3836
             _StockProps     =   77
@@ -1392,7 +1392,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   139
             Top             =   0
             Width           =   4335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7646
             _ExtentY        =   3201
             _StockProps     =   79
@@ -1417,7 +1417,7 @@ Begin VB.Form frmAF_Principal
                TabIndex        =   140
                Top             =   360
                Width           =   2175
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3836
                _ExtentY        =   661
                _StockProps     =   79
@@ -1441,7 +1441,7 @@ Begin VB.Form frmAF_Principal
                TabIndex        =   141
                Top             =   720
                Width           =   2175
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3836
                _ExtentY        =   661
                _StockProps     =   79
@@ -1465,7 +1465,7 @@ Begin VB.Form frmAF_Principal
                TabIndex        =   142
                Top             =   1080
                Width           =   2175
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3836
                _ExtentY        =   661
                _StockProps     =   79
@@ -1488,7 +1488,7 @@ Begin VB.Form frmAF_Principal
                TabIndex        =   214
                Top             =   1560
                Width           =   4215
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   7435
                _ExtentY        =   450
                _StockProps     =   79
@@ -1513,7 +1513,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   167
             Top             =   2160
             Width           =   3255
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5741
             _ExtentY        =   582
             _StockProps     =   77
@@ -1560,7 +1560,7 @@ Begin VB.Form frmAF_Principal
          Top             =   840
          Visible         =   0   'False
          Width           =   255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   444
          _ExtentY        =   556
          _StockProps     =   64
@@ -1576,7 +1576,7 @@ Begin VB.Form frmAF_Principal
          Top             =   2880
          Visible         =   0   'False
          Width           =   5415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9546
          _ExtentY        =   444
          _StockProps     =   79
@@ -1608,7 +1608,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   19
             Top             =   120
             Width           =   6375
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11245
             _ExtentY        =   556
             _StockProps     =   77
@@ -1631,7 +1631,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   20
             Top             =   480
             Width           =   6375
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11245
             _ExtentY        =   556
             _StockProps     =   77
@@ -1692,7 +1692,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   8
          Top             =   1680
          Width           =   8895
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15690
          _ExtentY        =   2566
          _StockProps     =   79
@@ -1717,7 +1717,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   201
             Top             =   1080
             Width           =   2415
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4260
             _ExtentY        =   476
             _StockProps     =   79
@@ -1742,7 +1742,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   9
             Top             =   360
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   556
             _StockProps     =   68
@@ -1765,7 +1765,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   10
             Top             =   360
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2990
             _ExtentY        =   582
             _StockProps     =   77
@@ -1790,7 +1790,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   11
             Top             =   720
             Width           =   855
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1508
             _ExtentY        =   556
             _StockProps     =   77
@@ -1815,7 +1815,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   12
             Top             =   720
             Width           =   5655
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9975
             _ExtentY        =   556
             _StockProps     =   77
@@ -1839,7 +1839,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   13
             Top             =   360
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   550
             _StockProps     =   77
@@ -1877,7 +1877,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   215
             Top             =   1080
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   550
             _StockProps     =   77
@@ -1995,7 +1995,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   23
          Top             =   1200
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   582
          _StockProps     =   77
@@ -2020,7 +2020,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   24
          Top             =   840
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   582
          _StockProps     =   77
@@ -2045,7 +2045,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   25
          Top             =   840
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   556
          _StockProps     =   68
@@ -2068,7 +2068,7 @@ Begin VB.Form frmAF_Principal
          Top             =   4680
          Visible         =   0   'False
          Width           =   9015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15901
          _ExtentY        =   2143
          _StockProps     =   79
@@ -2092,7 +2092,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   75
             Top             =   720
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   868
             _StockProps     =   79
@@ -2117,7 +2117,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   30
             Top             =   720
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   550
             _StockProps     =   68
@@ -2140,7 +2140,7 @@ Begin VB.Form frmAF_Principal
             ToolTipText     =   "Años Laborados"
             Top             =   720
             Width           =   855
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1503
             _ExtentY        =   550
             _StockProps     =   77
@@ -2164,7 +2164,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   32
             Top             =   720
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   550
             _StockProps     =   77
@@ -2189,7 +2189,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   74
             Top             =   360
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -2214,7 +2214,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   202
             Top             =   240
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   661
             _StockProps     =   79
@@ -2239,7 +2239,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   203
             Top             =   360
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   582
             _StockProps     =   77
@@ -2342,7 +2342,7 @@ Begin VB.Form frmAF_Principal
          Top             =   120
          Visible         =   0   'False
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1508
          _ExtentY        =   556
          _StockProps     =   77
@@ -2368,7 +2368,7 @@ Begin VB.Form frmAF_Principal
          Top             =   120
          Visible         =   0   'False
          Width           =   5535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9763
          _ExtentY        =   556
          _StockProps     =   77
@@ -2393,7 +2393,7 @@ Begin VB.Form frmAF_Principal
          Top             =   840
          Visible         =   0   'False
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1508
          _ExtentY        =   556
          _StockProps     =   77
@@ -2419,7 +2419,7 @@ Begin VB.Form frmAF_Principal
          Top             =   840
          Visible         =   0   'False
          Width           =   5535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9763
          _ExtentY        =   556
          _StockProps     =   77
@@ -2444,7 +2444,7 @@ Begin VB.Form frmAF_Principal
          Top             =   1200
          Visible         =   0   'False
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1508
          _ExtentY        =   556
          _StockProps     =   77
@@ -2470,7 +2470,7 @@ Begin VB.Form frmAF_Principal
          Top             =   1200
          Visible         =   0   'False
          Width           =   5535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9763
          _ExtentY        =   556
          _StockProps     =   77
@@ -2495,7 +2495,7 @@ Begin VB.Form frmAF_Principal
          Top             =   2520
          Visible         =   0   'False
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1508
          _ExtentY        =   556
          _StockProps     =   77
@@ -2521,7 +2521,7 @@ Begin VB.Form frmAF_Principal
          Top             =   2520
          Visible         =   0   'False
          Width           =   5535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9763
          _ExtentY        =   556
          _StockProps     =   77
@@ -2546,7 +2546,7 @@ Begin VB.Form frmAF_Principal
          Top             =   2880
          Visible         =   0   'False
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1508
          _ExtentY        =   556
          _StockProps     =   77
@@ -2572,7 +2572,7 @@ Begin VB.Form frmAF_Principal
          Top             =   2880
          Visible         =   0   'False
          Width           =   5535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9763
          _ExtentY        =   556
          _StockProps     =   77
@@ -2597,7 +2597,7 @@ Begin VB.Form frmAF_Principal
          Top             =   480
          Visible         =   0   'False
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1508
          _ExtentY        =   556
          _StockProps     =   77
@@ -2623,7 +2623,7 @@ Begin VB.Form frmAF_Principal
          Top             =   480
          Visible         =   0   'False
          Width           =   5535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9763
          _ExtentY        =   556
          _StockProps     =   77
@@ -2648,7 +2648,7 @@ Begin VB.Form frmAF_Principal
          Top             =   840
          Visible         =   0   'False
          Width           =   255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   450
          _ExtentY        =   529
          _StockProps     =   79
@@ -2664,7 +2664,7 @@ Begin VB.Form frmAF_Principal
          Top             =   6240
          Visible         =   0   'False
          Width           =   375
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   661
          _ExtentY        =   529
          _StockProps     =   79
@@ -2682,7 +2682,7 @@ Begin VB.Form frmAF_Principal
          Top             =   5640
          Visible         =   0   'False
          Width           =   6255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11028
          _ExtentY        =   1609
          _StockProps     =   77
@@ -2708,7 +2708,7 @@ Begin VB.Form frmAF_Principal
          Top             =   3600
          Visible         =   0   'False
          Width           =   5415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9546
          _ExtentY        =   868
          _StockProps     =   79
@@ -2734,7 +2734,7 @@ Begin VB.Form frmAF_Principal
          Top             =   4920
          Visible         =   0   'False
          Width           =   5415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9546
          _ExtentY        =   656
          _StockProps     =   79
@@ -2760,7 +2760,7 @@ Begin VB.Form frmAF_Principal
          Top             =   840
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   77
@@ -2785,7 +2785,7 @@ Begin VB.Form frmAF_Principal
          Top             =   0
          Visible         =   0   'False
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1926
          _ExtentY        =   614
          _StockProps     =   79
@@ -2813,7 +2813,7 @@ Begin VB.Form frmAF_Principal
          Top             =   5880
          Visible         =   0   'False
          Width           =   9015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15901
          _ExtentY        =   2566
          _StockProps     =   79
@@ -2837,7 +2837,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   90
             Top             =   360
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   450
             _StockProps     =   79
@@ -2862,7 +2862,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   77
             Top             =   840
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   868
             _StockProps     =   79
@@ -2887,7 +2887,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   78
             Top             =   1080
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   550
             _StockProps     =   68
@@ -2909,7 +2909,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   80
             Top             =   360
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   582
             _StockProps     =   77
@@ -2934,7 +2934,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   83
             Top             =   720
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   582
             _StockProps     =   77
@@ -2968,7 +2968,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   79
             Top             =   360
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   550
             _StockProps     =   77
@@ -3002,7 +3002,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   86
             Top             =   720
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   550
             _StockProps     =   77
@@ -3036,7 +3036,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   88
             Top             =   1080
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   550
             _StockProps     =   77
@@ -3178,7 +3178,7 @@ Begin VB.Form frmAF_Principal
          Top             =   2400
          Visible         =   0   'False
          Width           =   9255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16325
          _ExtentY        =   8705
          _StockProps     =   79
@@ -3203,7 +3203,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   92
             Top             =   720
             Width           =   6135
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10821
             _ExtentY        =   556
             _StockProps     =   77
@@ -3227,7 +3227,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   93
             Top             =   1080
             Width           =   6135
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10821
             _ExtentY        =   556
             _StockProps     =   77
@@ -3251,7 +3251,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   94
             Top             =   1920
             Width           =   6135
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10821
             _ExtentY        =   1191
             _StockProps     =   77
@@ -3277,7 +3277,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   104
             Top             =   3480
             Width           =   2055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   868
             _StockProps     =   79
@@ -3302,7 +3302,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   103
             Top             =   360
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1720
             _ExtentY        =   556
             _StockProps     =   77
@@ -3328,7 +3328,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   107
             Top             =   1560
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   556
             _StockProps     =   77
@@ -3353,7 +3353,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   106
             Top             =   1560
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -3378,7 +3378,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   105
             Top             =   1560
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -3403,7 +3403,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   99
             Top             =   2760
             Width           =   2055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
@@ -3428,7 +3428,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   98
             Top             =   2760
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -3453,7 +3453,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   108
             Top             =   3240
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -3481,7 +3481,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   109
             Top             =   3600
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -3726,7 +3726,7 @@ Begin VB.Form frmAF_Principal
          Top             =   2160
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   582
          _StockProps     =   77
@@ -3753,7 +3753,7 @@ Begin VB.Form frmAF_Principal
          Top             =   3840
          Visible         =   0   'False
          Width           =   9255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16325
          _ExtentY        =   6165
          _StockProps     =   79
@@ -3777,7 +3777,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   149
             Top             =   1800
             Width           =   9255
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   16325
             _ExtentY        =   2990
             _StockProps     =   77
@@ -3804,7 +3804,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   162
             Top             =   1320
             Width           =   495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   873
             _ExtentY        =   661
             _StockProps     =   79
@@ -3828,7 +3828,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   145
             Top             =   0
             Width           =   735
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1296
             _ExtentY        =   450
             _StockProps     =   79
@@ -3852,7 +3852,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   146
             Top             =   0
             Width           =   735
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1296
             _ExtentY        =   450
             _StockProps     =   79
@@ -3876,7 +3876,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   150
             Top             =   720
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -3901,7 +3901,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   152
             Top             =   720
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -3925,7 +3925,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   154
             Top             =   720
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -3950,7 +3950,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   156
             Top             =   1320
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -3974,7 +3974,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   158
             Top             =   1320
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -3998,7 +3998,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   160
             Top             =   1320
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -4024,7 +4024,7 @@ Begin VB.Form frmAF_Principal
             ToolTipText     =   "Elimina"
             Top             =   1320
             Width           =   495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   873
             _ExtentY        =   661
             _StockProps     =   79
@@ -4048,7 +4048,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   197
             Top             =   1320
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1720
             _ExtentY        =   661
             _StockProps     =   79
@@ -4072,7 +4072,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   198
             Top             =   720
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1931
             _ExtentY        =   582
             _StockProps     =   77
@@ -4235,7 +4235,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   164
          Top             =   1200
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   556
          _StockProps     =   68
@@ -4258,7 +4258,7 @@ Begin VB.Form frmAF_Principal
          Top             =   2280
          Visible         =   0   'False
          Width           =   5415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9551
          _ExtentY        =   450
          _StockProps     =   79
@@ -4285,7 +4285,7 @@ Begin VB.Form frmAF_Principal
          Top             =   1800
          Visible         =   0   'False
          Width           =   5415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9551
          _ExtentY        =   450
          _StockProps     =   79
@@ -4312,7 +4312,7 @@ Begin VB.Form frmAF_Principal
          Top             =   1560
          Visible         =   0   'False
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1508
          _ExtentY        =   556
          _StockProps     =   77
@@ -4352,7 +4352,7 @@ Begin VB.Form frmAF_Principal
          Top             =   2160
          Visible         =   0   'False
          Width           =   3975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7011
          _ExtentY        =   582
          _StockProps     =   77
@@ -4376,7 +4376,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   26
          Top             =   480
          Width           =   2535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4471
          _ExtentY        =   556
          _StockProps     =   77
@@ -4400,7 +4400,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   27
          Top             =   480
          Width           =   2535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4471
          _ExtentY        =   556
          _StockProps     =   77
@@ -4424,7 +4424,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   28
          Top             =   480
          Width           =   2895
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5101
          _ExtentY        =   550
          _StockProps     =   77
@@ -4449,7 +4449,7 @@ Begin VB.Form frmAF_Principal
          Top             =   2640
          Visible         =   0   'False
          Width           =   9255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16325
          _ExtentY        =   2143
          _StockProps     =   79
@@ -4473,7 +4473,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   207
             Top             =   480
             Width           =   975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1720
             _ExtentY        =   450
             _StockProps     =   79
@@ -4496,7 +4496,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   208
             Top             =   480
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   582
             _StockProps     =   68
@@ -4518,7 +4518,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   209
             Top             =   480
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   582
             _StockProps     =   68
@@ -4540,7 +4540,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   210
             Top             =   480
             Width           =   3255
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5741
             _ExtentY        =   582
             _StockProps     =   77
@@ -4564,7 +4564,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   212
             Top             =   240
             Width           =   855
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1508
             _ExtentY        =   450
             _StockProps     =   79
@@ -4606,7 +4606,7 @@ Begin VB.Form frmAF_Principal
          Top             =   0
          Visible         =   0   'False
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   609
          _StockProps     =   79
@@ -4631,7 +4631,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   217
          Top             =   3360
          Width           =   9255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16325
          _ExtentY        =   7011
          _StockProps     =   68
@@ -4696,7 +4696,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   218
             Top             =   2160
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   582
             _StockProps     =   77
@@ -4721,7 +4721,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   219
             Top             =   2160
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -4746,7 +4746,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   220
             Top             =   2160
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -4771,7 +4771,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   221
             Top             =   600
             Width           =   2415
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4260
             _ExtentY        =   582
             _StockProps     =   77
@@ -4796,7 +4796,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   222
             Top             =   1080
             Width           =   6495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11456
             _ExtentY        =   556
             _StockProps     =   77
@@ -4819,7 +4819,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   223
             Top             =   1440
             Width           =   6495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11456
             _ExtentY        =   556
             _StockProps     =   77
@@ -4842,7 +4842,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   224
             Top             =   1800
             Width           =   6495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11456
             _ExtentY        =   556
             _StockProps     =   77
@@ -4865,7 +4865,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   225
             Top             =   2520
             Width           =   6495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11456
             _ExtentY        =   1191
             _StockProps     =   77
@@ -4890,7 +4890,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   226
             Top             =   3240
             Width           =   6495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11456
             _ExtentY        =   979
             _StockProps     =   77
@@ -4915,7 +4915,7 @@ Begin VB.Form frmAF_Principal
             TabIndex        =   227
             Top             =   600
             Width           =   2415
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4260
             _ExtentY        =   582
             _StockProps     =   77
@@ -4941,7 +4941,7 @@ Begin VB.Form frmAF_Principal
             Top             =   1080
             Visible         =   0   'False
             Width           =   5295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9340
             _ExtentY        =   556
             _StockProps     =   77
@@ -4965,7 +4965,7 @@ Begin VB.Form frmAF_Principal
             Top             =   1080
             Visible         =   0   'False
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -4989,7 +4989,7 @@ Begin VB.Form frmAF_Principal
             Top             =   1680
             Visible         =   0   'False
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   556
             _StockProps     =   77
@@ -5013,7 +5013,7 @@ Begin VB.Form frmAF_Principal
             Top             =   1680
             Visible         =   0   'False
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   556
             _StockProps     =   77
@@ -5037,7 +5037,7 @@ Begin VB.Form frmAF_Principal
             Top             =   1680
             Visible         =   0   'False
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   550
             _StockProps     =   77
@@ -5061,7 +5061,7 @@ Begin VB.Form frmAF_Principal
             Top             =   2880
             Visible         =   0   'False
             Width           =   5295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9340
             _ExtentY        =   556
             _StockProps     =   77
@@ -5085,7 +5085,7 @@ Begin VB.Form frmAF_Principal
             Top             =   2880
             Visible         =   0   'False
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -5109,7 +5109,7 @@ Begin VB.Form frmAF_Principal
             Top             =   3480
             Visible         =   0   'False
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   556
             _StockProps     =   77
@@ -5135,7 +5135,7 @@ Begin VB.Form frmAF_Principal
             Top             =   3480
             Visible         =   0   'False
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   550
             _StockProps     =   77
@@ -5161,7 +5161,7 @@ Begin VB.Form frmAF_Principal
             Top             =   3480
             Visible         =   0   'False
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   556
             _StockProps     =   77
@@ -5188,7 +5188,7 @@ Begin VB.Form frmAF_Principal
             Top             =   2160
             Visible         =   0   'False
             Width           =   9495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   16748
             _ExtentY        =   450
             _StockProps     =   14
@@ -5211,7 +5211,7 @@ Begin VB.Form frmAF_Principal
             Top             =   360
             Visible         =   0   'False
             Width           =   9495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   16748
             _ExtentY        =   450
             _StockProps     =   14
@@ -5596,7 +5596,7 @@ Begin VB.Form frmAF_Principal
          TabIndex        =   165
          Top             =   1200
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   450
          _StockProps     =   79
@@ -5660,7 +5660,7 @@ Begin VB.Form frmAF_Principal
          Top             =   0
          Visible         =   0   'False
          Width           =   9375
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16536
          _ExtentY        =   635
          _StockProps     =   14
@@ -6055,7 +6055,7 @@ Begin VB.Form frmAF_Principal
       TabIndex        =   113
       Top             =   45
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   582
       _StockProps     =   79
@@ -6084,7 +6084,7 @@ Begin VB.Form frmAF_Principal
       TabIndex        =   116
       Top             =   45
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   582
       _StockProps     =   79
@@ -6113,7 +6113,7 @@ Begin VB.Form frmAF_Principal
       TabIndex        =   117
       Top             =   45
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   582
       _StockProps     =   79
@@ -6143,7 +6143,7 @@ Begin VB.Form frmAF_Principal
       ToolTipText     =   "Nuevo"
       Top             =   45
       Width           =   1095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   582
       _StockProps     =   79
@@ -6172,7 +6172,7 @@ Begin VB.Form frmAF_Principal
       ToolTipText     =   "Editar"
       Top             =   45
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -6200,7 +6200,7 @@ Begin VB.Form frmAF_Principal
       ToolTipText     =   "Eliminar"
       Top             =   45
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -6228,7 +6228,7 @@ Begin VB.Form frmAF_Principal
       ToolTipText     =   "Guardar"
       Top             =   45
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -6256,7 +6256,7 @@ Begin VB.Form frmAF_Principal
       ToolTipText     =   "Deshacer"
       Top             =   45
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -6285,7 +6285,7 @@ Begin VB.Form frmAF_Principal
       Top             =   45
       Visible         =   0   'False
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -6314,7 +6314,7 @@ Begin VB.Form frmAF_Principal
       Top             =   45
       Visible         =   0   'False
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -6353,7 +6353,7 @@ Begin VB.Form frmAF_Principal
       ToolTipText     =   "Adjuntar Documentos"
       Top             =   45
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   582
       _StockProps     =   79
@@ -6377,7 +6377,7 @@ Begin VB.Form frmAF_Principal
       TabIndex        =   147
       Top             =   840
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   582
       _StockProps     =   77
@@ -6421,7 +6421,7 @@ Begin VB.Form frmAF_Principal
       TabIndex        =   115
       Top             =   1320
       Width           =   9255
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16325
       _ExtentY        =   661
       _StockProps     =   14
@@ -6443,7 +6443,7 @@ Begin VB.Form frmAF_Principal
       TabIndex        =   114
       Top             =   1320
       Width           =   2775
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4890
       _ExtentY        =   656
       _StockProps     =   14
@@ -6667,7 +6667,7 @@ With lswCumplimiento
     Do While Not rs.EOF
         Set itmX = .ListItems.Add(, , rs!Descripcion)
             itmX.Tag = rs!Codigo
-            If rs!Asignado = 1 Then
+            If rs!asignado = 1 Then
               itmX.Checked = True
             End If
       rs.MoveNext
@@ -6962,10 +6962,10 @@ Select Case ItemId
        Set itmX = lswHistorico.ListItems.Add(, , rs!CUENTA_INTERNA)
            itmX.SubItems(1) = Trim(rs!Banco)
            itmX.SubItems(2) = rs!TipoDesc
-           itmX.SubItems(3) = rs!COD_DIVISA
+           itmX.SubItems(3) = rs!cod_Divisa
            itmX.SubItems(4) = IIf(rs!CUENTA_INTERBANCA = 1, "Sí", "No")
            itmX.SubItems(5) = rs!Destino & ""
-           itmX.SubItems(6) = IIf(rs!Activa = 1, "Activa", "Cerrada")
+           itmX.SubItems(6) = IIf(rs!ACTIVA = 1, "Activa", "Cerrada")
            itmX.SubItems(7) = rs!Registro_Fecha & ""
            itmX.SubItems(8) = rs!Registro_Usuario & ""
      
@@ -7022,7 +7022,7 @@ Select Case ItemId
     Do While Not rs.EOF
        Set itmX = lswHistorico.ListItems.Add(, , rs!TipoSalarioDesc)
            itmX.SubItems(1) = Format(rs!Fecha_Salario, "dd/MM/yyyy")
-           itmX.SubItems(2) = Trim(rs!COD_DIVISA)
+           itmX.SubItems(2) = Trim(rs!cod_Divisa)
            itmX.SubItems(3) = Format(rs!SALARIO_DEVENGADO, "Standard")
            itmX.SubItems(4) = Format(rs!Rebajos_Total, "Standard")
            itmX.SubItems(5) = Format(rs!Salario_Neto, "Standard")
@@ -7212,7 +7212,7 @@ Select Case ItemId
                     itmX.SubItems(2) = rs!Registro_Fecha & ""
                     itmX.Tag = rs!Cod_Motivo
                     
-                    itmX.Checked = IIf((rs!Asignado = 1), True, False)
+                    itmX.Checked = IIf((rs!asignado = 1), True, False)
                     
                 rs.MoveNext
                Loop
@@ -7246,7 +7246,7 @@ Select Case ItemId
                     itmX.SubItems(2) = rs!Registro_Fecha & ""
                     itmX.Tag = rs!Canal_Tipo
                     
-                    itmX.Checked = IIf((rs!Asignado = 1), True, False)
+                    itmX.Checked = IIf((rs!asignado = 1), True, False)
                     
                 rs.MoveNext
                Loop
@@ -7279,7 +7279,7 @@ Select Case ItemId
             itmX.SubItems(2) = rs!Registro_Fecha & ""
             itmX.Tag = rs!cod_preferencia
             
-            itmX.Checked = IIf((rs!Asignado = 1), True, False)
+            itmX.Checked = IIf((rs!asignado = 1), True, False)
             
         rs.MoveNext
        Loop
@@ -7312,7 +7312,7 @@ Select Case ItemId
             itmX.SubItems(2) = rs!Registro_Fecha & ""
             itmX.Tag = rs!Bien_Tipo
             
-            itmX.Checked = IIf((rs!Asignado = 1), True, False)
+            itmX.Checked = IIf((rs!asignado = 1), True, False)
             
         rs.MoveNext
        Loop
@@ -7344,7 +7344,7 @@ Select Case ItemId
             itmX.SubItems(2) = rs!Registro_Fecha & ""
             itmX.Tag = rs!Escolaridad_Tipo
             
-            itmX.Checked = IIf((rs!Asignado = 1), True, False)
+            itmX.Checked = IIf((rs!asignado = 1), True, False)
             
         rs.MoveNext
        Loop
@@ -7570,7 +7570,7 @@ If (Not rs.EOF And Not rs.BOF) And Not glogon.error Then
    Call sbCboAsignaDato(cboCanton, rs!CantonDesc & "")   'Se activa el Click
    Call sbCboAsignaDato(cboDistrito, rs!DistritoDesc & "")
    
-   cboDistrito.ToolTipText = Trim(rs!distrito) & ""
+   cboDistrito.ToolTipText = Trim(rs!Distrito) & ""
    txtDireccion = Trim(rs!direccion) & ""
      
   'Trabajo es Opcional
@@ -7813,7 +7813,7 @@ If (Not rs.EOF And Not rs.BOF) And Not glogon.error Then
             
             Call sbCboAsignaDato(cboProvincia, rs!Provincia & "", False)  'Se activa el Click ->    Call cboProvincia_Click
             Call sbCboAsignaDato(cboCanton, rs!Canton & "", False)   'Se activa el Click
-            Call sbCboAsignaDato(cboDistrito, rs!distrito & "", False)
+            Call sbCboAsignaDato(cboDistrito, rs!Distrito & "", False)
         Else
             
             MsgBox "No se encontró la persona en el Padron, continue con el registro manual!", vbExclamation
@@ -8052,7 +8052,7 @@ rs.Close
 If Not vEditar Then
   strSQL = "select estado from promotores where id_promotor = " & txtPromotorCod & ""
   Call OpenRecordSet(rs, strSQL)
-  If rs!Estado = 0 Then
+  If rs!estado = 0 Then
     vMensaje = vMensaje & " - El promotor indicado se encuenta inactivo" & vbCrLf
   End If
   rs.Close

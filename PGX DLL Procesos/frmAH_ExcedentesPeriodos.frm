@@ -1,30 +1,32 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmAH_ExcedentesPeriodos 
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Excedentes: Periodos"
-   ClientHeight    =   7770
+   ClientHeight    =   8130
    ClientLeft      =   30
    ClientTop       =   390
    ClientWidth     =   11025
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7770
+   ScaleHeight     =   8130
    ScaleWidth      =   11025
    ShowInTaskbar   =   0   'False
    StartUpPosition =   1  'CenterOwner
    Begin XtremeSuiteControls.TabControl tcMain 
-      Height          =   6615
+      Height          =   6975
       Left            =   0
       TabIndex        =   3
       Top             =   1080
       Width           =   11055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19500
-      _ExtentY        =   11668
+      _ExtentY        =   12303
       _StockProps     =   68
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
@@ -38,7 +40,6 @@ Begin VB.Form frmAH_ExcedentesPeriodos
       Appearance      =   4
       Color           =   32
       ItemCount       =   5
-      SelectedItem    =   1
       Item(0).Caption =   "Periodos"
       Item(0).ControlCount=   1
       Item(0).Control(0)=   "lsw"
@@ -72,17 +73,15 @@ Begin VB.Form frmAH_ExcedentesPeriodos
       Item(4).ControlCount=   1
       Item(4).Control(0)=   "lswResumen"
       Begin XtremeSuiteControls.ListView lsw 
-         Height          =   6135
-         Left            =   -69880
+         Height          =   6495
+         Left            =   120
          TabIndex        =   4
          Top             =   360
-         Visible         =   0   'False
          Width           =   10815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   19076
-         _ExtentY        =   10821
+         _ExtentY        =   11456
          _StockProps     =   77
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -97,16 +96,16 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          Appearance      =   17
       End
       Begin XtremeSuiteControls.ListView lswRenta 
-         Height          =   2175
-         Left            =   5040
+         Height          =   1935
+         Left            =   -64960
          TabIndex        =   24
          Top             =   720
+         Visible         =   0   'False
          Width           =   5295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9340
-         _ExtentY        =   3836
+         _ExtentY        =   3413
          _StockProps     =   77
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -121,17 +120,16 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          Appearance      =   17
       End
       Begin XtremeSuiteControls.ListView lswResumen 
-         Height          =   6255
+         Height          =   6615
          Left            =   -69880
          TabIndex        =   42
          Top             =   360
          Visible         =   0   'False
          Width           =   10815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   19076
-         _ExtentY        =   11033
+         _ExtentY        =   11668
          _StockProps     =   77
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -152,11 +150,10 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          Top             =   840
          Visible         =   0   'False
          Width           =   10815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   19076
          _ExtentY        =   10186
          _StockProps     =   77
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -172,15 +169,17 @@ Begin VB.Form frmAH_ExcedentesPeriodos
       End
       Begin XtremeSuiteControls.PushButton btnRecalcular 
          Height          =   495
-         Left            =   1200
+         Left            =   -68800
          TabIndex        =   35
-         Top             =   2160
+         Top             =   1920
+         Visible         =   0   'False
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   873
          _StockProps     =   79
          Caption         =   "Recalcular la Base"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -196,17 +195,19 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          ImageAlignment  =   0
       End
       Begin XtremeSuiteControls.GroupBox GroupBox1 
-         Height          =   3735
-         Left            =   720
+         Height          =   3975
+         Left            =   -69280
          TabIndex        =   9
-         Top             =   3120
+         Top             =   2880
+         Visible         =   0   'False
          Width           =   10095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17806
-         _ExtentY        =   6588
+         _ExtentY        =   7011
          _StockProps     =   79
          Caption         =   "Información de aplicación:"
          ForeColor       =   8421504
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -227,11 +228,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
             TabIndex        =   28
             Top             =   360
             Width           =   372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   656
             _ExtentY        =   556
             _StockProps     =   79
             Caption         =   "..."
+            BackColor       =   -2147483633
             Transparent     =   -1  'True
             UseVisualStyle  =   -1  'True
             Appearance      =   16
@@ -240,13 +242,14 @@ Begin VB.Form frmAH_ExcedentesPeriodos
             Height          =   255
             Left            =   5160
             TabIndex        =   22
-            Top             =   3120
+            Top             =   3480
             Width           =   3255
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5741
             _ExtentY        =   450
             _StockProps     =   79
             Caption         =   "Renta Incluye Capitalización?    "
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -265,12 +268,11 @@ Begin VB.Form frmAH_ExcedentesPeriodos
             TabIndex        =   11
             Top             =   360
             Width           =   2172
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   556
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -291,12 +293,11 @@ Begin VB.Form frmAH_ExcedentesPeriodos
             TabIndex        =   13
             Top             =   840
             Width           =   2172
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   556
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -317,12 +318,11 @@ Begin VB.Form frmAH_ExcedentesPeriodos
             TabIndex        =   15
             Top             =   1320
             Width           =   2172
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   556
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -343,12 +343,11 @@ Begin VB.Form frmAH_ExcedentesPeriodos
             TabIndex        =   17
             Top             =   1800
             Width           =   2172
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   556
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -367,14 +366,13 @@ Begin VB.Form frmAH_ExcedentesPeriodos
             Height          =   315
             Left            =   4200
             TabIndex        =   19
-            Top             =   2280
-            Width           =   2172
-            _Version        =   1441793
+            Top             =   2760
+            Width           =   2175
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   556
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -390,17 +388,16 @@ Begin VB.Form frmAH_ExcedentesPeriodos
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCapPorc 
-            Height          =   312
+            Height          =   315
             Left            =   4200
             TabIndex        =   21
-            Top             =   3120
-            Width           =   732
-            _Version        =   1441793
+            Top             =   3480
+            Width           =   735
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -421,11 +418,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
             TabIndex        =   29
             Top             =   840
             Width           =   372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   656
             _ExtentY        =   556
             _StockProps     =   79
             Caption         =   "..."
+            BackColor       =   -2147483633
             Transparent     =   -1  'True
             UseVisualStyle  =   -1  'True
             Appearance      =   16
@@ -437,11 +435,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
             TabIndex        =   30
             Top             =   1320
             Width           =   372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   656
             _ExtentY        =   556
             _StockProps     =   79
             Caption         =   "..."
+            BackColor       =   -2147483633
             Transparent     =   -1  'True
             UseVisualStyle  =   -1  'True
             Appearance      =   16
@@ -453,43 +452,44 @@ Begin VB.Form frmAH_ExcedentesPeriodos
             TabIndex        =   31
             Top             =   1800
             Width           =   372
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   656
             _ExtentY        =   556
             _StockProps     =   79
             Caption         =   "..."
+            BackColor       =   -2147483633
             Transparent     =   -1  'True
             UseVisualStyle  =   -1  'True
             Appearance      =   16
          End
          Begin XtremeSuiteControls.PushButton btnBoleta 
-            Height          =   312
+            Height          =   315
             Index           =   4
             Left            =   6480
             TabIndex        =   32
-            Top             =   2280
-            Width           =   372
-            _Version        =   1441793
+            Top             =   2760
+            Width           =   375
+            _Version        =   1572864
             _ExtentX        =   656
             _ExtentY        =   556
             _StockProps     =   79
             Caption         =   "..."
+            BackColor       =   -2147483633
             Transparent     =   -1  'True
             UseVisualStyle  =   -1  'True
             Appearance      =   16
          End
          Begin XtremeSuiteControls.FlatEdit txtReservaPorc 
-            Height          =   312
+            Height          =   315
             Left            =   4200
             TabIndex        =   33
-            Top             =   2760
-            Width           =   732
-            _Version        =   1441793
+            Top             =   3120
+            Width           =   735
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -509,7 +509,7 @@ Begin VB.Form frmAH_ExcedentesPeriodos
             TabIndex        =   39
             Top             =   840
             Width           =   2055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3625
             _ExtentY        =   582
             _StockProps     =   77
@@ -535,11 +535,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
             TabIndex        =   41
             Top             =   1200
             Width           =   2055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3625
             _ExtentY        =   661
             _StockProps     =   79
             Caption         =   "Actualiza"
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -553,6 +554,68 @@ Begin VB.Form frmAH_ExcedentesPeriodos
             Appearance      =   17
             Picture         =   "frmAH_ExcedentesPeriodos.frx":0719
             ImageAlignment  =   0
+         End
+         Begin XtremeSuiteControls.FlatEdit txtNC_Extraordinarios 
+            Height          =   315
+            Left            =   4200
+            TabIndex        =   55
+            Top             =   2280
+            Width           =   2175
+            _Version        =   1572864
+            _ExtentX        =   3831
+            _ExtentY        =   556
+            _StockProps     =   77
+            ForeColor       =   0
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Alignment       =   2
+            Locked          =   -1  'True
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
+         End
+         Begin XtremeSuiteControls.PushButton btnBoleta 
+            Height          =   315
+            Index           =   5
+            Left            =   6480
+            TabIndex        =   56
+            Top             =   2280
+            Width           =   375
+            _Version        =   1572864
+            _ExtentX        =   656
+            _ExtentY        =   556
+            _StockProps     =   79
+            Caption         =   "..."
+            BackColor       =   -2147483633
+            Transparent     =   -1  'True
+            UseVisualStyle  =   -1  'True
+            Appearance      =   16
+         End
+         Begin VB.Label Label1 
+            Alignment       =   1  'Right Justify
+            BackStyle       =   0  'Transparent
+            Caption         =   "Nota de Crédito: Aplicación Abono Extra. Ren. Patronal"
+            BeginProperty Font 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   375
+            Index           =   13
+            Left            =   0
+            TabIndex        =   57
+            Top             =   2280
+            Width           =   3975
          End
          Begin VB.Label Label1 
             Alignment       =   1  'Right Justify
@@ -588,12 +651,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Height          =   252
+            Height          =   255
             Index           =   11
             Left            =   0
             TabIndex        =   34
-            Top             =   2760
-            Width           =   3972
+            Top             =   3120
+            Width           =   3975
          End
          Begin VB.Label Label1 
             Alignment       =   1  'Right Justify
@@ -608,12 +671,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Height          =   252
+            Height          =   255
             Index           =   9
             Left            =   0
             TabIndex        =   20
-            Top             =   3120
-            Width           =   3972
+            Top             =   3480
+            Width           =   3975
          End
          Begin VB.Label Label1 
             Alignment       =   1  'Right Justify
@@ -632,7 +695,7 @@ Begin VB.Form frmAH_ExcedentesPeriodos
             Index           =   8
             Left            =   0
             TabIndex        =   18
-            Top             =   2280
+            Top             =   2760
             Width           =   3975
          End
          Begin VB.Label Label1 
@@ -718,11 +781,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
       End
       Begin XtremeSuiteControls.DateTimePicker dtpInicio 
          Height          =   315
-         Left            =   2160
+         Left            =   -67840
          TabIndex        =   6
-         Top             =   840
+         Top             =   720
+         Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -740,11 +804,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
       End
       Begin XtremeSuiteControls.DateTimePicker dtpCorte 
          Height          =   315
-         Left            =   2160
+         Left            =   -67840
          TabIndex        =   8
-         Top             =   1320
+         Top             =   1200
+         Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -768,11 +833,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          Top             =   480
          Visible         =   0   'False
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   450
          _StockProps     =   79
          Caption         =   "Todos"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -794,11 +860,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          Top             =   480
          Visible         =   0   'False
          Width           =   2775
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4895
          _ExtentY        =   450
          _StockProps     =   79
          Caption         =   "Proceso de Cierre y aplicaciones"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -819,11 +886,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          Top             =   480
          Visible         =   0   'False
          Width           =   2535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4471
          _ExtentY        =   450
          _StockProps     =   79
          Caption         =   "Aplicaciones mensuales"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -844,11 +912,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          Top             =   480
          Visible         =   0   'False
          Width           =   2775
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4895
          _ExtentY        =   450
          _StockProps     =   79
          Caption         =   "Cambios de Configuración"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -868,11 +937,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          Top             =   720
          Visible         =   0   'False
          Width           =   4695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8281
          _ExtentY        =   450
          _StockProps     =   79
          Caption         =   "Visible en Web/App AutoGestión de Asociados"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -893,11 +963,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          Top             =   1080
          Visible         =   0   'False
          Width           =   3735
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   6588
          _ExtentY        =   450
          _StockProps     =   79
          Caption         =   "Visible en Sistema (Consulta Integrada)"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -918,11 +989,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          Top             =   1680
          Visible         =   0   'False
          Width           =   5295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9340
          _ExtentY        =   450
          _StockProps     =   79
          Caption         =   "Visible en la sección de Historial del Estado de Excedentes"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -943,12 +1015,11 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          Top             =   3000
          Visible         =   0   'False
          Width           =   10095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17806
          _ExtentY        =   2143
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -970,11 +1041,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          Top             =   2040
          Visible         =   0   'False
          Width           =   5295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9340
          _ExtentY        =   450
          _StockProps     =   79
          Caption         =   "Visible en la sección de Tabla Renta sobre Excedentes del Periodo"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -995,11 +1067,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          Top             =   4320
          Visible         =   0   'False
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   661
          _StockProps     =   79
          Caption         =   "Actualiza Nota"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1021,11 +1094,12 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          Top             =   2640
          Visible         =   0   'False
          Width           =   4935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8705
          _ExtentY        =   661
          _StockProps     =   79
          Caption         =   "Nota para el Estado de Excedentes de este Periodo:"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1051,9 +1125,10 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          EndProperty
          Height          =   255
          Index           =   10
-         Left            =   5400
+         Left            =   -64600
          TabIndex        =   25
          Top             =   480
+         Visible         =   0   'False
          Width           =   4815
       End
       Begin VB.Label Label1 
@@ -1071,9 +1146,10 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          EndProperty
          Height          =   255
          Index           =   3
-         Left            =   960
+         Left            =   -69040
          TabIndex        =   7
-         Top             =   1320
+         Top             =   1200
+         Visible         =   0   'False
          Width           =   1095
       End
       Begin VB.Label Label1 
@@ -1091,25 +1167,25 @@ Begin VB.Form frmAH_ExcedentesPeriodos
          EndProperty
          Height          =   255
          Index           =   2
-         Left            =   960
+         Left            =   -69040
          TabIndex        =   5
-         Top             =   840
+         Top             =   720
+         Visible         =   0   'False
          Width           =   1095
       End
    End
    Begin MSComctlLib.Toolbar tlb 
       Align           =   1  'Align Top
-      Height          =   360
+      Height          =   330
       Left            =   0
       TabIndex        =   0
       Top             =   0
       Width           =   11025
       _ExtentX        =   19447
-      _ExtentY        =   635
+      _ExtentY        =   582
       ButtonWidth     =   609
       ButtonHeight    =   582
       AllowCustomize  =   0   'False
-      Appearance      =   1
       Style           =   1
       _Version        =   393216
       BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
@@ -1149,12 +1225,11 @@ Begin VB.Form frmAH_ExcedentesPeriodos
       TabIndex        =   2
       Top             =   480
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   656
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   10.5
@@ -1186,12 +1261,11 @@ Begin VB.Form frmAH_ExcedentesPeriodos
       TabIndex        =   26
       Top             =   480
       Width           =   2172
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3831
       _ExtentY        =   656
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   10.5
@@ -1207,15 +1281,16 @@ Begin VB.Form frmAH_ExcedentesPeriodos
    End
    Begin XtremeSuiteControls.PushButton btnTablaAplicacionMensual 
       Height          =   375
-      Left            =   7800
+      Left            =   7080
       TabIndex        =   36
       Top             =   480
-      Width           =   3255
-      _Version        =   1441793
-      _ExtentX        =   5741
+      Width           =   2655
+      _Version        =   1572864
+      _ExtentX        =   4683
       _ExtentY        =   661
       _StockProps     =   79
-      Caption         =   "Tabla para Aplicación Mensual"
+      Caption         =   "Tabla para Aplicación"
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -1232,15 +1307,16 @@ Begin VB.Form frmAH_ExcedentesPeriodos
    End
    Begin XtremeSuiteControls.PushButton btnExport 
       Height          =   375
-      Left            =   6360
+      Left            =   9720
       TabIndex        =   37
+      ToolTipText     =   "Exportar a Excel"
       Top             =   480
-      Width           =   1455
-      _Version        =   1441793
-      _ExtentX        =   2566
+      Width           =   615
+      _Version        =   1572864
+      _ExtentX        =   1085
       _ExtentY        =   661
       _StockProps     =   79
-      Caption         =   "Exportar"
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -1253,7 +1329,6 @@ Begin VB.Form frmAH_ExcedentesPeriodos
       UseVisualStyle  =   -1  'True
       Appearance      =   17
       Picture         =   "frmAH_ExcedentesPeriodos.frx":1C79
-      ImageAlignment  =   0
    End
    Begin XtremeSuiteControls.ProgressBar ProgressBarX 
       Height          =   135
@@ -1262,11 +1337,36 @@ Begin VB.Form frmAH_ExcedentesPeriodos
       Top             =   960
       Visible         =   0   'False
       Width           =   11055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19500
       _ExtentY        =   238
       _StockProps     =   93
+      BackColor       =   -2147483633
       Scrolling       =   1
+   End
+   Begin XtremeSuiteControls.PushButton btnAdjuntos 
+      Height          =   375
+      Left            =   10320
+      TabIndex        =   58
+      ToolTipText     =   "Adjuntar Documentos"
+      Top             =   480
+      Width           =   615
+      _Version        =   1572864
+      _ExtentX        =   1085
+      _ExtentY        =   661
+      _StockProps     =   79
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmAH_ExcedentesPeriodos.frx":1DE3
    End
    Begin VB.Label Label1 
       Alignment       =   1  'Right Justify
@@ -1319,6 +1419,15 @@ Dim vScroll As Boolean, vPaso As Boolean
 Dim strSQL As String, rs As New ADODB.Recordset
 Dim itmX As ListViewItem
 
+Private Sub btnAdjuntos_Click()
+ gGA.Modulo = "EXC"
+ gGA.Llave_01 = txtCodigo.Text
+ gGA.Llave_02 = ""
+ gGA.Llave_03 = ""
+ 
+ Call sbFormsCall("frmGA_Documentos", vbModal, , , False, Me, True)
+End Sub
+
 Private Sub btnBaseAplicacionUpdate_Click()
 
 On Error GoTo vError
@@ -1363,6 +1472,11 @@ Select Case Index
  Case 4 'Asiento de Excedente
     vTipoDoc = "PLA"
     vNumDoc = txtDocExc.Text
+ 
+ Case 5 'Abono Extraordinario Ren. Patronal
+    vTipoDoc = "NC"
+    vNumDoc = txtNC_Extraordinarios.Text
+ 
  
  Case 1 'OPCF
     vTipoDoc = "NC"
@@ -1754,7 +1868,7 @@ On Error GoTo vError
     .Add , , "Inicio", 2500, vbCenter
     .Add , , "Finaliza", 2500, vbCenter
     .Add , , "Duración (seg)", 2500, vbCenter
-    
+    .Add , , "Notas", 5000
     
  End With
 
@@ -1901,6 +2015,8 @@ Do While Not rs.EOF
       itmX.SubItems(9) = rs!Time_Inicio & ""
       itmX.SubItems(10) = rs!Time_Corte & ""
       itmX.SubItems(11) = rs!Duracion & ""
+      itmX.SubItems(12) = rs!Notas & ""
+      
   
   rs.MoveNext
 Loop
@@ -2131,6 +2247,7 @@ If Not rs.BOF And Not rs.EOF Then
     txtNC_CEXD.Text = rs!NC_Saldos
     txtNC_Mora.Text = rs!NC_Mora
     txtNC_OPCF.Text = rs!NC_OPCF
+    txtNC_Extraordinarios.Text = rs!NC_EXTRAORDINARIOS & ""
     
     Select Case rs!ESTADO
     Case "A"
@@ -2180,7 +2297,6 @@ Exit Sub
 vError:
  Me.MousePointer = vbDefault
  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
-
 End Sub
 
 

@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmGA_Documentos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -18,14 +18,14 @@ Begin VB.Form frmGA_Documentos
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin XtremeSuiteControls.ListView lsw 
-      Height          =   3975
+      Height          =   3375
       Left            =   0
       TabIndex        =   6
-      Top             =   4080
+      Top             =   4680
       Width           =   13815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   24368
-      _ExtentY        =   7011
+      _ExtentY        =   5953
       _StockProps     =   77
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
@@ -51,7 +51,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   17
       Top             =   2640
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   450
       _StockProps     =   79
@@ -75,7 +75,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   8
       Top             =   1080
       Width           =   7215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12726
       _ExtentY        =   688
       _StockProps     =   77
@@ -102,7 +102,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   9
       Top             =   1560
       Width           =   7215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12726
       _ExtentY        =   767
       _StockProps     =   77
@@ -129,7 +129,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   10
       Top             =   1560
       Width           =   495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   79
@@ -145,7 +145,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   14
       Top             =   480
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3201
       _ExtentY        =   873
       _StockProps     =   79
@@ -169,9 +169,9 @@ Begin VB.Form frmGA_Documentos
       Height          =   495
       Left            =   9240
       TabIndex        =   15
-      Top             =   3120
+      Top             =   3720
       Width           =   1455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   873
       _StockProps     =   79
@@ -197,7 +197,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   16
       Top             =   2640
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2778
       _ExtentY        =   609
       _StockProps     =   68
@@ -219,7 +219,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   18
       Top             =   2160
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2778
       _ExtentY        =   609
       _StockProps     =   68
@@ -241,7 +241,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   11
       Top             =   2160
       Width           =   2415
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4260
       _ExtentY        =   609
       _StockProps     =   77
@@ -265,7 +265,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   12
       Top             =   2640
       Width           =   2415
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4260
       _ExtentY        =   609
       _StockProps     =   77
@@ -289,7 +289,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   13
       Top             =   3120
       Width           =   2415
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4260
       _ExtentY        =   609
       _StockProps     =   77
@@ -307,15 +307,64 @@ Begin VB.Form frmGA_Documentos
       Appearance      =   6
       UseVisualStyle  =   0   'False
    End
+   Begin XtremeSuiteControls.FlatEdit txtNotas 
+      Height          =   675
+      Left            =   1560
+      TabIndex        =   21
+      Top             =   3600
+      Width           =   7215
+      _Version        =   1572864
+      _ExtentX        =   12726
+      _ExtentY        =   1191
+      _StockProps     =   77
+      ForeColor       =   0
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      MultiLine       =   -1  'True
+      ScrollBars      =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+   End
+   Begin XtremeSuiteControls.Label Label1 
+      Height          =   255
+      Index           =   6
+      Left            =   480
+      TabIndex        =   22
+      Top             =   3600
+      Width           =   1215
+      _Version        =   1572864
+      _ExtentX        =   2143
+      _ExtentY        =   450
+      _StockProps     =   79
+      Caption         =   "Notas"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Transparent     =   -1  'True
+      WordWrap        =   -1  'True
+   End
    Begin XtremeSuiteControls.Label lblLoading 
-      Height          =   1695
+      Height          =   2415
       Left            =   9360
       TabIndex        =   20
-      Top             =   1320
+      Top             =   1080
       Width           =   4215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
-      _ExtentY        =   2990
+      _ExtentY        =   4260
       _StockProps     =   79
       Caption         =   "xxxxxxxxxx"
       ForeColor       =   8421504
@@ -339,7 +388,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   19
       Top             =   2160
       Width           =   1335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2355
       _ExtentY        =   450
       _StockProps     =   79
@@ -362,14 +411,14 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   7
       Top             =   0
       Width           =   13815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   24368
       _ExtentY        =   661
       _StockProps     =   14
       Caption         =   "Modulo General"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   9.74
+         Size            =   9.75
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -383,16 +432,16 @@ Begin VB.Form frmGA_Documentos
       Height          =   375
       Left            =   0
       TabIndex        =   5
-      Top             =   3720
+      Top             =   4320
       Width           =   13815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   24368
       _ExtentY        =   661
       _StockProps     =   14
       Caption         =   "Documentos Registrados"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   9.74
+         Size            =   9.75
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -409,7 +458,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   4
       Top             =   3120
       Width           =   975
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1720
       _ExtentY        =   450
       _StockProps     =   79
@@ -433,7 +482,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   3
       Top             =   2640
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   450
       _StockProps     =   79
@@ -457,7 +506,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   2
       Top             =   2160
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   450
       _StockProps     =   79
@@ -481,7 +530,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   1
       Top             =   1080
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   450
       _StockProps     =   79
@@ -505,7 +554,7 @@ Begin VB.Form frmGA_Documentos
       TabIndex        =   0
       Top             =   1560
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   450
       _StockProps     =   79
@@ -615,7 +664,7 @@ End If
 txtLlave_01.Text = fxSysCleanTxtInject(txtLlave_01.Text)
 txtLlave_02.Text = fxSysCleanTxtInject(txtLlave_02.Text)
 txtLlave_03.Text = fxSysCleanTxtInject(txtLlave_03.Text)
-
+txtNotas.Text = fxSysCleanTxtInject(txtNotas.Text)
 
 If txtLlave_01.Text = "" Then
     MsgBox "Llave 1 es Obligatoria!", vbExclamation, "Error"
@@ -712,7 +761,7 @@ Set Cmd = New ADODB.Command
 Cmd.ActiveConnection = cn
 
 Cmd.CommandText = "INSERT INTO GA_Files (EmpresaId, ModuloId, TypeId, Llave_01, Llave_02, Llave_03, FileType, FileName, FileContent" _
-                & ", Vencimiento, FechaEmision, RegistroFecha, RegistroUsuario ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+                & ", Vencimiento, FechaEmision, RegistroFecha, RegistroUsuario, Notas ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
 
 Cmd.Parameters.Append Cmd.CreateParameter("@EmpresaId", adInteger, adParamInput, , gGA.Empresa)
 Cmd.Parameters.Append Cmd.CreateParameter("@ModuloId", adVarChar, adParamInput, 10, gGA.Modulo)
@@ -731,6 +780,7 @@ Cmd.Parameters.Append Cmd.CreateParameter("@FechaEmision", adVarChar, adParamInp
 
 Cmd.Parameters.Append Cmd.CreateParameter("@RegistroFecha", adVarChar, adParamInput, 20, pFRegistro)
 Cmd.Parameters.Append Cmd.CreateParameter("@RegistroUsuario", adVarChar, adParamInput, 30, glogon.Usuario)
+Cmd.Parameters.Append Cmd.CreateParameter("@Notas", adVarChar, adParamInput, 1000, txtNotas)
 
 Cmd.Execute
 
@@ -830,9 +880,14 @@ lsw.ColumnHeaders.Add , , "Vence?", 1400, vbCenter
 lsw.ColumnHeaders.Add , , "Fecha", 1400, vbCenter
 lsw.ColumnHeaders.Add , , "Usuario", 1400, vbCenter
 
+lsw.ColumnHeaders.Add , , "Notas", 5200
+lsw.ColumnHeaders.Add , , "Rev.Fecha", 1400, vbCenter
+lsw.ColumnHeaders.Add , , "Rev.Usuario", 1400, vbCenter
+
 lblLoading.Caption = ""
 
 End Sub
+
 
 Private Sub lsw_DblClick()
 Dim cn As New ADODB.Connection
@@ -1001,6 +1056,11 @@ Do While Not rs.EOF
       itmX.SubItems(4) = rs!Vencimiento & ""
       itmX.SubItems(5) = rs!RegistroFecha & ""
       itmX.SubItems(6) = rs!RegistroUsuario & ""
+ 
+      itmX.SubItems(7) = rs!Notas & ""
+      itmX.SubItems(8) = rs!RevisaFecha & ""
+      itmX.SubItems(9) = rs!RevisaUsuario & ""
+ 
  rs.MoveNext
 Loop
 

@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmSIF_Conceptos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -29,7 +29,7 @@ Begin VB.Form frmSIF_Conceptos
       TabIndex        =   1
       Top             =   1200
       Width           =   9852
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   17378
       _ExtentY        =   13144
       _StockProps     =   68
@@ -56,7 +56,7 @@ Begin VB.Form frmSIF_Conceptos
          TabIndex        =   2
          Top             =   4440
          Width           =   9612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16954
          _ExtentY        =   5101
          _StockProps     =   77
@@ -110,7 +110,7 @@ Begin VB.Form frmSIF_Conceptos
          TabIndex        =   3
          Top             =   4080
          Width           =   9612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16954
          _ExtentY        =   656
          _StockProps     =   14
@@ -342,15 +342,17 @@ If vGrid.ActiveCol = 5 And (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
 End If
 
 If KeyCode = vbKeyDelete Then
-   'Aqui codigo de Borrado
-   vGrid.Row = vGrid.ActiveRow
-   vGrid.Col = 1
-   If Trim(vGrid.Text) <> "" Then
-    strSQL = "Delete sif_conceptos where cod_concepto =  '" & vGrid.Text & "'"
-    Call ConectionExecute(strSQL)
-   End If
-   vGrid.DeleteRows vGrid.ActiveRow, 1
-   vGrid.MaxRows = vGrid.MaxRows - 1
+     i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
+     If i = vbYes Then
+        vGrid.Row = vGrid.ActiveRow
+        vGrid.Col = 1
+        If Trim(vGrid.Text) <> "" Then
+         strSQL = "Delete sif_conceptos where cod_concepto =  '" & vGrid.Text & "'"
+         Call ConectionExecute(strSQL)
+        End If
+        vGrid.DeleteRows vGrid.ActiveRow, 1
+        vGrid.MaxRows = vGrid.MaxRows - 1
+    End If
 End If
 
 
@@ -413,9 +415,9 @@ lsw.ListItems.Clear
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
  Set itmX = lsw.ListItems.Add(, , rs!Codigo)
-     itmX.SubItems(1) = rs!Descripcion
+     itmX.SubItems(1) = rs!DESCRIPCION
  
-  If Not IsNull(rs!Asignado) Then
+  If Not IsNull(rs!ASIGNADO) Then
      itmX.Checked = True
   End If
   rs.MoveNext

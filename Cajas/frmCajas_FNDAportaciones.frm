@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCajas_FNDAportaciones 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -56,7 +56,7 @@ Begin VB.Form frmCajas_FNDAportaciones
       TabIndex        =   10
       Top             =   4320
       Width           =   9492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16743
       _ExtentY        =   2773
       _StockProps     =   79
@@ -70,7 +70,7 @@ Begin VB.Form frmCajas_FNDAportaciones
          TabIndex        =   11
          Top             =   240
          Width           =   2772
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4895
          _ExtentY        =   582
          _StockProps     =   77
@@ -96,7 +96,7 @@ Begin VB.Form frmCajas_FNDAportaciones
          TabIndex        =   12
          Top             =   240
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -121,7 +121,7 @@ Begin VB.Form frmCajas_FNDAportaciones
          TabIndex        =   13
          Top             =   600
          Width           =   5412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9546
          _ExtentY        =   1397
          _StockProps     =   77
@@ -147,12 +147,12 @@ Begin VB.Form frmCajas_FNDAportaciones
          TabIndex        =   14
          Top             =   600
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1508
          _ExtentY        =   1397
          _StockProps     =   79
          Caption         =   "Pago"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -164,7 +164,7 @@ Begin VB.Form frmCajas_FNDAportaciones
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmCajas_FNDAportaciones.frx":05EE
+         Picture         =   "frmCajas_FNDAportaciones.frx":0634
          TextImageRelation=   1
       End
       Begin XtremeSuiteControls.PushButton btnCajas 
@@ -174,12 +174,12 @@ Begin VB.Form frmCajas_FNDAportaciones
          TabIndex        =   15
          Top             =   600
          Width           =   852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   1397
          _StockProps     =   79
          Caption         =   "Aplicar"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -191,7 +191,7 @@ Begin VB.Form frmCajas_FNDAportaciones
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmCajas_FNDAportaciones.frx":0A9B
+         Picture         =   "frmCajas_FNDAportaciones.frx":0AE1
          TextImageRelation=   1
       End
       Begin XtremeSuiteControls.PushButton btnCajas 
@@ -201,12 +201,12 @@ Begin VB.Form frmCajas_FNDAportaciones
          TabIndex        =   16
          Top             =   600
          Width           =   972
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   1397
          _StockProps     =   79
          Caption         =   "Cancelar"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -218,8 +218,34 @@ Begin VB.Form frmCajas_FNDAportaciones
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmCajas_FNDAportaciones.frx":1273
+         Picture         =   "frmCajas_FNDAportaciones.frx":12B9
          TextImageRelation=   1
+      End
+      Begin XtremeSuiteControls.CheckBox chkReciboDigital 
+         Height          =   255
+         Left            =   7080
+         TabIndex        =   31
+         ToolTipText     =   "Enviar Recibo Digital"
+         Top             =   240
+         Width           =   1935
+         _Version        =   1572864
+         _ExtentX        =   3408
+         _ExtentY        =   444
+         _StockProps     =   79
+         Caption         =   "Recibo Digital?"
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Enabled         =   0   'False
+         UseVisualStyle  =   -1  'True
+         Appearance      =   16
       End
       Begin VB.Label Label3 
          BackStyle       =   0  'Transparent
@@ -285,7 +311,7 @@ Begin VB.Form frmCajas_FNDAportaciones
       TabIndex        =   20
       Top             =   240
       Width           =   5292
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9334
       _ExtentY        =   550
       _StockProps     =   77
@@ -309,7 +335,7 @@ Begin VB.Form frmCajas_FNDAportaciones
       TabIndex        =   21
       Top             =   240
       Width           =   1692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   550
       _StockProps     =   77
@@ -333,7 +359,7 @@ Begin VB.Form frmCajas_FNDAportaciones
       TabIndex        =   22
       Top             =   3480
       Width           =   1692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   550
       _StockProps     =   77
@@ -359,7 +385,7 @@ Begin VB.Form frmCajas_FNDAportaciones
       TabIndex        =   23
       Top             =   3840
       Width           =   1692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   550
       _StockProps     =   77
@@ -388,7 +414,7 @@ Begin VB.Form frmCajas_FNDAportaciones
       Top             =   3720
       Visible         =   0   'False
       Width           =   1452
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   868
       _StockProps     =   79
@@ -404,7 +430,7 @@ Begin VB.Form frmCajas_FNDAportaciones
          Strikethrough   =   0   'False
       EndProperty
       Appearance      =   16
-      Picture         =   "frmCajas_FNDAportaciones.frx":1A40
+      Picture         =   "frmCajas_FNDAportaciones.frx":1A86
    End
    Begin XtremeSuiteControls.FlatEdit txtContrato 
       Height          =   315
@@ -412,7 +438,7 @@ Begin VB.Form frmCajas_FNDAportaciones
       TabIndex        =   25
       Top             =   960
       Width           =   1695
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   550
       _StockProps     =   77
@@ -437,7 +463,7 @@ Begin VB.Form frmCajas_FNDAportaciones
       TabIndex        =   26
       Top             =   1680
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   556
       _StockProps     =   77
@@ -462,7 +488,7 @@ Begin VB.Form frmCajas_FNDAportaciones
       TabIndex        =   27
       Top             =   1320
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   556
       _StockProps     =   77
@@ -487,7 +513,7 @@ Begin VB.Form frmCajas_FNDAportaciones
       TabIndex        =   28
       Top             =   1320
       Width           =   4935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8705
       _ExtentY        =   556
       _StockProps     =   77
@@ -511,7 +537,7 @@ Begin VB.Form frmCajas_FNDAportaciones
       TabIndex        =   29
       Top             =   1680
       Width           =   4935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8705
       _ExtentY        =   556
       _StockProps     =   77
@@ -535,7 +561,7 @@ Begin VB.Form frmCajas_FNDAportaciones
       TabIndex        =   30
       Top             =   3840
       Width           =   855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1508
       _ExtentY        =   556
       _StockProps     =   77
@@ -775,10 +801,20 @@ Select Case Index
         End If
         
         ModuloCajas.mServicio = "Fondos: Aportaciones"
+        ModuloCajas.mProductoCodigo = gFondos.Plan
+        ModuloCajas.mProductoNumero = gFondos.Contrato
         
         Call sbFormsCall("frmCajas_DetallePago", vbModal, 0, 0, False, Me)
         
         txtTotalCajas.Text = Format(ModuloCajas.mTotalDetallado, "Standard")
+        
+        If ModuloCajas.mReciboDigital Then
+            chkReciboDigital.Enabled = True
+            chkReciboDigital.Value = xtpChecked
+        Else
+            chkReciboDigital.Enabled = False
+            chkReciboDigital.Value = xtpUnchecked
+        End If
 
   Case 1  'Aplicar
     Call CmdAplicar_Click
@@ -807,7 +843,7 @@ Dim curMonto As Currency, i As Integer, vTipo As String
 Dim vCuentaFND As String, vConcepto As String
 Dim vCuentaRendi As String, strDivisa As String, pTipoCambio As Currency
 
-
+Dim vIBAN As String
 
 vConcepto = vConcepto & vPlan & " OP:" & vOperadora & " CNT:" & vContrato
 
@@ -821,33 +857,41 @@ rs.Open "select cuenta_conta,cuenta_rendimiento from fnd_planes where cod_operad
 rs.Close
 
 
-strSQL = "Select F.Aportes,F.Rendimiento, S.Cedula,S.Nombre From Fnd_Contratos F inner join Socios S on F.cedula = S.cedula " _
-         & "Where F.cod_operadora = " & vOperadora & " and F.cod_plan='" & vPlan & "' and F.cod_contrato=" & vContrato
+strSQL = "Select F.Aportes, F.Rendimiento, S.Cedula, S.Nombre, F.CUENTA_IBAN" _
+       & " From Fnd_Contratos F inner join Socios S on F.cedula = S.cedula" _
+       & " Where F.cod_operadora = " & vOperadora & " and F.cod_plan='" & vPlan & "' and F.cod_contrato=" & vContrato
          
 Call OpenRecordSet(rs, strSQL)
   If rs.EOF = False Then
-     curMonto = IIf(IsNull(rs!APORTES), 0, rs!APORTES) + IIf(IsNull(rs!Rendimiento), 0, rs!Rendimiento)
+     curMonto = IIf(IsNull(rs!Aportes), 0, rs!Aportes) + IIf(IsNull(rs!Rendimiento), 0, rs!Rendimiento)
+     vIBAN = rs!Cuenta_IBAN & ""
   End If
 rs.Close
 
-strLinea(1) = "MNT. ANTERIOR   : " & SIFGlobal.fxStringRelleno(Format(curMonto, "Standard"), "I", pCharRelleno, 20)
+'strLinea(1) = "MNT. ANTERIOR   : " & SIFGlobal.fxStringRelleno(Format(curMonto, "Standard"), "I", pCharRelleno, 20)
+'strLinea(4) = "MNT. ACTUAL     : " & SIFGlobal.fxStringRelleno(Format(curMonto + pAportes + pRendimiento, "Standard"), "I", pCharRelleno, 20)
+
+strLinea(1) = ""
 strLinea(2) = "APORTE APLICADO : " & SIFGlobal.fxStringRelleno(Format(pAportes, "Standard"), "I", pCharRelleno, 20)
 strLinea(3) = "RENDI. APLICADO : " & SIFGlobal.fxStringRelleno(Format(pRendimiento, "Standard"), "I", pCharRelleno, 20)
-strLinea(4) = "MNT. ACTUAL     : " & SIFGlobal.fxStringRelleno(Format(curMonto + pAportes + pRendimiento, "Standard"), "I", pCharRelleno, 20)
+strLinea(4) = ""
+
 strLinea(5) = "DIVISA : " & strDivisa
 strLinea(6) = "[Plan.:" & vPlan & " Cnt.:" & vContrato & "]"
 strLinea(7) = "[Operadora.: " & txtOperadora.Text & "]"
+strLinea(8) = "[" & vIBAN & "]"
+
 
 'Control de Documentos v2
 strSQL = "insert SIF_TRANSACCIONES(COD_TRANSACCION,TIPO_DOCUMENTO,REGISTRO_FECHA,REGISTRO_USUARIO,Cliente_IDENTIFICACION,CLIENTE_NOMBRE" _
         & ",cod_concepto,monto,estado,Referencia_01,Referencia_02,cod_oficina" _
-        & ",linea1,linea2,linea3,linea4,linea5,linea6,linea7, detalle,documento,cod_caja,cod_apertura)" _
+        & ",linea1,linea2,linea3,linea4,linea5,linea6,linea7,linea8, detalle,documento,cod_caja,cod_apertura, id_sesion)" _
         & " values('" & vNumDoc & "','" & vTipoDoc & "',dbo.MyGetdate(),'" & glogon.Usuario & "','" & txtCedula.Text _
         & "','" & Trim(txtNombre.Text) & "','" & pConcepto & "'," & CCur(pAportes + pRendimiento) & ",'P','" & vPlan _
         & "','" & gFondos.Contrato & "','" & ModuloCajas.mOficina & "','" & strLinea(1) & "','" _
         & strLinea(2) & "','" & strLinea(3) & "','" & strLinea(4) & "','" _
-        & strLinea(5) & "','" & strLinea(6) & "','" & strLinea(7) & "','" _
-        & txtNotas.Text & "','" & vAseDocDeposito & "','" & ModuloCajas.mCaja & "'," & ModuloCajas.mApertura & ")"
+        & strLinea(5) & "','" & strLinea(6) & "','" & strLinea(7) & "','" & strLinea(8) & "','" _
+        & txtNotas.Text & "','" & vAseDocDeposito & "','" & ModuloCajas.mCaja & "'," & ModuloCajas.mApertura & ", " & ModuloCajas.mSesionId & ")"
 'Call ConectionExecute(strSQL)
 
 
@@ -915,6 +959,11 @@ If fxCajasAperturaEstado = "C" Then
    Exit Sub
 End If
 
+If CCur(txtAporte.Text) <> CCur(txtTotalCajas.Text) Then
+  MsgBox "El Monto en Cajas es diferente al Aporte a Registrar, verifique...", vbExclamation
+  Exit Sub
+End If
+
  
 If fxFndParametro("01.1") = "S" Then
    strSQL = "exec spFndSeguridad_ApAnul " & gFondos.Operadora & ",'" & gFondos.Plan & "','" & glogon.Usuario & "'"
@@ -926,6 +975,22 @@ If fxFndParametro("01.1") = "S" Then
 End If
      
  
+ 'Cajas: Validación General sobre el Estado de la Caja, Aperturas, Sesiones, y Accesos
+ With ModuloCajas
+     strSQL = "exec spCajas_Transac_Validacion '" & .mCaja & "', '" & glogon.Usuario & "', " & .mApertura & ", " & .mSesionId _
+            & ", 'Fnd', '" & Trim(gFondos.Plan) & "', " & CCur(txtTotalCajas.Text) & ", '" & .mTiquete & "'"
+ End With
+ 
+ Call OpenRecordSet(rs, strSQL)
+ 
+ If Len(rs!Advertencias) > 0 Then
+    MsgBox rs!Advertencias, vbExclamation, "Advertencias!"
+ End If
+ 
+ If Len(rs!Validacion) > 0 Then
+    MsgBox rs!Validacion, vbExclamation
+    Exit Sub
+ End If
  
  
  'El aporte es igual a la recaudacion
@@ -956,11 +1021,11 @@ End If
  
  If txtAporte.Locked Then
   For i = 1 To vGrid.MaxRows
-     vGrid.col = 4
+     vGrid.Col = 4
      vGrid.Row = i
      
      curMonto = CCur(vGrid.Text)
-     vGrid.col = 1
+     vGrid.Col = 1
      If curMonto > 0 Then
      
         strSQL = strSQL & Space(10) & "Insert into fnd_SubCuentas_detalle(idx,Cod_operadora,Cod_plan,Cod_Contrato," _
@@ -991,10 +1056,23 @@ End If
  
  Call Bitacora("Registra", vTipoDoc & " Ope:" & gFondos.Operadora & " Plan:" & Trim(gFondos.Plan) & " Cont:" & Trim(txtContrato) & " Monto:" & Trim(txtAporte))
  
- Call sbImprimeRecibo(vNumDoc, vTipoDoc)
- 
+
+If chkReciboDigital.Enabled And chkReciboDigital.Value = xtpChecked Then
+    strSQL = "exec spCajasReciboDigital '" & vNumDoc & "', '" & vTipoDoc & "', 'Fondos'"
+    Call ConectionExecute(strSQL)
+    
+    strSQL = ">>> Recibo Digital enviado al cliente <<<" & vbCrLf _
+        & " - Aporte aplicado, con : " & cboTipoDoc.Text & " ...No.: " & vNumDoc & vbCrLf _
+        & " - Desea Realizar Otra Transacción a Este Contrato ?"
+
+Else
+    Call sbImprimeRecibo(vNumDoc, vTipoDoc)
+
  strSQL = " - Aporte aplicado, con : " & cboTipoDoc.Text & " ...No.: " & vNumDoc & vbCrLf _
         & " - Desea Realizar Otra Transacción a Este Contrato ?"
+
+End If
+Me.MousePointer = vbDefault
  
  i = MsgBox(strSQL, vbYesNo)
  If i = vbYes Then
@@ -1039,6 +1117,7 @@ Me.Caption = "Aportes a Fondos       ¦ Caja .: " & ModuloCajas.mCaja _
            & "   Apertura .: " & ModuloCajas.mApertura & "     Usuario.: " & ModuloCajas.mUsuario
 
 ModuloCajas.mTiquete = Trim(gFondos.Plan) & "." & gFondos.Contrato & "." & Format(Time, "HH:mm:ss")
+ModuloCajas.mReciboDigital = False
 
 If ModuloCajas.mDivisa = "" Then
     ModuloCajas.mDivisa = "COL"
@@ -1051,6 +1130,17 @@ strSQL = "select rTrim(C.tipo_documento) as 'IdX', rtrim(D.Descripcion) as 'itmX
        & " Where C.cod_caja =  '" & ModuloCajas.mCaja & "' and D.Tipo_Movimiento in('A','D')" _
        & " order by C.tipo_documento"
 Call sbCbo_Llena_New(cboTipoDoc, strSQL, False, True)
+
+
+If ModuloCajas.mSesionId = 0 Or ModuloCajas.mClienteId <> ModuloCajas.mSesionCedula Then
+   Call sbFormsCall("frmCajas_Sesion", vbModal, , , False, Me)
+   If ModuloCajas.mSesionId = 0 Then
+        MsgBox "No se ha iniciado ninguna sesión de Cliente para esta caja!", vbExclamation
+        Unload Me
+        Exit Sub
+   End If
+End If
+
 End Sub
 
 
@@ -1083,6 +1173,11 @@ txtAporte.Locked = False
 ModuloCajas.mTiquete = Trim(gFondos.Plan) & "." & gFondos.Contrato & "." & Format(Time, "HH:mm:ss")
 ModuloCajas.mTotalDetallado = 0
 txtTotalCajas.Text = 0
+
+ModuloCajas.mReciboDigital = False
+chkReciboDigital.Value = xtpUnchecked
+chkReciboDigital.Enabled = False
+
 
 vGrid.MaxRows = 0
 
@@ -1118,9 +1213,9 @@ Call OpenRecordSet(rs, strSQL)
  txtEstado.Text = IIf((rs!Estado = "A"), "Activo", "Liquidado")
  txtMensualidad.Text = Format(rs!Monto, "Standard")
  
- If rs!tipo_cdp = 1 Then
+ If rs!TIPO_CDP = 1 Then
     txtAporte.Locked = True
-    If rs!APORTES = 0 Then
+    If rs!Aportes = 0 Then
        txtAporte = Format(rs!Inversion, "Standard")
     End If
  End If
@@ -1165,11 +1260,29 @@ End Sub
 
 
 
+Private Sub Form_Unload(Cancel As Integer)
+
+ModuloCajas.mProductoCodigo = ""
+ModuloCajas.mProductoNumero = 0
+
+
+'Mantiene o no la Sesion
+If ModuloCajas.mSesionId > 0 Then
+   Call sbFormsCall("frmCajas_Sesion", vbModal, , , False, Me)
+End If
+
+
+
+End Sub
+
 Private Sub TimerX_Timer()
 TimerX.Enabled = False
 TimerX.Interval = 0
 
 Call sbCajaInicial
+
+
+
 End Sub
 
 
@@ -1201,13 +1314,13 @@ If KeyCode = vbKeyReturn Or KeyCode = vbKeyTab Then txtAporte.SetFocus
 End Sub
 
 
-Private Sub vGrid_LeaveCell(ByVal col As Long, ByVal Row As Long, ByVal NewCol As Long, ByVal NewRow As Long, Cancel As Boolean)
+Private Sub vGrid_LeaveCell(ByVal Col As Long, ByVal Row As Long, ByVal NewCol As Long, ByVal NewRow As Long, Cancel As Boolean)
 Dim i As Integer, curMonto As Currency
 
-If col = 4 Then
+If Col = 4 Then
  curMonto = 0
  For i = 1 To vGrid.MaxRows
-   vGrid.col = 4
+   vGrid.Col = 4
    vGrid.Row = i
    curMonto = curMonto + CCur(vGrid.Text)
  Next i

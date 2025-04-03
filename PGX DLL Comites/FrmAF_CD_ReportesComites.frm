@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Begin VB.Form frmAF_CD_ReportesComites 
    Appearance      =   0  'Flat
@@ -23,7 +23,7 @@ Begin VB.Form frmAF_CD_ReportesComites
       TabIndex        =   10
       Top             =   5280
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2778
       _ExtentY        =   873
       _StockProps     =   79
@@ -43,7 +43,7 @@ Begin VB.Form frmAF_CD_ReportesComites
       ImageAlignment  =   4
    End
    Begin MSComctlLib.ImageList ImageList1 
-      Left            =   4680
+      Left            =   4200
       Top             =   5640
       _ExtentX        =   1005
       _ExtentY        =   1005
@@ -101,7 +101,7 @@ Begin VB.Form frmAF_CD_ReportesComites
       EndProperty
    End
    Begin MSComctlLib.ImageList imgArbol 
-      Left            =   5280
+      Left            =   4800
       Top             =   5640
       _ExtentX        =   1005
       _ExtentY        =   1005
@@ -160,7 +160,7 @@ Begin VB.Form frmAF_CD_ReportesComites
       TabIndex        =   7
       Top             =   2400
       Width           =   1455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   582
       _StockProps     =   68
@@ -182,7 +182,7 @@ Begin VB.Form frmAF_CD_ReportesComites
       TabIndex        =   8
       Top             =   2400
       Width           =   1455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   582
       _StockProps     =   68
@@ -204,7 +204,7 @@ Begin VB.Form frmAF_CD_ReportesComites
       TabIndex        =   13
       Top             =   1800
       Width           =   2895
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5106
       _ExtentY        =   582
       _StockProps     =   77
@@ -228,9 +228,10 @@ Begin VB.Form frmAF_CD_ReportesComites
       Height          =   330
       Left            =   5520
       TabIndex        =   14
-      Top             =   3120
+      Top             =   4320
+      Visible         =   0   'False
       Width           =   4335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7646
       _ExtentY        =   582
       _StockProps     =   77
@@ -254,9 +255,9 @@ Begin VB.Form frmAF_CD_ReportesComites
       Height          =   330
       Left            =   5520
       TabIndex        =   15
-      Top             =   3600
+      Top             =   3000
       Width           =   4335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7646
       _ExtentY        =   582
       _StockProps     =   77
@@ -280,9 +281,9 @@ Begin VB.Form frmAF_CD_ReportesComites
       Height          =   330
       Left            =   5520
       TabIndex        =   16
-      Top             =   4080
+      Top             =   3480
       Width           =   4335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7646
       _ExtentY        =   582
       _StockProps     =   77
@@ -306,9 +307,9 @@ Begin VB.Form frmAF_CD_ReportesComites
       Height          =   330
       Left            =   5520
       TabIndex        =   17
-      Top             =   4560
+      Top             =   3960
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3201
       _ExtentY        =   582
       _StockProps     =   77
@@ -328,13 +329,38 @@ Begin VB.Form frmAF_CD_ReportesComites
       UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
+   Begin XtremeSuiteControls.PushButton btnInformeEspecial 
+      Height          =   495
+      Left            =   5520
+      TabIndex        =   18
+      Top             =   5280
+      Width           =   2415
+      _Version        =   1572864
+      _ExtentX        =   4260
+      _ExtentY        =   873
+      _StockProps     =   79
+      Caption         =   "Informe Especial de Antiguedad"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   17
+      Picture         =   "FrmAF_CD_ReportesComites.frx":B243
+      ImageAlignment  =   4
+   End
    Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption1 
       Height          =   375
       Left            =   0
       TabIndex        =   12
       Top             =   1320
       Width           =   4215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7435
       _ExtentY        =   661
       _StockProps     =   14
@@ -356,7 +382,7 @@ Begin VB.Form frmAF_CD_ReportesComites
       TabIndex        =   11
       Top             =   1320
       Width           =   5895
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   10398
       _ExtentY        =   661
       _StockProps     =   14
@@ -407,7 +433,7 @@ Begin VB.Form frmAF_CD_ReportesComites
       Index           =   5
       Left            =   4320
       TabIndex        =   6
-      Top             =   4080
+      Top             =   3480
       Width           =   1215
    End
    Begin VB.Label Label1 
@@ -424,7 +450,7 @@ Begin VB.Form frmAF_CD_ReportesComites
       EndProperty
       Height          =   255
       Index           =   1
-      Left            =   4245
+      Left            =   4365
       TabIndex        =   5
       Top             =   2400
       Width           =   1335
@@ -443,7 +469,7 @@ Begin VB.Form frmAF_CD_ReportesComites
       EndProperty
       Height          =   255
       Index           =   0
-      Left            =   4245
+      Left            =   4365
       TabIndex        =   4
       Top             =   1800
       Width           =   1335
@@ -464,7 +490,7 @@ Begin VB.Form frmAF_CD_ReportesComites
       Index           =   4
       Left            =   4320
       TabIndex        =   3
-      Top             =   4560
+      Top             =   3960
       Width           =   975
    End
    Begin VB.Label Label1 
@@ -481,9 +507,9 @@ Begin VB.Form frmAF_CD_ReportesComites
       EndProperty
       Height          =   255
       Index           =   3
-      Left            =   4245
+      Left            =   4365
       TabIndex        =   2
-      Top             =   3600
+      Top             =   3000
       Width           =   975
    End
    Begin VB.Label Label1 
@@ -500,9 +526,10 @@ Begin VB.Form frmAF_CD_ReportesComites
       EndProperty
       Height          =   255
       Index           =   14
-      Left            =   4245
+      Left            =   4365
       TabIndex        =   1
-      Top             =   3120
+      Top             =   4320
+      Visible         =   0   'False
       Width           =   975
    End
    Begin VB.Image imgBanner 
@@ -548,12 +575,15 @@ If Right(Node.Key, 1) = "Z" Then
        cboTipo.Clear
        cboTipo.AddItem "Detallado"
        cboTipo.Text = "Detallado"
-       dtpInicio.Enabled = False
-       dtpCorte.Enabled = False
+       
+       
+       dtpInicio.Enabled = True
+       dtpCorte.Enabled = True
        
      Case "HIST"
-       cboEstado.Enabled = False
-       cboEstado.Enabled = False
+       cboTipo.Clear
+       cboTipo.AddItem "Detallado"
+       cboTipo.Text = "Detallado"
        cboComite.Enabled = True
        cboPromotores.Enabled = False
        
@@ -589,8 +619,28 @@ vError:
 
 End Sub
 
+Private Sub btnInformeEspecial_Click()
+Call sbFormsCall("frmAF_CD_InformeEspecial", , , , False, Me)
+
+End Sub
+
 Private Sub btnReporte_Click()
 Call sbReporte
+End Sub
+
+
+
+Private Sub cboComite_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = vbKeyF4 Then
+       gBusquedas.Columna = "Descripcion"
+       gBusquedas.Orden = "descripcion"
+       gBusquedas.Consulta = "select COD_COMITE, DESCRIPCION from AFI_CD_COMITES"
+       gBusquedas.Filtro = " AND ACTIVO = 1"
+       frmBusquedas.Show vbModal
+       If gBusquedas.Resultado <> "" Then
+         Call sbCboAsignaDato(cboComite, gBusquedas.Resultado2, True, gBusquedas.Resultado)
+       End If
+End If
 End Sub
 
 Private Sub Form_Load()
@@ -728,19 +778,28 @@ With frmContenedor.Crt
        .Formulas(0) = "fxTitulo= 'MIEMBROS DE COMITES'"
      
      Case "Miembros por Comites"
-       vTitulo = UCase(lblReporte.Caption & ": " & cboTipo.Text)
-       vSubTitulo = UCase("Comités y Delegados, Fecha de Corte : " & Format(dtpCorte.Value, "dd/MM/yyyy"))
+       vTitulo = UCase(lblReporte.Caption & ": " & cboTipo.Text) & " Estado: " & cboEstado.Text
+       
+       vSubTitulo = "Comités y Delegados, Fechas : " & Format(dtpInicio.Value, "dd/MM/yyyy") & " al " & Format(dtpCorte.Value, "dd/MM/yyyy")
+       
+       
        
        .WindowTitle = "Reporte de los Miembros del Comité"
        .ReportFileName = SIFGlobal.fxPathReportes("Comites_ListadoMiembrosComite.rpt")
        .Formulas(0) = "fxTitulo = '" & vTitulo & "'"
        .Formulas(4) = "fxSubtitulo = '" & vSubTitulo & "'"
+       
        If cboComite.Text <> "TODOS" Then
          strSQL = "{AFI_CD_NOMBRAMIENTOS.COD_COMITE} = '" & cboComite.ItemData(cboComite.ListIndex) & "'"
          strSQL = strSQL & " and {AFI_CD_NOMBRAMIENTOS.ACTIVO} = " & cboEstado.ItemData(cboEstado.ListIndex) & ""
        Else
          strSQL = " {AFI_CD_NOMBRAMIENTOS.ACTIVO} = " & cboEstado.ItemData(cboEstado.ListIndex) & ""
        End If
+       
+         strSQL = strSQL & " AND {AFI_CD_NOMBRAMIENTOS.FECHA_ELECCION} in Date(" & Format(dtpInicio.Value, "yyyy,mm,dd") _
+                   & ") to Date(" & Format(dtpCorte.Value, "yyyy,mm,dd") & ")"
+       
+       
        .SelectionFormula = strSQL
        
      Case "Actividades Asignadas"
@@ -755,17 +814,23 @@ With frmContenedor.Crt
      Case "Comites x Promotor"
        .WindowTitle = "Comites x Promotor"
        .ReportFileName = SIFGlobal.fxPathReportes("Comites_Comite_Promotor.rpt")
-       .StoredProcParam(0) = SIFGlobal.fxCodText(cboPromotores.Text)
+       .StoredProcParam(0) = cboPromotores.ItemData(cboPromotores.ListIndex)
      
      Case "Historial Miembros"
        .WindowTitle = "Historial Miembros"
        .ReportFileName = SIFGlobal.fxPathReportes("Comites_HistorialNombramientos.rpt")
        
-        If cboComite.Text <> "TODOS" Then
-               .SelectionFormula = "{AFI_CD_NOMBRAMIENTOS_H.COD_COMITE} = '" & cboComite.ItemData(cboComite.ListIndex) & "'"
-        End If
+       If cboComite.Text <> "TODOS" Then
+         strSQL = "{AFI_CD_NOMBRAMIENTOS_H.COD_COMITE} = '" & cboComite.ItemData(cboComite.ListIndex) & "'"
+         strSQL = strSQL & " and {AFI_CD_NOMBRAMIENTOS_H.ACTIVO} = " & cboEstado.ItemData(cboEstado.ListIndex)
+       Else
+         strSQL = " {AFI_CD_NOMBRAMIENTOS_H.ACTIVO} = " & cboEstado.ItemData(cboEstado.ListIndex)
+       End If
+       
        
        .Formulas(0) = "fxTitulo= 'Historico de Miembros de Cómite'"
+       
+       .SelectionFormula = strSQL
        
     'Actividades
      Case "Listado de Actividades"
@@ -799,11 +864,14 @@ With frmContenedor.Crt
         vSubTitulo = UCase("Comités y Delegados, Fecha de Corte : " & Format(dtpCorte.Value, "dd/MM/yyyy"))
 
         .WindowTitle = "Cuentas por Cobrar Comités y Delegados"
+        
         If cboTipo.Text = "Resumen" Then
          .ReportFileName = SIFGlobal.fxPathReportes("Comites_ListadoGeneralResumen.rpt")
         Else
          .ReportFileName = SIFGlobal.fxPathReportes("Comites_ListadoGeneralDetalle.rpt")
         End If
+        
+        
         .Formulas(0) = "fxTitulo = '" & vTitulo & "'"
         .Formulas(4) = "fxSubtitulo = '" & vSubTitulo & "'"
         .StoredProcParam(0) = Format(dtpCorte.Value, "yyyy-MM-dd 23:59:59.000")

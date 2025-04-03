@@ -2,8 +2,8 @@ VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmActivos_Main 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -28,7 +28,7 @@ Begin VB.Form frmActivos_Main
       ToolTipText     =   "Consecutivo Automático"
       Top             =   615
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   661
       _ExtentY        =   556
       _StockProps     =   79
@@ -55,7 +55,7 @@ Begin VB.Form frmActivos_Main
       TabIndex        =   1
       Top             =   1200
       Width           =   10455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18436
       _ExtentY        =   11874
       _StockProps     =   68
@@ -138,14 +138,39 @@ Begin VB.Form frmActivos_Main
       Item(5).ControlCount=   2
       Item(5).Control(0)=   "lswPolizas"
       Item(5).Control(1)=   "scSubTitulos(3)"
-      Begin XtremeSuiteControls.ListView lswPolizas 
+      Begin XtremeSuiteControls.ListView lsw 
+         Height          =   3372
+         Left            =   -69880
+         TabIndex        =   26
+         Top             =   3000
+         Visible         =   0   'False
+         Width           =   10092
+         _Version        =   1572864
+         _ExtentX        =   17801
+         _ExtentY        =   5948
+         _StockProps     =   77
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         View            =   3
+         FullRowSelect   =   -1  'True
+         Appearance      =   17
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.ListView lswMod 
          Height          =   5892
          Left            =   -69880
-         TabIndex        =   29
+         TabIndex        =   27
          Top             =   840
          Visible         =   0   'False
          Width           =   10092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17801
          _ExtentY        =   10393
          _StockProps     =   77
@@ -169,7 +194,7 @@ Begin VB.Form frmActivos_Main
          Top             =   840
          Visible         =   0   'False
          Width           =   10092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17801
          _ExtentY        =   10393
          _StockProps     =   77
@@ -186,14 +211,14 @@ Begin VB.Form frmActivos_Main
          FullRowSelect   =   -1  'True
          Appearance      =   2
       End
-      Begin XtremeSuiteControls.ListView lswMod 
+      Begin XtremeSuiteControls.ListView lswPolizas 
          Height          =   5892
          Left            =   -69880
-         TabIndex        =   27
+         TabIndex        =   29
          Top             =   840
          Visible         =   0   'False
          Width           =   10092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17801
          _ExtentY        =   10393
          _StockProps     =   77
@@ -209,31 +234,6 @@ Begin VB.Form frmActivos_Main
          View            =   3
          FullRowSelect   =   -1  'True
          Appearance      =   2
-      End
-      Begin XtremeSuiteControls.ListView lsw 
-         Height          =   3372
-         Left            =   -69880
-         TabIndex        =   26
-         Top             =   3000
-         Visible         =   0   'False
-         Width           =   10092
-         _Version        =   1441793
-         _ExtentX        =   17801
-         _ExtentY        =   5948
-         _StockProps     =   77
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         View            =   3
-         FullRowSelect   =   -1  'True
-         Appearance      =   17
-         UseVisualStyle  =   0   'False
       End
       Begin FPSpreadADO.fpSpread vGrid 
          Height          =   5895
@@ -270,7 +270,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   4
          Top             =   600
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11028
          _ExtentY        =   550
          _StockProps     =   77
@@ -293,7 +293,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   5
          Top             =   960
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11033
          _ExtentY        =   582
          _StockProps     =   77
@@ -319,7 +319,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   6
          Top             =   1440
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -343,7 +343,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   7
          Top             =   1440
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -367,7 +367,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   8
          Top             =   1800
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -389,7 +389,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   9
          Top             =   1800
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -411,7 +411,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   10
          Top             =   2160
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   582
          _StockProps     =   77
@@ -437,7 +437,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   11
          Top             =   2160
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   77
@@ -463,7 +463,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   12
          Top             =   2160
          Width           =   732
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1291
          _ExtentY        =   582
          _StockProps     =   77
@@ -487,7 +487,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   13
          Top             =   2520
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -511,7 +511,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   14
          Top             =   2520
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -535,7 +535,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   15
          Top             =   3120
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11028
          _ExtentY        =   1609
          _StockProps     =   77
@@ -560,7 +560,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   16
          Top             =   4320
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11033
          _ExtentY        =   582
          _StockProps     =   77
@@ -586,7 +586,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   17
          Top             =   4680
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11033
          _ExtentY        =   582
          _StockProps     =   77
@@ -612,7 +612,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   18
          Top             =   5040
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11033
          _ExtentY        =   582
          _StockProps     =   77
@@ -639,7 +639,7 @@ Begin VB.Form frmActivos_Main
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   6000
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11028
          _ExtentY        =   550
          _StockProps     =   77
@@ -663,7 +663,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   20
          Top             =   6360
          Width           =   6252
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11028
          _ExtentY        =   550
          _StockProps     =   77
@@ -687,7 +687,7 @@ Begin VB.Form frmActivos_Main
          Top             =   600
          Visible         =   0   'False
          Width           =   3372
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5948
          _ExtentY        =   550
          _StockProps     =   77
@@ -712,7 +712,7 @@ Begin VB.Form frmActivos_Main
          Top             =   600
          Visible         =   0   'False
          Width           =   3372
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5948
          _ExtentY        =   550
          _StockProps     =   77
@@ -737,7 +737,7 @@ Begin VB.Form frmActivos_Main
          Top             =   600
          Visible         =   0   'False
          Width           =   3372
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5948
          _ExtentY        =   550
          _StockProps     =   77
@@ -762,7 +762,7 @@ Begin VB.Form frmActivos_Main
          Top             =   1320
          Visible         =   0   'False
          Width           =   10092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17801
          _ExtentY        =   1609
          _StockProps     =   77
@@ -788,7 +788,7 @@ Begin VB.Form frmActivos_Main
          Top             =   504
          Visible         =   0   'False
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3413
          _ExtentY        =   582
          _StockProps     =   77
@@ -814,7 +814,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   57
          Top             =   5400
          Width           =   6255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   11033
          _ExtentY        =   582
          _StockProps     =   77
@@ -841,7 +841,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   58
          Top             =   5400
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -866,7 +866,7 @@ Begin VB.Form frmActivos_Main
          Top             =   480
          Visible         =   0   'False
          Width           =   10092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17801
          _ExtentY        =   656
          _StockProps     =   14
@@ -892,7 +892,7 @@ Begin VB.Form frmActivos_Main
          Top             =   480
          Visible         =   0   'False
          Width           =   10092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17801
          _ExtentY        =   656
          _StockProps     =   14
@@ -918,7 +918,7 @@ Begin VB.Form frmActivos_Main
          Top             =   480
          Visible         =   0   'False
          Width           =   10092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17801
          _ExtentY        =   656
          _StockProps     =   14
@@ -944,7 +944,7 @@ Begin VB.Form frmActivos_Main
          Top             =   480
          Visible         =   0   'False
          Width           =   10092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17801
          _ExtentY        =   656
          _StockProps     =   14
@@ -970,7 +970,7 @@ Begin VB.Form frmActivos_Main
          Top             =   2640
          Visible         =   0   'False
          Width           =   2412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4254
          _ExtentY        =   444
          _StockProps     =   79
@@ -995,7 +995,7 @@ Begin VB.Form frmActivos_Main
          Top             =   1080
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1020,7 +1020,7 @@ Begin VB.Form frmActivos_Main
          Top             =   360
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1045,7 +1045,7 @@ Begin VB.Form frmActivos_Main
          Top             =   360
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1070,7 +1070,7 @@ Begin VB.Form frmActivos_Main
          Top             =   360
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1094,7 +1094,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   45
          Top             =   2520
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1118,7 +1118,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   44
          Top             =   2160
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1142,7 +1142,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   43
          Top             =   1800
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1166,7 +1166,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   42
          Top             =   1440
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1190,7 +1190,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   41
          Top             =   6360
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1214,7 +1214,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   40
          Top             =   6000
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1238,7 +1238,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   39
          Top             =   5040
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1262,7 +1262,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   38
          Top             =   4680
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1286,7 +1286,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   37
          Top             =   4320
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1310,7 +1310,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   36
          Top             =   3120
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1334,7 +1334,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   35
          Top             =   2520
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1358,7 +1358,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   34
          Top             =   2160
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1382,7 +1382,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   33
          Top             =   1800
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1406,7 +1406,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   32
          Top             =   1440
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1430,7 +1430,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   31
          Top             =   960
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1454,7 +1454,7 @@ Begin VB.Form frmActivos_Main
          TabIndex        =   30
          Top             =   600
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1567,7 +1567,7 @@ Begin VB.Form frmActivos_Main
       TabIndex        =   3
       Top             =   600
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   767
       _StockProps     =   77
@@ -1593,7 +1593,7 @@ Begin VB.Form frmActivos_Main
       ToolTipText     =   "Nuevo"
       Top             =   0
       Width           =   1095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   582
       _StockProps     =   79
@@ -1622,7 +1622,7 @@ Begin VB.Form frmActivos_Main
       ToolTipText     =   "Editar"
       Top             =   0
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -1650,7 +1650,7 @@ Begin VB.Form frmActivos_Main
       ToolTipText     =   "Eliminar"
       Top             =   0
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -1678,7 +1678,7 @@ Begin VB.Form frmActivos_Main
       ToolTipText     =   "Guardar"
       Top             =   0
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -1706,7 +1706,7 @@ Begin VB.Form frmActivos_Main
       ToolTipText     =   "Deshacer"
       Top             =   0
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -1734,7 +1734,7 @@ Begin VB.Form frmActivos_Main
       ToolTipText     =   "Reporte"
       Top             =   0
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -1761,7 +1761,7 @@ Begin VB.Form frmActivos_Main
       ToolTipText     =   "Número de Placa Alterna"
       Top             =   600
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   767
       _StockProps     =   77
@@ -1785,7 +1785,7 @@ Begin VB.Form frmActivos_Main
       TabIndex        =   56
       Top             =   600
       Width           =   2775
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4895
       _ExtentY        =   450
       _StockProps     =   79
@@ -1810,7 +1810,7 @@ Begin VB.Form frmActivos_Main
       TabIndex        =   55
       Top             =   600
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   656
       _StockProps     =   79
@@ -2342,7 +2342,7 @@ Select Case Item.Index
    Do While Not rs.EOF
      Set itmX = lsw.ListItems.Add(, , rs!Identificacion)
          itmX.SubItems(1) = rs!Nombre
-         itmX.SubItems(2) = rs!registro_fecha & ""
+         itmX.SubItems(2) = rs!Registro_fecha & ""
      rs.MoveNext
    Loop
    rs.Close
@@ -2368,7 +2368,7 @@ Select Case Item.Index
           itmX.SubItems(2) = Format(rs!fecha, "dd/mm/yyyy")
           itmX.SubItems(3) = Format(rs!monto, "Standard")
           itmX.SubItems(4) = rs!Justifica
-          itmX.SubItems(5) = rs!Descripcion
+          itmX.SubItems(5) = rs!descripcion
       rs.MoveNext
     Loop
     rs.Close
@@ -2405,7 +2405,7 @@ Select Case Item.Index
            itmX.SubItems(3) = Format(rs!depreciacion_acum, "Standard")
            itmX.SubItems(4) = Format(rs!DEPRECIACION_MES, "Standard")
            itmX.SubItems(5) = Format(rs!Libros, "Standard")
-           itmX.SubItems(6) = rs!Descripcion
+           itmX.SubItems(6) = rs!descripcion
            itmX.SubItems(7) = rs!fecha
         
         curDepAcum = curDepAcum + rs!depreciacion_acum
@@ -2457,9 +2457,9 @@ Select Case Item.Index
        Set itmX = lswPolizas.ListItems.Add(, , rs!DescTipo)
            itmX.SubItems(1) = rs!num_poliza
            itmX.SubItems(2) = rs!Documento
-           itmX.SubItems(3) = Format(rs!fecha_inicio, "dd/mm/yyyy")
+           itmX.SubItems(3) = Format(rs!fecha_Inicio, "dd/mm/yyyy")
            itmX.SubItems(4) = Format(rs!fecha_vence, "dd/mm/yyyy")
-           itmX.SubItems(5) = rs!Descripcion
+           itmX.SubItems(5) = rs!descripcion
            itmX.SubItems(6) = rs!cod_poliza
        rs.MoveNext
      Loop
@@ -2530,7 +2530,7 @@ If Not rs.BOF And Not rs.EOF Then
     
   vCodigo = rs!num_placa
   txtCodigo = rs!num_placa
-  txtPlacaAlterna.Text = rs!Placa_Alterna & ""
+  txtPlacaAlterna.Text = rs!PLACA_ALTERNA & ""
  
   txtDescripcion = rs!Nombre
   
@@ -2560,7 +2560,7 @@ If Not rs.BOF And Not rs.EOF Then
   dtpAdquisicion.Value = rs!fecha_adquisicion
   dtpInstalacion.Value = rs!fecha_instalacion
   
-  txtNotas = rs!Descripcion
+  txtNotas = rs!descripcion
   
   Call sbCboAsignaDato(cboDepartamento, rs!departamento_Desc, True, rs!Cod_Departamento)
   Call sbCboAsignaDato(cboSeccion, rs!seccion_Desc, True, rs!Cod_Seccion)
@@ -2578,8 +2578,8 @@ If Not rs.BOF And Not rs.EOF Then
   
   tcMain.Item(0).Selected = True
   
-  StatusBarX.Panels(1).Text = rs!registro_usuario & ""
-  StatusBarX.Panels(2).Text = rs!registro_fecha & ""
+  StatusBarX.Panels(1).Text = rs!Registro_Usuario & ""
+  StatusBarX.Panels(2).Text = rs!Registro_fecha & ""
   StatusBarX.Panels(3).Text = rs!depreciacion_periodo & ""
   StatusBarX.Panels(4).Text = Format(rs!depreciacion_acum, "Standard")
   StatusBarX.Panels(5).Text = Format(rs!DEPRECIACION_MES, "Standard")
@@ -2684,7 +2684,7 @@ If vEdita Then
   'Si el Activo no ha depreciado ningun periodo aplicar modificacion total,
   'de lo contrario, solo actualizar los datos descriptivos.
   
-  strSQL = "update Activos_Principal set nombre = '" & Trim(txtDescripcion.Text) & ", Placa_Alterna = '" & txtPlacaAlterna.Text _
+  strSQL = "update Activos_Principal set nombre = '" & Trim(txtDescripcion.Text) & "', Placa_Alterna = '" & txtPlacaAlterna.Text _
          & "', descripcion = '" & txtNotas & "',compra_documento = '" & txtDocCompra & "',cod_proveedor = '" & txtProveedor.Tag _
          & "', num_serie = '" & txtSerie & "',marca = '" & txtMarca & "',modelo ='" & txtModelo _
          & "', otras_senas = '" & txtOtrasSenas & "'"
@@ -2858,8 +2858,8 @@ End If
 If KeyCode = vbKeyF4 Then
     gBusquedas.Columna = "COD_FACTURA"
     gBusquedas.Orden = "COD_FACTURA"
-    gBusquedas.Consulta = "select COD_FACTURA, COD_PROVEEDOR, TOTAL, FECHA, NOTAS " _
-                        & " From CXP_FACTURAS"
+    gBusquedas.Consulta = "select COD_FACTURA, COD_PROVEEDOR, CANTIDAD , REGISTRADOS , PRODUCTO " _
+                        & " From vCxP_Compras_Activos"
     gBusquedas.Filtro = " AND COD_PROVEEDOR = " & txtProveedor.Tag _
                       & " AND YEAR(FECHA) = " & Year(dtpAdquisicion.Value) & " AND MONTH(FECHA) = " & Month(dtpAdquisicion.Value)
     frmBusquedas.Show vbModal

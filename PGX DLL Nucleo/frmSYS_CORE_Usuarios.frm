@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
 Begin VB.Form frmSYS_CORE_Usuarios 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -29,7 +29,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
       TabIndex        =   0
       Top             =   1320
       Width           =   10455
-      _Version        =   1572864
+      _Version        =   1441793
       _ExtentX        =   18441
       _ExtentY        =   9128
       _StockProps     =   68
@@ -69,7 +69,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
          Top             =   360
          Visible         =   0   'False
          Width           =   10455
-         _Version        =   1572864
+         _Version        =   1441793
          _ExtentX        =   18441
          _ExtentY        =   10398
          _StockProps     =   68
@@ -97,7 +97,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
             TabIndex        =   25
             Top             =   360
             Width           =   10455
-            _Version        =   1572864
+            _Version        =   1441793
             _ExtentX        =   18441
             _ExtentY        =   7646
             _StockProps     =   77
@@ -152,7 +152,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
          TabIndex        =   23
          Top             =   600
          Width           =   1095
-         _Version        =   1572864
+         _Version        =   1441793
          _ExtentX        =   1931
          _ExtentY        =   450
          _StockProps     =   79
@@ -176,7 +176,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
          TabIndex        =   1
          Top             =   600
          Width           =   2055
-         _Version        =   1572864
+         _Version        =   1441793
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -200,7 +200,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
          TabIndex        =   2
          Top             =   960
          Width           =   6375
-         _Version        =   1572864
+         _Version        =   1441793
          _ExtentX        =   11239
          _ExtentY        =   550
          _StockProps     =   77
@@ -223,7 +223,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
          TabIndex        =   3
          Top             =   1320
          Width           =   2055
-         _Version        =   1572864
+         _Version        =   1441793
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -247,7 +247,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
          TabIndex        =   4
          Top             =   1680
          Width           =   6375
-         _Version        =   1572864
+         _Version        =   1441793
          _ExtentX        =   11239
          _ExtentY        =   550
          _StockProps     =   77
@@ -271,7 +271,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
          TabIndex        =   5
          Top             =   2040
          Width           =   6375
-         _Version        =   1572864
+         _Version        =   1441793
          _ExtentX        =   11245
          _ExtentY        =   2037
          _StockProps     =   77
@@ -296,7 +296,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
          TabIndex        =   21
          Top             =   3720
          Width           =   9255
-         _Version        =   1572864
+         _Version        =   1441793
          _ExtentX        =   16325
          _ExtentY        =   2355
          _StockProps     =   79
@@ -320,7 +320,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
             TabIndex        =   22
             Top             =   480
             Width           =   3135
-            _Version        =   1572864
+            _Version        =   1441793
             _ExtentX        =   5530
             _ExtentY        =   1085
             _StockProps     =   79
@@ -434,7 +434,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
       TabIndex        =   11
       Top             =   600
       Width           =   855
-      _Version        =   1572864
+      _Version        =   1441793
       _ExtentX        =   1503
       _ExtentY        =   556
       _StockProps     =   79
@@ -470,7 +470,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
       TabIndex        =   13
       Top             =   600
       Width           =   2655
-      _Version        =   1572864
+      _Version        =   1441793
       _ExtentX        =   4683
       _ExtentY        =   767
       _StockProps     =   77
@@ -496,7 +496,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
       ToolTipText     =   "Nuevo"
       Top             =   0
       Width           =   1095
-      _Version        =   1572864
+      _Version        =   1441793
       _ExtentX        =   1926
       _ExtentY        =   582
       _StockProps     =   79
@@ -525,7 +525,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
       ToolTipText     =   "Editar"
       Top             =   0
       Width           =   375
-      _Version        =   1572864
+      _Version        =   1441793
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -553,7 +553,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
       ToolTipText     =   "Eliminar"
       Top             =   0
       Width           =   375
-      _Version        =   1572864
+      _Version        =   1441793
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -581,7 +581,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
       ToolTipText     =   "Guardar"
       Top             =   0
       Width           =   375
-      _Version        =   1572864
+      _Version        =   1441793
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -609,7 +609,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
       ToolTipText     =   "Deshacer"
       Top             =   0
       Width           =   375
-      _Version        =   1572864
+      _Version        =   1441793
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -637,7 +637,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
       ToolTipText     =   "Reporte"
       Top             =   0
       Width           =   375
-      _Version        =   1572864
+      _Version        =   1441793
       _ExtentX        =   656
       _ExtentY        =   582
       _StockProps     =   79
@@ -664,7 +664,7 @@ Begin VB.Form frmSYS_CORE_Usuarios
       TabIndex        =   20
       Top             =   600
       Width           =   855
-      _Version        =   1572864
+      _Version        =   1441793
       _ExtentX        =   1508
       _ExtentY        =   661
       _StockProps     =   79

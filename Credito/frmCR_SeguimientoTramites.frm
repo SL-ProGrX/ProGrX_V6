@@ -2,9 +2,9 @@ VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
 Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "comctl32.Ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
-Object = "{B8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.TaskPanel.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
+Object = "{B8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.TaskPanel.v24.0.0.ocx"
 Begin VB.Form frmCR_SeguimientoTramites 
    BorderStyle     =   1  'Fixed Single
    Caption         =   " Trámite de Crédito"
@@ -25,7 +25,7 @@ Begin VB.Form frmCR_SeguimientoTramites
       TabIndex        =   106
       Top             =   1335
       Width           =   2790
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4921
       _ExtentY        =   12356
       _StockProps     =   64
@@ -35,12 +35,12 @@ Begin VB.Form frmCR_SeguimientoTramites
    End
    Begin XtremeSuiteControls.GroupBox gbReportes 
       Height          =   5055
-      Left            =   11280
+      Left            =   11160
       TabIndex        =   116
       Top             =   1440
       Visible         =   0   'False
       Width           =   5895
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   10398
       _ExtentY        =   8916
       _StockProps     =   79
@@ -53,7 +53,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   117
          Top             =   4320
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   873
          _StockProps     =   79
@@ -78,7 +78,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   118
          Top             =   600
          Width           =   4335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7646
          _ExtentY        =   450
          _StockProps     =   79
@@ -104,11 +104,11 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   119
          Top             =   960
          Width           =   4335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7646
          _ExtentY        =   450
          _StockProps     =   79
-         Caption         =   "Emisión de Garantía"
+         Caption         =   "Emisión de Contrato y Garantía"
          BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -129,7 +129,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   120
          Top             =   1920
          Width           =   4335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7646
          _ExtentY        =   450
          _StockProps     =   79
@@ -154,7 +154,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   121
          Top             =   2280
          Width           =   4335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7646
          _ExtentY        =   450
          _StockProps     =   79
@@ -179,7 +179,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   122
          Top             =   2640
          Width           =   4335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7646
          _ExtentY        =   450
          _StockProps     =   79
@@ -204,7 +204,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   123
          Top             =   3240
          Width           =   4335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7646
          _ExtentY        =   450
          _StockProps     =   79
@@ -229,7 +229,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   124
          Top             =   3600
          Width           =   4335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7646
          _ExtentY        =   450
          _StockProps     =   79
@@ -254,7 +254,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   125
          Top             =   4080
          Width           =   4335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7646
          _ExtentY        =   450
          _StockProps     =   79
@@ -279,7 +279,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   126
          Top             =   1320
          Width           =   4335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7646
          _ExtentY        =   450
          _StockProps     =   79
@@ -304,7 +304,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   127
          Top             =   4320
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   873
          _StockProps     =   79
@@ -329,7 +329,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   4440
          Visible         =   0   'False
          Width           =   3015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5318
          _ExtentY        =   450
          _StockProps     =   79
@@ -354,7 +354,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   129
          Top             =   0
          Width           =   5895
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10398
          _ExtentY        =   661
          _StockProps     =   14
@@ -377,7 +377,7 @@ Begin VB.Form frmCR_SeguimientoTramites
       TabIndex        =   4
       Top             =   1440
       Width           =   8895
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   15690
       _ExtentY        =   12938
       _StockProps     =   68
@@ -469,7 +469,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   120
          Visible         =   0   'False
          Width           =   8532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15049
          _ExtentY        =   4254
          _StockProps     =   77
@@ -496,7 +496,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   120
          Visible         =   0   'False
          Width           =   5652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9970
          _ExtentY        =   5948
          _StockProps     =   77
@@ -523,7 +523,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   600
          Visible         =   0   'False
          Width           =   8532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15049
          _ExtentY        =   10816
          _StockProps     =   77
@@ -549,7 +549,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   137
          Top             =   6480
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -574,7 +574,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   1680
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   868
          _StockProps     =   79
@@ -605,7 +605,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   7
             Top             =   1320
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   582
             _StockProps     =   77
@@ -630,7 +630,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   8
             Top             =   840
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2990
             _ExtentY        =   582
             _StockProps     =   77
@@ -656,7 +656,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   9
             Top             =   840
             Width           =   4455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7858
             _ExtentY        =   582
             _StockProps     =   77
@@ -682,7 +682,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   10
             Top             =   2040
             Width           =   4215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7435
             _ExtentY        =   582
             _StockProps     =   77
@@ -708,7 +708,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   11
             Top             =   2400
             Width           =   4215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7435
             _ExtentY        =   582
             _StockProps     =   77
@@ -734,7 +734,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   12
             Top             =   2880
             Width           =   4215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7435
             _ExtentY        =   582
             _StockProps     =   77
@@ -760,7 +760,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   13
             Top             =   3240
             Width           =   4215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7435
             _ExtentY        =   582
             _StockProps     =   77
@@ -786,7 +786,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   14
             Top             =   3720
             Width           =   4215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7435
             _ExtentY        =   582
             _StockProps     =   77
@@ -812,7 +812,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   15
             Top             =   4080
             Width           =   4215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7435
             _ExtentY        =   582
             _StockProps     =   77
@@ -838,7 +838,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   16
             Top             =   4440
             Width           =   4215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7435
             _ExtentY        =   582
             _StockProps     =   77
@@ -864,7 +864,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   17
             Top             =   3720
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   582
             _StockProps     =   77
@@ -890,7 +890,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   18
             Top             =   4080
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   582
             _StockProps     =   77
@@ -916,7 +916,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   20
             Top             =   120
             Width           =   4455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7853
             _ExtentY        =   550
             _StockProps     =   77
@@ -941,7 +941,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   21
             Top             =   480
             Width           =   4455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7853
             _ExtentY        =   550
             _StockProps     =   77
@@ -966,7 +966,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   22
             Top             =   1320
             Width           =   3732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6583
             _ExtentY        =   550
             _StockProps     =   77
@@ -991,7 +991,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   76
             Top             =   4440
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   68
@@ -1013,7 +1013,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   77
             Top             =   1680
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -1038,7 +1038,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   78
             Top             =   2040
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   77
@@ -1063,7 +1063,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   79
             Top             =   2400
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   77
@@ -1088,7 +1088,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   80
             Top             =   2880
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -1114,7 +1114,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   6
             Top             =   120
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   550
             _StockProps     =   77
@@ -1139,7 +1139,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   19
             Top             =   480
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   550
             _StockProps     =   77
@@ -1164,7 +1164,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   23
             Top             =   1320
             Width           =   504
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   889
             _ExtentY        =   550
             _StockProps     =   77
@@ -1190,7 +1190,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   107
             Top             =   1320
             Width           =   732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   582
             _StockProps     =   77
@@ -1217,7 +1217,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   130
             Top             =   4800
             Width           =   3735
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6583
             _ExtentY        =   550
             _StockProps     =   77
@@ -1242,7 +1242,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   131
             Top             =   4800
             Width           =   510
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   889
             _ExtentY        =   550
             _StockProps     =   77
@@ -1268,7 +1268,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   134
             Top             =   4800
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   68
@@ -1290,7 +1290,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   140
             Top             =   1680
             Width           =   4215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7435
             _ExtentY        =   582
             _StockProps     =   77
@@ -1762,7 +1762,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   45
          Top             =   5280
          Width           =   7215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12726
          _ExtentY        =   1931
          _StockProps     =   77
@@ -1789,7 +1789,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   4080
          Visible         =   0   'False
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   444
          _StockProps     =   79
@@ -1814,7 +1814,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   5640
          Visible         =   0   'False
          Width           =   5415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9546
          _ExtentY        =   1926
          _StockProps     =   79
@@ -1838,7 +1838,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   50
             Top             =   360
             Width           =   3732
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6588
             _ExtentY        =   582
             _StockProps     =   77
@@ -1864,7 +1864,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   82
             Top             =   360
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   550
             _StockProps     =   68
@@ -1886,7 +1886,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   143
             Top             =   720
             Width           =   2655
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4683
             _ExtentY        =   556
             _StockProps     =   77
@@ -1992,7 +1992,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   3720
          Visible         =   0   'False
          Width           =   2652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4678
          _ExtentY        =   5101
          _StockProps     =   79
@@ -2016,7 +2016,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   54
             Top             =   2160
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   1080
             _StockProps     =   79
@@ -2042,7 +2042,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   55
             Top             =   1320
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   444
             _StockProps     =   79
@@ -2068,7 +2068,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   56
             Top             =   1680
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   444
             _StockProps     =   79
@@ -2092,7 +2092,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   83
             Top             =   360
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   550
             _StockProps     =   68
@@ -2115,7 +2115,7 @@ Begin VB.Form frmCR_SeguimientoTramites
             TabIndex        =   133
             Top             =   720
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   556
             _StockProps     =   77
@@ -2182,7 +2182,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   4080
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   77
@@ -2209,7 +2209,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   4800
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -2234,7 +2234,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   5160
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -2259,7 +2259,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   4080
          Visible         =   0   'False
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   582
          _StockProps     =   77
@@ -2284,7 +2284,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   4440
          Visible         =   0   'False
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   444
          _StockProps     =   79
@@ -2309,7 +2309,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   4800
          Visible         =   0   'False
          Width           =   2172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   444
          _StockProps     =   79
@@ -2335,7 +2335,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   3720
          Visible         =   0   'False
          Width           =   4212
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7435
          _ExtentY        =   582
          _StockProps     =   77
@@ -2363,7 +2363,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   2760
          Visible         =   0   'False
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   1080
          _StockProps     =   79
@@ -2389,7 +2389,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   2760
          Visible         =   0   'False
          Width           =   2532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4466
          _ExtentY        =   550
          _StockProps     =   77
@@ -2416,7 +2416,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   2760
          Visible         =   0   'False
          Width           =   2532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4466
          _ExtentY        =   550
          _StockProps     =   77
@@ -2443,7 +2443,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   3120
          Visible         =   0   'False
          Width           =   2532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4466
          _ExtentY        =   550
          _StockProps     =   77
@@ -2470,7 +2470,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   3120
          Visible         =   0   'False
          Width           =   2532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4466
          _ExtentY        =   550
          _StockProps     =   77
@@ -2497,7 +2497,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   3480
          Visible         =   0   'False
          Width           =   2532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4466
          _ExtentY        =   550
          _StockProps     =   77
@@ -2524,7 +2524,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   3480
          Visible         =   0   'False
          Width           =   2532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4466
          _ExtentY        =   550
          _StockProps     =   77
@@ -2551,7 +2551,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   3840
          Visible         =   0   'False
          Width           =   2532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4466
          _ExtentY        =   550
          _StockProps     =   77
@@ -2578,7 +2578,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   3840
          Visible         =   0   'False
          Width           =   2532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4466
          _ExtentY        =   550
          _StockProps     =   77
@@ -2605,7 +2605,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   4320
          Visible         =   0   'False
          Width           =   2532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4466
          _ExtentY        =   550
          _StockProps     =   77
@@ -2632,7 +2632,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   4320
          Visible         =   0   'False
          Width           =   2532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4466
          _ExtentY        =   550
          _StockProps     =   77
@@ -2659,7 +2659,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   4680
          Visible         =   0   'False
          Width           =   5172
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9123
          _ExtentY        =   2350
          _StockProps     =   77
@@ -2687,7 +2687,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   120
          Visible         =   0   'False
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -2713,7 +2713,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   120
          Visible         =   0   'False
          Width           =   5532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9758
          _ExtentY        =   550
          _StockProps     =   77
@@ -2738,7 +2738,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   1080
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -2764,7 +2764,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   4440
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   582
          _StockProps     =   77
@@ -2790,7 +2790,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   138
          Top             =   6480
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -2814,7 +2814,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          TabIndex        =   139
          Top             =   6480
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   556
          _StockProps     =   77
@@ -2840,7 +2840,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   5160
          Visible         =   0   'False
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   444
          _StockProps     =   79
@@ -2921,7 +2921,7 @@ Begin VB.Form frmCR_SeguimientoTramites
          Top             =   120
          Visible         =   0   'False
          Width           =   2892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5101
          _ExtentY        =   635
          _StockProps     =   14
@@ -3471,7 +3471,7 @@ Begin VB.Form frmCR_SeguimientoTramites
       TabIndex        =   3
       Top             =   120
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   656
       _StockProps     =   77
@@ -3588,7 +3588,7 @@ Begin VB.Form frmCR_SeguimientoTramites
       ToolTipText     =   "Nuevo"
       Top             =   990
       Width           =   1095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   550
       _StockProps     =   79
@@ -3615,7 +3615,7 @@ Begin VB.Form frmCR_SeguimientoTramites
       ToolTipText     =   "Editar"
       Top             =   990
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   550
       _StockProps     =   79
@@ -3641,7 +3641,7 @@ Begin VB.Form frmCR_SeguimientoTramites
       ToolTipText     =   "Guardar"
       Top             =   990
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   550
       _StockProps     =   79
@@ -3667,7 +3667,7 @@ Begin VB.Form frmCR_SeguimientoTramites
       ToolTipText     =   "Deshacer"
       Top             =   990
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   550
       _StockProps     =   79
@@ -3693,7 +3693,7 @@ Begin VB.Form frmCR_SeguimientoTramites
       ToolTipText     =   "Reporte"
       Top             =   990
       Width           =   375
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   550
       _StockProps     =   79
@@ -3718,7 +3718,7 @@ Begin VB.Form frmCR_SeguimientoTramites
       ToolTipText     =   "Adjuntar Documentos"
       Top             =   990
       Width           =   495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   873
       _ExtentY        =   582
       _StockProps     =   79
@@ -3741,7 +3741,7 @@ Begin VB.Form frmCR_SeguimientoTramites
       TabIndex        =   108
       Top             =   960
       Width           =   2772
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4890
       _ExtentY        =   656
       _StockProps     =   14
@@ -3763,7 +3763,7 @@ Begin VB.Form frmCR_SeguimientoTramites
       TabIndex        =   75
       Top             =   960
       Width           =   9015
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   15901
       _ExtentY        =   661
       _StockProps     =   14
@@ -4404,17 +4404,17 @@ strSQL = "select cod_contrato,Tasa_Referencia,Aportes, isnull(FECHA_CORTE, getda
 Call OpenRecordSet(rs, strSQL)
 cboFondoContrato.Clear
 Do While Not rs.EOF
-  cboFondoContrato.AddItem "[Cnt: " & rs!COD_Contrato & "] [Tasa: " & rs!Tasa_Referencia & "] [I: " & Format(rs!APORTES, "Standard") _
-        & "] [V: " & Format(rs!Fecha_Corte, "yyyy-mm-dd") & "]"
+  cboFondoContrato.AddItem "[Cnt: " & rs!COD_CONTRATO & "] [Tasa: " & rs!TASA_REFERENCIA & "] [I: " & Format(rs!Aportes, "Standard") _
+        & "] [V: " & Format(rs!fecha_corte, "yyyy-mm-dd") & "]"
 '  cboFondoContrato.ItemData(cboFondoContrato.NewIndex) = rs!cod_contrato
-  cboFondoContrato.ItemData(cboFondoContrato.ListCount - 1) = CStr(rs!COD_Contrato)
+  cboFondoContrato.ItemData(cboFondoContrato.ListCount - 1) = CStr(rs!COD_CONTRATO)
 
   rs.MoveNext
 Loop
 If rs.RecordCount > 0 Then
    rs.MoveFirst
-   cboFondoContrato.Text = "[Cnt: " & rs!COD_Contrato & "] [Tasa: " & rs!Tasa_Referencia & "] [I: " & Format(rs!APORTES, "Standard") _
-        & "] [V: " & Format(rs!Fecha_Corte, "yyyy-mm-dd") & "]"
+   cboFondoContrato.Text = "[Cnt: " & rs!COD_CONTRATO & "] [Tasa: " & rs!TASA_REFERENCIA & "] [I: " & Format(rs!Aportes, "Standard") _
+        & "] [V: " & Format(rs!fecha_corte, "yyyy-mm-dd") & "]"
 End If
 rs.Close
 vPaso = False
@@ -4513,8 +4513,9 @@ Operacion.PlazoBono = 0
 Select Case mGarantiaForm
     Case "F01" 'Sobre Ahorros
         strSQL = "select dbo.fxCrdGarantiaPatMnt('" & txtCedula.Text & "','" & cboGarantia.ItemData(cboGarantia.ListIndex) & "', 'M') as 'Monto'" _
-               & ",dbo.fxCrdTasaBonifica('" & txtCedula.Text & "','" & txtCodigo.Text & "','" & cboGarantia.ItemData(cboGarantia.ListIndex) & "') as 'PtsBono'" _
-               & ",dbo.fxCrdPlazoBonifica('" & txtCedula.Text & "','" & cboGarantia.ItemData(cboGarantia.ListIndex) & "') as 'PlazoBono'"
+               & ", dbo.fxCrdTasaBonifica_New('" & txtCedula.Text & "','" & txtCodigo.Text & "', '" _
+               & cboGarantia.ItemData(cboGarantia.ListIndex) & "', '" & cboDestino.ItemData(cboDestino.ListIndex) & "', " & IIf(txtPlazo.Text = "", 0, txtPlazo.Text) & ") as 'PtsBono'" _
+               & ", dbo.fxCrdPlazoBonifica('" & txtCedula.Text & "','" & cboGarantia.ItemData(cboGarantia.ListIndex) & "') as 'PlazoBono'"
         Call OpenRecordSet(rs, strSQL)
           txtMonto.Text = Format(rs!Monto, "Standard")
           Operacion.TasaPtsBono = rs!PtsBono
@@ -4534,7 +4535,8 @@ Select Case mGarantiaForm
 
     Case "F06" 'Adelanto de Salario
         strSQL = "select dbo.fxCrdDisponibleAdelantoSalario('" & txtCedula.Text & "', 'M') as 'Monto'" _
-               & ",dbo.fxCrdTasaBonifica('" & txtCedula.Text & "','" & txtCodigo.Text & "','" & cboGarantia.ItemData(cboGarantia.ListIndex) & "') as 'PtsBono'" _
+               & ", dbo.fxCrdTasaBonifica_New('" & txtCedula.Text & "','" & txtCodigo.Text & "', '" _
+               & cboGarantia.ItemData(cboGarantia.ListIndex) & "', '" & cboDestino.ItemData(cboDestino.ListIndex) & ", '" & IIf(txtPlazo.Text = "", 0, txtPlazo.Text) & ") as 'PtsBono'" _
                & ",dbo.fxCrdPlazoBonifica('" & txtCedula.Text & "','" & cboGarantia.ItemData(cboGarantia.ListIndex) & "') as 'PlazoBono'"
         Call OpenRecordSet(rs, strSQL)
           txtMonto.Text = Format(rs!Monto, "Standard")
@@ -4548,8 +4550,8 @@ Select Case mGarantiaForm
 
 
     Case Else     'Otras Garantias
-        strSQL = "select dbo.fxCrdTasaBonifica('" & txtCedula.Text & "','" & txtCodigo.Text _
-             & "','" & cboGarantia.ItemData(cboGarantia.ListIndex) & "') as 'PtsBono'" _
+        strSQL = "select dbo.fxCrdTasaBonifica_New('" & txtCedula.Text & "','" & txtCodigo.Text & "', '" _
+               & cboGarantia.ItemData(cboGarantia.ListIndex) & "', '" & cboDestino.ItemData(cboDestino.ListIndex) & "', " & IIf(txtPlazo.Text = "", 0, txtPlazo.Text) & ") as 'PtsBono'" _
              & ",dbo.fxCrdPlazoBonifica('" & txtCedula.Text & "','" & cboGarantia.ItemData(cboGarantia.ListIndex) & "') as 'PlazoBono'"
         Call OpenRecordSet(rs, strSQL)
           Operacion.TasaPtsBono = rs!PtsBono
@@ -5070,6 +5072,7 @@ If Not glogon.error Then
     ''Tags de Seguimiento (Se Aplica desde el Procedure.)
     'Call sbCrdOperacionTags(Operacion.Operacion, Operacion.Codigo, "S09", "", "SGT Anula Formalizacion del Día")
     
+    Call sbTrazabilidad_Inserta("09", txtOperacion.Text, txtOperacion.Text)
     vMensaje = vMensaje & vbCrLf & "...Anulación Realizada Satisfactoriamente..."
     
     Me.MousePointer = vbDefault
@@ -5078,6 +5081,8 @@ If Not glogon.error Then
     End If
     
     If Len(vMensaje) > 0 Then MsgBox vMensaje, vbInformation
+
+
 
 End If 'Aplica sin Error
 
@@ -5709,10 +5714,10 @@ If GLOBALES.SysPlanPagos = 0 Then
     Call OpenRecordSet(rs, strSQL)
     Do While Not rs.EOF
      strSQL = "select isnull(count(*),0) as Existe from creditos_dt where id_solicitud = " _
-            & rs!Id_Solicitud & " and consec > " & rs!consec
+            & rs!ID_SOLICITUD & " and consec > " & rs!CONSEC
      Call OpenRecordSet(rsTmp, strSQL, 0)
         If rsTmp!Existe > 0 Then
-          vMensaje = vMensaje & vbCrLf & "- Existen movimientos realizados a la op:" & rs!Id_Solicitud _
+          vMensaje = vMensaje & vbCrLf & "- Existen movimientos realizados a la op:" & rs!ID_SOLICITUD _
                    & " posterior a su refundicion"
         End If
      rsTmp.Close
@@ -5778,7 +5783,7 @@ lswBusca.ListItems.Clear
 Call OpenRecordSet(rs, strSQL, 0)
 
 Do While Not rs.EOF
- Set itmX = lswBusca.ListItems.Add(, , CStr(rs!Id_Solicitud))
+ Set itmX = lswBusca.ListItems.Add(, , CStr(rs!ID_SOLICITUD))
   itmX.SubItems(1) = rs!Codigo
   itmX.SubItems(2) = rs!Cedula
   itmX.SubItems(3) = rs!Nombre
@@ -5866,7 +5871,7 @@ If vScroll Then
     
     Call OpenRecordSet(rs, strSQL)
     If Not rs.EOF And Not rs.BOF Then
-      txtOperacion = rs!Id_Solicitud
+      txtOperacion = rs!ID_SOLICITUD
       Call sbCargaOperacion
     End If
     rs.Close
@@ -6237,8 +6242,8 @@ strSQL = "select cod_contrato,Tasa_Referencia,Aportes, isnull(Fecha_Corte, getda
        & " where cod_plan = '" & pPlan & "' and cod_contrato = " & pContrato
 Call OpenRecordSet(rs, strSQL)
 If Not rs.EOF And Not rs.BOF Then
-   fxGarantiaFondoContrato = "[Contrato: " & rs!COD_Contrato & "]  [Tasa: " & rs!Tasa_Referencia _
-        & "]  [Inv: " & Format(rs!APORTES, "Standard") & "] [Vence: " & Format(rs!Fecha_Corte, "yyyy-MM-dd") & "]"
+   fxGarantiaFondoContrato = "[Contrato: " & rs!COD_CONTRATO & "]  [Tasa: " & rs!TASA_REFERENCIA _
+        & "]  [Inv: " & Format(rs!Aportes, "Standard") & "] [Vence: " & Format(rs!fecha_corte, "yyyy-MM-dd") & "]"
 End If
 rs.Close
 
@@ -6284,7 +6289,7 @@ If Not rs.EOF And Not rs.BOF Then
  txtCedula.Text = rs!Cedula
  txtNombre.Text = rs!Nombre
  txtCodigo.Text = rs!Codigo
- txtDivisa.Text = rs!COD_DIVISA & ""
+ txtDivisa.Text = rs!cod_Divisa & ""
  
  lblNombre.Caption = txtNombre.Text
  
@@ -6299,7 +6304,7 @@ If Not rs.EOF And Not rs.BOF Then
   imgBullet.Enabled = True
  End If
  
- Operacion.Operacion = rs!Id_Solicitud
+ Operacion.Operacion = rs!ID_SOLICITUD
  Operacion.Cedula = rs!Cedula
  Operacion.Nombre = txtNombre
  Operacion.EstadoSolicitud = rs!estadosol
@@ -6326,7 +6331,7 @@ If Not rs.EOF And Not rs.BOF Then
  
  txtMonto.Text = Format(IIf(IsNull(rs!montosol), 0, rs!montosol), "Standard")
  
- txtObservaciones.Text = IIf(IsNull(rs!observacion), "", rs!observacion)
+ txtObservaciones.Text = IIf(IsNull(rs!Observacion), "", rs!Observacion)
  txtPagare.Text = CStr(IIf(IsNull(rs!pagare), 0, rs!pagare))
  
  dtpFechaFormalizacion.Value = IIf(IsNull(rs!FechaForp), vFecha, rs!FechaForp)
@@ -7038,7 +7043,7 @@ Select Case xItem
           & " Where R.id_solicitudr = " & Operacion.Operacion
    Call OpenRecordSet(rs, strSQL, 0)
    Do While Not rs.EOF
-    Set itmX = lsw.ListItems.Add(, , rs!Id_Solicitud)
+    Set itmX = lsw.ListItems.Add(, , rs!ID_SOLICITUD)
         itmX.SubItems(1) = rs!Codigo
         itmX.SubItems(2) = Format(rs!Monto, "Standard")
         
@@ -7098,7 +7103,7 @@ Select Case xItem
           & " Where R.id_solicitudr = " & Operacion.Operacion
    Call OpenRecordSet(rs, strSQL, 0)
    Do While Not rs.EOF
-    Set itmX = lsw.ListItems.Add(, , rs!Id_Solicitud)
+    Set itmX = lsw.ListItems.Add(, , rs!ID_SOLICITUD)
         itmX.SubItems(1) = rs!Codigo
         itmX.SubItems(2) = Format(rs!Monto, "Standard")
         itmX.SubItems(3) = rs!Descripcion
@@ -7619,8 +7624,20 @@ Select Case ItemId
                         , glogon.Portal_Con, glogon.Portal_User, glogon.Portal_Key, gPortal.Empresa_Id, gPortal.Empresa_Name)
             
             Case "F07" 'Prendas
+            
+                    Operacion.GarantiaTipo = "P" 'Prenda
+                    Operacion.GarantiaId = 0
+                    
+                    Operacion.Expendiente = ""
+                    Operacion.GarantiaParam = "E" 'Estudio
+                    
+                    Operacion.Operacion = txtOperacion.Text
+                    Operacion.GarantiaParam = "C" 'Credito
+                    Operacion.Cedula = Trim(txtCedula.Text)
+            
+            
 '                    If Operacion.EstadoSolicitud = "R" Then
-                      Call sbFormsCall("frmCR_Prendas", 1, , , False, Me)
+                      Call sbFormsCall("frmCR_Prendas", vbModal, , , False, Me, True)
 '                    End If
              
 
@@ -8650,7 +8667,7 @@ mFrecuenciaPago = "M"
 Call OpenRecordSet(rs, strSQL)
 If Not rs.BOF And Not rs.BOF Then
     txtDescripcion.Text = rs!Descripcion & ""
-    txtDivisa.Text = rs!COD_DIVISA
+    txtDivisa.Text = rs!cod_Divisa
     Call sbCboAsignaDato(cboComite, rs!Comite_Desc, True, rs!id_Comite)
     If rs!Base_Calculo = "06" Then 'Quincenal
         mFrecuenciaPago = "Q"

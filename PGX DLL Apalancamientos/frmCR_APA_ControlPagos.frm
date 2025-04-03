@@ -2,7 +2,7 @@ VERSION 5.00
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_APA_ControlPagos 
    Caption         =   "Control Pagos"
    ClientHeight    =   8520
@@ -24,6 +24,7 @@ Begin VB.Form frmCR_APA_ControlPagos
       _ExtentY        =   13150
       _Version        =   393216
       Style           =   1
+      Tab             =   2
       TabHeight       =   520
       ForeColor       =   16711680
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -37,73 +38,57 @@ Begin VB.Form frmCR_APA_ControlPagos
       EndProperty
       TabCaption(0)   =   "Operaciones"
       TabPicture(0)   =   "frmCR_APA_ControlPagos.frx":0000
-      Tab(0).ControlEnabled=   -1  'True
-      Tab(0).Control(0)=   "Label5"
-      Tab(0).Control(0).Enabled=   0   'False
-      Tab(0).Control(1)=   "Label2(0)"
-      Tab(0).Control(1).Enabled=   0   'False
-      Tab(0).Control(2)=   "dtpFecha_Venc"
-      Tab(0).Control(2).Enabled=   0   'False
-      Tab(0).Control(3)=   "gridBuscar"
-      Tab(0).Control(3).Enabled=   0   'False
-      Tab(0).Control(4)=   "Frame1"
-      Tab(0).Control(4).Enabled=   0   'False
-      Tab(0).Control(5)=   "btnSolicitaPago"
-      Tab(0).Control(5).Enabled=   0   'False
-      Tab(0).Control(6)=   "fraFiltros"
-      Tab(0).Control(6).Enabled=   0   'False
-      Tab(0).Control(7)=   "fraBuscaOperacion"
-      Tab(0).Control(7).Enabled=   0   'False
+      Tab(0).ControlEnabled=   0   'False
+      Tab(0).Control(0)=   "fraBuscaOperacion"
+      Tab(0).Control(1)=   "fraFiltros"
+      Tab(0).Control(2)=   "btnSolicitaPago"
+      Tab(0).Control(3)=   "Frame1"
+      Tab(0).Control(4)=   "gridBuscar"
+      Tab(0).Control(5)=   "dtpFecha_Venc"
+      Tab(0).Control(6)=   "Label2(0)"
+      Tab(0).Control(7)=   "Label5"
       Tab(0).ControlCount=   8
       TabCaption(1)   =   "Asignación Bancos"
       TabPicture(1)   =   "frmCR_APA_ControlPagos.frx":0700
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "lblBancos"
-      Tab(1).Control(0).Enabled=   0   'False
-      Tab(1).Control(1)=   "lblTipo"
-      Tab(1).Control(1).Enabled=   0   'False
-      Tab(1).Control(2)=   "lblTotalMonto"
-      Tab(1).Control(2).Enabled=   0   'False
-      Tab(1).Control(3)=   "lblMonto"
-      Tab(1).Control(3).Enabled=   0   'False
-      Tab(1).Control(4)=   "lblCantidadCasos"
-      Tab(1).Control(4).Enabled=   0   'False
-      Tab(1).Control(5)=   "lblCasos"
-      Tab(1).Control(5).Enabled=   0   'False
-      Tab(1).Control(6)=   "btnSolicitudPagoReversa"
-      Tab(1).Control(6).Enabled=   0   'False
-      Tab(1).Control(7)=   "cboTipoDesembolso"
-      Tab(1).Control(7).Enabled=   0   'False
-      Tab(1).Control(8)=   "gridAsignacion"
-      Tab(1).Control(8).Enabled=   0   'False
-      Tab(1).Control(9)=   "lswAsignados"
-      Tab(1).Control(9).Enabled=   0   'False
-      Tab(1).Control(10)=   "optNuevos"
-      Tab(1).Control(10).Enabled=   0   'False
-      Tab(1).Control(11)=   "cboBancos"
-      Tab(1).Control(11).Enabled=   0   'False
-      Tab(1).Control(12)=   "tlbAsignar"
-      Tab(1).Control(12).Enabled=   0   'False
-      Tab(1).Control(13)=   "optAsignados"
-      Tab(1).Control(13).Enabled=   0   'False
+      Tab(1).Control(0)=   "optAsignados"
+      Tab(1).Control(1)=   "tlbAsignar"
+      Tab(1).Control(2)=   "cboBancos"
+      Tab(1).Control(3)=   "optNuevos"
+      Tab(1).Control(4)=   "lswAsignados"
+      Tab(1).Control(5)=   "gridAsignacion"
+      Tab(1).Control(6)=   "cboTipoDesembolso"
+      Tab(1).Control(7)=   "btnSolicitudPagoReversa"
+      Tab(1).Control(8)=   "lblCasos"
+      Tab(1).Control(9)=   "lblCantidadCasos"
+      Tab(1).Control(10)=   "lblMonto"
+      Tab(1).Control(11)=   "lblTotalMonto"
+      Tab(1).Control(12)=   "lblTipo"
+      Tab(1).Control(13)=   "lblBancos"
       Tab(1).ControlCount=   14
       TabCaption(2)   =   "Traslados"
       TabPicture(2)   =   "frmCR_APA_ControlPagos.frx":0E08
-      Tab(2).ControlEnabled=   0   'False
-      Tab(2).Control(0)=   "fraDesglosePago"
-      Tab(2).Control(1)=   "fraBusqOptrasladas"
-      Tab(2).Control(2)=   "txtCantidadRegistros"
-      Tab(2).Control(3)=   "gridTraslados"
-      Tab(2).Control(4)=   "btnGeneraPago"
-      Tab(2).Control(5)=   "lblRegistros"
+      Tab(2).ControlEnabled=   -1  'True
+      Tab(2).Control(0)=   "lblRegistros"
+      Tab(2).Control(0).Enabled=   0   'False
+      Tab(2).Control(1)=   "btnGeneraPago"
+      Tab(2).Control(1).Enabled=   0   'False
+      Tab(2).Control(2)=   "gridTraslados"
+      Tab(2).Control(2).Enabled=   0   'False
+      Tab(2).Control(3)=   "txtCantidadRegistros"
+      Tab(2).Control(3).Enabled=   0   'False
+      Tab(2).Control(4)=   "fraBusqOptrasladas"
+      Tab(2).Control(4).Enabled=   0   'False
+      Tab(2).Control(5)=   "fraDesglosePago"
+      Tab(2).Control(5).Enabled=   0   'False
       Tab(2).ControlCount=   6
       Begin XtremeSuiteControls.GroupBox fraBuscaOperacion 
          Height          =   2775
-         Left            =   120
+         Left            =   -74880
          TabIndex        =   95
          Top             =   4080
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   4895
          _StockProps     =   79
@@ -116,7 +101,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   97
             Top             =   840
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   582
             _StockProps     =   77
@@ -141,7 +126,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   98
             Top             =   2160
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   661
             _StockProps     =   79
@@ -165,7 +150,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   100
             Top             =   1680
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   582
             _StockProps     =   77
@@ -192,7 +177,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   99
             Top             =   1440
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   450
             _StockProps     =   79
@@ -215,7 +200,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   96
             Top             =   480
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   450
             _StockProps     =   79
@@ -234,11 +219,11 @@ Begin VB.Form frmCR_APA_ControlPagos
       End
       Begin XtremeSuiteControls.GroupBox fraFiltros 
          Height          =   3615
-         Left            =   120
+         Left            =   -74880
          TabIndex        =   87
          Top             =   480
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   6376
          _StockProps     =   79
@@ -261,7 +246,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   111
             Top             =   0
             Width           =   270
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   476
             _ExtentY        =   450
             _StockProps     =   79
@@ -284,7 +269,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   89
             Top             =   840
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   582
             _StockProps     =   77
@@ -310,7 +295,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   91
             Top             =   1560
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   582
             _StockProps     =   77
@@ -336,7 +321,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   93
             Top             =   2520
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   582
             _StockProps     =   77
@@ -361,7 +346,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   94
             Top             =   3120
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   661
             _StockProps     =   79
@@ -386,7 +371,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   92
             Top             =   2160
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   450
             _StockProps     =   79
@@ -409,7 +394,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   90
             Top             =   1320
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   450
             _StockProps     =   79
@@ -432,7 +417,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   88
             Top             =   600
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   450
             _StockProps     =   79
@@ -451,11 +436,11 @@ Begin VB.Form frmCR_APA_ControlPagos
       End
       Begin XtremeSuiteControls.PushButton btnSolicitaPago 
          Height          =   375
-         Left            =   9960
+         Left            =   -65040
          TabIndex        =   81
          Top             =   480
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   661
          _StockProps     =   79
@@ -475,7 +460,7 @@ Begin VB.Form frmCR_APA_ControlPagos
       End
       Begin VB.Frame fraDesglosePago 
          Height          =   4695
-         Left            =   -71160
+         Left            =   3840
          TabIndex        =   17
          Top             =   1440
          Width           =   7455
@@ -1095,7 +1080,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   85
             Top             =   1920
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2990
             _ExtentY        =   582
             _StockProps     =   68
@@ -1117,7 +1102,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   86
             Top             =   1920
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2990
             _ExtentY        =   582
             _StockProps     =   68
@@ -1547,7 +1532,7 @@ Begin VB.Form frmCR_APA_ControlPagos
       Begin VB.Frame fraBusqOptrasladas 
          BorderStyle     =   0  'None
          Height          =   975
-         Left            =   -74880
+         Left            =   120
          TabIndex        =   25
          Top             =   360
          Width           =   13335
@@ -1629,7 +1614,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   83
             Top             =   120
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   582
             _StockProps     =   68
@@ -1651,7 +1636,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   84
             Top             =   480
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   582
             _StockProps     =   68
@@ -1673,7 +1658,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   103
             Top             =   120
             Width           =   3615
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6376
             _ExtentY        =   582
             _StockProps     =   77
@@ -1699,7 +1684,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   104
             Top             =   120
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2990
             _ExtentY        =   582
             _StockProps     =   77
@@ -1725,7 +1710,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             TabIndex        =   106
             Top             =   480
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2990
             _ExtentY        =   582
             _StockProps     =   77
@@ -1853,7 +1838,7 @@ Begin VB.Form frmCR_APA_ControlPagos
       Begin VB.Frame Frame1 
          BorderStyle     =   0  'None
          Height          =   375
-         Left            =   3000
+         Left            =   -72000
          TabIndex        =   19
          Top             =   360
          Width           =   3015
@@ -1904,7 +1889,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             Strikethrough   =   0   'False
          EndProperty
          Height          =   315
-         Left            =   -63000
+         Left            =   12000
          TabIndex        =   11
          Top             =   6600
          Width           =   1455
@@ -2022,7 +2007,7 @@ Begin VB.Form frmCR_APA_ControlPagos
       End
       Begin FPSpreadADO.fpSpread gridBuscar 
          Height          =   6132
-         Left            =   2040
+         Left            =   -72960
          TabIndex        =   22
          Top             =   1080
          Width           =   11292
@@ -2074,13 +2059,13 @@ Begin VB.Form frmCR_APA_ControlPagos
          EndProperty
          MaxCols         =   491
          ScrollBarExtMode=   -1  'True
-         SpreadDesigner  =   "frmCR_APA_ControlPagos.frx":670BC
+         SpreadDesigner  =   "frmCR_APA_ControlPagos.frx":6709A
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
       Begin FPSpreadADO.fpSpread gridTraslados 
          Height          =   4812
-         Left            =   -74760
+         Left            =   240
          TabIndex        =   24
          Top             =   1560
          Width           =   13212
@@ -2103,17 +2088,17 @@ Begin VB.Form frmCR_APA_ControlPagos
          EndProperty
          MaxCols         =   492
          ScrollBarExtMode=   -1  'True
-         SpreadDesigner  =   "frmCR_APA_ControlPagos.frx":67AF1
+         SpreadDesigner  =   "frmCR_APA_ControlPagos.frx":67AAD
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
       Begin XtremeSuiteControls.DateTimePicker dtpFecha_Venc 
          Height          =   330
-         Left            =   8040
+         Left            =   -66960
          TabIndex        =   82
          Top             =   480
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   582
          _StockProps     =   68
@@ -2135,7 +2120,7 @@ Begin VB.Form frmCR_APA_ControlPagos
          TabIndex        =   101
          Top             =   480
          Width           =   3015
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5318
          _ExtentY        =   582
          _StockProps     =   77
@@ -2161,7 +2146,7 @@ Begin VB.Form frmCR_APA_ControlPagos
          TabIndex        =   102
          Top             =   480
          Width           =   2775
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4895
          _ExtentY        =   661
          _StockProps     =   79
@@ -2177,15 +2162,15 @@ Begin VB.Form frmCR_APA_ControlPagos
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmCR_APA_ControlPagos.frx":6885F
+         Picture         =   "frmCR_APA_ControlPagos.frx":687F9
       End
       Begin XtremeSuiteControls.PushButton btnGeneraPago 
          Height          =   375
-         Left            =   -67200
+         Left            =   7800
          TabIndex        =   105
          Top             =   6600
          Width           =   2775
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4895
          _ExtentY        =   661
          _StockProps     =   79
@@ -2201,7 +2186,7 @@ Begin VB.Form frmCR_APA_ControlPagos
          EndProperty
          UseVisualStyle  =   -1  'True
          Appearance      =   17
-         Picture         =   "frmCR_APA_ControlPagos.frx":68F5F
+         Picture         =   "frmCR_APA_ControlPagos.frx":68EF9
       End
       Begin VB.Label Label2 
          Alignment       =   1  'Right Justify
@@ -2217,7 +2202,7 @@ Begin VB.Form frmCR_APA_ControlPagos
          EndProperty
          Height          =   255
          Index           =   0
-         Left            =   6240
+         Left            =   -68760
          TabIndex        =   16
          Top             =   480
          Width           =   1575
@@ -2234,7 +2219,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             Strikethrough   =   0   'False
          EndProperty
          Height          =   252
-         Left            =   2040
+         Left            =   -72960
          TabIndex        =   14
          Top             =   480
          Width           =   972
@@ -2251,7 +2236,7 @@ Begin VB.Form frmCR_APA_ControlPagos
             Strikethrough   =   0   'False
          EndProperty
          Height          =   255
-         Left            =   -63840
+         Left            =   11160
          TabIndex        =   12
          Top             =   6600
          Width           =   735
@@ -2378,71 +2363,71 @@ Begin VB.Form frmCR_APA_ControlPagos
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   17
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":69830
+            Picture         =   "frmCR_APA_ControlPagos.frx":697CA
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":70092
+            Picture         =   "frmCR_APA_ControlPagos.frx":7002C
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":768F4
+            Picture         =   "frmCR_APA_ControlPagos.frx":7688E
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":7D156
+            Picture         =   "frmCR_APA_ControlPagos.frx":7D0F0
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":839B8
+            Picture         =   "frmCR_APA_ControlPagos.frx":83952
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":8A21A
+            Picture         =   "frmCR_APA_ControlPagos.frx":8A1B4
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":90A7C
+            Picture         =   "frmCR_APA_ControlPagos.frx":90A16
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":972DE
+            Picture         =   "frmCR_APA_ControlPagos.frx":97278
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":9DB40
+            Picture         =   "frmCR_APA_ControlPagos.frx":9DADA
             Key             =   ""
          EndProperty
          BeginProperty ListImage10 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":A43A2
+            Picture         =   "frmCR_APA_ControlPagos.frx":A433C
             Key             =   ""
          EndProperty
          BeginProperty ListImage11 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":AAC04
+            Picture         =   "frmCR_APA_ControlPagos.frx":AAB9E
             Key             =   ""
          EndProperty
          BeginProperty ListImage12 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":B1466
+            Picture         =   "frmCR_APA_ControlPagos.frx":B1400
             Key             =   ""
          EndProperty
          BeginProperty ListImage13 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":B14C4
+            Picture         =   "frmCR_APA_ControlPagos.frx":B145E
             Key             =   ""
          EndProperty
          BeginProperty ListImage14 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":B30C7
+            Picture         =   "frmCR_APA_ControlPagos.frx":B3061
             Key             =   ""
          EndProperty
          BeginProperty ListImage15 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":B9929
+            Picture         =   "frmCR_APA_ControlPagos.frx":B98C3
             Key             =   ""
          EndProperty
          BeginProperty ListImage16 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":C018B
+            Picture         =   "frmCR_APA_ControlPagos.frx":C0125
             Key             =   ""
          EndProperty
          BeginProperty ListImage17 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCR_APA_ControlPagos.frx":C69ED
+            Picture         =   "frmCR_APA_ControlPagos.frx":C6987
             Key             =   ""
          EndProperty
       EndProperty
@@ -2453,7 +2438,7 @@ Begin VB.Form frmCR_APA_ControlPagos
       TabIndex        =   107
       Top             =   480
       Width           =   1815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3201
       _ExtentY        =   582
       _StockProps     =   77
@@ -2478,7 +2463,7 @@ Begin VB.Form frmCR_APA_ControlPagos
       TabIndex        =   108
       Top             =   480
       Width           =   4575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8070
       _ExtentY        =   582
       _StockProps     =   77
@@ -2502,7 +2487,7 @@ Begin VB.Form frmCR_APA_ControlPagos
       TabIndex        =   109
       Top             =   480
       Width           =   495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   873
       _ExtentY        =   661
       _StockProps     =   79
@@ -2517,7 +2502,7 @@ Begin VB.Form frmCR_APA_ControlPagos
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmCR_APA_ControlPagos.frx":CD24F
+      Picture         =   "frmCR_APA_ControlPagos.frx":CD1E9
    End
    Begin XtremeSuiteControls.PushButton btnActualizaSaldos 
       Height          =   375
@@ -2525,7 +2510,7 @@ Begin VB.Form frmCR_APA_ControlPagos
       TabIndex        =   110
       Top             =   480
       Width           =   2895
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5106
       _ExtentY        =   661
       _StockProps     =   79
@@ -2541,7 +2526,7 @@ Begin VB.Form frmCR_APA_ControlPagos
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmCR_APA_ControlPagos.frx":CD94F
+      Picture         =   "frmCR_APA_ControlPagos.frx":CD8E9
       ImageAlignment  =   0
    End
    Begin VB.Label Label1 
@@ -3233,7 +3218,7 @@ On Error GoTo vError
  End If
  
  'Datos Adicionales
- lblInfoRemesa.Caption = rs!REMESA & ""
+ lblInfoRemesa.Caption = rs!Remesa & ""
  lblInfoBanco.Caption = rs!Banco & ""
  lblInfoTesoreriaDocumento.Caption = rs!Ndocumento & ""
  lblInfoTesoreriaEmision.Caption = Format(rs!Fecha_Emision & "", "dd/mm/yyyy")
@@ -4144,18 +4129,18 @@ rs.Close
 
 vBanco = DeCodificaPrimaryKey(cboBancoAsig.SelectedItem.Key, 1, "(id)")
 
-strSQL = "Select max(fecha_Corte) " _
+strSQL = "Select isnull(max(fecha_Corte), getdate()) as 'Fecha_Corte' " _
        & "  from CRD_APA_GARANTIAS_CORTES " _
        & " where COD_ACREEDOR = '" & vAcreedor & "' and OPERACION = '" & vOperacion & "'"
       
 Call OpenRecordSet(rs, strSQL)
-    vFechaCorte = rs.Fields(0)
+    vFechaCorte = rs!Fecha_Corte
 rs.Close
 
            
 strSQL = "select remesa From CRD_APA_CONTROL_PAGOS where COD_ACREEDOR = '" & vAcreedor & "' and OPERACION = '" & vOperacion & "'and LINEA = " & vLinea & ""
 Call OpenRecordSet(rs, strSQL)
-    vRemesa = rs.Fields(0)
+    vRemesa = rs!Remesa
 rs.Close
            
 'Revisa Asiento de Detalle del pago
@@ -4263,7 +4248,7 @@ On Error GoTo vError
     lblAmortizacionPago = Format(lblAmortizacionPago.Caption, "Standard")
     
     If CCur(lblSaldoAnterior.Caption) <> 0 Then
-        lblTasaPago.Caption = CCur(txtInteresesPago.Text) / CCur(lblSaldoAnterior.Caption) * 12 * 100
+        lblTasaPago.Caption = CCur(txtInteresesPago.Text) / CCur(lblSaldoAnterior.Caption) * 100
         lblTasaPago.Caption = Format(lblTasaPago.Caption, "Standard")
     Else
         lblTasaPago = Format(0, "Standard")

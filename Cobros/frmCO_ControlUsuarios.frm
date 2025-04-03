@@ -1,8 +1,8 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCO_ControlUsuarios 
    BorderStyle     =   1  'Fixed Single
    ClientHeight    =   8610
@@ -20,7 +20,7 @@ Begin VB.Form frmCO_ControlUsuarios
       TabIndex        =   5
       Top             =   1080
       Width           =   9135
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16113
       _ExtentY        =   13150
       _StockProps     =   68
@@ -37,7 +37,7 @@ Begin VB.Form frmCO_ControlUsuarios
       Color           =   32
       ItemCount       =   1
       Item(0).Caption =   "Datos Generales"
-      Item(0).ControlCount=   21
+      Item(0).ControlCount=   22
       Item(0).Control(0)=   "Label12(5)"
       Item(0).Control(1)=   "Label1(3)"
       Item(0).Control(2)=   "Label12(4)"
@@ -59,13 +59,14 @@ Begin VB.Form frmCO_ControlUsuarios
       Item(0).Control(18)=   "lswCarteras"
       Item(0).Control(19)=   "ShortcutCaption1(0)"
       Item(0).Control(20)=   "ShortcutCaption1(1)"
+      Item(0).Control(21)=   "chkExterno"
       Begin XtremeSuiteControls.ListView lswCarteras 
          Height          =   2295
          Left            =   4680
          TabIndex        =   26
          Top             =   5160
          Width           =   4215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7435
          _ExtentY        =   4048
          _StockProps     =   77
@@ -91,7 +92,7 @@ Begin VB.Form frmCO_ControlUsuarios
          TabIndex        =   25
          Top             =   5160
          Width           =   4215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7435
          _ExtentY        =   4048
          _StockProps     =   77
@@ -117,7 +118,7 @@ Begin VB.Form frmCO_ControlUsuarios
          TabIndex        =   10
          Top             =   3270
          Width           =   8535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15055
          _ExtentY        =   2566
          _StockProps     =   77
@@ -141,7 +142,7 @@ Begin VB.Form frmCO_ControlUsuarios
          TabIndex        =   11
          Top             =   1080
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   444
          _StockProps     =   79
@@ -157,17 +158,17 @@ Begin VB.Form frmCO_ControlUsuarios
          EndProperty
          Transparent     =   -1  'True
          UseVisualStyle  =   -1  'True
-         Appearance      =   17
+         Appearance      =   21
       End
       Begin XtremeSuiteControls.PushButton btnCuentas 
-         Height          =   315
+         Height          =   330
          Left            =   7200
          TabIndex        =   12
          Top             =   2880
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
-         _ExtentY        =   556
+         _ExtentY        =   582
          _StockProps     =   79
          Caption         =   "Cuentas Bancarias"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -188,7 +189,7 @@ Begin VB.Form frmCO_ControlUsuarios
          TabIndex        =   13
          Top             =   2880
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3413
          _ExtentY        =   582
          _StockProps     =   77
@@ -214,7 +215,7 @@ Begin VB.Form frmCO_ControlUsuarios
          TabIndex        =   16
          Top             =   1560
          Width           =   972
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   550
          _StockProps     =   77
@@ -239,7 +240,7 @@ Begin VB.Form frmCO_ControlUsuarios
          TabIndex        =   17
          Top             =   1920
          Width           =   972
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   550
          _StockProps     =   77
@@ -264,7 +265,7 @@ Begin VB.Form frmCO_ControlUsuarios
          TabIndex        =   19
          Top             =   600
          Width           =   5412
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9546
          _ExtentY        =   550
          _StockProps     =   77
@@ -288,7 +289,7 @@ Begin VB.Form frmCO_ControlUsuarios
          TabIndex        =   22
          Top             =   2880
          Width           =   4812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8493
          _ExtentY        =   582
          _StockProps     =   77
@@ -314,7 +315,7 @@ Begin VB.Form frmCO_ControlUsuarios
          TabIndex        =   18
          Top             =   600
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -333,6 +334,30 @@ Begin VB.Form frmCO_ControlUsuarios
          Appearance      =   6
          UseVisualStyle  =   0   'False
       End
+      Begin XtremeSuiteControls.CheckBox chkExterno 
+         Height          =   255
+         Left            =   4320
+         TabIndex        =   29
+         Top             =   1080
+         Width           =   3855
+         _Version        =   1572864
+         _ExtentX        =   6800
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "Gestionador de Cobros Externo?"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+      End
       Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption1 
          Height          =   375
          Index           =   1
@@ -340,7 +365,7 @@ Begin VB.Form frmCO_ControlUsuarios
          TabIndex        =   28
          Top             =   4780
          Width           =   4215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7435
          _ExtentY        =   661
          _StockProps     =   14
@@ -363,7 +388,7 @@ Begin VB.Form frmCO_ControlUsuarios
          TabIndex        =   27
          Top             =   4780
          Width           =   4335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7646
          _ExtentY        =   661
          _StockProps     =   14
@@ -386,7 +411,7 @@ Begin VB.Form frmCO_ControlUsuarios
          TabIndex        =   21
          Top             =   600
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   444
          _StockProps     =   79
@@ -411,7 +436,7 @@ Begin VB.Form frmCO_ControlUsuarios
          TabIndex        =   20
          Top             =   360
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   444
          _StockProps     =   79
@@ -435,7 +460,7 @@ Begin VB.Form frmCO_ControlUsuarios
          TabIndex        =   15
          Top             =   2640
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   444
          _StockProps     =   79
@@ -459,7 +484,7 @@ Begin VB.Form frmCO_ControlUsuarios
          TabIndex        =   14
          Top             =   2640
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   466
          _StockProps     =   79
@@ -574,7 +599,7 @@ Begin VB.Form frmCO_ControlUsuarios
       TabIndex        =   2
       Top             =   480
       Width           =   1812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
@@ -599,7 +624,7 @@ Begin VB.Form frmCO_ControlUsuarios
       TabIndex        =   3
       Top             =   480
       Width           =   1932
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   582
       _StockProps     =   77
@@ -619,14 +644,14 @@ Begin VB.Form frmCO_ControlUsuarios
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.PushButton btnRoles 
-      Height          =   312
+      Height          =   330
       Left            =   8400
       TabIndex        =   23
       Top             =   480
       Width           =   852
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1503
-      _ExtentY        =   550
+      _ExtentY        =   582
       _StockProps     =   79
       Caption         =   "Roles"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -692,7 +717,7 @@ Begin VB.Form frmCO_ControlUsuarios
       TabIndex        =   4
       Top             =   480
       Width           =   1332
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   444
       _StockProps     =   79
@@ -737,15 +762,18 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim strSQL As String, rs As New ADODB.Recordset
+Dim itmX As ListViewItem
+Dim vPaso As Boolean
+
 Dim vEdita As Boolean, vCodigo As String, vScroll As Boolean
 
 Private Sub sbCuentas_Load()
-Dim strSQL As String, rs As New ADODB.Recordset
-Dim itmX As ListViewItem
 
 On Error GoTo vError
 
 lswCuentas.ListItems.Clear
+
 If vCodigo <> "" Then
     strSQL = "select rtrim(B.Descripcion) as 'Banco'" _
            & ",case when C.tipo = 'A' then 'Ahorros' else 'Corriente' end as 'TipoDesc'" _
@@ -758,18 +786,17 @@ If vCodigo <> "" Then
        Set itmX = lswCuentas.ListItems.Add(, , rs!CUENTA_INTERNA)
            itmX.SubItems(1) = Trim(rs!Banco)
            itmX.SubItems(2) = rs!TipoDesc
-           itmX.SubItems(3) = rs!COD_DIVISA
+           itmX.SubItems(3) = rs!cod_Divisa
            itmX.SubItems(4) = IIf(rs!CUENTA_INTERBANCA = 1, "Sí", "No")
            itmX.SubItems(5) = rs!Destino & ""
-           itmX.SubItems(6) = IIf(rs!Activa = 1, "Activa", "Cerrada")
-           itmX.SubItems(7) = rs!Registro_Fecha & ""
-           itmX.SubItems(8) = rs!Registro_Usuario & ""
+           itmX.SubItems(6) = IIf(rs!ACTIVA = 1, "Activa", "Cerrada")
+           itmX.SubItems(7) = rs!REGISTRO_FECHA & ""
+           itmX.SubItems(8) = rs!REGISTRO_USUARIO & ""
      
        rs.MoveNext
     Loop
     rs.Close
 End If
-
 
 Exit Sub
 
@@ -800,7 +827,6 @@ End Sub
 
 
 Private Sub FlatScrollBar_Change()
-Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
 
@@ -817,7 +843,6 @@ If vScroll Then
     If Not rs.EOF And Not rs.BOF Then
       Call sbConsulta(rs!Usuario)
     End If
-    rs.Close
 End If
 
 vScroll = False
@@ -911,13 +936,64 @@ cboEstado.Text = "Activo"
 cboTipoPago.Text = fxTipoDocumento("TE")
 
 chkComision.Value = vbUnchecked
-
+chkExterno.Value = xtpUnchecked
 
 txtPorcentaje.Text = "0"
 txtResolucion.Text = "30"
 
+
+lswCarteras.ListItems.Clear
+lswGrupos.ListItems.Clear
+lswCuentas.ListItems.Clear
+
 End Sub
 
+
+Private Sub lswCarteras_ItemCheck(ByVal Item As XtremeSuiteControls.ListViewItem)
+If vPaso Then Exit Sub
+If txtCodigo.Text = "" Then Exit Sub
+
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+strSQL = "exec spCbr_Usuarios_Carteras_Add '" & txtCodigo.Text & "', '" & Item.Tag & "', '" _
+       & glogon.Usuario & "', '" & IIf((Item.Checked), "A", "E") & "'"
+Call ConectionExecute(strSQL)
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+
+
+Private Sub lswGrupos_ItemCheck(ByVal Item As XtremeSuiteControls.ListViewItem)
+
+If vPaso Then Exit Sub
+If txtCodigo.Text = "" Then Exit Sub
+
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+strSQL = "exec spCbr_Usuarios_Grupos_Add '" & txtCodigo.Text & "', " & Item.Tag & ", '" _
+       & glogon.Usuario & "', '" & IIf((Item.Checked), "A", "E") & "'"
+Call ConectionExecute(strSQL)
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+End Sub
 
 
 Private Sub tlb_ButtonClick(ByVal Button As MSComctlLib.Button)
@@ -966,8 +1042,85 @@ End Select
 
 End Sub
 
+Private Sub sbGrupos_Load()
+
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+strSQL = "exec spCbr_Usuarios_Grupos_List '" & txtCodigo.Text & "'"
+Call OpenRecordSet(rs, strSQL)
+
+vPaso = True
+
+With lswGrupos.ListItems
+    .Clear
+       
+     Do While Not rs.EOF
+        Set itmX = .Add(, , rs!Descripcion)
+            itmX.Tag = rs!id_Grupo
+            If rs!Asignado = 1 Then
+                itmX.Checked = True
+            End If
+       rs.MoveNext
+     Loop
+     rs.Close
+    
+    
+End With
+
+vPaso = False
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+
+Private Sub sbCarteras_Load()
+
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+strSQL = "exec spCbr_Usuarios_Carteras_List '" & txtCodigo.Text & "'"
+Call OpenRecordSet(rs, strSQL)
+
+vPaso = True
+
+With lswCarteras.ListItems
+    .Clear
+       
+     Do While Not rs.EOF
+        Set itmX = .Add(, , rs!Descripcion)
+            itmX.Tag = rs!Cod_Clasificacion
+            If rs!Asignado = 1 Then
+                itmX.Checked = True
+            End If
+       rs.MoveNext
+     Loop
+     rs.Close
+    
+    
+End With
+
+vPaso = False
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+
 Private Sub sbConsulta(pCodigo As String)
-Dim rs As New ADODB.Recordset, strSQL As String
 
 On Error GoTo vError
 
@@ -989,6 +1142,7 @@ If Not rs.BOF And Not rs.EOF Then
   txtNombre.Text = rs!Nombre & ""
   
   chkComision.Value = rs!aplica_comision
+  chkExterno.Value = rs!Operador_Externo
   
   txtPorcentaje.Text = Format(rs!porc_comision, "Standard")
   txtResolucion.Text = CStr(rs!tiempo_resolucion_com)
@@ -1000,17 +1154,20 @@ If Not rs.BOF And Not rs.EOF Then
       cboEstado.Text = "Inactivo"
     End If
     
-    cboTipoPago.Text = fxTipoDocumento(rs!TIPO_DOCUMENTO)
+    cboTipoPago.Text = fxTipoDocumento(rs!Tipo_documento)
     
     Call sbCboAsignaDato(cboBancos, Trim(rs!BancoDesc), True, rs!cod_banco)
 
     Call sbCuentas_Load
+    Call sbGrupos_Load
+    Call sbCarteras_Load
 Else
   MsgBox "No se encontró registro verifique...", vbInformation
 End If
 
-rs.Close
+
 Me.MousePointer = vbDefault
+
 Call RefrescaTags(Me)
 
 Exit Sub
@@ -1048,17 +1205,17 @@ vError:
 End Function
 
 Private Sub sbGuardar()
-Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
 
 If vEdita Then
   strSQL = "update cbr_usuarios set nombre = '" & UCase(Trim(txtNombre)) & "'" _
-         & ",cedula = '" & txtCedula & "',estado = " & IIf(Mid(cboEstado.Text, 1, 1) = "A", 1, 0) _
-         & ",aplica_comision = " & chkComision.Value & ",cod_banco = " & cboBancos.ItemData(cboBancos.ListIndex) _
-         & ",tipo_documento = '" & fxTipoDocumento(cboTipoPago.Text) _
-         & "',porc_comision = " & CCur(txtPorcentaje) _
-         & ",tiempo_resolucion_com = " & CLng(txtResolucion.Text) _
+         & ", cedula = '" & txtCedula & "', estado = " & IIf(Mid(cboEstado.Text, 1, 1) = "A", 1, 0) _
+         & ", aplica_comision = " & chkComision.Value & ", Operador_Externo = " & chkExterno.Value _
+         & ", cod_banco = " & cboBancos.ItemData(cboBancos.ListIndex) & ", tipo_documento = '" & fxTipoDocumento(cboTipoPago.Text) _
+         & "', porc_comision = " & CCur(txtPorcentaje) _
+         & ", tiempo_resolucion_com = " & CLng(txtResolucion.Text) _
+         & ", Modifica_Fecha = getdate(), Modifica_Usuario = '" & glogon.Usuario & "'" _
          & " where usuario = '" & vCodigo & "'"
   Call ConectionExecute(strSQL)
   
@@ -1067,12 +1224,12 @@ If vEdita Then
 Else
   vCodigo = txtCodigo
    
-   strSQL = "insert into cbr_usuarios(usuario,nombre,cedula,estado,aplica_comision" _
-          & ",cod_banco,tipo_documento,tiempo_resolucion_com,porc_comision)" _
-          & " values('" & vCodigo & "','" & txtNombre & "','" & txtCedula & "'," _
-          & IIf(Mid(cboEstado.Text, 1, 1) = "A", 1, 0) & "," & chkComision.Value & "," & cboBancos.ItemData(cboBancos.ListIndex) _
-          & ",'" & fxTipoDocumento(cboTipoPago.Text) _
-          & "'," & CLng(txtResolucion.Text) & "," & CCur(txtPorcentaje.Text) & ")"
+   strSQL = "insert into cbr_usuarios(usuario, nombre, cedula, estado, aplica_comision, Operador_Externo" _
+          & ",cod_banco,tipo_documento,tiempo_resolucion_com,porc_comision, registro_fecha, registro_usuario)" _
+          & " values('" & vCodigo & "', '" & txtNombre & "', '" & txtCedula & "', " _
+          & IIf(Mid(cboEstado.Text, 1, 1) = "A", 1, 0) & ", " & chkComision.Value & ", " & chkExterno.Value _
+          & ", " & cboBancos.ItemData(cboBancos.ListIndex) & ", '" & fxTipoDocumento(cboTipoPago.Text) _
+          & "', " & CLng(txtResolucion.Text) & "," & CCur(txtPorcentaje.Text) & ", getdate(), '" & glogon.Usuario & "')"
    
    Call ConectionExecute(strSQL)
     

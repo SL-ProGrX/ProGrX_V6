@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCajas_DatosAsociados 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -18,11 +18,11 @@ Begin VB.Form frmCajas_DatosAsociados
    ScaleWidth      =   12450
    Begin XtremeSuiteControls.PushButton btnIncobrables 
       Height          =   375
-      Left            =   1080
+      Left            =   3120
       TabIndex        =   20
       Top             =   6360
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   661
       _StockProps     =   79
@@ -47,7 +47,7 @@ Begin VB.Form frmCajas_DatosAsociados
       TabIndex        =   19
       Top             =   5890
       Width           =   3615
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   6376
       _ExtentY        =   450
       _StockProps     =   79
@@ -73,7 +73,7 @@ Begin VB.Form frmCajas_DatosAsociados
       ToolTipText     =   "Pago: Conceptos de Cajas"
       Top             =   1080
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   1080
       _StockProps     =   79
@@ -95,8 +95,8 @@ Begin VB.Form frmCajas_DatosAsociados
    End
    Begin VB.Timer TimerCaja 
       Interval        =   10
-      Left            =   10800
-      Top             =   240
+      Left            =   360
+      Top             =   120
    End
    Begin MSComctlLib.StatusBar StatusBarX 
       Align           =   2  'Align Bottom
@@ -125,7 +125,7 @@ Begin VB.Form frmCajas_DatosAsociados
          BeginProperty Panel3 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
             Style           =   5
             Bevel           =   0
-            TextSave        =   "12:10:a. m."
+            TextSave        =   "22:40"
             Object.ToolTipText     =   "Fecha/Hora"
          EndProperty
          BeginProperty Panel4 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
@@ -156,13 +156,6 @@ Begin VB.Form frmCajas_DatosAsociados
       Top             =   -120
       Visible         =   0   'False
       Width           =   9255
-      Begin VB.Line Line1 
-         BorderColor     =   &H00FFFFFF&
-         X1              =   0
-         X2              =   9000
-         Y1              =   480
-         Y2              =   480
-      End
       Begin VB.Label lblInfoUsuario 
          BackStyle       =   0  'Transparent
          Caption         =   "..."
@@ -313,7 +306,7 @@ Begin VB.Form frmCajas_DatosAsociados
       TabIndex        =   9
       Top             =   480
       Width           =   1695
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2990
       _ExtentY        =   582
       _StockProps     =   77
@@ -339,7 +332,7 @@ Begin VB.Form frmCajas_DatosAsociados
       TabIndex        =   10
       Top             =   480
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   582
       _StockProps     =   77
@@ -363,7 +356,7 @@ Begin VB.Form frmCajas_DatosAsociados
       TabIndex        =   11
       Top             =   480
       Width           =   5535
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9763
       _ExtentY        =   582
       _StockProps     =   77
@@ -389,7 +382,7 @@ Begin VB.Form frmCajas_DatosAsociados
       ToolTipText     =   "Retiros: Caja Chica"
       Top             =   1680
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   1080
       _StockProps     =   79
@@ -417,7 +410,7 @@ Begin VB.Form frmCajas_DatosAsociados
       ToolTipText     =   "Abonos a Créditos"
       Top             =   2400
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   1080
       _StockProps     =   79
@@ -445,7 +438,7 @@ Begin VB.Form frmCajas_DatosAsociados
       ToolTipText     =   "Aportes de Fondos"
       Top             =   3000
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   1080
       _StockProps     =   79
@@ -473,7 +466,7 @@ Begin VB.Form frmCajas_DatosAsociados
       ToolTipText     =   "Abonos a Cuentas por Cobrar"
       Top             =   3600
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   1080
       _StockProps     =   79
@@ -501,7 +494,7 @@ Begin VB.Form frmCajas_DatosAsociados
       ToolTipText     =   "Intercambio de Valores"
       Top             =   4320
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   1080
       _StockProps     =   79
@@ -529,7 +522,7 @@ Begin VB.Form frmCajas_DatosAsociados
       ToolTipText     =   "Saldos a favor"
       Top             =   5040
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   1080
       _StockProps     =   79
@@ -549,13 +542,13 @@ Begin VB.Form frmCajas_DatosAsociados
       Appearance      =   16
       Picture         =   "frmCajas_DatosAsociados.frx":62D4
    End
-   Begin XtremeSuiteControls.PushButton PushButton1 
+   Begin XtremeSuiteControls.PushButton btnPatrimonio 
       Height          =   375
-      Left            =   3120
+      Left            =   1080
       TabIndex        =   21
       Top             =   6360
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   661
       _StockProps     =   79
@@ -577,11 +570,11 @@ Begin VB.Form frmCajas_DatosAsociados
    Begin XtremeSuiteControls.PushButton btnSesion 
       Height          =   375
       Index           =   0
-      Left            =   8280
+      Left            =   10320
       TabIndex        =   22
       Top             =   6360
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   661
       _StockProps     =   79
@@ -603,11 +596,12 @@ Begin VB.Form frmCajas_DatosAsociados
    Begin XtremeSuiteControls.PushButton btnSesion 
       Height          =   375
       Index           =   1
-      Left            =   10320
+      Left            =   5640
       TabIndex        =   23
       Top             =   6360
+      Visible         =   0   'False
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   661
       _StockProps     =   79
@@ -655,19 +649,19 @@ vGrid.MaxRows = 0
 Do While Not rs.EOF
  vGrid.MaxRows = vGrid.MaxRows + 1
  vGrid.Row = vGrid.MaxRows
- vGrid.col = 2
- vGrid.Text = Trim(rs!Id_Solicitud)
- vGrid.col = 3
+ vGrid.Col = 2
+ vGrid.Text = Trim(rs!ID_SOLICITUD)
+ vGrid.Col = 3
  vGrid.Text = Trim(rs!Codigo)
- vGrid.col = 4
+ vGrid.Col = 4
  vGrid.Text = Trim(rs!GarantiaDesc)
- vGrid.col = 5
+ vGrid.Col = 5
  vGrid.Text = Format(rs!Saldo, "Standard")
- vGrid.col = 6
+ vGrid.Col = 6
  vGrid.Text = Format(rs!Mora, "Standard")
- vGrid.col = 7
+ vGrid.Col = 7
  vGrid.Text = Format(rs!Cuota, "Standard")
- vGrid.col = 8
+ vGrid.Col = 8
  vGrid.Text = Trim(rs!LineaDesc)
  
  rs.MoveNext
@@ -686,7 +680,7 @@ ModuloCajas.mCliente = txtNombre.Text
     
 If chkSF_Liquidados.Visible Then
     chkSF_Liquidados.Visible = False
-    Me.Height = Me.Height - 330
+'    Me.Height = Me.Height - 330
 End If
 
 Select Case Index
@@ -726,6 +720,28 @@ vError:
 
 End Sub
 
+Private Sub btnIncobrables_Click()
+MsgBox "Esta opción está bajo revisión para Cambio Estructural!", vbExclamation
+End Sub
+
+Private Sub btnPatrimonio_Click()
+On Error GoTo vError
+
+If txtCedula.Text = "" Or txtNombre.Text = "" Then Exit Sub
+
+GLOBALES.gCedulaActual = txtCedula.Text
+frmAH_RegistraAhorro.Show vbModal
+
+Exit Sub
+
+vError:
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+End Sub
+
+Private Sub btnSesion_Click(Index As Integer)
+Call sbFormsCall("frmCajas_Sesion", vbModal, , , False, Me, True)
+End Sub
+
 Private Sub chkSF_Liquidados_Click()
 Call sbConsultaSaldosAfavor
 
@@ -754,6 +770,8 @@ Call RefrescaTags(Me)
 Call Formularios(Me)
 
 End Sub
+
+
 
 
 
@@ -838,7 +856,7 @@ With vGrid
 
     
     For i = 2 To .MaxCols
-      .col = i
+      .Col = i
       Select Case i
         Case 2 'Operacion
 
@@ -891,7 +909,7 @@ With vGrid
             .CellNoteIndicatorShape = CellNoteIndicatorShapeTriangle
             .CellNoteIndicatorColor = vbBlue
   
-            .CellNote = Trim(rs!ConceptoDesc) & vbCrLf & vbCrLf & "Activación: " & Format(rs!Activa_Fecha, "dd/mm/yyyy") & vbCrLf & "Usuario: " & Trim(rs!Activa_Usuario) & vbCrLf & "Oficina:" & rs!OficinaDesc & ""
+            .CellNote = Trim(rs!ConceptoDesc) & vbCrLf & vbCrLf & "Activación: " & Format(rs!Activa_Fecha, "dd/mm/yyyy") & vbCrLf & "Usuario: " & Trim(rs!ACTIVA_USUARIO) & vbCrLf & "Oficina:" & rs!OficinaDesc & ""
         
         Case 4 'Documento
             .Text = Trim(rs!Num_Documento & "")
@@ -1005,7 +1023,7 @@ If KeyCode = vbKeyF4 Then
   If cboBusqueda.Text = "Identificación" Then
     gBusquedas.Col1Name = "Identificación"
     gBusquedas.Col2Name = "Id. Alterno"
-    gBusquedas.Col1Name = "Nombre"
+    gBusquedas.Col3Name = "Nombre"
     
     gBusquedas.Consulta = "select cedula,cedular,nombre from socios"
     gBusquedas.Columna = "nombre"
@@ -1016,7 +1034,11 @@ If KeyCode = vbKeyF4 Then
     txtCedula.Text = gBusquedas.Resultado
     txtNombre.Text = gBusquedas.Resultado3
    Else
-    gBusquedas.Consulta = "select S.cedula,S.Nombre,R.id_solicitud as 'No.Operación'" _
+   
+    gBusquedas.Col1Name = "Identificación"
+    gBusquedas.Col2Name = "Id. Alterno"
+    gBusquedas.Col3Name = "Nombre"
+    gBusquedas.Consulta = "select S.cedula,S.cedular, S.Nombre,R.id_solicitud as 'No.Operación'" _
                         & " from socios S inner join reg_Creditos R on S.cedula = R.cedula"
     gBusquedas.Columna = "R.id_solicitud"
     gBusquedas.Orden = "R.id_solicitud"
@@ -1024,7 +1046,7 @@ If KeyCode = vbKeyF4 Then
     gBusquedas.Convertir = "N"
     frmBusquedas.Show vbModal
     txtCedula.Text = gBusquedas.Resultado
-    txtNombre.Text = gBusquedas.Resultado2
+    txtNombre.Text = gBusquedas.Resultado3
    
    End If
 
@@ -1079,19 +1101,19 @@ vGrid.MaxRows = 0
   Do While Not rs.EOF
     vGrid.MaxRows = vGrid.MaxRows + 1
     vGrid.Row = vGrid.MaxRows
-    vGrid.col = 2
+    vGrid.Col = 2
     vGrid.Text = CStr(rs!COD_CONTRATO)
-    vGrid.col = 3
-    vGrid.Text = Trim(rs!cod_Plan)
-    vGrid.col = 4
-    vGrid.Text = Format(rs!APORTES, "Standard")
-    vGrid.col = 5
+    vGrid.Col = 3
+    vGrid.Text = Trim(rs!COD_PLAN)
+    vGrid.Col = 4
+    vGrid.Text = Format(rs!Aportes, "Standard")
+    vGrid.Col = 5
     vGrid.Text = Format(rs!Rendimiento, "Standard")
-    vGrid.col = 6
+    vGrid.Col = 6
     vGrid.Text = Format(rs!acumulado, "Standard")
-    vGrid.col = 7
+    vGrid.Col = 7
     vGrid.Text = Format(rs!Monto, "Standard")
-    vGrid.col = 8
+    vGrid.Col = 8
     vGrid.Text = Trim(rs!PlanDesc)
     
      rs.MoveNext
@@ -1129,7 +1151,7 @@ vGrid.MaxRows = 0
     vGrid.Row = vGrid.MaxRows
          
     For i = 1 To vGrid.MaxCols
-      vGrid.col = i
+      vGrid.Col = i
       Select Case i
          Case 1 'Servicio
             vGrid.Text = rs!ServicioDesc
@@ -1140,9 +1162,9 @@ vGrid.MaxRows = 0
          Case 4 'No.Ref.
             vGrid.Text = rs!Num_Referencia
          Case 5 'Caja
-            vGrid.Text = rs!Cod_Caja
+            vGrid.Text = rs!COD_CAJA
          Case 6 'Usuario
-            vGrid.Text = rs!Registro_Usuario
+            vGrid.Text = rs!REGISTRO_USUARIO
          Case 7 'Recaudador
             vGrid.Text = rs!RecaudadorDesc
          
@@ -1195,7 +1217,7 @@ vGrid.MaxRows = 0
     vGrid.Row = vGrid.MaxRows
          
     For i = 3 To vGrid.MaxCols
-      vGrid.col = i
+      vGrid.Col = i
       Select Case i
          Case 3 'Linea
             vGrid.Text = CStr(rs!Linea)
@@ -1204,13 +1226,13 @@ vGrid.MaxRows = 0
          Case 5 'No.Doc.
             vGrid.Text = rs!Doc_Numero
          Case 6 'Registro Fecha
-            vGrid.Text = rs!Registro_Fecha
+            vGrid.Text = rs!REGISTRO_FECHA
          Case 7 'Monto
             vGrid.Text = Format(rs!Monto, "Standard")
          Case 8 'Saldo
             vGrid.Text = Format(rs!Saldo, "Standard")
          Case 9 'Referencias
-            vGrid.Text = "Tes. Id.: " & rs!Doc_Transac_Id & " ¦ Caja .: " & rs!Cod_Caja & "  Ap.Id.: " & rs!Cod_Apertura
+            vGrid.Text = "Tes. Id.: " & rs!Doc_Transac_Id & " ¦ Caja .: " & rs!COD_CAJA & "  Ap.Id.: " & rs!Cod_Apertura
       End Select
     Next i
      rs.MoveNext
@@ -1254,20 +1276,20 @@ vGrid.MaxRows = 0
     vGrid.Row = vGrid.MaxRows
 
     For i = 2 To vGrid.MaxCols
-      vGrid.col = i
+      vGrid.Col = i
       Select Case i
          Case 2 'Recibo Id
             vGrid.Text = CStr(rs!CAJA_AM_ID)
          Case 3 'Monto
             vGrid.Text = Format(rs!Monto, "Standard")
          Case 4 'Fecha
-            vGrid.Text = rs!Registro_Fecha
+            vGrid.Text = rs!REGISTRO_FECHA
          Case 5 'Caja
-            vGrid.Text = rs!Cod_Caja
+            vGrid.Text = rs!COD_CAJA
          Case 6 'Apertura
             vGrid.Text = rs!Cod_Apertura
          Case 7 'Usuario
-            vGrid.Text = rs!Registro_Usuario
+            vGrid.Text = rs!REGISTRO_USUARIO
       End Select
     Next i
      rs.MoveNext
@@ -1286,7 +1308,7 @@ End Sub
 
 
 
-Private Sub vGrid_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+Private Sub vGrid_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
 Dim frm As Form
 
 'vGrid.MaxRows = 0
@@ -1299,7 +1321,7 @@ Select Case vGrid.ActiveSheet
     vGrid.Sheet = 1
     
     vGrid.Row = Row
-    vGrid.col = 2
+    vGrid.Col = 2
     
     ModuloCajas.mRef_01 = vGrid.Text
     If GLOBALES.SysPlanPagos = 1 Then
@@ -1313,9 +1335,9 @@ Select Case vGrid.ActiveSheet
     vGrid.ActiveSheet = 2
     vGrid.Sheet = 2
     vGrid.Row = Row
-    vGrid.col = 3
+    vGrid.Col = 3
     gFondos.Plan = vGrid.Text
-    vGrid.col = 2
+    vGrid.Col = 2
     gFondos.Contrato = vGrid.Text
     gFondos.Operadora = 1
     Call sbFormsCall("frmCajas_FNDAportaciones", vbModal, , , False, Me)
@@ -1326,7 +1348,7 @@ Select Case vGrid.ActiveSheet
     vGrid.Sheet = 3
     
     vGrid.Row = Row
-    vGrid.col = 2
+    vGrid.Col = 2
     
     ModuloCajas.mRef_01 = vGrid.Text
     Call sbFormsCall("frmCxC_CuentasAbonos", vbModal, , , False, Me)
@@ -1335,15 +1357,15 @@ Select Case vGrid.ActiveSheet
  Case 5 'Saldos a Favor
     ModuloCajas.mClienteId = txtCedula.Text
     ModuloCajas.mCliente = txtNombre.Text
-    If col = 1 Then
+    If Col = 1 Then
         Call sbFormsCall("frmCajas_TransacSFLiq", vbModal, 1, 1, False, Me)
         Call sbConsultaSaldosAfavor
     End If
     
     'Comprobante de Aplicación
-    If col = 2 Then
+    If Col = 2 Then
        vGrid.Row = Row
-       vGrid.col = 3
+       vGrid.Col = 3
        
        Call sbComprobanteSF(vGrid.Text)
     End If
@@ -1351,9 +1373,9 @@ Select Case vGrid.ActiveSheet
 
 
  Case 6 'Imprime Recibo Multiple
-    If col = 1 Then
+    If Col = 1 Then
        vGrid.Row = Row
-       vGrid.col = 2
+       vGrid.Col = 2
        
        Call sbCaja_Recibo_Multiple(vGrid.Text)
     End If

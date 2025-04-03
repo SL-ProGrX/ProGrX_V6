@@ -1,8 +1,8 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{38911DA0-E448-11D0-84A3-00DD01104159}#1.1#0"; "ComCt332.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmVivGarantia 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,7 +24,7 @@ Begin VB.Form frmVivGarantia
       TabIndex        =   8
       Top             =   1320
       Width           =   10215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18018
       _ExtentY        =   12938
       _StockProps     =   68
@@ -113,7 +113,7 @@ Begin VB.Form frmVivGarantia
          TabIndex        =   9
          Top             =   480
          Width           =   9975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17595
          _ExtentY        =   11880
          _StockProps     =   77
@@ -137,7 +137,7 @@ Begin VB.Form frmVivGarantia
          Top             =   360
          Visible         =   0   'False
          Width           =   10215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18018
          _ExtentY        =   12303
          _StockProps     =   79
@@ -161,7 +161,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   74
             Top             =   3120
             Width           =   8415
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   14843
             _ExtentY        =   6588
             _StockProps     =   77
@@ -184,7 +184,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   75
             Top             =   1320
             Width           =   2655
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4683
             _ExtentY        =   582
             _StockProps     =   77
@@ -209,7 +209,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   76
             Top             =   1320
             Width           =   2775
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4895
             _ExtentY        =   582
             _StockProps     =   77
@@ -234,7 +234,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   77
             Top             =   1320
             Width           =   2775
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4895
             _ExtentY        =   582
             _StockProps     =   77
@@ -259,7 +259,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   78
             Top             =   1680
             Width           =   8415
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   14843
             _ExtentY        =   1296
             _StockProps     =   77
@@ -284,7 +284,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   79
             Top             =   600
             Width           =   2055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
@@ -308,7 +308,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   80
             Top             =   600
             Width           =   6375
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11245
             _ExtentY        =   556
             _StockProps     =   77
@@ -332,7 +332,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   137
             Top             =   2640
             Width           =   8415
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   14843
             _ExtentY        =   661
             _StockProps     =   14
@@ -355,7 +355,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   85
             Top             =   1080
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   450
             _StockProps     =   79
@@ -379,7 +379,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   84
             Top             =   1080
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   450
             _StockProps     =   79
@@ -403,7 +403,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   83
             Top             =   1080
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -427,7 +427,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   82
             Top             =   360
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -451,7 +451,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   81
             Top             =   360
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -476,7 +476,7 @@ Begin VB.Form frmVivGarantia
          Top             =   4080
          Visible         =   0   'False
          Width           =   10215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18018
          _ExtentY        =   5741
          _StockProps     =   68
@@ -531,7 +531,7 @@ Begin VB.Form frmVivGarantia
             Top             =   2880
             Visible         =   0   'False
             Width           =   6735
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11880
             _ExtentY        =   556
             _StockProps     =   77
@@ -555,7 +555,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   48
             Top             =   480
             Width           =   3135
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5530
             _ExtentY        =   661
             _StockProps     =   79
@@ -580,7 +580,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   44
             Top             =   960
             Width           =   9975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   17595
             _ExtentY        =   2143
             _StockProps     =   77
@@ -605,7 +605,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   47
             Top             =   2640
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   767
             _StockProps     =   79
@@ -631,7 +631,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   49
             Top             =   480
             Width           =   3135
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5530
             _ExtentY        =   661
             _StockProps     =   79
@@ -656,7 +656,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   50
             Top             =   480
             Width           =   3015
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5318
             _ExtentY        =   661
             _StockProps     =   79
@@ -680,7 +680,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   46
             Top             =   2280
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   556
             _StockProps     =   77
@@ -706,7 +706,7 @@ Begin VB.Form frmVivGarantia
             Top             =   2040
             Visible         =   0   'False
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   556
             _StockProps     =   77
@@ -734,7 +734,7 @@ Begin VB.Form frmVivGarantia
             Top             =   1680
             Visible         =   0   'False
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   556
             _StockProps     =   77
@@ -760,7 +760,7 @@ Begin VB.Form frmVivGarantia
             Top             =   1320
             Visible         =   0   'False
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   556
             _StockProps     =   77
@@ -786,7 +786,7 @@ Begin VB.Form frmVivGarantia
             Top             =   480
             Visible         =   0   'False
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   550
             _StockProps     =   68
@@ -809,7 +809,7 @@ Begin VB.Form frmVivGarantia
             Top             =   840
             Visible         =   0   'False
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   556
             _StockProps     =   77
@@ -838,7 +838,7 @@ Begin VB.Form frmVivGarantia
             Top             =   840
             Visible         =   0   'False
             Width           =   5535
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9763
             _ExtentY        =   1720
             _StockProps     =   77
@@ -864,7 +864,7 @@ Begin VB.Form frmVivGarantia
             Top             =   2040
             Visible         =   0   'False
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   450
             _StockProps     =   79
@@ -888,7 +888,7 @@ Begin VB.Form frmVivGarantia
             Top             =   2040
             Visible         =   0   'False
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   450
             _StockProps     =   79
@@ -913,7 +913,7 @@ Begin VB.Form frmVivGarantia
             Top             =   2520
             Visible         =   0   'False
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   556
             _StockProps     =   77
@@ -939,7 +939,7 @@ Begin VB.Form frmVivGarantia
             Top             =   2520
             Visible         =   0   'False
             Width           =   6735
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11880
             _ExtentY        =   556
             _StockProps     =   77
@@ -964,7 +964,7 @@ Begin VB.Form frmVivGarantia
             Top             =   2880
             Visible         =   0   'False
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   556
             _StockProps     =   77
@@ -991,7 +991,7 @@ Begin VB.Form frmVivGarantia
             Top             =   2880
             Visible         =   0   'False
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -1016,7 +1016,7 @@ Begin VB.Form frmVivGarantia
             Top             =   2520
             Visible         =   0   'False
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -1041,7 +1041,7 @@ Begin VB.Form frmVivGarantia
             Top             =   2040
             Visible         =   0   'False
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2990
             _ExtentY        =   450
             _StockProps     =   79
@@ -1067,7 +1067,7 @@ Begin VB.Form frmVivGarantia
             Top             =   480
             Visible         =   0   'False
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   450
             _StockProps     =   79
@@ -1093,7 +1093,7 @@ Begin VB.Form frmVivGarantia
             Top             =   840
             Visible         =   0   'False
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   450
             _StockProps     =   79
@@ -1119,7 +1119,7 @@ Begin VB.Form frmVivGarantia
             Top             =   480
             Visible         =   0   'False
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   450
             _StockProps     =   79
@@ -1145,7 +1145,7 @@ Begin VB.Form frmVivGarantia
             Top             =   1320
             Visible         =   0   'False
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   450
             _StockProps     =   79
@@ -1171,7 +1171,7 @@ Begin VB.Form frmVivGarantia
             Top             =   1680
             Visible         =   0   'False
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   450
             _StockProps     =   79
@@ -1197,7 +1197,7 @@ Begin VB.Form frmVivGarantia
             Top             =   2040
             Visible         =   0   'False
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   450
             _StockProps     =   79
@@ -1222,7 +1222,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   45
             Top             =   2280
             Width           =   2055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3625
             _ExtentY        =   450
             _StockProps     =   79
@@ -1249,7 +1249,7 @@ Begin VB.Form frmVivGarantia
          Top             =   480
          Visible         =   0   'False
          Width           =   4935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8705
          _ExtentY        =   6165
          _StockProps     =   79
@@ -1273,7 +1273,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   27
             Top             =   2280
             Width           =   3855
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6800
             _ExtentY        =   450
             _StockProps     =   79
@@ -1297,7 +1297,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   26
             Top             =   1800
             Width           =   375
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   661
             _ExtentY        =   556
             _StockProps     =   79
@@ -1311,7 +1311,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   21
             Top             =   360
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   556
             _StockProps     =   77
@@ -1335,7 +1335,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   22
             Top             =   720
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   556
             _StockProps     =   77
@@ -1359,7 +1359,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   23
             Top             =   1080
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   556
             _StockProps     =   77
@@ -1383,7 +1383,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   24
             Top             =   1440
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   556
             _StockProps     =   77
@@ -1407,7 +1407,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   25
             Top             =   1800
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   582
             _StockProps     =   77
@@ -1432,7 +1432,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   28
             Top             =   2520
             Width           =   3855
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6800
             _ExtentY        =   450
             _StockProps     =   79
@@ -1457,7 +1457,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   29
             Top             =   2760
             Width           =   3855
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6800
             _ExtentY        =   450
             _StockProps     =   79
@@ -1482,7 +1482,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   30
             Top             =   3120
             Width           =   3855
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6800
             _ExtentY        =   450
             _StockProps     =   79
@@ -1509,7 +1509,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   20
             Top             =   1800
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -1533,7 +1533,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   19
             Top             =   1440
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -1557,7 +1557,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   18
             Top             =   1080
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   450
             _StockProps     =   79
@@ -1581,7 +1581,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   17
             Top             =   720
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -1605,7 +1605,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   16
             Top             =   360
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -1631,7 +1631,7 @@ Begin VB.Form frmVivGarantia
          Top             =   480
          Visible         =   0   'False
          Width           =   4935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8705
          _ExtentY        =   6165
          _StockProps     =   79
@@ -1655,7 +1655,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   37
             Top             =   360
             Width           =   3495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6165
             _ExtentY        =   582
             _StockProps     =   77
@@ -1680,7 +1680,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   38
             Top             =   720
             Width           =   3495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6165
             _ExtentY        =   582
             _StockProps     =   77
@@ -1705,7 +1705,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   39
             Top             =   1080
             Width           =   3495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6165
             _ExtentY        =   582
             _StockProps     =   77
@@ -1730,7 +1730,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   40
             Top             =   1440
             Width           =   3495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6165
             _ExtentY        =   1931
             _StockProps     =   77
@@ -1755,7 +1755,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   41
             Top             =   2640
             Width           =   3495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6165
             _ExtentY        =   582
             _StockProps     =   77
@@ -1780,7 +1780,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   42
             Top             =   3000
             Width           =   3495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6165
             _ExtentY        =   582
             _StockProps     =   77
@@ -1806,7 +1806,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   36
             Top             =   3000
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -1830,7 +1830,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   35
             Top             =   2640
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -1854,7 +1854,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   34
             Top             =   1440
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -1878,7 +1878,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   33
             Top             =   1080
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   450
             _StockProps     =   79
@@ -1902,7 +1902,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   32
             Top             =   720
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -1926,7 +1926,7 @@ Begin VB.Form frmVivGarantia
             TabIndex        =   31
             Top             =   360
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   450
             _StockProps     =   79
@@ -1952,7 +1952,7 @@ Begin VB.Form frmVivGarantia
          Top             =   6840
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -1977,7 +1977,7 @@ Begin VB.Form frmVivGarantia
          Top             =   6480
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -2002,7 +2002,7 @@ Begin VB.Form frmVivGarantia
          Top             =   5640
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -2027,7 +2027,7 @@ Begin VB.Form frmVivGarantia
          Top             =   5280
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -2052,7 +2052,7 @@ Begin VB.Form frmVivGarantia
          Top             =   4560
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -2077,7 +2077,7 @@ Begin VB.Form frmVivGarantia
          Top             =   4200
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -2102,7 +2102,7 @@ Begin VB.Form frmVivGarantia
          Top             =   3480
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -2127,7 +2127,7 @@ Begin VB.Form frmVivGarantia
          Top             =   3120
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -2152,7 +2152,7 @@ Begin VB.Form frmVivGarantia
          Top             =   6120
          Visible         =   0   'False
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -2177,7 +2177,7 @@ Begin VB.Form frmVivGarantia
          Top             =   4920
          Visible         =   0   'False
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   450
          _StockProps     =   79
@@ -2202,7 +2202,7 @@ Begin VB.Form frmVivGarantia
          Top             =   3840
          Visible         =   0   'False
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -2227,7 +2227,7 @@ Begin VB.Form frmVivGarantia
          Top             =   2760
          Visible         =   0   'False
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -2252,7 +2252,7 @@ Begin VB.Form frmVivGarantia
          Top             =   2280
          Visible         =   0   'False
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -2277,7 +2277,7 @@ Begin VB.Form frmVivGarantia
          Top             =   6840
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -2302,7 +2302,7 @@ Begin VB.Form frmVivGarantia
          Top             =   6480
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -2327,7 +2327,7 @@ Begin VB.Form frmVivGarantia
          Top             =   5640
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -2352,7 +2352,7 @@ Begin VB.Form frmVivGarantia
          Top             =   5280
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -2377,7 +2377,7 @@ Begin VB.Form frmVivGarantia
          Top             =   4560
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -2402,7 +2402,7 @@ Begin VB.Form frmVivGarantia
          Top             =   4200
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -2427,7 +2427,7 @@ Begin VB.Form frmVivGarantia
          Top             =   3480
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -2452,7 +2452,7 @@ Begin VB.Form frmVivGarantia
          Top             =   3120
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   450
          _StockProps     =   79
@@ -2477,7 +2477,7 @@ Begin VB.Form frmVivGarantia
          Top             =   6120
          Visible         =   0   'False
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -2502,7 +2502,7 @@ Begin VB.Form frmVivGarantia
          Top             =   4920
          Visible         =   0   'False
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   450
          _StockProps     =   79
@@ -2527,7 +2527,7 @@ Begin VB.Form frmVivGarantia
          Top             =   3840
          Visible         =   0   'False
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -2552,7 +2552,7 @@ Begin VB.Form frmVivGarantia
          Top             =   2760
          Visible         =   0   'False
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -2577,7 +2577,7 @@ Begin VB.Form frmVivGarantia
          Top             =   2280
          Visible         =   0   'False
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -2601,7 +2601,7 @@ Begin VB.Form frmVivGarantia
          Top             =   6840
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2624,7 +2624,7 @@ Begin VB.Form frmVivGarantia
          Top             =   6840
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2647,7 +2647,7 @@ Begin VB.Form frmVivGarantia
          Top             =   6480
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2670,7 +2670,7 @@ Begin VB.Form frmVivGarantia
          Top             =   6480
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2693,7 +2693,7 @@ Begin VB.Form frmVivGarantia
          Top             =   5640
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2716,7 +2716,7 @@ Begin VB.Form frmVivGarantia
          Top             =   5640
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2739,7 +2739,7 @@ Begin VB.Form frmVivGarantia
          Top             =   5280
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2762,7 +2762,7 @@ Begin VB.Form frmVivGarantia
          Top             =   5280
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2785,7 +2785,7 @@ Begin VB.Form frmVivGarantia
          Top             =   4560
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2808,7 +2808,7 @@ Begin VB.Form frmVivGarantia
          Top             =   4560
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2831,7 +2831,7 @@ Begin VB.Form frmVivGarantia
          Top             =   4200
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2854,7 +2854,7 @@ Begin VB.Form frmVivGarantia
          Top             =   4200
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2877,7 +2877,7 @@ Begin VB.Form frmVivGarantia
          Top             =   3480
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2900,7 +2900,7 @@ Begin VB.Form frmVivGarantia
          Top             =   3480
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2923,7 +2923,7 @@ Begin VB.Form frmVivGarantia
          Top             =   3120
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2946,7 +2946,7 @@ Begin VB.Form frmVivGarantia
          Top             =   3120
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2969,7 +2969,7 @@ Begin VB.Form frmVivGarantia
          Top             =   2280
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -2992,7 +2992,7 @@ Begin VB.Form frmVivGarantia
          Top             =   2280
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   556
          _StockProps     =   79
@@ -3015,7 +3015,7 @@ Begin VB.Form frmVivGarantia
          Top             =   1920
          Visible         =   0   'False
          Width           =   4695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8281
          _ExtentY        =   556
          _StockProps     =   79
@@ -3038,7 +3038,7 @@ Begin VB.Form frmVivGarantia
          Top             =   1920
          Visible         =   0   'False
          Width           =   4695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8281
          _ExtentY        =   556
          _StockProps     =   79
@@ -3062,7 +3062,7 @@ Begin VB.Form frmVivGarantia
          Top             =   1440
          Visible         =   0   'False
          Width           =   5055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8916
          _ExtentY        =   661
          _StockProps     =   14
@@ -3086,7 +3086,7 @@ Begin VB.Form frmVivGarantia
          Top             =   1440
          Visible         =   0   'False
          Width           =   4935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8705
          _ExtentY        =   661
          _StockProps     =   14
@@ -3109,7 +3109,7 @@ Begin VB.Form frmVivGarantia
          Top             =   840
          Visible         =   0   'False
          Width           =   3255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5741
          _ExtentY        =   556
          _StockProps     =   79
@@ -3133,7 +3133,7 @@ Begin VB.Form frmVivGarantia
          Top             =   840
          Visible         =   0   'False
          Width           =   3255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5741
          _ExtentY        =   556
          _StockProps     =   79
@@ -3157,7 +3157,7 @@ Begin VB.Form frmVivGarantia
          Top             =   840
          Visible         =   0   'False
          Width           =   3255
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5741
          _ExtentY        =   556
          _StockProps     =   79
@@ -3182,7 +3182,7 @@ Begin VB.Form frmVivGarantia
          Top             =   600
          Visible         =   0   'False
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -3207,7 +3207,7 @@ Begin VB.Form frmVivGarantia
          Top             =   600
          Visible         =   0   'False
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -3232,7 +3232,7 @@ Begin VB.Form frmVivGarantia
          Top             =   600
          Visible         =   0   'False
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -3402,7 +3402,7 @@ Begin VB.Form frmVivGarantia
       TabIndex        =   3
       Top             =   480
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   556
       _StockProps     =   77
@@ -3427,7 +3427,7 @@ Begin VB.Form frmVivGarantia
       TabIndex        =   4
       Top             =   840
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   556
       _StockProps     =   77
@@ -3452,7 +3452,7 @@ Begin VB.Form frmVivGarantia
       TabIndex        =   5
       Top             =   480
       Width           =   2175
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3836
       _ExtentY        =   556
       _StockProps     =   77
@@ -3477,7 +3477,7 @@ Begin VB.Form frmVivGarantia
       TabIndex        =   6
       Top             =   840
       Width           =   4935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8705
       _ExtentY        =   556
       _StockProps     =   77
@@ -3502,7 +3502,7 @@ Begin VB.Form frmVivGarantia
       TabIndex        =   15
       Top             =   480
       Width           =   1455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   450
       _StockProps     =   79
@@ -3526,7 +3526,7 @@ Begin VB.Form frmVivGarantia
       TabIndex        =   14
       Top             =   840
       Width           =   1455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   450
       _StockProps     =   79
@@ -3550,7 +3550,7 @@ Begin VB.Form frmVivGarantia
       TabIndex        =   13
       Top             =   480
       Width           =   1455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   450
       _StockProps     =   79
@@ -3651,7 +3651,7 @@ lvwGarantias.ColumnHeaders.Add , , "Fecha Registro", 2000
 
 
 
-If ObjConsultar.fxTraerGarantiasxOperacion(txtOperacion.Text) Then
+If ObjConsultar.fxTraerGarantiasxOperacion(txtOperacion.Text, txtExpediente.Text) Then
 While Not glogon.Recordset.EOF
     vKey = "(VV)" & Trim(txtOperacion.Text) _
     & "(Op)" & Trim(glogon.Recordset("NumeroFinca")) & "(Nf)"
@@ -3663,6 +3663,9 @@ While Not glogon.Recordset.EOF
         vItem.SubItems(4) = Trim(glogon.Recordset.Fields!AreaFinca)
         vItem.SubItems(5) = Trim(glogon.Recordset.Fields!RegistroUsuario)
         vItem.SubItems(6) = Format(glogon.Recordset.Fields!RegistroFecha, "dd-mm-yyyy")
+        
+        vItem.Tag = glogon.Recordset.Fields!IdGarantia
+        
        glogon.Recordset.MoveNext
     Wend
 End If
@@ -3984,7 +3987,7 @@ On Error GoTo error
 
 fxValidaDatosGarantia = False
 
-ReDim gParametros(0 To 23)
+ReDim gParametros(0 To 24)
 
 If ObjConsultar.fxEstadoOperacion(txtOperacion.Text) = "F" Then
     Me.MousePointer = vbDefault
@@ -4094,6 +4097,7 @@ gParametros(20) = chkRegistraCalAvaluo.Value 'RegistraCalAvaluo
 gParametros(21) = chkRegistraCalHonorarios.Value 'RegistraCalHonorarios
 gParametros(22) = chkDetalleHonorarios.Value ' RegistraCalHonorariosDT
 gParametros(23) = Mid(cboTipo_Poliza.Text, 1, 1)
+gParametros(24) = txtExpediente.Text
 
 fxValidaDatosGarantia = True
 salir:
@@ -4117,7 +4121,7 @@ If m_IdGarantia <> -1 Then
                                                     gParametros(5), gParametros(6), gParametros(7), gParametros(8), gParametros(9), _
                                                     gParametros(10), gParametros(11), gParametros(12), gParametros(13), gParametros(14), _
                                                     gParametros(15), gParametros(16), gParametros(17), gParametros(18), gParametros(19), _
-                                                    gParametros(20), gParametros(21), gParametros(22), gParametros(23))
+                                                    gParametros(20), gParametros(21), gParametros(22), gParametros(23), gParametros(24))
                                       
  If m_IdGarantia <> -1 Then
     m_cambioDatos = False
@@ -4161,7 +4165,7 @@ m_IdGarantia = ObjAgregar.fxViviendaGarantia(gParametros(0), gParametros(1), gPa
                                              gParametros(5), gParametros(6), gParametros(7), gParametros(8), gParametros(9), _
                                              gParametros(10), gParametros(11), gParametros(12), gParametros(13), gParametros(14), gParametros(15), _
                                              gParametros(16), gParametros(17), gParametros(18), gParametros(19), _
-                                             gParametros(20), gParametros(21), gParametros(22), gParametros(23))
+                                             gParametros(20), gParametros(21), gParametros(22), gParametros(23), gParametros(24))
                                      
 gParametros(0) = m_IdGarantia
 
@@ -4449,12 +4453,17 @@ If lvwGarantias.ListItems.Count > 0 Then
     
     If Item_Lista_Seleccionado Is Nothing Then Exit Sub
     
-    txtOperacion.Text = fxDeCodePK(Item_Lista_Seleccionado.Key, 5, "(Op)")
-    txtNumeroFinca.Text = fxDeCodePK(Item_Lista_Seleccionado.Key, gPosIni, "(Nf)")
     
-    If Len(txtNumeroFinca.Text) > 0 And Len(txtOperacion.Text) > 0 Then
-        Call sbTraerGarantia(1)
-    End If
+    txtNumeroFinca.Text = Item_Lista_Seleccionado.Tag
+    Call sbTraerGarantia(0)
+    
+    
+'    txtOperacion.Text = fxDeCodePK(Item_Lista_Seleccionado.Key, 5, "(Op)")
+'    txtNumeroFinca.Text = fxDeCodePK(Item_Lista_Seleccionado.Key, gPosIni, "(Nf)")
+'
+'    If Len(txtNumeroFinca.Text) > 0 And Len(txtOperacion.Text) > 0 Then
+'        Call sbTraerGarantia(1)
+'    End If
 
 End If
 
@@ -4561,6 +4570,12 @@ End Sub
 Private Sub sbTraerGarantia(ByVal vTab As Integer)
 
 Select Case vTab
+    Case 0
+        Call sbToolBar(Me.tlbPrincipal, "edicion")
+        If ObjConsultar.fxTraerGarantiasxId(txtNumeroFinca.Text) Then
+            Call sbLigarDatosGarantia
+            Call sbToolBar(tlbPrincipal, "Activo")
+        End If
     Case 1
         Call sbToolBar(Me.tlbPrincipal, "edicion")
         If ObjConsultar.fxTraerGarantiasxNumeroFinca(txtNumeroFinca.Text, txtOperacion.Text) Then
@@ -5021,8 +5036,12 @@ Call Formularios(Me)
 Call RefrescaTags(Me)
 
 txtOperacion.Text = gOperacion
+txtExpediente.Text = gExpediente
+
 m_cargarGradoHipoteca = False
 m_cargarCantones = False
+
+
 
 Call sbHabilitaTab(1)
 
@@ -5039,6 +5058,9 @@ vPaso = True
 vPaso = False
 
 
+
+txtOperacion.Text = CStr(gOperacion)
+txtExpediente.Text = gExpediente
 
 Call sbCargaGradoHiporteca
 Call sbTraerInformacionOperacion
@@ -5179,14 +5201,35 @@ End Sub
 Private Sub sbTraerInformacionOperacion()
 On Error GoTo vError
 
-If ObjConsultar.fxTraerOperacion(txtOperacion.Text) Then
-
- txtCedula.Text = Trim(glogon.Recordset.Fields!cedula)
- txtNombre.Text = (glogon.Recordset.Fields!Nombre)
- txtExpediente.Text = (glogon.Recordset.Fields!Expediente)
- m_EstadoSol = (glogon.Recordset.Fields!ESTADOSOL)
-
+If txtOperacion.Text <> "0" Then
+    glogon.strSQL = "SELECT S.CEDULA, S.NOMBRE, R.ID_SOLICITUD,R.CODIGO,  C.DESCRIPCION as 'DescLinea'" _
+                    & ", ISNULL(P.COD_PREANALISIS, '') AS 'Expediente', R.ESTADOSOL" _
+                    & " FROM REG_CREDITOS R" _
+                    & "        INNER JOIN SOCIOS S   ON R.CEDULA = S.CEDULA" _
+                    & "        INNER JOIN CATALOGO C ON R.CODIGO = C.CODIGO" _
+                    & "    LEFT OUTER JOIN CRD_PREA_PREANALISIS P ON R.ID_SOLICITUD = P.ID_SOLICITUD" _
+                    & " Where R.ID_SOLICITUD = " & txtOperacion.Text
+Else
+    glogon.strSQL = "SELECT S.CEDULA, S.NOMBRE, P.ID_SOLICITUD, P.COD_LINEA AS 'CODIGO',  C.DESCRIPCION as 'DescLinea'" _
+                  & ", ISNULL(P.COD_PREANALISIS, '') AS 'Expediente', ISNULL(R.ESTADOSOL, 'P') AS 'ESTADOSOL'" _
+                  & "  FROM CRD_PREA_PREANALISIS P" _
+                  & "  INNER JOIN SOCIOS S   ON P.CEDULA = S.CEDULA" _
+                  & "  INNER JOIN CATALOGO C ON P.COD_LINEA = C.CODIGO" _
+                  & "   LEFT JOIN REG_CREDITOS R ON p.ID_SOLICITUD = R.ID_SOLICITUD" _
+                  & "  Where P.COD_PREANALISIS  = '" & txtExpediente.Text & "'"
 End If
+                
+Call OpenRecordSet(glogon.Recordset, glogon.strSQL)
+With glogon.Recordset
+
+
+ txtCedula.Text = Trim(!cedula)
+ txtNombre.Text = Trim(!Nombre)
+ txtExpediente.Text = Trim(!Expediente)
+ m_EstadoSol = Trim(!ESTADOSOL)
+
+
+End With
 
 salir:
     Exit Sub

@@ -1,18 +1,18 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "mscomctl.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Begin VB.Form frmAF_BenSeguimientoRevisionesTag 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Revisión de Beneficios"
-   ClientHeight    =   8424
-   ClientLeft      =   48
-   ClientTop       =   372
-   ClientWidth     =   11568
+   ClientHeight    =   8415
+   ClientLeft      =   45
+   ClientTop       =   375
+   ClientWidth     =   11565
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
-   ScaleHeight     =   8424
-   ScaleWidth      =   11568
+   ScaleHeight     =   8415
+   ScaleWidth      =   11565
    StartUpPosition =   2  'CenterScreen
    Begin VB.Timer TimerX 
       Interval        =   20
@@ -32,14 +32,15 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
          TabIndex        =   6
          Top             =   120
          Width           =   11055
-         _ExtentX        =   19495
-         _ExtentY        =   11663
+         _ExtentX        =   19500
+         _ExtentY        =   11668
          _Version        =   393216
          Style           =   1
+         Tab             =   1
          TabHeight       =   520
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial Narrow"
-            Size            =   8.4
+            Name            =   "Calibri"
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -48,18 +49,16 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
          EndProperty
          TabCaption(0)   =   "Beneficios"
          TabPicture(0)   =   "frmAF_BenSeguimientoRevisionesTag.frx":0000
-         Tab(0).ControlEnabled=   -1  'True
-         Tab(0).Control(0)=   "vGrid"
-         Tab(0).Control(0).Enabled=   0   'False
+         Tab(0).ControlEnabled=   0   'False
+         Tab(0).Control(0)=   "tlbRefresh"
          Tab(0).Control(1)=   "imgRefresh"
-         Tab(0).Control(1).Enabled=   0   'False
-         Tab(0).Control(2)=   "tlbRefresh"
-         Tab(0).Control(2).Enabled=   0   'False
+         Tab(0).Control(2)=   "vGrid"
          Tab(0).ControlCount=   3
          TabCaption(1)   =   "Seguimiento"
          TabPicture(1)   =   "frmAF_BenSeguimientoRevisionesTag.frx":001C
-         Tab(1).ControlEnabled=   0   'False
+         Tab(1).ControlEnabled=   -1  'True
          Tab(1).Control(0)=   "vGridSeguimiento"
+         Tab(1).Control(0).Enabled=   0   'False
          Tab(1).ControlCount=   1
          TabCaption(2)   =   "Revisión"
          TabPicture(2)   =   "frmAF_BenSeguimientoRevisionesTag.frx":0038
@@ -74,14 +73,14 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
          Tab(2).ControlCount=   7
          Begin MSComctlLib.Toolbar tlbRefresh 
             Height          =   336
-            Left            =   9600
+            Left            =   -65400
             TabIndex        =   16
             Top             =   480
             Width           =   1212
-            _ExtentX        =   2138
-            _ExtentY        =   593
-            ButtonWidth     =   1863
-            ButtonHeight    =   550
+            _ExtentX        =   2143
+            _ExtentY        =   582
+            ButtonWidth     =   1984
+            ButtonHeight    =   582
             Style           =   1
             TextAlignment   =   1
             ImageList       =   "imgRefresh"
@@ -95,14 +94,13 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
                   ImageIndex      =   1
                EndProperty
             EndProperty
-            BorderStyle     =   1
             MousePointer    =   1
          End
          Begin MSComctlLib.ImageList imgRefresh 
-            Left            =   8880
+            Left            =   -66120
             Top             =   360
-            _ExtentX        =   995
-            _ExtentY        =   995
+            _ExtentX        =   1005
+            _ExtentY        =   1005
             BackColor       =   -2147483643
             ImageWidth      =   16
             ImageHeight     =   16
@@ -120,7 +118,7 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
             Appearance      =   0  'Flat
             BeginProperty Font 
                Name            =   "Arial"
-               Size            =   8.4
+               Size            =   8.25
                Charset         =   0
                Weight          =   400
                Underline       =   0   'False
@@ -138,14 +136,14 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
          Begin VB.ComboBox cboEtiquetas 
             BeginProperty Font 
                Name            =   "Arial"
-               Size            =   8.4
+               Size            =   8.25
                Charset         =   0
                Weight          =   400
                Underline       =   0   'False
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Height          =   288
+            Height          =   330
             ItemData        =   "frmAF_BenSeguimientoRevisionesTag.frx":0179
             Left            =   -73320
             List            =   "frmAF_BenSeguimientoRevisionesTag.frx":017B
@@ -156,7 +154,7 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
          End
          Begin FPSpreadADO.fpSpread vGrid 
             Height          =   5535
-            Left            =   120
+            Left            =   -74880
             TabIndex        =   7
             Top             =   900
             Width           =   10695
@@ -168,8 +166,8 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
             BorderStyle     =   0
             EditEnterAction =   5
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Arial"
-               Size            =   8.4
+               Name            =   "Calibri"
+               Size            =   9
                Charset         =   0
                Weight          =   400
                Underline       =   0   'False
@@ -184,7 +182,7 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
          End
          Begin FPSpreadADO.fpSpread vGridSeguimiento 
             Height          =   5775
-            Left            =   -74760
+            Left            =   240
             TabIndex        =   8
             Top             =   660
             Width           =   10575
@@ -196,8 +194,8 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
             BorderStyle     =   0
             EditEnterAction =   5
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Arial"
-               Size            =   8.4
+               Name            =   "Calibri"
+               Size            =   9
                Charset         =   0
                Weight          =   400
                Underline       =   0   'False
@@ -206,7 +204,7 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
             EndProperty
             MaxCols         =   487
             ScrollBarExtMode=   -1  'True
-            SpreadDesigner  =   "frmAF_BenSeguimientoRevisionesTag.frx":0C44
+            SpreadDesigner  =   "frmAF_BenSeguimientoRevisionesTag.frx":0C8E
             VScrollSpecialType=   2
             AppearanceStyle =   1
          End
@@ -216,8 +214,8 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
             TabIndex        =   9
             Top             =   5940
             Width           =   1548
-            _ExtentX        =   2731
-            _ExtentY        =   995
+            _ExtentX        =   2725
+            _ExtentY        =   1005
             ButtonWidth     =   2117
             ButtonHeight    =   1005
             Style           =   1
@@ -240,8 +238,8 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
             TabIndex        =   12
             Top             =   1260
             Width           =   9135
-            _ExtentX        =   16108
-            _ExtentY        =   4678
+            _ExtentX        =   16113
+            _ExtentY        =   4683
             View            =   3
             LabelWrap       =   -1  'True
             HideSelection   =   -1  'True
@@ -256,7 +254,7 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
             Appearance      =   0
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Arial"
-               Size            =   8.4
+               Size            =   8.25
                Charset         =   0
                Weight          =   400
                Underline       =   0   'False
@@ -288,7 +286,7 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
             Caption         =   "Observación"
             BeginProperty Font 
                Name            =   "Arial"
-               Size            =   8.4
+               Size            =   8.25
                Charset         =   0
                Weight          =   400
                Underline       =   0   'False
@@ -306,7 +304,7 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
             Caption         =   "Etiqueta"
             BeginProperty Font 
                Name            =   "Arial"
-               Size            =   8.4
+               Size            =   8.25
                Charset         =   0
                Weight          =   400
                Underline       =   0   'False
@@ -324,7 +322,7 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
             Caption         =   "Omisiones"
             BeginProperty Font 
                Name            =   "Arial"
-               Size            =   8.4
+               Size            =   8.25
                Charset         =   0
                Weight          =   400
                Underline       =   0   'False
@@ -351,7 +349,7 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
          BackColor       =   &H00C0FFFF&
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -370,7 +368,7 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
          BackColor       =   &H00C0FFFF&
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -388,7 +386,7 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
          Alignment       =   2  'Center
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -407,7 +405,7 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
          BorderStyle     =   1  'Fixed Single
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -425,7 +423,7 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
          Caption         =   "Cedula"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -442,8 +440,8 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
    Begin MSComctlLib.ImageList ImageList1 
       Left            =   9240
       Top             =   0
-      _ExtentX        =   995
-      _ExtentY        =   995
+      _ExtentX        =   1005
+      _ExtentY        =   1005
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -452,42 +450,42 @@ Begin VB.Form frmAF_BenSeguimientoRevisionesTag
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   6
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_BenSeguimientoRevisionesTag.frx":11F2
+            Picture         =   "frmAF_BenSeguimientoRevisionesTag.frx":1286
             Key             =   "IMG1"
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_BenSeguimientoRevisionesTag.frx":7A54
+            Picture         =   "frmAF_BenSeguimientoRevisionesTag.frx":7AE8
             Key             =   "IMG2"
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_BenSeguimientoRevisionesTag.frx":E2B6
+            Picture         =   "frmAF_BenSeguimientoRevisionesTag.frx":E34A
             Key             =   "IMG3"
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_BenSeguimientoRevisionesTag.frx":14B18
+            Picture         =   "frmAF_BenSeguimientoRevisionesTag.frx":14BAC
             Key             =   "IMG4"
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_BenSeguimientoRevisionesTag.frx":1B37A
+            Picture         =   "frmAF_BenSeguimientoRevisionesTag.frx":1B40E
             Key             =   "IMG5"
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_BenSeguimientoRevisionesTag.frx":21BDC
+            Picture         =   "frmAF_BenSeguimientoRevisionesTag.frx":21C70
             Key             =   "IMG6"
          EndProperty
       EndProperty
    End
    Begin VB.Image Image2 
-      Height          =   288
+      Height          =   360
       Left            =   1200
-      Picture         =   "frmAF_BenSeguimientoRevisionesTag.frx":2843E
+      Picture         =   "frmAF_BenSeguimientoRevisionesTag.frx":284D2
       Top             =   240
-      Width           =   288
+      Width           =   360
    End
    Begin VB.Label lblNombreUsuario 
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -727,16 +725,16 @@ Do While Not rs.EOF
     vGridSeguimiento.Text = rs!Descripcion
     vGridSeguimiento.TextTip = TextTipFixed
     vGridSeguimiento.TextTipDelay = 1000
-    vGridSeguimiento.CellNote = "Usuario: " & rs!REGISTRO_USUARIO & "[" & rs!REGISTRO_FECHA & "]"
+    vGridSeguimiento.CellNote = "Usuario: " & rs!registro_usuario & "[" & rs!Registro_Fecha & "]"
             
     vGridSeguimiento.Col = 2
     vGridSeguimiento.Value = IIf(IsNull(rs!notas), "", rs!notas)
     
     vGridSeguimiento.Col = 3
-    vGridSeguimiento.Value = IIf(IsNull(rs!REGISTRO_FECHA), "", rs!REGISTRO_FECHA)
+    vGridSeguimiento.Value = IIf(IsNull(rs!Registro_Fecha), "", rs!Registro_Fecha)
     
     vGridSeguimiento.Col = 4
-    vGridSeguimiento.Value = IIf(IsNull(rs!REGISTRO_USUARIO), "", rs!REGISTRO_USUARIO)
+    vGridSeguimiento.Value = IIf(IsNull(rs!registro_usuario), "", rs!registro_usuario)
     
     vGridSeguimiento.RowHeight(vGridSeguimiento.Row) = vGridSeguimiento.MaxTextRowHeight(vGridSeguimiento.Row)
     rs.MoveNext

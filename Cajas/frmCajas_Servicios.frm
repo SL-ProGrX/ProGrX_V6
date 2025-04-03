@@ -1,31 +1,31 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "mscomctl.OCX"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.3#0"; "Codejock.Controls.v20.3.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCajas_Servicios 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Cajas: Conceptos y Servicios"
-   ClientHeight    =   6435
+   ClientHeight    =   7380
    ClientLeft      =   45
    ClientTop       =   375
    ClientWidth     =   8805
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   6435
+   ScaleHeight     =   7380
    ScaleWidth      =   8805
    ShowInTaskbar   =   0   'False
    StartUpPosition =   1  'CenterOwner
    Begin XtremeSuiteControls.TabControl tcMain 
-      Height          =   5172
+      Height          =   6015
       Left            =   120
       TabIndex        =   6
       Top             =   960
-      Width           =   8532
-      _Version        =   1310723
-      _ExtentX        =   15049
-      _ExtentY        =   9123
+      Width           =   8535
+      _Version        =   1572864
+      _ExtentX        =   15055
+      _ExtentY        =   10610
       _StockProps     =   68
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
@@ -40,7 +40,7 @@ Begin VB.Form frmCajas_Servicios
       Color           =   32
       ItemCount       =   3
       Item(0).Caption =   "Conceptos"
-      Item(0).ControlCount=   11
+      Item(0).ControlCount=   15
       Item(0).Control(0)=   "Label1(8)"
       Item(0).Control(1)=   "Label1(12)"
       Item(0).Control(2)=   "Label1(14)"
@@ -52,6 +52,10 @@ Begin VB.Form frmCajas_Servicios
       Item(0).Control(8)=   "cboConcepto"
       Item(0).Control(9)=   "GroupBox1"
       Item(0).Control(10)=   "chkIntercambio"
+      Item(0).Control(11)=   "chkConfirmaFondos"
+      Item(0).Control(12)=   "txtCabys"
+      Item(0).Control(13)=   "Label1(1)"
+      Item(0).Control(14)=   "chkFactura"
       Item(1).Caption =   "Comisiones"
       Item(1).ControlCount=   1
       Item(1).Control(0)=   "vGrid"
@@ -60,15 +64,15 @@ Begin VB.Form frmCajas_Servicios
       Item(2).Control(0)=   "lswCajas"
       Item(2).Control(1)=   "lblServicio"
       Begin XtremeSuiteControls.ListView lswCajas 
-         Height          =   4692
+         Height          =   5655
          Left            =   -67000
          TabIndex        =   35
          Top             =   360
          Visible         =   0   'False
-         Width           =   5412
-         _Version        =   1310723
-         _ExtentX        =   9546
-         _ExtentY        =   8276
+         Width           =   5535
+         _Version        =   1572864
+         _ExtentX        =   9763
+         _ExtentY        =   9975
          _StockProps     =   77
          BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -88,12 +92,12 @@ Begin VB.Form frmCajas_Servicios
       End
       Begin XtremeSuiteControls.GroupBox GroupBox1 
          DragMode        =   1  'Automatic
-         Height          =   2892
+         Height          =   2895
          Left            =   120
          TabIndex        =   16
-         Top             =   2040
-         Width           =   8292
-         _Version        =   1310723
+         Top             =   3360
+         Width           =   8295
+         _Version        =   1572864
          _ExtentX        =   14626
          _ExtentY        =   5101
          _StockProps     =   79
@@ -108,7 +112,8 @@ Begin VB.Form frmCajas_Servicios
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          BorderStyle     =   1
          Begin XtremeSuiteControls.FlatEdit txtUnidadCod 
             Height          =   312
@@ -116,7 +121,7 @@ Begin VB.Form frmCajas_Servicios
             TabIndex        =   23
             Top             =   480
             Width           =   1932
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -132,7 +137,7 @@ Begin VB.Form frmCajas_Servicios
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCentroCod 
@@ -141,7 +146,7 @@ Begin VB.Form frmCajas_Servicios
             TabIndex        =   24
             Top             =   840
             Width           =   1932
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -157,7 +162,7 @@ Begin VB.Form frmCajas_Servicios
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCuenta 
@@ -166,7 +171,7 @@ Begin VB.Form frmCajas_Servicios
             TabIndex        =   25
             Top             =   1440
             Width           =   1932
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -182,7 +187,7 @@ Begin VB.Form frmCajas_Servicios
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCuentaComision 
@@ -191,7 +196,7 @@ Begin VB.Form frmCajas_Servicios
             TabIndex        =   26
             Top             =   1800
             Width           =   1932
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -207,7 +212,7 @@ Begin VB.Form frmCajas_Servicios
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCuentaIV 
@@ -216,7 +221,7 @@ Begin VB.Form frmCajas_Servicios
             TabIndex        =   27
             Top             =   2160
             Width           =   1932
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -232,7 +237,7 @@ Begin VB.Form frmCajas_Servicios
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtUnidadDesc 
@@ -241,7 +246,7 @@ Begin VB.Form frmCajas_Servicios
             TabIndex        =   28
             Top             =   480
             Width           =   4812
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   550
             _StockProps     =   77
@@ -257,7 +262,7 @@ Begin VB.Form frmCajas_Servicios
                Strikethrough   =   0   'False
             EndProperty
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCentroDesc 
@@ -266,7 +271,7 @@ Begin VB.Form frmCajas_Servicios
             TabIndex        =   29
             Top             =   840
             Width           =   4812
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   550
             _StockProps     =   77
@@ -282,7 +287,7 @@ Begin VB.Form frmCajas_Servicios
                Strikethrough   =   0   'False
             EndProperty
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCuentaDesc 
@@ -291,7 +296,7 @@ Begin VB.Form frmCajas_Servicios
             TabIndex        =   30
             Top             =   1440
             Width           =   4812
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   550
             _StockProps     =   77
@@ -307,7 +312,7 @@ Begin VB.Form frmCajas_Servicios
                Strikethrough   =   0   'False
             EndProperty
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCuentaComisionDesc 
@@ -316,7 +321,7 @@ Begin VB.Form frmCajas_Servicios
             TabIndex        =   31
             Top             =   1800
             Width           =   4812
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   550
             _StockProps     =   77
@@ -332,7 +337,7 @@ Begin VB.Form frmCajas_Servicios
                Strikethrough   =   0   'False
             EndProperty
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCuentaIVDesc 
@@ -341,7 +346,7 @@ Begin VB.Form frmCajas_Servicios
             TabIndex        =   32
             Top             =   2160
             Width           =   4812
-            _Version        =   1310723
+            _Version        =   1572864
             _ExtentX        =   8488
             _ExtentY        =   550
             _StockProps     =   77
@@ -357,7 +362,7 @@ Begin VB.Form frmCajas_Servicios
                Strikethrough   =   0   'False
             EndProperty
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin VB.Label Label1 
@@ -457,7 +462,7 @@ Begin VB.Form frmCajas_Servicios
          TabIndex        =   11
          Top             =   480
          Width           =   6732
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   11874
          _ExtentY        =   550
          _StockProps     =   77
@@ -472,7 +477,7 @@ Begin VB.Form frmCajas_Servicios
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtContrato 
@@ -481,7 +486,7 @@ Begin VB.Form frmCajas_Servicios
          TabIndex        =   12
          Top             =   840
          Width           =   1932
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -496,7 +501,7 @@ Begin VB.Form frmCajas_Servicios
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.DateTimePicker dtpFechaVence 
@@ -505,7 +510,7 @@ Begin VB.Form frmCajas_Servicios
          TabIndex        =   13
          Top             =   840
          Width           =   1452
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   550
          _StockProps     =   68
@@ -527,7 +532,7 @@ Begin VB.Form frmCajas_Servicios
          TabIndex        =   14
          Top             =   840
          Width           =   1452
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   444
          _StockProps     =   79
@@ -551,12 +556,12 @@ Begin VB.Form frmCajas_Servicios
          TabIndex        =   15
          Top             =   1320
          Width           =   6732
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   11880
          _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   1973790
-         BackColor       =   16185078
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -566,25 +571,25 @@ Begin VB.Form frmCajas_Servicios
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         BackColor       =   16185078
          Style           =   2
-         Appearance      =   16
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
       Begin XtremeSuiteControls.CheckBox chkIntercambio 
-         Height          =   252
+         Height          =   255
          Left            =   1680
          TabIndex        =   17
-         Top             =   1680
-         Width           =   6732
-         _Version        =   1310723
+         Top             =   1800
+         Width           =   6735
+         _Version        =   1572864
          _ExtentX        =   11874
          _ExtentY        =   444
          _StockProps     =   79
          Caption         =   "Utilizar para Intercambio de valores por Efectivo en divisa local?"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   7.5
+            Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -596,15 +601,15 @@ Begin VB.Form frmCajas_Servicios
          Appearance      =   16
       End
       Begin FPSpreadADO.fpSpread vGrid 
-         Height          =   4932
+         Height          =   5535
          Left            =   -69280
          TabIndex        =   33
          Top             =   480
          Visible         =   0   'False
-         Width           =   7212
+         Width           =   7335
          _Version        =   524288
-         _ExtentX        =   12721
-         _ExtentY        =   8700
+         _ExtentX        =   12938
+         _ExtentY        =   9763
          _StockProps     =   64
          BackColorStyle  =   1
          BorderStyle     =   0
@@ -624,6 +629,97 @@ Begin VB.Form frmCajas_Servicios
          VisibleRows     =   1
          VScrollSpecialType=   2
          AppearanceStyle =   1
+      End
+      Begin XtremeSuiteControls.CheckBox chkConfirmaFondos 
+         Height          =   255
+         Left            =   1680
+         TabIndex        =   36
+         Top             =   2160
+         Width           =   6735
+         _Version        =   1572864
+         _ExtentX        =   11874
+         _ExtentY        =   444
+         _StockProps     =   79
+         Caption         =   "Valor en Tránsito, Requiere Proceso de Confirmación de Fondos?"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+         UseVisualStyle  =   -1  'True
+         Appearance      =   16
+      End
+      Begin XtremeSuiteControls.FlatEdit txtCabys 
+         Height          =   315
+         Left            =   1680
+         TabIndex        =   37
+         Top             =   2640
+         Width           =   1935
+         _Version        =   1572864
+         _ExtentX        =   3408
+         _ExtentY        =   550
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   -2147483643
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.CheckBox chkFactura 
+         Height          =   255
+         Left            =   3840
+         TabIndex        =   39
+         Top             =   2640
+         Width           =   4695
+         _Version        =   1572864
+         _ExtentX        =   8281
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "Genera Facturación?"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+         UseVisualStyle  =   -1  'True
+         Appearance      =   16
+      End
+      Begin VB.Label Label1 
+         Caption         =   "Código CABYS"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   1
+         Left            =   120
+         TabIndex        =   38
+         Top             =   2640
+         Width           =   1695
       End
       Begin VB.Label lblServicio 
          Appearance      =   0  'Flat
@@ -727,7 +823,7 @@ Begin VB.Form frmCajas_Servicios
       TabIndex        =   4
       Top             =   480
       Width           =   1452
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   444
       _StockProps     =   79
@@ -817,11 +913,11 @@ Begin VB.Form frmCajas_Servicios
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   2
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Servicios.frx":0766
+            Picture         =   "frmCajas_Servicios.frx":0788
             Key             =   "imgDocu"
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Servicios.frx":1640
+            Picture         =   "frmCajas_Servicios.frx":1662
             Key             =   "imgFormu"
          EndProperty
       EndProperty
@@ -831,7 +927,7 @@ Begin VB.Form frmCajas_Servicios
       Height          =   255
       Left            =   0
       TabIndex        =   3
-      Top             =   6180
+      Top             =   7125
       Width           =   8805
       _ExtentX        =   15531
       _ExtentY        =   450
@@ -839,19 +935,21 @@ Begin VB.Form frmCajas_Servicios
       BeginProperty Panels {8E3867A5-8586-11D1-B16A-00C0F0283628} 
          NumPanels       =   2
          BeginProperty Panel1 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Bevel           =   0
             Object.Width           =   6068
             MinWidth        =   6068
             Object.ToolTipText     =   "Usuario de Registro"
          EndProperty
          BeginProperty Panel2 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Bevel           =   0
             Object.Width           =   6068
             MinWidth        =   6068
             Object.ToolTipText     =   "Fecha de Registro"
          EndProperty
       EndProperty
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Arial"
-         Size            =   8.25
+         Name            =   "Calibri"
+         Size            =   9
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -865,7 +963,7 @@ Begin VB.Form frmCajas_Servicios
       TabIndex        =   5
       Top             =   480
       Width           =   1452
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   550
       _StockProps     =   77
@@ -881,7 +979,7 @@ Begin VB.Form frmCajas_Servicios
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin VB.Label Label1 
@@ -1123,7 +1221,7 @@ Select Case Item.Index
     Call OpenRecordSet(rs, strSQL)
     Do While Not rs.EOF
       Set itmX = lswCajas.ListItems.Add(, , Trim(rs!Descripcion))
-          itmX.Tag = Trim(rs!cod_caja)
+          itmX.Tag = Trim(rs!COD_CAJA)
       
       If Not IsNull(rs!Asignado) Then
          itmX.Checked = True
@@ -1159,6 +1257,7 @@ End Sub
 Private Sub txtCentroCod_LostFocus()
 txtCentroDesc.Text = fxgCntCentroCostos(txtCentroCod.Text)
 End Sub
+
 
 Private Sub txtCodigo_Change()
 Call sbLimpia
@@ -1318,7 +1417,6 @@ End Sub
 
 Private Sub txtUnidadDesc_KeyDown(KeyCode As Integer, Shift As Integer)
 If KeyCode = vbKeyReturn Or vbKeyTab Then txtCentroCod.SetFocus
-
 End Sub
 
 Private Sub vGrid_KeyDown(KeyCode As Integer, Shift As Integer)
@@ -1340,9 +1438,9 @@ If KeyCode = vbKeyDelete Then
    If MsgBox("¿Desea eliminar esta linea?", vbYesNo Or vbQuestion, "") = vbNo Then Exit Sub
       
    vGrid.Row = vGrid.ActiveRow
-   vGrid.col = 1
+   vGrid.Col = 1
    If Trim(vGrid.Text) <> "" Then
-      vGrid.col = 1
+      vGrid.Col = 1
         strSQL = "Delete cajas_servicios_rangos where cod_recaudador = '" & mRecaudador.Codigo & "' and linea = '" & vGrid.Text & "' " _
                 & " and cod_servicio = '" & vCodigo & "' "
         Call ConectionExecute(strSQL)
@@ -1376,7 +1474,7 @@ On Error GoTo vError
 
 fxGuardar = 0
 vGrid.Row = vGrid.ActiveRow
-vGrid.col = 1
+vGrid.Col = 1
 
 strSQL = "select isnull(count(*),0) as Existe from cajas_servicios_rangos" _
        & " where linea =  " & vGrid.ActiveRow & " and cod_servicio = '" & vCodigo & "' and" _
@@ -1387,36 +1485,36 @@ If rs!Existe = 0 Then 'Insertar
     strSQL = "insert into cajas_servicios_rangos(cod_servicio,cod_recaudador,linea,monto_inicio,monto_corte" _
              & ",comision_mnt_minimo,comision_porcentaje,iv_porcentaje)" _
            & " values('" & vCodigo & "','" & mRecaudador.Codigo & "',"
-    vGrid.col = 2
+    vGrid.Col = 2
     strSQL = strSQL & " " & vGrid.ActiveRow & ", " & CCur(vGrid.Text) & ","
-    vGrid.col = 3
+    vGrid.Col = 3
     strSQL = strSQL & CCur(vGrid.Text) & ","
-    vGrid.col = 4
+    vGrid.Col = 4
     strSQL = strSQL & CCur(vGrid.Text) & ","
-    vGrid.col = 5
+    vGrid.Col = 5
     strSQL = strSQL & CCur(vGrid.Text) & ","
-    vGrid.col = 6
+    vGrid.Col = 6
     strSQL = strSQL & CCur(vGrid.Text) & ")"
     Call ConectionExecute(strSQL)
     
     
     Call Bitacora("Registra", "Rango Servicio..: " & vCodigo & " .. Recaudador.:" & mRecaudador.Codigo)
-    vGrid.col = 1
+    vGrid.Col = 1
     vGrid.Text = CStr(vGrid.ActiveRow)
 
 Else 'Actualizar
     
-    vGrid.col = 2
+    vGrid.Col = 2
     strSQL = "update cajas_servicios_rangos set monto_inicio= " & CCur(vGrid.Text) & ","
-    vGrid.col = 3
+    vGrid.Col = 3
     strSQL = strSQL & " monto_corte = " & CCur(vGrid.Text) & ","
-    vGrid.col = 4
+    vGrid.Col = 4
     strSQL = strSQL & "comision_mnt_minimo = " & CCur(vGrid.Text) & ","
-    vGrid.col = 5
+    vGrid.Col = 5
     strSQL = strSQL & "comision_porcentaje = " & CCur(vGrid.Text) & ","
-    vGrid.col = 6
+    vGrid.Col = 6
     strSQL = strSQL & "iv_porcentaje = " & CCur(vGrid.Text) & ""
-    vGrid.col = 1
+    vGrid.Col = 1
     strSQL = strSQL & " where linea =  " & vGrid.Text & " and cod_servicio = '" & vCodigo & "'"
     strSQL = strSQL & " and cod_recaudador = '" & mRecaudador.Codigo & "'"
     
@@ -1466,7 +1564,7 @@ If Not rs.BOF And Not rs.EOF Then
   txtDescripcion.Text = rs!Descripcion
   txtContrato = rs!Contrato
   dtpFechaVence.Value = rs!vence_fecha
-  chkActivo.Value = rs!activo
+  chkActivo.Value = rs!Activo
   chkVence.Value = rs!vende_activo
   chkIntercambio.Value = rs!InterCambio
   
@@ -1482,14 +1580,14 @@ If Not rs.BOF And Not rs.EOF Then
   txtCuentaComisionDesc.Text = rs!CtaDescCom
   
   txtUnidadCod.Text = rs!Cod_Unidad & ""
-  txtCentroCod.Text = rs!cod_centro_costo & ""
+  txtCentroCod.Text = rs!Cod_Centro_Costo & ""
   
   txtUnidadCod_LostFocus
   txtCentroCod_LostFocus
     
   
-  StatusBarX.Panels.Item(1).Text = rs!Registro_Usuario & ""
-  StatusBarX.Panels.Item(2).Text = rs!Registro_Fecha & ""
+  StatusBarX.Panels.Item(1).Text = rs!REGISTRO_USUARIO & ""
+  StatusBarX.Panels.Item(2).Text = rs!REGISTRO_FECHA & ""
 
   tcMain.Item(0).Selected = True
   tcMain.Item(1).Enabled = True

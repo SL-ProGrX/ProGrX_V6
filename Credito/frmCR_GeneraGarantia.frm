@@ -1,21 +1,21 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.2#0"; "Codejock.Controls.v20.2.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_GeneraGarantia 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
-   Caption         =   "Generar Garantía (Letra Cambio / Pagaré)"
-   ClientHeight    =   7170
+   Caption         =   "Generar Garantía (Letra Cambio / Pagaré) + Contrato de Crédito"
+   ClientHeight    =   8070
    ClientLeft      =   45
    ClientTop       =   285
-   ClientWidth     =   6030
+   ClientWidth     =   5940
    HelpContextID   =   3020
    Icon            =   "frmCR_GeneraGarantia.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7170
-   ScaleWidth      =   6030
+   ScaleHeight     =   8070
+   ScaleWidth      =   5940
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin XtremeSuiteControls.GroupBox GroupBox2 
@@ -24,7 +24,7 @@ Begin VB.Form frmCR_GeneraGarantia
       TabIndex        =   7
       Top             =   3000
       Width           =   5292
-      _Version        =   1310722
+      _Version        =   1572864
       _ExtentX        =   9334
       _ExtentY        =   3831
       _StockProps     =   79
@@ -47,7 +47,7 @@ Begin VB.Form frmCR_GeneraGarantia
          TabIndex        =   12
          Top             =   840
          Width           =   4692
-         _Version        =   1310722
+         _Version        =   1572864
          _ExtentX        =   8276
          _ExtentY        =   444
          _StockProps     =   79
@@ -62,7 +62,7 @@ Begin VB.Form frmCR_GeneraGarantia
             Strikethrough   =   0   'False
          EndProperty
          UseVisualStyle  =   -1  'True
-         Appearance      =   16
+         Appearance      =   21
          Alignment       =   1
       End
       Begin XtremeSuiteControls.ComboBox cboProvincia 
@@ -71,12 +71,12 @@ Begin VB.Form frmCR_GeneraGarantia
          TabIndex        =   11
          Top             =   480
          Width           =   2172
-         _Version        =   1310722
+         _Version        =   1572864
          _ExtentX        =   3836
          _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   1973790
-         BackColor       =   16185078
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -86,9 +86,9 @@ Begin VB.Form frmCR_GeneraGarantia
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         BackColor       =   16185078
          Style           =   2
-         Appearance      =   16
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
       Begin XtremeSuiteControls.CheckBox chkCedula 
@@ -97,7 +97,7 @@ Begin VB.Form frmCR_GeneraGarantia
          TabIndex        =   13
          Top             =   1200
          Width           =   4692
-         _Version        =   1310722
+         _Version        =   1572864
          _ExtentX        =   8276
          _ExtentY        =   444
          _StockProps     =   79
@@ -113,7 +113,7 @@ Begin VB.Form frmCR_GeneraGarantia
             Strikethrough   =   0   'False
          EndProperty
          UseVisualStyle  =   -1  'True
-         Appearance      =   16
+         Appearance      =   21
          Alignment       =   1
       End
       Begin XtremeSuiteControls.CheckBox chkReemplazar 
@@ -122,7 +122,7 @@ Begin VB.Form frmCR_GeneraGarantia
          TabIndex        =   14
          Top             =   1560
          Width           =   4692
-         _Version        =   1310722
+         _Version        =   1572864
          _ExtentX        =   8276
          _ExtentY        =   444
          _StockProps     =   79
@@ -138,7 +138,33 @@ Begin VB.Form frmCR_GeneraGarantia
             Strikethrough   =   0   'False
          EndProperty
          UseVisualStyle  =   -1  'True
-         Appearance      =   16
+         Appearance      =   21
+         Alignment       =   1
+      End
+      Begin XtremeSuiteControls.CheckBox chkContrato 
+         Height          =   255
+         Left            =   480
+         TabIndex        =   16
+         Top             =   1920
+         Width           =   4695
+         _Version        =   1572864
+         _ExtentX        =   8276
+         _ExtentY        =   444
+         _StockProps     =   79
+         Caption         =   "Imprimir Contrato de Crédito"
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   7.5
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         Value           =   1
          Alignment       =   1
       End
       Begin VB.Label Label1 
@@ -162,17 +188,17 @@ Begin VB.Form frmCR_GeneraGarantia
       End
    End
    Begin XtremeSuiteControls.PushButton cmdImprimir 
-      Height          =   732
-      Left            =   480
+      Height          =   735
+      Left            =   1320
       TabIndex        =   4
-      Top             =   5400
-      Width           =   1692
-      _Version        =   1310722
-      _ExtentX        =   2984
-      _ExtentY        =   1291
+      Top             =   7200
+      Width           =   1695
+      _Version        =   1572864
+      _ExtentX        =   2990
+      _ExtentY        =   1296
       _StockProps     =   79
       Caption         =   "Letra de Cambio"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Arial"
          Size            =   7.5
@@ -182,7 +208,8 @@ Begin VB.Form frmCR_GeneraGarantia
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   14
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Picture         =   "frmCR_GeneraGarantia.frx":000C
       ImageAlignment  =   0
    End
@@ -192,7 +219,7 @@ Begin VB.Form frmCR_GeneraGarantia
       TabIndex        =   1
       Top             =   1320
       Width           =   5292
-      _Version        =   1310722
+      _Version        =   1572864
       _ExtentX        =   9334
       _ExtentY        =   2561
       _StockProps     =   79
@@ -215,7 +242,7 @@ Begin VB.Form frmCR_GeneraGarantia
          TabIndex        =   9
          Top             =   480
          Width           =   2292
-         _Version        =   1310722
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   556
          _StockProps     =   77
@@ -230,7 +257,7 @@ Begin VB.Form frmCR_GeneraGarantia
             Strikethrough   =   0   'False
          EndProperty
          Alignment       =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtHasta 
@@ -239,7 +266,7 @@ Begin VB.Form frmCR_GeneraGarantia
          TabIndex        =   10
          Top             =   840
          Width           =   2292
-         _Version        =   1310722
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   556
          _StockProps     =   77
@@ -254,7 +281,7 @@ Begin VB.Form frmCR_GeneraGarantia
             Strikethrough   =   0   'False
          EndProperty
          Alignment       =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin VB.Label Label1 
@@ -297,17 +324,17 @@ Begin VB.Form frmCR_GeneraGarantia
       End
    End
    Begin XtremeSuiteControls.PushButton cmdPagare 
-      Height          =   732
-      Left            =   2160
+      Height          =   735
+      Left            =   1320
       TabIndex        =   5
-      Top             =   5400
-      Width           =   1692
-      _Version        =   1310722
-      _ExtentX        =   2984
-      _ExtentY        =   1291
+      Top             =   5520
+      Width           =   1695
+      _Version        =   1572864
+      _ExtentX        =   2990
+      _ExtentY        =   1296
       _StockProps     =   79
       Caption         =   "Pagaré"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Arial"
          Size            =   7.5
@@ -317,22 +344,23 @@ Begin VB.Form frmCR_GeneraGarantia
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   14
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Picture         =   "frmCR_GeneraGarantia.frx":07C5
       ImageAlignment  =   0
    End
    Begin XtremeSuiteControls.PushButton cmdPagarePreImpreso 
-      Height          =   732
-      Left            =   3840
+      Height          =   735
+      Left            =   3120
       TabIndex        =   6
-      Top             =   5400
-      Width           =   1812
-      _Version        =   1310722
-      _ExtentX        =   3196
-      _ExtentY        =   1291
+      Top             =   7200
+      Width           =   1695
+      _Version        =   1572864
+      _ExtentX        =   2990
+      _ExtentY        =   1296
       _StockProps     =   79
       Caption         =   "Pagaré Pre-Impreso"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Arial"
          Size            =   7.5
@@ -342,22 +370,23 @@ Begin VB.Form frmCR_GeneraGarantia
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   14
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Picture         =   "frmCR_GeneraGarantia.frx":0F7E
       ImageAlignment  =   0
    End
    Begin XtremeSuiteControls.PushButton btnPagareEmail 
-      Height          =   495
-      Left            =   480
+      Height          =   735
+      Left            =   1320
       TabIndex        =   15
-      Top             =   6480
-      Width           =   5175
-      _Version        =   1310722
-      _ExtentX        =   9128
-      _ExtentY        =   873
+      Top             =   6360
+      Width           =   3495
+      _Version        =   1572864
+      _ExtentX        =   6165
+      _ExtentY        =   1296
       _StockProps     =   79
       Caption         =   "Pagaré Digital (Email)"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Arial"
          Size            =   7.5
@@ -367,8 +396,35 @@ Begin VB.Form frmCR_GeneraGarantia
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   14
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Picture         =   "frmCR_GeneraGarantia.frx":1737
+      ImageAlignment  =   0
+   End
+   Begin XtremeSuiteControls.PushButton btnContrato 
+      Height          =   735
+      Left            =   3120
+      TabIndex        =   17
+      Top             =   5520
+      Width           =   1695
+      _Version        =   1572864
+      _ExtentX        =   2990
+      _ExtentY        =   1296
+      _StockProps     =   79
+      Caption         =   "Contrato de Crédito"
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Arial"
+         Size            =   7.5
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmCR_GeneraGarantia.frx":1F54
       ImageAlignment  =   0
    End
    Begin VB.Label Label2 
@@ -508,6 +564,53 @@ End If
 
 End Function
 
+Private Sub sbContrato_Imprime(Optional vOperacion As Long = 0)
+Dim strSQL As String, rs As New ADODB.Recordset
+Dim vCedula As String
+
+On Error GoTo vError
+
+'Inicializa
+
+If vOperacion = 0 Then
+    vOperacion = InputBox("Digite el Número de Operación : ", "Emisión de Contrato de Crédito", Operacion.Operacion)
+End If
+
+strSQL = "exec spCrd_Operacion_Contrato_Registra " & vOperacion & ", " & chkReemplazar.Value _
+       & ", " & chkCedula.Value & ", '" & cboProvincia.Text & "',0 ,0, '" & glogon.Usuario & "'"
+Call OpenRecordSet(rs, strSQL)
+  vCedula = Trim(rs!Cedula)
+rs.Close
+
+'Imprimir el Reporte
+With frmContenedor.Crt
+  .Reset
+  .WindowShowExportBtn = True
+  .WindowShowPrintSetupBtn = True
+
+  .Connect = glogon.ConectRPT
+   
+  .WindowState = crptMaximized
+  .WindowTitle = "Emisión del Pagaré"
+  .ReportFileName = SIFGlobal.fxPathReportes("Credito_Operacion_Contrato.rpt")
+  .Formulas(0) = "fxCedula = '" & vCedula & "'"
+  .Formulas(1) = "fxBarras = '*" & vOperacion & "*'"
+   
+  .SelectionFormula = "{REG_CREDITOS.ID_SOLICITUD} = " & vOperacion
+  .PrintReport
+End With
+
+Exit Sub
+
+vError:
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+Private Sub btnContrato_Click()
+    Call sbContrato_Imprime(0)
+End Sub
+
 Private Sub btnPagareEmail_Click()
 Dim strSQL As String, rs As New ADODB.Recordset
 Dim vOperacion As Long
@@ -578,7 +681,7 @@ x.Reset
            .Formulas(2) = "Monto='¢ " & Format(rs!montoapr, "Standard") & "'"
        End Select
        
-       .SelectionFormula = "{REG_CREDITOS.ID_SOLICITUD} =" & rs!id_solicitud
+       .SelectionFormula = "{REG_CREDITOS.ID_SOLICITUD} =" & rs!Id_Solicitud
        
        .Destination = crptToPrinter
 '       lblTitulo = "Imprimiendo Op. # " & rs!id_solicitud
@@ -660,7 +763,7 @@ If Not rs.EOF And Not rs.BOF Then
      End Select
    Next i
    
-   vCadenaX = vCadenaX & ", con residencia en " & rs!ProvDesc & ", " & rs!CantonDesc & "  distrito " & rs!DistDesc & ", " & Trim(rs!Direccion)
+   vCadenaX = vCadenaX & ", con residencia en " & rs!ProvDesc & ", " & rs!CantonDesc & "  distrito " & rs!DistDesc & ", " & Trim(rs!direccion)
    
    
 Else
@@ -758,6 +861,10 @@ With frmContenedor.Crt
   .SelectionFormula = "{REG_CREDITOS.ID_SOLICITUD} = " & vOperacion
   .PrintReport
 End With
+
+If chkContrato.Value = xtpChecked Then
+    Call sbContrato_Imprime(vOperacion)
+End If
 
 Exit Sub
 

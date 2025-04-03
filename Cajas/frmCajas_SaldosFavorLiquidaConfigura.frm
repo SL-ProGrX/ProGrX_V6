@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCajas_SaldosFavorLiquidaConfigura 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -23,7 +23,7 @@ Begin VB.Form frmCajas_SaldosFavorLiquidaConfigura
       TabIndex        =   1
       Top             =   960
       Width           =   10335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18230
       _ExtentY        =   10821
       _StockProps     =   68
@@ -113,7 +113,7 @@ Begin VB.Form frmCajas_SaldosFavorLiquidaConfigura
          Top             =   720
          Visible         =   0   'False
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -140,7 +140,7 @@ Begin VB.Form frmCajas_SaldosFavorLiquidaConfigura
          Top             =   600
          Visible         =   0   'False
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   873
          _StockProps     =   79
@@ -167,7 +167,7 @@ Begin VB.Form frmCajas_SaldosFavorLiquidaConfigura
          Top             =   600
          Visible         =   0   'False
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   873
          _StockProps     =   79
@@ -274,7 +274,7 @@ On Error GoTo vError
 
 fxGuardar = 0
 vGrid.Row = vGrid.ActiveRow
-vGrid.col = 1
+vGrid.Col = 1
 
 strSQL = "select isnull(count(*),0) as Existe from CAJAS_SALDOS_FAVOR_TIPOS " _
        & " where DOC_TIPO = '" & vGrid.Text & "'"
@@ -285,27 +285,27 @@ If rs!Existe = 0 Then 'Insertar
   
   strSQL = "insert CAJAS_SALDOS_FAVOR_TIPOS(DOC_TIPO,descripcion,Activo,Registro_Usuario,Registro_Fecha) values('" _
          & vGrid.Text & "','"
-  vGrid.col = 2
+  vGrid.Col = 2
   strSQL = strSQL & vGrid.Text & "',"
-  vGrid.col = 3
+  vGrid.Col = 3
   strSQL = strSQL & vGrid.Value & ",'" & glogon.Usuario & "',dbo.MyGetdate())"
   
   Call ConectionExecute(strSQL)
 
-  vGrid.col = 1
+  vGrid.Col = 1
   Call Bitacora("Registra", "Tipo de Saldo a Favor: " & vGrid.Text)
 
 Else 'Actualizar
 
- vGrid.col = 2
+ vGrid.Col = 2
  strSQL = "update CAJAS_SALDOS_FAVOR_TIPOS set descripcion = '" & vGrid.Text & "',Activo = "
- vGrid.col = 3
+ vGrid.Col = 3
  strSQL = strSQL & vGrid.Value & " where DOC_TIPO = '"
- vGrid.col = 1
+ vGrid.Col = 1
  strSQL = strSQL & vGrid.Text & "'"
  Call ConectionExecute(strSQL)
 
- vGrid.col = 1
+ vGrid.Col = 1
  Call Bitacora("Modifica", "Tipo de Saldo a Favor: " & vGrid.Text)
 
 End If
@@ -372,12 +372,12 @@ If KeyCode = vbKeyDelete Then
      i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
      If i = vbYes Then
         vGrid.Row = vGrid.ActiveRow
-        vGrid.col = 1
+        vGrid.Col = 1
         strSQL = "delete CAJAS_SALDOS_FAVOR_TIPOS where DOC_TIPO = '" & vGrid.Text & "'"
         Call ConectionExecute(strSQL)
         
         strSQL = vGrid.Text
-        vGrid.col = 1
+        vGrid.Col = 1
         Call Bitacora("Elimina", "Tipo de Saldo a Favor: " & vGrid.Text)
                 
         vGrid.DeleteRows vGrid.ActiveRow, 1
@@ -394,7 +394,7 @@ vError:
 End Sub
 
 
-Private Sub vGridTipo_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+Private Sub vGridTipo_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
 Dim vFondo As Integer, vTesoreria As Integer, vEfectivo As Integer, vTipo As String, vExcluyeSaldo As Integer
 
 On Error GoTo vError
@@ -403,15 +403,15 @@ If vPaso Then Exit Sub
 
 With vGridTipo
   .Row = .ActiveRow
-  .col = 1
+  .Col = 1
   vTipo = .Text
-  .col = 3
+  .Col = 3
   vFondo = .Value
-  .col = 4
+  .Col = 4
   vTesoreria = .Value
-  .col = 5
+  .Col = 5
   vEfectivo = .Value
-  .col = 6
+  .Col = 6
   vExcluyeSaldo = .Value
   
   strSQL = "exec spCajas_SaldoFavorTipoLiqAsigna '" & vTipo & "'," & vFondo & "," & vTesoreria & "," & vEfectivo _

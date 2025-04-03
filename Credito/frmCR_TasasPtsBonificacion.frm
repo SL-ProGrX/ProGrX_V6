@@ -1,30 +1,30 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "mscomctl.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.2#0"; "Codejock.Controls.v19.2.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.2#0"; "Codejock.ShortcutBar.v19.2.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCR_TasasPtsBonificacion 
-   BorderStyle     =   3  'Fixed Dialog
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
+   BorderStyle     =   1  'Fixed Single
    Caption         =   "Tasas de Interés: Pts Bonificación"
    ClientHeight    =   8460
-   ClientLeft      =   48
-   ClientTop       =   372
-   ClientWidth     =   13104
+   ClientLeft      =   45
+   ClientTop       =   375
+   ClientWidth     =   13110
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
-   MinButton       =   0   'False
    ScaleHeight     =   8460
-   ScaleWidth      =   13104
-   ShowInTaskbar   =   0   'False
+   ScaleWidth      =   13110
    Begin XtremeSuiteControls.TabControl tcMain 
       Height          =   7092
       Left            =   0
       TabIndex        =   3
       Top             =   1200
       Width           =   13092
-      _Version        =   1245186
+      _Version        =   1572864
       _ExtentX        =   23093
       _ExtentY        =   12509
       _StockProps     =   68
@@ -51,7 +51,7 @@ Begin VB.Form frmCR_TasasPtsBonificacion
       Item(0).Control(6)=   "gbMain"
       Item(1).Caption =   "Bonificación"
       Item(1).ControlCount=   1
-      Item(1).Control(0)=   "vGrid"
+      Item(1).Control(0)=   "tcAux"
       Item(2).Caption =   "Asignación"
       Item(2).ControlCount=   6
       Item(2).Control(0)=   "lsw"
@@ -61,17 +61,16 @@ Begin VB.Form frmCR_TasasPtsBonificacion
       Item(2).Control(4)=   "lblNodeLinea(0)"
       Item(2).Control(5)=   "lbl"
       Begin XtremeSuiteControls.ListView lsw 
-         Height          =   5532
-         Left            =   -63160
-         TabIndex        =   17
+         Height          =   5535
+         Left            =   -63280
+         TabIndex        =   16
          Top             =   720
          Visible         =   0   'False
-         Width           =   6012
-         _Version        =   1245186
-         _ExtentX        =   10604
-         _ExtentY        =   9758
+         Width           =   6375
+         _Version        =   1572864
+         _ExtentX        =   11245
+         _ExtentY        =   9763
          _StockProps     =   77
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Courier New"
             Size            =   9
@@ -87,17 +86,17 @@ Begin VB.Form frmCR_TasasPtsBonificacion
          Appearance      =   16
          ShowBorder      =   0   'False
       End
-      Begin XtremeSuiteControls.GroupBox gbMain 
-         Height          =   3972
-         Left            =   240
-         TabIndex        =   18
-         Top             =   3000
-         Width           =   12612
-         _Version        =   1245186
-         _ExtentX        =   22246
-         _ExtentY        =   7006
-         _StockProps     =   79
-         Caption         =   "Planes Registrados: "
+      Begin XtremeSuiteControls.TabControl tcAux 
+         Height          =   6735
+         Left            =   -70000
+         TabIndex        =   19
+         Top             =   360
+         Visible         =   0   'False
+         Width           =   13095
+         _Version        =   1572864
+         _ExtentX        =   23098
+         _ExtentY        =   11880
+         _StockProps     =   68
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -107,19 +106,142 @@ Begin VB.Form frmCR_TasasPtsBonificacion
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         Appearance      =   4
+         Color           =   32
+         ItemCount       =   3
+         Item(0).Caption =   "Membresía"
+         Item(0).ControlCount=   1
+         Item(0).Control(0)=   "vGrid"
+         Item(1).Caption =   "Destinos"
+         Item(1).ControlCount=   1
+         Item(1).Control(0)=   "gDestinos"
+         Item(2).Caption =   "Liquidez"
+         Item(2).ControlCount=   1
+         Item(2).Control(0)=   "gLiquidez"
+         Begin FPSpreadADO.fpSpread vGrid 
+            Height          =   6255
+            Left            =   120
+            TabIndex        =   20
+            Top             =   360
+            Width           =   12975
+            _Version        =   524288
+            _ExtentX        =   22886
+            _ExtentY        =   11033
+            _StockProps     =   64
+            BackColorStyle  =   1
+            BorderStyle     =   0
+            EditEnterAction =   5
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            MaxCols         =   484
+            ScrollBars      =   2
+            SpreadDesigner  =   "frmCR_TasasPtsBonificacion.frx":0000
+            VScrollSpecial  =   -1  'True
+            VScrollSpecialType=   2
+            AppearanceStyle =   1
+         End
+         Begin FPSpreadADO.fpSpread gDestinos 
+            Height          =   6255
+            Left            =   -69880
+            TabIndex        =   21
+            Top             =   360
+            Visible         =   0   'False
+            Width           =   12975
+            _Version        =   524288
+            _ExtentX        =   22886
+            _ExtentY        =   11033
+            _StockProps     =   64
+            BackColorStyle  =   1
+            BorderStyle     =   0
+            EditEnterAction =   5
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            MaxCols         =   486
+            ScrollBars      =   2
+            SpreadDesigner  =   "frmCR_TasasPtsBonificacion.frx":08D8
+            VScrollSpecial  =   -1  'True
+            VScrollSpecialType=   2
+            AppearanceStyle =   1
+         End
+         Begin FPSpreadADO.fpSpread gLiquidez 
+            Height          =   6255
+            Left            =   -69880
+            TabIndex        =   22
+            Top             =   360
+            Visible         =   0   'False
+            Width           =   12735
+            _Version        =   524288
+            _ExtentX        =   22463
+            _ExtentY        =   11033
+            _StockProps     =   64
+            BackColorStyle  =   1
+            BorderStyle     =   0
+            EditEnterAction =   5
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            MaxCols         =   484
+            ScrollBars      =   2
+            SpreadDesigner  =   "frmCR_TasasPtsBonificacion.frx":1242
+            VScrollSpecial  =   -1  'True
+            VScrollSpecialType=   2
+            AppearanceStyle =   1
+         End
+      End
+      Begin XtremeSuiteControls.GroupBox gbMain 
+         Height          =   3972
+         Left            =   240
+         TabIndex        =   17
+         Top             =   3000
+         Width           =   12612
+         _Version        =   1572864
+         _ExtentX        =   22246
+         _ExtentY        =   7006
+         _StockProps     =   79
+         Caption         =   "Planes Registrados: "
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          BorderStyle     =   1
          Begin XtremeSuiteControls.ListView lswPlanes 
             Height          =   3492
             Left            =   0
-            TabIndex        =   19
+            TabIndex        =   18
             Top             =   360
             Width           =   12612
-            _Version        =   1245186
+            _Version        =   1572864
             _ExtentX        =   22246
             _ExtentY        =   6159
             _StockProps     =   77
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -131,23 +253,25 @@ Begin VB.Form frmCR_TasasPtsBonificacion
             EndProperty
             View            =   3
             FullRowSelect   =   -1  'True
-            Appearance      =   16
+            Appearance      =   21
+            UseVisualStyle  =   0   'False
          End
       End
       Begin XtremeSuiteControls.CheckBox chkActivo 
-         Height          =   372
+         Height          =   375
          Left            =   11040
-         TabIndex        =   9
+         TabIndex        =   8
          Top             =   720
-         Width           =   732
-         _Version        =   1245186
-         _ExtentX        =   1291
-         _ExtentY        =   656
+         Width           =   975
+         _Version        =   1572864
+         _ExtentX        =   1720
+         _ExtentY        =   661
          _StockProps     =   79
          Caption         =   "Activo?"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   7.8
+            Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -155,20 +279,20 @@ Begin VB.Form frmCR_TasasPtsBonificacion
             Strikethrough   =   0   'False
          EndProperty
          Transparent     =   -1  'True
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
       End
       Begin XtremeSuiteControls.FlatEdit txtDescripcion 
          Height          =   312
          Left            =   3600
-         TabIndex        =   6
+         TabIndex        =   5
          Top             =   720
          Width           =   7212
-         _Version        =   1245186
+         _Version        =   1572864
          _ExtentX        =   12721
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -178,49 +302,19 @@ Begin VB.Form frmCR_TasasPtsBonificacion
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
-      End
-      Begin FPSpreadADO.fpSpread vGrid 
-         Height          =   6492
-         Left            =   -68800
-         TabIndex        =   4
-         Top             =   480
-         Visible         =   0   'False
-         Width           =   11052
-         _Version        =   524288
-         _ExtentX        =   19494
-         _ExtentY        =   11451
-         _StockProps     =   64
-         BackColorStyle  =   1
-         BorderStyle     =   0
-         EditEnterAction =   5
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         MaxCols         =   484
-         ScrollBars      =   2
-         SpreadDesigner  =   "frmCR_TasasPtsBonificacion.frx":0000
-         VScrollSpecial  =   -1  'True
-         VScrollSpecialType=   2
-         AppearanceStyle =   1
       End
       Begin MSComctlLib.Toolbar tlb 
          Height          =   264
          Left            =   3600
-         TabIndex        =   10
+         TabIndex        =   9
          Top             =   360
          Width           =   3828
-         _ExtentX        =   6752
-         _ExtentY        =   466
-         ButtonWidth     =   487
-         ButtonHeight    =   466
+         _ExtentX        =   6747
+         _ExtentY        =   582
+         ButtonWidth     =   609
+         ButtonHeight    =   582
          AllowCustomize  =   0   'False
          Style           =   1
          _Version        =   393216
@@ -259,15 +353,14 @@ Begin VB.Form frmCR_TasasPtsBonificacion
       Begin XtremeSuiteControls.FlatEdit txtNotas 
          Height          =   1632
          Left            =   3600
-         TabIndex        =   8
+         TabIndex        =   7
          Top             =   1080
          Width           =   7212
-         _Version        =   1245186
+         _Version        =   1572864
          _ExtentX        =   12721
          _ExtentY        =   2879
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -279,17 +372,17 @@ Begin VB.Form frmCR_TasasPtsBonificacion
          EndProperty
          MultiLine       =   -1  'True
          ScrollBars      =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin MSComctlLib.TreeView ArbolExp 
          Height          =   5520
-         Left            =   -69760
-         TabIndex        =   11
+         Left            =   -70000
+         TabIndex        =   10
          Top             =   720
          Visible         =   0   'False
-         Width           =   6492
-         _ExtentX        =   11451
+         Width           =   6735
+         _ExtentX        =   11880
          _ExtentY        =   9737
          _Version        =   393217
          HideSelection   =   0   'False
@@ -301,7 +394,7 @@ Begin VB.Form frmCR_TasasPtsBonificacion
          Appearance      =   0
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Courier New"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -311,13 +404,13 @@ Begin VB.Form frmCR_TasasPtsBonificacion
       End
       Begin XtremeShortcutBar.ShortcutCaption lbl 
          Height          =   315
-         Left            =   -69760
-         TabIndex        =   15
+         Left            =   -70000
+         TabIndex        =   14
          Top             =   360
          Visible         =   0   'False
-         Width           =   12612
-         _Version        =   1245186
-         _ExtentX        =   22246
+         Width           =   13095
+         _Version        =   1572864
+         _ExtentX        =   23098
          _ExtentY        =   556
          _StockProps     =   14
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -336,7 +429,7 @@ Begin VB.Form frmCR_TasasPtsBonificacion
          Caption         =   "LINEA"
          BeginProperty Font 
             Name            =   "Courier New"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -346,7 +439,7 @@ Begin VB.Form frmCR_TasasPtsBonificacion
          Height          =   252
          Index           =   0
          Left            =   -69760
-         TabIndex        =   14
+         TabIndex        =   13
          ToolTipText     =   "Linea"
          Top             =   6480
          Visible         =   0   'False
@@ -356,7 +449,7 @@ Begin VB.Form frmCR_TasasPtsBonificacion
          Caption         =   "DESTINO"
          BeginProperty Font 
             Name            =   "Courier New"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -366,7 +459,7 @@ Begin VB.Form frmCR_TasasPtsBonificacion
          Height          =   252
          Index           =   1
          Left            =   -69760
-         TabIndex        =   13
+         TabIndex        =   12
          ToolTipText     =   "Linea"
          Top             =   6720
          Visible         =   0   'False
@@ -376,7 +469,7 @@ Begin VB.Form frmCR_TasasPtsBonificacion
          Caption         =   "GARANTIA"
          BeginProperty Font 
             Name            =   "Courier New"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -386,7 +479,7 @@ Begin VB.Form frmCR_TasasPtsBonificacion
          Height          =   252
          Index           =   2
          Left            =   -67600
-         TabIndex        =   12
+         TabIndex        =   11
          ToolTipText     =   "Linea"
          Top             =   6480
          Visible         =   0   'False
@@ -396,14 +489,15 @@ Begin VB.Form frmCR_TasasPtsBonificacion
          Height          =   252
          Index           =   1
          Left            =   2040
-         TabIndex        =   7
+         TabIndex        =   6
          Top             =   1080
          Width           =   1452
-         _Version        =   1245186
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   444
          _StockProps     =   79
          Caption         =   "Notas"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -419,14 +513,15 @@ Begin VB.Form frmCR_TasasPtsBonificacion
          Height          =   252
          Index           =   0
          Left            =   2040
-         TabIndex        =   5
+         TabIndex        =   4
          Top             =   720
          Width           =   1452
-         _Version        =   1245186
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   444
          _StockProps     =   79
          Caption         =   "Descripción"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -445,15 +540,14 @@ Begin VB.Form frmCR_TasasPtsBonificacion
       TabIndex        =   1
       Top             =   240
       Width           =   1572
-      _Version        =   1245186
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   868
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   13.8
+         Size            =   14.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -461,7 +555,7 @@ Begin VB.Form frmCR_TasasPtsBonificacion
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin MSComCtl2.FlatScrollBar FlatScrollBar 
@@ -470,8 +564,8 @@ Begin VB.Form frmCR_TasasPtsBonificacion
       TabIndex        =   2
       Top             =   240
       Width           =   492
-      _ExtentX        =   868
-      _ExtentY        =   445
+      _ExtentX        =   873
+      _ExtentY        =   450
       _Version        =   393216
       Arrows          =   65536
       Orientation     =   1638401
@@ -479,18 +573,19 @@ Begin VB.Form frmCR_TasasPtsBonificacion
    Begin XtremeSuiteControls.PushButton cmdActualiza 
       Height          =   372
       Left            =   0
-      TabIndex        =   16
+      TabIndex        =   15
       Top             =   0
       Visible         =   0   'False
       Width           =   492
-      _Version        =   1245186
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   79
       Caption         =   "..."
+      BackColor       =   -2147483633
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -505,15 +600,16 @@ Begin VB.Form frmCR_TasasPtsBonificacion
       TabIndex        =   0
       Top             =   240
       Width           =   1572
-      _Version        =   1245186
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   868
       _StockProps     =   79
       Caption         =   "Plan de Bonificación"
       ForeColor       =   16777215
+      BackColor       =   -2147483633
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   10.2
+         Size            =   10.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -536,6 +632,9 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim strSQL As String, rs As New ADODB.Recordset
+Dim itmX As ListViewItem
+
 Dim vCodigo As String, vConsultaActiva As Integer, vNode As Node
 Dim vEditar As Boolean, vScroll As Boolean, vPaso As Boolean
 
@@ -580,14 +679,12 @@ lblNodeLinea.Item(0).Caption = "Línea   : " & lblNodeLinea.Item(0).Tag
 lblNodeLinea.Item(1).Caption = "Destino : " & lblNodeLinea.Item(1).Tag
 lblNodeLinea.Item(2).Caption = "Garantia: " & lblNodeLinea.Item(2).Tag
 
-
 End Sub
 
 
 
 
 Private Sub FlatScrollBar_Change()
-Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
 
@@ -605,7 +702,6 @@ If vScroll Then
       txtPlan.Text = rs!cod_Tasa_Bono
       Call sbConsulta(txtPlan.Text)
     End If
-    rs.Close
 End If
 
 vScroll = False
@@ -670,7 +766,6 @@ End Sub
 
 Private Sub sbLimpia(Optional pSoloLista As Boolean = False)
 Dim strSQL As String, rs As New ADODB.Recordset
-Dim itmX As ListViewItem
 
 Select Case tcMain.SelectedItem
   Case 0 'Remesas
@@ -692,8 +787,8 @@ Select Case tcMain.SelectedItem
                 itmX.SubItems(1) = rs!Descripcion
                 itmX.SubItems(2) = rs!Notas
                 itmX.SubItems(3) = IIf((rs!Activo = 1), "Activo", "Inactivo")
-                itmX.SubItems(4) = rs!registro_usuario & ""
-                itmX.SubItems(5) = rs!registro_fecha & ""
+                itmX.SubItems(4) = rs!registro_Usuario & ""
+                itmX.SubItems(5) = rs!Registro_Fecha & ""
        End With
        rs.MoveNext
      Loop
@@ -729,8 +824,8 @@ End Function
 
 
 Private Sub sbCargaLswAdicional()
-Dim strSQL As String, rs As New ADODB.Recordset
-Dim itmX As ListViewItem
+
+On Error GoTo vError
 
 Me.MousePointer = vbHourglass
 
@@ -759,11 +854,15 @@ vPaso = False
 
 Me.MousePointer = vbDefault
 
+Exit Sub
+
+vError:
+  Me.MousePointer = vbDefault
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 End Sub
 
 
 Private Sub sbConsulta(pPlan As String)
-Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error Resume Next
 
@@ -804,7 +903,6 @@ End Sub
 
 Private Sub sbExplorer_Load()
 Dim vNode As Node, strOpciones  As String
-Dim rs As New ADODB.Recordset, strSQL As String
 
 With ArbolExp
   .Nodes.Clear
@@ -835,7 +933,6 @@ End Function
 
 
 Private Sub ArbolExp_Expand(ByVal Node As MSComctlLib.Node)
-Dim rs As New ADODB.Recordset, strSQL As String
 Dim vCodTmp As String
 
 
@@ -879,26 +976,26 @@ End Sub
 
 Sub sbCreaNodos(vPadre As String, vTexto As String, vImagen As String, vExpand As Boolean _
                , vAcepta As String, Optional xkey As String = "N")
-Dim nodx As Node, vKey As String
+Dim nodX As Node, vKey As String
 On Error Resume Next
 
-Set nodx = ArbolExp.Nodes.Add(vPadre, tvwChild)
-    nodx.Text = vTexto
-    nodx.Tag = nodx.Index
+Set nodX = ArbolExp.Nodes.Add(vPadre, tvwChild)
+    nodX.Text = vTexto
+    nodX.Tag = nodX.Index
 '    nodx.Image = vImagen
     If xkey = "N" Then
-        nodx.Key = vTexto & "0x0" & ArbolExp.Nodes.Count & "ID"
+        nodX.Key = vTexto & "0x0" & ArbolExp.Nodes.Count & "ID"
     Else
-        nodx.Key = xkey
+        nodX.Key = xkey
     End If
     
     
-vKey = nodx.Key
+vKey = nodX.Key
 
 If vExpand Then
-    Set nodx = ArbolExp.Nodes.Add(vKey, tvwChild)
-        nodx.Key = "F" & vTexto & "0x0" & ArbolExp.Nodes.Count & "ID"
-        nodx.Tag = nodx.Index
+    Set nodX = ArbolExp.Nodes.Add(vKey, tvwChild)
+        nodX.Key = "F" & vTexto & "0x0" & ArbolExp.Nodes.Count & "ID"
+        nodX.Tag = nodX.Index
 End If
     
     
@@ -910,7 +1007,6 @@ End Sub
 
 
 Private Sub sbGuardar()
-Dim strSQL As String
 
 On Error GoTo vError
 
@@ -965,7 +1061,6 @@ End Sub
 
 
 Private Sub lsw_ItemCheck(ByVal Item As XtremeSuiteControls.ListViewItem)
-Dim strSQL As String
 
 If vPaso Then Exit Sub
 
@@ -994,11 +1089,33 @@ Call sbConsulta(Item.Text)
 
 End Sub
 
+Private Sub tcAux_SelectedChanged(ByVal Item As XtremeSuiteControls.ITabControlItem)
+
+Select Case Item.Index
+    Case 0 'Membresía
+        strSQL = "select Linea, Inicio, Corte, Tasa_Bono, Registro_Usuario, Registro_Fecha, Modifica_Usuario, Modifica_Fecha" _
+           & " from Crd_Tasa_Bono_Membresia where cod_Tasa_Bono = '" & vCodigo & "'"
+        Call sbCargaGrid(vGrid, 8, strSQL)
+
+    Case 1 'Destinos
+        strSQL = "select T.Linea, T.Cod_Destino, D.Descripcion as 'Destino_Desc', T.Plazo_Inicio, T.Plazo_Corte, T.Tasa_Bono, T.Registro_Usuario, T.Registro_Fecha, T.Modifica_Usuario, T.Modifica_Fecha" _
+           & " from Crd_Tasa_Bono_Destino T inner join CATALOGO_DESTINOS D on T.cod_Destino = D.cod_Destino" _
+           & " where T.cod_Tasa_Bono = '" & vCodigo & "' order by T.Cod_Destino, T.Plazo_Inicio"
+        Call sbCargaGrid(gDestinos, 10, strSQL)
+
+    Case 2 'Liquidez
+        strSQL = "select Linea, Cap_Inicial, Cap_Final, Tasa_Bono, Registro_Usuario, Registro_Fecha, Modifica_Usuario, Modifica_Fecha" _
+           & " from Crd_Tasa_Bono_Membresia_Liquidez where cod_Tasa_Bono = '" & vCodigo & "'"
+        Call sbCargaGrid(gLiquidez, 8, strSQL)
+
+End Select
+
+
+End Sub
+
 Private Sub tcMain_SelectedChanged(ByVal Item As XtremeSuiteControls.ITabControlItem)
 
 If txtPlan.Text = "" Then Exit Sub
-
-Dim strSQL As String
 
 Me.MousePointer = vbHourglass
 
@@ -1006,9 +1123,12 @@ Select Case Item.Index
   Case 0 'Nada
   
   Case 1 'Tabla de Bonificacion
-        strSQL = "select Linea,Inicio,Corte,Tasa_Bono,Registro_Usuario,Registro_Fecha" _
+        
+        tcAux.Item(0).Selected = True
+  
+        strSQL = "select Linea, Inicio, Corte, Tasa_Bono, Registro_Usuario, Registro_Fecha, Modifica_Usuario, Modifica_Fecha" _
                & " from Crd_Tasa_Bono_Membresia where cod_Tasa_Bono = '" & vCodigo & "'"
-        Call sbCargaGrid(vGrid, 6, strSQL)
+        Call sbCargaGrid(vGrid, 8, strSQL)
   
   Case 2 'Asignación
         lbl.Caption = ""
@@ -1074,7 +1194,6 @@ Private Sub txtPlan_LostFocus()
 End Sub
 
 Private Function fxGuardar() As Long
-Dim strSQL As String, rs As New ADODB.Recordset
 Dim vLinea As Long
 
 'Guarda la información de la linea
@@ -1084,7 +1203,7 @@ On Error GoTo vError
 
 fxGuardar = 0
 vGrid.Row = vGrid.ActiveRow
-vGrid.col = 1
+vGrid.Col = 1
 
 
 If vGrid.Text = "" Then 'Insertar
@@ -1095,35 +1214,35 @@ If vGrid.Text = "" Then 'Insertar
    vLinea = rs!Linea
   rs.Close
      
-  strSQL = "insert into CRD_TASA_BONO_MEMBRESIA(COD_TASA_BONO,Linea,Inicio,Corte,Tasa_Bono,registro_fecha,registro_usuario) values('" _
+  strSQL = "insert into CRD_TASA_BONO_MEMBRESIA(COD_TASA_BONO, Linea, Inicio, Corte, Tasa_Bono, registro_fecha, registro_usuario) values('" _
          & vCodigo & "'," & vLinea & ","
-  vGrid.col = 2
+  vGrid.Col = 2
   strSQL = strSQL & vGrid.Text & ","
-  vGrid.col = 3
+  vGrid.Col = 3
   strSQL = strSQL & vGrid.Text & ","
-  vGrid.col = 4
+  vGrid.Col = 4
   strSQL = strSQL & vGrid.Text & ",dbo.MyGetdate(),'" & glogon.Usuario & "')"
 
   Call ConectionExecute(strSQL)
 
-  vGrid.col = 1
+  vGrid.Col = 1
   vGrid.Text = CStr(vLinea)
   
   Call Bitacora("Registra", "Tasas Bonfificación: P:" & txtPlan.Text & "..L: " & vGrid.Text)
 Else 'Actualizar
 
- vGrid.col = 2
+ vGrid.Col = 2
  strSQL = "update CRD_TASA_BONO_MEMBRESIA set Modifica_Fecha = dbo.MyGetdate(), Modifica_Usuario = '" _
         & glogon.Usuario & "', Inicio = " & vGrid.Text & ", Corte = "
- vGrid.col = 3
+ vGrid.Col = 3
  strSQL = strSQL & vGrid.Text & ",Tasa_Bono = "
- vGrid.col = 4
+ vGrid.Col = 4
  strSQL = strSQL & vGrid.Text & " where COD_TASA_BONO = '" & vCodigo & "' and Linea = "
- vGrid.col = 1
+ vGrid.Col = 1
  strSQL = strSQL & vGrid.Text
  Call ConectionExecute(strSQL)
 
- vGrid.col = 1
+ vGrid.Col = 1
  Call Bitacora("Modifica", "Tasas Bonfificación: P:" & txtPlan.Text & "..L: " & vGrid.Text)
 
 End If
@@ -1138,12 +1257,148 @@ vError:
 End Function
 
 
+
+Private Function fxGuardar_Destino() As Long
+Dim vLinea As Long
+
+'Guarda la información de la linea
+'si es Insert devuelve el codigo, sino devuelve 0
+
+On Error GoTo vError
+
+fxGuardar_Destino = 0
+gDestinos.Row = gDestinos.ActiveRow
+gDestinos.Col = 1
+
+
+If gDestinos.Text = "" Then 'Insertar
+  
+  strSQL = "select isnull(max(LINEA),0) + 1 as Linea from CRD_TASA_BONO_DESTINO " _
+         & " where COD_TASA_BONO = '" & txtPlan.Text & "'"
+  Call OpenRecordSet(rs, strSQL)
+   vLinea = rs!Linea
+  rs.Close
+     
+  strSQL = "insert into CRD_TASA_BONO_DESTINO(COD_TASA_BONO, Linea, COD_DESTINO, PLAZO_INICIO, PLAZO_CORTE, Tasa_Bono, registro_fecha, registro_usuario) values('" _
+         & vCodigo & "', " & vLinea & ", '"
+  
+  gDestinos.Col = 2
+  strSQL = strSQL & gDestinos.Text & "', "
+  
+  
+  gDestinos.Col = 4
+  strSQL = strSQL & gDestinos.Text & ", "
+  gDestinos.Col = 5
+  strSQL = strSQL & gDestinos.Text & ", "
+  gDestinos.Col = 6
+  strSQL = strSQL & gDestinos.Text & ", dbo.MyGetdate(), '" & glogon.Usuario & "')"
+
+  Call ConectionExecute(strSQL)
+
+  gDestinos.Col = 1
+  gDestinos.Text = CStr(vLinea)
+  
+  Call Bitacora("Registra", "Tasas Bonfificación, Destinos: P:" & txtPlan.Text & "..L: " & gDestinos.Text)
+Else 'Actualizar
+
+ gDestinos.Col = 2
+ strSQL = "update CRD_TASA_BONO_DESTINO set Modifica_Fecha = dbo.MyGetdate(), Modifica_Usuario = '" _
+        & glogon.Usuario & "', cod_Destino = '" & gDestinos.Text & "', PLAZO_INICIO = "
+ gDestinos.Col = 4
+ strSQL = strSQL & gDestinos.Text & ", PLAZO_CORTE = "
+ gDestinos.Col = 5
+ strSQL = strSQL & gDestinos.Text & ", Tasa_Bono = "
+ gDestinos.Col = 6
+ strSQL = strSQL & gDestinos.Text & " where COD_TASA_BONO = '" & vCodigo & "' and Linea = "
+ gDestinos.Col = 1
+ strSQL = strSQL & gDestinos.Text
+ Call ConectionExecute(strSQL)
+
+ gDestinos.Col = 1
+ Call Bitacora("Modifica", "Tasas Bonfificación, Destinos: P:" & txtPlan.Text & "..L: " & gDestinos.Text)
+
+End If
+
+fxGuardar_Destino = 1
+
+Exit Function
+
+vError:
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Function
+
+Private Function fxGuardar_Liquidez() As Long
+Dim vLinea As Long
+
+'Guarda la información de la linea
+'si es Insert devuelve el codigo, sino devuelve 0
+
+On Error GoTo vError
+
+fxGuardar_Liquidez = 0
+gLiquidez.Row = gLiquidez.ActiveRow
+gLiquidez.Col = 1
+
+
+If gLiquidez.Text = "" Then 'Insertar
+  
+  strSQL = "select isnull(max(LINEA),0) + 1 as Linea from CRD_TASA_BONO_MEMBRESIA_LIQUIDEZ" _
+         & " where COD_TASA_BONO = '" & txtPlan.Text & "'"
+  Call OpenRecordSet(rs, strSQL)
+   vLinea = rs!Linea
+  rs.Close
+     
+  strSQL = "insert into CRD_TASA_BONO_MEMBRESIA_LIQUIDEZ(COD_TASA_BONO,Linea, Cap_Inicial, Cap_Final, Tasa_Bono, registro_fecha, registro_usuario) values('" _
+         & vCodigo & "'," & vLinea & ","
+  gLiquidez.Col = 2
+  strSQL = strSQL & gLiquidez.Text & ","
+  gLiquidez.Col = 3
+  strSQL = strSQL & gLiquidez.Text & ","
+  gLiquidez.Col = 4
+  strSQL = strSQL & gLiquidez.Text & ",dbo.MyGetdate(),'" & glogon.Usuario & "')"
+
+  Call ConectionExecute(strSQL)
+
+  gLiquidez.Col = 1
+  gLiquidez.Text = CStr(vLinea)
+  
+  Call Bitacora("Registra", "Tasas Bonfificación, Liquidez: P:" & txtPlan.Text & "..L: " & gLiquidez.Text)
+Else 'Actualizar
+
+ gLiquidez.Col = 2
+ strSQL = "update CRD_TASA_BONO_MEMBRESIA_LIQUIDEZ set Modifica_Fecha = dbo.MyGetdate(), Modifica_Usuario = '" _
+        & glogon.Usuario & "', Cap_Inicial = " & gLiquidez.Text & ", Cap_Final = "
+ gLiquidez.Col = 3
+ strSQL = strSQL & gLiquidez.Text & ", Tasa_Bono = "
+ gLiquidez.Col = 4
+ strSQL = strSQL & gLiquidez.Text & " where COD_TASA_BONO = '" & vCodigo & "' and Linea = "
+ gLiquidez.Col = 1
+ strSQL = strSQL & gLiquidez.Text
+ Call ConectionExecute(strSQL)
+
+ gLiquidez.Col = 1
+ Call Bitacora("Modifica", "Tasas Bonfificación, Liquidez: P:" & txtPlan.Text & "..L: " & gLiquidez.Text)
+
+End If
+
+fxGuardar_Liquidez = 1
+
+Exit Function
+
+vError:
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Function
+
+
+
 Private Sub vGrid_KeyDown(KeyCode As Integer, Shift As Integer)
 Dim i As Integer, strSQL As String
 
 On Error GoTo vError
 
-If vGrid.ActiveCol = vGrid.MaxCols And (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
+If vGrid.ActiveCol = 4 And (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
   i = fxGuardar
   If i = 0 Then Exit Sub
   vGrid.Row = vGrid.ActiveRow
@@ -1165,12 +1420,12 @@ If KeyCode = vbKeyDelete Then
      i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
      If i = vbYes Then
         vGrid.Row = vGrid.ActiveRow
-        vGrid.col = 1
+        vGrid.Col = 1
         strSQL = "delete CRD_TASA_BONO_MEMBRESIA where cod_Tasa_Bono = '" & txtPlan.Text & "' and Linea = " & vGrid.Text
         Call ConectionExecute(strSQL)
         
         strSQL = vGrid.Text
-        vGrid.col = 1
+        vGrid.Col = 1
         Call Bitacora("Elimina", "Tasas Bonfificación: P:" & txtPlan.Text & "..L: " & vGrid.Text)
                 
         vGrid.DeleteRows vGrid.ActiveRow, 1
@@ -1187,4 +1442,124 @@ vError:
 
 End Sub
 
+
+Private Sub gDestinos_KeyDown(KeyCode As Integer, Shift As Integer)
+Dim i As Integer, strSQL As String
+
+On Error GoTo vError
+
+If gDestinos.ActiveCol = 6 And (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
+  i = fxGuardar_Destino
+  If i = 0 Then Exit Sub
+  gDestinos.Row = gDestinos.ActiveRow
+  If gDestinos.MaxRows <= gDestinos.ActiveRow Then
+    gDestinos.MaxRows = gDestinos.MaxRows + 1
+    gDestinos.Row = gDestinos.MaxRows
+  End If
+End If
+
+If KeyCode = vbKeyF4 And gDestinos.ActiveCol = 2 Then
+    gBusquedas.Columna = "Cod_Destino"
+    gBusquedas.Orden = "Cod_Destino"
+    gBusquedas.Consulta = "select Cod_Destino, Descripcion from Catalogo_Destinos"
+    gBusquedas.Filtro = ""
+    
+    gBusquedas.Col1Name = "Destino Id"
+    gBusquedas.Col2Name = "Descripción"
+
+    frmBusquedas.Show vbModal
+    
+    If gBusquedas.Resultado <> "" Then
+       gDestinos.Row = gDestinos.ActiveRow
+       gDestinos.Col = 2
+       gDestinos.Text = gBusquedas.Resultado
+       gDestinos.Col = 3
+       gDestinos.Text = gBusquedas.Resultado2
+    End If
+
+End If
+
+'Inserta Linea
+If KeyCode = vbKeyInsert Then
+    gDestinos.MaxRows = gDestinos.MaxRows + 1
+    gDestinos.InsertRows gDestinos.ActiveRow, 1
+    gDestinos.Row = gDestinos.ActiveRow
+End If
+
+'Borrar Linea
+If KeyCode = vbKeyDelete Then
+     i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
+     If i = vbYes Then
+        gDestinos.Row = gDestinos.ActiveRow
+        gDestinos.Col = 1
+        strSQL = "delete CRD_TASA_BONO_DESTINO where cod_Tasa_Bono = '" & txtPlan.Text & "' and Linea = " & gDestinos.Text
+        Call ConectionExecute(strSQL)
+        
+        strSQL = gDestinos.Text
+        gDestinos.Col = 1
+        Call Bitacora("Elimina", "Tasas Bonfificación, Destinos: P:" & txtPlan.Text & "..L: " & gDestinos.Text)
+                
+        gDestinos.DeleteRows gDestinos.ActiveRow, 1
+        gDestinos.MaxRows = gDestinos.MaxRows - 1
+        gDestinos.Row = gDestinos.ActiveRow
+     
+     End If
+End If
+
+Exit Sub
+
+vError:
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+
+Private Sub gLiquidez_KeyDown(KeyCode As Integer, Shift As Integer)
+Dim i As Integer, strSQL As String
+
+On Error GoTo vError
+
+If gLiquidez.ActiveCol = 4 And (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
+  i = fxGuardar_Liquidez
+  If i = 0 Then Exit Sub
+  gLiquidez.Row = gLiquidez.ActiveRow
+  If gLiquidez.MaxRows <= gLiquidez.ActiveRow Then
+    gLiquidez.MaxRows = gLiquidez.MaxRows + 1
+    gLiquidez.Row = gLiquidez.MaxRows
+  End If
+End If
+
+'Inserta Linea
+If KeyCode = vbKeyInsert Then
+    gLiquidez.MaxRows = gLiquidez.MaxRows + 1
+    gLiquidez.InsertRows gLiquidez.ActiveRow, 1
+    gLiquidez.Row = gLiquidez.ActiveRow
+End If
+
+'Borrar Linea
+If KeyCode = vbKeyDelete Then
+     i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
+     If i = vbYes Then
+        gLiquidez.Row = gLiquidez.ActiveRow
+        gLiquidez.Col = 1
+        strSQL = "delete CRD_TASA_BONO_MEMBRESIA_LIQUIDEZ where cod_Tasa_Bono = '" & txtPlan.Text & "' and Linea = " & gLiquidez.Text
+        Call ConectionExecute(strSQL)
+        
+        strSQL = gLiquidez.Text
+        gLiquidez.Col = 1
+        Call Bitacora("Elimina", "Tasas Bonfificación, Liquidez: P:" & txtPlan.Text & "..L: " & gLiquidez.Text)
+                
+        gLiquidez.DeleteRows gLiquidez.ActiveRow, 1
+        gLiquidez.MaxRows = gLiquidez.MaxRows - 1
+        gLiquidez.Row = gLiquidez.ActiveRow
+     
+     End If
+End If
+
+Exit Sub
+
+vError:
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
 

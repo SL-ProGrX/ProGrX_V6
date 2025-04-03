@@ -1,7 +1,9 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_ArregloPago 
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Arreglos de Pago"
    ClientHeight    =   7500
@@ -21,7 +23,7 @@ Begin VB.Form frmCR_ArregloPago
       TabIndex        =   41
       Top             =   1560
       Width           =   9972
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   17590
       _ExtentY        =   3408
       _StockProps     =   68
@@ -76,12 +78,11 @@ Begin VB.Form frmCR_ArregloPago
          TabIndex        =   42
          Top             =   480
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -94,7 +95,7 @@ Begin VB.Form frmCR_ArregloPago
          Text            =   "0"
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtIntMor 
@@ -112,12 +113,11 @@ Begin VB.Form frmCR_ArregloPago
          TabIndex        =   43
          Top             =   840
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -130,7 +130,7 @@ Begin VB.Form frmCR_ArregloPago
          Text            =   "0"
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtCargos 
@@ -148,12 +148,11 @@ Begin VB.Form frmCR_ArregloPago
          TabIndex        =   44
          Top             =   1200
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -166,7 +165,7 @@ Begin VB.Form frmCR_ArregloPago
          Text            =   "0"
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtPolizas 
@@ -184,12 +183,11 @@ Begin VB.Form frmCR_ArregloPago
          TabIndex        =   45
          Top             =   1560
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -202,7 +200,7 @@ Begin VB.Form frmCR_ArregloPago
          Text            =   "0"
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAmortiza 
@@ -220,12 +218,11 @@ Begin VB.Form frmCR_ArregloPago
          TabIndex        =   46
          Top             =   480
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -238,7 +235,7 @@ Begin VB.Form frmCR_ArregloPago
          Text            =   "0"
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtCargosIntereses 
@@ -256,12 +253,11 @@ Begin VB.Form frmCR_ArregloPago
          TabIndex        =   47
          Top             =   840
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -274,7 +270,8 @@ Begin VB.Form frmCR_ArregloPago
          Text            =   "0"
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
          Transparent     =   -1  'True
       End
       Begin XtremeSuiteControls.FlatEdit txtDeuda 
@@ -292,12 +289,11 @@ Begin VB.Form frmCR_ArregloPago
          TabIndex        =   48
          Top             =   1200
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -310,7 +306,8 @@ Begin VB.Form frmCR_ArregloPago
          Text            =   "0"
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
          Transparent     =   -1  'True
       End
       Begin XtremeSuiteControls.FlatEdit txtTotalPagar 
@@ -328,12 +325,11 @@ Begin VB.Form frmCR_ArregloPago
          TabIndex        =   49
          Top             =   1560
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -346,7 +342,8 @@ Begin VB.Form frmCR_ArregloPago
          Text            =   "0"
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
          Transparent     =   -1  'True
       End
       Begin XtremeSuiteControls.FlatEdit txtMonto 
@@ -364,12 +361,11 @@ Begin VB.Form frmCR_ArregloPago
          TabIndex        =   50
          Top             =   480
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -382,7 +378,7 @@ Begin VB.Form frmCR_ArregloPago
          Text            =   "0"
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtSaldo 
@@ -400,12 +396,11 @@ Begin VB.Form frmCR_ArregloPago
          TabIndex        =   51
          Top             =   840
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -418,7 +413,7 @@ Begin VB.Form frmCR_ArregloPago
          Text            =   "0"
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtUltimoMov 
@@ -436,12 +431,11 @@ Begin VB.Form frmCR_ArregloPago
          TabIndex        =   52
          Top             =   1200
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -454,7 +448,7 @@ Begin VB.Form frmCR_ArregloPago
          Text            =   "0"
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin VB.Label Label4 
@@ -668,14 +662,14 @@ Begin VB.Form frmCR_ArregloPago
       End
    End
    Begin XtremeSuiteControls.TabControl tcMain 
-      Height          =   2172
+      Height          =   2415
       Left            =   1440
       TabIndex        =   21
-      Top             =   3600
-      Width           =   9972
-      _Version        =   1441793
-      _ExtentX        =   17590
-      _ExtentY        =   3831
+      Top             =   3480
+      Width           =   9975
+      _Version        =   1572864
+      _ExtentX        =   17595
+      _ExtentY        =   4260
       _StockProps     =   68
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
@@ -689,7 +683,6 @@ Begin VB.Form frmCR_ArregloPago
       Appearance      =   4
       Color           =   32
       ItemCount       =   4
-      SelectedItem    =   1
       Item(0).Caption =   "Capitaliza Deuda"
       Item(0).ControlCount=   3
       Item(0).Control(0)=   "lsw"
@@ -733,16 +726,14 @@ Begin VB.Form frmCR_ArregloPago
       Item(3).Control(17)=   "Label4(1)"
       Begin XtremeSuiteControls.ListView lsw 
          Height          =   1452
-         Left            =   -70000
+         Left            =   0
          TabIndex        =   40
          Top             =   360
-         Visible         =   0   'False
          Width           =   9852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17378
          _ExtentY        =   2561
          _StockProps     =   77
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -754,7 +745,7 @@ Begin VB.Form frmCR_ArregloPago
          EndProperty
          View            =   3
          FullRowSelect   =   -1  'True
-         Appearance      =   16
+         Appearance      =   21
       End
       Begin XtremeSuiteControls.FlatEdit txtAE_IntMor 
          BeginProperty DataFormat 
@@ -772,12 +763,11 @@ Begin VB.Form frmCR_ArregloPago
          Top             =   1440
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -789,7 +779,7 @@ Begin VB.Form frmCR_ArregloPago
          EndProperty
          Text            =   "0"
          Alignment       =   1
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAE_IntCor 
@@ -808,12 +798,11 @@ Begin VB.Form frmCR_ArregloPago
          Top             =   1080
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -825,7 +814,7 @@ Begin VB.Form frmCR_ArregloPago
          EndProperty
          Text            =   "0"
          Alignment       =   1
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAE_Principal 
@@ -844,12 +833,11 @@ Begin VB.Form frmCR_ArregloPago
          Top             =   1800
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -861,7 +849,7 @@ Begin VB.Form frmCR_ArregloPago
          EndProperty
          Text            =   "0"
          Alignment       =   1
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAE_Polizas 
@@ -880,12 +868,11 @@ Begin VB.Form frmCR_ArregloPago
          Top             =   1440
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -897,7 +884,7 @@ Begin VB.Form frmCR_ArregloPago
          EndProperty
          Text            =   "0"
          Alignment       =   1
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAE_Cargos 
@@ -916,12 +903,11 @@ Begin VB.Form frmCR_ArregloPago
          Top             =   1080
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -933,7 +919,7 @@ Begin VB.Form frmCR_ArregloPago
          EndProperty
          Text            =   "0"
          Alignment       =   1
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.FlatEdit txtAE_Total 
@@ -952,7 +938,7 @@ Begin VB.Form frmCR_ArregloPago
          Top             =   1800
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   556
          _StockProps     =   77
@@ -971,7 +957,7 @@ Begin VB.Form frmCR_ArregloPago
          BackColor       =   16777152
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.ComboBox cboAE_Tipo 
@@ -981,12 +967,12 @@ Begin VB.Form frmCR_ArregloPago
          Top             =   480
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   1973790
-         BackColor       =   16185078
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -996,9 +982,9 @@ Begin VB.Form frmCR_ArregloPago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         BackColor       =   16185078
          Style           =   2
-         Appearance      =   16
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
       Begin XtremeSuiteControls.ComboBox cboAE_CuotaFecha 
@@ -1008,12 +994,12 @@ Begin VB.Form frmCR_ArregloPago
          Top             =   480
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   1973790
-         BackColor       =   16185078
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1023,9 +1009,9 @@ Begin VB.Form frmCR_ArregloPago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         BackColor       =   16185078
          Style           =   2
-         Appearance      =   16
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
       Begin XtremeSuiteControls.FlatEdit txtAE_CuotaNum 
@@ -1044,12 +1030,11 @@ Begin VB.Form frmCR_ArregloPago
          Top             =   480
          Visible         =   0   'False
          Width           =   972
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1061,16 +1046,17 @@ Begin VB.Form frmCR_ArregloPago
          EndProperty
          Text            =   "0"
          Alignment       =   1
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.ComboBox cboTipoAplicacion 
          Height          =   312
-         Left            =   4920
+         Left            =   -65080
          TabIndex        =   65
          Top             =   480
+         Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   77
@@ -1087,16 +1073,18 @@ Begin VB.Form frmCR_ArregloPago
          EndProperty
          BackColor       =   16185078
          Style           =   2
-         Appearance      =   16
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
       Begin XtremeSuiteControls.DateTimePicker dtpAplInicio 
          Height          =   312
-         Left            =   1680
+         Left            =   -68320
          TabIndex        =   66
          Top             =   480
+         Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   556
          _StockProps     =   68
@@ -1114,11 +1102,12 @@ Begin VB.Form frmCR_ArregloPago
       End
       Begin XtremeSuiteControls.DateTimePicker dtpAplCorte 
          Height          =   312
-         Left            =   1680
+         Left            =   -68320
          TabIndex        =   67
          Top             =   840
+         Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   556
          _StockProps     =   68
@@ -1136,15 +1125,17 @@ Begin VB.Form frmCR_ArregloPago
       End
       Begin XtremeSuiteControls.CheckBox chkAplIntereses 
          Height          =   228
-         Left            =   3480
+         Left            =   -66520
          TabIndex        =   70
          Top             =   960
+         Visible         =   0   'False
          Width           =   2772
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4890
          _ExtentY        =   402
          _StockProps     =   79
          Caption         =   "Cobra Intereses"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1163,15 +1154,17 @@ Begin VB.Form frmCR_ArregloPago
       End
       Begin XtremeSuiteControls.CheckBox chkAplCargos 
          Height          =   228
-         Left            =   3480
+         Left            =   -66520
          TabIndex        =   71
          Top             =   1320
+         Visible         =   0   'False
          Width           =   2772
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4890
          _ExtentY        =   402
          _StockProps     =   79
          Caption         =   "Cobra Cargos"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1190,15 +1183,17 @@ Begin VB.Form frmCR_ArregloPago
       End
       Begin XtremeSuiteControls.CheckBox chkAplPolizas 
          Height          =   228
-         Left            =   3480
+         Left            =   -66520
          TabIndex        =   72
          Top             =   1680
+         Visible         =   0   'False
          Width           =   2772
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4890
          _ExtentY        =   402
          _StockProps     =   79
          Caption         =   "Cobra Pólizas"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1217,15 +1212,17 @@ Begin VB.Form frmCR_ArregloPago
       End
       Begin XtremeSuiteControls.CheckBox chkAplAjustaPlazo 
          Height          =   228
-         Left            =   7080
+         Left            =   -62920
          TabIndex        =   73
          Top             =   960
+         Visible         =   0   'False
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   402
          _StockProps     =   79
          Caption         =   "Ajusta Plazo "
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1244,15 +1241,17 @@ Begin VB.Form frmCR_ArregloPago
       End
       Begin XtremeSuiteControls.CheckBox chkAplRetroactivo 
          Height          =   228
-         Left            =   6720
+         Left            =   -63280
          TabIndex        =   74
          Top             =   1320
+         Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   402
          _StockProps     =   79
          Caption         =   "Permite Retroactivo"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1276,7 +1275,7 @@ Begin VB.Form frmCR_ArregloPago
          Top             =   960
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   556
          _StockProps     =   68
@@ -1294,16 +1293,16 @@ Begin VB.Form frmCR_ArregloPago
       End
       Begin XtremeSuiteControls.CheckBox chkTrasladar 
          Height          =   252
-         Left            =   -70000
+         Left            =   0
          TabIndex        =   76
          Top             =   1920
-         Visible         =   0   'False
          Width           =   3372
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5948
          _ExtentY        =   444
          _StockProps     =   79
          Caption         =   "Ajustar Deuda al Plazo Restante   "
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1321,16 +1320,16 @@ Begin VB.Form frmCR_ArregloPago
       End
       Begin XtremeSuiteControls.CheckBox chkTipoIntereses 
          Height          =   252
-         Left            =   -67120
+         Left            =   2880
          TabIndex        =   77
          Top             =   1920
-         Visible         =   0   'False
          Width           =   3372
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5948
          _ExtentY        =   444
          _StockProps     =   79
          Caption         =   "Cálcular Intereses a hoy?   "
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1360,9 +1359,10 @@ Begin VB.Form frmCR_ArregloPago
          EndProperty
          Height          =   612
          Index           =   11
-         Left            =   120
+         Left            =   -69880
          TabIndex        =   69
          Top             =   480
+         Visible         =   0   'False
          Width           =   1452
       End
       Begin VB.Label Label1 
@@ -1377,12 +1377,13 @@ Begin VB.Form frmCR_ArregloPago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   375
          Index           =   10
-         Left            =   3360
+         Left            =   -66640
          TabIndex        =   68
          Top             =   480
-         Width           =   1212
+         Visible         =   0   'False
+         Width           =   1455
       End
       Begin XtremeSuiteControls.Label lblCorte 
          Height          =   492
@@ -1391,11 +1392,12 @@ Begin VB.Form frmCR_ArregloPago
          Top             =   840
          Visible         =   0   'False
          Width           =   3612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   6371
          _ExtentY        =   868
          _StockProps     =   79
          Caption         =   "Indique la Fecha desde cuando ya no es posible cobrar intereses a cuotas vencidas:"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1586,11 +1588,12 @@ Begin VB.Form frmCR_ArregloPago
       TabIndex        =   3
       Top             =   6720
       Width           =   1452
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   1080
       _StockProps     =   79
       Caption         =   "Aplicar"
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -1600,7 +1603,8 @@ Begin VB.Form frmCR_ArregloPago
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Picture         =   "frmCR_ArregloPago.frx":6852
    End
    Begin VB.Timer TimerX 
@@ -1636,11 +1640,13 @@ Begin VB.Form frmCR_ArregloPago
       TabIndex        =   4
       Top             =   5880
       Width           =   9972
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   17590
       _ExtentY        =   1080
       _StockProps     =   79
-      Appearance      =   16
+      BackColor       =   16777215
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       BorderStyle     =   1
       Begin XtremeSuiteControls.ComboBox cboTipoDoc 
          Height          =   312
@@ -1648,7 +1654,7 @@ Begin VB.Form frmCR_ArregloPago
          TabIndex        =   5
          Top             =   240
          Width           =   3612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   6376
          _ExtentY        =   582
          _StockProps     =   77
@@ -1664,7 +1670,7 @@ Begin VB.Form frmCR_ArregloPago
             Strikethrough   =   0   'False
          EndProperty
          Style           =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
@@ -1674,12 +1680,11 @@ Begin VB.Form frmCR_ArregloPago
          TabIndex        =   6
          Top             =   240
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1691,7 +1696,7 @@ Begin VB.Form frmCR_ArregloPago
          EndProperty
          Alignment       =   1
          Locked          =   -1  'True
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.PushButton btnCajas 
@@ -1700,11 +1705,12 @@ Begin VB.Form frmCR_ArregloPago
          TabIndex        =   7
          Top             =   240
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   656
          _StockProps     =   79
          Caption         =   "Pago"
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1714,10 +1720,12 @@ Begin VB.Form frmCR_ArregloPago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          TextImageRelation=   1
       End
       Begin VB.Label Label3 
+         BackStyle       =   0  'Transparent
          Caption         =   "Total ..:"
          BeginProperty Font 
             Name            =   "Calibri"
@@ -1736,6 +1744,7 @@ Begin VB.Form frmCR_ArregloPago
          Width           =   1092
       End
       Begin VB.Label Label3 
+         BackStyle       =   0  'Transparent
          Caption         =   "Documento ..:"
          BeginProperty Font 
             Name            =   "Calibri"
@@ -1760,12 +1769,11 @@ Begin VB.Form frmCR_ArregloPago
       TabIndex        =   10
       Top             =   120
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   656
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   12
@@ -1776,7 +1784,8 @@ Begin VB.Form frmCR_ArregloPago
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtProceso 
       Height          =   372
@@ -1784,12 +1793,11 @@ Begin VB.Form frmCR_ArregloPago
       TabIndex        =   11
       Top             =   120
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   656
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   12
@@ -1801,7 +1809,8 @@ Begin VB.Form frmCR_ArregloPago
       EndProperty
       Alignment       =   2
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtNombre 
       Height          =   312
@@ -1809,12 +1818,11 @@ Begin VB.Form frmCR_ArregloPago
       TabIndex        =   12
       Top             =   600
       Width           =   4812
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8488
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -1825,7 +1833,7 @@ Begin VB.Form frmCR_ArregloPago
          Strikethrough   =   0   'False
       EndProperty
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtLineaDesc 
@@ -1834,12 +1842,11 @@ Begin VB.Form frmCR_ArregloPago
       TabIndex        =   13
       Top             =   960
       Width           =   4212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7429
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -1850,21 +1857,20 @@ Begin VB.Form frmCR_ArregloPago
          Strikethrough   =   0   'False
       EndProperty
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtCedula 
-      Height          =   312
+      Height          =   315
       Left            =   2400
       TabIndex        =   14
       Top             =   600
-      Width           =   1692
-      _Version        =   1441793
+      Width           =   1695
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -1875,7 +1881,7 @@ Begin VB.Form frmCR_ArregloPago
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtCodigo 
@@ -1884,12 +1890,11 @@ Begin VB.Form frmCR_ArregloPago
       TabIndex        =   15
       Top             =   960
       Width           =   1692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -1900,7 +1905,7 @@ Begin VB.Form frmCR_ArregloPago
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtOpex 
@@ -1909,12 +1914,11 @@ Begin VB.Form frmCR_ArregloPago
       TabIndex        =   16
       Top             =   960
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -1926,7 +1930,7 @@ Begin VB.Form frmCR_ArregloPago
       EndProperty
       Alignment       =   2
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.PushButton isButtonMain 
@@ -1936,11 +1940,12 @@ Begin VB.Form frmCR_ArregloPago
       TabIndex        =   17
       Top             =   1560
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   1291
       _StockProps     =   79
       Caption         =   "Capitaliza Deuda"
+      BackColor       =   -2147483633
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -1959,11 +1964,12 @@ Begin VB.Form frmCR_ArregloPago
       TabIndex        =   18
       Top             =   2520
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   1291
       _StockProps     =   79
       Caption         =   "Periodos de Gracia"
+      BackColor       =   -2147483633
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -1982,11 +1988,12 @@ Begin VB.Form frmCR_ArregloPago
       TabIndex        =   19
       Top             =   3480
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   1291
       _StockProps     =   79
       Caption         =   "Vencimiento de Intereses"
+      BackColor       =   -2147483633
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -2005,11 +2012,12 @@ Begin VB.Form frmCR_ArregloPago
       TabIndex        =   20
       Top             =   4440
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   1291
       _StockProps     =   79
       Caption         =   "Abono Especial"
+      BackColor       =   -2147483633
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -2027,12 +2035,11 @@ Begin VB.Form frmCR_ArregloPago
       TabIndex        =   78
       Top             =   6720
       Width           =   6852
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   12086
       _ExtentY        =   1185
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -2044,7 +2051,7 @@ Begin VB.Form frmCR_ArregloPago
       EndProperty
       MultiLine       =   -1  'True
       ScrollBars      =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin VB.Label Label3 
@@ -2241,7 +2248,7 @@ curPoliza = 0
 Do While Not rs.EOF
 
   Set itmX = lsw.ListItems.Add(, , rs!id_moro)
-      itmX.SubItems(1) = rs!Id_Solicitud
+      itmX.SubItems(1) = rs!ID_SOLICITUD
       itmX.SubItems(2) = Format(rs!fechap, "####-##")
       itmX.SubItems(3) = Format(rs!IntC, "Standard")
       itmX.SubItems(4) = Format(rs!IntM, "Standard")
@@ -2388,9 +2395,9 @@ tcInfo.Visible = True
 
  If isButtonMain(0).Enabled Then isButtonMain(0).SetFocus
  
- mOperacion = rs!Id_Solicitud
+ mOperacion = rs!ID_SOLICITUD
 
- txtOperacion = rs!Id_Solicitud
+ txtOperacion = rs!ID_SOLICITUD
  txtCedula.Text = rs!Cedula
  txtCodigo.Text = rs!Codigo
  
@@ -2405,7 +2412,7 @@ tcInfo.Visible = True
 
   ModuloCajas.mClienteId = Trim(rs!Cedula)
   ModuloCajas.mCliente = Trim(rs!Nombre)
-  ModuloCajas.mTiquete = Trim(rs!Codigo) & "." & rs!Id_Solicitud & "." & Format(Time, "HH:mm:ss")
+  ModuloCajas.mTiquete = Trim(rs!Codigo) & "." & rs!ID_SOLICITUD & "." & Format(Time, "HH:mm:ss")
     
   ModuloCajas.mDivisa = RTrim(rs!Divisa)
   ModuloCajas.mTotalDetallado = 0
@@ -2636,7 +2643,7 @@ Call OpenRecordSet(rs, strSQL)
         If curAmortiza > 0 Then
           strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & curAmortiza * pTipoCambio & ",'D','" & rs!cod_Divisa _
                  & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaamortiza _
-                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
         End If
 
         
@@ -2644,20 +2651,20 @@ Call OpenRecordSet(rs, strSQL)
         If curIntC > 0 Then
           strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & curIntC * pTipoCambio & ",'C','" & rs!cod_Divisa _
                  & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintc _
-                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
         End If
         
         If curIntM > 0 Then
           strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & curIntM * pTipoCambio & ",'C','" & rs!cod_Divisa _
                  & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintm _
-                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
         End If
         
         If GLOBALES.SysPlanPagos = 0 Then
                 If curCargo > 0 Then
                   strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & curCargo * pTipoCambio & ",'C','" & rs!cod_Divisa _
                          & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!CtaCargos _
-                         & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                         & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
                 End If
         Else
                 If curCargo > 0 Then
@@ -2667,7 +2674,7 @@ Call OpenRecordSet(rs, strSQL)
                   Do While Not rsTmp.EOF
                         strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & rsTmp!Mov_Monto * pTipoCambio & ",'C','" & rs!cod_Divisa _
                                & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rsTmp!Cod_Unidad & "','" & rsTmp!Cod_Centro_Costo & "','" & rsTmp!cod_cuenta _
-                               & "','" & rsTmp!Id_Solicitud & "','" & rsTmp!Codigo & "','" & vAseDocDeposito & "'"
+                               & "','" & rsTmp!ID_SOLICITUD & "','" & rsTmp!Codigo & "','" & vAseDocDeposito & "'"
 '                        Call ConectionExecute(strSQL)
                         rsTmp.MoveNext
                   Loop
@@ -2676,14 +2683,14 @@ Call OpenRecordSet(rs, strSQL)
         End If
         
         If curPoliza > 0 Then
-          glogon.strSQL = "select dbo.fxCrdOperacionCtaContaPolizas(" & rs!Id_Solicitud & ") as 'Cuenta'"
+          glogon.strSQL = "select dbo.fxCrdOperacionCtaContaPolizas(" & rs!ID_SOLICITUD & ") as 'Cuenta'"
           Call OpenRecordSet(rsTmp, glogon.strSQL, 0)
             vCuentaPoliza = Trim(rsTmp!Cuenta)
           rsTmp.Close
           
           strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & curPoliza * pTipoCambio & ",'C','" & rs!cod_Divisa _
                  & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & vCuentaPoliza _
-                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
          ' Call ConectionExecute(strSQL)
         End If
         
@@ -3076,14 +3083,14 @@ strLinea(10) = ""
         If curIntC > 0 Then
           strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & curIntC * pTipoCambio & ",'C','" & rs!cod_Divisa _
                  & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintc _
-                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 '          Call ConectionExecute(strSQL)
         End If
         
         If curIntM > 0 Then
           strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & curIntM * pTipoCambio & ",'C','" & rs!cod_Divisa _
                  & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintm _
-                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 '          Call ConectionExecute(strSQL)
         End If
         
@@ -3092,7 +3099,7 @@ strLinea(10) = ""
                 If curCargo > 0 Then
                     strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & curCargo * pTipoCambio & ",'C','" & rs!cod_Divisa _
                            & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!CtaCargos _
-                           & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                           & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
                 End If
         Else
                 If curCargo > 0 Then
@@ -3102,7 +3109,7 @@ strLinea(10) = ""
                   Do While Not rsTmp.EOF
                         strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & rsTmp!Mov_Monto * pTipoCambio & ",'C','" & rs!cod_Divisa _
                                & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rsTmp!Cod_Unidad & "','" & rsTmp!Cod_Centro_Costo & "','" & rsTmp!cod_cuenta _
-                               & "','" & rsTmp!Id_Solicitud & "','" & rsTmp!Codigo & "','" & vAseDocDeposito & "'"
+                               & "','" & rsTmp!ID_SOLICITUD & "','" & rsTmp!Codigo & "','" & vAseDocDeposito & "'"
 '                        Call ConectionExecute(strSQL)
                         rsTmp.MoveNext
                   Loop
@@ -3111,14 +3118,14 @@ strLinea(10) = ""
         End If
         
         If curPoliza > 0 Then
-          glogon.strSQL = "select dbo.fxCrdOperacionCtaContaPolizas(" & rs!Id_Solicitud & ") as 'Cuenta'"
+          glogon.strSQL = "select dbo.fxCrdOperacionCtaContaPolizas(" & rs!ID_SOLICITUD & ") as 'Cuenta'"
           Call OpenRecordSet(rsTmp, glogon.strSQL, 0)
             vCuenta = Trim(rsTmp!Cuenta)
           rsTmp.Close
           
           strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & curPoliza * pTipoCambio & ",'C','" & rs!cod_Divisa _
                  & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & vCuenta _
-                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
          ' Call ConectionExecute(strSQL)
         End If
         
@@ -3127,7 +3134,7 @@ strLinea(10) = ""
         If curAmortiza > 0 Then
           strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & curAmortiza * pTipoCambio & ",'C','" & rs!cod_Divisa _
                  & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaamortiza _
-                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 '          Call ConectionExecute(strSQL)
         End If
 
@@ -3135,7 +3142,7 @@ strLinea(10) = ""
             'Procesa Formas de Pago (Registro Final / Asiento de Pago)
              strSQL = strSQL & Space(10) & "exec spCajas_DesglocePagosDocFinal '" & ModuloCajas.mCaja & "'," & ModuloCajas.mApertura & ",'" & ModuloCajas.mTiquete _
                      & "','" & ModuloCajas.mUsuario & "','" & vTipoDoc & "','" & vNumDoc & "','" & ModuloCajas.mUnidad _
-                     & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "'"
+                     & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "'"
 '             Call ConectionExecute(strSQL)
        End If
        
@@ -3287,6 +3294,13 @@ If tcMain.Item(3).Visible Then
    End If
    
 End If
+
+
+If fxCajasAperturaEstado = "C" And CCur(txtTotalCajas.Text) > 0 Then
+  MsgBox "- La apertura ..:" & ModuloCajas.mApertura & " de esta caja ha sido cerrada!", vbExclamation
+  Exit Sub
+End If
+
 
 'Capitalización de Deuda
 If tcMain.Item(0).Visible Then

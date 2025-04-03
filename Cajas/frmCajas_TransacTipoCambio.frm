@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "mscomctl.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.3#0"; "Codejock.Controls.v20.3.0.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCajas_TransacTipoCambio 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,7 +24,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
       TabIndex        =   19
       Top             =   1080
       Width           =   1335
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   2355
       _ExtentY        =   661
       _StockProps     =   79
@@ -75,7 +75,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
          BeginProperty Panel3 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
             Style           =   5
             Bevel           =   0
-            TextSave        =   "10:17:p. m."
+            TextSave        =   "11:39"
             Object.ToolTipText     =   "Fecha/Hora"
          EndProperty
       EndProperty
@@ -95,7 +95,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
       TabIndex        =   7
       Top             =   240
       Width           =   2175
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   3831
       _ExtentY        =   550
       _StockProps     =   77
@@ -120,7 +120,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
       TabIndex        =   8
       Top             =   240
       Width           =   5535
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   9763
       _ExtentY        =   556
       _StockProps     =   77
@@ -144,7 +144,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
       TabIndex        =   9
       Top             =   3600
       Width           =   10215
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   18018
       _ExtentY        =   2778
       _StockProps     =   79
@@ -158,7 +158,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
          TabIndex        =   10
          Top             =   240
          Width           =   2772
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   4895
          _ExtentY        =   582
          _StockProps     =   77
@@ -184,7 +184,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
          TabIndex        =   11
          Top             =   240
          Width           =   1692
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -209,7 +209,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
          TabIndex        =   12
          Top             =   600
          Width           =   5412
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   9546
          _ExtentY        =   1397
          _StockProps     =   77
@@ -235,7 +235,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
          TabIndex        =   13
          Top             =   600
          Width           =   855
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   1397
          _StockProps     =   79
@@ -261,7 +261,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
          TabIndex        =   14
          Top             =   600
          Width           =   855
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   1397
          _StockProps     =   79
@@ -287,7 +287,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
          TabIndex        =   15
          Top             =   600
          Width           =   975
-         _Version        =   1310723
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   1397
          _StockProps     =   79
@@ -371,7 +371,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
       TabIndex        =   20
       Top             =   1080
       Width           =   1335
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   2355
       _ExtentY        =   661
       _StockProps     =   79
@@ -395,7 +395,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
       TabIndex        =   21
       Top             =   2880
       Width           =   2055
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   556
       _StockProps     =   77
@@ -421,7 +421,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
       TabIndex        =   22
       Top             =   2040
       Width           =   2055
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   556
       _StockProps     =   77
@@ -447,7 +447,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
       TabIndex        =   23
       Top             =   2400
       Width           =   2055
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   556
       _StockProps     =   77
@@ -473,7 +473,7 @@ Begin VB.Form frmCajas_TransacTipoCambio
       TabIndex        =   24
       Top             =   1680
       Width           =   2055
-      _Version        =   1310723
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   582
       _StockProps     =   77

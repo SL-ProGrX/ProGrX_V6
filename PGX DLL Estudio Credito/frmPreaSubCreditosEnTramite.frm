@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.Controls.v22.0.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmPreaSubCreditosEnTramite 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -64,7 +64,7 @@ Begin VB.Form frmPreaSubCreditosEnTramite
          Strikethrough   =   0   'False
       EndProperty
       ScrollBars      =   2
-      SpreadDesigner  =   "frmPreaSubCreditosEnTramite.frx":0585
+      SpreadDesigner  =   "frmPreaSubCreditosEnTramite.frx":05CD
       AppearanceStyle =   1
    End
    Begin XtremeSuiteControls.FlatEdit txtCuota 
@@ -73,7 +73,7 @@ Begin VB.Form frmPreaSubCreditosEnTramite
       TabIndex        =   6
       Top             =   5760
       Width           =   1575
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2778
       _ExtentY        =   556
       _StockProps     =   77
@@ -270,7 +270,7 @@ vGrid.Col = 1
 
 If vGrid.Text = "" Then  'Insertar
 
-    If Not ValidaEstadoPreanalisis(gPreAnalisis.ESTADO) Then
+    If Not ValidaEstadoPreanalisis(gPreAnalisis.Estado) Then
         Exit Function
     End If
     
@@ -278,7 +278,7 @@ If vGrid.Text = "" Then  'Insertar
          & " where Tipo = 'M' and cod_preAnalisis = '" _
          & gPreAnalisis.Expediente & "'"
   Call OpenRecordSet(rs, strSQL)
-      vGrid.Text = rs!Ultimo
+      vGrid.Text = rs!ultimo
   rs.Close
     
   strSQL = "insert into CRD_PREA_DETALLE_CUOTAS_EN_TRANSITO(cod_PreAnalisis,id_solicitud,tipo,estado,detalle,cuota)" _
@@ -332,7 +332,7 @@ If i = vbYes Then
    vGrid.Row = vGrid.ActiveRow
    vGrid.Col = 1
    
-    If Not ValidaEstadoPreanalisis(gPreAnalisis.ESTADO) Then
+    If Not ValidaEstadoPreanalisis(gPreAnalisis.Estado) Then
         Exit Sub
     End If
    

@@ -1,17 +1,17 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.3#0"; "Codejock.Controls.v19.3.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmPreaSubRefundiciones 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Expediente : xx"
-   ClientHeight    =   5976
-   ClientLeft      =   48
-   ClientTop       =   312
+   ClientHeight    =   5970
+   ClientLeft      =   45
+   ClientTop       =   315
    ClientWidth     =   12180
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   5976
+   ScaleHeight     =   5970
    ScaleWidth      =   12180
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
@@ -85,14 +85,14 @@ Begin VB.Form frmPreaSubRefundiciones
       TabIndex        =   5
       Top             =   5280
       Width           =   1572
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   1080
       _StockProps     =   79
       Caption         =   "Actualizar"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Arial Narrow"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -100,14 +100,14 @@ Begin VB.Form frmPreaSubRefundiciones
          Strikethrough   =   0   'False
       EndProperty
       Appearance      =   16
-      Picture         =   "frmPreaSubRefundiciones.frx":097E
+      Picture         =   "frmPreaSubRefundiciones.frx":09C8
    End
    Begin VB.Label Label3 
       Alignment       =   1  'Right Justify
       Caption         =   "Totales ..:"
       BeginProperty Font 
          Name            =   "Arial Narrow"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -127,7 +127,7 @@ Begin VB.Form frmPreaSubRefundiciones
       Caption         =   "Refundiciones"
       BeginProperty Font 
          Name            =   "Arial Narrow"
-         Size            =   15.6
+         Size            =   15.75
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -366,7 +366,7 @@ End Select
 
 If Col = 7 Or Col = 8 Then
     
-    If Not ValidaEstadoPreanalisis(gPreAnalisis.ESTADO) Then
+    If Not ValidaEstadoPreanalisis(gPreAnalisis.Estado) Then
         Exit Sub
     End If
 

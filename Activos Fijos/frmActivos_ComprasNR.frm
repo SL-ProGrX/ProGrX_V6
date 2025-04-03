@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmActivos_ComprasNR 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -17,24 +17,13 @@ Begin VB.Form frmActivos_ComprasNR
    ScaleWidth      =   14595
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
-   Begin XtremeSuiteControls.ProgressBar PrgBar 
-      Height          =   135
-      Left            =   120
-      TabIndex        =   4
-      Top             =   7560
-      Width           =   14415
-      _Version        =   1441793
-      _ExtentX        =   25426
-      _ExtentY        =   238
-      _StockProps     =   93
-   End
    Begin XtremeSuiteControls.ListView lsw 
       Height          =   6495
       Left            =   120
       TabIndex        =   3
       Top             =   1080
       Width           =   14415
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   25426
       _ExtentY        =   11456
       _StockProps     =   77
@@ -47,12 +36,44 @@ Begin VB.Form frmActivos_ComprasNR
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   17
+      View            =   3
+      Appearance      =   21
       UseVisualStyle  =   0   'False
    End
-   Begin VB.Timer TimerX 
-      Left            =   8280
-      Top             =   480
+   Begin XtremeSuiteControls.PushButton btnConsultar 
+      Height          =   375
+      Left            =   4440
+      TabIndex        =   6
+      Top             =   600
+      Width           =   1215
+      _Version        =   1572864
+      _ExtentX        =   2143
+      _ExtentY        =   661
+      _StockProps     =   79
+      Caption         =   "Buscar"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   17
+      Picture         =   "frmActivos_ComprasNR.frx":0000
+   End
+   Begin XtremeSuiteControls.ProgressBar PrgBar 
+      Height          =   135
+      Left            =   120
+      TabIndex        =   4
+      Top             =   7560
+      Width           =   14415
+      _Version        =   1572864
+      _ExtentX        =   25426
+      _ExtentY        =   238
+      _StockProps     =   93
    End
    Begin XtremeSuiteControls.DateTimePicker dtpFecha 
       Height          =   330
@@ -60,7 +81,7 @@ Begin VB.Form frmActivos_ComprasNR
       TabIndex        =   0
       Top             =   600
       Width           =   1335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2355
       _ExtentY        =   582
       _StockProps     =   68
@@ -76,17 +97,67 @@ Begin VB.Form frmActivos_ComprasNR
       CustomFormat    =   "dd/MM/yyyy"
       Format          =   3
    End
+   Begin XtremeSuiteControls.PushButton btnExportar 
+      Height          =   375
+      Left            =   5640
+      TabIndex        =   7
+      Top             =   600
+      Width           =   1215
+      _Version        =   1572864
+      _ExtentX        =   2143
+      _ExtentY        =   661
+      _StockProps     =   79
+      Caption         =   "Exportar"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      UseVisualStyle  =   -1  'True
+      Appearance      =   17
+      Picture         =   "frmActivos_ComprasNR.frx":0700
+   End
+   Begin XtremeSuiteControls.ComboBox cbo 
+      Height          =   330
+      Left            =   2520
+      TabIndex        =   8
+      Top             =   600
+      Width           =   1815
+      _Version        =   1572864
+      _ExtentX        =   3201
+      _ExtentY        =   582
+      _StockProps     =   77
+      ForeColor       =   1973790
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Style           =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+      Text            =   "ComboBox1"
+   End
    Begin XtremeShortcutBar.ShortcutCaption lblY 
       Height          =   375
       Left            =   0
       TabIndex        =   5
       Top             =   0
       Width           =   14655
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   25850
       _ExtentY        =   661
       _StockProps     =   14
-      Caption         =   $"frmActivos_ComprasNR.frx":0000
+      Caption         =   $"frmActivos_ComprasNR.frx":086A
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -104,7 +175,7 @@ Begin VB.Form frmActivos_ComprasNR
       TabIndex        =   2
       Top             =   600
       Width           =   975
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1720
       _ExtentY        =   450
       _StockProps     =   79
@@ -121,11 +192,11 @@ Begin VB.Form frmActivos_ComprasNR
    End
    Begin XtremeSuiteControls.Label lblX 
       Height          =   255
-      Left            =   2760
+      Left            =   7680
       TabIndex        =   1
       Top             =   600
       Width           =   5895
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   10398
       _ExtentY        =   450
       _StockProps     =   79
@@ -147,11 +218,35 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim strSQL As String, rs As New ADODB.Recordset
+Dim itmX As ListViewItem
+
+Private Sub btnConsultar_Click()
+ Call sbBuscar
+End Sub
+
+Private Sub btnExportar_Click()
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+PrgBar.Visible = True
+
+Call Excel_Exportar_Lsw(lsw, PrgBar)
+
+PrgBar.Visible = False
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+End Sub
 
 Private Sub dtpFecha_Change()
  
 lblX.Caption = fxActivos_Periodo(dtpFecha.Value)
-Call TimerX_Timer
  
 End Sub
 
@@ -159,9 +254,8 @@ Private Sub Form_Load()
 vModulo = 36
 
 With lsw.ColumnHeaders
-
     .Clear
-    .Add , , "No. Factura", 3200
+    .Add , , "No. Factura", 4200
     .Add , , "Línea", 1200, vbCenter
     .Add , , "Proveedor", 3200
     .Add , , "Activo Nombre", 3200
@@ -169,11 +263,15 @@ With lsw.ColumnHeaders
     .Add , , "Registrada", 1200, vbCenter
     .Add , , "Pendiente", 1200, vbCenter
     .Add , , "Valor Adq.", 2200, vbRightJustify
-
 End With
 
+cbo.Clear
+cbo.AddItem "Pendientes"
+cbo.AddItem "Registrados"
+cbo.AddItem "Todos"
+cbo.Text = "Pendientes"
 
-dtpFecha.Value = gActivos.Periodo
+dtpFecha.Value = fxFechaServidor
 Call dtpFecha_Change
 
 End Sub
@@ -194,58 +292,47 @@ Call sbFormsCall("frmActivos_Main", , , , , Me, True)
 
 vError:
 
-
 End Sub
 
 
-Private Sub TimerX_Timer()
-Dim strSQL As String, rs As New ADODB.Recordset
-Dim vFechaI As Date, vFechaC As Date, vRegistro As Currency
-Dim itmX As ListViewItem
+Private Sub sbBuscar()
 
+On Error GoTo vError
 
-TimerX.Interval = 0
+Me.MousePointer = vbHourglass
 
-vFechaI = CDate(Year(dtpFecha.Value) & "/" & Format(Month(dtpFecha.Value), "00") & "/01")
-vFechaC = DateAdd("d", -1, DateAdd("m", 1, vFechaI))
-
-strSQL = "SELECT D.COD_FACTURA,D.LINEA,D.COD_PROVEEDOR,D.COD_PRODUCTO,(D.PRECIO * ((D.IMP_VENTAS / 100) + 1)) AS PRECIO" _
-       & ",D.CANTIDAD,P.DESCRIPCION AS PROVEEDOR,P.DESCRIPCION AS PRODUCTO,E.FECHA" _
-       & " FROM CPR_COMPRAS E inner join CPR_COMPRAS_detalle D" _
-       & " on E.cod_factura = D.cod_factura and E.cod_proveedor = D.cod_proveedor" _
-       & " inner join pv_productos P on D.cod_producto = P.cod_producto" _
-       & " and P.tipo_producto = 'A'" _
-       & " inner join cxp_proveedores X on D.cod_proveedor = X.cod_proveedor" _
-       & " WHERE E.FECHA BETWEEN '" & Format(vFechaI, "yyyy/mm/dd") & "' AND '" _
-       & Format(vFechaC, "yyyy/mm/dd") & " 23:59:59'"
+strSQL = "exec spActivos_Compras_Pendientes_Registro '" & Format(dtpFecha.Value, "yyyy-mm-dd") & "', '" & Mid(cbo.Text, 1, 1) & "'"
 Call OpenRecordSet(rs, strSQL, 0)
 
 lsw.ListItems.Clear
+
 PrgBar.Max = rs.RecordCount + 2
 PrgBar.Value = 1
 PrgBar.Visible = True
 
 Do While Not rs.EOF
-
- vRegistro = fxActivos_RegistroCompras(vFechaI, vFechaC, rs!COD_PROVEEDOR, rs!cod_factura)
  
- If rs!cantidad > vRegistro Then
     Set itmX = lsw.ListItems.Add(, , rs!cod_factura)
         itmX.Tag = rs!COD_PROVEEDOR
         itmX.SubItems(1) = rs!Linea
         itmX.SubItems(2) = rs!Proveedor
         itmX.SubItems(3) = rs!producto
         itmX.SubItems(4) = rs!cantidad
-        itmX.SubItems(5) = vRegistro
-        itmX.SubItems(6) = rs!cantidad - vRegistro
-        itmX.SubItems(7) = rs!Precio
+        itmX.SubItems(5) = rs!Registrados
+        itmX.SubItems(6) = rs!Pendientes
+        itmX.SubItems(7) = Format(rs!Precio, "Standard")
    
- End If
  PrgBar.Value = PrgBar.Value + 1
  rs.MoveNext
 Loop
 rs.Close
 
+Me.MousePointer = vbDefault
 PrgBar.Visible = False
 
+Exit Sub
+
+vError:
+  Me.MousePointer = vbDefault
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 End Sub

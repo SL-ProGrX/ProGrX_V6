@@ -1,18 +1,20 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.1#0"; "Codejock.Controls.v19.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_AbonoMasivo_Manual 
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Aplicación Masiva de Abonos con Archivo"
-   ClientHeight    =   7656
-   ClientLeft      =   36
-   ClientTop       =   384
-   ClientWidth     =   11352
+   ClientHeight    =   7650
+   ClientLeft      =   30
+   ClientTop       =   390
+   ClientWidth     =   11355
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
-   ScaleHeight     =   7656
-   ScaleWidth      =   11352
+   ScaleHeight     =   7650
+   ScaleWidth      =   11355
    Begin XtremeSuiteControls.RadioButton rbOpcion 
       Height          =   252
       Index           =   0
@@ -20,11 +22,12 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   25
       Top             =   1320
       Width           =   2292
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   4043
       _ExtentY        =   444
       _StockProps     =   79
       Caption         =   "Rebaja de un Fondo?"
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -43,21 +46,21 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   0
       Top             =   1320
       Width           =   1452
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   444
       _StockProps     =   79
       Caption         =   "Formato Excel"
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Transparent     =   -1  'True
       UseVisualStyle  =   -1  'True
       Appearance      =   16
       Value           =   1
@@ -96,9 +99,9 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   2
       Top             =   2160
       Width           =   6852
-      _Version        =   1245185
-      _ExtentX        =   12086
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   12091
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
       BackColor       =   16185078
@@ -113,7 +116,8 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       EndProperty
       BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
    Begin XtremeSuiteControls.ComboBox cboPlan 
@@ -122,9 +126,9 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   3
       Top             =   2520
       Width           =   6852
-      _Version        =   1245185
-      _ExtentX        =   12086
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   12091
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
       BackColor       =   16185078
@@ -139,7 +143,8 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       EndProperty
       BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
    Begin XtremeSuiteControls.FlatEdit txtArchivo 
@@ -148,12 +153,11 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   4
       Top             =   1680
       Width           =   6852
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   12086
       _ExtentY        =   762
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -167,7 +171,7 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       Locked          =   -1  'True
       MultiLine       =   -1  'True
       ScrollBars      =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtMonto 
@@ -176,12 +180,11 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   5
       Top             =   7200
       Width           =   1572
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -193,7 +196,7 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       EndProperty
       Alignment       =   1
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtCasos 
@@ -202,12 +205,11 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   6
       Top             =   7200
       Width           =   972
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   1714
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -219,7 +221,7 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       EndProperty
       Alignment       =   2
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtSocios 
@@ -228,12 +230,11 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   7
       Top             =   7200
       Width           =   972
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   1714
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -245,7 +246,7 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       EndProperty
       Alignment       =   2
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtContratos 
@@ -254,12 +255,11 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   8
       Top             =   7200
       Width           =   972
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   1714
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -271,7 +271,7 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       EndProperty
       Alignment       =   2
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtCuenta 
@@ -280,12 +280,11 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   9
       Top             =   2880
       Width           =   1812
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -296,7 +295,7 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtCuentaDesc 
@@ -305,12 +304,11 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   10
       Top             =   2880
       Width           =   5052
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   8911
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -321,7 +319,7 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
          Strikethrough   =   0   'False
       EndProperty
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.PushButton btnArchivo 
@@ -331,12 +329,14 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   11
       Top             =   1680
       Width           =   492
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   79
-      Appearance      =   16
-      Picture         =   "frmCR_AbonoMasivo_Manual.frx":069F
+      BackColor       =   16777215
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmCR_AbonoMasivo_Manual.frx":06C1
    End
    Begin XtremeSuiteControls.PushButton btnArchivo 
       Height          =   372
@@ -345,12 +345,14 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   12
       Top             =   1680
       Width           =   492
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   79
-      Appearance      =   16
-      Picture         =   "frmCR_AbonoMasivo_Manual.frx":10BD
+      BackColor       =   16777215
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmCR_AbonoMasivo_Manual.frx":0DC1
    End
    Begin XtremeSuiteControls.PushButton btnArchivo 
       Height          =   372
@@ -359,12 +361,14 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   13
       Top             =   1680
       Width           =   492
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   79
-      Appearance      =   16
-      Picture         =   "frmCR_AbonoMasivo_Manual.frx":1A80
+      BackColor       =   16777215
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmCR_AbonoMasivo_Manual.frx":14DA
    End
    Begin XtremeSuiteControls.PushButton btnAplicar 
       Height          =   492
@@ -372,11 +376,12 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   14
       Top             =   6960
       Width           =   1572
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   868
       _StockProps     =   79
       Caption         =   "Aplicar"
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -386,8 +391,9 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
-      Picture         =   "frmCR_AbonoMasivo_Manual.frx":225F
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmCR_AbonoMasivo_Manual.frx":1BF3
    End
    Begin XtremeSuiteControls.PushButton btnCancelar 
       Height          =   492
@@ -395,11 +401,12 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   15
       Top             =   6960
       Width           =   1572
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   868
       _StockProps     =   79
       Caption         =   "Cancelar"
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -409,8 +416,9 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
-      Picture         =   "frmCR_AbonoMasivo_Manual.frx":2A37
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmCR_AbonoMasivo_Manual.frx":23CB
    End
    Begin XtremeSuiteControls.CheckBox chkFondoGeneral 
       Height          =   492
@@ -418,21 +426,21 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   24
       Top             =   2400
       Width           =   1452
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   868
       _StockProps     =   79
       Caption         =   "Aplica como Fondo General"
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Transparent     =   -1  'True
       UseVisualStyle  =   -1  'True
       Appearance      =   16
       Value           =   1
@@ -444,11 +452,12 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   26
       Top             =   1320
       Width           =   2292
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   4043
       _ExtentY        =   444
       _StockProps     =   79
       Caption         =   "Con Cuenta Contable"
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -466,15 +475,16 @@ Begin VB.Form frmCR_AbonoMasivo_Manual
       TabIndex        =   27
       Top             =   240
       Width           =   8532
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   15049
       _ExtentY        =   1291
       _StockProps     =   79
       Caption         =   "Aplicación Masiva de Abonos versus Plan o Cuenta Contable"
       ForeColor       =   16777215
+      BackColor       =   -2147483633
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -926,15 +936,15 @@ If vTipo = 1 Then 'Archivo de excel
               
                     .MaxRows = .MaxRows + 1
                     .Row = .MaxRows
-                    .col = 1
-                    .Text = CStr(rs!id_solicitud)
-                    .col = 2
+                    .Col = 1
+                    .Text = CStr(rs!Id_Solicitud)
+                    .Col = 2
                     .Text = rs!Codigo
-                    .col = 3
+                    .Col = 3
                     .Text = rs!Cedula
-                    .col = 4
+                    .Col = 4
                     .Text = rs!Nombre
-                    .col = 5
+                    .Col = 5
                     .Text = Format(rs!Abono, "Standard")
                     
                     curMonto = curMonto + rs!Abono
@@ -994,7 +1004,7 @@ strSQL = "exec spSys_Carga_Masiva_Aplica_AplMasCrd_Abono 'C','CrdAplAbo','','','
                             & vOperadora & ",'" & vPlan & "','" & vCuenta & "'," & chkFondoGeneral.Value _
                             & ",'" & vTipo & "'"
 Call OpenRecordSet(rs, strSQL)
-  vTipoDoc = rs!Tipo_Documento
+  vTipoDoc = rs!TIPO_DOCUMENTO
   vNumDoc = rs!Num_Documento
 
 rs.Close

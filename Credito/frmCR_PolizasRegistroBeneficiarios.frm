@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "mscomctl.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.Controls.v22.0.0.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_PolizasRegistroBeneficiarios 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Beneficiarios de la Póliza"
@@ -182,7 +182,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
       TabIndex        =   12
       Top             =   1800
       Width           =   9852
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   17378
       _ExtentY        =   9970
       _StockProps     =   68
@@ -237,7 +237,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
          TabIndex        =   13
          Top             =   480
          Width           =   9732
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   17166
          _ExtentY        =   8911
          _StockProps     =   77
@@ -262,7 +262,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
          Top             =   1800
          Visible         =   0   'False
          Width           =   2292
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   582
          _StockProps     =   77
@@ -288,7 +288,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
          Top             =   600
          Visible         =   0   'False
          Width           =   2292
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   556
          _StockProps     =   77
@@ -314,7 +314,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
          Top             =   1800
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   556
          _StockProps     =   68
@@ -337,7 +337,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
          Top             =   2880
          Visible         =   0   'False
          Width           =   7452
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   13144
          _ExtentY        =   1397
          _StockProps     =   77
@@ -363,7 +363,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
          Top             =   4080
          Visible         =   0   'False
          Width           =   7452
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   13144
          _ExtentY        =   1609
          _StockProps     =   77
@@ -389,7 +389,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
          Top             =   3720
          Visible         =   0   'False
          Width           =   7452
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   13144
          _ExtentY        =   550
          _StockProps     =   77
@@ -414,7 +414,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
          Top             =   2400
          Visible         =   0   'False
          Width           =   2052
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -439,7 +439,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
          Top             =   2400
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
@@ -464,7 +464,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
          Top             =   2400
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   550
          _StockProps     =   77
@@ -489,7 +489,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
          Top             =   1320
          Visible         =   0   'False
          Width           =   2892
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   5101
          _ExtentY        =   550
          _StockProps     =   77
@@ -515,7 +515,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
          Top             =   1320
          Visible         =   0   'False
          Width           =   2292
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   550
          _StockProps     =   77
@@ -541,7 +541,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
          Top             =   1320
          Visible         =   0   'False
          Width           =   2292
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   4043
          _ExtentY        =   550
          _StockProps     =   77
@@ -567,7 +567,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
          Top             =   1800
          Visible         =   0   'False
          Width           =   852
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
@@ -594,7 +594,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
          Top             =   5160
          Visible         =   0   'False
          Width           =   852
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
@@ -893,7 +893,7 @@ Begin VB.Form frmCR_PolizasRegistroBeneficiarios
       TabIndex        =   42
       Top             =   480
       Width           =   1692
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   656
       _StockProps     =   77
@@ -1269,7 +1269,7 @@ If Not rs.BOF And Not rs.EOF Then
    
    dtpFechaNacimiento.Value = rs!FechaNac
    
-    txtDireccion = Trim(rs!Direccion & "")
+    txtDireccion = Trim(rs!direccion & "")
     txtApartadoPostal = Trim(rs!apto_postal & "")
     txtEmail = Trim(rs!Email & "")
     

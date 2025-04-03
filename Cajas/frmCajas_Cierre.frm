@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCajas_Cierre 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,7 +24,7 @@ Begin VB.Form frmCajas_Cierre
       TabIndex        =   33
       Top             =   480
       Width           =   1455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   450
       _StockProps     =   79
@@ -49,7 +49,7 @@ Begin VB.Form frmCajas_Cierre
       TabIndex        =   7
       Top             =   1440
       Width           =   6015
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   10610
       _ExtentY        =   10398
       _StockProps     =   68
@@ -113,7 +113,7 @@ Begin VB.Form frmCajas_Cierre
          TabIndex        =   36
          Top             =   3240
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3836
          _ExtentY        =   582
          _StockProps     =   77
@@ -138,7 +138,7 @@ Begin VB.Form frmCajas_Cierre
          TabIndex        =   37
          Top             =   3600
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3836
          _ExtentY        =   582
          _StockProps     =   77
@@ -163,7 +163,7 @@ Begin VB.Form frmCajas_Cierre
          TabIndex        =   38
          Top             =   4560
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3836
          _ExtentY        =   582
          _StockProps     =   77
@@ -188,7 +188,7 @@ Begin VB.Form frmCajas_Cierre
          TabIndex        =   39
          Top             =   4920
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3836
          _ExtentY        =   582
          _StockProps     =   77
@@ -213,7 +213,7 @@ Begin VB.Form frmCajas_Cierre
          TabIndex        =   40
          Top             =   5400
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3836
          _ExtentY        =   582
          _StockProps     =   77
@@ -353,7 +353,7 @@ Begin VB.Form frmCajas_Cierre
       TabIndex        =   5
       Top             =   7320
       Width           =   14415
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   25426
       _ExtentY        =   1720
       _StockProps     =   79
@@ -440,43 +440,43 @@ Begin VB.Form frmCajas_Cierre
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   10
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Cierre.frx":0620
+            Picture         =   "frmCajas_Cierre.frx":05FE
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Cierre.frx":0EFA
+            Picture         =   "frmCajas_Cierre.frx":0ED8
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Cierre.frx":1031
+            Picture         =   "frmCajas_Cierre.frx":100F
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Cierre.frx":112D
+            Picture         =   "frmCajas_Cierre.frx":110B
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Cierre.frx":1247
+            Picture         =   "frmCajas_Cierre.frx":1225
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Cierre.frx":134C
+            Picture         =   "frmCajas_Cierre.frx":132A
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Cierre.frx":1CE4
+            Picture         =   "frmCajas_Cierre.frx":1CC2
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Cierre.frx":26A1
+            Picture         =   "frmCajas_Cierre.frx":267F
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Cierre.frx":2E90
+            Picture         =   "frmCajas_Cierre.frx":2E6E
             Key             =   ""
          EndProperty
          BeginProperty ListImage10 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_Cierre.frx":364C
+            Picture         =   "frmCajas_Cierre.frx":362A
             Key             =   ""
          EndProperty
       EndProperty
@@ -487,7 +487,7 @@ Begin VB.Form frmCajas_Cierre
       TabIndex        =   8
       Top             =   1440
       Width           =   8415
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   14843
       _ExtentY        =   10398
       _StockProps     =   68
@@ -503,7 +503,6 @@ Begin VB.Form frmCajas_Cierre
       Appearance      =   4
       Color           =   32
       ItemCount       =   3
-      SelectedItem    =   2
       Item(0).Caption =   "Efectivo + Mov"
       Item(0).ControlCount=   3
       Item(0).Control(0)=   "vGridDt"
@@ -530,11 +529,12 @@ Begin VB.Form frmCajas_Cierre
       Item(2).Control(7)=   "Label1(12)"
       Begin XtremeSuiteControls.ListView lswDP 
          Height          =   3495
-         Left            =   120
+         Left            =   -69880
          TabIndex        =   47
          Top             =   2160
+         Visible         =   0   'False
          Width           =   8175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   14420
          _ExtentY        =   6165
          _StockProps     =   77
@@ -555,10 +555,9 @@ Begin VB.Form frmCajas_Cierre
       End
       Begin FPSpreadADO.fpSpread vGridDt 
          Height          =   4695
-         Left            =   -69880
+         Left            =   120
          TabIndex        =   16
          Top             =   480
-         Visible         =   0   'False
          Width           =   8055
          _Version        =   524288
          _ExtentX        =   14208
@@ -577,7 +576,7 @@ Begin VB.Form frmCajas_Cierre
             Strikethrough   =   0   'False
          EndProperty
          MaxCols         =   4
-         SpreadDesigner  =   "frmCajas_Cierre.frx":3CD6
+         SpreadDesigner  =   "frmCajas_Cierre.frx":3CB4
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
@@ -606,15 +605,16 @@ Begin VB.Form frmCajas_Cierre
          EndProperty
          MaxCols         =   4
          ScrollBars      =   2
-         SpreadDesigner  =   "frmCajas_Cierre.frx":47E9
+         SpreadDesigner  =   "frmCajas_Cierre.frx":47A5
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
       Begin MSComctlLib.Toolbar tlbDP 
          Height          =   270
-         Left            =   5280
+         Left            =   -64720
          TabIndex        =   22
          Top             =   1560
+         Visible         =   0   'False
          Width           =   1335
          _ExtentX        =   2355
          _ExtentY        =   476
@@ -650,12 +650,11 @@ Begin VB.Form frmCajas_Cierre
       End
       Begin XtremeSuiteControls.FlatEdit txtTotalEfectivo 
          Height          =   330
-         Left            =   -65560
+         Left            =   4440
          TabIndex        =   35
          Top             =   5400
-         Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   582
          _StockProps     =   77
@@ -681,7 +680,7 @@ Begin VB.Form frmCajas_Cierre
          Top             =   5040
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   582
          _StockProps     =   77
@@ -707,7 +706,7 @@ Begin VB.Form frmCajas_Cierre
          Top             =   5280
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   582
          _StockProps     =   77
@@ -735,7 +734,7 @@ Begin VB.Form frmCajas_Cierre
          Top             =   5400
          Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   582
          _StockProps     =   77
@@ -758,11 +757,12 @@ Begin VB.Form frmCajas_Cierre
       End
       Begin XtremeSuiteControls.ComboBox cboDP_Cuenta 
          Height          =   330
-         Left            =   1680
+         Left            =   -68320
          TabIndex        =   44
          Top             =   480
+         Visible         =   0   'False
          Width           =   6135
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10821
          _ExtentY        =   582
          _StockProps     =   77
@@ -784,11 +784,12 @@ Begin VB.Form frmCajas_Cierre
       End
       Begin XtremeSuiteControls.FlatEdit txtDep_No 
          Height          =   330
-         Left            =   1680
+         Left            =   -68320
          TabIndex        =   45
          Top             =   960
+         Visible         =   0   'False
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   582
          _StockProps     =   77
@@ -808,11 +809,12 @@ Begin VB.Form frmCajas_Cierre
       End
       Begin XtremeSuiteControls.FlatEdit txtDep_Monto 
          Height          =   330
-         Left            =   5400
+         Left            =   -64600
          TabIndex        =   46
          Top             =   960
+         Visible         =   0   'False
          Width           =   2415
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4260
          _ExtentY        =   582
          _StockProps     =   77
@@ -844,9 +846,10 @@ Begin VB.Form frmCajas_Cierre
          EndProperty
          Height          =   315
          Index           =   12
-         Left            =   4080
+         Left            =   -65920
          TabIndex        =   25
          Top             =   960
+         Visible         =   0   'False
          Width           =   1095
       End
       Begin VB.Label Label1 
@@ -862,9 +865,10 @@ Begin VB.Form frmCajas_Cierre
          EndProperty
          Height          =   315
          Index           =   11
-         Left            =   240
+         Left            =   -69760
          TabIndex        =   24
          Top             =   960
+         Visible         =   0   'False
          Width           =   1335
       End
       Begin VB.Label Label1 
@@ -880,9 +884,10 @@ Begin VB.Form frmCajas_Cierre
          EndProperty
          Height          =   315
          Index           =   1
-         Left            =   240
+         Left            =   -69760
          TabIndex        =   23
          Top             =   480
+         Visible         =   0   'False
          Width           =   1335
       End
       Begin VB.Label Label1 
@@ -955,10 +960,9 @@ Begin VB.Form frmCajas_Cierre
          EndProperty
          Height          =   315
          Index           =   9
-         Left            =   -67600
+         Left            =   2400
          TabIndex        =   17
          Top             =   5400
-         Visible         =   0   'False
          Width           =   2175
       End
    End
@@ -968,7 +972,7 @@ Begin VB.Form frmCajas_Cierre
       TabIndex        =   26
       Top             =   120
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   582
       _StockProps     =   77
@@ -993,7 +997,7 @@ Begin VB.Form frmCajas_Cierre
       TabIndex        =   27
       Top             =   480
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   582
       _StockProps     =   77
@@ -1018,7 +1022,7 @@ Begin VB.Form frmCajas_Cierre
       TabIndex        =   28
       Top             =   120
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   582
       _StockProps     =   77
@@ -1043,7 +1047,7 @@ Begin VB.Form frmCajas_Cierre
       TabIndex        =   29
       Top             =   480
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   582
       _StockProps     =   77
@@ -1068,7 +1072,7 @@ Begin VB.Form frmCajas_Cierre
       TabIndex        =   30
       Top             =   480
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   582
       _StockProps     =   77
@@ -1095,7 +1099,7 @@ Begin VB.Form frmCajas_Cierre
       TabIndex        =   31
       Top             =   120
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   582
       _StockProps     =   77
@@ -1122,7 +1126,7 @@ Begin VB.Form frmCajas_Cierre
       TabIndex        =   32
       Top             =   120
       Width           =   2055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3625
       _ExtentY        =   582
       _StockProps     =   77
@@ -1149,7 +1153,7 @@ Begin VB.Form frmCajas_Cierre
       TabIndex        =   34
       Top             =   840
       Width           =   4095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7223
       _ExtentY        =   582
       _StockProps     =   77
@@ -1271,6 +1275,8 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim strSQL As String, rs As New ADODB.Recordset
+
 Dim vPaso As Boolean, vCierreCiego As Boolean
 Dim mTotalCK As Currency, mTotalEF As Currency
 
@@ -1306,8 +1312,8 @@ Call OpenRecordSet(rs, strSQL)
 If Not rs.EOF And Not rs.BOF Then
   txtAP_Numero.Text = rs!Cod_Apertura
   txtAP_Estado.Text = rs!Estado
-  txtAP_Fecha.Text = rs!Apertura_Fecha
-  txtAP_Usuario.Text = rs!Apertura_Usuario
+  txtAP_Fecha.Text = rs!APERTURA_FECHA
+  txtAP_Usuario.Text = rs!APERTURA_USUARIO
   
   txtAP_EnUso_Fecha.Text = rs!En_Uso_Fecha & ""
   txtAP_EnUso_Usuario.Text = rs!En_Uso_Usuario & ""
@@ -1390,12 +1396,12 @@ With vGrid
 Do While Not rs.EOF
   .MaxRows = .MaxRows + 1
   .Row = .MaxRows
-  .col = 1
+  .Col = 1
   .CellTag = rs!Tipo
-  .col = 2
+  .Col = 2
   .CellTag = rs!Cod_Forma_Pago
   .Text = rs!Descripcion
-  .col = 3
+  .Col = 3
   .CellTag = rs!cod_Divisa
   .Text = Format(rs!Monto, "Standard")
      
@@ -1449,14 +1455,14 @@ With vGridDt
 Do While Not rs.EOF
   .MaxRows = .MaxRows + 1
   .Row = .MaxRows
-  .col = 1
+  .Col = 1
   .Text = rs!Tipo
-  .col = 2
+  .Col = 2
   .CellTag = Format(rs!Denominacion, "###,###,###,##0.0000")
   .Text = rs!Descripcion
-  .col = 3
+  .Col = 3
   .Text = CStr(rs!Cantidad)
-  .col = 4
+  .Col = 4
   .Text = Format(rs!Monto, "Standard")
      
   vTotalCajas = vTotalCajas + rs!Monto
@@ -1482,14 +1488,14 @@ With vGridDP
 Do While Not rs.EOF
   .MaxRows = .MaxRows + 1
   .Row = .MaxRows
-  .col = 1
+  .Col = 1
   .Text = rs!Tipo
-  .col = 2
+  .Col = 2
   .CellTag = Format(rs!Denominacion, "###,###,###,##0.0000")
   .Text = rs!Descripcion
-  .col = 3
+  .Col = 3
   .Text = CStr(rs!Cantidad)
-  .col = 4
+  .Col = 4
   .Text = Format(rs!Monto, "Standard")
      
   vTotalCajas = vTotalCajas + rs!Monto
@@ -1754,6 +1760,14 @@ End Select
 
 End Sub
 
+Private Sub tcMain_SelectedChanged(ByVal Item As XtremeSuiteControls.ITabControlItem)
+
+If Item.Index = 1 Then
+'    Call cboDivisa_Click
+End If
+
+End Sub
+
 Private Sub TimerX_Timer()
 TimerX.Enabled = False
 TimerX.Interval = 0
@@ -1794,7 +1808,7 @@ If pTipo = "E" Then
     With vGridDt
         For i = 1 To .MaxRows
             .Row = i
-            .col = 4
+            .Col = 4
             curMonto = curMonto + CCur(.Text)
         Next i
     End With
@@ -1807,7 +1821,7 @@ If pTipo = "D" Then
     With vGridDP
         For i = 1 To .MaxRows
             .Row = i
-            .col = 4
+            .Col = 4
             curMonto = curMonto + CCur(.Text)
         Next i
     End With
@@ -1884,6 +1898,25 @@ txtDep_Monto.Text = "0"
 
 Call sbConsultaDepositosRegistrados
 
+
+'4. Calcular el Total a Depositar
+strSQL = "select SI_EFECTIVO From CAJAS_APERTURAS_CIERRES" _
+       & " where COD_CAJA = '" & ModuloCajas.mCaja & "' and COD_APERTURA = " & txtAP_Numero.Text _
+       & " and COD_DIVISA = '" & cboDivisa.ItemData(cboDivisa.ListIndex) & "'"
+
+Call OpenRecordSet(rs, strSQL)
+If Not rs.EOF And Not rs.BOF Then
+    txtDP_ADepositar.Text = Format(CCur(txtTotalEfectivoCheque.Text), "Standard")
+    txtSobranteFaltante.Text = Format((CCur(txtTotalEfectivo.Text) - rs!SI_EFECTIVO) - mTotalEF, "Standard")
+    txtDP_EF_ADepositar.Text = Format(mTotalEF + CCur(txtSobranteFaltante.Text), "Standard")
+End If
+rs.Close
+
+If IsNumeric(txtDP_Detallado.Text) Then
+    txtDP_DetalleCheques.Text = Format(CCur(txtDP_Detallado.Text) + mTotalCK, "Standard")
+End If
+vPaso = False
+
 Exit Sub
 
 vError:
@@ -1933,14 +1966,26 @@ End If
 
 End Sub
 
-Private Sub vGrid_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+Private Sub txtSobranteFaltante_Change()
+On Error GoTo vError
+
+If CCur(txtSobranteFaltante.Text) < 0 Then
+    txtSobranteFaltante.BackColor = RGB(250, 219, 216)
+Else
+    txtSobranteFaltante.BackColor = RGB(213, 245, 227)
+End If
+
+vError:
+End Sub
+
+Private Sub vGrid_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
 Dim strSQL As String
 
 
 If vPaso Or vGrid.MaxRows = 0 Then Exit Sub
 
 vGrid.Row = Row
-vGrid.col = 2
+vGrid.Col = 2
 
 strSQL = "exec spCajas_CierreFPDetalle '" & ModuloCajas.mCaja & "'," & txtAP_Numero.Text _
        & ",'" & cboDivisa.ItemData(cboDivisa.ListIndex) & "','" & vGrid.CellTag & "'"
@@ -1957,17 +2002,17 @@ Dim vDenominacion As Currency, vMonto As Currency
 On Error GoTo vError
 
 vGridDP.Row = vGridDP.ActiveRow
-vGridDP.col = 3
+vGridDP.Col = 3
 
 
 If IsNumeric(vGridDP.Text) Then
-    vGridDP.col = 2
+    vGridDP.Col = 2
     vDenominacion = CCur(vGridDP.CellTag)
     
-    vGridDP.col = 3
+    vGridDP.Col = 3
     vMonto = vDenominacion * CCur(vGridDP.Text)
 
-    vGridDP.col = 4
+    vGridDP.Col = 4
     vGridDP.CellTag = "Cambia"
     vGridDP.Text = Format(vMonto, "Standard")
     
@@ -1980,7 +2025,7 @@ vError:
 
 End Sub
 
-Private Sub vGridDP_LeaveCell(ByVal col As Long, ByVal Row As Long, ByVal NewCol As Long, ByVal NewRow As Long, Cancel As Boolean)
+Private Sub vGridDP_LeaveCell(ByVal Col As Long, ByVal Row As Long, ByVal NewCol As Long, ByVal NewRow As Long, Cancel As Boolean)
 Dim vDenominacion As Currency, vCantidad As Integer
 Dim strSQL As String
 
@@ -1991,21 +2036,42 @@ Me.MousePointer = vbHourglass
 
 With vGridDP
  .Row = Row
- .col = 4
- If col = 3 And .CellTag = "Cambia" Then
-    .col = 2
+ .Col = 4
+ If Col = 3 And .CellTag = "Cambia" Then
+    .Col = 2
     vDenominacion = CCur(.CellTag)
-    .col = 3
+    .Col = 3
     vCantidad = .Text
     
     strSQL = "exec spCajas_CierreRegistraEFDenominacion '" & ModuloCajas.mCaja & "'," & txtAP_Numero.Text & ",'" & cboDivisa.ItemData(cboDivisa.ListIndex) _
            & "'," & vDenominacion & "," & vCantidad & ",'D'"
     Call ConectionExecute(strSQL)
         
-    .col = 4
+    .Col = 4
     .CellTag = ""
  End If
 End With
+
+
+
+'4. Calcular el Total a Depositar
+strSQL = "select SI_EFECTIVO From CAJAS_APERTURAS_CIERRES" _
+       & " where COD_CAJA = '" & ModuloCajas.mCaja & "' and COD_APERTURA = " & txtAP_Numero.Text _
+       & " and COD_DIVISA = '" & cboDivisa.ItemData(cboDivisa.ListIndex) & "'"
+
+Call OpenRecordSet(rs, strSQL)
+If Not rs.EOF And Not rs.BOF Then
+    txtDP_ADepositar.Text = Format(CCur(txtTotalEfectivoCheque.Text), "Standard")
+    txtSobranteFaltante.Text = Format((CCur(txtTotalEfectivo.Text) - rs!SI_EFECTIVO) - mTotalEF, "Standard")
+    txtDP_EF_ADepositar.Text = Format(mTotalEF + CCur(txtSobranteFaltante.Text), "Standard")
+End If
+rs.Close
+
+If IsNumeric(txtDP_Detallado.Text) Then
+    txtDP_DetalleCheques.Text = Format(CCur(txtDP_Detallado.Text) + mTotalCK, "Standard")
+End If
+vPaso = False
+
 
 Me.MousePointer = vbDefault
 
@@ -2026,17 +2092,17 @@ If vGridDt.ActiveSheet = 2 Then Exit Sub
 
 vGridDt.Sheet = vGridDt.ActiveSheet
 vGridDt.Row = vGridDt.ActiveRow
-vGridDt.col = 3
+vGridDt.Col = 3
 
 
 If IsNumeric(vGridDt.Text) Then
-    vGridDt.col = 2
+    vGridDt.Col = 2
     vDenominacion = CCur(vGridDt.CellTag)
     
-    vGridDt.col = 3
+    vGridDt.Col = 3
     vMonto = vDenominacion * CCur(vGridDt.Text)
 
-    vGridDt.col = 4
+    vGridDt.Col = 4
     vGridDt.CellTag = "Cambia"
     vGridDt.Text = Format(vMonto, "Standard")
     
@@ -2048,7 +2114,7 @@ vError:
 
 End Sub
 
-Private Sub vGridDt_LeaveCell(ByVal col As Long, ByVal Row As Long, ByVal NewCol As Long, ByVal NewRow As Long, Cancel As Boolean)
+Private Sub vGridDt_LeaveCell(ByVal Col As Long, ByVal Row As Long, ByVal NewCol As Long, ByVal NewRow As Long, Cancel As Boolean)
 Dim vDenominacion As Currency, vCantidad As Integer
 Dim strSQL As String
 
@@ -2061,18 +2127,18 @@ Me.MousePointer = vbHourglass
 
 With vGridDt
  .Row = Row
- .col = 4
- If col = 3 And .CellTag = "Cambia" Then
-    .col = 2
+ .Col = 4
+ If Col = 3 And .CellTag = "Cambia" Then
+    .Col = 2
     vDenominacion = CCur(.CellTag)
-    .col = 3
+    .Col = 3
     vCantidad = .Text
     
     strSQL = "exec spCajas_CierreRegistraEFDenominacion '" & ModuloCajas.mCaja & "'," & txtAP_Numero.Text & ",'" & cboDivisa.ItemData(cboDivisa.ListIndex) _
            & "'," & vDenominacion & "," & vCantidad
     Call ConectionExecute(strSQL)
         
-    .col = 4
+    .Col = 4
     .CellTag = ""
  End If
 End With

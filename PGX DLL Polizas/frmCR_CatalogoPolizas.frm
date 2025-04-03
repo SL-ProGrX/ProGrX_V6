@@ -1,18 +1,20 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.ShortcutBar.v22.1.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCR_CatalogoPolizas 
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Configuración y Asignación de Pólizas"
-   ClientHeight    =   8745
+   ClientHeight    =   9105
    ClientLeft      =   45
    ClientTop       =   345
    ClientWidth     =   13065
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
-   ScaleHeight     =   8745
+   ScaleHeight     =   9105
    ScaleWidth      =   13065
    StartUpPosition =   2  'CenterScreen
    Begin VB.Timer TimerX 
@@ -21,14 +23,14 @@ Begin VB.Form frmCR_CatalogoPolizas
       Top             =   360
    End
    Begin XtremeSuiteControls.TabControl tcMain 
-      Height          =   7332
+      Height          =   7695
       Left            =   120
       TabIndex        =   2
       Top             =   1320
-      Width           =   12852
-      _Version        =   1441793
-      _ExtentX        =   22669
-      _ExtentY        =   12933
+      Width           =   12855
+      _Version        =   1572864
+      _ExtentX        =   22675
+      _ExtentY        =   13573
       _StockProps     =   68
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
@@ -71,11 +73,10 @@ Begin VB.Form frmCR_CatalogoPolizas
          Top             =   840
          Visible         =   0   'False
          Width           =   6972
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   12298
          _ExtentY        =   9758
          _StockProps     =   77
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -92,16 +93,15 @@ Begin VB.Form frmCR_CatalogoPolizas
          ShowBorder      =   0   'False
       End
       Begin XtremeSuiteControls.ListView lswPolizas 
-         Height          =   2292
+         Height          =   2295
          Left            =   120
          TabIndex        =   30
-         Top             =   4920
-         Width           =   12612
-         _Version        =   1441793
+         Top             =   5280
+         Width           =   12615
+         _Version        =   1572864
          _ExtentX        =   22246
          _ExtentY        =   4043
          _StockProps     =   77
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -123,11 +123,12 @@ Begin VB.Form frmCR_CatalogoPolizas
          TabIndex        =   67
          Top             =   480
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   656
          _StockProps     =   79
          Caption         =   "Actualización de Pólizas"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   7.5
@@ -146,7 +147,7 @@ Begin VB.Form frmCR_CatalogoPolizas
          TabIndex        =   66
          Top             =   480
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   0
          _StockProps     =   64
@@ -160,12 +161,11 @@ Begin VB.Form frmCR_CatalogoPolizas
          Top             =   840
          Visible         =   0   'False
          Width           =   5532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9758
          _ExtentY        =   9758
          _StockProps     =   77
          ForeColor       =   -2147483640
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -188,14 +188,14 @@ Begin VB.Form frmCR_CatalogoPolizas
          Width           =   1095
       End
       Begin XtremeSuiteControls.TabControl tcAux 
-         Height          =   3492
+         Height          =   3855
          Left            =   120
          TabIndex        =   3
          Top             =   960
-         Width           =   12732
-         _Version        =   1441793
-         _ExtentX        =   22458
-         _ExtentY        =   6159
+         Width           =   12735
+         _Version        =   1572864
+         _ExtentX        =   22463
+         _ExtentY        =   6800
          _StockProps     =   68
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -210,7 +210,7 @@ Begin VB.Form frmCR_CatalogoPolizas
          Color           =   32
          ItemCount       =   3
          Item(0).Caption =   "General"
-         Item(0).ControlCount=   26
+         Item(0).ControlCount=   28
          Item(0).Control(0)=   "chkPolizaPlanPagos"
          Item(0).Control(1)=   "txtDescripcion"
          Item(0).Control(2)=   "cboAseguradora"
@@ -237,6 +237,8 @@ Begin VB.Form frmCR_CatalogoPolizas
          Item(0).Control(23)=   "chkIVA_Aplica"
          Item(0).Control(24)=   "txtIVA_Porcentaje"
          Item(0).Control(25)=   "Label2(9)"
+         Item(0).Control(26)=   "Label2(19)"
+         Item(0).Control(27)=   "cboAplicacion"
          Item(1).Caption =   "Coberturas"
          Item(1).ControlCount=   22
          Item(1).Control(0)=   "cboVenceFrecuencia"
@@ -265,17 +267,16 @@ Begin VB.Form frmCR_CatalogoPolizas
          Item(2).ControlCount=   1
          Item(2).Control(0)=   "lswAcreedores"
          Begin XtremeSuiteControls.ListView lswAcreedores 
-            Height          =   2652
+            Height          =   3615
             Left            =   -70000
             TabIndex        =   4
             Top             =   480
             Visible         =   0   'False
-            Width           =   12612
-            _Version        =   1441793
-            _ExtentX        =   22246
-            _ExtentY        =   4678
+            Width           =   12615
+            _Version        =   1572864
+            _ExtentX        =   22251
+            _ExtentY        =   6376
             _StockProps     =   77
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -298,12 +299,12 @@ Begin VB.Form frmCR_CatalogoPolizas
             Top             =   1560
             Visible         =   0   'False
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   1973790
-            BackColor       =   16185078
+            BackColor       =   16777215
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -313,9 +314,9 @@ Begin VB.Form frmCR_CatalogoPolizas
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            BackColor       =   16185078
             Style           =   2
-            Appearance      =   16
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
             Text            =   "ComboBox1"
          End
          Begin XtremeSuiteControls.ComboBox cboPolGenTipo 
@@ -325,12 +326,12 @@ Begin VB.Form frmCR_CatalogoPolizas
             Top             =   2040
             Visible         =   0   'False
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   1973790
-            BackColor       =   16185078
+            BackColor       =   16777215
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -340,9 +341,9 @@ Begin VB.Form frmCR_CatalogoPolizas
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            BackColor       =   16185078
             Style           =   2
-            Appearance      =   16
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
             Text            =   "ComboBox1"
          End
          Begin XtremeSuiteControls.DateTimePicker dtpVencimiento 
@@ -352,7 +353,7 @@ Begin VB.Form frmCR_CatalogoPolizas
             Top             =   1080
             Visible         =   0   'False
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   550
             _StockProps     =   68
@@ -375,12 +376,11 @@ Begin VB.Form frmCR_CatalogoPolizas
             Top             =   600
             Visible         =   0   'False
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -391,7 +391,7 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   1
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtHasta 
@@ -401,12 +401,11 @@ Begin VB.Form frmCR_CatalogoPolizas
             Top             =   600
             Visible         =   0   'False
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -417,7 +416,7 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   1
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtContrato 
@@ -427,12 +426,11 @@ Begin VB.Form frmCR_CatalogoPolizas
             Top             =   1080
             Visible         =   0   'False
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -443,7 +441,7 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtPolGenTipoMnt 
@@ -453,12 +451,11 @@ Begin VB.Form frmCR_CatalogoPolizas
             Top             =   2040
             Visible         =   0   'False
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -469,7 +466,7 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   1
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtVenceDia 
@@ -479,12 +476,11 @@ Begin VB.Form frmCR_CatalogoPolizas
             Top             =   1560
             Visible         =   0   'False
             Width           =   972
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -495,7 +491,7 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.CheckBox chkPolizaGeneral 
@@ -505,11 +501,12 @@ Begin VB.Form frmCR_CatalogoPolizas
             Top             =   2040
             Visible         =   0   'False
             Width           =   2772
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4890
             _ExtentY        =   656
             _StockProps     =   79
             Caption         =   "Aplica como Póliza General "
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -529,11 +526,12 @@ Begin VB.Form frmCR_CatalogoPolizas
             Top             =   2520
             Visible         =   0   'False
             Width           =   2772
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4890
             _ExtentY        =   656
             _StockProps     =   79
             Caption         =   "Aplica Póliza por Región "
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -553,11 +551,12 @@ Begin VB.Form frmCR_CatalogoPolizas
             Top             =   2520
             Visible         =   0   'False
             Width           =   2292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4043
             _ExtentY        =   656
             _StockProps     =   79
             Caption         =   "Detallar Regiones"
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -575,11 +574,12 @@ Begin VB.Form frmCR_CatalogoPolizas
             TabIndex        =   32
             Top             =   600
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   1714
             _StockProps     =   79
             Caption         =   "Aplicar dentro del Plan de Pagos"
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -592,17 +592,16 @@ Begin VB.Form frmCR_CatalogoPolizas
             Appearance      =   16
          End
          Begin XtremeSuiteControls.FlatEdit txtDescripcion 
-            Height          =   312
+            Height          =   330
             Left            =   3360
             TabIndex        =   33
-            Top             =   600
-            Width           =   7332
-            _Version        =   1441793
-            _ExtentX        =   12933
-            _ExtentY        =   556
+            Top             =   960
+            Width           =   7335
+            _Version        =   1572864
+            _ExtentX        =   12938
+            _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -612,21 +611,21 @@ Begin VB.Form frmCR_CatalogoPolizas
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.ComboBox cboAseguradora 
-            Height          =   312
+            Height          =   315
             Left            =   3360
             TabIndex        =   34
-            Top             =   2760
-            Width           =   7332
-            _Version        =   1441793
+            Top             =   3120
+            Width           =   7335
+            _Version        =   1572864
             _ExtentX        =   12938
             _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   1973790
-            BackColor       =   16185078
+            BackColor       =   16777215
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -636,23 +635,23 @@ Begin VB.Form frmCR_CatalogoPolizas
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            BackColor       =   16185078
             Style           =   2
-            Appearance      =   16
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
             Text            =   "ComboBox1"
          End
          Begin XtremeSuiteControls.ComboBox cboBase 
-            Height          =   312
+            Height          =   315
             Left            =   3360
             TabIndex        =   35
-            Top             =   1320
-            Width           =   2052
-            _Version        =   1441793
+            Top             =   1680
+            Width           =   2055
+            _Version        =   1572864
             _ExtentX        =   3625
             _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   1973790
-            BackColor       =   16185078
+            BackColor       =   16777215
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -662,23 +661,23 @@ Begin VB.Form frmCR_CatalogoPolizas
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            BackColor       =   16185078
             Style           =   2
-            Appearance      =   16
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
             Text            =   "ComboBox1"
          End
          Begin XtremeSuiteControls.ComboBox cboTipo 
-            Height          =   312
+            Height          =   315
             Left            =   5400
             TabIndex        =   36
-            Top             =   1320
-            Width           =   2292
-            _Version        =   1441793
+            Top             =   1680
+            Width           =   2295
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   1973790
-            BackColor       =   16185078
+            BackColor       =   16777215
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -688,23 +687,22 @@ Begin VB.Form frmCR_CatalogoPolizas
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            BackColor       =   16185078
             Style           =   2
-            Appearance      =   16
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
             Text            =   "ComboBox1"
          End
          Begin XtremeSuiteControls.FlatEdit txtCtaDesc 
-            Height          =   312
+            Height          =   330
             Left            =   5400
             TabIndex        =   37
-            Top             =   960
-            Width           =   5292
-            _Version        =   1441793
-            _ExtentX        =   9334
-            _ExtentY        =   550
+            Top             =   1320
+            Width           =   5295
+            _Version        =   1572864
+            _ExtentX        =   9340
+            _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -715,21 +713,20 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCtaCodigo 
-            Height          =   312
+            Height          =   330
             Left            =   3360
             TabIndex        =   38
-            Top             =   960
-            Width           =   2052
-            _Version        =   1441793
-            _ExtentX        =   3619
-            _ExtentY        =   550
+            Top             =   1320
+            Width           =   2055
+            _Version        =   1572864
+            _ExtentX        =   3625
+            _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -740,21 +737,20 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtRetencionDesc 
-            Height          =   312
+            Height          =   330
             Left            =   5400
             TabIndex        =   39
-            Top             =   1680
-            Width           =   5292
-            _Version        =   1441793
-            _ExtentX        =   9334
-            _ExtentY        =   550
+            Top             =   2040
+            Width           =   5295
+            _Version        =   1572864
+            _ExtentX        =   9340
+            _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -765,21 +761,20 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtRetencionCodigo 
-            Height          =   312
+            Height          =   330
             Left            =   3360
             TabIndex        =   40
-            Top             =   1680
-            Width           =   2052
-            _Version        =   1441793
-            _ExtentX        =   3619
-            _ExtentY        =   550
+            Top             =   2040
+            Width           =   2055
+            _Version        =   1572864
+            _ExtentX        =   3625
+            _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -790,21 +785,20 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCargoDesc 
-            Height          =   312
+            Height          =   330
             Left            =   5400
             TabIndex        =   41
-            Top             =   2040
-            Width           =   5292
-            _Version        =   1441793
-            _ExtentX        =   9334
-            _ExtentY        =   550
+            Top             =   2400
+            Width           =   5295
+            _Version        =   1572864
+            _ExtentX        =   9340
+            _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -815,21 +809,20 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             Locked          =   -1  'True
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtCargoCodigo 
-            Height          =   312
+            Height          =   330
             Left            =   3360
             TabIndex        =   42
-            Top             =   2040
-            Width           =   2052
-            _Version        =   1441793
-            _ExtentX        =   3619
-            _ExtentY        =   550
+            Top             =   2400
+            Width           =   2055
+            _Version        =   1572864
+            _ExtentX        =   3625
+            _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -840,21 +833,20 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtPlazo 
-            Height          =   312
+            Height          =   330
             Left            =   8880
             TabIndex        =   44
-            Top             =   2400
-            Width           =   1812
-            _Version        =   1441793
-            _ExtentX        =   3196
-            _ExtentY        =   550
+            Top             =   2760
+            Width           =   1815
+            _Version        =   1572864
+            _ExtentX        =   3201
+            _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -865,21 +857,20 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtValor 
-            Height          =   312
+            Height          =   330
             Left            =   7680
             TabIndex        =   45
-            Top             =   1320
-            Width           =   3012
-            _Version        =   1441793
-            _ExtentX        =   5313
-            _ExtentY        =   550
+            Top             =   1680
+            Width           =   3015
+            _Version        =   1572864
+            _ExtentX        =   5318
+            _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -890,21 +881,20 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtPorcentajeAplFormaliza 
-            Height          =   312
+            Height          =   330
             Left            =   3360
             TabIndex        =   43
-            Top             =   2400
-            Width           =   2052
-            _Version        =   1441793
-            _ExtentX        =   3619
-            _ExtentY        =   550
+            Top             =   2760
+            Width           =   2055
+            _Version        =   1572864
+            _ExtentX        =   3625
+            _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -915,20 +905,21 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   1
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.CheckBox chkIVA_Incluido 
-            Height          =   252
+            Height          =   255
             Left            =   5520
             TabIndex        =   62
-            Top             =   3120
-            Width           =   1572
-            _Version        =   1441793
+            Top             =   3480
+            Width           =   1575
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   444
             _StockProps     =   79
             Caption         =   "IVA Incluido?"
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -941,16 +932,17 @@ Begin VB.Form frmCR_CatalogoPolizas
             Appearance      =   16
          End
          Begin XtremeSuiteControls.CheckBox chkIVA_Aplica 
-            Height          =   252
+            Height          =   255
             Left            =   3360
             TabIndex        =   63
-            Top             =   3120
-            Width           =   1692
-            _Version        =   1441793
+            Top             =   3480
+            Width           =   1695
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
             Caption         =   "Aplica IVA?"
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -963,17 +955,16 @@ Begin VB.Form frmCR_CatalogoPolizas
             Appearance      =   16
          End
          Begin XtremeSuiteControls.FlatEdit txtIVA_Porcentaje 
-            Height          =   312
+            Height          =   330
             Left            =   8880
             TabIndex        =   64
-            Top             =   3120
-            Width           =   1812
-            _Version        =   1441793
-            _ExtentX        =   3196
-            _ExtentY        =   550
+            Top             =   3480
+            Width           =   1815
+            _Version        =   1572864
+            _ExtentX        =   3201
+            _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -984,8 +975,56 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
+         End
+         Begin XtremeSuiteControls.ComboBox cboAplicacion 
+            Height          =   330
+            Left            =   3360
+            TabIndex        =   68
+            Top             =   480
+            Width           =   7335
+            _Version        =   1572864
+            _ExtentX        =   12938
+            _ExtentY        =   582
+            _StockProps     =   77
+            ForeColor       =   1973790
+            BackColor       =   16777215
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Style           =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
+            Text            =   "ComboBox1"
+         End
+         Begin VB.Label Label2 
+            Appearance      =   0  'Flat
+            BackColor       =   &H00E0E0E0&
+            BackStyle       =   0  'Transparent
+            Caption         =   "Tipo de Aplicación"
+            BeginProperty Font 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H80000008&
+            Height          =   255
+            Index           =   19
+            Left            =   240
+            TabIndex        =   69
+            Top             =   480
+            Width           =   3015
          End
          Begin VB.Label Label2 
             Alignment       =   1  'Right Justify
@@ -1003,12 +1042,12 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             ForeColor       =   &H80000008&
-            Height          =   252
+            Height          =   255
             Index           =   9
             Left            =   7200
             TabIndex        =   65
-            Top             =   3120
-            Width           =   1452
+            Top             =   3480
+            Width           =   1455
          End
          Begin VB.Label Label2 
             Appearance      =   0  'Flat
@@ -1025,12 +1064,12 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             ForeColor       =   &H80000008&
-            Height          =   252
+            Height          =   255
             Index           =   8
             Left            =   5520
             TabIndex        =   53
-            Top             =   2400
-            Width           =   3732
+            Top             =   2760
+            Width           =   3735
          End
          Begin VB.Label Label2 
             Appearance      =   0  'Flat
@@ -1047,12 +1086,12 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             ForeColor       =   &H80000008&
-            Height          =   252
+            Height          =   255
             Index           =   12
             Left            =   240
             TabIndex        =   52
-            Top             =   2760
-            Width           =   3012
+            Top             =   3120
+            Width           =   3015
          End
          Begin VB.Label Label2 
             Appearance      =   0  'Flat
@@ -1069,12 +1108,12 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             ForeColor       =   &H80000008&
-            Height          =   252
+            Height          =   255
             Index           =   7
             Left            =   240
             TabIndex        =   51
-            Top             =   2400
-            Width           =   3012
+            Top             =   2760
+            Width           =   3015
          End
          Begin VB.Label Label2 
             Appearance      =   0  'Flat
@@ -1091,12 +1130,12 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             ForeColor       =   &H80000008&
-            Height          =   252
+            Height          =   255
             Index           =   6
             Left            =   240
             TabIndex        =   50
-            Top             =   2040
-            Width           =   3012
+            Top             =   2400
+            Width           =   3015
          End
          Begin VB.Label Label2 
             Appearance      =   0  'Flat
@@ -1113,12 +1152,12 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             ForeColor       =   &H80000008&
-            Height          =   252
+            Height          =   255
             Index           =   4
             Left            =   240
             TabIndex        =   49
-            Top             =   1320
-            Width           =   3012
+            Top             =   1680
+            Width           =   3015
          End
          Begin VB.Label Label2 
             Appearance      =   0  'Flat
@@ -1135,12 +1174,12 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             ForeColor       =   &H80000008&
-            Height          =   252
+            Height          =   255
             Index           =   3
             Left            =   240
             TabIndex        =   48
-            Top             =   960
-            Width           =   3012
+            Top             =   1320
+            Width           =   3015
          End
          Begin VB.Label Label2 
             Appearance      =   0  'Flat
@@ -1157,12 +1196,12 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             ForeColor       =   &H80000008&
-            Height          =   252
+            Height          =   255
             Index           =   2
             Left            =   240
             TabIndex        =   47
-            Top             =   600
-            Width           =   3012
+            Top             =   960
+            Width           =   3015
          End
          Begin VB.Label Label2 
             Appearance      =   0  'Flat
@@ -1179,12 +1218,12 @@ Begin VB.Form frmCR_CatalogoPolizas
                Strikethrough   =   0   'False
             EndProperty
             ForeColor       =   &H80000008&
-            Height          =   252
+            Height          =   255
             Index           =   5
             Left            =   240
             TabIndex        =   46
-            Top             =   1680
-            Width           =   3012
+            Top             =   2040
+            Width           =   3015
          End
          Begin VB.Label lblPolGenTipoMnt 
             Appearance      =   0  'Flat
@@ -1446,8 +1485,8 @@ Begin VB.Form frmCR_CatalogoPolizas
          Width           =   3828
          _ExtentX        =   6747
          _ExtentY        =   476
-         ButtonWidth     =   487
-         ButtonHeight    =   466
+         ButtonWidth     =   609
+         ButtonHeight    =   582
          AllowCustomize  =   0   'False
          Style           =   1
          _Version        =   393216
@@ -1489,12 +1528,11 @@ Begin VB.Form frmCR_CatalogoPolizas
          TabIndex        =   28
          Top             =   480
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1505,7 +1543,7 @@ Begin VB.Form frmCR_CatalogoPolizas
             Strikethrough   =   0   'False
          EndProperty
          Alignment       =   2
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin FPSpreadADO.fpSpread vGrid 
@@ -1545,7 +1583,7 @@ Begin VB.Form frmCR_CatalogoPolizas
          Top             =   360
          Visible         =   0   'False
          Width           =   12612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   22246
          _ExtentY        =   656
          _StockProps     =   14
@@ -1622,12 +1660,12 @@ Begin VB.Form frmCR_CatalogoPolizas
          Width           =   2052
       End
       Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption1 
-         Height          =   372
+         Height          =   375
          Left            =   120
          TabIndex        =   31
-         Top             =   4560
-         Width           =   12612
-         _Version        =   1441793
+         Top             =   4920
+         Width           =   12615
+         _Version        =   1572864
          _ExtentX        =   22246
          _ExtentY        =   656
          _StockProps     =   14
@@ -2042,6 +2080,12 @@ vModulo = 11
 strSQL = "select COD_ASEGURADORA as 'IdX',NOMBRE as 'ItmX' from CRD_POLIZAS_ASEGURADORAS where activo = 1"
 Call sbCbo_Llena_New(cboAseguradora, strSQL, False, True)
 
+
+
+strSQL = "select ID_POLIZA_GRUPO as 'IdX', descripcion as 'ItmX' from POLIZAS_GRUPO where activo = 1" _
+      & " order by ID_POLIZA_GRUPO"
+Call sbCbo_Llena_New(cboAplicacion, strSQL, False, True)
+
  Call chkPolizaGeneral_Click
  Call sbLimpia
  
@@ -2255,10 +2299,12 @@ vPaso = True
 strSQL = "select P.*,isnull(Ret.descripcion,'') as 'RetencionDesc',isnull(Crg.descripcion,'') as 'CargoDesc'" _
        & ", isnull(Asg.Nombre,'') as 'AseguradoraDesc'" _
        & ", isnull(Cta.Cod_Cuenta_Mask, P.cod_Cuenta) as 'CtaCodigo', isnull(Cta.Descripcion,'') as 'CtaDesc'" _
+       & ", isnull(Pg.Descripcion,'') as 'AplicacionDesc'" _
        & " from CRD_CATALOGO_POLIZAS P left join Catalogo Ret on P.codigo_Retencion = Ret.Codigo" _
        & " left join cargos_adicionales Crg on P.codigo_cargo = Crg.cod_cargo" _
        & " left join CRD_POLIZAS_ASEGURADORAS Asg on P.cod_Aseguradora = Asg.cod_Aseguradora" _
        & " left join vCNTX_CUENTAS_LOCAL Cta on P.cod_Cuenta = Cta.Cod_Cuenta" _
+       & " left join POLIZAS_GRUPO Pg on P.ID_POLIZA_GRUPO = Pg.ID_POLIZA_GRUPO" _
        & " where P.cod_poliza = '" & pPoliza & "'"
 
 Call OpenRecordSet(rs, strSQL)
@@ -2306,6 +2352,10 @@ If Not rs.EOF And Not rs.BOF Then
    
    If Not IsNull(rs!cod_Aseguradora) Then
        Call sbCboAsignaDato(cboAseguradora, rs!AseguradoraDesc, True, rs!cod_Aseguradora)
+   End If
+   
+   If Not IsNull(rs!ID_POLIZA_GRUPO) Then
+       Call sbCboAsignaDato(cboAplicacion, rs!AplicacionDesc, True, rs!ID_POLIZA_GRUPO)
    End If
    
    txtDesde.Text = Format(rs!COBERTURA_INICIO, "Standard")
@@ -2505,31 +2555,33 @@ If Not vEditar Then
    strSQL = "insert CRD_CATALOGO_POLIZAS(cod_poliza,descripcion,base,tipo,valor,porc_formalizacion,plazo_meses,cod_cuenta" _
           & ",codigo_retencion,codigo_cargo,cobertura_inicio,cobertura_corte,cod_aseguradora,contrato_num,cobertura_vencimiento" _
           & ",vence_frecuencia,vence_dia, Poliza_general, COBERTURA_REGION,INTEGRA_PLAN_PAGOS,POLIZA_GENERAL_TIPO" _
-          & ",POLIZA_GENERAL_MONTO, IVA_APLICA, IVA_INCLUIDO, IVA_PORCENTAJE)" _
+          & ",POLIZA_GENERAL_MONTO, IVA_APLICA, IVA_INCLUIDO, IVA_PORCENTAJE, ID_POLIZA_GRUPO)" _
           & " values('" & Trim(txtPoliza.Text) & "','" & txtDescripcion.Text & "','" & cboBase.ItemData(cboBase.ListIndex) _
-          & "','" & Mid(cboTipo.Text, 1, 1) & "'," & CDbl(txtValor.Text) & "," & CDbl(txtPorcentajeAplFormaliza.Text) & "," & txtPlazo.Text _
-          & ",'" & fxgCntCuentaFormato(False, txtCtaCodigo.Text) & "','" & txtRetencionCodigo.Text & "','" & txtCargoCodigo.Text _
-          & "'," & CCur(txtDesde.Text) & "," & CCur(txtHasta.Text) & ",'" & cboAseguradora.ItemData(cboAseguradora.ListIndex) & "','" & txtContrato.Text _
-          & "','" & Format(dtpVencimiento.Value, "yyyy/mm/dd") & "','" & Mid(cboVenceFrecuencia.Text, 1, 1) & "'," _
+          & "', '" & Mid(cboTipo.Text, 1, 1) & "'," & CDbl(txtValor.Text) & "," & CDbl(txtPorcentajeAplFormaliza.Text) & "," & txtPlazo.Text _
+          & ", '" & fxgCntCuentaFormato(False, txtCtaCodigo.Text) & "','" & txtRetencionCodigo.Text & "','" & txtCargoCodigo.Text _
+          & "', " & CCur(txtDesde.Text) & "," & CCur(txtHasta.Text) & ",'" & cboAseguradora.ItemData(cboAseguradora.ListIndex) & "','" & txtContrato.Text _
+          & "', '" & Format(dtpVencimiento.Value, "yyyy/mm/dd") & "','" & Mid(cboVenceFrecuencia.Text, 1, 1) & "'," _
           & txtVenceDia.Text & "," & chkPolizaGeneral.Value & "," & chkPolizaRegion.Value & "," & chkPolizaPlanPagos.Value _
-          & ",'" & Mid(cboPolGenTipo.Text, 1, 1) & "'," & CCur(txtPolGenTipoMnt.Text) _
-          & "," & chkIVA_Aplica.Value & "," & chkIVA_Incluido.Value & "," & CCur(txtIVA_Porcentaje.Text) & ")"
+          & ", '" & Mid(cboPolGenTipo.Text, 1, 1) & "'," & CCur(txtPolGenTipoMnt.Text) _
+          & ", " & chkIVA_Aplica.Value & "," & chkIVA_Incluido.Value & "," & CCur(txtIVA_Porcentaje.Text) _
+          & ", " & cboAplicacion.ItemData(cboAplicacion.ListIndex) & ")"
    Call ConectionExecute(strSQL)
    
    Call Bitacora("Registra", "Poliza (Control de Polizas) : " & Trim(txtPoliza))
 
 Else
-   strSQL = "update CRD_CATALOGO_POLIZAS set descripcion = '" & txtDescripcion.Text & "',base = '" & cboBase.ItemData(cboBase.ListIndex) _
-          & "',Tipo = '" & Mid(cboTipo.Text, 1, 1) & "',valor = " & CDbl(txtValor.Text) & ",porc_formalizacion = " & CDbl(txtPorcentajeAplFormaliza.Text) _
-          & ",plazo_meses = " & txtPlazo.Text & ",cod_cuenta = '" & fxgCntCuentaFormato(False, txtCtaCodigo.Text) & "',Codigo_Retencion = '" _
-          & txtRetencionCodigo.Text & "',Codigo_Cargo = '" & txtCargoCodigo.Text & "',cobertura_inicio = " & CCur(txtDesde.Text) _
-          & ",cobertura_corte = " & CCur(txtHasta.Text) & ", Cod_Aseguradora = '" & cboAseguradora.ItemData(cboAseguradora.ListIndex) _
-          & "',contrato_num = '" & txtContrato.Text & "', cobertura_vencimiento = '" & Format(dtpVencimiento.Value, "yyyy/mm/dd") _
-          & "',vence_frecuencia = '" & Mid(cboVenceFrecuencia.Text, 1, 1) & "', vence_dia = " & txtVenceDia.Text _
+   strSQL = "update CRD_CATALOGO_POLIZAS set descripcion = '" & txtDescripcion.Text & "', base = '" & cboBase.ItemData(cboBase.ListIndex) _
+          & "', Tipo = '" & Mid(cboTipo.Text, 1, 1) & "', valor = " & CDbl(txtValor.Text) & ", porc_formalizacion = " & CDbl(txtPorcentajeAplFormaliza.Text) _
+          & ", plazo_meses = " & txtPlazo.Text & ", cod_cuenta = '" & fxgCntCuentaFormato(False, txtCtaCodigo.Text) & "',Codigo_Retencion = '" _
+          & txtRetencionCodigo.Text & "', Codigo_Cargo = '" & txtCargoCodigo.Text & "', cobertura_inicio = " & CCur(txtDesde.Text) _
+          & ",  cobertura_corte = " & CCur(txtHasta.Text) & ", Cod_Aseguradora = '" & cboAseguradora.ItemData(cboAseguradora.ListIndex) _
+          & "', contrato_num = '" & txtContrato.Text & "', cobertura_vencimiento = '" & Format(dtpVencimiento.Value, "yyyy/mm/dd") _
+          & "', vence_frecuencia = '" & Mid(cboVenceFrecuencia.Text, 1, 1) & "', vence_dia = " & txtVenceDia.Text _
           & ", Poliza_General = " & chkPolizaGeneral.Value & ", COBERTURA_REGION = " & chkPolizaRegion.Value _
           & ", INTEGRA_PLAN_PAGOS = " & chkPolizaPlanPagos.Value & ", POLIZA_GENERAL_TIPO = '" & Mid(cboPolGenTipo.Text, 1, 1) _
           & "', POLIZA_GENERAL_MONTO = " & CCur(txtPolGenTipoMnt.Text) _
           & ", IVA_APLICA = " & chkIVA_Aplica.Value & ", IVA_INCLUIDO = " & chkIVA_Incluido.Value & ", IVA_PORCENTAJE = " & CCur(txtIVA_Porcentaje.Text) _
+          & ", ID_POLIZA_GRUPO = " & cboAplicacion.ItemData(cboAplicacion.ListIndex) _
           & " where cod_poliza = '" & txtPoliza.Text & "'"
    Call ConectionExecute(strSQL)
    

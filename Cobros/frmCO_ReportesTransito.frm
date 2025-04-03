@@ -1,27 +1,27 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.3#0"; "Codejock.Controls.v19.3.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.3#0"; "Codejock.ShortcutBar.v19.3.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCO_ReportesTransito 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Cobros: Morosidad en Real/Transito"
-   ClientHeight    =   6384
-   ClientLeft      =   36
-   ClientTop       =   384
-   ClientWidth     =   10668
+   ClientHeight    =   6375
+   ClientLeft      =   30
+   ClientTop       =   390
+   ClientWidth     =   10680
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
-   ScaleHeight     =   6384
-   ScaleWidth      =   10668
+   ScaleHeight     =   6375
+   ScaleWidth      =   10680
    Begin XtremeSuiteControls.ListView lsw 
       Height          =   4572
       Left            =   120
       TabIndex        =   27
       Top             =   1680
       Width           =   4572
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   8064
       _ExtentY        =   8064
       _StockProps     =   77
@@ -51,7 +51,7 @@ Begin VB.Form frmCO_ReportesTransito
       TabIndex        =   22
       Top             =   5160
       Width           =   3372
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   5948
       _ExtentY        =   1503
       _StockProps     =   79
@@ -66,14 +66,15 @@ Begin VB.Form frmCO_ReportesTransito
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       BorderStyle     =   1
       Begin VB.TextBox txtDesde 
          Alignment       =   2  'Center
          Appearance      =   0  'Flat
          BeginProperty Font 
             Name            =   "Calibri"
-            Size            =   7.8
+            Size            =   7.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -92,7 +93,7 @@ Begin VB.Form frmCO_ReportesTransito
          Appearance      =   0  'Flat
          BeginProperty Font 
             Name            =   "Calibri"
-            Size            =   7.8
+            Size            =   7.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -113,7 +114,7 @@ Begin VB.Form frmCO_ReportesTransito
          Caption         =   "Desde"
          BeginProperty Font 
             Name            =   "Calibri"
-            Size            =   7.8
+            Size            =   7.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -135,7 +136,7 @@ Begin VB.Form frmCO_ReportesTransito
          Caption         =   "Hasta"
          BeginProperty Font 
             Name            =   "Calibri"
-            Size            =   7.8
+            Size            =   7.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -157,12 +158,12 @@ Begin VB.Form frmCO_ReportesTransito
       TabIndex        =   1
       Top             =   2040
       Width           =   4572
-      _Version        =   1245187
-      _ExtentX        =   8065
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   8070
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
-      BackColor       =   16185078
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -172,9 +173,9 @@ Begin VB.Form frmCO_ReportesTransito
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
    Begin XtremeSuiteControls.ComboBox cboGarantia 
@@ -183,12 +184,12 @@ Begin VB.Form frmCO_ReportesTransito
       TabIndex        =   2
       Top             =   1680
       Width           =   4572
-      _Version        =   1245187
-      _ExtentX        =   8065
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   8070
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
-      BackColor       =   16185078
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -198,9 +199,9 @@ Begin VB.Form frmCO_ReportesTransito
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
    Begin XtremeSuiteControls.ComboBox cboCartera 
@@ -209,12 +210,12 @@ Begin VB.Form frmCO_ReportesTransito
       TabIndex        =   3
       Top             =   2400
       Width           =   4572
-      _Version        =   1245187
-      _ExtentX        =   8065
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   8070
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
-      BackColor       =   16185078
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -224,9 +225,9 @@ Begin VB.Form frmCO_ReportesTransito
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
    Begin XtremeSuiteControls.ComboBox cboDestino 
@@ -235,12 +236,12 @@ Begin VB.Form frmCO_ReportesTransito
       TabIndex        =   4
       Top             =   3600
       Width           =   4572
-      _Version        =   1245187
-      _ExtentX        =   8065
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   8070
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
-      BackColor       =   16185078
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -250,9 +251,9 @@ Begin VB.Form frmCO_ReportesTransito
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
    Begin XtremeSuiteControls.ComboBox cboRecurso 
@@ -261,12 +262,12 @@ Begin VB.Form frmCO_ReportesTransito
       TabIndex        =   5
       Top             =   3960
       Width           =   4572
-      _Version        =   1245187
-      _ExtentX        =   8065
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   8070
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
-      BackColor       =   16185078
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -276,9 +277,9 @@ Begin VB.Form frmCO_ReportesTransito
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
    Begin XtremeSuiteControls.ComboBox cboInstitucion 
@@ -287,12 +288,12 @@ Begin VB.Form frmCO_ReportesTransito
       TabIndex        =   6
       Top             =   4320
       Width           =   4572
-      _Version        =   1245187
-      _ExtentX        =   8065
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   8070
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
-      BackColor       =   16185078
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -302,9 +303,9 @@ Begin VB.Form frmCO_ReportesTransito
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
    Begin XtremeSuiteControls.ComboBox cboDeductora 
@@ -313,12 +314,12 @@ Begin VB.Form frmCO_ReportesTransito
       TabIndex        =   7
       Top             =   4680
       Width           =   4572
-      _Version        =   1245187
-      _ExtentX        =   8065
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   8070
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
-      BackColor       =   16185078
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -328,23 +329,23 @@ Begin VB.Form frmCO_ReportesTransito
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
    Begin XtremeSuiteControls.CheckBox chkLineas 
-      Height          =   252
+      Height          =   255
       Left            =   9480
       TabIndex        =   8
       Top             =   2880
-      Width           =   972
-      _Version        =   1245187
+      Width           =   975
+      _Version        =   1572864
       _ExtentX        =   1714
       _ExtentY        =   444
       _StockProps     =   79
       Caption         =   "Todas"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -354,9 +355,8 @@ Begin VB.Form frmCO_ReportesTransito
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Transparent     =   -1  'True
       UseVisualStyle  =   -1  'True
-      Appearance      =   16
+      Appearance      =   21
       Alignment       =   1
    End
    Begin XtremeSuiteControls.FlatEdit txtCodigo 
@@ -365,7 +365,7 @@ Begin VB.Form frmCO_ReportesTransito
       TabIndex        =   9
       Top             =   3240
       Width           =   852
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   1503
       _ExtentY        =   550
       _StockProps     =   77
@@ -380,7 +380,7 @@ Begin VB.Form frmCO_ReportesTransito
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtDescripcion 
@@ -389,7 +389,7 @@ Begin VB.Form frmCO_ReportesTransito
       TabIndex        =   10
       Top             =   3240
       Width           =   3732
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   6583
       _ExtentY        =   550
       _StockProps     =   77
@@ -404,7 +404,7 @@ Begin VB.Form frmCO_ReportesTransito
          Strikethrough   =   0   'False
       EndProperty
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.CheckBox chkRepResumen 
@@ -413,7 +413,7 @@ Begin VB.Form frmCO_ReportesTransito
       TabIndex        =   20
       Top             =   5160
       Width           =   1332
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   444
       _StockProps     =   79
@@ -438,12 +438,12 @@ Begin VB.Form frmCO_ReportesTransito
       TabIndex        =   21
       Top             =   5520
       Width           =   1572
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   1080
       _StockProps     =   79
       Caption         =   "Reporte"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -453,7 +453,8 @@ Begin VB.Form frmCO_ReportesTransito
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   14
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
       Picture         =   "frmCO_ReportesTransito.frx":0000
    End
    Begin XtremeSuiteControls.ComboBox cboEstado 
@@ -462,12 +463,12 @@ Begin VB.Form frmCO_ReportesTransito
       TabIndex        =   28
       Top             =   1320
       Width           =   4572
-      _Version        =   1245187
-      _ExtentX        =   8065
-      _ExtentY        =   550
+      _Version        =   1572864
+      _ExtentX        =   8070
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
-      BackColor       =   16185078
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -477,9 +478,9 @@ Begin VB.Form frmCO_ReportesTransito
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
    Begin XtremeShortcutBar.ShortcutCaption lblRepGen 
@@ -488,13 +489,13 @@ Begin VB.Form frmCO_ReportesTransito
       TabIndex        =   29
       Top             =   1320
       Width           =   4572
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   8064
       _ExtentY        =   656
       _StockProps     =   14
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False

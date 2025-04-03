@@ -5,24 +5,24 @@ Begin VB.Form frmCO_CausasYArreglos
    BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Causas de Morosidad y Tipos de arreglos de pago"
-   ClientHeight    =   7212
-   ClientLeft      =   48
-   ClientTop       =   372
-   ClientWidth     =   7848
+   ClientHeight    =   7215
+   ClientLeft      =   45
+   ClientTop       =   375
+   ClientWidth     =   7845
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
-   ScaleHeight     =   7212
-   ScaleWidth      =   7848
+   ScaleHeight     =   7215
+   ScaleWidth      =   7845
    Begin FPSpreadADO.fpSpread vGrid 
-      Height          =   5652
+      Height          =   5655
       Left            =   240
       TabIndex        =   1
       Top             =   1200
-      Width           =   7332
+      Width           =   7335
       _Version        =   524288
-      _ExtentX        =   12933
-      _ExtentY        =   9970
+      _ExtentX        =   12938
+      _ExtentY        =   9975
       _StockProps     =   64
       BackColorStyle  =   1
       BorderStyle     =   0
@@ -47,7 +47,7 @@ Begin VB.Form frmCO_CausasYArreglos
       Caption         =   "Causas de Morosidad"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -105,7 +105,7 @@ On Error GoTo vError
 
 fxGuardar = 0
 vGrid.Row = vGrid.ActiveRow
-vGrid.col = 1
+vGrid.Col = 1
 
 
 Select Case mSheet
@@ -133,37 +133,37 @@ If rs!Existe = 0 Then 'Insertar
          
          
   strSQL = strSQL & vGrid.Text & "','"
-  vGrid.col = 2
+  vGrid.Col = 2
   strSQL = strSQL & vGrid.Text & "',"
-  vGrid.col = 3
+  vGrid.Col = 3
   strSQL = strSQL & vGrid.Value & ",'" & glogon.Usuario & "',dbo.MyGetdate())"
   
   Call ConectionExecute(strSQL)
 
-  vGrid.col = 1
+  vGrid.Col = 1
   Call Bitacora("Registra", vTipo & vGrid.Text)
 
 Else 'Actualizar
     
-    vGrid.col = 2
+    vGrid.Col = 2
     Select Case mSheet
       Case 1 'Causas
             strSQL = "update CBR_CAUSAS_MOROSIDAD set descripcion = '" & vGrid.Text & "',Activa = "
-            vGrid.col = 3
+            vGrid.Col = 3
             strSQL = strSQL & vGrid.Value & " where cod_causa = '"
           
       Case 2 'Arreglos
             strSQL = "update CBR_TIPOS_ARREGLOS set descripcion = '" & vGrid.Text & "',Activo = "
-            vGrid.col = 3
+            vGrid.Col = 3
             strSQL = strSQL & vGrid.Value & " where cod_arreglo = '"
     
     End Select
  
-    vGrid.col = 1
+    vGrid.Col = 1
     strSQL = strSQL & vGrid.Text & "'"
     Call ConectionExecute(strSQL)
     
-    vGrid.col = 1
+    vGrid.Col = 1
     Call Bitacora("Modifica", vTipo & vGrid.Text)
 
 End If
@@ -209,7 +209,7 @@ If KeyCode = vbKeyDelete Then
      i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
      If i = vbYes Then
         vGrid.Row = vGrid.ActiveRow
-        vGrid.col = 1
+        vGrid.Col = 1
         
         Select Case mSheet
           Case 1 'Causas
@@ -223,7 +223,7 @@ If KeyCode = vbKeyDelete Then
         Call ConectionExecute(strSQL)
         
         strSQL = vGrid.Text
-        vGrid.col = 1
+        vGrid.Col = 1
         Call Bitacora("Elimina", vTipo & vGrid.Text)
                 
         vGrid.DeleteRows vGrid.ActiveRow, 1

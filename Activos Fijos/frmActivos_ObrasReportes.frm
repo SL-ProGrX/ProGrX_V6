@@ -1,7 +1,7 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "mscomctl.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.Controls.v22.0.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.ShortcutBar.v22.0.0.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmActivos_ObrasReportes 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,7 +24,7 @@ Begin VB.Form frmActivos_ObrasReportes
       TabIndex        =   0
       Top             =   4200
       Width           =   10572
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   18648
       _ExtentY        =   1926
       _StockProps     =   79
@@ -37,12 +37,12 @@ Begin VB.Form frmActivos_ObrasReportes
          TabIndex        =   1
          Top             =   240
          Width           =   2172
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   1291
          _StockProps     =   79
          Caption         =   "Reporte"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -52,7 +52,8 @@ Begin VB.Form frmActivos_ObrasReportes
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   14
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          Picture         =   "frmActivos_ObrasReportes.frx":0000
       End
       Begin XtremeSuiteControls.CheckBox chkInformeResumen 
@@ -61,7 +62,7 @@ Begin VB.Form frmActivos_ObrasReportes
          TabIndex        =   2
          Top             =   240
          Width           =   2652
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   4678
          _ExtentY        =   550
          _StockProps     =   79
@@ -76,8 +77,9 @@ Begin VB.Form frmActivos_ObrasReportes
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
+         UseVisualStyle  =   -1  'True
          TextAlignment   =   1
-         Appearance      =   16
+         Appearance      =   17
          Alignment       =   1
       End
    End
@@ -122,7 +124,7 @@ Begin VB.Form frmActivos_ObrasReportes
       TabIndex        =   4
       Top             =   2160
       Width           =   1332
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   68
@@ -145,7 +147,7 @@ Begin VB.Form frmActivos_ObrasReportes
       TabIndex        =   5
       Top             =   2160
       Width           =   1332
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   68
@@ -168,7 +170,7 @@ Begin VB.Form frmActivos_ObrasReportes
       TabIndex        =   6
       Top             =   2160
       Width           =   1812
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   556
       _StockProps     =   79
@@ -183,7 +185,8 @@ Begin VB.Form frmActivos_ObrasReportes
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   17
       Value           =   1
    End
    Begin XtremeSuiteControls.ComboBox cboEstado 
@@ -192,12 +195,12 @@ Begin VB.Form frmActivos_ObrasReportes
       TabIndex        =   11
       Top             =   1800
       Width           =   2652
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   4683
       _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
-      BackColor       =   16185078
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -207,9 +210,9 @@ Begin VB.Form frmActivos_ObrasReportes
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
    Begin XtremeSuiteControls.CheckBox chkEstados 
@@ -218,7 +221,7 @@ Begin VB.Form frmActivos_ObrasReportes
       TabIndex        =   12
       Top             =   1800
       Width           =   1812
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   556
       _StockProps     =   79
@@ -233,7 +236,8 @@ Begin VB.Form frmActivos_ObrasReportes
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   17
       Value           =   1
    End
    Begin XtremeSuiteControls.CheckBox chkActivoDetalle 
@@ -242,7 +246,7 @@ Begin VB.Form frmActivos_ObrasReportes
       TabIndex        =   14
       Top             =   3840
       Width           =   2652
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   4678
       _ExtentY        =   550
       _StockProps     =   79
@@ -257,7 +261,8 @@ Begin VB.Form frmActivos_ObrasReportes
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   17
       Value           =   1
       Alignment       =   1
    End
@@ -267,7 +272,7 @@ Begin VB.Form frmActivos_ObrasReportes
       TabIndex        =   15
       Top             =   3000
       Width           =   1812
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   556
       _StockProps     =   79
@@ -282,7 +287,8 @@ Begin VB.Form frmActivos_ObrasReportes
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
+      UseVisualStyle  =   -1  'True
+      Appearance      =   17
       Value           =   1
    End
    Begin XtremeSuiteControls.ComboBox cboTipoObra 
@@ -291,12 +297,12 @@ Begin VB.Form frmActivos_ObrasReportes
       TabIndex        =   16
       Top             =   3000
       Width           =   2772
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   4895
       _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
-      BackColor       =   16185078
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -306,9 +312,9 @@ Begin VB.Form frmActivos_ObrasReportes
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
    Begin VB.Label Label1 
@@ -396,7 +402,7 @@ Begin VB.Form frmActivos_ObrasReportes
       TabIndex        =   8
       Top             =   1320
       Width           =   3972
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   7006
       _ExtentY        =   656
       _StockProps     =   14
@@ -421,7 +427,7 @@ Begin VB.Form frmActivos_ObrasReportes
       TabIndex        =   7
       Top             =   1320
       Width           =   6492
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   11451
       _ExtentY        =   656
       _StockProps     =   14

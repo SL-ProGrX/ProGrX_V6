@@ -1,33 +1,33 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCR_Comites 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Comités de Resolución de Créditos"
-   ClientHeight    =   8025
+   ClientHeight    =   8640
    ClientLeft      =   45
    ClientTop       =   330
-   ClientWidth     =   14430
+   ClientWidth     =   16140
    HelpContextID   =   3006
    Icon            =   "frmCR_Comites.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
-   ScaleHeight     =   8025
-   ScaleWidth      =   14430
+   ScaleHeight     =   8640
+   ScaleWidth      =   16140
    Begin XtremeSuiteControls.ListView lsw 
-      Height          =   2772
+      Height          =   3375
       Left            =   7560
       TabIndex        =   6
       Top             =   5160
-      Width           =   6732
-      _Version        =   1441793
-      _ExtentX        =   11874
-      _ExtentY        =   4890
+      Width           =   8535
+      _Version        =   1572864
+      _ExtentX        =   15055
+      _ExtentY        =   5953
       _StockProps     =   77
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
@@ -81,14 +81,14 @@ Begin VB.Form frmCR_Comites
       EndProperty
    End
    Begin FPSpreadADO.fpSpread vGrid 
-      Height          =   3012
+      Height          =   3015
       Left            =   120
       TabIndex        =   1
       Top             =   1320
-      Width           =   14172
+      Width           =   15975
       _Version        =   524288
-      _ExtentX        =   24998
-      _ExtentY        =   5313
+      _ExtentX        =   28178
+      _ExtentY        =   5318
       _StockProps     =   64
       BackColorStyle  =   1
       BorderStyle     =   0
@@ -102,21 +102,21 @@ Begin VB.Form frmCR_Comites
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      MaxCols         =   502
+      MaxCols         =   504
       ScrollBars      =   2
       SpreadDesigner  =   "frmCR_Comites.frx":030A
       VScrollSpecialType=   2
       AppearanceStyle =   1
    End
    Begin FPSpreadADO.fpSpread fpGarantias 
-      Height          =   2772
+      Height          =   3375
       Left            =   120
       TabIndex        =   7
       Top             =   5160
-      Width           =   7452
+      Width           =   7455
       _Version        =   524288
-      _ExtentX        =   13144
-      _ExtentY        =   4890
+      _ExtentX        =   13150
+      _ExtentY        =   5953
       _StockProps     =   64
       BackColorStyle  =   1
       BorderStyle     =   0
@@ -132,19 +132,19 @@ Begin VB.Form frmCR_Comites
       EndProperty
       MaxCols         =   496
       ScrollBars      =   2
-      SpreadDesigner  =   "frmCR_Comites.frx":0C5F
+      SpreadDesigner  =   "frmCR_Comites.frx":0CC1
       VScrollSpecialType=   2
       AppearanceStyle =   1
    End
    Begin XtremeShortcutBar.ShortcutCaption scComite 
-      Height          =   372
+      Height          =   375
       Left            =   120
       TabIndex        =   5
       Top             =   4440
-      Width           =   14172
-      _Version        =   1441793
-      _ExtentX        =   24998
-      _ExtentY        =   656
+      Width           =   15975
+      _Version        =   1572864
+      _ExtentX        =   28178
+      _ExtentY        =   661
       _StockProps     =   14
       Caption         =   "..."
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -160,14 +160,14 @@ Begin VB.Form frmCR_Comites
       Alignment       =   1
    End
    Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption2 
-      Height          =   372
+      Height          =   375
       Left            =   7680
       TabIndex        =   4
       Top             =   4800
-      Width           =   6612
-      _Version        =   1441793
-      _ExtentX        =   11663
-      _ExtentY        =   656
+      Width           =   8415
+      _Version        =   1572864
+      _ExtentX        =   14843
+      _ExtentY        =   661
       _StockProps     =   14
       Caption         =   "Líneas de Crédito Autorizadas"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -186,14 +186,14 @@ Begin VB.Form frmCR_Comites
       TabIndex        =   3
       Top             =   4800
       Width           =   7572
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   13356
       _ExtentY        =   656
       _StockProps     =   14
       Caption         =   "Limites de aprobación por Garantía"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   9
+         Size            =   8.93
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -222,10 +222,10 @@ Begin VB.Form frmCR_Comites
       Width           =   7332
    End
    Begin VB.Image imgBanner 
-      Height          =   1212
+      Height          =   1215
       Left            =   0
       Top             =   0
-      Width           =   14532
+      Width           =   16815
    End
 End
 Attribute VB_Name = "frmCR_Comites"
@@ -236,12 +236,14 @@ Attribute VB_Exposed = False
 Option Explicit
 Dim strUltimaSelTipo As String
 Dim vPaso As Boolean
+Dim strSQL As String, rs As New ADODB.Recordset
 
 
 Private Function fxGuardar() As Long
 Dim strSQL As String, rs As New ADODB.Recordset
 
 Dim pComite As Long, pComiteDesc As String, pTipo As String, pActa As Long, pActivo As Integer, pLineaFiltra As Integer
+Dim pAbreviatura As String, pOrden As String
 Dim pNoAprobacion As Integer, pRngInicio As Currency, pRngCorte As Currency
 Dim pMovimiento As String
 
@@ -250,7 +252,7 @@ On Error GoTo vError
 fxGuardar = 0
 
 vGrid.Row = vGrid.ActiveRow
-vGrid.col = 1
+vGrid.Col = 1
 
 If vGrid.Text = "" Then
     pComite = 0
@@ -260,35 +262,46 @@ Else
     pMovimiento = "Modifica"
 End If
 
-vGrid.col = 2
+vGrid.Col = 2
 pComiteDesc = Trim(vGrid.Text)
-vGrid.col = 3
+
+vGrid.Col = 3
 pActa = CLng(vGrid.Text)
-vGrid.col = 4
+
+vGrid.Col = 4
+pAbreviatura = Trim(vGrid.Text)
+
+vGrid.Col = 5
+pOrden = Trim(vGrid.Text)
+
+vGrid.Col = 6
 pTipo = Trim(Mid(vGrid.Text, 1, 1))
-vGrid.col = 5
+vGrid.Col = 7
 pNoAprobacion = CLng(vGrid.Text)
-vGrid.col = 6
+vGrid.Col = 8
 pRngInicio = CCur(vGrid.Text)
-vGrid.col = 7
+vGrid.Col = 9
 pRngCorte = CCur(vGrid.Text)
-vGrid.col = 8
+vGrid.Col = 10
 pLineaFiltra = vGrid.Value
-vGrid.col = 9
+vGrid.Col = 11
 pActivo = vGrid.Value
 
 strSQL = "exec spCrd_Comites_Registro " & pComite & ",'" & pComiteDesc & "'," & pActa & ",'" & pTipo & "'," & pNoAprobacion _
-       & "," & pRngInicio & "," & pRngCorte & "," & pLineaFiltra & "," & pActivo & ",'" & glogon.Usuario & "'"
+       & "," & pRngInicio & "," & pRngCorte & "," & pLineaFiltra & "," & pActivo & ",'" & glogon.Usuario _
+       & "', '" & pAbreviatura & "', '" & pOrden & "'"
 Call OpenRecordSet(rs, strSQL)
 
-    vGrid.col = 1
+    vGrid.Col = 1
     vGrid.Text = CStr(rs!id_Comite)
 
 rs.Close
 
 Call Bitacora(pMovimiento, "Comité Resolución Id: " & vGrid.Text)
 
-vGrid.col = 1
+MsgBox "Se " & pMovimiento & " Comité: " & pComiteDesc & " satisfactoriamente!", vbInformation
+
+vGrid.Col = 1
 fxGuardar = vGrid.Text
    
 Exit Function
@@ -311,17 +324,27 @@ Dim strSQL As String
 
 On Error GoTo vError
 
+Dim pMonto As String, pGarantia As String
+
 If fpGarantias.ActiveCol = fpGarantias.MaxCols And (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
    fpGarantias.Row = fpGarantias.ActiveRow
-   fpGarantias.col = 1
+   fpGarantias.Col = 1
+   pGarantia = fpGarantias.Text
    
    strSQL = "exec  spCrd_Comites_Garantias_Rangos_Registra " & scComite.Tag & ",'" & fpGarantias.Text & "'"
-   fpGarantias.col = 3
+   
+   
+   fpGarantias.Col = 3
    strSQL = strSQL & "," & CCur(fpGarantias.Text)
-   fpGarantias.col = 4
+   fpGarantias.Col = 4
+   pMonto = fpGarantias.Text
+   
    strSQL = strSQL & "," & CCur(fpGarantias.Text) & ",'" & glogon.Usuario & "'"
    
    Call ConectionExecute(strSQL)
+   
+   Call Bitacora("Modifica", "Comité Rng Gar. " & pGarantia & ", Id Comite: " & scComite.Tag & " Mnt: " & pMonto)
+   MsgBox "Se ha modificado Comité > Rango Garantía >  " & pGarantia & " > Id Comite: " & scComite.Tag & " Mnt: " & pMonto
 End If
 
 Exit Sub
@@ -352,9 +375,11 @@ Call ConectionExecute(strSQL)
 
 
 If Item.Checked Then
-    Call Bitacora("Registra", "Comités asignación línea, Id:" & scComite.Tag & " .. Código:" & Item.Text)
+    Call Bitacora("Registra", "Comités asignación línea, Id: " & scComite.Tag & " .. Código: " & Item.Text)
+    MsgBox "Se ha vinculado la linea " & Item.Text & " al comité", vbInformation
 Else
-    Call Bitacora("Elimina", "Comités asignación línea, Id:" & scComite.Tag & " .. Código:" & Item.Text)
+    Call Bitacora("Elimina", "Comités asignación línea, Id: " & scComite.Tag & " .. Código: " & Item.Text)
+    MsgBox "Se ha Desvinculado la linea " & Item.Text & " al comité", vbInformation
 End If
 
 Exit Sub
@@ -364,20 +389,20 @@ vError:
   
 End Sub
 
-Private Sub vGrid_ButtonClicked(ByVal col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+Private Sub vGrid_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
 
 If vPaso Then Exit Sub
 
-If col <> 10 Then Exit Sub
+If Col <> 12 Then Exit Sub
 
 
 vGrid.Row = Row
-vGrid.col = 1
+vGrid.Col = 1
 
 Call sbDetalle_Limpia
 
 scComite.Tag = vGrid.Text
-vGrid.col = 2
+vGrid.Col = 2
 scComite.Caption = vGrid.Text
 
 Call sbDetalle_Carga
@@ -386,29 +411,61 @@ End Sub
 
 Private Sub vGrid_KeyDown(KeyCode As Integer, Shift As Integer)
 Dim i As Integer
-'MsgBox "Columna : " & vGrid.Col
-'MsgBox "Columna Activa: " & vGrid.ActiveCol
-'MsgBox "Fila : " & vGrid.Row
-'MsgBox "Fila Activa: " & vGrid.ActiveRow
 
 If vGrid.ActiveCol >= vGrid.MaxCols - 1 And (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
   i = fxGuardar
   vGrid.Row = vGrid.ActiveRow
-  vGrid.col = 1
+  vGrid.Col = 1
   vGrid.Text = i
   If vGrid.MaxRows <= vGrid.ActiveRow Then
     vGrid.MaxRows = vGrid.MaxRows + 1
     vGrid.Row = vGrid.MaxRows
-    Call sbCargaCboTipos(4, vGrid.MaxRows, vGrid)
+    Call sbCargaCboTipos(6, vGrid.MaxRows, vGrid)
   End If
 End If
+
+
+'Borrar Linea
+If KeyCode = vbKeyDelete Then
+     i = MsgBox("Esta Seguro que desea borrar este comité", vbYesNo)
+     If i = vbYes Then
+        vGrid.Row = vGrid.ActiveRow
+        vGrid.Col = 1
+        
+        strSQL = "exec spCrd_Comites_Elimina " & vGrid.Text & ", '" & glogon.Usuario & "'"
+        Call OpenRecordSet(rs, strSQL)
+        
+        If rs!Pass = 1 Then
+                    
+            vGrid.Col = 1
+            strSQL = vGrid.Text
+    
+            vGrid.DeleteRows vGrid.ActiveRow, 1
+            vGrid.MaxRows = vGrid.MaxRows - 1
+            
+            If vGrid.MaxRows <= 0 Then
+              vGrid.MaxRows = 1
+            End If
+            
+            Call Bitacora("Elimina", "Comites Id: " & strSQL)
+            
+            MsgBox "Comité Id: " & strSQL & ", Eliminado Satisfactoriamente!", vbInformation
+        Else
+            MsgBox rs!Mensaje, vbExclamation
+        End If
+
+
+     End If
+End If
+
+
 
 End Sub
 
 Private Sub sbCargaCboTipos(vCol As Integer, vRow As Long, vGrid As Object)
 Dim strResultado As String, rs As New ADODB.Recordset, strSQL As String
 
-vGrid.col = vCol
+vGrid.Col = vCol
 vGrid.Row = vRow
 vGrid.CellType = CellTypeComboBox
 
@@ -496,9 +553,10 @@ Call sbToolBarIconos(tlbPrincipal, False)
 If tlbPrincipal.Buttons(1).Enabled = False Then vGrid.Enabled = False
     
 vPaso = True
-    strSQL = "select id_comite,descripcion,acta,tipo_aprobacion,NAPROBACIONES,RNG_INICIO,RNG_CORTE,LINEA_FILTRA, ESTADO" _
-           & " from comites order by id_comite"
-    Call sbCargaGridLocal(vGrid, 10, strSQL)
+    strSQL = "select Id_comite, Descripcion, Acta, Abreviatura, Orden, Tipo_aprobacion" _
+           & ", NAPROBACIONES, RNG_INICIO,RNG_CORTE,LINEA_FILTRA, ESTADO" _
+           & " From comites order by id_comite"
+    Call sbCargaGridLocal(vGrid, 12, strSQL)
 vPaso = False
 
 Call sbDetalle_Limpia
@@ -529,14 +587,14 @@ strResTipo = "Ejecutivo" & Chr$(9) & "Mancomunado"
 Do While Not rs.EOF
   vGrid.Row = vGrid.MaxRows
   
-  vGrid.col = 4
+  vGrid.Col = 6
   vGrid.CellType = CellTypeComboBox
   vGrid.TypeComboBoxList = strResTipo
   vGrid.TypeComboBoxEditable = False
   vGrid.Text = strUltimaSelTipo
   
   For i = 1 To vGrid.MaxCols
-    vGrid.col = i
+    vGrid.Col = i
     Select Case i
      Case 1 'id_comite
        vGrid.Text = CStr(rs!id_Comite)
@@ -544,7 +602,15 @@ Do While Not rs.EOF
        vGrid.Text = CStr(rs!Descripcion)
      Case 3 'acta
        vGrid.Text = CStr(rs!acta)
-     Case 4 'Tipo
+     
+     Case 4 'Abreviatura
+       vGrid.Text = CStr(rs!Abreviatura)
+     
+     Case 5 'Orden
+       vGrid.Text = CStr(rs!Orden)
+     
+     
+     Case 6 'Tipo
         Select Case rs!tipo_aprobacion
           Case "E" 'Simple
             vGrid.Text = "Ejecutivo"
@@ -553,18 +619,22 @@ Do While Not rs.EOF
           Case Else
             vGrid.Text = ""
         End Select
-     Case 5
-       vGrid.Text = CStr(rs!NAprobaciones)
-     Case 6
-       vGrid.Text = Format(rs!Rng_Inicio, "Standard")
+        
      Case 7
+       vGrid.Text = CStr(rs!NAprobaciones)
+     
+     Case 8
+       vGrid.Text = Format(rs!Rng_Inicio, "Standard")
+     
+     Case 9
        vGrid.Text = Format(rs!Rng_Corte, "Standard")
        
-     Case 8 'Filtra Linea
+     Case 10 'Filtra Linea
        vGrid.Value = rs!Linea_Filtra
-     Case 9 'Activo
+     Case 11 'Activo
        vGrid.Value = rs!Estado
      Case Else
+    
     End Select
   Next i
   
@@ -587,33 +657,46 @@ End Sub
 
 
 Private Sub tlbPrincipal_ButtonClick(ByVal Button As MSComctlLib.Button)
-Dim i As Integer, strSQL As String
+Dim rs As New ADODB.Recordset, strSQL As String
+
+Dim i As Integer
 
 On Error GoTo vError
 
 Select Case Button.Key
    Case "insertar"
     vGrid.MaxRows = vGrid.MaxRows + 1
-    Call sbCargaCboTipos(4, vGrid.MaxRows, vGrid)
+    Call sbCargaCboTipos(6, vGrid.MaxRows, vGrid)
     
    Case "borrar"
    
      i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
      If i = vbYes Then
         vGrid.Row = vGrid.ActiveRow
-        vGrid.col = 1
-        strSQL = "delete comites where id_comite = " & vGrid.Text
-        Call ConectionExecute(strSQL)
-        
-        strSQL = vGrid.Text
-        vGrid.col = 2
-        Call Bitacora("Elimina", "Comité : " & strSQL & " - " & vGrid.Text)
-        vGrid.col = 1
+        vGrid.Col = 1
         
         
-        strSQL = "select id_comite,descripcion,acta,tipo_aprobacion,NAPROBACIONES,RNG_INICIO,RNG_CORTE,LINEA_FILTRA,estado" _
-               & " from comites order by id_comite"
-        Call sbCargaGridLocal(vGrid, 10, strSQL)
+        strSQL = "exec spCrd_Comites_Elimina " & vGrid.Text
+        Call OpenRecordSet(rs, strSQL)
+        
+        If rs!Pass = 1 Then
+            strSQL = vGrid.Text
+            vGrid.Col = 2
+            Call Bitacora("Elimina", "Comité : " & strSQL & " - " & vGrid.Text)
+            vGrid.Col = 1
+            
+            vPaso = True
+                strSQL = "select Id_comite, Descripcion, Acta, Abreviatura, Orden, Tipo_aprobacion" _
+                       & ", NAPROBACIONES, RNG_INICIO,RNG_CORTE,LINEA_FILTRA, ESTADO" _
+                       & " From comites order by id_comite"
+                Call sbCargaGridLocal(vGrid, 12, strSQL)
+            vPaso = False
+        
+        Else
+            MsgBox rs!Mensaje, vbExclamation
+        End If
+        
+        
      End If
    
    Case "ayuda"

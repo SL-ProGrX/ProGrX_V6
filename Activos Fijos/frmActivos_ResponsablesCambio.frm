@@ -1,390 +1,528 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "mscomctl.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{38911DA0-E448-11D0-84A3-00DD01104159}#1.1#0"; "ComCt332.ocx"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.2#0"; "Codejock.Controls.v20.2.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmActivos_ResponsablesCambio 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Traslado/Cambio de Responsables"
-   ClientHeight    =   7650
+   ClientHeight    =   7425
    ClientLeft      =   45
    ClientTop       =   315
-   ClientWidth     =   10635
+   ClientWidth     =   11430
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7650
-   ScaleWidth      =   10635
+   ScaleHeight     =   7425
+   ScaleWidth      =   11430
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
-   Begin VB.TextBox txtNuevoId 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFC0C0&
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   315
-      Left            =   6120
-      Locked          =   -1  'True
-      TabIndex        =   25
-      Top             =   2400
-      Width           =   1815
-   End
-   Begin VB.TextBox txtNuevoNombre 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFC0C0&
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   315
-      Left            =   6120
-      Locked          =   -1  'True
-      TabIndex        =   24
-      Top             =   2760
-      Width           =   4455
-   End
-   Begin VB.TextBox txtActualNombre 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFC0C0&
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   315
-      Left            =   960
-      Locked          =   -1  'True
-      TabIndex        =   22
-      Top             =   2760
-      Width           =   4455
-   End
-   Begin VB.TextBox txtActualId 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFC0C0&
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   315
-      Left            =   960
-      Locked          =   -1  'True
-      TabIndex        =   21
-      Top             =   2400
-      Width           =   1815
-   End
-   Begin VB.ComboBox cboMotivo 
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   312
-      Left            =   960
-      Style           =   2  'Dropdown List
-      TabIndex        =   5
-      Top             =   960
-      Width           =   4695
-   End
-   Begin VB.TextBox txtNotas 
-      Appearance      =   0  'Flat
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   645
-      Left            =   960
-      MultiLine       =   -1  'True
-      ScrollBars      =   2  'Vertical
-      TabIndex        =   4
-      Top             =   1320
-      Width           =   9615
-   End
-   Begin VB.TextBox txtCodigo 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFFFFF&
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   315
-      Left            =   960
-      TabIndex        =   3
-      Top             =   480
-      Width           =   1575
-   End
-   Begin VB.TextBox txtDocumento 
-      Appearance      =   0  'Flat
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   315
+   Begin XtremeSuiteControls.PushButton btnProcesar 
+      Height          =   375
       Left            =   8520
-      TabIndex        =   2
-      Top             =   960
-      Width           =   2055
-   End
-   Begin VB.TextBox txtEstado 
-      Alignment       =   2  'Center
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
+      TabIndex        =   25
+      Top             =   0
+      Width           =   1335
+      _Version        =   1572864
+      _ExtentX        =   2355
+      _ExtentY        =   661
+      _StockProps     =   79
+      Caption         =   "Procesar"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   315
-      Left            =   7320
-      Locked          =   -1  'True
-      MultiLine       =   -1  'True
-      TabIndex        =   1
-      Top             =   45
-      Width           =   3180
+      FlatStyle       =   -1  'True
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmActivos_ResponsablesCambio.frx":0000
    End
-   Begin VB.TextBox txtSubTotal 
-      Alignment       =   1  'Right Justify
-      Appearance      =   0  'Flat
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
+   Begin XtremeSuiteControls.TabControl tcMain 
+      Height          =   4695
+      Left            =   120
+      TabIndex        =   8
+      Top             =   2400
+      Width           =   11295
+      _Version        =   1572864
+      _ExtentX        =   19923
+      _ExtentY        =   8281
+      _StockProps     =   68
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   315
-      Left            =   6480
-      MultiLine       =   -1  'True
-      TabIndex        =   0
-      Top             =   6795
-      Width           =   2175
+      Appearance      =   4
+      Color           =   32
+      ItemCount       =   2
+      Item(0).Caption =   "Responsables"
+      Item(0).ControlCount=   14
+      Item(0).Control(0)=   "txtPersona"
+      Item(0).Control(1)=   "txtDepartamento"
+      Item(0).Control(2)=   "txtSeccion"
+      Item(0).Control(3)=   "txtNuevoPersona"
+      Item(0).Control(4)=   "txtNuevoDepartamento"
+      Item(0).Control(5)=   "txtNuevoSeccion"
+      Item(0).Control(6)=   "scSubTitulos(1)"
+      Item(0).Control(7)=   "scSubTitulos(0)"
+      Item(0).Control(8)=   "Label5(3)"
+      Item(0).Control(9)=   "Label5(2)"
+      Item(0).Control(10)=   "Label5(1)"
+      Item(0).Control(11)=   "Label5(0)"
+      Item(0).Control(12)=   "Label5(10)"
+      Item(0).Control(13)=   "Label5(11)"
+      Item(1).Caption =   "Activos"
+      Item(1).ControlCount=   1
+      Item(1).Control(0)=   "vGrid"
+      Begin FPSpreadADO.fpSpread vGrid 
+         Height          =   4095
+         Left            =   -70000
+         TabIndex        =   9
+         Top             =   480
+         Visible         =   0   'False
+         Width           =   11295
+         _Version        =   524288
+         _ExtentX        =   19923
+         _ExtentY        =   7223
+         _StockProps     =   64
+         BackColorStyle  =   1
+         BorderStyle     =   0
+         EditEnterAction =   5
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         MaxCols         =   6
+         ScrollBars      =   2
+         SpreadDesigner  =   "frmActivos_ResponsablesCambio.frx":0719
+         VScrollSpecial  =   -1  'True
+         VScrollSpecialType=   2
+         AppearanceStyle =   1
+      End
+      Begin XtremeSuiteControls.FlatEdit txtPersona 
+         Height          =   315
+         Left            =   3000
+         TabIndex        =   11
+         ToolTipText     =   "Presione F4 para Consultar"
+         Top             =   1320
+         Width           =   6255
+         _Version        =   1572864
+         _ExtentX        =   11028
+         _ExtentY        =   550
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   -2147483643
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtDepartamento 
+         Height          =   315
+         Left            =   3000
+         TabIndex        =   12
+         Top             =   1680
+         Width           =   6255
+         _Version        =   1572864
+         _ExtentX        =   11028
+         _ExtentY        =   550
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   -2147483643
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtSeccion 
+         Height          =   315
+         Left            =   3000
+         TabIndex        =   13
+         ToolTipText     =   "Presione F4 para Consultar"
+         Top             =   2040
+         Width           =   6255
+         _Version        =   1572864
+         _ExtentX        =   11028
+         _ExtentY        =   550
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   -2147483643
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtNuevoPersona 
+         Height          =   315
+         Left            =   3000
+         TabIndex        =   14
+         Top             =   3240
+         Width           =   6255
+         _Version        =   1572864
+         _ExtentX        =   11028
+         _ExtentY        =   550
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   -2147483643
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtNuevoDepartamento 
+         Height          =   315
+         Left            =   3000
+         TabIndex        =   15
+         ToolTipText     =   "Presione F4 para Consultar"
+         Top             =   3600
+         Width           =   6255
+         _Version        =   1572864
+         _ExtentX        =   11028
+         _ExtentY        =   550
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   -2147483643
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtNuevoSeccion 
+         Height          =   315
+         Left            =   3000
+         TabIndex        =   16
+         Top             =   3960
+         Width           =   6255
+         _Version        =   1572864
+         _ExtentX        =   11028
+         _ExtentY        =   550
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   -2147483643
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.Label Label5 
+         Height          =   255
+         Index           =   11
+         Left            =   1080
+         TabIndex        =   24
+         Top             =   1680
+         Width           =   1815
+         _Version        =   1572864
+         _ExtentX        =   3196
+         _ExtentY        =   444
+         _StockProps     =   79
+         Caption         =   "Departamento"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+      End
+      Begin XtremeSuiteControls.Label Label5 
+         Height          =   255
+         Index           =   10
+         Left            =   1080
+         TabIndex        =   23
+         Top             =   1320
+         Width           =   1815
+         _Version        =   1572864
+         _ExtentX        =   3196
+         _ExtentY        =   444
+         _StockProps     =   79
+         Caption         =   "Persona"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+      End
+      Begin XtremeSuiteControls.Label Label5 
+         Height          =   255
+         Index           =   0
+         Left            =   1080
+         TabIndex        =   22
+         Top             =   3240
+         Width           =   1815
+         _Version        =   1572864
+         _ExtentX        =   3196
+         _ExtentY        =   444
+         _StockProps     =   79
+         Caption         =   "Persona"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+      End
+      Begin XtremeSuiteControls.Label Label5 
+         Height          =   255
+         Index           =   1
+         Left            =   1080
+         TabIndex        =   21
+         Top             =   2040
+         Width           =   1815
+         _Version        =   1572864
+         _ExtentX        =   3196
+         _ExtentY        =   444
+         _StockProps     =   79
+         Caption         =   "Sección"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+      End
+      Begin XtremeSuiteControls.Label Label5 
+         Height          =   255
+         Index           =   2
+         Left            =   1080
+         TabIndex        =   20
+         Top             =   3960
+         Width           =   1815
+         _Version        =   1572864
+         _ExtentX        =   3196
+         _ExtentY        =   444
+         _StockProps     =   79
+         Caption         =   "Sección"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+      End
+      Begin XtremeSuiteControls.Label Label5 
+         Height          =   255
+         Index           =   3
+         Left            =   1080
+         TabIndex        =   19
+         Top             =   3600
+         Width           =   1815
+         _Version        =   1572864
+         _ExtentX        =   3196
+         _ExtentY        =   444
+         _StockProps     =   79
+         Caption         =   "Departamento"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+      End
+      Begin XtremeShortcutBar.ShortcutCaption scSubTitulos 
+         Height          =   375
+         Index           =   0
+         Left            =   0
+         TabIndex        =   18
+         Top             =   720
+         Width           =   11295
+         _Version        =   1572864
+         _ExtentX        =   19918
+         _ExtentY        =   656
+         _StockProps     =   14
+         Caption         =   "Responsable Actual"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         SubItemCaption  =   -1  'True
+         VisualTheme     =   3
+         Alignment       =   1
+      End
+      Begin XtremeShortcutBar.ShortcutCaption scSubTitulos 
+         Height          =   375
+         Index           =   1
+         Left            =   0
+         TabIndex        =   17
+         Top             =   2640
+         Width           =   11295
+         _Version        =   1572864
+         _ExtentX        =   19918
+         _ExtentY        =   656
+         _StockProps     =   14
+         Caption         =   "Trasladar a .:"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         SubItemCaption  =   -1  'True
+         VisualTheme     =   3
+         Alignment       =   1
+      End
    End
    Begin MSComctlLib.StatusBar StatusBarX 
       Align           =   2  'Align Bottom
       Height          =   255
       Left            =   0
-      TabIndex        =   6
-      Top             =   7395
-      Width           =   10635
-      _ExtentX        =   18759
+      TabIndex        =   0
+      Top             =   7170
+      Width           =   11430
+      _ExtentX        =   20161
       _ExtentY        =   450
       _Version        =   393216
       BeginProperty Panels {8E3867A5-8586-11D1-B16A-00C0F0283628} 
          NumPanels       =   6
          BeginProperty Panel1 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Bevel           =   0
             Object.ToolTipText     =   "Solicitado Por"
          EndProperty
          BeginProperty Panel2 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Bevel           =   0
+            Object.Width           =   4304
+            MinWidth        =   4304
             Object.ToolTipText     =   "Solicitado Fecha"
          EndProperty
          BeginProperty Panel3 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Bevel           =   0
+            Object.Width           =   4304
+            MinWidth        =   4304
             Object.ToolTipText     =   "Resuelto Por"
          EndProperty
          BeginProperty Panel4 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Bevel           =   0
+            Object.Width           =   4304
+            MinWidth        =   4304
             Object.ToolTipText     =   "Resuelto Fecha"
          EndProperty
          BeginProperty Panel5 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Bevel           =   0
+            Object.Width           =   4304
+            MinWidth        =   4304
             Object.ToolTipText     =   "Procesado Por"
          EndProperty
          BeginProperty Panel6 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Bevel           =   0
+            Object.Width           =   4304
+            MinWidth        =   4304
             Object.ToolTipText     =   "Procesado Fecha"
          EndProperty
       EndProperty
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Arial"
+         Name            =   "Calibri"
          Size            =   8.25
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
    End
-   Begin ComCtl3.CoolBar CoolBarX 
-      Align           =   1  'Align Top
-      Height          =   420
-      Left            =   0
-      TabIndex        =   7
-      Top             =   0
-      Width           =   10635
-      _ExtentX        =   18759
-      _ExtentY        =   741
-      _CBWidth        =   10635
-      _CBHeight       =   420
-      _Version        =   "6.7.9839"
-      Child1          =   "tlb"
-      MinHeight1      =   270
-      Width1          =   3555
-      NewRow1         =   0   'False
-      Child2          =   "tlbProcesos"
-      MinHeight2      =   315
-      Width2          =   3645
-      NewRow2         =   0   'False
-      MinHeight3      =   360
-      Width3          =   1995
-      NewRow3         =   0   'False
-      Begin MSComctlLib.Toolbar tlb 
-         Height          =   330
-         Left            =   165
-         TabIndex        =   9
-         Top             =   75
-         Width           =   3360
-         _ExtentX        =   5927
-         _ExtentY        =   582
-         ButtonWidth     =   609
-         ButtonHeight    =   582
-         Style           =   1
-         _Version        =   393216
-         BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
-            NumButtons      =   9
-            BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "nuevo"
-            EndProperty
-            BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "editar"
-            EndProperty
-            BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "borrar"
-            EndProperty
-            BeginProperty Button4 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "guardar"
-            EndProperty
-            BeginProperty Button5 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "deshacer"
-            EndProperty
-            BeginProperty Button6 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Style           =   3
-            EndProperty
-            BeginProperty Button7 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "consultar"
-            EndProperty
-            BeginProperty Button8 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "reportes"
-               Style           =   5
-               BeginProperty ButtonMenus {66833FEC-8583-11D1-B16A-00C0F0283628} 
-                  NumButtonMenus  =   2
-                  BeginProperty ButtonMenu1 {66833FEE-8583-11D1-B16A-00C0F0283628} 
-                     Key             =   "repBoleta"
-                     Text            =   "Boleta "
-                  EndProperty
-                  BeginProperty ButtonMenu2 {66833FEE-8583-11D1-B16A-00C0F0283628} 
-                     Key             =   "repListadoGeneral"
-                     Text            =   "Listado General"
-                  EndProperty
-               EndProperty
-            EndProperty
-            BeginProperty Button9 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Key             =   "ayuda"
-            EndProperty
-         EndProperty
-      End
-      Begin MSComctlLib.Toolbar tlbProcesos 
-         Height          =   330
-         Left            =   3750
-         TabIndex        =   8
-         Top             =   45
-         Width           =   3450
-         _ExtentX        =   6085
-         _ExtentY        =   582
-         ButtonWidth     =   1905
-         ButtonHeight    =   582
-         Style           =   1
-         TextAlignment   =   1
-         ImageList       =   "ImageList1"
-         _Version        =   393216
-         BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
-            NumButtons      =   1
-            BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
-               Caption         =   "Procesar"
-               Key             =   "Procesar"
-               Object.ToolTipText     =   "Ejecuta la Transaccion"
-               ImageIndex      =   1
-            EndProperty
-         EndProperty
-      End
-   End
-   Begin MSComctlLib.ImageList ImageList1 
-      Left            =   3360
-      Top             =   120
-      _ExtentX        =   1005
-      _ExtentY        =   1005
-      BackColor       =   -2147483643
-      ImageWidth      =   16
-      ImageHeight     =   16
-      MaskColor       =   12632256
-      _Version        =   393216
-      BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
-         NumListImages   =   5
-         BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmActivos_ResponsablesCambio.frx":0000
-            Key             =   ""
-         EndProperty
-         BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmActivos_ResponsablesCambio.frx":08DA
-            Key             =   ""
-         EndProperty
-         BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmActivos_ResponsablesCambio.frx":0BF4
-            Key             =   ""
-         EndProperty
-         BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmActivos_ResponsablesCambio.frx":0F0E
-            Key             =   ""
-         EndProperty
-         BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmActivos_ResponsablesCambio.frx":1228
-            Key             =   ""
-         EndProperty
-      EndProperty
-   End
    Begin MSComCtl2.FlatScrollBar FlatScrollBar 
       Height          =   255
-      Left            =   2640
-      TabIndex        =   10
+      Left            =   3360
+      TabIndex        =   1
       Top             =   480
       Width           =   495
       _ExtentX        =   873
@@ -393,19 +531,87 @@ Begin VB.Form frmActivos_ResponsablesCambio
       Arrows          =   65536
       Orientation     =   1638401
    End
-   Begin FPSpreadADO.fpSpread vGrid 
-      Height          =   3612
-      Left            =   0
-      TabIndex        =   11
-      Top             =   3120
-      Width           =   10452
-      _Version        =   524288
-      _ExtentX        =   18436
-      _ExtentY        =   6371
-      _StockProps     =   64
-      BackColorStyle  =   1
-      BorderStyle     =   0
-      EditEnterAction =   5
+   Begin MSComctlLib.Toolbar tlb 
+      Height          =   330
+      Left            =   360
+      TabIndex        =   3
+      Top             =   0
+      Width           =   3360
+      _ExtentX        =   5927
+      _ExtentY        =   582
+      ButtonWidth     =   609
+      ButtonHeight    =   582
+      Style           =   1
+      _Version        =   393216
+      BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
+         NumButtons      =   9
+         BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "nuevo"
+         EndProperty
+         BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "editar"
+         EndProperty
+         BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "borrar"
+         EndProperty
+         BeginProperty Button4 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "guardar"
+         EndProperty
+         BeginProperty Button5 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "deshacer"
+         EndProperty
+         BeginProperty Button6 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Style           =   3
+         EndProperty
+         BeginProperty Button7 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "consultar"
+         EndProperty
+         BeginProperty Button8 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "reportes"
+         EndProperty
+         BeginProperty Button9 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "ayuda"
+         EndProperty
+      EndProperty
+   End
+   Begin XtremeSuiteControls.ComboBox cboMotivo 
+      Height          =   315
+      Left            =   1320
+      TabIndex        =   4
+      Top             =   1080
+      Width           =   6255
+      _Version        =   1572864
+      _ExtentX        =   11033
+      _ExtentY        =   582
+      _StockProps     =   77
+      ForeColor       =   1973790
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Style           =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+      Text            =   "ComboBox1"
+   End
+   Begin XtremeSuiteControls.FlatEdit txtNotas 
+      Height          =   675
+      Left            =   1320
+      TabIndex        =   5
+      Top             =   1440
+      Width           =   6255
+      _Version        =   1572864
+      _ExtentX        =   11033
+      _ExtentY        =   1191
+      _StockProps     =   77
+      ForeColor       =   0
+      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -415,39 +621,180 @@ Begin VB.Form frmActivos_ResponsablesCambio
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      MaxCols         =   5
+      MultiLine       =   -1  'True
       ScrollBars      =   2
-      SpreadDesigner  =   "frmActivos_ResponsablesCambio.frx":1B02
-      VScrollSpecial  =   -1  'True
-      VScrollSpecialType=   2
-      AppearanceStyle =   1
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+   End
+   Begin XtremeSuiteControls.FlatEdit txtCodigo 
+      Height          =   435
+      Left            =   1320
+      TabIndex        =   10
+      Top             =   480
+      Width           =   1935
+      _Version        =   1572864
+      _ExtentX        =   3413
+      _ExtentY        =   767
+      _StockProps     =   77
+      ForeColor       =   0
+      BackColor       =   -2147483643
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Alignment       =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+   End
+   Begin XtremeSuiteControls.PushButton btnDescartar 
+      Height          =   375
+      Left            =   9840
+      TabIndex        =   26
+      Top             =   0
+      Width           =   1335
+      _Version        =   1572864
+      _ExtentX        =   2355
+      _ExtentY        =   661
+      _StockProps     =   79
+      Caption         =   "Descartar"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      FlatStyle       =   -1  'True
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmActivos_ResponsablesCambio.frx":0ECC
+   End
+   Begin XtremeSuiteControls.FlatEdit txtEstado 
+      Height          =   315
+      Left            =   9000
+      TabIndex        =   27
+      ToolTipText     =   "Presione F4 para Consultar"
+      Top             =   1080
+      Width           =   2295
+      _Version        =   1572864
+      _ExtentX        =   4048
+      _ExtentY        =   556
+      _StockProps     =   77
+      ForeColor       =   0
+      BackColor       =   16777152
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      BackColor       =   16777152
+      Alignment       =   2
+      Locked          =   -1  'True
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+   End
+   Begin XtremeSuiteControls.FlatEdit txtFechaSolicitud 
+      Height          =   315
+      Left            =   9000
+      TabIndex        =   31
+      ToolTipText     =   "Presione F4 para Consultar"
+      Top             =   1440
+      Width           =   2295
+      _Version        =   1572864
+      _ExtentX        =   4048
+      _ExtentY        =   556
+      _StockProps     =   77
+      ForeColor       =   0
+      BackColor       =   16777152
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      BackColor       =   16777152
+      Alignment       =   2
+      Locked          =   -1  'True
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+   End
+   Begin XtremeSuiteControls.FlatEdit txtFechaResolucion 
+      Height          =   315
+      Left            =   9000
+      TabIndex        =   32
+      ToolTipText     =   "Presione F4 para Consultar"
+      Top             =   1800
+      Width           =   2295
+      _Version        =   1572864
+      _ExtentX        =   4048
+      _ExtentY        =   556
+      _StockProps     =   77
+      ForeColor       =   0
+      BackColor       =   16777152
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      BackColor       =   16777152
+      Alignment       =   2
+      Locked          =   -1  'True
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.DateTimePicker dtpFecha 
-      Height          =   312
-      Left            =   8520
-      TabIndex        =   26
-      Top             =   480
-      Width           =   2052
-      _Version        =   1310722
-      _ExtentX        =   3619
+      Height          =   315
+      Left            =   9960
+      TabIndex        =   34
+      Top             =   600
+      Width           =   1335
+      _Version        =   1572864
+      _ExtentX        =   2350
       _ExtentY        =   550
       _StockProps     =   68
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      CustomFormat    =   "dd/MM/yyyy hh:mm:ss"
+      CustomFormat    =   "dd/MM/yyyy"
       Format          =   3
    End
-   Begin VB.Label Label1 
-      BackStyle       =   0  'Transparent
-      Caption         =   "Nuevo Responsable :"
-      BeginProperty Font 
+   Begin XtremeSuiteControls.Label Label5 
+      Height          =   255
+      Index           =   8
+      Left            =   7800
+      TabIndex        =   29
+      Top             =   600
+      Width           =   1815
+      _Version        =   1572864
+      _ExtentX        =   3201
+      _ExtentY        =   450
+      _StockProps     =   79
+      Caption         =   "Fecha de Aplicación"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
          Charset         =   0
@@ -456,88 +803,122 @@ Begin VB.Form frmActivos_ResponsablesCambio
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      Transparent     =   -1  'True
+   End
+   Begin XtremeSuiteControls.Label Label5 
+      Height          =   255
+      Index           =   7
+      Left            =   7800
+      TabIndex        =   33
+      Top             =   1080
+      Width           =   1815
+      _Version        =   1572864
+      _ExtentX        =   3201
+      _ExtentY        =   450
+      _StockProps     =   79
+      Caption         =   "Estado"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Transparent     =   -1  'True
+   End
+   Begin XtremeSuiteControls.Label Label5 
+      Height          =   375
+      Index           =   6
+      Left            =   240
+      TabIndex        =   30
+      Top             =   480
+      Width           =   1815
+      _Version        =   1572864
+      _ExtentX        =   3201
+      _ExtentY        =   661
+      _StockProps     =   79
+      Caption         =   "No. Boleta"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Transparent     =   -1  'True
+   End
+   Begin VB.Label Label1 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Resolución"
+      BeginProperty Font 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   255
+      Index           =   0
+      Left            =   7800
+      TabIndex        =   28
+      Top             =   1800
+      Width           =   1095
+   End
+   Begin XtremeSuiteControls.Label Label5 
+      Height          =   255
+      Index           =   4
+      Left            =   240
+      TabIndex        =   7
+      Top             =   1440
+      Width           =   1815
+      _Version        =   1572864
+      _ExtentX        =   3196
+      _ExtentY        =   444
+      _StockProps     =   79
+      Caption         =   "Notas"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Transparent     =   -1  'True
+   End
+   Begin XtremeSuiteControls.Label Label5 
       Height          =   255
       Index           =   5
-      Left            =   5520
-      TabIndex        =   23
-      Top             =   2160
-      Width           =   3615
+      Left            =   240
+      TabIndex        =   6
+      Top             =   1080
+      Width           =   1815
+      _Version        =   1572864
+      _ExtentX        =   3196
+      _ExtentY        =   444
+      _StockProps     =   79
+      Caption         =   "Motivo"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Transparent     =   -1  'True
    End
    Begin VB.Label Label1 
       BackStyle       =   0  'Transparent
-      Caption         =   "Trasladar de :"
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   255
-      Index           =   1
-      Left            =   240
-      TabIndex        =   20
-      Top             =   2160
-      Width           =   3255
-   End
-   Begin VB.Label Label1 
-      Caption         =   "Motivo"
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   255
-      Index           =   10
-      Left            =   120
-      TabIndex        =   19
-      Top             =   960
-      Width           =   735
-   End
-   Begin VB.Label Label1 
-      Caption         =   "Notas"
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   255
-      Index           =   2
-      Left            =   120
-      TabIndex        =   18
-      Top             =   1320
-      Width           =   735
-   End
-   Begin VB.Label Label1 
-      Caption         =   "# Boleta"
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   255
-      Index           =   3
-      Left            =   120
-      TabIndex        =   17
-      Top             =   480
-      Width           =   735
-   End
-   Begin VB.Label Label1 
-      Caption         =   "Fecha"
+      Caption         =   "Solicitud"
       BeginProperty Font 
          Name            =   "Calibri"
          Size            =   9
@@ -549,90 +930,10 @@ Begin VB.Form frmActivos_ResponsablesCambio
       EndProperty
       Height          =   255
       Index           =   4
-      Left            =   7320
-      TabIndex        =   16
-      Top             =   480
-      Width           =   735
-   End
-   Begin VB.Line Line2 
-      BorderColor     =   &H00FFFFFF&
-      Index           =   1
-      X1              =   10560
-      X2              =   0
-      Y1              =   840
-      Y2              =   840
-   End
-   Begin VB.Label Label1 
-      Caption         =   "# Documento"
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   252
-      Index           =   0
-      Left            =   7320
-      TabIndex        =   15
-      Top             =   960
-      Width           =   1212
-   End
-   Begin VB.Label lblCantidad 
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      ForeColor       =   &H00FF0000&
-      Height          =   210
-      Left            =   2520
-      TabIndex        =   14
-      Top             =   6960
-      Width           =   2295
-   End
-   Begin VB.Label lblLineas 
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      ForeColor       =   &H00FF0000&
-      Height          =   210
-      Left            =   120
-      TabIndex        =   13
-      Top             =   5160
-      Width           =   2295
-   End
-   Begin VB.Label Label1 
-      Appearance      =   0  'Flat
-      Caption         =   "Total"
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      ForeColor       =   &H80000008&
-      Height          =   255
-      Index           =   6
-      Left            =   5520
-      TabIndex        =   12
-      Top             =   6795
-      Width           =   975
+      Left            =   7800
+      TabIndex        =   2
+      Top             =   1440
+      Width           =   1095
    End
 End
 Attribute VB_Name = "frmActivos_ResponsablesCambio"
@@ -641,34 +942,118 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+
+Dim strSQL As String, rs As New ADODB.Recordset
+
 Dim vEdita As Boolean, vCodigo As String, vTipo As String
 Dim vMascara As String, vScroll As Boolean
 
+Private Sub btnDescartar_Click()
+On Error GoTo vError
+
+If txtCodigo.Text = "" Then
+    MsgBox "No se ha indicado ninguna boleta de traslado de responsable?", vbExclamation
+    Exit Sub
+End If
+If txtEstado.Tag <> "S" Then
+    MsgBox "La boleta de traslado de responsable no se encuentra solicitada!", vbExclamation
+    Exit Sub
+End If
+
+
+Dim i As Integer
+
+i = MsgBox("Esta seguro que desea DESCARTAR esta boleta de Cambio de Responsable?", vbYesNo)
+If i = vbNo Then Exit Sub
+
+
+Me.MousePointer = vbHourglass
+
+strSQL = "exec spActivos_Responsable_Cambio_Descarta '" & txtCodigo.Text & "', '" & glogon.Usuario & "'"
+Call OpenRecordSet(rs, strSQL)
+
+Me.MousePointer = vbDefault
+
+If rs!Pass = 1 Then
+   MsgBox "Boleta de Cambio de Responsables: Descartada Satisfactoriamente!", vbInformation
+   Call sbConsulta(txtCodigo.Text)
+   Call sbActivos_Boleta_Cambio_Responsable(txtCodigo.Text)
+Else
+   MsgBox rs!Mensaje, vbExclamation
+End If
+
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+End Sub
+
+Private Sub btnProcesar_Click()
+On Error GoTo vError
+
+If txtCodigo.Text = "" Then
+    MsgBox "No se ha indicado ninguna boleta de traslado de responsable?", vbExclamation
+    Exit Sub
+End If
+If txtEstado.Tag <> "S" Then
+    MsgBox "La boleta de traslado de responsable no se encuentra solicitada!", vbExclamation
+    Exit Sub
+End If
+
+Dim i As Integer
+
+i = MsgBox("Esta seguro que desea procesar esta boleta de Cambio de Responsable?", vbYesNo)
+If i = vbNo Then Exit Sub
+
+Me.MousePointer = vbHourglass
+
+strSQL = "exec spActivos_Responsable_Cambio_Procesa '" & txtCodigo.Text & "', '" & glogon.Usuario & "'"
+Call OpenRecordSet(rs, strSQL)
+
+Me.MousePointer = vbDefault
+
+If rs!Pass = 1 Then
+   MsgBox "Boleta de Cambio de Responsables: Procesada Satisfactoriamente!", vbInformation
+   Call sbConsulta(txtCodigo.Text)
+   Call sbActivos_Boleta_Cambio_Responsable(txtCodigo.Text)
+  
+Else
+   MsgBox rs!Mensaje, vbExclamation
+End If
+
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
 Private Sub cboMotivo_KeyDown(KeyCode As Integer, Shift As Integer)
-If KeyCode = vbKeyReturn Or KeyCode = vbKeyTab Then txtDocumento.SetFocus
+If KeyCode = vbKeyReturn Or KeyCode = vbKeyTab Then txtNotas.SetFocus
 End Sub
 
 Private Sub FlatScrollBar_Change()
-Dim strSQL As String, rs As New ADODB.Recordset
 
 On Error GoTo vError
 
-
 If vScroll Then
-    strSQL = "select Top 1 Boleta from pv_invTransac" _
-           & " where Tipo = '" & vTipo & "'"
+    strSQL = "select Top 1 cod_traslado from Activos_Traslados"
+    
+    If txtCodigo = "" And FlatScrollBar.Value = 1 Then txtCodigo.Text = "0"
+    If txtCodigo = "" And FlatScrollBar.Value = 0 Then txtCodigo.Text = "999999999"
     
     If FlatScrollBar.Value = 1 Then
-       strSQL = strSQL & " and boleta > '" & Format(txtCodigo, vMascara) & "' order by Boleta asc"
+       strSQL = strSQL & " Where cod_traslado > '" & Format(txtCodigo, vMascara) & "' order by cod_traslado asc"
     Else
-       strSQL = strSQL & " and boleta < '" & Format(txtCodigo, vMascara) & "' order by Boleta desc"
+       strSQL = strSQL & " Where cod_traslado < '" & Format(txtCodigo, vMascara) & "' order by cod_traslado desc"
     End If
     
     Call OpenRecordSet(rs, strSQL, 0)
     If Not rs.EOF And Not rs.BOF Then
-      Call sbConsulta(rs!Boleta)
+      Call sbConsulta(rs!cod_traslado)
     End If
-    rs.Close
 End If
 
 vScroll = False
@@ -688,30 +1073,31 @@ vModulo = 36
 End Sub
 
 Private Sub Form_Load()
-Dim strSQL As String
-
 
 On Error GoTo vError
 
 vModulo = 36
 
-
  vScroll = False
    FlatScrollBar.Value = 0
  vScroll = True
  
- strSQL = "select rtrim(cod_Motivo) + ' - ' + rtrim(Descripcion) as 'ItmX'" _
+ strSQL = "select rtrim(cod_Motivo) as 'IdX', rtrim(Descripcion) as 'ItmX'" _
         & " FROM ACTIVOS_TRASLADOS_MOTIVOS WHERE ACTIVO = 1 order by cod_Motivo"
- Call sbLlenaCbo(cboMotivo, strSQL, False, False)
+ Call sbCbo_Llena_New(cboMotivo, strSQL, False, False)
  
  vMascara = "0000000000"
  vEdita = True
  
  Call sbToolBarIconos(tlb)
  Call sbToolBar(tlb, "nuevo")
+ 
  Call sbLimpiaPantalla
 
  Call Formularios(Me)
+ 
+ btnDescartar.Tag = btnProcesar.Tag
+  
  Call RefrescaTags(Me)
 
 Exit Sub
@@ -727,8 +1113,12 @@ Dim i As Integer
 vCodigo = ""
 txtCodigo = ""
 
-txtDocumento = ""
+tcMain.Item(0).Selected = True
+
 dtpFecha.Value = fxFechaServidor
+
+txtFechaSolicitud.Text = ""
+txtFechaResolucion.Text = ""
 
 
 txtNotas = ""
@@ -736,10 +1126,24 @@ txtNotas = ""
 txtEstado = ""
 txtEstado.Tag = "S"
 
-vGrid.MaxRows = 0
-vGrid.MaxCols = 5
+txtPersona.Tag = ""
+txtDepartamento.Tag = ""
+txtSeccion.Tag = ""
 
-txtSubTotal = 0
+txtPersona.Text = ""
+txtDepartamento.Text = ""
+txtSeccion.Text = ""
+
+txtNuevoPersona.Tag = ""
+txtNuevoDepartamento.Tag = ""
+txtNuevoSeccion.Tag = ""
+
+txtNuevoPersona.Text = ""
+txtNuevoDepartamento.Text = ""
+txtNuevoSeccion.Text = ""
+
+vGrid.MaxRows = 0
+vGrid.MaxCols = 6
 
 txtCodigo.Enabled = True
 
@@ -751,33 +1155,53 @@ With StatusBarX.Panels
   .Item(5).Text = ""
 End With
 
-tlbProcesos.Buttons.Item(1).Enabled = False
 
 End Sub
 
 
 
 
+Private Sub tcMain_SelectedChanged(ByVal Item As XtremeSuiteControls.ITabControlItem)
+'Select Case Item.Index
+'    Case 0
+'
+'    Case 1
+'       If txtPersona.Tag = "" Then
+'            MsgBox "No ha indicado un responsable actual, verifique!", vbExclamation
+'            vGrid.MaxRows = 0
+'            Exit Sub
+'       End If
+'
+'       Call sbConsulta_Placas(txtCodigo.Text)
+'
+'End Select
+End Sub
+
 Private Sub tlb_ButtonClick(ByVal Button As MSComctlLib.Button)
-Dim strSQL As String
+
 
 Select Case UCase(Button.Key)
     Case "INSERTAR", "NUEVO"
       vEdita = False
       Call sbLimpiaPantalla
-      txtCodigo.Enabled = False
+      
       cboMotivo.SetFocus
       Call sbToolBar(tlb, "edicion")
+    
     Case "MODIFICAR", "EDITAR"
       vEdita = True
       txtNotas.SetFocus
       Call sbToolBar(tlb, "edicion")
+    
     Case "BORRAR"
       Call sbBorrar
+    
     Case "GUARDAR", "SALVAR"
      If fxValida Then Call sbGuardar
+    
     Case "DESHACER"
       Call sbToolBar(tlb, "activo")
+      
       If vCodigo = "" Then
         Call sbLimpiaPantalla
         Call sbToolBar(tlb, "nuevo")
@@ -790,7 +1214,10 @@ Select Case UCase(Button.Key)
         Call txtCodigo_KeyDown(vbKeyF4, 1)
         
     Case "REPORTES"
-
+       If txtCodigo.Text <> "" Then
+            Call sbActivos_Boleta_Cambio_Responsable(txtCodigo.Text)
+       End If
+       
     Case "AYUDA"
         frmContenedor.CD.HelpContext = Me.HelpContextID
         frmContenedor.CD.ShowHelp
@@ -799,65 +1226,90 @@ End Select
 
 End Sub
 
-Private Sub sbConsulta(xCodigo As String)
-Dim rs As New ADODB.Recordset, strSQL As String
+Private Sub sbConsulta(ByVal pCodigo As String)
 
 On Error GoTo vError
 
 Me.MousePointer = vbHourglass
 
-strSQL = "select X.*,(rtrim(C.cod_entsal) + ' - ' + C.descripcion) as Causa" _
-       & " from PV_INVTRANSAC X inner join pv_entrada_salida C on X.cod_entsal = C.cod_entsal" _
-       & " where X.boleta = '" & Format(xCodigo, vMascara) & "' and X.tipo = '" & vTipo & "'"
+Call sbLimpiaPantalla
+
+strSQL = "exec spActivos_Responsable_Cambio_Consulta '" & pCodigo & "','" & glogon.Usuario & "'"
 Call OpenRecordSet(rs, strSQL, 0)
 
 If Not rs.BOF And Not rs.EOF Then
   Call sbToolBar(tlb, "activo")
+  
+  tcMain.Item(0).Selected = True
+  cboMotivo.SetFocus
+  
   vEdita = True
-  vCodigo = rs!Boleta
-  txtCodigo = rs!Boleta
+  vCodigo = rs!cod_traslado
+  txtCodigo.Text = rs!cod_traslado
   
-  txtDocumento = rs!Documento
+  Call sbCboAsignaDato(cboMotivo, rs!Motivo, True, rs!Cod_Motivo)
   
-  cboMotivo.Text = Trim(rs!Causa)
-  
-  dtpFecha.Value = rs!fecha
-  
-  txtNotas = rs!notas & ""
+  txtNotas = rs!Notas & ""
     
-  
-  Select Case rs!Estado
-    Case "S" 'Solicitada
-        txtEstado = "Solicitada"
-        tlbProcesos.Buttons.Item(1).Enabled = True
-    Case "P" 'Procesada
-        txtEstado = "Procesada"
-        tlbProcesos.Buttons.Item(1).Enabled = False
-  End Select
-  
   txtEstado.Tag = rs!Estado
+  txtEstado.Text = rs!Estado_Desc
+  
+  txtFechaSolicitud.Text = rs!Registro_Usuario & ""
+  txtFechaResolucion.Text = rs!Procesado_Usuario & ""
+  
+  dtpFecha.Value = rs!Fecha_Aplicacion
+  
+  txtPersona.Tag = rs!Identificacion
+  txtDepartamento.Tag = rs!Cod_Departamento
+  txtSeccion.Tag = rs!Cod_Seccion
+  
+  txtPersona.Text = rs!Persona
+  txtDepartamento.Text = rs!Departamento
+  txtSeccion.Text = rs!Seccion
+  
+  txtNuevoPersona.Tag = rs!Identificacion_Destino
+  txtNuevoDepartamento.Tag = rs!Cod_Departamento_Destino
+  txtNuevoSeccion.Tag = rs!Cod_Seccion_Destino
+  
+  txtNuevoPersona.Text = rs!Persona_Destino
+  txtNuevoDepartamento.Text = rs!Departamento_Destino
+  txtNuevoSeccion.Text = rs!Seccion_Destino
+  
     
   With StatusBarX.Panels
-    .Item(1) = rs!genera_user
-    .Item(2) = rs!genera_fecha
-    .Item(3) = rs!Autoriza_user & ""
-    .Item(4) = rs!Autoriza_Fecha & ""
-    .Item(5) = rs!Procesa_user & ""
-    .Item(6) = rs!Procesa_Fecha & ""
+    .Item(1) = rs!Registro_Usuario
+    .Item(2) = rs!Registro_fecha
+    .Item(3) = rs!Cerrado_fecha & ""
+    .Item(4) = rs!Cerrado_Usuario & ""
+    .Item(5) = rs!Procesado_Usuario & ""
+    .Item(6) = rs!Procesado_fecha & ""
   End With
     
-
-'  strSQL = "select D.cod_producto,P.descripcion,D.cantidad,B.cod_bodega,B.descripcion as Bodega,D.precio,(D.cantidad * D.precio) as Total" _
-'         & ",coalesce(D.despacho,0) as Despacho" _
-'         & " from PV_INVTRADET D inner join pv_productos P on D.cod_producto = P.cod_producto" _
-'         & " inner join PV_Bodegas B on D.cod_bodega = B.cod_bodega" _
-'         & " where D.boleta = '" & rs!Boleta & "' and D.tipo = '" & rs!Tipo & "'"
-'
-'  Call sbCargaGridLocal(vGrid, 6, strSQL)
-'
-'  Call sbCalculaTotales
-  
-  vGrid.Enabled = True
+  'Carga Activos
+  strSQL = "exec spActivos_Responsable_Cambio_Consulta_Placas '" & vCodigo & "', '" & txtPersona.Tag & "', '" & glogon.Usuario & "'"
+  Call OpenRecordSet(rs, strSQL)
+  With vGrid
+    .MaxRows = 0
+     
+     Do While Not rs.EOF
+        .MaxRows = .MaxRows + 1
+        .Row = .MaxRows
+        .Col = 1
+        .Value = rs!Asignado
+        .Col = 2
+        .Text = rs!num_placa
+        .Col = 3
+        .Text = rs!Descripcion
+        .Col = 4
+        .Text = Format(rs!DEPRECIACION_AC, "Standard")
+        .Col = 5
+        .Text = Format(rs!DEPRECIACION_MES, "Standard")
+        .Col = 6
+        .Text = Format(rs!VALOR_LIBROS, "Standard")
+        rs.MoveNext
+     Loop
+     
+  End With
   
 Else
   MsgBox "No se encontró registro verifique...", vbInformation
@@ -876,66 +1328,52 @@ vError:
  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 End Sub
 
-Public Sub sbCargaGridLocal(vGrid As Object, vGridMaxCol As Integer, strSQL As String, Optional vBorra As Boolean = True)
-Dim rs As New ADODB.Recordset, i As Integer
+Private Sub sbConsulta_Placas(pCodigo As String)
 
-If vBorra Then
-    vGrid.MaxCols = vGridMaxCol
-    vGrid.MaxRows = 1
-    vGrid.Row = vGrid.MaxRows
-    For i = 1 To vGrid.MaxCols
-     vGrid.Col = i
-     vGrid.Text = ""
-    Next i
-End If
+On Error GoTo vError
 
-rs.CursorLocation = adUseServer
-Call OpenRecordSet(rs, strSQL, 0)
-Do While Not rs.EOF
-  vGrid.Row = vGrid.MaxRows
-  For i = 1 To vGrid.MaxCols
-        Select Case i
-          Case 1
-              vGrid.Col = i
-              vGrid.Text = CStr(rs!cod_producto)
-         
-          Case 2
-              vGrid.Col = i
-              vGrid.Text = CStr(rs!Descripcion)
-             
-          Case 3
-              vGrid.Col = i
-              vGrid.Text = CStr(rs!cantidad)
-              vGrid.TextTip = TextTipFixed
-              vGrid.CellNote = "Unidades Despachadas : " & rs!despacho & vbCrLf & " Unidades Pendientes : " _
-                             & (rs!cantidad - rs!despacho)
-          
-          Case 4
-              vGrid.Col = i
-              vGrid.Text = CStr(rs!cod_bodega)
-              vGrid.TextTip = TextTipFixed
-              vGrid.CellNote = rs!Bodega
-          
-          Case 5
-              vGrid.Col = i
-              vGrid.Text = CStr(rs!Precio)
-          
-          Case 6
-              vGrid.Col = i
-              vGrid.Text = CStr(rs!Total)
-          
-        End Select
-  Next i
-  
-  vGrid.MaxRows = vGrid.MaxRows + 1
-  rs.MoveNext
-Loop
-rs.Close
+Me.MousePointer = vbHourglass
+    
+'Carga Activos
+strSQL = "exec spActivos_Responsable_Cambio_Consulta_Placas '" & pCodigo & "', '" & txtPersona.Tag & "', '" & glogon.Usuario & "'"
+Call OpenRecordSet(rs, strSQL)
+With vGrid
+  .MaxRows = 0
+   
+   Do While Not rs.EOF
+      .MaxRows = .MaxRows + 1
+      .Row = .MaxRows
+      .Col = 1
+      .Value = rs!Asignado
+      .Col = 2
+      .Text = rs!num_placa
+      .Col = 3
+      .Text = rs!Descripcion
+      .Col = 4
+      .Text = Format(rs!DEPRECIACION_AC, "Standard")
+      .Col = 5
+      .Text = Format(rs!DEPRECIACION_MES, "Standard")
+      .Col = 6
+      .Text = Format(rs!VALOR_LIBROS, "Standard")
+      rs.MoveNext
+   Loop
+   rs.Close
+   
+End With
 
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 End Sub
 
+
+
 Private Function fxValida() As Boolean
-Dim vMensaje As String
+Dim vMensaje As String, i As Long, iPlacas As Long
 
 vMensaje = ""
 fxValida = True
@@ -944,7 +1382,28 @@ On Error GoTo vError
 
 'vMensaje = fxInvVerificaLineaDetalle(vGrid, 3, "E", 1, 4)
 '
-'If Not fxInvPeriodos(dtpFecha.Value) Then vMensaje = vMensaje & vbCrLf & " - El periodo en el que desea realizar el movimiento se encuentra cerrado ..."
+'If Not fxInvPeriodos(dtpSolicitud.Value) Then vMensaje = vMensaje & vbCrLf & " - El periodo en el que desea realizar el movimiento se encuentra cerrado ..."
+
+
+If Len(txtNotas.Text) < 10 Then vMensaje = vMensaje & vbCrLf & "- No ha indicado una nota válida"
+If cboMotivo.ListCount < 0 Then vMensaje = vMensaje & vbCrLf & "- No exite o no ha indicado un motivo"
+
+If txtPersona.Tag = "" Then vMensaje = vMensaje & vbCrLf & "- No se ha indicado un responsable actual"
+If txtNuevoPersona.Tag = "" Then vMensaje = vMensaje & vbCrLf & "- No se ha indicado un responsable destino"
+
+If vGrid.MaxRows = 0 Then vMensaje = vMensaje & vbCrLf & "- No se ha cargado ningún activo a trasladar"
+
+iPlacas = 0
+For i = 1 To vGrid.MaxRows
+  vGrid.Row = i
+  vGrid.Col = 1
+  If vGrid.Value = 1 Then
+     iPlacas = iPlacas + 1
+  End If
+Next i
+
+If iPlacas = 0 Then vMensaje = vMensaje & vbCrLf & "- No se ha Seleccionado ningún activo a trasladar"
+
 
 vError:
 
@@ -956,9 +1415,7 @@ End If
 End Function
 
 Private Sub sbGuardar()
-Dim strSQL As String, i As Integer
-Dim rs As New ADODB.Recordset
-Dim vFecha As Date, curCantidad As Currency
+Dim i As Long, iLineaUno As Boolean
 
 On Error GoTo vError
 
@@ -968,75 +1425,60 @@ If txtEstado.Tag <> "S" Then
   Exit Sub
 End If
 
-If dtpFecha.Visible Then
-  vFecha = dtpFecha.Value
+                            
+strSQL = "exec spActivos_Responsable_Cambio_Boleta_Add '" & txtCodigo.Text & "', '" & cboMotivo.ItemData(cboMotivo.ListIndex) _
+       & "', '" & txtNotas.Text & "', '" & txtPersona.Tag & "', '" & txtNuevoPersona.Tag & "', '" & glogon.Usuario _
+       & "', '" & Format(dtpFecha.Value, "yyyy-mm-dd") & "'"
+
+Call OpenRecordSet(rs, strSQL)
+
+If rs!Pass = 1 Then
+    vCodigo = rs!Boleta
+    txtCodigo.Text = rs!Boleta
+    If vEdita Then
+        Call Bitacora("Modifica", "Boleta de Cambio Responsable:  " & vCodigo)
+    Else
+        Call Bitacora("Registra", "Boleta de Cambio Responsable:  " & vCodigo)
+    End If
+    
+    strSQL = ""
+    iLineaUno = True
+    For i = 1 To vGrid.MaxRows
+      vGrid.Row = i
+      
+      vGrid.Col = 1
+      
+      If vGrid.Value = 1 Then
+       
+        vGrid.Col = 2
+        If iLineaUno Then
+          iLineaUno = False
+          strSQL = strSQL & Space(10) & "exec spActivos_Responsable_Cambio_Boleta_Placas '" & vCodigo & "', '" & vGrid.Text & "', '" & glogon.Usuario & "', 1"
+        Else
+          strSQL = strSQL & Space(10) & "exec spActivos_Responsable_Cambio_Boleta_Placas '" & vCodigo & "', '" & vGrid.Text & "', '" & glogon.Usuario & "', 0"
+        End If
+        
+        If Len(strSQL) > 20000 Then
+            Call ConectionExecute(strSQL)
+            strSQL = ""
+        End If
+      
+      End If
+    Next i
+    
+    'Ultimo Lote
+    If Len(strSQL) > 0 Then
+        Call ConectionExecute(strSQL)
+    End If
+    
+    MsgBox "Boleta Registrada Satisfactoriamente!", vbInformation
+    Call sbConsulta(vCodigo)
+
 Else
-  vFecha = fxFechaServidor
+    MsgBox rs!Mensaje, vbExclamation
 End If
 
 
-If vEdita Then
-    strSQL = "update pv_InvTranSac set cod_entsal = '" & SIFGlobal.fxCodText(cboMotivo.Text) _
-           & "',fecha = '" & Format(vFecha, "yyyy/mm/dd hh:mm:ss") & "',documento = '" _
-           & txtDocumento & "', notas = '" & txtNotas & "',plantilla = 0" _
-           & " where Boleta = '" & vCodigo & "'"
-    Call ConectionExecute(strSQL)
-    
-    Call Bitacora("Modifica", "TranSac Inv.Tipo Cod: " & vCodigo)
-
-Else
-    
-    strSQL = "select coalesce(max(Boleta),0)+1 as Ultimo from pv_InvTranSac where Tipo = '" & vTipo & "'"
-    Call OpenRecordSet(rs, strSQL, 0)
-      vCodigo = Format(rs!Ultimo, vMascara)
-    rs.Close
-    txtCodigo = vCodigo
-    
-    strSQL = "insert pv_InvTranSac(Boleta,Tipo,cod_entsal,genera_fecha,documento,notas" _
-           & ",genera_user,estado,plantilla,fecha,fecha_sistema)" _
-           & " values('" & vCodigo & "','" & vTipo & "','" & SIFGlobal.fxCodText(cboMotivo.Text) _
-           & "',getdate(),'" & txtDocumento & "','" & txtNotas _
-           & "','" & glogon.Usuario & "','S',0,'" _
-           & Format(vFecha, "yyyy/mm/dd hh:mm:ss") & "',getdate())"
-    
-    Call ConectionExecute(strSQL)
-    
-    Call Bitacora("Registra", "TranSac Inv.Tipo Cod:: " & vCodigo)
-
-End If
-
-txtCodigo.Enabled = True
-
-'Guardar Detalle de la Transaccion
-strSQL = "delete pv_InvTraDet where tipo = '" & vTipo & "' and boleta = '" & vCodigo & "'"
-Call ConectionExecute(strSQL)
-
-For i = 1 To vGrid.MaxRows
-  vGrid.Row = i
-  
-  vGrid.Col = 3
-  curCantidad = CCur(IIf((vGrid.Text = ""), 0, vGrid.Text))
-  
-  vGrid.Col = 1
-  
-  If vGrid.Text <> "" And curCantidad > 0 Then
-    
-    vGrid.Col = 1
-    strSQL = "insert pv_InvTraDet(linea,Boleta,tipo,cod_producto,cod_bodega,cantidad,despacho,precio)" _
-           & " values(" & i & ",'" & vCodigo & "','" & vTipo & "','" & vGrid.Text & "','"
-    vGrid.Col = 4
-    strSQL = strSQL & vGrid.Text & "'," & curCantidad & ",0,"
-    vGrid.Col = 5
-    strSQL = strSQL & CCur(vGrid.Text) & ")"
-    
-    Call ConectionExecute(strSQL)
-  
-  End If
-Next i
-
-Call sbConsulta(vCodigo)
-
-MsgBox "Información guardada satisfactoriamente...", vbInformation
 
 Exit Sub
 
@@ -1053,10 +1495,10 @@ i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
 
 If i = vbYes Then
    'no se pueden Ejecutar Borrados en Ordenes
-  strSQL = "delete pv_InvTranSac where tipo = '" & vTipo & "' and Boleta = '" & vCodigo & "'"
-  Call ConectionExecute(strSQL)
-
-  Call Bitacora("Elimina", "Transac.Inv.Tipo (" & vTipo & ") Cod." & vCodigo)
+'  strSQL = "delete pv_InvTranSac where tipo = '" & vTipo & "' and Boleta = '" & vCodigo & "'"
+'  Call ConectionExecute(strSQL)
+'
+'  Call Bitacora("Elimina", "Transac.Inv.Tipo (" & vTipo & ") Cod." & vCodigo)
   Call sbLimpiaPantalla
   Call sbToolBar(tlb, "nuevo")
   Call RefrescaTags(Me)
@@ -1089,72 +1531,31 @@ Private Sub tlb_ButtonMenuClick(ByVal ButtonMenu As MSComctlLib.ButtonMenu)
 End Sub
 
 
-Private Sub tlbProcesos_ButtonClick(ByVal Button As MSComctlLib.Button)
-
-On Error GoTo vError
-
-
-Select Case Button.Key
-  Case "Plantilla"
-        gBusquedas.Columna = "Boleta"
-        gBusquedas.Orden = "Boleta"
-        gBusquedas.Mascara = vMascara
-        gBusquedas.Consulta = "select Boleta,genera_user,genera_fecha,documento,notas" _
-                  & " from pv_InvTransac"
-        gBusquedas.Filtro = " and plantilla = 1 and tipo = '" & vTipo & "'"
-        gBusquedas.Resultado = ""
-        gBusquedas.Resultado2 = ""
-        frmBusquedas.Show vbModal
-        
-        If gBusquedas.Resultado <> "" Then
-          Call sbLimpiaPantalla
-          Call sbConsulta(gBusquedas.Resultado)
-          txtCodigo = ""
-          vEdita = False
-          txtCodigo.Enabled = False
-          cboMotivo.SetFocus
-          Call sbToolBar(tlb, "edicion")
-          
-          txtEstado = ""
-          txtEstado.Tag = "S"
-          tlbProcesos.Buttons.Item(2).Enabled = False
-          tlbProcesos.Buttons.Item(3).Enabled = False
-       End If
-  
-  Case "Autoriza"
-'       gInvTran.Boleta = vCodigo
-'       gInvTran.Tipo = vTipo
-'       gInvTran.fecha = dtpFecha.Value
-'       gInvTran.Causa = cboMotivo.Text
-'       frmInvTransacAutoriza.Show vbModal
-       Call sbConsulta(vCodigo)
-  
-  Case "Procesar"
-'       gInvTran.Boleta = vCodigo
-'       gInvTran.Tipo = vTipo
-'       gInvTran.fecha = dtpFecha.Value
-'       gInvTran.Causa = cboMotivo.Text
-'       frmInvTransacProcesa.Show vbModal
-       Call sbConsulta(vCodigo)
-  
-End Select
-
-Exit Sub
-vError:
- Me.MousePointer = vbDefault
- MsgBox fxSys_Error_Handler(Err.Description), vbCritical
-
-End Sub
 
 Private Sub txtCodigo_KeyDown(KeyCode As Integer, Shift As Integer)
-If KeyCode = vbKeyReturn Or KeyCode = vbKeyTab Then cboMotivo.SetFocus
+If KeyCode = vbKeyReturn Or KeyCode = vbKeyTab Then
+    tcMain.Item(0).Selected = True
+    cboMotivo.SetFocus
+End If
 
 If KeyCode = vbKeyF4 Then
-'  gInvTran.Boleta = vCodigo
-'  gInvTran.Tipo = vTipo
-'  frmInvTransacQry.Show vbModal
-'  txtCodigo = gInvTran.Boleta
-'  If txtCodigo <> "" Then Call sbConsulta(gInvTran.Boleta)
+    gBusquedas.Col1Name = "Boleta Id"
+    gBusquedas.Col1Name = "Identificación"
+    gBusquedas.Col1Name = "Responsable"
+    
+    gBusquedas.Resultado = ""
+    gBusquedas.Resultado2 = ""
+    gBusquedas.Convertir = "N"
+    gBusquedas.Columna = "cod_Traslado"
+    gBusquedas.Orden = "cod_Traslado"
+    gBusquedas.Consulta = "select Cod_Traslado, identificacion,Persona, Estado_Desc, Registro_Fecha from vActivos_Traslados_Boletas"
+    gBusquedas.Filtro = ""
+    frmBusquedas.Show vbModal
+    
+    If gBusquedas.Resultado <> "" Then
+        Call sbConsulta(gBusquedas.Resultado)
+    End If
+    
 End If
 
 End Sub
@@ -1163,202 +1564,99 @@ Private Sub txtCodigo_LostFocus()
 If txtCodigo <> "" And vEdita Then Call sbConsulta(txtCodigo)
 End Sub
 
-Private Sub txtDocumento_KeyDown(KeyCode As Integer, Shift As Integer)
-If KeyCode = vbKeyReturn Or KeyCode = vbKeyTab Then txtNotas.SetFocus
-End Sub
 
-Private Sub txtNotas_KeyDown(KeyCode As Integer, Shift As Integer)
-If KeyCode = vbKeyReturn Or KeyCode = vbKeyTab Then vGrid.SetFocus
-End Sub
+Private Sub sbResponsableActual(pIdentificacion As String)
 
-Private Sub sbCalculaTotales()
-Dim curSubTotal As Currency
-Dim curTmpPrecio As Currency, curTmpCant As Currency
-Dim i As Integer, lng As Long
-Dim iLineas As Integer, curCantidad As Currency
+On Error GoTo vError
 
+txtDepartamento.Text = ""
+txtSeccion.Text = ""
 
-curSubTotal = 0
+txtDepartamento.Tag = ""
+txtSeccion.Tag = ""
 
-iLineas = 0
-curCantidad = 0
-
-For lng = 1 To vGrid.MaxRows
- vGrid.Row = lng
- vGrid.Col = 3
- If vGrid.Text <> "" Then
-    curTmpCant = CCur(vGrid.Text)
-    vGrid.Col = 5
-    curTmpPrecio = CCur(vGrid.Text)
-
-    curSubTotal = curSubTotal + (curTmpCant * curTmpPrecio)
-    curCantidad = curCantidad + curTmpCant
-    iLineas = iLineas + 1
- End If
-Next lng
-
-txtSubTotal = Format(curSubTotal, "Standard")
-
-lblLineas.Caption = "Líneas   : " & iLineas
-lblCantidad.Caption = "Cantidad : " & Format(curCantidad, "Standard")
-
-End Sub
-
-Private Sub sbConsultaArticulo(fila As Long, Columna As Integer, vCriterio As String)
-Dim strSQL As String, rs As New ADODB.Recordset, vPaso As Boolean
-
-'Busquedas
-'1. Por Codigo del Articulo
-'2. Por Codigo de Barras
-'3. Por Codigo del Fabricante
-vPaso = False
-
-strSQL = "select cod_producto,descripcion,costo_regular,impuesto_ventas from pv_productos" _
-       & " where cod_producto = '" & vCriterio & "'"
+strSQL = "select * from vActivos_Personas where identificacion = '" & pIdentificacion & "'"
 Call OpenRecordSet(rs, strSQL, 0)
-If Not rs.EOF And Not rs.BOF Then vPaso = True
-
-If Not vPaso Then
-  rs.Close
-  strSQL = "select cod_producto,descripcion,costo_regular,impuesto_ventas from pv_productos" _
-         & " where cod_barras = '" & vCriterio & "'"
-  Call OpenRecordSet(rs, strSQL, 0)
-  If Not rs.EOF And Not rs.BOF Then vPaso = True
+If Not rs.BOF And Not rs.EOF Then
+    txtDepartamento.Text = rs!Departamento
+    txtSeccion.Text = rs!Seccion
+    
+    txtDepartamento.Tag = rs!Cod_Departamento
+    txtSeccion.Tag = rs!Cod_Seccion
 End If
+rs.Close
 
-If Not vPaso Then
-  rs.Close
-  strSQL = "select cod_producto,descripcion,costo_regular,impuesto_ventas from pv_productos" _
-         & " where cod_fabricante = '" & vCriterio & "'"
-  Call OpenRecordSet(rs, strSQL, 0)
-  If Not rs.EOF And Not rs.BOF Then vPaso = True
-End If
+Call sbConsulta_Placas(txtCodigo.Text)
 
-If Not vPaso Then
-  MsgBox "No se encontró el Articulo en la Base de Datos...", vbExclamation
-Else
-  vGrid.Row = fila
-  vGrid.Col = 1
-  vGrid.Text = rs!cod_producto
-  vGrid.Col = 2
-  vGrid.Text = rs!Descripcion
-  vGrid.Col = 5
-  vGrid.Text = CStr(rs!costo_regular)
-  vGrid.Col = 3
-  vGrid.Text = 1
+Exit Sub
+
+vError:
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+
+Private Sub sbResponsableNuevo(pIdentificacion As String)
+On Error GoTo vError
+
+txtNuevoDepartamento.Text = ""
+txtNuevoSeccion.Text = ""
+
+txtNuevoDepartamento.Tag = ""
+txtNuevoSeccion.Tag = ""
+
+strSQL = "select * from vActivos_Personas where identificacion = '" & pIdentificacion & "'"
+Call OpenRecordSet(rs, strSQL, 0)
+If Not rs.BOF And Not rs.EOF Then
+    txtNuevoDepartamento.Text = rs!Departamento
+    txtNuevoSeccion.Text = rs!Seccion
+    
+    txtNuevoDepartamento.Tag = rs!Cod_Departamento
+    txtNuevoSeccion.Tag = rs!Cod_Seccion
 End If
 rs.Close
 
 
-End Sub
+Exit Sub
 
-Private Sub vGrid_KeyDown(KeyCode As Integer, Shift As Integer)
-Dim i As Variant, lng As Long, vTemp(8) As Variant, x As Integer
-
-'Abrir Nueva Linea
-If vGrid.ActiveCol = vGrid.MaxCols And (KeyCode = vbKeyReturn Or KeyCode = vbKeyTab) Then
-  vGrid.Row = vGrid.ActiveRow
-  If vGrid.MaxRows <= vGrid.ActiveRow Then
-    vGrid.MaxRows = vGrid.MaxRows + 1
-    vGrid.Row = vGrid.MaxRows
-    Call sbCalculaTotales
-  End If
-End If
-
-'Consulta Articulo
-If vGrid.ActiveCol = 1 And KeyCode = vbKeyReturn Then
-  vGrid.Col = vGrid.ActiveCol
-  vGrid.Row = vGrid.ActiveRow
-  Call sbConsultaArticulo(vGrid.ActiveRow, vGrid.ActiveCol, vGrid.Text)
-End If
-
-'Consular Articulo
-If vGrid.ActiveCol = 1 And KeyCode = vbKeyF4 Then
-'   frmBusquedaArticulos.Show vbModal
-   vGrid.Row = vGrid.ActiveRow
-   vGrid.Col = 1
-   vGrid.Text = gBusquedas.Resultado
-End If
-
-
-'Consular Bodegas
-If vGrid.ActiveCol = 4 And KeyCode = vbKeyF4 Then
-   gBusquedas.Columna = "cod_bodega"
-   gBusquedas.Orden = "cod_bodega"
-   gBusquedas.Consulta = "select cod_bodega,descripcion from pv_bodegas"
-   gBusquedas.Filtro = " and permite_salidas = 1"
-   frmBusquedas.Show vbModal
-   vGrid.Row = vGrid.ActiveRow
-   vGrid.Col = 4
-   vGrid.Text = gBusquedas.Resultado
-   vGrid.CellNote = gBusquedas.Resultado2
-   vGrid.TextTip = TextTipFixed
-End If
-
-If vGrid.ActiveCol = 4 And KeyCode = vbKeyReturn Then
-   vGrid.Col = 4
-'   vGrid.CellNote = fxSIFCCodigos("D", vGrid.Text, "bodegas")
-   vGrid.TextTip = TextTipFixed
-End If
-
-'Borrar una linea
-If KeyCode = vbKeyDelete Then
-  vGrid.Row = vGrid.ActiveRow
-  vGrid.Col = vGrid.MaxCols
-  For lng = vGrid.ActiveRow To vGrid.MaxRows
-     vGrid.Row = lng + 1
-     For x = 1 To vGrid.MaxCols
-        vGrid.Col = x
-        vTemp(x) = vGrid.Text
-     Next x
-
-     vGrid.Row = lng
-     For x = 1 To vGrid.MaxCols
-       vGrid.Col = x
-       vGrid.Text = vTemp(x)
-     Next x
-  Next lng
-  vGrid.MaxRows = vGrid.MaxRows - 1
-  If vGrid.MaxRows = 0 Then vGrid.MaxRows = 1
-  Call sbCalculaTotales
-End If
-
-'Inserta Linea
-If KeyCode = vbKeyInsert Then
-    vGrid.MaxRows = vGrid.MaxRows + 1
-    vGrid.InsertRows vGrid.ActiveRow, 1
-    vGrid.Row = vGrid.ActiveRow
-End If
-
-
-End Sub
-
-
-Private Sub vGrid_KeyUp(KeyCode As Integer, Shift As Integer)
-Dim curCantidad As Currency, curPrecio As Currency
-
-On Error GoTo vError
-'Calcula Total
-Select Case vGrid.ActiveCol
-  Case 3, 5
-    vGrid.Row = vGrid.ActiveRow
-    vGrid.Col = 3
-    curCantidad = CCur(vGrid.Text)
-    vGrid.Col = 5
-    curPrecio = CCur(vGrid.Text)
-    vGrid.Col = 6
-    vGrid.Text = (curPrecio * curCantidad)
-   Call sbCalculaTotales
-  Case Else 'No Aplica
-End Select
 vError:
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 
 End Sub
 
+Private Sub txtNuevoPersona_KeyDown(KeyCode As Integer, Shift As Integer)
 
+If KeyCode = vbKeyF4 Then
+    gBusquedas.Resultado = ""
+    gBusquedas.Resultado2 = ""
+    gBusquedas.Convertir = "N"
+    gBusquedas.Columna = "Nombre"
+    gBusquedas.Orden = "Nombre"
+    gBusquedas.Consulta = "select identificacion,Nombre from Activos_Personas"
+    gBusquedas.Filtro = " and Identificacion <> '" & txtPersona.Tag & "'"
+    frmBusquedas.Show vbModal
+    txtNuevoPersona.Tag = gBusquedas.Resultado
+    txtNuevoPersona.Text = gBusquedas.Resultado2
+    Call sbResponsableNuevo(txtNuevoPersona.Tag)
+    
+End If
 
+End Sub
 
-
-
-
+Private Sub txtPersona_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = vbKeyF4 Then
+    gBusquedas.Resultado = ""
+    gBusquedas.Resultado2 = ""
+    gBusquedas.Convertir = "N"
+    gBusquedas.Columna = "Nombre"
+    gBusquedas.Orden = "Nombre"
+    gBusquedas.Consulta = "select identificacion,Nombre from Activos_Personas"
+    gBusquedas.Filtro = " and Identificacion <> '" & txtNuevoPersona.Tag & "'"
+    frmBusquedas.Show vbModal
+    txtPersona.Tag = gBusquedas.Resultado
+    txtPersona.Text = gBusquedas.Resultado2
+    Call sbResponsableActual(txtPersona.Tag)
+    
+End If
+End Sub
 

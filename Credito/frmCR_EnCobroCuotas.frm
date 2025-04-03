@@ -1,8 +1,8 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "mscomctl.OCX"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.Controls.v22.0.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_EnCobroCuotas 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -26,7 +26,7 @@ Begin VB.Form frmCR_EnCobroCuotas
       TabIndex        =   7
       Top             =   6600
       Width           =   11292
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   19918
       _ExtentY        =   4890
       _StockProps     =   68
@@ -56,7 +56,7 @@ Begin VB.Form frmCR_EnCobroCuotas
          Top             =   360
          Visible         =   0   'False
          Width           =   11292
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   19918
          _ExtentY        =   4254
          _StockProps     =   77
@@ -84,7 +84,7 @@ Begin VB.Form frmCR_EnCobroCuotas
          TabIndex        =   9
          Top             =   360
          Width           =   11292
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   19918
          _ExtentY        =   4254
          _StockProps     =   77
@@ -176,7 +176,7 @@ Begin VB.Form frmCR_EnCobroCuotas
       TabIndex        =   4
       Top             =   960
       Width           =   5052
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   8916
       _ExtentY        =   582
       _StockProps     =   77
@@ -202,7 +202,7 @@ Begin VB.Form frmCR_EnCobroCuotas
       TabIndex        =   5
       Top             =   960
       Width           =   372
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   656
       _ExtentY        =   550
       _StockProps     =   77
@@ -227,12 +227,12 @@ Begin VB.Form frmCR_EnCobroCuotas
       TabIndex        =   6
       Top             =   960
       Width           =   1572
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   656
       _StockProps     =   79
       Caption         =   "Consultar"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -244,7 +244,7 @@ Begin VB.Form frmCR_EnCobroCuotas
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmCR_EnCobroCuotas.frx":1B05
+      Picture         =   "frmCR_EnCobroCuotas.frx":1B4D
       ImageAlignment  =   4
    End
    Begin XtremeSuiteControls.FlatEdit txtProceso 
@@ -253,7 +253,7 @@ Begin VB.Form frmCR_EnCobroCuotas
       TabIndex        =   10
       Top             =   960
       Width           =   1572
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -277,7 +277,7 @@ Begin VB.Form frmCR_EnCobroCuotas
       TabIndex        =   11
       Top             =   960
       Width           =   852
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   1503
       _ExtentY        =   444
       _StockProps     =   79
@@ -700,7 +700,7 @@ With vGrid
          .MaxRows = .MaxRows + 1
          .Row = .MaxRows
          For i = 1 To 7
-           .col = i
+           .Col = i
            Select Case i
                 Case 1 'Operación
                    .Text = CStr(rs!Operacion)
@@ -728,11 +728,11 @@ With vGrid
         .MaxRows = .MaxRows + 1
         .MaxRows = .MaxRows + 1
         .Row = .MaxRows
-        .col = 3
+        .Col = 3
         .Text = Format(curTotal, "Standard")
-        .col = 4
+        .Col = 4
         .Text = Format(curTotal2, "Standard")
-        .col = 5
+        .Col = 5
         .Text = Format(curTotal - curTotal2, "Standard")
         
      Case 2 'Detalle
@@ -745,7 +745,7 @@ With vGrid
          .MaxRows = .MaxRows + 1
          .Row = .MaxRows
          For i = 1 To 15
-           .col = i
+           .Col = i
            Select Case i
                 Case 1 'Operación
                    .Text = CStr(rs!Operacion)
@@ -790,11 +790,11 @@ With vGrid
         .MaxRows = .MaxRows + 1
         .MaxRows = .MaxRows + 1
         .Row = .MaxRows
-        .col = 8
+        .Col = 8
         .Text = Format(curTotal2, "Standard")
-        .col = 9
+        .Col = 9
         .Text = Format(curTotal, "Standard")
-        .col = 10
+        .Col = 10
         .Text = Format(curTotal2 - curTotal, "Standard")
      
      
@@ -811,10 +811,10 @@ With vGrid
          .MaxRows = .MaxRows + 1
          .Row = .MaxRows
          For i = 1 To 6
-           .col = i
+           .Col = i
            Select Case i
                 Case 1 'Operación
-                   .Text = CStr(rs!Id_Solicitud)
+                   .Text = CStr(rs!ID_SOLICITUD)
                 Case 2 'Línea
                     .Text = CStr(rs!Codigo)
                 Case 3 'Descripcion
@@ -835,9 +835,9 @@ With vGrid
         .MaxRows = .MaxRows + 1
         .MaxRows = .MaxRows + 1
         .Row = .MaxRows
-        .col = 3
+        .Col = 3
         .Text = "Total Enviado ...:"
-        .col = 4
+        .Col = 4
         .Text = Format(curTotal, "Standard")
      
      Case 4 'Recepción
@@ -849,10 +849,10 @@ With vGrid
          .MaxRows = .MaxRows + 1
          .Row = .MaxRows
          For i = 1 To 5
-           .col = i
+           .Col = i
            Select Case i
                 Case 1 'Operación
-                   .Text = CStr(rs!Id_Solicitud)
+                   .Text = CStr(rs!ID_SOLICITUD)
                 Case 2 'Línea
                     .Text = Trim(CStr(rs!Codigo))
                 Case 3 'Descripcion
@@ -870,9 +870,9 @@ With vGrid
         .MaxRows = .MaxRows + 1
         .MaxRows = .MaxRows + 1
         .Row = .MaxRows
-        .col = 3
+        .Col = 3
         .Text = "Total Planilla ...:"
-        .col = 4
+        .Col = 4
         .Text = Format(curTotal, "Standard")
         
         
@@ -884,31 +884,31 @@ With vGrid
         
             .MaxRows = .MaxRows + 1
             .Row = .MaxRows
-            .col = 3
+            .Col = 3
             .Text = "Total N.C...:"
-            .col = 4
+            .Col = 4
             .Text = Format(rs!Monto, "Standard")
         
         
             .MaxRows = .MaxRows + 1
             .Row = .MaxRows
-            .col = 3
+            .Col = 3
             .Text = "Total General ...:"
-            .col = 4
+            .Col = 4
             .Text = Format(rs!Monto + curTotal, "Standard")
         Else
             .MaxRows = .MaxRows + 1
             .Row = .MaxRows
-            .col = 3
+            .Col = 3
             .Text = "Total N.C...:"
-            .col = 4
+            .Col = 4
             .Text = Format(0, "Standard")
             
             .MaxRows = .MaxRows + 1
             .Row = .MaxRows
-            .col = 3
+            .Col = 3
             .Text = "Total General ...:"
-            .col = 4
+            .Col = 4
             .Text = Format(curTotal, "Standard")
                 
         End If
@@ -920,9 +920,9 @@ With vGrid
             .MaxRows = .MaxRows + 1
             .MaxRows = .MaxRows + 1
             .Row = .MaxRows
-            .col = 3
+            .Col = 3
             .Text = "Total Recaudado ...:"
-            .col = 4
+            .Col = 4
             .Text = Format(rs!Monto, "Standard")
         End If
         rs.Close
@@ -936,7 +936,7 @@ With vGrid
          .MaxRows = .MaxRows + 1
          .Row = .MaxRows
          For i = 1 To 5
-           .col = i
+           .Col = i
            Select Case i
                 Case 1 'Proceso
                    .Text = Format(rs!Proceso, "####-##")

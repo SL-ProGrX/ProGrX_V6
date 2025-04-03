@@ -126,39 +126,16 @@ Begin VB.Form frmAH_Excedentes_CE
       Item(3).Control(9)=   "lswCE"
       Item(3).Control(10)=   "btnExport(3)"
       Item(3).Control(11)=   "scTitulo(3)"
-      Begin XtremeSuiteControls.ListView lswCS 
-         Height          =   3015
+      Begin XtremeSuiteControls.ListView lswCE 
+         Height          =   4335
          Left            =   -69880
-         TabIndex        =   48
-         Top             =   3000
+         TabIndex        =   72
+         Top             =   1680
          Visible         =   0   'False
          Width           =   12255
          _Version        =   1572864
          _ExtentX        =   21616
-         _ExtentY        =   5318
-         _StockProps     =   77
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         View            =   3
-         FullRowSelect   =   -1  'True
-         Appearance      =   20
-      End
-      Begin XtremeSuiteControls.ListView lsw 
-         Height          =   3135
-         Left            =   120
-         TabIndex        =   12
-         Top             =   2880
-         Width           =   12255
-         _Version        =   1572864
-         _ExtentX        =   21616
-         _ExtentY        =   5530
+         _ExtentY        =   7646
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -197,16 +174,39 @@ Begin VB.Form frmAH_Excedentes_CE
          FullRowSelect   =   -1  'True
          Appearance      =   20
       End
-      Begin XtremeSuiteControls.ListView lswCE 
-         Height          =   4335
+      Begin XtremeSuiteControls.ListView lsw 
+         Height          =   3135
+         Left            =   120
+         TabIndex        =   12
+         Top             =   2880
+         Width           =   12255
+         _Version        =   1572864
+         _ExtentX        =   21616
+         _ExtentY        =   5530
+         _StockProps     =   77
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         View            =   3
+         FullRowSelect   =   -1  'True
+         Appearance      =   20
+      End
+      Begin XtremeSuiteControls.ListView lswCS 
+         Height          =   3015
          Left            =   -69880
-         TabIndex        =   72
-         Top             =   1680
+         TabIndex        =   48
+         Top             =   3000
          Visible         =   0   'False
          Width           =   12255
          _Version        =   1572864
          _ExtentX        =   21616
-         _ExtentY        =   7646
+         _ExtentY        =   5318
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -2431,7 +2431,7 @@ vPaso = True
 Call OpenRecordSet(rs, strSQL)
 
 Do While Not rs.EOF
-   Set itmX = lsw.ListItems.Add(, , rs!Consec)
+   Set itmX = lsw.ListItems.Add(, , rs!consec)
        itmX.SubItems(1) = Trim(rs!Cedula)
        itmX.SubItems(2) = rs!Nombre
        itmX.SubItems(3) = Format(rs!Porcentaje, "Standard")
@@ -2468,7 +2468,7 @@ Call OpenRecordSet(rs, strSQL)
 If Not rs.EOF And Not rs.BOF Then
    vEdita = True
 
-   txtId.Text = rs!Consec
+   txtId.Text = rs!consec
 
    txtPorcentaje.Text = Format(rs!Porcentaje, "Standard")
    txtSalida.Text = rs!Salida & ""
@@ -2553,7 +2553,7 @@ strSQL = "exec spExc_Casos_Especiales_Aplicados " & cboPeriodo.ItemData(cboPerio
        & "', '" & txtCE_Nombre.Text & "', '" & txtCE_Detalle.Text & "', '" & glogon.Usuario & "'"
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
-    Set itmX = lswCE.ListItems.Add(, , rs!Consec)
+    Set itmX = lswCE.ListItems.Add(, , rs!consec)
         itmX.SubItems(1) = rs!ID_PERIODO
         itmX.SubItems(2) = rs!Cedula
         itmX.SubItems(3) = rs!Nombre
@@ -3485,7 +3485,7 @@ strSQL = "exec spExc_CambioSalida_Lista " & cboPeriodo.ItemData(cboPeriodo.ListI
        & "', " & pAutorizado & ", '" & glogon.Usuario & "'"
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
-    Set itmX = lswCS.ListItems.Add(, , rs!Consec)
+    Set itmX = lswCS.ListItems.Add(, , rs!consec)
         itmX.SubItems(1) = rs!Cedula
         itmX.SubItems(2) = rs!Nombre_Desc
         itmX.SubItems(3) = rs!Nueva_Salida

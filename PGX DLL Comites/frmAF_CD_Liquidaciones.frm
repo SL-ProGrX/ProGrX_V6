@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Begin VB.Form frmAF_CD_Liquidaciones 
    Appearance      =   0  'Flat
@@ -26,7 +26,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
       TabIndex        =   4
       Top             =   960
       Width           =   1455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   661
       _StockProps     =   79
@@ -50,7 +50,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
       TabIndex        =   0
       Top             =   240
       Width           =   1935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3413
       _ExtentY        =   661
       _StockProps     =   77
@@ -73,7 +73,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
       TabIndex        =   2
       Top             =   240
       Width           =   4695
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8281
       _ExtentY        =   661
       _StockProps     =   77
@@ -98,7 +98,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
       TabIndex        =   5
       Top             =   960
       Width           =   1455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   661
       _StockProps     =   79
@@ -123,7 +123,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
       TabIndex        =   6
       Top             =   960
       Width           =   1455
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2566
       _ExtentY        =   661
       _StockProps     =   79
@@ -147,7 +147,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
       TabIndex        =   1
       Top             =   240
       Width           =   7935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   13996
       _ExtentY        =   661
       _StockProps     =   77
@@ -171,7 +171,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
       TabIndex        =   7
       Top             =   1440
       Width           =   14895
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   26273
       _ExtentY        =   12303
       _StockProps     =   68
@@ -187,6 +187,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
       Appearance      =   4
       Color           =   32
       ItemCount       =   3
+      SelectedItem    =   1
       Item(0).Caption =   "Desembolsos"
       Item(0).ControlCount=   1
       Item(0).Control(0)=   "vGrid"
@@ -202,12 +203,11 @@ Begin VB.Form frmAF_CD_Liquidaciones
       Item(2).Control(0)=   "vGridHistorico"
       Begin XtremeSuiteControls.GroupBox GroupBox1 
          Height          =   2175
-         Left            =   -65440
+         Left            =   4560
          TabIndex        =   15
          Top             =   4680
-         Visible         =   0   'False
          Width           =   10095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17806
          _ExtentY        =   3836
          _StockProps     =   79
@@ -231,7 +231,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
             TabIndex        =   19
             Top             =   480
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   582
             _StockProps     =   77
@@ -258,7 +258,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
             TabIndex        =   20
             Top             =   840
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   582
             _StockProps     =   77
@@ -285,7 +285,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
             TabIndex        =   21
             Top             =   1200
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   582
             _StockProps     =   77
@@ -312,7 +312,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
             TabIndex        =   22
             Top             =   1680
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   661
             _StockProps     =   79
@@ -337,7 +337,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
             TabIndex        =   23
             Top             =   720
             Width           =   5535
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9763
             _ExtentY        =   2355
             _StockProps     =   77
@@ -362,7 +362,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
             TabIndex        =   25
             Top             =   480
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   450
             _StockProps     =   79
@@ -384,7 +384,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
             TabIndex        =   24
             Top             =   0
             Width           =   10335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   18230
             _ExtentY        =   661
             _StockProps     =   14
@@ -408,7 +408,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
             TabIndex        =   18
             Top             =   1200
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   450
             _StockProps     =   79
@@ -430,7 +430,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
             TabIndex        =   17
             Top             =   840
             Width           =   1935
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   450
             _StockProps     =   79
@@ -452,7 +452,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
             TabIndex        =   16
             Top             =   480
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   450
             _StockProps     =   79
@@ -470,9 +470,10 @@ Begin VB.Form frmAF_CD_Liquidaciones
       End
       Begin FPSpreadADO.fpSpread vGrid 
          Height          =   6495
-         Left            =   120
+         Left            =   -69880
          TabIndex        =   8
          Top             =   480
+         Visible         =   0   'False
          Width           =   14655
          _Version        =   524288
          _ExtentX        =   25850
@@ -525,10 +526,9 @@ Begin VB.Form frmAF_CD_Liquidaciones
       End
       Begin FPSpreadADO.fpSpread vGridOpxDetallar 
          Height          =   5700
-         Left            =   -69880
+         Left            =   120
          TabIndex        =   11
          Top             =   960
-         Visible         =   0   'False
          Width           =   4335
          _Version        =   524288
          _ExtentX        =   7646
@@ -556,10 +556,9 @@ Begin VB.Form frmAF_CD_Liquidaciones
       End
       Begin FPSpreadADO.fpSpread vGridFacturas 
          Height          =   3615
-         Left            =   -65440
+         Left            =   4560
          TabIndex        =   13
          Top             =   960
-         Visible         =   0   'False
          Width           =   10095
          _Version        =   524288
          _ExtentX        =   17806
@@ -587,12 +586,11 @@ Begin VB.Form frmAF_CD_Liquidaciones
       Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption2 
          Height          =   375
          Index           =   1
-         Left            =   -65560
+         Left            =   4440
          TabIndex        =   14
          Top             =   480
-         Visible         =   0   'False
          Width           =   10335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18230
          _ExtentY        =   661
          _StockProps     =   14
@@ -612,12 +610,11 @@ Begin VB.Form frmAF_CD_Liquidaciones
       Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption2 
          Height          =   375
          Index           =   0
-         Left            =   -69880
+         Left            =   120
          TabIndex        =   12
          Top             =   480
-         Visible         =   0   'False
          Width           =   4335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7646
          _ExtentY        =   661
          _StockProps     =   14
@@ -640,7 +637,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
       TabIndex        =   10
       Top             =   960
       Width           =   2655
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4683
       _ExtentY        =   661
       _StockProps     =   79
@@ -656,7 +653,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
       EndProperty
       UseVisualStyle  =   -1  'True
       Appearance      =   17
-      Picture         =   "frmAF_CD_Liquidaciones.frx":4225
+      Picture         =   "frmAF_CD_Liquidaciones.frx":44E1
       BorderGap       =   0
    End
    Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption1 
@@ -665,7 +662,7 @@ Begin VB.Form frmAF_CD_Liquidaciones
       TabIndex        =   3
       Top             =   0
       Width           =   15135
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   26696
       _ExtentY        =   1508
       _StockProps     =   14
@@ -784,7 +781,7 @@ Dim vTipoDoc As String, vTransaccion As String
  
 If vOperacion = "" Or vOperacion = "0" Then Exit Sub
  
-If CCur(txtDiferencia.Text) > 0 Then
+If CCur(txtDiferencia.Text) <> 0 Then
    MsgBox "Existen Diferencias en el detalle con el monto a Cancelar...Revise!", vbExclamation
    Exit Sub
 End If

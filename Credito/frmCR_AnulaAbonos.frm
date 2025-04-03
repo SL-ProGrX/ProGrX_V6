@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.1#0"; "Codejock.Controls.v19.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_AnulaAbonos 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Anulación de Abonos"
@@ -20,7 +20,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   18
       Top             =   2040
       Width           =   10332
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   18224
       _ExtentY        =   3619
       _StockProps     =   77
@@ -50,7 +50,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   8
       Top             =   240
       Width           =   1812
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   656
       _StockProps     =   77
@@ -74,7 +74,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   9
       Top             =   840
       Width           =   5412
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   9546
       _ExtentY        =   550
       _StockProps     =   77
@@ -99,7 +99,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   10
       Top             =   1200
       Width           =   5412
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   9546
       _ExtentY        =   550
       _StockProps     =   77
@@ -124,7 +124,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   11
       Top             =   1200
       Width           =   1812
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
@@ -150,7 +150,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   12
       Top             =   840
       Width           =   1812
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   550
       _StockProps     =   77
@@ -176,7 +176,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   13
       Top             =   1200
       Width           =   1092
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   550
       _StockProps     =   77
@@ -202,7 +202,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   14
       Top             =   840
       Width           =   1092
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   550
       _StockProps     =   77
@@ -228,7 +228,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   19
       Top             =   1716
       Width           =   216
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   370
       _ExtentY        =   370
       _StockProps     =   79
@@ -251,7 +251,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   25
       Top             =   240
       Width           =   3732
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   6588
       _ExtentY        =   582
       _StockProps     =   77
@@ -277,7 +277,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   26
       Top             =   4560
       Width           =   1572
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -304,7 +304,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   27
       Top             =   4920
       Width           =   1572
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -331,7 +331,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   28
       Top             =   5640
       Width           =   1572
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -358,7 +358,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   29
       Top             =   5280
       Width           =   1572
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -385,7 +385,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   30
       Top             =   6120
       Width           =   1572
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -412,7 +412,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   31
       Top             =   4560
       Width           =   1572
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -437,7 +437,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   32
       Top             =   4920
       Width           =   1572
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -462,7 +462,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   33
       Top             =   5640
       Width           =   1572
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -487,7 +487,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   34
       Top             =   5280
       Width           =   1572
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -512,7 +512,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   35
       Top             =   6120
       Width           =   1572
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2773
       _ExtentY        =   550
       _StockProps     =   77
@@ -538,7 +538,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   36
       Top             =   4560
       Width           =   1212
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   550
       _StockProps     =   77
@@ -565,7 +565,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   37
       Top             =   5760
       Width           =   1452
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   1291
       _StockProps     =   79
@@ -588,7 +588,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   15
       Top             =   5160
       Width           =   3456
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   6096
       _ExtentY        =   381
       _StockProps     =   79
@@ -614,7 +614,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   16
       Top             =   5400
       Width           =   3456
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   6096
       _ExtentY        =   381
       _StockProps     =   79
@@ -640,7 +640,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   17
       Top             =   4200
       Width           =   1692
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   550
       _StockProps     =   79
@@ -663,7 +663,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   24
       Top             =   240
       Width           =   1812
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   3196
       _ExtentY        =   444
       _StockProps     =   79
@@ -689,7 +689,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   23
       Top             =   240
       Width           =   1332
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   656
       _StockProps     =   79
@@ -714,7 +714,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   22
       Top             =   840
       Width           =   1332
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   444
       _StockProps     =   79
@@ -739,7 +739,7 @@ Begin VB.Form frmCR_AnulaAbonos
       TabIndex        =   21
       Top             =   1200
       Width           =   1332
-      _Version        =   1245185
+      _Version        =   1572864
       _ExtentX        =   2350
       _ExtentY        =   444
       _StockProps     =   79
@@ -1184,7 +1184,7 @@ Else 'Morosidad
              'Tambien como Nula, para pista del movimiento
              
              strSQL = "insert morosidad(id_solicitud,codigo,fechap,fecap,fecult,cuota_morosa,intc,intm,amortiza,cargo,estado,estadoi,tcon,ncon" _
-                    & ",abintc,abintm,abamortiza,abCargo,usuario,cod_concepto,cod_caja) values(" & rs2!Id_Solicitud & ",'" & rs2!Codigo & "'," & rs2!fechap & "," & rs2!fecap _
+                    & ",abintc,abintm,abamortiza,abCargo,usuario,cod_concepto,cod_caja) values(" & rs2!ID_SOLICITUD & ",'" & rs2!Codigo & "'," & rs2!fechap & "," & rs2!fecap _
                     & ",dbo.MyGetdate()," & IIf(IsNull(rs2!cuota_morosa), 0, rs2!cuota_morosa) & "," & rs2!IntC & "," & rs2!IntM _
                     & "," & rs2!Amortiza & "," & rs2!Cargo & ",'N','C','" & vTipoDoc & "','" & lngRecibo & "'," & rs2!abintc & "," & rs2!abintm _
                     & "," & rs2!abAmortiza & "," & rs2!AbCargo & ",'" & glogon.Usuario & "','" & vConcepto & "','')"
@@ -1194,7 +1194,7 @@ Else 'Morosidad
              'la cual puede ser reemplazada por un futuro abono
              If chkGeneraMorosidad.Value = vbChecked Then
                 strSQL = "insert morosidad(id_solicitud,codigo,fechap,fecap,fecult,cuota_morosa,intc,intm,amortiza,cargo,estado,estadoi,tcon,ncon,usuario,cod_concepto,cod_caja)" _
-                       & " values(" & rs2!Id_Solicitud & ",'" & rs2!Codigo & "'," & rs2!fechap & "," & vFechaProceso & ",dbo.MyGetdate()" _
+                       & " values(" & rs2!ID_SOLICITUD & ",'" & rs2!Codigo & "'," & rs2!fechap & "," & vFechaProceso & ",dbo.MyGetdate()" _
                        & "," & rs2!abintc + rs2!abintm + rs2!abAmortiza & "," & rs2!abintc & "," & rs2!abintm & "," & rs2!abAmortiza _
                        & "," & rs2!AbCargo & ",'A','A','" & vTipoDoc & "','" & lngRecibo & "','" & glogon.Usuario & "','" & vConcepto & "','')"
                 Call ConectionExecute(strSQL)
@@ -1219,7 +1219,7 @@ Else 'Morosidad
              'Tambien como Nula, para pista del movimiento
              
              strSQL = "insert morosidad(id_solicitud,codigo,fechap,fecap,fecult,cuota_morosa,intc,intm,amortiza,cargo,estado,estadoi,tcon,ncon" _
-                    & ",abintc,abintm,abamortiza,abCargo,usuario,cod_concepto,cod_caja) values(" & rs!Id_Solicitud & ",'" & rs!Codigo & "'," & rs!fechap & "," & rs!fecap _
+                    & ",abintc,abintm,abamortiza,abCargo,usuario,cod_concepto,cod_caja) values(" & rs!ID_SOLICITUD & ",'" & rs!Codigo & "'," & rs!fechap & "," & rs!fecap _
                     & ",dbo.MyGetdate()," & rs!cuota_morosa & "," & CCur(txtABIntCor) & "," & CCur(txtABIntMor) _
                     & "," & CCur(txtABAmortizacion) & "," & CCur(txtABCargos.Text) & ",'N','C','8','" & lngRecibo & "'," & CCur(txtABIntCor) _
                     & "," & CCur(txtABIntMor) & "," & CCur(txtABAmortizacion) & "," & CCur(txtABCargos.Text) & ",'" & glogon.Usuario & "','" & vConcepto & "','')"
@@ -1230,7 +1230,7 @@ Else 'Morosidad
              
              If chkGeneraMorosidad.Value = vbChecked Then
                 strSQL = "insert morosidad(id_solicitud,codigo,estado,estadoi,fechap,fecap,fecult,intc,intm,amortiza,cargo,cuota_morosa,tcon,ncon)" _
-                        & " values(" & rs!Id_Solicitud & ",'" & rs!Codigo & "','A','C'," & rs!fechap & "," & vFechaProceso _
+                        & " values(" & rs!ID_SOLICITUD & ",'" & rs!Codigo & "','A','C'," & rs!fechap & "," & vFechaProceso _
                         & ",dbo.MyGetdate()," & CCur(txtABIntCor) & "," & CCur(txtABIntMor) _
                         & "," & CCur(txtABAmortizacion) & "," & CCur(txtABCargos.Text) & "," & CCur(txtABIntCor) + CCur(txtABIntMor) + CCur(txtABAmortizacion) + CCur(txtABCargos.Text) _
                         & ",'" & vTipoDoc & "','" & lngRecibo & "')"
@@ -1345,38 +1345,38 @@ Call ConectionExecute(strSQL)
 
 If curIntC > 0 Then
   strSQL = "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & curIntC * rs!TipoCambio & ",'D','" & rs!cod_Divisa _
-         & "'," & rs!TipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!cod_unidad & "','" & rs!cod_centro_costo & "','" & rs!ctaintc _
-         & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+         & "'," & rs!TipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintc _
+         & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
   Call ConectionExecute(strSQL)
 End If
 
 If curIntM > 0 Then
   strSQL = "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & curIntM * rs!TipoCambio & ",'D','" & rs!cod_Divisa _
-         & "'," & rs!TipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!cod_unidad & "','" & rs!cod_centro_costo & "','" & rs!ctaintm _
-         & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+         & "'," & rs!TipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintm _
+         & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
   Call ConectionExecute(strSQL)
 End If
 
 If curCargo > 0 Then
   strSQL = "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & curCargo * rs!TipoCambio & ",'D','" & rs!cod_Divisa _
-         & "'," & rs!TipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!cod_unidad & "','" & rs!cod_centro_costo & "','" & rs!CtaCargos _
-         & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+         & "'," & rs!TipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!CtaCargos _
+         & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
   Call ConectionExecute(strSQL)
 End If
 
 
 If curAmortiza > 0 Then
   strSQL = "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & curAmortiza * rs!TipoCambio & ",'D','" & rs!cod_Divisa _
-         & "'," & rs!TipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!cod_unidad & "','" & rs!cod_centro_costo & "','" & rs!ctaamortiza _
-         & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+         & "'," & rs!TipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaamortiza _
+         & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
   Call ConectionExecute(strSQL)
 End If
 
 'ASIENTO
 If curIntC + curIntM + curAmortiza + curCargo > 0 Then
   strSQL = "exec spSIFDocsAsiento '" & pTipoDoc & "','" & pNumDoc & "'," & (curIntC + curIntM + curCargo + curAmortiza) * rs!TipoCambio & ",'C','" & rs!cod_Divisa _
-         & "'," & rs!TipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!cod_unidad & "','" & rs!cod_centro_costo & "','" & pCuenta _
-         & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+         & "'," & rs!TipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & pCuenta _
+         & "','" & rs!ID_SOLICITUD & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
   Call ConectionExecute(strSQL)
 End If
 

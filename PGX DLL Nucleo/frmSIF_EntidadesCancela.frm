@@ -5,15 +5,15 @@ Begin VB.Form frmSIF_EntidadesCancela
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Lista de Entidades que Cancelan Operaciones Internas"
-   ClientHeight    =   6408
-   ClientLeft      =   48
-   ClientTop       =   312
-   ClientWidth     =   8388
+   ClientHeight    =   6405
+   ClientLeft      =   45
+   ClientTop       =   315
+   ClientWidth     =   8385
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   6408
-   ScaleWidth      =   8388
+   ScaleHeight     =   6405
+   ScaleWidth      =   8385
    ShowInTaskbar   =   0   'False
    StartUpPosition =   1  'CenterOwner
    Begin FPSpreadADO.fpSpread vGrid 
@@ -49,7 +49,7 @@ Begin VB.Form frmSIF_EntidadesCancela
       Caption         =   "Entidades que Cancelan (Op. Crd. Int.)"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -117,15 +117,19 @@ If KeyCode = vbKeyDelete Then
    'Aqui codigo de Borrado
    vGrid.Row = vGrid.ActiveRow
    vGrid.Col = 1
-   If Trim(vGrid.Text) <> "" Then
-    strSQL = "Delete SIF_ENTIDADES_PAGO where COD_ENTIDAD_PAGO =  '" & UCase(vGrid.Text) & "'"
-    Call ConectionExecute(strSQL)
-        
-    Call Bitacora("Elimina", "Entidades Pagadoras: " & vGrid.Text)
-   End If
+     i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
+     If i = vbYes Then
    
-   vGrid.DeleteRows vGrid.ActiveRow, 1
-   vGrid.MaxRows = vGrid.MaxRows - 1
+            If Trim(vGrid.Text) <> "" Then
+             strSQL = "Delete SIF_ENTIDADES_PAGO where COD_ENTIDAD_PAGO =  '" & UCase(vGrid.Text) & "'"
+             Call ConectionExecute(strSQL)
+                 
+             Call Bitacora("Elimina", "Entidades Pagadoras: " & vGrid.Text)
+            End If
+            
+            vGrid.DeleteRows vGrid.ActiveRow, 1
+            vGrid.MaxRows = vGrid.MaxRows - 1
+     End If
 End If
 
 

@@ -1,8 +1,10 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmSIF_Juzgados 
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Juzgados (Generales del Sistema)"
    ClientHeight    =   6600
@@ -15,14 +17,14 @@ Begin VB.Form frmSIF_Juzgados
    ScaleWidth      =   11190
    StartUpPosition =   1  'CenterOwner
    Begin XtremeSuiteControls.TabControl tcMain 
-      Height          =   5412
-      Left            =   120
+      Height          =   5415
+      Left            =   0
       TabIndex        =   3
       Top             =   1080
-      Width           =   10932
-      _Version        =   1441793
-      _ExtentX        =   19283
-      _ExtentY        =   9546
+      Width           =   11175
+      _Version        =   1572864
+      _ExtentX        =   19711
+      _ExtentY        =   9551
       _StockProps     =   68
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
@@ -44,16 +46,17 @@ Begin VB.Form frmSIF_Juzgados
       Item(0).Control(3)=   "txtContacto"
       Item(0).Control(4)=   "Label4(8)"
       Begin XtremeSuiteControls.GroupBox gbDireccion 
-         Height          =   1692
-         Left            =   0
+         Height          =   1695
+         Left            =   240
          TabIndex        =   4
          Top             =   2760
-         Width           =   10812
-         _Version        =   1441793
-         _ExtentX        =   19071
-         _ExtentY        =   2984
+         Width           =   10815
+         _Version        =   1572864
+         _ExtentX        =   19076
+         _ExtentY        =   2990
          _StockProps     =   79
          Caption         =   "Dirección"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -63,7 +66,8 @@ Begin VB.Form frmSIF_Juzgados
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          BorderStyle     =   1
          Begin XtremeSuiteControls.ComboBox cboProvincia 
             Height          =   312
@@ -71,12 +75,12 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   5
             Top             =   480
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3625
             _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   1973790
-            BackColor       =   16185078
+            BackColor       =   16777215
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -86,9 +90,9 @@ Begin VB.Form frmSIF_Juzgados
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            BackColor       =   16185078
             Style           =   2
-            Appearance      =   16
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.ComboBox cboCanton 
             Height          =   312
@@ -96,12 +100,12 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   6
             Top             =   840
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3625
             _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   1973790
-            BackColor       =   16185078
+            BackColor       =   16777215
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -111,9 +115,9 @@ Begin VB.Form frmSIF_Juzgados
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            BackColor       =   16185078
             Style           =   2
-            Appearance      =   16
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.ComboBox cboDistrito 
             Height          =   312
@@ -121,12 +125,12 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   7
             Top             =   1200
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3625
             _ExtentY        =   582
             _StockProps     =   77
             ForeColor       =   1973790
-            BackColor       =   16185078
+            BackColor       =   16777215
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -136,9 +140,9 @@ Begin VB.Form frmSIF_Juzgados
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            BackColor       =   16185078
             Style           =   2
-            Appearance      =   16
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtDireccion 
             Height          =   1092
@@ -146,12 +150,11 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   8
             Top             =   480
             Width           =   6852
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   12086
             _ExtentY        =   1926
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -163,7 +166,7 @@ Begin VB.Form frmSIF_Juzgados
             EndProperty
             MultiLine       =   -1  'True
             ScrollBars      =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.Label Label4 
@@ -173,11 +176,12 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   11
             Top             =   1200
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   444
             _StockProps     =   79
             Caption         =   "Distrito"
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -197,11 +201,12 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   10
             Top             =   840
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   444
             _StockProps     =   79
             Caption         =   "Cantón"
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -221,11 +226,12 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   9
             Top             =   480
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   444
             _StockProps     =   79
             Caption         =   "Provincia"
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -245,11 +251,12 @@ Begin VB.Form frmSIF_Juzgados
          TabIndex        =   13
          Top             =   360
          Width           =   1092
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1926
          _ExtentY        =   444
          _StockProps     =   79
          Caption         =   "Activo?"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -259,30 +266,33 @@ Begin VB.Form frmSIF_Juzgados
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   2
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          Alignment       =   1
       End
       Begin XtremeSuiteControls.GroupBox GroupBox3 
-         Height          =   1812
-         Left            =   0
+         Height          =   1815
+         Left            =   240
          TabIndex        =   14
          Top             =   600
-         Width           =   10812
-         _Version        =   1441793
-         _ExtentX        =   19071
-         _ExtentY        =   3196
+         Width           =   10815
+         _Version        =   1572864
+         _ExtentX        =   19076
+         _ExtentY        =   3201
          _StockProps     =   79
          Caption         =   "Información de Contacto"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   7.5
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   16
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
          BorderStyle     =   1
          Begin XtremeSuiteControls.FlatEdit txtWebSite 
             Height          =   312
@@ -290,12 +300,11 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   15
             Top             =   360
             Width           =   5292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9334
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -305,7 +314,7 @@ Begin VB.Form frmSIF_Juzgados
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtEmail 
@@ -314,12 +323,11 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   16
             Top             =   720
             Width           =   5292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9334
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -329,7 +337,7 @@ Begin VB.Form frmSIF_Juzgados
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtEmail2 
@@ -338,12 +346,11 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   17
             Top             =   1080
             Width           =   5292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9334
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -353,7 +360,7 @@ Begin VB.Form frmSIF_Juzgados
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtAptoPostal 
@@ -362,12 +369,11 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   18
             Top             =   1440
             Width           =   5292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9334
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -377,7 +383,7 @@ Begin VB.Form frmSIF_Juzgados
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtTelefono 
@@ -386,12 +392,11 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   19
             Top             =   360
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -402,7 +407,7 @@ Begin VB.Form frmSIF_Juzgados
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtTelefono2 
@@ -411,12 +416,11 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   20
             Top             =   720
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -427,7 +431,7 @@ Begin VB.Form frmSIF_Juzgados
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.FlatEdit txtTelFax 
@@ -436,12 +440,11 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   21
             Top             =   1080
             Width           =   2052
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3619
             _ExtentY        =   550
             _StockProps     =   77
             ForeColor       =   0
-            BackColor       =   -2147483643
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -452,7 +455,7 @@ Begin VB.Form frmSIF_Juzgados
                Strikethrough   =   0   'False
             EndProperty
             Alignment       =   2
-            Appearance      =   2
+            Appearance      =   6
             UseVisualStyle  =   0   'False
          End
          Begin XtremeSuiteControls.Label Label4 
@@ -462,11 +465,12 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   28
             Top             =   1440
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   444
             _StockProps     =   79
             Caption         =   "Apto. Postal"
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -486,11 +490,12 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   27
             Top             =   1080
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   444
             _StockProps     =   79
             Caption         =   "Email (2)"
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -510,11 +515,12 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   26
             Top             =   720
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   444
             _StockProps     =   79
             Caption         =   "Email (1)"
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -534,11 +540,12 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   25
             Top             =   360
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   444
             _StockProps     =   79
             Caption         =   "Web Site"
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -558,11 +565,12 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   24
             Top             =   1080
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   444
             _StockProps     =   79
             Caption         =   "Tel. Fax"
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -582,11 +590,12 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   23
             Top             =   720
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   444
             _StockProps     =   79
             Caption         =   "Teléfono (2)"
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -606,11 +615,12 @@ Begin VB.Form frmSIF_Juzgados
             TabIndex        =   22
             Top             =   360
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   444
             _StockProps     =   79
             Caption         =   "Teléfono (1)"
+            BackColor       =   -2147483633
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Calibri"
                Size            =   9
@@ -625,17 +635,16 @@ Begin VB.Form frmSIF_Juzgados
          End
       End
       Begin XtremeSuiteControls.FlatEdit txtContacto 
-         Height          =   312
-         Left            =   1440
+         Height          =   315
+         Left            =   1680
          TabIndex        =   31
          Top             =   4800
-         Width           =   9252
-         _Version        =   1441793
+         Width           =   9255
+         _Version        =   1572864
          _ExtentX        =   16319
          _ExtentY        =   550
          _StockProps     =   77
          ForeColor       =   0
-         BackColor       =   -2147483643
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -645,21 +654,22 @@ Begin VB.Form frmSIF_Juzgados
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   2
+         Appearance      =   6
          UseVisualStyle  =   0   'False
       End
       Begin XtremeSuiteControls.Label Label4 
-         Height          =   252
+         Height          =   255
          Index           =   8
-         Left            =   120
+         Left            =   360
          TabIndex        =   12
          Top             =   4800
-         Width           =   1332
-         _Version        =   1441793
+         Width           =   1335
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   444
          _StockProps     =   79
          Caption         =   "Contacto"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -731,8 +741,8 @@ Begin VB.Form frmSIF_Juzgados
       Orientation     =   1638401
    End
    Begin MSComctlLib.ImageList ImageList1 
-      Left            =   9120
-      Top             =   720
+      Left            =   10440
+      Top             =   120
       _ExtentX        =   1005
       _ExtentY        =   1005
       BackColor       =   -2147483643
@@ -766,12 +776,11 @@ Begin VB.Form frmSIF_Juzgados
       TabIndex        =   29
       Top             =   600
       Width           =   6732
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   11874
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -781,7 +790,7 @@ Begin VB.Form frmSIF_Juzgados
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtCodigo 
@@ -790,12 +799,11 @@ Begin VB.Form frmSIF_Juzgados
       TabIndex        =   30
       Top             =   600
       Width           =   2052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   550
       _StockProps     =   77
       ForeColor       =   0
-      BackColor       =   -2147483643
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -806,7 +814,7 @@ Begin VB.Form frmSIF_Juzgados
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin VB.Label Label1 

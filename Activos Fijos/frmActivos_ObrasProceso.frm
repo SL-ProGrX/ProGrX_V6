@@ -1,193 +1,118 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmActivos_ObrasProceso 
+   Appearance      =   0  'Flat
+   BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Obras en Proceso"
-   ClientHeight    =   7275
+   ClientHeight    =   7080
    ClientLeft      =   45
    ClientTop       =   435
    ClientWidth     =   11430
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7275
+   ScaleHeight     =   7080
    ScaleWidth      =   11430
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
-   Begin MSComctlLib.StatusBar StatusBarX 
-      Align           =   2  'Align Bottom
-      Height          =   252
-      Left            =   0
-      TabIndex        =   31
-      Top             =   7020
-      Width           =   11424
-      _ExtentX        =   20161
-      _ExtentY        =   450
-      _Version        =   393216
-      BeginProperty Panels {8E3867A5-8586-11D1-B16A-00C0F0283628} 
-         NumPanels       =   3
-         BeginProperty Panel1 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
-            Object.Width           =   6068
-            MinWidth        =   6068
-            Object.ToolTipText     =   "Usuario que Registra"
-         EndProperty
-         BeginProperty Panel2 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
-            Object.Width           =   4304
-            MinWidth        =   4304
-            Object.ToolTipText     =   "Fecha de Registro"
-         EndProperty
-         BeginProperty Panel3 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
-            Alignment       =   2
-            Object.Width           =   3775
-            MinWidth        =   3775
-            Object.ToolTipText     =   "Distribuido"
-         EndProperty
-      EndProperty
-      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Calibri"
-         Size            =   7.5
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-   End
-   Begin TabDlg.SSTab ssTab 
-      Height          =   5412
-      Left            =   240
-      TabIndex        =   5
-      Top             =   1320
-      Width           =   11052
+   Begin XtremeSuiteControls.TabControl tcMain 
+      Height          =   5535
+      Left            =   120
+      TabIndex        =   4
+      Top             =   1200
+      Width           =   11055
+      _Version        =   1572864
       _ExtentX        =   19500
-      _ExtentY        =   9551
-      _Version        =   393216
-      Style           =   1
-      Tabs            =   5
-      TabsPerRow      =   5
-      TabHeight       =   520
-      ForeColor       =   16711680
+      _ExtentY        =   9763
+      _StockProps     =   68
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   7.5
+         Size            =   9
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      TabCaption(0)   =   "Datos"
-      TabPicture(0)   =   "frmActivos_ObrasProceso.frx":0000
-      Tab(0).ControlEnabled=   -1  'True
-      Tab(0).Control(0)=   "Label2(0)"
-      Tab(0).Control(0).Enabled=   0   'False
-      Tab(0).Control(1)=   "Label2(1)"
-      Tab(0).Control(1).Enabled=   0   'False
-      Tab(0).Control(2)=   "lblEstado"
-      Tab(0).Control(2).Enabled=   0   'False
-      Tab(0).Control(3)=   "Label2(2)"
-      Tab(0).Control(3).Enabled=   0   'False
-      Tab(0).Control(4)=   "Label2(3)"
-      Tab(0).Control(4).Enabled=   0   'False
-      Tab(0).Control(5)=   "Label2(4)"
-      Tab(0).Control(5).Enabled=   0   'False
-      Tab(0).Control(6)=   "Label2(5)"
-      Tab(0).Control(6).Enabled=   0   'False
-      Tab(0).Control(7)=   "Label2(6)"
-      Tab(0).Control(7).Enabled=   0   'False
-      Tab(0).Control(8)=   "Label2(7)"
-      Tab(0).Control(8).Enabled=   0   'False
-      Tab(0).Control(9)=   "Label2(8)"
-      Tab(0).Control(9).Enabled=   0   'False
-      Tab(0).Control(10)=   "Label2(9)"
-      Tab(0).Control(10).Enabled=   0   'False
-      Tab(0).Control(11)=   "Label2(10)"
-      Tab(0).Control(11).Enabled=   0   'False
-      Tab(0).Control(12)=   "Label2(11)"
-      Tab(0).Control(12).Enabled=   0   'False
-      Tab(0).Control(13)=   "Label2(12)"
-      Tab(0).Control(13).Enabled=   0   'False
-      Tab(0).Control(14)=   "Label2(13)"
-      Tab(0).Control(14).Enabled=   0   'False
-      Tab(0).Control(15)=   "dtpFinaliza"
-      Tab(0).Control(15).Enabled=   0   'False
-      Tab(0).Control(16)=   "dtpInicio"
-      Tab(0).Control(16).Enabled=   0   'False
-      Tab(0).Control(17)=   "cbo"
-      Tab(0).Control(17).Enabled=   0   'False
-      Tab(0).Control(18)=   "txtEncargado"
-      Tab(0).Control(18).Enabled=   0   'False
-      Tab(0).Control(19)=   "txtUbicacion"
-      Tab(0).Control(19).Enabled=   0   'False
-      Tab(0).Control(20)=   "txtPresupuesto"
-      Tab(0).Control(20).Enabled=   0   'False
-      Tab(0).Control(21)=   "txtAdendums"
-      Tab(0).Control(21).Enabled=   0   'False
-      Tab(0).Control(22)=   "txtPresuActual"
-      Tab(0).Control(22).Enabled=   0   'False
-      Tab(0).Control(23)=   "txtNotas"
-      Tab(0).Control(23).Enabled=   0   'False
-      Tab(0).Control(24)=   "txtFiniquito"
-      Tab(0).Control(24).Enabled=   0   'False
-      Tab(0).Control(25)=   "txtDesembolso"
-      Tab(0).Control(25).Enabled=   0   'False
-      Tab(0).Control(26)=   "txtDisponible"
-      Tab(0).Control(26).Enabled=   0   'False
-      Tab(0).Control(27)=   "txtRegistro"
-      Tab(0).Control(27).Enabled=   0   'False
-      Tab(0).Control(28)=   "txtProveedor"
-      Tab(0).Control(28).Enabled=   0   'False
-      Tab(0).ControlCount=   29
-      TabCaption(1)   =   "Adendums"
-      TabPicture(1)   =   "frmActivos_ObrasProceso.frx":001C
-      Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "vGridA"
-      Tab(1).ControlCount=   1
-      TabCaption(2)   =   "Desembolsos"
-      TabPicture(2)   =   "frmActivos_ObrasProceso.frx":0038
-      Tab(2).ControlEnabled=   0   'False
-      Tab(2).Control(0)=   "vGridD"
-      Tab(2).ControlCount=   1
-      TabCaption(3)   =   "Finiquito"
-      TabPicture(3)   =   "frmActivos_ObrasProceso.frx":0054
-      Tab(3).ControlEnabled=   0   'False
-      Tab(3).Control(0)=   "cmdAplicar"
-      Tab(3).Control(1)=   "cboFiniquito"
-      Tab(3).Control(2)=   "dtpFiniquito"
-      Tab(3).Control(3)=   "Label3(0)"
-      Tab(3).ControlCount=   4
-      TabCaption(4)   =   "Resultados"
-      TabPicture(4)   =   "frmActivos_ObrasProceso.frx":0070
-      Tab(4).ControlEnabled=   0   'False
-      Tab(4).Control(0)=   "lsw"
-      Tab(4).Control(1)=   "cmdDetallar"
-      Tab(4).Control(2)=   "scTitulo"
-      Tab(4).ControlCount=   3
-      Begin XtremeSuiteControls.PushButton cmdAplicar 
-         Height          =   372
-         Left            =   -69840
-         TabIndex        =   42
-         Top             =   2400
-         Width           =   2412
-         _Version        =   1441793
-         _ExtentX        =   4254
-         _ExtentY        =   656
-         _StockProps     =   79
-         Caption         =   "Aplicar Finiquito"
+      Appearance      =   4
+      Color           =   32
+      ItemCount       =   5
+      SelectedItem    =   3
+      Item(0).Caption =   "Datos"
+      Item(0).ControlCount=   29
+      Item(0).Control(0)=   "txtRegistro"
+      Item(0).Control(1)=   "txtDisponible"
+      Item(0).Control(2)=   "txtDesembolso"
+      Item(0).Control(3)=   "txtFiniquito"
+      Item(0).Control(4)=   "txtNotas"
+      Item(0).Control(5)=   "txtPresuActual"
+      Item(0).Control(6)=   "txtAdendums"
+      Item(0).Control(7)=   "txtPresupuesto"
+      Item(0).Control(8)=   "txtUbicacion"
+      Item(0).Control(9)=   "txtEncargado"
+      Item(0).Control(10)=   "cbo"
+      Item(0).Control(11)=   "dtpInicio"
+      Item(0).Control(12)=   "dtpFinaliza"
+      Item(0).Control(13)=   "Label2(13)"
+      Item(0).Control(14)=   "Label2(12)"
+      Item(0).Control(15)=   "Label2(11)"
+      Item(0).Control(16)=   "Label2(10)"
+      Item(0).Control(17)=   "Label2(9)"
+      Item(0).Control(18)=   "Label2(7)"
+      Item(0).Control(19)=   "Label2(6)"
+      Item(0).Control(20)=   "Label2(5)"
+      Item(0).Control(21)=   "Label2(4)"
+      Item(0).Control(22)=   "Label2(3)"
+      Item(0).Control(23)=   "Label2(2)"
+      Item(0).Control(24)=   "lblEstado"
+      Item(0).Control(25)=   "Label2(1)"
+      Item(0).Control(26)=   "Label2(0)"
+      Item(0).Control(27)=   "txtProveedor"
+      Item(0).Control(28)=   "Label4"
+      Item(1).Caption =   "Adendums"
+      Item(1).ControlCount=   1
+      Item(1).Control(0)=   "vGridA"
+      Item(2).Caption =   "Desembolsos"
+      Item(2).ControlCount=   1
+      Item(2).Control(0)=   "vGridD"
+      Item(3).Caption =   "Finiquito"
+      Item(3).ControlCount=   4
+      Item(3).Control(0)=   "cmdAplicar"
+      Item(3).Control(1)=   "cboFiniquito"
+      Item(3).Control(2)=   "dtpFiniquito"
+      Item(3).Control(3)=   "Label3(0)"
+      Item(4).Caption =   "Resultados"
+      Item(4).ControlCount=   3
+      Item(4).Control(0)=   "lsw"
+      Item(4).Control(1)=   "cmdDetallar"
+      Item(4).Control(2)=   "scTitulo"
+      Begin XtremeSuiteControls.ListView lsw 
+         Height          =   3975
+         Left            =   -70000
+         TabIndex        =   29
+         Top             =   840
+         Visible         =   0   'False
+         Width           =   10935
+         _Version        =   1572864
+         _ExtentX        =   19288
+         _ExtentY        =   7011
+         _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
             Charset         =   0
-            Weight          =   700
+            Weight          =   400
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Appearance      =   7
+         View            =   3
+         FullRowSelect   =   -1  'True
+         Appearance      =   21
       End
       Begin VB.ComboBox cboFiniquito 
          BeginProperty Font 
@@ -199,105 +124,29 @@ Begin VB.Form frmActivos_ObrasProceso
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   312
-         ItemData        =   "frmActivos_ObrasProceso.frx":008C
-         Left            =   -72720
-         List            =   "frmActivos_ObrasProceso.frx":0099
+         Height          =   330
+         ItemData        =   "frmActivos_ObrasProceso.frx":0000
+         Left            =   360
+         List            =   "frmActivos_ObrasProceso.frx":000D
          Style           =   2  'Dropdown List
-         TabIndex        =   36
-         Top             =   1560
+         TabIndex        =   8
+         Top             =   1080
          Width           =   3972
       End
-      Begin MSComctlLib.ListView lsw 
-         Height          =   3972
-         Left            =   -74760
-         TabIndex        =   35
-         Top             =   840
-         Width           =   10572
-         _ExtentX        =   18653
-         _ExtentY        =   7011
-         View            =   3
-         LabelWrap       =   -1  'True
-         HideSelection   =   -1  'True
-         FullRowSelect   =   -1  'True
-         GridLines       =   -1  'True
-         HotTracking     =   -1  'True
-         HoverSelection  =   -1  'True
-         _Version        =   393217
-         ForeColor       =   -2147483640
-         BackColor       =   -2147483643
-         BorderStyle     =   1
-         Appearance      =   0
+      Begin XtremeSuiteControls.PushButton cmdDetallar 
+         Height          =   375
+         Left            =   -67240
+         TabIndex        =   5
+         Top             =   4920
+         Visible         =   0   'False
+         Width           =   5415
+         _Version        =   1572864
+         _ExtentX        =   9546
+         _ExtentY        =   656
+         _StockProps     =   79
+         Caption         =   ">>>  Detalla los activos o mejoras a realizar con esta obra  <<<"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         NumItems        =   7
-         BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            Text            =   "ID"
-            Object.Width           =   776
-         EndProperty
-         BeginProperty ColumnHeader(2) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   1
-            Text            =   "Tipo"
-            Object.Width           =   4304
-         EndProperty
-         BeginProperty ColumnHeader(3) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            Alignment       =   2
-            SubItemIndex    =   2
-            Text            =   "Placa"
-            Object.Width           =   2011
-         EndProperty
-         BeginProperty ColumnHeader(4) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            Alignment       =   1
-            SubItemIndex    =   3
-            Text            =   "Monto"
-            Object.Width           =   2540
-         EndProperty
-         BeginProperty ColumnHeader(5) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   4
-            Text            =   "IDX"
-            Object.Width           =   776
-         EndProperty
-         BeginProperty ColumnHeader(6) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   5
-            Text            =   "Activo"
-            Object.Width           =   2540
-         EndProperty
-         BeginProperty ColumnHeader(7) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            SubItemIndex    =   6
-            Text            =   "Tipo"
-            Object.Width           =   2540
-         EndProperty
-      End
-      Begin VB.TextBox txtProveedor 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   324
-         Left            =   2160
-         Locked          =   -1  'True
-         TabIndex        =   33
-         ToolTipText     =   "Presione F4 para Consultar"
-         Top             =   840
-         Width           =   7572
-      End
-      Begin VB.TextBox txtRegistro 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
             Name            =   "Calibri"
             Size            =   9
             Charset         =   0
@@ -306,233 +155,65 @@ Begin VB.Form frmActivos_ObrasProceso
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   324
-         Left            =   2160
-         Locked          =   -1  'True
-         TabIndex        =   30
-         Top             =   4080
-         Width           =   2415
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
       End
-      Begin VB.TextBox txtDisponible 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   324
-         Left            =   2160
-         Locked          =   -1  'True
-         TabIndex        =   27
-         Top             =   3720
-         Width           =   2415
-      End
-      Begin VB.TextBox txtDesembolso 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   324
-         Left            =   2160
-         Locked          =   -1  'True
-         TabIndex        =   26
-         Top             =   3360
-         Width           =   2415
-      End
-      Begin VB.TextBox txtFiniquito 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   324
-         Left            =   7320
-         Locked          =   -1  'True
-         TabIndex        =   24
-         Top             =   1560
-         Width           =   2412
-      End
-      Begin VB.TextBox txtNotas 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   1755
-         Left            =   5040
-         MultiLine       =   -1  'True
-         ScrollBars      =   2  'Vertical
-         TabIndex        =   22
-         Top             =   2640
-         Width           =   4932
-      End
-      Begin VB.TextBox txtPresuActual 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   324
-         Left            =   2160
-         Locked          =   -1  'True
-         TabIndex        =   20
-         Top             =   3000
-         Width           =   2415
-      End
-      Begin VB.TextBox txtAdendums 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   324
-         Left            =   2160
-         Locked          =   -1  'True
-         TabIndex        =   18
-         Top             =   2640
-         Width           =   2415
-      End
-      Begin VB.TextBox txtPresupuesto 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   324
-         Left            =   2160
-         TabIndex        =   16
-         Top             =   2280
-         Width           =   2415
-      End
-      Begin VB.TextBox txtUbicacion 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   324
-         Left            =   2160
-         TabIndex        =   14
-         Top             =   1920
-         Width           =   7572
-      End
-      Begin VB.TextBox txtEncargado 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   324
-         Left            =   2160
-         TabIndex        =   10
-         Top             =   1200
-         Width           =   7572
-      End
-      Begin VB.ComboBox cbo 
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   312
-         Left            =   2160
-         Style           =   2  'Dropdown List
+      Begin XtremeSuiteControls.PushButton cmdAplicar 
+         Height          =   375
+         Left            =   3240
          TabIndex        =   7
-         Top             =   480
-         Width           =   4932
-      End
-      Begin FPSpreadADO.fpSpread vGridA 
-         Height          =   4812
-         Left            =   -74880
-         TabIndex        =   37
-         Top             =   480
-         Width           =   10932
-         _Version        =   524288
-         _ExtentX        =   19283
-         _ExtentY        =   8488
-         _StockProps     =   64
-         BackColorStyle  =   1
-         BorderStyle     =   0
-         EditEnterAction =   5
+         Top             =   1920
+         Width           =   2415
+         _Version        =   1572864
+         _ExtentX        =   4254
+         _ExtentY        =   656
+         _StockProps     =   79
+         Caption         =   "Aplicar Finiquito"
+         BackColor       =   -2147483633
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
             Charset         =   0
-            Weight          =   400
+            Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         MaxCols         =   4
-         ScrollBars      =   2
-         SpreadDesigner  =   "frmActivos_ObrasProceso.frx":00F3
-         VScrollSpecialType=   2
-         AppearanceStyle =   1
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+      End
+      Begin XtremeSuiteControls.DateTimePicker dtpFiniquito 
+         Height          =   315
+         Left            =   4320
+         TabIndex        =   9
+         Top             =   1080
+         Width           =   1335
+         _Version        =   1572864
+         _ExtentX        =   2350
+         _ExtentY        =   550
+         _StockProps     =   68
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CustomFormat    =   "dd/MM/yyyy"
+         Format          =   3
       End
       Begin FPSpreadADO.fpSpread vGridD 
-         Height          =   4692
-         Left            =   -74880
-         TabIndex        =   38
-         Top             =   480
-         Width           =   10812
+         Height          =   4935
+         Left            =   -69880
+         TabIndex        =   11
+         Top             =   600
+         Visible         =   0   'False
+         Width           =   10815
          _Version        =   524288
-         _ExtentX        =   19071
-         _ExtentY        =   8276
+         _ExtentX        =   19076
+         _ExtentY        =   8705
          _StockProps     =   64
          BackColorStyle  =   1
          BorderStyle     =   0
@@ -548,17 +229,47 @@ Begin VB.Form frmActivos_ObrasProceso
          EndProperty
          MaxCols         =   6
          ScrollBars      =   2
-         SpreadDesigner  =   "frmActivos_ObrasProceso.frx":071A
+         SpreadDesigner  =   "frmActivos_ObrasProceso.frx":0067
+         VScrollSpecialType=   2
+         AppearanceStyle =   1
+      End
+      Begin FPSpreadADO.fpSpread vGridA 
+         Height          =   4935
+         Left            =   -69880
+         TabIndex        =   12
+         Top             =   480
+         Visible         =   0   'False
+         Width           =   10815
+         _Version        =   524288
+         _ExtentX        =   19076
+         _ExtentY        =   8705
+         _StockProps     =   64
+         BackColorStyle  =   1
+         BorderStyle     =   0
+         EditEnterAction =   5
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         MaxCols         =   4
+         ScrollBars      =   2
+         SpreadDesigner  =   "frmActivos_ObrasProceso.frx":0778
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
       Begin XtremeSuiteControls.DateTimePicker dtpInicio 
-         Height          =   312
-         Left            =   2160
-         TabIndex        =   39
-         Top             =   1560
-         Width           =   1332
-         _Version        =   1441793
+         Height          =   315
+         Left            =   -67840
+         TabIndex        =   13
+         Top             =   1680
+         Visible         =   0   'False
+         Width           =   1335
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -575,12 +286,13 @@ Begin VB.Form frmActivos_ObrasProceso
          Format          =   3
       End
       Begin XtremeSuiteControls.DateTimePicker dtpFinaliza 
-         Height          =   312
-         Left            =   5040
-         TabIndex        =   40
-         Top             =   1560
-         Width           =   1332
-         _Version        =   1441793
+         Height          =   315
+         Left            =   -64960
+         TabIndex        =   14
+         Top             =   1680
+         Visible         =   0   'False
+         Width           =   1335
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -596,16 +308,45 @@ Begin VB.Form frmActivos_ObrasProceso
          CustomFormat    =   "dd/MM/yyyy"
          Format          =   3
       End
-      Begin XtremeSuiteControls.DateTimePicker dtpFiniquito 
-         Height          =   312
-         Left            =   -68760
-         TabIndex        =   41
-         Top             =   1560
-         Width           =   1332
-         _Version        =   1441793
-         _ExtentX        =   2350
-         _ExtentY        =   550
-         _StockProps     =   68
+      Begin XtremeSuiteControls.FlatEdit txtNotas 
+         Height          =   1995
+         Left            =   -64960
+         TabIndex        =   30
+         Top             =   2760
+         Visible         =   0   'False
+         Width           =   4695
+         _Version        =   1572864
+         _ExtentX        =   8281
+         _ExtentY        =   3519
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         MultiLine       =   -1  'True
+         ScrollBars      =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.ComboBox cbo 
+         Height          =   330
+         Left            =   -67840
+         TabIndex        =   31
+         Top             =   600
+         Visible         =   0   'False
+         Width           =   5055
+         _Version        =   1572864
+         _ExtentX        =   8916
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   1973790
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -615,76 +356,24 @@ Begin VB.Form frmActivos_ObrasProceso
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         CustomFormat    =   "dd/MM/yyyy"
-         Format          =   3
+         Style           =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+         Text            =   "ComboBox1"
       End
-      Begin XtremeSuiteControls.PushButton cmdDetallar 
-         Height          =   372
-         Left            =   -72360
-         TabIndex        =   43
-         Top             =   4920
-         Width           =   5412
-         _Version        =   1441793
-         _ExtentX        =   9546
-         _ExtentY        =   656
-         _StockProps     =   79
-         Caption         =   ">>>  Detalla los activos o mejoras a realizar con esta obra  <<<"
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Appearance      =   7
-      End
-      Begin XtremeShortcutBar.ShortcutCaption scTitulo 
-         Height          =   372
-         Left            =   -74760
-         TabIndex        =   44
-         Top             =   480
-         Width           =   10572
-         _Version        =   1441793
-         _ExtentX        =   18648
-         _ExtentY        =   656
-         _StockProps     =   14
-         Caption         =   "Resultados y Desgloce de la Obra en Nuevos Activos o Mejoras y Adiciones a existentes"
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         SubItemCaption  =   -1  'True
-         Alignment       =   1
-      End
-      Begin VB.Label Label3 
-         Caption         =   "Datos del Finiquito:"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   252
-         Index           =   0
-         Left            =   -72720
+      Begin XtremeSuiteControls.FlatEdit txtProveedor 
+         Height          =   330
+         Left            =   -67840
          TabIndex        =   34
-         Top             =   1200
-         Width           =   1932
-      End
-      Begin VB.Label Label2 
-         BackStyle       =   0  'Transparent
-         Caption         =   "Proveedor"
-         BeginProperty Font 
+         Top             =   960
+         Visible         =   0   'False
+         Width           =   7575
+         _Version        =   1572864
+         _ExtentX        =   13361
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
             Charset         =   0
@@ -693,16 +382,275 @@ Begin VB.Form frmActivos_ObrasProceso
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
-         Index           =   13
-         Left            =   240
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtEncargado 
+         Height          =   330
+         Left            =   -67840
+         TabIndex        =   35
+         Top             =   1320
+         Visible         =   0   'False
+         Width           =   7575
+         _Version        =   1572864
+         _ExtentX        =   13361
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtUbicacion 
+         Height          =   330
+         Left            =   -67840
+         TabIndex        =   36
+         Top             =   2040
+         Visible         =   0   'False
+         Width           =   7575
+         _Version        =   1572864
+         _ExtentX        =   13361
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtFiniquito 
+         Height          =   330
+         Left            =   -62680
+         TabIndex        =   38
+         Top             =   1680
+         Visible         =   0   'False
+         Width           =   2415
+         _Version        =   1572864
+         _ExtentX        =   4260
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtPresupuesto 
+         Height          =   330
+         Left            =   -67840
+         TabIndex        =   39
+         Top             =   2760
+         Visible         =   0   'False
+         Width           =   2415
+         _Version        =   1572864
+         _ExtentX        =   4260
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtAdendums 
+         Height          =   330
+         Left            =   -67840
+         TabIndex        =   40
+         Top             =   3120
+         Visible         =   0   'False
+         Width           =   2415
+         _Version        =   1572864
+         _ExtentX        =   4260
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtPresuActual 
+         Height          =   330
+         Left            =   -67840
+         TabIndex        =   41
+         Top             =   3480
+         Visible         =   0   'False
+         Width           =   2415
+         _Version        =   1572864
+         _ExtentX        =   4260
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtDesembolso 
+         Height          =   330
+         Left            =   -67840
+         TabIndex        =   42
+         Top             =   3840
+         Visible         =   0   'False
+         Width           =   2415
+         _Version        =   1572864
+         _ExtentX        =   4260
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtDisponible 
+         Height          =   330
+         Left            =   -67840
+         TabIndex        =   43
+         Top             =   4200
+         Visible         =   0   'False
+         Width           =   2415
+         _Version        =   1572864
+         _ExtentX        =   4260
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtRegistro 
+         Height          =   330
+         Left            =   -67840
+         TabIndex        =   44
+         Top             =   4560
+         Visible         =   0   'False
+         Width           =   2415
+         _Version        =   1572864
+         _ExtentX        =   4260
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.Label Label4 
+         Height          =   255
+         Left            =   -64960
          TabIndex        =   32
-         Top             =   840
-         Width           =   1572
+         Top             =   2520
+         Visible         =   0   'False
+         Width           =   855
+         _Version        =   1572864
+         _ExtentX        =   1508
+         _ExtentY        =   450
+         _StockProps     =   79
+         Caption         =   "Notas:"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Transparent     =   -1  'True
+         WordWrap        =   -1  'True
       End
       Begin VB.Label Label2 
          BackStyle       =   0  'Transparent
-         Caption         =   "Pendiente de Registro"
+         Caption         =   "Tipo"
          BeginProperty Font 
             Name            =   "Calibri"
             Size            =   9
@@ -712,35 +660,17 @@ Begin VB.Form frmActivos_ObrasProceso
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
-         Index           =   12
-         Left            =   240
-         TabIndex        =   29
-         Top             =   4080
-         Width           =   1932
-      End
-      Begin VB.Label Label2 
-         BackStyle       =   0  'Transparent
-         Caption         =   "Disponible"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   252
-         Index           =   11
-         Left            =   240
+         Height          =   255
+         Index           =   0
+         Left            =   -69760
          TabIndex        =   28
-         Top             =   3720
-         Width           =   1692
+         Top             =   600
+         Visible         =   0   'False
+         Width           =   1575
       End
       Begin VB.Label Label2 
          BackStyle       =   0  'Transparent
-         Caption         =   "(-) Desembolsos"
+         Caption         =   "Encargado"
          BeginProperty Font 
             Name            =   "Calibri"
             Size            =   9
@@ -750,163 +680,13 @@ Begin VB.Form frmActivos_ObrasProceso
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
-         Index           =   10
-         Left            =   240
-         TabIndex        =   25
-         Top             =   3360
-         Width           =   1812
-      End
-      Begin VB.Label Label2 
-         Caption         =   "Finiquito"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   252
-         Index           =   9
-         Left            =   6480
-         TabIndex        =   23
-         Top             =   1560
-         Width           =   852
-      End
-      Begin VB.Label Label2 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFC0C0&
-         Caption         =   "Notas"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00FF0000&
-         Height          =   312
-         Index           =   8
-         Left            =   5040
-         TabIndex        =   21
-         Top             =   2280
-         Width           =   4692
-      End
-      Begin VB.Label Label2 
-         BackStyle       =   0  'Transparent
-         Caption         =   "Presu. Actual"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   252
-         Index           =   7
-         Left            =   240
-         TabIndex        =   19
-         Top             =   3000
-         Width           =   1812
-      End
-      Begin VB.Label Label2 
-         Caption         =   "(+) Adendums"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   252
-         Index           =   6
-         Left            =   240
-         TabIndex        =   17
-         Top             =   2640
-         Width           =   1812
-      End
-      Begin VB.Label Label2 
-         Caption         =   "Presupuesto"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   252
-         Index           =   5
-         Left            =   240
-         TabIndex        =   15
-         Top             =   2280
-         Width           =   1932
-      End
-      Begin VB.Label Label2 
-         BackStyle       =   0  'Transparent
-         Caption         =   "Ubicación"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   252
-         Index           =   4
-         Left            =   240
-         TabIndex        =   13
-         Top             =   1920
-         Width           =   1572
-      End
-      Begin VB.Label Label2 
-         Caption         =   "Finalización"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   252
-         Index           =   3
-         Left            =   3720
-         TabIndex        =   12
-         Top             =   1560
-         Width           =   1212
-      End
-      Begin VB.Label Label2 
-         BackStyle       =   0  'Transparent
-         Caption         =   "Inicio"
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   252
-         Index           =   2
-         Left            =   240
-         TabIndex        =   11
-         Top             =   1560
-         Width           =   1572
+         Height          =   255
+         Index           =   1
+         Left            =   -69760
+         TabIndex        =   27
+         Top             =   1320
+         Visible         =   0   'False
+         Width           =   1575
       End
       Begin VB.Label lblEstado 
          Alignment       =   2  'Center
@@ -923,15 +703,16 @@ Begin VB.Form frmActivos_ObrasProceso
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00FF0000&
-         Height          =   312
-         Left            =   7320
-         TabIndex        =   9
-         Top             =   480
-         Width           =   2412
+         Height          =   315
+         Left            =   -62680
+         TabIndex        =   26
+         Top             =   600
+         Visible         =   0   'False
+         Width           =   2415
       End
       Begin VB.Label Label2 
          BackStyle       =   0  'Transparent
-         Caption         =   "Encargado"
+         Caption         =   "Inicio"
          BeginProperty Font 
             Name            =   "Calibri"
             Size            =   9
@@ -941,16 +722,16 @@ Begin VB.Form frmActivos_ObrasProceso
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
-         Index           =   1
-         Left            =   240
-         TabIndex        =   8
-         Top             =   1200
-         Width           =   1572
+         Height          =   255
+         Index           =   2
+         Left            =   -69760
+         TabIndex        =   25
+         Top             =   1680
+         Visible         =   0   'False
+         Width           =   1575
       End
       Begin VB.Label Label2 
-         BackStyle       =   0  'Transparent
-         Caption         =   "Tipo"
+         Caption         =   "Finalización"
          BeginProperty Font 
             Name            =   "Calibri"
             Size            =   9
@@ -960,48 +741,275 @@ Begin VB.Form frmActivos_ObrasProceso
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   252
+         Height          =   255
+         Index           =   3
+         Left            =   -66280
+         TabIndex        =   24
+         Top             =   1680
+         Visible         =   0   'False
+         Width           =   1215
+      End
+      Begin VB.Label Label2 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Ubicación"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   4
+         Left            =   -69760
+         TabIndex        =   23
+         Top             =   2040
+         Visible         =   0   'False
+         Width           =   1575
+      End
+      Begin VB.Label Label2 
+         Caption         =   "Presupuesto"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   5
+         Left            =   -69760
+         TabIndex        =   22
+         Top             =   2760
+         Visible         =   0   'False
+         Width           =   1935
+      End
+      Begin VB.Label Label2 
+         Caption         =   "(+) Adendums"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   6
+         Left            =   -69760
+         TabIndex        =   21
+         Top             =   3120
+         Visible         =   0   'False
+         Width           =   1815
+      End
+      Begin VB.Label Label2 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Presu. Actual"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   7
+         Left            =   -69760
+         TabIndex        =   20
+         Top             =   3480
+         Visible         =   0   'False
+         Width           =   1815
+      End
+      Begin VB.Label Label2 
+         Caption         =   "Finiquito"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   9
+         Left            =   -63520
+         TabIndex        =   19
+         Top             =   1680
+         Visible         =   0   'False
+         Width           =   855
+      End
+      Begin VB.Label Label2 
+         BackStyle       =   0  'Transparent
+         Caption         =   "(-) Desembolsos"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   10
+         Left            =   -69760
+         TabIndex        =   18
+         Top             =   3840
+         Visible         =   0   'False
+         Width           =   1815
+      End
+      Begin VB.Label Label2 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Disponible"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   11
+         Left            =   -69760
+         TabIndex        =   17
+         Top             =   4200
+         Visible         =   0   'False
+         Width           =   1695
+      End
+      Begin VB.Label Label2 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Pendiente de Registro"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   12
+         Left            =   -69760
+         TabIndex        =   16
+         Top             =   4560
+         Visible         =   0   'False
+         Width           =   1935
+      End
+      Begin VB.Label Label2 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Proveedor"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Index           =   13
+         Left            =   -69760
+         TabIndex        =   15
+         Top             =   960
+         Visible         =   0   'False
+         Width           =   1575
+      End
+      Begin VB.Label Label3 
+         Caption         =   "Datos del Finiquito:"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
          Index           =   0
-         Left            =   240
+         Left            =   360
+         TabIndex        =   10
+         Top             =   720
+         Width           =   1935
+      End
+      Begin XtremeShortcutBar.ShortcutCaption scTitulo 
+         Height          =   375
+         Left            =   -70000
          TabIndex        =   6
          Top             =   480
-         Width           =   1572
+         Visible         =   0   'False
+         Width           =   10935
+         _Version        =   1572864
+         _ExtentX        =   19288
+         _ExtentY        =   661
+         _StockProps     =   14
+         Caption         =   "Resultados y Desgloce de la Obra en Nuevos Activos o Mejoras y Adiciones a existentes"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         SubItemCaption  =   -1  'True
+         Alignment       =   1
       End
    End
-   Begin VB.TextBox txtDescripcion 
-      Appearance      =   0  'Flat
-      BeginProperty Font 
+   Begin MSComctlLib.StatusBar StatusBarX 
+      Align           =   2  'Align Bottom
+      Height          =   255
+      Left            =   0
+      TabIndex        =   3
+      Top             =   6825
+      Width           =   11430
+      _ExtentX        =   20161
+      _ExtentY        =   450
+      _Version        =   393216
+      BeginProperty Panels {8E3867A5-8586-11D1-B16A-00C0F0283628} 
+         NumPanels       =   3
+         BeginProperty Panel1 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Bevel           =   0
+            Object.Width           =   6068
+            MinWidth        =   6068
+            Object.ToolTipText     =   "Usuario que Registra"
+         EndProperty
+         BeginProperty Panel2 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Bevel           =   0
+            Object.Width           =   4304
+            MinWidth        =   4304
+            Object.ToolTipText     =   "Fecha de Registro"
+         EndProperty
+         BeginProperty Panel3 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Alignment       =   2
+            Bevel           =   0
+            Object.Width           =   3775
+            MinWidth        =   3775
+            Object.ToolTipText     =   "Distribuido"
+         EndProperty
+      EndProperty
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   9
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   324
-      Left            =   3120
-      TabIndex        =   4
-      Top             =   720
-      Width           =   6852
-   End
-   Begin VB.TextBox txtCodigo 
-      Alignment       =   2  'Center
-      Appearance      =   0  'Flat
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   324
-      Left            =   1440
-      TabIndex        =   2
-      Top             =   720
-      Width           =   1695
    End
    Begin MSComctlLib.Toolbar tlb 
       Align           =   1  'Align Top
@@ -1049,11 +1057,57 @@ Begin VB.Form frmActivos_ObrasProceso
          EndProperty
       EndProperty
    End
+   Begin XtremeSuiteControls.FlatEdit txtDescripcion 
+      Height          =   330
+      Left            =   3120
+      TabIndex        =   33
+      Top             =   720
+      Width           =   6855
+      _Version        =   1572864
+      _ExtentX        =   12091
+      _ExtentY        =   582
+      _StockProps     =   77
+      ForeColor       =   0
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+   End
+   Begin XtremeSuiteControls.FlatEdit txtCodigo 
+      Height          =   330
+      Left            =   1440
+      TabIndex        =   37
+      Top             =   720
+      Width           =   1695
+      _Version        =   1572864
+      _ExtentX        =   2990
+      _ExtentY        =   582
+      _StockProps     =   77
+      ForeColor       =   0
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Alignment       =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+   End
    Begin VB.Label Label1 
       Alignment       =   2  'Center
       Appearance      =   0  'Flat
       BackColor       =   &H00FFC0C0&
-      BorderStyle     =   1  'Fixed Single
       Caption         =   "Descripción"
       BeginProperty Font 
          Name            =   "Calibri"
@@ -1068,7 +1122,7 @@ Begin VB.Form frmActivos_ObrasProceso
       Height          =   252
       Index           =   1
       Left            =   3120
-      TabIndex        =   3
+      TabIndex        =   2
       Top             =   480
       Width           =   6852
    End
@@ -1076,7 +1130,6 @@ Begin VB.Form frmActivos_ObrasProceso
       Alignment       =   2  'Center
       Appearance      =   0  'Flat
       BackColor       =   &H00FFC0C0&
-      BorderStyle     =   1  'Fixed Single
       Caption         =   "Contrato"
       BeginProperty Font 
          Name            =   "Calibri"
@@ -1102,6 +1155,9 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim strSQL As String, rs As New ADODB.Recordset
+Dim itmX As ListViewItem
+
 Dim vEdita As Boolean, vCodigo As String
 Dim vPaso As Boolean
 
@@ -1170,6 +1226,17 @@ On Error GoTo vError
  
 vModulo = 36
 
+With lsw.ColumnHeaders
+        .Clear
+        .Add , , "Id", 1800
+        .Add , , "Tipo", 2100, vbCenter
+        .Add , , "Placa Id", 2100, vbCenter
+        .Add , , "Monto", 2500, vbRightJustify
+        .Add , , "Id Add", 1500, vbCenter
+        .Add , , "Nombre", 3500
+        .Add , , "Tipo Activo", 3500
+End With
+
  vEdita = True
  Call sbToolBarIconos(tlb)
  Call sbToolBar(tlb, "nuevo")
@@ -1187,10 +1254,10 @@ vError:
 End Sub
 
 Private Sub sbLimpiaPantalla()
-Dim strSQL As String
 
-ssTab.Tab = 0
-txtDescripcion = ""
+
+tcMain.Item(0).Selected = True
+txtDescripcion.Text = ""
 
 vCodigo = ""
 txtCodigo = ""
@@ -1198,9 +1265,9 @@ txtCodigo = ""
 lblEstado.Caption = ""
 
 
-strSQL = "select rtrim(cod_tipo) + ' - ' + rtrim(descripcion) as 'ItmX'" _
+strSQL = "select rtrim(cod_tipo) as 'IdX', rtrim(descripcion) as 'ItmX'" _
        & " from Activos_obras_tipos"
-Call sbLlenaCbo(cbo, strSQL, False)
+Call sbCbo_Llena_New(cbo, strSQL, False, True)
 
 dtpInicio.Value = fxFechaServidor
 dtpFinaliza.Value = dtpInicio.Value
@@ -1223,10 +1290,11 @@ StatusBarX.Panels(1).Text = ""
 StatusBarX.Panels(2).Text = ""
 StatusBarX.Panels(3).Text = 0
 
-ssTab.TabEnabled(1) = False
-ssTab.TabEnabled(2) = False
-ssTab.TabEnabled(3) = False
-ssTab.TabEnabled(4) = False
+
+tcMain.Item(1).Enabled = False
+tcMain.Item(2).Enabled = False
+tcMain.Item(3).Enabled = False
+tcMain.Item(4).Enabled = False
 
 
 End Sub
@@ -1278,15 +1346,15 @@ End Sub
 
 
 
-Private Sub ssTab_Click(PreviousTab As Integer)
-Dim strSQL As String, rs As New ADODB.Recordset
-Dim itmX As ListItem
+
+Private Sub tcMain_SelectedChanged(ByVal Item As XtremeSuiteControls.ITabControlItem)
 
 On Error GoTo vError
 
 Me.MousePointer = vbHourglass
 
-Select Case ssTab.Tab
+Select Case Item.Index
+
   Case 1 'Adendums
      strSQL = "select cod_Adendum,descripcion,fecha,monto from Activos_obras_ade" _
            & " where contrato = '" & vCodigo & "'"
@@ -1303,16 +1371,16 @@ Select Case ssTab.Tab
     dtpFiniquito.Value = fxFechaServidor
     
   Case 4 'Resultados
-    strSQL = "select O.idx,'ACTIVO' as Tipo,O.num_placa,A.valor_historico as Monto" _
+    strSQL = "select O.ID_RESULTADOS,'ACTIVO' as Tipo,O.num_placa,A.valor_historico as Monto" _
            & ",O.id_adicion,A.nombre,T.descripcion as TA" _
            & " from Activos_obras_resultados O inner join Activos_Principal A on O.num_placa = A.num_placa" _
            & " inner join Activos_tipo_activo T on A.tipo_activo = T.tipo_activo" _
            & " where O.tipo = 'A' and O.contrato = '" & vCodigo & "'"
     strSQL = strSQL & " UNION "
-    strSQL = strSQL & "select O.idx,'MEJORAS' as Tipo,O.num_placa,A.Monto" _
+    strSQL = strSQL & "select O.ID_RESULTADOS,'MEJORAS' as Tipo,O.num_placa,A.Monto" _
            & ",O.id_adicion,A.descripcion as nombre,T.descripcion as TA" _
            & " from Activos_obras_resultados O inner join Activos_retiro_adicion A on O.num_placa = A.num_placa" _
-           & " and O.id_adicion = A.id" _
+           & " and O.id_adicion = A.ID_ADDRET" _
            & " inner join Activos_justificaciones T on A.cod_justificacion = T.cod_justificacion" _
            & " where O.tipo = 'M' and O.contrato = '" & vCodigo & "'"
     Call OpenRecordSet(rs, strSQL, 0)
@@ -1320,7 +1388,7 @@ Select Case ssTab.Tab
     lsw.ListItems.Clear
     
     Do While Not rs.EOF
-     Set itmX = lsw.ListItems.Add(, , rs!IdX)
+     Set itmX = lsw.ListItems.Add(, , rs!ID_RESULTADOS)
          itmX.SubItems(1) = rs!Tipo
          itmX.SubItems(2) = rs!num_placa
          itmX.SubItems(3) = Format(rs!monto, "Standard")
@@ -1391,7 +1459,7 @@ On Error GoTo vError
 
 Me.MousePointer = vbHourglass
 
-strSQL = "select O.*,rtrim(T.cod_tipo) + ' - ' + T.descripcion as TipoObra" _
+strSQL = "select O.*, T.descripcion as 'TipoObra'" _
        & ",P.descripcion as Proveedor" _
        & " from Activos_obras O inner join Activos_obras_Tipos T on O.cod_tipo = T.cod_tipo" _
        & " inner join cxp_proveedores P on O.cod_proveedor = P.cod_proveedor" _
@@ -1407,7 +1475,7 @@ If Not rs.BOF And Not rs.EOF Then
   txtCodigo = rs!contrato
  
   txtDescripcion = rs!Descripcion
-  cbo.Text = rs!tipoObra
+  Call sbCboAsignaDato(cbo, rs!TipoObra, True, rs!cod_tipo)
   
   lblEstado.Tag = rs!Estado
   
@@ -1422,34 +1490,34 @@ If Not rs.BOF And Not rs.EOF Then
      lblEstado.Caption = "Proyecto Descartado"
   End Select
   
-  txtNotas = rs!notas
+  txtNotas = rs!Notas
   
   txtProveedor = rs!Proveedor
   txtProveedor.Tag = rs!COD_PROVEEDOR
     
   txtFiniquito = rs!fecha_finiquito & ""
   txtEncargado = rs!encargado
-  dtpInicio.Value = rs!fecha_inicio
+  dtpInicio.Value = rs!fecha_Inicio
   dtpFinaliza.Value = rs!fecha_estimada
   txtUbicacion = rs!ubicacion
   
-  txtPresupuesto = Format(rs!presu_original, "Standard")
-  txtAdendums = Format(rs!addendums, "Standard")
-  txtPresuActual = Format(rs!presu_actual, "Standard")
-  txtDesembolso = Format(rs!desembolsado, "Standard")
-  txtDisponible = Format(rs!presu_actual - rs!desembolsado, "Standard")
-  txtRegistro = Format(rs!presu_actual - rs!distribuido, "Standard")
+  txtPresupuesto.Text = Format(rs!presu_original, "Standard")
+  txtAdendums.Text = Format(rs!addendums, "Standard")
+  txtPresuActual.Text = Format(rs!presu_actual, "Standard")
+  txtDesembolso.Text = Format(rs!desembolsado, "Standard")
+  txtDisponible.Text = Format(rs!presu_actual - rs!desembolsado, "Standard")
+  txtRegistro.Text = Format(rs!presu_actual - rs!distribuido, "Standard")
   
-  ssTab.Tab = 0
+  tcMain.Item(0).Selected = True
   
-  StatusBarX.Panels(1).Text = rs!crea_user & ""
-  StatusBarX.Panels(2).Text = rs!crea_fecha & ""
+  StatusBarX.Panels(1).Text = rs!Registro_Usuario & ""
+  StatusBarX.Panels(2).Text = rs!Registro_fecha & ""
   StatusBarX.Panels(3).Text = Format(rs!distribuido, "Standard")
   
-    ssTab.TabEnabled(1) = True
-    ssTab.TabEnabled(2) = True
-    ssTab.TabEnabled(3) = True
-    ssTab.TabEnabled(4) = True
+    tcMain.Item(1).Enabled = True
+    tcMain.Item(2).Enabled = True
+    tcMain.Item(3).Enabled = True
+    tcMain.Item(4).Enabled = True
   
 Else
   MsgBox "No se encontró registro verifique...", vbInformation
@@ -1490,7 +1558,6 @@ End If
 End Function
 
 Private Sub sbGuardar()
-Dim strSQL As String, rs As New ADODB.Recordset
 Dim i As Integer
 
 On Error GoTo vError
@@ -1505,18 +1572,18 @@ If vEdita Then
            & ",ubicacion = '" & txtUbicacion _
            & "',fecha_inicio = '" & Format(dtpInicio.Value, "yyyy/mm/dd") _
            & "',fecha_estimada = '" & Format(dtpFinaliza.Value, "yyyy/mm/dd") _
-           & "',cod_tipo = '" & SIFGlobal.fxCodText(cbo.Text) & "' where contrato = '" & vCodigo & "'"
+           & "',cod_tipo = '" & cbo.ItemData(cbo.ListIndex) & "' where contrato = '" & vCodigo & "'"
     Call ConectionExecute(strSQL)
  End If
   
 '  Call sbBitacora("Modifica", "Tipo Activo : " & vCodigo)
 
 Else
- 
+    
    vCodigo = txtCodigo
    strSQL = "insert into Activos_obras(contrato,cod_tipo,descripcion,estado,encargado,cod_proveedor" _
           & ",fecha_inicio,fecha_estimada,notas,ubicacion,presu_original,addendums,presu_actual" _
-          & ",desembolsado,distribuido,crea_user,crea_fecha) values('" & vCodigo & "','" & SIFGlobal.fxCodText(cbo.Text) _
+          & ",desembolsado,distribuido, registro_usuario, registro_fecha) values('" & vCodigo & "','" & cbo.ItemData(cbo.ListIndex) _
           & "','" & UCase(txtDescripcion) & "','P','" & txtEncargado & "','" & txtProveedor.Tag _
           & "','" & Format(dtpInicio.Value, "yyyy/mm/dd") & "','" & Format(dtpFinaliza.Value, "yyyy/mm/dd") _
           & "','" & txtNotas & "','" & txtUbicacion & "'," & CCur(txtPresupuesto) & ",0," & CCur(txtPresupuesto) & ",0,0,'" _

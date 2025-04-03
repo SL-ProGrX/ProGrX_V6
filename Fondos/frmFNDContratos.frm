@@ -7,7 +7,7 @@ Object = "{B8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.TaskPanel.v2
 Begin VB.Form frmFNDContratos 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Contratos"
-   ClientHeight    =   7980
+   ClientHeight    =   8325
    ClientLeft      =   45
    ClientTop       =   330
    ClientWidth     =   11970
@@ -15,7 +15,7 @@ Begin VB.Form frmFNDContratos
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
-   ScaleHeight     =   7980
+   ScaleHeight     =   8325
    ScaleWidth      =   11970
    Begin XtremeTaskPanel.TaskPanel tpMain 
       Height          =   6888
@@ -665,7 +665,7 @@ Begin VB.Form frmFNDContratos
       Height          =   255
       Left            =   0
       TabIndex        =   1
-      Top             =   7725
+      Top             =   8070
       Width           =   11970
       _ExtentX        =   21114
       _ExtentY        =   450
@@ -710,8 +710,8 @@ Begin VB.Form frmFNDContratos
       Left            =   0
       TabIndex        =   0
       Top             =   0
-      Width           =   5850
-      _ExtentX        =   10319
+      Width           =   4170
+      _ExtentX        =   7355
       _ExtentY        =   582
       ButtonWidth     =   609
       ButtonHeight    =   582
@@ -2089,15 +2089,15 @@ Begin VB.Form frmFNDContratos
          End
       End
       Begin XtremeSuiteControls.GroupBox gb_Complementarios 
-         Height          =   4296
+         Height          =   4530
          Left            =   -70000
          TabIndex        =   39
          Top             =   120
          Visible         =   0   'False
-         Width           =   9132
+         Width           =   9135
          _Version        =   1572864
-         _ExtentX        =   16108
-         _ExtentY        =   7578
+         _ExtentX        =   16113
+         _ExtentY        =   7990
          _StockProps     =   79
          Caption         =   "Datos Complementarios.:"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -2471,14 +2471,14 @@ Begin VB.Form frmFNDContratos
             End
          End
          Begin XtremeSuiteControls.GroupBox GroupBox3 
-            Height          =   1455
+            Height          =   1695
             Left            =   360
             TabIndex        =   49
             Top             =   3240
             Width           =   8535
             _Version        =   1572864
             _ExtentX        =   15055
-            _ExtentY        =   2566
+            _ExtentY        =   2990
             _StockProps     =   79
             Caption         =   "Información para Pago a Terceros (Albacea)"
             ForeColor       =   8388608
@@ -2700,10 +2700,10 @@ Begin VB.Form frmFNDContratos
          BorderStyle     =   2
          Begin XtremeSuiteControls.PushButton btnTP_Refresh 
             Height          =   375
-            Left            =   3840
+            Left            =   4200
             TabIndex        =   114
             ToolTipText     =   "Revisa si fue autorizada!"
-            Top             =   2400
+            Top             =   3120
             Width           =   1815
             _Version        =   1572864
             _ExtentX        =   3201
@@ -2722,7 +2722,7 @@ Begin VB.Form frmFNDContratos
             EndProperty
             UseVisualStyle  =   -1  'True
             Appearance      =   17
-            Picture         =   "frmFNDContratos.frx":34AD
+            Picture         =   "frmFNDContratos.frx":34AA
          End
          Begin XtremeSuiteControls.FlatEdit txtGestionId 
             Height          =   315
@@ -2860,10 +2860,10 @@ Begin VB.Form frmFNDContratos
          End
          Begin XtremeSuiteControls.PushButton btnTP_Solicitar 
             Height          =   375
-            Left            =   2160
+            Left            =   2520
             TabIndex        =   120
             ToolTipText     =   "Revisa si fue autorizada!"
-            Top             =   2400
+            Top             =   3120
             Width           =   1695
             _Version        =   1572864
             _ExtentX        =   2990
@@ -2882,14 +2882,14 @@ Begin VB.Form frmFNDContratos
             EndProperty
             UseVisualStyle  =   -1  'True
             Appearance      =   17
-            Picture         =   "frmFNDContratos.frx":3BAD
+            Picture         =   "frmFNDContratos.frx":3BAA
          End
          Begin XtremeSuiteControls.PushButton btnTP_Cerrar 
             Height          =   375
-            Left            =   5640
+            Left            =   6000
             TabIndex        =   127
             ToolTipText     =   "Revisa si fue autorizada!"
-            Top             =   2400
+            Top             =   3120
             Width           =   1215
             _Version        =   1572864
             _ExtentX        =   2143
@@ -2908,7 +2908,57 @@ Begin VB.Form frmFNDContratos
             EndProperty
             UseVisualStyle  =   -1  'True
             Appearance      =   17
-            Picture         =   "frmFNDContratos.frx":42C6
+            Picture         =   "frmFNDContratos.frx":42C3
+         End
+         Begin XtremeSuiteControls.FlatEdit txtTP_Observacion 
+            Height          =   1095
+            Left            =   1920
+            TabIndex        =   133
+            Top             =   1800
+            Width           =   6495
+            _Version        =   1572864
+            _ExtentX        =   11456
+            _ExtentY        =   1931
+            _StockProps     =   77
+            ForeColor       =   0
+            BackColor       =   -2147483643
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            MultiLine       =   -1  'True
+            ScrollBars      =   2
+            Appearance      =   6
+            UseVisualStyle  =   0   'False
+         End
+         Begin XtremeSuiteControls.Label Label1 
+            Height          =   255
+            Index           =   3
+            Left            =   240
+            TabIndex        =   132
+            Top             =   1800
+            Width           =   1575
+            _Version        =   1572864
+            _ExtentX        =   2778
+            _ExtentY        =   450
+            _StockProps     =   79
+            Caption         =   "Observación:"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Transparent     =   -1  'True
+            WordWrap        =   -1  'True
          End
          Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption2 
             Height          =   375
@@ -3083,67 +3133,67 @@ Begin VB.Form frmFNDContratos
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   16
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":4904
+            Picture         =   "frmFNDContratos.frx":4901
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":4B79
+            Picture         =   "frmFNDContratos.frx":4B76
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":4E12
+            Picture         =   "frmFNDContratos.frx":4E0F
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":4F95
+            Picture         =   "frmFNDContratos.frx":4F92
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":512D
+            Picture         =   "frmFNDContratos.frx":512A
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":52D5
+            Picture         =   "frmFNDContratos.frx":52D2
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":5477
+            Picture         =   "frmFNDContratos.frx":5474
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":5602
+            Picture         =   "frmFNDContratos.frx":55FF
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":578D
+            Picture         =   "frmFNDContratos.frx":578A
             Key             =   ""
          EndProperty
          BeginProperty ListImage10 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":5891
+            Picture         =   "frmFNDContratos.frx":588E
             Key             =   ""
          EndProperty
          BeginProperty ListImage11 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":5B20
+            Picture         =   "frmFNDContratos.frx":5B1D
             Key             =   ""
          EndProperty
          BeginProperty ListImage12 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":5C2C
+            Picture         =   "frmFNDContratos.frx":5C29
             Key             =   ""
          EndProperty
          BeginProperty ListImage13 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":5EA8
+            Picture         =   "frmFNDContratos.frx":5EA5
             Key             =   ""
          EndProperty
          BeginProperty ListImage14 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":5F6E
+            Picture         =   "frmFNDContratos.frx":5F6B
             Key             =   ""
          EndProperty
          BeginProperty ListImage15 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":610E
+            Picture         =   "frmFNDContratos.frx":610B
             Key             =   ""
          EndProperty
          BeginProperty ListImage16 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFNDContratos.frx":62AA
+            Picture         =   "frmFNDContratos.frx":62A7
             Key             =   ""
          EndProperty
       EndProperty
@@ -3171,7 +3221,57 @@ Begin VB.Form frmFNDContratos
       EndProperty
       FlatStyle       =   -1  'True
       UseVisualStyle  =   -1  'True
-      Picture         =   "frmFNDContratos.frx":6355
+      Picture         =   "frmFNDContratos.frx":6352
+   End
+   Begin XtremeSuiteControls.PushButton btnSolicitud 
+      Height          =   375
+      Left            =   4200
+      TabIndex        =   131
+      ToolTipText     =   "Revisa si fue autorizada!"
+      Top             =   0
+      Width           =   1335
+      _Version        =   1572864
+      _ExtentX        =   2355
+      _ExtentY        =   661
+      _StockProps     =   79
+      Caption         =   "Solicitud"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      FlatStyle       =   -1  'True
+      UseVisualStyle  =   -1  'True
+      Picture         =   "frmFNDContratos.frx":6970
+   End
+   Begin XtremeSuiteControls.PushButton btnEmail 
+      Height          =   375
+      Left            =   5640
+      TabIndex        =   134
+      ToolTipText     =   "Revisa si fue autorizada!"
+      Top             =   0
+      Width           =   1095
+      _Version        =   1572864
+      _ExtentX        =   1931
+      _ExtentY        =   661
+      _StockProps     =   79
+      Caption         =   "Email"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      FlatStyle       =   -1  'True
+      UseVisualStyle  =   -1  'True
+      Picture         =   "frmFNDContratos.frx":7077
    End
    Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption1 
       Height          =   372
@@ -3370,7 +3470,8 @@ End If
 strSQL = "select dbo.fxFnd_Contrato_Valida_Plazo(" & cboOperadora.ItemData(cboOperadora.ListIndex) & " ,'" & txtCodigo.Text _
        & "', " & txtPlazo.Text & ") as 'Plazo_Valida'" _
        & ", dbo.fxFnd_Seguridad_Acceso_Planes('" & glogon.Usuario & "', " & cboOperadora.ItemData(cboOperadora.ListIndex) _
-       & ", '" & txtCodigo.Text & "') as 'Acceso_Valida'"
+       & ", '" & txtCodigo.Text & "') as 'Acceso_Valida'" _
+       & ", (select  count(*) From FND_PLANES_DESTINOS_AHORRO Where cod_Plan = '" & txtCodigo.Text & "' and activo = 1) as 'Destinos'"
 
 
 Call OpenRecordSet(rs, strSQL)
@@ -3381,6 +3482,21 @@ End If
 
 If rs!Acceso_Valida = 0 Then
     vMensaje = " - El usuario no tiene Autorización para gestionar este Plan..." & vbCrLf
+End If
+
+Dim pDestinoIndicados As Long
+
+If rs!Destinos > 0 Then
+  pDestinoIndicados = 0
+  For i = 1 To gDestinos.MaxRows
+      gDestinos.Row = i
+      gDestinos.Col = 1
+      If gDestinos.Text <> "" Then
+          pDestinoIndicados = pDestinoIndicados + 1
+      End If
+  Next i
+  
+  If pDestinoIndicados = 0 Then vMensaje = vMensaje & " - No ha Indicado Ningún Destino/Objetivo para este Plan..." & vbCrLf
 End If
 
 
@@ -3408,10 +3524,10 @@ If Len(vMensaje) = 0 Then
           & " and cod_plan = '" & txtCodigo.Text & "'"
    Call OpenRecordSet(rs, strSQL)
    If Mid(cboPlazo.Text, 1, 1) = "D" Then
-        If CLng(txtPlazo.Text) < rs!Plazo_Minimo Then vMensaje = vMensaje & " - El Plazo no cumple con el plazo mínimo permitido..." & vbCrLf
+        If CLng(txtPlazo.Text) < rs!Plazo_Minimo Then vMensaje = vMensaje & " - El Plazo no cumple con el plazo mínimo permitido (" & rs!Plazo_Minimo & ")..." & vbCrLf
    End If
    If Mid(cboPlazo.Text, 1, 1) = "M" Then
-        If CLng(txtPlazo.Text) * 30 < rs!Plazo_Minimo Then vMensaje = vMensaje & " - El Plazo no cumple con el plazo mínimo permitido.." & vbCrLf
+        If CLng(txtPlazo.Text) * 30 < rs!Plazo_Minimo Then vMensaje = vMensaje & " - El Plazo no cumple con el plazo mínimo permitido (" & rs!Plazo_Minimo & ")..." & vbCrLf
    End If
   If mTipoDeduc = "M" Then
     If txtMonto.Visible And CCur(txtMonto.Text) < rs!MONTO_MINIMO Then vMensaje = vMensaje & " - El monto es menor al mínimo permitido..." & vbCrLf
@@ -3506,7 +3622,11 @@ gb_Cupones.Visible = False
 gb_Retiros.Visible = False
 
 vCodigo = 0
+
+'txtCodigo.Locked = False
+
 txtContrato.Text = ""
+
 txtEstado.Text = "ACTIVO"
 txtCedula.Text = ""
 txtCedula.Locked = False
@@ -3577,6 +3697,96 @@ End If
 
  GLOBALES.gCedulaActual = txtCedula.Text
  Call sbFormsCall("frmFnd_Calculadora_Inversiones")
+End Sub
+
+Private Sub sbEmail()
+
+On Error GoTo vError
+
+
+If Not IsNumeric(txtContrato.Text) Then
+   Exit Sub
+End If
+
+Me.MousePointer = vbHourglass
+
+strSQL = "exec spFnd_Contrato_Notifica_Email " & cboOperadora.ItemData(cboOperadora.ListIndex) _
+       & ", '" & txtCodigo.Text & "', " & txtContrato.Text & ", '" & glogon.Usuario & "'"
+Call OpenRecordSet(rs, strSQL)
+
+Me.MousePointer = vbDefault
+
+If rs!Pass = 1 Then
+    MsgBox "Correo de Solicitud de Contrato enviado a la persona!", vbInformation
+Else
+    MsgBox rs!Mensaje, vbInformation
+End If
+rs.Close
+
+Exit Sub
+
+vError:
+  Me.MousePointer = vbDefault
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+
+End Sub
+
+
+Private Sub btnEmail_Click()
+Call sbEmail
+End Sub
+
+Private Sub btnSolicitud_Click()
+On Error GoTo vError
+
+If txtContrato.Text = "0" Or txtContrato.Text = "" Then
+  MsgBox "Registre el Contrato Primero, luego indique la solicitud", vbInformation
+  Exit Sub
+End If
+
+If txtInversion.Visible Then
+  MsgBox "El formulario de solicitud no aplica para los Certificados a Plazo!", vbInformation
+  Exit Sub
+End If
+
+Me.MousePointer = vbHourglass
+
+On Error GoTo vError
+
+With frmContenedor.Crt
+  .Reset
+  .WindowShowGroupTree = False
+  .WindowShowPrintSetupBtn = True
+  .WindowShowRefreshBtn = True
+  .WindowShowSearchBtn = True
+  .WindowState = crptMaximized
+  .WindowTitle = "Reportes del Módulo de Fondos"
+  
+  .Connect = glogon.ConectRPT
+
+  .ReportFileName = SIFGlobal.fxPathReportes("Fondos_Solicitud_Ahorros_Contrato.rpt")
+  
+  strSQL = "{FND_CONTRATOS.COD_OPERADORA} = " & cboOperadora.ItemData(cboOperadora.ListIndex) _
+         & " And {FND_CONTRATOS.COD_PLAN} = '" & txtCodigo.Text _
+         & "' And {FND_CONTRATOS.COD_CONTRATO} = " & txtContrato.Text
+
+  .SelectionFormula = strSQL
+  
+  .Formulas(0) = "Fecha='Fecha: " & Format(fxFechaServidor, "yyyy-mm-dd") & "'"
+  .Formulas(1) = "Usuario='Usuario: " & Trim(glogon.Usuario) & "'"
+  .Formulas(2) = "Empresa='" & Trim(GLOBALES.gstrNombreEmpresa) & "'"
+  .Formulas(3) = "fxBarraCodigo='*" & txtContrato.Text & "*'"
+  
+  .PrintReport
+End With
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+  Me.MousePointer = vbDefault
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 End Sub
 
 Private Sub btnTasaPreferencial_Click()
@@ -3651,6 +3861,12 @@ On Error GoTo vError
 Dim vMargen As Currency, vMensaje As String
 Dim vCuponFrecuencia As Long
 
+
+If Len(txtTP_Observacion.Text) < 10 Then
+  MsgBox "Indique una Observación válida!", vbExclamation
+  Exit Sub
+End If
+
 If Mid(txtGestionEstado.Text, 1, 1) = "A" Then Exit Sub
 If chkTasaPreferencial.Value = xtpChecked Then Exit Sub
 
@@ -3683,7 +3899,7 @@ End If
 strSQL = "exec spFnd_TP_Solicitud " & cboOperadora.ItemData(cboOperadora.ListIndex) & ", '" & txtCodigo.Text & "', " & txtContrato.Text _
        & ", '" & txtCedula.Text & "', " & CCur(txtTP_Calculada.Text) & ", " & CCur(txtTP_Margen.Text) & ", " & CCur(txtTP_Solicitada.Text) _
        & ", " & txtPlazo.Text & ", " & cboCuponFrecuencia.ItemData(cboCuponFrecuencia.ListIndex) & ", " & CCur(txtInversion.Text) _
-       & ", '" & glogon.Usuario & "'"
+       & ", '" & glogon.Usuario & "','" & txtTP_Observacion.Text & "'"
        
 Call OpenRecordSet(rs, strSQL)
 
@@ -3741,6 +3957,9 @@ rs.Close
 If chkCuponPaga.Value = xtpUnchecked Then
  'Al Vencimiento
  vAddMonths = 1000
+   dtpCorte.Enabled = True
+Else
+   dtpCorte.Enabled = False
 End If
 
 Select Case vAddMonths
@@ -3804,7 +4023,7 @@ Private Sub cboPlazoInversion_Click()
 If vPaso Then Exit Sub
 
 
-If cboPlazoInversion.Visible And cboPlazoInversion.ListIndex > 0 Then
+If cboPlazoInversion.Visible And cboPlazoInversion.ListIndex >= 0 Then
  
  vPaso = True
     strSQL = "exec spFnd_Cupon_Frecuencia " & cboPlazoInversion.ItemData(cboPlazoInversion.ListIndex) & ",  '" & txtCodigo.Text & "'"
@@ -3986,6 +4205,10 @@ vGrid.AppearanceStyle = fxGridStyle
 
 Call sbTaskPanel_Load
 
+tcMain.Item(0).Selected = True
+
+Me.Height = 8370
+
 For i = 0 To tcMain.ItemCount - 1
     tcMain.Item(i).Enabled = False
 Next i
@@ -4044,7 +4267,9 @@ strSQL = "select rtrim(nombre) as 'ItmX',cod_vendedor as 'IdX' from FND_vendedor
 Call sbCbo_Llena_New(cboVendedor, strSQL, False, True)
 
 
-strSQL = "select id_Banco as 'IdX', rtrim(descripcion) as 'ItmX' from Tes_Bancos where Estado = 'A'"
+strSQL = "select B.id_Banco as 'IdX', rtrim(B.descripcion) as 'ItmX'" _
+       & " from Tes_Bancos B inner join FND_BANCOS_X X on B.id_Banco = X.Id_Banco" _
+       & " where B.Estado = 'A' and (X.Cheque = 1 or X.Transferencia = 1)"
 Call sbCbo_Llena_New(cboBanco, strSQL, False, True)
 
 
@@ -4127,7 +4352,7 @@ If Not rs.BOF And Not rs.EOF Then
      
      vCambios.vCuota = txtMonto.Text
      
-     If rs!tipo_cdp = 1 Then
+     If rs!TIPO_CDP = 1 Then
         lblMensualidad.Visible = False
         txtMonto.Visible = False
         
@@ -4143,8 +4368,14 @@ If Not rs.BOF And Not rs.EOF Then
         
         gbCupones.Enabled = True
         
-        chkCuponPaga.Value = IIf(rs!PAGO_CUPONESCDP = 1, xtpChecked, xtpUnchecked)
+        chkCuponPaga.Value = IIf(rs!PAGO_CUPONESCDP = True, xtpChecked, xtpUnchecked)
         chkCuponPaga.Enabled = True
+        
+        If rs!PAGO_CUPONESCDP = True Then
+            dtpCorte.Enabled = False
+        Else
+            dtpCorte.Enabled = True
+        End If
         
         If IsNull(rs!TASA_PREFERENCIAL_APLICA) Then
          vTasaPreferencial = False
@@ -4154,6 +4385,10 @@ If Not rs.BOF And Not rs.EOF Then
         
         btnTasaPreferencial.Visible = True
         
+        dtpCorte.Enabled = False
+        chkDeducePlanilla.Value = xtpUnchecked
+        chkDeducePlanilla.Enabled = False
+     
      Else
         lblMensualidad.Visible = True
         txtMonto.Visible = True
@@ -4173,6 +4408,9 @@ If Not rs.BOF And Not rs.EOF Then
         chkCuponPaga.Enabled = False
      
         btnTasaPreferencial.Visible = False
+     
+        chkDeducePlanilla.Enabled = True
+     
      
      End If
      
@@ -4208,7 +4446,7 @@ If Not rs.BOF And Not rs.EOF Then
   
   cboVendedor.Text = rs!Vendedor
   
-  txtTasa.Text = Format(rs!Tasa_Referencia & "", "Standard")
+  txtTasa.Text = Format(rs!TASA_REFERENCIA & "", "Standard")
   txtTasaTipo.Text = IIf(rs!Tasa_Tipo = "V", "Variante", "Fija")
   txtPtsAdd.Text = Format(rs!Tasa_PtsAdd & "", "Standard")
    
@@ -4220,9 +4458,9 @@ If Not rs.BOF And Not rs.EOF Then
 '  Call sbCboAsignaDato(cboCuponFrecuencia, rs!Frecuencia_Cupon_Desc, True, rs!Frecuencia_Cupon_Id)
   
   
-  txtAcumAportes.Text = Format(rs!APORTES, "Standard")
+  txtAcumAportes.Text = Format(rs!Aportes, "Standard")
   txtAcumRend.Text = Format(rs!Rendimiento, "Standard")
-  txtAcumTotal.Text = Format(rs!APORTES + rs!Rendimiento, "Standard")
+  txtAcumTotal.Text = Format(rs!Aportes + rs!Rendimiento, "Standard")
   
   txtMontoTransito.Text = Format(IIf(IsNull(rs!Monto_Transito), 0, rs!Monto_Transito), "Standard")
   txtDisponible.Text = Format(CCur(txtAcumTotal.Text) - CCur(txtMontoTransito.Text), "Standard")
@@ -4239,7 +4477,7 @@ If Not rs.BOF And Not rs.EOF Then
   End If
   vCambios.vDescPlazo = cboPlazo.Text
   
-  dtpCorte.Value = Format(IIf(IsNull(rs!Fecha_Corte), rs!Fecha_Inicio, rs!Fecha_Corte), "dd/mm/yyyy")
+  dtpCorte.Value = Format(IIf(IsNull(rs!fecha_corte), rs!Fecha_Inicio, rs!fecha_corte), "dd/mm/yyyy")
   
   
   chkDeducePlanilla.Value = rs!Ind_Deduccion
@@ -4281,7 +4519,7 @@ If Not rs.BOF And Not rs.EOF Then
   
   
   'Si tiene aportes y es CDP, Bloquear los plazos y tasas y tipo de plazo
-  If rs!tipo_cdp = 1 Then
+  If rs!TIPO_CDP = 1 Then
     vPaso = True
         Call sbCboAsignaDato(cboPlazoInversion, rs!Plazo_Desc, True, rs!Plazo_Id)
         Call sbCboAsignaDato(cboCuponFrecuencia, rs!Frecuencia_Cupon_Desc, True, rs!Frecuencia_Cupon_Id)
@@ -4290,23 +4528,29 @@ If Not rs.BOF And Not rs.EOF Then
   End If
   
   cboCuponFrecuencia.Locked = True
-  If vTipoCDP And rs!APORTES > 0 Then
+  If vTipoCDP And rs!Aportes > 0 Then
      txtInversion.Locked = True
      cboPlazo.Locked = True
      txtPlazo.Locked = True
      dtpCorte.Enabled = False
   End If
   
-  If vTipoCDP And rs!APORTES = 0 Then
+  If vTipoCDP And rs!Aportes = 0 Then
      txtInversion.Locked = False
      cboPlazo.Locked = False
      txtPlazo.Locked = False
-     dtpCorte.Enabled = True
+     
+    If rs!PAGO_CUPONESCDP = True Then
+        dtpCorte.Enabled = False
+    Else
+        dtpCorte.Enabled = True
+    End If
+        
      cboCuponFrecuencia.Locked = False
   End If
   
   'Esto para todos los demas contratos
-  If rs!APORTES > 0 Then
+  If rs!Aportes > 0 Then
      txtCedula.Locked = True
      txtNombre.Locked = True
   Else
@@ -4344,7 +4588,6 @@ Exit Sub
 vError:
  Me.MousePointer = vbDefault
  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
- Resume
 
 End Sub
 
@@ -4356,7 +4599,9 @@ On Error GoTo vError
 
 Me.MousePointer = vbHourglass
 
-strSQL = "select DESCRIPCION, TIPO_DEDUC, PORC_DEDUC, TIPO_CDP, PAGO_CUPONES" _
+tcMain.Item(0).Selected = True
+
+strSQL = "select DESCRIPCION, TIPO_DEDUC, PORC_DEDUC, TIPO_CDP, PAGO_CUPONES, DEDUCIR_PLANILLA, WEB_VENCE" _
        & " from fnd_Planes" _
        & " where cod_operadora = " & cboOperadora.ItemData(cboOperadora.ListIndex) _
        & " and cod_plan='" & Trim(pCodigo) & "'"
@@ -4369,13 +4614,30 @@ If Not rs.BOF And Not rs.EOF Then
   mTipoDeduc = rs!Tipo_Deduc
   mPorcRef = rs!Porc_Deduc
 
+  If rs!DEDUCIR_PLANILLA = 1 Then
+    chkDeducePlanilla.Value = xtpChecked
+    chkDeducePlanilla.Enabled = True
+  Else
+    chkDeducePlanilla.Value = xtpUnchecked
+    chkDeducePlanilla.Enabled = False
+  End If
 
+  dtpCorte.Enabled = True
+  txtPlazo.Locked = False
+  cboPlazo.Enabled = True
+      
+  If Not IsNull(rs!web_vence) Or rs!TIPO_CDP = 1 Then
+      dtpCorte.Enabled = False
+      txtPlazo.Locked = True
+      cboPlazo.Enabled = False
+  End If
+  
 
   If rs!Tipo_Deduc = "M" Then
      lblPorcentajeDesc.Visible = False
      txtPorcentaje.Visible = False
      
-     If rs!tipo_cdp = 1 Then
+     If rs!TIPO_CDP = 1 Then
         lblMensualidad.Visible = False
         txtMonto.Visible = False
         
@@ -4562,6 +4824,10 @@ If vEdita Then
      Call sbGuardaCambios("06", "Anterior " & IIf((vCambios.vDedPlanilla = 1), "Sí", "No") & " Nuevo " & IIf((chkDeducePlanilla.Value = 1), "Sí", "No"))
   End If
  
+ 
+   Call sbTrazabilidad_Inserta("04", Trim(txtContrato.Text) & "-" & Trim(txtCodigo.Text), txtContrato.Text, False)
+ 
+ 
 Else
 
    lngContrato = fxConsecutivoContrato
@@ -4601,6 +4867,9 @@ Else
    Call sbSIFRegistraTags(txtCodigo.Text, "S09", "Fondos", txtContrato.Text, "FND", txtCodigo.Text, txtContrato.Text, txtCedula.Text)
    Call sbGuardaCambios("05", "Mensualidad: " & txtMonto.Text & " ¦ Inversión: " & txtInversion.Text)
       
+      
+   Call sbTrazabilidad_Inserta("04", Trim(txtContrato.Text) & "-" & Trim(txtCodigo.Text), txtContrato.Text)
+      
 '   ssTabAux.TabEnabled(3) = True
     
 End If
@@ -4612,10 +4881,43 @@ If vTipoCDP Then
   Call ConectionExecute(strSQL)
 End If
 
+'Guarda Destinos/Objetivos
+Dim i As Long
+With gDestinos
+    
+    For i = 1 To .MaxRows
+        .Row = i
+        .Col = 1
+        If .Text = "-1" Then
+          .Col = 2
+          strSQL = "insert into FND_CONTRATOS_DESTINOS_AHORRO(ID_DESTINO, COD_PLAN, COD_CONTRATO, OBSERVACIONES, FEC_REGISTRO, USU_REGISTRO) values(" _
+                 & .Text & ", '" & Trim(txtCodigo.Text) & "', " & txtContrato.Text & ", '"
+          .Col = 4
+          strSQL = strSQL & .Text & "', dbo.MyGetdate(), '" & glogon.Usuario & "')"
+        
+          Call ConectionExecute(strSQL)
+          
+          strSQL = "select isnull(max(ID_REGISTRO),0) as IdSeQ from FND_CONTRATOS_DESTINOS_AHORRO"
+          Call OpenRecordSet(rs, strSQL)
+          
+          .Col = 1
+          .Text = CStr(rs!IdSeQ)
+          
+          rs.Close
+        End If
+    Next i
+
+End With
+
+
 vEdita = True
 Call sbToolBar(Me.tlb, "activo")
 
 txtContrato.SetFocus
+'Imprime Boleta de Solicitud
+If Not txtInversion.Visible Then
+  Call btnSolicitud_Click
+End If
 
 MsgBox "Información guardada satisfactoriamente...", vbInformation
 
@@ -4699,12 +5001,40 @@ End Sub
 
 
 Private Function fxDestino_Guardar() As Long
+Dim i As Integer, pRow As Long
 
 On Error GoTo vError
 
 fxDestino_Guardar = 0
 gDestinos.Row = gDestinos.ActiveRow
+pRow = gDestinos.ActiveRow
+
+gDestinos.Col = 4
+If Trim(gDestinos.Text) = "" Then
+    gDestinos.Text = ""
+    fxDestino_Guardar = 0
+End If
+
 gDestinos.Col = 1
+
+
+If txtContrato.Text = "" Or txtContrato.Text = "0" Then
+    gDestinos.Text = "-1"
+        
+    For i = 1 To gDestinos.MaxRows
+        If i <> pRow Then
+             gDestinos.Row = i
+             gDestinos.Col = 1
+             gDestinos.Text = ""
+             gDestinos.Row = 4
+             gDestinos.Text = ""
+        End If
+    Next i
+    
+    fxDestino_Guardar = 1
+    Exit Function
+End If
+
 
 If gDestinos.Text = "" Then 'Insertar
   
@@ -4820,11 +5150,9 @@ Dim itmX As ListViewItem, i As Integer, curCuota As Currency
 On Error GoTo vError
 
 
-If Not IsNumeric(txtContrato.Text) Then Exit Sub
-
-
 Select Case pDetalle
   Case "General"
+    If Not IsNumeric(txtContrato.Text) Then Exit Sub
     
     If vGrid.Enabled Then
        curCuota = 0
@@ -4844,6 +5172,7 @@ Select Case pDetalle
     tcMain.Item(0).Selected = True
   
   Case "Sub Cuentas"
+     If Not IsNumeric(txtContrato.Text) Then Exit Sub
      tcMain.Item(4).Selected = True
      
      ',aportes+rendimiento as Acumulado,parentesco
@@ -4855,7 +5184,8 @@ Select Case pDetalle
      Call sbNuevaSubCuenta
   
   Case "Retiros" 'Retiros
-     tcMain.Item(5).Selected = True
+    If Not IsNumeric(txtContrato.Text) Then Exit Sub
+    tcMain.Item(5).Selected = True
     
     strSQL = "select consec,fecha,aportes_liq,rendi_liq,estado ,usuario" _
            & " from fnd_liquidacion where cod_operadora = " & cboOperadora.ItemData(cboOperadora.ListIndex) _
@@ -4865,7 +5195,7 @@ Select Case pDetalle
     lsw.ListItems.Clear
     
     Do While Not rs.EOF
-     Set itmX = lsw.ListItems.Add(, , rs!consec)
+     Set itmX = lsw.ListItems.Add(, , rs!CONSEC)
          itmX.SubItems(1) = Format(rs!fecha, "dd/mm/yyyy")
          itmX.SubItems(2) = rs!Usuario & ""
          itmX.SubItems(3) = Format(rs!Aportes_Liq, "Standard")
@@ -4881,6 +5211,7 @@ Select Case pDetalle
     
 
 Case "Beneficiarios" ' Beneficiarios
+    If Not IsNumeric(txtContrato.Text) Then Exit Sub
      
     tcMain.Item(3).Selected = True
     
@@ -4910,18 +5241,21 @@ Case "Beneficiarios" ' Beneficiarios
   
 
   Case "Cupones" 'Cupones
+    If Not IsNumeric(txtContrato.Text) Then Exit Sub
     tcMain.Item(6).Selected = True
     
     Call sbFnd_Contratos_Cupones(cboOperadora.ItemData(cboOperadora.ListIndex), txtCodigo.Text, txtContrato.Text, lswCupones)
   
   
   Case "Bitacora" 'Bitacora
+    If Not IsNumeric(txtContrato.Text) Then Exit Sub
     tcMain.Item(7).Selected = True
     
     Call sbFnd_Contratos_Bitacora(cboOperadora.ItemData(cboOperadora.ListIndex), txtCodigo.Text, txtContrato.Text, lswBitacora)
 
   Case "Destinos" 'Destinos
     Call sbDestinos_Load
+
 End Select
 
 vError:
@@ -4963,7 +5297,11 @@ With gDestinos
 
 .MaxRows = 0
 
-strSQL = "exec spFnd_Contrato_Destinos_List " & cboOperadora.ItemData(cboOperadora.ListIndex) & ", '" & Trim(txtCodigo.Text) & "', " & txtContrato.Text
+If Not IsNumeric(txtContrato.Text) Then
+    strSQL = "exec spFnd_Contrato_Destinos_List " & cboOperadora.ItemData(cboOperadora.ListIndex) & ", '" & Trim(txtCodigo.Text) & "', 0"
+Else
+    strSQL = "exec spFnd_Contrato_Destinos_List " & cboOperadora.ItemData(cboOperadora.ListIndex) & ", '" & Trim(txtCodigo.Text) & "', " & txtContrato.Text
+End If
 Call OpenRecordSet(rs, strSQL)
 Do While Not rs.EOF
  
@@ -5113,7 +5451,7 @@ End Sub
 
 
 Private Sub txtCodigo_KeyDown(KeyCode As Integer, Shift As Integer)
-If KeyCode = vbKeyF4 And txtCodigo.Locked = False Then
+If KeyCode = vbKeyF4 Then  'And txtCodigo.Locked = False
    gBusquedas.Convertir = "N"
    gBusquedas.Columna = "cod_plan"
    gBusquedas.Orden = "cod_plan"
@@ -5239,6 +5577,9 @@ End Function
 Private Sub txtCodigo_LostFocus()
 Dim strSQL As String, rs As New ADODB.Recordset
 
+
+On Error GoTo vError
+
 txtCodigo.Text = UCase(txtCodigo.Text)
 
 
@@ -5257,7 +5598,7 @@ If Trim(txtCodigo) <> "" Then
        vMontoMin = rs!MONTO_MINIMO
        vPlazoMin = rs!Plazo_Minimo
        vInversionMin = rs!INVERSION_MINIMO
-       vTipoCDP = IIf((rs!tipo_cdp = 1), True, False)
+       vTipoCDP = IIf((rs!TIPO_CDP = 1), True, False)
        
        vCDPCuponesAplica = rs!PAGO_CUPONES 'IIf((rs!PAGO_CUPONES = 1), True, False)
        vTasaMargenNegociacion = rs!TASA_MARGEN_NEGOCIACION
@@ -5295,8 +5636,12 @@ If Trim(txtCodigo) <> "" Then
        
        If vEdita = False Then
         If Not IsNull(rs!web_vence) Then
-            txtPlazo.Text = DateDiff("m", rs!FechaServidor, rs!web_vence)
-            cboPlazo.Text = "Meses"
+            txtPlazo.Text = DateDiff("d", rs!FechaServidor, rs!web_vence)
+            cboPlazo.Text = "Días"
+            dtpCorte.Enabled = False
+        Else
+            dtpCorte.Enabled = True
+
         End If
        End If
 
@@ -5318,6 +5663,11 @@ If Trim(txtCodigo) <> "" Then
 Else
   txtDescripcion = ""
 End If
+
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
 
 End Sub
 
@@ -5522,7 +5872,11 @@ vError:
 End Sub
 
 Private Sub txtPlazo_KeyDown(KeyCode As Integer, Shift As Integer)
-If KeyCode = vbKeyReturn Or KeyCode = vbKeyTab Then dtpCorte.SetFocus
+If KeyCode = vbKeyReturn Or KeyCode = vbKeyTab Then
+  If dtpCorte.Enabled Then
+    dtpCorte.SetFocus
+  End If
+End If
 End Sub
 
 Private Sub txtPlazo_KeyUp(KeyCode As Integer, Shift As Integer)
@@ -5561,19 +5915,19 @@ rs.Close
 End Function
 
 Private Sub sbActualizaCuotaContrato()
-Dim strSQL As String, rs As New ADODB.Recordset
+Dim strSQL As String
 
-strSQL = "select isnull(sum(cuota),0) as Cuota from fnd_subCuentas where cod_operadora = " _
-       & cboOperadora.ItemData(cboOperadora.ListIndex) _
-       & " and cod_plan = '" & txtCodigo & "' and cod_contrato = " & txtContrato
-Call OpenRecordSet(rs, strSQL)
+On Error GoTo vError
 
-strSQL = "update fnd_contratos set monto = " & rs!Cuota _
-       & " where cod_operadora = " & cboOperadora.ItemData(cboOperadora.ListIndex) _
-       & " and cod_plan = '" & txtCodigo & "' and cod_contrato = " & txtContrato
+'spFnd_SubCuentas_Maestro_Update(@Operadora int, @Plan varchar(10), @Contrato int, @Usuario varchar(30))
+strSQL = "exec spFnd_SubCuentas_Maestro_Update " & cboOperadora.ItemData(cboOperadora.ListIndex) _
+       & ", '" & txtCodigo.Text & "', " & txtContrato.Text & ", '" & glogon.Usuario & "'"
 Call ConectionExecute(strSQL)
 
-rs.Close
+Exit Sub
+
+vError:
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 
 End Sub
 

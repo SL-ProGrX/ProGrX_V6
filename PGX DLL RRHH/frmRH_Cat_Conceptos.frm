@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
@@ -25,7 +25,7 @@ Begin VB.Form frmRH_Cat_Conceptos
       TabIndex        =   0
       Top             =   600
       Width           =   1092
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   444
       _StockProps     =   79
@@ -50,7 +50,7 @@ Begin VB.Form frmRH_Cat_Conceptos
       TabIndex        =   1
       Top             =   1080
       Width           =   9855
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   17383
       _ExtentY        =   11880
       _StockProps     =   68
@@ -117,7 +117,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          Top             =   1680
          Visible         =   0   'False
          Width           =   9132
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16108
          _ExtentY        =   8700
          _StockProps     =   77
@@ -142,7 +142,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          Top             =   1200
          Visible         =   0   'False
          Width           =   6012
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10604
          _ExtentY        =   550
          _StockProps     =   77
@@ -166,7 +166,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   2
          Top             =   3120
          Width           =   9375
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16536
          _ExtentY        =   3625
          _StockProps     =   79
@@ -181,7 +181,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             ToolTipText     =   "Detalle en Rubros del Valor"
             Top             =   240
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   550
             _StockProps     =   79
@@ -214,7 +214,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   3
             Top             =   240
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   550
             _StockProps     =   77
@@ -238,7 +238,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   19
             Top             =   240
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   582
             _StockProps     =   77
@@ -264,7 +264,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   21
             Top             =   720
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   582
             _StockProps     =   77
@@ -290,7 +290,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   23
             Top             =   1200
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3413
             _ExtentY        =   582
             _StockProps     =   77
@@ -316,7 +316,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   46
             Top             =   1440
             Width           =   4332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7641
             _ExtentY        =   444
             _StockProps     =   79
@@ -341,7 +341,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   48
             Top             =   1800
             Width           =   4332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7641
             _ExtentY        =   444
             _StockProps     =   79
@@ -375,7 +375,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   24
             Top             =   720
             Width           =   4815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   8493
             _ExtentY        =   979
             _StockProps     =   77
@@ -402,7 +402,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             ToolTipText     =   "Excluir del Cálculo Base"
             Top             =   240
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   550
             _StockProps     =   79
@@ -427,7 +427,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             ToolTipText     =   "Actualiza los Conceptos Asignados a Empleados"
             Top             =   240
             Width           =   375
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   661
             _ExtentY        =   556
             _StockProps     =   79
@@ -451,7 +451,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   25
             Top             =   720
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -477,7 +477,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   22
             Top             =   1200
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   656
             _StockProps     =   79
@@ -503,7 +503,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   20
             Top             =   720
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   656
             _StockProps     =   79
@@ -529,7 +529,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   18
             Top             =   240
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   656
             _StockProps     =   79
@@ -554,7 +554,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   4
             Top             =   240
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   444
             _StockProps     =   79
@@ -580,7 +580,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   5
          Top             =   480
          Width           =   7695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13573
          _ExtentY        =   556
          _StockProps     =   77
@@ -603,7 +603,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   7
          Top             =   2400
          Width           =   3012
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5313
          _ExtentY        =   444
          _StockProps     =   79
@@ -628,7 +628,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   8
          Top             =   2040
          Width           =   3012
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5313
          _ExtentY        =   444
          _StockProps     =   79
@@ -653,7 +653,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   15
          Top             =   1200
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3836
          _ExtentY        =   582
          _StockProps     =   77
@@ -679,7 +679,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   17
          Top             =   1680
          Width           =   3012
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5313
          _ExtentY        =   444
          _StockProps     =   79
@@ -704,7 +704,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   6
          Top             =   1200
          Width           =   1935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -728,7 +728,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   27
          Top             =   1680
          Width           =   1935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   556
          _StockProps     =   68
@@ -750,7 +750,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   30
          Top             =   5160
          Width           =   9495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16748
          _ExtentY        =   2566
          _StockProps     =   79
@@ -775,7 +775,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             ToolTipText     =   "Presione F4 para Consultar"
             Top             =   600
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -799,7 +799,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   32
             Top             =   600
             Width           =   6015
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10610
             _ExtentY        =   556
             _StockProps     =   77
@@ -824,7 +824,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             ToolTipText     =   "Presione F4 para Consultar"
             Top             =   1080
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -848,7 +848,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   34
             Top             =   1080
             Width           =   6015
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10610
             _ExtentY        =   556
             _StockProps     =   77
@@ -872,7 +872,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   47
             Top             =   240
             Width           =   4332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7641
             _ExtentY        =   444
             _StockProps     =   79
@@ -897,7 +897,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   36
             Top             =   1080
             Width           =   1332
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   656
             _StockProps     =   79
@@ -923,7 +923,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   35
             Top             =   600
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   656
             _StockProps     =   79
@@ -980,7 +980,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          Top             =   600
          Visible         =   0   'False
          Width           =   9132
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16108
          _ExtentY        =   1926
          _StockProps     =   79
@@ -1004,7 +1004,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             ToolTipText     =   "Presione F4 para Consultar"
             Top             =   480
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -1029,7 +1029,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   41
             Top             =   480
             Width           =   6012
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10604
             _ExtentY        =   550
             _StockProps     =   77
@@ -1055,7 +1055,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          Top             =   2040
          Visible         =   0   'False
          Width           =   9132
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16108
          _ExtentY        =   1926
          _StockProps     =   79
@@ -1079,7 +1079,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             ToolTipText     =   "Presione F4 para Consultar"
             Top             =   480
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   550
             _StockProps     =   77
@@ -1104,7 +1104,7 @@ Begin VB.Form frmRH_Cat_Conceptos
             TabIndex        =   44
             Top             =   480
             Width           =   6012
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10604
             _ExtentY        =   550
             _StockProps     =   77
@@ -1129,7 +1129,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   45
          Top             =   2760
          Width           =   3012
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5313
          _ExtentY        =   444
          _StockProps     =   79
@@ -1154,7 +1154,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   29
          Top             =   2160
          Width           =   1935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   556
          _StockProps     =   68
@@ -1176,7 +1176,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   49
          Top             =   2520
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   656
          _StockProps     =   79
@@ -1201,7 +1201,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   50
          Top             =   840
          Width           =   7695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13573
          _ExtentY        =   582
          _StockProps     =   77
@@ -1260,7 +1260,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          Top             =   380
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   79
@@ -1285,7 +1285,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          Top             =   1200
          Visible         =   0   'False
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   550
          _StockProps     =   77
@@ -1313,7 +1313,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          Top             =   1200
          Visible         =   0   'False
          Width           =   372
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   656
          _ExtentY        =   550
          _StockProps     =   79
@@ -1340,7 +1340,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          Top             =   1200
          Visible         =   0   'False
          Width           =   372
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   656
          _ExtentY        =   550
          _StockProps     =   79
@@ -1367,7 +1367,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          Top             =   1200
          Visible         =   0   'False
          Width           =   372
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   656
          _ExtentY        =   550
          _StockProps     =   79
@@ -1392,7 +1392,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          Top             =   480
          Visible         =   0   'False
          Width           =   9612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16954
          _ExtentY        =   656
          _StockProps     =   14
@@ -1416,7 +1416,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          Top             =   360
          Visible         =   0   'False
          Width           =   9612
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16954
          _ExtentY        =   656
          _StockProps     =   14
@@ -1438,7 +1438,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          Top             =   840
          Visible         =   0   'False
          Width           =   2652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4678
          _ExtentY        =   10181
          _StockProps     =   14
@@ -1462,7 +1462,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   51
          Top             =   840
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   656
          _StockProps     =   79
@@ -1488,7 +1488,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          Top             =   480
          Visible         =   0   'False
          Width           =   2652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4678
          _ExtentY        =   10181
          _StockProps     =   14
@@ -1512,7 +1512,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   28
          Top             =   2040
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   868
          _StockProps     =   79
@@ -1538,7 +1538,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   26
          Top             =   1680
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   656
          _StockProps     =   79
@@ -1564,7 +1564,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   16
          Top             =   1200
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   656
          _StockProps     =   79
@@ -1590,7 +1590,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   10
          Top             =   480
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   444
          _StockProps     =   79
@@ -1616,7 +1616,7 @@ Begin VB.Form frmRH_Cat_Conceptos
          TabIndex        =   9
          Top             =   1200
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   1085
          _StockProps     =   79
@@ -1700,7 +1700,7 @@ Begin VB.Form frmRH_Cat_Conceptos
       TabIndex        =   13
       Top             =   600
       Width           =   1452
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   550
       _StockProps     =   77
@@ -1725,7 +1725,7 @@ Begin VB.Form frmRH_Cat_Conceptos
       TabIndex        =   14
       Top             =   600
       Width           =   1212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   444
       _StockProps     =   79
@@ -2216,7 +2216,7 @@ On Error GoTo vError
 
 fxTabla_Guardar = 0
 vGrid.Row = vGrid.ActiveRow
-vGrid.col = 1
+vGrid.Col = 1
 
 If Trim(vGrid.Text) = "" Then  'Insertar
   pCodigoId = fxTabla_Id()
@@ -2225,35 +2225,35 @@ If Trim(vGrid.Text) = "" Then  'Insertar
   strSQL = "insert into RH_CONCEPTOS_TABLA(COD_CONCEPTO,TABLA_ID,MNT_INICIO,MNT_CORTE,PORCENTAJE, ACTIVO" _
             & ", REGISTRO_USUARIO, REGISTRO_FECHA) values('" & vCodigo & "'," _
          & vGrid.Text & ","
-  vGrid.col = 2
+  vGrid.Col = 2
   strSQL = strSQL & CCur(vGrid.Text) & ","
-  vGrid.col = 3
+  vGrid.Col = 3
   strSQL = strSQL & CCur(vGrid.Text) & ","
-  vGrid.col = 4
+  vGrid.Col = 4
   strSQL = strSQL & CCur(vGrid.Text) & ","
-  vGrid.col = 5
+  vGrid.Col = 5
   strSQL = strSQL & vGrid.Value & ",'" & glogon.Usuario & "',dbo.Mygetdate())"
 
   Call ConectionExecute(strSQL)
 
-  vGrid.col = 1
+  vGrid.Col = 1
   Call Bitacora("Registra", "Concepto de Planilla, Tabla Id: " & vGrid.Text)
 
 Else 'Actualizar
 
- vGrid.col = 2
+ vGrid.Col = 2
  strSQL = "update RH_CONCEPTOS_TABLA set MNT_INICIO = " & CCur(vGrid.Text) & ", MNT_CORTE = "
- vGrid.col = 3
+ vGrid.Col = 3
  strSQL = strSQL & CCur(vGrid.Text) & ", PORCENTAJE = "
- vGrid.col = 4
+ vGrid.Col = 4
  strSQL = strSQL & CCur(vGrid.Text) & ", ACTIVO = "
- vGrid.col = 5
+ vGrid.Col = 5
  strSQL = strSQL & vGrid.Value & " where COD_CONCEPTO = '" & vCodigo & "' AND TABLA_ID = '"
- vGrid.col = 1
+ vGrid.Col = 1
  strSQL = strSQL & vGrid.Text & "'"
  Call ConectionExecute(strSQL)
 
- vGrid.col = 1
+ vGrid.Col = 1
  Call Bitacora("Modifica", "Concepto de Planilla, Tabla Id: " & vGrid.Text)
 
 End If
@@ -2283,7 +2283,7 @@ fxDetalle_Guardar = 0
 With gDetalle
 
 .Row = .ActiveRow
-.col = 1
+.Col = 1
 
 
 strSQL = "SELECT COUNT(*) AS 'EXISTE' FROM RH_CONCEPTOS_DETALLE" _
@@ -2297,33 +2297,33 @@ If pExiste = 0 Then  'Insertar
   
   strSQL = "insert into RH_CONCEPTOS_DETALLE(COD_CONCEPTO, COD_DETALLE, DESCRIPCION, BASE_MINIMA, VALOR" _
             & ", REGISTRO_USUARIO, REGISTRO_FECHA) values('" & vCodigo & "','" & .Text & "','"
-  .col = 2
+  .Col = 2
   strSQL = strSQL & .Text & "',"
-  .col = 3
+  .Col = 3
   strSQL = strSQL & CCur(.Text) & ","
-  .col = 4
+  .Col = 4
   strSQL = strSQL & CCur(.Text) & ",'" & glogon.Usuario & "',dbo.Mygetdate())"
 
   Call ConectionExecute(strSQL)
 
-  .col = 1
+  .Col = 1
   Call Bitacora("Registra", "Detalle Concepto: " & vCodigo & ", ID Detalle: " & .Text)
 
 Else 'Actualizar
 
- .col = 2
+ .Col = 2
  strSQL = "update RH_CONCEPTOS_DETALLE set DESCRIPCION = '" & .Text & "', BASE_MINIMA = "
  
- .col = 3
+ .Col = 3
  strSQL = strSQL & CCur(.Text) & ", VALOR = "
- .col = 4
+ .Col = 4
  strSQL = strSQL & CCur(.Text) & " where COD_CONCEPTO = '" & vCodigo & "' AND COD_DETALLE = '"
- .col = 1
+ .Col = 1
  strSQL = strSQL & .Text & "'"
 
  Call ConectionExecute(strSQL)
 
- .col = 1
+ .Col = 1
  Call Bitacora("Modifica", "Detalle Concepto: " & vCodigo & ", ID Detalle: " & .Text)
 
 End If
@@ -2387,13 +2387,13 @@ If KeyCode = vbKeyDelete Then
      If i = vbYes Then
         
         .Row = .ActiveRow
-        .col = 1
+        .Col = 1
         If .Text <> "" Then
             strSQL = "delete RH_CONCEPTOS_DETALLE where COD_DETALLE = '" _
                     & .Text & "' AND COD_CONCEPTO = '" & vCodigo & "'"
             Call ConectionExecute(strSQL)
             strSQL = .Text
-            .col = 1
+            .Col = 1
             Call Bitacora("Elimina", "Detalle Concepto: " & vCodigo & ", ID Detalle: " & .Text)
             
             Call sbDetalle_List
@@ -2810,12 +2810,12 @@ If KeyCode = vbKeyDelete Then
      If i = vbYes Then
         
         vGrid.Row = vGrid.ActiveRow
-        vGrid.col = 1
+        vGrid.Col = 1
         If IsNumeric(vGrid.Text) Then
             strSQL = "delete RH_CONCEPTOS_TABLA where TABLA_ID = " & vGrid.Text
             Call ConectionExecute(strSQL)
             strSQL = vGrid.Text
-            vGrid.col = 1
+            vGrid.Col = 1
             Call Bitacora("Elimina", "Concepto de Planilla, Tabla Id: " & vGrid.Text)
             
             Call sbTabla_Load

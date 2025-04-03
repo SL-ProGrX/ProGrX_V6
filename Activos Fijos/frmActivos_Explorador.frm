@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmActivos_Explorador 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -22,7 +22,7 @@ Begin VB.Form frmActivos_Explorador
       TabIndex        =   2
       Top             =   3640
       Width           =   3255
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5741
       _ExtentY        =   5318
       _StockProps     =   77
@@ -52,7 +52,7 @@ Begin VB.Form frmActivos_Explorador
       TabIndex        =   28
       Top             =   0
       Width           =   16815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   29660
       _ExtentY        =   1085
       _StockProps     =   79
@@ -65,7 +65,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   29
          Top             =   240
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   661
          _StockProps     =   79
@@ -92,7 +92,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   30
          Top             =   240
          Width           =   1320
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2328
          _ExtentY        =   661
          _StockProps     =   68
@@ -115,7 +115,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   32
          Top             =   240
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   661
          _StockProps     =   79
@@ -145,7 +145,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   33
          Top             =   240
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   661
          _StockProps     =   79
@@ -174,7 +174,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   34
          Top             =   240
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   661
          _StockProps     =   79
@@ -204,7 +204,7 @@ Begin VB.Form frmActivos_Explorador
          ToolTipText     =   "Refrescar"
          Top             =   240
          Width           =   375
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   661
          _ExtentY        =   661
          _StockProps     =   79
@@ -233,7 +233,7 @@ Begin VB.Form frmActivos_Explorador
          ToolTipText     =   "Informes"
          Top             =   240
          Width           =   375
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   661
          _ExtentY        =   661
          _StockProps     =   79
@@ -261,7 +261,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   46
          Top             =   240
          Width           =   975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1720
          _ExtentY        =   661
          _StockProps     =   79
@@ -290,7 +290,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   47
          Top             =   240
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1931
          _ExtentY        =   661
          _StockProps     =   79
@@ -319,7 +319,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   48
          Top             =   240
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   661
          _StockProps     =   79
@@ -348,7 +348,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   43
          Top             =   240
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1508
          _ExtentY        =   661
          _StockProps     =   79
@@ -372,7 +372,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   35
          Top             =   240
          Width           =   855
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1508
          _ExtentY        =   661
          _StockProps     =   79
@@ -395,7 +395,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   31
          Top             =   240
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   661
          _StockProps     =   79
@@ -420,7 +420,7 @@ Begin VB.Form frmActivos_Explorador
       TabIndex        =   3
       Top             =   1080
       Width           =   16815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   29660
       _ExtentY        =   4260
       _StockProps     =   79
@@ -433,7 +433,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   22
          Top             =   1800
          Width           =   2655
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4683
          _ExtentY        =   450
          _StockProps     =   79
@@ -456,7 +456,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   21
          Top             =   2040
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   582
          _StockProps     =   77
@@ -480,7 +480,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   19
          Top             =   2040
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   582
          _StockProps     =   77
@@ -505,7 +505,7 @@ Begin VB.Form frmActivos_Explorador
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   960
          Width           =   5175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9128
          _ExtentY        =   582
          _StockProps     =   77
@@ -530,7 +530,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   6
          Top             =   240
          Width           =   5175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9128
          _ExtentY        =   582
          _StockProps     =   77
@@ -554,7 +554,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   7
          Top             =   600
          Width           =   5175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9128
          _ExtentY        =   582
          _StockProps     =   77
@@ -578,7 +578,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   13
          Top             =   600
          Width           =   4335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7646
          _ExtentY        =   582
          _StockProps     =   77
@@ -604,7 +604,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   14
          Top             =   960
          Width           =   4335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7646
          _ExtentY        =   582
          _StockProps     =   77
@@ -630,7 +630,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   15
          Top             =   1320
          Width           =   4335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7646
          _ExtentY        =   582
          _StockProps     =   77
@@ -656,7 +656,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   17
          Top             =   2040
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   582
          _StockProps     =   77
@@ -680,7 +680,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   23
          Top             =   1800
          Width           =   2655
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4683
          _ExtentY        =   450
          _StockProps     =   79
@@ -704,7 +704,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   24
          Top             =   2040
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -727,7 +727,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   25
          Top             =   2040
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -750,7 +750,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   26
          Top             =   2040
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -773,7 +773,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   27
          Top             =   2040
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -795,15 +795,15 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   36
          Top             =   1800
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   1080
          _StockProps     =   79
          Caption         =   "Buscar"
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial Narrow"
-            Size            =   7.5
+            Name            =   "Calibri"
+            Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -811,7 +811,7 @@ Begin VB.Form frmActivos_Explorador
             Strikethrough   =   0   'False
          EndProperty
          UseVisualStyle  =   -1  'True
-         Appearance      =   17
+         Appearance      =   21
          Picture         =   "frmActivos_Explorador.frx":3F29
       End
       Begin XtremeSuiteControls.PushButton btnExportar 
@@ -821,11 +821,11 @@ Begin VB.Form frmActivos_Explorador
          ToolTipText     =   "Exportar a Excel"
          Top             =   1800
          Width           =   615
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1080
          _ExtentY        =   1080
          _StockProps     =   79
-         BackColor       =   -2147483633
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Arial Narrow"
             Size            =   7.5
@@ -836,7 +836,7 @@ Begin VB.Form frmActivos_Explorador
             Strikethrough   =   0   'False
          EndProperty
          UseVisualStyle  =   -1  'True
-         Appearance      =   17
+         Appearance      =   21
          Picture         =   "frmActivos_Explorador.frx":4947
       End
       Begin XtremeSuiteControls.ProgressBar ProgressBarX 
@@ -846,7 +846,7 @@ Begin VB.Form frmActivos_Explorador
          Top             =   1680
          Visible         =   0   'False
          Width           =   1935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   233
          _StockProps     =   93
@@ -859,7 +859,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   39
          Top             =   240
          Width           =   1935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3413
          _ExtentY        =   582
          _StockProps     =   77
@@ -885,7 +885,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   41
          Top             =   2040
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1931
          _ExtentY        =   582
          _StockProps     =   77
@@ -911,7 +911,7 @@ Begin VB.Form frmActivos_Explorador
          ToolTipText     =   "Presione F4 para Consultar"
          Top             =   1320
          Width           =   5175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   9128
          _ExtentY        =   582
          _StockProps     =   77
@@ -936,7 +936,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   53
          Top             =   240
          Width           =   4335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7646
          _ExtentY        =   582
          _StockProps     =   77
@@ -962,7 +962,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   55
          Top             =   1080
          Width           =   2655
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4683
          _ExtentY        =   873
          _StockProps     =   79
@@ -986,7 +986,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   56
          Top             =   600
          Width           =   975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1720
          _ExtentY        =   582
          _StockProps     =   77
@@ -1010,7 +1010,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   57
          Top             =   600
          Width           =   975
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1720
          _ExtentY        =   582
          _StockProps     =   77
@@ -1034,7 +1034,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   58
          Top             =   600
          Width           =   1215
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2143
          _ExtentY        =   582
          _StockProps     =   77
@@ -1061,7 +1061,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   54
          Top             =   240
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -1083,7 +1083,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   52
          Top             =   1320
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -1105,7 +1105,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   42
          Top             =   1800
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1931
          _ExtentY        =   450
          _StockProps     =   79
@@ -1127,7 +1127,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   40
          Top             =   240
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1931
          _ExtentY        =   450
          _StockProps     =   79
@@ -1149,7 +1149,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   20
          Top             =   1800
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -1171,7 +1171,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   18
          Top             =   1800
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -1193,7 +1193,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   16
          Top             =   1800
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -1215,7 +1215,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   12
          Top             =   1320
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -1237,7 +1237,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   11
          Top             =   600
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -1259,7 +1259,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   10
          Top             =   960
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -1281,7 +1281,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   8
          Top             =   960
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -1303,7 +1303,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   5
          Top             =   240
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -1325,7 +1325,7 @@ Begin VB.Form frmActivos_Explorador
          TabIndex        =   4
          Top             =   600
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   450
          _StockProps     =   79
@@ -1518,7 +1518,7 @@ Begin VB.Form frmActivos_Explorador
       TabIndex        =   50
       Top             =   720
       Width           =   2655
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4678
       _ExtentY        =   582
       _StockProps     =   14
@@ -1541,7 +1541,7 @@ Begin VB.Form frmActivos_Explorador
       TabIndex        =   49
       Top             =   720
       Width           =   2775
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4895
       _ExtentY        =   582
       _StockProps     =   14
@@ -2340,8 +2340,8 @@ End If
     If vSeccion <> "" Then strSQL = strSQL & " and cod_Seccion = '" & vSeccion & "'"
     If vLocaliza <> "" Then strSQL = strSQL & " and cod_Localiza = '" & vLocaliza & "'"
     
-    If Len(txtProveedor.Text) > 0 Then strSQL = strSQL & " and cod_Proveedor = '" & txtProveedor.Text & "'"
-    If Len(txtResponsable.Text) > 0 Then strSQL = strSQL & " and Identificacion = '" & txtResponsable.Text & "'"
+    If Len(txtProveedor.Text) > 0 Then strSQL = strSQL & " and cod_Proveedor = '" & txtProveedor.Tag & "'"
+    If Len(txtResponsable.Text) > 0 Then strSQL = strSQL & " and Identificacion = '" & txtResponsable.Tag & "'"
     
     If cboPlaca.Text = "Placa" Then
         If Len(txtPlacaI.Text) > 0 Then strSQL = strSQL & " and Num_Placa between '" & txtPlacaI.Text & "' and '" & txtPlacaC.Text & "'"
@@ -2354,8 +2354,8 @@ End If
     
     Call OpenRecordSet(rs, strSQL, 0)
     Do While Not rs.EOF
-     vKey = "(AF)" & rs!num_placa & "(id)"
-     Set itmX = lsw.ListItems.Add(, vKey, rs!num_placa)
+     vKey = "(AF)" & rs!NUM_PLACA & "(id)"
+     Set itmX = lsw.ListItems.Add(, vKey, rs!NUM_PLACA)
          itmX.SubItems(1) = rs!Placa_Alterna & ""
          itmX.SubItems(2) = rs!Nombre
          itmX.SubItems(3) = Format(rs!fecha_adquisicion, "yyyy-mm-dd")
@@ -2364,7 +2364,7 @@ End If
          itmX.SubItems(6) = rs!vida_util & IIf((rs!VIDA_UTIL_EN = "A"), " Año(s)", " Mes(es)")
          itmX.SubItems(7) = Format(rs!Valor_Historico, "Standard")
          itmX.SubItems(8) = Format(rs!Valor_Desecho, "Standard")
-         itmX.SubItems(9) = rs!Estado_Desc
+         itmX.SubItems(9) = rs!ESTADO_DESC
          
          
         If chkInfoResponsables.Value = xtpChecked Then
@@ -2388,10 +2388,12 @@ End If
     Loop
     rs.Close
      Set itmX = lsw.ListItems.Add(, "")
+         itmX.SubItems(1) = "___"
          itmX.SubItems(7) = "____________________"
          itmX.SubItems(8) = "____________________"
     
      Set itmX = lsw.ListItems.Add(, "")
+         itmX.SubItems(1) = Format(lsw.ListItems.Count, "###,##0")
          itmX.SubItems(7) = Format(curVH, "Standard")
          itmX.SubItems(8) = Format(curVR, "Standard")
           
@@ -2459,8 +2461,8 @@ End If
             If vLocaliza <> "" Then strSQL = strSQL & " and A.cod_Localiza = '" & vSeccion & "'"
                    
                     
-            If Len(txtProveedor.Text) > 0 Then strSQL = strSQL & " and A.cod_Proveedor = '" & txtProveedor.Text & "'"
-            If Len(txtResponsable.Text) > 0 Then strSQL = strSQL & " and A.Identificacion = '" & txtResponsable.Text & "'"
+            If Len(txtProveedor.Text) > 0 Then strSQL = strSQL & " and A.cod_Proveedor = '" & txtProveedor.Tag & "'"
+            If Len(txtResponsable.Text) > 0 Then strSQL = strSQL & " and A.Identificacion = '" & txtResponsable.Tag & "'"
             
             If cboPlaca.Text = "Placa" Then
                 If Len(txtPlacaI.Text) > 0 Then strSQL = strSQL & " and A.Num_Placa between '" & txtPlacaI.Text & "' and '" & txtPlacaC.Text & "'"
@@ -2478,8 +2480,8 @@ End If
     
             Call OpenRecordSet(rs, strSQL, 0)
             Do While Not rs.EOF
-             vKey = "(AF)" & rs!num_placa & "(id)"
-             Set itmX = lsw.ListItems.Add(, vKey, rs!num_placa)
+             vKey = "(AF)" & rs!NUM_PLACA & "(id)"
+             Set itmX = lsw.ListItems.Add(, vKey, rs!NUM_PLACA)
                  itmX.SubItems(1) = rs!Placa_Alterna & ""
                  itmX.SubItems(2) = rs!Nombre
                  itmX.SubItems(3) = Format(rs!fecha_adquisicion, "yyyy-mm-dd")
@@ -2489,7 +2491,7 @@ End If
                  itmX.SubItems(7) = Format(rs!DEPRECIACION_AC - rs!DEPRECIACION_MES, "Standard")
                  itmX.SubItems(8) = Format(rs!DEPRECIACION_MES, "Standard")
                  itmX.SubItems(9) = Format(rs!DEPRECIACION_AC, "Standard")
-                 itmX.SubItems(10) = Format(rs!Valor_Libros, "Standard")
+                 itmX.SubItems(10) = Format(rs!VALOR_LIBROS, "Standard")
                  itmX.SubItems(11) = Format(rs!depreciacion_periodo, "yyyy-mm-dd")
                  
                 If chkInfoResponsables.Value = xtpChecked Then
@@ -2511,13 +2513,14 @@ End If
                  curDepAnt = curDepAnt + rs!DEPRECIACION_AC - rs!DEPRECIACION_MES
                  curDepMes = curDepMes + rs!DEPRECIACION_MES
                  curDepAc = curDepAc + rs!DEPRECIACION_AC
-                 curVL = curVL + rs!Valor_Libros
+                 curVL = curVL + rs!VALOR_LIBROS
                  
              rs.MoveNext
             Loop
             rs.Close
             
              Set itmX = lsw.ListItems.Add(, "")
+                 itmX.SubItems(1) = "____"
                  itmX.SubItems(6) = "____________________"
                  itmX.SubItems(7) = "____________________"
                  itmX.SubItems(8) = "____________________"
@@ -2525,6 +2528,7 @@ End If
                  itmX.SubItems(10) = "____________________"
             
              Set itmX = lsw.ListItems.Add(, "")
+                 itmX.SubItems(1) = Format(lsw.ListItems.Count, "###,##0")
                  itmX.SubItems(6) = Format(curVH, "Standard")
                  itmX.SubItems(7) = Format(curDepAnt, "Standard")
                  itmX.SubItems(8) = Format(curDepMes, "Standard")
@@ -2561,8 +2565,8 @@ End If
             If vLocaliza <> "" Then strSQL = strSQL & " and P.cod_Localiza = '" & vSeccion & "'"
                    
                     
-            If Len(txtProveedor.Text) > 0 Then strSQL = strSQL & " and P.cod_Proveedor = '" & txtProveedor.Text & "'"
-            If Len(txtResponsable.Text) > 0 Then strSQL = strSQL & " and A.Identificacion = '" & txtResponsable.Text & "'"
+            If Len(txtProveedor.Text) > 0 Then strSQL = strSQL & " and P.cod_Proveedor = '" & txtProveedor.Tag & "'"
+            If Len(txtResponsable.Text) > 0 Then strSQL = strSQL & " and A.Identificacion = '" & txtResponsable.Tag & "'"
             
             If cboPlaca.Text = "Placa" Then
                 If Len(txtPlacaI.Text) > 0 Then strSQL = strSQL & " and A.Num_Placa between '" & txtPlacaI.Text & "' and '" & txtPlacaC.Text & "'"
@@ -2572,8 +2576,8 @@ End If
             
             Call OpenRecordSet(rs, strSQL, 0)
             Do While Not rs.EOF
-             vKey = "(AF)" & rs!num_placa & "(id)"
-             Set itmX = lsw.ListItems.Add(, vKey, rs!num_placa)
+             vKey = "(AF)" & rs!NUM_PLACA & "(id)"
+             Set itmX = lsw.ListItems.Add(, vKey, rs!NUM_PLACA)
                  itmX.SubItems(1) = rs!Placa_Alterna & ""
                  itmX.SubItems(2) = rs!Nombre
                  itmX.SubItems(3) = Format(rs!fecha_adquisicion, "yyyy-mm-dd")
@@ -2612,6 +2616,7 @@ End If
             rs.Close
     
              Set itmX = lsw.ListItems.Add(, "")
+                 itmX.SubItems(1) = "___"
                  itmX.SubItems(6) = "____________________"
                  itmX.SubItems(7) = "____________________"
                  itmX.SubItems(8) = "____________________"
@@ -2619,6 +2624,7 @@ End If
                  itmX.SubItems(10) = "____________________"
             
              Set itmX = lsw.ListItems.Add(, "")
+                 itmX.SubItems(1) = Format(lsw.ListItems.Count, "###,##0")
                  itmX.SubItems(6) = Format(curVH, "Standard")
                  itmX.SubItems(7) = Format(curDepAnt, "Standard")
                  itmX.SubItems(8) = Format(curDepMes, "Standard")
@@ -2687,16 +2693,41 @@ Select Case UCase(vTipo)
            & " from Activos_tipo_Activo T inner join Activos_Principal A on T.tipo_Activo = A.tipo_activo" _
            & " where A.estado <> 'R' and A.fecha_adquisicion <= '" & Format(vFecha, "yyyy/mm/dd") & "'"
     
-    If vTipoActivo <> "" Then strSQL = strSQL & " and A.tipo_activo = '" & vTipoActivo & "'"
-    If vDepartamento <> "" Then strSQL = strSQL & " and A.cod_departamento = '" & vDepartamento & "'"
-    If vSeccion <> "" Then strSQL = strSQL & " and A.cod_seccion = '" & vSeccion & "'"
+            If Len(txtNombre.Text) > 0 Then strSQL = strSQL & " and A.Nombre like '%" & txtNombre.Text & "%'"
+            If Len(txtDescripcion.Text) > 0 Then strSQL = strSQL & " and A.Descripcion like '%" & txtDescripcion.Text & "%'"
+            If Len(txtModelo.Text) > 0 Then strSQL = strSQL & " and A.Modelo like '%" & txtModelo.Text & "%'"
+            If Len(txtMarca.Text) > 0 Then strSQL = strSQL & " and A.Marca like '%" & txtMarca.Text & "%'"
+            If Len(txtSerie.Text) > 0 Then strSQL = strSQL & " and A.Num_Serie like '%" & txtSerie.Text & "%'"
+            
+            If vTipoActivo <> "" Then strSQL = strSQL & " and A.tipo_activo = '" & vTipoActivo & "'"
+            If vDepartamento <> "" Then strSQL = strSQL & " and A.cod_departamento = '" & vDepartamento & "'"
+            If vSeccion <> "" Then strSQL = strSQL & " and A.cod_seccion = '" & vSeccion & "'"
+'            If vLocaliza <> "" Then strSQL = strSQL & " and P.cod_Localiza = '" & vSeccion & "'"
+                   
+                    
+            If Len(txtProveedor.Text) > 0 Then strSQL = strSQL & " and A.cod_Proveedor = '" & txtProveedor.Tag & "'"
+            If Len(txtResponsable.Text) > 0 Then strSQL = strSQL & " and A.Identificacion = '" & txtResponsable.Tag & "'"
+            
+            If cboPlaca.Text = "Placa" Then
+                If Len(txtPlacaI.Text) > 0 Then strSQL = strSQL & " and A.Num_Placa between '" & txtPlacaI.Text & "' and '" & txtPlacaC.Text & "'"
+            Else
+                If Len(txtPlacaI.Text) > 0 Then strSQL = strSQL & " and A.Placa_alterna between '" & txtPlacaI.Text & "' and '" & txtPlacaC.Text & "'"
+            End If
+    
+    
+    
+    
+    
+    
+    
+    
     
     strSQL = strSQL & " order by A.num_placa"
     
     Call OpenRecordSet(rs, strSQL, 0)
     Do While Not rs.EOF
-     vKey = "(AF)" & rs!num_placa & "(id)"
-     Set itmX = lsw.ListItems.Add(, vKey, rs!num_placa)
+     vKey = "(AF)" & rs!NUM_PLACA & "(id)"
+     Set itmX = lsw.ListItems.Add(, vKey, rs!NUM_PLACA)
          itmX.SubItems(1) = rs!Placa_Alterna & ""
          itmX.SubItems(2) = rs!Nombre
          itmX.SubItems(3) = Format(rs!fecha_adquisicion, "dd/mm/yyyy")
@@ -2713,10 +2744,12 @@ Select Case UCase(vTipo)
     Loop
     rs.Close
      Set itmX = lsw.ListItems.Add(, "")
+         itmX.SubItems(1) = "_____"
          itmX.SubItems(7) = "____________________"
          itmX.SubItems(8) = "____________________"
     
      Set itmX = lsw.ListItems.Add(, "")
+         itmX.SubItems(1) = Format(lsw.ListItems.Count, "###,##0")
          itmX.SubItems(7) = Format(curVH, "Standard")
          itmX.SubItems(8) = Format(curVR, "Standard")
           
@@ -2755,8 +2788,8 @@ Select Case UCase(vTipo)
     
             Call OpenRecordSet(rs, strSQL, 0)
             Do While Not rs.EOF
-             vKey = "(AF)" & rs!num_placa & "(id)"
-             Set itmX = lsw.ListItems.Add(, vKey, rs!num_placa)
+             vKey = "(AF)" & rs!NUM_PLACA & "(id)"
+             Set itmX = lsw.ListItems.Add(, vKey, rs!NUM_PLACA)
                  itmX.SubItems(1) = rs!Placa_Alterna
                  itmX.SubItems(2) = rs!Nombre
                  itmX.SubItems(3) = Format(rs!fecha_adquisicion, "dd/mm/yyyy")
@@ -2766,14 +2799,14 @@ Select Case UCase(vTipo)
                  itmX.SubItems(7) = Format(rs!DEPRECIACION_AC - rs!DEPRECIACION_MES, "Standard")
                  itmX.SubItems(8) = Format(rs!DEPRECIACION_MES, "Standard")
                  itmX.SubItems(9) = Format(rs!DEPRECIACION_AC, "Standard")
-                 itmX.SubItems(10) = Format(rs!Valor_Libros, "Standard")
+                 itmX.SubItems(10) = Format(rs!VALOR_LIBROS, "Standard")
                  itmX.SubItems(11) = Format(rs!depreciacion_periodo, "dd/mm/yyyy")
                  
                  curVH = curVH + rs!Valor_Historico
                  curDepAnt = curDepAnt + rs!DEPRECIACION_AC - rs!DEPRECIACION_MES
                  curDepMes = curDepMes + rs!DEPRECIACION_MES
                  curDepAc = curDepAc + rs!DEPRECIACION_AC
-                 curVL = curVL + rs!Valor_Libros
+                 curVL = curVL + rs!VALOR_LIBROS
                  
              rs.MoveNext
             Loop
@@ -2804,8 +2837,8 @@ Select Case UCase(vTipo)
             
             Call OpenRecordSet(rs, strSQL, 0)
             Do While Not rs.EOF
-             vKey = "(AF)" & rs!num_placa & "(id)"
-             Set itmX = lsw.ListItems.Add(, vKey, rs!num_placa)
+             vKey = "(AF)" & rs!NUM_PLACA & "(id)"
+             Set itmX = lsw.ListItems.Add(, vKey, rs!NUM_PLACA)
                  itmX.SubItems(1) = rs!Placa_Alterna & ""
                  itmX.SubItems(2) = rs!Nombre
                  itmX.SubItems(3) = Format(rs!fecha_adquisicion, "dd/mm/yyyy")
@@ -2889,7 +2922,7 @@ wPosIni = 5
 If ConsultaSecciones(DeCodificaPrimaryKey(pNodo.Key, wPosIni, "(id)")) Then
     With ADORecordSet
         While Not .EOF
-          NIndice = sbTreeNodoCreate("(DP)" & .Fields!cod_departamento & "(SC)" & .Fields!cod_seccion & "(id)", pNodo, .Fields!Descripcion, "Seccion", pNodo.Index, 9)
+          NIndice = sbTreeNodoCreate("(DP)" & .Fields!Cod_Departamento & "(SC)" & .Fields!Cod_Seccion & "(id)", pNodo, .Fields!Descripcion, "Seccion", pNodo.Index, 9)
      '     NIndice = sbTreeNodoCreate("0x0" & .Fields!cod_departamento & "(SC)" & .Fields!COD_SECCION & "(id)", pNodo, "AF0x0", "AF0x0", NIndice, 1)
           .MoveNext
         Wend
@@ -2966,9 +2999,9 @@ On Error GoTo vError
 
     With ADORecordSet
         While Not .EOF
-          vKey = "(DP)" & .Fields!cod_departamento & "(id)"
+          vKey = "(DP)" & .Fields!Cod_Departamento & "(id)"
           Set itmX = lsw.ListItems.Add(, vKey, .Fields!Descripcion)
-              itmX.SubItems(1) = .Fields!cod_departamento
+              itmX.SubItems(1) = .Fields!Cod_Departamento
           .MoveNext
         Wend
         .Close
@@ -3060,9 +3093,9 @@ On Error GoTo vError
 
     With ADORecordSet
         While Not .EOF
-          vKey = "(DP)" & .Fields!cod_departamento & "(SC)" & .Fields!cod_seccion & "(id)"
+          vKey = "(DP)" & .Fields!Cod_Departamento & "(SC)" & .Fields!Cod_Seccion & "(id)"
           Set itmX = lsw.ListItems.Add(, vKey, .Fields!Descripcion)
-              itmX.SubItems(1) = .Fields!cod_seccion
+              itmX.SubItems(1) = .Fields!Cod_Seccion
           .MoveNext
         Wend
         .Close
@@ -3121,8 +3154,8 @@ On Error GoTo vError
     If ConsultaDepartamentos Then
     With ADORecordSet
         While Not .EOF
-          NIndice = sbTreeNodoCreate("(DP)" & .Fields!cod_departamento & "(id)", pNodo, .Fields!Descripcion, "Departamentos", pNodo.Index, Img)
-          NIndice = sbTreeNodoCreate("0x0" & .Fields!cod_departamento & "(id)", pNodo, "AF0x0", "AF0x0", NIndice, Img)
+          NIndice = sbTreeNodoCreate("(DP)" & .Fields!Cod_Departamento & "(id)", pNodo, .Fields!Descripcion, "Departamentos", pNodo.Index, Img)
+          NIndice = sbTreeNodoCreate("0x0" & .Fields!Cod_Departamento & "(id)", pNodo, "AF0x0", "AF0x0", NIndice, Img)
           .MoveNext
         Wend
         .Close
@@ -3968,9 +4001,9 @@ If fxAdicionesRetirosConsulta Then
     With ADORecordSet
         While Not .EOF
             Set itmX = lsw.ListItems.Add()
-                itmX.Key = "(AF)" & .Fields!num_placa & "(AR)" & .Fields!Id_AddRet & "(id)"
+                itmX.Key = "(AF)" & .Fields!NUM_PLACA & "(AR)" & .Fields!Id_AddRet & "(id)"
                 itmX.Text = .Fields!Nombre
-                itmX.SubItems(1) = .Fields!num_placa
+                itmX.SubItems(1) = .Fields!NUM_PLACA
                 itmX.SubItems(2) = IIf(.Fields!Tipo = "A", "Adición", "Retiro")
                 itmX.SubItems(3) = .Fields!Justificacion
                 itmX.SubItems(4) = Format(.Fields!fecha, "dd/mm/yyyy")

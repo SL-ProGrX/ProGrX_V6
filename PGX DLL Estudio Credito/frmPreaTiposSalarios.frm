@@ -5,15 +5,15 @@ Begin VB.Form frmPreaTiposSalarios
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Tipos de Salarios"
-   ClientHeight    =   5652
-   ClientLeft      =   48
-   ClientTop       =   432
-   ClientWidth     =   11832
+   ClientHeight    =   5655
+   ClientLeft      =   45
+   ClientTop       =   435
+   ClientWidth     =   11835
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   5652
-   ScaleWidth      =   11832
+   ScaleHeight     =   5655
+   ScaleWidth      =   11835
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin FPSpreadADO.fpSpread vGrid 
@@ -49,7 +49,7 @@ Begin VB.Form frmPreaTiposSalarios
       Caption         =   "Tipos de Salarios"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -142,7 +142,19 @@ On Error GoTo vError
 
 fxGuardar = 0
 vGrid.Row = vGrid.ActiveRow
+
+
+vGrid.Col = 2 'Descripcion
+If Len(vGrid.Text) = 0 Then
+    MsgBox "No se ha indicado una descripción válida!", vbExclamation
+    Exit Function
+End If
+
+
 vGrid.Col = 1
+
+
+
 
 strSQL = "select isnull(count(*),0) as Existe from Crd_Prea_Tipo_Salario " _
        & " where tipo_salario = '" & vGrid.Text & "'"
@@ -215,10 +227,6 @@ End Function
 
 Private Sub vGrid_KeyDown(KeyCode As Integer, Shift As Integer)
 Dim i As Integer
-'MsgBox "Columna : " & vGrid.Col
-'MsgBox "Columna Activa: " & vGrid.ActiveCol
-'MsgBox "Fila : " & vGrid.Row
-'MsgBox "Fila Activa: " & vGrid.ActiveRow
 
 If vGrid.ActiveCol = vGrid.MaxCols And (KeyCode = 13 Or KeyCode = vbKeyTab) Then
   i = fxGuardar

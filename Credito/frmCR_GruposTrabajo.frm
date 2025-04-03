@@ -1,22 +1,22 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#19.3#0"; "Codejock.Controls.v19.3.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_GruposTrabajo 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Definición de Grupos Trabajos & Asignación Funcional"
-   ClientHeight    =   7596
-   ClientLeft      =   48
-   ClientTop       =   348
-   ClientWidth     =   10776
+   ClientHeight    =   7605
+   ClientLeft      =   45
+   ClientTop       =   345
+   ClientWidth     =   10785
    ClipControls    =   0   'False
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   7596
-   ScaleWidth      =   10776
+   ScaleHeight     =   7605
+   ScaleWidth      =   10785
    ShowInTaskbar   =   0   'False
    Begin XtremeSuiteControls.TabControl tcMain 
       Height          =   6012
@@ -24,7 +24,7 @@ Begin VB.Form frmCR_GruposTrabajo
       TabIndex        =   1
       Top             =   1440
       Width           =   10572
-      _Version        =   1245187
+      _Version        =   1572864
       _ExtentX        =   18648
       _ExtentY        =   10604
       _StockProps     =   68
@@ -69,7 +69,7 @@ Begin VB.Form frmCR_GruposTrabajo
          Top             =   1080
          Visible         =   0   'False
          Width           =   6612
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   11663
          _ExtentY        =   8276
          _StockProps     =   77
@@ -95,7 +95,7 @@ Begin VB.Form frmCR_GruposTrabajo
          Top             =   1080
          Visible         =   0   'False
          Width           =   6612
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   11663
          _ExtentY        =   8276
          _StockProps     =   77
@@ -121,7 +121,7 @@ Begin VB.Form frmCR_GruposTrabajo
          Top             =   1080
          Visible         =   0   'False
          Width           =   6612
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   11663
          _ExtentY        =   8276
          _StockProps     =   77
@@ -175,9 +175,9 @@ Begin VB.Form frmCR_GruposTrabajo
          Top             =   600
          Visible         =   0   'False
          Width           =   6612
-         _Version        =   1245187
-         _ExtentX        =   11663
-         _ExtentY        =   550
+         _Version        =   1572864
+         _ExtentX        =   11668
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BackColor       =   16777215
@@ -201,9 +201,9 @@ Begin VB.Form frmCR_GruposTrabajo
          Top             =   600
          Visible         =   0   'False
          Width           =   6612
-         _Version        =   1245187
-         _ExtentX        =   11663
-         _ExtentY        =   550
+         _Version        =   1572864
+         _ExtentX        =   11668
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BackColor       =   16777215
@@ -227,9 +227,9 @@ Begin VB.Form frmCR_GruposTrabajo
          Top             =   600
          Visible         =   0   'False
          Width           =   6612
-         _Version        =   1245187
-         _ExtentX        =   11663
-         _ExtentY        =   550
+         _Version        =   1572864
+         _ExtentX        =   11668
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BackColor       =   16777215
@@ -254,7 +254,7 @@ Begin VB.Form frmCR_GruposTrabajo
          Top             =   600
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   444
          _StockProps     =   79
@@ -279,7 +279,7 @@ Begin VB.Form frmCR_GruposTrabajo
          Top             =   1080
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   1291
          _StockProps     =   79
@@ -304,7 +304,7 @@ Begin VB.Form frmCR_GruposTrabajo
          Top             =   600
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   444
          _StockProps     =   79
@@ -329,7 +329,7 @@ Begin VB.Form frmCR_GruposTrabajo
          Top             =   1080
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   1291
          _StockProps     =   79
@@ -354,7 +354,7 @@ Begin VB.Form frmCR_GruposTrabajo
          Top             =   600
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   444
          _StockProps     =   79
@@ -379,7 +379,7 @@ Begin VB.Form frmCR_GruposTrabajo
          Top             =   1080
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   444
          _StockProps     =   79
@@ -403,7 +403,7 @@ Begin VB.Form frmCR_GruposTrabajo
          TabIndex        =   3
          Top             =   600
          Width           =   1332
-         _Version        =   1245187
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   868
          _StockProps     =   79
@@ -426,7 +426,7 @@ Begin VB.Form frmCR_GruposTrabajo
       Caption         =   "Grupos de Trabajo"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -716,7 +716,7 @@ On Error GoTo vError
 
 fxGuardar = 0
 vGrid.Row = vGrid.ActiveRow
-vGrid.col = 1
+vGrid.Col = 1
 
 strSQL = "select isnull(count(*),0) as Existe from crd_Grupos" _
        & " where cod_grupo = '" & vGrid.Text & "'"
@@ -727,20 +727,20 @@ If rs!Existe = 0 Then 'Insertar
   
   strSQL = "insert into crd_Grupos(cod_grupo,descripcion) values('" _
          & vGrid.Text & "','"
-  vGrid.col = 2
+  vGrid.Col = 2
   strSQL = strSQL & vGrid.Text & "')"
 
   Call ConectionExecute(strSQL)
 
-  vGrid.col = 1
+  vGrid.Col = 1
   Call Bitacora("Registra", "Grupo de Trabajo: " & vGrid.Text)
 
 Else 'Actualizar
 
- vGrid.col = 2
+ vGrid.Col = 2
  strSQL = "update crd_Grupos set descripcion = '" & vGrid.Text & "'"
  strSQL = strSQL & " where cod_grupo = '"
- vGrid.col = 1
+ vGrid.Col = 1
  strSQL = strSQL & vGrid.Text & "'"
  Call ConectionExecute(strSQL)
 

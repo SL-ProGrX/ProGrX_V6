@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCR_Poliza_Proc_Recepcion 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -23,7 +23,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
       TabIndex        =   43
       Top             =   3480
       Width           =   15735
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   27755
       _ExtentY        =   8493
       _StockProps     =   77
@@ -47,7 +47,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
       TabIndex        =   3
       Top             =   1200
       Width           =   3495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   6165
       _ExtentY        =   3201
       _StockProps     =   79
@@ -71,7 +71,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   15
          Top             =   720
          Width           =   3375
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5953
          _ExtentY        =   582
          _StockProps     =   77
@@ -97,7 +97,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   18
          Top             =   1440
          Width           =   3375
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5953
          _ExtentY        =   582
          _StockProps     =   77
@@ -162,7 +162,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
       TabIndex        =   4
       Top             =   240
       Width           =   5295
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   9340
       _ExtentY        =   661
       _StockProps     =   77
@@ -188,11 +188,11 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
       TabIndex        =   6
       Top             =   600
       Width           =   495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   79
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       UseVisualStyle  =   -1  'True
       Appearance      =   17
       Picture         =   "frmCR_Poliza_Proc_Recepcion.frx":0000
@@ -203,11 +203,11 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
       TabIndex        =   7
       Top             =   600
       Width           =   495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   79
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       UseVisualStyle  =   -1  'True
       Appearance      =   17
       Picture         =   "frmCR_Poliza_Proc_Recepcion.frx":0700
@@ -218,11 +218,11 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
       TabIndex        =   8
       Top             =   600
       Width           =   495
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   79
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       UseVisualStyle  =   -1  'True
       Appearance      =   17
       Picture         =   "frmCR_Poliza_Proc_Recepcion.frx":0E19
@@ -233,7 +233,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
       TabIndex        =   32
       Top             =   3195
       Width           =   210
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   370
       _ExtentY        =   370
       _StockProps     =   79
@@ -246,7 +246,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
       TabIndex        =   33
       Top             =   8400
       Width           =   15735
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   27755
       _ExtentY        =   1720
       _StockProps     =   79
@@ -259,7 +259,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   34
          Top             =   120
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   556
          _StockProps     =   77
@@ -286,7 +286,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   35
          Top             =   480
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   556
          _StockProps     =   77
@@ -313,7 +313,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   36
          Top             =   120
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   556
          _StockProps     =   77
@@ -340,7 +340,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   37
          Top             =   480
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   556
          _StockProps     =   77
@@ -367,7 +367,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   38
          Top             =   120
          Width           =   1935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3413
          _ExtentY        =   1085
          _StockProps     =   79
@@ -392,7 +392,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   45
          Top             =   120
          Width           =   1935
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3413
          _ExtentY        =   1085
          _StockProps     =   79
@@ -498,7 +498,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
       TabIndex        =   2
       Top             =   1200
       Width           =   11895
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   20981
       _ExtentY        =   3413
       _StockProps     =   79
@@ -522,7 +522,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   11
          Top             =   840
          Width           =   3135
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5530
          _ExtentY        =   582
          _StockProps     =   77
@@ -548,7 +548,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   9
          Top             =   360
          Width           =   3135
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5530
          _ExtentY        =   767
          _StockProps     =   77
@@ -573,7 +573,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   14
          Top             =   1200
          Width           =   3135
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5530
          _ExtentY        =   582
          _StockProps     =   77
@@ -599,7 +599,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   19
          Top             =   720
          Width           =   4095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   7223
          _ExtentY        =   2037
          _StockProps     =   77
@@ -624,7 +624,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   21
          Top             =   360
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   582
          _StockProps     =   77
@@ -650,7 +650,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   24
          Top             =   360
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   68
@@ -672,7 +672,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   26
          Top             =   1560
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   582
          _StockProps     =   77
@@ -698,7 +698,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   27
          Top             =   1560
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   582
          _StockProps     =   77
@@ -724,7 +724,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   30
          Top             =   840
          Width           =   1695
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   582
          _StockProps     =   77
@@ -752,7 +752,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
          TabIndex        =   31
          Top             =   1560
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1931
          _ExtentY        =   582
          _StockProps     =   77
@@ -959,7 +959,7 @@ Begin VB.Form frmCR_Poliza_Proc_Recepcion
       TabIndex        =   44
       Top             =   3120
       Width           =   15735
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   27755
       _ExtentY        =   661
       _StockProps     =   14
@@ -1056,6 +1056,336 @@ Dim vIVA_Porc As Currency, vIVA_Cta As String, vIVA_CtaDesc As String
 Dim strSQL As String, rs As New ADODB.Recordset
 Dim itmX As ListViewItem
 
+Private Sub btnBuscar_Click()
+
+On Error GoTo vError
+
+With frmContenedor.CD
+    .InitDir = "C:\"
+    .DialogTitle = "Localice Archivo de Planilla [Microsoft EXCEL]..."
+    .Filter = "Excel|*.xlsx|Excel 97-2003|*.xls"
+    .ShowOpen
+    
+    If .FileName = "" Then
+        MsgBox "Archivo no válido...", vbExclamation
+        Exit Sub
+    End If
+    
+    If UCase(Right(.FileName, 3)) = "XLS" Or UCase(Right(.FileName, 4)) = "XLSX" Then
+        'Ok
+    Else
+        MsgBox "La Extensión del Archivo no es válido...", vbExclamation
+        Exit Sub
+    End If
+    
+    txtArchivo.Text = .FileName
+
+End With
+
+Exit Sub
+
+vError:
+  txtArchivo.Text = ""
+  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+ 
+
+End Sub
+
+Private Sub sbArchivo_Load()
+Dim strSQL As String, rs As New ADODB.Recordset
+
+Dim pCedula As String, pNombre As String, pNumeroPoliza As String, pMonto As Currency
+Dim pLinea As Long
+
+Dim strCadena As String, curMonto As Currency, lCasos As Long
+Dim i As Integer, vCampos As Boolean
+
+
+On Error GoTo vError
+
+lsw.ListItems.Clear
+
+If txtArchivo.Text = "" Then
+   MsgBox "Seleccione un archivo a procesar...", vbExclamation
+   Exit Sub
+End If
+
+If cboPoliza.ListCount <= 0 Then
+    MsgBox "No existe ninguna póliza, no se puede procesar el archivo...", vbCritical
+    Exit Sub
+End If
+
+
+Me.MousePointer = vbHourglass
+
+
+txtTotal.Text = 0
+txtCantidad.Text = 0
+
+txtSelCantidad.Text = 0
+txtSelMonto.Text = 0
+
+curMonto = 0
+lCasos = 0 'Total
+
+
+Set rs = Excel_Load(txtArchivo.Text, "IMPORT")
+    
+'Validaciónn del Archivo
+vCampos = False
+For i = 0 To rs.Fields.Count
+     
+    If UCase(LCase(rs.Fields(i).Name)) = "CEDULA" Then
+       vCampos = True
+    End If
+     
+     If vCampos Then Exit For
+Next i
+
+If Not vCampos Then
+   MsgBox "No coincide la estructura del archivo a cargar..." & vbCrLf & _
+         "Los campos son CEDULA, NOMBRE, N_POLIZA, MONTO_ASEGURADO ¦ Nombre de la Hoja = IMPORT"
+   Exit Sub
+End If
+
+vCampos = False
+For i = 0 To rs.Fields.Count
+     
+    If UCase(LCase(rs.Fields(i).Name)) = "NOMBRE" Then
+       vCampos = True
+    End If
+     
+     If vCampos Then Exit For
+Next i
+
+If Not vCampos Then
+   MsgBox "No coincide la estructura del archivo a cargar..." & vbCrLf & _
+         "Los campos son CEDULA, NOMBRE, N_POLIZA, MONTO_ASEGURADO ¦ Nombre de la Hoja = IMPORT"
+   Exit Sub
+End If
+
+
+vCampos = False
+For i = 0 To rs.Fields.Count
+     
+    If UCase(LCase(rs.Fields(i).Name)) = "N_POLIZA" Then
+       vCampos = True
+    End If
+     
+     If vCampos Then Exit For
+Next i
+
+If Not vCampos Then
+   MsgBox "No coincide la estructura del archivo a cargar..." & vbCrLf & _
+         "Los campos son CEDULA, NOMBRE, N_POLIZA, MONTO_ASEGURADO ¦ Nombre de la Hoja = IMPORT"
+   Exit Sub
+End If
+
+
+vCampos = False
+For i = 0 To rs.Fields.Count
+     
+    If UCase(LCase(rs.Fields(i).Name)) = "MONTO_ASEGURADO" Then
+       vCampos = True
+    End If
+     
+     If vCampos Then Exit For
+Next i
+
+If Not vCampos Then
+   MsgBox "No coincide la estructura del archivo a cargar..." & vbCrLf & _
+         "Los campos son CEDULA, NOMBRE, N_POLIZA, MONTO_ASEGURADO ¦ Nombre de la Hoja = IMPORT"
+   Exit Sub
+End If
+
+'FIN: Validación del Archivo
+
+
+
+'Sube, Revisa y Carga
+    
+pLinea = 0
+strSQL = ""
+
+Do While Not rs.EOF
+  If Trim(rs!Cedula) <> "" Then
+    pCedula = rs!Cedula
+    pNombre = rs!Nombre
+    pMonto = rs!Monto_Asegurado
+    pNumeroPoliza = rs!N_Poliza
+    
+    pLinea = pLinea + 1
+    
+'    If pLinea = 1 Then
+'        strSQL = strSQL & Space(10) & "exec spFndPlanillaDirecta_Sube " & pInstitucion & "," & pOperadora & ",'" & pPlan & "','" _
+'               & txtComprobante.Text & "'," & cboProceso.Text & ",'" & pCedula & "','" & pNombre & "'," _
+'               & pFondos & "," & pLinea & "," & 1
+'    Else
+'        strSQL = strSQL & Space(10) & "exec spFndPlanillaDirecta_Sube " & pInstitucion & "," & pOperadora & ",'" & pPlan & "','" _
+'               & txtComprobante.Text & "'," & cboProceso.Text & ",'" & pCedula & "','" & pNombre & "'," _
+'               & pFondos & "," & pLinea & "," & 0
+'    End If
+    
+    If Len(strSQL) > 20000 Then
+       Call ConectionExecute(strSQL)
+       If glogon.error Then
+          Exit Sub
+       End If
+       strSQL = ""
+    End If
+    
+  End If
+  rs.MoveNext
+Loop
+rs.Close
+
+'Procesa Ultimo Bloque
+
+If Len(strSQL) > 0 Then
+   Call ConectionExecute(strSQL)
+   If glogon.error Then
+      Exit Sub
+   End If
+   strSQL = ""
+End If
+
+''Revisa Lote y lo Carga
+'strSQL = "exec spFndPlanillaDirecta_Consulta " & pOperadora & ",'" & pPlan & "','" _
+'                   & txtComprobante.Text & "',1"
+'Call OpenRecordSet(rs, strSQL)
+'If glogon.error Then
+'   Exit Sub
+'End If
+
+
+txtTotal.Text = 0
+txtCantidad.Text = 0
+
+curMonto = 0
+lCasos = 0 'Total
+
+With lsw.ListItems
+    .Clear
+'    Do While Not rs.EOF
+'
+'            .MaxRows = .MaxRows + 1
+'            .Row = .MaxRows
+'            .Col = 1
+'            .Text = rs!Cedula
+'            .Col = 2
+'            .Text = rs!Nombre
+'            .Col = 3
+'            .Value = IIf((rs!Existe_Persona = 1), 0, 1)
+'
+'            .Col = 4
+'            .Value = IIf((rs!Existe_Contrato = 1), 0, 1)
+'            .CellTag = rs!COD_CONTRATO
+'
+'            .Col = 5
+'            .Text = Format(rs!fondos, "Standard")
+'
+'            If rs!Existe_Persona = 0 Then
+'               txtSocios.Text = CInt(txtSocios.Text) + 1
+'            End If
+'
+'            If rs!Existe_Contrato = 0 Then
+'               txtContratos.Text = CInt(txtContratos.Text) + 1
+'            End If
+'
+'            curMonto = curMonto + rs!fondos
+'            txtMonto.Text = Format(curMonto, "Standard")
+'            txtCasos.Text = txtCasos.Text + 1
+'
+'      rs.MoveNext
+'    Loop
+'    rs.Close
+End With 'vGrid
+
+
+
+'Totales
+txtTotal.Text = Format(curMonto, "Standard")
+txtCantidad.Text = Format(lCasos, "###,##0")
+
+Me.MousePointer = vbDefault
+MsgBox "Información Cargada Satisfactoriamente", vbInformation
+
+Exit Sub
+
+vError:
+    Me.MousePointer = vbDefault
+    MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+    lsw.ListItems.Clear
+End Sub
+
+Private Sub btnCargar_Click()
+  Call sbArchivo_Load
+End Sub
+
+Private Sub btnEliminar_Click()
+If CLng(txtSelCantidad.Text) = 0 Then
+    MsgBox "Seleccione los Casos a Generar!", vbExclamation
+    Exit Sub
+End If
+End Sub
+
+Private Sub btnFactura_Click()
+
+If CLng(txtSelCantidad.Text) = 0 Then
+    MsgBox "Seleccione los Casos a Generar!", vbExclamation
+    Exit Sub
+End If
+
+End Sub
+
+Private Sub btnInfo_Click()
+Dim vMensaje As String
+
+     vMensaje = "-> FORMATO DEL ARCHIVO DE CARGA <-" & vbCrLf & vbCrLf _
+              & " 1. Microsoft Excel" & vbCrLf _
+              & " 2. Nombre de la Hoja.: IMPORT" & vbCrLf _
+              & " 3. Columnas.: CEDULA, NOMBRE, N_POLIZA, MONTO_ASEGURADO"
+     
+     MsgBox vMensaje, vbInformation
+End Sub
+
+Private Sub cboDivisa_Click()
+Dim strSQL As String, rs As New ADODB.Recordset
+Dim vDivisa As String, i As Integer
+
+If vPaso Then Exit Sub
+If cboDivisa.ItemData(cboDivisa.ListIndex) < 0 Then Exit Sub
+
+
+vDivisa = cboDivisa.ItemData(cboDivisa.ListIndex)
+
+strSQL = "select dbo.fxCntXTipoCambio(" & GLOBALES.gEnlace & ",'" & vDivisa & "',dbo.MyGetdate(),'V') as 'TipoCambio'"
+Call OpenRecordSet(rs, strSQL)
+  txtTC.Text = Format(rs!TipoCambio, "###,##0.0000")
+rs.Close
+
+
+End Sub
+
+Private Sub cboPoliza_Click()
+Dim strSQL As String
+
+If vPaso Then Exit Sub
+If cboPoliza.ListCount < 0 Then Exit Sub
+
+
+strSQL = "select Prov.COD_PROVEEDOR as 'IdX', Prov.DESCRIPCION  as 'ItmX'" _
+       & " from CRD_CATALOGO_POLIZAS Cp" _
+       & "   inner join CRD_POLIZAS_ASEGURADORAS Pa  on Cp.COD_ASEGURADORA = Pa.COD_ASEGURADORA" _
+       & "   inner join CXP_PROVEEDORES Prov on Pa.COD_PROVEEDOR = Prov.COD_PROVEEDOR" _
+       & " Where Cp.COD_POLIZA = '" & cboPoliza.ItemData(cboPoliza.ListIndex) & "'"
+vPaso = True
+Call sbCbo_Llena_New(cboProveedor, strSQL, False, True)
+vPaso = False
+
+
+End Sub
+
 Private Sub cboUnidad_Click()
 Dim strSQL As String
 
@@ -1074,7 +1404,8 @@ vPaso = False
 End Sub
 
 Private Sub Form_Load()
-vModulo = 3
+
+vModulo = 11
 
 Set imgBanner.Picture = frmContenedor.imgBanner_01.Picture
 
@@ -1089,12 +1420,26 @@ With lsw.ColumnHeaders
     .Add , , "Monto Prima", 2500, vbRightJustify
 End With
 
+Dim vFecha As Date, vProceso As Currency, i As Integer
 
-cboProceso.AddItem "202406"
-cboProceso.Text = "202406"
+vFecha = fxFechaServidor
 
-strSQL = "select COD_POLIZA as 'IdX', DESCRIPCION as 'ItmX' From CRD_CATALOGO_POLIZAS"
-Call sbCbo_Llena_New(cboPoliza, strSQL, False, True)
+dtpCorte.Value = vFecha
+
+vFecha = DateAdd("m", -10, vFecha)
+vProceso = Format(vFecha, "yyyymm")
+For i = 1 To 12
+  vProceso = fxFechaProcesoSiguiente(vProceso)
+  cboProceso.AddItem CStr(vProceso)
+Next i
+
+vProceso = Format(dtpCorte.Value, "yyyymm")
+cboProceso.Text = vProceso
+
+vPaso = True
+    strSQL = "select COD_POLIZA as 'IdX', DESCRIPCION as 'ItmX' From CRD_CATALOGO_POLIZAS"
+    Call sbCbo_Llena_New(cboPoliza, strSQL, False, True)
+vPaso = False
 
  'Carga la Divisa Local
  strSQL = "select rtrim(cod_divisa) as 'Divisa',rtrim(descripcion) as 'DivisaLocal' " _
@@ -1123,6 +1468,14 @@ cboFormaPago.AddItem "Contado"
 cboFormaPago.AddItem "Crédito"
 cboFormaPago.Text = "Crédito"
 
+txtTotal.Text = 0
+txtCantidad.Text = 0
+
+txtSelCantidad.Text = 0
+txtSelMonto.Text = 0
+
+Call Formularios(Me)
+Call RefrescaTags(Me)
 
 End Sub
 

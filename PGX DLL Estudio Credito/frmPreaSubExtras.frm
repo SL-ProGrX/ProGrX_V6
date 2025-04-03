@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.2#0"; "Codejock.Controls.v20.2.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmPreaSubExtras 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -49,7 +49,7 @@ Begin VB.Form frmPreaSubExtras
       TabIndex        =   2
       Top             =   7080
       Width           =   1575
-      _Version        =   1310722
+      _Version        =   1572864
       _ExtentX        =   2778
       _ExtentY        =   556
       _StockProps     =   77
@@ -301,7 +301,7 @@ Dim vMonto As Double
 On Error GoTo vError
 
      fxInsertar = False
-     If Not ValidaEstadoPreanalisis(gPreAnalisis.ESTADO) Then
+     If Not ValidaEstadoPreanalisis(gPreAnalisis.Estado) Then
       Exit Function
      End If
      
@@ -374,7 +374,7 @@ On Error GoTo vError
 
     
 fxModificar = False
- If Not ValidaEstadoPreanalisis(gPreAnalisis.ESTADO) Then
+ If Not ValidaEstadoPreanalisis(gPreAnalisis.Estado) Then
   Exit Function
  End If
 
@@ -419,7 +419,7 @@ On Error GoTo vError
  Me.MousePointer = vbHourglass
  
     fxBorrar = False
-     If Not ValidaEstadoPreanalisis(gPreAnalisis.ESTADO) Then
+     If Not ValidaEstadoPreanalisis(gPreAnalisis.Estado) Then
       GoTo salir
      End If
 

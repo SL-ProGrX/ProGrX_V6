@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.0#0"; "Codejock.Controls.v20.0.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmPreaSubDeducciones 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -23,7 +23,7 @@ Begin VB.Form frmPreaSubDeducciones
       TabIndex        =   5
       Top             =   6360
       Width           =   4815
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   8493
       _ExtentY        =   661
       _StockProps     =   79
@@ -71,7 +71,7 @@ Begin VB.Form frmPreaSubDeducciones
       TabIndex        =   3
       Top             =   6360
       Width           =   1695
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2990
       _ExtentY        =   556
       _StockProps     =   77
@@ -96,7 +96,7 @@ Begin VB.Form frmPreaSubDeducciones
       TabIndex        =   4
       Top             =   6360
       Width           =   1815
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   3201
       _ExtentY        =   556
       _StockProps     =   77
@@ -191,7 +191,7 @@ If gPreAnalisis.Institucion = "-1" Or gPreAnalisis.Institucion = "" Then
 End If
   
    
-glogon.strSQL = "select  dbo.fxCRDPreaNumPagos(" & fxFormatearValor(GLOBALES.gTag2, fecha) & "," & fxFormatearValor(gPreAnalisis.Institucion, Caracter) & " )"
+glogon.strSQL = "select  dbo.fxCRDPreaNumPagos(" & fxFormatearValor(GLOBALES.gTag2, fecha) & "," & fxFormatearValor(gPreAnalisis.Institucion, caracter) & " )"
 If execSql(glogon.strSQL) Then
     If Trim(glogon.Recordset(0) & "") <> "" Then
     m_NumeroDepagos = glogon.Recordset(0)
@@ -213,7 +213,7 @@ vGrid.MaxCols = 4
 vGrid.Col = 1
 vGrid.Lock = True
 
-sql = "spCRDPreaDETALLE_DEDUC_TxExpediente " & fxFormatearValor(gPreAnalisis.Expediente, Caracter)
+sql = "spCRDPreaDETALLE_DEDUC_TxExpediente " & fxFormatearValor(gPreAnalisis.Expediente, caracter)
 Call sbCargaGrid(vGrid, 4, sql)
 
 Call sbCalculaTotales
@@ -232,10 +232,10 @@ On Error GoTo error
 
 With Vcoleccion
     .Add fxFormatearValor(pId, Numerico)
-    .Add fxFormatearValor(pExpediente, Caracter)
+    .Add fxFormatearValor(pExpediente, caracter)
     .Add fxFormatearValor(pCuota_Colilla, Numerico)
     .Add fxFormatearValor(pCuota_Mensual, Numerico)
-    .Add fxFormatearValor(pDetalle, Caracter)
+    .Add fxFormatearValor(pDetalle, caracter)
     
 End With
 fxAgregaColleccion = fxFormatearValuesCollection(Vcoleccion)
@@ -252,7 +252,7 @@ On Error GoTo error
 
 With Vcoleccion
     .Add fxFormatearValor(Id, Numerico)
-    .Add fxFormatearValor(Expediente, Caracter)
+    .Add fxFormatearValor(Expediente, caracter)
 
 End With
 fxAgregaColleccionBorrar = fxFormatearValuesCollection(Vcoleccion)
@@ -295,7 +295,7 @@ On Error GoTo vError
     
     fxInsertar = False
     
-    If Not ValidaEstadoPreanalisis(gPreAnalisis.ESTADO) Then
+    If Not ValidaEstadoPreanalisis(gPreAnalisis.Estado) Then
       Exit Function
     End If
     
@@ -327,7 +327,7 @@ On Error GoTo vError
     If (clsEntidad.fxAgregar(fxAgregaColleccion(vID, gPreAnalisis.Expediente, vCuota_Colilla, vCuota_Mensual, vGrid.Text))) Then
         fxInsertar = True
         vGrid.MaxRows = vGrid.MaxRows + 1
-       glogon.strSQL = "select max(IDX) as IDX from CRD_PREA_DETALLE_DEDUC  Where cod_preanalisis = " & fxFormatearValor(gPreAnalisis.Expediente, Caracter)
+       glogon.strSQL = "select max(IDX) as IDX from CRD_PREA_DETALLE_DEDUC  Where cod_preanalisis = " & fxFormatearValor(gPreAnalisis.Expediente, caracter)
 
         If (execSql(glogon.strSQL, True)) Then
             vGrid.Col = 1
@@ -356,7 +356,7 @@ On Error GoTo vError
 
     
     fxModificar = False
-    If Not ValidaEstadoPreanalisis(gPreAnalisis.ESTADO) Then
+    If Not ValidaEstadoPreanalisis(gPreAnalisis.Estado) Then
       Exit Function
     End If
     
@@ -411,7 +411,7 @@ On Error GoTo vError
  
     
     fxBorrar = False
-    If Not ValidaEstadoPreanalisis(gPreAnalisis.ESTADO) Then
+    If Not ValidaEstadoPreanalisis(gPreAnalisis.Estado) Then
         Exit Function
     End If
     

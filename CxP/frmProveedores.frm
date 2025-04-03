@@ -134,16 +134,16 @@ Begin VB.Form frmCxPProveedores
       Item(5).Control(0)=   "chkWebPortal"
       Item(5).Control(1)=   "chkWebFerias"
       Item(5).Control(2)=   "tcAutoGestion"
-      Begin XtremeSuiteControls.ListView lsw 
-         Height          =   3372
-         Left            =   -69640
-         TabIndex        =   62
-         Top             =   1800
+      Begin XtremeSuiteControls.ListView lswCuentas 
+         Height          =   1692
+         Left            =   -69760
+         TabIndex        =   30
+         Top             =   3480
          Visible         =   0   'False
-         Width           =   8532
+         Width           =   8652
          _Version        =   1572864
-         _ExtentX        =   15049
-         _ExtentY        =   5948
+         _ExtentX        =   15261
+         _ExtentY        =   2984
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -182,16 +182,16 @@ Begin VB.Form frmCxPProveedores
          FullRowSelect   =   -1  'True
          Appearance      =   17
       End
-      Begin XtremeSuiteControls.ListView lswCuentas 
-         Height          =   1692
-         Left            =   -69760
-         TabIndex        =   30
-         Top             =   3480
+      Begin XtremeSuiteControls.ListView lsw 
+         Height          =   3372
+         Left            =   -69640
+         TabIndex        =   62
+         Top             =   1800
          Visible         =   0   'False
-         Width           =   8652
+         Width           =   8532
          _Version        =   1572864
-         _ExtentX        =   15261
-         _ExtentY        =   2984
+         _ExtentX        =   15049
+         _ExtentY        =   5948
          _StockProps     =   77
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
@@ -236,30 +236,6 @@ Begin VB.Form frmCxPProveedores
          Item(1).Caption =   "Eventos"
          Item(1).ControlCount=   1
          Item(1).Control(0)=   "lswEventos"
-         Begin XtremeSuiteControls.ListView lswUsuarios 
-            Height          =   3735
-            Left            =   0
-            TabIndex        =   77
-            Top             =   360
-            Width           =   9495
-            _Version        =   1572864
-            _ExtentX        =   16748
-            _ExtentY        =   6588
-            _StockProps     =   77
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Calibri"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            View            =   3
-            FullRowSelect   =   -1  'True
-            Appearance      =   17
-            UseVisualStyle  =   0   'False
-         End
          Begin XtremeSuiteControls.ListView lswEventos 
             Height          =   3735
             Left            =   -70000
@@ -281,6 +257,30 @@ Begin VB.Form frmCxPProveedores
                Strikethrough   =   0   'False
             EndProperty
             Checkboxes      =   -1  'True
+            View            =   3
+            FullRowSelect   =   -1  'True
+            Appearance      =   17
+            UseVisualStyle  =   0   'False
+         End
+         Begin XtremeSuiteControls.ListView lswUsuarios 
+            Height          =   3735
+            Left            =   0
+            TabIndex        =   77
+            Top             =   360
+            Width           =   9495
+            _Version        =   1572864
+            _ExtentX        =   16748
+            _ExtentY        =   6588
+            _StockProps     =   77
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Calibri"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
             View            =   3
             FullRowSelect   =   -1  'True
             Appearance      =   17
@@ -2108,8 +2108,8 @@ With lswUsuarios.ListItems
           itmX.SubItems(2) = rs!Ferias_Desc
           itmX.SubItems(3) = rs!Portal_Desc
           itmX.SubItems(4) = rs!Activo_Desc
-          itmX.SubItems(5) = rs!Registro_Fecha & ""
-          itmX.SubItems(6) = rs!Registro_Usuario & ""
+          itmX.SubItems(5) = rs!REGISTRO_FECHA & ""
+          itmX.SubItems(6) = rs!REGISTRO_USUARIO & ""
       rs.MoveNext
     Loop
     rs.Close
@@ -2146,8 +2146,8 @@ With lswEventos.ListItems
           itmX.SubItems(1) = rs!Descripcion
           itmX.SubItems(2) = rs!Inicio
           itmX.SubItems(3) = rs!Corte
-          itmX.SubItems(4) = rs!Registro_Fecha & ""
-          itmX.SubItems(5) = rs!Registro_Usuario & ""
+          itmX.SubItems(4) = rs!REGISTRO_FECHA & ""
+          itmX.SubItems(5) = rs!REGISTRO_USUARIO & ""
           
           itmX.Checked = rs!Asignado
           
@@ -2347,12 +2347,12 @@ If vCodigo > 0 Then
        Set itmX = lswCuentas.ListItems.Add(, , rs!CUENTA_INTERNA)
            itmX.SubItems(1) = Trim(rs!Banco)
            itmX.SubItems(2) = rs!TipoDesc
-           itmX.SubItems(3) = rs!COD_DIVISA
+           itmX.SubItems(3) = rs!cod_Divisa
            itmX.SubItems(4) = IIf(rs!CUENTA_INTERBANCA = 1, "Sí", "No")
            itmX.SubItems(5) = rs!Destino & ""
-           itmX.SubItems(6) = IIf(rs!Activa = 1, "Activa", "Cerrada")
-           itmX.SubItems(7) = rs!Registro_Fecha & ""
-           itmX.SubItems(8) = rs!Registro_Usuario & ""
+           itmX.SubItems(6) = IIf(rs!ACTIVA = 1, "Activa", "Cerrada")
+           itmX.SubItems(7) = rs!REGISTRO_FECHA & ""
+           itmX.SubItems(8) = rs!REGISTRO_USUARIO & ""
      
        rs.MoveNext
     Loop
@@ -2490,8 +2490,8 @@ Select Case Item.Index
                      itmX.SubItems(1) = rs!Suspension_Desc
                      itmX.SubItems(2) = rs!Notas
                      itmX.SubItems(3) = rs!Vencimiento & ""
-                     itmX.SubItems(4) = rs!Registro_Fecha & ""
-                     itmX.SubItems(5) = rs!Registro_Usuario & ""
+                     itmX.SubItems(4) = rs!REGISTRO_FECHA & ""
+                     itmX.SubItems(5) = rs!REGISTRO_USUARIO & ""
                      itmX.SubItems(6) = rs!REACTIVA_FECHA & ""
                      itmX.SubItems(7) = rs!REACTIVA_USUARIO & ""
                      itmX.SubItems(8) = rs!REACTIVA_NOTAS & ""
@@ -2759,7 +2759,7 @@ If Not rs.BOF And Not rs.EOF Then
   txtCodAlter = rs!Cod_Alter & ""
   
     txtNombre.Text = rs!Descripcion & ""
-    txtObservacion.Text = rs!observacion & ""
+    txtObservacion.Text = rs!Observacion & ""
     cboClasificacion.Text = Trim(rs!tipoprov)
     
     txtCedJur.Text = rs!CEDJUR & ""
@@ -2820,8 +2820,8 @@ If Not rs.BOF And Not rs.EOF Then
     
     StatusBarX.Panels(1).Text = "Saldo Divisa Foránea: " & Format(rs!Saldo_Divisa_Real, "Standard")
     StatusBarX.Panels(2).Text = "Saldo Divisa Local: " & Format(rs!Saldo, "Standard")
-    StatusBarX.Panels(3).Text = "Divisa: " & rs!COD_DIVISA
-    StatusBarX.Panels(3).Tag = Trim(rs!COD_DIVISA)
+    StatusBarX.Panels(3).Text = "Divisa: " & rs!cod_Divisa
+    StatusBarX.Panels(3).Tag = Trim(rs!cod_Divisa)
    
     chkWebFerias.Value = rs!WEB_FERIAS
     chkWebPortal.Value = rs!WEB_AUTO_GESTION
@@ -2896,7 +2896,7 @@ If IsNumeric(txtSaldo.Text) Then
         strSQL = "select cod_divisa from Cntx_Cuentas where cod_contabilidad = " & GLOBALES.gEnlace _
                & " and cod_cuenta = '" & vCuenta & "'"
         Call OpenRecordSet(rs, strSQL)
-            vDivisa = Trim(rs!COD_DIVISA)
+            vDivisa = Trim(rs!cod_Divisa)
         rs.Close
         If vDivisa <> StatusBarX.Panels(3).Tag Then
             vMensaje = vMensaje & vbCrLf & " - El proveedor tiene Saldo por Pagar y se intenta cambiar la divisa del mismo vía cambio de cuenta contable..."
@@ -2923,7 +2923,7 @@ vCuenta = fxgCntCuentaFormato(False, txtCuentaContable)
 strSQL = "select cod_divisa from Cntx_Cuentas where cod_contabilidad = " & GLOBALES.gEnlace _
        & " and cod_cuenta = '" & vCuenta & "'"
 Call OpenRecordSet(rs, strSQL)
-    vDivisa = Trim(rs!COD_DIVISA)
+    vDivisa = Trim(rs!cod_Divisa)
 rs.Close
 
 If vEdita Then

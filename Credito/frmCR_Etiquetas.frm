@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCR_Etiquetas 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -23,7 +23,7 @@ Begin VB.Form frmCR_Etiquetas
       Top             =   4440
       Visible         =   0   'False
       Width           =   11535
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   20346
       _ExtentY        =   11245
       _StockProps     =   79
@@ -37,7 +37,7 @@ Begin VB.Form frmCR_Etiquetas
          TabIndex        =   7
          Top             =   600
          Width           =   10575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18653
          _ExtentY        =   2778
          _StockProps     =   79
@@ -60,7 +60,7 @@ Begin VB.Form frmCR_Etiquetas
             TabIndex        =   10
             Top             =   360
             Width           =   8055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   14208
             _ExtentY        =   582
             _StockProps     =   77
@@ -86,7 +86,7 @@ Begin VB.Form frmCR_Etiquetas
             TabIndex        =   11
             Top             =   840
             Width           =   8055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   14208
             _ExtentY        =   1085
             _StockProps     =   77
@@ -112,7 +112,7 @@ Begin VB.Form frmCR_Etiquetas
             TabIndex        =   9
             Top             =   720
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1931
             _ExtentY        =   661
             _StockProps     =   79
@@ -135,7 +135,7 @@ Begin VB.Form frmCR_Etiquetas
             TabIndex        =   8
             Top             =   360
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1931
             _ExtentY        =   450
             _StockProps     =   79
@@ -158,7 +158,7 @@ Begin VB.Form frmCR_Etiquetas
          TabIndex        =   12
          Top             =   2520
          Width           =   10575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18653
          _ExtentY        =   2778
          _StockProps     =   79
@@ -181,7 +181,7 @@ Begin VB.Form frmCR_Etiquetas
             TabIndex        =   13
             Top             =   360
             Width           =   8055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   14208
             _ExtentY        =   582
             _StockProps     =   77
@@ -207,7 +207,7 @@ Begin VB.Form frmCR_Etiquetas
             TabIndex        =   14
             Top             =   840
             Width           =   8055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   14208
             _ExtentY        =   1085
             _StockProps     =   77
@@ -233,7 +233,7 @@ Begin VB.Form frmCR_Etiquetas
             TabIndex        =   16
             Top             =   360
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1931
             _ExtentY        =   450
             _StockProps     =   79
@@ -255,7 +255,7 @@ Begin VB.Form frmCR_Etiquetas
             TabIndex        =   15
             Top             =   720
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1931
             _ExtentY        =   661
             _StockProps     =   79
@@ -279,7 +279,7 @@ Begin VB.Form frmCR_Etiquetas
          TabIndex        =   17
          Top             =   5400
          Width           =   10575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   18653
          _ExtentY        =   1508
          _StockProps     =   79
@@ -302,7 +302,7 @@ Begin VB.Form frmCR_Etiquetas
             TabIndex        =   20
             Top             =   360
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2143
             _ExtentY        =   661
             _StockProps     =   79
@@ -327,7 +327,7 @@ Begin VB.Form frmCR_Etiquetas
             TabIndex        =   21
             Top             =   360
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2143
             _ExtentY        =   661
             _StockProps     =   79
@@ -352,7 +352,7 @@ Begin VB.Form frmCR_Etiquetas
          TabIndex        =   18
          Top             =   4200
          Width           =   8055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   14208
          _ExtentY        =   1931
          _StockProps     =   77
@@ -378,7 +378,7 @@ Begin VB.Form frmCR_Etiquetas
          TabIndex        =   19
          Top             =   4200
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1931
          _ExtentY        =   450
          _StockProps     =   79
@@ -399,14 +399,14 @@ Begin VB.Form frmCR_Etiquetas
          TabIndex        =   6
          Top             =   0
          Width           =   11535
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   20346
          _ExtentY        =   556
          _StockProps     =   14
          Caption         =   "Notificaciones:                                                                               "
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
-            Size            =   9.01
+            Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -423,7 +423,7 @@ Begin VB.Form frmCR_Etiquetas
       TabIndex        =   3
       Top             =   1095
       Width           =   1095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   444
       _StockProps     =   79
@@ -476,7 +476,7 @@ Begin VB.Form frmCR_Etiquetas
       TabIndex        =   4
       Top             =   1095
       Width           =   1095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1926
       _ExtentY        =   444
       _StockProps     =   79
@@ -499,14 +499,14 @@ Begin VB.Form frmCR_Etiquetas
       TabIndex        =   2
       Top             =   1080
       Width           =   11535
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   20346
       _ExtentY        =   556
       _StockProps     =   14
       Caption         =   "Notificación:                                                                               "
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
-         Size            =   9.01
+         Size            =   9
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -644,20 +644,20 @@ Call OpenRecordSet(rs, strSQL, 0)
 Do While Not rs.EOF
   vGrid.Row = vGrid.MaxRows
   
-  vGrid.col = 3
-  vGrid.CellType = CellTypeComboBox
+  vGrid.Col = 3
+  vGrid.cellType = CellTypeComboBox
   vGrid.TypeComboBoxList = mListaRequisitos
   vGrid.TypeComboBoxEditable = False
   vGrid.Text = mUlltimoRequisitoSel
   
   For i = 1 To vGrid.MaxCols
-    vGrid.col = i
+    vGrid.Col = i
     Select Case i
      Case 1 'Codigo de Tag
        vGrid.Text = CStr(rs!TAG_CODIGO)
      
      Case 2 'Descripcion
-       vGrid.Text = CStr(rs!DESCRIPCION)
+       vGrid.Text = CStr(rs!Descripcion)
      Case 3 'Tipo
         vGrid.Text = rs!Requisito
      
@@ -665,13 +665,13 @@ Do While Not rs.EOF
         vGrid.Text = CStr(rs!Nota_Largo)
         
      Case 5 'ESPERA_ACTIVA
-       vGrid.Text = CStr(rs!ESPERA_ACTIVA)
+'       vGrid.Text = CStr(rs!ESPERA_ACTIVA) & ""
      
      Case 6 'ESPERA_DESACTIVA
-       vGrid.Text = CStr(rs!ESPERA_DESACTIVA)
+'       vGrid.Text = CStr(rs!ESPERA_DESACTIVA) & ""
      
      Case 7 'Estado
-       vGrid.Text = CStr(rs!ACTIVO)
+       vGrid.Text = CStr(rs!Activo)
      
      Case Else
     
@@ -688,8 +688,8 @@ rs.Close
 
   vGrid.Row = vGrid.MaxRows
   
-  vGrid.col = 3
-  vGrid.CellType = CellTypeComboBox
+  vGrid.Col = 3
+  vGrid.cellType = CellTypeComboBox
   vGrid.TypeComboBoxList = mListaRequisitos
   vGrid.TypeComboBoxEditable = False
   vGrid.Text = mUlltimoRequisitoSel
@@ -706,7 +706,7 @@ On Error GoTo vError
 
 fxGuardar = 0
 vGrid.Row = vGrid.ActiveRow
-vGrid.col = 1
+vGrid.Col = 1
 
 strSQL = "select isnull(count(*),0) as Existe from CRD_TAGS " _
        & " where TAG_CODIGO = '" & vGrid.Text & "'"
@@ -723,64 +723,64 @@ If rs!Existe = 0 Then 'Insertar
   
   strSQL = "insert into CRD_TAGS(TAG_CODIGO, descripcion, cod_requisito, Nota_Largo, ESPERA_ACTIVA, ESPERA_DESACTIVA, ACTIVO) values('" _
          & vGrid.Text & "',' "
-  vGrid.col = 2
+  vGrid.Col = 2
   strSQL = strSQL & vGrid.Text & "', "
-  vGrid.col = 3
+  vGrid.Col = 3
   If Len(Trim(vGrid.Text)) = 0 Then
       strSQL = strSQL & "null" & ", "
   Else
       strSQL = strSQL & "'" & SIFGlobal.fxCodText(vGrid.Text) & "', "
   End If
   
-  vGrid.col = 4
+  vGrid.Col = 4
   strSQL = strSQL & vGrid.Text & ", "
-  vGrid.col = 5
+  vGrid.Col = 5
   strSQL = strSQL & vGrid.Value & ", "
-  vGrid.col = 6
+  vGrid.Col = 6
   strSQL = strSQL & vGrid.Value & ", "
-  vGrid.col = 7
+  vGrid.Col = 7
   strSQL = strSQL & vGrid.Value & ")"
   
   
 
   Call ConectionExecute(strSQL)
 
-  vGrid.col = 1
+  vGrid.Col = 1
   Call Bitacora("Registra", "Tipo de Etiqueta : " & vGrid.Text)
 
 Else 'Actualizar
 
- vGrid.col = 2
+ vGrid.Col = 2
  strSQL = "update CRD_TAGS set descripcion = '" & vGrid.Text
-  vGrid.col = 3
+  vGrid.Col = 3
   If Len(Trim(vGrid.Text)) = 0 Then
      strSQL = strSQL & "', cod_requisito = Null, NOTA_LARGO = "
   Else
      strSQL = strSQL & "', cod_requisito = '" & SIFGlobal.fxCodText(vGrid.Text) & "', NOTA_LARGO = "
   End If
   
- vGrid.col = 4
+ vGrid.Col = 4
  strSQL = strSQL & vGrid.Text & ", ESPERA_ACTIVA = "
  
- vGrid.col = 5
+ vGrid.Col = 5
  strSQL = strSQL & vGrid.Value & ", ESPERA_DESACTIVA = "
  
- vGrid.col = 6
+ vGrid.Col = 6
  strSQL = strSQL & vGrid.Value & ", ACTIVO = "
- vGrid.col = 7
+ vGrid.Col = 7
  strSQL = strSQL & vGrid.Value & " where TAG_CODIGO = '"
  
- vGrid.col = 1
+ vGrid.Col = 1
  strSQL = strSQL & vGrid.Text & "'"
  Call ConectionExecute(strSQL)
 
- vGrid.col = 1
+ vGrid.Col = 1
  Call Bitacora("Modifica", "Tipo de Etiqueta : " & vGrid.Text)
 
 End If
 rs.Close
 
-vGrid.col = 3
+vGrid.Col = 3
 mUlltimoRequisitoSel = vGrid.Text
 
 
@@ -936,11 +936,11 @@ vError:
         
 End Sub
 
-Private Sub vGrid_Click(ByVal col As Long, ByVal Row As Long)
-    vGrid.col = 1
+Private Sub vGrid_Click(ByVal Col As Long, ByVal Row As Long)
+    vGrid.Col = 1
     vGrid.Row = Row
     scNotificacion.Tag = Trim(vGrid.Text)
-    vGrid.col = 2
+    vGrid.Col = 2
     scNotificacion.Caption = "Notificaciones para: " & vGrid.Text
     
 End Sub
@@ -956,8 +956,8 @@ If vGrid.ActiveCol = vGrid.MaxCols And (KeyCode = vbKeyReturn Or KeyCode = vbKey
     vGrid.MaxRows = vGrid.MaxRows + 1
     vGrid.Row = vGrid.MaxRows
   
-    vGrid.col = 3
-    vGrid.CellType = CellTypeComboBox
+    vGrid.Col = 3
+    vGrid.cellType = CellTypeComboBox
     vGrid.TypeComboBoxList = mListaRequisitos
     vGrid.TypeComboBoxEditable = False
     vGrid.Text = mUlltimoRequisitoSel
@@ -971,8 +971,8 @@ If KeyCode = vbKeyInsert Then
     vGrid.InsertRows vGrid.ActiveRow, 1
     vGrid.Row = vGrid.ActiveRow
 
-    vGrid.col = 3
-    vGrid.CellType = CellTypeComboBox
+    vGrid.Col = 3
+    vGrid.cellType = CellTypeComboBox
     vGrid.TypeComboBoxList = mListaRequisitos
     vGrid.TypeComboBoxEditable = False
     vGrid.Text = mUlltimoRequisitoSel
@@ -984,12 +984,12 @@ If KeyCode = vbKeyDelete Then
      i = MsgBox("Esta Seguro que desea borrar este registro", vbYesNo)
      If i = vbYes Then
         vGrid.Row = vGrid.ActiveRow
-        vGrid.col = 1
+        vGrid.Col = 1
         strSQL = "delete CRD_TAGS where TAG_CODIGO = '" & vGrid.Text & "'"
         Call ConectionExecute(strSQL)
         
         strSQL = vGrid.Text
-        vGrid.col = 1
+        vGrid.Col = 1
         Call Bitacora("Elimina", "Tipo de Etiqueta : " & vGrid.Text)
         
         vGrid.DeleteRows vGrid.ActiveRow, 1

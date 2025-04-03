@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmAF_CRRenuncia 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -30,7 +30,7 @@ Begin VB.Form frmAF_CRRenuncia
       TabIndex        =   3
       Top             =   1080
       Width           =   10095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   17806
       _ExtentY        =   13996
       _StockProps     =   68
@@ -80,7 +80,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   360
          Visible         =   0   'False
          Width           =   10095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17806
          _ExtentY        =   12726
          _StockProps     =   77
@@ -104,7 +104,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   1800
          Visible         =   0   'False
          Width           =   9615
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16960
          _ExtentY        =   4683
          _StockProps     =   77
@@ -129,7 +129,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   4680
          Visible         =   0   'False
          Width           =   9375
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   16531
          _ExtentY        =   4678
          _StockProps     =   79
@@ -153,7 +153,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   21
             Top             =   480
             Width           =   5532
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9763
             _ExtentY        =   582
             _StockProps     =   77
@@ -179,7 +179,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   22
             Top             =   480
             Width           =   2772
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4895
             _ExtentY        =   582
             _StockProps     =   77
@@ -205,7 +205,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   23
             Top             =   1080
             Width           =   8292
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   14626
             _ExtentY        =   1397
             _StockProps     =   77
@@ -230,7 +230,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   27
             Top             =   2040
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2566
             _ExtentY        =   873
             _StockProps     =   79
@@ -258,7 +258,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   26
             Top             =   840
             Width           =   1092
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1926
             _ExtentY        =   444
             _StockProps     =   79
@@ -283,7 +283,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   25
             Top             =   240
             Width           =   1932
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -308,7 +308,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   24
             Top             =   240
             Width           =   1092
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1926
             _ExtentY        =   444
             _StockProps     =   79
@@ -334,7 +334,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   720
          Visible         =   0   'False
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2566
          _ExtentY        =   979
          _StockProps     =   77
@@ -360,7 +360,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   1320
          Visible         =   0   'False
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -386,7 +386,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   960
          Visible         =   0   'False
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -412,7 +412,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   600
          Visible         =   0   'False
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -438,7 +438,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   1320
          Visible         =   0   'False
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -464,7 +464,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   960
          Visible         =   0   'False
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -490,7 +490,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   600
          Visible         =   0   'False
          Width           =   2055
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3619
          _ExtentY        =   550
          _StockProps     =   77
@@ -516,7 +516,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   600
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   77
@@ -543,7 +543,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   960
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   77
@@ -570,7 +570,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   1320
          Visible         =   0   'False
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   77
@@ -597,7 +597,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   600
          Visible         =   0   'False
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   550
          _StockProps     =   77
@@ -624,7 +624,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   960
          Visible         =   0   'False
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   550
          _StockProps     =   77
@@ -651,7 +651,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   1320
          Visible         =   0   'False
          Width           =   1455
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   550
          _StockProps     =   77
@@ -678,7 +678,7 @@ Begin VB.Form frmAF_CRRenuncia
          Top             =   720
          Visible         =   0   'False
          Width           =   615
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1080
          _ExtentY        =   974
          _StockProps     =   77
@@ -704,7 +704,7 @@ Begin VB.Form frmAF_CRRenuncia
          TabIndex        =   28
          Top             =   360
          Width           =   10095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   17806
          _ExtentY        =   14208
          _StockProps     =   68
@@ -815,7 +815,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   5880
             Visible         =   0   'False
             Width           =   6495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11456
             _ExtentY        =   2143
             _StockProps     =   77
@@ -840,7 +840,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   1080
             Visible         =   0   'False
             Width           =   9855
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   17383
             _ExtentY        =   9551
             _StockProps     =   77
@@ -867,7 +867,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   63
             Top             =   960
             Width           =   9855
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   17383
             _ExtentY        =   8281
             _StockProps     =   77
@@ -894,7 +894,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   840
             Visible         =   0   'False
             Width           =   9855
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   17383
             _ExtentY        =   8916
             _StockProps     =   77
@@ -953,7 +953,7 @@ Begin VB.Form frmAF_CRRenuncia
                TabIndex        =   30
                Top             =   3720
                Width           =   9735
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   17171
                _ExtentY        =   1720
                _StockProps     =   79
@@ -968,7 +968,7 @@ Begin VB.Form frmAF_CRRenuncia
                   TabIndex        =   31
                   Top             =   360
                   Width           =   1335
-                  _Version        =   1441793
+                  _Version        =   1572864
                   _ExtentX        =   2350
                   _ExtentY        =   656
                   _StockProps     =   79
@@ -993,7 +993,7 @@ Begin VB.Form frmAF_CRRenuncia
                   TabIndex        =   32
                   Top             =   360
                   Width           =   1335
-                  _Version        =   1441793
+                  _Version        =   1572864
                   _ExtentX        =   2350
                   _ExtentY        =   656
                   _StockProps     =   79
@@ -1061,7 +1061,7 @@ Begin VB.Form frmAF_CRRenuncia
                ToolTipText     =   "Tipo de Cambio"
                Top             =   3360
                Width           =   1815
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   3201
                _ExtentY        =   556
                _StockProps     =   77
@@ -1087,7 +1087,7 @@ Begin VB.Form frmAF_CRRenuncia
                TabIndex        =   139
                Top             =   0
                Width           =   9855
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   17383
                _ExtentY        =   661
                _StockProps     =   14
@@ -1609,7 +1609,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   64
             Top             =   4560
             Width           =   9615
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   16960
             _ExtentY        =   1931
             _StockProps     =   79
@@ -1634,7 +1634,7 @@ Begin VB.Form frmAF_CRRenuncia
                TabIndex        =   65
                Top             =   360
                Width           =   5175
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   9128
                _ExtentY        =   582
                _StockProps     =   77
@@ -1660,7 +1660,7 @@ Begin VB.Form frmAF_CRRenuncia
                TabIndex        =   66
                Top             =   720
                Width           =   5175
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   9128
                _ExtentY        =   582
                _StockProps     =   77
@@ -1686,7 +1686,7 @@ Begin VB.Form frmAF_CRRenuncia
                TabIndex        =   67
                Top             =   360
                Width           =   1575
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2778
                _ExtentY        =   582
                _StockProps     =   77
@@ -1712,7 +1712,7 @@ Begin VB.Form frmAF_CRRenuncia
                TabIndex        =   68
                Top             =   720
                Width           =   1575
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2773
                _ExtentY        =   550
                _StockProps     =   68
@@ -1808,7 +1808,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   73
             Top             =   6000
             Width           =   3015
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5318
             _ExtentY        =   2778
             _StockProps     =   79
@@ -1833,7 +1833,7 @@ Begin VB.Form frmAF_CRRenuncia
                TabIndex        =   155
                Top             =   1080
                Width           =   1695
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2990
                _ExtentY        =   556
                _StockProps     =   79
@@ -1857,7 +1857,7 @@ Begin VB.Form frmAF_CRRenuncia
                TabIndex        =   154
                Top             =   720
                Width           =   1695
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2990
                _ExtentY        =   556
                _StockProps     =   79
@@ -1881,7 +1881,7 @@ Begin VB.Form frmAF_CRRenuncia
                TabIndex        =   153
                Top             =   360
                Width           =   1695
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2990
                _ExtentY        =   556
                _StockProps     =   79
@@ -1961,7 +1961,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   77
             Top             =   6000
             Width           =   6495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   11456
             _ExtentY        =   2778
             _StockProps     =   79
@@ -1986,7 +1986,7 @@ Begin VB.Form frmAF_CRRenuncia
                TabIndex        =   78
                Top             =   360
                Width           =   1575
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2773
                _ExtentY        =   550
                _StockProps     =   68
@@ -2008,7 +2008,7 @@ Begin VB.Form frmAF_CRRenuncia
                TabIndex        =   79
                Top             =   1080
                Width           =   1575
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2778
                _ExtentY        =   556
                _StockProps     =   77
@@ -2032,7 +2032,7 @@ Begin VB.Form frmAF_CRRenuncia
                TabIndex        =   142
                Top             =   720
                Width           =   1575
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2778
                _ExtentY        =   582
                _StockProps     =   77
@@ -2058,7 +2058,7 @@ Begin VB.Form frmAF_CRRenuncia
                TabIndex        =   159
                Top             =   360
                Width           =   1575
-               _Version        =   1441793
+               _Version        =   1572864
                _ExtentX        =   2778
                _ExtentY        =   556
                _StockProps     =   79
@@ -2146,7 +2146,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   1080
             Visible         =   0   'False
             Width           =   2532
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4466
             _ExtentY        =   444
             _StockProps     =   79
@@ -2174,7 +2174,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   1440
             Visible         =   0   'False
             Width           =   2532
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4466
             _ExtentY        =   444
             _StockProps     =   79
@@ -2202,7 +2202,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   2280
             Visible         =   0   'False
             Width           =   2532
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4466
             _ExtentY        =   444
             _StockProps     =   79
@@ -2230,7 +2230,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   3120
             Visible         =   0   'False
             Width           =   2532
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4466
             _ExtentY        =   444
             _StockProps     =   79
@@ -2258,7 +2258,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   405
             Visible         =   0   'False
             Width           =   2055
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3625
             _ExtentY        =   873
             _StockProps     =   79
@@ -2286,7 +2286,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   6120
             Visible         =   0   'False
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   556
             _StockProps     =   77
@@ -2313,7 +2313,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   6480
             Visible         =   0   'False
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   556
             _StockProps     =   77
@@ -2340,7 +2340,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   2640
             Visible         =   0   'False
             Width           =   2892
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5101
             _ExtentY        =   444
             _StockProps     =   79
@@ -2368,7 +2368,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   5040
             Visible         =   0   'False
             Width           =   612
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1080
             _ExtentY        =   550
             _StockProps     =   77
@@ -2396,7 +2396,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   5040
             Visible         =   0   'False
             Width           =   1692
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   550
             _StockProps     =   77
@@ -2424,7 +2424,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   4680
             Visible         =   0   'False
             Width           =   612
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1080
             _ExtentY        =   550
             _StockProps     =   77
@@ -2450,7 +2450,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   92
             Top             =   1320
             Width           =   3495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6165
             _ExtentY        =   2990
             _StockProps     =   77
@@ -2476,7 +2476,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   93
             Top             =   3480
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2984
             _ExtentY        =   550
             _StockProps     =   77
@@ -2500,7 +2500,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   94
             Top             =   480
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2990
             _ExtentY        =   582
             _StockProps     =   77
@@ -2524,7 +2524,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   95
             Top             =   480
             Width           =   2295
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4048
             _ExtentY        =   582
             _StockProps     =   77
@@ -2549,7 +2549,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   96
             Top             =   480
             Width           =   2775
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4895
             _ExtentY        =   582
             _StockProps     =   77
@@ -2574,7 +2574,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   97
             Top             =   840
             Width           =   6135
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10821
             _ExtentY        =   582
             _StockProps     =   77
@@ -2600,7 +2600,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   98
             Top             =   840
             Width           =   1695
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2990
             _ExtentY        =   582
             _StockProps     =   77
@@ -2626,7 +2626,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   99
             Top             =   3480
             Width           =   6135
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   10821
             _ExtentY        =   556
             _StockProps     =   77
@@ -2650,7 +2650,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   100
             Top             =   3840
             Width           =   7815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   13785
             _ExtentY        =   1191
             _StockProps     =   77
@@ -2675,7 +2675,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   101
             Top             =   480
             Width           =   735
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1291
             _ExtentY        =   550
             _StockProps     =   79
@@ -2699,7 +2699,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   102
             Top             =   1320
             Width           =   5655
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9975
             _ExtentY        =   450
             _StockProps     =   79
@@ -2724,7 +2724,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   103
             Top             =   2760
             Width           =   3255
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5741
             _ExtentY        =   450
             _StockProps     =   79
@@ -2749,7 +2749,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   104
             Top             =   2400
             Width           =   5655
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9975
             _ExtentY        =   450
             _StockProps     =   79
@@ -2774,7 +2774,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   143
             Top             =   2040
             Width           =   5655
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9975
             _ExtentY        =   450
             _StockProps     =   79
@@ -2800,7 +2800,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   6600
             Visible         =   0   'False
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   868
             _StockProps     =   79
@@ -2828,7 +2828,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   720
             Visible         =   0   'False
             Width           =   10095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   17806
             _ExtentY        =   10186
             _StockProps     =   77
@@ -2853,7 +2853,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   158
             Top             =   1680
             Width           =   4455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7853
             _ExtentY        =   444
             _StockProps     =   79
@@ -2880,7 +2880,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   480
             Visible         =   0   'False
             Width           =   1335
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2355
             _ExtentY        =   450
             _StockProps     =   79
@@ -2906,7 +2906,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   6720
             Visible         =   0   'False
             Width           =   1815
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3201
             _ExtentY        =   582
             _StockProps     =   77
@@ -2932,7 +2932,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   164
             Top             =   3120
             Width           =   2175
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3836
             _ExtentY        =   556
             _StockProps     =   79
@@ -2957,7 +2957,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   6720
             Visible         =   0   'False
             Width           =   2415
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   4260
             _ExtentY        =   582
             _StockProps     =   79
@@ -2980,7 +2980,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   5520
             Visible         =   0   'False
             Width           =   1575
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2778
             _ExtentY        =   450
             _StockProps     =   79
@@ -3004,7 +3004,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   360
             Visible         =   0   'False
             Width           =   10095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   17806
             _ExtentY        =   661
             _StockProps     =   14
@@ -3031,7 +3031,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   360
             Visible         =   0   'False
             Width           =   3495
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   6165
             _ExtentY        =   900
             _StockProps     =   79
@@ -3056,7 +3056,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   138
             Top             =   480
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   444
             _StockProps     =   79
@@ -3081,7 +3081,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   137
             Top             =   360
             Width           =   3975
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   7011
             _ExtentY        =   900
             _StockProps     =   79
@@ -3106,7 +3106,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   360
             Visible         =   0   'False
             Width           =   2895
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   5106
             _ExtentY        =   873
             _StockProps     =   79
@@ -3152,7 +3152,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   360
             Visible         =   0   'False
             Width           =   10215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   18018
             _ExtentY        =   661
             _StockProps     =   14
@@ -3179,7 +3179,7 @@ Begin VB.Form frmAF_CRRenuncia
             Top             =   360
             Visible         =   0   'False
             Width           =   10095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   17806
             _ExtentY        =   661
             _StockProps     =   14
@@ -3738,7 +3738,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   108
             Top             =   1800
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1926
             _ExtentY        =   656
             _StockProps     =   79
@@ -3763,7 +3763,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   107
             Top             =   3840
             Width           =   1215
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   444
             _StockProps     =   79
@@ -3788,7 +3788,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   106
             Top             =   3480
             Width           =   1095
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1926
             _ExtentY        =   444
             _StockProps     =   79
@@ -3813,7 +3813,7 @@ Begin VB.Form frmAF_CRRenuncia
             TabIndex        =   105
             Top             =   840
             Width           =   1455
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   444
             _StockProps     =   79
@@ -3838,7 +3838,7 @@ Begin VB.Form frmAF_CRRenuncia
          TabIndex        =   144
          Top             =   0
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   79
@@ -3866,7 +3866,7 @@ Begin VB.Form frmAF_CRRenuncia
          TabIndex        =   145
          Top             =   0
          Width           =   1335
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   79
@@ -3893,7 +3893,7 @@ Begin VB.Form frmAF_CRRenuncia
          TabIndex        =   146
          Top             =   0
          Width           =   1095
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1931
          _ExtentY        =   582
          _StockProps     =   79
@@ -3921,7 +3921,7 @@ Begin VB.Form frmAF_CRRenuncia
       TabIndex        =   0
       Top             =   360
       Width           =   4935
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8700
       _ExtentY        =   582
       _StockProps     =   77
@@ -3945,7 +3945,7 @@ Begin VB.Form frmAF_CRRenuncia
       TabIndex        =   1
       Top             =   360
       Width           =   1695
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   582
       _StockProps     =   77
@@ -3970,7 +3970,7 @@ Begin VB.Form frmAF_CRRenuncia
       ToolTipText     =   "Adjuntar Documentos"
       Top             =   360
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   582
       _StockProps     =   79
@@ -3995,7 +3995,7 @@ Begin VB.Form frmAF_CRRenuncia
       Top             =   720
       Visible         =   0   'False
       Width           =   6615
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   11668
       _ExtentY        =   450
       _StockProps     =   79
@@ -4398,6 +4398,7 @@ With frmContenedor.Crt
   .ReportFileName = SIFGlobal.fxPathReportes("Personas_Boleta_Afiliacion.rpt")
   
   .StoredProcParam(0) = Trim(txtCedula.Text)
+  .StoredProcParam(1) = 0
 
   .SubreportToChange = "sbBeneficiarios"
   .StoredProcParam(0) = Trim(txtCedula.Text)
@@ -5080,7 +5081,7 @@ If Not rs.EOF And Not rs.BOF Then
  Call sbCboAsignaDato(cboBanco, Trim(rs!Banco_Desc), True, rs!Id_Banco)
   
  Call sbCboAsignaDato(cboCuenta, Trim(rs!Cuenta_Desc), True, rs!Cuenta)
- Call sbCboAsignaDato(cboTipoDoc, Trim(rs!Tipo_Documento_Desc), True, rs!TIPO_DOCUMENTO)
+ Call sbCboAsignaDato(cboTipoDoc, Trim(rs!Tipo_Documento_Desc), True, rs!Tipo_documento)
   
   
  txtAc_Boleta.Text = rs!Boleta & ""
@@ -5102,7 +5103,6 @@ Exit Sub
 vError:
  Me.MousePointer = vbDefault
  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
-
 End Sub
 
 
@@ -5133,7 +5133,7 @@ With lswMotivos.ListItems
     Set itmX = .Add(, , rs!Descripcion)
         itmX.Tag = rs!Cod_Motivo
         
-        itmX.Checked = IIf((rs!Asignado = 1), True, False)
+        itmX.Checked = IIf((rs!asignado = 1), True, False)
         
     rs.MoveNext
    Loop
@@ -5453,77 +5453,109 @@ End Sub
 
 
 Private Sub cmdDistribucionAuto_Click()
-Dim curDisponible As Currency, i As Integer
-Dim curAbono As Currency
- 
+'Dim curDisponible As Currency, i As Integer
+'Dim curAbono As Currency
+
 Me.MousePointer = vbHourglass
- 
-'Inicializa
-curDisponible = lblTotalNeto(1).Caption
 
-For i = 1 To lswAbonos.ListItems.Count
-  lswAbonos.ListItems(i).SubItems(11) = 0
-Next i
-
-'Distribuye
-With lswAbonos.ListItems
- For i = 1 To .Count
-   
-   curAbono = 0
-
-   'Polizas
-   If curDisponible > CCur(.Item(i).SubItems(10)) Then
-     curAbono = curAbono + CCur(.Item(i).SubItems(10))
-     curDisponible = curDisponible - CCur(.Item(i).SubItems(10))
-   Else
-     curAbono = curAbono + curDisponible
-     curDisponible = 0
-   End If
-
-   'Cargos
-   If curDisponible > CCur(.Item(i).SubItems(9)) Then
-     curAbono = curAbono + CCur(.Item(i).SubItems(9))
-     curDisponible = curDisponible - CCur(.Item(i).SubItems(9))
-   Else
-     curAbono = curAbono + curDisponible
-     curDisponible = 0
-   End If
-
-
-   'MoraIntCor
-   If curDisponible > CCur(.Item(i).SubItems(6)) Then
-     curAbono = curAbono + CCur(.Item(i).SubItems(6))
-     curDisponible = curDisponible - CCur(.Item(i).SubItems(6))
-   Else
-     curAbono = curAbono + curDisponible
-     curDisponible = 0
-   End If
-  
-   'MoraIntMor
-   If curDisponible > CCur(.Item(i).SubItems(7)) Then
-     curAbono = curAbono + CCur(.Item(i).SubItems(7))
-     curDisponible = curDisponible - CCur(.Item(i).SubItems(7))
-   Else
-     curAbono = curAbono + curDisponible
-     curDisponible = 0
-   End If
-  
-  
-   'Saldo o principal atrasado
-    If curDisponible > CCur(.Item(i).SubItems(5)) Then
-      curAbono = curAbono + CCur(.Item(i).SubItems(5))
-      curDisponible = curDisponible - CCur(.Item(i).SubItems(5))
-    Else
-      curAbono = curAbono + curDisponible
-      curDisponible = 0
-    End If
-  
-   .Item(i).SubItems(11) = Format(curAbono, "Standard")
-   lblDisponible.Caption = Format(curDisponible, "Standard")
-  
- Next i
-End With
-
+Call sbCargaDatos
+'
+''Inicializa
+'curDisponible = lblTotalNeto(1).Caption
+'
+'For i = 1 To lswAbonos.ListItems.Count
+'  lswAbonos.ListItems(i).SubItems(11) = 0
+'Next i
+'
+'
+''Distruye Primero a Morosidad
+'With lswAbonos.ListItems
+' For i = 1 To .Count
+'
+'   curAbono = 0
+'
+'   'Polizas
+'   If curDisponible > CCur(.Item(i).SubItems(10)) Then
+'     curAbono = curAbono + CCur(.Item(i).SubItems(10))
+'     curDisponible = curDisponible - CCur(.Item(i).SubItems(10))
+'   Else
+'     curAbono = curAbono + curDisponible
+'     curDisponible = 0
+'   End If
+'
+'   'Cargos
+'   If curDisponible > CCur(.Item(i).SubItems(9)) Then
+'     curAbono = curAbono + CCur(.Item(i).SubItems(9))
+'     curDisponible = curDisponible - CCur(.Item(i).SubItems(9))
+'   Else
+'     curAbono = curAbono + curDisponible
+'     curDisponible = 0
+'   End If
+'
+'
+'   'MoraIntCor
+'   If curDisponible > CCur(.Item(i).SubItems(6)) Then
+'     curAbono = curAbono + CCur(.Item(i).SubItems(6))
+'     curDisponible = curDisponible - CCur(.Item(i).SubItems(6))
+'   Else
+'     curAbono = curAbono + curDisponible
+'     curDisponible = 0
+'   End If
+'
+'   'MoraIntMor
+'   If curDisponible > CCur(.Item(i).SubItems(7)) Then
+'     curAbono = curAbono + CCur(.Item(i).SubItems(7))
+'     curDisponible = curDisponible - CCur(.Item(i).SubItems(7))
+'   Else
+'     curAbono = curAbono + curDisponible
+'     curDisponible = 0
+'   End If
+'
+'
+'   'Principal atrasado
+'    If curDisponible > CCur(.Item(i).SubItems(8)) Then
+'      curAbono = curAbono + CCur(.Item(i).SubItems(8))
+'      curDisponible = curDisponible - CCur(.Item(i).SubItems(8))
+'    Else
+'      curAbono = curAbono + curDisponible
+'      curDisponible = 0
+'    End If
+'
+'   .Item(i).SubItems(11) = Format(curAbono, "Standard")
+'
+'   lblDisponible.Caption = Format(curDisponible, "Standard")
+'
+' Next i
+'End With
+'
+'
+'
+'
+'
+'
+''Distribuye el Restante
+'With lswAbonos.ListItems
+' For i = 1 To .Count
+'
+'   curAbono = 0
+'
+'
+'   'Saldo o principal atrasado
+'    If curDisponible > (CCur(.Item(i).SubItems(5)) - CCur(.Item(i).SubItems(8))) Then
+'      curAbono = curAbono + (CCur(.Item(i).SubItems(5)) - CCur(.Item(i).SubItems(8)))
+'      curDisponible = curDisponible - (CCur(.Item(i).SubItems(5)) - CCur(.Item(i).SubItems(8)))
+'    Else
+'      curAbono = curAbono + curDisponible
+'      curDisponible = 0
+'    End If
+'
+'   .Item(i).SubItems(11) = Format(curAbono + CCur(.Item(i).SubItems(11)), "Standard")
+'
+'   lblDisponible.Caption = Format(curDisponible, "Standard")
+'
+' Next i
+'End With
+'
 Me.MousePointer = vbDefault
 MsgBox "Distribución Automática Aplicada...", vbInformation
 
@@ -5752,7 +5784,7 @@ Select Case tcMain.SelectedItem
         
         txtRetenerMonto = Format(rs!Renta, "Standard")
         
-        txtDivisa.Text = rs!COD_DIVISA
+        txtDivisa.Text = rs!cod_Divisa
         
         txtDivisaLocal.Text = rs!divisa_local
         txtTipoCambio.Text = Format(rs!TIPO_CAMBIO, "########0.0000")
@@ -5843,11 +5875,11 @@ Select Case tcMain.SelectedItem
      
      Call OpenRecordSet(rs, strSQL)
      Do While Not rs.EOF
-       Set itmX = lswPlanes.ListItems.Add(, , rs!COD_Contrato)
+       Set itmX = lswPlanes.ListItems.Add(, , rs!COD_CONTRATO)
            itmX.Tag = rs!COD_OPERADORA
-           itmX.SubItems(1) = rs!Cod_Plan
-           itmX.SubItems(2) = Format(rs!APORTES + rs!Rendimiento + rs!RendPendiente - rs!Multa, "Standard")
-           itmX.SubItems(3) = Format(rs!APORTES, "Standard")
+           itmX.SubItems(1) = rs!COD_PLAN
+           itmX.SubItems(2) = Format(rs!Aportes + rs!Rendimiento + rs!RendPendiente - rs!Multa, "Standard")
+           itmX.SubItems(3) = Format(rs!Aportes, "Standard")
            itmX.SubItems(4) = Format(rs!Rendimiento, "Standard")
            itmX.SubItems(5) = Format(rs!RendPendiente, "Standard")
            itmX.SubItems(6) = Format(rs!Multa, "Standard")
@@ -5856,7 +5888,7 @@ Select Case tcMain.SelectedItem
            itmX.SubItems(9) = 0
            itmX.SubItems(10) = 0
            itmX.SubItems(11) = IIf((rs!RENTA_GLOBAL = 1), "Sí", "No")
-           itmX.SubItems(12) = rs!COD_DIVISA
+           itmX.SubItems(12) = rs!cod_Divisa
            itmX.SubItems(13) = rs!TIPO_CAMBIO
            
            
@@ -5880,12 +5912,17 @@ Select Case tcMain.SelectedItem
   Case 3 'Abonos
     'op,cod,tipo,garantia,saldo,moraintc,moraintm,moraprin,abono
     lblDisponible.Caption = lblTotalNeto(1).Caption
-
-    strSQL = "exec spAfi_Liquidacion_CreditosPersona '" & txtCedula.Text & "'"
+    lswAbonos.ListItems.Clear
+    
+    Dim curAbono As Currency
+    
+    curAbono = 0
+    
+    strSQL = "exec spAfi_Liquidacion_CreditosPersona '" & txtCedula.Text & "', " & CCur(lblDisponible.Caption)
     Call OpenRecordSet(rs, strSQL, 0)
     Do While Not rs.EOF
       
-         Set itmX = lswAbonos.ListItems.Add(, , rs!Id_Solicitud)
+         Set itmX = lswAbonos.ListItems.Add(, , rs!ID_SOLICITUD)
              itmX.SubItems(1) = rs!Codigo
              itmX.SubItems(2) = rs!Descripcion
              itmX.SubItems(3) = rs!Detalle
@@ -5896,16 +5933,21 @@ Select Case tcMain.SelectedItem
              itmX.SubItems(8) = Format(rs!Amortiza, "Standard")
              itmX.SubItems(9) = Format(rs!Cargos, "Standard")
              itmX.SubItems(10) = Format(rs!Polizas, "Standard")
-             itmX.SubItems(11) = 0
-             itmX.SubItems(12) = rs!COD_DIVISA
+             itmX.SubItems(11) = Format(rs!Abono, "Standard")
+             itmX.SubItems(12) = rs!cod_Divisa
              itmX.SubItems(13) = rs!TIPO_CAMBIO
+      
+            curAbono = curAbono + rs!Abono
       
       rs.MoveNext
     Loop
     rs.Close
     
-    'Aplica por Default Abono Auto
-    Call cmdDistribucionAuto_Click
+    lblDisponible.Caption = Format(CCur(lblTotalNeto(1).Caption) - curAbono, "Standard")
+
+    
+'    'Aplica por Default Abono Auto
+'    Call cmdDistribucionAuto_Click
     
 '    chkArregloPago.Value = xtpChecked
     

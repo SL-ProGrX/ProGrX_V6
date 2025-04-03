@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmTes_DepositosLote 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -20,7 +20,7 @@ Begin VB.Form frmTes_DepositosLote
       TabIndex        =   1
       Top             =   960
       Width           =   11895
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   20976
       _ExtentY        =   12933
       _StockProps     =   68
@@ -86,7 +86,7 @@ Begin VB.Form frmTes_DepositosLote
          TabIndex        =   39
          Top             =   1560
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   444
          _StockProps     =   79
@@ -117,7 +117,7 @@ Begin VB.Form frmTes_DepositosLote
             TabIndex        =   26
             Top             =   120
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   868
             _StockProps     =   79
@@ -144,7 +144,7 @@ Begin VB.Form frmTes_DepositosLote
             TabIndex        =   27
             Top             =   120
             Width           =   1452
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   868
             _StockProps     =   79
@@ -171,7 +171,7 @@ Begin VB.Form frmTes_DepositosLote
             TabIndex        =   43
             Top             =   360
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   550
             _StockProps     =   77
@@ -196,7 +196,7 @@ Begin VB.Form frmTes_DepositosLote
             TabIndex        =   44
             Top             =   360
             Width           =   972
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   550
             _StockProps     =   77
@@ -221,7 +221,7 @@ Begin VB.Form frmTes_DepositosLote
             TabIndex        =   45
             Top             =   360
             Width           =   972
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   550
             _StockProps     =   77
@@ -246,7 +246,7 @@ Begin VB.Form frmTes_DepositosLote
             TabIndex        =   46
             Top             =   360
             Width           =   972
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   550
             _StockProps     =   77
@@ -384,7 +384,7 @@ Begin VB.Form frmTes_DepositosLote
          TabIndex        =   6
          Top             =   480
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   868
          _StockProps     =   79
@@ -438,7 +438,7 @@ Begin VB.Form frmTes_DepositosLote
          TabIndex        =   8
          Top             =   480
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   868
          _StockProps     =   79
@@ -465,7 +465,7 @@ Begin VB.Form frmTes_DepositosLote
          TabIndex        =   9
          Top             =   1080
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   868
          _StockProps     =   79
@@ -492,7 +492,7 @@ Begin VB.Form frmTes_DepositosLote
          TabIndex        =   10
          Top             =   1080
          Width           =   1452
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2561
          _ExtentY        =   868
          _StockProps     =   79
@@ -519,7 +519,7 @@ Begin VB.Form frmTes_DepositosLote
          TabIndex        =   16
          Top             =   1200
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -541,7 +541,7 @@ Begin VB.Form frmTes_DepositosLote
          TabIndex        =   17
          Top             =   1200
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -592,7 +592,7 @@ Begin VB.Form frmTes_DepositosLote
          Top             =   480
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   868
          _StockProps     =   79
@@ -620,7 +620,7 @@ Begin VB.Form frmTes_DepositosLote
          Top             =   480
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   868
          _StockProps     =   79
@@ -648,7 +648,7 @@ Begin VB.Form frmTes_DepositosLote
          Top             =   480
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -671,7 +671,7 @@ Begin VB.Form frmTes_DepositosLote
          Top             =   480
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -694,7 +694,7 @@ Begin VB.Form frmTes_DepositosLote
          Top             =   1200
          Visible         =   0   'False
          Width           =   2532
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4471
          _ExtentY        =   582
          _StockProps     =   77
@@ -720,7 +720,7 @@ Begin VB.Form frmTes_DepositosLote
          TabIndex        =   34
          Top             =   840
          Width           =   2652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4683
          _ExtentY        =   582
          _StockProps     =   77
@@ -746,7 +746,7 @@ Begin VB.Form frmTes_DepositosLote
          TabIndex        =   35
          Top             =   1200
          Width           =   3132
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5530
          _ExtentY        =   582
          _StockProps     =   77
@@ -772,7 +772,7 @@ Begin VB.Form frmTes_DepositosLote
          TabIndex        =   36
          Top             =   480
          Width           =   2652
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4678
          _ExtentY        =   550
          _StockProps     =   77
@@ -798,7 +798,7 @@ Begin VB.Form frmTes_DepositosLote
          TabIndex        =   37
          Top             =   480
          Width           =   3132
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5524
          _ExtentY        =   550
          _StockProps     =   77
@@ -824,7 +824,7 @@ Begin VB.Form frmTes_DepositosLote
          TabIndex        =   38
          Top             =   840
          Width           =   3132
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5524
          _ExtentY        =   550
          _StockProps     =   77
@@ -851,7 +851,7 @@ Begin VB.Form frmTes_DepositosLote
          Top             =   1200
          Visible         =   0   'False
          Width           =   1812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   550
          _StockProps     =   77
@@ -876,7 +876,7 @@ Begin VB.Form frmTes_DepositosLote
          Top             =   1200
          Visible         =   0   'False
          Width           =   5052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   8911
          _ExtentY        =   550
          _StockProps     =   77
@@ -901,7 +901,7 @@ Begin VB.Form frmTes_DepositosLote
          Top             =   480
          Visible         =   0   'False
          Width           =   8772
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   15473
          _ExtentY        =   1185
          _StockProps     =   77
@@ -930,7 +930,7 @@ Begin VB.Form frmTes_DepositosLote
          Top             =   600
          Visible         =   0   'False
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   656
          _StockProps     =   79
@@ -947,7 +947,7 @@ Begin VB.Form frmTes_DepositosLote
          Top             =   600
          Visible         =   0   'False
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   656
          _StockProps     =   79
@@ -964,7 +964,7 @@ Begin VB.Form frmTes_DepositosLote
          Top             =   600
          Visible         =   0   'False
          Width           =   492
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   868
          _ExtentY        =   656
          _StockProps     =   79
@@ -1164,7 +1164,7 @@ Begin VB.Form frmTes_DepositosLote
       TabIndex        =   32
       Top             =   240
       Width           =   7692
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   13573
       _ExtentY        =   582
       _StockProps     =   77
@@ -1324,11 +1324,11 @@ With vGridId
 strSQL = ""
 For i = 1 To .MaxRows
   .Row = i
-  .col = 1
+  .Col = 1
   If .Value = vbChecked Then
-    .col = 3
+    .Col = 3
     pDocumento = .Text
-    .col = 9
+    .Col = 9
     pCedula = .Text
     strSQL = strSQL & Space(10) & "exec spTES_Deposito_Desvincula " & mBanco & ",'" & pDocumento & "','" & pCedula & "','" & glogon.Usuario & "'"
   End If
@@ -1429,7 +1429,7 @@ Dim i As Long
 
 For i = 1 To vGridId.MaxRows
    vGridId.Row = i
-   vGridId.col = 1
+   vGridId.Col = 1
    vGridId.Value = chkMarcas.Value
 Next i
 
@@ -1577,21 +1577,21 @@ With vGrid
             .MaxRows = .MaxRows + 1
             .Row = .MaxRows
             
-            .col = 1
+            .Col = 1
             .Value = vbChecked
             
-            .col = 2
+            .Col = 2
             .Value = vExiste
             
-            .col = 3
+            .Col = 3
             .Text = vDocumento
-            .col = 4
+            .Col = 4
             .Text = CStr(vMonto)
-            .col = 5
+            .Col = 5
             .Text = vFecha
-            .col = 6
+            .Col = 6
             .Text = vDescripcion
-            .col = 7
+            .Col = 7
             .Text = vInconsistencia
             
             curMonto = curMonto + vMonto
@@ -1645,19 +1645,19 @@ With vGrid
     For i = 1 To .MaxRows
 
        .Row = i
-       .col = 1
+       .Col = 1
        vRequiereId = .Value
-       .col = 2
+       .Col = 2
        vExiste = .Value
-       .col = 3
+       .Col = 3
        vDocumento = .Text
-       .col = 4
+       .Col = 4
        vMonto = CCur(.Text)
-       .col = 5
+       .Col = 5
        vFecha = Format(.Text, "yyyy/mm/dd")
-       .col = 6
+       .Col = 6
        vDescripcion = .Text
-       .col = 7
+       .Col = 7
        vInconsistencia = .Text
        
         If vExiste = 0 Then
@@ -1809,10 +1809,10 @@ vGridId.MaxRows = 0
     vGridId.MaxRows = vGridId.MaxRows + 1
     vGridId.Row = vGridId.MaxRows
          
-    vGridId.col = 1
+    vGridId.Col = 1
 
     For i = 2 To vGridId.MaxCols
-      vGridId.col = i
+      vGridId.Col = i
       Select Case i
          Case 2 'Tramite Id
             vGridId.Text = CStr(rs!DP_TRAMITE_ID)
@@ -1825,9 +1825,9 @@ vGridId.MaxRows = 0
          Case 6 'Descripcion
             vGridId.Text = rs!Descripcion
          Case 7 'Registro Fecha
-            vGridId.Text = rs!Registro_Fecha & ""
+            vGridId.Text = rs!REGISTRO_FECHA & ""
          Case 8 'Registro Usuario
-            vGridId.Text = rs!Registro_Usuario & ""
+            vGridId.Text = rs!REGISTRO_USUARIO & ""
          Case 9 'Cliente Id
             vGridId.Text = rs!CLIENTE_ID & ""
          Case 10 'Cliente Nombre
@@ -1907,9 +1907,9 @@ With vGridId
 strSQL = ""
 For i = 1 To .MaxRows
   .Row = i
-  .col = 1
+  .Col = 1
   If .Value = vbChecked Then
-    .col = 3
+    .Col = 3
     strSQL = strSQL & Space(10) & "exec spTES_Deposito_Lote_Registra " & mBanco & ",'" & .Text & "','" & glogon.Usuario & "'," & vRemesa
   End If
 

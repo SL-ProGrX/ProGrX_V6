@@ -1,33 +1,33 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.Controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "Codejock.ShortcutBar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCajas_DetallePago 
    Appearance      =   0  'Flat
    AutoRedraw      =   -1  'True
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Recepción de Valores"
-   ClientHeight    =   7665
+   ClientHeight    =   8265
    ClientLeft      =   45
    ClientTop       =   315
-   ClientWidth     =   9015
+   ClientWidth     =   8895
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7665
-   ScaleWidth      =   9015
+   ScaleHeight     =   8265
+   ScaleWidth      =   8895
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin XtremeSuiteControls.ListView lsw 
-      Height          =   2292
+      Height          =   2415
       Left            =   120
-      TabIndex        =   76
+      TabIndex        =   49
       Top             =   1560
-      Width           =   3580
-      _Version        =   1441793
-      _ExtentX        =   6315
-      _ExtentY        =   4043
+      Width           =   3585
+      _Version        =   1572864
+      _ExtentX        =   6324
+      _ExtentY        =   4260
       _StockProps     =   77
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
@@ -43,6 +43,169 @@ Begin VB.Form frmCajas_DetallePago
       Appearance      =   16
       ShowBorder      =   0   'False
    End
+   Begin VB.Frame fraDetalle 
+      Caption         =   "Detalle de Valores Registrados..: "
+      BeginProperty Font 
+         Name            =   "Arial Narrow"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00FF0000&
+      Height          =   6252
+      Left            =   9360
+      TabIndex        =   31
+      Top             =   1080
+      Width           =   8892
+      Begin XtremeSuiteControls.ListView lswDetalle 
+         Height          =   4815
+         Left            =   120
+         TabIndex        =   51
+         Top             =   720
+         Width           =   8535
+         _Version        =   1572864
+         _ExtentX        =   15055
+         _ExtentY        =   8493
+         _StockProps     =   77
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Checkboxes      =   -1  'True
+         View            =   3
+         FullRowSelect   =   -1  'True
+         Appearance      =   21
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.PushButton btnDET_Borrar 
+         Height          =   372
+         Left            =   3240
+         TabIndex        =   52
+         Top             =   240
+         Width           =   1212
+         _Version        =   1572864
+         _ExtentX        =   2138
+         _ExtentY        =   656
+         _StockProps     =   79
+         Caption         =   "Borrar"
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         Picture         =   "frmCajas_DetallePago.frx":0000
+      End
+      Begin XtremeSuiteControls.PushButton btnDET_Cerrar 
+         Height          =   372
+         Left            =   4440
+         TabIndex        =   53
+         Top             =   240
+         Width           =   1212
+         _Version        =   1572864
+         _ExtentX        =   2138
+         _ExtentY        =   656
+         _StockProps     =   79
+         Caption         =   "Cerrar"
+         BackColor       =   -2147483633
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         UseVisualStyle  =   -1  'True
+         Appearance      =   21
+         Picture         =   "frmCajas_DetallePago.frx":05A4
+      End
+      Begin XtremeSuiteControls.FlatEdit txtTotalValores 
+         Height          =   315
+         Left            =   6480
+         TabIndex        =   76
+         Top             =   5640
+         Width           =   2175
+         _Version        =   1572864
+         _ExtentX        =   3831
+         _ExtentY        =   550
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin VB.Label Label2 
+         Alignment       =   1  'Right Justify
+         Caption         =   "Total valores..:"
+         BeginProperty Font 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Left            =   4560
+         TabIndex        =   32
+         Top             =   5640
+         Width           =   1695
+      End
+   End
+   Begin XtremeSuiteControls.CheckBox chkSaldosFavor 
+      Height          =   255
+      Left            =   2160
+      TabIndex        =   75
+      Top             =   5400
+      Width           =   2055
+      _Version        =   1572864
+      _ExtentX        =   3625
+      _ExtentY        =   450
+      _StockProps     =   79
+      Caption         =   "Aplicar Saldos a  favor"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Enabled         =   0   'False
+      UseVisualStyle  =   -1  'True
+      Appearance      =   17
+      Alignment       =   1
+   End
    Begin VB.Frame fraDocumento 
       Appearance      =   0  'Flat
       BackColor       =   &H00FFC0C0&
@@ -57,81 +220,24 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00FFFFFF&
-      Height          =   2295
+      Height          =   2415
       Left            =   9360
-      TabIndex        =   24
-      Top             =   2400
+      TabIndex        =   19
+      Top             =   2520
       Visible         =   0   'False
       Width           =   4935
-      Begin VB.TextBox txtDocCuenta 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
+      Begin XtremeSuiteControls.FlatEdit txtMontoDocumentos 
+         Height          =   330
          Left            =   1560
-         Locked          =   -1  'True
-         TabIndex        =   46
-         ToolTipText     =   "Presione F4 para Consultar"
-         Top             =   840
-         Width           =   3015
-      End
-      Begin VB.TextBox txtDocumento 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         TabIndex        =   27
-         Top             =   480
-         Width           =   3015
-      End
-      Begin VB.TextBox txtMontoDocumentos 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         TabIndex        =   25
+         TabIndex        =   81
          Top             =   1560
          Width           =   2535
-      End
-      Begin XtremeSuiteControls.Label Label3 
-         Height          =   252
-         Index           =   3
-         Left            =   120
-         TabIndex        =   100
-         Top             =   0
-         Width           =   4332
-         _Version        =   1441793
-         _ExtentX        =   7641
-         _ExtentY        =   444
-         _StockProps     =   79
-         Caption         =   "Documento:"
-         ForeColor       =   16777215
-         BackColor       =   -2147483633
+         _Version        =   1572864
+         _ExtentX        =   4471
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -141,31 +247,110 @@ Begin VB.Form frmCajas_DetallePago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Transparent     =   -1  'True
-         WordWrap        =   -1  'True
+         BackColor       =   16777215
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
       End
-      Begin VB.Label lblDivisaInfo 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BorderStyle     =   1  'Fixed Single
-         Caption         =   "..."
-         BeginProperty Font 
+      Begin XtremeSuiteControls.FlatEdit txtDocCuenta 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   83
+         Top             =   840
+         Width           =   3015
+         _Version        =   1572864
+         _ExtentX        =   5318
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
-            Italic          =   -1  'True
+            Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         ForeColor       =   &H80000008&
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtDocumento 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   84
+         Top             =   480
+         Width           =   3015
+         _Version        =   1572864
+         _ExtentX        =   5318
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777215
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeShortcutBar.ShortcutCaption scFormasPago 
+         Height          =   375
+         Index           =   3
+         Left            =   0
+         TabIndex        =   108
+         Top             =   0
+         Width           =   5175
+         _Version        =   1572864
+         _ExtentX        =   9128
+         _ExtentY        =   661
+         _StockProps     =   14
+         Caption         =   "Documento:"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+      End
+      Begin XtremeSuiteControls.Label lblDivisaInfo 
          Height          =   315
          Index           =   1
          Left            =   4080
-         TabIndex        =   52
+         TabIndex        =   82
          Top             =   1560
          Width           =   495
+         _Version        =   1572864
+         _ExtentX        =   873
+         _ExtentY        =   556
+         _StockProps     =   79
+         Caption         =   "..."
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         WordWrap        =   -1  'True
       End
       Begin VB.Label Label1 
          Appearance      =   0  'Flat
@@ -185,7 +370,7 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   315
          Index           =   1
          Left            =   240
-         TabIndex        =   47
+         TabIndex        =   33
          Top             =   840
          Width           =   1095
       End
@@ -207,7 +392,7 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   315
          Index           =   25
          Left            =   240
-         TabIndex        =   28
+         TabIndex        =   21
          Top             =   480
          Width           =   1095
       End
@@ -229,7 +414,7 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   210
          Index           =   17
          Left            =   240
-         TabIndex        =   26
+         TabIndex        =   20
          Top             =   1560
          Width           =   975
       End
@@ -248,81 +433,24 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00FFFFFF&
-      Height          =   2295
+      Height          =   2415
       Left            =   14400
       TabIndex        =   10
       Top             =   0
       Visible         =   0   'False
       Width           =   4935
-      Begin VB.TextBox txtMontoTarjetas 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFFFFF&
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         TabIndex        =   17
-         Top             =   1680
-         Width           =   2535
-      End
-      Begin VB.TextBox txtTarjeta 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFFFFF&
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         TabIndex        =   12
-         ToolTipText     =   "Presione F4 para Consultar"
-         Top             =   720
-         Width           =   3015
-      End
-      Begin VB.TextBox txtAutoriza 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFFFFF&
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         TabIndex        =   11
-         ToolTipText     =   "Presione F4 para Consultar"
-         Top             =   1080
-         Width           =   3015
-      End
       Begin XtremeSuiteControls.ComboBox cboTarjetas 
-         Height          =   312
+         Height          =   315
          Left            =   1560
-         TabIndex        =   89
-         Top             =   360
-         Width           =   3012
-         _Version        =   1441793
+         TabIndex        =   61
+         Top             =   480
+         Width           =   3015
+         _Version        =   1572864
          _ExtentX        =   5318
          _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   1973790
-         BackColor       =   16185078
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -332,26 +460,24 @@ Begin VB.Form frmCajas_DetallePago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         BackColor       =   16185078
          Style           =   2
-         Appearance      =   16
+         Appearance      =   6
          UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
-      Begin XtremeSuiteControls.Label Label3 
-         Height          =   252
-         Index           =   1
-         Left            =   240
-         TabIndex        =   98
-         Top             =   0
-         Width           =   4332
-         _Version        =   1441793
-         _ExtentX        =   7641
-         _ExtentY        =   444
-         _StockProps     =   79
-         Caption         =   "Tarjeta Débito/Crédito:"
-         ForeColor       =   16777215
-         BackColor       =   -2147483633
+      Begin XtremeSuiteControls.FlatEdit txtMontoTarjetas 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   89
+         ToolTipText     =   "Digite el Monto Total del Cheque"
+         Top             =   1800
+         Width           =   2535
+         _Version        =   1572864
+         _ExtentX        =   4471
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -361,31 +487,109 @@ Begin VB.Form frmCajas_DetallePago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Transparent     =   -1  'True
-         WordWrap        =   -1  'True
+         BackColor       =   16777215
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
       End
-      Begin VB.Label lblDivisaInfo 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BorderStyle     =   1  'Fixed Single
-         Caption         =   "..."
-         BeginProperty Font 
+      Begin XtremeSuiteControls.FlatEdit txtTarjeta 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   91
+         Top             =   840
+         Width           =   3015
+         _Version        =   1572864
+         _ExtentX        =   5318
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
-            Italic          =   -1  'True
+            Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         ForeColor       =   &H80000008&
+         BackColor       =   16777215
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtAutoriza 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   92
+         Top             =   1200
+         Width           =   3015
+         _Version        =   1572864
+         _ExtentX        =   5318
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777215
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeShortcutBar.ShortcutCaption scFormasPago 
+         Height          =   375
+         Index           =   2
+         Left            =   0
+         TabIndex        =   107
+         Top             =   0
+         Width           =   5175
+         _Version        =   1572864
+         _ExtentX        =   9128
+         _ExtentY        =   661
+         _StockProps     =   14
+         Caption         =   "Tarjeta Débito/Crédito:"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+      End
+      Begin XtremeSuiteControls.Label lblDivisaInfo 
          Height          =   315
          Index           =   3
          Left            =   4080
-         TabIndex        =   54
-         Top             =   1680
+         TabIndex        =   90
+         Top             =   1800
          Width           =   495
+         _Version        =   1572864
+         _ExtentX        =   873
+         _ExtentY        =   556
+         _StockProps     =   79
+         Caption         =   "..."
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         WordWrap        =   -1  'True
       End
       Begin VB.Label Label1 
          Appearance      =   0  'Flat
@@ -402,12 +606,12 @@ Begin VB.Form frmCajas_DetallePago
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00FFFFFF&
-         Height          =   312
+         Height          =   315
          Index           =   24
          Left            =   240
-         TabIndex        =   16
-         Top             =   1080
-         Width           =   1572
+         TabIndex        =   14
+         Top             =   1200
+         Width           =   1575
       End
       Begin VB.Label Label1 
          Appearance      =   0  'Flat
@@ -424,12 +628,12 @@ Begin VB.Form frmCajas_DetallePago
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00FFFFFF&
-         Height          =   312
+         Height          =   315
          Index           =   10
          Left            =   240
-         TabIndex        =   15
-         Top             =   360
-         Width           =   1452
+         TabIndex        =   13
+         Top             =   480
+         Width           =   1455
       End
       Begin VB.Label Label1 
          Appearance      =   0  'Flat
@@ -446,12 +650,12 @@ Begin VB.Form frmCajas_DetallePago
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00FFFFFF&
-         Height          =   312
+         Height          =   315
          Index           =   9
          Left            =   240
-         TabIndex        =   14
-         Top             =   720
-         Width           =   1212
+         TabIndex        =   12
+         Top             =   840
+         Width           =   1215
       End
       Begin VB.Label Label1 
          Appearance      =   0  'Flat
@@ -471,8 +675,8 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   315
          Index           =   11
          Left            =   240
-         TabIndex        =   13
-         Top             =   1680
+         TabIndex        =   11
+         Top             =   1800
          Width           =   975
       End
    End
@@ -490,44 +694,25 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00FFFFFF&
-      Height          =   2295
+      Height          =   2415
       Left            =   9360
-      TabIndex        =   33
+      TabIndex        =   25
       Top             =   0
       Visible         =   0   'False
       Width           =   4935
-      Begin VB.TextBox txtMontoEfectivo 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
+      Begin XtremeSuiteControls.FlatEdit txtMontoEfectivo 
+         Height          =   330
          Left            =   1560
-         TabIndex        =   34
+         TabIndex        =   96
+         ToolTipText     =   "Digite el Monto Total del Cheque"
          Top             =   960
          Width           =   2535
-      End
-      Begin XtremeSuiteControls.Label Label3 
-         Height          =   252
-         Index           =   0
-         Left            =   120
-         TabIndex        =   97
-         Top             =   0
-         Width           =   4332
-         _Version        =   1441793
-         _ExtentX        =   7641
-         _ExtentY        =   444
-         _StockProps     =   79
-         Caption         =   "Efectivo:"
-         ForeColor       =   16777215
-         BackColor       =   -2147483633
+         _Version        =   1572864
+         _ExtentX        =   4471
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -537,31 +722,57 @@ Begin VB.Form frmCajas_DetallePago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Transparent     =   -1  'True
-         WordWrap        =   -1  'True
+         BackColor       =   16777215
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
       End
-      Begin VB.Label lblDivisaInfo 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BorderStyle     =   1  'Fixed Single
-         Caption         =   "..."
-         BeginProperty Font 
+      Begin XtremeShortcutBar.ShortcutCaption scFormasPago 
+         Height          =   375
+         Index           =   1
+         Left            =   0
+         TabIndex        =   106
+         Top             =   0
+         Width           =   5175
+         _Version        =   1572864
+         _ExtentX        =   9128
+         _ExtentY        =   661
+         _StockProps     =   14
+         Caption         =   "Efectivo:"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
-            Italic          =   -1  'True
+            Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         ForeColor       =   &H80000008&
+      End
+      Begin XtremeSuiteControls.Label lblDivisaInfo 
          Height          =   315
          Index           =   4
          Left            =   4080
-         TabIndex        =   55
+         TabIndex        =   97
          Top             =   960
          Width           =   495
+         _Version        =   1572864
+         _ExtentX        =   873
+         _ExtentY        =   556
+         _StockProps     =   79
+         Caption         =   "..."
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         WordWrap        =   -1  'True
       End
       Begin VB.Label Label1 
          Appearance      =   0  'Flat
@@ -581,7 +792,7 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   312
          Index           =   22
          Left            =   240
-         TabIndex        =   35
+         TabIndex        =   26
          Top             =   960
          Width           =   1212
       End
@@ -600,106 +811,24 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00FFFFFF&
-      Height          =   2295
+      Height          =   2415
       Left            =   14400
-      TabIndex        =   18
-      Top             =   2400
+      TabIndex        =   15
+      Top             =   2520
       Visible         =   0   'False
       Width           =   4935
-      Begin VB.TextBox txtChequeCta 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         TabIndex        =   64
-         ToolTipText     =   "Presione F4 para Consultar"
-         Top             =   1080
-         Width           =   3015
-      End
-      Begin VB.TextBox txtCheque 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         TabIndex        =   21
-         ToolTipText     =   "Presione F4 para Consultar"
-         Top             =   1440
-         Width           =   3015
-      End
-      Begin VB.TextBox txtMontoCheques 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         TabIndex        =   19
-         ToolTipText     =   "Digite el Monto Total del Cheque"
-         Top             =   1800
-         Width           =   2535
-      End
-      Begin XtremeSuiteControls.ComboBox cboPagador 
-         Height          =   312
-         Left            =   240
-         TabIndex        =   87
-         Top             =   360
-         Width           =   4332
-         _Version        =   1441793
-         _ExtentX        =   7646
-         _ExtentY        =   582
-         _StockProps     =   77
-         ForeColor       =   1973790
-         BackColor       =   16185078
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         BackColor       =   16185078
-         Style           =   2
-         Appearance      =   16
-         UseVisualStyle  =   0   'False
-         Text            =   "ComboBox1"
-      End
       Begin XtremeSuiteControls.ComboBox cboEmisorCheque 
-         Height          =   312
+         Height          =   315
          Left            =   1560
-         TabIndex        =   88
-         Top             =   720
-         Width           =   3012
-         _Version        =   1441793
+         TabIndex        =   60
+         Top             =   480
+         Width           =   3015
+         _Version        =   1572864
          _ExtentX        =   5318
          _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   1973790
-         BackColor       =   16185078
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -709,26 +838,24 @@ Begin VB.Form frmCajas_DetallePago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         BackColor       =   16185078
          Style           =   2
-         Appearance      =   16
+         Appearance      =   6
          UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
-      Begin XtremeSuiteControls.Label Label3 
-         Height          =   252
-         Index           =   2
-         Left            =   120
-         TabIndex        =   99
-         Top             =   0
-         Width           =   4332
-         _Version        =   1441793
-         _ExtentX        =   7641
-         _ExtentY        =   444
-         _StockProps     =   79
-         Caption         =   "Cheque:"
-         ForeColor       =   16777215
-         BackColor       =   -2147483633
+      Begin XtremeSuiteControls.FlatEdit txtMontoCheques 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   85
+         ToolTipText     =   "Digite el Monto Total del Cheque"
+         Top             =   1920
+         Width           =   2535
+         _Version        =   1572864
+         _ExtentX        =   4471
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -738,7 +865,108 @@ Begin VB.Form frmCajas_DetallePago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Transparent     =   -1  'True
+         BackColor       =   16777215
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtChequeCta 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   87
+         Top             =   960
+         Width           =   3015
+         _Version        =   1572864
+         _ExtentX        =   5318
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777215
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtCheque 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   88
+         Top             =   1320
+         Width           =   3015
+         _Version        =   1572864
+         _ExtentX        =   5318
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777215
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeShortcutBar.ShortcutCaption scFormasPago 
+         Height          =   375
+         Index           =   5
+         Left            =   0
+         TabIndex        =   110
+         Top             =   0
+         Width           =   5175
+         _Version        =   1572864
+         _ExtentX        =   9128
+         _ExtentY        =   661
+         _StockProps     =   14
+         Caption         =   "Cheque:"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+      End
+      Begin XtremeSuiteControls.Label lblDivisaInfo 
+         Height          =   315
+         Index           =   2
+         Left            =   4080
+         TabIndex        =   86
+         Top             =   1920
+         Width           =   495
+         _Version        =   1572864
+         _ExtentX        =   873
+         _ExtentY        =   556
+         _StockProps     =   79
+         Caption         =   "..."
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
          WordWrap        =   -1  'True
       End
       Begin VB.Label Label1 
@@ -759,32 +987,9 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   315
          Index           =   30
          Left            =   240
-         TabIndex        =   65
-         Top             =   1080
+         TabIndex        =   42
+         Top             =   960
          Width           =   975
-      End
-      Begin VB.Label lblDivisaInfo 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BorderStyle     =   1  'Fixed Single
-         Caption         =   "..."
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   -1  'True
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H80000008&
-         Height          =   315
-         Index           =   2
-         Left            =   4080
-         TabIndex        =   53
-         Top             =   1800
-         Width           =   495
       End
       Begin VB.Label Label1 
          Appearance      =   0  'Flat
@@ -801,12 +1006,12 @@ Begin VB.Form frmCajas_DetallePago
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00FFFFFF&
-         Height          =   312
+         Height          =   315
          Index           =   13
          Left            =   240
-         TabIndex        =   23
-         Top             =   1440
-         Width           =   1332
+         TabIndex        =   18
+         Top             =   1320
+         Width           =   1335
       End
       Begin VB.Label Label1 
          Appearance      =   0  'Flat
@@ -826,8 +1031,8 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   315
          Index           =   14
          Left            =   240
-         TabIndex        =   22
-         Top             =   720
+         TabIndex        =   17
+         Top             =   480
          Width           =   975
       End
       Begin VB.Label Label1 
@@ -848,8 +1053,8 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   210
          Index           =   18
          Left            =   240
-         TabIndex        =   20
-         Top             =   1800
+         TabIndex        =   16
+         Top             =   1920
          Width           =   975
       End
    End
@@ -867,60 +1072,24 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00FFFFFF&
-      Height          =   2295
+      Height          =   2415
       Left            =   9360
-      TabIndex        =   56
-      Top             =   4800
+      TabIndex        =   37
+      Top             =   5040
       Visible         =   0   'False
       Width           =   4935
-      Begin VB.TextBox txtMontoDeposito 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         TabIndex        =   58
-         Top             =   1680
-         Width           =   2535
-      End
-      Begin VB.TextBox txtDepositoNo 
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         TabIndex        =   57
-         ToolTipText     =   "Presione F4 para Consultar"
-         Top             =   840
-         Width           =   3015
-      End
       Begin XtremeSuiteControls.ComboBox cboDepositoBanco 
          Height          =   312
          Left            =   1560
-         TabIndex        =   85
+         TabIndex        =   58
          Top             =   480
          Width           =   3012
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5318
          _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   1973790
-         BackColor       =   16185078
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -930,19 +1099,18 @@ Begin VB.Form frmCajas_DetallePago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         BackColor       =   16185078
          Style           =   2
-         Appearance      =   16
+         Appearance      =   6
          UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
       Begin XtremeSuiteControls.DateTimePicker dtpDeposito 
          Height          =   315
          Left            =   1560
-         TabIndex        =   103
+         TabIndex        =   69
          Top             =   1200
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   556
          _StockProps     =   68
@@ -958,20 +1126,18 @@ Begin VB.Form frmCajas_DetallePago
          CustomFormat    =   "dd/MM/yyyy"
          Format          =   3
       End
-      Begin XtremeSuiteControls.Label Label3 
-         Height          =   252
-         Index           =   5
-         Left            =   120
-         TabIndex        =   102
-         Top             =   0
-         Width           =   4332
-         _Version        =   1441793
-         _ExtentX        =   7641
-         _ExtentY        =   444
-         _StockProps     =   79
-         Caption         =   "Depósito en Cuenta:"
-         ForeColor       =   16777215
-         BackColor       =   -2147483633
+      Begin XtremeSuiteControls.FlatEdit txtDepositoNo 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   95
+         Top             =   840
+         Width           =   3015
+         _Version        =   1572864
+         _ExtentX        =   5318
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -981,7 +1147,83 @@ Begin VB.Form frmCajas_DetallePago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Transparent     =   -1  'True
+         BackColor       =   16777215
+         Alignment       =   2
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtMontoDeposito 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   98
+         ToolTipText     =   "Digite el Monto Total del Cheque"
+         Top             =   1680
+         Width           =   2535
+         _Version        =   1572864
+         _ExtentX        =   4471
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777215
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeShortcutBar.ShortcutCaption scFormasPago 
+         Height          =   375
+         Index           =   4
+         Left            =   0
+         TabIndex        =   109
+         Top             =   0
+         Width           =   5175
+         _Version        =   1572864
+         _ExtentX        =   9128
+         _ExtentY        =   661
+         _StockProps     =   14
+         Caption         =   "Depósito en Cuenta:"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+      End
+      Begin XtremeSuiteControls.Label lblDivisaInfo 
+         Height          =   315
+         Index           =   5
+         Left            =   4080
+         TabIndex        =   99
+         Top             =   1680
+         Width           =   495
+         _Version        =   1572864
+         _ExtentX        =   873
+         _ExtentY        =   556
+         _StockProps     =   79
+         Caption         =   "..."
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
          WordWrap        =   -1  'True
       End
       Begin VB.Label Label1 
@@ -1002,7 +1244,7 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   312
          Index           =   29
          Left            =   240
-         TabIndex        =   63
+         TabIndex        =   41
          Top             =   1200
          Width           =   1452
       End
@@ -1024,7 +1266,7 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   210
          Index           =   23
          Left            =   240
-         TabIndex        =   62
+         TabIndex        =   40
          Top             =   1680
          Width           =   975
       End
@@ -1046,7 +1288,7 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   315
          Index           =   20
          Left            =   240
-         TabIndex        =   61
+         TabIndex        =   39
          Top             =   480
          Width           =   975
       End
@@ -1068,32 +1310,9 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   315
          Index           =   16
          Left            =   240
-         TabIndex        =   60
+         TabIndex        =   38
          Top             =   840
          Width           =   1095
-      End
-      Begin VB.Label lblDivisaInfo 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BorderStyle     =   1  'Fixed Single
-         Caption         =   "..."
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   -1  'True
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H80000008&
-         Height          =   315
-         Index           =   5
-         Left            =   4080
-         TabIndex        =   59
-         Top             =   1680
-         Width           =   495
       End
    End
    Begin VB.Frame fraFondos 
@@ -1110,84 +1329,24 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00FFFFFF&
-      Height          =   2295
+      Height          =   2415
       Left            =   14400
-      TabIndex        =   66
-      Top             =   4800
+      TabIndex        =   43
+      Top             =   5040
       Visible         =   0   'False
       Width           =   4935
-      Begin VB.TextBox txtMontoFondos 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         TabIndex        =   69
-         Top             =   1800
-         Width           =   2535
-      End
-      Begin VB.TextBox txtFondoMonto 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BorderStyle     =   0  'None
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         Locked          =   -1  'True
-         TabIndex        =   68
-         Top             =   960
-         Width           =   3015
-      End
-      Begin VB.TextBox txtFondoDisponible 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BorderStyle     =   0  'None
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         Locked          =   -1  'True
-         TabIndex        =   67
-         Top             =   1320
-         Width           =   3015
-      End
       Begin XtremeSuiteControls.ComboBox cboFondos 
          Height          =   312
          Left            =   1560
-         TabIndex        =   84
+         TabIndex        =   57
          Top             =   480
          Width           =   3012
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5318
          _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   1973790
-         BackColor       =   16185078
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1197,26 +1356,23 @@ Begin VB.Form frmCajas_DetallePago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         BackColor       =   16185078
          Style           =   2
-         Appearance      =   16
+         Appearance      =   6
          UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
-      Begin XtremeSuiteControls.Label Label3 
-         Height          =   252
-         Index           =   4
-         Left            =   120
-         TabIndex        =   101
-         Top             =   0
-         Width           =   4332
-         _Version        =   1441793
-         _ExtentX        =   7641
-         _ExtentY        =   444
-         _StockProps     =   79
-         Caption         =   "Fondos Disponibles:"
-         ForeColor       =   16777215
-         BackColor       =   -2147483633
+      Begin XtremeSuiteControls.FlatEdit txtFondoMonto 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   93
+         Top             =   960
+         Width           =   3015
+         _Version        =   1572864
+         _ExtentX        =   5318
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1226,7 +1382,111 @@ Begin VB.Form frmCajas_DetallePago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Transparent     =   -1  'True
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtFondoDisponible 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   94
+         Top             =   1320
+         Width           =   3015
+         _Version        =   1572864
+         _ExtentX        =   5318
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtMontoFondos 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   100
+         ToolTipText     =   "Digite el Monto Total del Cheque"
+         Top             =   1800
+         Width           =   2535
+         _Version        =   1572864
+         _ExtentX        =   4471
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777215
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeShortcutBar.ShortcutCaption scFormasPago 
+         Height          =   375
+         Index           =   6
+         Left            =   0
+         TabIndex        =   111
+         Top             =   0
+         Width           =   5175
+         _Version        =   1572864
+         _ExtentX        =   9128
+         _ExtentY        =   661
+         _StockProps     =   14
+         Caption         =   "Fondos Disponibles:"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+      End
+      Begin XtremeSuiteControls.Label lblDivisaInfo 
+         Height          =   315
+         Index           =   6
+         Left            =   4080
+         TabIndex        =   101
+         Top             =   1800
+         Width           =   495
+         _Version        =   1572864
+         _ExtentX        =   873
+         _ExtentY        =   556
+         _StockProps     =   79
+         Caption         =   "..."
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
          WordWrap        =   -1  'True
       End
       Begin VB.Label Label1 
@@ -1247,7 +1507,7 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   315
          Index           =   34
          Left            =   240
-         TabIndex        =   74
+         TabIndex        =   47
          Top             =   480
          Width           =   1095
       End
@@ -1269,7 +1529,7 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   210
          Index           =   33
          Left            =   240
-         TabIndex        =   73
+         TabIndex        =   46
          Top             =   1800
          Width           =   975
       End
@@ -1291,7 +1551,7 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   210
          Index           =   32
          Left            =   240
-         TabIndex        =   72
+         TabIndex        =   45
          Top             =   960
          Width           =   1335
       End
@@ -1313,159 +1573,9 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   210
          Index           =   31
          Left            =   240
-         TabIndex        =   71
+         TabIndex        =   44
          Top             =   1320
          Width           =   1335
-      End
-      Begin VB.Label lblDivisaInfo 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BorderStyle     =   1  'Fixed Single
-         Caption         =   "..."
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   -1  'True
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H80000008&
-         Height          =   315
-         Index           =   6
-         Left            =   4080
-         TabIndex        =   70
-         Top             =   1800
-         Width           =   495
-      End
-   End
-   Begin VB.Frame fraDetalle 
-      Caption         =   "Detalle de Valores Registrados..: "
-      BeginProperty Font 
-         Name            =   "Arial Narrow"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      ForeColor       =   &H00FF0000&
-      Height          =   6252
-      Left            =   9360
-      TabIndex        =   43
-      Top             =   1080
-      Width           =   8892
-      Begin XtremeSuiteControls.ListView lswDetalle 
-         Height          =   4812
-         Left            =   240
-         TabIndex        =   78
-         Top             =   720
-         Width           =   8172
-         _Version        =   1441793
-         _ExtentX        =   14414
-         _ExtentY        =   8488
-         _StockProps     =   77
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Checkboxes      =   -1  'True
-         View            =   3
-         FullRowSelect   =   -1  'True
-         Appearance      =   16
-      End
-      Begin XtremeSuiteControls.PushButton btnDET_Borrar 
-         Height          =   372
-         Left            =   3240
-         TabIndex        =   79
-         Top             =   240
-         Width           =   1212
-         _Version        =   1441793
-         _ExtentX        =   2138
-         _ExtentY        =   656
-         _StockProps     =   79
-         Caption         =   "Borrar"
-         BackColor       =   -2147483633
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Appearance      =   16
-         Picture         =   "frmCajas_DetallePago.frx":0000
-      End
-      Begin VB.TextBox txtTotalValores 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   6840
-         Locked          =   -1  'True
-         TabIndex        =   45
-         Top             =   5640
-         Width           =   1575
-      End
-      Begin XtremeSuiteControls.PushButton btnDET_Cerrar 
-         Height          =   372
-         Left            =   4440
-         TabIndex        =   80
-         Top             =   240
-         Width           =   1212
-         _Version        =   1441793
-         _ExtentX        =   2138
-         _ExtentY        =   656
-         _StockProps     =   79
-         Caption         =   "Cerrar"
-         BackColor       =   -2147483633
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Appearance      =   16
-         Picture         =   "frmCajas_DetallePago.frx":068A
-      End
-      Begin VB.Label Label2 
-         Alignment       =   1  'Right Justify
-         Caption         =   "Total valores..:"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   252
-         Left            =   5040
-         TabIndex        =   44
-         Top             =   5640
-         Width           =   1692
       End
    End
    Begin VB.Timer TimerInicial 
@@ -1528,43 +1638,43 @@ Begin VB.Form frmCajas_DetallePago
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   7
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_DetallePago.frx":0E6B
+            Picture         =   "frmCajas_DetallePago.frx":0BE2
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_DetallePago.frx":1745
+            Picture         =   "frmCajas_DetallePago.frx":14BC
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_DetallePago.frx":261F
+            Picture         =   "frmCajas_DetallePago.frx":2396
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_DetallePago.frx":271B
+            Picture         =   "frmCajas_DetallePago.frx":2492
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_DetallePago.frx":2835
+            Picture         =   "frmCajas_DetallePago.frx":25AC
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_DetallePago.frx":296C
+            Picture         =   "frmCajas_DetallePago.frx":26E3
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmCajas_DetallePago.frx":2A65
+            Picture         =   "frmCajas_DetallePago.frx":27DC
             Key             =   ""
          EndProperty
       EndProperty
    End
    Begin MSComctlLib.StatusBar StatusBar 
       Align           =   2  'Align Bottom
-      Height          =   252
+      Height          =   255
       Left            =   0
-      TabIndex        =   36
-      Top             =   7416
-      Width           =   9012
-      _ExtentX        =   15901
+      TabIndex        =   27
+      Top             =   8010
+      Width           =   8895
+      _ExtentX        =   15690
       _ExtentY        =   450
       _Version        =   393216
       BeginProperty Panels {8E3867A5-8586-11D1-B16A-00C0F0283628} 
@@ -1586,12 +1696,12 @@ Begin VB.Form frmCajas_DetallePago
          BeginProperty Panel4 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
             Style           =   6
             Bevel           =   0
-            TextSave        =   "3/10/2023"
+            TextSave        =   "24/3/2025"
          EndProperty
          BeginProperty Panel5 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
             Style           =   5
             Bevel           =   0
-            TextSave        =   "10:31:p. m."
+            TextSave        =   "16:09"
          EndProperty
       EndProperty
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1607,15 +1717,15 @@ Begin VB.Form frmCajas_DetallePago
    Begin XtremeSuiteControls.ComboBox cboDivisa 
       Height          =   312
       Left            =   6480
-      TabIndex        =   77
+      TabIndex        =   50
       Top             =   1100
       Width           =   2292
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4048
       _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   1973790
-      BackColor       =   16185078
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
@@ -1625,92 +1735,95 @@ Begin VB.Form frmCajas_DetallePago
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      BackColor       =   16185078
       Style           =   2
-      Appearance      =   16
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
       Text            =   "ComboBox1"
    End
    Begin XtremeSuiteControls.PushButton btnAgregar 
       Height          =   540
       Left            =   4680
-      TabIndex        =   81
-      Top             =   4560
-      Width           =   1452
-      _Version        =   1441793
+      TabIndex        =   54
+      Top             =   5280
+      Width           =   1455
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   952
       _StockProps     =   79
       Caption         =   "Agregar"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
-      Picture         =   "frmCajas_DetallePago.frx":2B6A
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmCajas_DetallePago.frx":28E1
    End
    Begin XtremeSuiteControls.PushButton btnDetalle 
       Height          =   540
       Left            =   6120
-      TabIndex        =   82
-      Top             =   4560
-      Width           =   1452
-      _Version        =   1441793
+      TabIndex        =   55
+      Top             =   5280
+      Width           =   1455
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   952
       _StockProps     =   79
       Caption         =   "Detalle"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
-      Picture         =   "frmCajas_DetallePago.frx":3359
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmCajas_DetallePago.frx":30D0
    End
    Begin XtremeSuiteControls.PushButton btnCerrar 
       Height          =   540
       Left            =   7560
-      TabIndex        =   83
-      Top             =   4560
-      Width           =   1212
-      _Version        =   1441793
+      TabIndex        =   56
+      Top             =   5280
+      Width           =   1215
+      _Version        =   1572864
       _ExtentX        =   2138
       _ExtentY        =   952
       _StockProps     =   79
       Caption         =   "Cerrar"
-      BackColor       =   -2147483633
+      BackColor       =   16777215
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   9
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Appearance      =   16
-      Picture         =   "frmCajas_DetallePago.frx":3B38
+      UseVisualStyle  =   -1  'True
+      Appearance      =   21
+      Picture         =   "frmCajas_DetallePago.frx":38AF
    End
    Begin XtremeSuiteControls.FlatEdit txtTotalPagar 
-      Height          =   312
-      Left            =   5640
-      TabIndex        =   90
-      Top             =   5760
-      Width           =   2652
-      _Version        =   1441793
-      _ExtentX        =   4678
-      _ExtentY        =   550
+      Height          =   315
+      Left            =   6360
+      TabIndex        =   62
+      Top             =   6360
+      Width           =   2415
+      _Version        =   1572864
+      _ExtentX        =   4260
+      _ExtentY        =   556
       _StockProps     =   77
       ForeColor       =   0
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1724,18 +1837,18 @@ Begin VB.Form frmCajas_DetallePago
       EndProperty
       Alignment       =   1
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtTotal 
-      Height          =   312
-      Left            =   5640
-      TabIndex        =   91
-      Top             =   6120
-      Width           =   2652
-      _Version        =   1441793
-      _ExtentX        =   4678
-      _ExtentY        =   550
+      Height          =   315
+      Left            =   6360
+      TabIndex        =   63
+      Top             =   6720
+      Width           =   2415
+      _Version        =   1572864
+      _ExtentX        =   4260
+      _ExtentY        =   556
       _StockProps     =   77
       ForeColor       =   0
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1749,18 +1862,18 @@ Begin VB.Form frmCajas_DetallePago
       EndProperty
       Alignment       =   1
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtCambio 
-      Height          =   312
-      Left            =   5640
-      TabIndex        =   92
-      Top             =   6480
-      Width           =   2652
-      _Version        =   1441793
-      _ExtentX        =   4678
-      _ExtentY        =   550
+      Height          =   315
+      Left            =   6360
+      TabIndex        =   64
+      Top             =   7080
+      Width           =   2415
+      _Version        =   1572864
+      _ExtentX        =   4260
+      _ExtentY        =   556
       _StockProps     =   77
       ForeColor       =   0
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1774,18 +1887,18 @@ Begin VB.Form frmCajas_DetallePago
       EndProperty
       Alignment       =   1
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtDiferencia 
-      Height          =   312
-      Left            =   5640
-      TabIndex        =   93
-      Top             =   6840
-      Width           =   2652
-      _Version        =   1441793
-      _ExtentX        =   4678
-      _ExtentY        =   550
+      Height          =   315
+      Left            =   6360
+      TabIndex        =   65
+      Top             =   7440
+      Width           =   2415
+      _Version        =   1572864
+      _ExtentX        =   4260
+      _ExtentY        =   556
       _StockProps     =   77
       ForeColor       =   0
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1799,18 +1912,18 @@ Begin VB.Form frmCajas_DetallePago
       EndProperty
       Alignment       =   1
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtMontoDivisaTransaccion 
-      Height          =   312
-      Left            =   1440
-      TabIndex        =   94
-      Top             =   3960
-      Width           =   2172
-      _Version        =   1441793
-      _ExtentX        =   3831
-      _ExtentY        =   550
+      Height          =   315
+      Left            =   6720
+      TabIndex        =   66
+      Top             =   4440
+      Width           =   2055
+      _Version        =   1572864
+      _ExtentX        =   3625
+      _ExtentY        =   556
       _StockProps     =   77
       ForeColor       =   0
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1824,16 +1937,16 @@ Begin VB.Form frmCajas_DetallePago
       EndProperty
       Alignment       =   1
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtMontoDivisaFuncional 
-      Height          =   312
+      Height          =   315
       Left            =   6720
-      TabIndex        =   95
-      Top             =   3960
-      Width           =   2052
-      _Version        =   1441793
+      TabIndex        =   67
+      Top             =   4080
+      Width           =   2055
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   550
       _StockProps     =   77
@@ -1849,18 +1962,18 @@ Begin VB.Form frmCajas_DetallePago
       EndProperty
       Alignment       =   1
       Locked          =   -1  'True
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtNotas 
-      Height          =   1392
+      Height          =   1395
       Left            =   120
-      TabIndex        =   96
-      Top             =   5760
-      Width           =   3612
-      _Version        =   1441793
-      _ExtentX        =   6371
-      _ExtentY        =   2455
+      TabIndex        =   68
+      Top             =   6360
+      Width           =   4095
+      _Version        =   1572864
+      _ExtentX        =   7223
+      _ExtentY        =   2461
       _StockProps     =   77
       ForeColor       =   0
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1874,7 +1987,7 @@ Begin VB.Form frmCajas_DetallePago
       EndProperty
       MultiLine       =   -1  'True
       ScrollBars      =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin VB.Frame fraSaldos 
@@ -1891,82 +2004,24 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00FFFFFF&
-      Height          =   2295
+      Height          =   2415
       Left            =   3720
-      TabIndex        =   29
+      TabIndex        =   22
       Top             =   1560
       Visible         =   0   'False
       Width           =   5080
-      Begin VB.TextBox txtSaldoFavorSaldo 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         Locked          =   -1  'True
-         TabIndex        =   42
-         Top             =   1320
-         Width           =   3015
-      End
-      Begin VB.TextBox txtSaldoFavorMntOrigen 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         Locked          =   -1  'True
-         TabIndex        =   41
-         Top             =   960
-         Width           =   3015
-      End
-      Begin VB.TextBox txtMontoSaldos 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         BeginProperty Font 
-            Name            =   "Calibri"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   315
-         Left            =   1560
-         TabIndex        =   30
-         Top             =   1800
-         Width           =   2535
-      End
       Begin XtremeSuiteControls.ComboBox cboSaldoFavorReferencia 
          Height          =   312
          Left            =   1560
-         TabIndex        =   86
+         TabIndex        =   59
          Top             =   480
          Width           =   3012
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   5318
          _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   1973790
-         BackColor       =   16185078
+         BackColor       =   16777215
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -1976,26 +2031,23 @@ Begin VB.Form frmCajas_DetallePago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         BackColor       =   16185078
          Style           =   2
-         Appearance      =   16
+         Appearance      =   6
          UseVisualStyle  =   0   'False
          Text            =   "ComboBox1"
       End
-      Begin XtremeSuiteControls.Label Label3 
-         Height          =   252
-         Index           =   6
-         Left            =   120
-         TabIndex        =   104
-         Top             =   0
-         Width           =   4332
-         _Version        =   1441793
-         _ExtentX        =   7641
-         _ExtentY        =   444
-         _StockProps     =   79
-         Caption         =   "Saldos a Favor en Cajas:"
-         ForeColor       =   16777215
-         BackColor       =   -2147483633
+      Begin XtremeSuiteControls.FlatEdit txtSaldoFavorMntOrigen 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   77
+         Top             =   960
+         Width           =   3015
+         _Version        =   1572864
+         _ExtentX        =   5318
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
@@ -2005,31 +2057,111 @@ Begin VB.Form frmCajas_DetallePago
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Transparent     =   -1  'True
-         WordWrap        =   -1  'True
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
       End
-      Begin VB.Label lblDivisaInfo 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H00E0E0E0&
-         BorderStyle     =   1  'Fixed Single
-         Caption         =   "..."
-         BeginProperty Font 
+      Begin XtremeSuiteControls.FlatEdit txtSaldoFavorSaldo 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   78
+         Top             =   1320
+         Width           =   3015
+         _Version        =   1572864
+         _ExtentX        =   5318
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Calibri"
             Size            =   9
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
-            Italic          =   -1  'True
+            Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         ForeColor       =   &H80000008&
+         BackColor       =   16777152
+         Alignment       =   1
+         Locked          =   -1  'True
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeSuiteControls.FlatEdit txtMontoSaldos 
+         Height          =   330
+         Left            =   1560
+         TabIndex        =   79
+         Top             =   1800
+         Width           =   2535
+         _Version        =   1572864
+         _ExtentX        =   4471
+         _ExtentY        =   582
+         _StockProps     =   77
+         ForeColor       =   0
+         BackColor       =   16777215
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   16777215
+         Alignment       =   1
+         Appearance      =   6
+         UseVisualStyle  =   0   'False
+      End
+      Begin XtremeShortcutBar.ShortcutCaption scFormasPago 
+         Height          =   375
+         Index           =   0
+         Left            =   0
+         TabIndex        =   105
+         Top             =   0
+         Width           =   5175
+         _Version        =   1572864
+         _ExtentX        =   9128
+         _ExtentY        =   661
+         _StockProps     =   14
+         Caption         =   "Saldos a Favor en Cajas:"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+      End
+      Begin XtremeSuiteControls.Label lblDivisaInfo 
          Height          =   315
          Index           =   0
          Left            =   4080
-         TabIndex        =   51
+         TabIndex        =   80
          Top             =   1800
          Width           =   495
+         _Version        =   1572864
+         _ExtentX        =   873
+         _ExtentY        =   556
+         _StockProps     =   79
+         Caption         =   "..."
+         BackColor       =   16777152
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Calibri"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Alignment       =   2
+         WordWrap        =   -1  'True
       End
       Begin VB.Label Label1 
          Appearance      =   0  'Flat
@@ -2049,7 +2181,7 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   210
          Index           =   27
          Left            =   240
-         TabIndex        =   40
+         TabIndex        =   30
          Top             =   1320
          Width           =   1335
       End
@@ -2071,7 +2203,7 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   210
          Index           =   26
          Left            =   240
-         TabIndex        =   39
+         TabIndex        =   29
          Top             =   960
          Width           =   1335
       End
@@ -2093,7 +2225,7 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   210
          Index           =   19
          Left            =   240
-         TabIndex        =   32
+         TabIndex        =   24
          Top             =   1800
          Width           =   975
       End
@@ -2115,40 +2247,144 @@ Begin VB.Form frmCajas_DetallePago
          Height          =   315
          Index           =   15
          Left            =   240
-         TabIndex        =   31
+         TabIndex        =   23
          Top             =   480
          Width           =   1095
       End
    End
-   Begin VB.CheckBox chkSaldosFavor 
-      Alignment       =   1  'Right Justify
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFFFFF&
-      Caption         =   "Aplicar Saldos a  favor"
-      Enabled         =   0   'False
-      BeginProperty Font 
-         Name            =   "Arial Narrow"
-         Size            =   8.25
+   Begin XtremeSuiteControls.ComboBox cboOrigenRecursos 
+      Height          =   330
+      Left            =   120
+      TabIndex        =   73
+      Top             =   4920
+      Width           =   4095
+      _Version        =   1572864
+      _ExtentX        =   7223
+      _ExtentY        =   582
+      _StockProps     =   77
+      ForeColor       =   1973790
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      ForeColor       =   &H80000008&
+      Enabled         =   0   'False
+      Style           =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+      Text            =   "ComboBox1"
+   End
+   Begin XtremeSuiteControls.ComboBox cboPagadores 
+      Height          =   330
+      Left            =   120
+      TabIndex        =   102
+      Top             =   4320
+      Width           =   4095
+      _Version        =   1572864
+      _ExtentX        =   7223
+      _ExtentY        =   582
+      _StockProps     =   77
+      ForeColor       =   1973790
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Enabled         =   0   'False
+      Style           =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+      Text            =   "ComboBox1"
+   End
+   Begin XtremeSuiteControls.Label lblTCDivisaTransaccion 
       Height          =   315
-      Left            =   1320
-      TabIndex        =   37
+      Left            =   7440
+      TabIndex        =   104
+      Top             =   4800
+      Width           =   1335
+      _Version        =   1572864
+      _ExtentX        =   2355
+      _ExtentY        =   556
+      _StockProps     =   79
+      Caption         =   "..."
+      BackColor       =   16777152
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Alignment       =   5
+      WordWrap        =   -1  'True
+   End
+   Begin XtremeSuiteControls.Label Label4 
+      Height          =   255
+      Index           =   0
+      Left            =   120
+      TabIndex        =   103
       Top             =   4680
-      Width           =   2292
+      Width           =   1455
+      _Version        =   1572864
+      _ExtentX        =   2566
+      _ExtentY        =   450
+      _StockProps     =   79
+      Caption         =   "Origen Recursos"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Transparent     =   -1  'True
+      WordWrap        =   -1  'True
+   End
+   Begin XtremeSuiteControls.Label Label4 
+      Height          =   255
+      Index           =   1
+      Left            =   120
+      TabIndex        =   74
+      Top             =   4080
+      Width           =   1335
+      _Version        =   1572864
+      _ExtentX        =   2355
+      _ExtentY        =   450
+      _StockProps     =   79
+      Caption         =   "Pagadores"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Transparent     =   -1  'True
+      WordWrap        =   -1  'True
    End
    Begin XtremeSuiteControls.Label lblTipoCambio 
       Height          =   372
       Left            =   4920
-      TabIndex        =   108
+      TabIndex        =   72
       Top             =   1080
       Width           =   1452
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   656
       _StockProps     =   79
@@ -2184,35 +2420,12 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00000000&
-      Height          =   216
+      Height          =   210
       Index           =   36
-      Left            =   1440
-      TabIndex        =   107
-      Top             =   4320
-      Width           =   732
-   End
-   Begin VB.Label lblTCDivisaTransaccion 
-      Alignment       =   1  'Right Justify
-      Appearance      =   0  'Flat
-      BackColor       =   &H80000005&
-      BackStyle       =   0  'Transparent
-      BorderStyle     =   1  'Fixed Single
-      Caption         =   "..."
-      BeginProperty Font 
-         Name            =   "Calibri"
-         Size            =   9
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      ForeColor       =   &H80000008&
-      Height          =   312
-      Left            =   2280
-      TabIndex        =   106
-      Top             =   4320
-      Width           =   1332
+      Left            =   6600
+      TabIndex        =   71
+      Top             =   4800
+      Width           =   735
    End
    Begin VB.Label Label1 
       Alignment       =   1  'Right Justify
@@ -2230,12 +2443,12 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00000000&
-      Height          =   456
+      Height          =   450
       Index           =   35
-      Left            =   -120
-      TabIndex        =   75
-      Top             =   3960
-      Width           =   1452
+      Left            =   4560
+      TabIndex        =   48
+      Top             =   4440
+      Width           =   1935
    End
    Begin VB.Label Label1 
       Alignment       =   1  'Right Justify
@@ -2253,12 +2466,12 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00000000&
-      Height          =   216
+      Height          =   210
       Index           =   12
       Left            =   3960
-      TabIndex        =   50
-      Top             =   3960
-      Width           =   2532
+      TabIndex        =   36
+      Top             =   4080
+      Width           =   2535
    End
    Begin VB.Label lblDivisa 
       Appearance      =   0  'Flat
@@ -2275,12 +2488,12 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00000000&
-      Height          =   252
+      Height          =   255
       Left            =   8400
-      TabIndex        =   49
+      TabIndex        =   35
       ToolTipText     =   "Divisa Origen de la Transacción"
-      Top             =   5760
-      Width           =   492
+      Top             =   5880
+      Width           =   495
    End
    Begin VB.Label Label1 
       Alignment       =   1  'Right Justify
@@ -2298,12 +2511,12 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00000000&
-      Height          =   216
+      Height          =   210
       Index           =   28
-      Left            =   3960
-      TabIndex        =   48
-      Top             =   5760
-      Width           =   1452
+      Left            =   4800
+      TabIndex        =   34
+      Top             =   6360
+      Width           =   1455
    End
    Begin VB.Label Label1 
       Alignment       =   1  'Right Justify
@@ -2356,8 +2569,8 @@ Begin VB.Form frmCajas_DetallePago
       Index           =   0
       X1              =   120
       X2              =   8760
-      Y1              =   5640
-      Y2              =   5640
+      Y1              =   6240
+      Y2              =   6240
    End
    Begin VB.Label Label1 
       Appearance      =   0  'Flat
@@ -2373,12 +2586,12 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00000000&
-      Height          =   252
+      Height          =   255
       Index           =   8
       Left            =   120
       TabIndex        =   5
-      Top             =   5400
-      Width           =   1812
+      Top             =   6000
+      Width           =   1815
    End
    Begin VB.Label lblFormaPago 
       Appearance      =   0  'Flat
@@ -2401,14 +2614,6 @@ Begin VB.Form frmCajas_DetallePago
       Top             =   1200
       Width           =   1692
    End
-   Begin VB.Line Line1 
-      BorderColor     =   &H80000000&
-      Index           =   0
-      X1              =   0
-      X2              =   8760
-      Y1              =   1440
-      Y2              =   1440
-   End
    Begin VB.Label Label1 
       Alignment       =   1  'Right Justify
       Appearance      =   0  'Flat
@@ -2425,12 +2630,12 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H000000FF&
-      Height          =   216
+      Height          =   210
       Index           =   3
-      Left            =   3960
+      Left            =   4800
       TabIndex        =   3
-      Top             =   6840
-      Width           =   1452
+      Top             =   7440
+      Width           =   1455
    End
    Begin VB.Label Label1 
       Alignment       =   1  'Right Justify
@@ -2448,12 +2653,12 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00000000&
-      Height          =   216
+      Height          =   210
       Index           =   2
-      Left            =   3960
+      Left            =   4800
       TabIndex        =   2
-      Top             =   6480
-      Width           =   1452
+      Top             =   7080
+      Width           =   1455
    End
    Begin VB.Label Label1 
       Alignment       =   1  'Right Justify
@@ -2471,12 +2676,12 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00000000&
-      Height          =   216
+      Height          =   210
       Index           =   5
-      Left            =   3960
+      Left            =   4800
       TabIndex        =   0
-      Top             =   6120
-      Width           =   1452
+      Top             =   6720
+      Width           =   1455
    End
    Begin VB.Label Label1 
       Appearance      =   0  'Flat
@@ -2492,12 +2697,12 @@ Begin VB.Form frmCajas_DetallePago
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00000000&
-      Height          =   252
+      Height          =   255
       Index           =   21
-      Left            =   3720
-      TabIndex        =   38
-      Top             =   5400
-      Width           =   1332
+      Left            =   4680
+      TabIndex        =   28
+      Top             =   6000
+      Width           =   1335
    End
    Begin VB.Image imgBanner 
       Height          =   975
@@ -2531,10 +2736,10 @@ Begin VB.Form frmCajas_DetallePago
    Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption1 
       Height          =   380
       Left            =   0
-      TabIndex        =   105
+      TabIndex        =   70
       Top             =   1080
       Width           =   9012
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   15896
       _ExtentY        =   670
       _StockProps     =   14
@@ -2558,7 +2763,7 @@ Attribute VB_Exposed = False
 Option Explicit
 Dim vPaso As Boolean, mLinea As Integer, mTipoCambio As Currency, mDivisaFuncional As String
 Dim mFormaPago As String, mCuenta As String, mAplSaldoFavor As Integer, mTipo As String, mFecha As Date
-Dim mDP_Caso As Integer, mDP_Proceso As Integer
+Dim mDP_Caso As Integer, mDP_Proceso As Integer, mAplOrigenRecursos As Integer
 
 
 
@@ -2783,6 +2988,7 @@ End Function
 
 
 Private Sub Form_Load()
+Dim strSQL As String
 
 vModulo = 5
 
@@ -2793,12 +2999,14 @@ mDivisaFuncional = fxDivisaFuncional
 mFecha = fxFechaServidor
 mLinea = 0
 mTipoCambio = 1
+mAplOrigenRecursos = 0
 
 With lsw.ColumnHeaders
    .Clear
    .Add , , "Forma de Pago", 2500
    .Add , , "[ ID ]", 800, vbCenter
-   .Add , , "", 1
+   .Add , , "", 1 'Para Reservar el Valor de Saldos a Favor
+   .Add , , "", 1 'Para Reservar el Valor de Origen de Recursos
 End With
 
 With lswDetalle.ColumnHeaders
@@ -2972,6 +3180,24 @@ rs.Close
 End Sub
 
 
+Private Sub Form_Unload(Cancel As Integer)
+Dim strSQL As String, rs As New ADODB.Recordset
+
+On Error GoTo vError
+
+ModuloCajas.mReciboDigital = False
+
+strSQL = "select dbo.fxCajas_ReciboDigital('" & ModuloCajas.mCaja & "', " & ModuloCajas.mApertura & ", '" & ModuloCajas.mTiquete & "') as 'Recibo'"
+Call OpenRecordSet(rs, strSQL)
+
+If rs!Recibo = 1 Then
+    ModuloCajas.mReciboDigital = True
+End If
+
+vError:
+
+End Sub
+
 Private Sub lsw_ItemClick(ByVal Item As XtremeSuiteControls.ListViewItem)
 
 If lsw.ListItems.Count = 0 Or vPaso Then Exit Sub
@@ -2981,6 +3207,8 @@ mLinea = 0
 mCuenta = Item.ListSubItems.Item(1).Tag
 mFormaPago = Item.SubItems(1)
 mAplSaldoFavor = Item.SubItems(2)
+mAplOrigenRecursos = Item.SubItems(3)
+
 mTipo = Item.Tag
 
 
@@ -3028,6 +3256,14 @@ Select Case mTipo
 
 End Select
 
+
+If mAplOrigenRecursos = 1 Then
+   cboPagadores.Enabled = True
+   cboOrigenRecursos.Enabled = True
+Else
+   cboPagadores.Enabled = False
+   cboOrigenRecursos.Enabled = False
+End If
 
 End Sub
 
@@ -3107,7 +3343,7 @@ Select Case mTipo
      
    Case "F" 'Fondos
      cboFondos.SetFocus
-     Call sbCboAsignaDato(cboFondos, Trim(rs!cod_Plan) & " - " & rs!COD_CONTRATO)
+     Call sbCboAsignaDato(cboFondos, Trim(rs!COD_PLAN) & " - " & rs!COD_CONTRATO)
      
      txtMontoFondos.Text = Format(rs!Monto, "Standard")
      Call sbCalculo(txtMontoFondos)
@@ -3223,39 +3459,45 @@ If mLinea = 0 Then
     rs.Close
 
     strSQL = "insert CAJAS_DESGLOCE_PAGO(linea,Ticket,Cod_Caja,cod_Apertura,Monto,cod_Divisa,Tipo_Cambio,registro_fecha,registro_usuario" _
-           & ",Cod_Tarjeta,Tarjeta_Numero,Tarjeta_Autorizacion,Cheque_Emisor,Cheque_Numero, COD_ENTIDAD_PAGO, Cuenta_Bancaria , Num_Referencia, Cod_Cuenta" _
-           & ",Aplica_Saldo_Favor,Saldo_Favor,Saldo_Favor_Id,Observaciones,cod_forma_pago,DP_Banco,DP_Fecha, COD_PLAN,COD_CONTRATO)" _
+           & ",Cod_Tarjeta,Tarjeta_Numero,Tarjeta_Autorizacion,Cheque_Emisor,Cheque_Numero, Cuenta_Bancaria , Num_Referencia, Cod_Cuenta" _
+           & ",Aplica_Saldo_Favor,Saldo_Favor,Saldo_Favor_Id,Observaciones,cod_forma_pago,DP_Banco,DP_Fecha" _
+           & ", COD_PLAN,COD_CONTRATO, COD_ENTIDAD_PAGO, COD_ORIGEN_RECURSOS)" _
            & " Values(" & mLinea & ",'" & ModuloCajas.mTiquete & "','" & ModuloCajas.mCaja & "'," & ModuloCajas.mApertura & "," & curMonto & ",'" _
            & cboDivisa.ItemData(cboDivisa.ListIndex) & "'," & mTipoCambio & ", dbo.MyGetdate(),'" & ModuloCajas.mUsuario & "'"
     
     If mTipo = "T" Then
-        strSQL = strSQL & ",'" & cboTarjetas.ItemData(cboTarjetas.ListIndex) & "','" & Trim(txtTarjeta.Text) _
-                    & "','" & Trim(txtAutoriza.Text) & "'"
+        strSQL = strSQL & ", '" & cboTarjetas.ItemData(cboTarjetas.ListIndex) & "', '" & Trim(txtTarjeta.Text) _
+                    & "', '" & Trim(txtAutoriza.Text) & "'"
     Else
         strSQL = strSQL & ",'','',''"
     End If
     
     If mTipo = "C" Then
-        strSQL = strSQL & ",'" & cboEmisorCheque.ItemData(cboEmisorCheque.ListIndex) & "','" & Trim(txtCheque.Text) _
-               & "','" & cboPagador.ItemData(cboPagador.ListIndex) & "'"
+        strSQL = strSQL & ", '" & cboEmisorCheque.ItemData(cboEmisorCheque.ListIndex) & "', '" & Trim(txtCheque.Text) & "'"
     Else
-        strSQL = strSQL & ",'','', Null"
+        strSQL = strSQL & ", '', Null"
     End If
     
-    strSQL = strSQL & ",'" & pBancoCuenta & "','" & pDocumento & "','" & mCuenta & "'," & mAplSaldoFavor _
-           & ",0," & pSaldoFavorId & ",'" & Mid(Trim(txtNotas.Text), 1, 490) & "','" & mFormaPago & "'"
+    strSQL = strSQL & ",'" & pBancoCuenta & "', '" & pDocumento & "','" & mCuenta & "', " & mAplSaldoFavor _
+           & ",0," & pSaldoFavorId & ", '" & Mid(Trim(txtNotas.Text), 1, 490) & "', '" & mFormaPago & "'"
     
     If mTipo = "B" Then
-        strSQL = strSQL & "," & cboDepositoBanco.ItemData(cboDepositoBanco.ListIndex) & ",'" & Format(dtpDeposito.Value, "yyyy/mm/dd") & "'"
+        strSQL = strSQL & ", " & cboDepositoBanco.ItemData(cboDepositoBanco.ListIndex) & ", '" & Format(dtpDeposito.Value, "yyyy/mm/dd") & "'"
     Else
         strSQL = strSQL & ",0,Null"
     End If
     
     If mTipo = "F" Then
-        strSQL = strSQL & ",'" & pFondoPlan & "'," & pFondoContrato & ")"
+        strSQL = strSQL & ", '" & pFondoPlan & "', " & pFondoContrato
     
     Else
-        strSQL = strSQL & ",Null,Null)"
+        strSQL = strSQL & ",Null,Null"
+    End If
+    
+    If cboPagadores.Enabled Then
+            strSQL = strSQL & ", '" & cboPagadores.ItemData(cboPagadores.ListIndex) & "', '" & cboOrigenRecursos.ItemData(cboOrigenRecursos.ListIndex) & "')"
+    Else
+        strSQL = strSQL & ", Null, Null)"
     End If
     
 Else
@@ -3273,8 +3515,7 @@ Else
    
    If mTipo = "C" Then
         strSQL = strSQL & ", Cheque_Emisor = '" & cboEmisorCheque.ItemData(cboEmisorCheque.ListIndex) _
-               & "', Cheque_Numero = '" & Trim(txtCheque.Text) _
-               & "', COD_ENTIDAD_PAGO = '" & cboPagador.ItemData(cboPagador.ListIndex) & "'"
+               & "', Cheque_Numero = '" & Trim(txtCheque.Text) & "'"
    End If
    
    If mTipo = "B" Then
@@ -3285,6 +3526,10 @@ Else
       strSQL = strSQL & ", COD_PLAN = '" & pFondoPlan & "', COD_CONTRATO = " & pFondoContrato
    End If
    
+    If cboPagadores.Enabled Then
+            strSQL = strSQL & ", COD_ENTIDAD_PAGO = '" & cboPagadores.ItemData(cboPagadores.ListIndex) _
+                   & "', COD_ORIGEN_RECURSOS = '" & cboOrigenRecursos.ItemData(cboOrigenRecursos.ListIndex) & "'"
+    End If
    
    strSQL = strSQL & " Where Cod_Caja = '" & ModuloCajas.mCaja & "' and cod_Apertura = " & ModuloCajas.mApertura _
            & " and Ticket = '" & ModuloCajas.mTiquete & "' and Linea = " & mLinea
@@ -3599,13 +3844,21 @@ Call sbCbo_Llena_New(cboEmisorCheque, strSQL, False, True)
 strSQL = "select rTrim(cod_tarjeta) as 'IdX', rtrim(descripcion) as 'itmx' from sif_tarjetas where activa = 1"
 Call sbCbo_Llena_New(cboTarjetas, strSQL, False, True)
 
-'Lista los Pagadores de Cheques
-strSQL = "select rtrim(COD_ENTIDAD_PAGO) as 'IdX', rtrim(descripcion) as 'itmx'" _
-       & " from SIF_ENTIDADES_PAGO where ACTIVA = 1" _
-       & " order by COD_ENTIDAD_PAGO"
+''Lista los Pagadores de Cheques
+'strSQL = "select rtrim(COD_ENTIDAD_PAGO) as 'IdX', rtrim(descripcion) as 'itmx'" _
+'       & " from SIF_ENTIDADES_PAGO where ACTIVA = 1" _
+'       & " order by COD_ENTIDAD_PAGO"
+'Call sbCbo_Llena_New(cboPagador, strSQL, False, True)
 
-Call sbCbo_Llena_New(cboPagador, strSQL, False, True)
 
+'Identificacion de Recursos
+strSQL = "select COD_ENTIDAD_PAGO as 'IdX', DESCRIPCION AS 'ItmX' from SIF_ENTIDADES_PAGO" _
+       & " WHERE ACTIVA = 1 ORDER BY COD_ENTIDAD_PAGO"
+Call sbCbo_Llena_New(cboPagadores, strSQL, False, True)
+
+strSQL = "select COD_ORIGEN_RECURSOS as 'IdX', DESCRIPCION AS 'ItmX' from SIF_ORIGEN_RECURSOS" _
+       & "  WHERE ACTIVA = 1 ORDER BY COD_ORIGEN_RECURSOS"
+Call sbCbo_Llena_New(cboOrigenRecursos, strSQL, False, True)
 
 vPaso = True
 
@@ -3620,9 +3873,12 @@ txtSaldoFavorMntOrigen.Text = "0"
 txtSaldoFavorSaldo.Text = "0"
 
 
+If ModuloCajas.mProductoCodigo = "" Then
+    ModuloCajas.mProductoNumero = 0
+End If
 
 'Lista Fondos Disponibles
-strSQL = "exec spCajas_FondosDisponiblePersona '" & ModuloCajas.mClienteId & "'"
+strSQL = "exec spCajas_FondosDisponiblePersona '" & ModuloCajas.mClienteId & "', '" & ModuloCajas.mProductoCodigo & "', " & ModuloCajas.mProductoNumero
 Call sbCbo_Llena_New(cboFondos, strSQL, False, True)
 
  txtFondoDisponible.Text = 0
@@ -3671,13 +3927,13 @@ txtTotal.Text = Format(ModuloCajas.mTotalDetallado, "Standard")
 txtCambio.Text = 0
 txtDiferencia.Text = Format(ModuloCajas.mTotalDiferencia, "Standard")
 
-fraCheque.BackColor = txtServicio.BackColor
-fraDepositos.BackColor = txtServicio.BackColor
-fraDocumento.BackColor = txtServicio.BackColor
-fraEfectivo.BackColor = txtServicio.BackColor
-fraFondos.BackColor = txtServicio.BackColor
-fraSaldos.BackColor = txtServicio.BackColor
-fraTarjeta.BackColor = txtServicio.BackColor
+fraCheque.BackColor = RGB(140, 161, 213)
+fraDepositos.BackColor = RGB(140, 161, 213)
+fraDocumento.BackColor = RGB(140, 161, 213)
+fraEfectivo.BackColor = RGB(140, 161, 213)
+fraFondos.BackColor = RGB(140, 161, 213)
+fraSaldos.BackColor = RGB(140, 161, 213)
+fraTarjeta.BackColor = RGB(140, 161, 213)
 
 
 vPaso = False
@@ -3943,7 +4199,7 @@ vError:
 
 End Sub
 
-Private Sub sbCalculo(pTxt As TextBox, Optional pAjusta As Boolean = False)
+Private Sub sbCalculo(pTxt As FlatEdit, Optional pAjusta As Boolean = False)
 Dim curTotal As Currency, pDivisa As String
 Dim strSQL As String, rs   As New ADODB.Recordset
 Dim pTipoCambio As Currency, curDivisaTransaccion As Currency
@@ -4073,6 +4329,7 @@ Do While Not rs.EOF
      itmX.SubItems(1) = rs!Cod_Forma_Pago
      itmX.ListSubItems.Item(1).Tag = rs!cod_cuenta
      itmX.SubItems(2) = rs!Aplica_saldos_Favor
+     itmX.SubItems(3) = rs!OR_APLICA
      
      itmX.Tag = rs!Tipo
 
@@ -4123,7 +4380,7 @@ Do While Not rs.EOF
      itmX.SubItems(3) = Format(rs!Saldo_Favor / fxSys_Tipo_Cambio_Apl(rs!TipoCambio), "Standard")
      itmX.SubItems(4) = rs!Divisa
      itmX.SubItems(5) = "Ref .: " & rs!Num_Referencia & " ¦ CK: " & rs!Cheque_Numero & " ¦ Tarjeta: " & rs!tarjeta_Numero _
-                      & "¦ Fondos:" & rs!cod_Plan & " Cnt:" & rs!COD_CONTRATO
+                      & "¦ Fondos:" & rs!COD_PLAN & " Cnt:" & rs!COD_CONTRATO
      itmX.SubItems(6) = rs!TipoCambio
      itmX.SubItems(7) = rs!Monto
     

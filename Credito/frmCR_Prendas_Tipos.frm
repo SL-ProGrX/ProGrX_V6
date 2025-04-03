@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCR_Prendas_Tipos 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -24,7 +24,7 @@ Begin VB.Form frmCR_Prendas_Tipos
       TabIndex        =   2
       Top             =   6120
       Width           =   11055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19500
       _ExtentY        =   4471
       _StockProps     =   77
@@ -50,7 +50,7 @@ Begin VB.Form frmCR_Prendas_Tipos
       TabIndex        =   5
       Top             =   5640
       Width           =   975
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1720
       _ExtentY        =   661
       _StockProps     =   79
@@ -102,7 +102,7 @@ Begin VB.Form frmCR_Prendas_Tipos
       TabIndex        =   4
       Top             =   5640
       Width           =   4095
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7223
       _ExtentY        =   661
       _StockProps     =   77
@@ -126,12 +126,12 @@ Begin VB.Form frmCR_Prendas_Tipos
       Left            =   5280
       TabIndex        =   6
       Top             =   5640
-      Width           =   975
-      _Version        =   1441793
-      _ExtentX        =   1720
+      Width           =   1335
+      _Version        =   1572864
+      _ExtentX        =   2355
       _ExtentY        =   661
       _StockProps     =   79
-      Caption         =   "Modelos"
+      Caption         =   "Fuente Poder"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Calibri"
          Size            =   8.25
@@ -147,11 +147,11 @@ Begin VB.Form frmCR_Prendas_Tipos
    Begin XtremeSuiteControls.PushButton btnSel 
       Height          =   375
       Index           =   2
-      Left            =   6240
+      Left            =   6600
       TabIndex        =   7
       Top             =   5640
       Width           =   975
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1720
       _ExtentY        =   661
       _StockProps     =   79
@@ -171,11 +171,11 @@ Begin VB.Form frmCR_Prendas_Tipos
    Begin XtremeSuiteControls.PushButton btnSel 
       Height          =   375
       Index           =   3
-      Left            =   7200
+      Left            =   7560
       TabIndex        =   8
       Top             =   5640
       Width           =   1215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2143
       _ExtentY        =   661
       _StockProps     =   79
@@ -195,11 +195,11 @@ Begin VB.Form frmCR_Prendas_Tipos
    Begin XtremeSuiteControls.PushButton btnSel 
       Height          =   375
       Index           =   4
-      Left            =   8400
+      Left            =   8760
       TabIndex        =   9
       Top             =   5640
       Width           =   975
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1720
       _ExtentY        =   661
       _StockProps     =   79
@@ -222,7 +222,7 @@ Begin VB.Form frmCR_Prendas_Tipos
       TabIndex        =   3
       Top             =   5160
       Width           =   11055
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   19500
       _ExtentY        =   661
       _StockProps     =   14
@@ -244,7 +244,7 @@ Begin VB.Form frmCR_Prendas_Tipos
       TabIndex        =   1
       Top             =   240
       Width           =   6732
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   11874
       _ExtentY        =   868
       _StockProps     =   79
@@ -276,18 +276,97 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim strSQL As String, rs As New ADODB.Recordset
+Dim itmX As ListViewItem
+Dim vPaso As Boolean
+
+Private Sub sbConsulta_Asignacion()
+Dim pTipo As String
+
+If vPaso Then Exit Sub
+
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+lsw.ListItems.Clear
+
+If scTipo.Tag = "" Then
+  Exit Sub
+End If
+
+vPaso = True
+
+txtFiltro.Text = fxSysCleanTxtInject(txtFiltro.Text)
+
+Select Case True
+    Case btnSel(0).Checked  'Marcas
+        pTipo = "MAR"
+    Case btnSel(1).Checked 'Cobustible
+        pTipo = "COB"
+    Case btnSel(2).Checked 'Extras
+        pTipo = "EXT"
+    Case btnSel(3).Checked 'Presentación
+        pTipo = "PRE"
+    Case btnSel(4).Checked 'Pólizas
+        pTipo = "POL"
+    Case Else
+        pTipo = ""
+End Select
+
+
+strSQL = "exec spCrd_Prendas_Cat_List_Asignacion '" & scTipo.Tag & "', '" & pTipo & "', '" & txtFiltro.Text & "'"
+Call OpenRecordSet(rs, strSQL)
+Do While Not rs.EOF
+  Set itmX = lsw.ListItems.Add(, , rs!IdX)
+      itmX.SubItems(1) = rs!itmX
+      itmX.SubItems(2) = rs!registro_Usuario & ""
+      itmX.SubItems(3) = rs!Registro_Fecha & ""
+      itmX.Checked = IIf((rs!Asignado = 1), True, False)
+  rs.MoveNext
+Loop
+rs.Close
+
+vPaso = False
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+ 
+
+End Sub
+
+Private Sub btnSel_Click(Index As Integer)
+Dim i As Integer
+
+For i = 0 To btnSel.Count - 1
+    btnSel.Item(i).Checked = False
+Next i
+
+btnSel.Item(Index).Checked = True
+
+
+Call sbConsulta_Asignacion
+End Sub
 
 Private Sub Form_Activate()
 vModulo = 3
 End Sub
 
 Private Sub sbConsulta()
-Dim strSQL As String
+
+vPaso = True
 
 strSQL = "select TIPO_PRENDA, DESCRIPCION, FORMULARIO, PORC_COBERTURA, ACTIVA, '...'" _
       & " from CRD_PRENDAS_TIPOS" _
       & " order by TIPO_PRENDA"
 Call sbCargaGrid(vGrid, 6, strSQL)
+
+vPaso = False
 
 End Sub
 
@@ -302,7 +381,6 @@ With lsw.ColumnHeaders
     .Clear
     .Add , , "Id", 1000
     .Add , , "Descripción", 3000
-    .Add , , "Activa?", 1500, vbCenter
     .Add , , "Usuario", 2100, vbCenter
     .Add , , "Fecha", 2100, vbCenter
 End With
@@ -324,7 +402,7 @@ On Error GoTo vError
 
 fxGuardar = 0
 vGrid.Row = vGrid.ActiveRow
-vGrid.col = 1
+vGrid.Col = 1
 
 strSQL = "select isnull(count(*),0) as Existe from CRD_PRENDAS_TIPOS " _
        & " where TIPO_PRENDA = '" & vGrid.Text & "'"
@@ -336,36 +414,36 @@ If rs!Existe = 0 Then 'Insertar
   strSQL = "insert into CRD_PRENDAS_TIPOS(TIPO_PRENDA,DESCRIPCION, FORMULARIO, PORC_COBERTURA" _
          & ", ACTIVA, REGISTRO_USUARIO, REGISTRO_FECHA) values('" _
          & UCase(vGrid.Text) & "', '"
-  vGrid.col = 2
+  vGrid.Col = 2
   strSQL = strSQL & vGrid.Text & "', '"
-  vGrid.col = 3
+  vGrid.Col = 3
   strSQL = strSQL & vGrid.Text & "',"
-  vGrid.col = 4
+  vGrid.Col = 4
   strSQL = strSQL & CCur(vGrid.Text) & ","
-  vGrid.col = 5
+  vGrid.Col = 5
   strSQL = strSQL & vGrid.Value & ",'" & glogon.Usuario & "',dbo.Mygetdate())"
 
   Call ConectionExecute(strSQL)
 
-  vGrid.col = 1
+  vGrid.Col = 1
   Call Bitacora("Registra", "Tipo de Prenda: " & vGrid.Text)
 
 Else 'Actualizar
 
- vGrid.col = 2
+ vGrid.Col = 2
  strSQL = "update CRD_PRENDAS_TIPOS set descripcion = '" & vGrid.Text & "', FORMULARIO = '"
- vGrid.col = 3
+ vGrid.Col = 3
  strSQL = strSQL & vGrid.Text & "', PORC_COBERTURA = "
  
- vGrid.col = 4
+ vGrid.Col = 4
  strSQL = strSQL & CCur(vGrid.Text) & ", ACTIVA = "
- vGrid.col = 5
+ vGrid.Col = 5
  strSQL = strSQL & vGrid.Value & " where TIPO_PRENDA = '"
- vGrid.col = 1
+ vGrid.Col = 1
  strSQL = strSQL & vGrid.Text & "'"
  Call ConectionExecute(strSQL)
 
- vGrid.col = 1
+ vGrid.Col = 1
  Call Bitacora("Modifica", "Tipo de Prenda: " & vGrid.Text)
 
 End If
@@ -380,6 +458,67 @@ vError:
 
 End Function
 
+
+Private Sub lsw_ItemCheck(ByVal Item As XtremeSuiteControls.ListViewItem)
+
+If vPaso Then Exit Sub
+
+Dim pTipo As String
+
+On Error GoTo vError
+
+Me.MousePointer = vbHourglass
+
+Select Case True
+    Case btnSel(0).Checked 'Marcas
+        pTipo = "MAR"
+    Case btnSel(1).Checked 'Cobustible
+        pTipo = "COB"
+    Case btnSel(2).Checked 'Extras
+        pTipo = "EXT"
+    Case btnSel(3).Checked 'Presentación
+        pTipo = "PRE"
+    Case btnSel(4).Checked 'Pólizas
+        pTipo = "POL"
+    Case Else
+        pTipo = ""
+End Select
+
+strSQL = "exec spCrd_Prendas_Cat_List_Asignacion_Add '" & scTipo.Tag & "', '" & pTipo _
+       & "', '" & Item.Text & "', '" & glogon.Usuario & "', '" & IIf((Item.Checked), "A", "E") & "'"
+Call ConectionExecute(strSQL)
+
+Me.MousePointer = vbDefault
+
+Exit Sub
+
+vError:
+ Me.MousePointer = vbDefault
+ MsgBox fxSys_Error_Handler(Err.Description), vbCritical
+ 
+
+End Sub
+
+
+
+Private Sub txtFiltro_KeyUp(KeyCode As Integer, Shift As Integer)
+If KeyCode = vbKeyReturn Then
+   Call sbConsulta_Asignacion
+End If
+End Sub
+
+Private Sub vGrid_ButtonClicked(ByVal Col As Long, ByVal Row As Long, ByVal ButtonDown As Integer)
+
+vGrid.Row = Row
+vGrid.Col = 1
+
+scTipo.Tag = vGrid.Text
+vGrid.Col = 2
+scTipo.Caption = vGrid.Text
+
+Call btnSel_Click(0)
+
+End Sub
 
 Private Sub vGrid_KeyDown(KeyCode As Integer, Shift As Integer)
 Dim i As Integer, strSQL As String
@@ -408,11 +547,11 @@ If KeyCode = vbKeyDelete Then
      If i = vbYes Then
         
         vGrid.Row = vGrid.ActiveRow
-        vGrid.col = 1
+        vGrid.Col = 1
         strSQL = "delete CRD_PRENDAS_TIPOS where TIPO_PRENDA = '" & vGrid.Text & "'"
         Call ConectionExecute(strSQL)
         strSQL = vGrid.Text
-        vGrid.col = 1
+        vGrid.Col = 1
         Call Bitacora("Elimina", "Tipo de Prenda: " & vGrid.Text)
         
         Call sbConsulta

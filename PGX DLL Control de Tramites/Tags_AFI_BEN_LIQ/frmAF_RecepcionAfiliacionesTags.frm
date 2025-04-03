@@ -2,7 +2,7 @@ VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
 Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmAF_RecepcionAfiliacionesTags 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Recepción de Afiliaciones"
@@ -29,10 +29,10 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
       Style           =   1
       TabHeight       =   520
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "Arial"
+         Name            =   "Calibri"
          Size            =   8.25
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
@@ -96,7 +96,7 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
          TabIndex        =   27
          Top             =   960
          Width           =   495
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   873
          _ExtentY        =   661
          _StockProps     =   79
@@ -415,7 +415,7 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
          EndProperty
          MaxCols         =   486
          ScrollBarExtMode=   -1  'True
-         SpreadDesigner  =   "frmAF_RecepcionAfiliacionesTags.frx":08CD
+         SpreadDesigner  =   "frmAF_RecepcionAfiliacionesTags.frx":08EF
          VScrollSpecialType=   2
          AppearanceStyle =   1
       End
@@ -425,7 +425,7 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
          TabIndex        =   18
          Top             =   960
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   582
          _StockProps     =   68
@@ -447,7 +447,7 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
          TabIndex        =   19
          Top             =   960
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   582
          _StockProps     =   68
@@ -469,7 +469,7 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
          TabIndex        =   20
          Top             =   960
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   582
          _StockProps     =   77
@@ -494,7 +494,7 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
          TabIndex        =   21
          Top             =   960
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   582
          _StockProps     =   77
@@ -519,7 +519,7 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
          TabIndex        =   25
          Top             =   960
          Width           =   1815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3201
          _ExtentY        =   582
          _StockProps     =   77
@@ -545,7 +545,7 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
          TabIndex        =   26
          Top             =   600
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   450
          _StockProps     =   79
@@ -570,7 +570,7 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
          TabIndex        =   24
          Top             =   600
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   450
          _StockProps     =   79
@@ -595,7 +595,7 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
          TabIndex        =   23
          Top             =   600
          Width           =   1575
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2778
          _ExtentY        =   450
          _StockProps     =   79
@@ -620,7 +620,7 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
          TabIndex        =   22
          Top             =   600
          Width           =   2295
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   450
          _StockProps     =   79
@@ -657,7 +657,7 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
       Begin VB.Image Image2 
          Height          =   480
          Left            =   -74760
-         Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":0E8F
+         Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":0ED3
          Top             =   480
          Width           =   480
       End
@@ -715,7 +715,7 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
       Begin VB.Image Image1 
          Height          =   480
          Left            =   240
-         Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":10A0
+         Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":10E4
          Top             =   600
          Width           =   480
       End
@@ -733,15 +733,15 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   3
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":1292
+            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":12D6
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":7AF4
+            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":7B38
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":E356
+            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":E39A
             Key             =   ""
          EndProperty
       EndProperty
@@ -759,27 +759,27 @@ Begin VB.Form frmAF_RecepcionAfiliacionesTags
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   6
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":14BB8
+            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":14BFC
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":1B41A
+            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":1B45E
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":21C7C
+            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":21CC0
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":21D96
+            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":21DDA
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":21EB4
+            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":21EF8
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":28716
+            Picture         =   "frmAF_RecepcionAfiliacionesTags.frx":2875A
             Key             =   ""
          EndProperty
       EndProperty
@@ -1308,10 +1308,10 @@ Do While Not rs.EOF
     vGridConsulta.Text = rs!Descripcion
     
     vGridConsulta.Col = 2
-    vGridConsulta.Value = IIf(IsNull(rs!REGISTRO_FECHA), "", rs!REGISTRO_FECHA)
+    vGridConsulta.Value = IIf(IsNull(rs!Registro_Fecha), "", rs!Registro_Fecha)
     
     vGridConsulta.Col = 3
-    vGridConsulta.Value = IIf(IsNull(rs!REGISTRO_USUARIO), "", rs!REGISTRO_USUARIO)
+    vGridConsulta.Value = IIf(IsNull(rs!registro_usuario), "", rs!registro_usuario)
     
     vGridConsulta.Col = 4
     vGridConsulta.Value = IIf(IsNull(rs!Documento), "", rs!Documento)

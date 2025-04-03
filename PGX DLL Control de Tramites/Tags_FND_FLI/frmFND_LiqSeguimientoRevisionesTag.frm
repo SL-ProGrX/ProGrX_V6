@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
 Begin VB.Form frmFNDLiqSeguimientoRevisionesTag 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Revisión de Liquidaciones Fondos"
@@ -57,7 +57,7 @@ Begin VB.Form frmFNDLiqSeguimientoRevisionesTag
          Style           =   1
          TabHeight       =   520
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial Narrow"
+            Name            =   "Calibri"
             Size            =   8.25
             Charset         =   0
             Weight          =   700
@@ -195,7 +195,7 @@ Begin VB.Form frmFNDLiqSeguimientoRevisionesTag
             EndProperty
             MaxCols         =   487
             ScrollBarExtMode=   -1  'True
-            SpreadDesigner  =   "frmFND_LiqSeguimientoRevisionesTag.frx":7472
+            SpreadDesigner  =   "frmFND_LiqSeguimientoRevisionesTag.frx":742E
             VScrollSpecialType=   2
             AppearanceStyle =   1
          End
@@ -311,7 +311,7 @@ Begin VB.Form frmFNDLiqSeguimientoRevisionesTag
             BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
                NumListImages   =   1
                BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-                  Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":7A8C
+                  Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":7A04
                   Key             =   ""
                EndProperty
             EndProperty
@@ -493,27 +493,27 @@ Begin VB.Form frmFNDLiqSeguimientoRevisionesTag
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   6
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":7BB1
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":7B29
             Key             =   "IMG1"
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":E413
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":E38B
             Key             =   "IMG2"
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":14C75
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":14BED
             Key             =   "IMG3"
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":1B4D7
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":1B44F
             Key             =   "IMG4"
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":21D39
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":21CB1
             Key             =   "IMG5"
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2859B
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":28513
             Key             =   "IMG6"
          EndProperty
       EndProperty
@@ -531,39 +531,39 @@ Begin VB.Form frmFNDLiqSeguimientoRevisionesTag
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   9
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2EDFD
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2ED75
             Key             =   "verde"
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2EF1B
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2EE93
             Key             =   "amarillo"
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2F041
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2EFB9
             Key             =   "rojo"
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2F16B
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2F0E3
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2F27D
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2F1F5
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2F394
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2F30C
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2F495
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2F40D
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2F5CC
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2F544
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2F6E1
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2F659
             Key             =   ""
          EndProperty
       EndProperty
@@ -581,19 +581,19 @@ Begin VB.Form frmFNDLiqSeguimientoRevisionesTag
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   4
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2F805
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":2F77D
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":36067
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":35FDF
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":3C8C9
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":3C841
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":3C9E3
+            Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":3C95B
             Key             =   ""
          EndProperty
       EndProperty
@@ -617,7 +617,7 @@ Begin VB.Form frmFNDLiqSeguimientoRevisionesTag
    Begin VB.Image Image2 
       Height          =   360
       Left            =   1920
-      Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":3CB01
+      Picture         =   "frmFND_LiqSeguimientoRevisionesTag.frx":3CA79
       Top             =   120
       Width           =   360
    End
@@ -919,16 +919,16 @@ Do While Not rs.EOF
     vGridSeguimiento.Text = rs!Descripcion
     vGridSeguimiento.TextTip = TextTipFixed
     vGridSeguimiento.TextTipDelay = 1000
-    vGridSeguimiento.CellNote = "Usuario: " & rs!REGISTRO_USUARIO & "[" & rs!REGISTRO_FECHA & "]"
+    vGridSeguimiento.CellNote = "Usuario: " & rs!registro_usuario & "[" & rs!Registro_Fecha & "]"
             
     vGridSeguimiento.Col = 2
     vGridSeguimiento.Value = IIf(IsNull(rs!notas), "", rs!notas)
     
     vGridSeguimiento.Col = 3
-    vGridSeguimiento.Value = IIf(IsNull(rs!REGISTRO_FECHA), "", rs!REGISTRO_FECHA)
+    vGridSeguimiento.Value = IIf(IsNull(rs!Registro_Fecha), "", rs!Registro_Fecha)
     
     vGridSeguimiento.Col = 4
-    vGridSeguimiento.Value = IIf(IsNull(rs!REGISTRO_USUARIO), "", rs!REGISTRO_USUARIO)
+    vGridSeguimiento.Value = IIf(IsNull(rs!registro_usuario), "", rs!registro_usuario)
     
     vGridSeguimiento.RowHeight(vGridSeguimiento.Row) = vGridSeguimiento.MaxTextRowHeight(vGridSeguimiento.Row)
     rs.MoveNext

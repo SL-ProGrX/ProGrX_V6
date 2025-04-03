@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCR_Prendas_Old 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Prendas de la Operación"
@@ -22,7 +22,7 @@ Begin VB.Form frmCR_Prendas_Old
       TabIndex        =   0
       Top             =   5880
       Width           =   10215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18018
       _ExtentY        =   3201
       _StockProps     =   77
@@ -52,7 +52,7 @@ Begin VB.Form frmCR_Prendas_Old
       TabIndex        =   1
       Top             =   1560
       Width           =   10215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18018
       _ExtentY        =   6588
       _StockProps     =   79
@@ -74,7 +74,7 @@ Begin VB.Form frmCR_Prendas_Old
          TabIndex        =   3
          Top             =   2520
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -99,7 +99,7 @@ Begin VB.Form frmCR_Prendas_Old
          TabIndex        =   5
          Top             =   2880
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -124,7 +124,7 @@ Begin VB.Form frmCR_Prendas_Old
          TabIndex        =   2
          Top             =   1080
          Width           =   7815
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13785
          _ExtentY        =   1614
          _StockProps     =   77
@@ -150,7 +150,7 @@ Begin VB.Form frmCR_Prendas_Old
          TabIndex        =   15
          Top             =   2880
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   582
          _StockProps     =   77
@@ -177,7 +177,7 @@ Begin VB.Form frmCR_Prendas_Old
          TabIndex        =   4
          Top             =   2160
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -202,7 +202,7 @@ Begin VB.Form frmCR_Prendas_Old
          TabIndex        =   6
          Top             =   2160
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   582
          _StockProps     =   77
@@ -227,7 +227,7 @@ Begin VB.Form frmCR_Prendas_Old
          TabIndex        =   14
          Top             =   2520
          Width           =   2175
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -432,7 +432,7 @@ Begin VB.Form frmCR_Prendas_Old
       TabIndex        =   18
       Top             =   7800
       Width           =   2895
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   5106
       _ExtentY        =   794
       _StockProps     =   77
@@ -459,7 +459,7 @@ Begin VB.Form frmCR_Prendas_Old
       TabIndex        =   21
       Top             =   720
       Width           =   4815
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8493
       _ExtentY        =   582
       _StockProps     =   77
@@ -486,7 +486,7 @@ Begin VB.Form frmCR_Prendas_Old
       TabIndex        =   23
       Top             =   1080
       Width           =   10215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18013
       _ExtentY        =   656
       _StockProps     =   14
@@ -528,7 +528,7 @@ Begin VB.Form frmCR_Prendas_Old
       TabIndex        =   20
       Top             =   0
       Width           =   10335
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18230
       _ExtentY        =   873
       _StockProps     =   14
@@ -572,7 +572,7 @@ Begin VB.Form frmCR_Prendas_Old
       TabIndex        =   13
       Top             =   5520
       Width           =   10215
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   18013
       _ExtentY        =   656
       _StockProps     =   14
@@ -671,7 +671,7 @@ Do While Not rs.EOF
       itmX.SubItems(3) = Format(rs!Porc_Cobertura, "Standard")
       itmX.SubItems(4) = Format(rs!Cobertura, "Standard")
       
-      itmX.SubItems(5) = rs!DESCRIPCION
+      itmX.SubItems(5) = rs!Descripcion
       itmX.SubItems(6) = rs!Modelo
       itmX.SubItems(7) = rs!Serie
       itmX.SubItems(8) = rs!Marca
@@ -701,7 +701,7 @@ On Error GoTo vError
  Call OpenRecordSet(rs, strSQL)
  
  
- txtDescripcion.Text = rs!DESCRIPCION & ""
+ txtDescripcion.Text = rs!Descripcion & ""
  txtModelo.Text = rs!Modelo & ""
  txtSerie.Text = rs!Serie & ""
  txtMarca.Text = rs!Marca & ""

@@ -5,14 +5,14 @@ Begin VB.Form frmCC_CA_Entidades
    BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Cargos Automáticos: Entidades"
-   ClientHeight    =   6456
-   ClientLeft      =   48
-   ClientTop       =   372
-   ClientWidth     =   11832
+   ClientHeight    =   6450
+   ClientLeft      =   45
+   ClientTop       =   375
+   ClientWidth     =   11835
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
-   ScaleHeight     =   6456
-   ScaleWidth      =   11832
+   ScaleHeight     =   6450
+   ScaleWidth      =   11835
    StartUpPosition =   2  'CenterScreen
    Begin FPSpreadADO.fpSpread vGrid 
       Height          =   4932
@@ -48,7 +48,7 @@ Begin VB.Form frmCC_CA_Entidades
       Caption         =   "Entidades Autorizadas para Cargo Automático"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -126,9 +126,9 @@ Do While Not rs.EOF
      Case 3
         vGrid.Text = CStr(rs!NUMERO_AFILIADO & "")
      Case 4
-        vGrid.Text = CStr(rs!Formato)
+        vGrid.Text = CStr(rs!Formato & "")
      Case 5
-        vGrid.Text = fxgCntCuentaFormato(True, rs!cod_cuenta)
+        vGrid.Text = fxgCntCuentaFormato(True, rs!cod_cuenta & "")
      Case 6
         vGrid.Value = rs!activo
     End Select

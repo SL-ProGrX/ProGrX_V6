@@ -2,19 +2,19 @@ VERSION 5.00
 Object = "{38911DA0-E448-11D0-84A3-00DD01104159}#1.1#0"; "ComCt332.ocx"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.shortcutbar.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCntX_Contabilidades 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Registro de Contabilidades"
-   ClientHeight    =   7485
+   ClientHeight    =   9120
    ClientLeft      =   45
    ClientTop       =   330
    ClientWidth     =   9660
    HelpContextID   =   4
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
-   ScaleHeight     =   7485
+   ScaleHeight     =   9120
    ScaleWidth      =   9660
    StartUpPosition =   2  'CenterScreen
    Begin XtremeSuiteControls.FlatEdit txtNivel8 
@@ -23,7 +23,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   37
       Top             =   3000
       Width           =   492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   77
@@ -48,7 +48,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   35
       Top             =   3000
       Width           =   492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   77
@@ -73,7 +73,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   33
       Top             =   3000
       Width           =   492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   77
@@ -98,7 +98,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   31
       Top             =   3000
       Width           =   492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   77
@@ -123,7 +123,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   29
       Top             =   3000
       Width           =   492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   77
@@ -148,7 +148,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   27
       Top             =   3000
       Width           =   492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   77
@@ -173,7 +173,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   25
       Top             =   3000
       Width           =   492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   77
@@ -198,7 +198,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   13
       Top             =   4800
       Width           =   4212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7429
       _ExtentY        =   444
       _StockProps     =   79
@@ -218,8 +218,8 @@ Begin VB.Form frmCntX_Contabilidades
       Value           =   1
    End
    Begin MSComctlLib.ImageList ImageList1 
-      Left            =   8640
-      Top             =   480
+      Left            =   8520
+      Top             =   960
       _ExtentX        =   1005
       _ExtentY        =   1005
       BackColor       =   -2147483643
@@ -326,11 +326,11 @@ Begin VB.Form frmCntX_Contabilidades
       End
    End
    Begin MSComCtl2.FlatScrollBar FlatScrollBar 
-      Height          =   252
+      Height          =   255
       Left            =   8400
       TabIndex        =   6
-      Top             =   480
-      Width           =   492
+      Top             =   600
+      Width           =   495
       _ExtentX        =   873
       _ExtentY        =   450
       _Version        =   393216
@@ -343,7 +343,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   14
       Top             =   5040
       Width           =   4212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7429
       _ExtentY        =   444
       _StockProps     =   79
@@ -368,7 +368,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   15
       Top             =   5280
       Width           =   4212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7429
       _ExtentY        =   444
       _StockProps     =   79
@@ -393,7 +393,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   16
       Top             =   5520
       Width           =   4212
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   7429
       _ExtentY        =   444
       _StockProps     =   79
@@ -418,7 +418,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   17
       Top             =   4800
       Width           =   5052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8911
       _ExtentY        =   444
       _StockProps     =   79
@@ -443,7 +443,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   18
       Top             =   5040
       Width           =   5052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8911
       _ExtentY        =   444
       _StockProps     =   79
@@ -468,7 +468,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   19
       Top             =   5280
       Width           =   5052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8911
       _ExtentY        =   444
       _StockProps     =   79
@@ -493,7 +493,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   20
       Top             =   5520
       Width           =   5052
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   8911
       _ExtentY        =   444
       _StockProps     =   79
@@ -513,12 +513,12 @@ Begin VB.Form frmCntX_Contabilidades
       Value           =   1
    End
    Begin XtremeSuiteControls.FlatEdit txtMascara 
-      Height          =   372
+      Height          =   375
       Left            =   0
       TabIndex        =   21
-      Top             =   3720
-      Width           =   9612
-      _Version        =   1441793
+      Top             =   3840
+      Width           =   9615
+      _Version        =   1572864
       _ExtentX        =   16954
       _ExtentY        =   656
       _StockProps     =   77
@@ -534,7 +534,7 @@ Begin VB.Form frmCntX_Contabilidades
          Strikethrough   =   0   'False
       EndProperty
       Alignment       =   2
-      Appearance      =   2
+      Appearance      =   6
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtNivel1 
@@ -543,7 +543,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   23
       Top             =   3000
       Width           =   492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   868
       _ExtentY        =   656
       _StockProps     =   77
@@ -563,14 +563,14 @@ Begin VB.Form frmCntX_Contabilidades
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtCodigo 
-      Height          =   315
-      Left            =   1920
+      Height          =   330
+      Left            =   1800
       TabIndex        =   39
-      Top             =   480
+      Top             =   600
       Width           =   1215
-      _Version        =   1441793
-      _ExtentX        =   2138
-      _ExtentY        =   556
+      _Version        =   1572864
+      _ExtentX        =   2143
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   0
       BackColor       =   16777215
@@ -589,14 +589,14 @@ Begin VB.Form frmCntX_Contabilidades
       UseVisualStyle  =   0   'False
    End
    Begin XtremeSuiteControls.FlatEdit txtNombre 
-      Height          =   312
+      Height          =   330
       Left            =   3000
       TabIndex        =   40
-      Top             =   480
-      Width           =   5292
-      _Version        =   1441793
+      Top             =   600
+      Width           =   5295
+      _Version        =   1572864
       _ExtentX        =   9334
-      _ExtentY        =   550
+      _ExtentY        =   582
       _StockProps     =   77
       ForeColor       =   0
       BackColor       =   -2147483643
@@ -618,7 +618,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   41
       Top             =   1080
       Width           =   2532
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4466
       _ExtentY        =   550
       _StockProps     =   77
@@ -643,7 +643,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   42
       Top             =   1440
       Width           =   2532
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4466
       _ExtentY        =   550
       _StockProps     =   77
@@ -668,7 +668,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   43
       Top             =   1440
       Width           =   2532
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4466
       _ExtentY        =   550
       _StockProps     =   77
@@ -693,7 +693,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   44
       Top             =   1800
       Width           =   6492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   11451
       _ExtentY        =   550
       _StockProps     =   77
@@ -717,7 +717,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   45
       Top             =   2160
       Width           =   6492
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   11451
       _ExtentY        =   550
       _StockProps     =   77
@@ -741,7 +741,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   46
       Top             =   1080
       Width           =   2532
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4471
       _ExtentY        =   582
       _StockProps     =   77
@@ -766,10 +766,10 @@ Begin VB.Form frmCntX_Contabilidades
       Left            =   360
       TabIndex        =   48
       Top             =   6360
-      Width           =   4215
-      _Version        =   1441793
-      _ExtentX        =   7429
-      _ExtentY        =   444
+      Width           =   3015
+      _Version        =   1572864
+      _ExtentX        =   5318
+      _ExtentY        =   450
       _StockProps     =   79
       Caption         =   "Módulos Contables"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -791,10 +791,10 @@ Begin VB.Form frmCntX_Contabilidades
       Left            =   360
       TabIndex        =   49
       Top             =   6720
-      Width           =   4215
-      _Version        =   1441793
-      _ExtentX        =   7429
-      _ExtentY        =   444
+      Width           =   3015
+      _Version        =   1572864
+      _ExtentX        =   5318
+      _ExtentY        =   450
       _StockProps     =   79
       Caption         =   "Módulos Operaciones"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -813,13 +813,13 @@ Begin VB.Form frmCntX_Contabilidades
    End
    Begin XtremeSuiteControls.CheckBox chkFiltra_Inversiones 
       Height          =   255
-      Left            =   4800
+      Left            =   3600
       TabIndex        =   50
       Top             =   6360
-      Width           =   4215
-      _Version        =   1441793
-      _ExtentX        =   7429
-      _ExtentY        =   444
+      Width           =   2655
+      _Version        =   1572864
+      _ExtentX        =   4683
+      _ExtentY        =   450
       _StockProps     =   79
       Caption         =   "Inversiones"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -838,13 +838,13 @@ Begin VB.Form frmCntX_Contabilidades
    End
    Begin XtremeSuiteControls.CheckBox chkFiltra_RRHH 
       Height          =   255
-      Left            =   4800
+      Left            =   3600
       TabIndex        =   51
       Top             =   6720
-      Width           =   4215
-      _Version        =   1441793
-      _ExtentX        =   7429
-      _ExtentY        =   444
+      Width           =   2655
+      _Version        =   1572864
+      _ExtentX        =   4683
+      _ExtentY        =   450
       _StockProps     =   79
       Caption         =   "Recursos Humanos"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -863,13 +863,13 @@ Begin VB.Form frmCntX_Contabilidades
    End
    Begin XtremeSuiteControls.CheckBox chkFiltra_Bancos 
       Height          =   255
-      Left            =   360
+      Left            =   6480
       TabIndex        =   52
-      Top             =   7080
-      Width           =   4215
-      _Version        =   1441793
-      _ExtentX        =   7429
-      _ExtentY        =   444
+      Top             =   6360
+      Width           =   2655
+      _Version        =   1572864
+      _ExtentX        =   4683
+      _ExtentY        =   450
       _StockProps     =   79
       Caption         =   "Bancos"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -886,6 +886,155 @@ Begin VB.Form frmCntX_Contabilidades
       Appearance      =   17
       Value           =   1
    End
+   Begin XtremeSuiteControls.CheckBox chkConsolida 
+      Height          =   255
+      Left            =   360
+      TabIndex        =   54
+      Top             =   7680
+      Width           =   5775
+      _Version        =   1572864
+      _ExtentX        =   10186
+      _ExtentY        =   450
+      _StockProps     =   79
+      Caption         =   "Esta Contabilidad es utilizada como consolidadora"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Transparent     =   -1  'True
+      UseVisualStyle  =   -1  'True
+      Appearance      =   17
+      Value           =   1
+   End
+   Begin XtremeSuiteControls.ComboBox cboConsolida_Conta 
+      Height          =   330
+      Left            =   3240
+      TabIndex        =   56
+      Top             =   8160
+      Width           =   6255
+      _Version        =   1572864
+      _ExtentX        =   11033
+      _ExtentY        =   582
+      _StockProps     =   77
+      ForeColor       =   1973790
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Style           =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+      Text            =   "ComboBox1"
+   End
+   Begin XtremeSuiteControls.ComboBox cboConsolida_Unidad 
+      Height          =   330
+      Left            =   3240
+      TabIndex        =   58
+      Top             =   8640
+      Width           =   6255
+      _Version        =   1572864
+      _ExtentX        =   11033
+      _ExtentY        =   582
+      _StockProps     =   77
+      ForeColor       =   1973790
+      BackColor       =   16777215
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Style           =   2
+      Appearance      =   6
+      UseVisualStyle  =   0   'False
+      Text            =   "ComboBox1"
+   End
+   Begin XtremeSuiteControls.Label Label7 
+      Height          =   495
+      Index           =   1
+      Left            =   360
+      TabIndex        =   57
+      Top             =   8520
+      Width           =   2775
+      _Version        =   1572864
+      _ExtentX        =   4895
+      _ExtentY        =   873
+      _StockProps     =   79
+      Caption         =   "Indique la Unidad en la que se reporta la Contabilidad BASE "
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Transparent     =   -1  'True
+      WordWrap        =   -1  'True
+   End
+   Begin XtremeSuiteControls.Label Label7 
+      Height          =   495
+      Index           =   0
+      Left            =   360
+      TabIndex        =   55
+      Top             =   8040
+      Width           =   2775
+      _Version        =   1572864
+      _ExtentX        =   4895
+      _ExtentY        =   873
+      _StockProps     =   79
+      Caption         =   "Indique la Contabilidad BASE para Referencia de Consolidación"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Transparent     =   -1  'True
+      WordWrap        =   -1  'True
+   End
+   Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption2 
+      Height          =   375
+      Index           =   2
+      Left            =   0
+      TabIndex        =   53
+      Top             =   7200
+      Width           =   9735
+      _Version        =   1572864
+      _ExtentX        =   17171
+      _ExtentY        =   661
+      _StockProps     =   14
+      Caption         =   "Contabilidad de Consolidación"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Calibri"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      SubItemCaption  =   -1  'True
+      Alignment       =   1
+   End
    Begin XtremeShortcutBar.ShortcutCaption ShortcutCaption2 
       Height          =   255
       Index           =   1
@@ -893,7 +1042,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   47
       Top             =   6000
       Width           =   9615
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16954
       _ExtentY        =   444
       _StockProps     =   14
@@ -934,7 +1083,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   36
       Top             =   3000
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   656
       _StockProps     =   79
@@ -959,7 +1108,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   34
       Top             =   3000
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   656
       _StockProps     =   79
@@ -984,7 +1133,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   32
       Top             =   3000
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   656
       _StockProps     =   79
@@ -1009,7 +1158,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   30
       Top             =   3000
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   656
       _StockProps     =   79
@@ -1034,7 +1183,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   28
       Top             =   3000
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   656
       _StockProps     =   79
@@ -1059,7 +1208,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   26
       Top             =   3000
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   656
       _StockProps     =   79
@@ -1084,7 +1233,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   24
       Top             =   3000
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   656
       _StockProps     =   79
@@ -1109,7 +1258,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   22
       Top             =   3000
       Width           =   612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   656
       _StockProps     =   79
@@ -1128,14 +1277,14 @@ Begin VB.Form frmCntX_Contabilidades
       WordWrap        =   -1  'True
    End
    Begin XtremeShortcutBar.ShortcutCaption lblMascara 
-      Height          =   252
+      Height          =   375
       Left            =   0
       TabIndex        =   12
       Top             =   3480
-      Width           =   9612
-      _Version        =   1441793
-      _ExtentX        =   16954
-      _ExtentY        =   444
+      Width           =   9615
+      _Version        =   1572864
+      _ExtentX        =   16960
+      _ExtentY        =   661
       _StockProps     =   14
       Caption         =   "Muestra la máscara contable"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -1157,7 +1306,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   11
       Top             =   4440
       Width           =   9612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16954
       _ExtentY        =   444
       _StockProps     =   14
@@ -1179,7 +1328,7 @@ Begin VB.Form frmCntX_Contabilidades
       TabIndex        =   10
       Top             =   2640
       Width           =   9612
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   16954
       _ExtentY        =   444
       _StockProps     =   14
@@ -1292,11 +1441,11 @@ Begin VB.Form frmCntX_Contabilidades
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   252
+      Height          =   255
       Left            =   480
       TabIndex        =   0
-      Top             =   480
-      Width           =   1332
+      Top             =   600
+      Width           =   1335
    End
 End
 Attribute VB_Name = "frmCntX_Contabilidades"
@@ -1307,6 +1456,8 @@ Attribute VB_Exposed = False
 Option Explicit
 Dim vEdita As Boolean, vCodigo As Long, vTipoBusca As String
 Dim vScroll As Boolean
+Dim vPaso As Boolean
+
 
 Private Function fxValida() As Boolean
 Dim vMensaje As String
@@ -1336,7 +1487,18 @@ If CInt(txtNivel1.Text) + CInt(txtNivel2.Text) + CInt(txtNivel3.Text) + CInt(txt
    vMensaje = vMensaje & vbCrLf & " - Se excede el número maximo de caracteres soportado por el sistema"
 End If
 
-If txtNombre = "" Then vMensaje = vMensaje & vbCrLf & " - Nombre de la compañía no es válido "
+If txtNombre.Text = "" Then vMensaje = vMensaje & vbCrLf & " - Nombre de la compañía no es válido "
+
+If chkConsolida.Value = xtpChecked Then
+   If cboConsolida_Conta.ListCount < 0 Then
+        vMensaje = vMensaje & vbCrLf & " - No es posible referenciar a Niguna Contabilidad BASE para la consolidación!"
+   End If
+   
+   If cboConsolida_Unidad.ListCount < 0 Then
+        vMensaje = vMensaje & vbCrLf & " - No es posible referenciar a Niguna Unidad BASE para la consolidación!"
+   End If
+End If
+
 
 If Len(vMensaje) > 0 Then
   fxValida = False
@@ -1345,6 +1507,32 @@ End If
 
 
 End Function
+
+Private Sub chkConsolida_Click()
+Dim strSQL As String, rs As New ADODB.Recordset
+
+If vPaso Then Exit Sub
+
+vPaso = True
+
+If chkConsolida.Value = xtpUnchecked Then
+   
+   cboConsolida_Conta.Clear
+   cboConsolida_Unidad.Clear
+
+Else
+   strSQL = "exec spCntX_Consolida_Base_List " & vCodigo
+   Call sbCbo_Llena_New(cboConsolida_Conta, strSQL, False, True)
+   
+   strSQL = "exec spCntX_Consolida_Unidades_List " & vCodigo
+   Call sbCbo_Llena_New(cboConsolida_Unidad, strSQL, False, True)
+
+End If
+
+
+vPaso = False
+
+End Sub
 
 Private Sub FlatScrollBar_Change()
 Dim strSQL As String, rs As New ADODB.Recordset
@@ -1451,6 +1639,8 @@ chkFiltra_Inversiones.Value = xtpUnchecked
 chkFiltra_Operaciones.Value = xtpUnchecked
 chkFiltra_RRHH.Value = xtpUnchecked
 
+chkConsolida.Value = xtpUnchecked
+
 End Sub
 
 
@@ -1512,7 +1702,7 @@ On Error GoTo vError
 
 Me.MousePointer = vbHourglass
 
-strSQL = "select * from CntX_Contabilidades where COD_CONTABILIDAD = " & lngCodigo
+strSQL = "exec spCntX_Contabilidad_Consulta " & lngCodigo
 Call OpenRecordSet(rs, strSQL, 0)
 
 If Not rs.BOF And Not rs.EOF Then
@@ -1555,7 +1745,17 @@ If Not rs.BOF And Not rs.EOF Then
     chkFiltra_Operaciones.Value = rs!FILTRA_CTAS_OPERACIONES
     chkFiltra_RRHH.Value = rs!FILTRA_CTAS_RRHH
     
-  cboRazon.Text = fxRazon(rs!razonsocial)
+  Call sbCboAsignaDato(cboRazon, rs!RazonSocial_Desc, True, rs!RazonSocial)
+  
+  
+  
+    chkConsolida.Value = rs!Consolida_Ind
+    Call chkConsolida_Click
+  
+  If rs!Consolida_Ind = 1 Then
+        Call sbCboAsignaDato(cboConsolida_Conta, rs!ContaBase_Desc, True, rs!ContaBase_ID)
+        Call sbCboAsignaDato(cboConsolida_Unidad, rs!Unidad_Desc, True, rs!Unidad_ID)
+  End If
   
   On Error Resume Next
   txtMascara.Text = fxCntX_CuentaMascara(txtNivel1.Text, txtNivel2.Text, txtNivel3.Text, txtNivel4.Text, txtNivel5.Text, txtNivel6.Text, txtNivel7.Text, txtNivel8.Text, "0")
@@ -1636,10 +1836,15 @@ End Function
 
 Private Sub sbGuardar()
 Dim strSQL As String, rs As New ADODB.Recordset
+Dim pConsolidaConta As String, pConsolidaUnidad As String
 
 On Error GoTo vError
 
-rs.Open "select isnull(count(*),0) as Total from CntX_Contabilidades where nombre = '" & UCase(Trim(txtNombre)) & "'", glogon.Conection, adOpenStatic
+strSQL = "select isnull(count(*),0) as Total " _
+       & " from CntX_Contabilidades" _
+       & " Where nombre = '" & UCase(Trim(txtNombre.Text)) & "'"
+Call OpenRecordSet(rs, strSQL)
+
 If Not vEdita Then
   If rs!Total > 0 Then
     rs.Close
@@ -1647,8 +1852,18 @@ If Not vEdita Then
     Exit Sub
   End If
 End If
-
 rs.Close
+
+If chkConsolida.Value = xtpChecked Then
+        pConsolidaConta = cboConsolida_Conta.ItemData(cboConsolida_Conta.ListIndex)
+        pConsolidaUnidad = "'" & cboConsolida_Unidad.ItemData(cboConsolida_Unidad.ListIndex) & "'"
+        
+Else
+    pConsolidaConta = "0"
+    pConsolidaUnidad = "''"
+End If
+
+
 
 If vEdita Then
   'Verificar si cambio cedula o codigo para actualización en cascada
@@ -1656,7 +1871,7 @@ If vEdita Then
          & ", cedula_juridica = '" & txtCedulaJuridica.Text & "'" _
          & ", tel_fax = '" & txtTelFax.Text & "',tel_central = '" & txtTelCentral & "'" _
          & ", contacto = '" & txtContacto & "', Email = '" & txtEmail.Text & "'" _
-         & ", razonsocial = '" & fxRazon(cboRazon.Text) & "'" _
+         & ", razonsocial = '" & Mid(cboRazon.Text, 1, 1) & "'" _
          & ", hecho = '',revisado = ''" _
          & ", ExpAreas = " & chkExpAreas.Value & ",ExpAsientos = " & chkExpAsientosGenerales.Value _
          & ", ExpCuentas = " & chkExpCuentas.Value & ",ExpMantenimiento = " & chkExpMantenimiento.Value _
@@ -1664,8 +1879,11 @@ If vEdita Then
          & ", ExpPlanRate = " & chkExpPlanRate.Value & ",expPresupuesto = " & chkExpPresupuesto.Value _
          & ", FILTRA_CTAS_BANCOS = " & chkFiltra_Bancos.Value & ", FILTRA_CTAS_CONTABILIDAD = " & chkFiltra_Contabilidad.Value _
          & ", FILTRA_CTAS_INVERSIONES = " & chkFiltra_Inversiones.Value & ", FILTRA_CTAS_OPERACIONES = " & chkFiltra_Operaciones.Value _
-         & ", FILTRA_CTAS_RRHH = " & chkFiltra_RRHH.Value & ", MODIFICA_FECHA = GETDATE(), MODIFICA_USUARIO = '" & glogon.Usuario & "'"
+         & ", FILTRA_CTAS_RRHH = " & chkFiltra_RRHH.Value _
+         & ", I_CONSOLIDADORA = " & chkConsolida.Value & ", CONSOLIDA_CONTA_BASE = " & pConsolidaConta & ", CONSOLIDA_UNIDAD_BASE = " & pConsolidaUnidad _
+         & ", MODIFICA_FECHA = GETDATE(), MODIFICA_USUARIO = '" & glogon.Usuario & "'"
          
+  'Si el catalogo ya tiene cuentas registradas no permite actualizar niveles
   If fxCatalogoLineas(vCodigo) = 0 Then
     strSQL = strSQL & ",Nivel1 = " & txtNivel1.Text & ",Nivel2 = " & txtNivel2.Text & ",Nivel3 = " & txtNivel3.Text _
            & ",Nivel4 = " & txtNivel4.Text & ",Nivel5 = " & txtNivel5.Text & ", Nivel6 = " & txtNivel6.Text _
@@ -1686,12 +1904,12 @@ Else
    rs.Close
    
    
-   
    strSQL = "insert into CntX_Contabilidades(cod_contabilidad,nombre,cedula_juridica,tel_fax,tel_central,contacto, email" _
           & ", razonsocial,nivel1,nivel2,nivel3,nivel4,nivel5,nivel6, nivel7, nivel8, hecho,revisado" _
           & ", ExpAreas,ExpCuentas,ExpAsientos,ExpMantenimiento,ExpDiferidos" _
           & ", ExpPlanFijo,ExpPlanRate,ExpPresupuesto, FILTRA_CTAS_BANCOS, FILTRA_CTAS_CONTABILIDAD" _
-          & ", FILTRA_CTAS_INVERSIONES, FILTRA_CTAS_OPERACIONES, FILTRA_CTAS_RRHH, registro_Fecha, Registro_Usuario)" _
+          & ", FILTRA_CTAS_INVERSIONES, FILTRA_CTAS_OPERACIONES, FILTRA_CTAS_RRHH" _
+          & ", I_CONSOLIDADORA, CONSOLIDA_CONTA_BASE, CONSOLIDA_UNIDAD_BASE, registro_Fecha, Registro_Usuario)" _
           & " values(" & vCodigo & ",'" & Trim(txtNombre.Text) & "','" & Trim(txtCedulaJuridica.Text) _
           & "', '" & txtTelFax & "','" & txtTelCentral & "','" & Trim(txtContacto.Text) & "','" & RTrim(txtEmail.Text) _
           & "', '" & fxRazon(cboRazon.Text) & "'," & txtNivel1.Text & "," & txtNivel2.Text _
@@ -1701,9 +1919,9 @@ Else
           & ", " & chkExpPlanFijos.Value & "," & chkExpPlanRate.Value & "," & chkExpPresupuesto.Value _
           & ", " & chkFiltra_Bancos.Value & ", " & chkFiltra_Contabilidad.Value _
           & ", " & chkFiltra_Inversiones.Value & ", " & chkFiltra_Operaciones.Value & ", " & chkFiltra_RRHH.Value _
+          & ", " & chkConsolida.Value & ", " & pConsolidaConta & ", " & pConsolidaUnidad _
           & ", getdate(), '" & glogon.Usuario & "')"
    Call ConectionExecute(strSQL, 0)
-    
     
    Call sbPredeterminados
     

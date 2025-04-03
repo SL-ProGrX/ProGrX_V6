@@ -1,19 +1,19 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.0#0"; "Codejock.Controls.v20.0.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#20.0#0"; "Codejock.ShortcutBar.v20.0.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCajas_Crd_AbonosStP 
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Cajas..Abonos"
-   ClientHeight    =   7728
-   ClientLeft      =   48
-   ClientTop       =   312
-   ClientWidth     =   9708
+   ClientHeight    =   7725
+   ClientLeft      =   45
+   ClientTop       =   315
+   ClientWidth     =   9705
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7728
-   ScaleWidth      =   9708
+   ScaleHeight     =   7725
+   ScaleWidth      =   9705
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin VB.Frame fraEstado 
@@ -40,7 +40,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   26
          Top             =   2640
          Width           =   9012
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   15896
          _ExtentY        =   4678
          _StockProps     =   77
@@ -65,7 +65,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   28
          Top             =   5400
          Width           =   1692
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -91,7 +91,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   27
          Top             =   0
          Width           =   9492
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   16743
          _ExtentY        =   656
          _StockProps     =   14
@@ -133,7 +133,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          Caption         =   "Cuotas Pendientes ....:"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -265,7 +265,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          Caption         =   "Ult.Mov."
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -288,7 +288,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          Caption         =   "Cuota"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -310,7 +310,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          Caption         =   "Intereses"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -332,7 +332,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          Caption         =   "Amortización"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -355,7 +355,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          Caption         =   "Saldo"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -373,7 +373,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          Caption         =   "Estado Actual ....:"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -391,7 +391,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          Caption         =   "Estado Resultante....:"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -414,7 +414,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          Caption         =   "Saldo"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -458,7 +458,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          Caption         =   "Amortización"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -502,7 +502,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          Caption         =   "Intereses"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -546,7 +546,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          Caption         =   "Cuota"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -590,7 +590,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          Caption         =   "Ult.Mov."
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.4
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -633,7 +633,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
       TabIndex        =   72
       Top             =   1680
       Width           =   9492
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   16743
       _ExtentY        =   1926
       _StockProps     =   79
@@ -645,7 +645,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   74
          Top             =   600
          Width           =   1332
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -668,7 +668,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   76
          Top             =   120
          Width           =   1572
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -691,7 +691,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   77
          Top             =   120
          Width           =   1572
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -714,7 +714,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   78
          Top             =   120
          Width           =   1572
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   656
          _StockProps     =   79
@@ -754,7 +754,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   73
          Top             =   120
          Width           =   9492
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   16743
          _ExtentY        =   656
          _StockProps     =   14
@@ -776,7 +776,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
       TabIndex        =   49
       Top             =   2760
       Width           =   9492
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   16743
       _ExtentY        =   5736
       _StockProps     =   79
@@ -788,7 +788,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   58
          Top             =   1200
          Width           =   1932
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   3408
          _ExtentY        =   444
          _StockProps     =   79
@@ -811,7 +811,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   59
          Top             =   360
          Width           =   852
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
@@ -836,7 +836,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   60
          Top             =   720
          Width           =   1692
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -863,7 +863,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   61
          Top             =   1080
          Width           =   1692
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -890,7 +890,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   62
          Top             =   1440
          Width           =   1692
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -917,7 +917,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   63
          Top             =   2040
          Width           =   1692
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -944,7 +944,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   64
          Top             =   2640
          Width           =   1692
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -971,7 +971,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   65
          Top             =   2040
          Width           =   1692
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -998,7 +998,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   66
          Top             =   2640
          Width           =   1692
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -1025,7 +1025,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   67
          Top             =   360
          Width           =   852
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
@@ -1052,7 +1052,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   68
          Top             =   720
          Width           =   1692
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -1079,7 +1079,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   69
          Top             =   1080
          Width           =   1692
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -1106,7 +1106,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   70
          Top             =   1440
          Width           =   1692
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -1278,7 +1278,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
       TabIndex        =   39
       Top             =   6000
       Width           =   9492
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   16743
       _ExtentY        =   2773
       _StockProps     =   79
@@ -1290,9 +1290,9 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   40
          Top             =   240
          Width           =   2772
-         _Version        =   1310720
-         _ExtentX        =   4890
-         _ExtentY        =   550
+         _Version        =   1572864
+         _ExtentX        =   4895
+         _ExtentY        =   582
          _StockProps     =   77
          ForeColor       =   0
          BackColor       =   16777215
@@ -1316,7 +1316,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   44
          Top             =   240
          Width           =   1692
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   2984
          _ExtentY        =   550
          _StockProps     =   77
@@ -1342,7 +1342,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   45
          Top             =   600
          Width           =   5412
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   9546
          _ExtentY        =   1397
          _StockProps     =   77
@@ -1369,7 +1369,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   46
          Top             =   600
          Width           =   852
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   1291
          _StockProps     =   79
@@ -1394,7 +1394,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   47
          Top             =   600
          Width           =   852
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   1291
          _StockProps     =   79
@@ -1419,7 +1419,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
          TabIndex        =   48
          Top             =   600
          Width           =   972
-         _Version        =   1310720
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   1291
          _StockProps     =   79
@@ -1498,7 +1498,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
       TabIndex        =   29
       Top             =   1080
       Width           =   1452
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   868
       _StockProps     =   79
@@ -1523,8 +1523,8 @@ Begin VB.Form frmCajas_Crd_AbonosStP
    Begin MSComctlLib.ImageList ImageList1 
       Left            =   7800
       Top             =   120
-      _ExtentX        =   995
-      _ExtentY        =   995
+      _ExtentX        =   1005
+      _ExtentY        =   1005
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -1560,7 +1560,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
       TabIndex        =   30
       Top             =   960
       Width           =   4812
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   8488
       _ExtentY        =   550
       _StockProps     =   77
@@ -1585,7 +1585,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
       TabIndex        =   31
       Top             =   1320
       Width           =   4212
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   7429
       _ExtentY        =   550
       _StockProps     =   77
@@ -1610,7 +1610,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
       TabIndex        =   32
       Top             =   960
       Width           =   1692
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   550
       _StockProps     =   77
@@ -1635,7 +1635,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
       TabIndex        =   33
       Top             =   1320
       Width           =   1692
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2984
       _ExtentY        =   550
       _StockProps     =   77
@@ -1660,7 +1660,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
       TabIndex        =   36
       Top             =   1320
       Width           =   612
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   1080
       _ExtentY        =   550
       _StockProps     =   77
@@ -1686,7 +1686,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
       TabIndex        =   37
       Top             =   240
       Width           =   2052
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   656
       _StockProps     =   77
@@ -1710,7 +1710,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
       TabIndex        =   38
       Top             =   240
       Width           =   2052
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   3619
       _ExtentY        =   656
       _StockProps     =   77
@@ -1736,7 +1736,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
       Top             =   360
       Visible         =   0   'False
       Width           =   1452
-      _Version        =   1310720
+      _Version        =   1572864
       _ExtentX        =   2561
       _ExtentY        =   868
       _StockProps     =   79
@@ -1797,7 +1797,7 @@ Begin VB.Form frmCajas_Crd_AbonosStP
       Caption         =   "Operación"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   8.4
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -2175,6 +2175,16 @@ If IsNumeric(ModuloCajas.mRef_01) Then
     Call sbConsultaOperacion
 End If
 
+
+If ModuloCajas.mSesionId = 0 Then
+   Call sbFormsCall("frmCajas_Sesion", vbModal, , , False, Me)
+   If ModuloCajas.mSesionId = 0 Then
+        MsgBox "No se ha iniciado ninguna sesión de Cliente para esta caja!", vbExclamation
+        Unload Me
+        Exit Sub
+   End If
+End If
+
 End Sub
 
 Private Sub Form_Load()
@@ -2235,7 +2245,7 @@ lsw.ListItems.Clear
 
 Do While Not rs.EOF
   Set itmX = lsw.ListItems.Add(, , rs!id_moro)
-      itmX.SubItems(1) = rs!id_solicitud
+      itmX.SubItems(1) = rs!Id_Solicitud
       itmX.SubItems(2) = Format(rs!fechap, "####-##")
       itmX.SubItems(3) = Format(rs!IntC, "Standard")
       itmX.SubItems(4) = Format(rs!IntM, "Standard")
@@ -2314,7 +2324,7 @@ If Not rs.EOF And Not rs.BOF Then
     
     ModuloCajas.mClienteId = Trim(rs!Cedula)
     ModuloCajas.mCliente = Trim(rs!Nombre)
-    ModuloCajas.mTiquete = Trim(rs!Codigo) & "." & rs!id_solicitud & "." & Format(Time, "HH:mm:ss")
+    ModuloCajas.mTiquete = Trim(rs!Codigo) & "." & rs!Id_Solicitud & "." & Format(Time, "HH:mm:ss")
     
     ModuloCajas.mDivisa = RTrim(rs!Divisa)
     ModuloCajas.mConceptoValida = IIf((rs!Caja_Valida_Concepto > 0), True, False)
@@ -2324,19 +2334,19 @@ If Not rs.EOF And Not rs.BOF Then
 
     vBaseCalculo = Trim(rs!Base_Calculo)
     vPrideduc = rs!PriDeduc
-    vOperacion = rs!id_solicitud
+    vOperacion = rs!Id_Solicitud
     vPlazo = rs!Plazo
   
   
     vInteres = IIf(IsNull(rs!interesv), rs!Int, rs!interesv)
     If IsNull(rs!saldo_mes) Then
       vSaldoMes = rs!Saldo
-      strSQL = "update reg_creditos set saldo_mes = saldo where id_solicitud = " & rs!id_solicitud
+      strSQL = "update reg_creditos set saldo_mes = saldo where id_solicitud = " & rs!Id_Solicitud
       Call ConectionExecute(strSQL)
     Else
       If rs!saldo_mes = 0 Then
           vSaldoMes = rs!Saldo
-          strSQL = "update reg_creditos set saldo_mes = saldo where id_solicitud = " & rs!id_solicitud
+          strSQL = "update reg_creditos set saldo_mes = saldo where id_solicitud = " & rs!Id_Solicitud
           Call ConectionExecute(strSQL)
       Else
          vSaldoMes = rs!saldo_mes
@@ -2373,7 +2383,7 @@ If Not rs.EOF And Not rs.BOF Then
     lblSaldoR.Caption = 0
     
     txtCuotas = 0
-    txtOperacion = rs!id_solicitud
+    txtOperacion = rs!Id_Solicitud
     
     fraAbono.Enabled = True
     fraDatosAbono.Enabled = False
@@ -2530,7 +2540,7 @@ strSQL = "select R.id_solicitud,R.saldo,R.saldo_mes,R.interesv,R.int,R.plazo,R.i
 rs.CursorLocation = adUseServer
 Call OpenRecordSet(rs, strSQL)
 If Not rs.EOF And Not rs.BOF Then
-  vOperacion = rs!id_solicitud
+  vOperacion = rs!Id_Solicitud
   vPlazo = rs!Plazo
   vInteres = IIf(IsNull(rs!interesv), rs!Int, rs!interesv)
   vSaldoMes = IIf(IsNull(rs!saldo_mes), rs!Saldo, rs!saldo_mes)
@@ -2554,7 +2564,7 @@ If Not rs.EOF And Not rs.BOF Then
      lblSaldo.Caption = Format(vSaldoMes, "Standard")
      lblSaldoR.Caption = 0
      txtCuotas = 0
-     txtOperacion = rs!id_solicitud
+     txtOperacion = rs!Id_Solicitud
      fraAbono.Enabled = True
      fraDatosAbono.Enabled = False
     
@@ -2654,6 +2664,16 @@ TimerX.Enabled = False
 TimerX.Interval = 0
 
 Call sbCajaInicial
+
+If ModuloCajas.mApertura = 0 Or ModuloCajas.mApertura = Empty Then
+   Unload Me
+   Exit Sub
+End If
+
+If ModuloCajas.mSesionId = 0 Or ModuloCajas.mSesionId = Empty Then
+   Unload Me
+   Exit Sub
+End If
 
 Call optAbono_Click(0)
 End Sub
@@ -3123,30 +3143,30 @@ End If
         
         If curIntC > 0 Then
           strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & curIntC * pTipoCambio & ",'C','" & rs!cod_Divisa _
-                 & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!cod_centro_costo & "','" & rs!ctaintc _
-                 & "','" & rs!id_solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintc _
+                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 '          Call ConectionExecute(strSQL)
         End If
         
         If curIntM > 0 Then
           strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & curIntM * pTipoCambio & ",'C','" & rs!cod_Divisa _
-                 & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!cod_centro_costo & "','" & rs!ctaintm _
-                 & "','" & rs!id_solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaintm _
+                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 '          Call ConectionExecute(strSQL)
         End If
         
         If curCargo > 0 Then
           strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & curCargo * pTipoCambio & ",'C','" & rs!cod_Divisa _
-                 & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!cod_centro_costo & "','" & rs!CtaCargos _
-                 & "','" & rs!id_solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!CtaCargos _
+                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 '          Call ConectionExecute(strSQL)
         End If
         
         
         If curAmortiza > 0 Then
           strSQL = strSQL & Space(10) & "exec spSIFDocsAsiento '" & vTipoDoc & "','" & vNumDoc & "'," & curAmortiza * pTipoCambio & ",'C','" & rs!cod_Divisa _
-                 & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!cod_centro_costo & "','" & rs!ctaamortiza _
-                 & "','" & rs!id_solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
+                 & "'," & pTipoCambio & "," & GLOBALES.gEnlace & ",'" & rs!Cod_Unidad & "','" & rs!Cod_Centro_Costo & "','" & rs!ctaamortiza _
+                 & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "','" & vAseDocDeposito & "'"
 '          Call ConectionExecute(strSQL)
         End If
 
@@ -3154,7 +3174,7 @@ End If
             'Procesa Formas de Pago (Registro Final / Asiento de Pago)
              strSQL = strSQL & Space(10) & "exec spCajas_DesglocePagosDocFinal '" & ModuloCajas.mCaja & "'," & ModuloCajas.mApertura & ",'" & ModuloCajas.mTiquete _
                      & "','" & ModuloCajas.mUsuario & "','" & vTipoDoc & "','" & vNumDoc & "','" & ModuloCajas.mUnidad _
-                     & "','" & rs!id_solicitud & "','" & rs!Codigo & "'"
+                     & "','" & rs!Id_Solicitud & "','" & rs!Codigo & "'"
 '             Call ConectionExecute(strSQL)
        End If
        

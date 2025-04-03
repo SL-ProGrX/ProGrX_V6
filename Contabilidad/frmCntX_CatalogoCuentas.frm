@@ -1,9 +1,9 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
-Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpSPR80.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.Controls.v22.0.0.ocx"
-Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.0#0"; "Codejock.ShortcutBar.v22.0.0.ocx"
+Object = "{F856EC8B-F03C-4515-BDC6-64CBD617566A}#8.0#0"; "fpspr80.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
+Object = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.ShortcutBar.v24.0.0.ocx"
 Begin VB.Form frmCntX_CatalogoCuentas 
    Caption         =   "Catálogo de Cuentas"
    ClientHeight    =   7350
@@ -21,7 +21,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
       TabIndex        =   71
       Top             =   7200
       Width           =   6615
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   11668
       _ExtentY        =   238
       _StockProps     =   93
@@ -32,7 +32,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
       TabIndex        =   20
       Top             =   1200
       Width           =   14892
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   26268
       _ExtentY        =   10393
       _StockProps     =   68
@@ -69,7 +69,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          Top             =   1080
          Visible         =   0   'False
          Width           =   10452
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   18436
          _ExtentY        =   5101
          _StockProps     =   79
@@ -92,7 +92,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   27
             Top             =   2160
             Width           =   1572
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   1080
             _StockProps     =   79
@@ -115,7 +115,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   23
             Top             =   840
             Width           =   2172
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   550
             _StockProps     =   77
@@ -139,7 +139,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   25
             Top             =   1320
             Width           =   2172
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   550
             _StockProps     =   77
@@ -165,7 +165,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             ToolTipText     =   "Cancelar"
             Top             =   2160
             Width           =   852
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   1503
             _ExtentY        =   1080
             _StockProps     =   79
@@ -187,7 +187,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   31
             Top             =   1800
             Width           =   6252
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   11028
             _ExtentY        =   444
             _StockProps     =   79
@@ -211,7 +211,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   24
             Top             =   840
             Width           =   5772
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   10181
             _ExtentY        =   550
             _StockProps     =   77
@@ -234,7 +234,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   26
             Top             =   1320
             Width           =   5772
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   10181
             _ExtentY        =   550
             _StockProps     =   77
@@ -258,7 +258,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   30
             Top             =   1320
             Width           =   1932
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -283,7 +283,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   29
             Top             =   840
             Width           =   1932
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -341,7 +341,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          Top             =   1200
          Visible         =   0   'False
          Width           =   10452
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   18436
          _ExtentY        =   5101
          _StockProps     =   79
@@ -363,7 +363,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   34
             Top             =   840
             Width           =   2172
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   550
             _StockProps     =   77
@@ -388,7 +388,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   33
             Top             =   1800
             Width           =   1572
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   1080
             _StockProps     =   79
@@ -413,7 +413,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             ToolTipText     =   "Cancelar"
             Top             =   1800
             Width           =   852
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   1503
             _ExtentY        =   1080
             _StockProps     =   79
@@ -435,7 +435,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   35
             Top             =   840
             Width           =   5772
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   10181
             _ExtentY        =   550
             _StockProps     =   77
@@ -459,7 +459,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   37
             Top             =   840
             Width           =   1932
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -485,7 +485,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          Top             =   1080
          Visible         =   0   'False
          Width           =   13812
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   24363
          _ExtentY        =   8488
          _StockProps     =   68
@@ -609,7 +609,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   4440
             Visible         =   0   'False
             Width           =   972
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   1714
             _ExtentY        =   550
             _StockProps     =   77
@@ -635,7 +635,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   42
             Top             =   600
             Width           =   2172
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   550
             _StockProps     =   77
@@ -660,7 +660,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   43
             Top             =   600
             Width           =   7212
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   12721
             _ExtentY        =   550
             _StockProps     =   77
@@ -683,7 +683,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   44
             Top             =   960
             Width           =   7212
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   12721
             _ExtentY        =   550
             _StockProps     =   77
@@ -707,7 +707,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   600
             Visible         =   0   'False
             Width           =   1332
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   2350
             _ExtentY        =   1080
             _StockProps     =   79
@@ -734,7 +734,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   840
             Visible         =   0   'False
             Width           =   4572
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   8070
             _ExtentY        =   582
             _StockProps     =   77
@@ -761,7 +761,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   840
             Visible         =   0   'False
             Width           =   4572
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   8070
             _ExtentY        =   582
             _StockProps     =   77
@@ -787,7 +787,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   48
             Top             =   1320
             Width           =   5892
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   10393
             _ExtentY        =   444
             _StockProps     =   79
@@ -813,7 +813,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   49
             Top             =   1680
             Width           =   4572
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   8070
             _ExtentY        =   582
             _StockProps     =   77
@@ -839,7 +839,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   50
             Top             =   2040
             Width           =   4572
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   8070
             _ExtentY        =   582
             _StockProps     =   77
@@ -866,7 +866,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   1320
             Visible         =   0   'False
             Width           =   6732
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   11874
             _ExtentY        =   550
             _StockProps     =   77
@@ -890,7 +890,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   600
             Visible         =   0   'False
             Width           =   5892
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   10393
             _ExtentY        =   444
             _StockProps     =   79
@@ -916,7 +916,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   960
             Visible         =   0   'False
             Width           =   2172
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   550
             _StockProps     =   77
@@ -942,7 +942,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   960
             Visible         =   0   'False
             Width           =   6732
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   11874
             _ExtentY        =   550
             _StockProps     =   77
@@ -966,7 +966,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   1320
             Visible         =   0   'False
             Width           =   2172
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3831
             _ExtentY        =   550
             _StockProps     =   77
@@ -992,7 +992,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   1800
             Visible         =   0   'False
             Width           =   4572
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   8070
             _ExtentY        =   582
             _StockProps     =   77
@@ -1019,7 +1019,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   2160
             Visible         =   0   'False
             Width           =   4572
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   8070
             _ExtentY        =   582
             _StockProps     =   77
@@ -1047,7 +1047,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   2160
             Visible         =   0   'False
             Width           =   1932
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -1073,7 +1073,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   1800
             Visible         =   0   'False
             Width           =   1932
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -1099,7 +1099,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   960
             Visible         =   0   'False
             Width           =   1932
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -1125,7 +1125,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   1320
             Visible         =   0   'False
             Width           =   1932
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -1150,7 +1150,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   4440
             Visible         =   0   'False
             Width           =   1932
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -1175,7 +1175,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   56
             Top             =   960
             Width           =   1932
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -1200,7 +1200,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   55
             Top             =   600
             Width           =   1932
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -1226,7 +1226,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   600
             Visible         =   0   'False
             Width           =   1932
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -1252,7 +1252,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             Top             =   600
             Visible         =   0   'False
             Width           =   1452
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   2561
             _ExtentY        =   444
             _StockProps     =   79
@@ -1277,7 +1277,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   52
             Top             =   2040
             Width           =   1932
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -1302,7 +1302,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
             TabIndex        =   51
             Top             =   1680
             Width           =   1932
-            _Version        =   1441792
+            _Version        =   1572864
             _ExtentX        =   3408
             _ExtentY        =   444
             _StockProps     =   79
@@ -1329,7 +1329,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          Top             =   360
          Visible         =   0   'False
          Width           =   1572
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2773
          _ExtentY        =   1080
          _StockProps     =   79
@@ -1355,7 +1355,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          Top             =   360
          Visible         =   0   'False
          Width           =   852
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   1080
          _StockProps     =   79
@@ -1383,7 +1383,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
       TabIndex        =   10
       Top             =   495
       Width           =   14055
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   24791
       _ExtentY        =   1244
       _StockProps     =   79
@@ -1395,7 +1395,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   11
          Top             =   360
          Width           =   1815
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   3196
          _ExtentY        =   444
          _StockProps     =   79
@@ -1435,7 +1435,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   13
          Top             =   360
          Width           =   2172
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   550
          _StockProps     =   77
@@ -1461,7 +1461,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   14
          Top             =   360
          Width           =   4932
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   8700
          _ExtentY        =   550
          _StockProps     =   77
@@ -1486,7 +1486,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   15
          Top             =   360
          Width           =   855
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
@@ -1513,7 +1513,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   73
          Top             =   360
          Width           =   1695
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   582
          _StockProps     =   77
@@ -1540,7 +1540,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   72
          Top             =   120
          Width           =   855
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   444
          _StockProps     =   79
@@ -1566,7 +1566,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   19
          Top             =   360
          Width           =   972
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   444
          _StockProps     =   79
@@ -1591,7 +1591,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   18
          Top             =   120
          Width           =   2172
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   3831
          _ExtentY        =   444
          _StockProps     =   79
@@ -1617,7 +1617,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   17
          Top             =   120
          Width           =   4812
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   8488
          _ExtentY        =   444
          _StockProps     =   79
@@ -1643,7 +1643,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   16
          Top             =   120
          Width           =   855
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   444
          _StockProps     =   79
@@ -1669,7 +1669,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
       TabIndex        =   1
       Top             =   80
       Width           =   6972
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   12298
       _ExtentY        =   564
       _StockProps     =   79
@@ -1683,7 +1683,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   2
          Top             =   12
          Width           =   972
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   550
          _StockProps     =   79
@@ -1706,7 +1706,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   3
          Top             =   12
          Width           =   972
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   550
          _StockProps     =   79
@@ -1729,7 +1729,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   4
          Top             =   12
          Width           =   972
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   550
          _StockProps     =   79
@@ -1752,7 +1752,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   5
          Top             =   12
          Width           =   1092
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1926
          _ExtentY        =   550
          _StockProps     =   79
@@ -1775,7 +1775,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   6
          Top             =   12
          Width           =   972
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   550
          _StockProps     =   79
@@ -1798,7 +1798,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   7
          Top             =   12
          Width           =   972
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   550
          _StockProps     =   79
@@ -1822,7 +1822,7 @@ Begin VB.Form frmCntX_CatalogoCuentas
          TabIndex        =   9
          Top             =   12
          Width           =   972
-         _Version        =   1441792
+         _Version        =   1572864
          _ExtentX        =   1714
          _ExtentY        =   550
          _StockProps     =   79
@@ -1896,13 +1896,13 @@ Begin VB.Form frmCntX_CatalogoCuentas
       TabIndex        =   8
       Top             =   0
       Width           =   15132
-      _Version        =   1441792
+      _Version        =   1572864
       _ExtentX        =   26691
       _ExtentY        =   868
       _StockProps     =   14
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   8.2
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -1963,7 +1963,7 @@ strSQL = "exec spCntX_Cuenta_Detalle " & gCntX_Parametros.CodigoConta & ",'" & p
 Call OpenRecordSet(rs, strSQL)
 If Not rs.BOF And Not rs.EOF Then
     
-    txtDT_Cuenta.Text = rs!Cod_Cuenta_Mask
+    txtDT_Cuenta.Text = rs!COD_CUENTA_MASK
     txtDT_Cuenta_Desc.Text = rs!Descripcion
     txtDT_Cuenta_Alterna_Desc.Text = rs!DESCRIPCION_ALTERNA & ""
     
@@ -2306,15 +2306,15 @@ strSQL = "select rtrim(cod_divisa) as 'Cod_Divisa' from CntX_Divisas where cod_c
        & gCntX_Parametros.CodigoConta & " order by divisa_local desc"
 Call OpenRecordSet(rs, strSQL, 0)
 
-If Not rs.EOF And mDivisaUltimaSel = "" Then mDivisaUltimaSel = rs!COD_DIVISA
+If Not rs.EOF And mDivisaUltimaSel = "" Then mDivisaUltimaSel = rs!cod_Divisa
 
 mDivisaLista = ""
 
 Do While Not rs.EOF
   If Len(mDivisaLista) = 0 Then
-    mDivisaLista = Chr$(9) & rs!COD_DIVISA
+    mDivisaLista = Chr$(9) & rs!cod_Divisa
   Else
-    mDivisaLista = mDivisaLista & Chr$(9) & rs!COD_DIVISA
+    mDivisaLista = mDivisaLista & Chr$(9) & rs!cod_Divisa
   End If
   rs.MoveNext
 Loop
@@ -2428,11 +2428,11 @@ Do While Not rs.EOF
         If chkBalance.Value = vbChecked Then
                 vNota = "Estado del Periodo:" & vbCrLf _
                       & "___________________" & vbCrLf _
-                      & " Saldo Inicial : " & Format(rs!Saldo_Inicial, "Standard") & vbCrLf _
+                      & " Saldo Inicial : " & Format(rs!SALDO_INICIAL, "Standard") & vbCrLf _
                       & " Total Debitos : " & Format(Abs(rs!total_debitos), "Standard") & vbCrLf _
                       & " Total Creditos: " & Format(Abs(rs!total_creditos), "Standard") & vbCrLf _
                       & " Mensual       : " & Format(rs!total_debitos + rs!total_creditos, "Standard") & vbCrLf _
-                      & " Acumulado     : " & Format((rs!Saldo_Inicial + rs!total_debitos + rs!total_creditos), "Standard") & vbCrLf _
+                      & " Acumulado     : " & Format((rs!SALDO_INICIAL + rs!total_debitos + rs!total_creditos), "Standard") & vbCrLf _
                       & "___________________"
                 
                 vGrid.CellNoteIndicator = CellNoteIndicatorShowAndFireEvent
@@ -2777,7 +2777,7 @@ strSQL = "exec spCntX_Cuentas_Registro " & gCntX_Parametros.CodigoConta _
        & "', " & vAceptaMovimientos & "," & vPresupuesto & "," & vAuxiliar & "," & vBloqueada _
        & ", 'A','" & glogon.Usuario & "'"
 Call OpenRecordSet(rs, strSQL)
-  vCuentaMask = rs!Cod_Cuenta_Mask
+  vCuentaMask = rs!COD_CUENTA_MASK
   Call Bitacora(rs!Movimiento, "Cuenta en el Catalogo: " & vCuentaMask)
   
   vGrid.Col = 3

@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#22.1#0"; "codejock.controls.v22.1.0.ocx"
+Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#24.0#0"; "Codejock.Controls.v24.0.0.ocx"
 Begin VB.Form frmCR_VerificaDatosPersonales 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
@@ -25,7 +25,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
       TabIndex        =   56
       Top             =   2400
       Width           =   3735
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   6588
       _ExtentY        =   7011
       _StockProps     =   77
@@ -50,7 +50,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
       TabIndex        =   57
       Top             =   2040
       Width           =   3735
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   6588
       _ExtentY        =   714
       _StockProps     =   68
@@ -81,7 +81,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
       TabIndex        =   14
       Top             =   2040
       Width           =   8172
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   14414
       _ExtentY        =   7641
       _StockProps     =   68
@@ -140,7 +140,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          Top             =   1320
          Visible         =   0   'False
          Width           =   7932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13991
          _ExtentY        =   5101
          _StockProps     =   77
@@ -165,7 +165,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          Top             =   480
          Visible         =   0   'False
          Width           =   7812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13779
          _ExtentY        =   2984
          _StockProps     =   79
@@ -189,7 +189,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
             TabIndex        =   49
             Top             =   600
             Width           =   5172
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9123
             _ExtentY        =   550
             _StockProps     =   77
@@ -212,7 +212,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
             TabIndex        =   51
             Top             =   600
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -235,7 +235,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
             TabIndex        =   53
             Top             =   960
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   550
             _StockProps     =   77
@@ -258,7 +258,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
             TabIndex        =   54
             Top             =   1320
             Width           =   1572
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2773
             _ExtentY        =   550
             _StockProps     =   77
@@ -281,7 +281,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
             TabIndex        =   55
             Top             =   960
             Width           =   1212
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   2138
             _ExtentY        =   550
             _StockProps     =   77
@@ -395,7 +395,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          TabIndex        =   15
          Top             =   480
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2355
          _ExtentY        =   582
          _StockProps     =   77
@@ -420,7 +420,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          TabIndex        =   16
          Top             =   480
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   582
          _StockProps     =   77
@@ -445,7 +445,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          TabIndex        =   17
          Top             =   840
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -467,7 +467,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          TabIndex        =   20
          Top             =   2280
          Width           =   1692
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2990
          _ExtentY        =   582
          _StockProps     =   77
@@ -492,7 +492,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          TabIndex        =   21
          Top             =   2280
          Width           =   1932
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3413
          _ExtentY        =   582
          _StockProps     =   77
@@ -517,7 +517,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          TabIndex        =   22
          Top             =   2280
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   582
          _StockProps     =   77
@@ -542,7 +542,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          TabIndex        =   23
          Top             =   840
          Width           =   2052
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   3625
          _ExtentY        =   582
          _StockProps     =   77
@@ -567,7 +567,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          TabIndex        =   24
          Top             =   1200
          Width           =   5892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10393
          _ExtentY        =   550
          _StockProps     =   77
@@ -590,7 +590,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          TabIndex        =   25
          Top             =   1560
          Width           =   5892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10393
          _ExtentY        =   550
          _StockProps     =   77
@@ -613,7 +613,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          TabIndex        =   26
          Top             =   1920
          Width           =   5892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10393
          _ExtentY        =   550
          _StockProps     =   77
@@ -636,7 +636,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          TabIndex        =   27
          Top             =   2640
          Width           =   5892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10393
          _ExtentY        =   1185
          _StockProps     =   77
@@ -661,7 +661,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          TabIndex        =   28
          Top             =   3360
          Width           =   5892
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   10393
          _ExtentY        =   1185
          _StockProps     =   77
@@ -687,7 +687,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          Top             =   840
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   550
          _StockProps     =   68
@@ -710,7 +710,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          Top             =   840
          Visible         =   0   'False
          Width           =   852
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   1503
          _ExtentY        =   550
          _StockProps     =   77
@@ -735,7 +735,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          Top             =   2400
          Visible         =   0   'False
          Width           =   7812
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   13779
          _ExtentY        =   2984
          _StockProps     =   79
@@ -759,7 +759,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
             TabIndex        =   50
             Top             =   720
             Width           =   5172
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   9123
             _ExtentY        =   550
             _StockProps     =   77
@@ -782,7 +782,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
             TabIndex        =   52
             Top             =   720
             Width           =   1812
-            _Version        =   1441793
+            _Version        =   1572864
             _ExtentX        =   3196
             _ExtentY        =   550
             _StockProps     =   77
@@ -843,7 +843,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          Top             =   480
          Visible         =   0   'False
          Width           =   2292
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   4048
          _ExtentY        =   582
          _StockProps     =   77
@@ -869,7 +869,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
          Top             =   720
          Visible         =   0   'False
          Width           =   1332
-         _Version        =   1441793
+         _Version        =   1572864
          _ExtentX        =   2350
          _ExtentY        =   868
          _StockProps     =   79
@@ -1096,7 +1096,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
       TabIndex        =   12
       Top             =   6480
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2778
       _ExtentY        =   873
       _StockProps     =   79
@@ -1166,7 +1166,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
       TabIndex        =   13
       Top             =   6480
       Width           =   1575
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   2778
       _ExtentY        =   873
       _StockProps     =   79
@@ -1192,7 +1192,7 @@ Begin VB.Form frmCR_VerificaDatosPersonales
       TabIndex        =   58
       Top             =   6480
       Width           =   2295
-      _Version        =   1441793
+      _Version        =   1572864
       _ExtentX        =   4048
       _ExtentY        =   873
       _StockProps     =   79
@@ -1672,8 +1672,8 @@ strSQL = "update socios set provincia = '" & cboProvincia.ItemData(cboProvincia.
        & "', Conyuge_Nombre = '" & txtConyugeNombre.Text & "',Conyuge_TelCell = '" & txtConyugeTelCelular.Text _
        & "',Conyuge_TelTra = '" & txtConyugeTelTrabajo.Text & "',Conyuge_TelTraExt = '" & txtConyugeTelTrabajoExt.Text _
        & "',Notificaciones = '" & txtNotificaciones.Text & "',Albacea_cedula = '" & txtAlbaceaCedula.Text & "',Albacea_nombre = '" _
-       & txtAlbaceaNombre.Text & "', Email_02 = '" & Trim(txtEmail_02.Text) _
-       & "' Where Cedula='" & GLOBALES.gCedulaActual & "'"
+       & txtAlbaceaNombre.Text & "', Email_02 = '" & Trim(txtEmail_02.Text) & "'" _
+       & " Where Cedula = '" & GLOBALES.gCedulaActual & "'"
 
 'Revisa Nombramiento / Variaciones para Registrarlas en el Histórico
 'Nuevo Modelo: 2020/02/26 {PBN}

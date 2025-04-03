@@ -6,23 +6,23 @@ Begin VB.Form frmCR_ComitesParametros
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Parámetros de Comités de Resolución"
    ClientHeight    =   6180
-   ClientLeft      =   48
-   ClientTop       =   348
-   ClientWidth     =   9648
+   ClientLeft      =   45
+   ClientTop       =   345
+   ClientWidth     =   11460
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    ScaleHeight     =   6180
-   ScaleWidth      =   9648
+   ScaleWidth      =   11460
    Begin FPSpreadADO.fpSpread vGrid 
-      Height          =   4812
+      Height          =   4815
       Left            =   120
       TabIndex        =   0
       Top             =   1200
-      Width           =   9372
+      Width           =   11295
       _Version        =   524288
-      _ExtentX        =   16531
-      _ExtentY        =   8488
+      _ExtentX        =   19923
+      _ExtentY        =   8493
       _StockProps     =   64
       BackColorStyle  =   1
       BorderStyle     =   0
@@ -49,7 +49,7 @@ Begin VB.Form frmCR_ComitesParametros
       Caption         =   "Parámetros de Comité de Resolución"
       BeginProperty Font 
          Name            =   "Calibri"
-         Size            =   16.2
+         Size            =   16.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -65,10 +65,10 @@ Begin VB.Form frmCR_ComitesParametros
       Width           =   7332
    End
    Begin VB.Image imgBanner 
-      Height          =   1092
+      Height          =   1095
       Left            =   0
       Top             =   0
-      Width           =   10812
+      Width           =   11535
    End
 End
 Attribute VB_Name = "frmCR_ComitesParametros"
@@ -77,48 +77,51 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim strSQL As String, rs As New ADODB.Recordset
 
 Private Sub Form_Load()
-Dim strSQL As String
 
 vModulo = 3
 
 vGrid.AppearanceStyle = fxGridStyle
+
 Set imgBanner.Picture = frmContenedor.imgBanner_Mantenimiento.Picture
 
-'Activar
-Call Formularios(Me)
-Call RefrescaTags(Me)
 strSQL = "select cod_parametro, descripcion, valor from crd_comites_parametros order by cod_parametro"
-
 Call sbCargaGrid(vGrid, 3, strSQL)
 
 vGrid.MaxRows = vGrid.MaxRows - 1
+
+Call Formularios(Me)
+Call RefrescaTags(Me)
+
 End Sub
 
 
 Private Function fxGuardar() As Long
-Dim strSQL As String, rs As New ADODB.Recordset
-'Guarda la información de la linea
-'si es Insert devuelve el codigo, sino devuelve 0
 
 On Error GoTo vError
 
 fxGuardar = 0
   vGrid.Row = vGrid.ActiveRow
-vGrid.col = 1
+vGrid.Col = 1
 
+Dim pValor As String, pParametro As String
 
-vGrid.col = 3
-strSQL = "update CRD_COMITES_PARAMETROS set valor = '" & vGrid.Text & "'"
-vGrid.col = 1
-strSQL = strSQL & " where COD_PARAMETRO = '" & vGrid.Text & "'"
-Call ConectionExecute(strSQL)
+vGrid.Col = 1
+pParametro = vGrid.Text
 
-'TODO Activar
+vGrid.Col = 3
+pValor = vGrid.Text
 
-Call Bitacora("Modifica", "Parametro de comites de aprobación cod: " & vGrid.Text)
-
+strSQL = "exec spCrd_Comites_Parametro_Actualiza '" & pParametro & "', '" & pValor & "', '" & glogon.Usuario & "'"
+Call OpenRecordSet(rs, strSQL)
+If rs!Pass = 1 Then
+    Call Bitacora("Modifica", rs!Mensaje)
+    MsgBox "Parámetro Id: " & pParametro & ", Actualiza a: " & pValor, vbInformation
+Else
+    MsgBox rs!Mensaje, vbExclamation
+End If
 fxGuardar = 1
 
 Exit Function
@@ -127,18 +130,6 @@ vError:
  MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 
 End Function
-
-Private Sub vGrid_Click(ByVal col As Long, ByVal Row As Long)
-vGrid.ToolTipText = ""
-vGrid.col = 1
-vGrid.Row = Row
-'If (vGrid.Text = "001") Or (vGrid.Text = "002") Or (vGrid.Text = "003") _
-'   Or (vGrid.Text = "005") Or (vGrid.Text = "006") Or (vGrid.Text = "007") Then
-'   vGrid.Col = Col
-'    vGrid.ToolTipText = "Presione F4 para consultar"
-'End If
-
-End Sub
 
 Private Sub vGrid_KeyDown(KeyCode As Integer, Shift As Integer)
 Dim i As Integer
@@ -149,28 +140,9 @@ If vGrid.ActiveCol = vGrid.MaxCols And (KeyCode = 13 Or KeyCode = vbKeyTab) Then
   vGrid.Row = vGrid.ActiveRow
 End If
 
-'If KeyCode = vbKeyF4 Then
-'    vGrid.Row = vGrid.ActiveRow
-'    vGrid.Col = 1
-'    If (vGrid.Text = "001") Or (vGrid.Text = "002") Or (vGrid.Text = "003") Or (vGrid.Text = "009") Or (vGrid.Text = "010") Then
-'        gBusquedas.Resultado = ""
-'        Call sbgCntCuentaConsulta("D")
-'        If gBusquedas.Resultado = "" Then Exit Sub
-'        vGrid.Col = 3
-'        vGrid.Row = vGrid.ActiveRow
-'        vGrid.Text = gBusquedas.Resultado
-'        i = fxGuardar
-'        If i = 0 Then Exit Sub
-'            vGrid.Row = vGrid.ActiveRow
-'    ElseIf (vGrid.Text = "005") Or (vGrid.Text = "006") Or (vGrid.Text = "007") Or (vGrid.Text = "009") Then
-'        gBusquedas.Resultado = ""
-'        Call sbBusqueda(vGrid.ActiveRow, 3)
-'    End If
-'End If
-
 End Sub
 
-Private Sub sbBusqueda(ByVal fil As Integer, ByVal col As Integer)
+Private Sub sbBusqueda(ByVal fil As Integer, ByVal Col As Integer)
 
 On Error GoTo vError
 Dim i As Integer
@@ -181,7 +153,7 @@ Dim i As Integer
     gBusquedas.Orden = "DESCRIPCION"
     frmBusquedas.Show vbModal
     If gBusquedas.Resultado = "" Then Exit Sub
-    vGrid.col = 3
+    vGrid.Col = 3
     vGrid.Row = fil
     vGrid.Text = Trim(gBusquedas.Resultado)
     i = fxGuardar
@@ -198,8 +170,4 @@ Exit Sub
 vError:
   MsgBox fxSys_Error_Handler(Err.Description), vbCritical
 End Sub
-
-
-
-
 
